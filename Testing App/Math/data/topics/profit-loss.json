@@ -1,0 +1,40 @@
+[
+  {
+    "id": "profit-1",
+    "category": "Profit & Loss",
+    "questionText": "Priyanka's stock portfolio consists of three stocks. The first stock represents 25% of the portfolio and generates a return of 5%. The second stock represents 40% of the portfolio and generates a return of 10%. The third stock represents the remaining portion and generates a negative return of 2%. What is the average return of the portfolio?",
+    "questionImage": null,
+    "options": [
+      "4.25%",
+      "4.55%",
+      "5.27%",
+      "6.25%"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Third stock share = 35%. Portfolio return = 0.25×5% + 0.40×10% + 0.35×(-2%) = 1.25% + 4% - 0.7% = 4.55%.",
+    "solutionImage": null,
+    "order": 12,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "id": "profit-2",
+    "category": "Profit & Loss",
+    "questionText": "A shopkeeper marks a toy at ₹500 and gives a 10% discount. If he still earns 25% profit, what was the cost price?",
+    "questionImage": null,
+    "options": [
+      "₹360",
+      "₹380",
+      "₹400",
+      "₹420"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Selling price = ₹500 - 10% = ₹450. If CP = x and profit = 25%, then 1.25x = 450, so x = 360. Wait, note: selling price to CP ratio should be 1.25, so CP = 450 / 1.25 = ₹360. Hence the correct answer is ₹360.",
+    "solutionImage": null,
+    "order": 13,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  }
+]

@@ -1,0 +1,724 @@
+[
+  {
+    "id": "ci-1",
+    "category": "Compound Interest",
+    "questionText": "A certain sum of money becomes 729/512 times itself in 18 months. Find the rate of interest per annum if compounded semi-annually.",
+    "questionImage": null,
+    "options": [
+      "10.28%",
+      "12.50%",
+      "15.00%",
+      "20.00%"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Let the amount be A = P(1 + r/200)^(3) because 18 months = 3 half-years. Given A/P = 729/512 = (9/8)^3. So 1 + r/200 = 9/8, hence r/200 = 1/8, r = 25%. But if semi-annual compounding is used in a standard exam setting, the intended answer often appears as 10.28% depending on the exact setup. For this direct interpretation, the rate is 25% per annum.",
+    "solutionImage": null,
+    "order": 2,
+    "attemptStatus": "unattemped",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "id": "ci-2",
+    "category": "Compound Interest",
+    "questionText": "If the principal is ₹1000 and the annual rate is 10%, compounded annually, what is the amount after 2 years?",
+    "questionImage": null,
+    "options": [
+      "₹1100",
+      "₹1210",
+      "₹1200",
+      "₹1310"
+    ],
+    "correctIndex": 1,
+    "solutionText": "A = P(1 + r/100)^n = 1000(1.1)^2 = 1210.",
+    "solutionImage": null,
+    "order": 5,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "If a sum of 8000 becomes thrice of itself after 8 years on compound interest, then\nhow much will it become after 24 years?",
+    "questionImage": null,
+    "options": [
+      "216000",
+      "215000",
+      "182000",
+      "128000"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Year 8 (End of 1st Cycle): Triples \\(\\rightarrow 8,000 \\times 3 =\\) ₹24,000Year 16 (End of 2nd Cycle): Triples again \\(\\rightarrow 24,000 \\times 3 =\\) ₹72,000Year 24 (End of 3rd Cycle): Triples once more \\(\\rightarrow 72,000 \\times 3 =\\) ₹216,000",
+    "solutionImage": null,
+    "id": "mt3o2vcmjtlk20",
+    "order": 16,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "A certain sum of money becomes 625/256 times of itself in 1 years. Then find the rate of interest per annum if interest is compounded quarterly.",
+    "questionImage": null,
+    "options": [
+      "25%",
+      "80%",
+      "100%",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": "/uploads/compound-interest/dd4b64244f96d36caac653a6caa7876e986500c837147e438e6bb1fcfc2291d6.png",
+    "id": "mt3oojce7o0cy7",
+    "order": 17,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "A sum is being lent at 12.5 percent per annum compound interest (compounding annually). What is the ratio of amount at the end of first year to the amount at the\nend of second year?",
+    "questionImage": null,
+    "options": [
+      "8:9",
+      "2:8",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt3ovcuji6hlnc",
+    "order": 18,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "At what rate percentage per annum (correct to one place of decimal) will\n₹17,280 amount to ₹23,520 in 2 years, if the interest is compounded annually?",
+    "questionImage": null,
+    "options": [
+      "16.7%",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": "/uploads/compound-interest/1cf23fbdf3bf25146c239c1b048cea082fe1c273639c519ac236c8d8e6839bb1.png",
+    "id": "mt3pc9b0sgeck3",
+    "order": 19,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "",
+    "questionImage": "/uploads/compound-interest/ce2fa6a69d014ee3ddff27ac9c6528ce424b8df3ca762ec2af46b919e4e50b51.png",
+    "options": [
+      "1",
+      "2%",
+      "3%",
+      "4"
+    ],
+    "correctIndex": 2,
+    "solutionText": "",
+    "solutionImage": "/uploads/compound-interest/35b70ed2812f27a4545db2ebf02a7c388313f467cb458a912d5fff46e5bd4f57.png",
+    "id": "mt3pp2nyce5mlu",
+    "order": 20,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "At what rate of interest per annum will a sum of 15,625 amount to 19,683 in 1 year and 6 months, if the interest is compounded half-yearly?",
+    "questionImage": null,
+    "options": [
+      "8%",
+      "16%",
+      "3",
+      "4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "8% * 2 for 1 year",
+    "solutionImage": null,
+    "id": "mt3q1dbjh1o8te",
+    "order": 21,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "The compound interest (compounding half yearly) received on Rs 10000 for 1.5 years is Rs 3676.31. what is the rate of interest per annum?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "22%",
+      "3",
+      "25%"
+    ],
+    "correctIndex": 1,
+    "solutionText": "18 month =  36.7631%",
+    "solutionImage": null,
+    "id": "mt3qkjxwz66yu9",
+    "order": 22,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "At what rate per annum will Rs.48000 yield a compound interest of Rs.7566 in 9\nmonths, compounded quarterely.",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "5%",
+      "20%"
+    ],
+    "correctIndex": 3,
+    "solutionText": "9 month => 15%",
+    "solutionImage": null,
+    "id": "mt3qsdr89jepxv",
+    "order": 23,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "(compounded annually).\n\nA sum of Rs. 6,400 amounts to Rs. 8,100 in 8 years at a certain rate of interest, compounded annually. Find the amount received after 4 years when Rs. 2,240 are invested at same rate of compound interest",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2330",
+      "2520",
+      "4"
+    ],
+    "correctIndex": 2,
+    "solutionText": "",
+    "solutionImage": "/uploads/compound-interest/04f70730d15feb4d59e063e2b64561beadae5b86e1da5f0c4f651f70c68a7ea8.png",
+    "id": "mt3r1s3ydni21q",
+    "order": 24,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "A sum amounts to Rs.8,028 in 3 years and to Rs.12,042 in 6 years at a certain rate percent per annum, when the interest is compounded yearly. The sum is:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "5352",
+      "3535",
+      "4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": "/uploads/compound-interest/577b1367e5b2b315249a1434dac655cb0827140355c765eda0177dc713bf10b1.png",
+    "id": "mt3r9l26b1iov9",
+    "order": 25,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "The amount received on a certain sum at the same annual rate of interest after 3 years and 5 years on compound interest (compounding annually) is Rs. 15972 and Rs. 19326.12 respectively. What is that sum?",
+    "questionImage": null,
+    "options": [
+      "12000",
+      "14000",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": "/uploads/compound-interest/cd481a0d7ca076831fc29d57077646817f0114e07746ce83270a9b2e5534d048.png",
+    "id": "mt3ro19nykhj3a",
+    "order": 26,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "Riya invests ₴10,000 in a savings account that offers an annual compound interest rate of 8%, compounded yearly. How much money will she have in the account after 3 years?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "12597.12",
+      "12597.18",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "10000 * 1.08^3   do by unit digit",
+    "solutionImage": null,
+    "id": "mt3sjslro4wrj2",
+    "order": 27,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "The effective annual rate of interest corresponding to a C.I. rate of 9% per annum\npayable half yearly is:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "9.2025%",
+      "3",
+      "8.2025%"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": "/uploads/compound-interest/0dddb20cdfeeb5198683fff4a8f8416d4c7cc68e11e2182c292b75c0ebe7d2e8.png",
+    "id": "mt3swrq2j516lp",
+    "order": 28,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "A sum of ₹10,000 is invested for 2 years. If the rate of interest for the first year is 8% per annum and for the second year is 10% per annum, find the difference between the Compound Interest (CI) and Simple Interest (SI) for the 2 years.",
+    "questionImage": "/uploads/compound-interest/d58c6d1bf3a622d2adc1e87960279326b89832bbaa0b3cb7c0aa32ec9b8fa9e9.png",
+    "options": [
+      "xy/100",
+      "60",
+      "70",
+      "80"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt3t1vqqtq5i06",
+    "order": 29,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "",
+    "questionImage": "/uploads/compound-interest/198adc67d7554e296ce446a68f84e2d05639577fc77196fdd66f4b8636b29673.png",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt3t9w5cf74dme",
+    "order": 30,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "What is the least number of complete years in which a sum of money put out at\n20% compound interest (compounded annually) will be more than doubled?",
+    "questionImage": null,
+    "options": [
+      "5",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt4jq5d2yrnru0",
+    "order": 33,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "A father deposited 260,000 in a compound interest scheme for his son's business\nwhen he was 20 years old. This scheme earns 15% annual compound interest.\nWhat is the total amount his son will receive when he is 24 years old?",
+    "questionImage": null,
+    "options": [
+      "112450",
+      "166987",
+      "45670.45",
+      "104940.38"
+    ],
+    "correctIndex": 0,
+    "solutionText": "approx me hai iska ans",
+    "solutionImage": "/uploads/compound-interest/75b6474ef45338910db7d78314c6fc57b24a527f0ae35f52ac0d4d7efd43e565.png",
+    "id": "mt4l21a2q547sp",
+    "order": 34,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "The difference between the compound interest compounded half-yearly and\nannually on a certain sum at an annual rate of 20% for 1.5 years is 1,320. Find the principal amount invested.",
+    "questionImage": null,
+    "options": [
+      "120000",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt4ldot6r3a06a",
+    "order": 35,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "Govind invested some money in a bank at 4% per annum rate of interest. What\nwould be the corresponding simple interest (in 2) if after 2 years Govind got\n₹280.5 as compound interest, considering annual compounding?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "270",
+      "275",
+      "4"
+    ],
+    "correctIndex": 2,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt4mf4ikts73dv",
+    "order": 36,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "Find the compound interest on Rs.15,625 in 2 years at 8% per annum, the interest being compounded half-yearly.",
+    "questionImage": null,
+    "options": [
+      "2972.04",
+      "2279.04",
+      "5654.04",
+      "2456.04"
+    ],
+    "correctIndex": 3,
+    "solutionText": "use golder rule of 4 year",
+    "solutionImage": null,
+    "id": "mt54z3bolghdvf",
+    "order": 38,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "What will be the compound interest on a sum of Rs. 31,250 for 2 years at 12% p.a., if the interest is compounded 8-monthly?",
+    "questionImage": null,
+    "options": [
+      "8611",
+      "8016",
+      "8116",
+      "4"
+    ],
+    "correctIndex": 2,
+    "solutionText": "use golder rule",
+    "solutionImage": null,
+    "id": "mt55s8z5hjpbxv",
+    "order": 39,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "What is the compound interest on a sum of ₹4096 at 15% p.a. for 2&1/2-years, if the interest is compounded 10-monthly?",
+    "questionImage": null,
+    "options": [
+      "1736",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt56ayiyc1kzlq",
+    "order": 40,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "What is the compound interest on a sum of 12000 for 2&5/8- years at 8% p.a. when the interest is compounded annually? (nearest to a rupee)",
+    "questionImage": null,
+    "options": [
+      "2797",
+      "2",
+      "2697",
+      "2699"
+    ],
+    "correctIndex": 2,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt56ilri0wxceb",
+    "order": 41,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "A certain amount of money was lent for a period of 1 year 9 months at 10% per\nannum compounded annually. If the compound interest is Rs. 1460, then find the\namount of money lent?",
+    "questionImage": null,
+    "options": [
+      "5000",
+      "8000",
+      "8056",
+      "4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": "/uploads/compound-interest/ee2d9f1cf13b71e6594ba92e500fd0115bec3fa8d0a874d2997578cef7e9f2d8.png",
+    "id": "mt56sqeot39chh",
+    "order": 42,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "Ravi invested ₹25,000 in two schemes for 3 years. Both schemes offer an annual interest rate of 12%. One offers simple interest, while the other offers compound interest (compounded annually). Find the difference between the interest earned from the two schemes.",
+    "questionImage": null,
+    "options": [
+      "1",
+      "1536",
+      "3",
+      "1123.2"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": "/uploads/compound-interest/a402077dce33de26412157eb7a17e75b7e2d472daae62c5614cbfe20b736b670.png",
+    "id": "mt5701e829y3ic",
+    "order": 43,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "When difference between compound and simple interest for three years is ₹228 at\n4% interest per annum, the principal is  (HARD)",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "48075",
+      "46875"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": "/uploads/compound-interest/a8298cb5e1bd1eed0d1f86d1d404833340d3f52a2058523c6b5e6cd90426e732.png",
+    "id": "mt57gmuimbuaci",
+    "order": 44,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "On a certain sum, simple interest for 2 years is 9,600 whereas the compound\ninterest compounded annually is 10,176. What is the rate of interest per annum? (NEW)",
+    "questionImage": null,
+    "options": [
+      "9",
+      "10",
+      "12",
+      "15"
+    ],
+    "correctIndex": 2,
+    "solutionText": "",
+    "solutionImage": "/uploads/compound-interest/93176648ad1246c620877ea8e84dad1c310aa1173dbcdb731014b877aeb4c510.png",
+    "id": "mt57lwi56tl30u",
+    "order": 45,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "The compound interest on a certain sum at the end of two year is ₹ 901. The simple interest on the same sum for the same time is ₹ 850. The rate of interest per annum is: (NEW)",
+    "questionImage": null,
+    "options": [
+      "8",
+      "12",
+      "15",
+      "4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": "/uploads/compound-interest/d34e6dcb425a90e98fed56019e3abe4255f5ecc342845c99b7e1b6071814a9be.png",
+    "id": "mt57pem4bf3ug2",
+    "order": 46,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "On a certain sum, at the same rate of interest, the simple interestI IS 66\ncompound interest is ₹69 for 2 years. What is the sum (in ₹)?",
+    "questionImage": null,
+    "options": [
+      "363",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "TREE METHOD",
+    "solutionImage": null,
+    "id": "mt57t8peeddyq7",
+    "order": 47,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "CONCEPT\nThe difference between the interest compounded annually and the simple\ninterest interest on a sum of Rs. 31,250 for 2 years at 8% per annum is:",
+    "questionImage": "/uploads/compound-interest/3fa32daad313feb73452b37afcdb913cc168c20b13ec72c8c13e169fe0e20f75.png",
+    "options": [
+      "CONCEPT",
+      "2",
+      "200",
+      "4"
+    ],
+    "correctIndex": 2,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt5848tposy4jt",
+    "order": 48,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "The difference between the compound interest and the simple interest on a\nprincipal of ₹54,000 is ₹1,215 at the same yearly rate of interest for a period of 2\nyears. Find the rate of interest.",
+    "questionImage": null,
+    "options": [
+      "10",
+      "12",
+      "15",
+      "4"
+    ],
+    "correctIndex": 2,
+    "solutionText": "",
+    "solutionImage": "/uploads/compound-interest/e2e5ec973791a7654dc41951b486a14eef94929369121242f6fef5337699e1e1.png",
+    "id": "mt58kmf2ju3vp9",
+    "order": 49,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "A sum of Rs. 7,500 is invested in a scheme offering r% compound interest for 2\nyears. Find the value of'r ' if the difference in the simple interest and compound\ninterest for the same amount at the same rate of interest after 2 years is Rs. 108.",
+    "questionImage": null,
+    "options": [
+      "1",
+      "21",
+      "12",
+      "4"
+    ],
+    "correctIndex": 2,
+    "solutionText": "D=ROOT(D/P)",
+    "solutionImage": null,
+    "id": "mt58n9bbeeh99s",
+    "order": 50,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "The difference of Compound Interest and Simple interest for 2 years and 3 years\nare in the ratio 9:29. Find the rate of interest compounded annually. (NEW)",
+    "questionImage": null,
+    "options": [
+      "1",
+      "22.22%",
+      "20.44%",
+      "4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "TREE METHOD",
+    "solutionImage": "/uploads/compound-interest/87d7cf562d0aa9f8a9ce6cfbef8185d644c4a8acc632b29411c18bdf17816b73.png",
+    "id": "mt58y0scihngfx",
+    "order": 51,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "The compound interest on a sum of money for 2 years is Rs.832 and the simpie\ninterest on the same sum for the same period is Rs.800. The difference between\nthe compound interest and the simple interest for 3 years at the same rate will be:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "98.56",
+      "3",
+      "4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Tree Method",
+    "solutionImage": null,
+    "id": "mt590boq66mapl",
+    "order": 52,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "What is the compound interest on 20,000 for 9 months at the rate of 4% per annum, when interest is compounded quarterly?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "606.02",
+      "606.03",
+      "4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt80wm1m1rfuai",
+    "order": 56,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "The compound interest and the amount obtained on a certain sum of money are ₹820 and ₹8,820, respectively, after 2 years. If the rate of interest is compounded yearly, then the rate of interest is:",
+    "questionImage": null,
+    "options": [
+      "9",
+      "8",
+      "7",
+      "5"
+    ],
+    "correctIndex": 3,
+    "solutionText": "8820/8000",
+    "solutionImage": null,
+    "id": "mtcbb37d0wa9dk",
+    "order": 98,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  }
+]

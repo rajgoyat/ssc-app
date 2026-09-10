@@ -1,0 +1,21 @@
+[
+  {
+    "category": "Position",
+    "questionText": "7 girls P, Q, R, S, T, U and V are sitting around a circular\ntable facing towards the centre (not necessarily in the\nsame order). S is next to both P and V. V is second to the left of U. T is second to the right of U. R is not the\nimmediate neighbour of V. Who is sitting to the\nimmediate right of R?",
+    "questionImage": null,
+    "options": [
+      "P",
+      "Q",
+      "S",
+      "T"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mtbe8bjb9pm0d4",
+    "order": 35,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  }
+]

@@ -1,0 +1,21 @@
+[
+  {
+    "category": "Time & Work",
+    "questionText": "A is 1.5 times efficient as B and therefore takes 8 days less than B to complete a work. If A and B work on alternate days and A works on the first day, then in how many days will the work be completed?",
+    "questionImage": null,
+    "options": [
+      "19",
+      "21",
+      "19.5",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": "/uploads/time-work/d748b5fdc9a83137041dbc637eafe8985f38ccee24011f6d96852033b8e57f3d.png",
+    "id": "mt84qvi3std1ey",
+    "order": 74,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  }
+]

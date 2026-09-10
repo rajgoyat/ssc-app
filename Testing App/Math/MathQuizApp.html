@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Math Bank</title>
+  <style>
+    /* ===== MODERN SCROLLBAR ===== */
+    * { scrollbar-width: thin; scrollbar-color: #6366f1 #0B0F17; }
+    *::-webkit-scrollbar { width: 10px; height: 10px; }
+    *::-webkit-scrollbar-track { background: linear-gradient(180deg, #0B0F17 0%, #161d2b 100%); }
+    *::-webkit-scrollbar-thumb { background: linear-gradient(180deg, #6366f1 0%, #4f46e5 100%); border-radius: 10px; border: 2px solid #0B0F17; transition: all 0.3s ease; }
+    *::-webkit-scrollbar-thumb:hover { background: linear-gradient(180deg, #818cf8 0%, #6366f1 100%); box-shadow: 0 0 12px rgba(99, 102, 241, 0.5); }
+  </style>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.26.5/babel.min.js"></script>
+</head>
+<body style="margin:0;background:#0B0F17">
+  <div id="root"></div>
+  <script type="text/babel" data-presets="react" src="data/algebra.js"></script>
+  <script type="text/babel" data-presets="react" src="data/algebra_more.js"></script>
+  <script type="text/babel" data-presets="react" src="data/compound_interest.js"></script>
+  <script type="text/babel" data-presets="react" src="data/discount.js"></script>
+  <script type="text/babel" data-presets="react" src="data/geometry.js"></script>
+  <script type="text/babel" data-presets="react" src="data/geometry_more.js"></script>
+  <script type="text/babel" data-presets="react" src="data/mixture.js"></script>
+  <script type="text/babel" data-presets="react" src="data/percentage.js"></script>
+  <script type="text/babel" data-presets="react" src="data/profit.js"></script>
+  <script type="text/babel" data-presets="react" src="data/progression.js"></script>
+  <script type="text/babel" data-presets="react" src="data/time_work.js"></script>
+  <script type="text/babel" data-presets="react" src="data/trigonometry.js"></script>
+  <script type="text/babel" data-presets="react" src="MathQuizApp.jsx"></script>
+  <script src="/common-nav.js"></script>
+</body>
+</html>

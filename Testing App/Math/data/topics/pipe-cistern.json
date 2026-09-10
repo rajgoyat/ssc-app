@@ -1,0 +1,78 @@
+[
+  {
+    "id": "tw-1",
+    "category": "Pipe & Cistern",
+    "questionText": "A tank is connected to 17 taps, some inlet and some outlet taps. Each inlet tap can fill the tank in 24 minutes, and each outlet tap can empty the full tank in 30 minutes. If all taps are opened simultaneously, the tank will be empty in 24 minutes. What is the number of outlet taps?",
+    "questionImage": null,
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correctIndex": 2,
+    "solutionText": "",
+    "solutionImage": "/uploads/time-work/0da6576ccf173a6e8c2d03cac4447d0915a457c6633028cc6cf993397bb44aa5.png",
+    "order": 15,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Pipe & Cistern",
+    "questionText": "Pipes A and B can fill a tank in 12 hours and 16 hours respectively and pipe C can empty the full tank in 24 hours. All three pipes are opened toghether, but after 4 hours pipe B is closed. In how many hours, the empty tank will be completely filled?",
+    "questionImage": null,
+    "options": [
+      "56",
+      "18",
+      "46",
+      "60"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt9fzjodkx0vlo",
+    "order": 80,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Pipe & Cistern",
+    "questionText": "A pipe can fill a tank in 30 minutes. Due to two leakages A and B, the filled tank\nwould be drained off in 3/2 hour and 5/4 hour, respectively. How long will it take\nto fill the tank if the pipes A and B are left open?",
+    "questionImage": null,
+    "options": [
+      "75/8",
+      "81/8",
+      "15/8",
+      "88/8"
+    ],
+    "correctIndex": 2,
+    "solutionText": "{Net Rate} = 2 - {2}{3} - {4}{5}$$",
+    "solutionImage": null,
+    "id": "mtcbnxf9kzupbd",
+    "order": 99,
+    "attemptStatus": "correct",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Pipe & Cistern",
+    "questionText": "A water tank has inlets of two types A and B. All inlets of type A, when open, bring in water at the same rate. All inlets of type B, when open, bring in water at\nthe same rate. The empty tank is completely filled in 30 minutes if 10 inlets of\ntype A and 45 inlets of type B are open, and in 1 hour if 8 inlets of type A and 18\ninlets of type B are open. In how many minutes will the empty tank get\ncompletely filled if 7 inlets of type A and 27 inlets of type B are open?",
+    "questionImage": null,
+    "options": [
+      "11 min",
+      "48 min",
+      "46 min",
+      "19 min"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mth8k34g2jb4se",
+    "order": 103,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  }
+]

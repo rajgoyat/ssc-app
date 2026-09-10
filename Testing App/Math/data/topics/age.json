@@ -1,0 +1,21 @@
+[
+  {
+    "category": "Age",
+    "questionText": "P got married 15 years ago. Today, her age is 1&3/5 times her age at the\ntime of her marriage. At present, her son's age is 1/5 of her age. What\nwas her son's age 4 years ago as a fraction of P's age at that time?",
+    "questionImage": null,
+    "options": [
+      "6/9",
+      "3",
+      "7",
+      "1/9"
+    ],
+    "correctIndex": 3,
+    "solutionText": "do by ration method 5 - 8\n3 unit = 15",
+    "solutionImage": null,
+    "id": "mtbigob0p83n4k",
+    "order": 86,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "category": "Coordinate G",
+    "questionText": "For which value of 'g' do the linear graph of 6x + 12y + 9 = 0 and 2x + gy + 3 = 0\nhave infinitely many solutions?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "9",
+      "3",
+      "4"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt8346l38lk54z",
+    "order": 65,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Coordinate G",
+    "questionText": "What is the equation of a line of slope 1/3 and y-intercept 5?",
+    "questionImage": "/uploads/coordinate-g/8cf75e801d0c42c97e4ce10e9401ee0c71b3bc61a5b30b3adc0ccc97a7c89b0c.png",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "y = mx + c",
+    "solutionImage": null,
+    "id": "mt84j8u59udvcj",
+    "order": 73,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "category": "Speed & Distance",
+    "questionText": "A person travelled a distance of 150 km and then returned to the starting point.\nThe time taken for the outward journey was 2&1/2 hours more than that for the return journey. His speed for the return journey was 10 km/h more than that for the outward journey. His speed for the return journey, in km/h, was:",
+    "questionImage": null,
+    "options": [
+      "46",
+      "17",
+      "15",
+      "30"
+    ],
+    "correctIndex": 3,
+    "solutionText": "dist =( s1 - s2 / s1 * S2  )     * TIME DIFF",
+    "solutionImage": null,
+    "id": "mtbj0daepj1s0z",
+    "order": 88,
+    "attemptStatus": "correct",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Speed & Distance",
+    "questionText": "Ashok runs 2&2/3 times as fast as Bharat. If Ashok gives Bharat a head start of 160 m, then how far must the winning post be so that Ashok and Bharat can reach it at the same time?",
+    "questionImage": null,
+    "options": [
+      "256 m",
+      "372 m",
+      "123 m",
+      "474 m"
+    ],
+    "correctIndex": 0,
+    "solutionText": "{Distance by Ashok} : {Distance by Bharat} = 8 : 3",
+    "solutionImage": null,
+    "id": "mtbs2njs0cyn1d",
+    "order": 90,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  }
+]

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Study App Hub</title>
+  <style>
+    :root { --bg: #0b1018; --panel: #121b27; --line: #263548; --text: #edf4f7; --muted: #9aabba; --accent: #aa58e0; }
+    * { box-sizing: border-box; }
+    
+    /* ===== MODERN SCROLLBAR ===== */
+    * { scrollbar-width: thin; scrollbar-color: #aa58e0 #0b1018; }
+    *::-webkit-scrollbar { width: 10px; height: 10px; }
+    *::-webkit-scrollbar-track { background: linear-gradient(180deg, #0b1018 0%, #121b27 100%); }
+    *::-webkit-scrollbar-thumb { background: linear-gradient(180deg, #aa58e0 0%, #7d3fa0 100%); border-radius: 10px; border: 2px solid #0b1018; transition: background 0.3s ease; }
+    *::-webkit-scrollbar-thumb:hover { background: linear-gradient(180deg, #c96ff7 0%, #aa58e0 100%); box-shadow: 0 0 12px rgba(170, 88, 224, 0.4); }
+    
+    body { margin: 0; min-height: 100vh; color: var(--text); background: radial-gradient(circle at 15% 0%, #17333b, transparent 36%), radial-gradient(circle at 100% 100%, #25253a, transparent 32%), var(--bg); font-family: Georgia, serif; }
+    main { width: min(1080px, 100%); margin: 0 auto; padding: 10px 24px; }
+    .eyebrow { color: var(--accent); font: 700 11px monospace; letter-spacing: .18em; text-transform: uppercase; }
+    h1 { max-width: 650px; margin: 12px 0 10px; font-size: clamp(38px, 7vw, 76px); line-height: .95; }
+    .intro { max-width: 620px; color: var(--muted); font-size: 18px; line-height: 1.5; }
+    .apps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 42px; }
+    a { display: block; min-height: 190px; padding: 24px; color: inherit; text-decoration: none; background: rgba(18, 27, 39, .88); border: 1px solid var(--line); transition: transform .2s ease, border-color .2s ease, background .2s ease; }
+    a:hover { transform: translateY(-4px); border-color: var(--accent); background: #172534; }
+    .number { color: var(--accent); font: 700 12px monospace; }
+    h2 { margin: 34px 0 10px; font-size: 30px; }
+    p { color: var(--muted); line-height: 1.45; }
+    .open { margin-top: 28px; color: var(--accent); font: 700 12px monospace; letter-spacing: .08em; text-transform: uppercase; }
+    @media (max-width: 680px) { main { padding: 32px 16px; } .apps { grid-template-columns: 1fr; } a { min-height: 150px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">One workspace / four focused banks</div>
+    <h1>Study App Hub</h1>
+    <p class="intro">Ek hi address se English, General Knowledge, Math aur Reasoning open karein. Har app ka data, upload folder aur source files apni jagah alag rahenge.</p>
+    <section class="apps" aria-label="Study apps">
+      <a href="/english/">
+        <div class="number">01 / LANGUAGE</div><h2>English</h2><p>Vocabulary, meanings, examples, synonyms and antonyms.</p><div class="open">Open app -></div>
+      </a>
+      <a href="/gk/">
+        <div class="number">02 / KNOWLEDGE</div><h2>G.K.</h2><p>Static GK and current affairs with the existing question editor.</p><div class="open">Open app -></div>
+      </a>
+      <a href="/math/">
+        <div class="number">03 / QUANTITATIVE</div><h2>Math</h2><p>Topic-wise math question bank, tests and image uploads.</p><div class="open">Open app -></div>
+      </a>
+      <a href="/reasoning/">
+        <div class="number">04 / LOGIC</div><h2>Reasoning</h2><p>Reasoning practice bank with its own topics and uploads.</p><div class="open">Open app -></div>
+      </a>
+    </section>
+  </main>
+</body>
+</html>

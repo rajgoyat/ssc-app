@@ -1,0 +1,59 @@
+[
+  {
+    "category": "HCF & LCM",
+    "questionText": "The length and the breadth of the floor of a rectangular hall are 98 feet and 70 feet, respectively. If all persons in the hall are allotted equal square spaces as workstations, what will be the area of the largest such workstation that can be allotted to any user, assuming no space in the hall is left unoccupied?",
+    "questionImage": null,
+    "options": [
+      "14",
+      "196",
+      "721",
+      "541"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mtavhwr91tojhz",
+    "order": 85,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "HCF & LCM",
+    "questionText": "Find the smallest number that leaves a remainder of 4 on division by 5, 5\non division by 6, 6 on division by 7, 7 on division by 8 and 8 on division by 9?",
+    "questionImage": null,
+    "options": [
+      "2115",
+      "2418",
+      "2119",
+      "2519"
+    ],
+    "correctIndex": 3,
+    "solutionText": "N = LCM(5, 6, 7, 8, 9) - 1\n1 is the difference b/w quotient and rem",
+    "solutionImage": null,
+    "id": "mtbiqoq1xg6mm2",
+    "order": 87,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "HCF & LCM",
+    "questionText": "When 1272, 2636, and 4209 are divided by the greatest number x, the remainder in each case is y. What is the value of (3x - 14y)?",
+    "questionImage": null,
+    "options": [
+      "-63",
+      "-65",
+      "36",
+      "46"
+    ],
+    "correctIndex": 0,
+    "solutionText": "The greatest number = x = HCF [(2636 - 1272), (4209 - 2636), (4209 - 1272)]\nx = HCF(1364, 1573, 2937)\nx=11",
+    "solutionImage": null,
+    "special": true,
+    "id": "mtikxq87ejyv7p",
+    "order": 110,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  }
+]

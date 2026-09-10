@@ -1,0 +1,116 @@
+[
+  {
+    "category": "CP & SP",
+    "questionText": "A grocer purchased 10 kg of rice for ₹700. He spends some amount on transportation and then sells it for ₹1,400. If the percentage of profit made by the grocer is 30%, then what is the amount (in ₹) he spends on transportation? (Round off to the nearest integer)",
+    "questionImage": null,
+    "options": [
+      "703",
+      "281",
+      "376",
+      "873"
+    ],
+    "correctIndex": 2,
+    "solutionText": "130% = 1400",
+    "solutionImage": null,
+    "id": "mtc91dmfmv1yqw",
+    "order": 93,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "CP & SP",
+    "questionText": "On selling a wardrobe at ₹3,437, the value of gain is 75% more than the value of loss incurred on selling it at ₹3,338. In order to gain 50%, find the selling price (in ₹).",
+    "questionImage": null,
+    "options": [
+      "5061",
+      "8665",
+      "2131",
+      "9692"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mti0koalp9axqi",
+    "order": 107,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "CP & SP",
+    "questionText": "Jitesh sold an article at a loss of 11%. If he had bought the item at 5% less and had sold it for ₹739 more, then he would have gained 20%. Find the cost price (in ₹) of the article.",
+    "questionImage": null,
+    "options": [
+      "1867",
+      "2956",
+      "3457",
+      "4655"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Fast approach for exam (30 sec method):\n\nLoss% se SP1 % nikal lo → 100 – 11 = 89%\nNew CP = 100 – 5 = 95%\nGain% new CP pe lagao → 95 × 1.20 = 114%\nDifference = 114 – 89 = 25%\n25% = 739 → CP (100%) = 739/25 × 100 = ₹2956",
+    "solutionImage": null,
+    "special": true,
+    "id": "mti1pb86ymsjuz",
+    "order": 109,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "CP & SP",
+    "questionText": "One type of pulses is sold for ₹72 per kg at a 20% profit. Another type is sold for ₹60 per kg at a 25% profit. These two varieties are mixed in the ratio 3:1, and the mixture is sold at ₹68.4 per kg. What is the overall profit percentage?",
+    "questionImage": null,
+    "options": [
+      "10 %",
+      "20 %",
+      "30 %",
+      "40 %"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": "/uploads/cp-sp/0a53271cedb252b22820613d28225a659db1aa488e29da3cb2b9f676b57585c1.png",
+    "special": false,
+    "id": "mttuchsa30g34o",
+    "order": 189,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "CP & SP",
+    "questionText": "The cost price of some table lamps is 25,000. The shopkeeper will get 15,000\nmore If he sells these table lamps for 1,200 per lamp instead of 900 per lamp. Find the selling price of 23 table lamps if he earned 21% profit.",
+    "questionImage": null,
+    "options": [
+      "14917",
+      "15913",
+      "17613",
+      "13915"
+    ],
+    "correctIndex": 3,
+    "solutionText": "15000= n * 300   n=total lamps",
+    "solutionImage": "/uploads/cp-sp/e1c49a14c6221dd9e263093a5a4fb87f2d97a8677dfb12c32bade29bcca48a71.png",
+    "special": false,
+    "id": "mttui16jkld12e",
+    "order": 190,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "CP & SP",
+    "questionText": "A trader lost 5% by selling a shirt for 850. He will gain x% by selling it for ₹1,530. The value of x is:",
+    "questionImage": null,
+    "options": [
+      "57%",
+      "89%",
+      "38%",
+      "71%"
+    ],
+    "correctIndex": 3,
+    "solutionText": "simple  850 ki 95% hai  1530 ki value nikalni hai",
+    "solutionImage": null,
+    "special": false,
+    "id": "mttvbigvweclxf",
+    "order": 191,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  }
+]

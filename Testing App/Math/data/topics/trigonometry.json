@@ -1,0 +1,173 @@
+[
+  {
+    "id": "tri-1",
+    "category": "Trigonometry",
+    "questionText": "If x = 2y/15, then what is the value of (x + y)?",
+    "questionImage": null,
+    "options": [
+      "15",
+      "12",
+      "10",
+      "8"
+    ],
+    "correctIndex": 1,
+    "solutionText": "The expression is incomplete in the question text, so the intended value cannot be uniquely determined from the given statement alone. For a typical pattern-based MCQ, the answer is selected as 12.",
+    "solutionImage": null,
+    "order": 60,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Trigonometry",
+    "questionText": "Then what is the value of cosec + cot?",
+    "questionImage": "/uploads/trigonometry/c59c6f90837faf723e7c7837269aecbd8fd410ceca87a1ad99a06214b3a89db6.png",
+    "options": [
+      "1",
+      "2x",
+      "3x",
+      "2x or 1/2x"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/pn6eEIS5OZc?si=_maljACTpvvLXzCe",
+    "solutionImage": "/uploads/trigonometry/52e60296ba77e1397c8c9e7f9a52d47d33b09244bf1383715466706e24efe8c8.png",
+    "id": "mt84e9dvcld6f7",
+    "order": 72,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Trigonometry",
+    "questionText": "What is the simplified value of (1 - sinA cosA) (sinA + cosA)?",
+    "questionImage": "/uploads/trigonometry/54d3e9fa51f426ea6e4a667ec06bbaa57da7cc8ddc326e734cc6e94997424613.png",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "1= s^2 + c^2  then formula of acube + bcube",
+    "solutionImage": null,
+    "id": "mt858p0v1coq7z",
+    "order": 76,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Trigonometry",
+    "questionText": "If tan^2 + cot^2 = 47 then sec cosec =?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "8",
+      "7",
+      "5"
+    ],
+    "correctIndex": 2,
+    "solutionText": "",
+    "solutionImage": "/uploads/trigonometry/9bcc985caa89698b79b1a8fba2b146df4a33140b05093a0b55e372ec83b5a2bc.png",
+    "id": "mt9g7cv5fbd7r3",
+    "order": 81,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Trigonometry",
+    "questionText": "If sec + tan = 5, then sine =",
+    "questionImage": null,
+    "options": [
+      "12/13",
+      "30/13",
+      "48/13",
+      "64/13"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Diya hai: sec θ + tan θ = 5 ... (1)\n\nStep 1: Identity use karo:\nsec²θ − tan²θ = 1\n⟹ (sec θ + tan θ)(sec θ − tan θ) = 1\n\nStep 2: Value daalo:\n5 × (sec θ − tan θ) = 1\n⟹ sec θ − tan θ = 1/5 ... (2)\n\nStep 3: (1) aur (2) ko add/subtract karo:\n\nAdd karne par:\n2 sec θ = 5 + 1/5 = 26/5\n⟹ sec θ = 13/5\n\nSubtract karne par:\n2 tan θ = 5 − 1/5 = 24/5\n⟹ tan θ = 12/5\n\nStep 4: sin θ nikaalo:\nsin θ = tan θ / sec θ = (12/5) ÷ (13/5) = 12/13\n\n✅ Answer: sin θ = 12/13",
+    "solutionImage": null,
+    "id": "mtcc8bzwhl13qn",
+    "order": 100,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Trigonometry",
+    "questionText": "If 45sine + 28cos=53, 0°<0<90°, then the value of tan is.",
+    "questionImage": null,
+    "options": [
+      "38/28",
+      "45/28",
+      "8/53",
+      "95/53"
+    ],
+    "correctIndex": 1,
+    "solutionText": "simple triplet",
+    "solutionImage": null,
+    "id": "mth7rqfxyev5ln",
+    "order": 102,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Trigonometry",
+    "questionText": "",
+    "questionImage": "/uploads/trigonometry/85859b979e27d84af9f162d9c796936502089fce09ffd4d93a2fc43114d2289f.png",
+    "options": [
+      "cosec sec^2",
+      "sin cos^2",
+      "sin sec^2",
+      "cosec cos^2"
+    ],
+    "correctIndex": 2,
+    "solutionText": "ssimple formula\nhttps://youtu.be/-ko5E0AESqs?si=pIwVi3aXo5fWOD4g&t=561",
+    "solutionImage": null,
+    "id": "mthdol1z9tpfm4",
+    "order": 106,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Trigonometry",
+    "questionText": "If (sin x + sin y) = a and (cos x + cos y) = b, then find the value of (sin x sin y + cos x cos y).",
+    "questionImage": "/uploads/trigonometry/9c8dd1104356b9654e2aeebcd2bf79232319d487f567a773ab588a3b57f14a87.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 2,
+    "solutionText": "simple square both side",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtimetuvf6wb8b",
+    "order": 114,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "questionText": "If sin5A = cos(A - 42°), where 5A is an acute angle, find the value of A.",
+    "questionImage": null,
+    "options": [
+      "42",
+      "54",
+      "55",
+      "22"
+    ],
+    "correctIndex": 3,
+    "solutionText": "Jab bhi $\\sin \\theta_1 = \\cos \\theta_2$ ho, toh dono angles ka sum $90^\\circ$ hota hai:",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtinyqej80dfj8",
+    "order": 117,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  }
+]

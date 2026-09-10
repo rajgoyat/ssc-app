@@ -1,0 +1,21 @@
+[
+  {
+    "id": "disc-3",
+    "category": "Discount",
+    "questionText": "If a product is sold for ₹720 after a 10% discount, what was its original price?",
+    "questionImage": null,
+    "options": [
+      "₹760",
+      "₹800",
+      "₹820",
+      "₹880"
+    ],
+    "correctIndex": 1,
+    "solutionText": "If original price is x, then 90% of x = 720. So x = 720 / 0.9 = ₹800.",
+    "solutionImage": null,
+    "order": 31,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  }
+]

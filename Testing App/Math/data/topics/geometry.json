@@ -1,0 +1,268 @@
+[
+  {
+    "id": "geom-1",
+    "category": "Geometry",
+    "questionText": "In triangle PQR, ∠R = 54°, the perpendicular bisector of PQ at S meets QR at T. If ∠TPR = 46°, then what is the value of ∠PQR?",
+    "questionImage": null,
+    "options": [
+      "40°",
+      "50°",
+      "60°",
+      "70°"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Using the geometry of the perpendicular bisector and the given angle relations, the angle at Q works out to 40°.",
+    "solutionImage": null,
+    "order": 6,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Geometry",
+    "questionText": "If the ratio of angles of a triangle are 1:5:6 then find the ratio of its circumradius\nand inradius.",
+    "questionImage": "/uploads/geometry/1fd2cff6b22765a3ffcc6a763b824baa2094cc1e8df40921256e21afaf0ec32e.png",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/sUor0VpVNio?si=I33Jn5ovNo9G519A&t=1530",
+    "solutionImage": null,
+    "id": "mt6oxuxq2sogt7",
+    "order": 53,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Geometry",
+    "questionText": "LEARN STAND RATION",
+    "questionImage": "/uploads/geometry/3bbfaac1ce0c7a7c8dc08ec16bc506de917cc4a6da6a1faee2c920dd22c7a289.png",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt6oyvg1lxwkfh",
+    "order": 54,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Geometry",
+    "questionText": "The line bisecting all the three angles of a triangle meets at a common point\nThis point is known as\ncertriod->median meeting pt\northocenter->all altitude meet",
+    "questionImage": null,
+    "options": [
+      "centroid",
+      "circum-center",
+      "certriod",
+      "in-center"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt82te2wgcw1uc",
+    "order": 63,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Geometry",
+    "questionText": "In the given figure, PQ is the diameter of the circle. What is the\ndegrees) of /QSR? (43 in the image)",
+    "questionImage": "/uploads/geometry/e81e440683a8aa5878be58e3249dd4babd835326c7e7dcc90a6be2d27e4160ec.png",
+    "options": [
+      "1",
+      "23",
+      "3",
+      "47"
+    ],
+    "correctIndex": 1,
+    "solutionText": "angle on the same arc are equal\nand semicircle - 90deg",
+    "solutionImage": null,
+    "id": "mt82yw1vy5f43p",
+    "order": 64,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Geometry",
+    "questionText": "If the sum of the areas of the circumcircle and the incircle of an equilateral\ntriangle is 770 cm2, then what is the area (in cm2) of the triangle?",
+    "questionImage": "/uploads/geometry/fa4c960878629562b3b0119906b62ede0c8bf5cec731c7e457649836288432c5.png",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": "/uploads/geometry/58626de39c8e63afe9a9b968e71fc035072cdf4cdded65b1ea78de52c39632b9.png",
+    "id": "mt84yr5k7d3tx5",
+    "order": 75,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Geometry",
+    "questionText": "Sides of a triangle are 9 cm, 6 cm and 5 cm. What is the value of the circumradius of this triangle?",
+    "questionImage": "/uploads/geometry/83b8c1693a71acbbd9e850fd119c3f2aac0ea5137e116693282f2571d792867d.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 2,
+    "solutionText": "abc/4area",
+    "solutionImage": null,
+    "id": "mtawazoc366ftp",
+    "order": 87,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Geometry",
+    "questionText": "X, Y, and Z are three equalateral triangles. The sum of the areas of X and Y is equal to the area of Z. If the side lengths of X and Y are 6 cm and 8 cm, respectively, then what is the length of Z?",
+    "questionImage": null,
+    "options": [
+      "10",
+      "59",
+      "20",
+      "26"
+    ],
+    "correctIndex": 0,
+    "solutionText": "simple formula",
+    "solutionImage": null,
+    "id": "mtc8rtdhquo6o7",
+    "order": 92,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Geometry",
+    "questionText": "Find the altitude to side AC of triangle with side AB = 20 cm, AC = 20 cm, BC =\n30 cm.",
+    "questionImage": null,
+    "options": [
+      "9 root7",
+      "7.5 root7",
+      "5 root7",
+      "8 root7"
+    ],
+    "correctIndex": 1,
+    "solutionText": "area = b/4 root me 4a sq - b sq  for sclane triangle\naltitude  = 1/2 root me 4 a sq - b sq",
+    "solutionImage": null,
+    "id": "mtcd69194wpn3d",
+    "order": 101,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Geometry",
+    "questionText": "In triangle ABC, A = 58°. If I is the incentre of the triangle, then the measure of angle BIC is:",
+    "questionImage": "/uploads/geometry/87d34a455a6df090cf8a22bdfaf62c050e6027d984544423d1a872f63ec3e8d5.png",
+    "options": [
+      "169 degree",
+      "56 degree",
+      "119 degree",
+      "40 degree"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Incentre (I)\n\nCircumcentre (O)\n\nOrthocentre (H)\n\nExcentre opposite A (I_A)",
+    "solutionImage": null,
+    "id": "mth9au7hs4yh8c",
+    "order": 105,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Geometry",
+    "questionText": "ABCD is a trapezium in which AB || DC, and E and F are the midpoints of the diagonals AC and BD, respectively. If AB = 30 cm, BC = 20 cm, DC = 86 cm, and AD = 84 cm, then what is the length (in cm) of EF?",
+    "questionImage": null,
+    "options": [
+      "48",
+      "44",
+      "28",
+      "40"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Length of EF =\n\n|DC - AB|/2",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtil1296fzjd13",
+    "order": 111,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "questionText": "P is any point inside the rectangle ABCD. If PA = 94 cm, PB = 61 cm, and PC = 67 cm, then the length of PD (in cm) is:",
+    "questionImage": null,
+    "options": [
+      "98",
+      "73",
+      "70",
+      "50"
+    ],
+    "correctIndex": 0,
+    "solutionText": "PA^2 + PC^2 = PB^2 + PD^2",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtil8sjf5m7006",
+    "order": 113,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "questionText": "In a quadrilateral ABCD, <A = 53° and 2B = 46°. The bisectors of <C and <D meet at O. What is the measure of <DOC?",
+    "questionImage": null,
+    "options": [
+      "47",
+      "36",
+      "56",
+      "38"
+    ],
+    "correctIndex": 3,
+    "solutionText": "mock 3 question 18",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtin81ogw1cotu",
+    "order": 116,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "questionText": "The vertices of a quadrilateral are A(2,3), B(5,7), c(10,6), and D(7,2). Find the area of the quadrilateral ABCD.",
+    "questionImage": null,
+    "options": [
+      "33 sq. units",
+      "32 sq. units",
+      "43 sq. units",
+      "23 sq. units"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": "/uploads/geometry/3e1935ec36c1ab00eb4408affd01f79b61a4f0371441f373f6611de322435e71.png",
+    "special": false,
+    "id": "mtttrsjholw7yu",
+    "order": 188,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  }
+]

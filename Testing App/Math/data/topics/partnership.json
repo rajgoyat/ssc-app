@@ -1,0 +1,21 @@
+[
+  {
+    "category": "Partnership",
+    "questionText": "A and B started a business by investing ₹70,000 each. After 10\nmonths, A invests an additional amount of ₹40,000. After 2 more months, B withdraws ₹20,000. After 2 more months, a third person, C joins the business and invests ₹40,000. If at the end of 2 years, C gets ₹7,500 as his share of profit, then what is A's share\nin the profit?",
+    "questionImage": null,
+    "options": [
+      "16000",
+      "42000",
+      "83000",
+      "39000"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": "/uploads/partnership/9de1a9b2e9fb72ae0c8f5133f561f1e529ad4883979146cedf143cbd9539f431.png",
+    "id": "mtc8hjrtxpc9cb",
+    "order": 91,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  }
+]

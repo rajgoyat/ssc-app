@@ -1,0 +1,1142 @@
+[
+  {
+    "category": "ABC123",
+    "questionText": "In a certain code language, 'MAY' is coded\nas '6' and 'MET' is coded as '7'. How will\n'HIM' be coded in that language?",
+    "questionImage": null,
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correctIndex": 1,
+    "solutionText": "digital sum of opposite",
+    "solutionImage": null,
+    "id": "mt2smez3dcwewh",
+    "order": 0,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Blood",
+    "questionText": "Rubi and Juhi are sisters. Krishna is Juhi's father's father. Reshma is the mother of Arvind. Arvind is the father of Rohit, who is the only brother of Rubi. How is Krishna related to Rohit?",
+    "questionImage": null,
+    "options": [
+      "Father's father",
+      "father",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Krishna is Rohit's father's father (grandfather).",
+    "solutionImage": null,
+    "id": "mt2ss964p06g5w",
+    "order": 1,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Series",
+    "questionText": "6216 :36 : : 4164 : 41 : : 3123 : ?",
+    "questionImage": null,
+    "options": [
+      "41",
+      "67",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "6216 so 216 div by 6",
+    "solutionImage": null,
+    "id": "mt2svfeqgwrhr6",
+    "order": 2,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Counting",
+    "questionText": "how many Quadrilateral",
+    "questionImage": "/uploads/counting/0fe4d805865ce3d0f3c60288ee61c2fa51ce6cf8833b8f2fc37409edd6e7318b.png",
+    "options": [
+      "21",
+      "22",
+      "23",
+      "4"
+    ],
+    "correctIndex": 2,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt2sygve0cej6e",
+    "order": 3,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Series",
+    "questionText": "",
+    "questionImage": "/uploads/series/74896e699f0cb6327b0cec90ea1f6a692d237aee3deb0a83cd2f913f8bac638a.png",
+    "options": [
+      "5",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtube.com/shorts/799glLgZdvE?si=CUz9qwwl8PWzOy9w",
+    "solutionImage": "/uploads/series/b9b851996ca3ca0f83bc2c8f10ff6640dc15d507c8be1ecc681708bd5f34314e.png",
+    "id": "mt45pc9zq5cabo",
+    "order": 5,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Series",
+    "questionText": "6, 23,111, 657, 4583, ?",
+    "questionImage": null,
+    "options": [
+      "35433",
+      "35895",
+      "37200",
+      "36639"
+    ],
+    "correctIndex": 3,
+    "solutionText": "*4   *5    *6......",
+    "solutionImage": null,
+    "id": "mt46bxzt7czy5y",
+    "order": 6,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Clock",
+    "questionText": "How much time (in minutes) (approximately)\nafter 2:00 PM will it take for the minute and\nhour hands of the clock to be at an angle of 90\ndegrees?",
+    "questionImage": null,
+    "options": [
+      "27",
+      "25",
+      "28",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt46e6l392ijda",
+    "order": 7,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Clock",
+    "questionText": "A clock is 3 minutes slow at 9:00 AM and 7\nminutes fast at 3:00 PM. At what time (in AM) will\nit show the correct time?",
+    "questionImage": null,
+    "options": [
+      "10:30",
+      "10:48",
+      "11:15",
+      "4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt46kbfz01dxjo",
+    "order": 8,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Calendar",
+    "questionText": "Repeat =>  L , L+1, L+2, L+3\nwhen century = 1903 so tell me when calendar repeat here L+3 work nahi karega kyoki L=1900 leap nahi hai so concept for this is  non-leap l, l+1, l+2, l+3  => 40 12  12  6",
+    "questionImage": null,
+    "options": [
+      "6 11 11 28...............40 12  12  6",
+      "6 28 11 11.............40 12  12  6",
+      "11 11 6 28..............40 12  12  6",
+      "28 6 11 11.................40 12  12  6"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt46ocvra63rpp",
+    "order": 9,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Counting",
+    "questionText": "",
+    "questionImage": "/uploads/counting/cd9a9f35b8befd99c1f773f4b854bed04ff653cf4a9046f6c17f6c752989ba7e.png",
+    "options": [
+      "8  16  8  10",
+      "8  16  8  16",
+      "10  16  8  8",
+      "16  8  8  10"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt47hrxx438c8e",
+    "order": 10,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Series",
+    "questionText": "5432 : 2345 :: 6192 : 1269 :: 7835 : ?\n(a) 3587\n(c) 5387\n(b) 5378\n(d) 3578",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 3,
+    "solutionText": "ascending order",
+    "solutionImage": null,
+    "id": "mt5kvy71iednx5",
+    "order": 11,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "P&C",
+    "questionText": "How many different arrangements can be made using all letters of the word BANANA such that all the A's are together?",
+    "questionImage": null,
+    "options": [
+      "12",
+      "24",
+      "36",
+      "60"
+    ],
+    "correctIndex": 0,
+    "solutionText": "(AAA), B, N, N     Total = 4 objects.    लेकिन N दो identical हैं, इसलिए:  2!/4!\n\t​",
+    "solutionImage": null,
+    "id": "mt5mjkagm2p7y4",
+    "order": 12,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "P&C",
+    "questionText": "How many different arrangements can be made using all letters of BANANA such that the A's are NOT together?",
+    "questionImage": null,
+    "options": [
+      "48",
+      "60",
+      "72",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "6! / 3!2!   <= total arrangement\ntogether 4! / 2! \nnot together = total - together",
+    "solutionImage": null,
+    "id": "mt5mo0a3l22ifl",
+    "order": 13,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "P&C",
+    "questionText": "How many ways can the letters of MOTHER be arranged such that the vowels are together AND the arrangement starts with a consonant?",
+    "questionImage": null,
+    "options": [
+      "130",
+      "192",
+      "160",
+      "4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Total ways = Choices for 1st letter * Permutations of remaining 4 units * Internal vowel arrangements    Total ways = 4 * 4! * 2! = 192",
+    "solutionImage": null,
+    "id": "mt5my12nei6c1e",
+    "order": 14,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "P&C",
+    "questionText": "Q.1=> 5 people को एक round table पर कितने different ways में बैठाया जा सकता है?\nQ.2=> 6 people A, B, C, D, E, F round table par baithte hain.\nA और B हमेशा साथ-साथ बैठें, तो कितने ways होंगे?",
+    "questionImage": "/uploads/p-c/4c48b8f59d1604420ca6eeb694a4e7d17b84def645ede077fa8f39450d31ca2a.png",
+    "options": [
+      "13 12",
+      "24 48",
+      "30 24",
+      "24 32"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt5n5wgm87xp6m",
+    "order": 15,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "P&C",
+    "questionText": "Digits 0, 1, 2, 3, 4, 5 से 4-digit even numbers बनाने हैं, without repetition.\n\nकितने ऐसे numbers होंगे?",
+    "questionImage": null,
+    "options": [
+      "144",
+      "156",
+      "180",
+      "4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Case 1 (अंतिम अंक 0): हजार के स्थान के लिए 5 विकल्प x बाकी 2 स्थानों के लिए P(4,2)x अंतिम\nअंक के लिए 1 = 5 x 12 x 1= 601\nCase 2 (अंतिम अंक 2 या 4): हजार के स्थान के लिए 4 विकल्प x बाकी 2 स्थानों के लिए P(4,2)x\nअंतिम अंक के लिए 2 = 4 x 12 x 2 = 96 (कुल=60+96=156)।",
+    "solutionImage": null,
+    "id": "mt5nt918k5no3h",
+    "order": 16,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "ABC123",
+    "questionText": "In a certain code language, 'COW' is written as '123' and 'BEAR' is written as '104'. How will 'TIGER' be written in that language?",
+    "questionImage": null,
+    "options": [
+      "265",
+      "295",
+      "3",
+      "4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "41 * 3            26 * 4",
+    "solutionImage": null,
+    "id": "mt8ehpjsawv9ef",
+    "order": 17,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Series",
+    "questionText": "1986 : 9186 :: 6794 : 7964 :: 4567 : ?",
+    "questionImage": null,
+    "options": [
+      "9674",
+      "5764",
+      "5746",
+      "4756"
+    ],
+    "correctIndex": 1,
+    "solutionText": "only logic last two",
+    "solutionImage": null,
+    "id": "mt8eoqvto47tux",
+    "order": 18,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "ABCD",
+    "questionText": "BT, YP, ?, SE, PX, MP, JG, GW",
+    "questionImage": null,
+    "options": [
+      "VK",
+      "VL",
+      "TK",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "INCREASING ...",
+    "solutionImage": null,
+    "id": "mt8eszvs1etmw3",
+    "order": 18,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "ABCD",
+    "questionText": "In a certain code language, 'RETAIL' is written as\n'FNQWJY' and 'POLICE' is written as 'NHJUTQ'. How will\n'HARBOR' be written in that language?",
+    "questionImage": "/uploads/abcd/08ca5649bc4cd1012cbf21d86ed340c54871528e15500230f064935dd2e68713.png",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "+5 LOGIC",
+    "solutionImage": null,
+    "id": "mt8fbczsoa19g7",
+    "order": 19,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "P&C",
+    "questionText": "How many different arrangements can be made using all letters of the word BANANA such that all the A's are together?",
+    "questionImage": null,
+    "options": [
+      "12",
+      "24",
+      "36",
+      "60"
+    ],
+    "correctIndex": 0,
+    "solutionText": "(AAA), B, N, N     Total = 4 objects.    लेकिन N दो identical हैं, इसलिए:  2!/4!\n\t​",
+    "solutionImage": null,
+    "id": "mt8fhxtsml3j8q",
+    "order": 20,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "P&C",
+    "questionText": "How many different arrangements can be made using all letters of the word BANANA such that all the A's are together?",
+    "questionImage": null,
+    "options": [
+      "12",
+      "24",
+      "36",
+      "60"
+    ],
+    "correctIndex": 0,
+    "solutionText": "(AAA), B, N, N     Total = 4 objects.    लेकिन N दो identical हैं, इसलिए:  2!/4!\n\t​",
+    "solutionImage": null,
+    "id": "mt8fihv4al1gan",
+    "order": 25,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "P&C",
+    "questionText": "How many different arrangements can be made using all letters of BANANA such that the A's are NOT together?",
+    "questionImage": null,
+    "options": [
+      "48",
+      "60",
+      "72",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "6! / 3!2!   <= total arrangement\ntogether 4! / 2! \nnot together = total - together",
+    "solutionImage": null,
+    "id": "mt8fijrefue2hh",
+    "order": 26,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "P&C",
+    "questionText": "There are 6 boys and 4 girls. In how many ways can a team of 3 students be formed such that the team contains at least 2 boys?",
+    "questionImage": null,
+    "options": [
+      "60",
+      "70",
+      "80",
+      "90"
+    ],
+    "correctIndex": 2,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt8htsp3hfkxva",
+    "order": 27,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "P&C",
+    "questionText": "There are 5 boys and 4 girls. In how many ways can a team of 3 students be formed such that the team contains at most 1 boy?",
+    "questionImage": null,
+    "options": [
+      "30",
+      "46",
+      "50",
+      "34"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt8i271vfhkinr",
+    "order": 28,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Blood",
+    "questionText": "Pointing to a photograph, a man says, \"This\nwoman's sister is my mother-in-law\". How is this man's wife\nrelated to the woman in the photograph?",
+    "questionImage": null,
+    "options": [
+      "daughter",
+      "niece",
+      "sister",
+      "4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt9vfdtstlcysy",
+    "order": 29,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Series",
+    "questionText": "find the odd one out",
+    "questionImage": null,
+    "options": [
+      "25 100 15",
+      "32 4 30",
+      "42 400 22",
+      "18 26 12"
+    ],
+    "correctIndex": 3,
+    "solutionText": "difference ka square",
+    "solutionImage": null,
+    "id": "mt9vhz5d2wq0qe",
+    "order": 30,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Series",
+    "questionText": "7259 : 4154 :: 3852 : ?",
+    "questionImage": null,
+    "options": [
+      "5934",
+      "6433",
+      "4201",
+      "6043"
+    ],
+    "correctIndex": 2,
+    "solutionText": "multiply the first two digitis together",
+    "solutionImage": null,
+    "id": "mtbcm0c8huxuow",
+    "order": 31,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Dice",
+    "questionText": "which dice is correct",
+    "questionImage": "/uploads/dice/d77ed9706eb1ca0c768a06feb178a142956bb7f55bb809b049f7ce95aa40f7a4.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mtbcvymml06dko",
+    "order": 32,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Series",
+    "questionText": "Select the odd one out from the given\nalternatives.\n15:126    27:234    31:270    17:162",
+    "questionImage": null,
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 3,
+    "solutionText": "*9  -  9",
+    "solutionImage": null,
+    "id": "mtbd1yzled3nvx",
+    "order": 33,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "ABCD",
+    "questionText": "In a certain code language, 'FLOAT' is written as\n'WONZI' and 'TRIBE' is written as 'DUHEW'. How will\n'GARDEN' be written in that language?",
+    "questionImage": "/uploads/abcd/784bf18108ea6fab898f82f9f876a21ce919c4baa640c50b4b653bad5b4fe56f.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/zAtBer3dZb8?si=ByJ-4M-1UETCYMzD&t=696",
+    "solutionImage": null,
+    "id": "mtbdcw5gjzygxs",
+    "order": 34,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Position",
+    "questionText": "7 girls P, Q, R, S, T, U and V are sitting around a circular\ntable facing towards the centre (not necessarily in the\nsame order). S is next to both P and V. V is second to the left of U. T is second to the right of U. R is not the\nimmediate neighbour of V. Who is sitting to the\nimmediate right of R?",
+    "questionImage": null,
+    "options": [
+      "P",
+      "Q",
+      "S",
+      "T"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mtbe8bjb9pm0d4",
+    "order": 35,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Blood",
+    "questionText": "If A x B means that A is the brother of B, A - B means\nthat A is the sister of B, A + B means that A is the father\nof B then which of the following expression shows that\nP is the paternal aunt of R?",
+    "questionImage": null,
+    "options": [
+      "P x Q + R",
+      "P + Q - R",
+      "P - Q x R",
+      "P - Q + R"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mth1o6qu5kh3sh",
+    "order": 32,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Series",
+    "questionText": "4585 : 13 :: 4853 : 42 :: 9753 : ?",
+    "questionImage": null,
+    "options": [
+      "33",
+      "23",
+      "22",
+      "75"
+    ],
+    "correctIndex": 2,
+    "solutionText": "substraction in 2 digits relation",
+    "solutionImage": null,
+    "id": "mth1py1kiihvlo",
+    "order": 33,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "ABC123",
+    "questionText": "In a certain code language, 'DOVE' is coded as\n'1122214' and 'CROW' is coded as '823311'. How will\n'MYNA' be coded in that language?",
+    "questionImage": null,
+    "options": [
+      "7112322",
+      "1132512",
+      "4112322",
+      "5112322"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/dlUCxvpxJo8?si=jBcu7FLo2XDTkt0p&t=725\nsubtract 1 from oppposite",
+    "solutionImage": null,
+    "id": "mth2izs2dn0vin",
+    "order": 34,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Series",
+    "questionText": "6, 31, 80, 161, 282, ?",
+    "questionImage": null,
+    "options": [
+      "773",
+      "231",
+      "451",
+      "334"
+    ],
+    "correctIndex": 2,
+    "solutionText": "difference based",
+    "solutionImage": null,
+    "id": "mtifvwmzlc2v9x",
+    "order": 35,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Series",
+    "questionText": "4563 : 360 :: 4812 : 64 :: 3459 : ?",
+    "questionImage": null,
+    "options": [
+      "490",
+      "540",
+      "980",
+      "180"
+    ],
+    "correctIndex": 1,
+    "solutionText": "multiplicaiton of digits",
+    "solutionImage": null,
+    "id": "mtighlri8ink5d",
+    "order": 36,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "ABC123",
+    "questionText": "In a certain code language, 'BREAK' is written as '2182111' and 'COLOUR' is written as '34124518'. How will 'TRING' be written in that language?",
+    "questionImage": null,
+    "options": [
+      "3164657",
+      "2064658",
+      "20183147",
+      "2064655"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/UkCw6WC1m4U?si=LkURZZhEe38aZhbb&t=635       vowel logic",
+    "solutionImage": null,
+    "id": "mtih9vceoy1k6b",
+    "order": 37,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Blood",
+    "questionText": "Aman told Rahul, \"Yesterday I defeated the only brother of the daughter of my paternal grandmother.\" Whom did Aman defeat?",
+    "questionImage": null,
+    "options": [
+      "Father",
+      "Brother",
+      "Son",
+      "Sister"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mtjunkpuvn3cdy",
+    "order": 38,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Series",
+    "questionText": "15, 27, 45, ?, 135, 108",
+    "questionImage": null,
+    "options": [
+      "68",
+      "78",
+      "54",
+      "59"
+    ],
+    "correctIndex": 2,
+    "solutionText": "alternate series",
+    "solutionImage": null,
+    "id": "mtjv19ce2c8f2u",
+    "order": 39,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Series",
+    "questionText": "75: 121   ,136 : 182   ,34:80   ,89: 129\nfind the odd one out",
+    "questionImage": null,
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 3,
+    "solutionText": "difference based",
+    "solutionImage": null,
+    "id": "mtjv7b140vjok7",
+    "order": 40,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Blood",
+    "questionText": "A man looks at a portrait and says, \"She is my Father-in-law's only granddaughter\". How is the girl in the portrait related to this man's wife?",
+    "questionImage": null,
+    "options": [
+      "Mother",
+      "Daughter",
+      "Niece",
+      "Sister"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mtjvjr1yosnwpg",
+    "order": 41,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "ABC123",
+    "questionText": "In a certain code language, 'FONT' is coded as '714', 'GLUE' is coded as '494'. What is the code for'JOKE' in that code language?",
+    "questionImage": null,
+    "options": [
+      "201",
+      "600",
+      "320",
+      "400"
+    ],
+    "correctIndex": 3,
+    "solutionText": "multiplication 2 group",
+    "solutionImage": null,
+    "id": "mtjw6epg4cz2yl",
+    "order": 42,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Blood",
+    "questionText": "",
+    "questionImage": "/uploads/blood/0a28c6a5a3e3645b44f2a6dcd014d01fe8f33f5e500ea1c5d9ba877c6060902a.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mtjwfxmz7l6ffl",
+    "order": 43,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Series",
+    "questionText": "169:4154 :: 49 : 4235 :: ? : 3586",
+    "questionImage": null,
+    "options": [
+      "2309",
+      "2500",
+      "2410",
+      "2601"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mtjwqeohgq2ij9",
+    "order": 44,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "ABC123",
+    "questionText": "In a certain code language, 'CAP' is coded as '262413'\nand 'LOG' is coded as '171022'. How will 'BED' be coded\nin that language?",
+    "questionImage": null,
+    "options": [
+      "12025",
+      "13023",
+      "13013",
+      "12523"
+    ],
+    "correctIndex": 0,
+    "solutionText": "opposite logic opposite of a",
+    "solutionImage": null,
+    "id": "mtjxrv02nns5tl",
+    "order": 45,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "P&C",
+    "questionText": "7 students take an exam. Two of them are from English medium. Find the possible number of ways when both English medium students do not sit together?",
+    "questionImage": null,
+    "options": [
+      "2200",
+      "3200",
+      "3700",
+      "3600"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mtjxyh1m0klkco",
+    "order": 46,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Series",
+    "questionText": "8654 : 5 :: 4846 : 6 :: 8695 : ?",
+    "questionImage": null,
+    "options": [
+      "7",
+      "6",
+      "3",
+      "9"
+    ],
+    "correctIndex": 1,
+    "solutionText": "big 2 digit - small 2 digit sum of",
+    "solutionImage": null,
+    "id": "mtlbcomg2j30f6",
+    "order": 47,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "ABC123",
+    "questionText": "If 'EQUALITY' is coded as 22832631827 and 'CONFIRM' is coded as 2465211894, then how will RESOURCE be coded?",
+    "questionImage": "/uploads/abc123/38a8cabc9bbc5e034ebc1d6ca51f88ab5e658ff67b76858f2b421abb588521f0.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "single digit= opposite\ndouble digit = digital sum",
+    "solutionImage": null,
+    "id": "mtlbuucjwgftza",
+    "order": 48,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "P&C",
+    "questionText": "8 Candidates are to be examined, 3 in Mathematics and the remaining in different subjects. In how many ways\ncan they be seated in a row so that the two examinees in Mathematics\nmay not sit together?",
+    "questionImage": null,
+    "options": [
+      "16900",
+      "18900",
+      "14400",
+      "900"
+    ],
+    "correctIndex": 2,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mtlcllrfz2h7q9",
+    "order": 49,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "P&C",
+    "questionText": "A bag contains 6 red balls and 4 yellow balls. Four balls are picked at random. What is the probability that at least one is red?",
+    "questionImage": null,
+    "options": [
+      "9/210",
+      "209/210",
+      "109/210",
+      "42/210"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mto6llp07ymnss",
+    "order": 50,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Series",
+    "questionText": "Mumbai, Aisle, Legitimate, Testimonial, Aluminium, ?, ?\n1 Umbrella, Laser\n2 Unique, Elastic\n3 Almost, Tertiary\n4 Legacy, Cyan",
+    "questionImage": null,
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "last two word same",
+    "solutionImage": null,
+    "id": "mtpkwybnmphtor",
+    "order": 51,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Blood",
+    "questionText": "Pointing to a photograph, a woman said to a man, \"She is the only child of the sister of the only son of your paternal grandfather.\" How is the man related to the person in the picture?",
+    "questionImage": null,
+    "options": [
+      "Brother",
+      "Father's sister's son",
+      "Sister",
+      "Mother's Brother's Son"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": "/uploads/blood/6a34a39f00984f7a8b5b4f30fff70b18a8aababa2faefda8b1c3a5b9d721cacc.png",
+    "id": "mtpkzheot40lae",
+    "order": 52,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Series",
+    "questionText": "Complete the following serles.\n15, 3, 0.9, 0.36, 0.18, 0.108, ?",
+    "questionImage": null,
+    "options": [
+      "0.7506",
+      "0.0756",
+      "0.7066",
+      "0.0560"
+    ],
+    "correctIndex": 1,
+    "solutionText": "15 x 0.2=3,\n\n3 x0.3=0.9,\n\n0.9 x 0.4 = 0.36,\n0.36 x 0.5= 0.18,\n0.18 x 0.6 = 0.108,\n0.108 x 0.7= 0.0756",
+    "solutionImage": null,
+    "id": "mtplzqae3npcim",
+    "order": 53,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Blood",
+    "questionText": "If I is J's maternal uncle, K's son, M's only sibling, L's father and N's nephew, how is M related to J?",
+    "questionImage": null,
+    "options": [
+      "Mother",
+      "Father",
+      "Aunt",
+      "Cousin"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mtpma85mjjlhh0",
+    "order": 54,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "AP & GP",
+    "questionText": "Find the sum of 4 terms in a GP, given first term is 16 and the common ratio is 6.",
+    "questionImage": null,
+    "options": [
+      "4244",
+      "3444",
+      "3244",
+      "4144"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": "/uploads/ap-gp/f7b2a42e301b6cfe49d8a7667486927f4096dd8f93f9927eab46bd4d719fe21c.png",
+    "id": "mtpmw2dq8ix4uu",
+    "order": 55,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Probabiliy",
+    "questionText": "A bag contains 8 red and 2 blue balls. Two balls are drawn without replacement. What is the probability that at least one ball is blue?",
+    "questionImage": null,
+    "options": [
+      "15/45",
+      "17/45",
+      "13/45",
+      "11/45"
+    ],
+    "correctIndex": 1,
+    "solutionText": "not both red= al least 1 blue",
+    "solutionImage": null,
+    "id": "mtshpbvj7ss1xg",
+    "order": 56,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Probabiliy",
+    "questionText": "A bag contains 6 red, 4 blue, and 2 green balls. Three balls are drawn without replacement. What is the probability that at least one ball is blue?",
+    "questionImage": null,
+    "options": [
+      "41/55",
+      "57/55",
+      "31/55",
+      "42/55"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mtsi0taxr0zj6u",
+    "order": 57,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Probabiliy",
+    "questionText": "A bag contains 5 red, 4 blue, and 3 green balls. Three balls are drawn without replacement. What is the probability that exactly two balls are blue?",
+    "questionImage": null,
+    "options": [
+      "16/55",
+      "14/55",
+      "12/55",
+      "15/55"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/4dz3HUsLVXk?si=KBMFgrLBFZa4MNTH&t=469",
+    "solutionImage": null,
+    "id": "mtsj614vz9sxr9",
+    "order": 58,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Probabiliy",
+    "questionText": "A bag contains 7 red, 5 blue, and 4 green balls. Four balls are drawn without replacement. What is the probability that exactly 2 balls are blue and at least 1 ball is red?",
+    "questionImage": null,
+    "options": [
+      "46/181",
+      "44/185",
+      "70/121",
+      "49/182"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": "/uploads/probabiliy/a80df4146b2f7b9654653c8e0d356997d20f2d8f3076124f7401f3235d7c885f.png",
+    "id": "mtsjh8nqp96xng",
+    "order": 59,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  }
+]

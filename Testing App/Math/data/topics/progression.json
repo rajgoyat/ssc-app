@@ -1,0 +1,21 @@
+[
+  {
+    "id": "prog-1",
+    "category": "Progression",
+    "questionText": "If the ratio of the angles of a triangle is 1 : 5 : 6, then find the ratio of its circumradius and inradius.",
+    "questionImage": null,
+    "options": [
+      "1 : 2",
+      "root6 + 2 : 1",
+      "root6 + 1 : 1",
+      "4 : 1"
+    ],
+    "correctIndex": 1,
+    "solutionText": "The angles are 15°, 75°, 90°. The circumradius : inradius ratio for a triangle is 2R : r = 2 : 1 in a right triangle context, and with the given angle pattern the expected standard answer is 2 : 1.\nhttps://youtu.be/sUor0VpVNio?si=X6R_vprlWcmaibi5&t=1549",
+    "solutionImage": "/uploads/progression/36f88dc10eed48e21570bb07eebd732d1fc24411858c178ac6c391e614b8ec49.png",
+    "order": 14,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  }
+]

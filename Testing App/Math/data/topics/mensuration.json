@@ -1,0 +1,230 @@
+[
+  {
+    "id": "geom-3",
+    "category": "Mensuration",
+    "questionText": "40 men took a dip in a pool 30 m long and 25 m broad. If the average water displaced by a man is 5 m^3, what will be the rise in the level of the pool in cm?",
+    "questionImage": null,
+    "options": [
+      "26.66 cm",
+      "30 cm",
+      "40 cm",
+      "50 cm"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/sUor0VpVNio?si=OdBL-SjEtVN8fOiw&t=1757",
+    "solutionImage": "/uploads/mensuration/823507815d3c2420d8332e5a1bfe72e0e6c55897242e5a268def1a592f7ee4ad.png",
+    "order": 8,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Mensuration",
+    "questionText": "The area of a semicircle is 1925 cm2. Calculate its perimeter (in cm)",
+    "questionImage": null,
+    "options": [
+      "180",
+      "2",
+      "160",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "circle 7  44  154\nsemi  7  36   77\n          rad   peri   area",
+    "solutionImage": null,
+    "id": "mt83qvoq3pvj0m",
+    "order": 67,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Mensuration",
+    "questionText": "What will be the value of the angle (in degrees) subtended by the chord in the minor segment of a circle, if the length of the chord is equal to the radius of the circle?",
+    "questionImage": null,
+    "options": [
+      "180",
+      "190",
+      "150",
+      "4"
+    ],
+    "correctIndex": 2,
+    "solutionText": "",
+    "solutionImage": "/uploads/mensuration/5cd8ec2770c6a1d78f4061bc34b03b25f10b19ccf04d099f79c31d085f18533e.png",
+    "id": "mt83y585r7b0ct",
+    "order": 69,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Mensuration",
+    "questionText": "In a triangle ABC, AD is angle bisector of A and AB : AC = 3 : 4. If the area of\ntriangle ABC is 350 cm2, then what is the area (in cm2) of triangle ABD?",
+    "questionImage": null,
+    "options": [
+      "150",
+      "290",
+      "300",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "350* 3/7",
+    "solutionImage": null,
+    "id": "mt848tvgya3381",
+    "order": 71,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Mensuration",
+    "questionText": "A 22.5 m high tent is in the shape of a frustum of a cone surmounted by a hemisphere. If the diameters of the upper and the lower circular ends of the frustum are 21 m and 39 m respectively, then find the area of cloth (in m2) used to make the tent (ignoring the wastage).(use Tr = ₹)",
+    "questionImage": null,
+    "options": [
+      "36",
+      "2107&2/7",
+      "71",
+      "20"
+    ],
+    "correctIndex": 0,
+    "solutionText": "use simple formulas",
+    "solutionImage": null,
+    "id": "mtcaytfiznh0xz",
+    "order": 97,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Mensuration",
+    "questionText": "Concept of prism\nA prism and a pyramid have the same base and the same height. Find the ratio of the volume of the prism and the pyramid?  (area equilat triangle     if side=2 then area root 3)",
+    "questionImage": "/uploads/mensuration/f855c4f75284f60dbb5b60e4712ca5c15dd0155fe4bf7086eae792622213d106.png",
+    "options": [
+      "3 : 1",
+      "5 : 1",
+      "1 : 1",
+      "8 : 1"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/JQmhdF8ECGg?si=tvSMcfN-_7gocdLy&t=2321",
+    "solutionImage": "/uploads/mensuration/31cacaea4ce2b19952de6676632e5d6febcce84264676fed676737e53c307ab5.png",
+    "special": false,
+    "id": "mttelfkaswe64c",
+    "order": 181,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mensuration",
+    "questionText": "Find the volume of a pyramid whose base is an equilateral triangle of side 16root-3 cm and its slant height is 3 times of its height?",
+    "questionImage": null,
+    "options": [
+      "11",
+      "92",
+      "56",
+      "128 root-6"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/JQmhdF8ECGg?si=JOwgq_vn3vKQxtHQ&t=2614",
+    "solutionImage": null,
+    "special": false,
+    "id": "mttf8pv76shc4e",
+    "order": 182,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mensuration",
+    "questionText": "The base of a right pyramid is an equilateral triangle of side 10root-3cm. If the total surface area of the pyramid is 270root-3 sq.cm its height is",
+    "questionImage": null,
+    "options": [
+      "18",
+      "9",
+      "12",
+      "16"
+    ],
+    "correctIndex": 2,
+    "solutionText": "csa 1/2 * per of base * S. height\nhttps://youtu.be/JQmhdF8ECGg?si=fiiwREjWzogxXEmq&t=2855",
+    "solutionImage": null,
+    "special": false,
+    "id": "mttfhfz0slrfbx",
+    "order": 183,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mensuration",
+    "questionText": "The base of right pyramid is an equilateral triangle, each side of which is 20 cm. Each slant edge is 30 cm. The vertical height (in cm) of the pyramid is:",
+    "questionImage": "/uploads/mensuration/2d7342c545f1b5f31192d9ad7ce99c68b56a1352cb699fd3849a962e1f3f8ee0.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/JQmhdF8ECGg?si=7Iy5RVJZbIcsN0lV&t=3051",
+    "solutionImage": null,
+    "special": false,
+    "id": "mttfpvnnm167hq",
+    "order": 184,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mensuration",
+    "questionText": "The base of a pyramid is an equilateral                                           triangle whose each side is 8 cm. Its slant edge is 24 cm. What is the total surface area of the pyramid?",
+    "questionImage": null,
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/JQmhdF8ECGg?si=a1seuf95Bhf2-Tx3&t=3264",
+    "solutionImage": null,
+    "special": false,
+    "id": "mttfxqy3s2veoo",
+    "order": 185,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mensuration",
+    "questionText": "The base of a right pyramid is an equilateral\ntriangle with area 16root-3 cm^2. If the area of one of\nits lateral faces is 30cm^2, then its height (in cm)\nis :",
+    "questionImage": "/uploads/mensuration/a6dce55d6dc9c1cba111295ee867f4b5c6364482d9f8dbb0240ae2b0a9354182.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/JQmhdF8ECGg?si=n3m6DUSGRxw1oMNX&t=3387",
+    "solutionImage": null,
+    "special": false,
+    "id": "mttg3pwu855r6l",
+    "order": 186,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mensuration",
+    "questionText": "Height of a pyramid is 6m, the base of pyramid is a square whose diagonal is root-1152 m. Find the volume of pyramid?",
+    "questionImage": null,
+    "options": [
+      "5",
+      "1231",
+      "1165",
+      "1152"
+    ],
+    "correctIndex": 3,
+    "solutionText": "area = diagonal ka  square upon 2 \nhttps://youtu.be/JQmhdF8ECGg?si=PWWG77CuObridXnM&t=3640",
+    "solutionImage": null,
+    "special": false,
+    "id": "mttgut0w112791",
+    "order": 187,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  }
+]

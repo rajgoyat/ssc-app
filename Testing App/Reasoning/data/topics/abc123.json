@@ -1,0 +1,135 @@
+[
+  {
+    "category": "ABC123",
+    "questionText": "In a certain code language, 'MAY' is coded\nas '6' and 'MET' is coded as '7'. How will\n'HIM' be coded in that language?",
+    "questionImage": null,
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correctIndex": 1,
+    "solutionText": "digital sum of opposite",
+    "solutionImage": null,
+    "id": "mt2smez3dcwewh",
+    "order": 0,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "ABC123",
+    "questionText": "In a certain code language, 'COW' is written as '123' and 'BEAR' is written as '104'. How will 'TIGER' be written in that language?",
+    "questionImage": null,
+    "options": [
+      "265",
+      "295",
+      "3",
+      "4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "41 * 3            26 * 4",
+    "solutionImage": null,
+    "id": "mt8ehpjsawv9ef",
+    "order": 17,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "ABC123",
+    "questionText": "In a certain code language, 'DOVE' is coded as\n'1122214' and 'CROW' is coded as '823311'. How will\n'MYNA' be coded in that language?",
+    "questionImage": null,
+    "options": [
+      "7112322",
+      "1132512",
+      "4112322",
+      "5112322"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/dlUCxvpxJo8?si=jBcu7FLo2XDTkt0p&t=725\nsubtract 1 from oppposite",
+    "solutionImage": null,
+    "id": "mth2izs2dn0vin",
+    "order": 34,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "ABC123",
+    "questionText": "In a certain code language, 'BREAK' is written as '2182111' and 'COLOUR' is written as '34124518'. How will 'TRING' be written in that language?",
+    "questionImage": null,
+    "options": [
+      "3164657",
+      "2064658",
+      "20183147",
+      "2064655"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/UkCw6WC1m4U?si=LkURZZhEe38aZhbb&t=635       vowel logic",
+    "solutionImage": null,
+    "id": "mtih9vceoy1k6b",
+    "order": 37,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "ABC123",
+    "questionText": "In a certain code language, 'FONT' is coded as '714', 'GLUE' is coded as '494'. What is the code for'JOKE' in that code language?",
+    "questionImage": null,
+    "options": [
+      "201",
+      "600",
+      "320",
+      "400"
+    ],
+    "correctIndex": 3,
+    "solutionText": "multiplication 2 group",
+    "solutionImage": null,
+    "id": "mtjw6epg4cz2yl",
+    "order": 42,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "ABC123",
+    "questionText": "In a certain code language, 'CAP' is coded as '262413'\nand 'LOG' is coded as '171022'. How will 'BED' be coded\nin that language?",
+    "questionImage": null,
+    "options": [
+      "12025",
+      "13023",
+      "13013",
+      "12523"
+    ],
+    "correctIndex": 0,
+    "solutionText": "opposite logic opposite of a",
+    "solutionImage": null,
+    "id": "mtjxrv02nns5tl",
+    "order": 45,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "ABC123",
+    "questionText": "If 'EQUALITY' is coded as 22832631827 and 'CONFIRM' is coded as 2465211894, then how will RESOURCE be coded?",
+    "questionImage": "/uploads/abc123/38a8cabc9bbc5e034ebc1d6ca51f88ab5e658ff67b76858f2b421abb588521f0.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "single digit= opposite\ndouble digit = digital sum",
+    "solutionImage": null,
+    "id": "mtlbuucjwgftza",
+    "order": 48,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  }
+]

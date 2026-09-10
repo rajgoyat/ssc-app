@@ -1,0 +1,21 @@
+[
+  {
+    "category": "Boat & Water",
+    "questionText": "A boat travels 14 km upstream in 14 hours and 171 km downstream in 9 hours. What is the speed of the boat in still water?",
+    "questionImage": "/uploads/boat-water/9fa6d38a1613282a9fd212ed22285088a767062f32d58422557722ac0c63cb62.png",
+    "options": [
+      "80",
+      "40",
+      "10",
+      "20"
+    ],
+    "correctIndex": 2,
+    "solutionText": "",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtimuz8geng8e1",
+    "order": 115,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  }
+]

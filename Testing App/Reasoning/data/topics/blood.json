@@ -1,0 +1,154 @@
+[
+  {
+    "category": "Blood",
+    "questionText": "Rubi and Juhi are sisters. Krishna is Juhi's father's father. Reshma is the mother of Arvind. Arvind is the father of Rohit, who is the only brother of Rubi. How is Krishna related to Rohit?",
+    "questionImage": null,
+    "options": [
+      "Father's father",
+      "father",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Krishna is Rohit's father's father (grandfather).",
+    "solutionImage": null,
+    "id": "mt2ss964p06g5w",
+    "order": 1,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Blood",
+    "questionText": "Pointing to a photograph, a man says, \"This\nwoman's sister is my mother-in-law\". How is this man's wife\nrelated to the woman in the photograph?",
+    "questionImage": null,
+    "options": [
+      "daughter",
+      "niece",
+      "sister",
+      "4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt9vfdtstlcysy",
+    "order": 29,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Blood",
+    "questionText": "If A x B means that A is the brother of B, A - B means\nthat A is the sister of B, A + B means that A is the father\nof B then which of the following expression shows that\nP is the paternal aunt of R?",
+    "questionImage": null,
+    "options": [
+      "P x Q + R",
+      "P + Q - R",
+      "P - Q x R",
+      "P - Q + R"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mth1o6qu5kh3sh",
+    "order": 32,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Blood",
+    "questionText": "Aman told Rahul, \"Yesterday I defeated the only brother of the daughter of my paternal grandmother.\" Whom did Aman defeat?",
+    "questionImage": null,
+    "options": [
+      "Father",
+      "Brother",
+      "Son",
+      "Sister"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mtjunkpuvn3cdy",
+    "order": 38,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Blood",
+    "questionText": "A man looks at a portrait and says, \"She is my Father-in-law's only granddaughter\". How is the girl in the portrait related to this man's wife?",
+    "questionImage": null,
+    "options": [
+      "Mother",
+      "Daughter",
+      "Niece",
+      "Sister"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mtjvjr1yosnwpg",
+    "order": 41,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Blood",
+    "questionText": "",
+    "questionImage": "/uploads/blood/0a28c6a5a3e3645b44f2a6dcd014d01fe8f33f5e500ea1c5d9ba877c6060902a.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mtjwfxmz7l6ffl",
+    "order": 43,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Blood",
+    "questionText": "Pointing to a photograph, a woman said to a man, \"She is the only child of the sister of the only son of your paternal grandfather.\" How is the man related to the person in the picture?",
+    "questionImage": null,
+    "options": [
+      "Brother",
+      "Father's sister's son",
+      "Sister",
+      "Mother's Brother's Son"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": "/uploads/blood/6a34a39f00984f7a8b5b4f30fff70b18a8aababa2faefda8b1c3a5b9d721cacc.png",
+    "id": "mtpkzheot40lae",
+    "order": 52,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Blood",
+    "questionText": "If I is J's maternal uncle, K's son, M's only sibling, L's father and N's nephew, how is M related to J?",
+    "questionImage": null,
+    "options": [
+      "Mother",
+      "Father",
+      "Aunt",
+      "Cousin"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mtpma85mjjlhh0",
+    "order": 54,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  }
+]

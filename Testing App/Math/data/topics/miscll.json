@@ -1,0 +1,21 @@
+[
+  {
+    "category": "Miscll",
+    "questionText": "The cost of a diamond varies directly as the square of its weight. A diamond broke into four pieces with their weights in the ratio of 1: 2 : 3 : 4. If the loss in total value of the diamond was Rs. 21,000 what was the price of the original diamond?",
+    "questionImage": null,
+    "options": [
+      "70000",
+      "60000",
+      "30000",
+      "50000"
+    ],
+    "correctIndex": 2,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mth8tth2it2lx8",
+    "order": 104,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  }
+]

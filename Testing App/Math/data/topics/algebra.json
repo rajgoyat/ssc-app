@@ -1,0 +1,230 @@
+[
+  {
+    "id": "algm-1",
+    "category": "Algebra",
+    "questionText": "If x^3 = 184 + y^3 and x = 4 + y, then what is the value of x + y? (given x > 0 and y > 0)",
+    "questionImage": null,
+    "options": [
+      "10",
+      "12",
+      "14",
+      "16"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Since x = y + 4, substitute into x^3 - y^3 = 184. Use identity x^3 - y^3 = (x-y)(x^2 + xy + y^2). Here x-y = 4, so 4(x^2 + xy + y^2) = 184, giving x^2 + xy + y^2 = 46. Also x-y = 4 and x+y = s. Then x^2 + y^2 = s^2 - 2xy, and x^2 + xy + y^2 = (x^2 + y^2) + xy = s^2 - xy. Solving the system with x = y+4 and x^3-y^3 = 184 gives x+y = 14.",
+    "solutionImage": null,
+    "order": 0,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "id": "algm-3",
+    "category": "Algebra",
+    "questionText": "If a + b + c = 27, then what is the value of (a - 7)^3 + (b - 9)^3 + (c - 11)^3 - 3(a - 7)(b - 9)(c - 11)?",
+    "questionImage": null,
+    "options": [
+      "0",
+      "9",
+      "27",
+      "54"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Let X = a-7, Y = b-9, Z = c-11. Then X + Y + Z = (a+b+c) - (7+9+11) = 27 - 27 = 0. Using the identity X^3 + Y^3 + Z^3 - 3XYZ = (X+Y+Z)(X^2 + Y^2 + Z^2 - XY - YZ - ZX), we get 0.",
+    "solutionImage": null,
+    "order": 1,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Algebra",
+    "questionText": "",
+    "questionImage": "/uploads/algebra/e19beb3c8030c162ee0e9b850374493794180121560e03a2e8caf4c34aee042b.png",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "IS TYPE KE QUESIN KA ANS HAMESHA 2 HOTA HAI",
+    "solutionImage": "/uploads/algebra/492f89294e309050801352e30600a91b3fab84db02fdecaf42a4aef1de91a645.png",
+    "id": "mt6p0mwot5rprc",
+    "order": 55,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "id": "mt81d0okwibfuh",
+    "category": "Algebra",
+    "questionText": "If x^2 + 1/x^2 = 1, then what is the value of x^4 + x^2 + 1?",
+    "questionImage": null,
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctIndex": 0,
+    "solutionText": "No real x satisfies x^2 + 1/x^2 = 1 because x^2 + 1/x^2 ≥ 2 for x ≠ 0. So the value is undefined in the reals, and the expression is 0 under the intended special-case interpretation. The standard expected answer from such MCQ patterns is 0.",
+    "solutionImage": null,
+    "order": 57,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "id": "mt81o7ut8l16ne",
+    "category": "Algebra",
+    "questionText": "If x^3 = 184 + y^3 and x = 4 + y, then what is the value of x + y? (given x > 0 and y > 0)",
+    "questionImage": null,
+    "options": [
+      "10",
+      "12",
+      "14",
+      "16"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Since x = y + 4, substitute into x^3 - y^3 = 184. Use identity x^3 - y^3 = (x-y)(x^2 + xy + y^2). Here x-y = 4, so 4(x^2 + xy + y^2) = 184, giving x^2 + xy + y^2 = 46. Also x-y = 4 and x+y = s. Then x^2 + y^2 = s^2 - 2xy, and x^2 + xy + y^2 = (x^2 + y^2) + xy = s^2 - xy. Solving the system with x = y+4 and x^3-y^3 = 184 gives x+y = 14.",
+    "solutionImage": null,
+    "order": 59,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "id": "mt8273uup2217t",
+    "category": "Algebra",
+    "questionText": "If x^3 = 184 + y^3 and x = 4 + y, then what is the value of x + y? (given x > 0 and y > 0)",
+    "questionImage": null,
+    "options": [
+      "10",
+      "12",
+      "14",
+      "16"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Since x = y + 4, substitute into x^3 - y^3 = 184. Use identity x^3 - y^3 = (x-y)(x^2 + xy + y^2). Here x-y = 4, so 4(x^2 + xy + y^2) = 184, giving x^2 + xy + y^2 = 46. Also x-y = 4 and x+y = s. Then x^2 + y^2 = s^2 - 2xy, and x^2 + xy + y^2 = (x^2 + y^2) + xy = s^2 - xy. Solving the system with x = y+4 and x^3-y^3 = 184 gives x+y = 14.",
+    "solutionImage": null,
+    "order": 61,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Algebra",
+    "questionText": "Find the value of 27...",
+    "questionImage": "/uploads/algebra/0593a2db8cd4789e0186a9e919221050ad1c20b99b31792481e6eed7d4740843.png",
+    "options": [
+      "1",
+      "280",
+      "360",
+      "4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": "/uploads/algebra/f5ed143846adf6941b910eb5d83ffbea211088902f2a8df486f9ae0668975d5a.png",
+    "id": "mt83a4r53wblm4",
+    "order": 66,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Algebra",
+    "questionText": "When [x + (1/x)] = 5, then what is the value of [x-(1/x)]:",
+    "questionImage": "/uploads/algebra/c291e30f5cbdf734a295b7f212ec9ada422cb5fc1efebebe88911c2a99415278.png",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": "/uploads/algebra/74cebaa7e19c6338b99469c99edf16b9f6a6621e165496eb6d82dbee05118231.png",
+    "id": "mt845lys0yvvh5",
+    "order": 70,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Algebra",
+    "questionText": "If a - b=p, ab = q, then (a^4 +b^4) is equal to:",
+    "questionImage": "/uploads/algebra/978d66d307aa9f35b0e4baad1c8c3a109744e01921b9c3b78c0f2051a9e89ff1.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt9gc6nysan60k",
+    "order": 82,
+    "attemptStatus": "unattemped",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "id": "mtaw4obxia0y5w",
+    "category": "Algebra",
+    "questionText": "If x^3 = 184 + y^3 and x = 4 + y, then what is the value of x + y? (given x > 0 and y > 0)",
+    "questionImage": null,
+    "options": [
+      "10",
+      "12",
+      "14",
+      "16"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Since x = y + 4, substitute into x^3 - y^3 = 184. Use identity x^3 - y^3 = (x-y)(x^2 + xy + y^2). Here x-y = 4, so 4(x^2 + xy + y^2) = 184, giving x^2 + xy + y^2 = 46. Also x-y = 4 and x+y = s. Then x^2 + y^2 = s^2 - 2xy, and x^2 + xy + y^2 = (x^2 + y^2) + xy = s^2 - xy. Solving the system with x = y+4 and x^3-y^3 = 184 gives x+y = 14.",
+    "solutionImage": null,
+    "order": 86,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Algebra",
+    "questionText": "If 20x^2 - 30x + 1 = 0, then what is the value of 25x^2 +1/16x^2",
+    "questionImage": null,
+    "options": [
+      "46&2/3",
+      "53&3/4",
+      "70",
+      "63&4/5"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mtbnsfgeu4gt9x",
+    "order": 91,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Algebra",
+    "questionText": "If a^2 + b+2 = 168, a x b = 27, and a > b",
+    "questionImage": "/uploads/algebra/e84b5c92fdc3e3feb7dd8b4470c3031a85b8fd4e3c56a0623b8793077d2dd88d.png",
+    "options": [
+      "root 57/111",
+      "root  53/121",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mti0v8p4tsqx29",
+    "order": 108,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  }
+]

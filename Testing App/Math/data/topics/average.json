@@ -1,0 +1,40 @@
+[
+  {
+    "category": "Average",
+    "questionText": "The average weight of students in a class is 58.5 kg. Four more students having weights of 49 kg, 51 kg, 54 kg, and 68 kg join the\nclass. Now the average weight of all the students in the class is 58.3 kg. The number of students in the class, initially, was:",
+    "questionImage": null,
+    "options": [
+      "10",
+      "56",
+      "60",
+      "79"
+    ],
+    "correctIndex": 1,
+    "solutionText": "total deviation -12 and change 0.2\n0.2 har ek std se kamhua hai\nmatlab agar 0.2 * total std = total kam hua = 12 so\n 0.2 * x = 12 and x = 60 stds  prev std = 56",
+    "solutionImage": null,
+    "id": "mt9fnab189192r",
+    "order": 79,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Average",
+    "questionText": "The average of n numbers is 45. If 60% of the numbers are increased by 5 each and the remaining numbers are decreased by 10 each, then what is the average of the numbers so obtained?",
+    "questionImage": null,
+    "options": [
+      "31",
+      "44",
+      "81",
+      "43"
+    ],
+    "correctIndex": 1,
+    "solutionText": "(0.60×5)+(0.40×(−10))\n=3−4=−1\nStep 3: New average:45+(−1)=44\n45+(−1)=44\n✅ Answer: 44\nKyun kaam karta hai (1-line logic):\nTotal sum mein change = (0.6n × 5) + (0.4n × (−10)) = 3n − 4n = −n\nAverage change =−𝑛\nn are total numbers  change in average deviation is divided b/w total nmbrs= -n/n",
+    "solutionImage": null,
+    "id": "mtbnd8pd5zi65g",
+    "order": 90,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  }
+]

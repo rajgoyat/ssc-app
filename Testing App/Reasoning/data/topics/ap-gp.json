@@ -1,0 +1,21 @@
+[
+  {
+    "category": "AP & GP",
+    "questionText": "Find the sum of 4 terms in a GP, given first term is 16 and the common ratio is 6.",
+    "questionImage": null,
+    "options": [
+      "4244",
+      "3444",
+      "3244",
+      "4144"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": "/uploads/ap-gp/f7b2a42e301b6cfe49d8a7667486927f4096dd8f93f9927eab46bd4d719fe21c.png",
+    "id": "mtpmw2dq8ix4uu",
+    "order": 55,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  }
+]

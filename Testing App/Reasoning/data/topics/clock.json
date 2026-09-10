@@ -1,0 +1,40 @@
+[
+  {
+    "category": "Clock",
+    "questionText": "How much time (in minutes) (approximately)\nafter 2:00 PM will it take for the minute and\nhour hands of the clock to be at an angle of 90\ndegrees?",
+    "questionImage": null,
+    "options": [
+      "27",
+      "25",
+      "28",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt46e6l392ijda",
+    "order": 7,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Clock",
+    "questionText": "A clock is 3 minutes slow at 9:00 AM and 7\nminutes fast at 3:00 PM. At what time (in AM) will\nit show the correct time?",
+    "questionImage": null,
+    "options": [
+      "10:30",
+      "10:48",
+      "11:15",
+      "4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt46kbfz01dxjo",
+    "order": 8,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  }
+]

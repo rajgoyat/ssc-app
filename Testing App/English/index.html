@@ -1,0 +1,2652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Vocab Alert</title>
+
+<style>
+:root{
+  --bg:#080d18;
+  --bg2:#0d1424;
+  --ink:#e8edf7;
+  --muted:#8994a8;
+  --gold:#f0b84b;
+  --card:#111a2b;
+  --card2:#162136;
+  --teal:#55b7ae;
+  --red:#d95c4a;
+  --line:rgba(255,255,255,.10);
+  --line2:rgba(255,255,255,.16);
+  --white:#fff;
+}
+
+/* ===== MODERN SCROLLBAR ===== */
+* { scrollbar-width: thin; scrollbar-color: #f0b84b #080d18; }
+*::-webkit-scrollbar { width: 10px; height: 10px; }
+*::-webkit-scrollbar-track { background: linear-gradient(180deg, #080d18 0%, #0d1424 100%); }
+*::-webkit-scrollbar-thumb { background: linear-gradient(180deg, #f0b84b 0%, #d4941f 100%); border-radius: 10px; border: 2px solid #080d18; transition: all 0.3s ease; }
+*::-webkit-scrollbar-thumb:hover { background: linear-gradient(180deg, #ffd966 0%, #f0b84b 100%); box-shadow: 0 0 15px rgba(240, 184, 75, 0.5); }
+
+/* =========================
+   RESET
+========================= */
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  width:100%;
+  min-height:100%;
+  background:var(--bg);
+}
+
+body{
+  width:100%;
+  min-height:100dvh;
+  background:
+    radial-gradient(circle at top left, rgba(62,124,124,.10), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(232,163,61,.07), transparent 30%),
+    var(--bg);
+
+  font-family:Georgia, serif;
+
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+
+  padding:
+    max(18px, env(safe-area-inset-top))
+    max(14px, env(safe-area-inset-right))
+    max(18px, env(safe-area-inset-bottom))
+    max(14px, env(safe-area-inset-left));
+
+  color:var(--ink);
+  overflow-x:hidden;
+}
+
+/* =========================
+   MAIN BOARD
+========================= */
+
+.board{
+  width:100%;
+  max-width:560px;
+  min-width:0;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  margin-bottom:14px;
+  padding:0 3px;
+}
+
+.brand{
+  color:var(--gold);
+  font-family:"Courier New",monospace;
+  letter-spacing:1.5px;
+  font-size:12px;
+  text-transform:uppercase;
+  font-weight:bold;
+  min-width:0;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+.clock{
+  flex-shrink:0;
+
+  font-family:"Courier New",monospace;
+  color:#fff;
+
+  background:rgba(255,255,255,.06);
+  border:1px solid var(--line2);
+
+  padding:6px 11px;
+  border-radius:7px;
+
+  font-size:14px;
+  letter-spacing:1px;
+
+  min-width:72px;
+  text-align:center;
+
+  box-shadow:0 5px 18px rgba(0,0,0,.25);
+}
+
+/* =========================
+   ALERT CARD
+========================= */
+
+.alertbox{
+  width:100%;
+  background:linear-gradient(
+    145deg,
+    var(--card),
+    #0e1727
+  );
+
+  border:1px solid var(--line);
+  border-radius:12px;
+
+  box-shadow:
+    0 18px 45px rgba(0,0,0,.45),
+    inset 0 1px 0 rgba(255,255,255,.025);
+
+  overflow:hidden;
+
+  transform-origin:top center;
+  animation:pop .4s ease;
+}
+
+@keyframes pop{
+  0%{
+    transform:scale(.96) translateY(-8px);
+    opacity:0;
+  }
+
+  100%{
+    transform:scale(1) translateY(0);
+    opacity:1;
+  }
+}
+
+/* =========================
+   ALERT TOP
+========================= */
+
+.alerttop{
+  background:linear-gradient(
+    135deg,
+    #b94436,
+    var(--red)
+  );
+
+  color:#fff;
+
+  padding:9px 16px;
+
+  font-family:"Courier New",monospace;
+  font-size:10.5px;
+  letter-spacing:1.5px;
+
+  text-transform:uppercase;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  gap:10px;
+}
+
+.alerttop-right{
+  display:flex;
+  align-items:center;
+  gap:9px;
+}
+
+
+.wordnav{display:flex;align-items:center;gap:5px;flex-wrap:nowrap;}
+.contentnav{display:flex;align-items:center;gap:3px;flex-wrap:nowrap;}
+.content-btn{height:23px;padding:0 7px;border-radius:12px;border:1px solid rgba(255,255,255,.38);background:rgba(255,255,255,.12);color:#fff;font-family:"Courier New",monospace;font-size:9px;line-height:1;cursor:pointer;transition:.2s ease;}
+.content-btn:hover{background:rgba(255,255,255,.25);}
+.content-btn.active{background:#fff;color:var(--red);}
+.topmini-btn{width:23px;height:23px;display:inline-flex;align-items:center;justify-content:center;padding:0;border-radius:50%;border:1px solid rgba(255,255,255,.38);background:rgba(255,255,255,.12);color:#fff;font-family:"Courier New",monospace;font-size:11px;line-height:1;cursor:pointer;transition:.2s ease;}
+.topmini-btn:hover{background:rgba(255,255,255,.25);}
+.topmini-btn.active{background:#fff;color:var(--red);}
+.qno-input{width:46px;height:23px;padding:0 5px;border-radius:12px;border:1px solid rgba(255,255,255,.38);background:rgba(255,255,255,.12);color:#fff;text-align:center;font-family:"Courier New",monospace;font-size:9px;outline:none;}
+.qno-input::placeholder{color:rgba(255,255,255,.75);}
+.qno-input:focus{background:rgba(255,255,255,.20);border-color:#fff;}
+
+.topsearch-wrap{display:flex;align-items:center;gap:3px;}
+.topsearch-input{width:92px;height:23px;padding:0 7px;border-radius:12px;border:1px solid rgba(255,255,255,.38);background:rgba(255,255,255,.12);color:#fff;font-family:"Courier New",monospace;font-size:9px;outline:none;}
+.topsearch-input::placeholder{color:rgba(255,255,255,.75);}
+.topsearch-input:focus{width:125px;background:rgba(255,255,255,.20);border-color:#fff;}
+.topsearch-input.not-found{border-color:#ffd1cc;background:rgba(255,255,255,.26);}
+
+.editcur-btn{
+  background:rgba(255,255,255,.13);
+  color:#fff;
+
+  border:1px solid rgba(255,255,255,.35);
+
+  padding:4px 9px;
+  border-radius:13px;
+
+  font-family:"Courier New",monospace;
+  font-size:10px;
+  letter-spacing:.8px;
+
+  text-transform:uppercase;
+
+  cursor:pointer;
+
+  transition:.2s ease;
+}
+
+.editcur-btn:hover{
+  background:rgba(255,255,255,.25);
+}
+
+.editcur-btn:active{
+  transform:scale(.96);
+}
+
+/* =========================
+   ALERT BODY
+========================= */
+
+.alertbody{
+  padding:23px 22px 20px;
+  min-width:0;
+}
+
+.word-en{
+  font-size:29px;
+  line-height:1.15;
+
+  font-weight:bold;
+
+  color:var(--ink);
+
+  margin-bottom:5px;
+
+  overflow-wrap:anywhere;
+  word-break:break-word;
+}
+
+.word-hi{
+  font-size:19px;
+  line-height:1.3;
+
+  color:var(--teal);
+
+  margin-bottom:17px;
+
+  font-weight:600;
+
+  overflow-wrap:anywhere;
+}
+
+.row{
+  display:flex;
+  gap:10px;
+
+  margin-bottom:11px;
+
+  align-items:flex-start;
+
+  min-width:0;
+}
+
+.label{
+  flex:0 0 76px;
+
+  font-family:"Courier New",monospace;
+  font-size:10.5px;
+
+  letter-spacing:.9px;
+  text-transform:uppercase;
+
+  color:var(--muted);
+
+  padding-top:3px;
+}
+
+.val{
+  min-width:0;
+  flex:1;
+
+  font-size:15px;
+  line-height:1.55;
+
+  color:#dfe6f2;
+
+  overflow-wrap:anywhere;
+  word-break:break-word;
+}
+
+#sentence{
+  font-style:italic;
+  color:#b9c3d4;
+}
+
+/* =========================
+   PILLS
+========================= */
+
+.pillrow{
+  display:flex;
+  gap:8px;
+
+  margin-top:15px;
+
+  flex-wrap:wrap;
+}
+
+.pill{
+  max-width:100%;
+
+  padding:5px 11px;
+
+  border-radius:20px;
+
+  font-size:12px;
+
+  font-family:"Courier New",monospace;
+
+  overflow-wrap:anywhere;
+}
+
+.pill.syn{
+  background:rgba(62,180,160,.12);
+  color:#74d2c7;
+  border:1px solid rgba(85,183,174,.55);
+}
+
+.pill.ant{
+  background:rgba(217,92,74,.12);
+  color:#ef8b7c;
+  border:1px solid rgba(217,92,74,.6);
+}
+
+/* =========================
+   CONTROLS
+========================= */
+
+.controls{
+  width:100%;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  gap:12px;
+
+  margin-top:14px;
+
+  padding:0 3px;
+}
+
+.btn{
+  background:var(--gold);
+  color:#111827;
+
+  border:none;
+
+  border-radius:22px;
+
+  font-family:"Courier New",monospace;
+  font-size:10px;
+
+  letter-spacing:.8px;
+
+  text-transform:uppercase;
+  font-weight:bold;
+
+  cursor:pointer;
+
+  height:35px;
+width:60px;
+  transition:.2s ease;
+
+  box-shadow:0 5px 16px rgba(240,184,75,.12);
+}
+
+.btn:hover{
+  filter:brightness(1.06);
+}
+
+.btn:active{
+  transform:scale(.97);
+}
+
+.count{
+  color:#7f8ba0;
+
+  font-family:"Courier New",monospace;
+  font-size:11px;
+
+  line-height:1.4;
+
+  min-width:0;
+
+  overflow-wrap:anywhere;
+}
+
+/* =========================
+   MANAGE BOX
+========================= */
+
+.managebox{
+  width:100%;
+
+  background:linear-gradient(
+    145deg,
+    var(--card),
+    #0e1727
+  );
+
+  border:1px solid var(--line);
+
+  border-radius:12px;
+
+  margin-top:16px;
+
+  box-shadow:
+    0 12px 30px rgba(0,0,0,.35);
+
+  overflow:hidden;
+}
+
+.managetop-title{
+  background:rgba(255,255,255,.025);
+
+  padding:12px 16px;
+
+  font-family:"Courier New",monospace;
+
+  font-size:10.5px;
+  letter-spacing:1.4px;
+
+  text-transform:uppercase;
+
+  color:#cbd4e4;
+
+  font-weight:bold;
+
+  box-shadow:
+    inset 0 -2px 0 var(--gold);
+}
+
+/* =========================
+   SEARCH PANEL
+========================= */
+
+.managebody{
+  padding:12px 10px 14px;
+  display:none;
+}
+
+.managebody.active{
+  display:block;
+}
+
+.searchwrap input{
+  width:100%;
+
+  padding:10px 13px;
+
+  border-radius:20px;
+
+  border:1px solid var(--line2);
+
+  background:#0a111e;
+
+  font-family:Georgia,serif;
+  font-size:14px;
+
+  color:var(--ink);
+
+  outline:none;
+
+  transition:.2s ease;
+
+  margin-bottom:10px;
+}
+
+.searchwrap input::placeholder{
+  color:#657187;
+}
+
+.searchwrap input:focus{
+  border-color:rgba(85,183,174,.65);
+
+  box-shadow:
+    0 0 0 3px rgba(85,183,174,.08);
+}
+
+/* =========================
+   SEARCH RESULTS
+========================= */
+
+.searchresults{
+  max-height:260px;
+  overflow-y:auto;
+
+  scrollbar-width:thin;
+  scrollbar-color:#34445d transparent;
+}
+
+.searchitem{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  gap:10px;
+
+  padding:10px 5px;
+
+  border-bottom:1px solid var(--line);
+
+  cursor:pointer;
+
+  min-width:0;
+
+  transition:.15s ease;
+}
+
+.searchitem:last-child{
+  border-bottom:none;
+}
+
+.searchitem:hover{
+  background:rgba(85,183,174,.07);
+}
+
+.searchitem:active{
+  background:rgba(85,183,174,.12);
+}
+
+.searchitem .si-en{
+  font-weight:bold;
+  color:#e3e9f3;
+  font-size:14px;
+
+  overflow-wrap:anywhere;
+}
+
+.searchitem .si-hi{
+  color:#65c4bb;
+  font-size:12.5px;
+
+  text-align:right;
+
+  overflow-wrap:anywhere;
+}
+
+
+.searchitem{align-items:flex-start;gap:10px;}
+.searchitem-main{flex:1;min-width:0;}
+.searchitem-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px;}
+.searchitem .si-meaning,.searchitem .si-sentence,.searchitem .si-extra{margin-top:4px;font-size:12px;line-height:1.45;color:#aab4c3;overflow-wrap:anywhere;}
+.searchitem .si-sentence{font-style:italic;}
+.searchitem .si-extra{font-family:"Courier New",monospace;font-size:10.5px;color:#7f8b9d;}
+.searchempty{
+  font-family:"Courier New",monospace;
+  font-size:12px;
+
+  color:#68758a;
+
+  padding:2px 3px;
+}
+
+/* =========================
+   MISSING WORD
+========================= */
+
+.savemissing-btn{
+  margin-top:8px;
+
+  background:var(--gold);
+  color:#111827;
+
+  border:none;
+
+  padding:9px 14px;
+
+  border-radius:18px;
+
+  font-family:"Courier New",monospace;
+
+  font-size:11px;
+
+  letter-spacing:.7px;
+
+  text-transform:uppercase;
+
+  font-weight:bold;
+
+  cursor:pointer;
+
+  max-width:100%;
+}
+
+.missinghint{
+  font-family:"Courier New",monospace;
+  font-size:10.5px;
+
+  color:#5f6d83;
+
+  padding:5px 4px 0;
+}
+
+/* =========================
+   EDIT FORM
+========================= */
+
+.editform{
+  display:none;
+
+  margin-top:14px;
+
+  padding-top:14px;
+
+  border-top:1px dashed var(--line2);
+}
+
+.editform.active{
+  display:block;
+}
+
+.edittitle{
+  font-size:19px;
+  line-height:1.25;
+
+  font-weight:bold;
+
+  color:#e7edf7;
+
+  margin-bottom:12px;
+
+  overflow-wrap:anywhere;
+}
+
+.field{
+  margin-bottom:10px;
+}
+
+.field label{
+  display:block;
+
+  font-family:"Courier New",monospace;
+
+  font-size:10px;
+
+  letter-spacing:1px;
+
+  text-transform:uppercase;
+
+  color:#77849a;
+
+  margin-bottom:5px;
+}
+
+.field input,
+.field textarea{
+  width:100%;
+
+  padding:9px 10px;
+
+  border-radius:7px;
+
+  border:1px solid var(--line2);
+
+  background:#0a111e;
+
+  font-family:Georgia,serif;
+
+  font-size:14px;
+
+  color:var(--ink);
+
+  outline:none;
+
+  resize:vertical;
+
+  transition:.2s ease;
+}
+
+.field input:focus,
+.field textarea:focus{
+  border-color:rgba(85,183,174,.65);
+
+  box-shadow:
+    0 0 0 3px rgba(85,183,174,.07);
+}
+
+.field-row{
+  display:flex;
+  gap:10px;
+}
+
+.field-row .field{
+  flex:1;
+  min-width:0;
+}
+
+/* =========================
+   EDIT BUTTONS
+========================= */
+
+.editbtns{
+  display:flex;
+  gap:9px;
+
+  margin-top:7px;
+}
+
+.addbtn,
+.cancelbtn{
+  flex:1;
+
+  min-height:40px;
+
+  border-radius:20px;
+
+  padding:9px 14px;
+
+  font-family:"Courier New",monospace;
+
+  font-size:11px;
+
+  letter-spacing:.7px;
+
+  text-transform:uppercase;
+
+  font-weight:bold;
+
+  cursor:pointer;
+}
+
+.addbtn{
+  background:var(--teal);
+  color:#071412;
+
+  border:none;
+}
+
+.cancelbtn{
+  background:transparent;
+
+  color:#bdc7d7;
+
+  border:1px solid var(--line2);
+}
+
+.addbtn:hover{
+  filter:brightness(1.08);
+}
+
+.cancelbtn:hover{
+  background:rgba(255,255,255,.04);
+}
+
+.addmsg{
+  margin-top:8px;
+
+  font-family:"Courier New",monospace;
+
+  font-size:11px;
+
+  min-height:14px;
+}
+
+
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar{
+  width:6px;
+  height:6px;
+}
+
+::-webkit-scrollbar-track{
+  background:transparent;
+}
+
+::-webkit-scrollbar-thumb{
+  background:#34445d;
+  border-radius:10px;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width:600px){
+
+  body{
+    padding-top:max(14px, env(safe-area-inset-top));
+  }
+
+  .board{
+    max-width:100%;
+  }
+
+  .alertbody{
+    padding:21px 18px 18px;
+  }
+
+  .word-en{
+    font-size:27px;
+  }
+
+  .word-hi{
+    font-size:18px;
+  }
+
+  .val{
+    font-size:14.5px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width:420px){
+
+  .server-state{max-width:82px;font-size:8px;padding:3px 5px;}
+
+  body{
+    padding-left:10px;
+    padding-right:10px;
+  }
+
+  .header{
+    margin-bottom:10px;
+  }
+
+  .brand{
+    font-size:10px;
+    letter-spacing:1px;
+  }
+
+  .clock{
+    font-size:12px;
+    min-width:65px;
+    padding:5px 8px;
+  }
+
+  .alerttop{
+    padding:8px 12px;
+    font-size:9.5px;
+  }
+
+  .editcur-btn{
+    padding:4px 7px;
+    font-size:9px;
+  }
+
+  .alertbody{
+    padding:18px 14px 16px;
+  }
+
+  .word-en{
+    font-size:25px;
+  }
+
+  .word-hi{
+    font-size:17px;
+    margin-bottom:14px;
+  }
+
+  .row{
+    gap:7px;
+  }
+
+  .label{
+    flex-basis:62px;
+    font-size:9px;
+  }
+
+  .val{
+    font-size:13.5px;
+    line-height:1.5;
+  }
+
+  .pill{
+    font-size:10.5px;
+    padding:5px 9px;
+  }
+
+  .controls{
+    gap:8px;
+  }
+
+  .count{
+    font-size:9.5px;
+  }
+
+  .btn{
+    padding:9px 13px;
+    font-size:10.5px;
+    min-height:38px;
+  }
+
+  .managetop-title{
+    padding:11px 13px;
+    font-size:9.5px;
+  }
+
+  .managebody{
+    padding:10px 8px 12px;
+  }
+
+  .field-row{
+    flex-direction:column;
+    gap:0;
+  }
+
+  .editbtns{
+    flex-direction:column;
+  }
+
+}
+
+/* =========================
+   VERY SMALL PHONES
+========================= */
+
+@media (max-width:340px){
+
+  body{
+    padding-left:7px;
+    padding-right:7px;
+  }
+
+  .brand{
+    font-size:9px;
+  }
+
+  .clock{
+    min-width:59px;
+    font-size:11px;
+  }
+
+  .alerttop{
+    padding-left:9px;
+    padding-right:9px;
+  }
+
+  .alertbody{
+    padding-left:11px;
+    padding-right:11px;
+  }
+
+  .word-en{
+    font-size:22px;
+  }
+
+  .word-hi{
+    font-size:15px;
+  }
+
+  .label{
+    flex-basis:55px;
+    font-size:8px;
+  }
+
+  .val{
+    font-size:12.5px;
+  }
+
+  .count{
+    font-size:8.5px;
+  }
+
+  .btn{
+    font-size:9.5px;
+    padding-left:10px;
+    padding-right:10px;
+  }
+}
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion:reduce){
+
+  *,
+  *::before,
+  *::after{
+    scroll-behavior:auto !important;
+  }
+
+  .alertbox{
+    animation:none;
+  }
+}
+
+/* =========================
+   DARK MODE FORM CONTROLS
+========================= */
+
+input,
+textarea,
+button{
+  -webkit-tap-highlight-color:transparent;
+}
+
+input,
+textarea{
+  color-scheme:dark;
+}
+
+/* compact header file control + compact search/save area */
+.header-actions{display:flex;align-items:center;gap:6px;flex-shrink:0;}
+.server-state{display:inline-flex;align-items:center;gap:4px;max-width:135px;padding:3px 7px;border-radius:10px;border:1px solid var(--line2);background:rgba(255,255,255,.04);font:9px "Courier New",monospace;color:#94a0b3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.server-state::before{content:"";width:6px;height:6px;border-radius:50%;background:#68758a;flex:0 0 auto;}
+.server-state.connected{color:#79d6a5;border-color:rgba(72,199,135,.3);background:rgba(72,199,135,.07);}
+.server-state.connected::before{background:#48c787;box-shadow:0 0 7px rgba(72,199,135,.55);}
+.server-state.saving{color:#e8bd67;border-color:rgba(232,163,61,.35);background:rgba(232,163,61,.07);}
+.server-state.saving::before{background:#e8a33d;}
+.server-state.saved{color:#79d6a5;border-color:rgba(72,199,135,.3);background:rgba(72,199,135,.08);}
+.server-state.saved::before{background:#48c787;}
+.server-state.error{color:#ff8d7c;border-color:rgba(192,80,62,.38);background:rgba(192,80,62,.09);}
+.server-state.error::before{background:#df6651;}
+.managebox{margin-top:9px;border-radius:9px;}
+.managetop-title{padding:6px 10px;font-size:9px;letter-spacing:.8px;}
+.managebody{padding:7px 8px 8px;}
+.searchwrap input{padding:6px 9px;border-radius:14px;font-size:12px;margin-bottom:5px;}
+.searchresults{max-height:145px;}
+.searchitem{padding:5px 3px;gap:6px;}
+.searchitem .si-en{font-size:12px;}
+.searchitem .si-hi{font-size:10.5px;}
+.searchitem .si-meaning,.searchitem .si-sentence,.searchitem .si-extra{margin-top:2px;font-size:10px;line-height:1.3;}
+.searchitem .si-extra{font-size:9px;}
+.editform{margin-top:7px;padding-top:7px;}
+.edittitle{font-size:14px;margin-bottom:6px;}
+.field{margin-bottom:5px;}
+.field label{font-size:8.5px;margin-bottom:2px;}
+.field input,.field textarea{padding:5px 7px;font-size:11px;border-radius:5px;}
+.editbtns{gap:6px;margin-top:3px;}
+.addbtn,.cancelbtn{min-height:28px;padding:5px 9px;font-size:9px;}
+.addmsg{margin-top:4px;font-size:9px;min-height:9px;}
+
+.round-setting{display:inline-flex;align-items:center;gap:5px;margin-left:8px;font:9px "Courier New",monospace;color:#8994a8;white-space:nowrap;vertical-align:middle;}
+.round-setting input{width:34px;height:22px;padding:0 3px;border-radius:10px;border:1px solid var(--line2);background:#0a111e;color:var(--ink);text-align:center;font:10px "Courier New",monospace;outline:none;}
+.round-setting input:focus{border-color:rgba(85,183,174,.65);}
+@media(max-width:420px){.round-setting{font-size:8px;margin-left:4px;gap:3px}.round-setting input{width:30px;height:20px;font-size:9px}}
+
+/* NEW / OLD revision controls */
+.pool-switch{display:inline-flex;align-items:center;gap:3px;margin-left:5px;}
+.pool-btn{height:22px;padding:0 7px;border-radius:11px;border:1px solid var(--line2);background:#0a111e;color:#8994a8;font:9px "Courier New",monospace;cursor:pointer;}
+.pool-btn.active{background:rgba(85,183,174,.16);border-color:rgba(85,183,174,.65);color:#79d6cc;}
+.learned-btn{width:22px;height:22px;border-radius:50%;padding:0;border:1px solid rgba(255,255,255,.40);background:rgba(255,255,255,.10);color:#fff;font-size:11px;line-height:1;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;}
+.learned-btn:hover{background:rgba(85,183,174,.25);}
+.learned-btn.old{opacity:.75;cursor:pointer;background:rgba(85,183,174,.18);border-color:rgba(85,183,174,.55);}
+.pool-count{font:8px "Courier New",monospace;color:#7f8ba0;white-space:nowrap;}
+@media(max-width:420px){.pool-btn{height:20px;padding:0 5px;font-size:8px}.learned-btn{width:20px;height:20px;font-size:10px}.pool-count{display:none}}
+</style>
+</head>
+
+<body>
+
+<div class="board">
+
+  <div class="header">
+    <div class="brand">Vocab Alert · Tier 2</div>
+    <div class="header-actions">
+      <span class="server-state connected" id="topFileStatus" title="English data is loaded and saved through the Python server">Server ✓</span>
+      <div class="clock" id="clock">10:00</div>
+    </div>
+  </div>
+
+  <div class="alertbox" id="box">
+
+    <div class="alerttop">
+
+      <span class="contentnav" title="Choose learning content">
+        <button class="content-btn active" id="vocabModeBtn" type="button">Vocab</button>
+        <button class="content-btn" id="idiomModeBtn" type="button">Idioms</button>
+        <button class="content-btn" id="mixModeBtn" type="button">Mix</button>
+      </span>
+
+      <span class="alerttop-right">
+        <span class="wordnav" title="Word order controls">
+          <button class="topmini-btn active" id="randomModeBtn" title="Random word" aria-label="Random word">⤨</button>
+          <button class="topmini-btn" id="seriesModeBtn" title="Series / alphabetical order" aria-label="Series order">↦</button>
+          <span class="topsearch-wrap">
+            <button class="topmini-btn" id="topSearchBtn" title="Search any word" aria-label="Search any word">⌕</button>
+            <input type="text" id="topSearchInput" class="topsearch-input" list="topWordSuggestions" placeholder="Search" title="Search any word and press Enter" aria-label="Search any word" autocomplete="off">
+            <datalist id="topWordSuggestions"></datalist>
+          </span>
+          <input type="number" id="qnoInput" class="qno-input" min="1" placeholder="Q#" title="Open question number" aria-label="Question number">
+        </span>
+        <button class="learned-btn" id="learnedBtn" title="Move word between New and Old" aria-label="Move word between new and old">✓</button>
+        <button class="editcur-btn" id="editCurrentBtn" title="Edit this word">✎ Edit</button>
+        <span id="wnum">#1</span>
+      </span>
+
+    </div>
+
+    <div class="alertbody">
+
+      <div class="word-en" id="wordEn"></div>
+
+      <div class="word-hi" id="wordHi"></div>
+
+      <div class="row">
+        <span class="label">Meaning</span>
+        <span class="val" id="meaning"></span>
+      </div>
+
+      <div class="row">
+        <span class="label">Sentence</span>
+        <span class="val" id="sentence"></span>
+      </div>
+
+      <div class="pillrow">
+
+        <span
+          class="pill syn"
+          id="syn"
+        ></span>
+
+        <span
+          class="pill ant"
+          id="ant"
+        ></span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="controls">
+
+    <span
+      class="count"
+      id="count"
+    >
+      Words seen: 0
+    </span>
+    <label class="round-setting" title="How many times each 10-word set will be tested">
+      <input type="number" id="testRoundsInput" min="1" max="20" value="1" aria-label="Test rounds">
+      <span id="roundLabel">round</span>
+    </label>
+    <span class="pool-switch" title="Choose which array to revise/test">
+      <button class="pool-btn active" id="newPoolBtn" type="button">New</button>
+      <button class="pool-btn" id="oldPoolBtn" type="button">Old</button>
+      <span class="pool-count" id="poolCount"></span>
+    </span>
+
+    <button
+      class="btn"
+      id="nextBtn"
+    >
+      Next now →
+    </button>
+
+  </div>
+
+
+  <div class="managebox">
+
+    <div class="managetop-title">
+      ✎ Search &amp; edit words
+    </div>
+
+    <div
+      class="managebody active"
+      id="searchPanel"
+    >
+
+      <div class="searchwrap">
+
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search by English or Hindi word..."
+        >
+
+      </div>
+
+      <div
+        class="searchresults"
+        id="searchResults"
+      ></div>
+
+
+      <div
+        class="editform"
+        id="editForm"
+      >
+
+        <div
+          class="edittitle"
+          id="editTitle"
+        ></div>
+
+
+        <div class="field">
+
+          <label>Hindi meaning</label>
+
+          <input
+            type="text"
+            id="editHi"
+          >
+
+        </div>
+
+
+        <div class="field">
+
+          <label>Meaning</label>
+
+          <textarea
+            id="editMeaning"
+            rows="2"
+          ></textarea>
+
+        </div>
+
+
+        <div class="field">
+
+          <label>Sentence</label>
+
+          <textarea
+            id="editSentence"
+            rows="2"
+          ></textarea>
+
+        </div>
+
+
+        <div class="field-row">
+
+          <div class="field">
+
+            <label>Synonym</label>
+
+            <input
+              type="text"
+              id="editSyn"
+            >
+
+          </div>
+
+          <div class="field">
+
+            <label>Antonym (opposite)</label>
+
+            <input
+              type="text"
+              id="editAnt"
+            >
+
+          </div>
+
+        </div>
+
+
+        <div class="editbtns">
+
+          <button
+            class="addbtn"
+            id="saveEditBtn"
+          >
+            Save changes
+          </button>
+
+          <button
+            class="cancelbtn"
+            id="cancelEditBtn"
+          >
+            Cancel
+          </button>
+
+        </div>
+
+        <div
+          class="addmsg"
+          id="editMsg"
+        ></div>
+
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+</div>
+
+
+<script>
+
+/* English data source: Python server only.
+   Persistent files: vocab.json, idioms.json and missing.json. */
+
+// ---------- English server storage ----------
+
+let WORDS = [];
+let IDIOM_WORDS = [];
+
+// Learned items are moved to the OLD pools.
+let OLD_WORDS = [];
+let OLD_IDIOM_WORDS = [];
+let quizPoolMode = "new";
+let contentMode = "vocab";
+
+let browseMode = "random";
+let browseIndex = 0;
+let seriesCursor = 0;
+
+let missingWords = [];
+
+function sortWordArray(items){
+  return [...items].sort((a,b) =>
+    String((a && a.en) || "").localeCompare(
+      String((b && b.en) || ""),
+      "en",
+      {sensitivity:"base"}
+    )
+  );
+}
+
+function buildServerPayload(){
+  return {
+    words: WORDS,
+    idioms: IDIOM_WORDS,
+    oldWords: OLD_WORDS,
+    oldIdioms: OLD_IDIOM_WORDS,
+    missingWords: missingWords
+  };
+}
+
+function applyLoadedData(obj){
+  if(!obj || typeof obj !== "object") return false;
+
+  if(Array.isArray(obj.words)){
+    WORDS = sortWordArray(obj.words);
+  }
+
+  if(Array.isArray(obj.idioms)){
+    const sortedIdioms = sortWordArray(obj.idioms);
+    IDIOM_WORDS.splice(0, IDIOM_WORDS.length, ...sortedIdioms);
+  }
+
+  OLD_WORDS = Array.isArray(obj.oldWords)
+    ? sortWordArray(obj.oldWords)
+    : [];
+
+  OLD_IDIOM_WORDS = Array.isArray(obj.oldIdioms)
+    ? sortWordArray(obj.oldIdioms)
+    : [];
+
+  missingWords = Array.isArray(obj.missingWords)
+    ? [...obj.missingWords]
+    : [];
+
+  return true;
+}
+
+function setServerStatus(text, state = ""){
+  const topEl = document.getElementById("topFileStatus");
+  if(!topEl) return;
+
+  topEl.className = "server-state" + (state ? " " + state : "");
+  topEl.title = text || "English server status";
+
+  if(state === "saving") topEl.textContent = "Server · Saving…";
+  else if(state === "saved") topEl.textContent = "Server ✓ · Saved";
+  else if(state === "error") topEl.textContent = "Server error";
+  else topEl.textContent = "Server ✓";
+}
+
+async function loadServerData(){
+  try{
+    setServerStatus("Loading English data from the Python server...", "saving");
+
+    const response = await fetch("/api/english/data", {
+      method:"GET",
+      cache:"no-store"
+    });
+
+    if(!response.ok){
+      throw new Error("Server returned HTTP " + response.status);
+    }
+
+    const result = await response.json();
+
+    if(result && result.data){
+      applyLoadedData(result.data);
+    }
+
+    setServerStatus("English data is connected to the Python server.", "connected");
+    return true;
+
+  }catch(e){
+    console.error("English server load failed:", e);
+    setServerStatus(
+      "Server unavailable. Run python server.py and open http://127.0.0.1:8000/english/.",
+      "error"
+    );
+    return false;
+  }
+}
+
+let lastServerError = "";
+
+async function saveServerData(){
+  try{
+    lastServerError = "";
+    setServerStatus("Saving English data through the Python server...", "saving");
+
+    const response = await fetch("/api/english/data", {
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify(buildServerPayload())
+    });
+
+    const result = await response.json().catch(() => ({}));
+
+    if(!response.ok || result.ok === false){
+      throw new Error(result.error || "Server could not save English data");
+    }
+
+    setServerStatus("Saved: vocab.json · idioms.json · missing.json", "saved");
+    return true;
+
+  }catch(e){
+    console.error("English server save failed:", e);
+    lastServerError = e && e.message ? e.message : String(e || "Unknown server error");
+    setServerStatus(
+      "Save failed: " + lastServerError,
+      "error"
+    );
+    return false;
+  }
+}
+// ---------- Quiz ----------
+
+const ROUND_SIZE = 10;
+
+const PHASE = {
+  READ:"read",
+  TEST:"test"
+};
+
+let roundNumber = 1;
+
+let testPass = 1;
+
+let timeLeft = 600;
+
+let currentRoundWords = [];
+
+let currentPhase = PHASE.READ;
+
+let readIndex = 0;
+
+let testIndex = 0;
+
+let answerVisible = false;
+
+let currentWord = null;
+
+
+const boxEl =
+  document.getElementById("box");
+
+const wordEnEl =
+  document.getElementById("wordEn");
+
+const wordHiEl =
+  document.getElementById("wordHi");
+
+const meaningEl =
+  document.getElementById("meaning");
+
+const sentenceEl =
+  document.getElementById("sentence");
+
+const synEl =
+  document.getElementById("syn");
+
+const antEl =
+  document.getElementById("ant");
+
+const clockEl =
+  document.getElementById("clock");
+
+const countEl =
+  document.getElementById("count");
+
+const wnumEl =
+  document.getElementById("wnum");
+
+const nextBtn =
+  document.getElementById("nextBtn");
+
+
+function shuffleWords(items){
+
+  const arr = [...items];
+
+  for(
+    let i = arr.length - 1;
+    i > 0;
+    i--
+  ){
+
+    const j =
+      Math.floor(
+        Math.random() * (i + 1)
+      );
+
+    [
+      arr[i],
+      arr[j]
+    ] =
+    [
+      arr[j],
+      arr[i]
+    ];
+
+  }
+
+  return arr;
+
+}
+
+
+function showAnswerCard(word){
+
+  currentWord = word;
+
+  wordEnEl.textContent =
+    word.en;
+
+  wordHiEl.textContent =
+    word.hi || "";
+
+  meaningEl.textContent =
+    word.meaning || "";
+
+  sentenceEl.textContent =
+    word.sentence
+      ? "“" + word.sentence + "”"
+      : "";
+
+  synEl.textContent =
+    "Synonym: " +
+    (word.syn || "—");
+
+  antEl.textContent =
+    "Antonym: " +
+    (word.ant || "—");
+
+  updateLearnedButton();
+}
+
+
+function showQuestionCard(word){
+
+  currentWord = word;
+
+  wordEnEl.textContent =
+    word.en;
+
+  wordHiEl.textContent =
+    "???";
+
+  meaningEl.textContent =
+    "Tap to reveal the meaning and answer.";
+
+  sentenceEl.textContent =
+    "";
+
+  synEl.textContent =
+    "Synonym: ?";
+
+  antEl.textContent =
+    "Antonym: ?";
+
+  updateLearnedButton();
+}
+
+
+function getQuizPool(){
+  const vocabPool = quizPoolMode === "old" ? OLD_WORDS : WORDS;
+  const idiomPool = quizPoolMode === "old" ? OLD_IDIOM_WORDS : IDIOM_WORDS;
+  if(contentMode === "idioms") return idiomPool;
+  if(contentMode === "mix") return [...vocabPool, ...idiomPool];
+  return vocabPool;
+}
+
+function getAllSearchWords(){
+  const vocabSearchPool = [...WORDS, ...OLD_WORDS];
+  const idiomSearchPool = [...IDIOM_WORDS, ...OLD_IDIOM_WORDS];
+
+  // Search should respect the currently opened content tab:
+  // Vocab  -> only vocab
+  // Idioms -> only idioms
+  // Mix    -> vocab + idioms
+  if(contentMode === "idioms") return idiomSearchPool;
+  if(contentMode === "mix") return [...vocabSearchPool, ...idiomSearchPool];
+  return vocabSearchPool;
+}
+
+function setContentButtons(mode){
+  document.getElementById("vocabModeBtn")?.classList.toggle("active", mode === "vocab");
+  document.getElementById("idiomModeBtn")?.classList.toggle("active", mode === "idioms");
+  document.getElementById("mixModeBtn")?.classList.toggle("active", mode === "mix");
+}
+
+function updatePoolUI(){
+  const newBtn = document.getElementById("newPoolBtn");
+  const oldBtn = document.getElementById("oldPoolBtn");
+  const poolCount = document.getElementById("poolCount");
+  newBtn?.classList.toggle("active", quizPoolMode === "new");
+  oldBtn?.classList.toggle("active", quizPoolMode === "old");
+  if(poolCount){
+    poolCount.textContent = "N:" + (WORDS.length + IDIOM_WORDS.length) +
+      " O:" + (OLD_WORDS.length + OLD_IDIOM_WORDS.length);
+  }
+}
+
+function updateLearnedButton(){
+  const btn = document.getElementById("learnedBtn");
+  if(!btn) return;
+
+  const isManagedWord = !!currentWord && (
+    WORDS.includes(currentWord) ||
+    OLD_WORDS.includes(currentWord) ||
+    IDIOM_WORDS.includes(currentWord) ||
+    OLD_IDIOM_WORDS.includes(currentWord)
+  );
+  const isOld = !!currentWord && (OLD_WORDS.includes(currentWord) || OLD_IDIOM_WORDS.includes(currentWord));
+
+  btn.classList.toggle("old", isOld);
+  btn.disabled = !isManagedWord;
+
+  // Same tiny circle button works in BOTH directions:
+  // NEW -> OLD and OLD -> NEW.
+  btn.textContent = isOld ? "↩" : "✓";
+  btn.title = isOld
+    ? "Move this word back to New"
+    : isManagedWord
+      ? "Learned — move this word to Old"
+      : "Learned — move this word to Old";
+
+  btn.setAttribute(
+    "aria-label",
+    isOld ? "Move old word back to new" : "Move learned word to old"
+  );
+}
+
+async function toggleCurrentWordPool(){
+  if(!currentWord) return;
+
+  const wasOld = OLD_WORDS.includes(currentWord);
+  const wasNew = WORDS.includes(currentWord);
+  const wasOldIdiom = OLD_IDIOM_WORDS.includes(currentWord);
+  const wasNewIdiom = IDIOM_WORDS.includes(currentWord);
+
+  // OLD -> NEW
+  if(wasOld || wasOldIdiom){
+    const oldPool = wasOldIdiom ? OLD_IDIOM_WORDS : OLD_WORDS;
+    const newPool = wasOldIdiom ? IDIOM_WORDS : WORDS;
+    const oldIndex = oldPool.indexOf(currentWord);
+    if(oldIndex >= 0){
+      const [word] = oldPool.splice(oldIndex, 1);
+
+      if(!newPool.includes(word)){
+        newPool.push(word);
+      }
+
+      newPool.sort((a,b) =>
+        String(a.en || "").localeCompare(
+          String(b.en || ""),
+          "en",
+          {sensitivity:"base"}
+        )
+      );
+    }
+  }
+  // NEW -> OLD
+  else if(wasNew || wasNewIdiom){
+    const newPool = wasNewIdiom ? IDIOM_WORDS : WORDS;
+    const oldPool = wasNewIdiom ? OLD_IDIOM_WORDS : OLD_WORDS;
+    const newIndex = newPool.indexOf(currentWord);
+    if(newIndex >= 0){
+      const [word] = newPool.splice(newIndex, 1);
+
+      if(!oldPool.includes(word)){
+        oldPool.push(word);
+      }
+
+      oldPool.sort((a,b) =>
+        String(a.en || "").localeCompare(
+          String(b.en || ""),
+          "en",
+          {sensitivity:"base"}
+        )
+      );
+    }
+  }else{
+    return;
+  }
+
+  updatePoolUI();
+  fillTopWordSuggestions();
+  renderSearchResults(searchInput?.value || "");
+
+  // Persist NEW/OLD movement through the Python server.
+  await saveServerData();
+
+  // IMPORTANT:
+  // Do NOT restart the active round after moving a word.
+  //
+  // currentRoundWords is a snapshot of the 10 words selected for this round.
+  // So even if a word is moved NEW <-> OLD during READ or TEST,
+  // the current round/test continues from the same place.
+  // The moved word will disappear only from FUTURE rounds of that pool.
+  //
+  // This prevents the test from suddenly ending/resetting in the middle.
+  updateLearnedButton();
+
+  // Keep the current test/read status exactly where it is.
+  if(currentPhase === PHASE.TEST){
+    countEl.textContent = testStatusText(
+      answerVisible ? Math.min(testIndex + 1, currentRoundWords.length) : testIndex
+    );
+    nextBtn.textContent = answerVisible ? "Next question →" : "Show answer →";
+  }else{
+    countEl.textContent =
+      (quizPoolMode === "old" ? "Old" : "New") + " • " +
+      (browseMode === "series" ? "Series" : "Random") +
+      " • Round " + roundNumber +
+      " • Read " + Math.min(readIndex + 1, currentRoundWords.length) +
+      "/" + currentRoundWords.length;
+    nextBtn.textContent = "Next →";
+  }
+}
+
+function startRound(mode = browseMode){
+
+  const pool = getQuizPool();
+
+  if(!pool.length){
+    currentRoundWords = [];
+    countEl.textContent = (quizPoolMode === "old" ? "Old" : "New") + " array is empty";
+    nextBtn.textContent = "Next →";
+    return;
+  }
+
+  browseMode = mode === "series" ? "series" : "random";
+  setBrowseButtons(browseMode);
+  setContentButtons(contentMode);
+
+  if(browseMode === "series"){
+    // SERIES MODE: take the next 10 words in alphabetical order.
+    if(seriesCursor >= pool.length) seriesCursor = 0;
+
+    currentRoundWords = pool.slice(
+      seriesCursor,
+      Math.min(seriesCursor + ROUND_SIZE, pool.length)
+    );
+
+    // If fewer than 10 remain at the end, wrap to the beginning.
+    if(currentRoundWords.length < Math.min(ROUND_SIZE, pool.length)){
+      const needed = Math.min(ROUND_SIZE, pool.length) - currentRoundWords.length;
+      currentRoundWords = currentRoundWords.concat(pool.slice(0, needed));
+    }
+  }else{
+    // RANDOM MODE: pick a fresh random set of up to 10 words.
+    currentRoundWords = shuffleWords(pool).slice(
+      0,
+      Math.min(ROUND_SIZE, pool.length)
+    );
+  }
+
+  currentPhase = PHASE.READ;
+  readIndex = 0;
+  testIndex = 0;
+  testPass = 1;
+  answerVisible = false;
+
+  // Word 1 is already being READ on screen.
+  showAnswerCard(currentRoundWords[0]);
+
+  const actualIndex = pool.indexOf(currentRoundWords[0]);
+  wnumEl.textContent = actualIndex >= 0 ? "#" + (actualIndex + 1) : "#1";
+
+  countEl.textContent =
+    (quizPoolMode === "old" ? "Old" : "New") + " • " +
+    (browseMode === "series" ? "Series" : "Random") +
+    " • Round " + roundNumber +
+    " • Read 1/" + currentRoundWords.length;
+
+  nextBtn.textContent = "Next →";
+  timeLeft = 600;
+  updatePoolUI();
+  updateLearnedButton();
+}
+
+
+function getTestRounds(){
+  const input = document.getElementById("testRoundsInput");
+  const n = parseInt(input?.value, 10);
+  return Number.isFinite(n) ? Math.max(1, Math.min(20, n)) : 1;
+}
+
+function testStatusText(doneCount = 0){
+  const totalPasses = getTestRounds();
+  return (quizPoolMode === "old" ? "Old" : "New") + " • " +
+    (browseMode === "series" ? "Series" : "Random") +
+    " • Round " + roundNumber +
+    " • Test " + testPass + "/" + totalPasses +
+    " • " + doneCount + "/" + currentRoundWords.length;
+}
+
+function nextWord(resetTimer = true){
+
+  animateCard();
+
+  // ---------------- READ PHASE ----------------
+  if(currentPhase === PHASE.READ){
+
+    // Move to the next read word.
+    readIndex += 1;
+
+    // All 10 words have already been shown.
+    // NOW start the test, so word 10 was visible before this click.
+    if(readIndex >= currentRoundWords.length){
+
+      currentPhase = PHASE.TEST;
+      testIndex = 0;
+      testPass = 1;
+      answerVisible = false;
+
+      countEl.textContent = testStatusText(0);
+      nextBtn.textContent = "Show answer →";
+
+      showQuestionCard(currentRoundWords[0]);
+      const repeatedFirstIndex = getQuizPool().indexOf(currentRoundWords[0]);
+      wnumEl.textContent = repeatedFirstIndex >= 0 ? "#" + (repeatedFirstIndex + 1) : "#1";
+
+      if(resetTimer) timeLeft = 600;
+      return;
+    }
+
+    const word = currentRoundWords[readIndex];
+    showAnswerCard(word);
+
+    const actualReadIndex = getQuizPool().indexOf(word);
+    wnumEl.textContent = actualReadIndex >= 0 ? "#" + (actualReadIndex + 1) : "#" + (readIndex + 1);
+    countEl.textContent =
+      (browseMode === "series" ? "Series" : "Random") +
+      " • Round " + roundNumber +
+      " • Read " + (readIndex + 1) +
+      "/" + currentRoundWords.length;
+
+    nextBtn.textContent = "Next →";
+
+    if(resetTimer) timeLeft = 600;
+    return;
+  }
+
+  // ---------------- TEST PHASE ----------------
+
+  // First click on a test word reveals its answer.
+  if(!answerVisible){
+
+    const word = currentRoundWords[testIndex];
+    showAnswerCard(word);
+
+    answerVisible = true;
+    nextBtn.textContent = "Next →";
+    const actualTestIndex = getQuizPool().indexOf(word);
+    wnumEl.textContent = actualTestIndex >= 0 ? "#" + (actualTestIndex + 1) : "#" + (testIndex + 1);
+
+    if(resetTimer) timeLeft = 600;
+    return;
+  }
+
+  // Answer was visible: move to the next test question.
+  testIndex += 1;
+  answerVisible = false;
+
+  // One complete test pass finished.
+  if(testIndex >= currentRoundWords.length){
+
+    const totalPasses = getTestRounds();
+
+    // Repeat testing the SAME 10 words if test rounds > 1.
+    if(testPass < totalPasses){
+      testPass += 1;
+      testIndex = 0;
+
+      countEl.textContent = testStatusText(0);
+      nextBtn.textContent = "Show answer →";
+      showQuestionCard(currentRoundWords[0]);
+      wnumEl.textContent = "#1";
+
+      if(resetTimer) timeLeft = 600;
+      return;
+    }
+
+    // Read 10 -> Test complete -> start the next group of 10.
+    if(browseMode === "series"){
+      seriesCursor = (seriesCursor + currentRoundWords.length) % getQuizPool().length;
+    }
+    roundNumber += 1;
+    startRound(browseMode);
+    return;
+  }
+
+  showQuestionCard(currentRoundWords[testIndex]);
+  const nextActualIndex = getQuizPool().indexOf(currentRoundWords[testIndex]);
+  wnumEl.textContent = nextActualIndex >= 0 ? "#" + (nextActualIndex + 1) : "#" + (testIndex + 1);
+  countEl.textContent = testStatusText(testIndex);
+  nextBtn.textContent = "Show answer →";
+
+  if(resetTimer) timeLeft = 600;
+}
+
+
+function tick(){
+
+  timeLeft--;
+
+  if(timeLeft <= 0){
+
+    nextWord(false);
+
+    timeLeft = 600;
+
+  }
+
+  const m =
+    Math.floor(timeLeft / 60)
+      .toString()
+      .padStart(2,"0");
+
+  const s =
+    (timeLeft % 60)
+      .toString()
+      .padStart(2,"0");
+
+  clockEl.textContent =
+    `${m}:${s}`;
+
+}
+
+
+const editCurrentBtn =
+  document.getElementById(
+    "editCurrentBtn"
+  );
+
+
+editCurrentBtn.onclick = () => {
+
+  if(!currentWord) return;
+
+  openEditForm(currentWord);
+
+  editForm.scrollIntoView({
+    behavior:"smooth",
+    block:"center"
+  });
+
+};
+
+
+function animateCard(){
+  boxEl.style.animation = "none";
+  void boxEl.offsetWidth;
+  boxEl.style.animation = "pop .4s ease";
+}
+
+function setBrowseButtons(mode){
+  document.getElementById("randomModeBtn")?.classList.toggle("active", mode === "random");
+  document.getElementById("seriesModeBtn")?.classList.toggle("active", mode === "series");
+}
+
+function showBrowseWord(index){
+  if(!WORDS.length) return;
+  browseIndex = Math.max(0, Math.min(index, WORDS.length - 1));
+  const word = WORDS[browseIndex];
+  animateCard();
+  showAnswerCard(word);
+  wnumEl.textContent = "#" + (browseIndex + 1);
+  countEl.textContent = (browseMode === "series" ? "Series" : "Random") + " • " + (browseIndex + 1) + "/" + WORDS.length;
+  nextBtn.textContent = "Next →";
+  timeLeft = 600;
+}
+
+function showRandomWord(){
+  if(!getQuizPool().length) return;
+  roundNumber = 1;
+  startRound("random");
+}
+
+function showSeriesWord(index = seriesCursor){
+  const pool = getQuizPool();
+  if(!pool.length) return;
+  seriesCursor = Math.max(0, Math.min(index, pool.length - 1));
+  roundNumber = 1;
+  startRound("series");
+}
+
+function goToWordNumber(value){
+  const pool = getQuizPool();
+  if(!pool.length) return;
+  let number = Number(value);
+  if(!Number.isFinite(number)) return;
+  number = Math.trunc(number);
+  number = Math.max(1, Math.min(number, pool.length));
+  const input = document.getElementById("qnoInput");
+  if(input) input.value = number;
+  showSeriesWord(number - 1);
+}
+
+// Random and Series are both QUIZ modes now.
+// Next always advances READ -> TEST -> next 10-word round.
+nextBtn.onclick = () => nextWord(true);
+
+
+// ---------- Search ----------
+
+const searchInput =
+  document.getElementById(
+    "searchInput"
+  );
+
+const searchResults =
+  document.getElementById(
+    "searchResults"
+  );
+
+
+async function saveMissingWord(word){
+  const normalizedWord = String(word || "").trim();
+  if(!normalizedWord) return false;
+
+  const alreadySaved = missingWords.some(
+    item => String(item || "").trim().toLocaleLowerCase("en") === normalizedWord.toLocaleLowerCase("en")
+  );
+  if(alreadySaved) return true;
+
+  missingWords.push(normalizedWord);
+  const saved = await saveServerData();
+  if(!saved){
+    const addedIndex = missingWords.lastIndexOf(normalizedWord);
+    if(addedIndex !== -1) missingWords.splice(addedIndex, 1);
+  }
+  return saved;
+}
+
+
+function renderSearchResults(query){
+
+  const q =
+    query.trim().toLowerCase();
+
+  searchResults.innerHTML = "";
+
+
+  if(!q){
+
+    return;
+
+  }
+
+
+  const matches =
+    getAllSearchWords().filter(w => {
+      const searchable = [w.en, w.hi, w.meaning, w.sentence, w.syn, w.ant]
+        .filter(Boolean)
+        .join(" ")
+        .toLowerCase();
+      return searchable.includes(q);
+    });
+
+
+  if(matches.length === 0){
+
+    const empty =
+      document.createElement("div");
+
+    empty.className =
+      "searchempty";
+
+    empty.textContent =
+      "No matching word found.";
+
+    searchResults.appendChild(
+      empty
+    );
+
+
+    const alreadySaved =
+      missingWords.some(
+        w =>
+          w.toLowerCase() === q
+      );
+
+
+    if(!alreadySaved){
+
+      const saveBtn =
+        document.createElement(
+          "button"
+        );
+
+      saveBtn.className =
+        "savemissing-btn";
+
+      saveBtn.textContent =
+        'Save "' +
+        query.trim() +
+        '" (not available)';
+
+      saveBtn.onclick = async () => {
+        await saveMissingWord(query.trim());
+        renderSearchResults(
+          searchInput.value
+        );
+
+      };
+
+      searchResults.appendChild(
+        saveBtn
+      );
+
+    }
+
+    return;
+
+  }
+
+
+  matches.forEach(word => {
+
+    const item =
+      document.createElement("div");
+
+    item.className =
+      "searchitem";
+
+    item.innerHTML =
+      '<div class="searchitem-main">' +
+        '<div class="searchitem-head">' +
+          '<span class="si-en">' + escapeHtml(word.en || "") + '</span>' +
+          '<span class="si-hi">' + escapeHtml(word.hi || "") + '</span>' +
+        '</div>' +
+        '<div class="si-meaning"><b>Meaning:</b> ' + escapeHtml(word.meaning || "—") + '</div>' +
+        '<div class="si-sentence"><b>Sentence:</b> ' + escapeHtml(word.sentence || "—") + '</div>' +
+        '<div class="si-extra">' + (OLD_WORDS.includes(word) ? 'OLD' : 'NEW') + ' &nbsp;•&nbsp; Synonym: ' + escapeHtml(word.syn || "—") + ' &nbsp;•&nbsp; Antonym: ' + escapeHtml(word.ant || "—") + '</div>' +
+      '</div>';
+
+
+    item.onclick = () => {
+
+      boxEl.style.animation =
+        "none";
+
+      void boxEl.offsetWidth;
+
+      boxEl.style.animation =
+        "pop .4s ease";
+
+      wordEnEl.textContent =
+        word.en;
+
+      showAnswerCard(word);
+
+      const sourcePool = OLD_IDIOM_WORDS.includes(word)
+        ? OLD_IDIOM_WORDS
+        : IDIOM_WORDS.includes(word)
+          ? IDIOM_WORDS
+          : OLD_WORDS.includes(word) ? OLD_WORDS : WORDS;
+      browseIndex = sourcePool.indexOf(word);
+      wnumEl.textContent = "#" + (browseIndex + 1);
+      countEl.textContent = ((OLD_WORDS.includes(word) || OLD_IDIOM_WORDS.includes(word)) ? "Old" : "New") + " • Search result";
+      nextBtn.textContent = "Next →";
+      updateLearnedButton();
+      const qInput = document.getElementById("qnoInput");
+      if(qInput) qInput.value = browseIndex + 1;
+      openEditForm(word);
+
+      // Successful selection ke baad lower search input clear karo.
+      searchInput.value = "";
+      searchResults.innerHTML = "";
+
+    };
+
+
+    searchResults.appendChild(item);
+
+  });
+
+}
+
+
+function escapeHtml(str){
+
+  const div =
+    document.createElement("div");
+
+  div.textContent =
+    str;
+
+  return div.innerHTML;
+
+}
+
+
+searchInput.addEventListener(
+  "input",
+  () =>
+    renderSearchResults(
+      searchInput.value
+    )
+);
+
+
+// ---------- Edit form ----------
+
+const editForm =
+  document.getElementById(
+    "editForm"
+  );
+
+const editTitle =
+  document.getElementById(
+    "editTitle"
+  );
+
+const editHi =
+  document.getElementById(
+    "editHi"
+  );
+
+const editMeaning =
+  document.getElementById(
+    "editMeaning"
+  );
+
+const editSentence =
+  document.getElementById(
+    "editSentence"
+  );
+
+const editSyn =
+  document.getElementById(
+    "editSyn"
+  );
+
+const editAnt =
+  document.getElementById(
+    "editAnt"
+  );
+
+const saveEditBtn =
+  document.getElementById(
+    "saveEditBtn"
+  );
+
+const cancelEditBtn =
+  document.getElementById(
+    "cancelEditBtn"
+  );
+
+const editMsg =
+  document.getElementById(
+    "editMsg"
+  );
+
+
+let editingWord = null;
+
+
+function openEditForm(word){
+
+  editingWord = word;
+
+  editTitle.textContent =
+    word.en;
+
+  editHi.value =
+    word.hi || "";
+
+  editMeaning.value =
+    word.meaning || "";
+
+  editSentence.value =
+    word.sentence || "";
+
+  editSyn.value =
+    word.syn || "";
+
+  editAnt.value =
+    word.ant || "";
+
+  editMsg.textContent =
+    "";
+
+  editForm.classList.add(
+    "active"
+  );
+
+}
+
+
+function closeEditForm(){
+
+  editingWord = null;
+
+  editForm.classList.remove(
+    "active"
+  );
+
+}
+
+
+saveEditBtn.onclick = async () => {
+
+  if(!editingWord) return;
+
+
+  const meaning =
+    editMeaning.value.trim();
+
+
+  if(!meaning){
+
+    editMsg.style.color =
+      "var(--red)";
+
+    editMsg.textContent =
+      "Meaning cannot be empty.";
+
+    return;
+
+  }
+
+
+  editingWord.hi =
+    editHi.value.trim();
+
+  editingWord.meaning =
+    meaning;
+
+  editingWord.sentence =
+    editSentence.value.trim();
+
+  editingWord.syn =
+    editSyn.value.trim();
+
+  editingWord.ant =
+    editAnt.value.trim();
+
+
+  if(
+    currentWord === editingWord
+  ){
+
+    if(
+      currentPhase === PHASE.TEST &&
+      !answerVisible
+    ){
+
+      showQuestionCard(
+        editingWord
+      );
+
+    }else{
+
+      showAnswerCard(
+        editingWord
+      );
+
+    }
+
+  }
+
+
+  editMsg.style.color =
+    "var(--teal)";
+
+  {
+    const savedOk = await saveServerData();
+
+    if(!savedOk){
+      editMsg.style.color = "var(--red)";
+      editMsg.textContent =
+        'Server save failed: ' + (lastServerError || 'Unknown error');
+      return;
+    }
+
+    editMsg.style.color = "var(--teal)";
+    editMsg.textContent =
+      'Saved "' + editingWord.en + '" ✓ · Server updated';
+  }
+
+  renderSearchResults(
+    searchInput.value
+  );
+
+  // Sirf verified successful save ke baad dialog close ho.
+  setTimeout(() => closeEditForm(), 350);
+
+};
+
+
+cancelEditBtn.onclick =
+  () => closeEditForm();
+
+
+const testRoundsInput = document.getElementById("testRoundsInput");
+const roundLabel = document.getElementById("roundLabel");
+function syncRoundLabel(){
+  const n = getTestRounds();
+  testRoundsInput.value = n;
+  roundLabel.textContent = n === 1 ? "round" : "rounds";
+  if(currentPhase === PHASE.TEST) countEl.textContent = testStatusText(testIndex);
+}
+testRoundsInput?.addEventListener("change", syncRoundLabel);
+testRoundsInput?.addEventListener("input", () => {
+  const n = parseInt(testRoundsInput.value, 10);
+  roundLabel.textContent = n === 1 ? "round" : "rounds";
+});
+
+document.getElementById("learnedBtn")?.addEventListener("click", toggleCurrentWordPool);
+
+document.getElementById("newPoolBtn")?.addEventListener("click", () => {
+  quizPoolMode = "new";
+  seriesCursor = 0;
+  roundNumber = 1;
+  updatePoolUI();
+  startRound(browseMode);
+});
+
+document.getElementById("oldPoolBtn")?.addEventListener("click", () => {
+  quizPoolMode = "old";
+  seriesCursor = 0;
+  roundNumber = 1;
+  updatePoolUI();
+  startRound(browseMode);
+});
+
+setInterval(
+  tick,
+  1000
+);
+
+
+document.getElementById("randomModeBtn")?.addEventListener("click", () => {
+  showRandomWord();
+});
+
+document.getElementById("seriesModeBtn")?.addEventListener("click", () => {
+  const pool = getQuizPool();
+  const currentIndex = currentWord ? pool.indexOf(currentWord) : 0;
+  showSeriesWord(currentIndex >= 0 ? currentIndex : 0);
+});
+
+function chooseContentMode(mode){
+  contentMode = mode;
+  seriesCursor = 0;
+  roundNumber = 1;
+  setContentButtons(contentMode);
+  startRound(browseMode);
+
+  // Refresh search data whenever tab changes, so old-tab results
+  // never remain visible in the new tab.
+  fillTopWordSuggestions();
+
+  if(typeof searchInput !== "undefined" && searchInput){
+    renderSearchResults(searchInput.value || "");
+  }
+
+  if(typeof topSearchInput !== "undefined" && topSearchInput){
+    topSearchInput.classList.remove("not-found");
+  }
+}
+
+document.getElementById("vocabModeBtn")?.addEventListener("click", () => chooseContentMode("vocab"));
+document.getElementById("idiomModeBtn")?.addEventListener("click", () => chooseContentMode("idioms"));
+document.getElementById("mixModeBtn")?.addEventListener("click", () => chooseContentMode("mix"));
+
+document.getElementById("qnoInput")?.addEventListener("change", (e) => {
+  goToWordNumber(e.target.value);
+});
+
+document.getElementById("qnoInput")?.addEventListener("keydown", (e) => {
+  if(e.key === "Enter"){
+    goToWordNumber(e.target.value);
+    e.target.blur();
+  }
+});
+
+// ---------- Top search near Random / Series ----------
+const topSearchInput = document.getElementById("topSearchInput");
+const topSearchBtn = document.getElementById("topSearchBtn");
+const topWordSuggestions = document.getElementById("topWordSuggestions");
+
+function fillTopWordSuggestions(){
+  if(!topWordSuggestions) return;
+  topWordSuggestions.innerHTML = "";
+  getAllSearchWords().forEach(word => {
+    const option = document.createElement("option");
+    option.value = word.en || "";
+    if(word.hi) option.label = word.hi;
+    topWordSuggestions.appendChild(option);
+  });
+}
+
+function openWordFromTopSearch(){
+  const allWords = getAllSearchWords();
+  if(!topSearchInput || !allWords.length) return;
+
+  const raw = topSearchInput.value.trim();
+  const q = raw.toLowerCase();
+  topSearchInput.classList.remove("not-found");
+  if(!q) return;
+
+  let word = allWords.find(w => (w.en || "").toLowerCase() === q);
+  if(!word) word = allWords.find(w => (w.en || "").toLowerCase().startsWith(q));
+  if(!word) word = allWords.find(w => (w.en || "").toLowerCase().includes(q));
+  if(!word){
+    word = allWords.find(w => [w.en,w.hi,w.meaning,w.sentence,w.syn,w.ant]
+      .filter(Boolean)
+      .join(" ")
+      .toLowerCase()
+      .includes(q));
+  }
+
+  if(!word){
+    topSearchInput.classList.add("not-found");
+    topSearchInput.select();
+    return;
+  }
+
+  const sourcePool = OLD_IDIOM_WORDS.includes(word)
+    ? OLD_IDIOM_WORDS
+    : IDIOM_WORDS.includes(word)
+      ? IDIOM_WORDS
+      : OLD_WORDS.includes(word) ? OLD_WORDS : WORDS;
+  const index = sourcePool.indexOf(word);
+  showAnswerCard(word);
+  wnumEl.textContent = "#" + (index + 1);
+  countEl.textContent = (OLD_WORDS.includes(word) ? "Old" : "New") + " • Search result";
+  nextBtn.textContent = "Next →";
+  // Successful top search ke baad input clear karo.
+  topSearchInput.value = "";
+
+  // Lower detailed search ko bhi clear rakho.
+  if(typeof searchInput !== "undefined" && searchInput){
+    searchInput.value = "";
+    searchResults.innerHTML = "";
+  }
+}
+
+topSearchBtn?.addEventListener("click", () => {
+  if(topSearchInput?.value.trim()) openWordFromTopSearch();
+  else topSearchInput?.focus();
+});
+
+topSearchInput?.addEventListener("keydown", (e) => {
+  if(e.key === "Enter"){
+    e.preventDefault();
+    openWordFromTopSearch();
+  }
+});
+
+// Datalist suggestion select/click hote hi upper main card me word open karo.
+topSearchInput?.addEventListener("change", () => {
+  if(topSearchInput.value.trim()){
+    openWordFromTopSearch();
+  }
+});
+
+topSearchInput?.addEventListener("input", () => {
+  topSearchInput.classList.remove("not-found");
+});
+
+
+async function initializeEnglishApp(){
+  const loaded = await loadServerData();
+
+  if(!loaded){
+    WORDS = [];
+    IDIOM_WORDS = [];
+    OLD_WORDS = [];
+    OLD_IDIOM_WORDS = [];
+    missingWords = [];
+  }
+
+  updatePoolUI();
+  syncRoundLabel();
+  fillTopWordSuggestions();
+  startRound("random");
+
+  if(searchInput && searchInput.value){
+    renderSearchResults(searchInput.value);
+  }
+}
+
+initializeEnglishApp();
+
+</script>
+
+<script src="/common-nav.js"></script>
+</body>
+</html>

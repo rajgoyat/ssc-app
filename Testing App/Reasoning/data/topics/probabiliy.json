@@ -1,0 +1,78 @@
+[
+  {
+    "category": "Probabiliy",
+    "questionText": "A bag contains 8 red and 2 blue balls. Two balls are drawn without replacement. What is the probability that at least one ball is blue?",
+    "questionImage": null,
+    "options": [
+      "15/45",
+      "17/45",
+      "13/45",
+      "11/45"
+    ],
+    "correctIndex": 1,
+    "solutionText": "not both red= al least 1 blue",
+    "solutionImage": null,
+    "id": "mtshpbvj7ss1xg",
+    "order": 56,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Probabiliy",
+    "questionText": "A bag contains 6 red, 4 blue, and 2 green balls. Three balls are drawn without replacement. What is the probability that at least one ball is blue?",
+    "questionImage": null,
+    "options": [
+      "41/55",
+      "57/55",
+      "31/55",
+      "42/55"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mtsi0taxr0zj6u",
+    "order": 57,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Probabiliy",
+    "questionText": "A bag contains 5 red, 4 blue, and 3 green balls. Three balls are drawn without replacement. What is the probability that exactly two balls are blue?",
+    "questionImage": null,
+    "options": [
+      "16/55",
+      "14/55",
+      "12/55",
+      "15/55"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/4dz3HUsLVXk?si=KBMFgrLBFZa4MNTH&t=469",
+    "solutionImage": null,
+    "id": "mtsj614vz9sxr9",
+    "order": 58,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Probabiliy",
+    "questionText": "A bag contains 7 red, 5 blue, and 4 green balls. Four balls are drawn without replacement. What is the probability that exactly 2 balls are blue and at least 1 ball is red?",
+    "questionImage": null,
+    "options": [
+      "46/181",
+      "44/185",
+      "70/121",
+      "49/182"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": "/uploads/probabiliy/a80df4146b2f7b9654653c8e0d356997d20f2d8f3076124f7401f3235d7c885f.png",
+    "id": "mtsjh8nqp96xng",
+    "order": 59,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  }
+]

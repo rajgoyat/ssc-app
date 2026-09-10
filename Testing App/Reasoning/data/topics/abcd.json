@@ -1,0 +1,59 @@
+[
+  {
+    "category": "ABCD",
+    "questionText": "BT, YP, ?, SE, PX, MP, JG, GW",
+    "questionImage": null,
+    "options": [
+      "VK",
+      "VL",
+      "TK",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "INCREASING ...",
+    "solutionImage": null,
+    "id": "mt8eszvs1etmw3",
+    "order": 18,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "ABCD",
+    "questionText": "In a certain code language, 'RETAIL' is written as\n'FNQWJY' and 'POLICE' is written as 'NHJUTQ'. How will\n'HARBOR' be written in that language?",
+    "questionImage": "/uploads/abcd/08ca5649bc4cd1012cbf21d86ed340c54871528e15500230f064935dd2e68713.png",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "+5 LOGIC",
+    "solutionImage": null,
+    "id": "mt8fbczsoa19g7",
+    "order": 19,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "ABCD",
+    "questionText": "In a certain code language, 'FLOAT' is written as\n'WONZI' and 'TRIBE' is written as 'DUHEW'. How will\n'GARDEN' be written in that language?",
+    "questionImage": "/uploads/abcd/784bf18108ea6fab898f82f9f876a21ce919c4baa640c50b4b653bad5b4fe56f.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/zAtBer3dZb8?si=ByJ-4M-1UETCYMzD&t=696",
+    "solutionImage": null,
+    "id": "mtbdcw5gjzygxs",
+    "order": 34,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  }
+]

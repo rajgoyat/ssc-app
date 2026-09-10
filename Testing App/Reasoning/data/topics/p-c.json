@@ -1,0 +1,249 @@
+[
+  {
+    "category": "P&C",
+    "questionText": "How many different arrangements can be made using all letters of the word BANANA such that all the A's are together?",
+    "questionImage": null,
+    "options": [
+      "12",
+      "24",
+      "36",
+      "60"
+    ],
+    "correctIndex": 0,
+    "solutionText": "(AAA), B, N, N     Total = 4 objects.    लेकिन N दो identical हैं, इसलिए:  2!/4!\n\t​",
+    "solutionImage": null,
+    "id": "mt5mjkagm2p7y4",
+    "order": 12,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "P&C",
+    "questionText": "How many different arrangements can be made using all letters of BANANA such that the A's are NOT together?",
+    "questionImage": null,
+    "options": [
+      "48",
+      "60",
+      "72",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "6! / 3!2!   <= total arrangement\ntogether 4! / 2! \nnot together = total - together",
+    "solutionImage": null,
+    "id": "mt5mo0a3l22ifl",
+    "order": 13,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "P&C",
+    "questionText": "How many ways can the letters of MOTHER be arranged such that the vowels are together AND the arrangement starts with a consonant?",
+    "questionImage": null,
+    "options": [
+      "130",
+      "192",
+      "160",
+      "4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Total ways = Choices for 1st letter * Permutations of remaining 4 units * Internal vowel arrangements    Total ways = 4 * 4! * 2! = 192",
+    "solutionImage": null,
+    "id": "mt5my12nei6c1e",
+    "order": 14,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "P&C",
+    "questionText": "Q.1=> 5 people को एक round table पर कितने different ways में बैठाया जा सकता है?\nQ.2=> 6 people A, B, C, D, E, F round table par baithte hain.\nA और B हमेशा साथ-साथ बैठें, तो कितने ways होंगे?",
+    "questionImage": "/uploads/p-c/4c48b8f59d1604420ca6eeb694a4e7d17b84def645ede077fa8f39450d31ca2a.png",
+    "options": [
+      "13 12",
+      "24 48",
+      "30 24",
+      "24 32"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt5n5wgm87xp6m",
+    "order": 15,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "P&C",
+    "questionText": "Digits 0, 1, 2, 3, 4, 5 से 4-digit even numbers बनाने हैं, without repetition.\n\nकितने ऐसे numbers होंगे?",
+    "questionImage": null,
+    "options": [
+      "144",
+      "156",
+      "180",
+      "4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Case 1 (अंतिम अंक 0): हजार के स्थान के लिए 5 विकल्प x बाकी 2 स्थानों के लिए P(4,2)x अंतिम\nअंक के लिए 1 = 5 x 12 x 1= 601\nCase 2 (अंतिम अंक 2 या 4): हजार के स्थान के लिए 4 विकल्प x बाकी 2 स्थानों के लिए P(4,2)x\nअंतिम अंक के लिए 2 = 4 x 12 x 2 = 96 (कुल=60+96=156)।",
+    "solutionImage": null,
+    "id": "mt5nt918k5no3h",
+    "order": 16,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "P&C",
+    "questionText": "How many different arrangements can be made using all letters of the word BANANA such that all the A's are together?",
+    "questionImage": null,
+    "options": [
+      "12",
+      "24",
+      "36",
+      "60"
+    ],
+    "correctIndex": 0,
+    "solutionText": "(AAA), B, N, N     Total = 4 objects.    लेकिन N दो identical हैं, इसलिए:  2!/4!\n\t​",
+    "solutionImage": null,
+    "id": "mt8fhxtsml3j8q",
+    "order": 20,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "P&C",
+    "questionText": "How many different arrangements can be made using all letters of the word BANANA such that all the A's are together?",
+    "questionImage": null,
+    "options": [
+      "12",
+      "24",
+      "36",
+      "60"
+    ],
+    "correctIndex": 0,
+    "solutionText": "(AAA), B, N, N     Total = 4 objects.    लेकिन N दो identical हैं, इसलिए:  2!/4!\n\t​",
+    "solutionImage": null,
+    "id": "mt8fihv4al1gan",
+    "order": 25,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "P&C",
+    "questionText": "How many different arrangements can be made using all letters of BANANA such that the A's are NOT together?",
+    "questionImage": null,
+    "options": [
+      "48",
+      "60",
+      "72",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "6! / 3!2!   <= total arrangement\ntogether 4! / 2! \nnot together = total - together",
+    "solutionImage": null,
+    "id": "mt8fijrefue2hh",
+    "order": 26,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "P&C",
+    "questionText": "There are 6 boys and 4 girls. In how many ways can a team of 3 students be formed such that the team contains at least 2 boys?",
+    "questionImage": null,
+    "options": [
+      "60",
+      "70",
+      "80",
+      "90"
+    ],
+    "correctIndex": 2,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt8htsp3hfkxva",
+    "order": 27,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "P&C",
+    "questionText": "There are 5 boys and 4 girls. In how many ways can a team of 3 students be formed such that the team contains at most 1 boy?",
+    "questionImage": null,
+    "options": [
+      "30",
+      "46",
+      "50",
+      "34"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt8i271vfhkinr",
+    "order": 28,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "P&C",
+    "questionText": "7 students take an exam. Two of them are from English medium. Find the possible number of ways when both English medium students do not sit together?",
+    "questionImage": null,
+    "options": [
+      "2200",
+      "3200",
+      "3700",
+      "3600"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mtjxyh1m0klkco",
+    "order": 46,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "P&C",
+    "questionText": "8 Candidates are to be examined, 3 in Mathematics and the remaining in different subjects. In how many ways\ncan they be seated in a row so that the two examinees in Mathematics\nmay not sit together?",
+    "questionImage": null,
+    "options": [
+      "16900",
+      "18900",
+      "14400",
+      "900"
+    ],
+    "correctIndex": 2,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mtlcllrfz2h7q9",
+    "order": 49,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "P&C",
+    "questionText": "A bag contains 6 red balls and 4 yellow balls. Four balls are picked at random. What is the probability that at least one is red?",
+    "questionImage": null,
+    "options": [
+      "9/210",
+      "209/210",
+      "109/210",
+      "42/210"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mto6llp07ymnss",
+    "order": 50,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  }
+]

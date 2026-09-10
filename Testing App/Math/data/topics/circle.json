@@ -1,0 +1,21 @@
+[
+  {
+    "id": "geom-2",
+    "category": "Circle",
+    "questionText": "PQ and RS are two parallel tangents to a circle of radius r. A third tangent QTS, with T as the point of tangency, is drawn as shown. If PQ = 32 cm and RS = 12.5 cm, then find the circumference of the circle.",
+    "questionImage": "/uploads/circle/ddf89771232339b2675986c5280062a3e2731b77c8a7d1becd20d42d0398e2c9.png",
+    "options": [
+      "25 pi",
+      "36 pi",
+      "40 pi",
+      "50 pi"
+    ],
+    "correctIndex": 2,
+    "solutionText": "angle at centre always 90 deg  \nand property",
+    "solutionImage": "/uploads/circle/0911d5c867915bb381b6d1a3de8b28fb87391773242cc3a7eddcce2208253671.png",
+    "order": 7,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  }
+]

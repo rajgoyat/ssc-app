@@ -1,0 +1,21 @@
+[
+  {
+    "category": "Number System",
+    "questionText": "The ratio of a two-digit natural number to a number formed by reversing its digits is 4 : 7. Which of the following is the sum of all the numbers of all such pairs?",
+    "questionImage": null,
+    "options": [
+      "140",
+      "980",
+      "120",
+      "750"
+    ],
+    "correctIndex": 2,
+    "solutionText": ". If x= 1 =y =2: The pair is (12, 21)\n. If x =2 =y =4: The pair is (24, 42)\n. If x = 3 = y =6: The pair is (36, 63)\n. If x = 4 y =8: The pair is (48, 84)",
+    "solutionImage": null,
+    "id": "mtcamstlrn74xg",
+    "order": 96,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  }
+]

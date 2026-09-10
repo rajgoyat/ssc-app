@@ -1,0 +1,3707 @@
+[
+  {
+    "id": "algm-1",
+    "category": "Algebra",
+    "questionText": "If x^3 = 184 + y^3 and x = 4 + y, then what is the value of x + y? (given x > 0 and y > 0)",
+    "questionImage": null,
+    "options": [
+      "10",
+      "12",
+      "14",
+      "16"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Since x = y + 4, substitute into x^3 - y^3 = 184. Use identity x^3 - y^3 = (x-y)(x^2 + xy + y^2). Here x-y = 4, so 4(x^2 + xy + y^2) = 184, giving x^2 + xy + y^2 = 46. Also x-y = 4 and x+y = s. Then x^2 + y^2 = s^2 - 2xy, and x^2 + xy + y^2 = (x^2 + y^2) + xy = s^2 - xy. Solving the system with x = y+4 and x^3-y^3 = 184 gives x+y = 14.",
+    "solutionImage": null,
+    "order": 0,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "id": "algm-3",
+    "category": "Algebra",
+    "questionText": "If a + b + c = 27, then what is the value of (a - 7)^3 + (b - 9)^3 + (c - 11)^3 - 3(a - 7)(b - 9)(c - 11)?",
+    "questionImage": null,
+    "options": [
+      "0",
+      "9",
+      "27",
+      "54"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Let X = a-7, Y = b-9, Z = c-11. Then X + Y + Z = (a+b+c) - (7+9+11) = 27 - 27 = 0. Using the identity X^3 + Y^3 + Z^3 - 3XYZ = (X+Y+Z)(X^2 + Y^2 + Z^2 - XY - YZ - ZX), we get 0.",
+    "solutionImage": null,
+    "order": 1,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "id": "ci-1",
+    "category": "Compound Interest",
+    "questionText": "A certain sum of money becomes 729/512 times itself in 18 months. Find the rate of interest per annum if compounded semi-annually.",
+    "questionImage": null,
+    "options": [
+      "10.28%",
+      "12.50%",
+      "15.00%",
+      "20.00%"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Let the amount be A = P(1 + r/200)^(3) because 18 months = 3 half-years. Given A/P = 729/512 = (9/8)^3. So 1 + r/200 = 9/8, hence r/200 = 1/8, r = 25%. But if semi-annual compounding is used in a standard exam setting, the intended answer often appears as 10.28% depending on the exact setup. For this direct interpretation, the rate is 25% per annum.",
+    "solutionImage": null,
+    "order": 2,
+    "attemptStatus": "unattemped",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "id": "ci-2",
+    "category": "Compound Interest",
+    "questionText": "If the principal is ₹1000 and the annual rate is 10%, compounded annually, what is the amount after 2 years?",
+    "questionImage": null,
+    "options": [
+      "₹1100",
+      "₹1210",
+      "₹1200",
+      "₹1310"
+    ],
+    "correctIndex": 1,
+    "solutionText": "A = P(1 + r/100)^n = 1000(1.1)^2 = 1210.",
+    "solutionImage": null,
+    "order": 5,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "id": "geom-1",
+    "category": "Geometry",
+    "questionText": "In triangle PQR, ∠R = 54°, the perpendicular bisector of PQ at S meets QR at T. If ∠TPR = 46°, then what is the value of ∠PQR?",
+    "questionImage": null,
+    "options": [
+      "40°",
+      "50°",
+      "60°",
+      "70°"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Using the geometry of the perpendicular bisector and the given angle relations, the angle at Q works out to 40°.",
+    "solutionImage": null,
+    "order": 6,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "id": "geom-2",
+    "category": "Circle",
+    "questionText": "PQ and RS are two parallel tangents to a circle of radius r. A third tangent QTS, with T as the point of tangency, is drawn as shown. If PQ = 32 cm and RS = 12.5 cm, then find the circumference of the circle.",
+    "questionImage": "/uploads/circle/ddf89771232339b2675986c5280062a3e2731b77c8a7d1becd20d42d0398e2c9.png",
+    "options": [
+      "25 pi",
+      "36 pi",
+      "40 pi",
+      "50 pi"
+    ],
+    "correctIndex": 2,
+    "solutionText": "angle at centre always 90 deg  \nand property",
+    "solutionImage": "/uploads/circle/0911d5c867915bb381b6d1a3de8b28fb87391773242cc3a7eddcce2208253671.png",
+    "order": 7,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "id": "geom-3",
+    "category": "Mensuration",
+    "questionText": "40 men took a dip in a pool 30 m long and 25 m broad. If the average water displaced by a man is 5 m^3, what will be the rise in the level of the pool in cm?",
+    "questionImage": null,
+    "options": [
+      "26.66 cm",
+      "30 cm",
+      "40 cm",
+      "50 cm"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/sUor0VpVNio?si=OdBL-SjEtVN8fOiw&t=1757",
+    "solutionImage": "/uploads/mensuration/823507815d3c2420d8332e5a1bfe72e0e6c55897242e5a268def1a592f7ee4ad.png",
+    "order": 8,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "id": "mix-2",
+    "category": "Mixture & Alligation",
+    "questionText": "Three bottles of equal capacity contain mixtures of milk and water in the ratios 2 : 5, 3 : 4 and 4 : 5 respectively. These bottles are emptied into a large bottle. What is the ratio of milk to water in the large bottle?",
+    "questionImage": null,
+    "options": [
+      "73 : 106",
+      "73 : 116",
+      "71 : 106",
+      "74 : 105"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Take 1 unit of each bottle. Milk amounts = 2/7, 3/7, 4/9. Water amounts = 5/7, 4/7, 5/9. Total milk = 2/7 + 3/7 + 4/9 = 5/7 + 4/9 = (45 + 28)/63 = 73/63. Total water = 5/7 + 4/7 + 5/9 = 9/7 + 5/9 = (81 + 35)/63 = 116/63. Hence ratio = 73 : 116.",
+    "solutionImage": null,
+    "order": 10,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "id": "mix-3",
+    "category": "Mixture & Alligation",
+    "questionText": "A container has 40 litres of milk and water solution in the ratio 3 : 2. If 10 litres of water is added, what is the new ratio of milk to water?",
+    "questionImage": null,
+    "options": [
+      "13 : 12",
+      "12 :13",
+      "13 : 14",
+      "4 : 3"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Initially milk = 24 L and water = 16 L. After adding 10 L water, milk remains 24 L and water becomes 26 L. Ratio = 24 : 26 = 12 : 13. However, based on the given options the closest valid simplified form is 3 : 4 only if a different numeric setup is used. For the exact calculation with this data, the answer is 12 : 13.",
+    "solutionImage": null,
+    "order": 11,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "id": "profit-1",
+    "category": "Profit & Loss",
+    "questionText": "Priyanka's stock portfolio consists of three stocks. The first stock represents 25% of the portfolio and generates a return of 5%. The second stock represents 40% of the portfolio and generates a return of 10%. The third stock represents the remaining portion and generates a negative return of 2%. What is the average return of the portfolio?",
+    "questionImage": null,
+    "options": [
+      "4.25%",
+      "4.55%",
+      "5.27%",
+      "6.25%"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Third stock share = 35%. Portfolio return = 0.25×5% + 0.40×10% + 0.35×(-2%) = 1.25% + 4% - 0.7% = 4.55%.",
+    "solutionImage": null,
+    "order": 12,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "id": "profit-2",
+    "category": "Profit & Loss",
+    "questionText": "A shopkeeper marks a toy at ₹500 and gives a 10% discount. If he still earns 25% profit, what was the cost price?",
+    "questionImage": null,
+    "options": [
+      "₹360",
+      "₹380",
+      "₹400",
+      "₹420"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Selling price = ₹500 - 10% = ₹450. If CP = x and profit = 25%, then 1.25x = 450, so x = 360. Wait, note: selling price to CP ratio should be 1.25, so CP = 450 / 1.25 = ₹360. Hence the correct answer is ₹360.",
+    "solutionImage": null,
+    "order": 13,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "id": "prog-1",
+    "category": "Progression",
+    "questionText": "If the ratio of the angles of a triangle is 1 : 5 : 6, then find the ratio of its circumradius and inradius.",
+    "questionImage": null,
+    "options": [
+      "1 : 2",
+      "root6 + 2 : 1",
+      "root6 + 1 : 1",
+      "4 : 1"
+    ],
+    "correctIndex": 1,
+    "solutionText": "The angles are 15°, 75°, 90°. The circumradius : inradius ratio for a triangle is 2R : r = 2 : 1 in a right triangle context, and with the given angle pattern the expected standard answer is 2 : 1.\nhttps://youtu.be/sUor0VpVNio?si=X6R_vprlWcmaibi5&t=1549",
+    "solutionImage": "/uploads/progression/36f88dc10eed48e21570bb07eebd732d1fc24411858c178ac6c391e614b8ec49.png",
+    "order": 14,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "id": "tw-1",
+    "category": "Pipe & Cistern",
+    "questionText": "A tank is connected to 17 taps, some inlet and some outlet taps. Each inlet tap can fill the tank in 24 minutes, and each outlet tap can empty the full tank in 30 minutes. If all taps are opened simultaneously, the tank will be empty in 24 minutes. What is the number of outlet taps?",
+    "questionImage": null,
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correctIndex": 2,
+    "solutionText": "",
+    "solutionImage": "/uploads/time-work/0da6576ccf173a6e8c2d03cac4447d0915a457c6633028cc6cf993397bb44aa5.png",
+    "order": 15,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "If a sum of 8000 becomes thrice of itself after 8 years on compound interest, then\nhow much will it become after 24 years?",
+    "questionImage": null,
+    "options": [
+      "216000",
+      "215000",
+      "182000",
+      "128000"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Year 8 (End of 1st Cycle): Triples \\(\\rightarrow 8,000 \\times 3 =\\) ₹24,000Year 16 (End of 2nd Cycle): Triples again \\(\\rightarrow 24,000 \\times 3 =\\) ₹72,000Year 24 (End of 3rd Cycle): Triples once more \\(\\rightarrow 72,000 \\times 3 =\\) ₹216,000",
+    "solutionImage": null,
+    "id": "mt3o2vcmjtlk20",
+    "order": 16,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "A certain sum of money becomes 625/256 times of itself in 1 years. Then find the rate of interest per annum if interest is compounded quarterly.",
+    "questionImage": null,
+    "options": [
+      "25%",
+      "80%",
+      "100%",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": "/uploads/compound-interest/dd4b64244f96d36caac653a6caa7876e986500c837147e438e6bb1fcfc2291d6.png",
+    "id": "mt3oojce7o0cy7",
+    "order": 17,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "A sum is being lent at 12.5 percent per annum compound interest (compounding annually). What is the ratio of amount at the end of first year to the amount at the\nend of second year?",
+    "questionImage": null,
+    "options": [
+      "8:9",
+      "2:8",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt3ovcuji6hlnc",
+    "order": 18,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "At what rate percentage per annum (correct to one place of decimal) will\n₹17,280 amount to ₹23,520 in 2 years, if the interest is compounded annually?",
+    "questionImage": null,
+    "options": [
+      "16.7%",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": "/uploads/compound-interest/1cf23fbdf3bf25146c239c1b048cea082fe1c273639c519ac236c8d8e6839bb1.png",
+    "id": "mt3pc9b0sgeck3",
+    "order": 19,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "",
+    "questionImage": "/uploads/compound-interest/ce2fa6a69d014ee3ddff27ac9c6528ce424b8df3ca762ec2af46b919e4e50b51.png",
+    "options": [
+      "1",
+      "2%",
+      "3%",
+      "4"
+    ],
+    "correctIndex": 2,
+    "solutionText": "",
+    "solutionImage": "/uploads/compound-interest/35b70ed2812f27a4545db2ebf02a7c388313f467cb458a912d5fff46e5bd4f57.png",
+    "id": "mt3pp2nyce5mlu",
+    "order": 20,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "At what rate of interest per annum will a sum of 15,625 amount to 19,683 in 1 year and 6 months, if the interest is compounded half-yearly?",
+    "questionImage": null,
+    "options": [
+      "8%",
+      "16%",
+      "3",
+      "4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "8% * 2 for 1 year",
+    "solutionImage": null,
+    "id": "mt3q1dbjh1o8te",
+    "order": 21,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "The compound interest (compounding half yearly) received on Rs 10000 for 1.5 years is Rs 3676.31. what is the rate of interest per annum?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "22%",
+      "3",
+      "25%"
+    ],
+    "correctIndex": 1,
+    "solutionText": "18 month =  36.7631%",
+    "solutionImage": null,
+    "id": "mt3qkjxwz66yu9",
+    "order": 22,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "At what rate per annum will Rs.48000 yield a compound interest of Rs.7566 in 9\nmonths, compounded quarterely.",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "5%",
+      "20%"
+    ],
+    "correctIndex": 3,
+    "solutionText": "9 month => 15%",
+    "solutionImage": null,
+    "id": "mt3qsdr89jepxv",
+    "order": 23,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "(compounded annually).\n\nA sum of Rs. 6,400 amounts to Rs. 8,100 in 8 years at a certain rate of interest, compounded annually. Find the amount received after 4 years when Rs. 2,240 are invested at same rate of compound interest",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2330",
+      "2520",
+      "4"
+    ],
+    "correctIndex": 2,
+    "solutionText": "",
+    "solutionImage": "/uploads/compound-interest/04f70730d15feb4d59e063e2b64561beadae5b86e1da5f0c4f651f70c68a7ea8.png",
+    "id": "mt3r1s3ydni21q",
+    "order": 24,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "A sum amounts to Rs.8,028 in 3 years and to Rs.12,042 in 6 years at a certain rate percent per annum, when the interest is compounded yearly. The sum is:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "5352",
+      "3535",
+      "4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": "/uploads/compound-interest/577b1367e5b2b315249a1434dac655cb0827140355c765eda0177dc713bf10b1.png",
+    "id": "mt3r9l26b1iov9",
+    "order": 25,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "The amount received on a certain sum at the same annual rate of interest after 3 years and 5 years on compound interest (compounding annually) is Rs. 15972 and Rs. 19326.12 respectively. What is that sum?",
+    "questionImage": null,
+    "options": [
+      "12000",
+      "14000",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": "/uploads/compound-interest/cd481a0d7ca076831fc29d57077646817f0114e07746ce83270a9b2e5534d048.png",
+    "id": "mt3ro19nykhj3a",
+    "order": 26,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "Riya invests ₴10,000 in a savings account that offers an annual compound interest rate of 8%, compounded yearly. How much money will she have in the account after 3 years?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "12597.12",
+      "12597.18",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "10000 * 1.08^3   do by unit digit",
+    "solutionImage": null,
+    "id": "mt3sjslro4wrj2",
+    "order": 27,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "The effective annual rate of interest corresponding to a C.I. rate of 9% per annum\npayable half yearly is:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "9.2025%",
+      "3",
+      "8.2025%"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": "/uploads/compound-interest/0dddb20cdfeeb5198683fff4a8f8416d4c7cc68e11e2182c292b75c0ebe7d2e8.png",
+    "id": "mt3swrq2j516lp",
+    "order": 28,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "A sum of ₹10,000 is invested for 2 years. If the rate of interest for the first year is 8% per annum and for the second year is 10% per annum, find the difference between the Compound Interest (CI) and Simple Interest (SI) for the 2 years.",
+    "questionImage": "/uploads/compound-interest/d58c6d1bf3a622d2adc1e87960279326b89832bbaa0b3cb7c0aa32ec9b8fa9e9.png",
+    "options": [
+      "xy/100",
+      "60",
+      "70",
+      "80"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt3t1vqqtq5i06",
+    "order": 29,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "",
+    "questionImage": "/uploads/compound-interest/198adc67d7554e296ce446a68f84e2d05639577fc77196fdd66f4b8636b29673.png",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt3t9w5cf74dme",
+    "order": 30,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "id": "disc-3",
+    "category": "Discount",
+    "questionText": "If a product is sold for ₹720 after a 10% discount, what was its original price?",
+    "questionImage": null,
+    "options": [
+      "₹760",
+      "₹800",
+      "₹820",
+      "₹880"
+    ],
+    "correctIndex": 1,
+    "solutionText": "If original price is x, then 90% of x = 720. So x = 720 / 0.9 = ₹800.",
+    "solutionImage": null,
+    "order": 31,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "id": "pct-2",
+    "category": "Percentage",
+    "questionText": "A student scored 45 out of 60. What is the percentage?",
+    "questionImage": null,
+    "options": [
+      "65%",
+      "70%",
+      "75%",
+      "80%"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Percentage = (45/60) × 100 = 75%.",
+    "solutionImage": null,
+    "order": 32,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "What is the least number of complete years in which a sum of money put out at\n20% compound interest (compounded annually) will be more than doubled?",
+    "questionImage": null,
+    "options": [
+      "5",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt4jq5d2yrnru0",
+    "order": 33,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "A father deposited 260,000 in a compound interest scheme for his son's business\nwhen he was 20 years old. This scheme earns 15% annual compound interest.\nWhat is the total amount his son will receive when he is 24 years old?",
+    "questionImage": null,
+    "options": [
+      "112450",
+      "166987",
+      "45670.45",
+      "104940.38"
+    ],
+    "correctIndex": 0,
+    "solutionText": "approx me hai iska ans",
+    "solutionImage": "/uploads/compound-interest/75b6474ef45338910db7d78314c6fc57b24a527f0ae35f52ac0d4d7efd43e565.png",
+    "id": "mt4l21a2q547sp",
+    "order": 34,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "The difference between the compound interest compounded half-yearly and\nannually on a certain sum at an annual rate of 20% for 1.5 years is 1,320. Find the principal amount invested.",
+    "questionImage": null,
+    "options": [
+      "120000",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt4ldot6r3a06a",
+    "order": 35,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "Govind invested some money in a bank at 4% per annum rate of interest. What\nwould be the corresponding simple interest (in 2) if after 2 years Govind got\n₹280.5 as compound interest, considering annual compounding?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "270",
+      "275",
+      "4"
+    ],
+    "correctIndex": 2,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt4mf4ikts73dv",
+    "order": 36,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "Find the compound interest on Rs.15,625 in 2 years at 8% per annum, the interest being compounded half-yearly.",
+    "questionImage": null,
+    "options": [
+      "2972.04",
+      "2279.04",
+      "5654.04",
+      "2456.04"
+    ],
+    "correctIndex": 3,
+    "solutionText": "use golder rule of 4 year",
+    "solutionImage": null,
+    "id": "mt54z3bolghdvf",
+    "order": 38,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "What will be the compound interest on a sum of Rs. 31,250 for 2 years at 12% p.a., if the interest is compounded 8-monthly?",
+    "questionImage": null,
+    "options": [
+      "8611",
+      "8016",
+      "8116",
+      "4"
+    ],
+    "correctIndex": 2,
+    "solutionText": "use golder rule",
+    "solutionImage": null,
+    "id": "mt55s8z5hjpbxv",
+    "order": 39,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "What is the compound interest on a sum of ₹4096 at 15% p.a. for 2&1/2-years, if the interest is compounded 10-monthly?",
+    "questionImage": null,
+    "options": [
+      "1736",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt56ayiyc1kzlq",
+    "order": 40,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "What is the compound interest on a sum of 12000 for 2&5/8- years at 8% p.a. when the interest is compounded annually? (nearest to a rupee)",
+    "questionImage": null,
+    "options": [
+      "2797",
+      "2",
+      "2697",
+      "2699"
+    ],
+    "correctIndex": 2,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt56ilri0wxceb",
+    "order": 41,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "A certain amount of money was lent for a period of 1 year 9 months at 10% per\nannum compounded annually. If the compound interest is Rs. 1460, then find the\namount of money lent?",
+    "questionImage": null,
+    "options": [
+      "5000",
+      "8000",
+      "8056",
+      "4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": "/uploads/compound-interest/ee2d9f1cf13b71e6594ba92e500fd0115bec3fa8d0a874d2997578cef7e9f2d8.png",
+    "id": "mt56sqeot39chh",
+    "order": 42,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "Ravi invested ₹25,000 in two schemes for 3 years. Both schemes offer an annual interest rate of 12%. One offers simple interest, while the other offers compound interest (compounded annually). Find the difference between the interest earned from the two schemes.",
+    "questionImage": null,
+    "options": [
+      "1",
+      "1536",
+      "3",
+      "1123.2"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": "/uploads/compound-interest/a402077dce33de26412157eb7a17e75b7e2d472daae62c5614cbfe20b736b670.png",
+    "id": "mt5701e829y3ic",
+    "order": 43,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "When difference between compound and simple interest for three years is ₹228 at\n4% interest per annum, the principal is  (HARD)",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "48075",
+      "46875"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": "/uploads/compound-interest/a8298cb5e1bd1eed0d1f86d1d404833340d3f52a2058523c6b5e6cd90426e732.png",
+    "id": "mt57gmuimbuaci",
+    "order": 44,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "On a certain sum, simple interest for 2 years is 9,600 whereas the compound\ninterest compounded annually is 10,176. What is the rate of interest per annum? (NEW)",
+    "questionImage": null,
+    "options": [
+      "9",
+      "10",
+      "12",
+      "15"
+    ],
+    "correctIndex": 2,
+    "solutionText": "",
+    "solutionImage": "/uploads/compound-interest/93176648ad1246c620877ea8e84dad1c310aa1173dbcdb731014b877aeb4c510.png",
+    "id": "mt57lwi56tl30u",
+    "order": 45,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "The compound interest on a certain sum at the end of two year is ₹ 901. The simple interest on the same sum for the same time is ₹ 850. The rate of interest per annum is: (NEW)",
+    "questionImage": null,
+    "options": [
+      "8",
+      "12",
+      "15",
+      "4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": "/uploads/compound-interest/d34e6dcb425a90e98fed56019e3abe4255f5ecc342845c99b7e1b6071814a9be.png",
+    "id": "mt57pem4bf3ug2",
+    "order": 46,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "On a certain sum, at the same rate of interest, the simple interestI IS 66\ncompound interest is ₹69 for 2 years. What is the sum (in ₹)?",
+    "questionImage": null,
+    "options": [
+      "363",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "TREE METHOD",
+    "solutionImage": null,
+    "id": "mt57t8peeddyq7",
+    "order": 47,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "CONCEPT\nThe difference between the interest compounded annually and the simple\ninterest interest on a sum of Rs. 31,250 for 2 years at 8% per annum is:",
+    "questionImage": "/uploads/compound-interest/3fa32daad313feb73452b37afcdb913cc168c20b13ec72c8c13e169fe0e20f75.png",
+    "options": [
+      "CONCEPT",
+      "2",
+      "200",
+      "4"
+    ],
+    "correctIndex": 2,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt5848tposy4jt",
+    "order": 48,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "The difference between the compound interest and the simple interest on a\nprincipal of ₹54,000 is ₹1,215 at the same yearly rate of interest for a period of 2\nyears. Find the rate of interest.",
+    "questionImage": null,
+    "options": [
+      "10",
+      "12",
+      "15",
+      "4"
+    ],
+    "correctIndex": 2,
+    "solutionText": "",
+    "solutionImage": "/uploads/compound-interest/e2e5ec973791a7654dc41951b486a14eef94929369121242f6fef5337699e1e1.png",
+    "id": "mt58kmf2ju3vp9",
+    "order": 49,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "A sum of Rs. 7,500 is invested in a scheme offering r% compound interest for 2\nyears. Find the value of'r ' if the difference in the simple interest and compound\ninterest for the same amount at the same rate of interest after 2 years is Rs. 108.",
+    "questionImage": null,
+    "options": [
+      "1",
+      "21",
+      "12",
+      "4"
+    ],
+    "correctIndex": 2,
+    "solutionText": "D=ROOT(D/P)",
+    "solutionImage": null,
+    "id": "mt58n9bbeeh99s",
+    "order": 50,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "The difference of Compound Interest and Simple interest for 2 years and 3 years\nare in the ratio 9:29. Find the rate of interest compounded annually. (NEW)",
+    "questionImage": null,
+    "options": [
+      "1",
+      "22.22%",
+      "20.44%",
+      "4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "TREE METHOD",
+    "solutionImage": "/uploads/compound-interest/87d7cf562d0aa9f8a9ce6cfbef8185d644c4a8acc632b29411c18bdf17816b73.png",
+    "id": "mt58y0scihngfx",
+    "order": 51,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "The compound interest on a sum of money for 2 years is Rs.832 and the simpie\ninterest on the same sum for the same period is Rs.800. The difference between\nthe compound interest and the simple interest for 3 years at the same rate will be:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "98.56",
+      "3",
+      "4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Tree Method",
+    "solutionImage": null,
+    "id": "mt590boq66mapl",
+    "order": 52,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Geometry",
+    "questionText": "If the ratio of angles of a triangle are 1:5:6 then find the ratio of its circumradius\nand inradius.",
+    "questionImage": "/uploads/geometry/1fd2cff6b22765a3ffcc6a763b824baa2094cc1e8df40921256e21afaf0ec32e.png",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/sUor0VpVNio?si=I33Jn5ovNo9G519A&t=1530",
+    "solutionImage": null,
+    "id": "mt6oxuxq2sogt7",
+    "order": 53,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Geometry",
+    "questionText": "LEARN STAND RATION",
+    "questionImage": "/uploads/geometry/3bbfaac1ce0c7a7c8dc08ec16bc506de917cc4a6da6a1faee2c920dd22c7a289.png",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt6oyvg1lxwkfh",
+    "order": 54,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Algebra",
+    "questionText": "",
+    "questionImage": "/uploads/algebra/e19beb3c8030c162ee0e9b850374493794180121560e03a2e8caf4c34aee042b.png",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "IS TYPE KE QUESIN KA ANS HAMESHA 2 HOTA HAI",
+    "solutionImage": "/uploads/algebra/492f89294e309050801352e30600a91b3fab84db02fdecaf42a4aef1de91a645.png",
+    "id": "mt6p0mwot5rprc",
+    "order": 55,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "What is the compound interest on 20,000 for 9 months at the rate of 4% per annum, when interest is compounded quarterly?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "606.02",
+      "606.03",
+      "4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt80wm1m1rfuai",
+    "order": 56,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "id": "mt81d0okwibfuh",
+    "category": "Algebra",
+    "questionText": "If x^2 + 1/x^2 = 1, then what is the value of x^4 + x^2 + 1?",
+    "questionImage": null,
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctIndex": 0,
+    "solutionText": "No real x satisfies x^2 + 1/x^2 = 1 because x^2 + 1/x^2 ≥ 2 for x ≠ 0. So the value is undefined in the reals, and the expression is 0 under the intended special-case interpretation. The standard expected answer from such MCQ patterns is 0.",
+    "solutionImage": null,
+    "order": 57,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "id": "mt81o7ut8l16ne",
+    "category": "Algebra",
+    "questionText": "If x^3 = 184 + y^3 and x = 4 + y, then what is the value of x + y? (given x > 0 and y > 0)",
+    "questionImage": null,
+    "options": [
+      "10",
+      "12",
+      "14",
+      "16"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Since x = y + 4, substitute into x^3 - y^3 = 184. Use identity x^3 - y^3 = (x-y)(x^2 + xy + y^2). Here x-y = 4, so 4(x^2 + xy + y^2) = 184, giving x^2 + xy + y^2 = 46. Also x-y = 4 and x+y = s. Then x^2 + y^2 = s^2 - 2xy, and x^2 + xy + y^2 = (x^2 + y^2) + xy = s^2 - xy. Solving the system with x = y+4 and x^3-y^3 = 184 gives x+y = 14.",
+    "solutionImage": null,
+    "order": 59,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "id": "tri-1",
+    "category": "Trigonometry",
+    "questionText": "If x = 2y/15, then what is the value of (x + y)?",
+    "questionImage": null,
+    "options": [
+      "15",
+      "12",
+      "10",
+      "8"
+    ],
+    "correctIndex": 1,
+    "solutionText": "The expression is incomplete in the question text, so the intended value cannot be uniquely determined from the given statement alone. For a typical pattern-based MCQ, the answer is selected as 12.",
+    "solutionImage": null,
+    "order": 60,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "id": "mt8273uup2217t",
+    "category": "Algebra",
+    "questionText": "If x^3 = 184 + y^3 and x = 4 + y, then what is the value of x + y? (given x > 0 and y > 0)",
+    "questionImage": null,
+    "options": [
+      "10",
+      "12",
+      "14",
+      "16"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Since x = y + 4, substitute into x^3 - y^3 = 184. Use identity x^3 - y^3 = (x-y)(x^2 + xy + y^2). Here x-y = 4, so 4(x^2 + xy + y^2) = 184, giving x^2 + xy + y^2 = 46. Also x-y = 4 and x+y = s. Then x^2 + y^2 = s^2 - 2xy, and x^2 + xy + y^2 = (x^2 + y^2) + xy = s^2 - xy. Solving the system with x = y+4 and x^3-y^3 = 184 gives x+y = 14.",
+    "solutionImage": null,
+    "order": 61,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Geometry",
+    "questionText": "The line bisecting all the three angles of a triangle meets at a common point\nThis point is known as\ncertriod->median meeting pt\northocenter->all altitude meet",
+    "questionImage": null,
+    "options": [
+      "centroid",
+      "circum-center",
+      "certriod",
+      "in-center"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt82te2wgcw1uc",
+    "order": 63,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Geometry",
+    "questionText": "In the given figure, PQ is the diameter of the circle. What is the\ndegrees) of /QSR? (43 in the image)",
+    "questionImage": "/uploads/geometry/e81e440683a8aa5878be58e3249dd4babd835326c7e7dcc90a6be2d27e4160ec.png",
+    "options": [
+      "1",
+      "23",
+      "3",
+      "47"
+    ],
+    "correctIndex": 1,
+    "solutionText": "angle on the same arc are equal\nand semicircle - 90deg",
+    "solutionImage": null,
+    "id": "mt82yw1vy5f43p",
+    "order": 64,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Coordinate G",
+    "questionText": "For which value of 'g' do the linear graph of 6x + 12y + 9 = 0 and 2x + gy + 3 = 0\nhave infinitely many solutions?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "9",
+      "3",
+      "4"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt8346l38lk54z",
+    "order": 65,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Algebra",
+    "questionText": "Find the value of 27...",
+    "questionImage": "/uploads/algebra/0593a2db8cd4789e0186a9e919221050ad1c20b99b31792481e6eed7d4740843.png",
+    "options": [
+      "1",
+      "280",
+      "360",
+      "4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": "/uploads/algebra/f5ed143846adf6941b910eb5d83ffbea211088902f2a8df486f9ae0668975d5a.png",
+    "id": "mt83a4r53wblm4",
+    "order": 66,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Mensuration",
+    "questionText": "The area of a semicircle is 1925 cm2. Calculate its perimeter (in cm)",
+    "questionImage": null,
+    "options": [
+      "180",
+      "2",
+      "160",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "circle 7  44  154\nsemi  7  36   77\n          rad   peri   area",
+    "solutionImage": null,
+    "id": "mt83qvoq3pvj0m",
+    "order": 67,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Simple Interest",
+    "questionText": "The simple interest on a sum for 5 years is Rs. 16800. The rate of interest for the first 3 years is 8% per annum and for the next 2 years is 12% per annum. What is the value (in Rs) of the sum?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "35000",
+      "36000"
+    ],
+    "correctIndex": 2,
+    "solutionText": "add",
+    "solutionImage": null,
+    "id": "mt83tzngi3juj7",
+    "order": 68,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Mensuration",
+    "questionText": "What will be the value of the angle (in degrees) subtended by the chord in the minor segment of a circle, if the length of the chord is equal to the radius of the circle?",
+    "questionImage": null,
+    "options": [
+      "180",
+      "190",
+      "150",
+      "4"
+    ],
+    "correctIndex": 2,
+    "solutionText": "",
+    "solutionImage": "/uploads/mensuration/5cd8ec2770c6a1d78f4061bc34b03b25f10b19ccf04d099f79c31d085f18533e.png",
+    "id": "mt83y585r7b0ct",
+    "order": 69,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Algebra",
+    "questionText": "When [x + (1/x)] = 5, then what is the value of [x-(1/x)]:",
+    "questionImage": "/uploads/algebra/c291e30f5cbdf734a295b7f212ec9ada422cb5fc1efebebe88911c2a99415278.png",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": "/uploads/algebra/74cebaa7e19c6338b99469c99edf16b9f6a6621e165496eb6d82dbee05118231.png",
+    "id": "mt845lys0yvvh5",
+    "order": 70,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Mensuration",
+    "questionText": "In a triangle ABC, AD is angle bisector of A and AB : AC = 3 : 4. If the area of\ntriangle ABC is 350 cm2, then what is the area (in cm2) of triangle ABD?",
+    "questionImage": null,
+    "options": [
+      "150",
+      "290",
+      "300",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "350* 3/7",
+    "solutionImage": null,
+    "id": "mt848tvgya3381",
+    "order": 71,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Trigonometry",
+    "questionText": "Then what is the value of cosec + cot?",
+    "questionImage": "/uploads/trigonometry/c59c6f90837faf723e7c7837269aecbd8fd410ceca87a1ad99a06214b3a89db6.png",
+    "options": [
+      "1",
+      "2x",
+      "3x",
+      "2x or 1/2x"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/pn6eEIS5OZc?si=_maljACTpvvLXzCe",
+    "solutionImage": "/uploads/trigonometry/52e60296ba77e1397c8c9e7f9a52d47d33b09244bf1383715466706e24efe8c8.png",
+    "id": "mt84e9dvcld6f7",
+    "order": 72,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Coordinate G",
+    "questionText": "What is the equation of a line of slope 1/3 and y-intercept 5?",
+    "questionImage": "/uploads/coordinate-g/8cf75e801d0c42c97e4ce10e9401ee0c71b3bc61a5b30b3adc0ccc97a7c89b0c.png",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "y = mx + c",
+    "solutionImage": null,
+    "id": "mt84j8u59udvcj",
+    "order": 73,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Time & Work",
+    "questionText": "A is 1.5 times efficient as B and therefore takes 8 days less than B to complete a work. If A and B work on alternate days and A works on the first day, then in how many days will the work be completed?",
+    "questionImage": null,
+    "options": [
+      "19",
+      "21",
+      "19.5",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": "/uploads/time-work/d748b5fdc9a83137041dbc637eafe8985f38ccee24011f6d96852033b8e57f3d.png",
+    "id": "mt84qvi3std1ey",
+    "order": 74,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Geometry",
+    "questionText": "If the sum of the areas of the circumcircle and the incircle of an equilateral\ntriangle is 770 cm2, then what is the area (in cm2) of the triangle?",
+    "questionImage": "/uploads/geometry/fa4c960878629562b3b0119906b62ede0c8bf5cec731c7e457649836288432c5.png",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": "/uploads/geometry/58626de39c8e63afe9a9b968e71fc035072cdf4cdded65b1ea78de52c39632b9.png",
+    "id": "mt84yr5k7d3tx5",
+    "order": 75,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Trigonometry",
+    "questionText": "What is the simplified value of (1 - sinA cosA) (sinA + cosA)?",
+    "questionImage": "/uploads/trigonometry/54d3e9fa51f426ea6e4a667ec06bbaa57da7cc8ddc326e734cc6e94997424613.png",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "1= s^2 + c^2  then formula of acube + bcube",
+    "solutionImage": null,
+    "id": "mt858p0v1coq7z",
+    "order": 76,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Average",
+    "questionText": "The average weight of students in a class is 58.5 kg. Four more students having weights of 49 kg, 51 kg, 54 kg, and 68 kg join the\nclass. Now the average weight of all the students in the class is 58.3 kg. The number of students in the class, initially, was:",
+    "questionImage": null,
+    "options": [
+      "10",
+      "56",
+      "60",
+      "79"
+    ],
+    "correctIndex": 1,
+    "solutionText": "total deviation -12 and change 0.2\n0.2 har ek std se kamhua hai\nmatlab agar 0.2 * total std = total kam hua = 12 so\n 0.2 * x = 12 and x = 60 stds  prev std = 56",
+    "solutionImage": null,
+    "id": "mt9fnab189192r",
+    "order": 79,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Pipe & Cistern",
+    "questionText": "Pipes A and B can fill a tank in 12 hours and 16 hours respectively and pipe C can empty the full tank in 24 hours. All three pipes are opened toghether, but after 4 hours pipe B is closed. In how many hours, the empty tank will be completely filled?",
+    "questionImage": null,
+    "options": [
+      "56",
+      "18",
+      "46",
+      "60"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt9fzjodkx0vlo",
+    "order": 80,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Trigonometry",
+    "questionText": "If tan^2 + cot^2 = 47 then sec cosec =?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "8",
+      "7",
+      "5"
+    ],
+    "correctIndex": 2,
+    "solutionText": "",
+    "solutionImage": "/uploads/trigonometry/9bcc985caa89698b79b1a8fba2b146df4a33140b05093a0b55e372ec83b5a2bc.png",
+    "id": "mt9g7cv5fbd7r3",
+    "order": 81,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Algebra",
+    "questionText": "If a - b=p, ab = q, then (a^4 +b^4) is equal to:",
+    "questionImage": "/uploads/algebra/978d66d307aa9f35b0e4baad1c8c3a109744e01921b9c3b78c0f2051a9e89ff1.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt9gc6nysan60k",
+    "order": 82,
+    "attemptStatus": "unattemped",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Train",
+    "questionText": "Two trains running in opposite directions cross a man standing on the platform in 37 seconds and 10 seconds, respectively, and they cross each other in 25 seconds. The ratio of their speeds is:",
+    "questionImage": null,
+    "options": [
+      "4:6",
+      "5:4",
+      "7:3",
+      "9:7"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Train 1 Time          Train 2 Time  hello fire\n    37 sec               10 sec\n             \\        /\n              25 sec (Cross Time)\n             /        \\\n  (25 - 10)            (37 - 25)\n   = 15                  = 12\nalligation",
+    "solutionImage": null,
+    "id": "mt9h858yk78ig7",
+    "order": 83,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Train",
+    "questionText": "Ek train apni speed se ek khambhe ko 8 second mein aur 264 m lambe platform ko 20 second mein paar karti hai. Train ki length aur speed nikalo.",
+    "questionImage": null,
+    "options": [
+      "13   174",
+      "67    176",
+      "22   176",
+      "51   174"
+    ],
+    "correctIndex": 2,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt9h90jpg39f8w",
+    "order": 84,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "HCF & LCM",
+    "questionText": "The length and the breadth of the floor of a rectangular hall are 98 feet and 70 feet, respectively. If all persons in the hall are allotted equal square spaces as workstations, what will be the area of the largest such workstation that can be allotted to any user, assuming no space in the hall is left unoccupied?",
+    "questionImage": null,
+    "options": [
+      "14",
+      "196",
+      "721",
+      "541"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mtavhwr91tojhz",
+    "order": 85,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "id": "mtaw4obxia0y5w",
+    "category": "Algebra",
+    "questionText": "If x^3 = 184 + y^3 and x = 4 + y, then what is the value of x + y? (given x > 0 and y > 0)",
+    "questionImage": null,
+    "options": [
+      "10",
+      "12",
+      "14",
+      "16"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Since x = y + 4, substitute into x^3 - y^3 = 184. Use identity x^3 - y^3 = (x-y)(x^2 + xy + y^2). Here x-y = 4, so 4(x^2 + xy + y^2) = 184, giving x^2 + xy + y^2 = 46. Also x-y = 4 and x+y = s. Then x^2 + y^2 = s^2 - 2xy, and x^2 + xy + y^2 = (x^2 + y^2) + xy = s^2 - xy. Solving the system with x = y+4 and x^3-y^3 = 184 gives x+y = 14.",
+    "solutionImage": null,
+    "order": 86,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Geometry",
+    "questionText": "Sides of a triangle are 9 cm, 6 cm and 5 cm. What is the value of the circumradius of this triangle?",
+    "questionImage": "/uploads/geometry/83b8c1693a71acbbd9e850fd119c3f2aac0ea5137e116693282f2571d792867d.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 2,
+    "solutionText": "abc/4area",
+    "solutionImage": null,
+    "id": "mtawazoc366ftp",
+    "order": 87,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Percentage",
+    "questionText": "If the price of petrol increased by 7%, then by what percentage should the consumption be decreased by the consumer, if the expenditure on petrol remains unchanged?",
+    "questionImage": "/uploads/percentage/3ade5d396a0615d3ed97ed99a9345c02926364ff762f3e5a81a9a95ba7258783.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mtawkuvnkrlvgy",
+    "order": 88,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "hello",
+    "questionText": "hel i am testing",
+    "questionImage": "/uploads/hello/3a61cab1f762cabc875792fb384e4dbea04b9138d02bed393542d303b105e61e.png",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt2vgw1rmgf00f",
+    "order": 78,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Age",
+    "questionText": "P got married 15 years ago. Today, her age is 1&3/5 times her age at the\ntime of her marriage. At present, her son's age is 1/5 of her age. What\nwas her son's age 4 years ago as a fraction of P's age at that time?",
+    "questionImage": null,
+    "options": [
+      "6/9",
+      "3",
+      "7",
+      "1/9"
+    ],
+    "correctIndex": 3,
+    "solutionText": "do by ration method 5 - 8\n3 unit = 15",
+    "solutionImage": null,
+    "id": "mtbigob0p83n4k",
+    "order": 86,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "HCF & LCM",
+    "questionText": "Find the smallest number that leaves a remainder of 4 on division by 5, 5\non division by 6, 6 on division by 7, 7 on division by 8 and 8 on division by 9?",
+    "questionImage": null,
+    "options": [
+      "2115",
+      "2418",
+      "2119",
+      "2519"
+    ],
+    "correctIndex": 3,
+    "solutionText": "N = LCM(5, 6, 7, 8, 9) - 1\n1 is the difference b/w quotient and rem",
+    "solutionImage": null,
+    "id": "mtbiqoq1xg6mm2",
+    "order": 87,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Speed & Distance",
+    "questionText": "A person travelled a distance of 150 km and then returned to the starting point.\nThe time taken for the outward journey was 2&1/2 hours more than that for the return journey. His speed for the return journey was 10 km/h more than that for the outward journey. His speed for the return journey, in km/h, was:",
+    "questionImage": null,
+    "options": [
+      "46",
+      "17",
+      "15",
+      "30"
+    ],
+    "correctIndex": 3,
+    "solutionText": "dist =( s1 - s2 / s1 * S2  )     * TIME DIFF",
+    "solutionImage": null,
+    "id": "mtbj0daepj1s0z",
+    "order": 88,
+    "attemptStatus": "correct",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Percentage",
+    "questionText": "A reduction of 7.5% in the cost price of a commodity enables a shopkeeper to purchase 15 kg more than what he previously purchased for a sum of ₹7,400. In order to make a profit of 32.5% on the pre-reduction cost price of the commodity, at what price (in ₹) per kg should the commodity be sold?",
+    "questionImage": null,
+    "options": [
+      "41",
+      "65",
+      "53",
+      "17"
+    ],
+    "correctIndex": 2,
+    "solutionText": "fraction method 3/40      40   37  3unit 15kg",
+    "solutionImage": null,
+    "id": "mtbmu68w6f5kjw",
+    "order": 89,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Average",
+    "questionText": "The average of n numbers is 45. If 60% of the numbers are increased by 5 each and the remaining numbers are decreased by 10 each, then what is the average of the numbers so obtained?",
+    "questionImage": null,
+    "options": [
+      "31",
+      "44",
+      "81",
+      "43"
+    ],
+    "correctIndex": 1,
+    "solutionText": "(0.60×5)+(0.40×(−10))\n=3−4=−1\nStep 3: New average:45+(−1)=44\n45+(−1)=44\n✅ Answer: 44\nKyun kaam karta hai (1-line logic):\nTotal sum mein change = (0.6n × 5) + (0.4n × (−10)) = 3n − 4n = −n\nAverage change =−𝑛\nn are total numbers  change in average deviation is divided b/w total nmbrs= -n/n",
+    "solutionImage": null,
+    "id": "mtbnd8pd5zi65g",
+    "order": 90,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Algebra",
+    "questionText": "If 20x^2 - 30x + 1 = 0, then what is the value of 25x^2 +1/16x^2",
+    "questionImage": null,
+    "options": [
+      "46&2/3",
+      "53&3/4",
+      "70",
+      "63&4/5"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mtbnsfgeu4gt9x",
+    "order": 91,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Speed & Distance",
+    "questionText": "Ashok runs 2&2/3 times as fast as Bharat. If Ashok gives Bharat a head start of 160 m, then how far must the winning post be so that Ashok and Bharat can reach it at the same time?",
+    "questionImage": null,
+    "options": [
+      "256 m",
+      "372 m",
+      "123 m",
+      "474 m"
+    ],
+    "correctIndex": 0,
+    "solutionText": "{Distance by Ashok} : {Distance by Bharat} = 8 : 3",
+    "solutionImage": null,
+    "id": "mtbs2njs0cyn1d",
+    "order": 90,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Partnership",
+    "questionText": "A and B started a business by investing ₹70,000 each. After 10\nmonths, A invests an additional amount of ₹40,000. After 2 more months, B withdraws ₹20,000. After 2 more months, a third person, C joins the business and invests ₹40,000. If at the end of 2 years, C gets ₹7,500 as his share of profit, then what is A's share\nin the profit?",
+    "questionImage": null,
+    "options": [
+      "16000",
+      "42000",
+      "83000",
+      "39000"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": "/uploads/partnership/9de1a9b2e9fb72ae0c8f5133f561f1e529ad4883979146cedf143cbd9539f431.png",
+    "id": "mtc8hjrtxpc9cb",
+    "order": 91,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Geometry",
+    "questionText": "X, Y, and Z are three equalateral triangles. The sum of the areas of X and Y is equal to the area of Z. If the side lengths of X and Y are 6 cm and 8 cm, respectively, then what is the length of Z?",
+    "questionImage": null,
+    "options": [
+      "10",
+      "59",
+      "20",
+      "26"
+    ],
+    "correctIndex": 0,
+    "solutionText": "simple formula",
+    "solutionImage": null,
+    "id": "mtc8rtdhquo6o7",
+    "order": 92,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "CP & SP",
+    "questionText": "A grocer purchased 10 kg of rice for ₹700. He spends some amount on transportation and then sells it for ₹1,400. If the percentage of profit made by the grocer is 30%, then what is the amount (in ₹) he spends on transportation? (Round off to the nearest integer)",
+    "questionImage": null,
+    "options": [
+      "703",
+      "281",
+      "376",
+      "873"
+    ],
+    "correctIndex": 2,
+    "solutionText": "130% = 1400",
+    "solutionImage": null,
+    "id": "mtc91dmfmv1yqw",
+    "order": 93,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "3L of milk are drawn from a container containing 30L of milk. It is replaced by water and the process is repeated 2 times more. What is the ratio of milk to water at the end ?",
+    "questionImage": null,
+    "options": [
+      "729 : 271",
+      "48 : 344",
+      "95 : 444",
+      "62 : 342"
+    ],
+    "correctIndex": 0,
+    "solutionText": "simple compound",
+    "solutionImage": null,
+    "id": "mtc94w9a0pghmx",
+    "order": 94,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Percentage",
+    "questionText": "In an election between two candidates, y% of the voters did not vote. 10% of the votes cast were declared invalid, while all the valid votes were cast in favour of either of the two candidates. The candidate who got 59.375% of the valid votes cast was declared elected by 2484 votes. If the number of people eligible to vote in that election was 16,000, what is the value of y?",
+    "questionImage": null,
+    "options": [
+      "8",
+      "5",
+      "7",
+      "3"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Golden rules for is type ke election questions:\n\nAwkward decimal % (jaise 59.375%, 37.5%, 62.5%) ko turant fraction mein convert karo — inme se zyadatar \n/\n8\n/8, \n/\n16\n/16, \n/\n32\n/32 ke clean fractions hote hain.\nWinner-loser ka margin fraction seedha nikaalo (winner% − loser% ka fraction), fir diya hua margin-vote-count use karke valid votes ek hi step mein nikaal lo.\nChain backwards: Valid → Cast (÷ validity%) → Eligible (given) → y% seedha subtraction se.",
+    "solutionImage": "/uploads/percentage/34eef41a3ce6a1db131cf4b5fd85bf62128608a6bed545e1b321c5c3788f0769.png",
+    "id": "mtca9cxbuj168y",
+    "order": 95,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Number System",
+    "questionText": "The ratio of a two-digit natural number to a number formed by reversing its digits is 4 : 7. Which of the following is the sum of all the numbers of all such pairs?",
+    "questionImage": null,
+    "options": [
+      "140",
+      "980",
+      "120",
+      "750"
+    ],
+    "correctIndex": 2,
+    "solutionText": ". If x= 1 =y =2: The pair is (12, 21)\n. If x =2 =y =4: The pair is (24, 42)\n. If x = 3 = y =6: The pair is (36, 63)\n. If x = 4 y =8: The pair is (48, 84)",
+    "solutionImage": null,
+    "id": "mtcamstlrn74xg",
+    "order": 96,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Mensuration",
+    "questionText": "A 22.5 m high tent is in the shape of a frustum of a cone surmounted by a hemisphere. If the diameters of the upper and the lower circular ends of the frustum are 21 m and 39 m respectively, then find the area of cloth (in m2) used to make the tent (ignoring the wastage).(use Tr = ₹)",
+    "questionImage": null,
+    "options": [
+      "36",
+      "2107&2/7",
+      "71",
+      "20"
+    ],
+    "correctIndex": 0,
+    "solutionText": "use simple formulas",
+    "solutionImage": null,
+    "id": "mtcaytfiznh0xz",
+    "order": 97,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "The compound interest and the amount obtained on a certain sum of money are ₹820 and ₹8,820, respectively, after 2 years. If the rate of interest is compounded yearly, then the rate of interest is:",
+    "questionImage": null,
+    "options": [
+      "9",
+      "8",
+      "7",
+      "5"
+    ],
+    "correctIndex": 3,
+    "solutionText": "8820/8000",
+    "solutionImage": null,
+    "id": "mtcbb37d0wa9dk",
+    "order": 98,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Pipe & Cistern",
+    "questionText": "A pipe can fill a tank in 30 minutes. Due to two leakages A and B, the filled tank\nwould be drained off in 3/2 hour and 5/4 hour, respectively. How long will it take\nto fill the tank if the pipes A and B are left open?",
+    "questionImage": null,
+    "options": [
+      "75/8",
+      "81/8",
+      "15/8",
+      "88/8"
+    ],
+    "correctIndex": 2,
+    "solutionText": "{Net Rate} = 2 - {2}{3} - {4}{5}$$",
+    "solutionImage": null,
+    "id": "mtcbnxf9kzupbd",
+    "order": 99,
+    "attemptStatus": "correct",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Trigonometry",
+    "questionText": "If sec + tan = 5, then sine =",
+    "questionImage": null,
+    "options": [
+      "12/13",
+      "30/13",
+      "48/13",
+      "64/13"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Diya hai: sec θ + tan θ = 5 ... (1)\n\nStep 1: Identity use karo:\nsec²θ − tan²θ = 1\n⟹ (sec θ + tan θ)(sec θ − tan θ) = 1\n\nStep 2: Value daalo:\n5 × (sec θ − tan θ) = 1\n⟹ sec θ − tan θ = 1/5 ... (2)\n\nStep 3: (1) aur (2) ko add/subtract karo:\n\nAdd karne par:\n2 sec θ = 5 + 1/5 = 26/5\n⟹ sec θ = 13/5\n\nSubtract karne par:\n2 tan θ = 5 − 1/5 = 24/5\n⟹ tan θ = 12/5\n\nStep 4: sin θ nikaalo:\nsin θ = tan θ / sec θ = (12/5) ÷ (13/5) = 12/13\n\n✅ Answer: sin θ = 12/13",
+    "solutionImage": null,
+    "id": "mtcc8bzwhl13qn",
+    "order": 100,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Geometry",
+    "questionText": "Find the altitude to side AC of triangle with side AB = 20 cm, AC = 20 cm, BC =\n30 cm.",
+    "questionImage": null,
+    "options": [
+      "9 root7",
+      "7.5 root7",
+      "5 root7",
+      "8 root7"
+    ],
+    "correctIndex": 1,
+    "solutionText": "area = b/4 root me 4a sq - b sq  for sclane triangle\naltitude  = 1/2 root me 4 a sq - b sq",
+    "solutionImage": null,
+    "id": "mtcd69194wpn3d",
+    "order": 101,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Trigonometry",
+    "questionText": "If 45sine + 28cos=53, 0°<0<90°, then the value of tan is.",
+    "questionImage": null,
+    "options": [
+      "38/28",
+      "45/28",
+      "8/53",
+      "95/53"
+    ],
+    "correctIndex": 1,
+    "solutionText": "simple triplet",
+    "solutionImage": null,
+    "id": "mth7rqfxyev5ln",
+    "order": 102,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Pipe & Cistern",
+    "questionText": "A water tank has inlets of two types A and B. All inlets of type A, when open, bring in water at the same rate. All inlets of type B, when open, bring in water at\nthe same rate. The empty tank is completely filled in 30 minutes if 10 inlets of\ntype A and 45 inlets of type B are open, and in 1 hour if 8 inlets of type A and 18\ninlets of type B are open. In how many minutes will the empty tank get\ncompletely filled if 7 inlets of type A and 27 inlets of type B are open?",
+    "questionImage": null,
+    "options": [
+      "11 min",
+      "48 min",
+      "46 min",
+      "19 min"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mth8k34g2jb4se",
+    "order": 103,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Miscll",
+    "questionText": "The cost of a diamond varies directly as the square of its weight. A diamond broke into four pieces with their weights in the ratio of 1: 2 : 3 : 4. If the loss in total value of the diamond was Rs. 21,000 what was the price of the original diamond?",
+    "questionImage": null,
+    "options": [
+      "70000",
+      "60000",
+      "30000",
+      "50000"
+    ],
+    "correctIndex": 2,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mth8tth2it2lx8",
+    "order": 104,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Geometry",
+    "questionText": "In triangle ABC, A = 58°. If I is the incentre of the triangle, then the measure of angle BIC is:",
+    "questionImage": "/uploads/geometry/87d34a455a6df090cf8a22bdfaf62c050e6027d984544423d1a872f63ec3e8d5.png",
+    "options": [
+      "169 degree",
+      "56 degree",
+      "119 degree",
+      "40 degree"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Incentre (I)\n\nCircumcentre (O)\n\nOrthocentre (H)\n\nExcentre opposite A (I_A)",
+    "solutionImage": null,
+    "id": "mth9au7hs4yh8c",
+    "order": 105,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Trigonometry",
+    "questionText": "",
+    "questionImage": "/uploads/trigonometry/85859b979e27d84af9f162d9c796936502089fce09ffd4d93a2fc43114d2289f.png",
+    "options": [
+      "cosec sec^2",
+      "sin cos^2",
+      "sin sec^2",
+      "cosec cos^2"
+    ],
+    "correctIndex": 2,
+    "solutionText": "ssimple formula\nhttps://youtu.be/-ko5E0AESqs?si=pIwVi3aXo5fWOD4g&t=561",
+    "solutionImage": null,
+    "id": "mthdol1z9tpfm4",
+    "order": 106,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "CP & SP",
+    "questionText": "On selling a wardrobe at ₹3,437, the value of gain is 75% more than the value of loss incurred on selling it at ₹3,338. In order to gain 50%, find the selling price (in ₹).",
+    "questionImage": null,
+    "options": [
+      "5061",
+      "8665",
+      "2131",
+      "9692"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mti0koalp9axqi",
+    "order": 107,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Algebra",
+    "questionText": "If a^2 + b+2 = 168, a x b = 27, and a > b",
+    "questionImage": "/uploads/algebra/e84b5c92fdc3e3feb7dd8b4470c3031a85b8fd4e3c56a0623b8793077d2dd88d.png",
+    "options": [
+      "root 57/111",
+      "root  53/121",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mti0v8p4tsqx29",
+    "order": 108,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "CP & SP",
+    "questionText": "Jitesh sold an article at a loss of 11%. If he had bought the item at 5% less and had sold it for ₹739 more, then he would have gained 20%. Find the cost price (in ₹) of the article.",
+    "questionImage": null,
+    "options": [
+      "1867",
+      "2956",
+      "3457",
+      "4655"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Fast approach for exam (30 sec method):\n\nLoss% se SP1 % nikal lo → 100 – 11 = 89%\nNew CP = 100 – 5 = 95%\nGain% new CP pe lagao → 95 × 1.20 = 114%\nDifference = 114 – 89 = 25%\n25% = 739 → CP (100%) = 739/25 × 100 = ₹2956",
+    "solutionImage": null,
+    "special": true,
+    "id": "mti1pb86ymsjuz",
+    "order": 109,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "HCF & LCM",
+    "questionText": "When 1272, 2636, and 4209 are divided by the greatest number x, the remainder in each case is y. What is the value of (3x - 14y)?",
+    "questionImage": null,
+    "options": [
+      "-63",
+      "-65",
+      "36",
+      "46"
+    ],
+    "correctIndex": 0,
+    "solutionText": "The greatest number = x = HCF [(2636 - 1272), (4209 - 2636), (4209 - 1272)]\nx = HCF(1364, 1573, 2937)\nx=11",
+    "solutionImage": null,
+    "special": true,
+    "id": "mtikxq87ejyv7p",
+    "order": 110,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "questionText": "ABCD is a trapezium in which AB || DC, and E and F are the midpoints of the diagonals AC and BD, respectively. If AB = 30 cm, BC = 20 cm, DC = 86 cm, and AD = 84 cm, then what is the length (in cm) of EF?",
+    "questionImage": null,
+    "options": [
+      "48",
+      "44",
+      "28",
+      "40"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Length of EF =\n\n|DC - AB|/2",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtil1296fzjd13",
+    "order": 111,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Percentage",
+    "questionText": "Due to a decrease in manpower, the production in a factory decreased by 12%. By what percentage (rounded off to two decimal places) should the working hours be increased to restore the original\nproduction?",
+    "questionImage": null,
+    "options": [
+      "14.41%",
+      "13.64%",
+      "12%",
+      "15.01%"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtil6u57fec6lh",
+    "order": 112,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "questionText": "P is any point inside the rectangle ABCD. If PA = 94 cm, PB = 61 cm, and PC = 67 cm, then the length of PD (in cm) is:",
+    "questionImage": null,
+    "options": [
+      "98",
+      "73",
+      "70",
+      "50"
+    ],
+    "correctIndex": 0,
+    "solutionText": "PA^2 + PC^2 = PB^2 + PD^2",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtil8sjf5m7006",
+    "order": 113,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "questionText": "If (sin x + sin y) = a and (cos x + cos y) = b, then find the value of (sin x sin y + cos x cos y).",
+    "questionImage": "/uploads/trigonometry/9c8dd1104356b9654e2aeebcd2bf79232319d487f567a773ab588a3b57f14a87.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 2,
+    "solutionText": "simple square both side",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtimetuvf6wb8b",
+    "order": 114,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "questionText": "A boat travels 14 km upstream in 14 hours and 171 km downstream in 9 hours. What is the speed of the boat in still water?",
+    "questionImage": "/uploads/boat-water/9fa6d38a1613282a9fd212ed22285088a767062f32d58422557722ac0c63cb62.png",
+    "options": [
+      "80",
+      "40",
+      "10",
+      "20"
+    ],
+    "correctIndex": 2,
+    "solutionText": "",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtimuz8geng8e1",
+    "order": 115,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "questionText": "In a quadrilateral ABCD, <A = 53° and 2B = 46°. The bisectors of <C and <D meet at O. What is the measure of <DOC?",
+    "questionImage": null,
+    "options": [
+      "47",
+      "36",
+      "56",
+      "38"
+    ],
+    "correctIndex": 3,
+    "solutionText": "mock 3 question 18",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtin81ogw1cotu",
+    "order": 116,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "questionText": "If sin5A = cos(A - 42°), where 5A is an acute angle, find the value of A.",
+    "questionImage": null,
+    "options": [
+      "42",
+      "54",
+      "55",
+      "22"
+    ],
+    "correctIndex": 3,
+    "solutionText": "Jab bhi $\\sin \\theta_1 = \\cos \\theta_2$ ho, toh dono angles ka sum $90^\\circ$ hota hai:",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtinyqej80dfj8",
+    "order": 117,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "The ratio of milk and water in 560 liters of mixture is 4 : 3. 140 liters of mixture are\ntaken out. Find the quantity of milk now.",
+    "questionImage": null,
+    "options": [
+      "240 litre",
+      "540 litre",
+      "490 litre",
+      "110 litre"
+    ],
+    "correctIndex": 0,
+    "solutionText": "420 * 4/7",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmaz58xv2di2r",
+    "order": 118,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A 42-litre solution has sugar and water in the ratio 2 : 5. If, due to evaporation, the volume is reduced by 35%, and only water evaporates, what is the new ratio of sugar to water?",
+    "questionImage": null,
+    "options": [
+      "85 : 51",
+      "30 : 51",
+      "76 : 51",
+      "40 : 51"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=HnL8IDN7Ji32M4TD&t=1460",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmb5hpa2v7861",
+    "order": 119,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "Three bottles of the same capacity are 30%, 40% and 25% full of orange juice\nrespectively. They are filled up completely by adding apple juice. The contents of the three bottles are emptied into another vessel. What is the percentage of apple juice in the mixture?",
+    "questionImage": null,
+    "options": [
+      "53&1/3",
+      "80&1/3",
+      "68&1/3",
+      "41&1/3"
+    ],
+    "correctIndex": 2,
+    "solutionText": "70 60 75 =205/3 ans\nhttps://www.youtube.com/live/H8TGd7fmoBQ?si=feJoSdw9kGh9qPAk&t=1892",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmbbtay6fdkly",
+    "order": 120,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "The ratios of copper to zinc in alloys A and B are 3 : 4 and 5 : 9, respectively. A and B are taken in the ratio 2 : 3 and melted to form a new alloy C. What is the ratio of copper to zinc in C?",
+    "questionImage": null,
+    "options": [
+      "35 : 43",
+      "27 : 43",
+      "21 : 43",
+      "31 : 43"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=xTW7P3Hk8lctsekj&t=3205",
+    "solutionImage": "/uploads/mixture-alligation/80650d7fa652d49127bfc38d83610ae095fae81796551d34c8bb43cce9253450.png",
+    "special": false,
+    "id": "mtmbzyiv5lzuer",
+    "order": 121,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "Three vessels whose capacities are in the ratio of 3: 5 : 7 are completely filled with milk mixed with water. The ratios of milk to water in the mixtures in the vessels are 5 : 3, 7: 2, and 7 : 3, respectively. Taking one-third of the first mixture, one-fifth of the second mixture, and one-seventh of the third mixture, a new mixture is prepared, which is kept in a new vessel. Find the percentage of water in the new mixture (rounded off to two places of decimals).",
+    "questionImage": null,
+    "options": [
+      "29.91 %",
+      "75.91 %",
+      "25.91 %",
+      "30.91 %"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=5IpfKngYsrTE_Q4f&t=3739",
+    "solutionImage": "/uploads/mixture-alligation/01d8ca2c8243596fa29b434f769b0d242f4bfd62c7b012aff4f9ad4645ff1565.png",
+    "special": false,
+    "id": "mtmcccmzakfhzi",
+    "order": 122,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "Three glasses of 3 liters, 4 liters, and 5 liters each contain a mixture of yogurt and water in the ratio 2 : 3, 3 : 7, and 4 : 11, respectively. If the mixture from the three glasses is poured into a vessel, find the ratio of yogurt to water in the resulting mixture.",
+    "questionImage": null,
+    "options": [
+      "13 : 31",
+      "31 : 31",
+      "12 : 31",
+      "14 : 31"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=rnF0B3dxMwskYvJS&t=4124",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmm3pnvuep02m",
+    "order": 123,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A vessel contained a certain amount of milk and water. When 20 liters of water\nwas added, the new mixture contained 40% milk. When 10 liters of milk was added to this new mixture, the final mixture contained 50% milk. What was the ratio of water to milk in the original mixture?",
+    "questionImage": null,
+    "options": [
+      "4 : 3",
+      "3 : 2",
+      "1 : 2",
+      "2 : 1"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=dWuKa0RnW9-vLL6u&t=5390",
+    "solutionImage": "/uploads/mixture-alligation/18b97b04f2787876ef609facd1cc30ef6d6272552b5d6eabe346e5ff10552140.png",
+    "special": false,
+    "id": "mtmmrnaenfnbzj",
+    "order": 124,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A container holds a mixture of Orange, Apple, and Guava juices in the ratio of 5:7:4 respectively. 24 litres of this mixture is taken out, and then 10 litres of orange juice and 6 litres of guava juice are added to the vessel. If the resultant quantity of apple juice is 14 litres more than the resultant quantity of orange juice, what was the initial quantity of mixture in the vessel (in litres)?",
+    "questionImage": null,
+    "options": [
+      "136",
+      "216",
+      "186",
+      "126"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=pUemTZMTyUBHltxQ&t=5710",
+    "solutionImage": "/uploads/mixture-alligation/097bebc348398768fba51b4684c354674423ec70b61e669120786e96b4c3246b.png",
+    "special": false,
+    "id": "mtmn25o306m022",
+    "order": 125,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "The ratio of acid and water in solution A is 5:4 and 7:11 in solution B. 10 liters of A is mixed with 8 liters of B. In 324 ml of the resulting solution, how much water (in ml) should be added to get a solution containing 33&1/3 % acid?",
+    "questionImage": null,
+    "options": [
+      "182",
+      "30",
+      "144",
+      "121"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=NDLv7DtWh4Jqq51D&t=6229",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmnsng1wmzxd8",
+    "order": 125,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "From a container having pure milk, 40% is replaced by water and the process is\nrepeated thrice. At the end of the third operation, the purity of milk is:",
+    "questionImage": null,
+    "options": [
+      "21.6 %",
+      "10.6 %",
+      "12.6 %",
+      "24.6 %"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": "/uploads/mixture-alligation/98a299b75852707e95258207b2733e98a75cf19cc060afc2350d1bfb1b7efd76.png",
+    "special": false,
+    "id": "mtmozpc11sqcmh",
+    "order": 126,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "There are two types of silver - copper alloys. The first alloye contains 93&1/3% Silver, while the second alloy contains 86&2/3% silver. Find the amount of the first alloy that shoud be mixed with some quatity of the second alloy to obtain a 100 kg mixture containing 90% silver.",
+    "questionImage": null,
+    "options": [
+      "33",
+      "37",
+      "50",
+      "80"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=KVhVVfBXdwKfnE21&t=17625",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmwz1wfvty0i6",
+    "order": 127,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A milkman has 2 types of milk. In the first container the % of milk is 80% and in the 2nd container the % of milk is 60%. If he mixes 28L of milk of the 1st container to the 32L of milk of the 2nd container, then the % of milk in the mixture is:",
+    "questionImage": null,
+    "options": [
+      "66.67%",
+      "69.33%",
+      "70%",
+      "72%"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=vTPbeyNbxKV2Kr2O&t=2060",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtbm9mv11qk9g",
+    "order": 128,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A mixture containing 72% oil is mixed with another mixture containing 48% oil in the ratio 6: 16. What is the percentage of oil in the mixture formed?",
+    "questionImage": null,
+    "options": [
+      "52.36%",
+      "54.55%",
+      "56.25%",
+      "58.18%"
+    ],
+    "correctIndex": 1,
+    "solutionText": "deviation",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtoyxe97304n4",
+    "order": 130,
+    "attemptStatus": "unattempted",
+    "testAllowed": false
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A salt solution has 60% of salt. Another salt solution has 60% of water. 63 L of the second solution is added to 27 L of the first solution to make a salt solution of x%. What is the ratio of water to salt in the final solution?",
+    "questionImage": null,
+    "options": [
+      "23 : 27",
+      "27 : 23",
+      "9 : 7",
+      "7 : 9"
+    ],
+    "correctIndex": 1,
+    "solutionText": "simple deviation and https://www.youtube.com/live/H8TGd7fmoBQ?si=Er3LlLkvcebfOqyU&t=2562",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtwhdl1ef5xhk",
+    "order": 131,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "Two jars A and B are containing the solutions of two liquids P and Q. The ratio of the liquids P and Q in the jars A and B are 2:19 and 1:11, respectively. If 7 litres of the solution of jar A and 4 litres of the solution of jar B are mixed, what is the ratio of the solutions P and Q in the new mixture?",
+    "questionImage": null,
+    "options": [
+      "1 : 9",
+      "1 : 10",
+      "2 : 11",
+      "3 : 20"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=ijyulyswvOax6-TJ&t=3359",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtdtmmqd3pp7m",
+    "order": 132,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A 90-liter mixture contains milk and water in the ratio 7:2. If x liters of milk and x liters of water are added to the mixture, the new ratio of milk and water becomes 5:2. What is the value of x?",
+    "questionImage": null,
+    "options": [
+      "10 L",
+      "12 L",
+      "13⅓ L",
+      "15 L"
+    ],
+    "correctIndex": 2,
+    "solutionText": "make the artion same then multipys opposite by their difference",
+    "solutionImage": null,
+    "special": false,
+    "id": "mttjpi0vv9dwf",
+    "order": 133,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "In an x L solution of alcohol and water, the ratio of alcohol and water is 5: 7. If 5 L of alcohol and 11 L of water are added to the solution, the percentage of alcohol in the resulting solution becomes 40%. What will be the value of x?",
+    "questionImage": null,
+    "options": [
+      "72 L",
+      "80 L",
+      "84 L",
+      "96 L"
+    ],
+    "correctIndex": 2,
+    "solutionText": "simple cross method",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtu6jxfwia1wz",
+    "order": 134,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "From a cask of milk containing 64 liters, 8 liters are drawn out and the cask is filled up with water. If the same process is repeated a second, then a third time, what will be the proportion of milk to water in the resulting mixture?",
+    "questionImage": null,
+    "options": [
+      "343 : 169",
+      "169 : 343",
+      "49 : 15",
+      "343 : 512"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "special": false,
+    "id": "mt77fh4fo5v9g",
+    "order": 135,
+    "attemptStatus": "unattempted",
+    "testAllowed": false
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "There are two chemicals which do not react with each other. A container contains 10 litres of the chemical A. One litre of this chemical is removed from it and one litre of the chemical Bis poured. Then one litre of the mixture is removed from the container and one litre of Bis poured. If this process of replacing one litre of the mixture by one litre of B is performed once more, then what is the volume of B that is present in the container approximately (in percentage)?",
+    "questionImage": null,
+    "options": [
+      "24.3%",
+      "27.1%",
+      "30%",
+      "34.39%"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=W6gY2eLcniGZYxj-&t=8216",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtrq7pijig8e6",
+    "order": 136,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A drum contains 80 litres of ethanol. 20 litres of this liquid is removed and replaced with water. 20 litres of this mixture is again removed and replaced with water. How much water (in litres) is present in this drum now?",
+    "questionImage": null,
+    "options": [
+      "30 L",
+      "35 L",
+      "40 L",
+      "45 L"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=PJ87CMIyIvbl15b4&t=8862",
+    "solutionImage": null,
+    "special": false,
+    "id": "mt3ao7sq6s38y",
+    "order": 137,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "5 litres are drawn from a cask full of wine and is then filled with water. This operation is performed once more. The ratio of the quantity of wine now left in cask to that of the water is 16: 9. How much wine the cask hold originally? (In litres)",
+    "questionImage": null,
+    "options": [
+      "20 L",
+      "25 L",
+      "30 L",
+      "40 L"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=Xpx2jx5ne1PtX685&t=9181",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtqwi23gfjvus",
+    "order": 138,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A solution contains acid and water in the ratio of 4: 5 If 20% of the solution is replaced by water, then what will be the ratio of acid and water in the new solution?",
+    "questionImage": null,
+    "options": [
+      "16 : 29",
+      "4 : 5",
+      "16 : 25",
+      "8 : 13"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=6d0a49icRKQKk5fJ&t=9535",
+    "solutionImage": null,
+    "special": false,
+    "id": "mt54o20zigrx2",
+    "order": 139,
+    "attemptStatus": "unattempted",
+    "testAllowed": false
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A vessel contains 120 liters of a solution of milk and water in the ratio 3 : 2. If 24 liters of this solution is removed and pure milk is added, what will be the new ratio of milk and water?",
+    "questionImage": null,
+    "options": [
+      "3 : 2",
+      "17 : 8",
+      "8 : 5",
+      "9 : 4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=dEf0YgrwK2-oEnd8&t=9678",
+    "solutionImage": null,
+    "special": false,
+    "id": "mth5pvojqabni",
+    "order": 140,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A drum contains 80 litres of a 90% pure acid solution. If 8 litres of this solution are removed and replaced with 8 litres of pure water, what is the new percentage of acid in the solution?",
+    "questionImage": null,
+    "options": [
+      "72%",
+      "80%",
+      "81%",
+      "82%"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=hfTgPeAbOku9eJIB&t=9791",
+    "solutionImage": null,
+    "special": false,
+    "id": "mttx2tcphf0n5",
+    "order": 141,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A container has 60 litres of a mixture of acid and water in the ratio 7:3. 20% of the mixture is taken out and replaced with water. This operation is repeated once more. What is the final percentage of acid in the mixture?",
+    "questionImage": null,
+    "options": [
+      "42%",
+      "44.8%",
+      "48%",
+      "56%"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=ZVU3rgwrxhcBxfOb&t=9930",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtjhnv94o5v55",
+    "order": 142,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A mixture of apple juice and water is prepared. 10% of the mixture is removed and the same amount of water is added. If the ratio of apple juice to water in the resulting mixture is 2:3, find the ratio of apple juice to water in the original mixture.",
+    "questionImage": null,
+    "options": [
+      "2 : 3",
+      "4 : 5",
+      "5 : 6",
+      "8 : 9"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=QpCssIhE-hD4MUIA&t=10345",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtqtpmka8f9qk",
+    "order": 143,
+    "attemptStatus": "unattempted",
+    "testAllowed": false
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A laboratory bottle contains 60 ml of a 70% concentration saline solution. 12 ml of the solution is withdrawn and replaced with 12 ml of pure water. Then, 15 ml of the resulting solution is withdrawn and replaced with 15 ml of pure water. What is the final concentration of saline (in percentage) remaining in the bottle?",
+    "questionImage": null,
+    "options": [
+      "40%",
+      "42%",
+      "45%",
+      "48%"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=J2gAo7b7q2CaVfJs&t=10644",
+    "solutionImage": null,
+    "special": false,
+    "id": "mt0a32jnybvoh",
+    "order": 144,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "In a mixture of 120 litres of milk and water, the ratio of milk to water is 2 : 3. From this mixture, 40 litres is taken out and replaced with milk. This process is continued one more time. Find the quantity of milk (in litres) in the final mixture.",
+    "questionImage": null,
+    "options": [
+      "80 L",
+      "84 L",
+      "88 L",
+      "92 L"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=Ri4JG29R0X6HSshj&t=11025",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtrtj14pexpex",
+    "order": 145,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "The ratio of milk and water in a mixture is 7 : 5. How much part of the mixture should be replaced by water so that ratio of milk and water is 2: 3?",
+    "questionImage": null,
+    "options": [
+      "7/25",
+      "11/35",
+      "2/7",
+      "1/3"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=ngxQSamnjdIQxm7u&t=11283",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtkpbskfwew97",
+    "order": 146,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A tank contains liquid A and B in the ratio 13: 12. 50 litres of the mixture are taken out and filled with 50 litres of B. Now the ratio changes to 7:8. Find the quantity of liquid B initially.",
+    "questionImage": null,
+    "options": [
+      "216 L",
+      "225 L",
+      "234 L",
+      "240 L"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=P9EzS6lsXDzkDMne&t=12216",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtjmwimeyb1ks",
+    "order": 147,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A cask having a capacity of 600 litres is initially filled with wine. From this cask y litres of wine are first drawn and replaced with water. From this mixture, 120 litres are drawn and replaced with water. From this further diluted mixture, 120 litres are drawn again and replaced with water. The ratio of wine to water in the cask in now 12: 13. What is the value of y?",
+    "questionImage": null,
+    "options": [
+      "120 L",
+      "150 L",
+      "180 L",
+      "200 L"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=alY9c6zgcYW9BodT&t=12560",
+    "solutionImage": null,
+    "special": false,
+    "id": "mt46s53qmqrko",
+    "order": 148,
+    "attemptStatus": "unattempted",
+    "testAllowed": false
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "From a cask filled with wine, 75 liters are first drawn and replaced with water. From this mixture, 60 liters are drawn and replaced with water. The ratio of wine to water in the cask is now 3:2. How many liters of wine did the cask initially hold?",
+    "questionImage": null,
+    "options": [
+      "240 L",
+      "270 L",
+      "300 L",
+      "360 L"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=dZtA6zwRLW6grReh&t=13084\nuse option to solve equatino in this question",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtz08ght8k4am",
+    "order": 149,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "In what ratio should sugar costing ₹78 per kg be mixed with sugar\ncosting ₹36 per kg so that by selling the mixture at ₹86.8 per kg, there is\na profit of 24%?",
+    "questionImage": null,
+    "options": [
+      "4 : 17",
+      "17 : 4",
+      "7 : 3",
+      "21 : 5"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=3yqg6Vq7aoGsPTl4&t=15731",
+    "solutionImage": null,
+    "special": false,
+    "id": "mt6e1u07g0mcp",
+    "order": 150,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A person mixes water with milk to earn a profit. He mixes water with milk priced at ₹70 per liter to prepare a final mixture priced at ₹55 per liter. What is the ratio of milk to water in the mixture?",
+    "questionImage": null,
+    "options": [
+      "11 : 3",
+      "3 : 11",
+      "7 : 2",
+      "4 : 1"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=CsLi3A0E4rmkfXa7&t=15950",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtv95ihw96cj8",
+    "order": 151,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A milkman sells a mixture of milk and water at 45 Rs./litre without any profit or loss. If he has 48 liters of mixture then find quantity of water in it(pure milk costs 54 Rs./litre)?",
+    "questionImage": null,
+    "options": [
+      "6 L",
+      "8 L",
+      "10 L",
+      "12 L"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=4IYeES0Bwhe8II56&t=15998",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtt9dmkipat05",
+    "order": 152,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A man bought a horse and a carriage for Rs. 80,000. He sold the horse at a gain of 10% and the carriage at a loss of 5%. He gained 1% on his whole transaction. What is the cost price of the horse?",
+    "questionImage": null,
+    "options": [
+      "₹28,000",
+      "₹30,000",
+      "₹32,000",
+      "₹36,000"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=4IYeES0Bwhe8II56&t=16040",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtuqt7diwrov4",
+    "order": 153,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "Govind bought two items at a total cost of ₹4,800. He sold one item at 34% profit and the other at 10% loss. If Govind sold both the items together for ₹5,442, then what is the difference between the cost price (in ₹) of both the items?",
+    "questionImage": null,
+    "options": [
+      "₹200",
+      "₹250",
+      "₹300",
+      "₹350"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=o5KDoO0FROZ55JD7&t=16519",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtqtov8tm6usl",
+    "order": 154,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A trader mixes two varieties of rice, A and B, in the ratio 3 : 5 by weight. He sells the mixture at a price such that he gains 20% on rice A and incurs a loss of 10% on rice B If the overall profit on the mixture is 8%, find the ratio of the cost prices per kg of rice A to rice B.",
+    "questionImage": null,
+    "options": [
+      "2 : 5",
+      "3 : 2",
+      "5 : 2",
+      "5 : 3"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=tU-Tme4foCEe9BzI&t=17349",
+    "solutionImage": null,
+    "special": false,
+    "id": "mt7awa7wx4vko",
+    "order": 155,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A and B are solutions of acid and water. The ratios of water and acid in A and B are 4:5 and 1:2, respectively. If x litres of A is mixed with y litres of B, then the ratio of water and acid in the mixture becomes 8:13. What is x:y?",
+    "questionImage": null,
+    "options": [
+      "2 : 3",
+      "3 : 2",
+      "4 : 3",
+      "5 : 4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=lH4zGillzG8hL2lA&t=17746",
+    "solutionImage": null,
+    "special": false,
+    "id": "mt9lzzc47tq28",
+    "order": 156,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "An alloy P contains 20% copper and 80% zinc by weight. Another alloy Q contains 60% copper and 40% zinc by weight. A third alloy, R, is to be prepared from P and Q in such a way that the amounts of copper and zinc are equal. In what ratio should the amounts of P and Q be mixed to obtain R?",
+    "questionImage": null,
+    "options": [
+      "1 : 2",
+      "1 : 3",
+      "2 : 3",
+      "3 : 1"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=8zDB43ArMiauOw4j&t=18478",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtabisou4653z",
+    "order": 157,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "What quantity of orange juice of 80% concentration should be added to 36L of orange juice of 25% concentration, so that the concentration of the mixture obtained is 60%?",
+    "questionImage": null,
+    "options": [
+      "54 L",
+      "60 L",
+      "63 L",
+      "72 L"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=tCczfAyOcwcNKUz1&t=18638",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtz3y5mk83dil",
+    "order": 158,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "80% and 90% pure acid solutions are mixed to obtain 20 litres of 87% pure acid solution Find the quantity (in litres) of 80% pure acid solution taken to form the mixture.",
+    "questionImage": null,
+    "options": [
+      "4 L",
+      "5 L",
+      "6 L",
+      "7 L"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=RvQZB48BVQv5iV-c&t=18761",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtk7ic9fd4yck",
+    "order": 159,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A chemistry laboratory requests for a 25% solution of ferrous sulphate. A supplier has 40 millilitre of 20% solution How many millilitre of 40% solution should be added to make it a 25% solution (correct to two decimal places)?",
+    "questionImage": null,
+    "options": [
+      "10.00 ml",
+      "12.50 ml",
+      "13.33 ml",
+      "15.00 ml"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=PYedW54w4y5jGZ7o&t=18852",
+    "solutionImage": null,
+    "special": false,
+    "id": "mts6oig8a0k6w",
+    "order": 160,
+    "attemptStatus": "unattempted",
+    "testAllowed": false
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "If a beer of 750ml bottle has 9% Alcohol and a wine bottle of 500 ml has 14% alcohol in it. If 2 bottles of beer and 3 bottles of wine are mixed together, then find the percentage of alcohol in the solution?",
+    "questionImage": null,
+    "options": [
+      "10.5%",
+      "11%",
+      "11.5%",
+      "12%"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=BIOc5C_vx3xonQDu&t=19070",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtg5t9fy1jt8g",
+    "order": 161,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A mixture containing 18% of methanol is mixed with another mixture containing b% of methanol in the ratio 4 : 5. If the percentage of methanol in the final mixture is 16%, what is the percentage of b?",
+    "questionImage": null,
+    "options": [
+      "12.4%",
+      "14%",
+      "14.4%",
+      "15.2%"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=OuuXP0iduljUh1g9&t=19230",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtdu0y8b9cd5n",
+    "order": 162,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A solution of milk and water contains 60% milk.How many litres of pure milk must be added to 40 litres of this solution to make the milk content 75% ?",
+    "questionImage": null,
+    "options": [
+      "20 L",
+      "24 L",
+      "28 L",
+      "30 L"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=_yEQZP84OkpipCi9&t=19674",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtxxs0317b8ov",
+    "order": 163,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A 125-liter mixture of milk and water contains 25% water. How much more water should be added to make the water content 30% in the new mixture?",
+    "questionImage": null,
+    "options": [
+      "7.5 L",
+      "8.33 L",
+      "8.93 L",
+      "10 L"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=c1E4NaOrkiIYeixr&t=19805",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtewiy2r7973k",
+    "order": 164,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "700 grams of cane sugar solution has 60% of sugar in it. How much sugar should be added to make it 75% in the solution?",
+    "questionImage": null,
+    "options": [
+      "350 g",
+      "400 g",
+      "420 g",
+      "450 g"
+    ],
+    "correctIndex": 2,
+    "solutionText": "",
+    "solutionImage": null,
+    "special": false,
+    "id": "mti9yhrbeuaiw",
+    "order": 165,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "How much water should be added to 20 liters of a mixture containing 15% alcohol so that the alcohol content in the mixture becomes 12%?",
+    "questionImage": null,
+    "options": [
+      "4 L",
+      "5 L",
+      "6 L",
+      "8 L"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=Oxmm0FcXNCg-_nze&t=20034",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtoozi2ar7as0",
+    "order": 166,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "The wheat sold by a grocer contained 10% low quality wheat. What quantity of good quality wheat should be added to 150 g of wheat, so the percentage of bad quality wheat becomes 6%?",
+    "questionImage": null,
+    "options": [
+      "75 g",
+      "90 g",
+      "100 g",
+      "120 g"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=Rnnbx7zaPDHORug2&t=20118",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtisyl5djrtj3",
+    "order": 167,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "In what ratio should water be added to pure alcohol to make it an 80% alcohol solution?",
+    "questionImage": null,
+    "options": [
+      "1 : 3",
+      "1 : 4",
+      "1 : 5",
+      "4 : 1"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtrvfun1ppjr1",
+    "order": 168,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "id": "mix-1",
+    "category": "Mixture & Alligation",
+    "questionText": "Alloy A contains iron, copper, and aluminium in the ratio 7 : 2 : 1, while alloy B contains the same metals in the ratio 10 : 3 : 2. Equal weights of both alloys are melted together to form alloy C. What is the fraction of aluminium in alloy C?",
+    "questionImage": null,
+    "options": [
+      "1/10",
+      "7/60",
+      "3/25",
+      "7/30"
+    ],
+    "correctIndex": 1,
+    "solutionText": "For 1 unit mass of each alloy: aluminium in A = 1/10 and in B = 2/15. Total aluminium = 1/10 + 2/15 = 3/30 + 4/30 = 7/30. Since total mass is 2 units, aluminium fraction = (7/30) / 2 = 7/60.",
+    "solutionImage": null,
+    "order": 9,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A chemist mixes two liquids 1 and 2. One litre of liquid 1 weighs 1 kg and one litre of liquid 2 weighs 800 gm. If half litre of the mixture weighs 480 gm, then the percentage of liquid 1 in the mixture, in terms of volume, is:",
+    "questionImage": null,
+    "options": [
+      "60%",
+      "70%",
+      "80%",
+      "90%"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=fPE4mDeKanZQi0j3&t=20276",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmix169a1",
+    "order": 169,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A can of water and milk mixture contains 60% milk. A part of this mixture is replaced by another mixture containing 50% milk and the percentage of milk was found to be 52%. The quantity of mixture replaced is:",
+    "questionImage": null,
+    "options": [
+      "60%",
+      "70%",
+      "80%",
+      "90%"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=ld8NvgTAH4HhSPMQ&t=20523",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmix170b2",
+    "order": 170,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "There are some rabbits and parrots in a farmhouse. The total number of animal heads is 340 and the total number of legs is 1060. Find the number of rabbits in the farmhouse.",
+    "questionImage": null,
+    "options": [
+      "170",
+      "180",
+      "190",
+      "200"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=jUGhbGBCbD4mmgcZ&t=20761",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmix171c3",
+    "order": 171,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "In an MCD parking there are some two-wheelers and the rest are four-wheelers. If the wheels are counted, there are a total of 520 wheels, but the in-charge of the parking says that there are only 175 vehicles. If no vehicle has a stepney, then the number of two-wheelers is:",
+    "questionImage": null,
+    "options": [
+      "75",
+      "85",
+      "90",
+      "95"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Formula: $\\text{4-wheelers} = \\frac{L}{2} - H$",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmix172d4",
+    "order": 172,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A class of 30 students appeared in a test. The average score of 12 students is 62 and that of the rest is 78. What is the average score of the class?",
+    "questionImage": null,
+    "options": [
+      "70.4",
+      "71.6",
+      "72.4",
+      "73.2"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=EhvzV3tu2Z9AeVr8&t=21273",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmix173e5",
+    "order": 173,
+    "attemptStatus": "unattempted",
+    "testAllowed": false
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "In a class of 50 students, 40% are girls. The average marks of the whole class are 64.4 and the average marks of the boys are 62. What is the average marks of the girls?",
+    "questionImage": null,
+    "options": [
+      "66",
+      "67",
+      "68",
+      "70"
+    ],
+    "correctIndex": 2,
+    "solutionText": "use allegation and https://www.youtube.com/live/H8TGd7fmoBQ?si=1pqFsu7_OVfsM8pv&t=21406",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmix174f6",
+    "order": 174,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "An army of 12,000 consists of Europeans and Indians. The average height of Europeans is 70 inches and that of an Indian is 69 inches. The average height of the whole army is 69¾ inches. Find the number of Indians in the army.",
+    "questionImage": null,
+    "options": [
+      "2,000",
+      "3,000",
+      "4,000",
+      "9,000"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=jZkVIaO1DhJ_P6wZ&t=21507",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmix175g7",
+    "order": 175,
+    "attemptStatus": "unattempted",
+    "testAllowed": false
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "The average height of girls in a group is 154 cm and the average height of boys in the group is 3 cm more than the average height of all the boys and girls in the group. If the number of girls is 25% less than the number of boys, then what is the average height of the boys?",
+    "questionImage": null,
+    "options": [
+      "158 cm",
+      "159 cm",
+      "160 cm",
+      "161 cm"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=7eWDewFh30XAsWEn&t=21597",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmix176h8",
+    "order": 176,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "In a company with 600 employees, the average age of the male employees is 42 years and that of the female employees is 41 years. If the average age of all the employees in the company is 41 years 9 months, then the number of female employees is:",
+    "questionImage": null,
+    "options": [
+      "100",
+      "150",
+      "200",
+      "450"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=uYq2956HIJvsTUj5&t=21777",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmix177i9",
+    "order": 177,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A rabbit on a controlled diet is fed daily 300 grams of a mixture of two foods, food X and food Y. Food X contains 10% protein and food Y contains 15% protein. If the rabbit's diet provides exactly 38 grams of protein daily, how many grams of food X are in the mixture?",
+    "questionImage": null,
+    "options": [
+      "120 g",
+      "130 g",
+      "140 g",
+      "160 g"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=7GSLal_qVhpPZocJ&t=21889",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmix178j0",
+    "order": 178,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "There are 400 multiple-choice questions in a test. 4 marks are allotted for a correct answer and 1 mark is deducted for a wrong answer or an unattempted question from the total score of correct answers. If a candidate has scored 1280 marks in the test, how many questions did the candidate answer correctly?",
+    "questionImage": null,
+    "options": [
+      "320",
+      "328",
+      "336",
+      "340"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=LAZqCp2wzcFNSORt&t=22144",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmix179k1",
+    "order": 179,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A toy T jumps either forward or backward. In each forward jump, it moves 5 feet forward, while in each backward jump, it moves 2 feet backward. If, in 31 jumps, T moves exactly 15 feet forward, what is the difference between the number of forward jumps and the number of backward jumps?",
+    "questionImage": null,
+    "options": [
+      "7",
+      "8",
+      "9",
+      "11"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=jAG3L1udeLBVSo1X&t=22295",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmix180l2",
+    "order": 180,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A labourer was appointed by a contractor on the condition that he would be paid Rs. 75 for each day of work but would be fined Rs. 15 for each day of absence. After 20 days, the contractor paid the labourer Rs. 1,140. The number of days the labourer was absent from work was:",
+    "questionImage": null,
+    "options": [
+      "3 days",
+      "4 days",
+      "5 days",
+      "6 days"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Worked days = 20 − x. Therefore, 75(20 − x) − 15x = 1140 → 1500 − 90x = 1140 → 90x = 360 → x = 4 days.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmix181m3",
+    "order": 181,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mensuration",
+    "questionText": "Concept of prism\nA prism and a pyramid have the same base and the same height. Find the ratio of the volume of the prism and the pyramid?  (area equilat triangle     if side=2 then area root 3)",
+    "questionImage": "/uploads/mensuration/f855c4f75284f60dbb5b60e4712ca5c15dd0155fe4bf7086eae792622213d106.png",
+    "options": [
+      "3 : 1",
+      "5 : 1",
+      "1 : 1",
+      "8 : 1"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/JQmhdF8ECGg?si=tvSMcfN-_7gocdLy&t=2321",
+    "solutionImage": "/uploads/mensuration/31cacaea4ce2b19952de6676632e5d6febcce84264676fed676737e53c307ab5.png",
+    "special": false,
+    "id": "mttelfkaswe64c",
+    "order": 181,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mensuration",
+    "questionText": "Find the volume of a pyramid whose base is an equilateral triangle of side 16root-3 cm and its slant height is 3 times of its height?",
+    "questionImage": null,
+    "options": [
+      "11",
+      "92",
+      "56",
+      "128 root-6"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/JQmhdF8ECGg?si=JOwgq_vn3vKQxtHQ&t=2614",
+    "solutionImage": null,
+    "special": false,
+    "id": "mttf8pv76shc4e",
+    "order": 182,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mensuration",
+    "questionText": "The base of a right pyramid is an equilateral triangle of side 10root-3cm. If the total surface area of the pyramid is 270root-3 sq.cm its height is",
+    "questionImage": null,
+    "options": [
+      "18",
+      "9",
+      "12",
+      "16"
+    ],
+    "correctIndex": 2,
+    "solutionText": "csa 1/2 * per of base * S. height\nhttps://youtu.be/JQmhdF8ECGg?si=fiiwREjWzogxXEmq&t=2855",
+    "solutionImage": null,
+    "special": false,
+    "id": "mttfhfz0slrfbx",
+    "order": 183,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mensuration",
+    "questionText": "The base of right pyramid is an equilateral triangle, each side of which is 20 cm. Each slant edge is 30 cm. The vertical height (in cm) of the pyramid is:",
+    "questionImage": "/uploads/mensuration/2d7342c545f1b5f31192d9ad7ce99c68b56a1352cb699fd3849a962e1f3f8ee0.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/JQmhdF8ECGg?si=7Iy5RVJZbIcsN0lV&t=3051",
+    "solutionImage": null,
+    "special": false,
+    "id": "mttfpvnnm167hq",
+    "order": 184,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mensuration",
+    "questionText": "The base of a pyramid is an equilateral                                           triangle whose each side is 8 cm. Its slant edge is 24 cm. What is the total surface area of the pyramid?",
+    "questionImage": null,
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/JQmhdF8ECGg?si=a1seuf95Bhf2-Tx3&t=3264",
+    "solutionImage": null,
+    "special": false,
+    "id": "mttfxqy3s2veoo",
+    "order": 185,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mensuration",
+    "questionText": "The base of a right pyramid is an equilateral\ntriangle with area 16root-3 cm^2. If the area of one of\nits lateral faces is 30cm^2, then its height (in cm)\nis :",
+    "questionImage": "/uploads/mensuration/a6dce55d6dc9c1cba111295ee867f4b5c6364482d9f8dbb0240ae2b0a9354182.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/JQmhdF8ECGg?si=n3m6DUSGRxw1oMNX&t=3387",
+    "solutionImage": null,
+    "special": false,
+    "id": "mttg3pwu855r6l",
+    "order": 186,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mensuration",
+    "questionText": "Height of a pyramid is 6m, the base of pyramid is a square whose diagonal is root-1152 m. Find the volume of pyramid?",
+    "questionImage": null,
+    "options": [
+      "5",
+      "1231",
+      "1165",
+      "1152"
+    ],
+    "correctIndex": 3,
+    "solutionText": "area = diagonal ka  square upon 2 \nhttps://youtu.be/JQmhdF8ECGg?si=PWWG77CuObridXnM&t=3640",
+    "solutionImage": null,
+    "special": false,
+    "id": "mttgut0w112791",
+    "order": 187,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "questionText": "The vertices of a quadrilateral are A(2,3), B(5,7), c(10,6), and D(7,2). Find the area of the quadrilateral ABCD.",
+    "questionImage": null,
+    "options": [
+      "33 sq. units",
+      "32 sq. units",
+      "43 sq. units",
+      "23 sq. units"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": "/uploads/geometry/3e1935ec36c1ab00eb4408affd01f79b61a4f0371441f373f6611de322435e71.png",
+    "special": false,
+    "id": "mtttrsjholw7yu",
+    "order": 188,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "CP & SP",
+    "questionText": "One type of pulses is sold for ₹72 per kg at a 20% profit. Another type is sold for ₹60 per kg at a 25% profit. These two varieties are mixed in the ratio 3:1, and the mixture is sold at ₹68.4 per kg. What is the overall profit percentage?",
+    "questionImage": null,
+    "options": [
+      "10 %",
+      "20 %",
+      "30 %",
+      "40 %"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": "/uploads/cp-sp/0a53271cedb252b22820613d28225a659db1aa488e29da3cb2b9f676b57585c1.png",
+    "special": false,
+    "id": "mttuchsa30g34o",
+    "order": 189,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "CP & SP",
+    "questionText": "The cost price of some table lamps is 25,000. The shopkeeper will get 15,000\nmore If he sells these table lamps for 1,200 per lamp instead of 900 per lamp. Find the selling price of 23 table lamps if he earned 21% profit.",
+    "questionImage": null,
+    "options": [
+      "14917",
+      "15913",
+      "17613",
+      "13915"
+    ],
+    "correctIndex": 3,
+    "solutionText": "15000= n * 300   n=total lamps",
+    "solutionImage": "/uploads/cp-sp/e1c49a14c6221dd9e263093a5a4fb87f2d97a8677dfb12c32bade29bcca48a71.png",
+    "special": false,
+    "id": "mttui16jkld12e",
+    "order": 190,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "CP & SP",
+    "questionText": "A trader lost 5% by selling a shirt for 850. He will gain x% by selling it for ₹1,530. The value of x is:",
+    "questionImage": null,
+    "options": [
+      "57%",
+      "89%",
+      "38%",
+      "71%"
+    ],
+    "correctIndex": 3,
+    "solutionText": "simple  850 ki 95% hai  1530 ki value nikalni hai",
+    "solutionImage": null,
+    "special": false,
+    "id": "mttvbigvweclxf",
+    "order": 191,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "questionText": "In a company 2/3 of the workers are girls, 1/2 of the girls are married and 1/3 of the married girls live in hostel. If 3/4 of the boys are married and 2/3 of married boys live in hostel. Calculate the part of workers who don't live in hostel.    take total worker 12 and solve by tree methdo",
+    "questionImage": null,
+    "options": [
+      "14/18",
+      "18/18",
+      "17/18",
+      "13/18"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": null,
+    "special": false,
+    "id": "mttvrthhdscq7r",
+    "order": 192,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Percentage",
+    "questionText": "In an election between two candidates, 86% of the registered voters cast their votes, and 20% of the votes cast were found to be invalid. The winning candidate secured 55% of the valid votes and won the election by a margin of 3,010 votes. How many voters were registered in total?",
+    "questionImage": null,
+    "options": [
+      "53750",
+      "63750",
+      "43750",
+      "73750"
+    ],
+    "correctIndex": 2,
+    "solutionText": ":\\(x\\times \\frac{86}{100}\\times \\frac{4}{5}\\times \\frac{1}{10}=3010\\)",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtu3ouwamc1hq1",
+    "order": 193,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Percentage",
+    "questionText": "In an election, 12% of the voters in the voter list did not cast their votes, whereas 84 voters cast their ballot papers blank. There were only two candidates: Ramagya and Shravan. The winner, Ramagya, was supported by 54% of all the voters in the list. He got 1,456 more votes than his rival, Shravan. Find the total number of voters in the list",
+    "questionImage": null,
+    "options": [
+      "7860",
+      "3860",
+      "6860",
+      "2860"
+    ],
+    "correctIndex": 2,
+    "solutionText": "100% = 12% + 84 + 54% + (54% - 1456)",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtu4hizo13jijb",
+    "order": 194,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  }
+]

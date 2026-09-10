@@ -1,0 +1,21 @@
+[
+  {
+    "category": "Ratio and Proportion",
+    "questionText": "In a company 2/3 of the workers are girls, 1/2 of the girls are married and 1/3 of the married girls live in hostel. If 3/4 of the boys are married and 2/3 of married boys live in hostel. Calculate the part of workers who don't live in hostel.    take total worker 12 and solve by tree methdo",
+    "questionImage": null,
+    "options": [
+      "14/18",
+      "18/18",
+      "17/18",
+      "13/18"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": null,
+    "special": false,
+    "id": "mttvrthhdscq7r",
+    "order": 192,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  }
+]

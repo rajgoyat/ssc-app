@@ -1,0 +1,40 @@
+[
+  {
+    "category": "Train",
+    "questionText": "Two trains running in opposite directions cross a man standing on the platform in 37 seconds and 10 seconds, respectively, and they cross each other in 25 seconds. The ratio of their speeds is:",
+    "questionImage": null,
+    "options": [
+      "4:6",
+      "5:4",
+      "7:3",
+      "9:7"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Train 1 Time          Train 2 Time  hello fire\n    37 sec               10 sec\n             \\        /\n              25 sec (Cross Time)\n             /        \\\n  (25 - 10)            (37 - 25)\n   = 15                  = 12\nalligation",
+    "solutionImage": null,
+    "id": "mt9h858yk78ig7",
+    "order": 83,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Train",
+    "questionText": "Ek train apni speed se ek khambhe ko 8 second mein aur 264 m lambe platform ko 20 second mein paar karti hai. Train ki length aur speed nikalo.",
+    "questionImage": null,
+    "options": [
+      "13   174",
+      "67    176",
+      "22   176",
+      "51   174"
+    ],
+    "correctIndex": 2,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mt9h90jpg39f8w",
+    "order": 84,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  }
+]

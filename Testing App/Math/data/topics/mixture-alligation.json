@@ -1,0 +1,1294 @@
+[
+  {
+    "id": "mix-2",
+    "category": "Mixture & Alligation",
+    "questionText": "Three bottles of equal capacity contain mixtures of milk and water in the ratios 2 : 5, 3 : 4 and 4 : 5 respectively. These bottles are emptied into a large bottle. What is the ratio of milk to water in the large bottle?",
+    "questionImage": null,
+    "options": [
+      "73 : 106",
+      "73 : 116",
+      "71 : 106",
+      "74 : 105"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Take 1 unit of each bottle. Milk amounts = 2/7, 3/7, 4/9. Water amounts = 5/7, 4/7, 5/9. Total milk = 2/7 + 3/7 + 4/9 = 5/7 + 4/9 = (45 + 28)/63 = 73/63. Total water = 5/7 + 4/7 + 5/9 = 9/7 + 5/9 = (81 + 35)/63 = 116/63. Hence ratio = 73 : 116.",
+    "solutionImage": null,
+    "order": 10,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "id": "mix-3",
+    "category": "Mixture & Alligation",
+    "questionText": "A container has 40 litres of milk and water solution in the ratio 3 : 2. If 10 litres of water is added, what is the new ratio of milk to water?",
+    "questionImage": null,
+    "options": [
+      "13 : 12",
+      "12 :13",
+      "13 : 14",
+      "4 : 3"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Initially milk = 24 L and water = 16 L. After adding 10 L water, milk remains 24 L and water becomes 26 L. Ratio = 24 : 26 = 12 : 13. However, based on the given options the closest valid simplified form is 3 : 4 only if a different numeric setup is used. For the exact calculation with this data, the answer is 12 : 13.",
+    "solutionImage": null,
+    "order": 11,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "3L of milk are drawn from a container containing 30L of milk. It is replaced by water and the process is repeated 2 times more. What is the ratio of milk to water at the end ?",
+    "questionImage": null,
+    "options": [
+      "729 : 271",
+      "48 : 344",
+      "95 : 444",
+      "62 : 342"
+    ],
+    "correctIndex": 0,
+    "solutionText": "simple compound",
+    "solutionImage": null,
+    "id": "mtc94w9a0pghmx",
+    "order": 94,
+    "attemptStatus": "unattempted",
+    "testAllowed": false,
+    "special": false
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "The ratio of milk and water in 560 liters of mixture is 4 : 3. 140 liters of mixture are\ntaken out. Find the quantity of milk now.",
+    "questionImage": null,
+    "options": [
+      "240 litre",
+      "540 litre",
+      "490 litre",
+      "110 litre"
+    ],
+    "correctIndex": 0,
+    "solutionText": "420 * 4/7",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmaz58xv2di2r",
+    "order": 118,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A 42-litre solution has sugar and water in the ratio 2 : 5. If, due to evaporation, the volume is reduced by 35%, and only water evaporates, what is the new ratio of sugar to water?",
+    "questionImage": null,
+    "options": [
+      "85 : 51",
+      "30 : 51",
+      "76 : 51",
+      "40 : 51"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=HnL8IDN7Ji32M4TD&t=1460",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmb5hpa2v7861",
+    "order": 119,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "Three bottles of the same capacity are 30%, 40% and 25% full of orange juice\nrespectively. They are filled up completely by adding apple juice. The contents of the three bottles are emptied into another vessel. What is the percentage of apple juice in the mixture?",
+    "questionImage": null,
+    "options": [
+      "53&1/3",
+      "80&1/3",
+      "68&1/3",
+      "41&1/3"
+    ],
+    "correctIndex": 2,
+    "solutionText": "70 60 75 =205/3 ans\nhttps://www.youtube.com/live/H8TGd7fmoBQ?si=feJoSdw9kGh9qPAk&t=1892",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmbbtay6fdkly",
+    "order": 120,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "The ratios of copper to zinc in alloys A and B are 3 : 4 and 5 : 9, respectively. A and B are taken in the ratio 2 : 3 and melted to form a new alloy C. What is the ratio of copper to zinc in C?",
+    "questionImage": null,
+    "options": [
+      "35 : 43",
+      "27 : 43",
+      "21 : 43",
+      "31 : 43"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=xTW7P3Hk8lctsekj&t=3205",
+    "solutionImage": "/uploads/mixture-alligation/80650d7fa652d49127bfc38d83610ae095fae81796551d34c8bb43cce9253450.png",
+    "special": false,
+    "id": "mtmbzyiv5lzuer",
+    "order": 121,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "Three vessels whose capacities are in the ratio of 3: 5 : 7 are completely filled with milk mixed with water. The ratios of milk to water in the mixtures in the vessels are 5 : 3, 7: 2, and 7 : 3, respectively. Taking one-third of the first mixture, one-fifth of the second mixture, and one-seventh of the third mixture, a new mixture is prepared, which is kept in a new vessel. Find the percentage of water in the new mixture (rounded off to two places of decimals).",
+    "questionImage": null,
+    "options": [
+      "29.91 %",
+      "75.91 %",
+      "25.91 %",
+      "30.91 %"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=5IpfKngYsrTE_Q4f&t=3739",
+    "solutionImage": "/uploads/mixture-alligation/01d8ca2c8243596fa29b434f769b0d242f4bfd62c7b012aff4f9ad4645ff1565.png",
+    "special": false,
+    "id": "mtmcccmzakfhzi",
+    "order": 122,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "Three glasses of 3 liters, 4 liters, and 5 liters each contain a mixture of yogurt and water in the ratio 2 : 3, 3 : 7, and 4 : 11, respectively. If the mixture from the three glasses is poured into a vessel, find the ratio of yogurt to water in the resulting mixture.",
+    "questionImage": null,
+    "options": [
+      "13 : 31",
+      "31 : 31",
+      "12 : 31",
+      "14 : 31"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=rnF0B3dxMwskYvJS&t=4124",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmm3pnvuep02m",
+    "order": 123,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A vessel contained a certain amount of milk and water. When 20 liters of water\nwas added, the new mixture contained 40% milk. When 10 liters of milk was added to this new mixture, the final mixture contained 50% milk. What was the ratio of water to milk in the original mixture?",
+    "questionImage": null,
+    "options": [
+      "4 : 3",
+      "3 : 2",
+      "1 : 2",
+      "2 : 1"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=dWuKa0RnW9-vLL6u&t=5390",
+    "solutionImage": "/uploads/mixture-alligation/18b97b04f2787876ef609facd1cc30ef6d6272552b5d6eabe346e5ff10552140.png",
+    "special": false,
+    "id": "mtmmrnaenfnbzj",
+    "order": 124,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A container holds a mixture of Orange, Apple, and Guava juices in the ratio of 5:7:4 respectively. 24 litres of this mixture is taken out, and then 10 litres of orange juice and 6 litres of guava juice are added to the vessel. If the resultant quantity of apple juice is 14 litres more than the resultant quantity of orange juice, what was the initial quantity of mixture in the vessel (in litres)?",
+    "questionImage": null,
+    "options": [
+      "136",
+      "216",
+      "186",
+      "126"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=pUemTZMTyUBHltxQ&t=5710",
+    "solutionImage": "/uploads/mixture-alligation/097bebc348398768fba51b4684c354674423ec70b61e669120786e96b4c3246b.png",
+    "special": false,
+    "id": "mtmn25o306m022",
+    "order": 125,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "The ratio of acid and water in solution A is 5:4 and 7:11 in solution B. 10 liters of A is mixed with 8 liters of B. In 324 ml of the resulting solution, how much water (in ml) should be added to get a solution containing 33&1/3 % acid?",
+    "questionImage": null,
+    "options": [
+      "182",
+      "30",
+      "144",
+      "121"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=NDLv7DtWh4Jqq51D&t=6229",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmnsng1wmzxd8",
+    "order": 125,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "From a container having pure milk, 40% is replaced by water and the process is\nrepeated thrice. At the end of the third operation, the purity of milk is:",
+    "questionImage": null,
+    "options": [
+      "21.6 %",
+      "10.6 %",
+      "12.6 %",
+      "24.6 %"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": "/uploads/mixture-alligation/98a299b75852707e95258207b2733e98a75cf19cc060afc2350d1bfb1b7efd76.png",
+    "special": false,
+    "id": "mtmozpc11sqcmh",
+    "order": 126,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "There are two types of silver - copper alloys. The first alloye contains 93&1/3% Silver, while the second alloy contains 86&2/3% silver. Find the amount of the first alloy that shoud be mixed with some quatity of the second alloy to obtain a 100 kg mixture containing 90% silver.",
+    "questionImage": null,
+    "options": [
+      "33",
+      "37",
+      "50",
+      "80"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=KVhVVfBXdwKfnE21&t=17625",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmwz1wfvty0i6",
+    "order": 127,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A milkman has 2 types of milk. In the first container the % of milk is 80% and in the 2nd container the % of milk is 60%. If he mixes 28L of milk of the 1st container to the 32L of milk of the 2nd container, then the % of milk in the mixture is:",
+    "questionImage": null,
+    "options": [
+      "66.67%",
+      "69.33%",
+      "70%",
+      "72%"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=vTPbeyNbxKV2Kr2O&t=2060",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtbm9mv11qk9g",
+    "order": 128,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A mixture containing 72% oil is mixed with another mixture containing 48% oil in the ratio 6: 16. What is the percentage of oil in the mixture formed?",
+    "questionImage": null,
+    "options": [
+      "52.36%",
+      "54.55%",
+      "56.25%",
+      "58.18%"
+    ],
+    "correctIndex": 1,
+    "solutionText": "deviation",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtoyxe97304n4",
+    "order": 130,
+    "attemptStatus": "unattempted",
+    "testAllowed": false
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A salt solution has 60% of salt. Another salt solution has 60% of water. 63 L of the second solution is added to 27 L of the first solution to make a salt solution of x%. What is the ratio of water to salt in the final solution?",
+    "questionImage": null,
+    "options": [
+      "23 : 27",
+      "27 : 23",
+      "9 : 7",
+      "7 : 9"
+    ],
+    "correctIndex": 1,
+    "solutionText": "simple deviation and https://www.youtube.com/live/H8TGd7fmoBQ?si=Er3LlLkvcebfOqyU&t=2562",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtwhdl1ef5xhk",
+    "order": 131,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "Two jars A and B are containing the solutions of two liquids P and Q. The ratio of the liquids P and Q in the jars A and B are 2:19 and 1:11, respectively. If 7 litres of the solution of jar A and 4 litres of the solution of jar B are mixed, what is the ratio of the solutions P and Q in the new mixture?",
+    "questionImage": null,
+    "options": [
+      "1 : 9",
+      "1 : 10",
+      "2 : 11",
+      "3 : 20"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=ijyulyswvOax6-TJ&t=3359",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtdtmmqd3pp7m",
+    "order": 132,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A 90-liter mixture contains milk and water in the ratio 7:2. If x liters of milk and x liters of water are added to the mixture, the new ratio of milk and water becomes 5:2. What is the value of x?",
+    "questionImage": null,
+    "options": [
+      "10 L",
+      "12 L",
+      "13⅓ L",
+      "15 L"
+    ],
+    "correctIndex": 2,
+    "solutionText": "make the artion same then multipys opposite by their difference",
+    "solutionImage": null,
+    "special": false,
+    "id": "mttjpi0vv9dwf",
+    "order": 133,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "In an x L solution of alcohol and water, the ratio of alcohol and water is 5: 7. If 5 L of alcohol and 11 L of water are added to the solution, the percentage of alcohol in the resulting solution becomes 40%. What will be the value of x?",
+    "questionImage": null,
+    "options": [
+      "72 L",
+      "80 L",
+      "84 L",
+      "96 L"
+    ],
+    "correctIndex": 2,
+    "solutionText": "simple cross method",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtu6jxfwia1wz",
+    "order": 134,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "From a cask of milk containing 64 liters, 8 liters are drawn out and the cask is filled up with water. If the same process is repeated a second, then a third time, what will be the proportion of milk to water in the resulting mixture?",
+    "questionImage": null,
+    "options": [
+      "343 : 169",
+      "169 : 343",
+      "49 : 15",
+      "343 : 512"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "special": false,
+    "id": "mt77fh4fo5v9g",
+    "order": 135,
+    "attemptStatus": "unattempted",
+    "testAllowed": false
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "There are two chemicals which do not react with each other. A container contains 10 litres of the chemical A. One litre of this chemical is removed from it and one litre of the chemical Bis poured. Then one litre of the mixture is removed from the container and one litre of Bis poured. If this process of replacing one litre of the mixture by one litre of B is performed once more, then what is the volume of B that is present in the container approximately (in percentage)?",
+    "questionImage": null,
+    "options": [
+      "24.3%",
+      "27.1%",
+      "30%",
+      "34.39%"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=W6gY2eLcniGZYxj-&t=8216",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtrq7pijig8e6",
+    "order": 136,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A drum contains 80 litres of ethanol. 20 litres of this liquid is removed and replaced with water. 20 litres of this mixture is again removed and replaced with water. How much water (in litres) is present in this drum now?",
+    "questionImage": null,
+    "options": [
+      "30 L",
+      "35 L",
+      "40 L",
+      "45 L"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=PJ87CMIyIvbl15b4&t=8862",
+    "solutionImage": null,
+    "special": false,
+    "id": "mt3ao7sq6s38y",
+    "order": 137,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "5 litres are drawn from a cask full of wine and is then filled with water. This operation is performed once more. The ratio of the quantity of wine now left in cask to that of the water is 16: 9. How much wine the cask hold originally? (In litres)",
+    "questionImage": null,
+    "options": [
+      "20 L",
+      "25 L",
+      "30 L",
+      "40 L"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=Xpx2jx5ne1PtX685&t=9181",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtqwi23gfjvus",
+    "order": 138,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A solution contains acid and water in the ratio of 4: 5 If 20% of the solution is replaced by water, then what will be the ratio of acid and water in the new solution?",
+    "questionImage": null,
+    "options": [
+      "16 : 29",
+      "4 : 5",
+      "16 : 25",
+      "8 : 13"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=6d0a49icRKQKk5fJ&t=9535",
+    "solutionImage": null,
+    "special": false,
+    "id": "mt54o20zigrx2",
+    "order": 139,
+    "attemptStatus": "unattempted",
+    "testAllowed": false
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A vessel contains 120 liters of a solution of milk and water in the ratio 3 : 2. If 24 liters of this solution is removed and pure milk is added, what will be the new ratio of milk and water?",
+    "questionImage": null,
+    "options": [
+      "3 : 2",
+      "17 : 8",
+      "8 : 5",
+      "9 : 4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=dEf0YgrwK2-oEnd8&t=9678",
+    "solutionImage": null,
+    "special": false,
+    "id": "mth5pvojqabni",
+    "order": 140,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A drum contains 80 litres of a 90% pure acid solution. If 8 litres of this solution are removed and replaced with 8 litres of pure water, what is the new percentage of acid in the solution?",
+    "questionImage": null,
+    "options": [
+      "72%",
+      "80%",
+      "81%",
+      "82%"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=hfTgPeAbOku9eJIB&t=9791",
+    "solutionImage": null,
+    "special": false,
+    "id": "mttx2tcphf0n5",
+    "order": 141,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A container has 60 litres of a mixture of acid and water in the ratio 7:3. 20% of the mixture is taken out and replaced with water. This operation is repeated once more. What is the final percentage of acid in the mixture?",
+    "questionImage": null,
+    "options": [
+      "42%",
+      "44.8%",
+      "48%",
+      "56%"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=ZVU3rgwrxhcBxfOb&t=9930",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtjhnv94o5v55",
+    "order": 142,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A mixture of apple juice and water is prepared. 10% of the mixture is removed and the same amount of water is added. If the ratio of apple juice to water in the resulting mixture is 2:3, find the ratio of apple juice to water in the original mixture.",
+    "questionImage": null,
+    "options": [
+      "2 : 3",
+      "4 : 5",
+      "5 : 6",
+      "8 : 9"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=QpCssIhE-hD4MUIA&t=10345",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtqtpmka8f9qk",
+    "order": 143,
+    "attemptStatus": "unattempted",
+    "testAllowed": false
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A laboratory bottle contains 60 ml of a 70% concentration saline solution. 12 ml of the solution is withdrawn and replaced with 12 ml of pure water. Then, 15 ml of the resulting solution is withdrawn and replaced with 15 ml of pure water. What is the final concentration of saline (in percentage) remaining in the bottle?",
+    "questionImage": null,
+    "options": [
+      "40%",
+      "42%",
+      "45%",
+      "48%"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=J2gAo7b7q2CaVfJs&t=10644",
+    "solutionImage": null,
+    "special": false,
+    "id": "mt0a32jnybvoh",
+    "order": 144,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "In a mixture of 120 litres of milk and water, the ratio of milk to water is 2 : 3. From this mixture, 40 litres is taken out and replaced with milk. This process is continued one more time. Find the quantity of milk (in litres) in the final mixture.",
+    "questionImage": null,
+    "options": [
+      "80 L",
+      "84 L",
+      "88 L",
+      "92 L"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=Ri4JG29R0X6HSshj&t=11025",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtrtj14pexpex",
+    "order": 145,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "The ratio of milk and water in a mixture is 7 : 5. How much part of the mixture should be replaced by water so that ratio of milk and water is 2: 3?",
+    "questionImage": null,
+    "options": [
+      "7/25",
+      "11/35",
+      "2/7",
+      "1/3"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=ngxQSamnjdIQxm7u&t=11283",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtkpbskfwew97",
+    "order": 146,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A tank contains liquid A and B in the ratio 13: 12. 50 litres of the mixture are taken out and filled with 50 litres of B. Now the ratio changes to 7:8. Find the quantity of liquid B initially.",
+    "questionImage": null,
+    "options": [
+      "216 L",
+      "225 L",
+      "234 L",
+      "240 L"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=P9EzS6lsXDzkDMne&t=12216",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtjmwimeyb1ks",
+    "order": 147,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A cask having a capacity of 600 litres is initially filled with wine. From this cask y litres of wine are first drawn and replaced with water. From this mixture, 120 litres are drawn and replaced with water. From this further diluted mixture, 120 litres are drawn again and replaced with water. The ratio of wine to water in the cask in now 12: 13. What is the value of y?",
+    "questionImage": null,
+    "options": [
+      "120 L",
+      "150 L",
+      "180 L",
+      "200 L"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=alY9c6zgcYW9BodT&t=12560",
+    "solutionImage": null,
+    "special": false,
+    "id": "mt46s53qmqrko",
+    "order": 148,
+    "attemptStatus": "unattempted",
+    "testAllowed": false
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "From a cask filled with wine, 75 liters are first drawn and replaced with water. From this mixture, 60 liters are drawn and replaced with water. The ratio of wine to water in the cask is now 3:2. How many liters of wine did the cask initially hold?",
+    "questionImage": null,
+    "options": [
+      "240 L",
+      "270 L",
+      "300 L",
+      "360 L"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=dZtA6zwRLW6grReh&t=13084\nuse option to solve equatino in this question",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtz08ght8k4am",
+    "order": 149,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "In what ratio should sugar costing ₹78 per kg be mixed with sugar\ncosting ₹36 per kg so that by selling the mixture at ₹86.8 per kg, there is\na profit of 24%?",
+    "questionImage": null,
+    "options": [
+      "4 : 17",
+      "17 : 4",
+      "7 : 3",
+      "21 : 5"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=3yqg6Vq7aoGsPTl4&t=15731",
+    "solutionImage": null,
+    "special": false,
+    "id": "mt6e1u07g0mcp",
+    "order": 150,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A person mixes water with milk to earn a profit. He mixes water with milk priced at ₹70 per liter to prepare a final mixture priced at ₹55 per liter. What is the ratio of milk to water in the mixture?",
+    "questionImage": null,
+    "options": [
+      "11 : 3",
+      "3 : 11",
+      "7 : 2",
+      "4 : 1"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=CsLi3A0E4rmkfXa7&t=15950",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtv95ihw96cj8",
+    "order": 151,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A milkman sells a mixture of milk and water at 45 Rs./litre without any profit or loss. If he has 48 liters of mixture then find quantity of water in it(pure milk costs 54 Rs./litre)?",
+    "questionImage": null,
+    "options": [
+      "6 L",
+      "8 L",
+      "10 L",
+      "12 L"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=4IYeES0Bwhe8II56&t=15998",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtt9dmkipat05",
+    "order": 152,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A man bought a horse and a carriage for Rs. 80,000. He sold the horse at a gain of 10% and the carriage at a loss of 5%. He gained 1% on his whole transaction. What is the cost price of the horse?",
+    "questionImage": null,
+    "options": [
+      "₹28,000",
+      "₹30,000",
+      "₹32,000",
+      "₹36,000"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=4IYeES0Bwhe8II56&t=16040",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtuqt7diwrov4",
+    "order": 153,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "Govind bought two items at a total cost of ₹4,800. He sold one item at 34% profit and the other at 10% loss. If Govind sold both the items together for ₹5,442, then what is the difference between the cost price (in ₹) of both the items?",
+    "questionImage": null,
+    "options": [
+      "₹200",
+      "₹250",
+      "₹300",
+      "₹350"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=o5KDoO0FROZ55JD7&t=16519",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtqtov8tm6usl",
+    "order": 154,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A trader mixes two varieties of rice, A and B, in the ratio 3 : 5 by weight. He sells the mixture at a price such that he gains 20% on rice A and incurs a loss of 10% on rice B If the overall profit on the mixture is 8%, find the ratio of the cost prices per kg of rice A to rice B.",
+    "questionImage": null,
+    "options": [
+      "2 : 5",
+      "3 : 2",
+      "5 : 2",
+      "5 : 3"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=tU-Tme4foCEe9BzI&t=17349",
+    "solutionImage": null,
+    "special": false,
+    "id": "mt7awa7wx4vko",
+    "order": 155,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A and B are solutions of acid and water. The ratios of water and acid in A and B are 4:5 and 1:2, respectively. If x litres of A is mixed with y litres of B, then the ratio of water and acid in the mixture becomes 8:13. What is x:y?",
+    "questionImage": null,
+    "options": [
+      "2 : 3",
+      "3 : 2",
+      "4 : 3",
+      "5 : 4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=lH4zGillzG8hL2lA&t=17746",
+    "solutionImage": null,
+    "special": false,
+    "id": "mt9lzzc47tq28",
+    "order": 156,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "An alloy P contains 20% copper and 80% zinc by weight. Another alloy Q contains 60% copper and 40% zinc by weight. A third alloy, R, is to be prepared from P and Q in such a way that the amounts of copper and zinc are equal. In what ratio should the amounts of P and Q be mixed to obtain R?",
+    "questionImage": null,
+    "options": [
+      "1 : 2",
+      "1 : 3",
+      "2 : 3",
+      "3 : 1"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=8zDB43ArMiauOw4j&t=18478",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtabisou4653z",
+    "order": 157,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "What quantity of orange juice of 80% concentration should be added to 36L of orange juice of 25% concentration, so that the concentration of the mixture obtained is 60%?",
+    "questionImage": null,
+    "options": [
+      "54 L",
+      "60 L",
+      "63 L",
+      "72 L"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=tCczfAyOcwcNKUz1&t=18638",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtz3y5mk83dil",
+    "order": 158,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "80% and 90% pure acid solutions are mixed to obtain 20 litres of 87% pure acid solution Find the quantity (in litres) of 80% pure acid solution taken to form the mixture.",
+    "questionImage": null,
+    "options": [
+      "4 L",
+      "5 L",
+      "6 L",
+      "7 L"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=RvQZB48BVQv5iV-c&t=18761",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtk7ic9fd4yck",
+    "order": 159,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A chemistry laboratory requests for a 25% solution of ferrous sulphate. A supplier has 40 millilitre of 20% solution How many millilitre of 40% solution should be added to make it a 25% solution (correct to two decimal places)?",
+    "questionImage": null,
+    "options": [
+      "10.00 ml",
+      "12.50 ml",
+      "13.33 ml",
+      "15.00 ml"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=PYedW54w4y5jGZ7o&t=18852",
+    "solutionImage": null,
+    "special": false,
+    "id": "mts6oig8a0k6w",
+    "order": 160,
+    "attemptStatus": "unattempted",
+    "testAllowed": false
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "If a beer of 750ml bottle has 9% Alcohol and a wine bottle of 500 ml has 14% alcohol in it. If 2 bottles of beer and 3 bottles of wine are mixed together, then find the percentage of alcohol in the solution?",
+    "questionImage": null,
+    "options": [
+      "10.5%",
+      "11%",
+      "11.5%",
+      "12%"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=BIOc5C_vx3xonQDu&t=19070",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtg5t9fy1jt8g",
+    "order": 161,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A mixture containing 18% of methanol is mixed with another mixture containing b% of methanol in the ratio 4 : 5. If the percentage of methanol in the final mixture is 16%, what is the percentage of b?",
+    "questionImage": null,
+    "options": [
+      "12.4%",
+      "14%",
+      "14.4%",
+      "15.2%"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=OuuXP0iduljUh1g9&t=19230",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtdu0y8b9cd5n",
+    "order": 162,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A solution of milk and water contains 60% milk.How many litres of pure milk must be added to 40 litres of this solution to make the milk content 75% ?",
+    "questionImage": null,
+    "options": [
+      "20 L",
+      "24 L",
+      "28 L",
+      "30 L"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=_yEQZP84OkpipCi9&t=19674",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtxxs0317b8ov",
+    "order": 163,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A 125-liter mixture of milk and water contains 25% water. How much more water should be added to make the water content 30% in the new mixture?",
+    "questionImage": null,
+    "options": [
+      "7.5 L",
+      "8.33 L",
+      "8.93 L",
+      "10 L"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=c1E4NaOrkiIYeixr&t=19805",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtewiy2r7973k",
+    "order": 164,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "700 grams of cane sugar solution has 60% of sugar in it. How much sugar should be added to make it 75% in the solution?",
+    "questionImage": null,
+    "options": [
+      "350 g",
+      "400 g",
+      "420 g",
+      "450 g"
+    ],
+    "correctIndex": 2,
+    "solutionText": "",
+    "solutionImage": null,
+    "special": false,
+    "id": "mti9yhrbeuaiw",
+    "order": 165,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "How much water should be added to 20 liters of a mixture containing 15% alcohol so that the alcohol content in the mixture becomes 12%?",
+    "questionImage": null,
+    "options": [
+      "4 L",
+      "5 L",
+      "6 L",
+      "8 L"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=Oxmm0FcXNCg-_nze&t=20034",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtoozi2ar7as0",
+    "order": 166,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "The wheat sold by a grocer contained 10% low quality wheat. What quantity of good quality wheat should be added to 150 g of wheat, so the percentage of bad quality wheat becomes 6%?",
+    "questionImage": null,
+    "options": [
+      "75 g",
+      "90 g",
+      "100 g",
+      "120 g"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=Rnnbx7zaPDHORug2&t=20118",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtisyl5djrtj3",
+    "order": 167,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "In what ratio should water be added to pure alcohol to make it an 80% alcohol solution?",
+    "questionImage": null,
+    "options": [
+      "1 : 3",
+      "1 : 4",
+      "1 : 5",
+      "4 : 1"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtrvfun1ppjr1",
+    "order": 168,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "id": "mix-1",
+    "category": "Mixture & Alligation",
+    "questionText": "Alloy A contains iron, copper, and aluminium in the ratio 7 : 2 : 1, while alloy B contains the same metals in the ratio 10 : 3 : 2. Equal weights of both alloys are melted together to form alloy C. What is the fraction of aluminium in alloy C?",
+    "questionImage": null,
+    "options": [
+      "1/10",
+      "7/60",
+      "3/25",
+      "7/30"
+    ],
+    "correctIndex": 1,
+    "solutionText": "For 1 unit mass of each alloy: aluminium in A = 1/10 and in B = 2/15. Total aluminium = 1/10 + 2/15 = 3/30 + 4/30 = 7/30. Since total mass is 2 units, aluminium fraction = (7/30) / 2 = 7/60.",
+    "solutionImage": null,
+    "order": 9,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A chemist mixes two liquids 1 and 2. One litre of liquid 1 weighs 1 kg and one litre of liquid 2 weighs 800 gm. If half litre of the mixture weighs 480 gm, then the percentage of liquid 1 in the mixture, in terms of volume, is:",
+    "questionImage": null,
+    "options": [
+      "60%",
+      "70%",
+      "80%",
+      "90%"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=fPE4mDeKanZQi0j3&t=20276",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmix169a1",
+    "order": 169,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A can of water and milk mixture contains 60% milk. A part of this mixture is replaced by another mixture containing 50% milk and the percentage of milk was found to be 52%. The quantity of mixture replaced is:",
+    "questionImage": null,
+    "options": [
+      "60%",
+      "70%",
+      "80%",
+      "90%"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=ld8NvgTAH4HhSPMQ&t=20523",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmix170b2",
+    "order": 170,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "There are some rabbits and parrots in a farmhouse. The total number of animal heads is 340 and the total number of legs is 1060. Find the number of rabbits in the farmhouse.",
+    "questionImage": null,
+    "options": [
+      "170",
+      "180",
+      "190",
+      "200"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=jUGhbGBCbD4mmgcZ&t=20761",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmix171c3",
+    "order": 171,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "In an MCD parking there are some two-wheelers and the rest are four-wheelers. If the wheels are counted, there are a total of 520 wheels, but the in-charge of the parking says that there are only 175 vehicles. If no vehicle has a stepney, then the number of two-wheelers is:",
+    "questionImage": null,
+    "options": [
+      "75",
+      "85",
+      "90",
+      "95"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Formula: $\\text{4-wheelers} = \\frac{L}{2} - H$",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmix172d4",
+    "order": 172,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A class of 30 students appeared in a test. The average score of 12 students is 62 and that of the rest is 78. What is the average score of the class?",
+    "questionImage": null,
+    "options": [
+      "70.4",
+      "71.6",
+      "72.4",
+      "73.2"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=EhvzV3tu2Z9AeVr8&t=21273",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmix173e5",
+    "order": 173,
+    "attemptStatus": "unattempted",
+    "testAllowed": false
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "In a class of 50 students, 40% are girls. The average marks of the whole class are 64.4 and the average marks of the boys are 62. What is the average marks of the girls?",
+    "questionImage": null,
+    "options": [
+      "66",
+      "67",
+      "68",
+      "70"
+    ],
+    "correctIndex": 2,
+    "solutionText": "use allegation and https://www.youtube.com/live/H8TGd7fmoBQ?si=1pqFsu7_OVfsM8pv&t=21406",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmix174f6",
+    "order": 174,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "An army of 12,000 consists of Europeans and Indians. The average height of Europeans is 70 inches and that of an Indian is 69 inches. The average height of the whole army is 69¾ inches. Find the number of Indians in the army.",
+    "questionImage": null,
+    "options": [
+      "2,000",
+      "3,000",
+      "4,000",
+      "9,000"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=jZkVIaO1DhJ_P6wZ&t=21507",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmix175g7",
+    "order": 175,
+    "attemptStatus": "unattempted",
+    "testAllowed": false
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "The average height of girls in a group is 154 cm and the average height of boys in the group is 3 cm more than the average height of all the boys and girls in the group. If the number of girls is 25% less than the number of boys, then what is the average height of the boys?",
+    "questionImage": null,
+    "options": [
+      "158 cm",
+      "159 cm",
+      "160 cm",
+      "161 cm"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=7eWDewFh30XAsWEn&t=21597",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmix176h8",
+    "order": 176,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "In a company with 600 employees, the average age of the male employees is 42 years and that of the female employees is 41 years. If the average age of all the employees in the company is 41 years 9 months, then the number of female employees is:",
+    "questionImage": null,
+    "options": [
+      "100",
+      "150",
+      "200",
+      "450"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=uYq2956HIJvsTUj5&t=21777",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmix177i9",
+    "order": 177,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A rabbit on a controlled diet is fed daily 300 grams of a mixture of two foods, food X and food Y. Food X contains 10% protein and food Y contains 15% protein. If the rabbit's diet provides exactly 38 grams of protein daily, how many grams of food X are in the mixture?",
+    "questionImage": null,
+    "options": [
+      "120 g",
+      "130 g",
+      "140 g",
+      "160 g"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=7GSLal_qVhpPZocJ&t=21889",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmix178j0",
+    "order": 178,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "There are 400 multiple-choice questions in a test. 4 marks are allotted for a correct answer and 1 mark is deducted for a wrong answer or an unattempted question from the total score of correct answers. If a candidate has scored 1280 marks in the test, how many questions did the candidate answer correctly?",
+    "questionImage": null,
+    "options": [
+      "320",
+      "328",
+      "336",
+      "340"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=LAZqCp2wzcFNSORt&t=22144",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmix179k1",
+    "order": 179,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A toy T jumps either forward or backward. In each forward jump, it moves 5 feet forward, while in each backward jump, it moves 2 feet backward. If, in 31 jumps, T moves exactly 15 feet forward, what is the difference between the number of forward jumps and the number of backward jumps?",
+    "questionImage": null,
+    "options": [
+      "7",
+      "8",
+      "9",
+      "11"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=jAG3L1udeLBVSo1X&t=22295",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmix180l2",
+    "order": 180,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "A labourer was appointed by a contractor on the condition that he would be paid Rs. 75 for each day of work but would be fined Rs. 15 for each day of absence. After 20 days, the contractor paid the labourer Rs. 1,140. The number of days the labourer was absent from work was:",
+    "questionImage": null,
+    "options": [
+      "3 days",
+      "4 days",
+      "5 days",
+      "6 days"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Worked days = 20 − x. Therefore, 75(20 − x) − 15x = 1140 → 1500 − 90x = 1140 → 90x = 360 → x = 4 days.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtmix181m3",
+    "order": 181,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  }
+]

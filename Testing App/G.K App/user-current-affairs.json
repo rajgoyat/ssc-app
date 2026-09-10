@@ -1,0 +1,185 @@
+[
+  {
+    "id": "ca-user-20250101-51de9a9c5a",
+    "date": "2025-01-01",
+    "category": "General",
+    "question": "WOMEN'S T20 WORLD CUP 2026",
+    "options": [],
+    "answer": null,
+    "explanation": "",
+    "questionImage": "current-affairs-question-images/2025-01-01/ca-user-20250101-51de9a9c5a.webp",
+    "questionImageName": "image.png",
+    "source": "user-upload",
+    "createdAt": "2026-09-09T19:27:42"
+  },
+  {
+    "id": "ca-2026-09-009-012",
+    "date": "2026-09-09",
+    "category": "General",
+    "question": "FIFA CUP 2026",
+    "options": [],
+    "answer": null,
+    "explanation": "",
+    "questionImage": "current-affairs-question-images/2026-09-09/ca-2026-09-009-012.webp",
+    "questionImageId": "img-ca-2026-09-009-012-001",
+    "questionImageName": "image.png",
+    "source": "user-upload",
+    "createdAt": "2026-09-09T19:51:20",
+    "subQuestions": [
+      {
+        "question": "How many host cities were used in the 2026 FIFA World Cup?",
+        "options": [
+          "12",
+          "14",
+          "16",
+          "20"
+        ],
+        "answer": 2,
+        "explanation": "A total of 16 cities hosted matches: 11 in the USA, 3 in Mexico, 2 in Canada. [1][5][6]"
+      },
+      {
+        "question": "Which stadium hosted the 2026 World Cup final?",
+        "options": [
+          "MetLife Stadium, New Jersey",
+          "Estadio Azteca, Mexico City",
+          "SoFi Stadium, Los Angeles",
+          "AT&T Stadium, Dallas"
+        ],
+        "answer": 0,
+        "explanation": "The final was played at MetLife Stadium in East Rutherford, New Jersey. [14]"
+      },
+      {
+        "question": "How many teams participated in the 2026 FIFA World Cup?",
+        "options": [
+          "32",
+          "40",
+          "48",
+          "64"
+        ],
+        "answer": 2,
+        "explanation": "2026 was the first edition expanded to 48 teams, arranged in 12 groups of four. [13][14]"
+      },
+      {
+        "question": "Which country has won the most FIFA World Cup titles in history?",
+        "options": [
+          "Germany",
+          "Italy",
+          "Brazil",
+          "Argentina"
+        ],
+        "answer": 2,
+        "explanation": "Brazil holds the record with 5 World Cup titles (1958, 1962, 1970, 1994, 2002). [2][8][13]"
+      },
+      {
+        "question": "Who won the inaugural FIFA World Cup in 1930?",
+        "options": [
+          "Argentina",
+          "Uruguay",
+          "Brazil",
+          "Italy"
+        ],
+        "answer": 1,
+        "explanation": "Uruguay won the first World Cup in 1930, defeating Argentina 4–2 in the final. [2][13]"
+      },
+      {
+        "question": "Which player has won the most World Cup titles as a player?",
+        "options": [
+          "Diego Maradona",
+          "Lionel Messi",
+          "Pelé",
+          "Franz Beckenbauer"
+        ],
+        "answer": 2,
+        "explanation": "Pelé (Brazil) won three World Cups (1958, 1962, 1970), the most by any player. [8]"
+      },
+      {
+        "question": "What was the largest margin of victory in a World Cup match?",
+        "options": [
+          "8–0",
+          "9–0",
+          "10–1",
+          "11–0"
+        ],
+        "answer": 2,
+        "explanation": "Hungary beat El Salvador 10–1 in 1982, the biggest winning margin in World Cup history. [2]"
+      },
+      {
+        "question": "Which nation won the 2022 FIFA World Cup?",
+        "options": [
+          "France",
+          "Brazil",
+          "Argentina",
+          "Croatia"
+        ],
+        "answer": 2,
+        "explanation": "Argentina won the 2022 World Cup in Qatar, defeating France in the final. [11]"
+      },
+      {
+        "question": "In which year was the first FIFA World Cup held?",
+        "options": [
+          "1926",
+          "1930",
+          "1934",
+          "1938"
+        ],
+        "answer": 1,
+        "explanation": "The first FIFA World Cup was held in 1930 in Uruguay. [2][13]"
+      },
+      {
+        "question": "Which city hosted the opening match of the 2026 World Cup?",
+        "options": [
+          "Los Angeles",
+          "Mexico City",
+          "Toronto",
+          "New York"
+        ],
+        "answer": 1,
+        "explanation": "The opening match was played at Estadio Azteca in Mexico City. [14]"
+      },
+      {
+        "question": "How many matches were played in the 2026 World Cup?",
+        "options": [
+          "64",
+          "80",
+          "104",
+          "120"
+        ],
+        "answer": 2,
+        "explanation": "The 2026 tournament featured 104 matches across 16 host cities. [14]"
+      },
+      {
+        "question": "Which country hosted the 2014 FIFA World Cup?",
+        "options": [
+          "South Africa",
+          "Brazil",
+          "Russia",
+          "Germany"
+        ],
+        "answer": 1,
+        "explanation": "Brazil hosted the 2014 World Cup; Germany won the tournament. [8]"
+      },
+      {
+        "question": "Who is the all-time top scorer in World Cup history?",
+        "options": [
+          "Ronaldo (Brazil)",
+          "Miroslav Klose",
+          "Lionel Messi",
+          "Gerd Müller"
+        ],
+        "answer": 1,
+        "explanation": "Miroslav Klose (Germany) is the World Cup's all-time top scorer with 16 goals. [8]"
+      },
+      {
+        "question": "Which two nations have won the World Cup twice in a row?",
+        "options": [
+          "Brazil and Germany",
+          "Italy and Brazil",
+          "Argentina and France",
+          "Uruguay and Italy"
+        ],
+        "answer": 1,
+        "explanation": "Italy (1934, 1938) and Brazil (1958, 1962) are the only nations to win consecutive World Cups. [8]"
+      }
+    ]
+  }
+]

@@ -1,0 +1,135 @@
+[
+  {
+    "id": "pct-2",
+    "category": "Percentage",
+    "questionText": "A student scored 45 out of 60. What is the percentage?",
+    "questionImage": null,
+    "options": [
+      "65%",
+      "70%",
+      "75%",
+      "80%"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Percentage = (45/60) × 100 = 75%.",
+    "solutionImage": null,
+    "order": 32,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Percentage",
+    "questionText": "If the price of petrol increased by 7%, then by what percentage should the consumption be decreased by the consumer, if the expenditure on petrol remains unchanged?",
+    "questionImage": "/uploads/percentage/3ade5d396a0615d3ed97ed99a9345c02926364ff762f3e5a81a9a95ba7258783.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "id": "mtawkuvnkrlvgy",
+    "order": 88,
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Percentage",
+    "questionText": "A reduction of 7.5% in the cost price of a commodity enables a shopkeeper to purchase 15 kg more than what he previously purchased for a sum of ₹7,400. In order to make a profit of 32.5% on the pre-reduction cost price of the commodity, at what price (in ₹) per kg should the commodity be sold?",
+    "questionImage": null,
+    "options": [
+      "41",
+      "65",
+      "53",
+      "17"
+    ],
+    "correctIndex": 2,
+    "solutionText": "fraction method 3/40      40   37  3unit 15kg",
+    "solutionImage": null,
+    "id": "mtbmu68w6f5kjw",
+    "order": 89,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Percentage",
+    "questionText": "In an election between two candidates, y% of the voters did not vote. 10% of the votes cast were declared invalid, while all the valid votes were cast in favour of either of the two candidates. The candidate who got 59.375% of the valid votes cast was declared elected by 2484 votes. If the number of people eligible to vote in that election was 16,000, what is the value of y?",
+    "questionImage": null,
+    "options": [
+      "8",
+      "5",
+      "7",
+      "3"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Golden rules for is type ke election questions:\n\nAwkward decimal % (jaise 59.375%, 37.5%, 62.5%) ko turant fraction mein convert karo — inme se zyadatar \n/\n8\n/8, \n/\n16\n/16, \n/\n32\n/32 ke clean fractions hote hain.\nWinner-loser ka margin fraction seedha nikaalo (winner% − loser% ka fraction), fir diya hua margin-vote-count use karke valid votes ek hi step mein nikaal lo.\nChain backwards: Valid → Cast (÷ validity%) → Eligible (given) → y% seedha subtraction se.",
+    "solutionImage": "/uploads/percentage/34eef41a3ce6a1db131cf4b5fd85bf62128608a6bed545e1b321c5c3788f0769.png",
+    "id": "mtca9cxbuj168y",
+    "order": 95,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "special": false
+  },
+  {
+    "category": "Percentage",
+    "questionText": "Due to a decrease in manpower, the production in a factory decreased by 12%. By what percentage (rounded off to two decimal places) should the working hours be increased to restore the original\nproduction?",
+    "questionImage": null,
+    "options": [
+      "14.41%",
+      "13.64%",
+      "12%",
+      "15.01%"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtil6u57fec6lh",
+    "order": 112,
+    "attemptStatus": "correct",
+    "testAllowed": true
+  },
+  {
+    "category": "Percentage",
+    "questionText": "In an election between two candidates, 86% of the registered voters cast their votes, and 20% of the votes cast were found to be invalid. The winning candidate secured 55% of the valid votes and won the election by a margin of 3,010 votes. How many voters were registered in total?",
+    "questionImage": null,
+    "options": [
+      "53750",
+      "63750",
+      "43750",
+      "73750"
+    ],
+    "correctIndex": 2,
+    "solutionText": ":\\(x\\times \\frac{86}{100}\\times \\frac{4}{5}\\times \\frac{1}{10}=3010\\)",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtu3ouwamc1hq1",
+    "order": 193,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Percentage",
+    "questionText": "In an election, 12% of the voters in the voter list did not cast their votes, whereas 84 voters cast their ballot papers blank. There were only two candidates: Ramagya and Shravan. The winner, Ramagya, was supported by 54% of all the voters in the list. He got 1,456 more votes than his rival, Shravan. Find the total number of voters in the list",
+    "questionImage": null,
+    "options": [
+      "7860",
+      "3860",
+      "6860",
+      "2860"
+    ],
+    "correctIndex": 2,
+    "solutionText": "100% = 12% + 84 + 54% + (54% - 1456)",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtu4hizo13jijb",
+    "order": 194,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  }
+]
