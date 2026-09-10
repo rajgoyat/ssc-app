@@ -2932,6 +2932,36 @@
         letter-spacing: .06em;
       }
 
+      .array-format-variant-switch {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        padding: 7px 8px;
+        border-bottom: 1px solid rgba(212, 243, 107, 0.16);
+        background: rgba(6, 23, 29, 0.42);
+      }
+
+      .array-format-variant-btn {
+        min-height: 27px;
+        padding: 4px 8px;
+        border: 1px solid var(--line);
+        background: transparent;
+        color: var(--muted);
+        font: 700 8px "Space Mono", monospace;
+        text-transform: uppercase;
+      }
+
+      .array-format-variant-btn:hover {
+        border-color: var(--lime);
+        color: var(--lime);
+      }
+
+      .array-format-variant-btn.active {
+        border-color: var(--lime);
+        background: rgba(212, 243, 107, 0.12);
+        color: var(--lime);
+      }
+
       .array-format-copy {
         padding: 3px 7px;
         border: 1px solid rgba(212, 243, 107, 0.38);
@@ -3330,25 +3360,22 @@
                 <div class="array-format-title" id="question-array-format-title">Current Affairs Array Format</div>
                 <button type="button" class="array-format-copy" id="question-array-copy">Copy Example</button>
               </div>
-              <pre class="array-format-code" id="question-array-example">[
-  {
-    "category": "National",
-    "question": "Question 1...",
-    "options": ["Option A", "Option B", "Option C", "Option D"],
-    "answer": 0,
-    "explanation": "Extra data / explanation"
-  },
-  {
-    "category": "Sports",
-    "question": "Question 2...",
-    "options": ["Option A", "Option B", "Option C", "Option D"],
-    "answer": 2,
-    "explanation": ""
-  }
-]</pre>
-              <div class="array-format-help" id="question-array-format-help">
-                One item or many items are both valid. <b>answer is 0-based:</b> 0=A, 1=B, 2=C, 3=D. Options are optional. Date is selected once above and applied to every Current Affairs item. Optional <b>subQuestions</b> may also be included.
+
+              <div class="array-format-variant-switch" role="group" aria-label="Choose array example format">
+                <button
+                  type="button"
+                  class="array-format-variant-btn active"
+                  data-array-format-variant="main"
+                >● Only Main Questions</button>
+                <button
+                  type="button"
+                  class="array-format-variant-btn"
+                  data-array-format-variant="sub"
+                >○ Main + Sub Questions</button>
               </div>
+
+              <pre class="array-format-code" id="question-array-example"></pre>
+              <div class="array-format-help" id="question-array-format-help"></div>
             </div>
 
             <div class="question-upload-field" style="margin-top:9px;">
@@ -3451,13 +3478,13 @@
               <pre class="array-format-code" id="sub-question-array-example">[
   {
     "question": "Sub question 1...",
-    "options": ["Option A", "Option B", "Option C", "Option D"],
+    "options": ["Option A", "Option B", "Option C"],
     "answer": 1,
     "explanation": "Short explanation"
   },
   {
     "question": "Sub question 2...",
-    "options": ["Option A", "Option B", "Option C", "Option D"],
+    "options": ["Option A", "Option B", "Option C"],
     "answer": 0,
     "explanation": ""
   }
@@ -3741,6 +3768,7 @@
         const arrayTitle = $("#question-array-format-title");
         const arrayHelp = $("#question-array-format-help");
         const arrayCopy = $("#question-array-copy");
+        const arrayVariantButtons = [...document.querySelectorAll("[data-array-format-variant]")];
         const modeButtons = [...document.querySelectorAll("[data-main-question-mode]")];
 
         const modalTitle = $("#question-upload-title");
@@ -3758,39 +3786,87 @@
 
         let section = "current";
         let mode = "single";
+        let arrayFormatVariant = "main";
         let staticSources = [];
         let pendingQuestionImageDataUrl = "";
         let pendingQuestionImageName = "";
 
-        const CURRENT_ARRAY_EXAMPLE = `[
+        const CURRENT_MAIN_ARRAY_EXAMPLE = `[
   {
     "category": "National",
     "question": "Question 1...",
     "options": ["Option A", "Option B", "Option C", "Option D"],
     "answer": 0,
-    "explanation": "Extra data / explanation"
+    "explanation": "Main question explanation / extra data"
   },
   {
     "category": "Sports",
     "question": "Question 2...",
     "options": ["Option A", "Option B", "Option C", "Option D"],
     "answer": 2,
-    "explanation": ""
+    "explanation": "Main question explanation / extra data"
   }
 ]`;
 
-        const STATIC_ARRAY_EXAMPLE = `[
+        const CURRENT_SUB_ARRAY_EXAMPLE = `[
+  {
+    "category": "National",
+    "question": "Main Question 1...",
+    "options": ["Option A", "Option B", "Option C", "Option D"],
+    "answer": 1,
+    "explanation": "Main question explanation / extra data",
+    "subQuestions": [
+      {
+        "question": "Sub Question 1...",
+        "options": ["Option A", "Option B", "Option C"],
+        "answer": 0,
+        "explanation": "Sub Question 1 explanation"
+      },
+      {
+        "question": "Sub Question 2...",
+        "options": ["Option A", "Option B", "Option C"],
+        "answer": 2,
+        "explanation": "Sub Question 2 explanation"
+      }
+    ]
+  }
+]`;
+
+        const STATIC_MAIN_ARRAY_EXAMPLE = `[
   {
     "question": "Question 1...",
     "options": ["Option A", "Option B", "Option C", "Option D"],
     "answer": 0,
-    "explanation": "Extra fact / explanation"
+    "explanation": "Main question explanation / extra data"
   },
   {
     "question": "Question 2...",
     "options": ["Option A", "Option B", "Option C", "Option D"],
     "answer": 2,
-    "explanation": ""
+    "explanation": "Main question explanation / extra data"
+  }
+]`;
+
+        const STATIC_SUB_ARRAY_EXAMPLE = `[
+  {
+    "question": "Main Question 1...",
+    "options": ["Option A", "Option B", "Option C", "Option D"],
+    "answer": 1,
+    "explanation": "Main question explanation / extra data",
+    "subQuestions": [
+      {
+        "question": "Sub Question 1...",
+        "options": ["Option A", "Option B", "Option C"],
+        "answer": 0,
+        "explanation": "Sub Question 1 explanation"
+      },
+      {
+        "question": "Sub Question 2...",
+        "options": ["Option A", "Option B", "Option C"],
+        "answer": 3,
+        "explanation": "Sub Question 2 explanation"
+      }
+    ]
   }
 ]`;
 
@@ -4560,6 +4636,51 @@
           refreshOptions();
         });
 
+        const refreshArrayFormatExample = () => {
+          const withSubQuestions = arrayFormatVariant === "sub";
+
+          arrayVariantButtons.forEach((button) => {
+            const selected = button.dataset.arrayFormatVariant === arrayFormatVariant;
+            button.classList.toggle("active", selected);
+            button.textContent = `${selected ? "●" : "○"} ${
+              button.dataset.arrayFormatVariant === "sub"
+                ? "Main + Sub Questions"
+                : "Only Main Questions"
+            }`;
+          });
+
+          if (arrayTitle) {
+            arrayTitle.textContent =
+              section === "static"
+                ? "Static GK Array Format"
+                : "Current Affairs Array Format";
+          }
+
+          if (arrayExample) {
+            if (section === "static") {
+              arrayExample.textContent = withSubQuestions
+                ? STATIC_SUB_ARRAY_EXAMPLE
+                : STATIC_MAIN_ARRAY_EXAMPLE;
+            } else {
+              arrayExample.textContent = withSubQuestions
+                ? CURRENT_SUB_ARRAY_EXAMPLE
+                : CURRENT_MAIN_ARRAY_EXAMPLE;
+            }
+          }
+
+          if (arrayHelp) {
+            const base = section === "static"
+              ? `First choose the <b>static-gk-data file</b> and <b>category</b> above; that category is applied to every main question in the array.`
+              : `Select the <b>date once above</b>; it is applied to every Current Affairs main question. Keep <b>category</b> inside each main Current Affairs item.`;
+
+            const structure = withSubQuestions
+              ? `Every <b>main question</b> has its own question, options, answer and explanation. Each item inside <b>subQuestions</b> also has its own question, options, answer and explanation.`
+              : `This format contains only complete <b>main MCQs</b>: question, options, answer and explanation.`;
+
+            arrayHelp.innerHTML = `${base} ${structure} <b>answer is 0-based:</b> 0=A, 1=B, 2=C, 3=D.`;
+          }
+        };
+
         const setMode = (nextMode) => {
           mode = nextMode === "array" ? "array" : "single";
 
@@ -4583,27 +4704,7 @@
           if (singlePane) singlePane.hidden = mode !== "single";
           if (arrayPane) arrayPane.hidden = mode !== "array";
 
-          if (arrayExample) {
-            arrayExample.textContent =
-              section === "static"
-                ? STATIC_ARRAY_EXAMPLE
-                : CURRENT_ARRAY_EXAMPLE;
-          }
-
-          if (arrayTitle) {
-            arrayTitle.textContent =
-              section === "static"
-                ? "Static GK Array Format"
-                : "Current Affairs Array Format";
-          }
-
-          if (arrayHelp) {
-            arrayHelp.innerHTML =
-              section === "static"
-                ? `One item or many items are valid. First choose the <b>static-gk-data file</b> and <b>category</b> above. That one category is applied to every item in this array. <b>answer is 0-based:</b> 0=A, 1=B, 2=C, 3=D. Options are optional. Optional <b>subQuestions</b> may also be included.`
-                : `One item or many items are both valid. <b>answer is 0-based:</b> 0=A, 1=B, 2=C, 3=D. Options are optional. Date is selected once above and applied to every Current Affairs item. Optional <b>subQuestions</b> may also be included.`;
-          }
-
+          refreshArrayFormatExample();
           updateIdPreview();
         };
 
@@ -4689,6 +4790,7 @@
 
           section = "current";
           mode = "single";
+          arrayFormatVariant = "main";
 
           if (staticFileSelect) {
             staticFileSelect.innerHTML =
@@ -4844,6 +4946,14 @@
         modeButtons.forEach((button) => {
           button.addEventListener("click", () => {
             setMode(button.dataset.mainQuestionMode);
+          });
+        });
+
+        arrayVariantButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            arrayFormatVariant =
+              button.dataset.arrayFormatVariant === "sub" ? "sub" : "main";
+            refreshArrayFormatExample();
           });
         });
 
@@ -5402,9 +5512,7 @@
                     </article>`;
                 }).join("")}
               </div>` : `
-              <div class="sub-question-empty">
-                Is topic ke andar abhi koi mini question nahi hai. <b>＋ Add Sub Question</b> se Q1, Q2, Q3... add kar sakte ho.
-              </div>`}
+              `}
           </section>`;
       }
 
@@ -7604,8 +7712,8 @@
 
       /* ================================
          STATIC GK FILE-BASED FILTERS
-         Main selector = static-gk-data file names.
-         Subcategory filter = optional categories inside the selected file.
+         Main selector = static-gk-data file names, multi-select supported.
+         Subcategory filter = optional categories when exactly one file is selected.
          ================================ */
 
       function normalizeStaticFilterKey(value) {
@@ -7939,9 +8047,15 @@
         const selected =
           selectedStaticTopics();
 
-        return selected.length
-          ? selected[0]
-          : "All Topics";
+        if (!selected.length) {
+          return "All Topics";
+        }
+
+        if (selected.length === 1) {
+          return selected[0];
+        }
+
+        return `${selected.length} Files`;
       }
 
 
@@ -8019,17 +8133,43 @@
           subcategoryFilterEnabled,
         } = state.staticGK;
 
+        const selectedFiles =
+          selectedStaticTopics();
+
         const selectedFile =
-          selectedStaticTopics()[0] || "";
+          selectedFiles.length === 1
+            ? selectedFiles[0]
+            : "";
 
         const selectedSubcategories =
           selectedStaticSubcategories();
 
         // No file selected = all Static GK.
-        // One file selected = EVERY question from that exact file.
-        let pool = selectedFile
-          ? [...staticQuestionsForFile(selectedFile)]
-          : [...staticGKQuestions];
+        // Multiple selected files = union of every question from those files.
+        let pool;
+
+        if (!selectedFiles.length) {
+          pool = [...staticGKQuestions];
+        } else {
+          const seen = new Set();
+
+          pool = selectedFiles
+            .flatMap((fileName) =>
+              staticQuestionsForFile(fileName)
+            )
+            .filter((question) => {
+              const key =
+                question?.id ||
+                `${question?.question || ""}__${question?.category || ""}`;
+
+              if (seen.has(key)) {
+                return false;
+              }
+
+              seen.add(key);
+              return true;
+            });
+        }
 
         if (
           selectedFile &&
@@ -8759,7 +8899,12 @@
                 >
                   <summary>
                     <span>${escapeHtml(staticTopicLabel())}</span>
-</summary>
+                    ${
+                      selectedStaticTopics().length > 1
+                        ? `<span class="static-multi-count">${selectedStaticTopics().length}</span>`
+                        : ""
+                    }
+                  </summary>
 
                   <div class="static-multi-menu">
 
@@ -10498,7 +10643,7 @@
           );
 
 
-        /* STATIC GK MAIN FILE: SINGLE SELECT */
+        /* STATIC GK MAIN FILES: MULTI-SELECT */
 
         panel
           .querySelectorAll("[data-static-topic]")
@@ -10510,27 +10655,32 @@
               const fileName =
                 button.dataset.staticTopic;
 
+              const selected =
+                new Set(selectedStaticTopics());
+
+              if (selected.has(fileName)) {
+                selected.delete(fileName);
+              } else {
+                selected.add(fileName);
+              }
+
               state.staticGK.selectedTopics =
-                [fileName];
+                [...selected];
 
-              state.staticGK.selectedSubcategories =
-                [];
-
-              // By default selecting a file shows its COMPLETE question set.
-              state.staticGK.subcategoryFilterEnabled =
-                false;
+              // Subcategory filtering is intentionally reset whenever
+              // the selected file set changes. If exactly one file remains,
+              // the side Subcategory toggle can be turned ON again.
+              state.staticGK.selectedSubcategories = [];
+              state.staticGK.subcategoryFilterEnabled = false;
 
               state.staticGK.category =
-                fileName;
+                state.staticGK.selectedTopics.length === 1
+                  ? state.staticGK.selectedTopics[0]
+                  : "All Topics";
 
-              state.staticGK.subcategory =
-                "All";
-
-              state.staticGK.testSet =
-                "All";
-
-              state.staticGK.startFrom =
-                1;
+              state.staticGK.subcategory = "All";
+              state.staticGK.testSet = "All";
+              state.staticGK.startFrom = 1;
 
               resetQuestions("staticGK");
               render("staticGK");
