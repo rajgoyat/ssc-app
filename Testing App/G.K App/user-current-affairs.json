@@ -181,5 +181,1558 @@
         "explanation": "Italy (1934, 1938) and Brazil (1958, 1962) are the only nations to win consecutive World Cups. [8]"
       }
     ]
+  },
+  {
+    "id": "ca-2026-09-009-013",
+    "date": "2026-09-09",
+    "category": "Awards",
+    "question": "Consider the following statements regarding the 72nd National Film Awards:\n1. The presentation ceremony of the 72nd National Film Awards is scheduled to be held on 22 September 2026 at Ekta Nagar, Gujarat; it will be the first time that the National Film Awards ceremony is held outside Delhi, and 92 award recipients will be honoured by the Ministry of Information and Broadcasting.\n2. The awards were announced in New Delhi for films certified by the CBFC in 2024; Article 370 won Best Feature Film, while Bhangaar won Best Non-Feature Film.\n3. Amaran, directed by Rajkumar Periasamy, won Best Popular Film, while Nag Ashwin won Best Director for Kalki 2898 AD. Which statements are correct?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "All three"
+    ],
+    "answer": 0,
+    "explanation": "3 ❌ Correct → Best Popular Film → Kalki 2898 AD, directed by Nag Ashwin → Best Director → Rajkumar Periasamy for Tamil film Amaran.\n\n→ Best Actor → Mammootty (Bramayugam) and Kartik Aaryan (Chandu Champion) → Best Actress → Yami Gautam (Article 370)\n→ Best Debut Director → Randeep Hooda (Swatantrya Veer Savarkar)\n→ Best Hindi Film → Srikanth\n→ Best Tamil Film → Raayan\n→ Best Malayalam Film → Feminichi Fathima\n→ Best Telugu Film → Committee Kurrollu → Best Kannada Film → Mithya → National Film Awards were first given on 10 October 1954 and have been presented by the National Film Development Corporation since 2021 → Correct answer: 1 and 2 only.",
+    "subQuestions": [
+      {
+        "question": "Which film won the Best Popular Film award at the 72nd National Film Awards?",
+        "options": [
+          "Amaran",
+          "Kalki 2898 AD",
+          "Article 370",
+          "Srikanth"
+        ],
+        "answer": 1,
+        "explanation": "Kalki 2898 AD, directed by Nag Ashwin, won the Best Popular Film award."
+      },
+      {
+        "question": "Who won the Best Director award for the Tamil film Amaran?",
+        "options": [
+          "Nag Ashwin",
+          "Randeep Hooda",
+          "Rajkumar Periasamy",
+          "Kartik Aaryan"
+        ],
+        "answer": 2,
+        "explanation": "Rajkumar Periasamy won Best Director for Amaran."
+      },
+      {
+        "question": "Where is the presentation ceremony of the 72nd National Film Awards scheduled to be held?",
+        "options": [
+          "New Delhi",
+          "Ekta Nagar, Gujarat",
+          "Mumbai",
+          "Hyderabad"
+        ],
+        "answer": 1,
+        "explanation": "The ceremony is scheduled to be held at Ekta Nagar, Gujarat."
+      },
+      {
+        "question": "Which film won Best Feature Film at the 72nd National Film Awards?",
+        "options": [
+          "Article 370",
+          "Bhangaar",
+          "Amaran",
+          "Raayan"
+        ],
+        "answer": 0,
+        "explanation": "Article 370 won Best Feature Film."
+      },
+      {
+        "question": "Which film won Best Non-Feature Film at the 72nd National Film Awards?",
+        "options": [
+          "Srikanth",
+          "Bhangaar",
+          "Mithya",
+          "Committee Kurrollu"
+        ],
+        "answer": 1,
+        "explanation": "Bhangaar won Best Non-Feature Film."
+      },
+      {
+        "question": "Who won the Best Actress award at the 72nd National Film Awards?",
+        "options": [
+          "Yami Gautam",
+          "Manushi Chhillar",
+          "Priyanka Chopra",
+          "Aishwarya Rai"
+        ],
+        "answer": 0,
+        "explanation": "Yami Gautam won Best Actress for Article 370."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-10T11:41:25"
+  },
+  {
+    "id": "ca-2026-09-009-014",
+    "date": "2026-09-09",
+    "category": "Sports",
+    "question": "Consider the following statements regarding China Masters 2026 and the Indian badminton pair Satwiksairaj Rankireddy-Chirag Shetty:\n1. Satwiksairaj Rankireddy and Chirag Shetty won the men's doubles title at China Masters 2026 by defeating China's He Ji Ting and Ren Xiang Yu in the final, becoming the first Indian men's doubles pair to win the tournament.\n2. China Masters 2026 was held from 1 to 6 September in Shenzhen, China, as a BWF World Tour Super 750 event; it was Satwik-Chirag's first China Masters title and their second title of the 2026 season after the Singapore Open Super 750.\n3. The Badminton World Federation was established in 1934 and is headquartered in New Delhi, while its President is Khunying Patama Leeswadtrakul. Which statements are correct?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "All three"
+    ],
+    "answer": 0,
+    "explanation": "3 ❌ Correct → Badminton World Federation (BWF) ka headquarters Kuala Lumpur, Malaysia mein hai, New Delhi mein nahi.\n→ Extra Data → BWF established → 1934 → President → Khunying Patama Leeswadtrakul → Satwiksairaj Rankireddy Andhra Pradesh se aur Chirag Shetty Maharashtra se hain → Pair World No. 1 bhi reh chuki hai\n → China Masters mein 2023 aur 2025 mein runners-up rahe the\n → BWF World Tour categories → Super 100 → Super 300 → Super 500 → Super 750 → Super 1000 → Correct answer: 1 and 2 only.",
+    "subQuestions": [
+      {
+        "question": "Where is the headquarters of the Badminton World Federation (BWF) located?",
+        "options": [
+          "New Delhi, India",
+          "Shenzhen, China",
+          "Kuala Lumpur, Malaysia",
+          "Singapore"
+        ],
+        "answer": 2,
+        "explanation": "BWF is headquartered in Kuala Lumpur, Malaysia."
+      },
+      {
+        "question": "China Masters 2026 was classified under which BWF World Tour category?",
+        "options": [
+          "Super 300",
+          "Super 500",
+          "Super 750",
+          "Super 1000"
+        ],
+        "answer": 2,
+        "explanation": "China Masters 2026 was a BWF World Tour Super 750 event."
+      },
+      {
+        "question": "Which Indian pair won the men's doubles title at China Masters 2026?",
+        "options": [
+          "Satwiksairaj Rankireddy and Chirag Shetty",
+          "Lakshya Sen and H. S. Prannoy",
+          "Kidambi Srikanth and Lakshya Sen",
+          "Chirag Shetty and H. S. Prannoy"
+        ],
+        "answer": 0,
+        "explanation": "Satwiksairaj Rankireddy and Chirag Shetty won the men's doubles title."
+      },
+      {
+        "question": "In which city was China Masters 2026 held?",
+        "options": [
+          "Beijing",
+          "Shanghai",
+          "Shenzhen",
+          "Guangzhou"
+        ],
+        "answer": 2,
+        "explanation": "China Masters 2026 was held in Shenzhen, China."
+      },
+      {
+        "question": "In which year was the Badminton World Federation established?",
+        "options": [
+          "1928",
+          "1934",
+          "1946",
+          "1951"
+        ],
+        "answer": 1,
+        "explanation": "The BWF was established in 1934."
+      },
+      {
+        "question": "Who is mentioned as the President of the Badminton World Federation in the source data?",
+        "options": [
+          "Masato Kanda",
+          "Bahadur Singh Sago",
+          "Khunying Patama Leeswadtrakul",
+          "Pema Khandu"
+        ],
+        "answer": 2,
+        "explanation": "Khunying Patama Leeswadtrakul is mentioned as the BWF President."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-10T11:41:25"
+  },
+  {
+    "id": "ca-2026-09-009-015",
+    "date": "2026-09-09",
+    "category": "Environment",
+    "question": "Consider the following statements regarding the 5th Swachh Vayu Sarvekshan 2026:\n1. Lucknow ranked first among cities with a population above 10 lakh with 198 points, followed by Indore with 197 points and Jabalpur with 195 points.\n2. Swachh Vayu Sarvekshan is an annual assessment of cities' air-pollution control efforts and implementation of Clean Air Action Plans; it started in 2022-23 under the Ministry of Environment, Forest and Climate Change and operates under the National Clean Air Programme (NCAP).\n3. NCAP was launched in 2022, while Rourkela ranked first in the below-3-lakh category and Kalinganagar ranked first in the 3-10-lakh category in 2026. Which statements are correct?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "All three"
+    ],
+    "answer": 0,
+    "explanation": "3 ❌ Correct → NCAP was launched in 2019, not 2022 → 3-10 lakh population category → Rourkela ranked first → Below 3 lakh population category → Kalinganagar ranked first.\n→ Extra Data → Swachh Vayu Sarvekshan 2025 mein Category-I ka first rank Indore ko mila tha → NCAP ka nodal ministry MoEFCC hai → Purpose → cities mein air pollution kam karna aur air-quality management improve karna → Monitoring Portal → PRANA (Portal for Regulation of Air-Pollution in Non-Attainment Cities) → Correct answer: 1 and 2 only.",
+    "subQuestions": [
+      {
+        "question": "In which year was the National Clean Air Programme (NCAP) launched?",
+        "options": [
+          "2017",
+          "2019",
+          "2022",
+          "2023"
+        ],
+        "answer": 1,
+        "explanation": "NCAP was launched in 2019."
+      },
+      {
+        "question": "Which city ranked first in the 3-10 lakh population category of Swachh Vayu Sarvekshan 2026?",
+        "options": [
+          "Kalinganagar",
+          "Indore",
+          "Rourkela",
+          "Jabalpur"
+        ],
+        "answer": 2,
+        "explanation": "Rourkela ranked first in the 3-10 lakh population category."
+      },
+      {
+        "question": "Which city ranked first among cities with a population above 10 lakh in Swachh Vayu Sarvekshan 2026?",
+        "options": [
+          "Indore",
+          "Lucknow",
+          "Jabalpur",
+          "Rourkela"
+        ],
+        "answer": 1,
+        "explanation": "Lucknow ranked first with 198 points."
+      },
+      {
+        "question": "How many points did Lucknow score in Swachh Vayu Sarvekshan 2026?",
+        "options": [
+          "195",
+          "196",
+          "197",
+          "198"
+        ],
+        "answer": 3,
+        "explanation": "Lucknow scored 198 points."
+      },
+      {
+        "question": "Which ministry is the nodal ministry for NCAP?",
+        "options": [
+          "Ministry of Power",
+          "Ministry of Environment, Forest and Climate Change",
+          "Ministry of Housing and Urban Affairs",
+          "Ministry of Jal Shakti"
+        ],
+        "answer": 1,
+        "explanation": "The Ministry of Environment, Forest and Climate Change is the nodal ministry for NCAP."
+      },
+      {
+        "question": "What does PRANA stand for?",
+        "options": [
+          "Portal for Regulation of Air-Pollution in Non-Attainment Cities",
+          "Programme for Reduction of Air and Noise Across Cities",
+          "Public Registry for Air Network Assessment",
+          "Pollution Reduction and National Action Portal"
+        ],
+        "answer": 0,
+        "explanation": "PRANA stands for Portal for Regulation of Air-Pollution in Non-Attainment Cities."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-10T11:41:25"
+  },
+  {
+    "id": "ca-2026-09-009-016",
+    "date": "2026-09-09",
+    "category": "Sports",
+    "question": "Consider the following statements regarding Neil Samraj and the 21st National Youth Athletics Championships 2026:\n1. Tamil Nadu's 17-year-old Neil Samraj set a new Indian Under-18 boys' 100m national record of 10.46 seconds at the 21st National Youth Athletics Championships 2026 and won the gold medal.\n2. The championships were held at Guru Nanak Stadium in Ludhiana, Punjab; Haryana topped the overall medal tally with 14 medals, followed by Maharashtra with 8 and Karnataka with 5.\n3. Neil Samraj was born on 19 January 2009 and competes in 100m and 200m events; the Athletics Federation of India was established in 1946, is headquartered in New Delhi, and its President is Bahadur Singh Sago. Which statements are correct?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "All three"
+    ],
+    "answer": 3,
+    "explanation": "All three statements are correct ✅\n→ Neil Samraj → Tamil Nadu → Under-18 100m record → 10.46 seconds → Gold Medal.\n→ Overall Medal Tally → Haryana: 4 Gold, 7 Silver, 3 Bronze = 14 → Maharashtra: 8 total → Karnataka: 5 total.\n→ AFI India mein athletics ki national governing body hai → Established → 1946 → Headquarters → New Delhi → President → Bahadur Singh Sago → Correct answer: All three.",
+    "subQuestions": [
+      {
+        "question": "What time did Neil Samraj clock to set the Indian Under-18 boys' 100m national record?",
+        "options": [
+          "10.26 seconds",
+          "10.36 seconds",
+          "10.46 seconds",
+          "10.56 seconds"
+        ],
+        "answer": 2,
+        "explanation": "Neil Samraj set the Under-18 100m national record with a time of 10.46 seconds."
+      },
+      {
+        "question": "Which state topped the overall medal tally at the 21st National Youth Athletics Championships 2026?",
+        "options": [
+          "Maharashtra",
+          "Haryana",
+          "Karnataka",
+          "Tamil Nadu"
+        ],
+        "answer": 1,
+        "explanation": "Haryana topped the overall medal tally with 14 medals."
+      },
+      {
+        "question": "Neil Samraj represented which state?",
+        "options": [
+          "Haryana",
+          "Tamil Nadu",
+          "Maharashtra",
+          "Karnataka"
+        ],
+        "answer": 1,
+        "explanation": "Neil Samraj represented Tamil Nadu."
+      },
+      {
+        "question": "Where were the 21st National Youth Athletics Championships 2026 held?",
+        "options": [
+          "Guru Nanak Stadium, Ludhiana",
+          "Jawaharlal Nehru Stadium, Delhi",
+          "Kanteerava Stadium, Bengaluru",
+          "Salt Lake Stadium, Kolkata"
+        ],
+        "answer": 0,
+        "explanation": "The championships were held at Guru Nanak Stadium in Ludhiana, Punjab."
+      },
+      {
+        "question": "In which year was the Athletics Federation of India established?",
+        "options": [
+          "1934",
+          "1946",
+          "1951",
+          "1966"
+        ],
+        "answer": 1,
+        "explanation": "The Athletics Federation of India was established in 1946."
+      },
+      {
+        "question": "Who is mentioned as the President of the Athletics Federation of India?",
+        "options": [
+          "Bahadur Singh Sago",
+          "Masato Kanda",
+          "Pema Khandu",
+          "Nag Ashwin"
+        ],
+        "answer": 0,
+        "explanation": "Bahadur Singh Sago is mentioned as AFI President."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-10T11:41:25"
+  },
+  {
+    "id": "ca-2026-09-009-017",
+    "date": "2026-09-09",
+    "category": "Economy",
+    "question": "Consider the following statements regarding India's Carbon Credit Trading Scheme (CCTS) and the United Kingdom's Carbon Border Adjustment Mechanism (CBAM):\n1. The United Kingdom has recognised India's Carbon Credit Trading Scheme under its CBAM, allowing carbon prices already paid in India on eligible exports to be considered for Carbon Price Relief in the UK.\n2. CCTS is a market-based scheme for reducing greenhouse-gas emissions through creation and trading of carbon credits; it was notified on 28 June 2023, its nodal ministry is the Ministry of Power, and the Bureau of Energy Efficiency is the scheme administrator.\n3. The UK CBAM is scheduled to apply from 1 January 2027 to major sectors including Iron & Steel, Aluminium, Cement, Fertilisers and Hydrogen, with the aim of making carbon-cost treatment of imports comparable with similar UK-produced goods. Which statements are correct?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "All three"
+    ],
+    "answer": 3,
+    "explanation": "All three statements are correct ✅\n→ CCTS ka main purpose carbon emissions ko price karke Indian economy ko gradually lower-carbon economy banana hai.\n→ CBAM imported goods ke production se linked carbon emissions ko consider karta hai.\n→ Example → India mein steel production par carbon price pehle hi pay ki gayi hai to eligible case mein UK us payment ko Carbon Price Relief ke liye consider kar sakta hai → Correct answer: All three.",
+    "subQuestions": [
+      {
+        "question": "Which body is the administrator of India's Carbon Credit Trading Scheme (CCTS)?",
+        "options": [
+          "NITI Aayog",
+          "Bureau of Energy Efficiency",
+          "SEBI",
+          "Central Electricity Authority"
+        ],
+        "answer": 1,
+        "explanation": "The Bureau of Energy Efficiency is the administrator of CCTS."
+      },
+      {
+        "question": "From which date is the UK Carbon Border Adjustment Mechanism (CBAM) scheduled to apply?",
+        "options": [
+          "1 January 2026",
+          "28 June 2026",
+          "1 January 2027",
+          "1 April 2027"
+        ],
+        "answer": 2,
+        "explanation": "The UK CBAM is scheduled to apply from 1 January 2027."
+      },
+      {
+        "question": "On which date was India's Carbon Credit Trading Scheme notified?",
+        "options": [
+          "28 June 2023",
+          "1 January 2027",
+          "7 September 2026",
+          "4 September 2026"
+        ],
+        "answer": 0,
+        "explanation": "CCTS was notified on 28 June 2023."
+      },
+      {
+        "question": "Which ministry is the nodal ministry for India's Carbon Credit Trading Scheme?",
+        "options": [
+          "Ministry of Finance",
+          "Ministry of Environment",
+          "Ministry of Power",
+          "Ministry of Commerce"
+        ],
+        "answer": 2,
+        "explanation": "The Ministry of Power is the nodal ministry for CCTS."
+      },
+      {
+        "question": "Which of the following sectors is included in the UK CBAM according to the source data?",
+        "options": [
+          "Textiles",
+          "Iron & Steel",
+          "Tourism",
+          "Information Technology"
+        ],
+        "answer": 1,
+        "explanation": "Iron & Steel is among the sectors listed for the UK CBAM."
+      },
+      {
+        "question": "What is the basic purpose of CCTS?",
+        "options": [
+          "Increase fossil-fuel subsidies",
+          "Reduce greenhouse-gas emissions through carbon-credit trading",
+          "Regulate foreign exchange",
+          "Control food inflation"
+        ],
+        "answer": 1,
+        "explanation": "CCTS is a market-based scheme aimed at reducing greenhouse-gas emissions through creation and trading of carbon credits."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-10T11:41:25"
+  },
+  {
+    "id": "ca-2026-09-009-018",
+    "date": "2026-09-09",
+    "category": "State Initiative",
+    "question": "Consider the following statements regarding the 'Matsya e-Vaahini' initiative:\n1. Arunachal Pradesh Chief Minister Pema Khandu launched the Matsya e-Vaahini and e-Rickshaw initiative in Papum Pare district.\n2. The initiative aims to improve transportation and market connectivity for fish farmers, help fish produce reach consumers faster and reduce dependence on middlemen.\n3. The use of electric vehicles can help farmers access new markets, sell more directly to consumers, obtain better value for produce and make local transportation more environment-friendly. Which statements are correct?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "All three"
+    ],
+    "answer": 3,
+    "explanation": "All three statements are correct ✅\n→ Matsya e-Vaahini → Arunachal Pradesh → Launched by CM Pema Khandu in Papum Pare district.\n→ Main focus → fish farmers ki transportation + market connectivity improve karna → intermediaries par dependence kam karna → consumers tak fish produce faster pahunchana → EV-based transport ko promote karna → Correct answer: All three.",
+    "subQuestions": [
+      {
+        "question": "Who launched the Matsya e-Vaahini and e-Rickshaw initiative?",
+        "options": [
+          "Pema Khandu",
+          "Himanta Biswa Sarma",
+          "Neiphiu Rio",
+          "Conrad Sangma"
+        ],
+        "answer": 0,
+        "explanation": "Arunachal Pradesh Chief Minister Pema Khandu launched the initiative."
+      },
+      {
+        "question": "In which district was the Matsya e-Vaahini initiative launched?",
+        "options": [
+          "Tawang",
+          "Papum Pare",
+          "Changlang",
+          "Lohit"
+        ],
+        "answer": 1,
+        "explanation": "The initiative was launched in Papum Pare district."
+      },
+      {
+        "question": "Matsya e-Vaahini is associated with which state?",
+        "options": [
+          "Assam",
+          "Arunachal Pradesh",
+          "Nagaland",
+          "Meghalaya"
+        ],
+        "answer": 1,
+        "explanation": "Matsya e-Vaahini is an initiative launched in Arunachal Pradesh."
+      },
+      {
+        "question": "Which group is the main beneficiary of the Matsya e-Vaahini initiative?",
+        "options": [
+          "Tea workers",
+          "Fish farmers",
+          "Textile workers",
+          "Tour operators"
+        ],
+        "answer": 1,
+        "explanation": "The initiative is designed mainly to help fish farmers."
+      },
+      {
+        "question": "What is one major objective of Matsya e-Vaahini?",
+        "options": [
+          "Reduce market connectivity",
+          "Increase dependence on middlemen",
+          "Improve transportation and market connectivity",
+          "Promote diesel-only transport"
+        ],
+        "answer": 2,
+        "explanation": "It aims to improve transportation and market connectivity for fish farmers."
+      },
+      {
+        "question": "Which type of vehicles are promoted under the initiative?",
+        "options": [
+          "Electric vehicles",
+          "Diesel trucks only",
+          "Boats only",
+          "Rail wagons"
+        ],
+        "answer": 0,
+        "explanation": "The initiative promotes EV-based transportation, including e-Rickshaws."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-10T11:41:25"
+  },
+  {
+    "id": "ca-2026-09-009-019",
+    "date": "2026-09-09",
+    "category": "Environment",
+    "question": "Consider the following statements regarding Osbeckia ulotricha and the Agasthyamala Biosphere Reserve:\n1. Osbeckia ulotricha is a newly identified flowering plant species found in the Agasthyamala Biosphere Reserve of the Southern Western Ghats, spread across Kerala and Tamil Nadu, and is distinguished by its woolly hairs.\n2. The three locations where the plant was identified together covered an area of less than 1 square kilometre.\n3. Agasthyamala Biosphere Reserve was established in 2016, covers about 3,500 sq km and entered UNESCO's World Network of Biosphere Reserves in 2001. Which statements are correct?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "All three"
+    ],
+    "answer": 0,
+    "explanation": "3 ❌ Correct → Agasthyamala Biosphere Reserve was established in 2001 → UNESCO World Network of Biosphere Reserves mein 2016 mein include hua → Area → about 3,500 sq km → Location → Southern Western Ghats → Kerala and Tamil Nadu.\n→ Osbeckia ulotricha ki distinctive feature → woolly hairs → Correct answer: 1 and 2 only.",
+    "subQuestions": [
+      {
+        "question": "In which year was the Agasthyamala Biosphere Reserve included in UNESCO's World Network of Biosphere Reserves?",
+        "options": [
+          "2001",
+          "2010",
+          "2016",
+          "2021"
+        ],
+        "answer": 2,
+        "explanation": "Agasthyamala Biosphere Reserve was included in UNESCO's World Network of Biosphere Reserves in 2016."
+      },
+      {
+        "question": "What is the distinctive feature of Osbeckia ulotricha mentioned in the data?",
+        "options": [
+          "Blue flowers",
+          "Woolly hairs",
+          "Thorny stem",
+          "Floating leaves"
+        ],
+        "answer": 1,
+        "explanation": "Osbeckia ulotricha is distinguished by its woolly hairs."
+      },
+      {
+        "question": "Osbeckia ulotricha was identified in which biosphere reserve?",
+        "options": [
+          "Nilgiri Biosphere Reserve",
+          "Agasthyamala Biosphere Reserve",
+          "Nanda Devi Biosphere Reserve",
+          "Sundarbans Biosphere Reserve"
+        ],
+        "answer": 1,
+        "explanation": "Osbeckia ulotricha was identified in the Agasthyamala Biosphere Reserve."
+      },
+      {
+        "question": "Agasthyamala Biosphere Reserve is spread across which two states?",
+        "options": [
+          "Kerala and Tamil Nadu",
+          "Karnataka and Goa",
+          "Tamil Nadu and Andhra Pradesh",
+          "Kerala and Karnataka"
+        ],
+        "answer": 0,
+        "explanation": "The reserve lies across Kerala and Tamil Nadu."
+      },
+      {
+        "question": "In which year was the Agasthyamala Biosphere Reserve established?",
+        "options": [
+          "1996",
+          "2001",
+          "2010",
+          "2016"
+        ],
+        "answer": 1,
+        "explanation": "Agasthyamala Biosphere Reserve was established in 2001."
+      },
+      {
+        "question": "Approximately how large is the Agasthyamala Biosphere Reserve?",
+        "options": [
+          "About 1,000 sq km",
+          "About 2,000 sq km",
+          "About 3,500 sq km",
+          "About 5,500 sq km"
+        ],
+        "answer": 2,
+        "explanation": "The reserve covers about 3,500 sq km."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-10T11:41:25"
+  },
+  {
+    "id": "ca-2026-09-009-020",
+    "date": "2026-09-09",
+    "category": "International",
+    "question": "Consider the following statements regarding the UN General Assembly's 'Correct the Map' resolution and the Mercator Projection:\n1. The UN General Assembly adopted the 'Correct the Map' resolution on 4 September 2026; its purpose is not to change political boundaries but to promote a more balanced representation of the actual area of continents, particularly Africa.\n2. Gerardus Mercator created the Mercator Projection in 1569; it preserves directions and angles, making it useful for navigation, but causes increasing area distortion toward the poles, and Africa is actually about 14 times larger than Greenland despite their misleading appearance on some Mercator maps.\n3. The resolution was sponsored by Togo and supported by the African Union; 164 countries voted in favour, the United States was the only country against it, six abstained, and the resolution is legally binding on UN members. Which statements are correct?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "All three"
+    ],
+    "answer": 0,
+    "explanation": "3 ❌ Correct → 'Correct the Map' resolution non-binding hai, legally binding nahi.\n→ Extra Data → Togo sponsored → African Union supported → In favour → 164 countries → Against → 1, United States → Abstentions → 6.\n→ Mercator Projection navigation ke liye useful hai because directions aur angles preserve karta hai, lekin high-latitude regions ko actual size se bahut bada show karta hai → Correct answer: 1 and 2 only.",
+    "subQuestions": [
+      {
+        "question": "Who sponsored the UN General Assembly's 'Correct the Map' resolution?",
+        "options": [
+          "Kenya",
+          "Togo",
+          "South Africa",
+          "Ghana"
+        ],
+        "answer": 1,
+        "explanation": "The resolution was sponsored by Togo and supported by the African Union."
+      },
+      {
+        "question": "What is the legal nature of the 'Correct the Map' resolution according to the data?",
+        "options": [
+          "Legally binding",
+          "Non-binding",
+          "A treaty",
+          "A court judgment"
+        ],
+        "answer": 1,
+        "explanation": "The resolution is non-binding."
+      },
+      {
+        "question": "On which date was the 'Correct the Map' resolution adopted according to the source data?",
+        "options": [
+          "1 September 2026",
+          "4 September 2026",
+          "7 September 2026",
+          "10 September 2026"
+        ],
+        "answer": 1,
+        "explanation": "The resolution was adopted on 4 September 2026."
+      },
+      {
+        "question": "Who created the Mercator Projection?",
+        "options": [
+          "Gerardus Mercator",
+          "Ptolemy",
+          "James Cook",
+          "Abraham Ortelius"
+        ],
+        "answer": 0,
+        "explanation": "Gerardus Mercator created the Mercator Projection in 1569."
+      },
+      {
+        "question": "Why is the Mercator Projection useful for navigation?",
+        "options": [
+          "It preserves directions and angles",
+          "It preserves exact area everywhere",
+          "It eliminates polar distortion",
+          "It shows political boundaries only"
+        ],
+        "answer": 0,
+        "explanation": "It preserves directions and angles, which makes it useful for navigation."
+      },
+      {
+        "question": "How many countries voted in favour of the 'Correct the Map' resolution according to the source data?",
+        "options": [
+          "154",
+          "160",
+          "164",
+          "170"
+        ],
+        "answer": 2,
+        "explanation": "164 countries voted in favour."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-10T11:41:25"
+  },
+  {
+    "id": "ca-2026-09-009-021",
+    "date": "2026-09-09",
+    "category": "Economy",
+    "question": "Consider the following statements regarding the Asian Development Bank's first Transaction Advisory Services (TAS) mandate in India:\n1. On 7 September 2026, the Asian Development Bank signed an agreement with the Madhya Pradesh Government in Bhopal for its first TAS mandate in India, aimed at attracting up to USD 1 billion in private investment for renewable-energy projects.\n2. Transaction Advisory Services provide governments with technical, financial and transaction-related advice, including project costs, selection of private partners, attracting investment, preparing contracts and sharing risks between public and private parties.\n3. The Asian Development Bank was established in 1966, is headquartered in Metro Manila, Philippines, and its current President is Masato Kanda. Which statements are correct?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "All three"
+    ],
+    "answer": 3,
+    "explanation": "All three statements are correct ✅\n→ ADB Asia-Pacific countries ko roads, electricity, water, education aur other development projects ke liye loans aur technical assistance provide karta hai.\n→ TAS ka purpose government ko major infrastructure/project deals prepare aur complete karne mein expert advice dena hai → Correct answer: All three.",
+    "subQuestions": [
+      {
+        "question": "With which state government did ADB sign its first Transaction Advisory Services mandate in India?",
+        "options": [
+          "Gujarat",
+          "Madhya Pradesh",
+          "Maharashtra",
+          "Rajasthan"
+        ],
+        "answer": 1,
+        "explanation": "ADB signed the agreement with the Madhya Pradesh Government in Bhopal."
+      },
+      {
+        "question": "Where is the headquarters of the Asian Development Bank located?",
+        "options": [
+          "Tokyo, Japan",
+          "New Delhi, India",
+          "Metro Manila, Philippines",
+          "Singapore"
+        ],
+        "answer": 2,
+        "explanation": "ADB is headquartered in Metro Manila, Philippines."
+      },
+      {
+        "question": "On what date did ADB sign the agreement for its first TAS mandate in India?",
+        "options": [
+          "4 September 2026",
+          "5 September 2026",
+          "7 September 2026",
+          "9 September 2026"
+        ],
+        "answer": 2,
+        "explanation": "The agreement was signed on 7 September 2026."
+      },
+      {
+        "question": "How much private investment does the ADB TAS mandate aim to attract for renewable-energy projects?",
+        "options": [
+          "Up to USD 100 million",
+          "Up to USD 500 million",
+          "Up to USD 1 billion",
+          "Up to USD 5 billion"
+        ],
+        "answer": 2,
+        "explanation": "The mandate aims to attract up to USD 1 billion."
+      },
+      {
+        "question": "In which year was the Asian Development Bank established?",
+        "options": [
+          "1951",
+          "1966",
+          "1975",
+          "1982"
+        ],
+        "answer": 1,
+        "explanation": "ADB was established in 1966."
+      },
+      {
+        "question": "Who is mentioned as the current President of the Asian Development Bank?",
+        "options": [
+          "Masato Kanda",
+          "Pema Khandu",
+          "Bahadur Singh Sago",
+          "Nag Ashwin"
+        ],
+        "answer": 0,
+        "explanation": "Masato Kanda is mentioned as the current ADB President."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-10T11:41:25"
+  },
+  {
+    "id": "ca-2026-09-009-022",
+    "date": "2026-09-09",
+    "category": "Awards",
+    "question": "Consider the following statements regarding Miss World 2026:\n1. The 73rd Miss World competition was held in Vietnam from 9 August to 5 September 2026, marking the first time Vietnam hosted the event; Joheirry Mola of the Dominican Republic won the title and was crowned by Miss World 2025 Opal Suchata Chuangsri of Thailand.\n2. Spain's Elisabeth Reynés was First Runner-up and Malaysia's Taanusiya Chetty was Second Runner-up; Joheirry Mola became the Dominican Republic's second Miss World winner after Mariasela Álvarez in 1982, bringing the title back to the country after 44 years.\n3. India was represented by Nikita Porwal of Ujjain, Madhya Pradesh, winner of Femina Miss India World 2024; Miss World began in London in 1951 and its first winner was Sweden's Kiki Håkansson. Which statements are correct?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "All three"
+    ],
+    "answer": 3,
+    "explanation": "All three statements are correct ✅\n→ India ki Miss World winners → Reita Faria (1966) → Aishwarya Rai (1994) → Diana Hayden (1997) → Yukta Mookhey (1999) → Priyanka Chopra (2000) → Manushi Chhillar (2017).\n→ Miss World 2025 → 72nd edition held in Telangana, India → Winner → Opal Suchata Chuangsri of Thailand → Correct answer: All three.",
+    "subQuestions": [
+      {
+        "question": "Who won the Miss World 2026 title?",
+        "options": [
+          "Opal Suchata Chuangsri",
+          "Joheirry Mola",
+          "Elisabeth Reynés",
+          "Taanusiya Chetty"
+        ],
+        "answer": 1,
+        "explanation": "Joheirry Mola of the Dominican Republic won Miss World 2026."
+      },
+      {
+        "question": "Who represented India at Miss World 2026 according to the data?",
+        "options": [
+          "Manushi Chhillar",
+          "Nikita Porwal",
+          "Reita Faria",
+          "Priyanka Chopra"
+        ],
+        "answer": 1,
+        "explanation": "India was represented by Nikita Porwal of Ujjain, Madhya Pradesh."
+      },
+      {
+        "question": "Where was the 73rd Miss World competition held?",
+        "options": [
+          "India",
+          "Thailand",
+          "Vietnam",
+          "Dominican Republic"
+        ],
+        "answer": 2,
+        "explanation": "The 73rd Miss World competition was held in Vietnam."
+      },
+      {
+        "question": "Who was the First Runner-up at Miss World 2026?",
+        "options": [
+          "Elisabeth Reynés",
+          "Taanusiya Chetty",
+          "Nikita Porwal",
+          "Opal Suchata Chuangsri"
+        ],
+        "answer": 0,
+        "explanation": "Spain's Elisabeth Reynés was First Runner-up."
+      },
+      {
+        "question": "Who was the Second Runner-up at Miss World 2026?",
+        "options": [
+          "Elisabeth Reynés",
+          "Taanusiya Chetty",
+          "Nikita Porwal",
+          "Mariasela Álvarez"
+        ],
+        "answer": 1,
+        "explanation": "Malaysia's Taanusiya Chetty was Second Runner-up."
+      },
+      {
+        "question": "In which year did the Miss World competition begin?",
+        "options": [
+          "1946",
+          "1951",
+          "1966",
+          "1982"
+        ],
+        "answer": 1,
+        "explanation": "Miss World began in London in 1951."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-10T11:41:25"
+  },
+  {
+    "id": "ca-2026-09-010-001",
+    "date": "2026-09-10",
+    "category": "Awards",
+    "question": "Which former Chief Justice of India was conferred with the Kalinga Ratna Award in September 2026?",
+    "options": [
+      "Justice N. V. Ramana",
+      "Justice U. U. Lalit",
+      "Justice Dipak Misra",
+      "Justice Ranjan Gogoi"
+    ],
+    "answer": 2,
+    "explanation": "Justice Dipak Misra, the 45th Chief Justice of India, was honoured with the Kalinga Ratna Award by Sarala Sahitya Sansad at Cuttack, Odisha. He served as CJI from 28 August 2017 to 2 October 2018. The Kalinga Ratna Award is presented annually to a person from Odisha who has made an important contribution at the national or international level. It was established in 2007 and includes a silver idol of Goddess Saraswati and a citation. Dharmendra Pradhan received the award in 2024. At the same ceremony, Odia litterateur Dr. Ramchandra Behera received the Sarala Samman for six decades of contribution to literature.",
+    "subQuestions": [
+      {
+        "question": "Which organisation presents the Kalinga Ratna Award?",
+        "options": [
+          "Sahitya Akademi",
+          "Sarala Sahitya Sansad",
+          "Odisha Sahitya Akademi",
+          "Ministry of Culture"
+        ],
+        "answer": 1,
+        "explanation": "The Kalinga Ratna Award is presented by Sarala Sahitya Sansad."
+      },
+      {
+        "question": "Justice Dipak Misra served as which Chief Justice of India?",
+        "options": [
+          "43rd",
+          "44th",
+          "45th",
+          "46th"
+        ],
+        "answer": 2,
+        "explanation": "Justice Dipak Misra was the 45th Chief Justice of India."
+      },
+      {
+        "question": "In which year was the Kalinga Ratna Award established?",
+        "options": [
+          "2005",
+          "2007",
+          "2010",
+          "2012"
+        ],
+        "answer": 1,
+        "explanation": "The Kalinga Ratna Award was established in 2007."
+      },
+      {
+        "question": "What does the Kalinga Ratna Award include?",
+        "options": [
+          "Gold medal and cash prize",
+          "Silver idol of Goddess Saraswati and a citation",
+          "Bronze statue and certificate",
+          "Only a citation"
+        ],
+        "answer": 1,
+        "explanation": "The award includes a silver idol of Goddess Saraswati and a citation."
+      },
+      {
+        "question": "Who received the Kalinga Ratna Award in 2024?",
+        "options": [
+          "Dharmendra Pradhan",
+          "Naveen Patnaik",
+          "Ashwini Vaishnaw",
+          "Justice Dipak Misra"
+        ],
+        "answer": 0,
+        "explanation": "Dharmendra Pradhan received the Kalinga Ratna Award in 2024."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-11T11:03:23"
+  },
+  {
+    "id": "ca-2026-09-010-002",
+    "date": "2026-09-10",
+    "category": "Sports",
+    "question": "In the 2026 Pickleball World Cup, what position did India secure in the overall medal standings?",
+    "options": [
+      "2nd",
+      "3rd",
+      "4th",
+      "7th"
+    ],
+    "answer": 2,
+    "explanation": "India secured fourth position at the 2026 Pickleball World Cup held in Da Nang, Vietnam. India won 41 medals, including 7 Gold, 17 Silver and 17 Bronze. \n\nPlayers from 82 countries participated, while India sent a 48-member contingent for Kids, Juniors, Open, Seniors and Masters team events.\n\n India had finished seventh in 2025, so the 2026 result was an improvement of three positions. Pickleball combines elements of Tennis, Badminton and Table Tennis and can be played in singles and doubles formats. \n\nPlayers use a solid paddle and a light perforated plastic ball. The Non-Volley Zone near the net is called the 'Kitchen'. \n\nPickleball originated in 1965 at Bainbridge Island, Washington, USA. The first World Cup edition was held in Lima, Peru in 2023, and the 2026 edition was the first to be held outside America, in Asia.",
+    "subQuestions": [
+      {
+        "question": "How many total medals did India win at the 2026 Pickleball World Cup?",
+        "options": [
+          "31",
+          "36",
+          "41",
+          "48"
+        ],
+        "answer": 2,
+        "explanation": "India won a total of 41 medals."
+      },
+      {
+        "question": "What was India's medal breakup at the 2026 Pickleball World Cup?",
+        "options": [
+          "7 Gold, 17 Silver, 17 Bronze",
+          "10 Gold, 15 Silver, 16 Bronze",
+          "8 Gold, 18 Silver, 15 Bronze",
+          "7 Gold, 18 Silver, 16 Bronze"
+        ],
+        "answer": 0,
+        "explanation": "India won 7 Gold, 17 Silver and 17 Bronze medals."
+      },
+      {
+        "question": "Where was the 2026 Pickleball World Cup held?",
+        "options": [
+          "Lima, Peru",
+          "Da Nang, Vietnam",
+          "Fort Lauderdale, USA",
+          "Bangkok, Thailand"
+        ],
+        "answer": 1,
+        "explanation": "The 2026 Pickleball World Cup was held in Da Nang, Vietnam."
+      },
+      {
+        "question": "Pickleball combines elements mainly from which three sports?",
+        "options": [
+          "Tennis, Badminton and Table Tennis",
+          "Tennis, Squash and Volleyball",
+          "Badminton, Cricket and Table Tennis",
+          "Squash, Tennis and Basketball"
+        ],
+        "answer": 0,
+        "explanation": "Pickleball combines elements of Tennis, Badminton and Table Tennis."
+      },
+      {
+        "question": "What is the Non-Volley Zone near the net in Pickleball commonly called?",
+        "options": [
+          "Box",
+          "Kitchen",
+          "Circle",
+          "Service Zone"
+        ],
+        "answer": 1,
+        "explanation": "The Non-Volley Zone is commonly known as the 'Kitchen'."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-11T11:03:23"
+  },
+  {
+    "id": "ca-2026-09-010-003",
+    "date": "2026-09-10",
+    "category": "Books and Personalities",
+    "question": "Who released the book 'Bhupen Hazarika - Hundred Years of a Wandering Song' in September 2026?",
+    "options": [
+      "Prime Minister Narendra Modi",
+      "Vice-President C. P. Radhakrishnan",
+      "Assam Chief Minister Himanta Biswa Sarma",
+      "Governor Lakshman Prasad Acharya"
+    ],
+    "answer": 1,
+    "explanation": "Vice-President C. P. Radhakrishnan released the book at Gauhati University, Assam. It was prepared to mark Bharat Ratna Dr. Bhupen Hazarika's birth centenary and was co-edited by Professor Ankuran Dutta and Professor Nani Gopal Mahanta.\n",
+    "subQuestions": [
+      {
+        "question": "At which institution was the book on Bhupen Hazarika released?",
+        "options": [
+          "Delhi University",
+          "Gauhati University",
+          "Dibrugarh University",
+          "Tezpur University"
+        ],
+        "answer": 1,
+        "explanation": "The book was released at Gauhati University in Assam."
+      },
+      {
+        "question": "The book was prepared to mark which occasion related to Dr. Bhupen Hazarika?",
+        "options": [
+          "50th death anniversary",
+          "Birth centenary",
+          "75th birth anniversary",
+          "25th death anniversary"
+        ],
+        "answer": 1,
+        "explanation": "The book was prepared on the occasion of Bhupen Hazarika's birth centenary."
+      },
+      {
+        "question": "Who co-edited the book on Bhupen Hazarika?",
+        "options": [
+          "Ankuran Dutta and Nani Gopal Mahanta",
+          "Himanta Biswa Sarma and Ankuran Dutta",
+          "Nani Gopal Mahanta and Ramchandra Behera",
+          "C. P. Radhakrishnan and Ankuran Dutta"
+        ],
+        "answer": 0,
+        "explanation": "Professor Ankuran Dutta and Professor Nani Gopal Mahanta co-edited the book."
+      },
+      {
+        "question": "Bhupen Hazarika was popularly known by which title?",
+        "options": [
+          "Bard of Brahmaputra",
+          "Bard of Ganga",
+          "Voice of Vindhyas",
+          "Poet of Godavari"
+        ],
+        "answer": 0,
+        "explanation": "Bhupen Hazarika was popularly known as the 'Bard of Brahmaputra'."
+      },
+      {
+        "question": "In which year was Bhupen Hazarika awarded the Bharat Ratna posthumously?",
+        "options": [
+          "2012",
+          "2015",
+          "2017",
+          "2019"
+        ],
+        "answer": 3,
+        "explanation": "Bhupen Hazarika received the Bharat Ratna posthumously in 2019."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-11T11:03:23"
+  },
+  {
+    "id": "ca-2026-09-010-004",
+    "date": "2026-09-10",
+    "category": "State Schemes",
+    "question": "Which state launched the 'Chief Minister Youth Future Construction Scheme'?",
+    "options": [
+      "Uttar Pradesh",
+      "Uttarakhand",
+      "Himachal Pradesh",
+      "Rajasthan"
+    ],
+    "answer": 1,
+    "explanation": " Uttarakhand was established on 9 November 2000, was initially called Uttaranchal and was renamed Uttarakhand in 2007. The PDF lists Dehradun as its capital, Pushkar Singh Dhami as Chief Minister and Lt. Gen. Gurmit Singh as Governor.",
+    "subQuestions": [
+      {
+        "question": "Who launched the Chief Minister Youth Future Construction Scheme?",
+        "options": [
+          "Pushkar Singh Dhami",
+          "Yogi Adityanath",
+          "Sukhvinder Singh Sukhu",
+          "Bhajan Lal Sharma"
+        ],
+        "answer": 0,
+        "explanation": "The scheme was launched by Uttarakhand Chief Minister Pushkar Singh Dhami."
+      },
+      {
+        "question": "What is the major benefit provided under the scheme?",
+        "options": [
+          "Free laptops",
+          "Free online coaching for competitive examinations",
+          "Monthly employment allowance",
+          "Free university admission"
+        ],
+        "answer": 1,
+        "explanation": "Eligible students will receive free online coaching for competitive examinations."
+      },
+      {
+        "question": "Approximately how many students will be covered in the first phase?",
+        "options": [
+          "5,000",
+          "8,000",
+          "11,000",
+          "20,000"
+        ],
+        "answer": 2,
+        "explanation": "Around 11,000 students will be covered in the first phase."
+      },
+      {
+        "question": "How much was provided for the scheme in Uttarakhand's 2026-27 Budget?",
+        "options": [
+          "₹5 crore",
+          "₹10 crore",
+          "₹25 crore",
+          "₹50 crore"
+        ],
+        "answer": 1,
+        "explanation": "₹10 crore was provided for the scheme."
+      },
+      {
+        "question": "When was Uttarakhand established as a state?",
+        "options": [
+          "1 November 2000",
+          "9 November 2000",
+          "15 November 2000",
+          "26 January 2001"
+        ],
+        "answer": 1,
+        "explanation": "Uttarakhand was established on 9 November 2000."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-11T11:03:23"
+  },
+  {
+    "id": "ca-2026-09-010-005",
+    "date": "2026-09-10",
+    "category": "Art and Culture",
+    "question": "S. R. Janakiraman, who passed away recently, was mainly associated with which musical tradition?",
+    "options": [
+      "Hindustani Music",
+      "Sufi Music",
+      "Carnatic Music",
+      "Western Classical Music"
+    ],
+    "answer": 2,
+    "explanation": "Professor S. R. Janakiraman was a renowned Carnatic musician, teacher and musicologist who passed away at the age of 98 in Chennai, Tamil Nadu. He taught music and musicology for more than five decades and explained difficult concepts of ragas through lecture-demonstrations. His important books include Raga Lakshanas, Ragas of Saramrta and Lakshana Gitas. He was born on 12 July 1928 at Lalgudi in the Madras Presidency. He received the Padma Shri in 2011 and Sangita Kala Acharya from the Music Academy Madras in 1997. Carnatic Music is the major classical music tradition of South India and is especially associated with Tamil Nadu, Karnataka, Kerala, Andhra Pradesh and Telangana.",
+    "subQuestions": [
+      {
+        "question": "At what age did Professor S. R. Janakiraman pass away?",
+        "options": [
+          "88 years",
+          "92 years",
+          "95 years",
+          "98 years"
+        ],
+        "answer": 3,
+        "explanation": "Professor S. R. Janakiraman passed away at the age of 98."
+      },
+      {
+        "question": "Which of the following was written by S. R. Janakiraman?",
+        "options": [
+          "Raga Lakshanas",
+          "Discovery of India",
+          "Gitanjali",
+          "Natya Shastra"
+        ],
+        "answer": 0,
+        "explanation": "Raga Lakshanas was one of his important books."
+      },
+      {
+        "question": "In which year did S. R. Janakiraman receive the Padma Shri?",
+        "options": [
+          "1997",
+          "2001",
+          "2011",
+          "2015"
+        ],
+        "answer": 2,
+        "explanation": "He received the Padma Shri in 2011."
+      },
+      {
+        "question": "Carnatic Music is mainly associated with which part of India?",
+        "options": [
+          "Northern India",
+          "South India",
+          "Western India",
+          "North-Eastern India"
+        ],
+        "answer": 1,
+        "explanation": "Carnatic Music is one of the major classical music traditions of South India."
+      },
+      {
+        "question": "Which group correctly represents the famous Trinity of Carnatic Music?",
+        "options": [
+          "Tyagaraja, Muthuswami Dikshitar and Syama Sastri",
+          "Tansen, Baiju Bawra and Amir Khusrau",
+          "Tyagaraja, Tansen and Purandara Dasa",
+          "Muthuswami Dikshitar, Ravi Shankar and Bismillah Khan"
+        ],
+        "answer": 0,
+        "explanation": "The famous Trinity of Carnatic Music consists of Tyagaraja, Muthuswami Dikshitar and Syama Sastri."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-11T11:03:23"
+  },
+  {
+    "id": "ca-2026-09-010-006",
+    "date": "2026-09-10",
+    "category": "Appointments",
+    "question": "Who was appointed as the Chairperson of the National Commission for Safai Karamcharis in September 2026?",
+    "options": [
+      "Bhagwan Das",
+      "Bhagwat Prasad Makwana",
+      "Kaishab Bihari",
+      "Manoj Kumar Balmiki"
+    ],
+    "answer": 1,
+    "explanation": " It was established in 1994 under the National Commission for Safai Karamcharis Act, 1993 and is headquartered in New Delhi.",
+    "subQuestions": [
+      {
+        "question": "Who was appointed Vice-Chairperson of the National Commission for Safai Karamcharis?",
+        "options": [
+          "M. Venkatesan",
+          "Kaishab Bihari",
+          "Bhagwan Das",
+          "Manoj Kumar Balmiki"
+        ],
+        "answer": 1,
+        "explanation": "Kaishab Bihari was appointed Vice-Chairperson."
+      },
+      {
+        "question": "Until when will the current appointments to NCSK remain effective?",
+        "options": [
+          "31 March 2027",
+          "31 March 2028",
+          "31 December 2028",
+          "31 March 2030"
+        ],
+        "answer": 1,
+        "explanation": "The appointments will remain effective until 31 March 2028."
+      },
+      {
+        "question": "The National Commission for Safai Karamcharis is related to which department?",
+        "options": [
+          "Department of Social Justice and Empowerment",
+          "Department of Personnel and Training",
+          "Department of Rural Development",
+          "Department of Labour"
+        ],
+        "answer": 0,
+        "explanation": "NCSK is related to the Department of Social Justice and Empowerment."
+      },
+      {
+        "question": "When was the National Commission for Safai Karamcharis established?",
+        "options": [
+          "1991",
+          "1993",
+          "1994",
+          "1996"
+        ],
+        "answer": 2,
+        "explanation": "NCSK was established in 1994 under the National Commission for Safai Karamcharis Act, 1993."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-11T11:03:23"
+  },
+  {
+    "id": "ca-2026-09-010-007",
+    "date": "2026-09-10",
+    "category": "Education and State Initiative",
+    "question": "Which state launched the 'Gramanubhava' programme to provide urban students with exposure to rural life and agriculture?",
+    "options": [
+      "Kerala",
+      "Karnataka",
+      "Tamil Nadu",
+      "Telangana"
+    ],
+    "answer": 1,
+    "explanation": "The programme is included in the Karnataka Cabinet's First 100 Days Agenda. The PDF lists Bengaluru as Karnataka's capital and gives 28 Lok Sabha seats, 12 Rajya Sabha seats, 224 Legislative Assembly seats and 75 Legislative Council seats.",
+    "subQuestions": [
+      {
+        "question": "Approximately how many students are expected to participate in the Gramanubhava programme?",
+        "options": [
+          "1.15 lakh",
+          "2.15 lakh",
+          "3.15 lakh",
+          "4.15 lakh"
+        ],
+        "answer": 1,
+        "explanation": "Around 2.15 lakh students are expected to participate."
+      },
+      {
+        "question": "How long will students stay in villages under the programme?",
+        "options": [
+          "One day only",
+          "One night and two days",
+          "Three nights and four days",
+          "One week"
+        ],
+        "answer": 1,
+        "explanation": "Students will stay in villages for one night and two days."
+      },
+      {
+        "question": "How many urban educational institutions are included in the programme?",
+        "options": [
+          "531",
+          "731",
+          "831",
+          "931"
+        ],
+        "answer": 3,
+        "explanation": "The programme includes 931 urban educational institutions."
+      },
+      {
+        "question": "Students of which classes are included in the Gramanubhava programme?",
+        "options": [
+          "VI, VII and VIII",
+          "VIII, IX and XI",
+          "IX, X and XII",
+          "VII, X and XII"
+        ],
+        "answer": 1,
+        "explanation": "The programme covers students of Classes VIII, IX and XI."
+      },
+      {
+        "question": "What is the main objective of Gramanubhava?",
+        "options": [
+          "Promote international education",
+          "Reduce the urban-rural gap and provide practical learning",
+          "Prepare students only for competitive examinations",
+          "Promote urban employment"
+        ],
+        "answer": 1,
+        "explanation": "Its objective is to reduce the urban-rural gap and provide practical learning outside classrooms."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-11T11:03:23"
+  },
+  {
+    "id": "ca-2026-09-010-008",
+    "date": "2026-09-10",
+    "category": "Important Days",
+    "question": "World Suicide Prevention Day (WSPD) is observed every year on which date?",
+    "options": [
+      "5 September",
+      "10 September",
+      "15 October",
+      "1 December"
+    ],
+    "answer": 1,
+    "explanation": ". WHO is a United Nations agency headquartered in Geneva, Switzerland, was formed on 7 April 1948 and the PDF lists Tedros Adhanom Ghebreyesus as its Director-General.",
+    "subQuestions": [
+      {
+        "question": "In which year was World Suicide Prevention Day started?",
+        "options": [
+          "1998",
+          "2000",
+          "2003",
+          "2005"
+        ],
+        "answer": 2,
+        "explanation": "World Suicide Prevention Day began in 2003."
+      },
+      {
+        "question": "Which organisations are associated with the beginning of World Suicide Prevention Day?",
+        "options": [
+          "UNICEF and UNESCO",
+          "IASP and WHO",
+          "WHO and IMF",
+          "UNDP and ILO"
+        ],
+        "answer": 1,
+        "explanation": "The PDF associates IASP and WHO with the beginning of the observance."
+      },
+      {
+        "question": "Where is the World Health Organization headquartered?",
+        "options": [
+          "Paris, France",
+          "Geneva, Switzerland",
+          "New York, USA",
+          "Vienna, Austria"
+        ],
+        "answer": 1,
+        "explanation": "WHO is headquartered in Geneva, Switzerland."
+      },
+      {
+        "question": "When was the World Health Organization formed?",
+        "options": [
+          "24 October 1945",
+          "7 April 1948",
+          "10 December 1948",
+          "1 January 1950"
+        ],
+        "answer": 1,
+        "explanation": "WHO was formed on 7 April 1948."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-11T11:03:23"
+  },
+  {
+    "id": "ca-2026-09-010-009",
+    "date": "2026-09-10",
+    "category": "Economy and CSR",
+    "question": "Who launched the first sector-wide comprehensive CSR (Corporate\nSocial Responsibility) framework for Indian companies?",
+    "options": [
+      "Ministry of Mines",
+      "Ministry of Coal and Coal India Limited",
+      "Ministry of Corporate Affairs",
+      "NITI Aayog"
+    ],
+    "answer": 0,
+    "explanation": ". Under Section 135 of the Companies Act, 2013, CSR provisions apply when specified financial criteria are met: net worth of ₹500 crore or more, turnover of ₹1,000 crore or more, or net profit of ₹5 crore or more. Eligible companies must spend at least 2% of the average net profit of the previous three financial years on CSR activities.",
+    "subQuestions": [
+      {
+        "question": "Who formally released the comprehensive CSR framework for the coal sector?",
+        "options": [
+          "G. Kishan Reddy",
+          "Piyush Goyal",
+          "Dharmendra Pradhan",
+          "Nitin Gadkari"
+        ],
+        "answer": 0,
+        "explanation": "The framework was released by G. Kishan Reddy."
+      },
+      {
+        "question": "What minimum percentage of average net profit of the previous three financial years must an eligible company spend on CSR?",
+        "options": [
+          "1%",
+          "2%",
+          "3%",
+          "5%"
+        ],
+        "answer": 1,
+        "explanation": "An eligible company must spend at least 2% on CSR activities."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-11T11:03:23"
+  },
+  {
+    "id": "ca-2026-09-010-010",
+    "date": "2026-09-10",
+    "category": "International",
+    "question": "Where is the 27th World Knowledge Forum 2026 being held?",
+    "options": [
+      "Tokyo, Japan",
+      "Seoul, South Korea",
+      "Singapore",
+      "Beijing, China"
+    ],
+    "answer": 1,
+    "explanation": "",
+    "subQuestions": [
+      {
+        "question": "What are the dates of the 27th World Knowledge Forum 2026?",
+        "options": [
+          "5-7 September 2026",
+          "8-10 September 2026",
+          "10-12 September 2026",
+          "15-17 September 2026"
+        ],
+        "answer": 1,
+        "explanation": "The forum is scheduled from 8 to 10 September 2026."
+      },
+      {
+        "question": "Which organisation started the World Knowledge Forum?",
+        "options": [
+          "Maekyung Media Group",
+          "United Nations",
+          "World Bank",
+          "OECD"
+        ],
+        "answer": 0,
+        "explanation": "The World Knowledge Forum was started by Maekyung Media Group."
+      },
+      {
+        "question": "What is the capital of South Korea?",
+        "options": [
+          "Busan",
+          "Incheon",
+          "Seoul",
+          "Daegu"
+        ],
+        "answer": 2,
+        "explanation": "Seoul is the capital of South Korea."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-11T11:03:23"
   }
 ]

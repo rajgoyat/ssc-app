@@ -55,5 +55,24 @@
     "attemptStatus": "unattempted",
     "testAllowed": true,
     "special": false
+  },
+  {
+    "category": "ABCD",
+    "questionText": "Refer to the following letter series and answer the question. (Left) L U H T R B F G A O D Q S I X M C K W  (Right)\nHow many letters are there in the English alphabetical series between the letter which is sixth from the right end and seventh from the left end of the\nseries?",
+    "questionImage": null,
+    "options": [
+      "4",
+      "3",
+      "1",
+      "2"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/gif6pw0RvsI?si=p8dc9jYZQ37p5BRP&t=327",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtvcjf34ih3cnu",
+    "order": 60,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]

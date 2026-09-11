@@ -15,7 +15,7 @@
     "solutionImage": null,
     "order": 0,
     "attemptStatus": "unattempted",
-    "testAllowed": false,
+    "testAllowed": true,
     "special": false
   },
   {
@@ -204,7 +204,7 @@
     "solutionImage": null,
     "id": "mtbnsfgeu4gt9x",
     "order": 91,
-    "attemptStatus": "unattempted",
+    "attemptStatus": "correct",
     "testAllowed": true,
     "special": false
   },
@@ -226,5 +226,62 @@
     "attemptStatus": "unattempted",
     "testAllowed": true,
     "special": false
+  },
+  {
+    "category": "Algebra",
+    "questionText": "Simplify",
+    "questionImage": "/uploads/algebra/2f79165d5fc2034b4dd3716530225f69ba96b7f9402d1d2f48e7056772c198fd.png",
+    "options": [
+      "40",
+      "90",
+      "80",
+      "60"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/9Aq1HBiv1wE?si=GSdPmhdleERrfby5&t=1280",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtwm9k8f726rvd",
+    "order": 202,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Algebra",
+    "questionText": "the value of",
+    "questionImage": "/uploads/algebra/4c959914bd0e1a5d2ab5da24a6b89c17760159553a565327018090ccc12580e1.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/9Aq1HBiv1wE?si=ag0HNH1RuQNEvuoB&t=1091",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtwmb7hbt3p2i1",
+    "order": 203,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Algebra",
+    "questionText": "The value of : (2020 MAINS)",
+    "questionImage": "/uploads/algebra/ded6d09917e500a0e6586bc83f866dd90a4382d367061127a2f539fac2022920.png",
+    "options": [
+      "5/20",
+      "7/20",
+      "2/20",
+      "9/20"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/9Aq1HBiv1wE?si=ZzDQQeG8X7Pk33as&t=1843",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtwmd7c2rfkklm",
+    "order": 204,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]

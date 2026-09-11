@@ -40,6 +40,9 @@ ENGLISH_DIR = ROOT / "English"
 ENGLISH_VOCAB_FILE = ENGLISH_DIR / "vocab.json"
 ENGLISH_IDIOMS_FILE = ENGLISH_DIR / "idioms.json"
 ENGLISH_MISSING_FILE = ENGLISH_DIR / "missing.json"
+# Error-sentence MCQs are intentionally stored separately so the existing
+# vocab / idiom / missing persistence contract stays unchanged.
+ENGLISH_ERROR_SENTENCES_FILE = ENGLISH_DIR / "error_sentences.json"
 
 
 def _english_array(payload, key):
@@ -126,6 +129,129 @@ def ensure_english_data_files():
             json.dumps(document, ensure_ascii=False, indent=2),
             encoding="utf-8",
         )
+
+
+def ensure_english_error_sentences_file():
+    """Create the separate Error Sentences question bank when it is missing."""
+    ENGLISH_DIR.mkdir(parents=True, exist_ok=True)
+    if ENGLISH_ERROR_SENTENCES_FILE.exists():
+        return
+    ENGLISH_ERROR_SENTENCES_FILE.write_text(
+        json.dumps({"errorQuestions": [], "moreQuestions": []}, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+
+
+def _validate_english_error_question(item, label="question"):
+    if not isinstance(item, dict):
+        raise ValueError(f"Each Error Sentences {label} must be a JSON object")
+
+    question = str(item.get("question", "")).strip()
+    if not question:
+        raise ValueError(f'Error Sentences {label} requires a non-empty "question"')
+
+    options = item.get("options")
+    if not isinstance(options, list) or not 2 <= len(options) <= 8:
+        raise ValueError(f"Error Sentences {label} must contain 2 to 8 options")
+    if any(not isinstance(option, str) or not option.strip() for option in options):
+        raise ValueError(f"Error Sentences {label} contains an empty or invalid option")
+
+    answer = item.get("answer")
+    if isinstance(answer, bool) or not isinstance(answer, int) or not 0 <= answer < len(options):
+        raise ValueError(f"Error Sentences {label} has an invalid correct-answer index")
+
+    sub_questions = item.get("subQuestions", [])
+    if sub_questions is None:
+        sub_questions = []
+    if not isinstance(sub_questions, list):
+        raise ValueError(f'Error Sentences {label} field "subQuestions" must be an array')
+    if len(sub_questions) > 50:
+        raise ValueError(f"Error Sentences {label} cannot contain more than 50 sub-questions")
+    for index, sub_question in enumerate(sub_questions, start=1):
+        # Sub-questions use the same MCQ shape; nested subQuestions are not used.
+        if isinstance(sub_question, dict) and sub_question.get("subQuestions"):
+            raise ValueError("Nested subQuestions inside an Error Sentences sub-question are not supported")
+        _validate_english_error_question(sub_question, f"sub-question {index}")
+
+    return item
+
+
+def load_english_question_banks():
+    """Load all English MCQ categories from English/error_sentences.json.
+
+    The existing filename is kept for backward compatibility.  The document now
+    stores both the Error-Sentences bank and the general More-MCQ bank so every
+    uploaded MCQ category is file-backed instead of browser-only.
+    """
+    ensure_english_error_sentences_file()
+    document = _read_json_object(ENGLISH_ERROR_SENTENCES_FILE)
+    error_questions = document.get("errorQuestions", [])
+    more_questions = document.get("moreQuestions", [])
+
+    if not isinstance(error_questions, list):
+        raise ValueError('error_sentences.json field "errorQuestions" must be an array')
+    if not isinstance(more_questions, list):
+        raise ValueError('error_sentences.json field "moreQuestions" must be an array')
+
+    for index, item in enumerate(error_questions, start=1):
+        _validate_english_error_question(item, f"question {index}")
+    for index, item in enumerate(more_questions, start=1):
+        _validate_english_error_question(item, f"More question {index}")
+
+    return {
+        "errorQuestions": error_questions,
+        "moreQuestions": more_questions,
+    }
+
+
+def load_english_error_sentences():
+    """Backward-compatible helper returning only the Error Sentences bank."""
+    return load_english_question_banks()["errorQuestions"]
+
+
+def persist_english_question_banks(payload):
+    """Persist Error Sentences and all additional English MCQ categories.
+
+    Either array may be omitted by an older client; the omitted bank is preserved.
+    """
+    if not isinstance(payload, dict):
+        raise ValueError("English MCQ payload must be a JSON object")
+
+    existing = load_english_question_banks()
+    error_questions = payload.get("errorQuestions", existing["errorQuestions"])
+    more_questions = payload.get("moreQuestions", existing["moreQuestions"])
+
+    if not isinstance(error_questions, list):
+        raise ValueError('English MCQ payload "errorQuestions" must be an array')
+    if not isinstance(more_questions, list):
+        raise ValueError('English MCQ payload "moreQuestions" must be an array')
+
+    for index, item in enumerate(error_questions, start=1):
+        _validate_english_error_question(item, f"question {index}")
+    for index, item in enumerate(more_questions, start=1):
+        _validate_english_error_question(item, f"More question {index}")
+
+    document = {
+        "errorQuestions": error_questions,
+        "moreQuestions": more_questions,
+    }
+    temp = ENGLISH_ERROR_SENTENCES_FILE.with_suffix(ENGLISH_ERROR_SENTENCES_FILE.suffix + ".tmp")
+    try:
+        temp.write_text(
+            json.dumps(document, ensure_ascii=False, indent=2),
+            encoding="utf-8",
+        )
+        temp.replace(ENGLISH_ERROR_SENTENCES_FILE)
+    finally:
+        if temp.exists():
+            temp.unlink()
+
+    return document
+
+
+def persist_english_error_sentences(payload):
+    """Backward-compatible helper: update Error Sentences and preserve More MCQs."""
+    return persist_english_question_banks(payload)["errorQuestions"]
 
 
 def load_english_data():
@@ -234,11 +360,38 @@ class UnifiedHandler(SimpleHTTPRequestHandler):
 
     def subject_from_request(self):
         path = urlparse(self.path).path.strip("/")
+
+        # API routes must be resolvable even when the browser sends no Referer.
+        # This is especially important when an API URL is opened directly,
+        # and it also makes the GK Manager independent of referrer policy.
         if path.startswith("api/english/"):
             return "english"
+
+        gk_api_paths = {
+            "api/health",
+            "api/gk-manager-data",
+            "api/current-user-questions",
+            "api/user-static-questions",
+            "api/static-source-files",
+            "api/date-images",
+            "api/changes",
+            "api/current-question-create",
+            "api/current-question-create-bulk",
+            "api/static-question-create",
+            "api/static-question-create-bulk",
+            "api/date-image-save",
+            "api/date-image-delete",
+            "api/gk-bulk-delete",
+            "api/gk-question-image",
+            "api/question-update",
+        }
+        if path in gk_api_paths:
+            return "gk"
+
         first = path.split("/", 1)[0].lower() if path else ""
         if first in SUBJECTS:
             return first
+
         referer = self.headers.get("Referer", "")
         referer_path = urlparse(referer).path.strip("/")
         first = referer_path.split("/", 1)[0].lower() if referer_path else ""
@@ -262,6 +415,19 @@ class UnifiedHandler(SimpleHTTPRequestHandler):
         path = urlparse(self.path).path
         subject = self.subject_from_request()
 
+        if path == "/api/english/error-sentences" and subject == "english":
+            try:
+                banks = load_english_question_banks()
+                self.send_json(HTTPStatus.OK, {
+                    "ok": True,
+                    "errorQuestions": banks["errorQuestions"],
+                    "moreQuestions": banks["moreQuestions"],
+                    "file": ENGLISH_ERROR_SENTENCES_FILE.name,
+                })
+            except (OSError, ValueError, json.JSONDecodeError, UnicodeDecodeError) as error:
+                self.send_json(HTTPStatus.BAD_REQUEST, {"ok": False, "error": str(error)})
+            return
+
         if path == "/api/english/data" and subject == "english":
             try:
                 self.send_json(HTTPStatus.OK, {"ok": True, "data": load_english_data(), "files": ["vocab.json", "idioms.json", "missing.json"]})
@@ -281,9 +447,27 @@ class UnifiedHandler(SimpleHTTPRequestHandler):
                 "staticQuestionCreateEndpoint": True,
                 "staticQuestionBulkCreateEndpoint": True,
                 "staticSourceFilesEndpoint": True,
+                "managerEndpoint": True,
+                "bulkDeleteEndpoint": True,
+                "questionImageUpdateEndpoint": True,
                 "gkServerVersion": getattr(GK, "SERVER_VERSION", "unknown"),
                 "baseDir": str(GK.BASE_DIR),
             })
+            return
+
+        if path == "/api/gk-manager-data" and subject == "gk":
+            try:
+                query = parse_qs(urlparse(self.path).query)
+                section = str(query.get("section", ["all"])[0]).strip() or "all"
+                questions = GK.list_manager_questions(section)
+                self.send_json(HTTPStatus.OK, {
+                    "ok": True,
+                    "section": section,
+                    "count": len(questions),
+                    "questions": questions,
+                })
+            except (OSError, ValueError, json.JSONDecodeError, UnicodeDecodeError) as error:
+                self.send_json(HTTPStatus.BAD_REQUEST, {"ok": False, "error": str(error)})
             return
 
         if path == "/api/current-user-questions" and subject == "gk":
@@ -353,6 +537,15 @@ class UnifiedHandler(SimpleHTTPRequestHandler):
                 saved = subject_module(subject).persist_questions(payload)
                 self.send_json(HTTPStatus.OK, {"questions": saved})
                 return
+            if path == "/api/english/error-sentences" and subject == "english":
+                saved = persist_english_question_banks(payload)
+                self.send_json(HTTPStatus.OK, {
+                    "ok": True,
+                    "errorQuestions": saved["errorQuestions"],
+                    "moreQuestions": saved["moreQuestions"],
+                    "file": ENGLISH_ERROR_SENTENCES_FILE.name,
+                })
+                return
             if path == "/api/english/data" and subject == "english":
                 saved = persist_english_data(payload)
                 self.send_json(HTTPStatus.OK, {"ok": True, "data": saved, "files": ["vocab.json", "idioms.json", "missing.json"]})
@@ -416,6 +609,24 @@ class UnifiedHandler(SimpleHTTPRequestHandler):
                 })
                 return
 
+            if path == "/api/gk-bulk-delete" and subject == "gk":
+                result = GK.delete_questions_by_ids(payload.get("ids", []))
+                self.send_json(HTTPStatus.OK, {"ok": True, **result})
+                return
+
+            if path == "/api/gk-question-image" and subject == "gk":
+                question_id = str(payload.get("id", "")).strip()
+                if not question_id:
+                    raise ValueError("Question id is required.")
+                file_name = GK.update_question_image(
+                    question_id,
+                    payload.get("dataUrl", ""),
+                    payload.get("name", ""),
+                    bool(payload.get("remove")),
+                )
+                self.send_json(HTTPStatus.OK, {"ok": True, "file": file_name, "id": question_id})
+                return
+
             if path == "/api/question-update" and subject == "gk":
                 question_id = str(payload.get("id", "")).strip()
                 action = str(payload.get("action", "")).strip()
@@ -465,6 +676,9 @@ if __name__ == "__main__":
     print("GK image API: GET /api/date-images")
     print("GK image API: POST /api/date-image-save")
     print("GK image API: POST /api/date-image-delete")
+    print("GK manager API: GET /api/gk-manager-data")
+    print("GK manager API: POST /api/gk-bulk-delete")
+    print("GK manager API: POST /api/gk-question-image")
     try:
         server.serve_forever()
     except KeyboardInterrupt:

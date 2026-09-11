@@ -36,5 +36,24 @@
     "attemptStatus": "unattempted",
     "testAllowed": false,
     "special": false
+  },
+  {
+    "category": "Clock",
+    "questionText": "How many times these angles formed in a clock in 24 hours  0 deg ,  180 deg,  90 deg  ?\n_______________How many times in a day, the hands of a clock are straight line?",
+    "questionImage": null,
+    "options": [
+      "22 22 44     = 44",
+      "44 22 44     = 42",
+      "44 22 22     = 44",
+      "22 44 22     = 48"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtvd4ml1i250wj",
+    "order": 62,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]

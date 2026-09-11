@@ -1,6 +1,14 @@
 {
   "idioms": [
     {
+      "en": "a blessing in disguise",
+      "hi": "छिपा हुआ वरदान",
+      "meaning": "Something that seems bad at first but later proves helpful.",
+      "sentence": "Missing that bus was a blessing in disguise.",
+      "syn": "hidden benefit",
+      "ant": "misfortune"
+    },
+    {
       "en": "A Brown Study",
       "hi": "गहरी सोच में डूबा हुआ",
       "meaning": "Lost in deep thought",
@@ -55,6 +63,14 @@
       "sentence": "The phrase \"A Long Shot\" is used to express this idea: An attempt with very slim chance.",
       "syn": "To Grasp at Straws",
       "ant": "Use a sound reliable plan"
+    },
+    {
+      "en": "a person who loves mankind",
+      "hi": "मानव-प्रेमी / परोपकारी व्यक्ति",
+      "meaning": "A person who loves humanity and works for the welfare of others; a philanthropist.",
+      "sentence": "He is known as a person who loves mankind and helps people in need.",
+      "syn": "philanthropist",
+      "ant": "misanthrope"
     },
     {
       "en": "A Pound of Flesh",
@@ -503,6 +519,14 @@
       "sentence": "The phrase \"Break the Duck\" is used to express this idea: Achieve first success after failures.",
       "syn": "Break One's Duck",
       "ant": "Remain unsuccessful"
+    },
+    {
+      "en": "break the ice",
+      "hi": "झिझक दूर करना",
+      "meaning": "To make people feel more relaxed when meeting or starting a conversation.",
+      "sentence": "He told a joke to break the ice.",
+      "syn": "start conversation",
+      "ant": "create tension"
     },
     {
       "en": "Breathe One's Last",
@@ -3505,6 +3529,14 @@
       "ant": "Use a sound reliable plan"
     },
     {
+      "en": "to have a bone to pick with someone",
+      "hi": "किसी से शिकायत या विवाद होना",
+      "meaning": "To have a complaint or an issue that you want to discuss with someone.",
+      "sentence": "I have a bone to pick with him about his rude behaviour.",
+      "syn": "have a grievance",
+      "ant": "be on good terms"
+    },
+    {
       "en": "To Make Bricks Without Straw",
       "hi": "बिना साधनों के काम करने को कोशिश करना",
       "meaning": "Attempt without necessary resources",
@@ -3543,6 +3575,14 @@
       "sentence": "The phrase \"To Sup with the Devil\" is used to express this idea: Get entangled with one's own bad alliance.",
       "syn": "Hoist with One's Own Petard",
       "ant": "Avoid harmful alliances"
+    },
+    {
+      "en": "to throw in the towel",
+      "hi": "हार मान लेना",
+      "meaning": "To give up or admit defeat.",
+      "sentence": "After several failed attempts, he decided to throw in the towel.",
+      "syn": "give up",
+      "ant": "persevere"
     },
     {
       "en": "To Upset the Apple Cart",

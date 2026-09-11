@@ -213,7 +213,7 @@ const august2026CurrentAffairs = {
       ],
       answer: 1,
       explanation:
-        "The Government of India announced the Regulated Electronic Mineral Exchange system for major minerals trading.",
+        "Main purpose:\n- Transparent trading\n- Better price discovery\n- Standardised/regulated transactions\n- Buyers aur sellers ko organised platform\nOfficial rules ke according, mineral exchange electronic trading system par operate karega.",
     },
     {
       id: "ca-2026-08-19-018",
@@ -243,7 +243,7 @@ const august2026CurrentAffairs = {
       ],
       answer: 2,
       explanation:
-        "The Karnataka Cabinet recently approved the “Sandhya Kiran” contributory cashless healthcare scheme for State Government pensioners below 70 years, family pensioners, and eligible dependents.",
+        "Karnataka → Sandhya Kiran → Pensioners <70 years + dependants → Cashless healthcare → ₹5 lakh/year → AB-ArK \n\nInitial beneficiaries: About 4.93 lakh\nFramework: Ayushman Bharat–Arogya Karnataka (AB-ArK)\nImplementing agency: Suvarna Arogya Suraksha Trust",
     },
     {
       id: "ca-2026-08-19-020",
@@ -2924,7 +2924,7 @@ const august2026CurrentAffairs = {
 
   { id: 'ca-2026-08-026', category: 'National', question: 'What annual outlay is mentioned for the Annapoorani Super Six Scheme?', options: ['₹2,000 crore', '₹3,000 crore', '₹4,000 crore', '₹5,000 crore'], answer: 2, explanation: 'The source gives an annual outlay of about ₹4,000 crore.' },
 
-  { id: 'ca-2026-08-027', category: 'National', question: 'Approximately how many families are expected to benefit from the Annapoorani Super Six Scheme?', options: ['30 lakh families', '80 lakh families', '1.3 crore families', '2 crore families'], answer: 2, explanation: 'Around \n1.3 crore families are expected to benefit.' },
+  { id: 'ca-2026-08-027', category: 'National', question: 'Approximately how many families are expected to benefit from the Annapoorani Super Six Scheme?', options: ['30 lakh families', '80 lakh families', '1.3 crore families', '2 crore families'], answer: 2, explanation: "Beneficiaries → ~1.30 crore families\nBenefit → 3 free LPG cylinders per year\nEligibility → Family annual income up to ₹2.5 lakh\nStart → Pongal, January 2027\nAnnual allocation → ~₹4,000 crore\nState → Tamil Nadu"},
 
   { id: 'ca-2026-08-028', category: 'Science & Tech', question: 'Which substance is added to LPG to give it a detectable smell?', options: ['Methanol', 'Ethyl Mercaptan', 'Ethanol', 'Propylene Glycol'], answer: 1, explanation: 'Ethyl Mercaptan is added to LPG to give it a characteristic smell.' },
 
@@ -2948,11 +2948,11 @@ const august2026CurrentAffairs = {
 
   { id: 'ca-2026-08-038', category: 'Sports', question: 'Which club won the 135th Durand Cup 2026?', options: ['Mohun Bagan Super Giant', 'East Bengal FC', 'FC Goa', 'Bengaluru FC'], answer: 1, explanation: 'East Bengal FC won the 135th Durand Cup 2026.' },
 
-  { id: 'ca-2026-08-039', category: 'Sports', question: 'Which team did East Bengal FC defeat in the final of the 135th Durand Cup 2026?', options: ['Bengaluru FC', 'FC Goa', 'Mohun Bagan Super Giant', 'Kerala Blasters FC'], answer: 2, explanation: 'East Bengal FC defeated Mohun Bagan Super Giant in the final.' },
+  { id: 'ca-2026-08-039', category: 'Sports', question: 'Which team did East Bengal FC defeat in the final of the 135th Durand Cup 2026?', options: ['Bengaluru FC', 'FC Goa', 'Mohun Bagan Super Giant', 'Kerala Blasters FC'], answer: 2, explanation: "Vivekananda Yuba Bharati Krirangan, Kolkata\n\n🏆 Winner\tEast Bengal FC\n🥈 Runner-up\tMohun Bagan Super Giant\nFinal Score\tEast Bengal 4–1 Mohun Bagan", subQuestions: [{"question": "when durand cup started", "options": ["1888", "1896"], "answer": 0, "explanation": ""}, {"question": "Calcutta is the capital of", "options": ["Nepal", "West Bengal"], "answer": 1, "explanation": ""}],},
 
   { id: 'ca-2026-08-040', category: 'Sports', question: 'The 2026 Durand Cup title was East Bengal\'s which Durand Cup title?', options: ['15th', '16th', '17th', '18th'], answer: 2, explanation: 'East Bengal won its 17th Durand Cup title in 2026.' },
 
-  { id: 'ca-2026-08-041', category: 'Sports', question: 'In which year was the Durand Cup established?', options: ['1885', '1888', '1890', '1901'], answer: 1, explanation: 'The Durand Cup was established in 1888 at Shimla.' },
+  { id: 'ca-2026-08-041', category: 'Sports', question: "In which year was the Durand Cup established? It related to football", options: ['1885', '1888', '1890', '1901'], answer: 1, explanation: 'The Durand Cup was established in 1888 at Shimla.' , subQuestions: [{"question": "Who founded the Durand Cup?", "options": ["Sir Mortimer Durand", "Lord Curzon"], "answer": 0, "explanation": "The tournament was named after Sir Mortimer Durand."}, {"question": "Where was the Durand Cup originally started?", "options": ["Shimla", "Kolkata"], "answer": 0, "explanation": "The Durand Cup was originally started in Shimla in 1888."}, {"question": "Which country hosts the Durand Cup?", "options": ["India", "England"], "answer": 0, "explanation": "The Durand Cup is held in India."}],},
 
   { id: 'ca-2026-08-042', category: 'Defence & Security', question: 'Where did the Indian Army deploy the country\'s first Baaz Drone Battalion?', options: ['Amritsar', 'Jalandhar Cantonment', 'Pathankot', 'Firozpur'], answer: 1, explanation: 'The Indian Army\'s XI Vajra Corps deployed the first Baaz Drone Battalion at Jalandhar Cantonment.' },
 
@@ -2962,7 +2962,7 @@ const august2026CurrentAffairs = {
 
   { id: 'ca-2026-08-045', category: 'Sports', question: "Which city will host the 2nd Commonwealth Cue Sports Championships in 2026? held at veer savarkar sports from 7-10 oct", options: ['Mumbai', 'Ahmedabad', 'New Delhi', 'Jaipur'], answer: 1, explanation: "Main 5 disciplines hain: Snooker, English Billiards, Heyball, 10-Ball Pool aur Blackball. Inmein men's aur women's events honge. Official WCBS information ke according 10 medal events planned hain."},
 
-  { id: 'ca-2026-08-046', category: 'Sports', question: 'When will the 2nd Commonwealth Cue Sports Championships 2026 be held?', options: ['1-4 October 2026', '7-10 October 2026', '12-15 October 2026', '20-23 October 2026'], answer: 1, explanation: "2nd Commonwealth Cue Sports Championship → 2026 → Mauritius 🇲🇺 → Commonwealth nations\nCue Sports ka matlab aise games jahan cue stick se balls ko hit kiya jata hai, jaise:"},
+  { id: 'ca-2026-08-046', category: 'Sports', question: 'When will the 2nd Commonwealth Cue Sports Championships 2026 be held?', options: ['1-4 October 2026', '7-10 October 2026', '12-15 October 2026', '20-23 October 2026'], answer: 1, explanation: "2nd Commonwealth Cue Sports Championship → 2026 → Mauritius 🇲🇺 → Commonwealth nations\nCue Sports ka matlab aise games jahan cue stick se balls ko hit kiya jata hai, jaise:", subQuestions: [{"question": "Which city will host the 2nd Commonwealth Cue Sports Championships 2026?", "options": ["Ahmedabad", "Mumbai", "New Delhi", "Pune"], "answer": 0, "explanation": "Ahmedabad, Gujarat will host the 2nd Commonwealth Cue Sports Championships 2026."}, {"question": "What is the venue of the Commonwealth Cue Sports Championships 2026?", "options": ["Veer Savarkar Sports Complex", "Narendra Modi Stadium", "Jawaharlal Nehru Stadium", "Kalinga Stadium"], "answer": 0, "explanation": "The championship will be held at the Veer Savarkar Sports Complex in Ahmedabad."}, {"question": "Where was the first Commonwealth Cue Sports Championships held in 2025?", "options": ["Mauritius", "India", "Malaysia", "South Africa"], "answer": 0, "explanation": "The inaugural Commonwealth Cue Sports Championships was held in Mauritius in 2025."}, {"question": "Athletes from approximately how many countries are expected to participate in the 2026 championships?", "options": ["25", "35", "45"], "answer": 2, "explanation": "Athletes from about 45 countries are expected to participate."}, {"question": "How many medal events will feature in the Commonwealth Cue Sports Championships 2026?", "options": ["8", "10", "12"], "answer": 2, "explanation": "The championship will feature 10 medal events across cue-sport disciplines for men and women."}],},
 
   { id: 'ca-2026-08-047', category: 'Sports', question: 'Athletes from how many countries are expected at the 2nd Commonwealth Cue Sports Championships?', options: ['35', '40', '45', '50'], answer: 2, explanation: 'The source says athletes from 45 countries will participate.' },
 
@@ -2978,7 +2978,7 @@ const august2026CurrentAffairs = {
 
   { id: 'ca-2026-08-053', category: 'Science & Tech', question: 'In which state was the world\'s first IVF female calf of the indigenous Lakhimi breed born?', options: ['Bihar', 'Assam', 'Meghalaya', 'West Bengal'], answer: 1, explanation: 'The 26 August practice sheet gives Assam as the answer.' },
 
-  { id: 'ca-2026-08-054', category: 'International', question: 'Which famous monastery in Ladakh was visited by US Ambassador Sergio Gor?', options: ['Hemis Monastery', 'Alchi Monastery', 'Thiksey Monastery', 'Diskit Monastery'], answer: 2, explanation: 'The supplied 26 August sheet identifies Thiksey Monastery.' },
+  { id: 'ca-2026-08-054', category: 'International', question: 'Which famous monastery in Ladakh was visited by US Ambassador Sergio Gor?', options: ['Hemis Monastery', 'Alchi Monastery', 'Thiksey Monastery', 'Diskit Monastery'], answer: 2, explanation: "Highlights: During his trip, Gor explored the site's rich Buddhist heritage, viewed its 15-meter-high Maitreya Buddha statue, and also went river rafting in the regio"},
 
   { id: 'ca-2026-08-055', category: 'Science & Tech', question: 'Where were the second World Humanoid Robot Games held?', options: ['Shanghai', 'Beijing', 'Tokyo', 'Seoul'], answer: 1, explanation: "Isse simple language mein robots ka Olympics-type competition samjho.\n→ 2,056 humanoid robots, 666 teams aur 16 countries participated.\n→ Robots ne running, football, weightlifting jaise sports ke saath factory, hotel, home aur emergency-response jaise practical tasks bhi perform kiye.\n\nExam trick → 2nd World Humanoid Robot Games → Beijing → China → 2026 ✅"},
 
@@ -3062,7 +3062,7 @@ const august2026CurrentAffairs = {
 
   { id: 'ca-2026-08-095', category: 'Sports', question: 'Where will the 20th Asian Games 2026 be held?', options: ['Tokyo, Japan', 'Aichi-Nagoya, Japan', 'Seoul, South Korea', 'Doha, Qatar'], answer: 1, explanation: "20th → 2026 → Aichi–Nagoya, Japan 🇯🇵\n21st → 2030 → Doha, Qatar 🇶🇦\n22nd → 2034 → Riyadh, Saudi Arabia 🇸🇦\n\n🧠 Exam note\n\n20th Asian Games → Aichi–Nagoya, Japan → 19 Sept–4 Oct 2026 → Japan hosting for 3rd time → Motto: “Imagine One Asia” → India: 492 athletes."},
 
-  { id: 'ca-2026-08-096', category: 'Sports', question: 'How many Indian athletes were cleared by the Ministry of Youth Affairs and Sports for the 20th Asian Games 2026?', options: ['392', '442', '492', '592'], answer: 2, explanation: 'The supplied sheet states 492 athletes.' },
+  { id: 'ca-2026-08-096', category: 'Sports', question: 'How many Indian athletes were cleared by the Ministry of Youth Affairs and Sports for the 20th Asian Games 2026?', options: ["392", "442", "503", "592"], answer: 2, explanation: "→ Asian Games 2026 → Aichi–Nagoya, Japan → 19 Sep–4 Oct → 502 athletes → 35 sports."},
 
   { id: 'ca-2026-08-097', category: 'National', question: 'Veteran actress Sowcar Janaki hailed from which Indian state, according to the supplied sheet?', options: ['Tamil Nadu', 'Andhra Pradesh', 'Karnataka', 'Kerala'], answer: 2, explanation: "Sowcar Janaki passed away on 21 August 2026 at age 94 in Chennai. She acted in 400+ films across Telugu, Tamil, Kannada and Malayalam cinema and received the Padma Shri in 2022.\n\nExam trick: Sowcar Janaki → Andhra Pradesh → Rajahmundry → Actress → Padma Shri 2022 → died 2026."},
 

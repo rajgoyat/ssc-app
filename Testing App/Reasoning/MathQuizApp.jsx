@@ -1,5 +1,3 @@
-
-
 const { useState, useEffect, useRef } = React;
 function Icon({ symbol, size = 16 }) {
   return React.createElement("span", { style: { display: "inline-block", width: size, textAlign: "center", fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, lineHeight: 1 } }, symbol);
@@ -1044,6 +1042,10 @@ function App() {
   const [toast, setToast] = useState("");
   const [topicFilter, setTopicFilter] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
+  // Remembers the topic list from the previous render, so the test-config
+  // sync effect can tell whether the user previously had "all topics"
+  // selected and should keep tracking newly added topics automatically.
+  const prevTopicsRef = useRef([]);
 
   useEffect(() => {
     let cancelled = false;
@@ -1251,12 +1253,26 @@ function App() {
   const filterList = (items) => filterBySearch(filterByTopic(items));
 
   useEffect(() => {
+    const previousTopics = prevTopicsRef.current;
+
     setTestConfig((c) => {
       const currentTopics = Array.isArray(c.topics) ? c.topics : [];
+
+      // If the user had every known topic selected before this render
+      // (i.e. "Select all" was in effect), keep it selecting *all* topics
+      // even as new topics get created — otherwise a question added under
+      // a brand-new topic would be silently excluded from every test pool.
+      const wasAllSelected =
+        previousTopics.length > 0 &&
+        currentTopics.length === previousTopics.length &&
+        previousTopics.every((t) => currentTopics.includes(t));
+
       const validTopics = currentTopics.filter((topic) => topics.includes(topic));
       const nextTopics = currentTopics.length === 0
         ? []
-        : validTopics;
+        : wasAllSelected
+          ? [...topics]
+          : validTopics;
       const sourceList =
         c.pool === "weak"
           ? correctList
@@ -1281,6 +1297,8 @@ function App() {
 
       return unchanged ? c : { ...c, pool, topics: nextTopics, count };
     });
+
+    prevTopicsRef.current = topics;
   }, [questions, allowedList.length, correctList.length, hiddenList.length, specialList.length, topics.join("|")]);
 
   function startTest() {

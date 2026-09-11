@@ -14,7 +14,8 @@ from datetime import datetime
 
 HOST = "127.0.0.1"
 PORT = 8000
-SERVER_VERSION = "2026-09-10-static-file-category-storage-v9"
+SERVER_VERSION = "2026-09-11-current-date-object-v14"
+USE_FSYNC = os.environ.get("GK_FSYNC", "0").strip() == "1"
 BASE_DIR = Path(__file__).resolve().parent
 
 USER_CURRENT_AFFAIRS_FILE = BASE_DIR / "user-current-affairs.json"
@@ -61,7 +62,8 @@ def atomic_write(path: Path, text: str):
         with os.fdopen(fd, "w", encoding="utf-8", newline="") as f:
             f.write(text)
             f.flush()
-            os.fsync(f.fileno())
+            if USE_FSYNC:
+                os.fsync(f.fileno())
         os.replace(temp_name, path)
     finally:
         if os.path.exists(temp_name):
@@ -79,7 +81,8 @@ def atomic_write_bytes(path: Path, data: bytes):
         with os.fdopen(fd, "wb") as f:
             f.write(data)
             f.flush()
-            os.fsync(f.fileno())
+            if USE_FSYNC:
+                os.fsync(f.fileno())
         os.replace(temp_name, path)
     finally:
         if os.path.exists(temp_name):
@@ -725,8 +728,8 @@ def normalize_bulk_static_payload(payload):
         raise ValueError('"questions" must be an array.')
     if not raw_questions:
         raise ValueError("Question array cannot be empty.")
-    if len(raw_questions) > 200:
-        raise ValueError("Maximum 200 Static GK questions can be added at once.")
+    if len(raw_questions) > 500:
+        raise ValueError("Maximum 500 Static GK questions can be added at once.")
 
     cleaned = []
     for position, raw_question in enumerate(raw_questions, start=1):
@@ -837,6 +840,12 @@ def update_user_static_gk_question(question_id: str, action: str, value):
         elif action == "subQuestions":
             item["subQuestions"] = normalize_sub_questions(value)
 
+        elif action == "category":
+            category = str(value or "").strip()
+            if not category:
+                raise ValueError("Category cannot be empty.")
+            item["category"] = category
+
         elif action == "add-note":
             note = str(value or "").strip()
             if not note:
@@ -865,8 +874,8 @@ def normalize_bulk_current_affairs_payload(payload):
         raise ValueError('"questions" must be an array.')
     if not raw_questions:
         raise ValueError("Question array cannot be empty.")
-    if len(raw_questions) > 100:
-        raise ValueError("Maximum 100 main questions can be added at once.")
+    if len(raw_questions) > 500:
+        raise ValueError("Maximum 500 main questions can be added at once.")
 
     cleaned = []
     for position, raw_question in enumerate(raw_questions, start=1):
@@ -877,14 +886,8 @@ def normalize_bulk_current_affairs_payload(payload):
         # The date selected above the array is authoritative for every item.
         item["date"] = date
 
-        # Bulk mode intentionally does not carry base64 images. Images can be
-        # attached later to the exact generated question ID from the quiz UI.
-        if str(item.get("questionImageDataUrl", "") or "").strip():
-            raise ValueError(
-                f"Main question {position}: images are not supported inside bulk array mode. "
-                "Save the questions first, then attach an image to the generated question ID."
-            )
-
+        # Bulk mode may carry an image for an item. The normalizer validates it;
+        # the creator stores it after the final generated question ID is known.
         cleaned.append(normalize_user_question_payload(item))
 
     return date, cleaned
@@ -907,16 +910,24 @@ def create_user_current_affairs_questions(payload):
             clean = dict(clean_source)
             question_id = f"{prefix}-{start_sequence + offset:03d}"
 
-            # Bulk mode has no image data; remove transport-only fields.
-            clean.pop("questionImageDataUrl", None)
-            clean.pop("questionImageName", None)
+            image_data_url = clean.pop("questionImageDataUrl", "")
+            image_name = clean.pop("questionImageName", "")
+            image_url = (
+                save_user_question_image(question_id, date, image_data_url)
+                if image_data_url
+                else ""
+            )
 
             record = {
                 "id": question_id,
                 **clean,
-                "questionImage": "",
-                "questionImageId": "",
-                "questionImageName": "",
+                "questionImage": image_url,
+                "questionImageId": (
+                    f"img-{re.sub(r'[^A-Za-z0-9_-]', '_', question_id)}-001"
+                    if image_url
+                    else ""
+                ),
+                "questionImageName": image_name if image_url else "",
                 "source": "user-upload",
                 "createdAt": datetime.now().isoformat(timespec="seconds"),
             }
@@ -1010,6 +1021,12 @@ def update_user_current_affairs_question(question_id: str, action: str, value):
 
         elif action == "subQuestions":
             item["subQuestions"] = normalize_sub_questions(value)
+
+        elif action == "category":
+            category = str(value or "").strip()
+            if not category:
+                raise ValueError("Category cannot be empty.")
+            item["category"] = category
 
         elif action == "add-note":
             note = str(value or "").strip()
@@ -1364,6 +1381,17 @@ def update_question(
     action: str,
     value
 ):
+    # Image storage needs context (Current Affairs date / Static GK topic),
+    # so it is handled by the dedicated manager helper below.
+    if action == "image":
+        payload = value if isinstance(value, dict) else {}
+        return update_question_image(
+            question_id,
+            payload.get("dataUrl", ""),
+            payload.get("name", ""),
+            bool(payload.get("remove")),
+        )
+
     try:
         path, text = find_question_file(
             question_id
@@ -1503,6 +1531,17 @@ def update_question(
             + new_obj
             + text[end:]
         )
+
+    elif action == "category":
+        category = str(value if value is not None else "").strip()
+        if not category:
+            raise ValueError("Category cannot be empty.")
+        new_obj = replace_or_add_field(
+            obj,
+            "category",
+            json.dumps(category, ensure_ascii=False),
+        )
+        new_text = text[:start] + new_obj + text[end:]
 
     elif action == "explanation":
         explanation = str(
@@ -1706,24 +1745,98 @@ def _find_matching_square(text: str, start: int):
 
 
 def _static_question_objects_from_text(text: str):
-    starts = set()
-    objects = []
-    id_pattern = re.compile(
-        r"(?<![A-Za-z0-9_$])[\"']?id[\"']?\s*:\s*"
-        r"(?:\"(?:\\.|[^\"\\])*\"|'(?:\\.|[^'\\])*')",
-        re.DOTALL,
-    )
-    for match in id_pattern.finditer(text):
-        try:
-            start, end = find_object_bounds(text, match.start())
-        except Exception:
-            continue
-        if start in starts:
-            continue
-        starts.add(start)
-        objects.append(text[start:end])
-    return objects
+    """Return only top-level question objects from the file's main JS array.
 
+    Static GK files have the shape:
+        const staticHistoryQuestions = [
+            { ...question... },
+            { ...question..., subQuestions: [{...}] },
+        ];
+
+    We intentionally ignore nested objects such as subQuestions here.  This
+    keeps parsing linear even for very large files with long explanations.
+    """
+    match = re.search(
+        r"\b(?:const|let|var)\s+[A-Za-z_$][A-Za-z0-9_$]*\s*=\s*\[",
+        text,
+    )
+    if not match:
+        return []
+
+    array_start = text.find("[", match.start())
+    if array_start < 0:
+        return []
+
+    try:
+        array_end = _find_matching_square(text, array_start)
+    except ValueError:
+        return []
+
+    objects = []
+    object_start = None
+    brace_depth = 0
+    quote = None
+    escaped = False
+    line_comment = False
+    block_comment = False
+    i = array_start + 1
+
+    while i < array_end:
+        ch = text[i]
+        nxt = text[i + 1] if i + 1 < array_end else ""
+
+        if line_comment:
+            if ch in "\r\n":
+                line_comment = False
+            i += 1
+            continue
+
+        if block_comment:
+            if ch == "*" and nxt == "/":
+                block_comment = False
+                i += 2
+            else:
+                i += 1
+            continue
+
+        if quote:
+            if escaped:
+                escaped = False
+            elif ch == "\\":
+                escaped = True
+            elif ch == quote:
+                quote = None
+            i += 1
+            continue
+
+        if ch == "/" and nxt == "/":
+            line_comment = True
+            i += 2
+            continue
+        if ch == "/" and nxt == "*":
+            block_comment = True
+            i += 2
+            continue
+        if ch in ("'", '"', "`"):
+            quote = ch
+            i += 1
+            continue
+
+        if ch == "{":
+            if brace_depth == 0:
+                object_start = i
+            brace_depth += 1
+        elif ch == "}" and brace_depth:
+            brace_depth -= 1
+            if brace_depth == 0 and object_start is not None:
+                obj = text[object_start:i + 1]
+                if _extract_js_string_field(obj, "id").strip():
+                    objects.append(obj)
+                object_start = None
+
+        i += 1
+
+    return objects
 
 def _static_file_question_records(path: Path):
     try:
@@ -1740,6 +1853,11 @@ def _static_file_question_records(path: Path):
 
 
 def _static_topic_map_from_aggregator():
+    """Map question-array variable names to the visible Static GK topic.
+
+    Supports all variable names used by static-gk.js, including names that do
+    not end in "Questions" (for example staticGovSchemes and testQuestions).
+    """
     if not STATIC_GK_AGGREGATOR_FILE.exists():
         return {}
     try:
@@ -1749,28 +1867,37 @@ def _static_topic_map_from_aggregator():
 
     mapping = {}
 
-    object_pattern = re.compile(
-        r"(?P<key>\"(?:\\.|[^\"\\])*\"|'(?:\\.|[^'\\])*'|[A-Za-z_$][A-Za-z0-9_$]*)"
-        r"\s*:\s*(?P<var>static[A-Za-z0-9_$]+Questions)\b"
+    # Restrict parsing to the staticGKCategories object when possible.
+    object_match = re.search(
+        r"\bstaticGKCategories\s*=\s*\{(?P<body>.*?)\}\s*;",
+        text,
+        re.DOTALL,
     )
-    for match in object_pattern.finditer(text):
+    body = object_match.group("body") if object_match else text
+
+    pair_pattern = re.compile(
+        r"(?P<key>\"(?:\\.|[^\"\\])*\"|'(?:\\.|[^'\\])*'|[A-Za-z_$][A-Za-z0-9_$]*)"
+        r"\s*:\s*(?P<var>[A-Za-z_$][A-Za-z0-9_$]*)\b"
+    )
+    for match in pair_pattern.finditer(body):
         raw_key = match.group("key")
         if raw_key[:1] in ("'", '"'):
             key = _decode_js_string_literal(raw_key)
         else:
-            key = _static_pretty_name_from_stem(raw_key)
+            key = raw_key
         mapping[match.group("var")] = key
 
+    # Also support later assignments such as:
+    # staticGKCategories["History"] = staticHistoryQuestions;
     assignment_pattern = re.compile(
         r"staticGKCategories\s*\[\s*"
         r"(?P<key>\"(?:\\.|[^\"\\])*\"|'(?:\\.|[^'\\])*')"
-        r"\s*\]\s*=\s*(?P<var>static[A-Za-z0-9_$]+Questions)\b"
+        r"\s*\]\s*=\s*(?P<var>[A-Za-z_$][A-Za-z0-9_$]*)\b"
     )
     for match in assignment_pattern.finditer(text):
         mapping[match.group("var")] = _decode_js_string_literal(match.group("key"))
 
     return mapping
-
 
 def list_static_source_files():
     STATIC_GK_DATA_DIR.mkdir(parents=True, exist_ok=True)
@@ -2120,8 +2247,8 @@ def _resolve_static_target(payload):
 def _create_static_records_in_source(source, category: str, raw_questions):
     if not isinstance(raw_questions, list) or not raw_questions:
         raise ValueError("Static GK question array cannot be empty.")
-    if len(raw_questions) > 200:
-        raise ValueError("Maximum 200 Static GK questions can be added at once.")
+    if len(raw_questions) > 500:
+        raise ValueError("Maximum 500 Static GK questions can be added at once.")
 
     path = source["path"]
     variable = source["variable"]
@@ -2190,8 +2317,8 @@ def create_user_static_questions(payload):
         raise ValueError('"questions" must be an array.')
     if not raw_questions:
         raise ValueError("Static GK question array cannot be empty.")
-    if len(raw_questions) > 200:
-        raise ValueError("Maximum 200 Static GK questions can be added at once.")
+    if len(raw_questions) > 500:
+        raise ValueError("Maximum 500 Static GK questions can be added at once.")
 
     category = _normalize_static_category(payload.get("category", ""))
     # Validate the whole array before creating/registering a new source file.
@@ -2204,6 +2331,684 @@ def create_user_static_questions(payload):
     with STATIC_SOURCE_LOCK:
         source, category = _resolve_static_target(payload)
         return _create_static_records_in_source(source, category, raw_questions)
+
+
+# ============================================================================
+# GK MANAGER / RANGE OPERATIONS / AUTO PLAYER DATA API
+# ============================================================================
+
+def _raw_js_field(obj_text: str, field_name: str):
+    span = find_field_value_span(obj_text, field_name)
+    if not span:
+        return ""
+    start, end = span
+    return obj_text[start:end].strip()
+
+
+def _parse_js_literal(raw, default=None):
+    raw = str(raw or "").strip()
+    if not raw:
+        return default
+    try:
+        return json.loads(raw)
+    except Exception:
+        pass
+    try:
+        return ast.literal_eval(raw)
+    except Exception:
+        return default
+
+
+def _object_slices_from_array_text(raw_array: str):
+    raw_array = str(raw_array or "")
+    result = []
+    depth = 0
+    quote = None
+    start = None
+    for i, ch in enumerate(raw_array):
+        if quote:
+            if ch == quote and not is_escaped(raw_array, i):
+                quote = None
+            continue
+        if ch in ("'", '"', '`'):
+            quote = ch
+        elif ch == "{":
+            if depth == 0:
+                start = i
+            depth += 1
+        elif ch == "}" and depth:
+            depth -= 1
+            if depth == 0 and start is not None:
+                result.append(raw_array[start:i + 1])
+                start = None
+    return result
+
+
+def _parse_subquestions_from_js(obj_text: str):
+    raw = _raw_js_field(obj_text, "subQuestions")
+    if not raw:
+        return []
+    parsed = _parse_js_literal(raw, None)
+    if isinstance(parsed, list):
+        try:
+            return normalize_sub_questions(parsed)
+        except ValueError:
+            pass
+
+    subs = []
+    for sub_obj in _object_slices_from_array_text(raw):
+        question = _extract_js_string_field(sub_obj, "question")
+        options = _parse_js_literal(_raw_js_field(sub_obj, "options"), [])
+        answer = _parse_js_literal(_raw_js_field(sub_obj, "answer"), 0)
+        explanation = _extract_js_string_field(sub_obj, "explanation")
+        if not question or not isinstance(options, list) or len(options) < 2:
+            continue
+        try:
+            answer = int(answer)
+        except (TypeError, ValueError):
+            answer = 0
+        if answer < 0 or answer >= len(options):
+            answer = 0
+        subs.append({
+            "question": question,
+            "options": [str(value) for value in options],
+            "answer": answer,
+            "explanation": explanation,
+        })
+    return subs
+
+
+def current_affairs_date_from_id(question_id: str):
+    """Best-effort exact date extraction from the different CA id styles.
+
+    Supported examples:
+      ca-2026-02-04-001
+      ca-2026-02-002-001
+      ca-2026-09-009-012
+
+    Date-key context from the month file is still preferred because some older
+    ids (for example ca-2026-01-001) do not encode an exact day unambiguously.
+    """
+    value = str(question_id or "").strip()
+
+    match = re.match(r"^ca-(\d{4})-(\d{2})-(\d{2})-(?:\d+|[A-Za-z])", value, re.I)
+    if match:
+        year, month, day2 = match.groups()
+        try:
+            return validate_image_date(f"{year}-{month}-{int(day2):02d}")
+        except ValueError:
+            pass
+
+    match = re.match(r"^ca-(\d{4})-(\d{2})-(\d{3})(?:-|$)", value, re.I)
+    if match:
+        year, month, day3 = match.groups()
+        day = int(day3)
+        if 1 <= day <= 31:
+            try:
+                return validate_image_date(f"{year}-{month}-{day:02d}")
+            except ValueError:
+                pass
+
+    return ""
+
+
+_CURRENT_MONTHS = {
+    "january": "01",
+    "february": "02",
+    "march": "03",
+    "april": "04",
+    "may": "05",
+    "june": "06",
+    "july": "07",
+    "august": "08",
+    "september": "09",
+    "october": "10",
+    "november": "11",
+    "december": "12",
+}
+
+
+def current_affairs_period_from_path(path: Path):
+    """Return (year, month-number) for historical month JS files.
+
+    Supports names such as:
+      january-2026.js
+      January_2026.js
+      january2026.js
+    """
+    name = Path(path).name
+    match = re.fullmatch(
+        r"(january|february|march|april|may|june|july|august|"
+        r"september|october|november|december)[-_ ]?(\d{4})\.js",
+        name,
+        flags=re.IGNORECASE,
+    )
+    if not match:
+        return "", ""
+    month_name, year = match.groups()
+    return year, _CURRENT_MONTHS[month_name.casefold()]
+
+
+def is_current_affairs_month_file(path: Path):
+    year, month = current_affairs_period_from_path(path)
+    return bool(year and month)
+
+
+def _source_topic_for_path(path: Path):
+    try:
+        relative = path.resolve().relative_to(STATIC_GK_DATA_DIR.resolve())
+    except Exception:
+        return ""
+    if len(relative.parts) != 1:
+        return ""
+    try:
+        info = _get_static_source_info(path.name)
+        return str(info.get("topic", "") or "")
+    except Exception:
+        return _static_pretty_name_from_stem(path.stem)
+
+
+def _current_affairs_question_objects_from_text(text: str):
+    """Parse historical Current Affairs files stored as date -> question[].
+
+    Example:
+      const january2026CurrentAffairs = {
+        "2026-01-01": [
+          { id: "...", ... },
+          { id: "...", ... }
+        ],
+        "2026-01-02": [ ... ]
+      };
+
+    Returns (question_object_text, exact_date) tuples. Nested subQuestions stay
+    inside their parent question and are not returned as separate main records.
+    """
+    text = str(text or "")
+    records = []
+
+    date_key_pattern = re.compile(
+        r"(?P<quote>[\"'])(?P<date>\d{4}-\d{2}-\d{2})(?P=quote)\s*:\s*\[",
+        re.DOTALL,
+    )
+
+    for match in date_key_pattern.finditer(text):
+        date = match.group("date")
+        try:
+            date = validate_image_date(date)
+        except ValueError:
+            continue
+
+        array_start = text.find("[", match.end() - 1)
+        if array_start < 0:
+            continue
+        try:
+            array_end = _find_matching_square(text, array_start)
+        except ValueError:
+            continue
+
+        raw_array = text[array_start:array_end + 1]
+        for obj_text in _object_slices_from_array_text(raw_array):
+            if _extract_js_string_field(obj_text, "id").strip():
+                records.append((obj_text, date))
+
+    return records
+
+
+def _manager_record_from_js(path: Path, obj_text: str, static_topic: str = "", source_date: str = ""):
+    question_id = _extract_js_string_field(obj_text, "id").strip()
+    if not question_id:
+        return None
+
+    # The month file's date key is the most reliable source for historical data.
+    date = ""
+    explicit_date = _extract_js_string_field(obj_text, "date").strip()
+    for candidate in (explicit_date, source_date, current_affairs_date_from_id(question_id)):
+        candidate = str(candidate or "").strip()
+        if not candidate:
+            continue
+        try:
+            date = validate_image_date(candidate)
+            break
+        except ValueError:
+            continue
+
+    is_static_source = False
+    try:
+        path.resolve().relative_to(STATIC_GK_DATA_DIR.resolve())
+        is_static_source = True
+    except Exception:
+        pass
+
+    file_year, file_month = current_affairs_period_from_path(path)
+    is_current_source = bool(file_year and file_month)
+
+    if date or is_current_source:
+        section = "current"
+    elif is_static_source:
+        section = "static"
+    else:
+        # Ignore helper/config JS objects that happen to have an id field.
+        return None
+
+    options = _parse_js_literal(_raw_js_field(obj_text, "options"), [])
+    if not isinstance(options, list):
+        options = []
+    options = [str(value) for value in options]
+
+    raw_answer = _parse_js_literal(_raw_js_field(obj_text, "answer"), None)
+    try:
+        answer = int(raw_answer) if raw_answer is not None else None
+    except (TypeError, ValueError):
+        answer = None
+    if answer is not None and (answer < 0 or answer >= len(options)):
+        answer = None
+
+    category = _extract_js_string_field(obj_text, "category").strip()
+    topic = (static_topic or _source_topic_for_path(path)) if section == "static" else ""
+    if section == "static" and not category:
+        category = topic
+
+    year = date[:4] if date else file_year
+    month = date[5:7] if date else file_month
+
+    record = {
+        "id": question_id,
+        "section": section,
+        "date": date,
+        "year": year,
+        "month": month,
+        "topic": topic,
+        "mainCategory": topic,
+        "category": category or "General",
+        "subcategory": _extract_js_string_field(obj_text, "subcategory").strip(),
+        "question": _extract_js_string_field(obj_text, "question"),
+        "options": options,
+        "answer": answer,
+        "explanation": _extract_js_string_field(obj_text, "explanation"),
+        "subQuestions": _parse_subquestions_from_js(obj_text),
+        "questionImage": _extract_js_string_field(obj_text, "questionImage"),
+        "questionImageName": _extract_js_string_field(obj_text, "questionImageName"),
+        "source": "js-file",
+        "sourceFile": path.relative_to(BASE_DIR).as_posix(),
+    }
+    return record
+
+def _manager_record_from_user(item, section: str):
+    item = dict(item)
+    record = dict(item)
+    record["section"] = section
+    record["sourceFile"] = (
+        USER_CURRENT_AFFAIRS_FILE.name if section == "current" else USER_STATIC_GK_FILE.name
+    )
+    if section == "current":
+        date = str(item.get("date", "") or "").strip() or current_affairs_date_from_id(item.get("id", ""))
+        try:
+            date = validate_image_date(date) if date else ""
+        except ValueError:
+            date = ""
+        record["date"] = date
+        record["year"] = date[:4] if date else ""
+        record["month"] = date[5:7] if date else ""
+        record.setdefault("category", "General")
+        record["topic"] = ""
+    else:
+        topic = str(item.get("mainCategory") or item.get("topic") or item.get("category") or "Static GK").strip()
+        record["topic"] = topic
+        record["mainCategory"] = topic
+        record["date"] = ""
+        record["year"] = ""
+        record["month"] = ""
+    record["options"] = item.get("options") if isinstance(item.get("options"), list) else []
+    record["subQuestions"] = item.get("subQuestions") if isinstance(item.get("subQuestions"), list) else []
+    record["explanation"] = str(item.get("explanation", "") or "")
+    record["questionImage"] = str(item.get("questionImage", "") or "")
+    return record
+
+
+def manager_source_js_files(section="all"):
+    """Yield only real GK question source files for the requested section."""
+    section = str(section or "all").strip().lower()
+    seen = set()
+
+    if section in {"all", "current"}:
+        # Historical Current Affairs lives in month files next to current-affairs.js.
+        for path in sorted(BASE_DIR.glob("*.js"), key=lambda p: p.name.casefold()):
+            if not is_current_affairs_month_file(path):
+                continue
+            resolved = str(path.resolve())
+            if resolved not in seen:
+                seen.add(resolved)
+                yield path
+
+    if section in {"all", "static"} and STATIC_GK_DATA_DIR.exists():
+        for path in sorted(STATIC_GK_DATA_DIR.glob("*.js"), key=lambda p: p.name.casefold()):
+            resolved = str(path.resolve())
+            if resolved not in seen:
+                seen.add(resolved)
+                yield path
+
+def list_manager_questions(section="all"):
+    section = str(section or "all").strip().lower()
+    if section not in {"all", "current", "static"}:
+        raise ValueError("section must be all, current or static.")
+
+    by_id = {}
+
+    # Resolve the Static GK variable->topic map once per Manager request.
+    # The previous code re-opened and re-parsed an entire static source file for
+    # every question just to resolve its topic, which was the main timeout cause.
+    static_topic_map = _static_topic_map_from_aggregator()
+
+    # Real question source JS files first (bounded scan; no recursive app walk).
+    for path in manager_source_js_files(section):
+        try:
+            source_text = path.read_text(encoding="utf-8")
+        except OSError:
+            continue
+
+        static_topic = ""
+        try:
+            path.resolve().relative_to(STATIC_GK_DATA_DIR.resolve())
+            variable = _static_array_variable_from_text(source_text)
+            static_topic = (
+                static_topic_map.get(variable, "")
+                or _static_pretty_name_from_stem(path.stem)
+            )
+        except Exception:
+            pass
+
+        if is_current_affairs_month_file(path):
+            source_objects = _current_affairs_question_objects_from_text(source_text)
+            for obj_text, source_date in source_objects:
+                record = _manager_record_from_js(
+                    path,
+                    obj_text,
+                    static_topic="",
+                    source_date=source_date,
+                )
+                if not record:
+                    continue
+                if section != "all" and record["section"] != section:
+                    continue
+                by_id.setdefault(record["id"], record)
+        else:
+            for obj_text in _static_question_objects_from_text(source_text):
+                record = _manager_record_from_js(path, obj_text, static_topic=static_topic)
+                if not record:
+                    continue
+                if section != "all" and record["section"] != section:
+                    continue
+                by_id.setdefault(record["id"], record)
+
+    # User JSON stores can contain records not present in source JS files.
+    if section in {"all", "current"}:
+        with USER_CURRENT_AFFAIRS_LOCK:
+            for item in read_user_current_affairs():
+                record = _manager_record_from_user(item, "current")
+                by_id[record.get("id", "")] = record
+
+    if section in {"all", "static"}:
+        with USER_STATIC_GK_LOCK:
+            for item in read_user_static_gk():
+                record = _manager_record_from_user(item, "static")
+                by_id.setdefault(record.get("id", ""), record)
+
+    records = [record for key, record in by_id.items() if key]
+
+    def sort_key(item):
+        if item.get("section") == "current":
+            return (
+                0,
+                str(item.get("year", "")),
+                str(item.get("month", "")),
+                str(item.get("date", "")),
+                str(item.get("id", "")),
+            )
+        return (1, str(item.get("topic", "")).casefold(), str(item.get("category", "")).casefold(), item.get("id", ""))
+
+    records.sort(key=sort_key, reverse=False)
+    return records
+
+
+def _delete_date_images_for_question_ids(question_ids):
+    ids = {str(value) for value in question_ids if str(value).strip()}
+    if not ids:
+        return 0
+    deleted = 0
+    with DATE_IMAGE_LOCK:
+        index = read_date_images_index()
+        changed = False
+        for date in list(index.keys()):
+            kept = []
+            for image in index.get(date, []):
+                if str(image.get("questionId", "")) not in ids:
+                    kept.append(image)
+                    continue
+                url = str(image.get("url", "") or "")
+                prefix = f"/current-affairs-images/{date}/"
+                if url.startswith(prefix):
+                    target = DATE_IMAGES_DIR / date / url[len(prefix):]
+                    try:
+                        if target.exists():
+                            target.unlink()
+                    except OSError:
+                        pass
+                deleted += 1
+                changed = True
+            if kept:
+                index[date] = kept
+            else:
+                index.pop(date, None)
+        if changed:
+            write_date_images_index(index)
+    return deleted
+
+
+def delete_questions_by_ids(question_ids):
+    ids = []
+    seen = set()
+    for raw in question_ids if isinstance(question_ids, list) else []:
+        question_id = str(raw or "").strip()
+        if question_id and question_id not in seen:
+            seen.add(question_id)
+            ids.append(question_id)
+    if not ids:
+        raise ValueError("At least one question id is required.")
+    if len(ids) > 5000:
+        raise ValueError("Maximum 5000 questions can be deleted in one operation.")
+
+    target = set(ids)
+    deleted_ids = set()
+    changed_files = []
+
+    # JSON stores: one rewrite each.
+    with USER_CURRENT_AFFAIRS_LOCK:
+        items = read_user_current_affairs()
+        kept = []
+        changed = False
+        for item in items:
+            qid = str(item.get("id", ""))
+            if qid in target:
+                delete_user_question_image(item)
+                deleted_ids.add(qid)
+                changed = True
+            else:
+                kept.append(item)
+        if changed:
+            write_user_current_affairs(kept)
+            changed_files.append(USER_CURRENT_AFFAIRS_FILE.name)
+
+    with USER_STATIC_GK_LOCK:
+        items = read_user_static_gk()
+        kept = []
+        changed = False
+        for item in items:
+            qid = str(item.get("id", ""))
+            if qid in target:
+                delete_user_static_question_image(item)
+                deleted_ids.add(qid)
+                changed = True
+            else:
+                kept.append(item)
+        if changed:
+            write_user_static_gk(kept)
+            changed_files.append(USER_STATIC_GK_FILE.name)
+
+    remaining = target - deleted_ids
+
+    # Source JS files: scan once, remove all selected objects from each file,
+    # and write each affected file only once.
+    if remaining:
+        id_pattern = re.compile(
+            r"(?<![A-Za-z0-9_$])[\"']?id[\"']?\s*:\s*"
+            r"(?P<literal>\"(?:\\.|[^\"\\])*\"|'(?:\\.|[^'\\])*')",
+            re.DOTALL,
+        )
+        for path in all_js_files():
+            if not remaining:
+                break
+            try:
+                source_text = path.read_text(encoding="utf-8")
+            except OSError:
+                continue
+
+            spans = []
+            starts = set()
+            for match in id_pattern.finditer(source_text):
+                qid = _decode_js_string_literal(match.group("literal"))
+                if qid not in remaining:
+                    continue
+                try:
+                    start, end = find_object_bounds(source_text, match.start())
+                except Exception:
+                    continue
+                if start in starts:
+                    continue
+                starts.add(start)
+                obj_text = source_text[start:end]
+                spans.append((start, end, qid, obj_text))
+
+            if not spans:
+                continue
+
+            new_text = source_text
+            for start, end, qid, obj_text in sorted(spans, key=lambda row: row[0], reverse=True):
+                image_url = _extract_js_string_field(obj_text, "questionImage")
+                if image_url:
+                    item = {"questionImage": image_url}
+                    if current_affairs_date_from_id(qid):
+                        delete_user_question_image(item)
+                    else:
+                        delete_user_static_question_image(item)
+                new_text = remove_question(new_text, start, end)
+                deleted_ids.add(qid)
+
+            atomic_write(path, new_text)
+            changed_files.append(path.relative_to(BASE_DIR).as_posix())
+            remaining = target - deleted_ids
+
+    _delete_date_images_for_question_ids(deleted_ids)
+
+    return {
+        "requested": len(ids),
+        "deleted": len(deleted_ids),
+        "deletedIds": sorted(deleted_ids),
+        "notFoundIds": sorted(target - deleted_ids),
+        "files": sorted(set(changed_files)),
+    }
+
+
+def _replace_question_image_fields_in_js(path: Path, text: str, start: int, end: int, item, image_url: str, image_name: str):
+    obj = text[start:end]
+    new_obj = replace_or_add_field(obj, "questionImage", json.dumps(image_url, ensure_ascii=False))
+    image_id = f"img-{re.sub(r'[^A-Za-z0-9_-]', '_', str(item.get('id', '')))}-001" if image_url else ""
+    new_obj = replace_or_add_field(new_obj, "questionImageId", json.dumps(image_id, ensure_ascii=False))
+    new_obj = replace_or_add_field(new_obj, "questionImageName", json.dumps(image_name if image_url else "", ensure_ascii=False))
+    new_text = text[:start] + new_obj + text[end:]
+    atomic_write(path, new_text)
+    return path.relative_to(BASE_DIR).as_posix()
+
+
+def update_question_image(question_id: str, data_url: str = "", name: str = "", remove: bool = False):
+    question_id = str(question_id or "").strip()
+    if not question_id:
+        raise ValueError("Question id is required.")
+    data_url = str(data_url or "").strip()
+    name = str(name or "Image").strip() or "Image"
+    if not remove and not data_url:
+        raise ValueError("Image data is required, or set remove=true.")
+
+    # Current Affairs user JSON.
+    with USER_CURRENT_AFFAIRS_LOCK:
+        items = read_user_current_affairs()
+        index = next((i for i, item in enumerate(items) if str(item.get("id")) == question_id), None)
+        if index is not None:
+            item = dict(items[index])
+            delete_user_question_image(item)
+            if remove:
+                image_url = ""
+            else:
+                date = str(item.get("date", "") or "") or current_affairs_date_from_id(question_id)
+                image_url = save_user_question_image(question_id, date, data_url)
+            item["questionImage"] = image_url
+            item["questionImageId"] = f"img-{re.sub(r'[^A-Za-z0-9_-]', '_', question_id)}-001" if image_url else ""
+            item["questionImageName"] = name if image_url else ""
+            items[index] = item
+            write_user_current_affairs(items)
+            return USER_CURRENT_AFFAIRS_FILE.name
+
+    # Legacy Static GK JSON.
+    with USER_STATIC_GK_LOCK:
+        items = read_user_static_gk()
+        index = next((i for i, item in enumerate(items) if str(item.get("id")) == question_id), None)
+        if index is not None:
+            item = dict(items[index])
+            delete_user_static_question_image(item)
+            if remove:
+                image_url = ""
+            else:
+                topic = str(item.get("mainCategory") or item.get("topic") or item.get("category") or "Static GK")
+                image_url = save_user_static_question_image(question_id, topic, data_url)
+            item["questionImage"] = image_url
+            item["questionImageId"] = f"img-{re.sub(r'[^A-Za-z0-9_-]', '_', question_id)}-001" if image_url else ""
+            item["questionImageName"] = name if image_url else ""
+            items[index] = item
+            write_user_static_gk(items)
+            return USER_STATIC_GK_FILE.name
+
+    path, source_text = find_question_file(question_id)
+    positions = [pos for needle in (f'"{question_id}"', f"'{question_id}'") if (pos := source_text.find(needle)) != -1]
+    if not positions:
+        raise FileNotFoundError(f'Question ID "{question_id}" not found.')
+    start, end = find_object_bounds(source_text, min(positions))
+    obj_text = source_text[start:end]
+    old_url = _extract_js_string_field(obj_text, "questionImage")
+    if old_url:
+        item = {"questionImage": old_url}
+        if current_affairs_date_from_id(question_id):
+            delete_user_question_image(item)
+        else:
+            delete_user_static_question_image(item)
+
+    if remove:
+        image_url = ""
+    else:
+        date = current_affairs_date_from_id(question_id)
+        if date:
+            image_url = save_user_question_image(question_id, date, data_url)
+        else:
+            topic = _source_topic_for_path(path) or _static_pretty_name_from_stem(path.stem)
+            image_url = save_user_static_question_image(question_id, topic, data_url)
+
+    return _replace_question_image_fields_in_js(
+        path,
+        source_text,
+        start,
+        end,
+        {"id": question_id},
+        image_url,
+        name,
+    )
 
 
 class QuizHandler(
@@ -2264,7 +3069,22 @@ class QuizHandler(
                 "questionBulkCreateEndpoint": True,
                 "staticQuestionCreateEndpoint": True,
                 "staticQuestionBulkCreateEndpoint": True,
+                "managerEndpoint": True,
+                "bulkDeleteEndpoint": True,
+                "questionImageUpdateEndpoint": True,
                 "baseDir": str(BASE_DIR),
+            })
+            return
+
+        if path == "/api/gk-manager-data":
+            query = parse_qs(parsed_url.query)
+            section = str(query.get("section", ["all"])[0]).strip() or "all"
+            questions = list_manager_questions(section)
+            self.send_json({
+                "ok": True,
+                "section": section,
+                "count": len(questions),
+                "questions": questions,
             })
             return
 
@@ -2346,6 +3166,8 @@ class QuizHandler(
             "/api/current-question-create-bulk",
             "/api/static-question-create",
             "/api/static-question-create-bulk",
+            "/api/gk-bulk-delete",
+            "/api/gk-question-image",
         }
         if path not in allowed_paths:
             self.send_json(
@@ -2443,6 +3265,22 @@ class QuizHandler(
                 })
                 return
 
+            if path == "/api/gk-bulk-delete":
+                result = delete_questions_by_ids(data.get("ids", []))
+                self.send_json({"ok": True, **result})
+                return
+
+            if path == "/api/gk-question-image":
+                question_id = str(data.get("id", "")).strip()
+                file_name = update_question_image(
+                    question_id,
+                    data.get("dataUrl", ""),
+                    data.get("name", ""),
+                    bool(data.get("remove")),
+                )
+                self.send_json({"ok": True, "id": question_id, "file": file_name})
+                return
+
             question_id = str(
                 data.get("id", "")
             ).strip()
@@ -2532,6 +3370,7 @@ if __name__ == "__main__":
     print("GET  /api/user-static-questions ENABLED")
     print("GET  /api/static-source-files ENABLED")
     print("GET  /api/date-images         ENABLED")
+    print("GET  /api/gk-manager-data     ENABLED")
     print("POST /api/current-question-create ENABLED")
     print("POST /api/current-question-create-bulk ENABLED")
     print("POST /api/static-question-create ENABLED")
@@ -2539,6 +3378,8 @@ if __name__ == "__main__":
     print("POST /api/date-image-save     ENABLED")
     print("POST /api/date-image-delete   ENABLED")
     print("POST /api/question-update     ENABLED")
+    print("POST /api/gk-bulk-delete      ENABLED")
+    print("POST /api/gk-question-image   ENABLED")
     print(
         "Question edits will be written "
         "directly into original .js files."

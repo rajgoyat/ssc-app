@@ -200,7 +200,7 @@
       "126"
     ],
     "correctIndex": 1,
-    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=pUemTZMTyUBHltxQ&t=5710",
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=pUemTZMTyUBHltxQ&t=5493",
     "solutionImage": "/uploads/mixture-alligation/097bebc348398768fba51b4684c354674423ec70b61e669120786e96b4c3246b.png",
     "special": false,
     "id": "mtmn25o306m022",
@@ -504,7 +504,7 @@
       "82%"
     ],
     "correctIndex": 2,
-    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=hfTgPeAbOku9eJIB&t=9791",
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=hfTgPeAbOku9eJIB&t=9700",
     "solutionImage": null,
     "special": false,
     "id": "mttx2tcphf0n5",
@@ -1288,6 +1288,44 @@
     "special": false,
     "id": "mtmix181m3",
     "order": 181,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "Two liquids X and Y are mixed in can A in the ratio of 6 : 1 and in can B in the ratio\nof 8 : 3. In what ratio should liquids be taken from the two cans so as to form a\nmixture in which liquids X and Y will be in the ratio of 9 : 2?",
+    "questionImage": null,
+    "options": [
+      "3:3",
+      "4:3",
+      "7:3",
+      "1:3"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/8cZwHgcg2V4?si=0eD6igJX_Rkcfa2S&t=311",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtvijvtff2jm58",
+    "order": 198,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "Gold is 17 times as heavy as water and copper is 11 times as heavy as water. In\nwhat ratio should these metals be mixed so that mixture may be 13 times as\nheavy as water.",
+    "questionImage": null,
+    "options": [
+      "1:2",
+      "2:2",
+      "3:2",
+      "4:2"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/8cZwHgcg2V4?si=w1FS5gE67G-P459U&t=401",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtvinszdbp6dki",
+    "order": 199,
     "attemptStatus": "unattempted",
     "testAllowed": true
   }

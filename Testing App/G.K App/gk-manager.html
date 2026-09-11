@@ -1,0 +1,836 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GK Manager // Range + Auto Player</title>
+  <link rel="icon" href="data:," />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap");
+    :root {
+      --ink:#061118; --panel:#0b1e26; --panel2:#102c35; --line:rgba(145,229,220,.18);
+      --text:#e8f7f4; --muted:#88aaa9; --cyan:#55e6d2; --lime:#d4f36b; --orange:#ffad67;
+      --red:#ff7777; --shadow:0 18px 50px rgba(0,0,0,.28);
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--ink);color:var(--text);font-family:"Space Grotesk",sans-serif;min-height:100vh;background-image:linear-gradient(rgba(85,230,210,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(85,230,210,.035) 1px,transparent 1px),radial-gradient(circle at 72% -15%,#164550 0,transparent 42%);background-size:32px 32px,32px 32px,auto}
+    button,input,select,textarea{font:inherit} button{cursor:pointer} a{color:inherit;text-decoration:none}
+    .shell{width:min(1500px,100%);margin:auto;padding:18px 20px 40px}.top{display:flex;justify-content:space-between;align-items:flex-end;gap:15px;border-bottom:1px solid var(--line);padding-bottom:16px;flex-wrap:wrap}
+    .eyebrow,.mono{font:700 10px "Space Mono",monospace;letter-spacing:.12em;text-transform:uppercase}.eyebrow{color:var(--cyan);margin-bottom:7px}h1{font-size:clamp(28px,4vw,48px);line-height:.95;letter-spacing:-.055em;margin:0}h1 span{color:var(--cyan)}
+    .top-actions{display:flex;gap:7px;align-items:center;flex-wrap:wrap;justify-content:flex-end}.btn{border:1px solid var(--line);background:transparent;color:var(--text);padding:8px 11px;font:700 10px "Space Mono",monospace;text-transform:uppercase;min-height:34px}.btn:hover{border-color:var(--cyan);color:var(--cyan)}.btn.primary{background:var(--cyan);border-color:var(--cyan);color:var(--ink)}.btn.lime{border-color:rgba(212,243,107,.55);color:var(--lime)}.btn.orange{border-color:rgba(255,173,103,.55);color:var(--orange)}.btn.danger{border-color:rgba(255,119,119,.55);color:var(--red)}.btn:disabled{opacity:.45;cursor:not-allowed}
+    .status{color:var(--muted);font:700 9px "Space Mono",monospace}.status.ok{color:var(--lime)}.tabs{display:flex;gap:7px;margin:16px 0}.tab{flex:0 0 auto}.tab.active{background:var(--cyan);border-color:var(--cyan);color:var(--ink)}
+    .panel{background:rgba(11,30,38,.96);border:1px solid var(--line);box-shadow:var(--shadow);padding:15px}.panel-title{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:12px;flex-wrap:wrap}.panel-title h2{font-size:20px;margin:0}.muted{color:var(--muted)}.panel-title-main{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}.panel-title-actions{display:flex;align-items:center;gap:7px;flex-wrap:wrap}.toggle-check{display:flex;align-items:center;gap:6px;border:1px solid var(--line);padding:6px 8px;color:var(--muted);font:700 9px "Space Mono",monospace;text-transform:uppercase;cursor:pointer;user-select:none}.toggle-check:hover{border-color:var(--cyan);color:var(--text)}.toggle-check input{margin:0;accent-color:var(--lime)}.manager-tools{display:block}.manager-tools.hidden{display:none}.player-filter-tools{display:grid;gap:10px}.player-filter-tools.hidden{display:none}
+    .filters{display:grid;grid-template-columns:repeat(7,minmax(120px,1fr));gap:8px;padding:10px;border:1px solid var(--line);background:rgba(85,230,210,.03);margin-bottom:11px}.field{display:grid;gap:5px;min-width:0}.field label{color:var(--muted);font:700 9px "Space Mono",monospace;text-transform:uppercase;letter-spacing:.06em}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);background:#071920;color:var(--text);padding:8px;outline:none;min-width:0}.field select option{background:#071920;color:#e8f7f4}.field select option:checked{background:#12333d;color:#d4f36b}.field textarea{min-height:92px;resize:vertical;line-height:1.45}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--cyan)}
+    .rangebar{display:flex;gap:7px;align-items:end;flex-wrap:wrap;padding:9px;border:1px solid rgba(212,243,107,.17);background:rgba(212,243,107,.025);margin-bottom:11px}.rangebar .field{width:105px}.rangebar .field.date-field{width:155px}.summary{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap;color:var(--muted);font-size:12px;margin:9px 0}.summary b{color:var(--lime)}
+    .list{display:grid;gap:6px}.card{position:relative;border:1px solid var(--line);background:rgba(9,28,35,.78);padding:8px 10px}.compact-head{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:26px}.card-left{display:flex;align-items:center;gap:7px;min-width:0}.check{margin:0;accent-color:var(--cyan)}.qindex{color:var(--cyan);font:700 9px "Space Mono",monospace;white-space:nowrap}.qtext{font-size:15px;line-height:1.3;margin:5px 0 7px;white-space:pre-line}.tiny{padding:5px 7px;min-height:27px;font-size:9px}
+    .more-menu{position:relative;margin-left:auto}.more-menu>summary{list-style:none;width:30px;height:27px;display:grid;place-items:center;border:1px solid var(--line);font:700 18px/1 "Space Mono",monospace;color:var(--muted);cursor:pointer;user-select:none}.more-menu>summary::-webkit-details-marker{display:none}.more-menu[open]>summary,.more-menu>summary:hover{color:var(--cyan);border-color:var(--cyan)}.more-pop{position:absolute;z-index:120;right:0;top:31px;width:min(330px,calc(100vw - 42px));padding:9px;background:#091c23;border:1px solid var(--cyan);box-shadow:0 16px 42px rgba(0,0,0,.45)}.menu-id{color:var(--cyan);font:700 10px "Space Mono",monospace;word-break:break-all}.menu-meta,.menu-source{margin-top:5px;color:var(--muted);font:700 9px "Space Mono",monospace;text-transform:uppercase;line-height:1.45;word-break:break-word}.menu-source{text-transform:none}.menu-actions{display:flex;gap:5px;flex-wrap:wrap;margin-top:8px;padding-top:8px;border-top:1px solid var(--line)}
+    .answer-line{display:flex;align-items:flex-start;gap:7px;border-left:3px solid var(--lime);background:rgba(212,243,107,.055);padding:6px 8px;font-size:12px;line-height:1.35}.answer-line b{color:var(--lime);font:700 10px "Space Mono",monospace;white-space:nowrap}.compact-detail{margin-top:5px;border:1px solid rgba(145,229,220,.12);background:rgba(6,17,24,.35)}.compact-detail>summary{list-style:none;cursor:pointer;padding:5px 7px;color:var(--muted);font:700 9px "Space Mono",monospace;text-transform:uppercase}.compact-detail>summary::-webkit-details-marker{display:none}.compact-detail>summary::before{content:"+ ";color:var(--cyan)}.compact-detail[open]>summary::before{content:"− "}.detail-body{padding:7px 8px;border-top:1px solid rgba(145,229,220,.12);font-size:11px;line-height:1.45;white-space:pre-line}.sub{padding:6px 0;border-top:1px solid rgba(145,229,220,.1);font-size:11px}.sub:first-child{padding-top:0;border-top:0}.sub:last-child{padding-bottom:0}.sub-answer{color:var(--lime);margin-top:3px}.qimage{border:0;background:#061118;padding:7px}
+    .qimage img,.player-image img{display:block;width:100%;height:auto;max-width:100%;max-height:none;margin:8px auto;object-fit:contain;cursor:zoom-in}
+    .zoom-hint{color:var(--muted);font:700 8px "Space Mono",monospace;text-transform:uppercase;text-align:center;margin-top:4px}
+    .statement-question{display:grid;gap:7px;width:100%}
+    .statement-intro{font-size:inherit;line-height:1.4}
+    .statement-item{display:grid;grid-template-columns:28px minmax(0,1fr);gap:8px;align-items:start;padding:8px 9px;border:1px solid rgba(145,229,220,.16);background:rgba(85,230,210,.035)}
+    .statement-number{width:24px;height:24px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(85,230,210,.55);color:var(--cyan);background:rgba(85,230,210,.08);font:700 9px "Space Mono",monospace}
+    .card.static .statement-number{color:var(--lime);border-color:rgba(212,243,107,.55);background:rgba(212,243,107,.07)}
+    .statement-text{line-height:1.42;min-width:0}
+    .statement-ending{padding-top:2px;font-weight:700;line-height:1.4}
+    .question-context{
+      margin:1px 0 5px;
+      color:var(--muted);
+      font:700 8px "Space Mono",monospace;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      opacity:.82;
+      line-height:1.2;
+    }
+    .player-question-context{
+      margin:10px 0 -8px;
+      color:var(--muted);
+      font:700 9px "Space Mono",monospace;
+      letter-spacing:.09em;
+      text-transform:uppercase;
+      opacity:.82;
+    }
+    .player-question .statement-question{gap:10px}
+    .player-question .statement-item{padding:11px 12px;grid-template-columns:32px minmax(0,1fr)}
+    .player-question .statement-number{width:28px;height:28px;font-size:10px}
+    .image-lightbox{position:fixed;inset:0;z-index:7000;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;padding:18px}
+    .image-lightbox.show{display:flex}
+    .image-lightbox img{display:block;max-width:96vw;max-height:92vh;width:auto;height:auto;object-fit:contain;cursor:zoom-out;box-shadow:0 24px 80px rgba(0,0,0,.65)}
+    .image-lightbox-close{position:fixed;top:14px;right:16px;z-index:7001;width:42px;height:42px;border:1px solid rgba(255,255,255,.38);background:#071920;color:#fff;font-size:26px;line-height:1;cursor:pointer}
+    .pager{display:flex;justify-content:center;gap:7px;align-items:center;margin-top:12px}.empty{padding:30px;text-align:center;color:var(--muted);border:1px dashed var(--line)}
+    .modal{position:fixed;inset:0;background:rgba(1,10,14,.82);z-index:3000;display:none;align-items:flex-start;justify-content:center;padding:24px 12px;overflow:auto}.modal.show{display:flex}.dialog{width:min(900px,100%);background:#091c23;border:1px solid var(--cyan);box-shadow:0 24px 80px rgba(0,0,0,.5)}.dialog-head{display:flex;justify-content:space-between;gap:10px;padding:13px 15px;border-bottom:1px solid var(--line)}.dialog-body{padding:14px}.edit-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}.full{grid-column:1/-1}.image-editor{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:9px;align-items:start;border:1px solid var(--line);padding:9px}.image-editor img{max-width:100%;max-height:280px;object-fit:contain}.modal-actions{display:flex;justify-content:flex-end;gap:7px;margin-top:12px}.message{display:none;margin-top:9px;padding:8px 9px;border-left:3px solid var(--orange);background:rgba(255,173,103,.05);font-size:12px}.message.show{display:block}.message.error{border-left-color:var(--red)}
+    .player-layout{display:grid;grid-template-columns:350px minmax(0,1fr);gap:12px}.player-controls{display:grid;gap:8px;align-content:start}.player-stage{border:1px solid var(--line);background:rgba(9,28,35,.88);min-height:500px;padding:18px}.player-top{display:flex;justify-content:space-between;gap:9px;align-items:center;border-bottom:1px solid var(--line);padding-bottom:10px}.timer-ring{min-width:70px;text-align:center;color:var(--orange);font:700 22px "Space Mono",monospace}.player-question{font-size:clamp(19px,2.4vw,28px);line-height:1.35;margin:18px 0;white-space:pre-line}.player-options{display:grid;gap:8px}.player-opt{border:1px solid var(--line);padding:11px 12px;background:rgba(16,44,53,.7)}.player-opt.correct{border-color:var(--lime);background:rgba(212,243,107,.09)}.answer-box{margin-top:15px;border-left:4px solid var(--lime);padding:10px 12px;background:rgba(212,243,107,.06)}.explanation-box{margin-top:10px;border-left:4px solid var(--cyan);padding:10px 12px;background:rgba(85,230,210,.05);white-space:pre-line}.player-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}.hide{display:none!important}
+    .toast{position:fixed;right:18px;bottom:18px;z-index:5000;max-width:min(430px,calc(100vw - 36px));padding:10px 12px;background:#102c35;border:1px solid var(--cyan);box-shadow:var(--shadow);display:none;font-size:12px}.toast.show{display:block}
+    @media(max-width:1150px){.filters{grid-template-columns:repeat(4,minmax(130px,1fr))}.player-layout{grid-template-columns:1fr}.player-controls{grid-template-columns:repeat(3,minmax(120px,1fr))}.player-controls .full-control{grid-column:1/-1}}
+    @media(max-width:720px){.shell{padding:12px 10px 30px}.filters{grid-template-columns:repeat(2,minmax(0,1fr))}.opts{grid-template-columns:1fr}.edit-grid{grid-template-columns:1fr}.full{grid-column:auto}.player-controls{grid-template-columns:1fr 1fr}.rangebar .field,.rangebar .field.date-field{width:calc(50% - 5px)}}
+    @media(max-width:470px){.filters,.player-controls{grid-template-columns:1fr}.rangebar .field,.rangebar .field.date-field{width:100%}.top-actions{justify-content:flex-start}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="top">
+      <div><div class="eyebrow">GK control center / range tools</div><h1>MANAGER <span>//</span> PLAYER</h1></div>
+      <div class="top-actions">
+        <span id="server-status" class="status">CONNECTING…</span>
+        <button class="btn" id="refresh-data">↻ Refresh</button>
+        <a class="btn" href="index.html">← GK Quiz</a>
+      </div>
+    </header>
+
+    <div class="tabs">
+      <button class="btn tab active" data-tab="manage">☷ Manage Questions</button>
+      <button class="btn tab" data-tab="player">▶ Auto Player</button>
+    </div>
+
+    <section id="manage-tab" class="panel">
+      <div class="panel-title">
+        <div class="panel-title-main"><h2>Question Manager</h2><div class="muted">Compact question list</div></div>
+        <div class="panel-title-actions">
+          <label class="toggle-check" title="Show or hide explanations in all visible manager questions">
+            <input type="checkbox" id="show-manager-explanations" />
+            <span>Show explanations</span>
+          </label>
+          <label class="toggle-check" title="Show every subquestion directly inside each question card">
+            <input type="checkbox" id="show-all-subs" />
+            <span>Show all subquestions</span>
+          </label>
+          <button class="btn tiny" id="toggle-manager-tools" type="button">Hide Tools</button>
+        </div>
+      </div>
+
+      <div id="manager-tools" class="manager-tools">
+        <div class="filters">
+          <div class="field"><label>Source</label><select id="f-section"><option value="current" selected>Current Affairs</option><option value="static">Static GK</option><option value="all">All</option></select></div>
+          <div class="field"><label>Year</label><select id="f-year"><option value="">All Years</option></select></div>
+          <div class="field"><label>Month</label><select id="f-month"><option value="">All Months</option></select></div>
+          <div class="field"><label>Exact Date</label><select id="f-date"><option value="">All Dates</option></select></div>
+          <div class="field"><label>Topic</label><select id="f-topic"><option value="">All Topics</option></select></div>
+          <div class="field"><label>Category</label><select id="f-category"><option value="">All Categories</option></select></div>
+          <div class="field"><label>Search</label><input id="f-search" type="search" placeholder="question / id / explanation" /></div>
+        </div>
+
+        <div class="rangebar">
+          <div class="field date-field"><label>Date From</label><input id="f-date-from" type="date" /></div>
+          <div class="field date-field"><label>Date To</label><input id="f-date-to" type="date" /></div>
+          <div class="field"><label>From Q#</label><input id="range-from" type="number" min="1" value="1" /></div>
+          <div class="field"><label>To Q#</label><input id="range-to" type="number" min="1" placeholder="last" /></div>
+          <button class="btn lime" id="select-range">Select Range</button>
+          <button class="btn" id="copy-range">Copy Range JSON</button>
+          <button class="btn danger" id="delete-range">Delete Range</button>
+          <button class="btn" id="copy-selected">Copy Selected</button>
+          <button class="btn danger" id="delete-selected">Delete Selected</button>
+          <button class="btn danger" id="delete-date">Delete Entire Date</button>
+          <button class="btn danger" id="delete-month">Delete Entire Month</button>
+        </div>
+      </div>
+
+      <div class="summary"><span>Filtered: <b id="filtered-count">0</b> / <span id="total-count">0</span></span><span id="range-summary">Range uses the currently filtered list.</span></div>
+      <div id="question-list" class="list"></div>
+      <div class="pager"><button class="btn tiny" id="prev-page">← Prev</button><span id="page-label" class="mono">PAGE 1 / 1</span><button class="btn tiny" id="next-page">Next →</button><select id="page-size" class="btn"><option>25</option><option selected>50</option><option>100</option><option>200</option></select></div>
+    </section>
+
+    <section id="player-tab" class="panel hide">
+      <div class="panel-title">
+        <div class="panel-title-main"><h2>Auto Revision Player</h2><div class="muted">Question revision player</div></div>
+        <div class="panel-title-actions">
+          <label class="toggle-check" title="Show or hide explanations in the Auto Player">
+            <input type="checkbox" id="show-player-explanations" />
+            <span>Show explanations</span>
+          </label>
+          <button class="btn tiny" id="toggle-player-filters" type="button">Hide Player Filters</button>
+        </div>
+      </div>
+      <div class="player-layout">
+        <aside class="player-controls">
+          <div id="player-filter-tools" class="player-filter-tools">
+            <div class="field"><label>Source</label><select id="p-section"><option value="current" selected>Current Affairs</option><option value="static">Static GK</option><option value="all">All</option></select></div>
+            <div class="field"><label>Year</label><select id="p-year"><option value="">All Years</option></select></div>
+            <div class="field"><label>Month</label><select id="p-month"><option value="">All Months</option></select></div>
+            <div class="field"><label>Date</label><select id="p-date"><option value="">All Dates</option></select></div>
+            <div class="field"><label>Topic</label><select id="p-topic"><option value="">All Topics</option></select></div>
+            <div class="field"><label>Category</label><select id="p-category"><option value="">All Categories</option></select></div>
+            <div class="field"><label>From Q#</label><input id="p-from" type="number" min="1" value="1" /></div>
+            <div class="field"><label>To Q#</label><input id="p-to" type="number" min="1" placeholder="last" /></div>
+            <div class="field"><label>Next Question After</label><select id="p-seconds"><option value="3">3 sec</option><option value="5">5 sec</option><option value="10" selected>10 sec</option><option value="15">15 sec</option><option value="20">20 sec</option><option value="30">30 sec</option><option value="60">60 sec</option></select></div>
+            <div class="field"><label>Order</label><select id="p-order"><option value="sequence">Sequence</option><option value="random">Random</option></select></div>
+            <button class="btn primary full-control" id="player-load">Load Queue</button>
+            <button class="btn full-control" id="use-manager-filter">Use Manager Filter</button>
+          </div>
+          <div class="player-actions full-control"><button class="btn lime" id="player-play">▶ Play</button><button class="btn" id="player-prev">← Prev</button><button class="btn" id="player-next">Next →</button><button class="btn" id="player-restart">↺ Restart</button></div>
+          <div id="player-queue-info" class="muted full-control">No queue loaded.</div>
+        </aside>
+        <div id="player-stage" class="player-stage"><div class="empty">Load a queue, then press Play.</div></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="edit-modal" aria-hidden="true">
+    <div class="dialog">
+      <div class="dialog-head"><div><div class="eyebrow" style="margin:0">Edit question</div><div id="edit-id" class="mono"></div></div><button class="btn danger tiny" id="edit-close">×</button></div>
+      <div class="dialog-body">
+        <div class="edit-grid">
+          <div class="field full"><label>Question</label><textarea id="edit-question"></textarea></div>
+          <div class="field"><label>Category</label><input id="edit-category" /></div>
+          <div class="field"><label>Correct Answer (A/B/C/D or index)</label><input id="edit-answer" placeholder="A or 0" /></div>
+          <div class="field full"><label>Options — one per line</label><textarea id="edit-options"></textarea></div>
+          <div class="field full"><label>Explanation</label><textarea id="edit-explanation"></textarea></div>
+          <div class="field full"><label>Sub Questions JSON Array</label><textarea id="edit-subs" spellcheck="false"></textarea></div>
+          <div class="field full"><label>Question Image</label><div class="image-editor"><div><img id="edit-image-preview" alt="Question image" /><div class="muted" id="edit-image-name"></div></div><div><input id="edit-image-file" type="file" accept="image/*" /><button class="btn danger tiny" id="edit-image-remove" type="button" style="margin-top:7px">Remove Image</button></div></div></div>
+        </div>
+        <div id="edit-message" class="message"></div>
+        <div class="modal-actions"><button class="btn" id="edit-cancel">Cancel</button><button class="btn primary" id="edit-save">💾 Save Changes</button></div>
+      </div>
+    </div>
+  </div>
+  <div class="image-lightbox" id="image-lightbox" aria-hidden="true">
+    <button class="image-lightbox-close" id="image-lightbox-close" type="button" aria-label="Close image zoom">×</button>
+    <img id="image-lightbox-img" alt="Zoomed question image" />
+  </div>
+  <div class="toast" id="toast"></div>
+
+<script>
+(() => {
+  "use strict";
+  const $ = (s, root=document) => root.querySelector(s);
+  const $$ = (s, root=document) => [...root.querySelectorAll(s)];
+  const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  const state = { all: [], filtered: [], page: 1, pageSize: 50, selected: new Set(), editing: null, editImageDataUrl: "", editImageName: "", removeEditImage: false, playerQueue: [], playerIndex: 0, playerTimer: null, playerRemaining: 0, playerPlaying: false, managerToolsHidden: false, showAllSubQuestions: false, showManagerExplanations: false, showPlayerExplanations: false, playerFiltersHidden: false };
+
+  const esc = (v) => String(v ?? "").replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
+
+  function statementOrdinal(token) {
+    const upper=String(token||"").toUpperCase();
+    if (/^\d+$/.test(upper)) return Number(upper);
+    return ({I:1,II:2,III:3,IV:4,V:5,VI:6,VII:7,VIII:8,IX:9,X:10})[upper] || 0;
+  }
+
+  function formatQuestionText(question) {
+    const raw=String(question||"").trim();
+    if(!raw) return "";
+
+    // Accept both "1. 2. 3." and "I. II. III." statement styles,
+    // even when the statements are written on one long line.
+    const matches=[...raw.matchAll(/(?:^|\s)(\d+|I{1,3}|IV|V|VI{0,3}|IX|X)\.(?=\s)/gi)];
+    if(matches.length<2) return esc(raw).replace(/\n/g,"<br>");
+
+    const statementMatches=[];
+    let expected=1;
+    for(const match of matches){
+      const ordinal=statementOrdinal(match[1]);
+      if(ordinal===expected){
+        statementMatches.push(match);
+        expected+=1;
+      }
+    }
+    if(statementMatches.length<2) return esc(raw).replace(/\n/g,"<br>");
+
+    const intro=raw.slice(0,statementMatches[0].index).trim();
+    const statements=[];
+    for(let i=0;i<statementMatches.length;i++){
+      const current=statementMatches[i];
+      const start=current.index+current[0].length;
+      const end=i+1<statementMatches.length?statementMatches[i+1].index:raw.length;
+      statements.push({number:current[1].toUpperCase(),text:raw.slice(start,end).trim()});
+    }
+
+    let ending="";
+    const last=statements[statements.length-1];
+    const endingMatch=last.text.match(
+      /^(.*?)(\s+(?:Which|Which of the above|Which of these|Select|Choose|How many|What)\b[^?]*\?)$/is
+    );
+    if(endingMatch){
+      last.text=endingMatch[1].trim();
+      ending=endingMatch[2].trim();
+    }
+
+    return `<div class="statement-question">
+      ${intro?`<div class="statement-intro">${esc(intro)}</div>`:""}
+      ${statements.map(s=>`<div class="statement-item"><span class="statement-number">${esc(s.number)}</span><span class="statement-text">${esc(s.text)}</span></div>`).join("")}
+      ${ending?`<div class="statement-ending">${esc(ending)}</div>`:""}
+    </div>`;
+  }
+  const api = async (url, options={}) => {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 30000);
+    try {
+      const response = await fetch(url, {cache:"no-store", signal:controller.signal, ...options});
+      const data = await response.json().catch(() => ({}));
+      if (!response.ok || data.ok === false) throw new Error(data.error || `Server returned ${response.status}`);
+      return data;
+    } catch (error) {
+      if (error?.name === "AbortError") {
+        throw new Error("GK data request timed out. The selected GK source took more than 30 seconds to parse.");
+      }
+      throw error;
+    } finally {
+      clearTimeout(timeout);
+    }
+  };
+  const post = (url, payload) => api(url, {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify(payload)});
+  const toast = (msg) => { const el=$("#toast"); el.textContent=msg; el.classList.add("show"); clearTimeout(toast.t); toast.t=setTimeout(()=>el.classList.remove("show"),2600); };
+  const uniq = (arr) => [...new Set(arr.filter(Boolean))].sort((a,b)=>String(a).localeCompare(String(b),undefined,{numeric:true,sensitivity:"base"}));
+  const setOptions = (select, values, allLabel, preferred="") => { const old = preferred || select.value; select.innerHTML=`<option value="">${esc(allLabel)}</option>`+values.map(v=>`<option value="${esc(v)}">${esc(v)}</option>`).join(""); if(values.includes(old)) select.value=old; };
+  const imageSrc = (q) => String(q?.questionImage || "").trim();
+  const answerLetter = (index) => Number.isInteger(Number(index)) ? String.fromCharCode(65+Number(index)) : "—";
+  const dateMonthName = (m) => { const n=Number(m); return n>=1&&n<=12 ? `${String(n).padStart(2,"0")} — ${MONTHS[n-1]}` : m; };
+
+  const desc = (a, b) => String(b).localeCompare(String(a), undefined, {numeric:true, sensitivity:"base"});
+  const uniqDesc = (arr) => [...new Set(arr.filter(Boolean))].sort(desc);
+  function normalizeQuestionDate(value, id = "") {
+    let raw = String(value || "").trim();
+    if (/^\d{4}-\d{2}-\d{2}$/.test(raw)) return raw;
+    let m = raw.match(/^(\d{1,2})[-\/](\d{1,2})[-\/](\d{4})$/);
+    if (m) return `${m[3]}-${String(Number(m[2])).padStart(2,"0")}-${String(Number(m[1])).padStart(2,"0")}`;
+    m = String(id || "").match(/^ca-(\d{4})-(\d{2})-(\d{3})-/i);
+    if (m) {
+      const day = Number(m[3]);
+      if (day >= 1 && day <= 31) return `${m[1]}-${m[2]}-${String(day).padStart(2,"0")}`;
+    }
+    return "";
+  }
+
+  function normalizeManagerQuestion(raw) {
+    const q = raw && typeof raw === "object" ? {...raw} : {};
+    const id = String(q.id || "").trim();
+    let section = String(q.section || "").trim().toLowerCase();
+    if (section !== "current" && section !== "static") section = /^ca-/i.test(id) ? "current" : "static";
+    const date = section === "current" ? normalizeQuestionDate(q.date, id) : "";
+    const rawYear=String(q.year||"").trim();
+    const rawMonth=String(q.month||"").trim();
+    const fallbackYear=/^\d{4}$/.test(rawYear)?rawYear:"";
+    const monthNumber=Number(rawMonth);
+    const fallbackMonth=monthNumber>=1&&monthNumber<=12?String(monthNumber).padStart(2,"0"):"";
+    const year=section==="current"?(date?date.slice(0,4):fallbackYear):"";
+    const month=section==="current"?(date?date.slice(5,7):fallbackMonth):"";
+    const topic = String(q.topic || q.mainCategory || (section === "static" ? q.category : "") || "").trim();
+    const category = String(q.category || q.subcategory || q.subCategory || topic || "General").trim() || "General";
+    return { ...q, id, section, date, year, month, topic, category, options: Array.isArray(q.options) ? q.options : [], subQuestions: Array.isArray(q.subQuestions) ? q.subQuestions : [], explanation: String(q.explanation || "") };
+  }
+
+  // Include historical month-file questions even when they do not have an exact day.
+  const currentRows = () => state.all.filter(q => q.section === "current");
+  const staticRows = () => state.all.filter(q => q.section === "static");
+
+  function latestCurrentDate() {
+    return uniqDesc(currentRows().map(q => q.date))[0] || "";
+  }
+
+  function setRawOptions(select, values, allLabel, preferred="", fallback="") {
+    const clean = uniqDesc(values);
+    select.innerHTML = `<option value="">${esc(allLabel)}</option>` + clean.map(value => `<option value="${esc(value)}">${esc(value)}</option>`).join("");
+    const pick = clean.includes(preferred) ? preferred : (clean.includes(fallback) ? fallback : "");
+    select.value = pick;
+    return pick;
+  }
+
+  function setMonthOptions(select, values, preferred="", fallback="") {
+    const clean = uniqDesc(values);
+    select.innerHTML = '<option value="">All Months</option>' + clean.map(m => `<option value="${esc(m)}">${esc(dateMonthName(m))}</option>`).join("");
+    const pick = clean.includes(preferred) ? preferred : (clean.includes(fallback) ? fallback : "");
+    select.value = pick;
+    return pick;
+  }
+
+  function showManagerEmpty(message) {
+    $("#question-list").innerHTML = `<div class="empty">${esc(message)}</div>`;
+    $("#filtered-count").textContent = "0";
+    $("#total-count").textContent = String(state.all.length || 0);
+  }
+
+  async function loadData() {
+    const status=$("#server-status");
+    status.textContent="LOADING DATA…";
+    status.classList.remove("ok");
+
+    try {
+      // Load the two stores separately.  This avoids one giant `section=all`
+      // scan and lets the backend skip irrelevant source files.
+      const [currentResult, staticResult] = await Promise.allSettled([
+        api("/api/gk-manager-data?section=current"),
+        api("/api/gk-manager-data?section=static")
+      ]);
+
+      const currentQuestions =
+        currentResult.status === "fulfilled" && Array.isArray(currentResult.value.questions)
+          ? currentResult.value.questions
+          : [];
+
+      const staticQuestions =
+        staticResult.status === "fulfilled" && Array.isArray(staticResult.value.questions)
+          ? staticResult.value.questions
+          : [];
+
+      if (currentResult.status === "rejected" && staticResult.status === "rejected") {
+        throw new Error(
+          `Current Affairs: ${currentResult.reason?.message || "failed"} | Static GK: ${staticResult.reason?.message || "failed"}`
+        );
+      }
+
+      const byId = new Map();
+      [...currentQuestions, ...staticQuestions]
+        .map(normalizeManagerQuestion)
+        .filter(q => q.id)
+        .forEach(q => byId.set(q.id, q));
+      state.all = [...byId.values()];
+
+      const currentError = currentResult.status === "rejected" ? currentResult.reason?.message : "";
+      const staticError = staticResult.status === "rejected" ? staticResult.reason?.message : "";
+
+      if (!state.all.length) {
+        status.textContent="READY · 0 QUESTIONS";
+        status.classList.add("ok");
+        populateManagerFilters(true);
+        populatePlayerFilters(true);
+        showManagerEmpty("Server connected, but no GK questions were returned.");
+        renderPlayer();
+        return;
+      }
+
+      if (currentError || staticError) {
+        status.textContent=`PARTIAL · ${state.all.length} QUESTIONS · ${currentRows().length} CURRENT · ${staticRows().length} STATIC`;
+        const problem = currentError ? `Current Affairs: ${currentError}` : `Static GK: ${staticError}`;
+        toast(problem);
+      } else {
+        status.textContent=`READY · ${state.all.length} QUESTIONS · ${currentRows().length} CURRENT · ${staticRows().length} STATIC`;
+        status.classList.add("ok");
+      }
+
+      populateManagerFilters(true);
+      populatePlayerFilters(true);
+      applyFilters(true, true);
+      syncPlayerToManager(false);
+      loadPlayerQueue(false);
+    } catch (e) {
+      status.textContent="SERVER ERROR";
+      showManagerEmpty(`Could not load GK data: ${e.message}`);
+      toast(e.message);
+    }
+  }
+
+  function populateManagerFilters(forceLatest=false) {
+    const sectionSelect=$("#f-section");
+    const current=currentRows();
+    const statics=staticRows();
+
+    if (forceLatest) {
+      sectionSelect.value = current.length ? "current" : (statics.length ? "static" : "all");
+    }
+
+    const section=sectionSelect.value;
+    const oldYear=$("#f-year").value;
+    const oldMonth=$("#f-month").value;
+    const oldDate=$("#f-date").value;
+    const oldTopic=$("#f-topic").value;
+    const oldCategory=$("#f-category").value;
+
+    if (section === "current" || section === "all") {
+      const latest=latestCurrentDate();
+      const latestYear=latest.slice(0,4);
+      const latestMonth=latest.slice(5,7);
+
+      const years=uniqDesc(current.map(q=>q.year));
+      const defaultYear=latestYear || years[0] || "";
+      const year=setRawOptions($("#f-year"), years, "All Years", forceLatest ? "" : oldYear, forceLatest ? defaultYear : "");
+      const yearRows=year ? current.filter(q=>q.year===year) : current;
+
+      const months=uniqDesc(yearRows.map(q=>q.month));
+      const defaultMonth=(latestMonth && year===latestYear) ? latestMonth : (months[0]||"");
+      const month=setMonthOptions($("#f-month"), months, forceLatest ? "" : oldMonth, forceLatest ? defaultMonth : "");
+      const monthRows=month ? yearRows.filter(q=>q.month===month) : yearRows;
+
+      const dates=uniqDesc(monthRows.map(q=>q.date));
+      const dateFallback = forceLatest && dates.includes(latest) ? latest : (dates[0]||"");
+      const date=setRawOptions($("#f-date"), dates, "All Dates", forceLatest ? "" : oldDate, dateFallback);
+
+      $("#f-year").disabled=false;
+      $("#f-month").disabled=false;
+      $("#f-date").disabled=false;
+
+      const categoryBase=date ? current.filter(q=>q.date===date) : monthRows;
+      setRawOptions($("#f-category"), categoryBase.map(q=>q.category), "All Categories", oldCategory, "");
+    } else {
+      setRawOptions($("#f-year"), [], "All Years");
+      setMonthOptions($("#f-month"), []);
+      setRawOptions($("#f-date"), [], "All Dates");
+      $("#f-year").disabled=true;
+      $("#f-month").disabled=true;
+      $("#f-date").disabled=true;
+    }
+
+    if (section === "static" || section === "all") {
+      const topics=uniqDesc(statics.map(q=>q.topic));
+      const topic=setRawOptions($("#f-topic"), topics, "All Topics", oldTopic, section==="static" && forceLatest ? (topics[0]||"") : "");
+      const topicRows=topic ? statics.filter(q=>q.topic===topic) : statics;
+      if (section === "static") setRawOptions($("#f-category"), topicRows.map(q=>q.category), "All Categories", oldCategory, "");
+      $("#f-topic").disabled=false;
+    } else {
+      setRawOptions($("#f-topic"), [], "All Topics");
+      $("#f-topic").disabled=true;
+    }
+  }
+
+  function rebuildManagerCascade(changed) {
+    const section=$("#f-section").value;
+    const current=currentRows();
+    const statics=staticRows();
+
+    if (changed === "section") {
+      populateManagerFilters(section === "current" || section === "static");
+      return;
+    }
+
+    if (section === "current" || section === "all") {
+      const year=$("#f-year").value;
+      const yearRows=year ? current.filter(q=>q.year===year) : current;
+      if (changed === "year") {
+        const months=uniqDesc(yearRows.map(q=>q.month));
+        const month=setMonthOptions($("#f-month"), months, "", year ? (months[0]||"") : "");
+        const monthRows=month ? yearRows.filter(q=>q.month===month) : yearRows;
+        const dates=uniqDesc(monthRows.map(q=>q.date));
+        setRawOptions($("#f-date"), dates, "All Dates", "", year && month ? (dates[0]||"") : "");
+      } else if (changed === "month") {
+        const month=$("#f-month").value;
+        const rows=month ? yearRows.filter(q=>q.month===month) : yearRows;
+        const dates=uniqDesc(rows.map(q=>q.date));
+        setRawOptions($("#f-date"), dates, "All Dates", "", month ? (dates[0]||"") : "");
+      }
+      const date=$("#f-date").value;
+      const month=$("#f-month").value;
+      let categoryRows=current;
+      if (year) categoryRows=categoryRows.filter(q=>q.year===year);
+      if (month) categoryRows=categoryRows.filter(q=>q.month===month);
+      if (date) categoryRows=categoryRows.filter(q=>q.date===date);
+      setRawOptions($("#f-category"), categoryRows.map(q=>q.category), "All Categories", $("#f-category").value, "");
+    }
+
+    if (section === "static") {
+      const topic=$("#f-topic").value;
+      const rows=topic ? statics.filter(q=>q.topic===topic) : statics;
+      setRawOptions($("#f-category"), rows.map(q=>q.category), "All Categories", $("#f-category").value, "");
+    }
+  }
+
+  function currentManagerFilter() { return { section:$("#f-section").value, year:$("#f-year").value, month:$("#f-month").value, date:$("#f-date").value, topic:$("#f-topic").value, category:$("#f-category").value, search:$("#f-search").value.trim().toLowerCase(), dateFrom:$("#f-date-from").value, dateTo:$("#f-date-to").value }; }
+  function filterQuestions(base, f) {
+    return base.filter(q => {
+      if(f.section && f.section!=="all" && q.section!==f.section) return false;
+      if(f.year && q.year!==f.year) return false; if(f.month && q.month!==f.month) return false; if(f.date && q.date!==f.date) return false;
+      if(f.topic && q.topic!==f.topic) return false; if(f.category && q.category!==f.category) return false;
+      if(f.dateFrom && q.section==="current" && q.date && q.date<f.dateFrom) return false; if(f.dateTo && q.section==="current" && q.date && q.date>f.dateTo) return false;
+      if(f.search){ const hay=[q.id,q.question,q.explanation,q.category,q.topic,...(q.options||[])].join(" ").toLowerCase(); if(!hay.includes(f.search))return false; }
+      return true;
+    });
+  }
+  function applyFilters(resetPage=false, resetRange=false) {
+    if(resetPage) state.page=1;
+    state.filtered=filterQuestions(state.all,currentManagerFilter());
+    $("#filtered-count").textContent=state.filtered.length;
+    $("#total-count").textContent=state.all.length;
+    const max=Math.max(1,Math.ceil(state.filtered.length/state.pageSize));
+    state.page=Math.min(state.page,max);
+    if (resetRange) {
+      $("#range-from").value = state.filtered.length ? "1" : "";
+      $("#range-to").value = state.filtered.length ? String(state.filtered.length) : "";
+    }
+    renderList();
+    updateRangeSummary();
+  }
+
+  function cardHtml(q, overallIndex) {
+    const answerIndex=Number(q.answer);
+    const correctText=Array.isArray(q.options)&&Number.isInteger(answerIndex)&&q.options[answerIndex]!=null?q.options[answerIndex]:null;
+    const answerLine=correctText!=null?`<div class="answer-line"><b>✓ ${answerLetter(answerIndex)}</b><span>${esc(correctText)}</span></div>`:"";
+    const meta=q.section==="current"
+      ?`CURRENT · ${esc(q.date||((q.year&&q.month)?`${q.year}-${q.month}`:'NO DATE'))} · ${esc(q.category||'General')}`
+      :`STATIC · ${esc(q.topic||'Static GK')} · ${esc(q.category||'General')}`;
+    const source=esc(q.sourceFile||q.source||'');
+    const context=q.section==="current"
+      ?`DATE · ${esc(q.date||((q.year&&q.month)?`${q.year}-${q.month}`:"DATE NOT AVAILABLE"))}`
+      :`TOPIC · ${esc(q.topic||q.category||"Static GK")}`;
+    const img=imageSrc(q)?`<details class="compact-detail"><summary>Image</summary><div class="detail-body qimage"><img class="zoomable-image" data-zoom-image src="${esc(imageSrc(q))}" alt="Question image" loading="lazy"><div class="zoom-hint">Click image to zoom</div></div></details>`:"";
+    const explanation=state.showManagerExplanations&&q.explanation
+      ?`<div class="explanation-box" style="margin-top:7px">${esc(q.explanation)}</div>`
+      :"";
+    const subs=state.showAllSubQuestions&&(q.subQuestions||[]).length
+      ?`<details class="compact-detail" open><summary>Subquestions (${q.subQuestions.length})</summary><div class="detail-body">${q.subQuestions.map((s,i)=>`<div class="sub"><b>Sub ${i+1}.</b><div style="margin-top:4px">${formatQuestionText(s.question)}</div><div class="sub-answer">Answer → ${answerLetter(s.answer)}${Array.isArray(s.options)&&s.options[s.answer]!=null?` · ${esc(s.options[s.answer])}`:''}</div>${state.showManagerExplanations&&s.explanation?`<div style="margin-top:5px">${esc(s.explanation)}</div>`:''}</div>`).join("")}</div></details>`
+      :"";
+    return `<article class="card ${q.section==="static"?"static":"current"}" data-id="${esc(q.id)}"><div class="compact-head"><div class="card-left"><input class="check row-check" type="checkbox" aria-label="Select ${esc(q.id)}" data-id="${esc(q.id)}" ${state.selected.has(q.id)?'checked':''}><span class="qindex">#${overallIndex+1}</span></div><details class="more-menu"><summary title="Question details and actions" aria-label="Question details and actions">⋮</summary><div class="more-pop"><div class="menu-id">${esc(q.id)}</div><div class="menu-meta">${meta}</div>${source?`<div class="menu-source">${source}</div>`:''}<div class="menu-actions"><button class="btn tiny" data-copy="${esc(q.id)}">Copy</button><button class="btn tiny lime" data-edit="${esc(q.id)}">Edit</button><button class="btn tiny danger" data-delete="${esc(q.id)}">Delete</button></div></div></details></div><div class="question-context">${context}</div><div class="qtext">${formatQuestionText(q.question)}</div>${answerLine}${img}${explanation}${subs}</article>`;
+  }
+
+  function renderList() { const max=Math.max(1,Math.ceil(state.filtered.length/state.pageSize)); const start=(state.page-1)*state.pageSize, end=Math.min(start+state.pageSize,state.filtered.length); const items=state.filtered.slice(start,end); $("#question-list").innerHTML=items.length?items.map((q,i)=>cardHtml(q,start+i)).join(""):'<div class="empty">No questions match these filters.</div>'; $("#page-label").textContent=`PAGE ${state.page} / ${max}`; $("#prev-page").disabled=state.page<=1; $("#next-page").disabled=state.page>=max; }
+  function rangeItems() { const total=state.filtered.length; let from=Math.max(1,Number($("#range-from").value)||1), to=Number($("#range-to").value)||total; from=Math.min(from,Math.max(1,total)); to=Math.max(from,Math.min(to,total)); return state.filtered.slice(from-1,to); }
+  function updateRangeSummary(){ const items=rangeItems(); $("#range-summary").textContent=items.length?`Range → ${items.length} question(s), ${items[0].id} … ${items.at(-1).id}`:"Range → 0 questions"; }
+  const copyShape = q => ({ ...(q.section==="current"?{category:q.category}:{}), question:q.question, options:Array.isArray(q.options)?q.options:[], answer:q.answer, explanation:q.explanation||"", ...((q.subQuestions||[]).length?{subQuestions:q.subQuestions}: {}) });
+  async function copyQuestions(items){ if(!items.length){toast("No questions to copy.");return;} const text=JSON.stringify(items.map(copyShape),null,2); try{await navigator.clipboard.writeText(text);toast(`Copied ${items.length} question(s).`);}catch{const ta=document.createElement("textarea");ta.value=text;document.body.appendChild(ta);ta.select();document.execCommand("copy");ta.remove();toast(`Copied ${items.length} question(s).`);} }
+  async function deleteIds(ids,label){ ids=uniq(ids); if(!ids.length){toast("No questions selected.");return;} if(!confirm(`Delete ${ids.length} question(s) ${label?`(${label})`:''}? This changes the real source files.`))return; const result=await post("/api/gk-bulk-delete",{ids}); toast(`Deleted ${result.deleted} question(s).`); state.selected.clear(); await loadData(); }
+
+  function openEdit(id){ const q=state.all.find(x=>x.id===id); if(!q)return; state.editing=structuredClone(q); state.editImageDataUrl=""; state.editImageName=""; state.removeEditImage=false; $("#edit-id").textContent=`${q.id} · ${q.section.toUpperCase()}${q.date?` · ${q.date}`:''}`; $("#edit-question").value=q.question||""; $("#edit-category").value=q.category||""; $("#edit-options").value=(q.options||[]).join("\n"); $("#edit-answer").value=answerLetter(q.answer); $("#edit-explanation").value=q.explanation||""; $("#edit-subs").value=JSON.stringify(q.subQuestions||[],null,2); $("#edit-image-preview").src=imageSrc(q)||""; $("#edit-image-preview").style.display=imageSrc(q)?"block":"none"; $("#edit-image-name").textContent=q.questionImageName||imageSrc(q)||"No image"; $("#edit-image-file").value=""; showEditMessage(""); $("#edit-modal").classList.add("show"); $("#edit-modal").setAttribute("aria-hidden","false"); }
+  function closeEdit(){ $("#edit-modal").classList.remove("show"); $("#edit-modal").setAttribute("aria-hidden","true"); state.editing=null; }
+  function showEditMessage(text,error=false){const el=$("#edit-message");el.textContent=text;el.classList.toggle("show",Boolean(text));el.classList.toggle("error",error);}
+  function parseAnswer(raw, optionCount){ raw=String(raw||"").trim().toUpperCase(); let n=/^[A-H]$/.test(raw)?raw.charCodeAt(0)-65:Number(raw); if(!Number.isInteger(n)||n<0||n>=optionCount)throw new Error("Correct answer must be A/B/C/D… or a valid 0-based index."); return n; }
+  async function fileToDataUrl(file){ if(!file)return""; if(!String(file.type).startsWith("image/"))throw new Error("Choose an image file."); const dataUrl=await new Promise((res,rej)=>{const r=new FileReader();r.onload=()=>res(String(r.result||""));r.onerror=()=>rej(new Error("Could not read image."));r.readAsDataURL(file);}); return dataUrl; }
+  async function saveEdit(){ const old=state.editing;if(!old)return; const btn=$("#edit-save");btn.disabled=true;showEditMessage("Saving…");try{ const question=$("#edit-question").value.trim(); const category=$("#edit-category").value.trim(); const options=$("#edit-options").value.split(/\r?\n/).map(x=>x.trim()).filter(Boolean); const explanation=$("#edit-explanation").value; if(!question)throw new Error("Question cannot be empty."); if(!category)throw new Error("Category cannot be empty."); if(options.length<2)throw new Error("Manager edit requires at least 2 options."); const answer=parseAnswer($("#edit-answer").value,options.length); let subs;try{subs=JSON.parse($("#edit-subs").value||"[]");}catch{throw new Error("Sub Questions must be valid JSON array.");} if(!Array.isArray(subs))throw new Error("Sub Questions must be an array."); const actions=[]; if(question!==old.question)actions.push(["question",question]); if(category!==(old.category||""))actions.push(["category",category]); if(JSON.stringify(options)!==JSON.stringify(old.options||[]))actions.push(["options",options]); if(answer!==Number(old.answer))actions.push(["answer",answer]); if(explanation!==(old.explanation||""))actions.push(["explanation",explanation]); if(JSON.stringify(subs)!==JSON.stringify(old.subQuestions||[]))actions.push(["subQuestions",subs]); for(const [action,value] of actions) await post("/api/question-update",{id:old.id,action,value}); if(state.removeEditImage) await post("/api/gk-question-image",{id:old.id,remove:true}); else if(state.editImageDataUrl) await post("/api/gk-question-image",{id:old.id,dataUrl:state.editImageDataUrl,name:state.editImageName||"Image"}); showEditMessage("Saved.");toast(`Updated ${old.id}`);closeEdit();await loadData(); }catch(e){showEditMessage(e.message,true);}finally{btn.disabled=false;} }
+
+  function populatePlayerFilters(forceLatest=false){
+    const current=currentRows(), statics=staticRows();
+    if(forceLatest) $("#p-section").value=current.length?"current":(statics.length?"static":"all");
+    const section=$("#p-section").value;
+    const oldYear=$("#p-year").value, oldMonth=$("#p-month").value, oldDate=$("#p-date").value, oldTopic=$("#p-topic").value, oldCategory=$("#p-category").value;
+    if(section==="current" || section==="all"){
+      const latest=latestCurrentDate(), latestYear=latest.slice(0,4), latestMonth=latest.slice(5,7);
+      const years=uniqDesc(current.map(q=>q.year));
+      const defaultYear=latestYear || years[0] || "";
+      const year=setRawOptions($("#p-year"),years,"All Years",forceLatest?"":oldYear,forceLatest?defaultYear:"");
+      const yr=year?current.filter(q=>q.year===year):current;
+      const months=uniqDesc(yr.map(q=>q.month));
+      const defaultMonth=(latestMonth && year===latestYear)?latestMonth:(months[0]||"");
+      const month=setMonthOptions($("#p-month"),months,forceLatest?"":oldMonth,forceLatest?defaultMonth:"");
+      const mr=month?yr.filter(q=>q.month===month):yr;
+      const dates=uniqDesc(mr.map(q=>q.date));
+      const date=setRawOptions($("#p-date"),dates,"All Dates",forceLatest?"":oldDate,forceLatest&&dates.includes(latest)?latest:(dates[0]||""));
+      $("#p-year").disabled=$("#p-month").disabled=$("#p-date").disabled=false;
+      const cr=date?current.filter(q=>q.date===date):mr;
+      setRawOptions($("#p-category"),cr.map(q=>q.category),"All Categories",oldCategory,"");
+    }else{
+      setRawOptions($("#p-year"),[],"All Years");setMonthOptions($("#p-month"),[]);setRawOptions($("#p-date"),[],"All Dates");
+      $("#p-year").disabled=$("#p-month").disabled=$("#p-date").disabled=true;
+    }
+    if(section==="static" || section==="all"){
+      const topics=uniqDesc(statics.map(q=>q.topic));
+      const topic=setRawOptions($("#p-topic"),topics,"All Topics",oldTopic,section==="static"&&forceLatest?(topics[0]||""):"");
+      if(section==="static"){
+        const sr=topic?statics.filter(q=>q.topic===topic):statics;
+        setRawOptions($("#p-category"),sr.map(q=>q.category),"All Categories",oldCategory,"");
+      }
+      $("#p-topic").disabled=false;
+    }else{setRawOptions($("#p-topic"),[],"All Topics");$("#p-topic").disabled=true;}
+  }
+
+  function rebuildPlayerCascade(changed){
+    if(changed==="section"){populatePlayerFilters(true);return;}
+    const section=$("#p-section").value,current=currentRows(),statics=staticRows();
+    if(section==="current" || section==="all"){
+      const year=$("#p-year").value, yr=year?current.filter(q=>q.year===year):current;
+      if(changed==="year"){
+        const months=uniqDesc(yr.map(q=>q.month));const month=setMonthOptions($("#p-month"),months,"",year?(months[0]||""):"");const mr=month?yr.filter(q=>q.month===month):yr;const dates=uniqDesc(mr.map(q=>q.date));setRawOptions($("#p-date"),dates,"All Dates","",year&&month?(dates[0]||""):"");
+      }else if(changed==="month"){
+        const month=$("#p-month").value, mr=month?yr.filter(q=>q.month===month):yr,dates=uniqDesc(mr.map(q=>q.date));setRawOptions($("#p-date"),dates,"All Dates","",month?(dates[0]||""):"");
+      }
+      const month=$("#p-month").value,date=$("#p-date").value;let rows=current;if(year)rows=rows.filter(q=>q.year===year);if(month)rows=rows.filter(q=>q.month===month);if(date)rows=rows.filter(q=>q.date===date);setRawOptions($("#p-category"),rows.map(q=>q.category),"All Categories",$("#p-category").value,"");
+    }
+    if(section==="static"){
+      const topic=$("#p-topic").value,rows=topic?statics.filter(q=>q.topic===topic):statics;setRawOptions($("#p-category"),rows.map(q=>q.category),"All Categories",$("#p-category").value,"");
+    }
+  }
+
+  function syncPlayerToManager(showToast=true){
+    const f=currentManagerFilter();
+    $("#p-section").value=f.section || "current";
+    populatePlayerFilters(false);
+    if(f.year) $("#p-year").value=f.year;
+    rebuildPlayerCascade("year");
+    if(f.month) $("#p-month").value=f.month;
+    rebuildPlayerCascade("month");
+    if(f.date) $("#p-date").value=f.date;
+    if(f.topic) $("#p-topic").value=f.topic;
+    rebuildPlayerCascade("date");
+    if(f.category && [...$("#p-category").options].some(o=>o.value===f.category)) $("#p-category").value=f.category;
+    loadPlayerQueue(showToast);
+  }
+  function playerFilter(){return{section:$("#p-section").value,year:$("#p-year").value,month:$("#p-month").value,date:$("#p-date").value,topic:$("#p-topic").value,category:$("#p-category").value,search:"",dateFrom:"",dateTo:""};}
+  function shuffle(arr){const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+  function loadPlayerQueue(showToast=true){ stopPlayer(); let queue=filterQuestions(state.all,playerFilter()); let from=Math.max(1,Number($("#p-from").value)||1),to=Number($("#p-to").value)||queue.length; queue=queue.slice(from-1,Math.max(from,to)); if($("#p-order").value==="random")queue=shuffle(queue); state.playerQueue=queue;state.playerIndex=0;state.playerRemaining=Number($("#p-seconds").value)||10;renderPlayer(); if(showToast)toast(`Player loaded ${queue.length} question(s).`); }
+  function playerQuestionHtml(q){
+    if(!q)return'<div class="empty">No question in this queue.</div>';
+    const opts=(q.options||[]).map((o,i)=>`<div class="player-opt ${Number(q.answer)===i?'correct':''}"><b>${String.fromCharCode(65+i)}.</b> ${esc(o)}</div>`).join("");
+    const context=q.section==="current"
+      ?`DATE · ${esc(q.date||((q.year&&q.month)?`${q.year}-${q.month}`:"DATE NOT AVAILABLE"))}`
+      :`TOPIC · ${esc(q.topic||q.category||"Static GK")}`;
+    const subs=(q.subQuestions||[]).length
+      ?`<div class="subbox" style="margin-top:14px">${q.subQuestions.map((s,i)=>`<div class="sub"><b>Sub Q${i+1}.</b><div style="margin-top:5px">${formatQuestionText(s.question)}</div><div class="sub-answer">Correct → ${answerLetter(s.answer)}${s.options?.[s.answer]!=null?` · ${esc(s.options[s.answer])}`:''}</div>${state.showPlayerExplanations&&s.explanation?`<div style="margin-top:5px">${esc(s.explanation)}</div>`:''}</div>`).join("")}</div>`
+      :"";
+    const explanation=state.showPlayerExplanations
+      ?`<div class="explanation-box"><b>Explanation</b><br>${esc(q.explanation||'No explanation added.')}</div>`
+      :"";
+    return `<div class="player-top"><div><div class="mono">${esc(q.section.toUpperCase())}</div><div class="muted">${esc(q.id)} · ${esc(q.category||'')}</div></div><div class="timer-ring" id="player-countdown">${state.playerRemaining}s</div></div><div class="player-question-context">${context}</div><div class="player-question">${formatQuestionText(q.question)}</div>${imageSrc(q)?`<div class="player-image"><img class="zoomable-image" data-zoom-image src="${esc(imageSrc(q))}" alt="Question image"><div class="zoom-hint">Click image to zoom</div></div>`:''}<div class="player-options">${opts}</div><div class="answer-box"><b>Correct Answer → ${answerLetter(q.answer)}${q.options?.[q.answer]!=null?` · ${esc(q.options[q.answer])}`:''}</b></div>${explanation}${subs}`;
+  }
+
+  function renderPlayer(){ const total=state.playerQueue.length,q=state.playerQueue[state.playerIndex]; $("#player-stage").innerHTML=q?playerQuestionHtml(q):'<div class="empty">No questions match the player filters.</div>'; $("#player-queue-info").textContent=total?`Question ${state.playerIndex+1} / ${total} · ${state.playerPlaying?'PLAYING':'PAUSED'}`:'No queue loaded.'; $("#player-play").textContent=state.playerPlaying?"❚❚ Pause":"▶ Play"; }
+  function tick(){ if(!state.playerPlaying)return; state.playerRemaining-=1; const el=$("#player-countdown");if(el)el.textContent=`${Math.max(0,state.playerRemaining)}s`; if(state.playerRemaining<=0){ if(state.playerIndex>=state.playerQueue.length-1){stopPlayer();renderPlayer();return;} state.playerIndex+=1;state.playerRemaining=Number($("#p-seconds").value)||10;renderPlayer(); } }
+  function startPlayer(){ if(!state.playerQueue.length)loadPlayerQueue(false); if(!state.playerQueue.length)return; state.playerPlaying=true;state.playerRemaining=Math.max(1,state.playerRemaining||Number($("#p-seconds").value)||10);clearInterval(state.playerTimer);state.playerTimer=setInterval(tick,1000);renderPlayer(); }
+  function stopPlayer(){state.playerPlaying=false;clearInterval(state.playerTimer);state.playerTimer=null;}
+  function movePlayer(delta){ if(!state.playerQueue.length)return; stopPlayer(); state.playerIndex=Math.max(0,Math.min(state.playerQueue.length-1,state.playerIndex+delta));state.playerRemaining=Number($("#p-seconds").value)||10;renderPlayer();}
+
+  function changeManagerSection() {
+    const section=$("#f-section").value;
+
+    // Never let Current Affairs date filters block Static GK.
+    $("#f-year").value="";
+    $("#f-month").value="";
+    $("#f-date").value="";
+    $("#f-topic").value="";
+    $("#f-category").value="";
+    $("#f-date-from").value="";
+    $("#f-date-to").value="";
+
+    if(section==="current"){
+      // Current Affairs opens on the latest available date.
+      populateManagerFilters(true);
+    }else{
+      // Static GK and All open unfiltered so data is visible immediately.
+      populateManagerFilters(false);
+    }
+    applyFilters(true,true);
+  }
+
+  function changePlayerSection() {
+    const section=$("#p-section").value;
+
+    // Clear filters that belong to the previously selected source.
+    $("#p-year").value="";
+    $("#p-month").value="";
+    $("#p-date").value="";
+    $("#p-topic").value="";
+    $("#p-category").value="";
+
+    if(section==="current"){
+      populatePlayerFilters(true);
+    }else{
+      // Static GK should start with all topics, not a forced first topic.
+      populatePlayerFilters(false);
+    }
+    loadPlayerQueue(false);
+  }
+
+  function applyManagerToolsVisibility() {
+    const box=$("#manager-tools");
+    const btn=$("#toggle-manager-tools");
+    box.classList.toggle("hidden", state.managerToolsHidden);
+    btn.textContent=state.managerToolsHidden?"Show Tools":"Hide Tools";
+    btn.setAttribute("aria-expanded", String(!state.managerToolsHidden));
+  }
+
+  function applyPlayerFiltersVisibility() {
+    const box=$("#player-filter-tools");
+    const btn=$("#toggle-player-filters");
+    box.classList.toggle("hidden", state.playerFiltersHidden);
+    btn.textContent=state.playerFiltersHidden?"Show Player Filters":"Hide Player Filters";
+    btn.setAttribute("aria-expanded", String(!state.playerFiltersHidden));
+  }
+
+  function setAllSubquestionsVisible(visible) {
+    state.showAllSubQuestions=Boolean(visible);
+    $("#show-all-subs").checked=state.showAllSubQuestions;
+    try { localStorage.setItem("gkManagerShowAllSubs", state.showAllSubQuestions ? "1" : "0"); } catch {}
+    renderList();
+  }
+
+  function setManagerExplanationsVisible(visible) {
+    state.showManagerExplanations=Boolean(visible);
+    $("#show-manager-explanations").checked=state.showManagerExplanations;
+    try { localStorage.setItem("gkManagerShowExplanations", state.showManagerExplanations ? "1" : "0"); } catch {}
+    renderList();
+  }
+
+  function setPlayerExplanationsVisible(visible) {
+    state.showPlayerExplanations=Boolean(visible);
+    $("#show-player-explanations").checked=state.showPlayerExplanations;
+    try { localStorage.setItem("gkPlayerShowExplanations", state.showPlayerExplanations ? "1" : "0"); } catch {}
+    renderPlayer();
+  }
+
+  try {
+    state.managerToolsHidden=localStorage.getItem("gkManagerToolsHidden")==="1";
+    state.showAllSubQuestions=localStorage.getItem("gkManagerShowAllSubs")==="1";
+    state.showManagerExplanations=localStorage.getItem("gkManagerShowExplanations")==="1";
+    state.showPlayerExplanations=localStorage.getItem("gkPlayerShowExplanations")==="1";
+    state.playerFiltersHidden=localStorage.getItem("gkPlayerFiltersHidden")==="1";
+  } catch {}
+  $("#show-all-subs").checked=state.showAllSubQuestions;
+  $("#show-manager-explanations").checked=state.showManagerExplanations;
+  $("#show-player-explanations").checked=state.showPlayerExplanations;
+  applyManagerToolsVisibility();
+  applyPlayerFiltersVisibility();
+
+  function openImageZoom(src, alt="Question image") {
+    if(!src) return;
+    $("#image-lightbox-img").src=src;
+    $("#image-lightbox-img").alt=alt;
+    $("#image-lightbox").classList.add("show");
+    $("#image-lightbox").setAttribute("aria-hidden","false");
+    document.body.style.overflow="hidden";
+  }
+
+  function closeImageZoom() {
+    $("#image-lightbox").classList.remove("show");
+    $("#image-lightbox").setAttribute("aria-hidden","true");
+    $("#image-lightbox-img").src="";
+    document.body.style.overflow="";
+  }
+
+  document.addEventListener("click",e=>{
+    const img=e.target.closest("[data-zoom-image]");
+    if(img){
+      e.preventDefault();
+      openImageZoom(img.currentSrc||img.src,img.alt||"Question image");
+    }
+  });
+  $("#image-lightbox-close").onclick=closeImageZoom;
+  $("#image-lightbox").addEventListener("click",e=>{
+    if(e.target.id==="image-lightbox" || e.target.id==="image-lightbox-img") closeImageZoom();
+  });
+
+  // Manager filter events
+  $("#toggle-manager-tools").onclick=()=>{
+    state.managerToolsHidden=!state.managerToolsHidden;
+    try { localStorage.setItem("gkManagerToolsHidden", state.managerToolsHidden ? "1" : "0"); } catch {}
+    applyManagerToolsVisibility();
+  };
+  $("#show-manager-explanations").addEventListener("change",e=>setManagerExplanationsVisible(e.target.checked));
+  $("#show-all-subs").addEventListener("change",e=>setAllSubquestionsVisible(e.target.checked));
+  $("#f-section").addEventListener("change",changeManagerSection);
+  $("#f-year").addEventListener("change",()=>{rebuildManagerCascade("year");applyFilters(true,true)});
+  $("#f-month").addEventListener("change",()=>{rebuildManagerCascade("month");applyFilters(true,true)});
+  $("#f-date").addEventListener("change",()=>{rebuildManagerCascade("date");applyFilters(true,true)});
+  $("#f-topic").addEventListener("change",()=>{rebuildManagerCascade("topic");applyFilters(true,true)});
+  $("#f-category").addEventListener("change",()=>applyFilters(true,true));
+  ["#f-date-from","#f-date-to"].forEach(id=>$(id).addEventListener("change",()=>applyFilters(true,true)));
+  $("#f-search").addEventListener("input",()=>applyFilters(true)); ["#range-from","#range-to"].forEach(id=>$(id).addEventListener("input",updateRangeSummary));
+  $("#select-range").onclick=()=>{state.selected=new Set(rangeItems().map(q=>q.id));renderList();toast(`Selected ${state.selected.size} range question(s).`)};
+  $("#copy-range").onclick=()=>copyQuestions(rangeItems()); $("#delete-range").onclick=()=>deleteIds(rangeItems().map(q=>q.id),"current range");
+  $("#copy-selected").onclick=()=>copyQuestions(state.all.filter(q=>state.selected.has(q.id))); $("#delete-selected").onclick=()=>deleteIds([...state.selected],"selected");
+  $("#delete-date").onclick=()=>{const d=$("#f-date").value;if(!d){toast("Select one Exact Date first.");return;}deleteIds(state.all.filter(q=>q.section==="current"&&q.date===d).map(q=>q.id),`entire date ${d}`)};
+  $("#delete-month").onclick=()=>{const y=$("#f-year").value,m=$("#f-month").value;if(!y||!m){toast("Select Year and Month first.");return;}deleteIds(state.all.filter(q=>q.section==="current"&&q.year===y&&q.month===m).map(q=>q.id),`entire month ${y}-${m}`)};
+  $("#question-list").addEventListener("change",e=>{const c=e.target.closest(".row-check");if(!c)return;c.checked?state.selected.add(c.dataset.id):state.selected.delete(c.dataset.id)});
+  $("#question-list").addEventListener("click",e=>{const edit=e.target.closest("[data-edit]"),del=e.target.closest("[data-delete]"),copy=e.target.closest("[data-copy]");const menu=e.target.closest(".more-menu");if(edit){menu?.removeAttribute("open");openEdit(edit.dataset.edit);}if(del){menu?.removeAttribute("open");deleteIds([del.dataset.delete],del.dataset.delete);}if(copy){menu?.removeAttribute("open");const q=state.all.find(x=>x.id===copy.dataset.copy);if(q)copyQuestions([q]);}});
+  document.addEventListener("click",e=>{document.querySelectorAll(".more-menu[open]").forEach(menu=>{if(!menu.contains(e.target))menu.removeAttribute("open");});});
+  $("#prev-page").onclick=()=>{if(state.page>1){state.page--;renderList()}}; $("#next-page").onclick=()=>{const max=Math.ceil(state.filtered.length/state.pageSize);if(state.page<max){state.page++;renderList()}}; $("#page-size").onchange=e=>{state.pageSize=Number(e.target.value)||50;state.page=1;renderList()};
+
+  // Edit modal
+  $("#edit-close").onclick=closeEdit;$("#edit-cancel").onclick=closeEdit;$("#edit-save").onclick=saveEdit;$("#edit-modal").addEventListener("click",e=>{if(e.target.id==="edit-modal")closeEdit()});
+  $("#edit-image-file").addEventListener("change",async e=>{try{const f=e.target.files?.[0];if(!f)return;state.editImageDataUrl=await fileToDataUrl(f);state.editImageName=f.name;state.removeEditImage=false;$("#edit-image-preview").src=state.editImageDataUrl;$("#edit-image-preview").style.display="block";$("#edit-image-name").textContent=f.name;}catch(err){showEditMessage(err.message,true)}});
+  $("#edit-image-remove").onclick=()=>{state.removeEditImage=true;state.editImageDataUrl="";state.editImageName="";$("#edit-image-preview").src="";$("#edit-image-preview").style.display="none";$("#edit-image-name").textContent="Image will be removed on Save."};
+
+  // Tabs + player
+  $$("[data-tab]").forEach(btn=>btn.onclick=()=>{$$("[data-tab]").forEach(b=>b.classList.toggle("active",b===btn));$("#manage-tab").classList.toggle("hide",btn.dataset.tab!=="manage");$("#player-tab").classList.toggle("hide",btn.dataset.tab!=="player");});
+  $("#show-player-explanations").addEventListener("change",e=>setPlayerExplanationsVisible(e.target.checked));
+  $("#toggle-player-filters").onclick=()=>{
+    state.playerFiltersHidden=!state.playerFiltersHidden;
+    try { localStorage.setItem("gkPlayerFiltersHidden", state.playerFiltersHidden ? "1" : "0"); } catch {}
+    applyPlayerFiltersVisibility();
+  };
+  $("#player-load").onclick=()=>loadPlayerQueue(true);$("#player-play").onclick=()=>state.playerPlaying?(stopPlayer(),renderPlayer()):startPlayer();$("#player-prev").onclick=()=>movePlayer(-1);$("#player-next").onclick=()=>movePlayer(1);$("#player-restart").onclick=()=>{stopPlayer();state.playerIndex=0;state.playerRemaining=Number($("#p-seconds").value)||10;renderPlayer()};
+  $("#use-manager-filter").onclick=()=>syncPlayerToManager(true);
+  $("#p-section").addEventListener("change",changePlayerSection);
+  $("#p-year").addEventListener("change",()=>{rebuildPlayerCascade("year");loadPlayerQueue(false)});
+  $("#p-month").addEventListener("change",()=>{rebuildPlayerCascade("month");loadPlayerQueue(false)});
+  $("#p-date").addEventListener("change",()=>{rebuildPlayerCascade("date");loadPlayerQueue(false)});
+  $("#p-topic").addEventListener("change",()=>{rebuildPlayerCascade("topic");loadPlayerQueue(false)});
+  ["#p-category","#p-from","#p-to","#p-order"].forEach(id=>$(id).addEventListener("change",()=>loadPlayerQueue(false)));
+  $("#p-seconds").addEventListener("change",()=>{state.playerRemaining=Number($("#p-seconds").value)||10;renderPlayer()});
+  $("#refresh-data").onclick=loadData;document.addEventListener("keydown",e=>{if(e.key!=="Escape")return;if($("#image-lightbox").classList.contains("show")){closeImageZoom();return;}if($("#edit-modal").classList.contains("show"))closeEdit()});
+  loadData();
+})();
+</script>
+</body>
+</html>

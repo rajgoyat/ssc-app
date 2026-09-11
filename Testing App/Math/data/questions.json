@@ -15,7 +15,7 @@
     "solutionImage": null,
     "order": 0,
     "attemptStatus": "unattempted",
-    "testAllowed": false,
+    "testAllowed": true,
     "special": false
   },
   {
@@ -261,7 +261,7 @@
     "solutionImage": null,
     "id": "mt3o2vcmjtlk20",
     "order": 16,
-    "attemptStatus": "unattempted",
+    "attemptStatus": "correct",
     "testAllowed": true,
     "special": false
   },
@@ -1667,7 +1667,7 @@
     "solutionImage": null,
     "id": "mtbnsfgeu4gt9x",
     "order": 91,
-    "attemptStatus": "unattempted",
+    "attemptStatus": "correct",
     "testAllowed": true,
     "special": false
   },
@@ -2347,7 +2347,7 @@
       "126"
     ],
     "correctIndex": 1,
-    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=pUemTZMTyUBHltxQ&t=5710",
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=pUemTZMTyUBHltxQ&t=5493",
     "solutionImage": "/uploads/mixture-alligation/097bebc348398768fba51b4684c354674423ec70b61e669120786e96b4c3246b.png",
     "special": false,
     "id": "mtmn25o306m022",
@@ -2651,7 +2651,7 @@
       "82%"
     ],
     "correctIndex": 2,
-    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=hfTgPeAbOku9eJIB&t=9791",
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=hfTgPeAbOku9eJIB&t=9700",
     "solutionImage": null,
     "special": false,
     "id": "mttx2tcphf0n5",
@@ -3701,6 +3701,196 @@
     "special": false,
     "id": "mtu4hizo13jijb",
     "order": 194,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "questionText": "",
+    "questionImage": "/uploads/trigonometry/bbe0411ad767d01bd3198425e57e5874f9c66d84267f57155f5ac644115ebf5b.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/8cZwHgcg2V4?si=sc0shaVUN-LFQsbD&t=127",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtvi6l37s4juae",
+    "order": 195,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Time & Work",
+    "questionText": "A and B are both capable of doing a task in 45 and 40 days, respectively?\nTogether, they started the task, but after a few days, A left, and B finished the\nremaining work in 23 days. The number of days A and B worked together is?",
+    "questionImage": null,
+    "options": [
+      "6",
+      "3",
+      "5",
+      "7"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/8cZwHgcg2V4?si=JtwYMEf40FTrSxOi&t=186   do without lcm",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtvie0hannr7k6",
+    "order": 196,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Percentage",
+    "questionText": "A second-hand car was purchased 3 years ago for Rs. 62500 and now its\ndepreciation value is Rs. 32000. At what rate percentage per annum is it\ndepreciating?",
+    "questionImage": null,
+    "options": [
+      "20",
+      "30",
+      "80",
+      "60"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/8cZwHgcg2V4?si=xVK9EyCdFsTt0Lyt&t=260",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtvihduuj73jy1",
+    "order": 197,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "Two liquids X and Y are mixed in can A in the ratio of 6 : 1 and in can B in the ratio\nof 8 : 3. In what ratio should liquids be taken from the two cans so as to form a\nmixture in which liquids X and Y will be in the ratio of 9 : 2?",
+    "questionImage": null,
+    "options": [
+      "3:3",
+      "4:3",
+      "7:3",
+      "1:3"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/8cZwHgcg2V4?si=0eD6igJX_Rkcfa2S&t=311",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtvijvtff2jm58",
+    "order": 198,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "questionText": "Gold is 17 times as heavy as water and copper is 11 times as heavy as water. In\nwhat ratio should these metals be mixed so that mixture may be 13 times as\nheavy as water.",
+    "questionImage": null,
+    "options": [
+      "1:2",
+      "2:2",
+      "3:2",
+      "4:2"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/8cZwHgcg2V4?si=w1FS5gE67G-P459U&t=401",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtvinszdbp6dki",
+    "order": 199,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "In how much time will a sum of Rs. 15625 amount to Rs. 32768 at 28% per annum\ncompound interest?   iska koi without formula fast method hai kya",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 2,
+    "solutionText": "",
+    "solutionImage": "/uploads/compound-interest/b6300f45b01e44c27f00dfe8b750fc30e7c2ae19959a08e4d25618bcc95641c3.png",
+    "special": false,
+    "id": "mtvivbnu32upaw",
+    "order": 200,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "questionText": "Two guns are fired from the railway station at an interval 5 minutes. A police\nofficer who is sitting in the train approaching the station observes that 4 min 30\nsecond have elapsed between the hearing of the sound of the two guns. If the\nvelocity of the sound is 330 m/s. The train was approaching that place at what\nspeed (in km/hr)?",
+    "questionImage": null,
+    "options": [
+      "321",
+      "221",
+      "150",
+      "132"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/8cZwHgcg2V4?si=HeInmW0nefJm2JcD&t=505\nआवाज़ को जहाँ पहुँचने में आगे 30 सेकंड (300 - 270) और लगते, ट्रेन ने चलती हुई उस दूरी को 270 सेकंड में ही तय कर लिया।",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtvj735bkkfbdb",
+    "order": 201,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Algebra",
+    "questionText": "Simplify",
+    "questionImage": "/uploads/algebra/2f79165d5fc2034b4dd3716530225f69ba96b7f9402d1d2f48e7056772c198fd.png",
+    "options": [
+      "40",
+      "90",
+      "80",
+      "60"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/9Aq1HBiv1wE?si=GSdPmhdleERrfby5&t=1280",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtwm9k8f726rvd",
+    "order": 202,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Algebra",
+    "questionText": "the value of",
+    "questionImage": "/uploads/algebra/4c959914bd0e1a5d2ab5da24a6b89c17760159553a565327018090ccc12580e1.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/9Aq1HBiv1wE?si=ag0HNH1RuQNEvuoB&t=1091",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtwmb7hbt3p2i1",
+    "order": 203,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Algebra",
+    "questionText": "The value of : (2020 MAINS)",
+    "questionImage": "/uploads/algebra/ded6d09917e500a0e6586bc83f866dd90a4382d367061127a2f539fac2022920.png",
+    "options": [
+      "5/20",
+      "7/20",
+      "2/20",
+      "9/20"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/9Aq1HBiv1wE?si=ZzDQQeG8X7Pk33as&t=1843",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtwmd7c2rfkklm",
+    "order": 204,
     "attemptStatus": "unattempted",
     "testAllowed": true
   }

@@ -207,6 +207,14 @@
       "ant": "Affinity"
     },
     {
+      "en": "apathetic",
+      "hi": "उदासीन / रुचिहीन",
+      "meaning": "Showing little or no interest, emotion, or concern.",
+      "sentence": "He seemed apathetic about the election results.",
+      "syn": "indifferent",
+      "ant": "enthusiastic"
+    },
+    {
       "en": "Apathy",
       "hi": "उदासीनता",
       "meaning": "Lack of interest, enthusiasm, or concern",
@@ -312,7 +320,7 @@
       "en": "Austere",
       "hi": "कठोर / सादगीपूर्ण",
       "meaning": "Severe or strict in manner or appearance; simple, without luxury",
-      "sentence": "The monk lived an austere life with almost no possessions.",
+      "sentence": "The monk lived an austere life with almost no possessions.__________He lived an austere life. → Woh bahut simple aur strict life jeeta tha",
       "syn": "Stern",
       "ant": "Lavish"
     },
@@ -637,6 +645,14 @@
       "ant": "Scarce"
     },
     {
+      "en": "cordial",
+      "hi": "हार्दिक / मित्रवत",
+      "meaning": "Warm, friendly, and sincere.",
+      "sentence": "They had a cordial meeting after many years.",
+      "syn": "friendly",
+      "ant": "hostile"
+    },
+    {
       "en": "Corroborate",
       "hi": "पुष्टि करना",
       "meaning": "Confirm or give support to (a statement, theory, or finding)",
@@ -829,6 +845,14 @@
       "ant": "Reveal"
     },
     {
+      "en": "distortion",
+      "hi": "विकृति / गलत प्रस्तुति",
+      "meaning": "A change that makes something inaccurate or different from its original form.",
+      "sentence": "The report was a distortion of the actual facts.",
+      "syn": "misrepresentation",
+      "ant": "accuracy"
+    },
+    {
       "en": "Divine",
       "hi": "दिव्य / ईश्वरीय",
       "meaning": "Related to God or having a heavenly or extremely beautiful quality.\nBhagwan se sambandhit ya bahut hi sundar aur alaukik.",
@@ -851,6 +875,14 @@
       "sentence": "The professor's dogmatic views left no room for debate.",
       "syn": "Dogmatical",
       "ant": "Open-minded"
+    },
+    {
+      "en": "dubious",
+      "hi": "संदिग्ध / अनिश्चित",
+      "meaning": "Doubtful, uncertain, or not completely trustworthy.",
+      "sentence": "The police were dubious about his explanation.",
+      "syn": "doubtful",
+      "ant": "certain"
     },
     {
       "en": "Duplicity",
@@ -1037,6 +1069,14 @@
       "ant": "Directness"
     },
     {
+      "en": "evasive",
+      "hi": "टालमटोल करने वाला",
+      "meaning": "Avoiding giving a clear or direct answer.",
+      "sentence": "The witness gave evasive answers to the questions.",
+      "syn": "indirect",
+      "ant": "direct"
+    },
+    {
       "en": "Exacerbate",
       "hi": "और बिगाड़ देना",
       "meaning": "Make a problem, bad situation, or negative feeling worse",
@@ -1209,6 +1249,14 @@
       "ant": "Hinder"
     },
     {
+      "en": "frank",
+      "hi": "स्पष्टवादी / साफ़-साफ़ बोलने वाला",
+      "meaning": "Open, honest, and direct in speech or behaviour.",
+      "sentence": "She was frank about the problems in the project.",
+      "syn": "honest",
+      "ant": "evasive"
+    },
+    {
       "en": "Frugal",
       "hi": "मितव्ययी / किफ़ायती",
       "meaning": "Sparing or economical with money or food",
@@ -1225,6 +1273,14 @@
       "ant": "Effective"
     },
     {
+      "en": "garbled",
+      "hi": "अस्पष्ट / गड़बड़",
+      "meaning": "Confused, distorted, or difficult to understand.",
+      "sentence": "The phone call was garbled because of a poor connection.",
+      "syn": "confused",
+      "ant": "clear"
+    },
+    {
       "en": "Garrulity",
       "hi": "बकबक",
       "meaning": "Excessive talkativeness, especially on trivial matters",
@@ -1239,6 +1295,14 @@
       "sentence": "The garrulous taxi driver talked non-stop for the whole ride.",
       "syn": "Talkative",
       "ant": "Taciturn"
+    },
+    {
+      "en": "graphic",
+      "hi": "चित्रात्मक / स्पष्ट वर्णनात्मक",
+      "meaning": "Presented in a clear, detailed, or visual manner.",
+      "sentence": "The book gives a graphic description of the historical event.",
+      "syn": "vivid",
+      "ant": "vague"
     },
     {
       "en": "Gregarious",
@@ -1313,12 +1377,44 @@
       "ant": "Subordination"
     },
     {
+      "en": "hello data",
+      "hi": "हैलो डेटा",
+      "meaning": "This is not a standard English vocabulary word or phrase.",
+      "sentence": "The phrase 'hello data' appears to be a custom or test entry.",
+      "syn": "test entry",
+      "ant": ""
+    },
+    {
+      "en": "helloshiv",
+      "hi": "हैलोशिव",
+      "meaning": "This is not a standard English vocabulary word and appears to be a custom entry.",
+      "sentence": "Helloshiv appears to be a test entry in the data.",
+      "syn": "custom entry",
+      "ant": ""
+    },
+    {
+      "en": "helloshivaji",
+      "hi": "हैलोशिवाजी",
+      "meaning": "This is not a standard English vocabulary word and appears to be a custom entry.",
+      "sentence": "Helloshivaji appears to be a test entry in the data.",
+      "syn": "custom entry",
+      "ant": ""
+    },
+    {
       "en": "Hermetic",
       "hi": "वायु-रुद्ध / रहस्यमयी",
       "meaning": "Complete and airtight; insulated or protected from outside influences",
       "sentence": "The lab operates in near-hermetic isolation from outside interference.",
       "syn": "Airtight",
       "ant": "Open"
+    },
+    {
+      "en": "hinder",
+      "hi": "बाधा डालना / रोकना",
+      "meaning": "To make it difficult for something or someone to progress.",
+      "sentence": "Heavy rain may hinder the rescue operation.",
+      "syn": "obstruct",
+      "ant": "assist"
     },
     {
       "en": "Hospitable",
@@ -1383,6 +1479,14 @@
       "sentence": "The negotiations reached an impasse after both sides rejected the proposal.",
       "syn": "Deadlock",
       "ant": "Breakthrough"
+    },
+    {
+      "en": "impeccable",
+      "hi": "निर्दोष / बेदाग",
+      "meaning": "Perfect and without any faults or mistakes.",
+      "sentence": "Her performance was impeccable.",
+      "syn": "flawless",
+      "ant": "imperfect"
     },
     {
       "en": "Impecunious",
@@ -1607,6 +1711,14 @@
       "sentence": "The word 'jorgh' may be a spelling error.",
       "syn": "Unknown",
       "ant": "Unknown"
+    },
+    {
+      "en": "jubilant",
+      "hi": "बहुत प्रसन्न / उल्लसित",
+      "meaning": "Feeling or expressing great happiness and triumph.",
+      "sentence": "The fans were jubilant after their team won the match.",
+      "syn": "joyful",
+      "ant": "dejected"
     },
     {
       "en": "Knack",
@@ -1939,6 +2051,14 @@
       "sentence": "The hotel lobby was decorated in an opulent, gold-trimmed style.",
       "syn": "Luxurious",
       "ant": "Poor"
+    },
+    {
+      "en": "ornate",
+      "hi": "अत्यधिक सजावटी / अलंकृत",
+      "meaning": "Highly decorated with complex patterns or details.",
+      "sentence": "The palace had ornate doors and ceilings.",
+      "syn": "decorative",
+      "ant": "plain"
     },
     {
       "en": "Ostentatious",
@@ -2779,6 +2899,14 @@
       "ant": "Decide"
     },
     {
+      "en": "vague",
+      "hi": "अस्पष्ट / अनिश्चित",
+      "meaning": "Not clearly expressed, explained, or understood.",
+      "sentence": "He gave a vague answer to the question.",
+      "syn": "unclear",
+      "ant": "clear"
+    },
+    {
       "en": "Vapid",
       "hi": "नीरस / फीका",
       "meaning": "Offering nothing that is stimulating or challenging",
@@ -2865,6 +2993,14 @@
       "sentence": "The voluble host kept the conversation flowing all evening.",
       "syn": "Garrulous",
       "ant": "Taciturn"
+    },
+    {
+      "en": "waive",
+      "hi": "छोड़ देना / माफ़ करना",
+      "meaning": "To choose not to demand or enforce a right, fee, or requirement.",
+      "sentence": "The bank decided to waive the processing fee.",
+      "syn": "forgo",
+      "ant": "enforce"
     },
     {
       "en": "Zealot",

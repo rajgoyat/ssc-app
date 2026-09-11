@@ -1,3 +1,2742 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Vocab Alert</title>
+
+<style>
+:root{
+  --bg:#080d18;
+  --bg2:#0d1424;
+  --ink:#e8edf7;
+  --muted:#8994a8;
+  --gold:#f0b84b;
+  --card:#111a2b;
+  --card2:#162136;
+  --teal:#55b7ae;
+  --red:#d95c4a;
+  --line:rgba(255,255,255,.10);
+  --line2:rgba(255,255,255,.16);
+  --white:#fff;
+}
+
+/* ===== MODERN SCROLLBAR ===== */
+* { scrollbar-width: thin; scrollbar-color: #f0b84b #080d18; }
+*::-webkit-scrollbar { width: 10px; height: 10px; }
+*::-webkit-scrollbar-track { background: linear-gradient(180deg, #080d18 0%, #0d1424 100%); }
+*::-webkit-scrollbar-thumb { background: linear-gradient(180deg, #f0b84b 0%, #d4941f 100%); border-radius: 10px; border: 2px solid #080d18; transition: all 0.3s ease; }
+*::-webkit-scrollbar-thumb:hover { background: linear-gradient(180deg, #ffd966 0%, #f0b84b 100%); box-shadow: 0 0 15px rgba(240, 184, 75, 0.5); }
+
+/* =========================
+   RESET
+========================= */
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  width:100%;
+  min-height:100%;
+  background:var(--bg);
+}
+
+body{
+  width:100%;
+  min-height:100dvh;
+  background:
+    radial-gradient(circle at top left, rgba(62,124,124,.10), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(232,163,61,.07), transparent 30%),
+    var(--bg);
+
+  font-family:Georgia, serif;
+
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+
+  padding:
+    max(18px, env(safe-area-inset-top))
+    max(14px, env(safe-area-inset-right))
+    max(18px, env(safe-area-inset-bottom))
+    max(14px, env(safe-area-inset-left));
+
+  color:var(--ink);
+  overflow-x:hidden;
+}
+
+/* =========================
+   MAIN BOARD
+========================= */
+
+.board{
+  width:100%;
+  max-width:560px;
+  min-width:0;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+  margin-bottom:14px;
+  padding:0 3px;
+}
+
+.brand{
+  color:var(--gold);
+  font-family:"Courier New",monospace;
+  letter-spacing:1.5px;
+  font-size:12px;
+  text-transform:uppercase;
+  font-weight:bold;
+  min-width:0;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+.clock{
+  flex-shrink:0;
+
+  font-family:"Courier New",monospace;
+  color:#fff;
+
+  background:rgba(255,255,255,.06);
+  border:1px solid var(--line2);
+
+  padding:6px 11px;
+  border-radius:7px;
+
+  font-size:14px;
+  letter-spacing:1px;
+
+  min-width:72px;
+  text-align:center;
+
+  box-shadow:0 5px 18px rgba(0,0,0,.25);
+}
+
+/* =========================
+   ALERT CARD
+========================= */
+
+.alertbox{
+  width:100%;
+  background:linear-gradient(
+    145deg,
+    var(--card),
+    #0e1727
+  );
+
+  border:1px solid var(--line);
+  border-radius:12px;
+
+  box-shadow:
+    0 18px 45px rgba(0,0,0,.45),
+    inset 0 1px 0 rgba(255,255,255,.025);
+
+  overflow:hidden;
+
+  transform-origin:top center;
+  animation:pop .4s ease;
+}
+
+@keyframes pop{
+  0%{
+    transform:scale(.96) translateY(-8px);
+    opacity:0;
+  }
+
+  100%{
+    transform:scale(1) translateY(0);
+    opacity:1;
+  }
+}
+
+/* =========================
+   ALERT TOP
+========================= */
+
+.alerttop{
+  background:linear-gradient(
+    135deg,
+    #b94436,
+    var(--red)
+  );
+
+  color:#fff;
+
+  padding:9px 16px;
+
+  font-family:"Courier New",monospace;
+  font-size:10.5px;
+  letter-spacing:1.5px;
+
+  text-transform:uppercase;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  gap:10px;
+}
+
+.alerttop-right{
+  display:flex;
+  align-items:center;
+  gap:9px;
+}
+
+
+.wordnav{display:flex;align-items:center;gap:5px;flex-wrap:nowrap;}
+.contentnav{display:flex;align-items:center;gap:3px;flex-wrap:nowrap;}
+.content-btn{height:23px;padding:0 7px;border-radius:12px;border:1px solid rgba(255,255,255,.38);background:rgba(255,255,255,.12);color:#fff;font-family:"Courier New",monospace;font-size:9px;line-height:1;cursor:pointer;transition:.2s ease;}
+.content-btn:hover{background:rgba(255,255,255,.25);}
+.content-btn.active{background:#fff;color:var(--red);}
+.topmini-btn{width:23px;height:23px;display:inline-flex;align-items:center;justify-content:center;padding:0;border-radius:50%;border:1px solid rgba(255,255,255,.38);background:rgba(255,255,255,.12);color:#fff;font-family:"Courier New",monospace;font-size:11px;line-height:1;cursor:pointer;transition:.2s ease;}
+.topmini-btn:hover{background:rgba(255,255,255,.25);}
+.topmini-btn.active{background:#fff;color:var(--red);}
+.qno-input{width:46px;height:23px;padding:0 5px;border-radius:12px;border:1px solid rgba(255,255,255,.38);background:rgba(255,255,255,.12);color:#fff;text-align:center;font-family:"Courier New",monospace;font-size:9px;outline:none;}
+.qno-input::placeholder{color:rgba(255,255,255,.75);}
+.qno-input:focus{background:rgba(255,255,255,.20);border-color:#fff;}
+
+.topsearch-wrap{display:flex;align-items:center;gap:3px;}
+.topsearch-input{width:92px;height:23px;padding:0 7px;border-radius:12px;border:1px solid rgba(255,255,255,.38);background:rgba(255,255,255,.12);color:#fff;font-family:"Courier New",monospace;font-size:9px;outline:none;}
+.topsearch-input::placeholder{color:rgba(255,255,255,.75);}
+.topsearch-input:focus{width:125px;background:rgba(255,255,255,.20);border-color:#fff;}
+.topsearch-input.not-found{border-color:#ffd1cc;background:rgba(255,255,255,.26);}
+
+.editcur-btn{
+  background:rgba(255,255,255,.13);
+  color:#fff;
+
+  border:1px solid rgba(255,255,255,.35);
+
+  padding:4px 9px;
+  border-radius:13px;
+
+  font-family:"Courier New",monospace;
+  font-size:10px;
+  letter-spacing:.8px;
+
+  text-transform:uppercase;
+
+  cursor:pointer;
+
+  transition:.2s ease;
+}
+
+.editcur-btn:hover{
+  background:rgba(255,255,255,.25);
+}
+
+.editcur-btn:active{
+  transform:scale(.96);
+}
+
+/* =========================
+   ALERT BODY
+========================= */
+
+.alertbody{
+  padding:23px 22px 20px;
+  min-width:0;
+}
+
+.word-en{
+  font-size:29px;
+  line-height:1.15;
+
+  font-weight:bold;
+
+  color:var(--ink);
+
+  margin-bottom:5px;
+
+  overflow-wrap:anywhere;
+  word-break:break-word;
+}
+
+.word-hi{
+  font-size:19px;
+  line-height:1.3;
+
+  color:var(--teal);
+
+  margin-bottom:17px;
+
+  font-weight:600;
+
+  overflow-wrap:anywhere;
+}
+
+.row{
+  display:flex;
+  gap:10px;
+
+  margin-bottom:11px;
+
+  align-items:flex-start;
+
+  min-width:0;
+}
+
+.label{
+  flex:0 0 76px;
+
+  font-family:"Courier New",monospace;
+  font-size:10.5px;
+
+  letter-spacing:.9px;
+  text-transform:uppercase;
+
+  color:var(--muted);
+
+  padding-top:3px;
+}
+
+.val{
+  min-width:0;
+  flex:1;
+
+  font-size:15px;
+  line-height:1.55;
+
+  color:#dfe6f2;
+
+  overflow-wrap:anywhere;
+  word-break:break-word;
+}
+
+#sentence{
+  font-style:italic;
+  color:#b9c3d4;
+}
+
+/* =========================
+   PILLS
+========================= */
+
+.pillrow{
+  display:flex;
+  gap:8px;
+
+  margin-top:15px;
+
+  flex-wrap:wrap;
+}
+
+.pill{
+  max-width:100%;
+
+  padding:5px 11px;
+
+  border-radius:20px;
+
+  font-size:12px;
+
+  font-family:"Courier New",monospace;
+
+  overflow-wrap:anywhere;
+}
+
+.pill.syn{
+  background:rgba(62,180,160,.12);
+  color:#74d2c7;
+  border:1px solid rgba(85,183,174,.55);
+}
+
+.pill.ant{
+  background:rgba(217,92,74,.12);
+  color:#ef8b7c;
+  border:1px solid rgba(217,92,74,.6);
+}
+
+/* =========================
+   CONTROLS
+========================= */
+
+.controls{
+  width:100%;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  gap:12px;
+
+  margin-top:14px;
+
+  padding:0 3px;
+}
+
+.btn{
+  background:var(--gold);
+  color:#111827;
+
+  border:none;
+
+  border-radius:22px;
+
+  font-family:"Courier New",monospace;
+  font-size:10px;
+
+  letter-spacing:.8px;
+
+  text-transform:uppercase;
+  font-weight:bold;
+
+  cursor:pointer;
+
+  height:35px;
+width:60px;
+  transition:.2s ease;
+
+  box-shadow:0 5px 16px rgba(240,184,75,.12);
+}
+
+.btn:hover{
+  filter:brightness(1.06);
+}
+
+.btn:active{
+  transform:scale(.97);
+}
+
+.count{
+  color:#7f8ba0;
+
+  font-family:"Courier New",monospace;
+  font-size:11px;
+
+  line-height:1.4;
+
+  min-width:0;
+
+  overflow-wrap:anywhere;
+}
+
+/* =========================
+   MANAGE BOX
+========================= */
+
+.managebox{
+  width:100%;
+
+  background:linear-gradient(
+    145deg,
+    var(--card),
+    #0e1727
+  );
+
+  border:1px solid var(--line);
+
+  border-radius:12px;
+
+  margin-top:16px;
+
+  box-shadow:
+    0 12px 30px rgba(0,0,0,.35);
+
+  overflow:hidden;
+}
+
+.managetop-title{
+  background:rgba(255,255,255,.025);
+
+  padding:12px 16px;
+
+  font-family:"Courier New",monospace;
+
+  font-size:10.5px;
+  letter-spacing:1.4px;
+
+  text-transform:uppercase;
+
+  color:#cbd4e4;
+
+  font-weight:bold;
+
+  box-shadow:
+    inset 0 -2px 0 var(--gold);
+}
+
+/* =========================
+   SEARCH PANEL
+========================= */
+
+.managebody{
+  padding:12px 10px 14px;
+  display:none;
+}
+
+.managebody.active{
+  display:block;
+}
+
+.searchwrap input{
+  width:100%;
+
+  padding:10px 13px;
+
+  border-radius:20px;
+
+  border:1px solid var(--line2);
+
+  background:#0a111e;
+
+  font-family:Georgia,serif;
+  font-size:14px;
+
+  color:var(--ink);
+
+  outline:none;
+
+  transition:.2s ease;
+
+  margin-bottom:10px;
+}
+
+.searchwrap input::placeholder{
+  color:#657187;
+}
+
+.searchwrap input:focus{
+  border-color:rgba(85,183,174,.65);
+
+  box-shadow:
+    0 0 0 3px rgba(85,183,174,.08);
+}
+
+/* =========================
+   SEARCH RESULTS
+========================= */
+
+.searchresults{
+  max-height:260px;
+  overflow-y:auto;
+
+  scrollbar-width:thin;
+  scrollbar-color:#34445d transparent;
+}
+
+.searchitem{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  gap:10px;
+
+  padding:10px 5px;
+
+  border-bottom:1px solid var(--line);
+
+  cursor:pointer;
+
+  min-width:0;
+
+  transition:.15s ease;
+}
+
+.searchitem:last-child{
+  border-bottom:none;
+}
+
+.searchitem:hover{
+  background:rgba(85,183,174,.07);
+}
+
+.searchitem:active{
+  background:rgba(85,183,174,.12);
+}
+
+.searchitem .si-en{
+  font-weight:bold;
+  color:#e3e9f3;
+  font-size:14px;
+
+  overflow-wrap:anywhere;
+}
+
+.searchitem .si-hi{
+  color:#65c4bb;
+  font-size:12.5px;
+
+  text-align:right;
+
+  overflow-wrap:anywhere;
+}
+
+
+.searchitem{align-items:flex-start;gap:10px;}
+.searchitem-main{flex:1;min-width:0;}
+.searchitem-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px;}
+.searchitem .si-meaning,.searchitem .si-sentence,.searchitem .si-extra{margin-top:4px;font-size:12px;line-height:1.45;color:#aab4c3;overflow-wrap:anywhere;}
+.searchitem .si-sentence{font-style:italic;}
+.searchitem .si-extra{font-family:"Courier New",monospace;font-size:10.5px;color:#7f8b9d;}
+.searchempty{
+  font-family:"Courier New",monospace;
+  font-size:12px;
+
+  color:#68758a;
+
+  padding:2px 3px;
+}
+
+/* =========================
+   MISSING WORD
+========================= */
+
+.savemissing-btn{
+  margin-top:8px;
+
+  background:var(--gold);
+  color:#111827;
+
+  border:none;
+
+  padding:9px 14px;
+
+  border-radius:18px;
+
+  font-family:"Courier New",monospace;
+
+  font-size:11px;
+
+  letter-spacing:.7px;
+
+  text-transform:uppercase;
+
+  font-weight:bold;
+
+  cursor:pointer;
+
+  max-width:100%;
+}
+
+.missinghint{
+  font-family:"Courier New",monospace;
+  font-size:10.5px;
+
+  color:#5f6d83;
+
+  padding:5px 4px 0;
+}
+
+/* =========================
+   EDIT FORM
+========================= */
+
+.editform{
+  display:none;
+
+  margin-top:14px;
+
+  padding-top:14px;
+
+  border-top:1px dashed var(--line2);
+}
+
+.editform.active{
+  display:block;
+}
+
+.edittitle{
+  font-size:19px;
+  line-height:1.25;
+
+  font-weight:bold;
+
+  color:#e7edf7;
+
+  margin-bottom:12px;
+
+  overflow-wrap:anywhere;
+}
+
+.field{
+  margin-bottom:10px;
+}
+
+.field label{
+  display:block;
+
+  font-family:"Courier New",monospace;
+
+  font-size:10px;
+
+  letter-spacing:1px;
+
+  text-transform:uppercase;
+
+  color:#77849a;
+
+  margin-bottom:5px;
+}
+
+.field input,
+.field textarea{
+  width:100%;
+
+  padding:9px 10px;
+
+  border-radius:7px;
+
+  border:1px solid var(--line2);
+
+  background:#0a111e;
+
+  font-family:Georgia,serif;
+
+  font-size:14px;
+
+  color:var(--ink);
+
+  outline:none;
+
+  resize:vertical;
+
+  transition:.2s ease;
+}
+
+.field input:focus,
+.field textarea:focus{
+  border-color:rgba(85,183,174,.65);
+
+  box-shadow:
+    0 0 0 3px rgba(85,183,174,.07);
+}
+
+.field-row{
+  display:flex;
+  gap:10px;
+}
+
+.field-row .field{
+  flex:1;
+  min-width:0;
+}
+
+/* =========================
+   EDIT BUTTONS
+========================= */
+
+.editbtns{
+  display:flex;
+  gap:9px;
+
+  margin-top:7px;
+}
+
+.addbtn,
+.cancelbtn{
+  flex:1;
+
+  min-height:40px;
+
+  border-radius:20px;
+
+  padding:9px 14px;
+
+  font-family:"Courier New",monospace;
+
+  font-size:11px;
+
+  letter-spacing:.7px;
+
+  text-transform:uppercase;
+
+  font-weight:bold;
+
+  cursor:pointer;
+}
+
+.addbtn{
+  background:var(--teal);
+  color:#071412;
+
+  border:none;
+}
+
+.cancelbtn{
+  background:transparent;
+
+  color:#bdc7d7;
+
+  border:1px solid var(--line2);
+}
+
+.addbtn:hover{
+  filter:brightness(1.08);
+}
+
+.cancelbtn:hover{
+  background:rgba(255,255,255,.04);
+}
+
+.addmsg{
+  margin-top:8px;
+
+  font-family:"Courier New",monospace;
+
+  font-size:11px;
+
+  min-height:14px;
+}
+
+
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar{
+  width:6px;
+  height:6px;
+}
+
+::-webkit-scrollbar-track{
+  background:transparent;
+}
+
+::-webkit-scrollbar-thumb{
+  background:#34445d;
+  border-radius:10px;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width:600px){
+
+  body{
+    padding-top:max(14px, env(safe-area-inset-top));
+  }
+
+  .board{
+    max-width:100%;
+  }
+
+  .alertbody{
+    padding:21px 18px 18px;
+  }
+
+  .word-en{
+    font-size:27px;
+  }
+
+  .word-hi{
+    font-size:18px;
+  }
+
+  .val{
+    font-size:14.5px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width:420px){
+
+  .server-state{max-width:82px;font-size:8px;padding:3px 5px;}
+
+  body{
+    padding-left:10px;
+    padding-right:10px;
+  }
+
+  .header{
+    margin-bottom:10px;
+  }
+
+  .brand{
+    font-size:10px;
+    letter-spacing:1px;
+  }
+
+  .clock{
+    font-size:12px;
+    min-width:65px;
+    padding:5px 8px;
+  }
+
+  .alerttop{
+    padding:8px 12px;
+    font-size:9.5px;
+  }
+
+  .editcur-btn{
+    padding:4px 7px;
+    font-size:9px;
+  }
+
+  .alertbody{
+    padding:18px 14px 16px;
+  }
+
+  .word-en{
+    font-size:25px;
+  }
+
+  .word-hi{
+    font-size:17px;
+    margin-bottom:14px;
+  }
+
+  .row{
+    gap:7px;
+  }
+
+  .label{
+    flex-basis:62px;
+    font-size:9px;
+  }
+
+  .val{
+    font-size:13.5px;
+    line-height:1.5;
+  }
+
+  .pill{
+    font-size:10.5px;
+    padding:5px 9px;
+  }
+
+  .controls{
+    gap:8px;
+  }
+
+  .count{
+    font-size:9.5px;
+  }
+
+  .btn{
+    padding:9px 13px;
+    font-size:10.5px;
+    min-height:38px;
+  }
+
+  .managetop-title{
+    padding:11px 13px;
+    font-size:9.5px;
+  }
+
+  .managebody{
+    padding:10px 8px 12px;
+  }
+
+  .field-row{
+    flex-direction:column;
+    gap:0;
+  }
+
+  .editbtns{
+    flex-direction:column;
+  }
+
+}
+
+/* =========================
+   VERY SMALL PHONES
+========================= */
+
+@media (max-width:340px){
+
+  body{
+    padding-left:7px;
+    padding-right:7px;
+  }
+
+  .brand{
+    font-size:9px;
+  }
+
+  .clock{
+    min-width:59px;
+    font-size:11px;
+  }
+
+  .alerttop{
+    padding-left:9px;
+    padding-right:9px;
+  }
+
+  .alertbody{
+    padding-left:11px;
+    padding-right:11px;
+  }
+
+  .word-en{
+    font-size:22px;
+  }
+
+  .word-hi{
+    font-size:15px;
+  }
+
+  .label{
+    flex-basis:55px;
+    font-size:8px;
+  }
+
+  .val{
+    font-size:12.5px;
+  }
+
+  .count{
+    font-size:8.5px;
+  }
+
+  .btn{
+    font-size:9.5px;
+    padding-left:10px;
+    padding-right:10px;
+  }
+}
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion:reduce){
+
+  *,
+  *::before,
+  *::after{
+    scroll-behavior:auto !important;
+  }
+
+  .alertbox{
+    animation:none;
+  }
+}
+
+/* =========================
+   DARK MODE FORM CONTROLS
+========================= */
+
+input,
+textarea,
+button{
+  -webkit-tap-highlight-color:transparent;
+}
+
+input,
+textarea{
+  color-scheme:dark;
+}
+
+/* compact header file control + compact search/save area */
+.header-actions{display:flex;align-items:center;gap:6px;flex-shrink:0;}
+.server-state{display:inline-flex;align-items:center;gap:4px;max-width:135px;padding:3px 7px;border-radius:10px;border:1px solid var(--line2);background:rgba(255,255,255,.04);font:9px "Courier New",monospace;color:#94a0b3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.server-state::before{content:"";width:6px;height:6px;border-radius:50%;background:#68758a;flex:0 0 auto;}
+.server-state.connected{color:#79d6a5;border-color:rgba(72,199,135,.3);background:rgba(72,199,135,.07);}
+.server-state.connected::before{background:#48c787;box-shadow:0 0 7px rgba(72,199,135,.55);}
+.server-state.saving{color:#e8bd67;border-color:rgba(232,163,61,.35);background:rgba(232,163,61,.07);}
+.server-state.saving::before{background:#e8a33d;}
+.server-state.saved{color:#79d6a5;border-color:rgba(72,199,135,.3);background:rgba(72,199,135,.08);}
+.server-state.saved::before{background:#48c787;}
+.server-state.error{color:#ff8d7c;border-color:rgba(192,80,62,.38);background:rgba(192,80,62,.09);}
+.server-state.error::before{background:#df6651;}
+.managebox{margin-top:9px;border-radius:9px;}
+.managetop-title{padding:6px 10px;font-size:9px;letter-spacing:.8px;}
+.managebody{padding:7px 8px 8px;}
+.searchwrap input{padding:6px 9px;border-radius:14px;font-size:12px;margin-bottom:5px;}
+.searchresults{max-height:145px;}
+.searchitem{padding:5px 3px;gap:6px;}
+.searchitem .si-en{font-size:12px;}
+.searchitem .si-hi{font-size:10.5px;}
+.searchitem .si-meaning,.searchitem .si-sentence,.searchitem .si-extra{margin-top:2px;font-size:10px;line-height:1.3;}
+.searchitem .si-extra{font-size:9px;}
+.editform{margin-top:7px;padding-top:7px;}
+.edittitle{font-size:14px;margin-bottom:6px;}
+.field{margin-bottom:5px;}
+.field label{font-size:8.5px;margin-bottom:2px;}
+.field input,.field textarea{padding:5px 7px;font-size:11px;border-radius:5px;}
+.editbtns{gap:6px;margin-top:3px;}
+.addbtn,.cancelbtn{min-height:28px;padding:5px 9px;font-size:9px;}
+.addmsg{margin-top:4px;font-size:9px;min-height:9px;}
+
+.round-setting{display:inline-flex;align-items:center;gap:5px;margin-left:8px;font:9px "Courier New",monospace;color:#8994a8;white-space:nowrap;vertical-align:middle;}
+.round-setting input{width:34px;height:22px;padding:0 3px;border-radius:10px;border:1px solid var(--line2);background:#0a111e;color:var(--ink);text-align:center;font:10px "Courier New",monospace;outline:none;}
+.round-setting input:focus{border-color:rgba(85,183,174,.65);}
+@media(max-width:420px){.round-setting{font-size:8px;margin-left:4px;gap:3px}.round-setting input{width:30px;height:20px;font-size:9px}}
+
+/* NEW / OLD revision controls */
+.pool-switch{display:inline-flex;align-items:center;gap:3px;margin-left:5px;}
+.pool-btn{height:22px;padding:0 7px;border-radius:11px;border:1px solid var(--line2);background:#0a111e;color:#8994a8;font:9px "Courier New",monospace;cursor:pointer;}
+.pool-btn.active{background:rgba(85,183,174,.16);border-color:rgba(85,183,174,.65);color:#79d6cc;}
+.learned-btn{width:22px;height:22px;border-radius:50%;padding:0;border:1px solid rgba(255,255,255,.40);background:rgba(255,255,255,.10);color:#fff;font-size:11px;line-height:1;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;}
+.learned-btn:hover{background:rgba(85,183,174,.25);}
+.learned-btn.old{opacity:.75;cursor:pointer;background:rgba(85,183,174,.18);border-color:rgba(85,183,174,.55);}
+.pool-count{font:8px "Courier New",monospace;color:#7f8ba0;white-space:nowrap;}
+@media(max-width:420px){.pool-btn{height:20px;padding:0 5px;font-size:8px}.learned-btn{width:20px;height:20px;font-size:10px}.pool-count{display:none}}
+
+/* SIMPLE CATEGORY-DRIVEN MCQ TEST */
+.mcq-category-selector-simple{margin-top:0;padding:12px;}
+.mcq-category-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:9px;color:#dbe5f2;font:800 9px "Segoe UI",sans-serif;text-transform:uppercase;letter-spacing:.04em;}
+.mcq-category-head #mcqCategorySelectionSummary{color:#7f8da1;font-weight:700;text-transform:none;letter-spacing:0;}
+.mcq-category-toggle-list{gap:8px;}
+.mcq-category-toggle{min-height:36px;padding:0 12px;border-radius:10px;font:800 9px "Segoe UI",sans-serif;letter-spacing:.01em;}
+.mcq-category-toggle.active{border-color:rgba(106,214,200,.42);background:rgba(106,214,200,.10);color:#8ee7dc;}
+.mcq-category-toggle .mcq-chip-count{display:inline-flex;min-width:20px;justify-content:center;margin-left:6px;padding:2px 6px;border-radius:999px;background:rgba(255,255,255,.07);color:#dce7f5;font-size:8px;}
+.mcq-available-count{color:#78869a;font:700 9px "Segoe UI",sans-serif;text-transform:none;white-space:nowrap;}
+@media(max-width:600px){.mcq-category-head{align-items:flex-start;flex-direction:column;gap:3px}.mcq-category-toggle{flex:1 1 calc(50% - 8px)}.mcq-number-label{width:100%;justify-content:flex-start}.mcq-control-row .small-tool-btn.accent{width:100%}}
+</style>
+</head>
+
+<body>
+
+<div class="board">
+
+  <div class="header">
+    <div class="brand">Vocab Alert · Tier 2</div>
+    <div class="header-actions">
+      <span class="server-state connected" id="topFileStatus" title="English data is loaded and saved through the Python server">Server ✓</span>
+      <div class="clock" id="clock">10:00</div>
+    </div>
+  </div>
+
+  <div class="alertbox" id="box">
+
+    <div class="alerttop">
+
+      <span class="contentnav" title="Choose learning content">
+        <button class="content-btn active" id="vocabModeBtn" type="button">Vocab</button>
+        <button class="content-btn" id="idiomModeBtn" type="button">Idioms</button>
+        <button class="content-btn" id="mixModeBtn" type="button">Mix</button>
+      </span>
+
+      <span class="alerttop-right">
+        <span class="wordnav" title="Word order controls">
+          <button class="topmini-btn active" id="randomModeBtn" title="Random word" aria-label="Random word">⤨</button>
+          <button class="topmini-btn" id="seriesModeBtn" title="Series / alphabetical order" aria-label="Series order">↦</button>
+          <span class="topsearch-wrap">
+            <button class="topmini-btn" id="topSearchBtn" title="Search any word" aria-label="Search any word">⌕</button>
+            <input type="text" id="topSearchInput" class="topsearch-input" list="topWordSuggestions" placeholder="Search" title="Search any word and press Enter" aria-label="Search any word" autocomplete="off">
+            <datalist id="topWordSuggestions"></datalist>
+          </span>
+          <input type="number" id="qnoInput" class="qno-input" min="1" placeholder="Q#" title="Open question number" aria-label="Question number">
+        </span>
+        <button class="learned-btn" id="learnedBtn" title="Move word between New and Old" aria-label="Move word between new and old">✓</button>
+        <button class="editcur-btn" id="editCurrentBtn" title="Edit this word">✎ Edit</button>
+        <span id="wnum">#1</span>
+      </span>
+
+    </div>
+
+    <div class="alertbody">
+
+      <div class="word-en" id="wordEn"></div>
+
+      <div class="word-hi" id="wordHi"></div>
+
+      <div class="row">
+        <span class="label">Meaning</span>
+        <span class="val" id="meaning"></span>
+      </div>
+
+      <div class="row">
+        <span class="label">Sentence</span>
+        <span class="val" id="sentence"></span>
+      </div>
+
+      <div class="pillrow">
+
+        <span
+          class="pill syn"
+          id="syn"
+        ></span>
+
+        <span
+          class="pill ant"
+          id="ant"
+        ></span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="controls">
+
+    <span
+      class="count"
+      id="count"
+    >
+      Words seen: 0
+    </span>
+    <label class="round-setting" title="How many times each 10-word set will be tested">
+      <input type="number" id="testRoundsInput" min="1" max="20" value="1" aria-label="Test rounds">
+      <span id="roundLabel">round</span>
+    </label>
+    <span class="pool-switch" title="Choose which array to revise/test">
+      <button class="pool-btn active" id="newPoolBtn" type="button">New</button>
+      <button class="pool-btn" id="oldPoolBtn" type="button">Old</button>
+      <span class="pool-count" id="poolCount"></span>
+    </span>
+
+    <button
+      class="btn"
+      id="nextBtn"
+    >
+      Next now →
+    </button>
+
+  </div>
+
+
+  <div class="managebox">
+
+    <div class="managetop-title">
+      ✎ Search &amp; edit words
+    </div>
+
+    <div
+      class="managebody active"
+      id="searchPanel"
+    >
+
+      <div class="searchwrap">
+
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search by English or Hindi word..."
+        >
+
+      </div>
+
+      <div
+        class="searchresults"
+        id="searchResults"
+      ></div>
+
+
+      <div
+        class="editform"
+        id="editForm"
+      >
+
+        <div
+          class="edittitle"
+          id="editTitle"
+        ></div>
+
+
+        <div class="field">
+
+          <label>Hindi meaning</label>
+
+          <input
+            type="text"
+            id="editHi"
+          >
+
+        </div>
+
+
+        <div class="field">
+
+          <label>Meaning</label>
+
+          <textarea
+            id="editMeaning"
+            rows="2"
+          ></textarea>
+
+        </div>
+
+
+        <div class="field">
+
+          <label>Sentence</label>
+
+          <textarea
+            id="editSentence"
+            rows="2"
+          ></textarea>
+
+        </div>
+
+
+        <div class="field-row">
+
+          <div class="field">
+
+            <label>Synonym</label>
+
+            <input
+              type="text"
+              id="editSyn"
+            >
+
+          </div>
+
+          <div class="field">
+
+            <label>Antonym (opposite)</label>
+
+            <input
+              type="text"
+              id="editAnt"
+            >
+
+          </div>
+
+        </div>
+
+
+        <div class="editbtns">
+
+          <button
+            class="addbtn"
+            id="saveEditBtn"
+          >
+            Save changes
+          </button>
+
+          <button
+            class="cancelbtn"
+            id="cancelEditBtn"
+          >
+            Cancel
+          </button>
+
+        </div>
+
+        <div
+          class="addmsg"
+          id="editMsg"
+        ></div>
+
+      </div>
+
+    </div>
+
+
+
+  </div>
+
+</div>
+
+
+<script>
+
+/* English data source: Python server.
+   Existing persistent files: vocab.json, idioms.json and missing.json.
+   Error Sentences: error_sentences.json (separate server endpoint).
+   More MCQs keep their existing browser-local storage behavior. */
+
+// ---------- English server storage ----------
+
+let WORDS = [];
+let IDIOM_WORDS = [];
+
+// Learned items are moved to the OLD pools.
+let OLD_WORDS = [];
+let OLD_IDIOM_WORDS = [];
+let quizPoolMode = "new";
+let contentMode = "vocab";
+
+let browseMode = "random";
+let browseIndex = 0;
+let seriesCursor = 0;
+
+// RANDOM MODE MEMORY:
+// Keep track of words already used in the current random cycle so a word
+// cannot appear again in a later random round until every available word
+// in the selected pool has been shown once.
+let randomSeenKeys = new Set();
+let randomCycleKey = "";
+
+let missingWords = [];
+
+function sortWordArray(items){
+  return [...items].sort((a,b) =>
+    String((a && a.en) || "").localeCompare(
+      String((b && b.en) || ""),
+      "en",
+      {sensitivity:"base"}
+    )
+  );
+}
+
+function buildServerPayload(){
+  return {
+    words: WORDS,
+    idioms: IDIOM_WORDS,
+    oldWords: OLD_WORDS,
+    oldIdioms: OLD_IDIOM_WORDS,
+    missingWords: missingWords
+  };
+}
+
+function applyLoadedData(obj){
+  if(!obj || typeof obj !== "object") return false;
+
+  if(Array.isArray(obj.words)){
+    WORDS = sortWordArray(obj.words);
+  }
+
+  if(Array.isArray(obj.idioms)){
+    const sortedIdioms = sortWordArray(obj.idioms);
+    IDIOM_WORDS.splice(0, IDIOM_WORDS.length, ...sortedIdioms);
+  }
+
+  OLD_WORDS = Array.isArray(obj.oldWords)
+    ? sortWordArray(obj.oldWords)
+    : [];
+
+  OLD_IDIOM_WORDS = Array.isArray(obj.oldIdioms)
+    ? sortWordArray(obj.oldIdioms)
+    : [];
+
+  missingWords = Array.isArray(obj.missingWords)
+    ? [...obj.missingWords]
+    : [];
+
+  return true;
+}
+
+function setServerStatus(text, state = ""){
+  const topEl = document.getElementById("topFileStatus");
+  if(!topEl) return;
+
+  topEl.className = "server-state" + (state ? " " + state : "");
+  topEl.title = text || "English server status";
+
+  if(state === "saving") topEl.textContent = "Server · Saving…";
+  else if(state === "saved") topEl.textContent = "Server ✓ · Saved";
+  else if(state === "error") topEl.textContent = "Server error";
+  else topEl.textContent = "Server ✓";
+}
+
+async function loadServerData(){
+  try{
+    setServerStatus("Loading English data from the Python server...", "saving");
+
+    const response = await fetch("/api/english/data", {
+      method:"GET",
+      cache:"no-store"
+    });
+
+    if(!response.ok){
+      throw new Error("Server returned HTTP " + response.status);
+    }
+
+    const result = await response.json();
+
+    if(result && result.data){
+      applyLoadedData(result.data);
+    }
+
+    setServerStatus("English data is connected to the Python server.", "connected");
+    return true;
+
+  }catch(e){
+    console.error("English server load failed:", e);
+    setServerStatus(
+      "Server unavailable. Run python server.py and open http://127.0.0.1:8000/english/.",
+      "error"
+    );
+    return false;
+  }
+}
+
+let lastServerError = "";
+
+async function saveServerData(){
+  try{
+    lastServerError = "";
+    setServerStatus("Saving English data through the Python server...", "saving");
+
+    const response = await fetch("/api/english/data", {
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify(buildServerPayload())
+    });
+
+    const result = await response.json().catch(() => ({}));
+
+    if(!response.ok || result.ok === false){
+      throw new Error(result.error || "Server could not save English data");
+    }
+
+    setServerStatus("Saved: vocab.json · idioms.json · missing.json", "saved");
+    return true;
+
+  }catch(e){
+    console.error("English server save failed:", e);
+    lastServerError = e && e.message ? e.message : String(e || "Unknown server error");
+    setServerStatus(
+      "Save failed: " + lastServerError,
+      "error"
+    );
+    return false;
+  }
+}
+// ---------- Quiz ----------
+
+const ROUND_SIZE = 10;
+
+const PHASE = {
+  READ:"read",
+  TEST:"test"
+};
+
+let roundNumber = 1;
+
+let testPass = 1;
+
+let timeLeft = 600;
+
+let currentRoundWords = [];
+
+let currentPhase = PHASE.READ;
+
+let readIndex = 0;
+
+let testIndex = 0;
+
+let answerVisible = false;
+
+let currentWord = null;
+
+
+const boxEl =
+  document.getElementById("box");
+
+const wordEnEl =
+  document.getElementById("wordEn");
+
+const wordHiEl =
+  document.getElementById("wordHi");
+
+const meaningEl =
+  document.getElementById("meaning");
+
+const sentenceEl =
+  document.getElementById("sentence");
+
+const synEl =
+  document.getElementById("syn");
+
+const antEl =
+  document.getElementById("ant");
+
+const clockEl =
+  document.getElementById("clock");
+
+const countEl =
+  document.getElementById("count");
+
+const wnumEl =
+  document.getElementById("wnum");
+
+const nextBtn =
+  document.getElementById("nextBtn");
+
+
+function shuffleWords(items){
+
+  const arr = [...items];
+
+  for(
+    let i = arr.length - 1;
+    i > 0;
+    i--
+  ){
+
+    const j =
+      Math.floor(
+        Math.random() * (i + 1)
+      );
+
+    [
+      arr[i],
+      arr[j]
+    ] =
+    [
+      arr[j],
+      arr[i]
+    ];
+
+  }
+
+  return arr;
+
+}
+
+// Build a stable visible-word key. This also prevents duplicate English
+// entries in the data from appearing twice in the same random cycle.
+function randomWordKey(word){
+  const english = String((word && word.en) || "").trim().toLocaleLowerCase("en-US");
+  if(english) return english;
+
+  // Fallback for an unusual entry with no English label.
+  return JSON.stringify(word || {});
+}
+
+function currentRandomCycleKey(){
+  return quizPoolMode + "::" + contentMode;
+}
+
+function resetRandomCycle(){
+  randomSeenKeys.clear();
+  randomCycleKey = currentRandomCycleKey();
+}
+
+function nextRandomRound(pool){
+  const cycleKey = currentRandomCycleKey();
+
+  // Switching New/Old or Vocab/Idioms/Mix starts a fresh cycle.
+  if(randomCycleKey !== cycleKey){
+    randomSeenKeys.clear();
+    randomCycleKey = cycleKey;
+  }
+
+  // De-duplicate visible words inside the source pool itself.
+  const uniquePool = [];
+  const poolKeys = new Set();
+
+  for(const word of pool){
+    const key = randomWordKey(word);
+    if(poolKeys.has(key)) continue;
+    poolKeys.add(key);
+    uniquePool.push(word);
+  }
+
+  // If data changed while the app is open, forget seen keys that no longer
+  // exist in this pool.
+  for(const key of [...randomSeenKeys]){
+    if(!poolKeys.has(key)) randomSeenKeys.delete(key);
+  }
+
+  let remaining = uniquePool.filter(
+    word => !randomSeenKeys.has(randomWordKey(word))
+  );
+
+  // Only after ALL words have been used once do we start a new random cycle.
+  if(!remaining.length){
+    randomSeenKeys.clear();
+    remaining = [...uniquePool];
+  }
+
+  const batch = shuffleWords(remaining).slice(
+    0,
+    Math.min(ROUND_SIZE, remaining.length)
+  );
+
+  batch.forEach(word => randomSeenKeys.add(randomWordKey(word)));
+  return batch;
+}
+
+
+function showAnswerCard(word){
+
+  currentWord = word;
+
+  wordEnEl.textContent =
+    word.en;
+
+  wordHiEl.textContent =
+    word.hi || "";
+
+  meaningEl.textContent =
+    word.meaning || "";
+
+  sentenceEl.textContent =
+    word.sentence
+      ? "“" + word.sentence + "”"
+      : "";
+
+  synEl.textContent =
+    "Synonym: " +
+    (word.syn || "—");
+
+  antEl.textContent =
+    "Antonym: " +
+    (word.ant || "—");
+
+  updateLearnedButton();
+}
+
+
+function showQuestionCard(word){
+
+  currentWord = word;
+
+  wordEnEl.textContent =
+    word.en;
+
+  wordHiEl.textContent =
+    "???";
+
+  meaningEl.textContent =
+    "Tap to reveal the meaning and answer.";
+
+  sentenceEl.textContent =
+    "";
+
+  synEl.textContent =
+    "Synonym: ?";
+
+  antEl.textContent =
+    "Antonym: ?";
+
+  updateLearnedButton();
+}
+
+
+function getQuizPool(){
+  const vocabPool = quizPoolMode === "old" ? OLD_WORDS : WORDS;
+  const idiomPool = quizPoolMode === "old" ? OLD_IDIOM_WORDS : IDIOM_WORDS;
+  if(contentMode === "idioms") return idiomPool;
+  if(contentMode === "mix") return [...vocabPool, ...idiomPool];
+  return vocabPool;
+}
+
+function getAllSearchWords(){
+  const vocabSearchPool = [...WORDS, ...OLD_WORDS];
+  const idiomSearchPool = [...IDIOM_WORDS, ...OLD_IDIOM_WORDS];
+
+  // Search should respect the currently opened content tab:
+  // Vocab  -> only vocab
+  // Idioms -> only idioms
+  // Mix    -> vocab + idioms
+  if(contentMode === "idioms") return idiomSearchPool;
+  if(contentMode === "mix") return [...vocabSearchPool, ...idiomSearchPool];
+  return vocabSearchPool;
+}
+
+function setContentButtons(mode){
+  document.getElementById("vocabModeBtn")?.classList.toggle("active", mode === "vocab");
+  document.getElementById("idiomModeBtn")?.classList.toggle("active", mode === "idioms");
+  document.getElementById("mixModeBtn")?.classList.toggle("active", mode === "mix");
+}
+
+function updatePoolUI(){
+  const newBtn = document.getElementById("newPoolBtn");
+  const oldBtn = document.getElementById("oldPoolBtn");
+  const poolCount = document.getElementById("poolCount");
+  newBtn?.classList.toggle("active", quizPoolMode === "new");
+  oldBtn?.classList.toggle("active", quizPoolMode === "old");
+  if(poolCount){
+    poolCount.textContent = "N:" + (WORDS.length + IDIOM_WORDS.length) +
+      " O:" + (OLD_WORDS.length + OLD_IDIOM_WORDS.length);
+  }
+}
+
+function updateLearnedButton(){
+  const btn = document.getElementById("learnedBtn");
+  if(!btn) return;
+
+  const isManagedWord = !!currentWord && (
+    WORDS.includes(currentWord) ||
+    OLD_WORDS.includes(currentWord) ||
+    IDIOM_WORDS.includes(currentWord) ||
+    OLD_IDIOM_WORDS.includes(currentWord)
+  );
+  const isOld = !!currentWord && (OLD_WORDS.includes(currentWord) || OLD_IDIOM_WORDS.includes(currentWord));
+
+  btn.classList.toggle("old", isOld);
+  btn.disabled = !isManagedWord;
+
+  // Same tiny circle button works in BOTH directions:
+  // NEW -> OLD and OLD -> NEW.
+  btn.textContent = isOld ? "↩" : "✓";
+  btn.title = isOld
+    ? "Move this word back to New"
+    : isManagedWord
+      ? "Learned — move this word to Old"
+      : "Learned — move this word to Old";
+
+  btn.setAttribute(
+    "aria-label",
+    isOld ? "Move old word back to new" : "Move learned word to old"
+  );
+}
+
+async function toggleCurrentWordPool(){
+  if(!currentWord) return;
+
+  const wasOld = OLD_WORDS.includes(currentWord);
+  const wasNew = WORDS.includes(currentWord);
+  const wasOldIdiom = OLD_IDIOM_WORDS.includes(currentWord);
+  const wasNewIdiom = IDIOM_WORDS.includes(currentWord);
+
+  // OLD -> NEW
+  if(wasOld || wasOldIdiom){
+    const oldPool = wasOldIdiom ? OLD_IDIOM_WORDS : OLD_WORDS;
+    const newPool = wasOldIdiom ? IDIOM_WORDS : WORDS;
+    const oldIndex = oldPool.indexOf(currentWord);
+    if(oldIndex >= 0){
+      const [word] = oldPool.splice(oldIndex, 1);
+
+      if(!newPool.includes(word)){
+        newPool.push(word);
+      }
+
+      newPool.sort((a,b) =>
+        String(a.en || "").localeCompare(
+          String(b.en || ""),
+          "en",
+          {sensitivity:"base"}
+        )
+      );
+    }
+  }
+  // NEW -> OLD
+  else if(wasNew || wasNewIdiom){
+    const newPool = wasNewIdiom ? IDIOM_WORDS : WORDS;
+    const oldPool = wasNewIdiom ? OLD_IDIOM_WORDS : OLD_WORDS;
+    const newIndex = newPool.indexOf(currentWord);
+    if(newIndex >= 0){
+      const [word] = newPool.splice(newIndex, 1);
+
+      if(!oldPool.includes(word)){
+        oldPool.push(word);
+      }
+
+      oldPool.sort((a,b) =>
+        String(a.en || "").localeCompare(
+          String(b.en || ""),
+          "en",
+          {sensitivity:"base"}
+        )
+      );
+    }
+  }else{
+    return;
+  }
+
+  updatePoolUI();
+  fillTopWordSuggestions();
+  renderSearchResults(searchInput?.value || "");
+
+  // Persist NEW/OLD movement through the Python server.
+  await saveServerData();
+
+  // IMPORTANT:
+  // Do NOT restart the active round after moving a word.
+  //
+  // currentRoundWords is a snapshot of the 10 words selected for this round.
+  // So even if a word is moved NEW <-> OLD during READ or TEST,
+  // the current round/test continues from the same place.
+  // The moved word will disappear only from FUTURE rounds of that pool.
+  //
+  // This prevents the test from suddenly ending/resetting in the middle.
+  updateLearnedButton();
+
+  // Keep the current test/read status exactly where it is.
+  if(currentPhase === PHASE.TEST){
+    countEl.textContent = testStatusText(
+      answerVisible ? Math.min(testIndex + 1, currentRoundWords.length) : testIndex
+    );
+    nextBtn.textContent = answerVisible ? "Next question →" : "Show answer →";
+  }else{
+    countEl.textContent =
+      (quizPoolMode === "old" ? "Old" : "New") + " • " +
+      (browseMode === "series" ? "Series" : "Random") +
+      " • Round " + roundNumber +
+      " • Read " + Math.min(readIndex + 1, currentRoundWords.length) +
+      "/" + currentRoundWords.length;
+    nextBtn.textContent = "Next →";
+  }
+}
+
+function startRound(mode = browseMode){
+
+  const pool = getQuizPool();
+
+  if(!pool.length){
+    currentRoundWords = [];
+    countEl.textContent = (quizPoolMode === "old" ? "Old" : "New") + " array is empty";
+    nextBtn.textContent = "Next →";
+    return;
+  }
+
+  browseMode = mode === "series" ? "series" : "random";
+  setBrowseButtons(browseMode);
+  setContentButtons(contentMode);
+
+  if(browseMode === "series"){
+    // SERIES MODE: take the next 10 words in alphabetical order.
+    if(seriesCursor >= pool.length) seriesCursor = 0;
+
+    currentRoundWords = pool.slice(
+      seriesCursor,
+      Math.min(seriesCursor + ROUND_SIZE, pool.length)
+    );
+
+    // If fewer than 10 remain at the end, wrap to the beginning.
+    if(currentRoundWords.length < Math.min(ROUND_SIZE, pool.length)){
+      const needed = Math.min(ROUND_SIZE, pool.length) - currentRoundWords.length;
+      currentRoundWords = currentRoundWords.concat(pool.slice(0, needed));
+    }
+  }else{
+    // RANDOM MODE: no word repeats across random rounds until the complete
+    // selected pool has been shown once. Then a fresh shuffled cycle begins.
+    currentRoundWords = nextRandomRound(pool);
+  }
+
+  currentPhase = PHASE.READ;
+  readIndex = 0;
+  testIndex = 0;
+  testPass = 1;
+  answerVisible = false;
+
+  // Word 1 is already being READ on screen.
+  showAnswerCard(currentRoundWords[0]);
+
+  const actualIndex = pool.indexOf(currentRoundWords[0]);
+  wnumEl.textContent = actualIndex >= 0 ? "#" + (actualIndex + 1) : "#1";
+
+  countEl.textContent =
+    (quizPoolMode === "old" ? "Old" : "New") + " • " +
+    (browseMode === "series" ? "Series" : "Random") +
+    " • Round " + roundNumber +
+    " • Read 1/" + currentRoundWords.length;
+
+  nextBtn.textContent = "Next →";
+  timeLeft = 600;
+  updatePoolUI();
+  updateLearnedButton();
+}
+
+
+function getTestRounds(){
+  const input = document.getElementById("testRoundsInput");
+  const n = parseInt(input?.value, 10);
+  return Number.isFinite(n) ? Math.max(1, Math.min(20, n)) : 1;
+}
+
+function testStatusText(doneCount = 0){
+  const totalPasses = getTestRounds();
+  return (quizPoolMode === "old" ? "Old" : "New") + " • " +
+    (browseMode === "series" ? "Series" : "Random") +
+    " • Round " + roundNumber +
+    " • Test " + testPass + "/" + totalPasses +
+    " • " + doneCount + "/" + currentRoundWords.length;
+}
+
+function nextWord(resetTimer = true){
+
+  animateCard();
+
+  // ---------------- READ PHASE ----------------
+  if(currentPhase === PHASE.READ){
+
+    // Move to the next read word.
+    readIndex += 1;
+
+    // All 10 words have already been shown.
+    // NOW start the test, so word 10 was visible before this click.
+    if(readIndex >= currentRoundWords.length){
+
+      currentPhase = PHASE.TEST;
+      testIndex = 0;
+      testPass = 1;
+      answerVisible = false;
+
+      countEl.textContent = testStatusText(0);
+      nextBtn.textContent = "Show answer →";
+
+      showQuestionCard(currentRoundWords[0]);
+      const repeatedFirstIndex = getQuizPool().indexOf(currentRoundWords[0]);
+      wnumEl.textContent = repeatedFirstIndex >= 0 ? "#" + (repeatedFirstIndex + 1) : "#1";
+
+      if(resetTimer) timeLeft = 600;
+      return;
+    }
+
+    const word = currentRoundWords[readIndex];
+    showAnswerCard(word);
+
+    const actualReadIndex = getQuizPool().indexOf(word);
+    wnumEl.textContent = actualReadIndex >= 0 ? "#" + (actualReadIndex + 1) : "#" + (readIndex + 1);
+    countEl.textContent =
+      (browseMode === "series" ? "Series" : "Random") +
+      " • Round " + roundNumber +
+      " • Read " + (readIndex + 1) +
+      "/" + currentRoundWords.length;
+
+    nextBtn.textContent = "Next →";
+
+    if(resetTimer) timeLeft = 600;
+    return;
+  }
+
+  // ---------------- TEST PHASE ----------------
+
+  // First click on a test word reveals its answer.
+  if(!answerVisible){
+
+    const word = currentRoundWords[testIndex];
+    showAnswerCard(word);
+
+    answerVisible = true;
+    nextBtn.textContent = "Next →";
+    const actualTestIndex = getQuizPool().indexOf(word);
+    wnumEl.textContent = actualTestIndex >= 0 ? "#" + (actualTestIndex + 1) : "#" + (testIndex + 1);
+
+    if(resetTimer) timeLeft = 600;
+    return;
+  }
+
+  // Answer was visible: move to the next test question.
+  testIndex += 1;
+  answerVisible = false;
+
+  // One complete test pass finished.
+  if(testIndex >= currentRoundWords.length){
+
+    const totalPasses = getTestRounds();
+
+    // Repeat testing the SAME 10 words if test rounds > 1.
+    if(testPass < totalPasses){
+      testPass += 1;
+      testIndex = 0;
+
+      countEl.textContent = testStatusText(0);
+      nextBtn.textContent = "Show answer →";
+      showQuestionCard(currentRoundWords[0]);
+      wnumEl.textContent = "#1";
+
+      if(resetTimer) timeLeft = 600;
+      return;
+    }
+
+    // Read 10 -> Test complete -> start the next group of 10.
+    if(browseMode === "series"){
+      seriesCursor = (seriesCursor + currentRoundWords.length) % getQuizPool().length;
+    }
+    roundNumber += 1;
+    startRound(browseMode);
+    return;
+  }
+
+  showQuestionCard(currentRoundWords[testIndex]);
+  const nextActualIndex = getQuizPool().indexOf(currentRoundWords[testIndex]);
+  wnumEl.textContent = nextActualIndex >= 0 ? "#" + (nextActualIndex + 1) : "#" + (testIndex + 1);
+  countEl.textContent = testStatusText(testIndex);
+  nextBtn.textContent = "Show answer →";
+
+  if(resetTimer) timeLeft = 600;
+}
+
+
+function tick(){
+
+  timeLeft--;
+
+  if(timeLeft <= 0){
+
+    nextWord(false);
+
+    timeLeft = 600;
+
+  }
+
+  const m =
+    Math.floor(timeLeft / 60)
+      .toString()
+      .padStart(2,"0");
+
+  const s =
+    (timeLeft % 60)
+      .toString()
+      .padStart(2,"0");
+
+  clockEl.textContent =
+    `${m}:${s}`;
+
+}
+
+
+const editCurrentBtn =
+  document.getElementById(
+    "editCurrentBtn"
+  );
+
+
+editCurrentBtn.onclick = () => {
+
+  if(!currentWord) return;
+
+  openEditForm(currentWord);
+
+  editForm.scrollIntoView({
+    behavior:"smooth",
+    block:"center"
+  });
+
+};
+
+
+function animateCard(){
+  boxEl.style.animation = "none";
+  void boxEl.offsetWidth;
+  boxEl.style.animation = "pop .4s ease";
+}
+
+function setBrowseButtons(mode){
+  document.getElementById("randomModeBtn")?.classList.toggle("active", mode === "random");
+  document.getElementById("seriesModeBtn")?.classList.toggle("active", mode === "series");
+}
+
+function showBrowseWord(index){
+  if(!WORDS.length) return;
+  browseIndex = Math.max(0, Math.min(index, WORDS.length - 1));
+  const word = WORDS[browseIndex];
+  animateCard();
+  showAnswerCard(word);
+  wnumEl.textContent = "#" + (browseIndex + 1);
+  countEl.textContent = (browseMode === "series" ? "Series" : "Random") + " • " + (browseIndex + 1) + "/" + WORDS.length;
+  nextBtn.textContent = "Next →";
+  timeLeft = 600;
+}
+
+function showRandomWord(){
+  if(!getQuizPool().length) return;
+  roundNumber = 1;
+  resetRandomCycle();
+  startRound("random");
+}
+
+function showSeriesWord(index = seriesCursor){
+  const pool = getQuizPool();
+  if(!pool.length) return;
+  seriesCursor = Math.max(0, Math.min(index, pool.length - 1));
+  roundNumber = 1;
+  startRound("series");
+}
+
+function goToWordNumber(value){
+  const pool = getQuizPool();
+  if(!pool.length) return;
+  let number = Number(value);
+  if(!Number.isFinite(number)) return;
+  number = Math.trunc(number);
+  number = Math.max(1, Math.min(number, pool.length));
+  const input = document.getElementById("qnoInput");
+  if(input) input.value = number;
+  showSeriesWord(number - 1);
+}
+
+// Random and Series are both QUIZ modes now.
+// Next always advances READ -> TEST -> next 10-word round.
+nextBtn.onclick = () => nextWord(true);
+
+
+// ---------- Search ----------
+
+const searchInput =
+  document.getElementById(
+    "searchInput"
+  );
+
+const searchResults =
+  document.getElementById(
+    "searchResults"
+  );
+
+
+async function saveMissingWord(word){
+  const normalizedWord = String(word || "").trim();
+  if(!normalizedWord) return false;
+
+  const alreadySaved = missingWords.some(
+    item => String(item || "").trim().toLocaleLowerCase("en") === normalizedWord.toLocaleLowerCase("en")
+  );
+  if(alreadySaved) return true;
+
+  missingWords.push(normalizedWord);
+  const saved = await saveServerData();
+  if(!saved){
+    const addedIndex = missingWords.lastIndexOf(normalizedWord);
+    if(addedIndex !== -1) missingWords.splice(addedIndex, 1);
+  }
+  return saved;
+}
+
+
+function renderSearchResults(query){
+
+  const q =
+    query.trim().toLowerCase();
+
+  searchResults.innerHTML = "";
+
+
+  if(!q){
+
+    return;
+
+  }
+
+
+  const matches =
+    getAllSearchWords().filter(w => {
+      const searchable = [w.en, w.hi, w.meaning, w.sentence, w.syn, w.ant]
+        .filter(Boolean)
+        .join(" ")
+        .toLowerCase();
+      return searchable.includes(q);
+    });
+
+
+  if(matches.length === 0){
+
+    const empty =
+      document.createElement("div");
+
+    empty.className =
+      "searchempty";
+
+    empty.textContent =
+      "No matching word found.";
+
+    searchResults.appendChild(
+      empty
+    );
+
+
+    const alreadySaved =
+      missingWords.some(
+        w =>
+          w.toLowerCase() === q
+      );
+
+
+    if(!alreadySaved){
+
+      const saveBtn =
+        document.createElement(
+          "button"
+        );
+
+      saveBtn.className =
+        "savemissing-btn";
+
+      saveBtn.textContent =
+        'Save "' +
+        query.trim() +
+        '" (not available)';
+
+      saveBtn.onclick = async () => {
+        await saveMissingWord(query.trim());
+        renderSearchResults(
+          searchInput.value
+        );
+
+      };
+
+      searchResults.appendChild(
+        saveBtn
+      );
+
+    }
+
+    return;
+
+  }
+
+
+  matches.forEach(word => {
+
+    const item =
+      document.createElement("div");
+
+    item.className =
+      "searchitem";
+
+    item.innerHTML =
+      '<div class="searchitem-main">' +
+        '<div class="searchitem-head">' +
+          '<span class="si-en">' + escapeHtml(word.en || "") + '</span>' +
+          '<span class="si-hi">' + escapeHtml(word.hi || "") + '</span>' +
+        '</div>' +
+        '<div class="si-meaning"><b>Meaning:</b> ' + escapeHtml(word.meaning || "—") + '</div>' +
+        '<div class="si-sentence"><b>Sentence:</b> ' + escapeHtml(word.sentence || "—") + '</div>' +
+        '<div class="si-extra">' + (OLD_WORDS.includes(word) ? 'OLD' : 'NEW') + ' &nbsp;•&nbsp; Synonym: ' + escapeHtml(word.syn || "—") + ' &nbsp;•&nbsp; Antonym: ' + escapeHtml(word.ant || "—") + '</div>' +
+      '</div>';
+
+
+    item.onclick = () => {
+
+      boxEl.style.animation =
+        "none";
+
+      void boxEl.offsetWidth;
+
+      boxEl.style.animation =
+        "pop .4s ease";
+
+      wordEnEl.textContent =
+        word.en;
+
+      showAnswerCard(word);
+
+      const sourcePool = OLD_IDIOM_WORDS.includes(word)
+        ? OLD_IDIOM_WORDS
+        : IDIOM_WORDS.includes(word)
+          ? IDIOM_WORDS
+          : OLD_WORDS.includes(word) ? OLD_WORDS : WORDS;
+      browseIndex = sourcePool.indexOf(word);
+      wnumEl.textContent = "#" + (browseIndex + 1);
+      countEl.textContent = ((OLD_WORDS.includes(word) || OLD_IDIOM_WORDS.includes(word)) ? "Old" : "New") + " • Search result";
+      nextBtn.textContent = "Next →";
+      updateLearnedButton();
+      const qInput = document.getElementById("qnoInput");
+      if(qInput) qInput.value = browseIndex + 1;
+      openEditForm(word);
+
+      // Successful selection ke baad lower search input clear karo.
+      searchInput.value = "";
+      searchResults.innerHTML = "";
+
+    };
+
+
+    searchResults.appendChild(item);
+
+  });
+
+}
+
+
+function escapeHtml(str){
+
+  const div =
+    document.createElement("div");
+
+  div.textContent =
+    str;
+
+  return div.innerHTML;
+
+}
+
+
+searchInput.addEventListener(
+  "input",
+  () =>
+    renderSearchResults(
+      searchInput.value
+    )
+);
+
+
+// ---------- Edit form ----------
+
+const editForm =
+  document.getElementById(
+    "editForm"
+  );
+
+const editTitle =
+  document.getElementById(
+    "editTitle"
+  );
+
+const editHi =
+  document.getElementById(
+    "editHi"
+  );
+
+const editMeaning =
+  document.getElementById(
+    "editMeaning"
+  );
+
+const editSentence =
+  document.getElementById(
+    "editSentence"
+  );
+
+const editSyn =
+  document.getElementById(
+    "editSyn"
+  );
+
+const editAnt =
+  document.getElementById(
+    "editAnt"
+  );
+
+const saveEditBtn =
+  document.getElementById(
+    "saveEditBtn"
+  );
+
+const cancelEditBtn =
+  document.getElementById(
+    "cancelEditBtn"
+  );
+
+const editMsg =
+  document.getElementById(
+    "editMsg"
+  );
+
+
+let editingWord = null;
+
+
+function openEditForm(word){
+
+  editingWord = word;
+
+  editTitle.textContent =
+    word.en;
+
+  editHi.value =
+    word.hi || "";
+
+  editMeaning.value =
+    word.meaning || "";
+
+  editSentence.value =
+    word.sentence || "";
+
+  editSyn.value =
+    word.syn || "";
+
+  editAnt.value =
+    word.ant || "";
+
+  editMsg.textContent =
+    "";
+
+  editForm.classList.add(
+    "active"
+  );
+
+}
+
+
+function closeEditForm(){
+
+  editingWord = null;
+
+  editForm.classList.remove(
+    "active"
+  );
+
+}
+
+
+saveEditBtn.onclick = async () => {
+
+  if(!editingWord) return;
+
+
+  const meaning =
+    editMeaning.value.trim();
+
+
+  if(!meaning){
+
+    editMsg.style.color =
+      "var(--red)";
+
+    editMsg.textContent =
+      "Meaning cannot be empty.";
+
+    return;
+
+  }
+
+
+  editingWord.hi =
+    editHi.value.trim();
+
+  editingWord.meaning =
+    meaning;
+
+  editingWord.sentence =
+    editSentence.value.trim();
+
+  editingWord.syn =
+    editSyn.value.trim();
+
+  editingWord.ant =
+    editAnt.value.trim();
+
+
+  if(
+    currentWord === editingWord
+  ){
+
+    if(
+      currentPhase === PHASE.TEST &&
+      !answerVisible
+    ){
+
+      showQuestionCard(
+        editingWord
+      );
+
+    }else{
+
+      showAnswerCard(
+        editingWord
+      );
+
+    }
+
+  }
+
+
+  editMsg.style.color =
+    "var(--teal)";
+
+  {
+    const savedOk = await saveServerData();
+
+    if(!savedOk){
+      editMsg.style.color = "var(--red)";
+      editMsg.textContent =
+        'Server save failed: ' + (lastServerError || 'Unknown error');
+      return;
+    }
+
+    editMsg.style.color = "var(--teal)";
+    editMsg.textContent =
+      'Saved "' + editingWord.en + '" ✓ · Server updated';
+  }
+
+  renderSearchResults(
+    searchInput.value
+  );
+
+  // Sirf verified successful save ke baad dialog close ho.
+  setTimeout(() => closeEditForm(), 350);
+
+};
+
+
+cancelEditBtn.onclick =
+  () => closeEditForm();
+
+
+const testRoundsInput = document.getElementById("testRoundsInput");
+const roundLabel = document.getElementById("roundLabel");
+function syncRoundLabel(){
+  const n = getTestRounds();
+  testRoundsInput.value = n;
+  roundLabel.textContent = n === 1 ? "round" : "rounds";
+  if(currentPhase === PHASE.TEST) countEl.textContent = testStatusText(testIndex);
+}
+testRoundsInput?.addEventListener("change", syncRoundLabel);
+testRoundsInput?.addEventListener("input", () => {
+  const n = parseInt(testRoundsInput.value, 10);
+  roundLabel.textContent = n === 1 ? "round" : "rounds";
+});
+
+document.getElementById("learnedBtn")?.addEventListener("click", toggleCurrentWordPool);
+
+document.getElementById("newPoolBtn")?.addEventListener("click", () => {
+  quizPoolMode = "new";
+  seriesCursor = 0;
+  roundNumber = 1;
+  resetRandomCycle();
+  updatePoolUI();
+  startRound(browseMode);
+});
+
+document.getElementById("oldPoolBtn")?.addEventListener("click", () => {
+  quizPoolMode = "old";
+  seriesCursor = 0;
+  roundNumber = 1;
+  resetRandomCycle();
+  updatePoolUI();
+  startRound(browseMode);
+});
+
+setInterval(
+  tick,
+  1000
+);
+
+
+document.getElementById("randomModeBtn")?.addEventListener("click", () => {
+  showRandomWord();
+});
+
+document.getElementById("seriesModeBtn")?.addEventListener("click", () => {
+  const pool = getQuizPool();
+  const currentIndex = currentWord ? pool.indexOf(currentWord) : 0;
+  showSeriesWord(currentIndex >= 0 ? currentIndex : 0);
+});
+
+function chooseContentMode(mode){
+  contentMode = mode;
+  seriesCursor = 0;
+  roundNumber = 1;
+  resetRandomCycle();
+  setContentButtons(contentMode);
+  startRound(browseMode);
+
+  // Refresh search data whenever tab changes, so old-tab results
+  // never remain visible in the new tab.
+  fillTopWordSuggestions();
+
+  if(typeof searchInput !== "undefined" && searchInput){
+    renderSearchResults(searchInput.value || "");
+  }
+
+  if(typeof topSearchInput !== "undefined" && topSearchInput){
+    topSearchInput.classList.remove("not-found");
+  }
+}
+
+document.getElementById("vocabModeBtn")?.addEventListener("click", () => chooseContentMode("vocab"));
+document.getElementById("idiomModeBtn")?.addEventListener("click", () => chooseContentMode("idioms"));
+document.getElementById("mixModeBtn")?.addEventListener("click", () => chooseContentMode("mix"));
+
+document.getElementById("qnoInput")?.addEventListener("change", (e) => {
+  goToWordNumber(e.target.value);
+});
+
+document.getElementById("qnoInput")?.addEventListener("keydown", (e) => {
+  if(e.key === "Enter"){
+    goToWordNumber(e.target.value);
+    e.target.blur();
+  }
+});
+
+// ---------- Top search near Random / Series ----------
+const topSearchInput = document.getElementById("topSearchInput");
+const topSearchBtn = document.getElementById("topSearchBtn");
+const topWordSuggestions = document.getElementById("topWordSuggestions");
+
+function fillTopWordSuggestions(){
+  if(!topWordSuggestions) return;
+  topWordSuggestions.innerHTML = "";
+  getAllSearchWords().forEach(word => {
+    const option = document.createElement("option");
+    option.value = word.en || "";
+    if(word.hi) option.label = word.hi;
+    topWordSuggestions.appendChild(option);
+  });
+}
+
+function openWordFromTopSearch(){
+  const allWords = getAllSearchWords();
+  if(!topSearchInput || !allWords.length) return;
+
+  const raw = topSearchInput.value.trim();
+  const q = raw.toLowerCase();
+  topSearchInput.classList.remove("not-found");
+  if(!q) return;
+
+  let word = allWords.find(w => (w.en || "").toLowerCase() === q);
+  if(!word) word = allWords.find(w => (w.en || "").toLowerCase().startsWith(q));
+  if(!word) word = allWords.find(w => (w.en || "").toLowerCase().includes(q));
+  if(!word){
+    word = allWords.find(w => [w.en,w.hi,w.meaning,w.sentence,w.syn,w.ant]
+      .filter(Boolean)
+      .join(" ")
+      .toLowerCase()
+      .includes(q));
+  }
+
+  if(!word){
+    topSearchInput.classList.add("not-found");
+    topSearchInput.select();
+    return;
+  }
+
+  const sourcePool = OLD_IDIOM_WORDS.includes(word)
+    ? OLD_IDIOM_WORDS
+    : IDIOM_WORDS.includes(word)
+      ? IDIOM_WORDS
+      : OLD_WORDS.includes(word) ? OLD_WORDS : WORDS;
+  const index = sourcePool.indexOf(word);
+  showAnswerCard(word);
+  wnumEl.textContent = "#" + (index + 1);
+  countEl.textContent = (OLD_WORDS.includes(word) ? "Old" : "New") + " • Search result";
+  nextBtn.textContent = "Next →";
+  // Successful top search ke baad input clear karo.
+  topSearchInput.value = "";
+
+  // Lower detailed search ko bhi clear rakho.
+  if(typeof searchInput !== "undefined" && searchInput){
+    searchInput.value = "";
+    searchResults.innerHTML = "";
+  }
+}
+
+topSearchBtn?.addEventListener("click", () => {
+  if(topSearchInput?.value.trim()) openWordFromTopSearch();
+  else topSearchInput?.focus();
+});
+
+topSearchInput?.addEventListener("keydown", (e) => {
+  if(e.key === "Enter"){
+    e.preventDefault();
+    openWordFromTopSearch();
+  }
+});
+
+// Datalist suggestion select/click hote hi upper main card me word open karo.
+topSearchInput?.addEventListener("change", () => {
+  if(topSearchInput.value.trim()){
+    openWordFromTopSearch();
+  }
+});
+
+topSearchInput?.addEventListener("input", () => {
+  topSearchInput.classList.remove("not-found");
+});
+
+
+async function initializeEnglishApp(){
+  const loaded = await loadServerData();
+
+  if(!loaded){
+    WORDS = [];
+    IDIOM_WORDS = [];
+    OLD_WORDS = [];
+    OLD_IDIOM_WORDS = [];
+    missingWords = [];
+  }
+
+  updatePoolUI();
+  syncRoundLabel();
+  fillTopWordSuggestions();
+  resetRandomCycle();
+  startRound("random");
+
+  if(searchInput && searchInput.value){
+    renderSearchResults(searchInput.value);
+  }
+}
+
+initializeEnglishApp();
+
+</script>
+
+<script src="/common-nav.js"></script>
+</body>
+</html> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1084,6 +3823,1244 @@ textarea{
 .learned-btn.old{opacity:.75;cursor:pointer;background:rgba(85,183,174,.18);border-color:rgba(85,183,174,.55);}
 .pool-count{font:8px "Courier New",monospace;color:#7f8ba0;white-space:nowrap;}
 @media(max-width:420px){.pool-btn{height:20px;padding:0 5px;font-size:8px}.learned-btn{width:20px;height:20px;font-size:10px}.pool-count{display:none}}
+
+/* =========================
+   NEW DATA / MISSING MANAGER
+========================= */
+.manage-title-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+}
+.manage-title-actions{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  flex-wrap:wrap;
+}
+.manage-action-btn{
+  min-height:25px;
+  padding:4px 9px;
+  border-radius:14px;
+  border:1px solid var(--line2);
+  background:rgba(255,255,255,.05);
+  color:#dce5f3;
+  font:9px "Courier New",monospace;
+  letter-spacing:.5px;
+  text-transform:uppercase;
+  cursor:pointer;
+}
+.manage-action-btn:hover{
+  background:rgba(255,255,255,.10);
+}
+.manage-action-btn.primary{
+  background:rgba(240,184,75,.13);
+  border-color:rgba(240,184,75,.45);
+  color:#ffd88c;
+}
+.tool-panel{
+  display:none;
+  margin:8px;
+  padding:10px;
+  border:1px solid var(--line);
+  border-radius:9px;
+  background:#0a111e;
+}
+.tool-panel.active{display:block;}
+.tool-panel-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:8px;
+  margin-bottom:8px;
+}
+.tool-panel-title{
+  font:700 11px "Courier New",monospace;
+  color:#dfe7f4;
+  text-transform:uppercase;
+  letter-spacing:.7px;
+}
+.tool-close-btn{
+  width:24px;
+  height:24px;
+  border-radius:50%;
+  border:1px solid var(--line2);
+  background:transparent;
+  color:#aeb9ca;
+  cursor:pointer;
+}
+.type-choice{
+  display:flex;
+  gap:8px;
+  margin-bottom:9px;
+}
+.type-choice-btn{
+  flex:1;
+  min-height:34px;
+  border-radius:18px;
+  border:1px solid var(--line2);
+  background:#101a2b;
+  color:#cbd5e4;
+  font:10px "Courier New",monospace;
+  text-transform:uppercase;
+  cursor:pointer;
+}
+.type-choice-btn.active{
+  border-color:rgba(85,183,174,.7);
+  background:rgba(85,183,174,.12);
+  color:#7ad4ca;
+}
+.new-array-wrap{display:none;}
+.new-array-wrap.active{display:block;}
+.array-help{
+  color:#7f8ba0;
+  font:10px "Courier New",monospace;
+  line-height:1.45;
+  margin-bottom:6px;
+}
+.array-textarea{
+  width:100%;
+  min-height:235px;
+  padding:10px;
+  border-radius:7px;
+  border:1px solid var(--line2);
+  background:#070d17;
+  color:#dce5f3;
+  font:11px/1.45 "Courier New",monospace;
+  resize:vertical;
+  outline:none;
+}
+.array-textarea:focus{
+  border-color:rgba(85,183,174,.65);
+  box-shadow:0 0 0 3px rgba(85,183,174,.07);
+}
+.array-actions{
+  display:flex;
+  gap:7px;
+  flex-wrap:wrap;
+  margin-top:8px;
+}
+.small-tool-btn{
+  min-height:30px;
+  padding:6px 10px;
+  border-radius:16px;
+  border:1px solid var(--line2);
+  background:#111b2d;
+  color:#cbd5e4;
+  font:9px "Courier New",monospace;
+  text-transform:uppercase;
+  cursor:pointer;
+}
+.small-tool-btn:hover{background:#17243a;}
+.small-tool-btn.accent{
+  background:var(--teal);
+  color:#071412;
+  border:none;
+  font-weight:bold;
+}
+.small-tool-btn.danger{
+  color:#ff9b8d;
+  border-color:rgba(217,92,74,.45);
+  background:rgba(217,92,74,.08);
+}
+.tool-msg{
+  min-height:16px;
+  margin-top:7px;
+  font:10px "Courier New",monospace;
+  color:#8b97aa;
+}
+.missing-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:10px;
+}
+.missing-section{
+  border:1px solid var(--line);
+  border-radius:8px;
+  padding:8px;
+  background:rgba(255,255,255,.018);
+}
+.missing-section-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:7px;
+  margin-bottom:7px;
+}
+.missing-section-title{
+  font:700 10px "Courier New",monospace;
+  color:#d7e0ed;
+  text-transform:uppercase;
+}
+.missing-section-actions{
+  display:flex;
+  gap:5px;
+  flex-wrap:wrap;
+}
+.missing-list{
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+  max-height:180px;
+  overflow:auto;
+}
+.missing-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:7px;
+  padding:6px 7px;
+  border:1px solid rgba(255,255,255,.07);
+  border-radius:6px;
+  background:#0d1626;
+}
+.missing-text{
+  min-width:0;
+  flex:1;
+  color:#dbe4f1;
+  font-size:12px;
+  overflow-wrap:anywhere;
+}
+.missing-row-actions{
+  display:flex;
+  gap:4px;
+  flex-shrink:0;
+}
+.icon-tool-btn{
+  width:26px;
+  height:26px;
+  border-radius:50%;
+  border:1px solid var(--line2);
+  background:transparent;
+  color:#aeb9ca;
+  cursor:pointer;
+  font-size:11px;
+}
+.icon-tool-btn:hover{background:rgba(255,255,255,.06);}
+.icon-tool-btn.delete{
+  color:#ef8b7c;
+  border-color:rgba(217,92,74,.35);
+}
+.missing-empty{
+  color:#657187;
+  font:10px "Courier New",monospace;
+  padding:5px 2px;
+}
+.save-missing-actions{
+  display:flex;
+  gap:6px;
+  flex-wrap:wrap;
+  margin-top:7px;
+}
+@media(max-width:420px){
+  .managetop-title{padding:7px 8px;}
+  .manage-title-row{align-items:flex-start;}
+  .manage-title-actions{justify-content:flex-end;}
+  .manage-action-btn{font-size:8px;padding:4px 7px;}
+  .tool-panel{margin:6px;padding:8px;}
+  .array-textarea{min-height:210px;font-size:10px;}
+}
+
+
+
+/* =========================
+   ENGLISH MCQ TESTS — ERROR SENTENCES + MORE
+   Added as a separate module so the old Vocab/Idioms flow stays unchanged.
+========================= */
+.type-choice{flex-wrap:wrap;}
+.type-choice-btn{flex:1 1 calc(50% - 8px);}
+.question-format-choice{
+  display:flex;
+  gap:6px;
+  flex-wrap:wrap;
+  margin:-1px 0 8px;
+  padding:7px;
+  border:1px solid var(--line);
+  border-radius:7px;
+  background:rgba(240,184,75,.035);
+}
+.question-format-choice[hidden]{display:none!important;}
+.question-format-btn{
+  min-height:27px;
+  padding:5px 9px;
+  border-radius:14px;
+  border:1px solid var(--line2);
+  background:#101a2b;
+  color:#9ca9bc;
+  font:9px "Courier New",monospace;
+  text-transform:uppercase;
+  cursor:pointer;
+}
+.question-format-btn.active{
+  color:#ffd88c;
+  border-color:rgba(240,184,75,.60);
+  background:rgba(240,184,75,.11);
+}
+.mcq-source-choice,.mcq-order-choice{
+  display:flex;
+  gap:6px;
+  flex-wrap:wrap;
+}
+.mcq-source-btn,.mcq-order-btn{
+  min-height:30px;
+  padding:6px 10px;
+  border-radius:16px;
+  border:1px solid var(--line2);
+  background:#101a2b;
+  color:#aeb9ca;
+  font:9px "Courier New",monospace;
+  text-transform:uppercase;
+  cursor:pointer;
+}
+.mcq-source-btn{flex:1 1 140px;}
+.mcq-source-btn.active,.mcq-order-btn.active{
+  color:#79d6cc;
+  border-color:rgba(85,183,174,.70);
+  background:rgba(85,183,174,.12);
+}
+.mcq-count-badge{
+  display:inline-block;
+  min-width:20px;
+  margin-left:4px;
+  padding:1px 5px;
+  border-radius:9px;
+  background:rgba(255,255,255,.08);
+  color:#dfe6f2;
+  text-align:center;
+}
+.mcq-control-row{
+  display:flex;
+  align-items:center;
+  gap:7px;
+  flex-wrap:wrap;
+  margin:9px 0;
+}
+.mcq-number-label{
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  color:#8994a8;
+  font:9px "Courier New",monospace;
+  text-transform:uppercase;
+}
+.mcq-number-input{
+  width:54px;
+  height:30px;
+  padding:3px 5px;
+  border-radius:14px;
+  border:1px solid var(--line2);
+  background:#070d17;
+  color:#e8edf7;
+  text-align:center;
+  outline:none;
+  font:10px "Courier New",monospace;
+}
+.mcq-number-input:focus{border-color:rgba(85,183,174,.65);}
+.mcq-category-selector{
+  margin-top:10px;
+  padding:10px;
+  border:1px solid var(--line);
+  border-radius:10px;
+  background:rgba(255,255,255,.018);
+}
+.mcq-category-mode{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;}
+.mcq-category-mode-btn{
+  min-height:29px;padding:5px 10px;border-radius:15px;border:1px solid var(--line2);
+  background:#101a2b;color:#9aa7ba;font:9px "Courier New",monospace;text-transform:uppercase;cursor:pointer;
+}
+.mcq-category-mode-btn.active{border-color:rgba(85,183,174,.65);background:rgba(85,183,174,.13);color:#79d6cc;}
+.mcq-category-toggle-list{display:flex;gap:6px;flex-wrap:wrap;}
+.mcq-category-toggle{
+  min-height:27px;padding:5px 9px;border-radius:14px;border:1px solid var(--line);
+  background:#0b1422;color:#8f9caf;font:9px "Courier New",monospace;cursor:pointer;
+}
+.mcq-category-toggle.active{border-color:rgba(240,184,75,.50);background:rgba(240,184,75,.11);color:#ffd88c;}
+.mcq-category-selection-summary{margin-top:7px;color:#768398;font:9px/1.4 "Courier New",monospace;}
+.mcq-edit-test-btn{border-color:rgba(240,184,75,.38)!important;color:#ffd88c!important;background:rgba(240,184,75,.08)!important;}
+
+.mcq-test-area{
+  margin-top:9px;
+  border-top:1px solid var(--line);
+  padding-top:9px;
+}
+.mcq-empty{
+  padding:9px;
+  border:1px dashed var(--line2);
+  border-radius:7px;
+  color:#7f8ba0;
+  font:10px/1.45 "Courier New",monospace;
+}
+.mcq-test-meta{
+  display:flex;
+  justify-content:space-between;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-bottom:8px;
+  color:#7f8ba0;
+  font:9px "Courier New",monospace;
+  text-transform:uppercase;
+}
+.mcq-test-meta b{color:#79d6cc;}
+.mcq-question-card{
+  border:1px solid var(--line2);
+  border-radius:9px;
+  background:#0c1524;
+  padding:11px;
+}
+.mcq-category{
+  display:inline-block;
+  margin-bottom:7px;
+  padding:3px 7px;
+  border-radius:11px;
+  background:rgba(240,184,75,.10);
+  border:1px solid rgba(240,184,75,.28);
+  color:#ffd88c;
+  font:8.5px "Courier New",monospace;
+  text-transform:uppercase;
+}
+.mcq-question-text{
+  color:#e8edf7;
+  font-size:15px;
+  line-height:1.45;
+  white-space:pre-line;
+  overflow-wrap:anywhere;
+  margin-bottom:10px;
+}
+.mcq-options{display:grid;gap:7px;}
+.mcq-option{
+  width:100%;
+  display:grid;
+  grid-template-columns:28px minmax(0,1fr);
+  gap:7px;
+  align-items:start;
+  padding:8px 9px;
+  border:1px solid var(--line);
+  border-radius:7px;
+  background:#101a2b;
+  color:#dce5f3;
+  text-align:left;
+  cursor:pointer;
+  font:13px/1.4 Georgia,serif;
+}
+.mcq-option:hover{border-color:rgba(85,183,174,.55);}
+.mcq-option-letter{color:#79d6cc;font:700 9px "Courier New",monospace;padding-top:2px;}
+.mcq-option.correct{border-color:rgba(85,183,174,.72);background:rgba(85,183,174,.12);}
+.mcq-option.wrong{border-color:rgba(217,92,74,.72);background:rgba(217,92,74,.12);}
+.mcq-option:disabled{cursor:default;opacity:1;}
+.mcq-feedback{
+  display:none;
+  margin-top:9px;
+  padding:8px 9px;
+  border-left:3px solid var(--teal);
+  background:rgba(85,183,174,.06);
+  color:#cfd8e6;
+  font-size:12px;
+  line-height:1.45;
+  white-space:pre-line;
+}
+.mcq-feedback.show{display:block;}
+.mcq-feedback.wrong{border-left-color:var(--red);background:rgba(217,92,74,.06);}
+.mcq-test-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:9px;}
+.mcq-result{
+  padding:12px;
+  border:1px solid var(--line2);
+  border-radius:9px;
+  background:#0c1524;
+}
+.mcq-result-score{font-size:25px;color:var(--gold);font-weight:bold;margin-bottom:5px;}
+.mcq-result-line{color:#aeb9ca;font:10px/1.55 "Courier New",monospace;}
+.mcq-review-list{display:grid;gap:8px;margin-top:10px;}
+.mcq-review-item{padding:9px;border:1px solid var(--line);border-radius:7px;background:#0d1626;}
+.mcq-review-q{font-size:12px;line-height:1.4;color:#e2e8f2;white-space:pre-line;}
+.mcq-review-a{margin-top:5px;font:9.5px/1.45 "Courier New",monospace;color:#aeb9ca;}
+.mcq-review-a b{color:#79d6cc;}
+.mcq-review-exp{margin-top:5px;color:#8994a8;font-size:11px;line-height:1.4;white-space:pre-line;}
+@media(max-width:420px){
+  .type-choice-btn{flex-basis:calc(50% - 6px);font-size:8px;}
+  .mcq-question-text{font-size:13.5px;}
+  .mcq-option{font-size:12px;grid-template-columns:24px minmax(0,1fr);}
+}
+
+
+
+/* =========================================================
+   2026 WORKSPACE REDESIGN
+   Visual-only override. Existing IDs, data flows and logic stay intact.
+========================================================= */
+:root{
+  --bg:#070b12;
+  --bg2:#0c121d;
+  --ink:#f4f7fb;
+  --muted:#8f9bad;
+  --gold:#f3c969;
+  --card:#101722;
+  --card2:#151f2e;
+  --teal:#6ad6c8;
+  --red:#ff766a;
+  --line:rgba(255,255,255,.08);
+  --line2:rgba(255,255,255,.14);
+  --white:#fff;
+  --panel-shadow:0 22px 60px rgba(0,0,0,.35);
+}
+
+html{background:#060a10;}
+body{
+  min-height:100dvh;
+  padding:28px;
+  font-family:"Segoe UI",Inter,system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
+  color:var(--ink);
+  background:
+    radial-gradient(circle at 12% 0%, rgba(106,214,200,.12), transparent 27%),
+    radial-gradient(circle at 88% 12%, rgba(243,201,105,.10), transparent 25%),
+    linear-gradient(180deg,#070b12 0%,#090e17 48%,#070b12 100%);
+}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  opacity:.20;
+  background-image:
+    linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);
+  background-size:32px 32px;
+  mask-image:linear-gradient(to bottom,black,transparent 78%);
+}
+
+.board{
+  width:min(1240px,100%);
+  max-width:none;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:minmax(0,1.35fr) minmax(390px,.82fr);
+  grid-template-areas:
+    "header header"
+    "study tools"
+    "controls tools";
+  gap:18px;
+  align-items:start;
+}
+.board:has(#mcqTestPanel.active){
+  grid-template-columns:minmax(410px,.82fr) minmax(560px,1.18fr);
+}
+
+.header{
+  grid-area:header;
+  min-height:72px;
+  margin:0;
+  padding:14px 16px;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:rgba(15,22,33,.76);
+  backdrop-filter:blur(18px);
+  box-shadow:var(--panel-shadow);
+  align-items:center;
+}
+.brand{
+  position:relative;
+  overflow:visible;
+  color:var(--ink);
+  font-family:"Segoe UI",Inter,system-ui,sans-serif;
+  font-size:20px;
+  line-height:1.1;
+  letter-spacing:-.02em;
+  text-transform:none;
+}
+.brand::before{
+  content:"ENGLISH STUDY STUDIO";
+  display:block;
+  margin-bottom:5px;
+  color:var(--teal);
+  font:700 9px "Courier New",monospace;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+.brand::after{
+  content:"Vocabulary · Idioms · Grammar · Practice Tests";
+  display:block;
+  margin-top:5px;
+  color:var(--muted);
+  font:500 11px "Segoe UI",sans-serif;
+  letter-spacing:0;
+}
+.header-actions{gap:9px;}
+.server-state{
+  max-width:none;
+  min-height:34px;
+  padding:7px 11px;
+  border-radius:12px;
+  background:rgba(255,255,255,.04);
+}
+.clock{
+  min-width:86px;
+  padding:8px 12px;
+  border-radius:12px;
+  font-size:15px;
+  background:#0a111b;
+  border:1px solid var(--line2);
+  box-shadow:none;
+}
+
+.alertbox{
+  grid-area:study;
+  min-height:500px;
+  border-radius:22px;
+  border:1px solid var(--line);
+  background:linear-gradient(160deg,rgba(18,27,40,.98),rgba(11,17,27,.98));
+  box-shadow:var(--panel-shadow);
+  overflow:hidden;
+}
+.alertbox::before{
+  content:"";
+  display:block;
+  height:3px;
+  background:linear-gradient(90deg,var(--teal),var(--gold),transparent 85%);
+}
+.alerttop{
+  min-height:70px;
+  padding:14px 16px;
+  background:rgba(7,12,20,.60);
+  border-bottom:1px solid var(--line);
+  color:var(--ink);
+  gap:12px;
+  flex-wrap:wrap;
+}
+.contentnav{
+  padding:4px;
+  gap:4px;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:rgba(255,255,255,.025);
+}
+.content-btn{
+  height:32px;
+  padding:0 13px;
+  border:0;
+  border-radius:10px;
+  background:transparent;
+  color:var(--muted);
+  font:700 10px "Segoe UI",sans-serif;
+  letter-spacing:.02em;
+}
+.content-btn:hover{background:rgba(255,255,255,.06);}
+.content-btn.active{
+  background:linear-gradient(135deg,rgba(106,214,200,.22),rgba(106,214,200,.10));
+  color:#c8fff7;
+  box-shadow:inset 0 0 0 1px rgba(106,214,200,.30);
+}
+.alerttop-right{gap:8px;flex-wrap:wrap;justify-content:flex-end;}
+.wordnav{
+  padding:4px;
+  gap:5px;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:rgba(255,255,255,.025);
+}
+.topmini-btn,.learned-btn{
+  width:32px;
+  height:32px;
+  border-radius:10px;
+  border:1px solid var(--line);
+  background:#0d1521;
+  color:#a8b4c5;
+}
+.topmini-btn:hover,.learned-btn:hover{background:#141f2f;border-color:var(--line2);}
+.topmini-btn.active{background:rgba(243,201,105,.13);color:var(--gold);border-color:rgba(243,201,105,.35);}
+.learned-btn.old{background:rgba(106,214,200,.12);color:var(--teal);border-color:rgba(106,214,200,.35);}
+.qno-input,.topsearch-input{
+  height:32px;
+  border-radius:10px;
+  background:#0a111b;
+  border:1px solid var(--line);
+  color:var(--ink);
+}
+.qno-input{width:54px;}
+.topsearch-input{width:120px;padding:0 10px;}
+.topsearch-input:focus{width:170px;background:#0d1623;border-color:rgba(106,214,200,.45);}
+.editcur-btn{
+  min-height:32px;
+  padding:0 12px;
+  border-radius:10px;
+  border:1px solid var(--line);
+  background:#0d1521;
+  color:#cbd5e3;
+  font:700 9px "Segoe UI",sans-serif;
+}
+.editcur-btn:hover{background:#151f2e;border-color:var(--line2);}
+#wnum{
+  min-width:42px;
+  color:var(--gold);
+  font:700 11px "Courier New",monospace;
+  text-align:right;
+}
+
+.alertbody{
+  min-height:426px;
+  padding:34px 36px 30px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.word-en{
+  margin:0 0 8px;
+  color:#fff;
+  font-size:clamp(38px,5vw,64px);
+  line-height:1.02;
+  letter-spacing:-.045em;
+  font-weight:800;
+}
+.word-hi{
+  margin:0 0 28px;
+  color:var(--teal);
+  font-size:clamp(20px,2.5vw,27px);
+  line-height:1.3;
+  font-weight:650;
+}
+.row{
+  display:grid;
+  grid-template-columns:105px minmax(0,1fr);
+  gap:16px;
+  align-items:start;
+  margin:0 0 12px;
+  padding:15px 16px;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:rgba(255,255,255,.025);
+}
+.label{
+  padding-top:2px;
+  color:#738096;
+  font:700 9px "Courier New",monospace;
+  letter-spacing:.12em;
+}
+.val{
+  color:#e7edf6;
+  font-size:16px;
+  line-height:1.62;
+}
+#sentence{color:#b9c5d6;}
+.pillrow{margin-top:10px;gap:9px;}
+.pill{
+  padding:8px 13px;
+  border-radius:11px;
+  font:600 11px "Segoe UI",sans-serif;
+}
+.pill.syn{background:rgba(106,214,200,.08);border-color:rgba(106,214,200,.24);color:#8ee7dc;}
+.pill.ant{background:rgba(255,118,106,.07);border-color:rgba(255,118,106,.22);color:#ff9a90;}
+
+.controls{
+  grid-area:controls;
+  width:100%;
+  margin:0;
+  padding:14px;
+  gap:10px;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:rgba(15,22,33,.78);
+  box-shadow:var(--panel-shadow);
+  flex-wrap:wrap;
+}
+.count{
+  flex:1 1 190px;
+  color:#aab5c4;
+  font:600 11px "Segoe UI",sans-serif;
+}
+.round-setting,.pool-switch{
+  min-height:36px;
+  margin:0;
+  padding:5px 7px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:#0a111b;
+}
+.round-setting{font:700 9px "Courier New",monospace;}
+.round-setting input{height:26px;border-radius:8px;background:#111b29;}
+.pool-btn{
+  height:28px;
+  padding:0 10px;
+  border:0;
+  border-radius:8px;
+  background:transparent;
+}
+.pool-btn.active{background:rgba(106,214,200,.12);color:var(--teal);}
+.pool-count{padding:0 4px;color:#6f7b8f;}
+.btn{
+  width:auto;
+  min-width:150px;
+  height:44px;
+  padding:0 18px;
+  border-radius:12px;
+  background:linear-gradient(135deg,#f3c969,#e9ae4e);
+  color:#15100a;
+  font:800 10px "Segoe UI",sans-serif;
+  box-shadow:0 10px 24px rgba(243,201,105,.12);
+}
+
+.managebox{
+  grid-area:tools;
+  width:100%;
+  margin:0;
+  border:1px solid var(--line);
+  border-radius:22px;
+  background:linear-gradient(165deg,rgba(16,23,34,.98),rgba(10,16,25,.98));
+  box-shadow:var(--panel-shadow);
+  overflow:hidden;
+  position:sticky;
+  top:20px;
+  max-height:calc(100vh - 40px);
+  overflow-y:auto;
+  scrollbar-gutter:stable;
+}
+.managetop-title{
+  position:sticky;
+  top:0;
+  z-index:5;
+  padding:15px 16px;
+  background:rgba(11,17,27,.94);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--line);
+  box-shadow:none;
+  color:#f2f5fa;
+  font:700 11px "Segoe UI",sans-serif;
+  letter-spacing:.02em;
+}
+.manage-title-row{gap:12px;}
+.manage-title-row>span:first-child{font-size:13px;}
+.manage-title-actions{gap:7px;}
+.manage-action-btn{
+  min-height:34px;
+  padding:0 11px;
+  border-radius:10px;
+  border:1px solid var(--line);
+  background:#0d1521;
+  color:#aeb9c8;
+  font:700 9px "Segoe UI",sans-serif;
+  letter-spacing:.02em;
+}
+.manage-action-btn:hover{background:#151f2e;color:#fff;}
+.manage-action-btn.primary{background:rgba(243,201,105,.11);border-color:rgba(243,201,105,.28);color:#ffd985;}
+.managebody{padding:14px;}
+.searchwrap input{
+  min-height:42px;
+  padding:0 14px;
+  border-radius:12px;
+  background:#0a111b;
+  border:1px solid var(--line);
+  font:500 13px "Segoe UI",sans-serif;
+}
+.searchwrap input:focus{border-color:rgba(106,214,200,.40);box-shadow:0 0 0 4px rgba(106,214,200,.06);}
+.searchresults{max-height:330px;padding-right:3px;}
+.searchitem{
+  margin-top:7px;
+  padding:11px 10px;
+  border:1px solid transparent;
+  border-radius:11px;
+  background:rgba(255,255,255,.018);
+}
+.searchitem:hover{background:rgba(106,214,200,.055);border-color:rgba(106,214,200,.12);}
+.searchitem .si-en{font:700 13px "Segoe UI",sans-serif;}
+.searchitem .si-hi{font:600 11px "Segoe UI",sans-serif;color:#76cfc4;}
+.searchitem .si-meaning,.searchitem .si-sentence{font-size:11px;line-height:1.45;}
+.searchitem .si-extra{font-size:9px;}
+
+.editform{
+  margin-top:12px;
+  padding:14px;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:#0b121d;
+}
+.edittitle{font-size:18px;margin-bottom:12px;}
+.field{margin-bottom:10px;}
+.field label{margin-bottom:5px;color:#7f8ba0;font-size:9px;}
+.field input,.field textarea{
+  padding:10px 11px;
+  border-radius:10px;
+  background:#080f18;
+  border:1px solid var(--line);
+  font:500 13px "Segoe UI",sans-serif;
+}
+.editbtns{gap:8px;margin-top:8px;}
+.addbtn,.cancelbtn{min-height:38px;border-radius:10px;font:800 9px "Segoe UI",sans-serif;}
+
+.tool-panel{
+  margin:12px 14px 14px;
+  padding:14px;
+  border:1px solid var(--line);
+  border-radius:15px;
+  background:rgba(8,15,24,.72);
+}
+.tool-panel-head{margin-bottom:12px;}
+.tool-panel-title{font:800 12px "Segoe UI",sans-serif;letter-spacing:.02em;text-transform:none;}
+.tool-close-btn{width:30px;height:30px;border-radius:9px;background:#0d1521;}
+.type-choice{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-bottom:10px;}
+.type-choice-btn{
+  min-height:42px;
+  border-radius:11px;
+  background:#0e1724;
+  font:800 9px "Segoe UI",sans-serif;
+  letter-spacing:.02em;
+}
+.type-choice-btn.active{background:rgba(106,214,200,.10);border-color:rgba(106,214,200,.34);color:#8ee7dc;}
+.question-format-choice{padding:8px;border-radius:11px;}
+.question-format-btn{min-height:32px;border-radius:9px;font:700 8px "Segoe UI",sans-serif;}
+.array-help{font:500 11px/1.5 "Segoe UI",sans-serif;color:#8491a4;}
+.array-textarea{
+  min-height:300px;
+  padding:13px;
+  border-radius:12px;
+  background:#060b12;
+  border:1px solid var(--line);
+  font:11px/1.55 "Cascadia Code","Courier New",monospace;
+}
+.array-actions{margin-top:10px;gap:8px;}
+.small-tool-btn{
+  min-height:36px;
+  padding:0 12px;
+  border-radius:10px;
+  font:800 9px "Segoe UI",sans-serif;
+  letter-spacing:.02em;
+}
+.small-tool-btn.accent{background:linear-gradient(135deg,#6ad6c8,#4fbdb0);color:#071311;}
+
+.mcq-source-choice{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:8px;
+}
+.mcq-source-btn,.mcq-order-btn{
+  min-height:38px;
+  border-radius:10px;
+  font:800 9px "Segoe UI",sans-serif;
+  letter-spacing:.02em;
+}
+.mcq-source-btn.active,.mcq-order-btn.active{background:rgba(106,214,200,.10);border-color:rgba(106,214,200,.34);color:#8ee7dc;}
+.mcq-control-row{
+  margin:11px 0;
+  padding:10px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:rgba(255,255,255,.018);
+}
+.mcq-order-choice{display:flex;gap:6px;}
+.mcq-number-label{margin-left:auto;font:700 9px "Segoe UI",sans-serif;}
+.mcq-number-input{height:36px;border-radius:9px;background:#080f18;}
+.mcq-test-area{margin-top:12px;padding-top:12px;}
+.mcq-empty{padding:18px;border-radius:12px;text-align:center;font:500 11px/1.6 "Segoe UI",sans-serif;}
+.mcq-test-meta{margin-bottom:10px;font:700 9px "Segoe UI",sans-serif;}
+.mcq-question-card{
+  padding:18px;
+  border-radius:15px;
+  background:linear-gradient(155deg,#101927,#0b121d);
+  border:1px solid var(--line);
+}
+.mcq-category{margin-bottom:10px;padding:5px 8px;border-radius:8px;font:800 8px "Segoe UI",sans-serif;}
+.mcq-question-text{font:650 17px/1.55 "Segoe UI",sans-serif;letter-spacing:-.01em;margin-bottom:14px;}
+.mcq-options{gap:9px;}
+.mcq-option{
+  grid-template-columns:34px minmax(0,1fr);
+  gap:9px;
+  padding:11px 12px;
+  border-radius:11px;
+  background:#0d1623;
+  font:500 14px/1.45 "Segoe UI",sans-serif;
+}
+.mcq-option-letter{width:24px;height:24px;display:grid;place-items:center;padding:0;border-radius:7px;background:rgba(106,214,200,.08);font-size:10px;}
+.mcq-feedback{margin-top:12px;padding:11px 12px;border-radius:0 10px 10px 0;font-size:13px;line-height:1.55;}
+.mcq-test-actions{margin-top:12px;}
+.mcq-result{padding:18px;border-radius:15px;background:#0b121d;}
+.mcq-result-score{font-size:34px;letter-spacing:-.03em;}
+.mcq-result-line{font:600 11px/1.7 "Segoe UI",sans-serif;}
+.mcq-review-item{padding:12px;border-radius:11px;}
+.mcq-review-q{font:650 13px/1.5 "Segoe UI",sans-serif;}
+.mcq-review-a{font:600 10px/1.5 "Segoe UI",sans-serif;}
+.mcq-review-exp{font-size:12px;line-height:1.5;}
+
+.missing-grid{gap:12px;}
+.missing-section{padding:11px;border-radius:11px;background:#0b121d;}
+.missing-row{padding:8px 9px;border-radius:8px;}
+
+@media(max-width:980px){
+  body{padding:18px;}
+  .board,.board:has(#mcqTestPanel.active){
+    grid-template-columns:1fr;
+    grid-template-areas:"header" "study" "controls" "tools";
+  }
+  .managebox{position:relative;top:auto;max-height:none;overflow:visible;}
+  .alertbox{min-height:auto;}
+  .alertbody{min-height:380px;}
+}
+
+@media(max-width:640px){
+  body{padding:10px;}
+  .board{gap:10px;}
+  .header{min-height:62px;padding:10px 12px;border-radius:14px;}
+  .brand{font-size:16px;}
+  .brand::after{display:none;}
+  .server-state{display:none;}
+  .clock{min-width:72px;font-size:13px;}
+  .alertbox,.managebox,.controls{border-radius:15px;}
+  .alerttop{padding:10px;min-height:auto;align-items:flex-start;}
+  .contentnav{width:100%;}
+  .content-btn{flex:1;height:34px;padding:0 8px;}
+  .alerttop-right{width:100%;justify-content:flex-start;}
+  .wordnav{flex:1;overflow-x:auto;}
+  .topsearch-input{width:92px;}
+  .topsearch-input:focus{width:120px;}
+  .alertbody{min-height:340px;padding:25px 18px 22px;}
+  .word-en{font-size:36px;}
+  .word-hi{font-size:20px;margin-bottom:20px;}
+  .row{grid-template-columns:1fr;gap:6px;padding:12px;}
+  .val{font-size:14px;}
+  .controls{padding:10px;}
+  .btn{width:100%;min-width:0;}
+  .count{flex-basis:100%;}
+  .manage-title-row{align-items:flex-start;flex-direction:column;}
+  .manage-title-actions{width:100%;display:grid;grid-template-columns:repeat(3,1fr);}
+  .manage-action-btn{padding:0 7px;}
+  .type-choice{grid-template-columns:1fr 1fr;}
+  .tool-panel{margin:9px;padding:11px;}
+  .array-textarea{min-height:240px;font-size:10px;}
+  .mcq-control-row{align-items:stretch;}
+  .mcq-order-choice{width:100%;}
+  .mcq-order-btn{flex:1;}
+  .mcq-number-label{margin-left:0;flex:1;justify-content:space-between;}
+  .mcq-question-card{padding:14px;}
+  .mcq-question-text{font-size:15px;}
+  .mcq-option{font-size:13px;grid-template-columns:30px minmax(0,1fr);}
+}
+
+@media(max-width:390px){
+  .manage-title-actions{grid-template-columns:1fr;}
+  .type-choice{grid-template-columns:1fr;}
+  .mcq-source-choice{grid-template-columns:1fr;}
+  .editcur-btn{padding:0 9px;}
+  #wnum{display:none;}
+}
+
+
+
+/* =========================================================
+   COLLAPSIBLE SECTIONS + QUESTION ANSWER MANAGER
+   ========================================================= */
+.section-toggle-btn{
+  min-height:30px;
+  padding:0 10px;
+  border-radius:9px;
+  border:1px solid var(--line);
+  background:#0d1521;
+  color:#aeb9c8;
+  font:800 9px "Segoe UI",sans-serif;
+  letter-spacing:.02em;
+  cursor:pointer;
+  white-space:nowrap;
+}
+.section-toggle-btn:hover{background:#172334;color:#fff;border-color:var(--line2);}
+.header.section-collapsed{min-height:50px;padding-top:9px;padding-bottom:9px;}
+.header.section-collapsed .brand::after,
+.header.section-collapsed .server-state,
+.header.section-collapsed .clock{display:none;}
+.alertbox.section-collapsed{min-height:0;}
+.alertbox.section-collapsed .alertbody{display:none;}
+.alertbox.section-collapsed .alerttop{border-bottom:0;}
+.controls.section-collapsed{min-height:48px;padding:8px;justify-content:flex-end;}
+.controls.section-collapsed > :not(.section-toggle-btn){display:none !important;}
+.managebox.section-collapsed{max-height:none;overflow:hidden;}
+.managebox.section-collapsed > :not(.managetop-title){display:none !important;}
+.managebody.panel-hidden{display:none !important;}
+.controls .section-toggle-btn{order:99;margin-left:auto;}
+
+.answer-bank-toolbar{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(160px,.72fr);
+  gap:9px;
+  margin:10px 0 12px;
+}
+.answer-bank-source{display:grid;grid-template-columns:1fr 1fr;gap:7px;}
+.answer-source-btn{
+  min-height:38px;
+  border-radius:10px;
+  border:1px solid var(--line);
+  background:#0d1623;
+  color:#9eabba;
+  font:800 9px "Segoe UI",sans-serif;
+  cursor:pointer;
+}
+.answer-source-btn.active{background:rgba(106,214,200,.10);border-color:rgba(106,214,200,.34);color:#8ee7dc;}
+.answer-category-wrap{display:flex;align-items:center;gap:7px;}
+.answer-category-select{
+  width:100%;
+  min-height:38px;
+  padding:0 10px;
+  border-radius:10px;
+  border:1px solid var(--line);
+  background:#080f18;
+  color:var(--ink);
+  font:600 11px "Segoe UI",sans-serif;
+  outline:none;
+}
+.answer-category-select:focus{border-color:rgba(106,214,200,.45);}
+.answer-bank-summary{margin:0 0 9px;color:#7f8ba0;font:700 9px/1.4 "Segoe UI",sans-serif;}
+.answer-bank-list{display:grid;gap:9px;max-height:540px;overflow:auto;padding-right:3px;}
+.answer-bank-item{
+  padding:12px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:linear-gradient(155deg,#0f1825,#0a111b);
+}
+.answer-bank-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;}
+.answer-bank-meta{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px;}
+.answer-chip{padding:4px 7px;border-radius:7px;background:rgba(255,255,255,.04);color:#8f9bad;font:800 8px "Segoe UI",sans-serif;}
+.answer-chip.kind{background:rgba(243,201,105,.08);color:#e9c977;}
+.answer-bank-q{color:#e8edf5;font:650 13px/1.5 "Segoe UI",sans-serif;white-space:pre-line;}
+.answer-bank-correct{margin-top:9px;padding:8px 9px;border-left:3px solid var(--teal);border-radius:0 8px 8px 0;background:rgba(106,214,200,.055);color:#a8b6c7;font:600 11px/1.5 "Segoe UI",sans-serif;}
+.answer-bank-correct b{color:#8ee7dc;}
+.answer-bank-exp{margin-top:7px;color:#8491a4;font:500 11px/1.5 "Segoe UI",sans-serif;white-space:pre-line;}
+.question-row-actions{display:flex;gap:5px;flex:0 0 auto;}
+.question-icon-btn{
+  width:31px;height:31px;display:grid;place-items:center;
+  border-radius:9px;border:1px solid var(--line);
+  background:#0b1420;color:#b3becd;cursor:pointer;font-size:13px;
+}
+.question-icon-btn:hover{background:#172334;color:#fff;border-color:var(--line2);}
+.question-icon-btn.delete{color:#ff8e84;border-color:rgba(255,118,106,.22);}
+.question-icon-btn.delete:hover{background:rgba(255,118,106,.10);border-color:rgba(255,118,106,.38);}
+
+.question-editor-overlay{
+  display:none;position:fixed;inset:0;z-index:9999;
+  padding:24px;background:rgba(2,6,11,.78);backdrop-filter:blur(10px);
+  align-items:center;justify-content:center;
+}
+.question-editor-overlay.active{display:flex;}
+.question-editor-card{
+  width:min(720px,100%);max-height:calc(100vh - 48px);overflow:auto;
+  border:1px solid var(--line2);border-radius:18px;
+  background:linear-gradient(165deg,#111a27,#090f18);
+  box-shadow:0 30px 90px rgba(0,0,0,.55);padding:18px;
+}
+.question-editor-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px;}
+.question-editor-title{font:800 15px "Segoe UI",sans-serif;color:#f2f5fa;}
+.question-editor-field{margin-bottom:11px;}
+.question-editor-field label{display:block;margin-bottom:5px;color:#7f8ba0;font:800 9px "Segoe UI",sans-serif;text-transform:uppercase;letter-spacing:.05em;}
+.question-editor-field input,.question-editor-field textarea,.question-editor-field select{
+  width:100%;padding:10px 11px;border-radius:10px;border:1px solid var(--line);
+  background:#070d15;color:var(--ink);font:500 13px/1.45 "Segoe UI",sans-serif;outline:none;
+}
+.question-editor-field textarea{resize:vertical;min-height:78px;}
+.question-editor-field input:focus,.question-editor-field textarea:focus,.question-editor-field select:focus{border-color:rgba(106,214,200,.45);box-shadow:0 0 0 4px rgba(106,214,200,.05);}
+.question-editor-field input:disabled{opacity:.65;cursor:not-allowed;}
+.question-option-edit-list{display:grid;gap:7px;}
+.question-option-edit-row{display:grid;grid-template-columns:28px minmax(0,1fr) 32px;gap:7px;align-items:center;}
+.question-option-letter{width:28px;height:28px;display:grid;place-items:center;border-radius:8px;background:rgba(106,214,200,.07);color:#8ee7dc;font:800 9px "Segoe UI",sans-serif;}
+.question-option-remove{width:32px;height:32px;border-radius:9px;border:1px solid rgba(255,118,106,.20);background:rgba(255,118,106,.05);color:#ff8e84;cursor:pointer;}
+.question-editor-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:14px;}
+.question-editor-msg{min-height:18px;margin-top:8px;color:#8f9bad;font:600 10px "Segoe UI",sans-serif;}
+
+@media(max-width:640px){
+  .answer-bank-toolbar{grid-template-columns:1fr;}
+  .answer-bank-list{max-height:none;}
+  .question-editor-overlay{padding:10px;align-items:flex-start;}
+  .question-editor-card{max-height:calc(100vh - 20px);border-radius:14px;padding:13px;}
+  .question-editor-actions{flex-direction:column;}
+  .question-editor-actions .small-tool-btn{width:100%;}
+}
+
+
+
+/* ===== AUTO PLAY TIMER ===== */
+.auto-play-control{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  padding:5px 7px;
+  border:1px solid var(--line2);
+  border-radius:16px;
+  background:rgba(255,255,255,.035);
+  min-width:0;
+}
+.auto-play-label{
+  font:700 8px "Courier New",monospace;
+  letter-spacing:.7px;
+  text-transform:uppercase;
+  color:#aeb9ca;
+}
+.auto-play-control input{
+  width:48px;
+  height:26px;
+  padding:0 5px;
+  border-radius:12px;
+  border:1px solid var(--line2);
+  background:#0a111e;
+  color:var(--ink);
+  text-align:center;
+  font:10px "Courier New",monospace;
+  outline:none;
+}
+.auto-play-control input:focus{border-color:rgba(85,183,174,.7);}
+.auto-play-unit,.auto-play-countdown{
+  font:9px "Courier New",monospace;
+  color:#8994a8;
+  white-space:nowrap;
+}
+.auto-play-countdown{
+  min-width:34px;
+  color:#79d6cc;
+  text-align:center;
+}
+.auto-play-btn{
+  min-height:27px;
+  padding:4px 9px;
+  border-radius:13px;
+  border:1px solid rgba(85,183,174,.45);
+  background:rgba(85,183,174,.12);
+  color:#8ce0d6;
+  font:700 8.5px "Courier New",monospace;
+  text-transform:uppercase;
+  cursor:pointer;
+}
+.auto-play-btn.running{
+  border-color:rgba(217,92,74,.45);
+  background:rgba(217,92,74,.10);
+  color:#ff9b8d;
+}
+#nextBtn:disabled{opacity:.5;cursor:not-allowed;filter:none;}
+@media(max-width:760px){
+  .controls#studyControls{align-items:flex-start;}
+  .auto-play-control{order:8; width:100%; justify-content:center; flex-wrap:wrap;}
+}
+@media(max-width:420px){
+  .auto-play-label{font-size:7.5px;}
+  .auto-play-control input{width:44px;height:25px;}
+  .auto-play-btn{min-height:26px;padding:4px 8px;font-size:8px;}
+}
+</style>
+
+<style>
+/* Main word-card Next button placement */
+.alertbox{position:relative;}
+.alertbody{padding-bottom:92px;}
+.main-card-next-btn{
+  position:absolute;
+  right:24px;
+  bottom:22px;
+  z-index:4;
+  width:100px;
+  min-width:60px;
+  height:45px;
+  min-height:35px;
+  padding:0;
+  border-radius:22px;
+  font-family:"Courier New",monospace;
+  font-size:17px;
+  letter-spacing:.8px;
+  box-shadow:0 5px 16px rgba(240,184,75,.12);
+}
+.alertbox.section-collapsed .main-card-next-btn{display:none;}
+@media(max-width:640px){
+  .alertbody{padding-bottom:86px;}
+  .main-card-next-btn{right:16px;bottom:15px;width:60px;min-width:60px;height:35px;min-height:35px;}
+}
 </style>
 </head>
 
@@ -1091,11 +5068,12 @@ textarea{
 
 <div class="board">
 
-  <div class="header">
+  <div class="header" id="appHeader">
     <div class="brand">Vocab Alert · Tier 2</div>
     <div class="header-actions">
+      <button class="section-toggle-btn" type="button" data-collapse-section="appHeader">− Hide</button>
       <span class="server-state connected" id="topFileStatus" title="English data is loaded and saved through the Python server">Server ✓</span>
-      <div class="clock" id="clock">10:00</div>
+      <div class="clock" id="clock">2:00</div>
     </div>
   </div>
 
@@ -1123,6 +5101,7 @@ textarea{
         <button class="learned-btn" id="learnedBtn" title="Move word between New and Old" aria-label="Move word between new and old">✓</button>
         <button class="editcur-btn" id="editCurrentBtn" title="Edit this word">✎ Edit</button>
         <span id="wnum">#1</span>
+        <button class="section-toggle-btn" type="button" data-collapse-section="box">− Hide</button>
       </span>
 
     </div>
@@ -1159,9 +5138,18 @@ textarea{
 
     </div>
 
+    <button
+      class="btn main-card-next-btn"
+      id="nextBtn"
+      type="button"
+    >
+      Next now →
+    </button>
+
   </div>
 
-  <div class="controls">
+  <div class="controls" id="studyControls">
+    <button class="section-toggle-btn" type="button" data-collapse-section="studyControls">− Hide</button>
 
     <span
       class="count"
@@ -1173,26 +5161,37 @@ textarea{
       <input type="number" id="testRoundsInput" min="1" max="20" value="1" aria-label="Test rounds">
       <span id="roundLabel">round</span>
     </label>
+    <span class="auto-play-control" id="autoPlayControl" title="Show the selected Vocab / Idioms / Mix automatically without entering test mode">
+      <span class="auto-play-label">Auto Play</span>
+      <input type="number" id="autoPlaySecondsInput" min="1" max="3600" value="15" inputmode="numeric" aria-label="Auto play interval in seconds">
+      <span class="auto-play-unit">sec</span>
+      <button class="auto-play-btn" id="autoPlayToggleBtn" type="button">▶ Start</button>
+      <span class="auto-play-countdown" id="autoPlayCountdown">Off</span>
+    </span>
     <span class="pool-switch" title="Choose which array to revise/test">
       <button class="pool-btn active" id="newPoolBtn" type="button">New</button>
       <button class="pool-btn" id="oldPoolBtn" type="button">Old</button>
       <span class="pool-count" id="poolCount"></span>
     </span>
 
-    <button
-      class="btn"
-      id="nextBtn"
-    >
-      Next now →
-    </button>
 
   </div>
 
 
-  <div class="managebox">
+  <div class="managebox" id="toolsBox">
 
     <div class="managetop-title">
-      ✎ Search &amp; edit words
+      <div class="manage-title-row">
+        <span>✎ Search &amp; edit words</span>
+        <span class="manage-title-actions">
+          <button class="manage-action-btn" id="toggleSearchPanelBtn" type="button">Hide Search</button>
+          <button class="manage-action-btn primary" id="newDataBtn" type="button">＋ New</button>
+          <button class="manage-action-btn" id="englishMcqTestBtn" type="button">Test</button>
+          <button class="manage-action-btn" id="answerBankBtn" type="button">Answers</button>
+          <button class="manage-action-btn" id="showMissingBtn" type="button">Missing</button>
+          <button class="section-toggle-btn" type="button" data-collapse-section="toolsBox">− Hide</button>
+        </span>
+      </div>
     </div>
 
     <div
@@ -1318,11 +5317,171 @@ textarea{
     </div>
 
 
+    <div class="tool-panel" id="newDataPanel">
+      <div class="tool-panel-head">
+        <div class="tool-panel-title">Add multiple new items</div>
+        <button class="tool-close-btn" id="closeNewDataPanel" type="button" aria-label="Close">×</button>
+      </div>
+
+      <div class="type-choice">
+        <button class="type-choice-btn" id="newWordTypeBtn" type="button">Word / Vocab</button>
+        <button class="type-choice-btn" id="newIdiomTypeBtn" type="button">Idiom</button>
+        <button class="type-choice-btn" id="newErrorTypeBtn" type="button">Error Sentences</button>
+        <button class="type-choice-btn" id="newMoreTypeBtn" type="button">More MCQ</button>
+      </div>
+
+      <div class="question-format-choice" id="questionFormatChoice" hidden>
+        <button class="question-format-btn active" id="mainOnlyFormatBtn" type="button">Only Main Questions</button>
+        <button class="question-format-btn" id="mainSubFormatBtn" type="button">Main + Sub Questions</button>
+      </div>
+
+      <div class="new-array-wrap" id="newArrayWrap">
+        <div class="array-help" id="arrayHelp">
+          Choose Word or Idiom. The correct array format will appear here.
+        </div>
+        <textarea class="array-textarea" id="bulkArrayInput" spellcheck="false"></textarea>
+        <div class="array-actions">
+          <button class="small-tool-btn" id="copyArrayFormatBtn" type="button">Copy format</button>
+          <button class="small-tool-btn accent" id="uploadArrayBtn" type="button">Upload array</button>
+          <button class="small-tool-btn" id="clearArrayBtn" type="button">Clear</button>
+        </div>
+        <div class="tool-msg" id="bulkUploadMsg"></div>
+      </div>
+    </div>
+
+    <div class="tool-panel" id="mcqTestPanel">
+      <div class="tool-panel-head">
+        <div class="tool-panel-title">English MCQ Test</div>
+        <button class="tool-close-btn" id="closeMcqTestPanel" type="button" aria-label="Close">×</button>
+      </div>
+
+      <div class="mcq-category-selector mcq-category-selector-simple">
+        <div class="mcq-category-head">
+          <span>Choose Category</span>
+          <span id="mcqCategorySelectionSummary">0 questions</span>
+        </div>
+        <div class="mcq-category-toggle-list" id="mcqCategoryToggleList"></div>
+      </div>
+
+      <div class="mcq-control-row">
+        <div class="mcq-order-choice">
+          <button class="mcq-order-btn active" id="mcqRandomBtn" type="button">⤨ Random</button>
+          <button class="mcq-order-btn" id="mcqSeriesBtn" type="button">↦ Series</button>
+        </div>
+        <label class="mcq-number-label">Questions
+          <input class="mcq-number-input" id="mcqQuestionLimit" type="number" min="1" max="1" value="1">
+          <span class="mcq-available-count" id="mcqQuestionAvailable">/ 0 total</span>
+        </label>
+        <button class="small-tool-btn accent" id="startMcqTestBtn" type="button">Start Test</button>
+      </div>
+
+      <div class="mcq-test-area" id="mcqTestArea"></div>
+    </div>
+
+
+
+    <div class="tool-panel" id="answerBankPanel">
+      <div class="tool-panel-head">
+        <div class="tool-panel-title">Question Bank · Correct Answers</div>
+        <button class="tool-close-btn" id="closeAnswerBankPanel" type="button" aria-label="Close">×</button>
+      </div>
+
+      <div class="answer-bank-toolbar">
+        <div class="answer-bank-source">
+          <button class="answer-source-btn active" id="answerErrorSourceBtn" type="button">Error Sentences</button>
+          <button class="answer-source-btn" id="answerMoreSourceBtn" type="button">More</button>
+        </div>
+        <div class="answer-category-wrap">
+          <select class="answer-category-select" id="answerCategorySelect" aria-label="Select question category"></select>
+        </div>
+      </div>
+
+      <div class="answer-bank-summary" id="answerBankSummary"></div>
+      <div class="answer-bank-list" id="answerBankList"></div>
+      <div class="tool-msg" id="answerBankMsg"></div>
+    </div>
+
+    <div class="tool-panel" id="missingDataPanel">
+      <div class="tool-panel-head">
+        <div class="tool-panel-title">Missing vocab &amp; idioms</div>
+        <button class="tool-close-btn" id="closeMissingDataPanel" type="button" aria-label="Close">×</button>
+      </div>
+
+      <div class="missing-grid">
+        <div class="missing-section">
+          <div class="missing-section-head">
+            <div class="missing-section-title">Missing Vocab <span id="missingVocabCount">(0)</span></div>
+            <div class="missing-section-actions">
+              <button class="small-tool-btn" id="copyMissingVocabBtn" type="button">Copy</button>
+              <button class="small-tool-btn danger" id="deleteMissingVocabBtn" type="button">Delete all</button>
+            </div>
+          </div>
+          <div class="missing-list" id="missingVocabList"></div>
+        </div>
+
+        <div class="missing-section">
+          <div class="missing-section-head">
+            <div class="missing-section-title">Missing Idioms <span id="missingIdiomCount">(0)</span></div>
+            <div class="missing-section-actions">
+              <button class="small-tool-btn" id="copyMissingIdiomsBtn" type="button">Copy</button>
+              <button class="small-tool-btn danger" id="deleteMissingIdiomsBtn" type="button">Delete all</button>
+            </div>
+          </div>
+          <div class="missing-list" id="missingIdiomList"></div>
+        </div>
+      </div>
+
+      <div class="tool-msg" id="missingManagerMsg"></div>
+    </div>
+
+
 
   </div>
 
 </div>
 
+
+
+<div class="question-editor-overlay" id="questionEditorOverlay" aria-hidden="true">
+  <div class="question-editor-card" role="dialog" aria-modal="true" aria-labelledby="questionEditorTitle">
+    <div class="question-editor-head">
+      <div class="question-editor-title" id="questionEditorTitle">✎ Edit Question</div>
+      <button class="tool-close-btn" id="closeQuestionEditorBtn" type="button" aria-label="Close editor">×</button>
+    </div>
+
+    <div class="question-editor-field">
+      <label for="questionEditorCategory">Category</label>
+      <input id="questionEditorCategory" type="text" />
+    </div>
+
+    <div class="question-editor-field">
+      <label for="questionEditorText">Question</label>
+      <textarea id="questionEditorText" rows="4"></textarea>
+    </div>
+
+    <div class="question-editor-field">
+      <label>Options</label>
+      <div class="question-option-edit-list" id="questionEditorOptions"></div>
+      <button class="small-tool-btn" id="addQuestionOptionBtn" type="button" style="margin-top:8px;">＋ Add Option</button>
+    </div>
+
+    <div class="question-editor-field">
+      <label for="questionEditorAnswer">Correct Answer</label>
+      <select id="questionEditorAnswer"></select>
+    </div>
+
+    <div class="question-editor-field">
+      <label for="questionEditorExplanation">Explanation</label>
+      <textarea id="questionEditorExplanation" rows="5"></textarea>
+    </div>
+
+    <div class="question-editor-actions">
+      <button class="small-tool-btn" id="cancelQuestionEditBtn" type="button">Cancel</button>
+      <button class="small-tool-btn accent" id="saveQuestionEditBtn" type="button">Save Changes</button>
+    </div>
+    <div class="question-editor-msg" id="questionEditorMsg"></div>
+  </div>
+</div>
 
 <script>
 
@@ -1344,7 +5503,189 @@ let browseMode = "random";
 let browseIndex = 0;
 let seriesCursor = 0;
 
+// RANDOM MODE MEMORY:
+// Keep track of words already used in the current random cycle so a word
+// cannot appear again in a later random round until every available word
+// in the selected pool has been shown once.
+let randomSeenKeys = new Set();
+let randomCycleKey = "";
+
 let missingWords = [];
+
+// Separate MCQ banks. They intentionally do not alter the old Vocab/Idioms arrays.
+// Error Sentences are persisted by the Python server in English/error_sentences.json.
+// More MCQs keep their previous browser-local storage behavior.
+let ERROR_QUESTIONS = [];
+let MORE_QUESTIONS = [];
+let LEGACY_LOCAL_ERROR_QUESTIONS = [];
+let LEGACY_LOCAL_MORE_QUESTIONS = [];
+const ENGLISH_MCQ_STORAGE_KEY = "vocab-alert-english-mcq-v1";
+const ENGLISH_QUESTIONS_API = "/api/english/error-sentences";
+
+function loadEnglishMcqLocal(){
+  try{
+    const raw = localStorage.getItem(ENGLISH_MCQ_STORAGE_KEY);
+    if(!raw) return;
+    const parsed = JSON.parse(raw);
+    // Browser data is used only for one-time migration. Both question banks are
+    // now file-backed by English/error_sentences.json.
+    if(Array.isArray(parsed.errorQuestions)) LEGACY_LOCAL_ERROR_QUESTIONS = parsed.errorQuestions;
+    if(Array.isArray(parsed.moreQuestions)) LEGACY_LOCAL_MORE_QUESTIONS = parsed.moreQuestions;
+  }catch(e){
+    console.warn("Could not read legacy English MCQ browser data:", e);
+  }
+}
+
+function clearEnglishMcqLocal(){
+  try{
+    localStorage.removeItem(ENGLISH_MCQ_STORAGE_KEY);
+    return true;
+  }catch(e){
+    console.warn("Could not remove legacy English MCQ browser data:", e);
+    return false;
+  }
+}
+
+async function loadEnglishQuestionsFromServer(){
+  try{
+    const response = await fetch(ENGLISH_QUESTIONS_API, {method:"GET", cache:"no-store"});
+    const result = await response.json().catch(() => ({}));
+    if(!response.ok || result.ok === false || !Array.isArray(result.errorQuestions) || !Array.isArray(result.moreQuestions || [])){
+      throw new Error(result.error || "Server could not load English MCQ questions");
+    }
+
+    const normalizedErrors = [];
+    for(const item of result.errorQuestions){
+      const record = normalizeMcqEntry(item, "error");
+      if(!record) throw new Error("error_sentences.json contains an invalid Error question record");
+      normalizedErrors.push(record);
+    }
+
+    const normalizedMore = [];
+    for(const item of (result.moreQuestions || [])){
+      const record = normalizeMcqEntry(item, "more");
+      if(!record) throw new Error("error_sentences.json contains an invalid More question record");
+      normalizedMore.push(record);
+    }
+
+    ERROR_QUESTIONS = normalizedErrors;
+    MORE_QUESTIONS = normalizedMore;
+    return true;
+  }catch(e){
+    console.error("English MCQ server load failed:", e);
+    return false;
+  }
+}
+
+async function saveEnglishQuestionsToServer(){
+  try{
+    const response = await fetch(ENGLISH_QUESTIONS_API, {
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({
+        errorQuestions:ERROR_QUESTIONS,
+        moreQuestions:MORE_QUESTIONS
+      })
+    });
+    const result = await response.json().catch(() => ({}));
+    if(!response.ok || result.ok === false){
+      throw new Error(result.error || "Server could not save English MCQ questions");
+    }
+    return true;
+  }catch(e){
+    console.error("English MCQ server save failed:", e);
+    return false;
+  }
+}
+
+async function saveEnglishMcqBank(){
+  return await saveEnglishQuestionsToServer();
+}
+
+// Keep missing.json backward-compatible with a simple string array.
+// New typed values are stored as:
+//   "vocab::word"
+//   "idiom::some idiom"
+// Old un-prefixed strings are treated as vocab.
+const MISSING_PREFIX = {
+  vocab:"vocab::",
+  idiom:"idiom::"
+};
+
+function normalizeMissingType(type){
+  return type === "idiom" ? "idiom" : "vocab";
+}
+
+function decodeMissingEntry(entry){
+  const raw = String(entry || "").trim();
+  if(!raw) return null;
+
+  if(raw.toLowerCase().startsWith(MISSING_PREFIX.idiom)){
+    return {
+      type:"idiom",
+      text:raw.slice(MISSING_PREFIX.idiom.length).trim()
+    };
+  }
+
+  if(raw.toLowerCase().startsWith(MISSING_PREFIX.vocab)){
+    return {
+      type:"vocab",
+      text:raw.slice(MISSING_PREFIX.vocab.length).trim()
+    };
+  }
+
+  return {type:"vocab", text:raw};
+}
+
+function encodeMissingEntry(text, type){
+  const clean = String(text || "").trim();
+  if(!clean) return "";
+  const normalizedType = normalizeMissingType(type);
+  return MISSING_PREFIX[normalizedType] + clean;
+}
+
+function getMissingItems(type){
+  const wantedType = normalizeMissingType(type);
+  const seen = new Set();
+  const list = [];
+
+  missingWords.forEach(entry => {
+    const decoded = decodeMissingEntry(entry);
+    if(!decoded || decoded.type !== wantedType || !decoded.text) return;
+
+    const key = decoded.text.toLocaleLowerCase("en-US");
+    if(seen.has(key)) return;
+    seen.add(key);
+    list.push(decoded.text);
+  });
+
+  return list.sort((a,b) =>
+    a.localeCompare(b, "en", {sensitivity:"base"})
+  );
+}
+
+function hasMissingItem(text, type){
+  const clean = String(text || "").trim().toLocaleLowerCase("en-US");
+  if(!clean) return false;
+  return getMissingItems(type).some(
+    item => item.toLocaleLowerCase("en-US") === clean
+  );
+}
+
+function removeMissingItemLocal(text, type){
+  const clean = String(text || "").trim().toLocaleLowerCase("en-US");
+  const wantedType = normalizeMissingType(type);
+
+  missingWords = missingWords.filter(entry => {
+    const decoded = decodeMissingEntry(entry);
+    if(!decoded) return false;
+    return !(
+      decoded.type === wantedType &&
+      decoded.text.toLocaleLowerCase("en-US") === clean
+    );
+  });
+}
+
 
 function sortWordArray(items){
   return [...items].sort((a,b) =>
@@ -1483,7 +5824,7 @@ let roundNumber = 1;
 
 let testPass = 1;
 
-let timeLeft = 600;
+let timeLeft = 180;
 
 let currentRoundWords = [];
 
@@ -1496,6 +5837,14 @@ let testIndex = 0;
 let answerVisible = false;
 
 let currentWord = null;
+
+// Separate answer-only Auto Play mode. It never enters the normal TEST phase.
+let autoPlayActive = false;
+let autoPlayTimerId = null;
+let autoPlayIntervalSeconds = 15;
+let autoPlayRemainingSeconds = 15;
+let autoPlayQueue = [];
+let autoPlayQueueIndex = 0;
 
 
 const boxEl =
@@ -1560,6 +5909,70 @@ function shuffleWords(items){
 
   return arr;
 
+}
+
+// Build a stable visible-word key. This also prevents duplicate English
+// entries in the data from appearing twice in the same random cycle.
+function randomWordKey(word){
+  const english = String((word && word.en) || "").trim().toLocaleLowerCase("en-US");
+  if(english) return english;
+
+  // Fallback for an unusual entry with no English label.
+  return JSON.stringify(word || {});
+}
+
+function currentRandomCycleKey(){
+  return quizPoolMode + "::" + contentMode;
+}
+
+function resetRandomCycle(){
+  randomSeenKeys.clear();
+  randomCycleKey = currentRandomCycleKey();
+}
+
+function nextRandomRound(pool){
+  const cycleKey = currentRandomCycleKey();
+
+  // Switching New/Old or Vocab/Idioms/Mix starts a fresh cycle.
+  if(randomCycleKey !== cycleKey){
+    randomSeenKeys.clear();
+    randomCycleKey = cycleKey;
+  }
+
+  // De-duplicate visible words inside the source pool itself.
+  const uniquePool = [];
+  const poolKeys = new Set();
+
+  for(const word of pool){
+    const key = randomWordKey(word);
+    if(poolKeys.has(key)) continue;
+    poolKeys.add(key);
+    uniquePool.push(word);
+  }
+
+  // If data changed while the app is open, forget seen keys that no longer
+  // exist in this pool.
+  for(const key of [...randomSeenKeys]){
+    if(!poolKeys.has(key)) randomSeenKeys.delete(key);
+  }
+
+  let remaining = uniquePool.filter(
+    word => !randomSeenKeys.has(randomWordKey(word))
+  );
+
+  // Only after ALL words have been used once do we start a new random cycle.
+  if(!remaining.length){
+    randomSeenKeys.clear();
+    remaining = [...uniquePool];
+  }
+
+  const batch = shuffleWords(remaining).slice(
+    0,
+    Math.min(ROUND_SIZE, remaining.length)
+  );
+
+  batch.forEach(word => randomSeenKeys.add(randomWordKey(word)));
+  return batch;
 }
 
 
@@ -1806,11 +6219,9 @@ function startRound(mode = browseMode){
       currentRoundWords = currentRoundWords.concat(pool.slice(0, needed));
     }
   }else{
-    // RANDOM MODE: pick a fresh random set of up to 10 words.
-    currentRoundWords = shuffleWords(pool).slice(
-      0,
-      Math.min(ROUND_SIZE, pool.length)
-    );
+    // RANDOM MODE: no word repeats across random rounds until the complete
+    // selected pool has been shown once. Then a fresh shuffled cycle begins.
+    currentRoundWords = nextRandomRound(pool);
   }
 
   currentPhase = PHASE.READ;
@@ -1961,6 +6372,10 @@ function nextWord(resetTimer = true){
 
 function tick(){
 
+  // The original 10-minute timer remains unchanged in normal mode.
+  // While Auto Play is active it is paused so it can never trigger the normal test flow.
+  if(autoPlayActive) return;
+
   timeLeft--;
 
   if(timeLeft <= 0){
@@ -2033,6 +6448,7 @@ function showBrowseWord(index){
 function showRandomWord(){
   if(!getQuizPool().length) return;
   roundNumber = 1;
+  resetRandomCycle();
   startRound("random");
 }
 
@@ -2058,7 +6474,10 @@ function goToWordNumber(value){
 
 // Random and Series are both QUIZ modes now.
 // Next always advances READ -> TEST -> next 10-word round.
-nextBtn.onclick = () => nextWord(true);
+nextBtn.onclick = () => {
+  if(autoPlayActive) return;
+  nextWord(true);
+};
 
 
 // ---------- Search ----------
@@ -2074,22 +6493,25 @@ const searchResults =
   );
 
 
-async function saveMissingWord(word){
+async function saveMissingWord(word, type = "vocab"){
   const normalizedWord = String(word || "").trim();
+  const normalizedType = normalizeMissingType(type);
   if(!normalizedWord) return false;
 
-  const alreadySaved = missingWords.some(
-    item => String(item || "").trim().toLocaleLowerCase("en") === normalizedWord.toLocaleLowerCase("en")
-  );
-  if(alreadySaved) return true;
+  if(hasMissingItem(normalizedWord, normalizedType)) return true;
 
-  missingWords.push(normalizedWord);
+  const encoded = encodeMissingEntry(normalizedWord, normalizedType);
+  missingWords.push(encoded);
+
   const saved = await saveServerData();
   if(!saved){
-    const addedIndex = missingWords.lastIndexOf(normalizedWord);
+    const addedIndex = missingWords.lastIndexOf(encoded);
     if(addedIndex !== -1) missingWords.splice(addedIndex, 1);
+    return false;
   }
-  return saved;
+
+  renderMissingManager();
+  return true;
 }
 
 
@@ -2134,40 +6556,42 @@ function renderSearchResults(query){
     );
 
 
-    const alreadySaved =
-      missingWords.some(
-        w =>
-          w.toLowerCase() === q
-      );
+    const rawMissingText = query.trim();
 
+    const actions = document.createElement("div");
+    actions.className = "save-missing-actions";
 
-    if(!alreadySaved){
+    function addMissingSaveButton(type, label){
+      if(hasMissingItem(rawMissingText, type)) return;
 
-      const saveBtn =
-        document.createElement(
-          "button"
-        );
-
-      saveBtn.className =
-        "savemissing-btn";
-
-      saveBtn.textContent =
-        'Save "' +
-        query.trim() +
-        '" (not available)';
+      const saveBtn = document.createElement("button");
+      saveBtn.className = "savemissing-btn";
+      saveBtn.textContent = label;
 
       saveBtn.onclick = async () => {
-        await saveMissingWord(query.trim());
-        renderSearchResults(
-          searchInput.value
-        );
-
+        await saveMissingWord(rawMissingText, type);
+        renderSearchResults(searchInput.value);
       };
 
-      searchResults.appendChild(
-        saveBtn
-      );
+      actions.appendChild(saveBtn);
+    }
 
+    if(contentMode === "idioms"){
+      addMissingSaveButton("idiom", 'Save missing idiom');
+    }else if(contentMode === "mix"){
+      addMissingSaveButton("vocab", 'Save as missing vocab');
+      addMissingSaveButton("idiom", 'Save as missing idiom');
+    }else{
+      addMissingSaveButton("vocab", 'Save missing vocab');
+    }
+
+    if(actions.children.length){
+      searchResults.appendChild(actions);
+    }else{
+      const hint = document.createElement("div");
+      hint.className = "missinghint";
+      hint.textContent = "Already saved in the missing list.";
+      searchResults.appendChild(hint);
     }
 
     return;
@@ -2258,6 +6682,1056 @@ searchInput.addEventListener(
       searchInput.value
     )
 );
+
+
+// ---------- New bulk upload + Missing manager ----------
+
+const newDataBtn = document.getElementById("newDataBtn");
+const englishMcqTestBtn = document.getElementById("englishMcqTestBtn");
+const showMissingBtn = document.getElementById("showMissingBtn");
+const newDataPanel = document.getElementById("newDataPanel");
+const mcqTestPanel = document.getElementById("mcqTestPanel");
+const missingDataPanel = document.getElementById("missingDataPanel");
+const closeNewDataPanel = document.getElementById("closeNewDataPanel");
+const closeMcqTestPanel = document.getElementById("closeMcqTestPanel");
+const closeMissingDataPanel = document.getElementById("closeMissingDataPanel");
+
+const newWordTypeBtn = document.getElementById("newWordTypeBtn");
+const newIdiomTypeBtn = document.getElementById("newIdiomTypeBtn");
+const newErrorTypeBtn = document.getElementById("newErrorTypeBtn");
+const newMoreTypeBtn = document.getElementById("newMoreTypeBtn");
+const questionFormatChoice = document.getElementById("questionFormatChoice");
+const mainOnlyFormatBtn = document.getElementById("mainOnlyFormatBtn");
+const mainSubFormatBtn = document.getElementById("mainSubFormatBtn");
+const newArrayWrap = document.getElementById("newArrayWrap");
+const bulkArrayInput = document.getElementById("bulkArrayInput");
+const arrayHelp = document.getElementById("arrayHelp");
+const copyArrayFormatBtn = document.getElementById("copyArrayFormatBtn");
+const uploadArrayBtn = document.getElementById("uploadArrayBtn");
+const clearArrayBtn = document.getElementById("clearArrayBtn");
+const bulkUploadMsg = document.getElementById("bulkUploadMsg");
+
+const missingVocabList = document.getElementById("missingVocabList");
+const missingIdiomList = document.getElementById("missingIdiomList");
+const missingVocabCount = document.getElementById("missingVocabCount");
+const missingIdiomCount = document.getElementById("missingIdiomCount");
+const copyMissingVocabBtn = document.getElementById("copyMissingVocabBtn");
+const copyMissingIdiomsBtn = document.getElementById("copyMissingIdiomsBtn");
+const deleteMissingVocabBtn = document.getElementById("deleteMissingVocabBtn");
+const deleteMissingIdiomsBtn = document.getElementById("deleteMissingIdiomsBtn");
+const missingManagerMsg = document.getElementById("missingManagerMsg");
+
+let bulkAddType = "";
+
+const BULK_FORMATS = {
+  vocab:[
+    {
+      en:"aggregate",
+      hi:"कुल / समग्र",
+      meaning:"A total formed by combining several separate elements.",
+      sentence:"The aggregate score was higher this year.",
+      syn:"total",
+      ant:"individual"
+    },
+    {
+      en:"prudent",
+      hi:"समझदार / विवेकपूर्ण",
+      meaning:"Acting with care and good judgement.",
+      sentence:"It was prudent to save some money.",
+      syn:"wise",
+      ant:"careless"
+    }
+  ],
+  idiom:[
+    {
+      en:"a blessing in disguise",
+      hi:"छिपा हुआ वरदान",
+      meaning:"Something that seems bad at first but later proves helpful.",
+      sentence:"Missing that bus was a blessing in disguise.",
+      syn:"hidden benefit",
+      ant:"misfortune"
+    },
+    {
+      en:"break the ice",
+      hi:"झिझक दूर करना",
+      meaning:"To make people feel more relaxed when meeting or starting a conversation.",
+      sentence:"He told a joke to break the ice.",
+      syn:"start conversation",
+      ant:"create tension"
+    }
+  ],
+  errorMain:[
+    {
+      category:"Error Sentences",
+      question:"The number of unemployed youth / are increasing rapidly / due to the lack of / adequate job opportunities.",
+      options:["The number of unemployed youth", "are increasing rapidly", "due to the lack of", "adequate job opportunities"],
+      answer:1,
+      explanation:"'The number of' takes a singular verb. Correct: The number of unemployed youth is increasing rapidly."
+    },
+    {
+      category:"Error Sentences",
+      question:"The young man behind the bar / mixes drinks / and pose for photographs / with tourists.",
+      options:["The young man behind the bar", "mixes drinks", "and pose for photographs", "with tourists"],
+      answer:2,
+      explanation:"The singular subject 'young man' requires 'poses': mixes drinks and poses for photographs."
+    }
+  ],
+  errorSub:[
+    {
+      category:"Error Sentences",
+      question:"Choose the part containing the grammatical error: The number of unemployed youth / are increasing rapidly / due to the lack of / adequate job opportunities.",
+      options:["The number of unemployed youth", "are increasing rapidly", "due to the lack of", "adequate job opportunities"],
+      answer:1,
+      explanation:"'The number of' is singular, so use 'is increasing'.",
+      subQuestions:[
+        {
+          question:"Which verb correctly replaces 'are increasing' in the sentence?",
+          options:["is increasing", "were increasing", "have increased", "be increasing"],
+          answer:0,
+          explanation:"The head expression 'The number' is singular, so 'is increasing' is correct."
+        },
+        {
+          question:"In the expression 'the number of students', which part controls subject-verb agreement?",
+          options:["students", "of", "the number", "none"],
+          answer:2,
+          explanation:"'The number' is the grammatical subject and takes a singular verb."
+        }
+      ]
+    }
+  ],
+  moreMain:[
+    {
+      category:"Grammar",
+      question:"Choose the correct indirect speech: The teacher said to the students, 'Work hard.'",
+      options:["The teacher told the students to work hard.", "The teacher said the students work hard.", "The teacher told that the students worked hard.", "The teacher asked the students that work hard."],
+      answer:0,
+      explanation:"An imperative sentence commonly changes to told/asked + object + to + verb."
+    },
+    {
+      category:"Para Jumble",
+      question:"Choose the correct order of the given sentences.",
+      options:["PQRS", "PRQS", "QPRS", "RPSQ"],
+      answer:1,
+      explanation:"Add the complete explanation for the correct sequence here."
+    }
+  ],
+  moreSub:[
+    {
+      category:"Grammar",
+      question:"Choose the correct indirect speech: The teacher said to the students, 'Work hard.'",
+      options:["The teacher told the students to work hard.", "The teacher said the students work hard.", "The teacher told that the students worked hard.", "The teacher asked the students that work hard."],
+      answer:0,
+      explanation:"Imperative → told/asked + object + to + base verb.",
+      subQuestions:[
+        {
+          question:"Which structure is normally used to report a positive imperative sentence?",
+          options:["told + object + to + verb", "said + that + verb", "asked + if + verb", "said + object + verb-ing"],
+          answer:0,
+          explanation:"Positive imperatives are commonly reported with told/asked + object + to + base verb."
+        },
+        {
+          question:"Which structure is commonly used for a negative imperative?",
+          options:["not + verb", "to not + verb only", "not to + verb", "did not + verb"],
+          answer:2,
+          explanation:"Negative imperative → told/asked + object + not to + base verb."
+        }
+      ]
+    }
+  ]
+};
+
+function openToolPanel(panel){
+  [newDataPanel, mcqTestPanel, missingDataPanel].forEach(item => {
+    item?.classList.toggle("active", item === panel);
+  });
+
+  if(panel === missingDataPanel) renderMissingManager();
+  if(panel === mcqTestPanel) renderMcqHome();
+  panel?.scrollIntoView({behavior:"smooth", block:"nearest"});
+}
+
+function closeToolPanels(){
+  newDataPanel?.classList.remove("active");
+  mcqTestPanel?.classList.remove("active");
+  missingDataPanel?.classList.remove("active");
+}
+
+let questionFormatMode = "main";
+
+function isQuestionBulkType(type = bulkAddType){
+  return type === "error" || type === "more";
+}
+
+function currentBulkFormatKey(){
+  if(bulkAddType === "error") return questionFormatMode === "sub" ? "errorSub" : "errorMain";
+  if(bulkAddType === "more") return questionFormatMode === "sub" ? "moreSub" : "moreMain";
+  return bulkAddType;
+}
+
+function refreshBulkExample(){
+  if(!bulkAddType) return;
+  const key = currentBulkFormatKey();
+  const example = JSON.stringify(BULK_FORMATS[key] || [], null, 2);
+  bulkArrayInput.value = example;
+
+  if(bulkAddType === "idiom"){
+    arrayHelp.textContent = "Paste one JSON array containing multiple idioms. Required fields: en and meaning.";
+  }else if(bulkAddType === "vocab"){
+    arrayHelp.textContent = "Paste one JSON array containing multiple vocabulary words. Required fields: en and meaning.";
+  }else if(bulkAddType === "error"){
+    arrayHelp.textContent = "Error Sentences MCQ array. Required: question, options, answer. explanation/category are supported. answer is 0-based: 0=A, 1=B, 2=C, 3=D. Optional subQuestions are supported.";
+  }else{
+    arrayHelp.textContent = "More MCQ array: upload any English practice topic (grammar, narration, para jumble, vocabulary MCQ, etc.). Required: question, options, answer. Optional category, explanation and subQuestions are supported.";
+  }
+  bulkUploadMsg.textContent = "";
+}
+
+function setQuestionFormatMode(mode){
+  questionFormatMode = mode === "sub" ? "sub" : "main";
+  mainOnlyFormatBtn?.classList.toggle("active", questionFormatMode === "main");
+  mainSubFormatBtn?.classList.toggle("active", questionFormatMode === "sub");
+  if(isQuestionBulkType()) refreshBulkExample();
+}
+
+function selectBulkType(type){
+  bulkAddType = ["idiom","error","more"].includes(type) ? type : "vocab";
+
+  newWordTypeBtn?.classList.toggle("active", bulkAddType === "vocab");
+  newIdiomTypeBtn?.classList.toggle("active", bulkAddType === "idiom");
+  newErrorTypeBtn?.classList.toggle("active", bulkAddType === "error");
+  newMoreTypeBtn?.classList.toggle("active", bulkAddType === "more");
+  newArrayWrap?.classList.add("active");
+
+  if(questionFormatChoice){
+    questionFormatChoice.hidden = !isQuestionBulkType();
+  }
+  if(isQuestionBulkType()) setQuestionFormatMode(questionFormatMode);
+  else refreshBulkExample();
+}
+
+function normalizeBulkEntry(item){
+  if(!item || typeof item !== "object" || Array.isArray(item)) return null;
+
+  const entry = {
+    en:String(item.en || "").trim(),
+    hi:String(item.hi || "").trim(),
+    meaning:String(item.meaning || "").trim(),
+    sentence:String(item.sentence || "").trim(),
+    syn:String(item.syn || "").trim(),
+    ant:String(item.ant || "").trim()
+  };
+
+  if(!entry.en || !entry.meaning) return null;
+  return entry;
+}
+
+function wordExistsInType(en, type){
+  const key = String(en || "").trim().toLocaleLowerCase("en-US");
+  const pools = type === "idiom"
+    ? [...IDIOM_WORDS, ...OLD_IDIOM_WORDS]
+    : [...WORDS, ...OLD_WORDS];
+
+  return pools.some(item =>
+    String((item && item.en) || "")
+      .trim()
+      .toLocaleLowerCase("en-US") === key
+  );
+}
+
+async function copyTextSafe(textToCopy){
+  const text = String(textToCopy || "");
+
+  try{
+    if(navigator.clipboard && window.isSecureContext){
+      await navigator.clipboard.writeText(text);
+      return true;
+    }
+  }catch(e){
+    console.warn("Clipboard API failed, using fallback:", e);
+  }
+
+  try{
+    const area = document.createElement("textarea");
+    area.value = text;
+    area.style.position = "fixed";
+    area.style.opacity = "0";
+    document.body.appendChild(area);
+    area.focus();
+    area.select();
+    const ok = document.execCommand("copy");
+    area.remove();
+    return !!ok;
+  }catch(e){
+    console.error("Copy failed:", e);
+    return false;
+  }
+}
+
+
+function normalizeMcqSubQuestion(item){
+  if(!item || typeof item !== "object" || Array.isArray(item)) return null;
+  const question = String(item.question || "").trim();
+  const options = Array.isArray(item.options)
+    ? item.options.map(value => String(value ?? "").trim())
+    : [];
+  const answer = Number(item.answer);
+  const explanation = String(item.explanation || "").trim();
+
+  if(!question || options.length < 2 || options.length > 8) return null;
+  if(options.some(value => !value)) return null;
+  if(!Number.isInteger(answer) || answer < 0 || answer >= options.length) return null;
+  return {question, options, answer, explanation};
+}
+
+function normalizeMcqEntry(item, type){
+  const base = normalizeMcqSubQuestion(item);
+  if(!base) return null;
+
+  const subQuestions = [];
+  if(Array.isArray(item.subQuestions)){
+    for(const raw of item.subQuestions){
+      const normalized = normalizeMcqSubQuestion(raw);
+      if(!normalized) return null;
+      subQuestions.push(normalized);
+    }
+  }
+
+  return {
+    id:String(item.id || "").trim() || createEnglishMcqId(type),
+    category:String(item.category || (type === "error" ? "Error Sentences" : "More")).trim(),
+    question:base.question,
+    options:base.options,
+    answer:base.answer,
+    explanation:base.explanation,
+    subQuestions
+  };
+}
+
+function createEnglishMcqId(type){
+  const prefix = type === "error" ? "err" : "more";
+  return prefix + "-" + Date.now().toString(36) + "-" + Math.random().toString(36).slice(2,7);
+}
+
+function questionExists(question, type){
+  const key = String(question || "").trim().toLocaleLowerCase("en-US");
+  const pool = type === "error" ? ERROR_QUESTIONS : MORE_QUESTIONS;
+  return pool.some(item => String(item?.question || "").trim().toLocaleLowerCase("en-US") === key);
+}
+
+async function uploadMcqArray(parsed){
+  const type = bulkAddType;
+  const target = type === "error" ? ERROR_QUESTIONS : MORE_QUESTIONS;
+  let invalidCount = 0;
+  let skippedCount = 0;
+  const additions = [];
+
+  parsed.forEach(item => {
+    const normalized = normalizeMcqEntry(item, type);
+    if(!normalized){
+      invalidCount += 1;
+      return;
+    }
+    if(questionExists(normalized.question, type) || additions.some(x => x.question.toLocaleLowerCase("en-US") === normalized.question.toLocaleLowerCase("en-US"))){
+      skippedCount += 1;
+      return;
+    }
+    additions.push(normalized);
+  });
+
+  if(!additions.length){
+    bulkUploadMsg.style.color = "var(--gold)";
+    bulkUploadMsg.textContent = "Nothing new to add. Skipped " + skippedCount + (invalidCount ? " · Invalid " + invalidCount : "");
+    return;
+  }
+
+  target.push(...additions);
+  const saved = await saveEnglishMcqBank(type);
+  if(!saved){
+    target.splice(target.length - additions.length, additions.length);
+    bulkUploadMsg.style.color = "var(--red)";
+    bulkUploadMsg.textContent = "Could not save English MCQ questions to error_sentences.json.";
+    return;
+  }
+
+  // Refresh category controls immediately after an MCQ upload. Any newly
+  // introduced category (Para Jumble, Narration, Grammar, etc.) becomes
+  // visible/selectable without reloading the page.
+  const uploadedCategories = [...new Set(additions.map(item => String(item.category || "General").trim() || "General"))];
+  updateMcqCounts();
+  selectUploadedMcqCategories(uploadedCategories);
+
+  bulkUploadMsg.style.color = "var(--teal)";
+  bulkUploadMsg.textContent = "Added " + additions.length + " main question(s)" +
+    " · Categories: " + uploadedCategories.join(", ") +
+    " · Skipped " + skippedCount + (invalidCount ? " · Invalid " + invalidCount : "") + " ✓";
+}
+
+// ---------- Separate English MCQ test engine ----------
+const mcqRandomBtn = document.getElementById("mcqRandomBtn");
+const mcqSeriesBtn = document.getElementById("mcqSeriesBtn");
+const mcqQuestionLimit = document.getElementById("mcqQuestionLimit");
+const mcqQuestionAvailable = document.getElementById("mcqQuestionAvailable");
+const startMcqTestBtn = document.getElementById("startMcqTestBtn");
+const mcqTestArea = document.getElementById("mcqTestArea");
+const mcqCategoryToggleList = document.getElementById("mcqCategoryToggleList");
+const mcqCategorySelectionSummary = document.getElementById("mcqCategorySelectionSummary");
+
+// Test UI is category-driven. Error Sentences, Para Jumble and every future
+// category are shown together as toggle chips, regardless of which server bank
+// (errorQuestions / moreQuestions) stores them.
+let mcqSource = "error"; // kept only as a backward-compatible editor fallback
+let mcqOrder = "random";
+let mcqItems = [];
+let mcqIndex = 0;
+let mcqCorrect = 0;
+let mcqAnswers = [];
+let mcqLocked = false;
+let mcqGlobalSeriesCursor = 0;
+const mcqGlobalRandomSeen = new Set();
+const mcqSelectedCategories = new Set();
+let mcqCategoriesInitialized = false;
+let mcqLastAvailableTotal = 0;
+
+function flattenQuestionBank(mainQuestions, source = "error"){
+  const flat = [];
+  mainQuestions.forEach((main, mainIndex) => {
+    if(!main || typeof main !== "object") return;
+    const category = String(main.category || "General").trim() || "General";
+    const mainNormalized = normalizeMcqSubQuestion(main);
+    if(mainNormalized){
+      flat.push({
+        ...mainNormalized,
+        category,
+        source,
+        mainIndex,
+        subIndex:null,
+        sourceId:String(main.id || "main-" + mainIndex),
+        kind:"Main"
+      });
+    }
+    if(Array.isArray(main.subQuestions)){
+      main.subQuestions.forEach((sub, subIndex) => {
+        const normalized = normalizeMcqSubQuestion(sub);
+        if(!normalized) return;
+        flat.push({
+          ...normalized,
+          category,
+          source,
+          mainIndex,
+          subIndex,
+          sourceId:String(main.id || "main-" + mainIndex) + "::sub-" + subIndex,
+          kind:"Sub"
+        });
+      });
+    }
+  });
+  return flat;
+}
+
+function getMcqFlatPool(source = null){
+  if(source === "error") return flattenQuestionBank(ERROR_QUESTIONS, "error");
+  if(source === "more") return flattenQuestionBank(MORE_QUESTIONS, "more");
+  return [
+    ...flattenQuestionBank(ERROR_QUESTIONS, "error"),
+    ...flattenQuestionBank(MORE_QUESTIONS, "more")
+  ];
+}
+
+function getMcqCategoryInfo(){
+  const map = new Map();
+  getMcqFlatPool().forEach(item => {
+    const name = String(item.category || "General").trim() || "General";
+    const key = name.toLocaleLowerCase("en-US");
+    if(!map.has(key)) map.set(key,{key,name,count:0});
+    map.get(key).count += 1;
+  });
+  return [...map.values()].sort((a,b) => a.name.localeCompare(b.name,"en",{sensitivity:"base"}));
+}
+
+function ensureMcqCategorySelection(){
+  const info = getMcqCategoryInfo();
+  const valid = new Set(info.map(item => item.key));
+  [...mcqSelectedCategories].forEach(key => {
+    if(!valid.has(key)) mcqSelectedCategories.delete(key);
+  });
+  if(!mcqCategoriesInitialized && info.length){
+    info.forEach(item => mcqSelectedCategories.add(item.key));
+    mcqCategoriesInitialized = true;
+  }
+  return info;
+}
+
+function getSelectedMcqPool(){
+  ensureMcqCategorySelection();
+  return getMcqFlatPool().filter(item =>
+    mcqSelectedCategories.has(String(item.category || "General").trim().toLocaleLowerCase("en-US") || "general")
+  );
+}
+
+function syncMcqQuestionLimit(forceTotal = false){
+  const total = getSelectedMcqPool().length;
+  const previousMax = mcqLastAvailableTotal;
+  mcqLastAvailableTotal = total;
+  if(mcqQuestionAvailable) mcqQuestionAvailable.textContent = "/ " + total + " total";
+  if(mcqCategorySelectionSummary){
+    const selectedCount = mcqSelectedCategories.size;
+    mcqCategorySelectionSummary.textContent = total + " question" + (total === 1 ? "" : "s") + " selected";
+  }
+  if(mcqQuestionLimit){
+    mcqQuestionLimit.disabled = total === 0;
+    mcqQuestionLimit.max = String(Math.max(1,total));
+    const current = Number(mcqQuestionLimit.value || 0);
+    // Category change should immediately show the selected pool total. The user
+    // can still type a smaller number afterwards if they want a shorter test.
+    if(forceTotal || !current || current > total || current === previousMax){
+      mcqQuestionLimit.value = String(total || 0);
+    }
+  }
+  if(startMcqTestBtn) startMcqTestBtn.disabled = total === 0;
+}
+
+function renderMcqCategoryControls(forceTotal = false){
+  const info = ensureMcqCategorySelection();
+  if(mcqCategoryToggleList){
+    mcqCategoryToggleList.innerHTML = "";
+    info.forEach(({key,name,count}) => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "mcq-category-toggle" + (mcqSelectedCategories.has(key) ? " active" : "");
+      const label = document.createElement("span");
+      label.textContent = name;
+      const badge = document.createElement("span");
+      badge.className = "mcq-chip-count";
+      badge.textContent = String(count);
+      button.append(label,badge);
+      button.title = "Include/exclude " + name + " in this test";
+      button.addEventListener("click", () => {
+        if(mcqSelectedCategories.has(key)) mcqSelectedCategories.delete(key);
+        else mcqSelectedCategories.add(key);
+        mcqGlobalRandomSeen.clear();
+        mcqGlobalSeriesCursor = 0;
+        renderMcqCategoryControls(true);
+        renderMcqHome(false);
+      });
+      mcqCategoryToggleList.appendChild(button);
+    });
+  }
+  syncMcqQuestionLimit(forceTotal);
+}
+
+function selectUploadedMcqCategories(categories){
+  const normalized = (categories || []).map(value => String(value || "General").trim().toLocaleLowerCase("en-US") || "general");
+  mcqCategoriesInitialized = true;
+  normalized.forEach(key => mcqSelectedCategories.add(key));
+  renderMcqCategoryControls(true);
+  renderMcqHome(false);
+}
+
+function mcqItemKey(item){
+  return String(item?.sourceId || item?.question || "").toLocaleLowerCase("en-US");
+}
+
+function takeRandomMcqBatch(pool, limit){
+  const poolKeys = new Set(pool.map(mcqItemKey));
+  [...mcqGlobalRandomSeen].forEach(key => { if(!poolKeys.has(key)) mcqGlobalRandomSeen.delete(key); });
+
+  let remaining = pool.filter(item => !mcqGlobalRandomSeen.has(mcqItemKey(item)));
+  const wanted = Math.min(limit, pool.length);
+  const result = [];
+
+  while(result.length < wanted){
+    if(!remaining.length){
+      mcqGlobalRandomSeen.clear();
+      remaining = pool.filter(item => !result.some(done => mcqItemKey(done) === mcqItemKey(item)));
+      if(!remaining.length) break;
+    }
+    const shuffled = shuffleWords(remaining);
+    while(shuffled.length && result.length < wanted){
+      const item = shuffled.pop();
+      if(result.some(done => mcqItemKey(done) === mcqItemKey(item))) continue;
+      result.push(item);
+      mcqGlobalRandomSeen.add(mcqItemKey(item));
+    }
+    remaining = [];
+  }
+  return result;
+}
+
+function takeSeriesMcqBatch(pool, limit){
+  if(!pool.length) return [];
+  let cursor = mcqGlobalSeriesCursor % pool.length;
+  const wanted = Math.min(limit, pool.length);
+  const result = [];
+  for(let i=0;i<wanted;i++) result.push(pool[(cursor+i)%pool.length]);
+  mcqGlobalSeriesCursor = (cursor + wanted) % pool.length;
+  return result;
+}
+
+function updateMcqCounts(){
+  renderMcqCategoryControls(false);
+}
+
+function setMcqSource(){
+  // Source buttons were intentionally removed. Test selection is now based
+  // only on visible categories (Error Sentences, Para Jumble, etc.).
+  renderMcqCategoryControls(false);
+}
+
+function setMcqOrder(order){
+  mcqOrder = order === "series" ? "series" : "random";
+  mcqRandomBtn?.classList.toggle("active", mcqOrder === "random");
+  mcqSeriesBtn?.classList.toggle("active", mcqOrder === "series");
+}
+
+function renderMcqHome(refreshCategories = true){
+  if(!mcqTestArea) return;
+  if(refreshCategories) renderMcqCategoryControls(false);
+  const allPool = getMcqFlatPool();
+  const pool = getSelectedMcqPool();
+  if(!allPool.length){
+    mcqTestArea.innerHTML = '<div class="mcq-empty">No English MCQ questions yet. Use <b>＋ New</b> to upload a question array.</div>';
+    return;
+  }
+  mcqTestArea.innerHTML = pool.length
+    ? '<div class="mcq-empty">Ready · <b>' + pool.length + '</b> selected question(s).</div>'
+    : '<div class="mcq-empty">Select at least one category.</div>';
+}
+
+function startMcqTest(){
+  const pool = getSelectedMcqPool();
+  if(!pool.length){ renderMcqHome(); return; }
+  const requested = Math.max(1, Math.min(pool.length, Number(mcqQuestionLimit?.value || pool.length) || pool.length));
+  if(mcqQuestionLimit) mcqQuestionLimit.value = String(requested);
+  mcqItems = mcqOrder === "series"
+    ? takeSeriesMcqBatch(pool, requested)
+    : takeRandomMcqBatch(pool, requested);
+  mcqIndex = 0;
+  mcqCorrect = 0;
+  mcqAnswers = [];
+  mcqLocked = false;
+  renderCurrentMcq();
+}
+
+function renderCurrentMcq(){
+  if(!mcqTestArea) return;
+  if(mcqIndex >= mcqItems.length){ renderMcqResult(); return; }
+  const item = mcqItems[mcqIndex];
+  const answered = mcqAnswers[mcqIndex] || null;
+  mcqLocked = !!answered;
+  const scoreText = mcqCorrect + '/' + mcqItems.length;
+
+  mcqTestArea.innerHTML =
+    '<div class="mcq-test-meta"><span>' + escapeHtml(item.category || "General") + ' · ' + escapeHtml(mcqOrder === "series" ? "Series" : "Random") + '</span><span>Q <b>' + (mcqIndex+1) + '/' + mcqItems.length + '</b> · Score <b>' + scoreText + '</b></span></div>' +
+    '<div class="mcq-question-card">' +
+      '<div class="mcq-category">' + escapeHtml(item.category || "General") + ' · ' + escapeHtml(item.kind || "Question") + '</div>' +
+      '<div class="mcq-question-text">' + escapeHtml(item.question) + '</div>' +
+      '<div class="mcq-options" id="mcqOptions">' + item.options.map((option,index) => {
+        const cls = answered
+          ? (index === item.answer ? ' correct' : (index === answered.selected ? ' wrong' : ''))
+          : '';
+        return '<button class="mcq-option' + cls + '" type="button" data-mcq-option="' + index + '"' + (answered ? ' disabled' : '') + '><span class="mcq-option-letter">' + String.fromCharCode(65+index) + '</span><span>' + escapeHtml(option) + '</span></button>';
+      }).join('') + '</div>' +
+      '<div class="mcq-feedback' + (answered ? ' show' + (answered.correct ? '' : ' wrong') : '') + '" id="mcqFeedback">' + (answered ? mcqFeedbackText(item, answered) : '') + '</div>' +
+      '<div class="mcq-test-actions">' +
+        '<button class="small-tool-btn" id="mcqExitBtn" type="button">Exit Test</button>' +
+        '<button class="small-tool-btn mcq-edit-test-btn" id="mcqEditBtn" type="button">✎ Edit</button>' +
+        '<button class="small-tool-btn accent" id="mcqNextBtn" type="button">' + (answered ? (mcqIndex === mcqItems.length-1 ? 'Finish' : 'Next →') : 'Skip →') + '</button>' +
+      '</div>' +
+    '</div>';
+
+  mcqTestArea.querySelectorAll('[data-mcq-option]').forEach(button => {
+    button.addEventListener('click', () => answerMcq(Number(button.dataset.mcqOption)));
+  });
+  document.getElementById('mcqNextBtn')?.addEventListener('click', () => {
+    if(!mcqAnswers[mcqIndex]){
+      mcqAnswers[mcqIndex] = {selected:null, correct:false, skipped:true};
+    }
+    mcqIndex += 1;
+    renderCurrentMcq();
+  });
+  document.getElementById('mcqEditBtn')?.addEventListener('click', () => {
+    const current = mcqItems[mcqIndex];
+    if(!current || typeof window.openEnglishQuestionEditor !== 'function') return;
+    window.openEnglishQuestionEditor({
+      source:current.source || mcqSource,
+      mainIndex:current.mainIndex,
+      subIndex:current.subIndex,
+      category:current.category,
+      kind:current.kind || (current.subIndex == null ? 'Main' : 'Sub'),
+      item:current
+    });
+  });
+  document.getElementById('mcqExitBtn')?.addEventListener('click', renderMcqHome);
+}
+
+function mcqFeedbackText(item, record){
+  const correctLetter = String.fromCharCode(65 + item.answer);
+  const prefix = record.skipped ? 'Skipped.' : (record.correct ? 'Correct ✓' : 'Wrong ✗');
+  const explanation = item.explanation ? '\n' + item.explanation : '';
+  return escapeHtml(prefix + ' Correct answer: ' + correctLetter + ' — ' + item.options[item.answer] + explanation);
+}
+
+function answerMcq(selected){
+  if(mcqLocked) return;
+  const item = mcqItems[mcqIndex];
+  if(!item || !Number.isInteger(selected)) return;
+  const correct = selected === item.answer;
+  if(correct) mcqCorrect += 1;
+  mcqAnswers[mcqIndex] = {selected, correct, skipped:false};
+  mcqLocked = true;
+  renderCurrentMcq();
+}
+
+function renderMcqResult(){
+  if(!mcqTestArea) return;
+  const total = mcqItems.length;
+  const skipped = mcqAnswers.filter(item => item?.skipped).length;
+  const wrong = Math.max(0, total - mcqCorrect - skipped);
+  const percent = total ? Math.round((mcqCorrect/total)*100) : 0;
+  mcqTestArea.innerHTML =
+    '<div class="mcq-result">' +
+      '<div class="mcq-result-score">' + percent + '%</div>' +
+      '<div class="mcq-result-line">Correct: ' + mcqCorrect + ' · Wrong: ' + wrong + ' · Skipped: ' + skipped + ' · Total: ' + total + '</div>' +
+      '<div class="mcq-test-actions">' +
+        '<button class="small-tool-btn" id="mcqReviewBtn" type="button">Review Wrong/Skipped</button>' +
+        '<button class="small-tool-btn accent" id="mcqRestartBtn" type="button">New Test</button>' +
+      '</div>' +
+      '<div class="mcq-review-list" id="mcqReviewList"></div>' +
+    '</div>';
+  document.getElementById('mcqRestartBtn')?.addEventListener('click', startMcqTest);
+  document.getElementById('mcqReviewBtn')?.addEventListener('click', renderMcqReview);
+}
+
+function renderMcqReview(){
+  const list = document.getElementById('mcqReviewList');
+  if(!list) return;
+  const rows = mcqItems.map((item,index) => ({item, record:mcqAnswers[index], index}))
+    .filter(row => !row.record?.correct);
+  if(!rows.length){
+    list.innerHTML = '<div class="mcq-empty">Perfect score — nothing to review.</div>';
+    return;
+  }
+  list.innerHTML = rows.map(({item,record,index}) => {
+    const your = record?.selected == null ? 'Skipped' : String.fromCharCode(65+record.selected) + ' — ' + item.options[record.selected];
+    const correct = String.fromCharCode(65+item.answer) + ' — ' + item.options[item.answer];
+    return '<div class="mcq-review-item">' +
+      '<div class="mcq-review-q">Q' + (index+1) + '. ' + escapeHtml(item.question) + '</div>' +
+      '<div class="mcq-review-a">Your answer: ' + escapeHtml(your) + '<br><b>Correct: ' + escapeHtml(correct) + '</b></div>' +
+      (item.explanation ? '<div class="mcq-review-exp">' + escapeHtml(item.explanation) + '</div>' : '') +
+    '</div>';
+  }).join('');
+}
+
+mcqRandomBtn?.addEventListener('click', () => setMcqOrder('random'));
+mcqSeriesBtn?.addEventListener('click', () => setMcqOrder('series'));
+startMcqTestBtn?.addEventListener('click', startMcqTest);
+
+window.onEnglishQuestionEdited = function(context){
+  if(!context) return;
+  const source = context.source === 'more' ? 'more' : 'error';
+  const freshPool = getMcqFlatPool(source);
+  const fresh = freshPool.find(item => item.mainIndex === Number(context.mainIndex) &&
+    ((item.subIndex == null && context.subIndex == null) || item.subIndex === Number(context.subIndex)));
+  if(!fresh) return;
+
+  mcqItems = mcqItems.map(item => {
+    const sameSource = (item.source || mcqSource) === source;
+    const sameMain = item.mainIndex === Number(context.mainIndex);
+    const sameSub = (item.subIndex == null && context.subIndex == null) || item.subIndex === Number(context.subIndex);
+    return sameSource && sameMain && sameSub ? {...fresh} : item;
+  });
+
+  mcqAnswers.forEach((record,index) => {
+    if(!record || record.skipped) return;
+    const item = mcqItems[index];
+    record.correct = !!item && record.selected === item.answer;
+  });
+  mcqCorrect = mcqAnswers.reduce((sum,record) => sum + (record?.correct ? 1 : 0), 0);
+  updateMcqCounts();
+  renderMcqCategoryControls();
+  if(mcqTestPanel?.classList.contains('active') && mcqItems.length && mcqIndex < mcqItems.length){
+    renderCurrentMcq();
+  }
+};
+
+async function uploadBulkArray(){
+  if(!bulkAddType){
+    bulkUploadMsg.style.color = "var(--red)";
+    bulkUploadMsg.textContent = "First choose Word or Idiom.";
+    return;
+  }
+
+  let parsed;
+  try{
+    parsed = JSON.parse(bulkArrayInput.value);
+  }catch(e){
+    bulkUploadMsg.style.color = "var(--red)";
+    bulkUploadMsg.textContent = "Invalid JSON array. Check commas, quotes and brackets.";
+    return;
+  }
+
+  if(!Array.isArray(parsed)){
+    bulkUploadMsg.style.color = "var(--red)";
+    bulkUploadMsg.textContent = "Upload data must be a JSON array: [ {...}, {...} ]";
+    return;
+  }
+
+  if(isQuestionBulkType()){
+    await uploadMcqArray(parsed);
+    return;
+  }
+
+  const validEntries = [];
+  let invalidCount = 0;
+
+  parsed.forEach(item => {
+    const normalized = normalizeBulkEntry(item);
+    if(normalized) validEntries.push(normalized);
+    else invalidCount += 1;
+  });
+
+  if(!validEntries.length){
+    bulkUploadMsg.style.color = "var(--red)";
+    bulkUploadMsg.textContent = "No valid entries found. Every item needs en and meaning.";
+    return;
+  }
+
+  const target = bulkAddType === "idiom" ? IDIOM_WORDS : WORDS;
+  const originalTarget = [...target];
+  const originalMissing = [...missingWords];
+
+  let addedCount = 0;
+  let skippedCount = 0;
+
+  validEntries.forEach(entry => {
+    if(wordExistsInType(entry.en, bulkAddType)){
+      skippedCount += 1;
+      return;
+    }
+
+    target.push(entry);
+    removeMissingItemLocal(entry.en, bulkAddType);
+    addedCount += 1;
+  });
+
+  target.sort((a,b) =>
+    String(a.en || "").localeCompare(
+      String(b.en || ""),
+      "en",
+      {sensitivity:"base"}
+    )
+  );
+
+  if(!addedCount){
+    bulkUploadMsg.style.color = "var(--gold)";
+    bulkUploadMsg.textContent =
+      "Nothing new to add. Skipped " + skippedCount +
+      (invalidCount ? " · Invalid " + invalidCount : "");
+    return;
+  }
+
+  bulkUploadMsg.style.color = "var(--gold)";
+  bulkUploadMsg.textContent = "Saving " + addedCount + " item(s)…";
+
+  const saved = await saveServerData();
+
+  if(!saved){
+    target.splice(0, target.length, ...originalTarget);
+    missingWords = originalMissing;
+
+    bulkUploadMsg.style.color = "var(--red)";
+    bulkUploadMsg.textContent =
+      "Server save failed: " + (lastServerError || "Unknown error");
+    return;
+  }
+
+  updatePoolUI();
+  fillTopWordSuggestions();
+  renderSearchResults(searchInput?.value || "");
+  renderMissingManager();
+  updateMcqCounts();
+  setMcqOrder("random");
+  resetRandomCycle();
+
+  bulkUploadMsg.style.color = "var(--teal)";
+  bulkUploadMsg.textContent =
+    "Added " + addedCount +
+    " · Skipped " + skippedCount +
+    (invalidCount ? " · Invalid " + invalidCount : "") +
+    " ✓";
+}
+
+function renderMissingList(type, container){
+  if(!container) return;
+
+  const items = getMissingItems(type);
+  container.innerHTML = "";
+
+  if(!items.length){
+    const empty = document.createElement("div");
+    empty.className = "missing-empty";
+    empty.textContent = "No missing " + (type === "idiom" ? "idioms." : "vocab words.");
+    container.appendChild(empty);
+    return;
+  }
+
+  items.forEach(textValue => {
+    const row = document.createElement("div");
+    row.className = "missing-row";
+
+    const label = document.createElement("div");
+    label.className = "missing-text";
+    label.textContent = textValue;
+
+    const actions = document.createElement("div");
+    actions.className = "missing-row-actions";
+
+    const copyBtn = document.createElement("button");
+    copyBtn.className = "icon-tool-btn";
+    copyBtn.type = "button";
+    copyBtn.title = "Copy";
+    copyBtn.textContent = "⧉";
+    copyBtn.onclick = async () => {
+      const ok = await copyTextSafe(textValue);
+      missingManagerMsg.style.color = ok ? "var(--teal)" : "var(--red)";
+      missingManagerMsg.textContent = ok
+        ? 'Copied "' + textValue + '"'
+        : "Copy failed.";
+    };
+
+    const deleteBtn = document.createElement("button");
+    deleteBtn.className = "icon-tool-btn delete";
+    deleteBtn.type = "button";
+    deleteBtn.title = "Delete";
+    deleteBtn.textContent = "×";
+    deleteBtn.onclick = async () => {
+      await deleteMissingEntry(type, textValue);
+    };
+
+    actions.append(copyBtn, deleteBtn);
+    row.append(label, actions);
+    container.appendChild(row);
+  });
+}
+
+function renderMissingManager(){
+  const vocabItems = getMissingItems("vocab");
+  const idiomItems = getMissingItems("idiom");
+
+  if(missingVocabCount) missingVocabCount.textContent = "(" + vocabItems.length + ")";
+  if(missingIdiomCount) missingIdiomCount.textContent = "(" + idiomItems.length + ")";
+
+  renderMissingList("vocab", missingVocabList);
+  renderMissingList("idiom", missingIdiomList);
+}
+
+async function deleteMissingEntry(type, textValue){
+  const before = [...missingWords];
+  removeMissingItemLocal(textValue, type);
+
+  const saved = await saveServerData();
+  if(!saved){
+    missingWords = before;
+    missingManagerMsg.style.color = "var(--red)";
+    missingManagerMsg.textContent =
+      "Delete failed: " + (lastServerError || "Server error");
+    return;
+  }
+
+  renderMissingManager();
+  renderSearchResults(searchInput?.value || "");
+  missingManagerMsg.style.color = "var(--teal)";
+  missingManagerMsg.textContent = 'Deleted "' + textValue + '"';
+}
+
+async function deleteAllMissingOfType(type){
+  const items = getMissingItems(type);
+  if(!items.length){
+    missingManagerMsg.style.color = "var(--muted)";
+    missingManagerMsg.textContent = "Nothing to delete.";
+    return;
+  }
+
+  const before = [...missingWords];
+  const wantedType = normalizeMissingType(type);
+
+  missingWords = missingWords.filter(entry => {
+    const decoded = decodeMissingEntry(entry);
+    return decoded && decoded.type !== wantedType;
+  });
+
+  const saved = await saveServerData();
+  if(!saved){
+    missingWords = before;
+    missingManagerMsg.style.color = "var(--red)";
+    missingManagerMsg.textContent =
+      "Delete failed: " + (lastServerError || "Server error");
+    return;
+  }
+
+  renderMissingManager();
+  renderSearchResults(searchInput?.value || "");
+  missingManagerMsg.style.color = "var(--teal)";
+  missingManagerMsg.textContent =
+    "Deleted all missing " + (wantedType === "idiom" ? "idioms." : "vocab words.");
+}
+
+async function copyMissingOfType(type){
+  const items = getMissingItems(type);
+  if(!items.length){
+    missingManagerMsg.style.color = "var(--muted)";
+    missingManagerMsg.textContent = "Nothing to copy.";
+    return;
+  }
+
+  const ok = await copyTextSafe(items.join("\n"));
+  missingManagerMsg.style.color = ok ? "var(--teal)" : "var(--red)";
+  missingManagerMsg.textContent = ok
+    ? "Copied " + items.length + " missing " + (type === "idiom" ? "idiom(s)." : "vocab word(s).")
+    : "Copy failed.";
+}
+
+newDataBtn?.addEventListener("click", () => openToolPanel(newDataPanel));
+englishMcqTestBtn?.addEventListener("click", () => openToolPanel(mcqTestPanel));
+showMissingBtn?.addEventListener("click", () => openToolPanel(missingDataPanel));
+closeNewDataPanel?.addEventListener("click", closeToolPanels);
+closeMcqTestPanel?.addEventListener("click", closeToolPanels);
+closeMissingDataPanel?.addEventListener("click", closeToolPanels);
+
+newWordTypeBtn?.addEventListener("click", () => selectBulkType("vocab"));
+newIdiomTypeBtn?.addEventListener("click", () => selectBulkType("idiom"));
+newErrorTypeBtn?.addEventListener("click", () => selectBulkType("error"));
+newMoreTypeBtn?.addEventListener("click", () => selectBulkType("more"));
+mainOnlyFormatBtn?.addEventListener("click", () => setQuestionFormatMode("main"));
+mainSubFormatBtn?.addEventListener("click", () => setQuestionFormatMode("sub"));
+
+copyArrayFormatBtn?.addEventListener("click", async () => {
+  if(!bulkAddType){
+    bulkUploadMsg.style.color = "var(--red)";
+    bulkUploadMsg.textContent = "First choose Word or Idiom.";
+    return;
+  }
+
+  const ok = await copyTextSafe(
+    JSON.stringify(BULK_FORMATS[currentBulkFormatKey()] || [], null, 2)
+  );
+
+  bulkUploadMsg.style.color = ok ? "var(--teal)" : "var(--red)";
+  bulkUploadMsg.textContent = ok ? "Format copied ✓" : "Copy failed.";
+});
+
+uploadArrayBtn?.addEventListener("click", uploadBulkArray);
+
+clearArrayBtn?.addEventListener("click", () => {
+  bulkArrayInput.value = "";
+  bulkUploadMsg.textContent = "";
+});
+
+copyMissingVocabBtn?.addEventListener("click", () => copyMissingOfType("vocab"));
+copyMissingIdiomsBtn?.addEventListener("click", () => copyMissingOfType("idiom"));
+deleteMissingVocabBtn?.addEventListener("click", () => deleteAllMissingOfType("vocab"));
+deleteMissingIdiomsBtn?.addEventListener("click", () => deleteAllMissingOfType("idiom"));
+
 
 
 // ---------- Edit form ----------
@@ -2453,6 +7927,193 @@ cancelEditBtn.onclick =
   () => closeEditForm();
 
 
+// ---------- Separate Auto Play timer (answer-only, no test) ----------
+const autoPlaySecondsInput = document.getElementById("autoPlaySecondsInput");
+const autoPlayToggleBtn = document.getElementById("autoPlayToggleBtn");
+const autoPlayCountdown = document.getElementById("autoPlayCountdown");
+
+function autoPlayModeLabel(){
+  if(contentMode === "idioms") return "Idioms";
+  if(contentMode === "mix") return "Mix";
+  return "Vocab";
+}
+
+function clampAutoPlaySeconds(value){
+  const parsed = parseInt(value, 10);
+  return Number.isFinite(parsed) ? Math.max(1, Math.min(3600, parsed)) : 15;
+}
+
+function buildAutoPlayQueue(){
+  const pool = getQuizPool();
+  if(!pool.length){
+    autoPlayQueue = [];
+    autoPlayQueueIndex = 0;
+    return;
+  }
+
+  if(browseMode === "series"){
+    autoPlayQueue = [...pool];
+    const currentIndex = currentWord ? pool.indexOf(currentWord) : -1;
+    if(currentIndex > 0){
+      autoPlayQueue = autoPlayQueue.slice(currentIndex).concat(autoPlayQueue.slice(0, currentIndex));
+    }
+  }else{
+    autoPlayQueue = shuffleWords(pool);
+  }
+  autoPlayQueueIndex = 0;
+}
+
+function updateAutoPlayCountdown(){
+  if(!autoPlayCountdown) return;
+  autoPlayCountdown.textContent = autoPlayActive
+    ? Math.max(0, autoPlayRemainingSeconds) + "s"
+    : "Off";
+}
+
+function showNextAutoPlayWord(){
+  const pool = getQuizPool();
+  if(!pool.length){
+    stopAutoPlay(true);
+    countEl.textContent = (quizPoolMode === "old" ? "Old" : "New") + " array is empty";
+    return;
+  }
+
+  // Rebuild whenever the queue is empty/exhausted. Random reshuffles each full cycle;
+  // Series restarts from the beginning of the selected pool.
+  if(!autoPlayQueue.length || autoPlayQueueIndex >= autoPlayQueue.length){
+    autoPlayQueue = browseMode === "series" ? [...pool] : shuffleWords(pool);
+    autoPlayQueueIndex = 0;
+  }
+
+  const word = autoPlayQueue[autoPlayQueueIndex++];
+  if(!word) return;
+
+  animateCard();
+  currentPhase = PHASE.READ;
+  answerVisible = false;
+  showAnswerCard(word);
+
+  const actualIndex = pool.indexOf(word);
+  wnumEl.textContent = actualIndex >= 0 ? "#" + (actualIndex + 1) : "#" + autoPlayQueueIndex;
+  countEl.textContent =
+    "Auto Play • " + autoPlayModeLabel() +
+    " • " + (quizPoolMode === "old" ? "Old" : "New") +
+    " • " + (browseMode === "series" ? "Series" : "Random") +
+    " • " + (actualIndex >= 0 ? (actualIndex + 1) : autoPlayQueueIndex) + "/" + pool.length;
+}
+
+function restartAutoPlayForCurrentSelection(){
+  if(!autoPlayActive) return false;
+  buildAutoPlayQueue();
+  autoPlayRemainingSeconds = autoPlayIntervalSeconds;
+  showNextAutoPlayWord();
+  updateAutoPlayCountdown();
+  return true;
+}
+
+function startAutoPlay(){
+  const seconds = clampAutoPlaySeconds(autoPlaySecondsInput?.value);
+  const pool = getQuizPool();
+  if(!pool.length){
+    countEl.textContent = (quizPoolMode === "old" ? "Old" : "New") + " array is empty";
+    return;
+  }
+
+  if(autoPlayTimerId){
+    clearInterval(autoPlayTimerId);
+    autoPlayTimerId = null;
+  }
+
+  autoPlayIntervalSeconds = seconds;
+  autoPlayRemainingSeconds = seconds;
+  if(autoPlaySecondsInput) autoPlaySecondsInput.value = String(seconds);
+  autoPlayActive = true;
+  currentPhase = PHASE.READ;
+  answerVisible = false;
+
+  // Pause/reset the old timer visually, but do not alter its normal-mode behavior.
+  timeLeft = 600;
+  if(clockEl) clockEl.textContent = "10:00";
+
+  if(nextBtn){
+    nextBtn.disabled = true;
+    nextBtn.textContent = "Auto playing…";
+  }
+  if(autoPlayToggleBtn){
+    autoPlayToggleBtn.classList.add("running");
+    autoPlayToggleBtn.textContent = "■ Stop";
+    autoPlayToggleBtn.title = "Stop Auto Play and return to normal study mode";
+  }
+
+  buildAutoPlayQueue();
+  showNextAutoPlayWord();
+  updateAutoPlayCountdown();
+
+  autoPlayTimerId = setInterval(() => {
+    if(!autoPlayActive) return;
+    autoPlayRemainingSeconds -= 1;
+    if(autoPlayRemainingSeconds <= 0){
+      showNextAutoPlayWord();
+      autoPlayRemainingSeconds = autoPlayIntervalSeconds;
+    }
+    updateAutoPlayCountdown();
+  }, 1000);
+}
+
+function stopAutoPlay(restoreNormal = true){
+  if(autoPlayTimerId){
+    clearInterval(autoPlayTimerId);
+    autoPlayTimerId = null;
+  }
+  const wasActive = autoPlayActive;
+  autoPlayActive = false;
+  autoPlayQueue = [];
+  autoPlayQueueIndex = 0;
+  autoPlayRemainingSeconds = autoPlayIntervalSeconds;
+
+  if(autoPlayToggleBtn){
+    autoPlayToggleBtn.classList.remove("running");
+    autoPlayToggleBtn.textContent = "▶ Start";
+    autoPlayToggleBtn.title = "Start answer-only Auto Play";
+  }
+  updateAutoPlayCountdown();
+
+  if(nextBtn) nextBtn.disabled = false;
+  timeLeft = 600;
+  if(clockEl) clockEl.textContent = "10:00";
+
+  // Closing Auto Play returns to exactly the original read -> test workflow.
+  if(restoreNormal && wasActive){
+    roundNumber = 1;
+    resetRandomCycle();
+    startRound(browseMode);
+  }
+}
+
+autoPlayToggleBtn?.addEventListener("click", () => {
+  if(autoPlayActive) stopAutoPlay(true);
+  else startAutoPlay();
+});
+
+autoPlaySecondsInput?.addEventListener("change", () => {
+  const seconds = clampAutoPlaySeconds(autoPlaySecondsInput.value);
+  autoPlaySecondsInput.value = String(seconds);
+  if(autoPlayActive){
+    autoPlayIntervalSeconds = seconds;
+    autoPlayRemainingSeconds = seconds;
+    updateAutoPlayCountdown();
+  }
+});
+
+autoPlaySecondsInput?.addEventListener("keydown", (event) => {
+  if(event.key === "Enter"){
+    event.preventDefault();
+    if(autoPlayActive) stopAutoPlay(false);
+    startAutoPlay();
+    autoPlaySecondsInput.blur();
+  }
+});
+
 const testRoundsInput = document.getElementById("testRoundsInput");
 const roundLabel = document.getElementById("roundLabel");
 function syncRoundLabel(){
@@ -2473,16 +8134,18 @@ document.getElementById("newPoolBtn")?.addEventListener("click", () => {
   quizPoolMode = "new";
   seriesCursor = 0;
   roundNumber = 1;
+  resetRandomCycle();
   updatePoolUI();
-  startRound(browseMode);
+  if(!restartAutoPlayForCurrentSelection()) startRound(browseMode);
 });
 
 document.getElementById("oldPoolBtn")?.addEventListener("click", () => {
   quizPoolMode = "old";
   seriesCursor = 0;
   roundNumber = 1;
+  resetRandomCycle();
   updatePoolUI();
-  startRound(browseMode);
+  if(!restartAutoPlayForCurrentSelection()) startRound(browseMode);
 });
 
 setInterval(
@@ -2492,10 +8155,18 @@ setInterval(
 
 
 document.getElementById("randomModeBtn")?.addEventListener("click", () => {
-  showRandomWord();
+  browseMode = "random";
+  setBrowseButtons("random");
+  if(!restartAutoPlayForCurrentSelection()) showRandomWord();
 });
 
 document.getElementById("seriesModeBtn")?.addEventListener("click", () => {
+  browseMode = "series";
+  setBrowseButtons("series");
+  if(autoPlayActive){
+    restartAutoPlayForCurrentSelection();
+    return;
+  }
   const pool = getQuizPool();
   const currentIndex = currentWord ? pool.indexOf(currentWord) : 0;
   showSeriesWord(currentIndex >= 0 ? currentIndex : 0);
@@ -2505,8 +8176,9 @@ function chooseContentMode(mode){
   contentMode = mode;
   seriesCursor = 0;
   roundNumber = 1;
+  resetRandomCycle();
   setContentButtons(contentMode);
-  startRound(browseMode);
+  if(!restartAutoPlayForCurrentSelection()) startRound(browseMode);
 
   // Refresh search data whenever tab changes, so old-tab results
   // never remain visible in the new tab.
@@ -2623,7 +8295,11 @@ topSearchInput?.addEventListener("input", () => {
 
 
 async function initializeEnglishApp(){
+  // Read legacy browser MCQs only for one-time migration. All English MCQ
+  // categories are now persisted in English/error_sentences.json.
+  loadEnglishMcqLocal();
   const loaded = await loadServerData();
+  const questionsLoaded = await loadEnglishQuestionsFromServer();
 
   if(!loaded){
     WORDS = [];
@@ -2633,9 +8309,46 @@ async function initializeEnglishApp(){
     missingWords = [];
   }
 
+  if(questionsLoaded){
+    let changed = false;
+    if(!ERROR_QUESTIONS.length && LEGACY_LOCAL_ERROR_QUESTIONS.length){
+      const migrated = LEGACY_LOCAL_ERROR_QUESTIONS.map(item => normalizeMcqEntry(item, "error")).filter(Boolean);
+      if(migrated.length){ ERROR_QUESTIONS = migrated; changed = true; }
+    }
+    if(!MORE_QUESTIONS.length && LEGACY_LOCAL_MORE_QUESTIONS.length){
+      const migrated = LEGACY_LOCAL_MORE_QUESTIONS.map(item => normalizeMcqEntry(item, "more")).filter(Boolean);
+      if(migrated.length){ MORE_QUESTIONS = migrated; changed = true; }
+    }
+    if(changed){
+      const migratedOk = await saveEnglishQuestionsToServer();
+      if(!migratedOk){
+        await loadEnglishQuestionsFromServer();
+      }
+    }
+    clearEnglishMcqLocal();
+    LEGACY_LOCAL_ERROR_QUESTIONS = [];
+    LEGACY_LOCAL_MORE_QUESTIONS = [];
+  }else{
+    ERROR_QUESTIONS = [];
+    MORE_QUESTIONS = [];
+  }
+
   updatePoolUI();
   syncRoundLabel();
   fillTopWordSuggestions();
+  renderMissingManager();
+
+  // The MCQ banks are loaded asynchronously from error_sentences.json. Reset
+  // category state only AFTER that load completes, then hydrate the toggles.
+  mcqSelectedCategories.clear();
+  mcqCategoriesInitialized = false;
+  mcqGlobalRandomSeen.clear();
+  mcqGlobalSeriesCursor = 0;
+  updateMcqCounts();
+  renderMcqCategoryControls(true);
+  renderMcqHome(false);
+
+  resetRandomCycle();
   startRound("random");
 
   if(searchInput && searchInput.value){
@@ -2645,8 +8358,462 @@ async function initializeEnglishApp(){
 
 initializeEnglishApp();
 
+
+
+// =========================================================
+// Collapsible major sections + Question Answer Manager
+// =========================================================
+(function setupEnglishStudioEnhancements(){
+  const toolsBoxEl = document.getElementById('toolsBox');
+  const searchPanelEl = document.getElementById('searchPanel');
+  const toggleSearchPanelBtn = document.getElementById('toggleSearchPanelBtn');
+
+  function setCollapseButtonState(button, collapsed){
+    button.textContent = collapsed ? '▾ Open' : '− Hide';
+    button.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
+  }
+
+  document.querySelectorAll('[data-collapse-section]').forEach(button => {
+    const target = document.getElementById(button.dataset.collapseSection || '');
+    if(!target) return;
+    setCollapseButtonState(button, target.classList.contains('section-collapsed'));
+    button.addEventListener('click', () => {
+      const collapsed = target.classList.toggle('section-collapsed');
+      setCollapseButtonState(button, collapsed);
+    });
+  });
+
+  toggleSearchPanelBtn?.addEventListener('click', () => {
+    const hidden = searchPanelEl?.classList.toggle('panel-hidden');
+    toggleSearchPanelBtn.textContent = hidden ? 'Open Search' : 'Hide Search';
+  });
+
+  // Opening a tool automatically re-opens the Tools section if it was collapsed.
+  [document.getElementById('newDataBtn'), document.getElementById('englishMcqTestBtn'), document.getElementById('showMissingBtn')]
+    .forEach(button => button?.addEventListener('click', () => toolsBoxEl?.classList.remove('section-collapsed')));
+
+  const answerBankBtn = document.getElementById('answerBankBtn');
+  const answerBankPanel = document.getElementById('answerBankPanel');
+  const closeAnswerBankPanel = document.getElementById('closeAnswerBankPanel');
+  const answerErrorSourceBtn = document.getElementById('answerErrorSourceBtn');
+  const answerMoreSourceBtn = document.getElementById('answerMoreSourceBtn');
+  const answerCategorySelect = document.getElementById('answerCategorySelect');
+  const answerBankSummary = document.getElementById('answerBankSummary');
+  const answerBankList = document.getElementById('answerBankList');
+  const answerBankMsg = document.getElementById('answerBankMsg');
+
+  const editorOverlay = document.getElementById('questionEditorOverlay');
+  const closeQuestionEditorBtn = document.getElementById('closeQuestionEditorBtn');
+  const cancelQuestionEditBtn = document.getElementById('cancelQuestionEditBtn');
+  const saveQuestionEditBtn = document.getElementById('saveQuestionEditBtn');
+  const questionEditorTitle = document.getElementById('questionEditorTitle');
+  const questionEditorCategory = document.getElementById('questionEditorCategory');
+  const questionEditorText = document.getElementById('questionEditorText');
+  const questionEditorOptions = document.getElementById('questionEditorOptions');
+  const addQuestionOptionBtn = document.getElementById('addQuestionOptionBtn');
+  const questionEditorAnswer = document.getElementById('questionEditorAnswer');
+  const questionEditorExplanation = document.getElementById('questionEditorExplanation');
+  const questionEditorMsg = document.getElementById('questionEditorMsg');
+
+  let answerManagerSource = 'error';
+  let editorContext = null;
+
+  function questionBankFor(source){
+    return source === 'more' ? MORE_QUESTIONS : ERROR_QUESTIONS;
+  }
+
+  function sourceLabel(source){
+    return source === 'more' ? 'More' : 'Error Sentences';
+  }
+
+  function closeAllQuestionPanelsExcept(panel){
+    [newDataPanel, mcqTestPanel, missingDataPanel, answerBankPanel].forEach(item => {
+      item?.classList.toggle('active', item === panel);
+    });
+  }
+
+  function getCategories(source){
+    const seen = new Set();
+    const values = [];
+    questionBankFor(source).forEach(item => {
+      const category = String(item?.category || (source === 'error' ? 'Error Sentences' : 'More')).trim() || 'General';
+      const key = category.toLocaleLowerCase('en-US');
+      if(seen.has(key)) return;
+      seen.add(key);
+      values.push(category);
+    });
+    return values.sort((a,b) => a.localeCompare(b, 'en', {sensitivity:'base'}));
+  }
+
+  function refreshAnswerCategorySelect(){
+    if(!answerCategorySelect) return;
+    const previous = answerCategorySelect.value;
+    const categories = getCategories(answerManagerSource);
+    answerCategorySelect.innerHTML = '';
+
+    const all = document.createElement('option');
+    all.value = '__all__';
+    all.textContent = 'All categories';
+    answerCategorySelect.appendChild(all);
+
+    categories.forEach(category => {
+      const option = document.createElement('option');
+      option.value = category;
+      option.textContent = category;
+      answerCategorySelect.appendChild(option);
+    });
+
+    const exists = [...answerCategorySelect.options].some(option => option.value === previous);
+    answerCategorySelect.value = exists ? previous : '__all__';
+  }
+
+  function answerRows(source, categoryValue){
+    const rows = [];
+    questionBankFor(source).forEach((main, mainIndex) => {
+      if(!main || typeof main !== 'object') return;
+      const category = String(main.category || (source === 'error' ? 'Error Sentences' : 'More')).trim() || 'General';
+      if(categoryValue && categoryValue !== '__all__' && category !== categoryValue) return;
+
+      const normalizedMain = normalizeMcqSubQuestion(main);
+      if(normalizedMain){
+        rows.push({source, mainIndex, subIndex:null, category, kind:'Main', item:normalizedMain});
+      }
+
+      if(Array.isArray(main.subQuestions)){
+        main.subQuestions.forEach((sub, subIndex) => {
+          const normalized = normalizeMcqSubQuestion(sub);
+          if(!normalized) return;
+          rows.push({source, mainIndex, subIndex, category, kind:'Sub', item:normalized});
+        });
+      }
+    });
+    return rows;
+  }
+
+  function makeIconButton(icon, title, className, onClick){
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'question-icon-btn' + (className ? ' ' + className : '');
+    button.textContent = icon;
+    button.title = title;
+    button.setAttribute('aria-label', title);
+    button.addEventListener('click', onClick);
+    return button;
+  }
+
+  function renderAnswerBank(){
+    if(!answerBankList) return;
+    refreshAnswerCategorySelect();
+    const selectedCategory = answerCategorySelect?.value || '__all__';
+    const rows = answerRows(answerManagerSource, selectedCategory);
+
+    answerErrorSourceBtn?.classList.toggle('active', answerManagerSource === 'error');
+    answerMoreSourceBtn?.classList.toggle('active', answerManagerSource === 'more');
+    if(answerBankSummary){
+      const categoryText = selectedCategory === '__all__' ? 'All categories' : selectedCategory;
+      answerBankSummary.textContent = sourceLabel(answerManagerSource) + ' · ' + categoryText + ' · ' + rows.length + ' question(s)';
+    }
+    answerBankList.innerHTML = '';
+    if(answerBankMsg) answerBankMsg.textContent = '';
+
+    if(!rows.length){
+      const empty = document.createElement('div');
+      empty.className = 'mcq-empty';
+      empty.textContent = 'No questions found in this category.';
+      answerBankList.appendChild(empty);
+      return;
+    }
+
+    rows.forEach((row, visibleIndex) => {
+      const card = document.createElement('div');
+      card.className = 'answer-bank-item';
+
+      const head = document.createElement('div');
+      head.className = 'answer-bank-head';
+
+      const main = document.createElement('div');
+      main.style.minWidth = '0';
+      main.style.flex = '1';
+
+      const meta = document.createElement('div');
+      meta.className = 'answer-bank-meta';
+      const qChip = document.createElement('span');
+      qChip.className = 'answer-chip';
+      qChip.textContent = 'Q' + (visibleIndex + 1);
+      const catChip = document.createElement('span');
+      catChip.className = 'answer-chip';
+      catChip.textContent = row.category;
+      const kindChip = document.createElement('span');
+      kindChip.className = 'answer-chip kind';
+      kindChip.textContent = row.kind;
+      meta.append(qChip, catChip, kindChip);
+
+      const question = document.createElement('div');
+      question.className = 'answer-bank-q';
+      question.textContent = row.item.question;
+      main.append(meta, question);
+
+      const actions = document.createElement('div');
+      actions.className = 'question-row-actions';
+      actions.append(
+        makeIconButton('✎', 'Edit question, options, correct answer & explanation', '', () => openQuestionEditor(row)),
+        makeIconButton('🗑', 'Delete question', 'delete', () => deleteManagedQuestion(row))
+      );
+      head.append(main, actions);
+      card.appendChild(head);
+
+      const correct = document.createElement('div');
+      correct.className = 'answer-bank-correct';
+      const letter = String.fromCharCode(65 + row.item.answer);
+      correct.innerHTML = '<b>Correct:</b> ' + escapeHtml(letter + ' — ' + row.item.options[row.item.answer]);
+      card.appendChild(correct);
+
+      if(row.item.explanation){
+        const explanation = document.createElement('div');
+        explanation.className = 'answer-bank-exp';
+        explanation.textContent = row.item.explanation;
+        card.appendChild(explanation);
+      }
+      answerBankList.appendChild(card);
+    });
+  }
+
+  function setAnswerManagerSource(source){
+    answerManagerSource = source === 'more' ? 'more' : 'error';
+    if(answerCategorySelect) answerCategorySelect.value = '__all__';
+    renderAnswerBank();
+  }
+
+  function openAnswerBank(){
+    toolsBoxEl?.classList.remove('section-collapsed');
+    closeAllQuestionPanelsExcept(answerBankPanel);
+    answerBankPanel?.classList.add('active');
+    renderAnswerBank();
+    answerBankPanel?.scrollIntoView({behavior:'smooth', block:'nearest'});
+  }
+
+  function closeAnswerBank(){
+    answerBankPanel?.classList.remove('active');
+  }
+
+  function editorRows(){
+    return [...(questionEditorOptions?.querySelectorAll('[data-question-edit-option-row]') || [])];
+  }
+
+  function refreshEditorAnswer(preferred){
+    if(!questionEditorAnswer) return;
+    const rows = editorRows();
+    const old = Number.isInteger(preferred) ? preferred : Number(questionEditorAnswer.value || 0);
+    questionEditorAnswer.innerHTML = '';
+    rows.forEach((row,index) => {
+      const value = row.querySelector('input')?.value.trim() || '';
+      const option = document.createElement('option');
+      option.value = String(index);
+      option.textContent = String.fromCharCode(65+index) + (value ? ' — ' + value : '');
+      questionEditorAnswer.appendChild(option);
+    });
+    if(rows.length) questionEditorAnswer.value = String(Math.min(Math.max(0, old || 0), rows.length-1));
+  }
+
+  function addEditorOption(value = ''){
+    if(!questionEditorOptions) return;
+    if(editorRows().length >= 8){
+      if(questionEditorMsg) questionEditorMsg.textContent = 'Maximum 8 options allowed.';
+      return;
+    }
+    const row = document.createElement('div');
+    row.className = 'question-option-edit-row';
+    row.setAttribute('data-question-edit-option-row','');
+
+    const letter = document.createElement('span');
+    letter.className = 'question-option-letter';
+    const input = document.createElement('input');
+    input.type = 'text';
+    input.value = value;
+    const remove = document.createElement('button');
+    remove.type = 'button';
+    remove.className = 'question-option-remove';
+    remove.textContent = '×';
+    remove.title = 'Remove option';
+
+    input.addEventListener('input', () => refreshEditorAnswer());
+    remove.addEventListener('click', () => {
+      if(editorRows().length <= 2){
+        if(questionEditorMsg) questionEditorMsg.textContent = 'Minimum 2 options required.';
+        return;
+      }
+      row.remove();
+      editorRows().forEach((optionRow,index) => {
+        const letterEl = optionRow.querySelector('.question-option-letter');
+        if(letterEl) letterEl.textContent = String.fromCharCode(65+index);
+      });
+      refreshEditorAnswer();
+    });
+
+    row.append(letter,input,remove);
+    questionEditorOptions.appendChild(row);
+    editorRows().forEach((optionRow,index) => {
+      const letterEl = optionRow.querySelector('.question-option-letter');
+      if(letterEl) letterEl.textContent = String.fromCharCode(65+index);
+    });
+    refreshEditorAnswer();
+  }
+
+  function openQuestionEditor(row){
+    const bank = questionBankFor(row.source);
+    const parent = bank[row.mainIndex];
+    if(!parent) return;
+    const original = row.subIndex == null ? parent : parent.subQuestions?.[row.subIndex];
+    if(!original) return;
+
+    editorContext = {...row};
+    if(questionEditorTitle) questionEditorTitle.textContent = '✎ Edit ' + row.kind + ' Question';
+    if(questionEditorCategory){
+      questionEditorCategory.value = String(parent.category || row.category || '');
+      questionEditorCategory.disabled = row.subIndex != null;
+      questionEditorCategory.title = row.subIndex != null ? 'Sub-question uses its parent category.' : '';
+    }
+    if(questionEditorText) questionEditorText.value = String(original.question || '');
+    if(questionEditorExplanation) questionEditorExplanation.value = String(original.explanation || '');
+    if(questionEditorOptions) questionEditorOptions.innerHTML = '';
+    (Array.isArray(original.options) ? original.options : []).forEach(option => addEditorOption(String(option ?? '')));
+    refreshEditorAnswer(Number(original.answer || 0));
+    if(questionEditorAnswer) questionEditorAnswer.value = String(Number(original.answer || 0));
+    if(questionEditorMsg) questionEditorMsg.textContent = '';
+    editorOverlay?.classList.add('active');
+    editorOverlay?.setAttribute('aria-hidden','false');
+    setTimeout(() => questionEditorText?.focus(), 0);
+  }
+
+  window.openEnglishQuestionEditor = openQuestionEditor;
+
+  function closeQuestionEditor(){
+    editorContext = null;
+    editorOverlay?.classList.remove('active');
+    editorOverlay?.setAttribute('aria-hidden','true');
+    if(questionEditorMsg) questionEditorMsg.textContent = '';
+  }
+
+  async function saveQuestionEditor(){
+    if(!editorContext) return;
+    const question = String(questionEditorText?.value || '').trim();
+    const options = editorRows().map(row => String(row.querySelector('input')?.value || '').trim());
+    const answer = Number(questionEditorAnswer?.value ?? 0);
+    const explanation = String(questionEditorExplanation?.value || '').trim();
+    const category = String(questionEditorCategory?.value || '').trim();
+
+    if(!question){ if(questionEditorMsg) questionEditorMsg.textContent = 'Question cannot be empty.'; return; }
+    if(options.length < 2 || options.length > 8){ if(questionEditorMsg) questionEditorMsg.textContent = 'Use 2 to 8 options.'; return; }
+    if(options.some(option => !option)){ if(questionEditorMsg) questionEditorMsg.textContent = 'Fill every option or remove the empty row.'; return; }
+    if(!Number.isInteger(answer) || answer < 0 || answer >= options.length){ if(questionEditorMsg) questionEditorMsg.textContent = 'Choose a valid correct answer.'; return; }
+    if(editorContext.subIndex == null && !category){ if(questionEditorMsg) questionEditorMsg.textContent = 'Category cannot be empty.'; return; }
+
+    const bank = questionBankFor(editorContext.source);
+    const parent = bank[editorContext.mainIndex];
+    if(!parent) return;
+    const backup = JSON.stringify(bank);
+
+    if(editorContext.subIndex == null){
+      parent.category = category;
+      parent.question = question;
+      parent.options = options;
+      parent.answer = answer;
+      parent.explanation = explanation;
+    }else{
+      if(!Array.isArray(parent.subQuestions) || !parent.subQuestions[editorContext.subIndex]) return;
+      parent.subQuestions[editorContext.subIndex] = {question, options, answer, explanation};
+    }
+
+    if(!await saveEnglishMcqBank(editorContext.source)){
+      const restored = JSON.parse(backup);
+      if(editorContext.source === 'more') MORE_QUESTIONS = restored;
+      else ERROR_QUESTIONS = restored;
+      if(questionEditorMsg){
+        questionEditorMsg.textContent = editorContext.source === 'error'
+          ? 'Save failed. error_sentences.json was not updated.'
+          : 'Save failed. error_sentences.json was not updated.';
+      }
+      return;
+    }
+
+    const savedContext = {...editorContext};
+    updateMcqCounts();
+    renderAnswerBank();
+    closeQuestionEditor();
+    if(typeof window.onEnglishQuestionEdited === 'function'){
+      window.onEnglishQuestionEdited(savedContext);
+    }else if(mcqTestPanel?.classList.contains('active')){
+      renderMcqHome();
+    }
+    if(answerBankMsg){
+      answerBankMsg.style.color = 'var(--teal)';
+      answerBankMsg.textContent = 'Question updated ✓';
+    }
+  }
+
+  async function deleteManagedQuestion(row){
+    const bank = questionBankFor(row.source);
+    const parent = bank[row.mainIndex];
+    if(!parent) return;
+    const target = row.subIndex == null ? parent : parent.subQuestions?.[row.subIndex];
+    if(!target) return;
+
+    const preview = String(target.question || '').replace(/\s+/g,' ').slice(0,90);
+    const label = row.subIndex == null ? 'main question' : 'sub-question';
+    const confirmed = window.confirm('Delete this ' + label + '?\n\n' + preview + (String(target.question || '').length > 90 ? '…' : '') + '\n\nThis action cannot be undone.');
+    if(!confirmed) return;
+
+    const backup = JSON.stringify(bank);
+    if(row.subIndex == null){
+      bank.splice(row.mainIndex,1);
+    }else if(Array.isArray(parent.subQuestions)){
+      parent.subQuestions.splice(row.subIndex,1);
+    }
+
+    if(!await saveEnglishMcqBank(row.source)){
+      const restored = JSON.parse(backup);
+      if(row.source === 'more') MORE_QUESTIONS = restored;
+      else ERROR_QUESTIONS = restored;
+      if(answerBankMsg){
+        answerBankMsg.style.color = 'var(--red)';
+        answerBankMsg.textContent = row.source === 'error'
+          ? 'Delete failed. error_sentences.json was not updated.'
+          : 'Delete failed. error_sentences.json was not updated.';
+      }
+      return;
+    }
+
+    updateMcqCounts();
+    renderAnswerBank();
+    if(mcqTestPanel?.classList.contains('active')) renderMcqHome();
+    if(answerBankMsg){
+      answerBankMsg.style.color = 'var(--teal)';
+      answerBankMsg.textContent = 'Question deleted ✓';
+    }
+  }
+
+  answerBankBtn?.addEventListener('click', openAnswerBank);
+  closeAnswerBankPanel?.addEventListener('click', closeAnswerBank);
+  answerErrorSourceBtn?.addEventListener('click', () => setAnswerManagerSource('error'));
+  answerMoreSourceBtn?.addEventListener('click', () => setAnswerManagerSource('more'));
+  answerCategorySelect?.addEventListener('change', renderAnswerBank);
+  addQuestionOptionBtn?.addEventListener('click', () => addEditorOption(''));
+  closeQuestionEditorBtn?.addEventListener('click', closeQuestionEditor);
+  cancelQuestionEditBtn?.addEventListener('click', closeQuestionEditor);
+  saveQuestionEditBtn?.addEventListener('click', saveQuestionEditor);
+  editorOverlay?.addEventListener('click', event => { if(event.target === editorOverlay) closeQuestionEditor(); });
+  document.addEventListener('keydown', event => { if(event.key === 'Escape' && editorOverlay?.classList.contains('active')) closeQuestionEditor(); });
+
+  // Existing tool buttons: close the answer bank if another tool is opened.
+  document.getElementById('newDataBtn')?.addEventListener('click', () => answerBankPanel?.classList.remove('active'));
+  document.getElementById('englishMcqTestBtn')?.addEventListener('click', () => answerBankPanel?.classList.remove('active'));
+  document.getElementById('showMissingBtn')?.addEventListener('click', () => answerBankPanel?.classList.remove('active'));
+})();
+
+
 </script>
 
-<script src="/common-nav.js"></script>
+<script src="/common-nav.js">
+</script>
 </body>
 </html>

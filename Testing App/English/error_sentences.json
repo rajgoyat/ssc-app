@@ -1,0 +1,216 @@
+{
+  "errorQuestions": [
+    {
+      "id": "err-mtwvqm7b-sn43v",
+      "category": "Error Sentences",
+      "question": "Hardly had the committee members / arrived at a consensus / when the chairman / adjourned the meeting.",
+      "options": [
+        "Hardly had the committee members",
+        "arrived at a consensus",
+        "when the chairman",
+        "adjourned the meeting"
+      ],
+      "answer": 2,
+      "explanation": "With 'hardly', use 'when', not 'when' after 'hardly had'. Correct: Hardly had the committee members arrived at a consensus when the chairman adjourned the meeting.",
+      "subQuestions": []
+    },
+    {
+      "id": "err-mtwvqm7c-qbz6u",
+      "category": "Error Sentences",
+      "question": "No sooner the train had left / the platform than / the passengers realized / that they had forgotten their luggage.",
+      "options": [
+        "No sooner the train had left",
+        "the platform than",
+        "the passengers realized",
+        "that they had forgotten their luggage"
+      ],
+      "answer": 0,
+      "explanation": "After 'No sooner', inversion is required. Correct: No sooner had the train left the platform than the passengers realized...",
+      "subQuestions": []
+    },
+    {
+      "id": "err-mtwvqm7c-mb91g",
+      "category": "Error Sentences",
+      "question": "Neither the principal nor / the teachers was willing / to take responsibility / for the unexpected delay.",
+      "options": [
+        "Neither the principal nor",
+        "the teachers was willing",
+        "to take responsibility",
+        "for the unexpected delay"
+      ],
+      "answer": 1,
+      "explanation": "With 'neither...nor', the verb agrees with the nearest subject. Since 'teachers' is plural, use 'were willing'.",
+      "subQuestions": []
+    },
+    {
+      "id": "err-mtwvqm7c-4ksbc",
+      "category": "Error Sentences",
+      "question": "The manager asked the employees / that why they had not / submitted the reports / before the deadline.",
+      "options": [
+        "The manager asked the employees",
+        "that why they had not",
+        "submitted the reports",
+        "before the deadline"
+      ],
+      "answer": 1,
+      "explanation": "After 'asked', do not use 'that' before an indirect question. Correct: The manager asked the employees why they had not submitted the reports.",
+      "subQuestions": []
+    },
+    {
+      "id": "err-mtwvqm7c-1r4m0",
+      "category": "Error Sentences",
+      "question": "Each of the candidates / have been instructed / to bring their identity cards / to the examination centre.",
+      "options": [
+        "Each of the candidates",
+        "have been instructed",
+        "to bring their identity cards",
+        "to the examination centre"
+      ],
+      "answer": 1,
+      "explanation": "'Each' is singular and takes a singular verb. Correct: Each of the candidates has been instructed...",
+      "subQuestions": []
+    },
+    {
+      "id": "err-mtwvqm7c-t5vue",
+      "category": "Error Sentences",
+      "question": "The scientist insisted / that the experiment / was repeated under / controlled conditions.",
+      "options": [
+        "The scientist insisted",
+        "that the experiment",
+        "was repeated under",
+        "controlled conditions"
+      ],
+      "answer": 2,
+      "explanation": "After 'insisted that', use the subjunctive form. Correct: The scientist insisted that the experiment be repeated under controlled conditions.",
+      "subQuestions": []
+    },
+    {
+      "id": "err-mtwvqm7c-gi9tl",
+      "category": "Error Sentences",
+      "question": "Scarcely had she entered / the auditorium when / the lights had gone out / unexpectedly.",
+      "options": [
+        "Scarcely had she entered",
+        "the auditorium when",
+        "the lights had gone out",
+        "unexpectedly"
+      ],
+      "answer": 2,
+      "explanation": "After 'scarcely had', the second action should normally be in the simple past. Correct: ...when the lights went out unexpectedly.",
+      "subQuestions": []
+    },
+    {
+      "id": "err-mtwvqm7d-w2wuq",
+      "category": "Error Sentences",
+      "question": "He is one of those writers / who believes that / literature should reflect / the realities of society.",
+      "options": [
+        "He is one of those writers",
+        "who believes that",
+        "literature should reflect",
+        "the realities of society"
+      ],
+      "answer": 1,
+      "explanation": "The relative pronoun 'who' refers to 'writers', which is plural. Correct: He is one of those writers who believe that...",
+      "subQuestions": []
+    },
+    {
+      "id": "err-mtwvqm7d-3efp4",
+      "category": "Error Sentences",
+      "question": "The judge ordered that / the accused should be / released on bail / immediately.",
+      "options": [
+        "The judge ordered that",
+        "the accused should be",
+        "released on bail",
+        "immediately"
+      ],
+      "answer": 1,
+      "explanation": "In formal subjunctive construction after 'ordered that', use the base verb. Correct: The judge ordered that the accused be released on bail immediately.",
+      "subQuestions": []
+    },
+    {
+      "id": "err-mtwvqm7d-a09ji",
+      "category": "Error Sentences",
+      "question": "Had I knew about / the change in schedule, / I would have informed / all the participants.",
+      "options": [
+        "Had I knew about",
+        "the change in schedule",
+        "I would have informed",
+        "all the participants"
+      ],
+      "answer": 0,
+      "explanation": "In an inverted third conditional, use the past perfect. Correct: Had I known about the change in schedule, I would have informed all the participants.",
+      "subQuestions": []
+    }
+  ],
+  "moreQuestions": [
+    {
+      "id": "more-mtwxsu4s-h2mhb",
+      "category": "Para Jumble",
+      "question": "Rearrange the following sentences in the proper sequence to form a meaningful paragraph.\n\nP. This has led to a significant increase in digital transactions across the country.\nQ. The government has been promoting digital payments through various schemes.\nR. As a result, people in rural areas are also adopting online banking and UPI.\nS. One of the major initiatives was the introduction of BHIM and UPI platforms.",
+      "options": [
+        "QSPR",
+        "QPSR",
+        "PQRS",
+        "SQPR"
+      ],
+      "answer": 0,
+      "explanation": "The correct sequence is QSPR.\nQ introduces the main idea (government promoting digital payments).\nS gives a specific example of the initiative (BHIM and UPI).\nP shows the result of these efforts (increase in digital transactions).\nR further elaborates the impact, especially in rural areas. This forms a logical flow: promotion → specific steps → overall result → specific impact.",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mtwxsu4t-feuta",
+      "category": "Para Jumble",
+      "question": "Rearrange the following sentences in the proper sequence to form a meaningful paragraph.\n\nP. However, many small borrowers still find it difficult to repay on time.\nQ. The Reserve Bank of India has introduced several measures to control bad loans.\nR. These include stricter provisioning norms and better credit appraisal systems.\nS. As a result, the gross non-performing assets of banks have shown some decline.",
+      "options": [
+        "QRSP",
+        "QPRS",
+        "RQPS",
+        "QSRP"
+      ],
+      "answer": 0,
+      "explanation": "The correct sequence is QRSP.\nQ introduces the topic (RBI’s measures to control bad loans).\nR explains what those measures are.\nS shows the positive outcome of the measures.\nP presents a contrasting reality (problem still remains for small borrowers). This creates a logical structure of problem-solving steps followed by results and remaining challenges.",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mtwxsu4t-hx472",
+      "category": "Para Jumble",
+      "question": "Rearrange the following sentences in the proper sequence to form a meaningful paragraph.\n\nP. Such accounts help in promoting financial inclusion in the country.\nQ. Under this scheme, people can open bank accounts with zero balance.\nR. The Pradhan Mantri Jan Dhan Yojana was launched to provide banking access to all.\nS. Millions of previously unbanked citizens have benefited from it.",
+      "options": [
+        "RQPS",
+        "RQSP",
+        "QRPS",
+        "RSPQ"
+      ],
+      "answer": 0,
+      "explanation": "The correct sequence is RQPS.\nR introduces the scheme (PMJDY).\nQ explains its key feature (zero balance accounts).\nP states the broader objective (financial inclusion).\nS gives the result/impact (millions benefited). The paragraph moves from introduction → feature → purpose → outcome.",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mtwxsu4t-yzf33",
+      "category": "Para Jumble",
+      "question": "Rearrange the following sentences in the proper sequence to form a meaningful paragraph.\n\nP. This practice is known as priority sector lending.\nQ. Banks are required to give a certain portion of their loans to agriculture and small enterprises.\nR. The aim is to ensure that credit reaches the weaker and productive sections of society.\nS. Failure to meet these targets can attract penalties from the regulator.",
+      "options": [
+        "QPRS",
+        "QRPS",
+        "PQRS",
+        "QPSR"
+      ],
+      "answer": 1,
+      "explanation": "The correct sequence is QRPS.\nQ states the basic requirement for banks.\nR explains the purpose behind this requirement.\nP names the practice (priority sector lending).\nS mentions the consequence of not following it. The flow is: rule → objective → name of the concept → consequence.",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mtwxsu4t-465ru",
+      "category": "Para Jumble",
+      "question": "Rearrange the following sentences in the proper sequence to form a meaningful paragraph.\n\nP. Cyber frauds have increased significantly with the growth of online banking.\nQ. Customers are therefore advised to never share OTPs or passwords with anyone.\nR. Banks have also strengthened their security systems and awareness campaigns.\nS. Despite these efforts, many people still fall victim to phishing and other scams.",
+      "options": [
+        "PQRS",
+        "PRQS",
+        "QPRS",
+        "PRSQ"
+      ],
+      "answer": 1,
+      "explanation": "The correct sequence is PRQS.\nP introduces the problem (rise in cyber frauds).\nR mentions the steps taken by banks.\nQ gives advice to customers.\nS shows that the problem still continues. The paragraph follows a problem → action → advice → remaining challenge structure.",
+      "subQuestions": []
+    }
+  ]
+}

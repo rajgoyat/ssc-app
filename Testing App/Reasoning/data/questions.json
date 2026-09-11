@@ -561,7 +561,7 @@
       "D"
     ],
     "correctIndex": 3,
-    "solutionText": "*9  -  9",
+    "solutionText": "*9  -  9  or -1 then multiply 9",
     "solutionImage": null,
     "id": "mtbd1yzled3nvx",
     "order": 33,
@@ -736,7 +736,7 @@
     "solutionImage": null,
     "id": "mtjunkpuvn3cdy",
     "order": 38,
-    "attemptStatus": "unattempted",
+    "attemptStatus": "correct",
     "testAllowed": true,
     "special": false
   },
@@ -846,7 +846,7 @@
       "2601"
     ],
     "correctIndex": 3,
-    "solutionText": "",
+    "solutionText": "41 - 54= 13",
     "solutionImage": null,
     "id": "mtjwqeohgq2ij9",
     "order": 44,
@@ -1138,5 +1138,81 @@
     "attemptStatus": "unattempted",
     "testAllowed": true,
     "special": false
+  },
+  {
+    "category": "ABCD",
+    "questionText": "Refer to the following letter series and answer the question. (Left) L U H T R B F G A O D Q S I X M C K W  (Right)\nHow many letters are there in the English alphabetical series between the letter which is sixth from the right end and seventh from the left end of the\nseries?",
+    "questionImage": null,
+    "options": [
+      "4",
+      "3",
+      "1",
+      "2"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/gif6pw0RvsI?si=p8dc9jYZQ37p5BRP&t=327",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtvcjf34ih3cnu",
+    "order": 60,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Calendar",
+    "questionText": "What is be the day of the week on 02 February 3015?",
+    "questionImage": null,
+    "options": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday"
+    ],
+    "correctIndex": 3,
+    "solutionText": "",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtvczjyt3ic7ug",
+    "order": 61,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Clock",
+    "questionText": "How many times these angles formed in a clock in 24 hours  0 deg ,  180 deg,  90 deg  ?\n_______________How many times in a day, the hands of a clock are straight line?",
+    "questionImage": null,
+    "options": [
+      "22 22 44     = 44",
+      "44 22 44     = 42",
+      "44 22 22     = 44",
+      "22 44 22     = 48"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtvd4ml1i250wj",
+    "order": 62,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "What should come in place of the '?' in the given series?\n\n232 ? 204 288 176 316",
+    "questionImage": null,
+    "options": [
+      "260",
+      "210",
+      "230",
+      "220"
+    ],
+    "correctIndex": 0,
+    "solutionText": "alternate 28 ka diff",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtvea0l8nl9yj9",
+    "order": 63,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]

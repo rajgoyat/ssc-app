@@ -17,5 +17,24 @@
     "attemptStatus": "unattempted",
     "testAllowed": true,
     "special": false
+  },
+  {
+    "category": "Time & Work",
+    "questionText": "A and B are both capable of doing a task in 45 and 40 days, respectively?\nTogether, they started the task, but after a few days, A left, and B finished the\nremaining work in 23 days. The number of days A and B worked together is?",
+    "questionImage": null,
+    "options": [
+      "6",
+      "3",
+      "5",
+      "7"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/8cZwHgcg2V4?si=JtwYMEf40FTrSxOi&t=186   do without lcm",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtvie0hannr7k6",
+    "order": 196,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]

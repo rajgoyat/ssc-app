@@ -535,6 +535,10 @@
         border: 1px solid var(--line);
         background: transparent;
         color: var(--text);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
         padding: 6px 9px;
         font: 700 10px "Space Mono", monospace;
         text-transform: uppercase;
@@ -3133,6 +3137,15 @@
               ></div>
             </div>
 
+            <a
+              class="file-control-btn"
+              href="gk-manager.html"
+              title="Open Current Affairs manager and auto player"
+              aria-label="Open GK manager and auto player"
+            >
+              ☷ Manager / Player
+            </a>
+
             <button
               class="file-control-btn question-upload-trigger"
               id="open-question-upload"
@@ -3293,19 +3306,11 @@
             <button type="button" class="question-entry-mode-btn" data-main-question-mode="array">▦ Multiple / Array</button>
           </div>
 
-          <div class="question-entry-pane" id="question-upload-single-pane">
-            <div class="question-upload-field">
-              <label for="question-upload-question">Question / Data *</label>
-              <textarea
-                id="question-upload-question"
-                placeholder="Write or paste the question/data here..."
-              ></textarea>
-            </div>
 
-            <div class="question-upload-image-box">
+            <div class="question-upload-image-box" id="question-upload-image-box">
               <div class="question-upload-image-head">
                 <div class="question-upload-image-title">Question Image (optional)</div>
-                <span style="color: var(--muted); font-size: 10px;">Saved with this question only</span>
+                <span id="question-upload-image-mode-hint" style="color: var(--muted); font-size: 10px;">Saved with this question only</span>
               </div>
 
               <div
@@ -3329,6 +3334,16 @@
                 <img id="question-upload-image-preview-img" alt="Question image preview" />
               </div>
             </div>
+
+          <div class="question-entry-pane" id="question-upload-single-pane">
+            <div class="question-upload-field">
+              <label for="question-upload-question">Question / Data *</label>
+              <textarea
+                id="question-upload-question"
+                placeholder="Write or paste the question/data here..."
+              ></textarea>
+            </div>
+
 
             <div class="question-options-box">
               <div class="question-options-head">
@@ -3389,7 +3404,7 @@
             </div>
 
             <div class="array-mode-note">
-              Array mode does not paste a separate image for every question. Save the array first; after IDs are generated, open a question and attach its image to that exact question ID.
+              Image box stays visible in Array mode. If the array contains exactly <b>one</b> main question, the selected image is saved with it. For multiple questions, save first and attach/change images from <b>Manager / Player</b> by exact question ID.
             </div>
           </div>
 
@@ -3749,6 +3764,8 @@
         const questionInput = $("#question-upload-question");
         const explanationInput = $("#question-upload-explanation");
 
+        const imageBox = $("#question-upload-image-box");
+        const imageModeHint = $("#question-upload-image-mode-hint");
         const imagePasteZone = $("#question-upload-image-paste-zone");
         const imageFileButton = $("#question-upload-image-file-btn");
         const imageFileInput = $("#question-upload-image-file");
@@ -3790,6 +3807,7 @@
         let staticSources = [];
         let pendingQuestionImageDataUrl = "";
         let pendingQuestionImageName = "";
+        let questionSaveInFlight = false;
 
         const CURRENT_MAIN_ARRAY_EXAMPLE = `[
   {
@@ -3875,6 +3893,16 @@
           message.textContent = text;
           message.classList.toggle("show", Boolean(text));
           message.style.borderLeftColor = error ? "var(--red)" : "var(--lime)";
+        };
+
+        const setQuestionSaveBusy = (busy) => {
+          questionSaveInFlight = Boolean(busy);
+          if (closeButton) closeButton.disabled = questionSaveInFlight;
+          if (cancelButton) {
+            cancelButton.disabled = questionSaveInFlight;
+            cancelButton.textContent = questionSaveInFlight ? "Saving…" : "Cancel";
+          }
+          modal.classList.toggle("saving", questionSaveInFlight);
         };
 
         const resetSaveProgress = () => {
@@ -4704,6 +4732,13 @@
           if (singlePane) singlePane.hidden = mode !== "single";
           if (arrayPane) arrayPane.hidden = mode !== "array";
 
+          if (imageBox) imageBox.hidden = false;
+          if (imageModeHint) {
+            imageModeHint.textContent = mode === "single"
+              ? "Saved with this question only"
+              : "Array: image attaches only when the array has exactly one main question";
+          }
+
           refreshArrayFormatExample();
           updateIdPreview();
         };
@@ -4777,6 +4812,7 @@
         const resetForm = () => {
           form.reset();
           resetSaveProgress();
+          setQuestionSaveBusy(false);
           optionsBox.innerHTML = "";
           clearPendingQuestionImage();
 
@@ -4829,6 +4865,11 @@
         };
 
         const closeModal = () => {
+          if (questionSaveInFlight) {
+            showMessage("Save is still being committed. Close/Cancel is disabled until the server responds.", true);
+            return false;
+          }
+
           if (modal.contains(document.activeElement)) {
             document.activeElement?.blur();
           }
@@ -5094,6 +5135,7 @@
             }
           }
 
+          setQuestionSaveBusy(true);
           saveButton.disabled = true;
           const originalButtonText = saveButton.textContent;
           saveButton.textContent = "Saving...";
@@ -5110,6 +5152,19 @@
                 label
               );
 
+              if (pendingQuestionImageDataUrl) {
+                if (questions.length !== 1) {
+                  throw new Error(
+                    "One selected image cannot be mapped safely to multiple array questions. Use one-item array, or save the array and attach images from Manager / Player."
+                  );
+                }
+                questions[0] = {
+                  ...questions[0],
+                  questionImageDataUrl: pendingQuestionImageDataUrl,
+                  questionImageName: pendingQuestionImageName || "question-image",
+                };
+              }
+
               const endpoint =
                 section === "static"
                   ? "/api/static-question-create-bulk"
@@ -5118,7 +5173,7 @@
               // Save in small chunks instead of one huge request.
               // This gives real progress and also avoids the old 100-question
               // per-request limitation while still supporting 200, 500, etc.
-              const BATCH_SIZE = 10;
+              const BATCH_SIZE = 200;
               const total = questions.length;
               const allCreated = [];
               let savedCount = 0;
@@ -5227,7 +5282,7 @@
                   allCreated
                 );
 
-                await loadStaticSources(true);
+                loadStaticSources(true).catch(() => {});
               } else {
                 focusCreatedDate(
                   date,
@@ -5241,11 +5296,9 @@
                 `Completed — ${total} of ${total} questions saved.`
               );
 
-              // Keep the completed bar visible briefly before closing.
-              await new Promise((resolve) =>
-                setTimeout(resolve, 450)
-              );
-
+              // The backend has already confirmed the disk write here.
+              // Close immediately so "Saving..." never lingers after success.
+              setQuestionSaveBusy(false);
               closeModal();
 
               const first =
@@ -5385,7 +5438,7 @@
                 [result.question]
               );
 
-              await loadStaticSources(true);
+              loadStaticSources(true).catch(() => {});
             } else {
               mergeUserCurrentAffairsQuestion(
                 result.question
@@ -5397,6 +5450,7 @@
               );
             }
 
+            setQuestionSaveBusy(false);
             closeModal();
 
             showToast(
@@ -5419,6 +5473,7 @@
               true
             );
           } finally {
+            setQuestionSaveBusy(false);
             saveButton.disabled = false;
             saveButton.textContent =
               originalButtonText || "💾 Save Question";
@@ -6957,10 +7012,14 @@
 
       function shuffle(items) {
 
-        return [...items].sort(
-          () =>
-            Math.random() - 0.5
-        );
+        const arr = [...items];
+
+        for (let i = arr.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [arr[i], arr[j]] = [arr[j], arr[i]];
+        }
+
+        return arr;
 
       }
 
@@ -8215,6 +8274,10 @@
          ================================ */
 
       function resetQuestions(type) {
+
+        // A new date/month/year/topic/test must start with untouched subquestions.
+        // Otherwise old Map entries can make a correct option look pre-ticked.
+        subQuestionAttemptState.clear();
 
         if (type === "staticGK") {
 

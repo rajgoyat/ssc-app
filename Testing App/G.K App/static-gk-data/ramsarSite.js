@@ -185,8 +185,7 @@ const staticWetlandQuestions = [
     question: 'A wetland acts as a spawning ground, nursery, feeding area or migration path on which fish populations depend. Which criterion is most directly relevant?',
     options: ['Criterion 6', 'Criterion 7', 'Criterion 8', 'Criterion 9'],
     answer: 2,
-    explanation: 'Criterion 8 concerns wetlands important for fish as food sources, spawning grounds, nurseries or migration paths.'
-  },
+    explanation: "Criterion 7 → wetland me important indigenous fish species, diversity, life-history stages present hain.\nCriterion 8 → wetland fish ke spawning, nursery, feeding ya migration ke liye essential hai.\n\nExam trick:\n“Fish diversity” → Criterion 7\n“Fish breeding / nursery / feeding / migration” → Criterion 8"},
 
   {
     id: 'static-wetland-017',

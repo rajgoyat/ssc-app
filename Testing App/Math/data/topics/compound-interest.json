@@ -52,7 +52,7 @@
     "solutionImage": null,
     "id": "mt3o2vcmjtlk20",
     "order": 16,
-    "attemptStatus": "unattempted",
+    "attemptStatus": "correct",
     "testAllowed": true,
     "special": false
   },
@@ -720,5 +720,24 @@
     "attemptStatus": "unattempted",
     "testAllowed": false,
     "special": false
+  },
+  {
+    "category": "Compound Interest",
+    "questionText": "In how much time will a sum of Rs. 15625 amount to Rs. 32768 at 28% per annum\ncompound interest?   iska koi without formula fast method hai kya",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 2,
+    "solutionText": "",
+    "solutionImage": "/uploads/compound-interest/b6300f45b01e44c27f00dfe8b750fc30e7c2ae19959a08e4d25618bcc95641c3.png",
+    "special": false,
+    "id": "mtvivbnu32upaw",
+    "order": 200,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]

@@ -143,7 +143,7 @@
       "D"
     ],
     "correctIndex": 3,
-    "solutionText": "*9  -  9",
+    "solutionText": "*9  -  9  or -1 then multiply 9",
     "solutionImage": null,
     "id": "mtbd1yzled3nvx",
     "order": 33,
@@ -257,7 +257,7 @@
       "2601"
     ],
     "correctIndex": 3,
-    "solutionText": "",
+    "solutionText": "41 - 54= 13",
     "solutionImage": null,
     "id": "mtjwqeohgq2ij9",
     "order": 44,
@@ -321,5 +321,24 @@
     "attemptStatus": "unattempted",
     "testAllowed": true,
     "special": false
+  },
+  {
+    "category": "Series",
+    "questionText": "What should come in place of the '?' in the given series?\n\n232 ? 204 288 176 316",
+    "questionImage": null,
+    "options": [
+      "260",
+      "210",
+      "230",
+      "220"
+    ],
+    "correctIndex": 0,
+    "solutionText": "alternate 28 ka diff",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtvea0l8nl9yj9",
+    "order": 63,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]

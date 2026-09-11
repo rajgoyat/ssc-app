@@ -36,5 +36,24 @@
     "attemptStatus": "unattempted",
     "testAllowed": true,
     "special": false
+  },
+  {
+    "category": "Train",
+    "questionText": "Two guns are fired from the railway station at an interval 5 minutes. A police\nofficer who is sitting in the train approaching the station observes that 4 min 30\nsecond have elapsed between the hearing of the sound of the two guns. If the\nvelocity of the sound is 330 m/s. The train was approaching that place at what\nspeed (in km/hr)?",
+    "questionImage": null,
+    "options": [
+      "321",
+      "221",
+      "150",
+      "132"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/8cZwHgcg2V4?si=HeInmW0nefJm2JcD&t=505\nआवाज़ को जहाँ पहुँचने में आगे 30 सेकंड (300 - 270) और लगते, ट्रेन ने चलती हुई उस दूरी को 270 सेकंड में ही तय कर लिया।",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtvj735bkkfbdb",
+    "order": 201,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]

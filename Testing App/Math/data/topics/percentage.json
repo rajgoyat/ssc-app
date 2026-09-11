@@ -131,5 +131,24 @@
     "order": 194,
     "attemptStatus": "unattempted",
     "testAllowed": true
+  },
+  {
+    "category": "Percentage",
+    "questionText": "A second-hand car was purchased 3 years ago for Rs. 62500 and now its\ndepreciation value is Rs. 32000. At what rate percentage per annum is it\ndepreciating?",
+    "questionImage": null,
+    "options": [
+      "20",
+      "30",
+      "80",
+      "60"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/8cZwHgcg2V4?si=xVK9EyCdFsTt0Lyt&t=260",
+    "solutionImage": null,
+    "special": false,
+    "id": "mtvihduuj73jy1",
+    "order": 197,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]
