@@ -11,10 +11,11 @@ import re
 import threading
 import uuid
 from datetime import datetime
+from collections import Counter
 
 HOST = "127.0.0.1"
 PORT = 8000
-SERVER_VERSION = "2026-09-11-current-date-object-v14"
+SERVER_VERSION = "2026-09-11-test-sets-v16"
 USE_FSYNC = os.environ.get("GK_FSYNC", "0").strip() == "1"
 BASE_DIR = Path(__file__).resolve().parent
 
@@ -1744,99 +1745,111 @@ def _find_matching_square(text: str, start: int):
     raise ValueError("Could not locate Static GK array end.")
 
 
-def _static_question_objects_from_text(text: str):
-    """Return only top-level question objects from the file's main JS array.
+def _static_question_objects_with_context(text: str):
+    """Return top-level question objects from EVERY JS question array.
 
-    Static GK files have the shape:
-        const staticHistoryQuestions = [
-            { ...question... },
-            { ...question..., subQuestions: [{...}] },
-        ];
+    This supports files such as testQuestions.js that contain:
+      const testQuestions1 = [ ... ];
+      const testQuestions2 = [ ... ];
+      const testQuestions3 = [ ... ];
+      ...
+      const testQuestions = [
+        ...testQuestions1,
+        ...testQuestions2,
+      ];
 
-    We intentionally ignore nested objects such as subQuestions here.  This
-    keeps parsing linear even for very large files with long explanations.
+    Spread-only aggregate arrays contain no direct object literals, so they
+    naturally contribute zero records and do not duplicate questions.
     """
-    match = re.search(
-        r"\b(?:const|let|var)\s+[A-Za-z_$][A-Za-z0-9_$]*\s*=\s*\[",
-        text,
+    declaration_pattern = re.compile(
+        r"\b(?:const|let|var)\s+(?P<variable>[A-Za-z_$][A-Za-z0-9_$]*)\s*=\s*\["
     )
-    if not match:
-        return []
+    results = []
 
-    array_start = text.find("[", match.start())
-    if array_start < 0:
-        return []
-
-    try:
-        array_end = _find_matching_square(text, array_start)
-    except ValueError:
-        return []
-
-    objects = []
-    object_start = None
-    brace_depth = 0
-    quote = None
-    escaped = False
-    line_comment = False
-    block_comment = False
-    i = array_start + 1
-
-    while i < array_end:
-        ch = text[i]
-        nxt = text[i + 1] if i + 1 < array_end else ""
-
-        if line_comment:
-            if ch in "\r\n":
-                line_comment = False
-            i += 1
+    for match in declaration_pattern.finditer(text):
+        variable = match.group("variable")
+        array_start = text.find("[", match.start())
+        if array_start < 0:
+            continue
+        try:
+            array_end = _find_matching_square(text, array_start)
+        except ValueError:
             continue
 
-        if block_comment:
-            if ch == "*" and nxt == "/":
-                block_comment = False
-                i += 2
-            else:
+        object_start = None
+        brace_depth = 0
+        quote = None
+        escaped = False
+        line_comment = False
+        block_comment = False
+        i = array_start + 1
+
+        while i < array_end:
+            ch = text[i]
+            nxt = text[i + 1] if i + 1 < array_end else ""
+
+            if line_comment:
+                if ch in "\r\n":
+                    line_comment = False
                 i += 1
-            continue
+                continue
 
-        if quote:
-            if escaped:
-                escaped = False
-            elif ch == "\\":
-                escaped = True
-            elif ch == quote:
-                quote = None
+            if block_comment:
+                if ch == "*" and nxt == "/":
+                    block_comment = False
+                    i += 2
+                else:
+                    i += 1
+                continue
+
+            if quote:
+                if escaped:
+                    escaped = False
+                elif ch == "\\":
+                    escaped = True
+                elif ch == quote:
+                    quote = None
+                i += 1
+                continue
+
+            if ch == "/" and nxt == "/":
+                line_comment = True
+                i += 2
+                continue
+            if ch == "/" and nxt == "*":
+                block_comment = True
+                i += 2
+                continue
+            if ch in ("'", '"', "`"):
+                quote = ch
+                i += 1
+                continue
+
+            if ch == "{":
+                if brace_depth == 0:
+                    object_start = i
+                brace_depth += 1
+            elif ch == "}" and brace_depth:
+                brace_depth -= 1
+                if brace_depth == 0 and object_start is not None:
+                    obj = text[object_start:i + 1]
+                    if _extract_js_string_field(obj, "id").strip():
+                        test_set = _extract_js_string_field(obj, "testSet").strip()
+                        if not test_set:
+                            numbered = re.fullmatch(r"testQuestions(\d+)", variable, re.IGNORECASE)
+                            if numbered:
+                                test_set = f"Test {int(numbered.group(1))}"
+                        results.append((obj, variable, test_set))
+                    object_start = None
+
             i += 1
-            continue
 
-        if ch == "/" and nxt == "/":
-            line_comment = True
-            i += 2
-            continue
-        if ch == "/" and nxt == "*":
-            block_comment = True
-            i += 2
-            continue
-        if ch in ("'", '"', "`"):
-            quote = ch
-            i += 1
-            continue
+    return results
 
-        if ch == "{":
-            if brace_depth == 0:
-                object_start = i
-            brace_depth += 1
-        elif ch == "}" and brace_depth:
-            brace_depth -= 1
-            if brace_depth == 0 and object_start is not None:
-                obj = text[object_start:i + 1]
-                if _extract_js_string_field(obj, "id").strip():
-                    objects.append(obj)
-                object_start = None
 
-        i += 1
-
-    return objects
+def _static_question_objects_from_text(text: str):
+    """Backward-compatible object-only view of all static question arrays."""
+    return [obj for obj, _variable, _test_set in _static_question_objects_with_context(text)]
 
 def _static_file_question_records(path: Path):
     try:
@@ -1844,11 +1857,19 @@ def _static_file_question_records(path: Path):
     except OSError:
         return []
     records = []
-    for obj in _static_question_objects_from_text(text):
+    for obj, variable, inferred_test_set in _static_question_objects_with_context(text):
         question_id = _extract_js_string_field(obj, "id").strip()
         category = _extract_js_string_field(obj, "category").strip()
+        main_category = _extract_js_string_field(obj, "mainCategory").strip()
+        test_set = _extract_js_string_field(obj, "testSet").strip() or inferred_test_set
         if question_id:
-            records.append({"id": question_id, "category": category})
+            records.append({
+                "id": question_id,
+                "category": category,
+                "mainCategory": main_category,
+                "testSet": test_set,
+                "variable": variable,
+            })
     return records
 
 
@@ -2604,9 +2625,13 @@ def _manager_record_from_js(path: Path, obj_text: str, static_topic: str = "", s
         answer = None
 
     category = _extract_js_string_field(obj_text, "category").strip()
-    topic = (static_topic or _source_topic_for_path(path)) if section == "static" else ""
-    if section == "static" and not category:
-        category = topic
+    explicit_main_category = _extract_js_string_field(obj_text, "mainCategory").strip()
+    explicit_test_set = _extract_js_string_field(obj_text, "testSet").strip()
+    topic = ""
+    if section == "static":
+        topic = explicit_main_category or static_topic or _source_topic_for_path(path)
+        if not category:
+            category = topic
 
     year = date[:4] if date else file_year
     month = date[5:7] if date else file_month
@@ -2619,6 +2644,7 @@ def _manager_record_from_js(path: Path, obj_text: str, static_topic: str = "", s
         "month": month,
         "topic": topic,
         "mainCategory": topic,
+        "testSet": explicit_test_set,
         "category": category or "General",
         "subcategory": _extract_js_string_field(obj_text, "subcategory").strip(),
         "question": _extract_js_string_field(obj_text, "question"),
@@ -2655,6 +2681,7 @@ def _manager_record_from_user(item, section: str):
         topic = str(item.get("mainCategory") or item.get("topic") or item.get("category") or "Static GK").strip()
         record["topic"] = topic
         record["mainCategory"] = topic
+        record["testSet"] = str(item.get("testSet", "") or "").strip()
         record["date"] = ""
         record["year"] = ""
         record["month"] = ""
@@ -2692,23 +2719,20 @@ def list_manager_questions(section="all"):
     if section not in {"all", "current", "static"}:
         raise ValueError("section must be all, current or static.")
 
-    by_id = {}
-
-    # Resolve the Static GK variable->topic map once per Manager request.
-    # The previous code re-opened and re-parsed an entire static source file for
-    # every question just to resolve its topic, which was the main timeout cause.
+    records_by_key = {}
     static_topic_map = _static_topic_map_from_aggregator()
 
-    # Real question source JS files first (bounded scan; no recursive app walk).
     for path in manager_source_js_files(section):
         try:
             source_text = path.read_text(encoding="utf-8")
         except OSError:
             continue
 
+        is_static_path = False
         static_topic = ""
         try:
             path.resolve().relative_to(STATIC_GK_DATA_DIR.resolve())
+            is_static_path = True
             variable = _static_array_variable_from_text(source_text)
             static_topic = (
                 static_topic_map.get(variable, "")
@@ -2718,8 +2742,7 @@ def list_manager_questions(section="all"):
             pass
 
         if is_current_affairs_month_file(path):
-            source_objects = _current_affairs_question_objects_from_text(source_text)
-            for obj_text, source_date in source_objects:
+            for obj_text, source_date in _current_affairs_question_objects_from_text(source_text):
                 record = _manager_record_from_js(
                     path,
                     obj_text,
@@ -2730,30 +2753,72 @@ def list_manager_questions(section="all"):
                     continue
                 if section != "all" and record["section"] != section:
                     continue
-                by_id.setdefault(record["id"], record)
-        else:
-            for obj_text in _static_question_objects_from_text(source_text):
+                key = ("current", record["id"])
+                records_by_key.setdefault(key, record)
+
+        elif is_static_path:
+            for obj_text, variable, inferred_test_set in _static_question_objects_with_context(source_text):
                 record = _manager_record_from_js(path, obj_text, static_topic=static_topic)
                 if not record:
                     continue
                 if section != "all" and record["section"] != section:
                     continue
-                by_id.setdefault(record["id"], record)
 
-    # User JSON stores can contain records not present in source JS files.
+                if not record.get("testSet"):
+                    record["testSet"] = inferred_test_set
+
+                # testQuestions.js uses multiple arrays.  Treat Test 1/2/3...
+                # as one visible "Test Questions" topic even when Test 1
+                # objects do not explicitly contain mainCategory/testSet.
+                if inferred_test_set and not record.get("topic"):
+                    record["topic"] = "Test Questions"
+                    record["mainCategory"] = "Test Questions"
+                elif inferred_test_set and path.stem.casefold().replace("-", "").replace("_", "") == "testquestions":
+                    record["topic"] = "Test Questions"
+                    record["mainCategory"] = "Test Questions"
+
+                source_file = record.get("sourceFile", "")
+                key = (
+                    "static",
+                    source_file,
+                    str(record.get("testSet", "") or ""),
+                    record["id"],
+                )
+                records_by_key.setdefault(key, record)
+
+    # User JSON stores.
     if section in {"all", "current"}:
         with USER_CURRENT_AFFAIRS_LOCK:
             for item in read_user_current_affairs():
                 record = _manager_record_from_user(item, "current")
-                by_id[record.get("id", "")] = record
+                if record.get("id"):
+                    records_by_key[("current", record["id"])] = record
 
     if section in {"all", "static"}:
         with USER_STATIC_GK_LOCK:
             for item in read_user_static_gk():
                 record = _manager_record_from_user(item, "static")
-                by_id.setdefault(record.get("id", ""), record)
+                if not record.get("id"):
+                    continue
+                key = (
+                    "static-user",
+                    record.get("sourceFile", ""),
+                    str(record.get("testSet", "") or ""),
+                    record["id"],
+                )
+                records_by_key.setdefault(key, record)
 
-    records = [record for key, record in by_id.items() if key]
+    records = list(records_by_key.values())
+
+    # Mark duplicate IDs so the UI can still display all rows while knowing
+    # that the source file contains an ambiguous ID for edit/delete operations.
+    id_counts = Counter(str(item.get("id", "")) for item in records if item.get("id"))
+    for item in records:
+        item["duplicateId"] = id_counts.get(str(item.get("id", "")), 0) > 1
+
+    def test_set_number(value):
+        match = re.search(r"(\d+)", str(value or ""))
+        return int(match.group(1)) if match else 999999
 
     def sort_key(item):
         if item.get("section") == "current":
@@ -2764,11 +2829,17 @@ def list_manager_questions(section="all"):
                 str(item.get("date", "")),
                 str(item.get("id", "")),
             )
-        return (1, str(item.get("topic", "")).casefold(), str(item.get("category", "")).casefold(), item.get("id", ""))
+        return (
+            1,
+            str(item.get("topic", "")).casefold(),
+            test_set_number(item.get("testSet")),
+            str(item.get("testSet", "")).casefold(),
+            str(item.get("category", "")).casefold(),
+            str(item.get("id", "")),
+        )
 
-    records.sort(key=sort_key, reverse=False)
+    records.sort(key=sort_key)
     return records
-
 
 def _delete_date_images_for_question_ids(question_ids):
     ids = {str(value) for value in question_ids if str(value).strip()}

@@ -105,6 +105,7 @@
           <div class="field"><label>Month</label><select id="f-month"><option value="">All Months</option></select></div>
           <div class="field"><label>Exact Date</label><select id="f-date"><option value="">All Dates</option></select></div>
           <div class="field"><label>Topic</label><select id="f-topic"><option value="">All Topics</option></select></div>
+          <div class="field"><label>Test Set</label><select id="f-test-set"><option value="">All Test Sets</option></select></div>
           <div class="field"><label>Category</label><select id="f-category"><option value="">All Categories</option></select></div>
           <div class="field"><label>Search</label><input id="f-search" type="search" placeholder="question / id / explanation" /></div>
         </div>
@@ -148,6 +149,7 @@
             <div class="field"><label>Month</label><select id="p-month"><option value="">All Months</option></select></div>
             <div class="field"><label>Date</label><select id="p-date"><option value="">All Dates</option></select></div>
             <div class="field"><label>Topic</label><select id="p-topic"><option value="">All Topics</option></select></div>
+            <div class="field"><label>Test Set</label><select id="p-test-set"><option value="">All Test Sets</option></select></div>
             <div class="field"><label>Category</label><select id="p-category"><option value="">All Categories</option></select></div>
             <div class="field"><label>From Q#</label><input id="p-from" type="number" min="1" value="1" /></div>
             <div class="field"><label>To Q#</label><input id="p-to" type="number" min="1" placeholder="last" /></div>
@@ -304,7 +306,8 @@
     const month=section==="current"?(date?date.slice(5,7):fallbackMonth):"";
     const topic = String(q.topic || q.mainCategory || (section === "static" ? q.category : "") || "").trim();
     const category = String(q.category || q.subcategory || q.subCategory || topic || "General").trim() || "General";
-    return { ...q, id, section, date, year, month, topic, category, options: Array.isArray(q.options) ? q.options : [], subQuestions: Array.isArray(q.subQuestions) ? q.subQuestions : [], explanation: String(q.explanation || "") };
+    const testSet = String(q.testSet || q.testset || "").trim();
+    return { ...q, id, section, date, year, month, topic, category, testSet, options: Array.isArray(q.options) ? q.options : [], subQuestions: Array.isArray(q.subQuestions) ? q.subQuestions : [], explanation: String(q.explanation || "") };
   }
 
   // Include historical month-file questions even when they do not have an exact day.
@@ -421,6 +424,7 @@
     const oldMonth=$("#f-month").value;
     const oldDate=$("#f-date").value;
     const oldTopic=$("#f-topic").value;
+    const oldTestSet=$("#f-test-set").value;
     const oldCategory=$("#f-category").value;
 
     if (section === "current" || section === "all") {
@@ -461,11 +465,17 @@
       const topics=uniqDesc(statics.map(q=>q.topic));
       const topic=setRawOptions($("#f-topic"), topics, "All Topics", oldTopic, section==="static" && forceLatest ? (topics[0]||"") : "");
       const topicRows=topic ? statics.filter(q=>q.topic===topic) : statics;
-      if (section === "static") setRawOptions($("#f-category"), topicRows.map(q=>q.category), "All Categories", oldCategory, "");
+      const testSets=uniqDesc(topicRows.map(q=>q.testSet));
+      const testSet=setRawOptions($("#f-test-set"), testSets, "All Test Sets", oldTestSet, "");
+      $("#f-test-set").disabled=!testSets.length;
+      const testSetRows=testSet ? topicRows.filter(q=>q.testSet===testSet) : topicRows;
+      if (section === "static") setRawOptions($("#f-category"), testSetRows.map(q=>q.category), "All Categories", oldCategory, "");
       $("#f-topic").disabled=false;
     } else {
       setRawOptions($("#f-topic"), [], "All Topics");
+      setRawOptions($("#f-test-set"), [], "All Test Sets");
       $("#f-topic").disabled=true;
+      $("#f-test-set").disabled=true;
     }
   }
 
@@ -505,19 +515,26 @@
 
     if (section === "static") {
       const topic=$("#f-topic").value;
-      const rows=topic ? statics.filter(q=>q.topic===topic) : statics;
+      const topicRows=topic ? statics.filter(q=>q.topic===topic) : statics;
+      if (changed === "topic") {
+        const testSets=uniqDesc(topicRows.map(q=>q.testSet));
+        setRawOptions($("#f-test-set"), testSets, "All Test Sets", "", "");
+        $("#f-test-set").disabled=!testSets.length;
+      }
+      const testSet=$("#f-test-set").value;
+      const rows=testSet ? topicRows.filter(q=>q.testSet===testSet) : topicRows;
       setRawOptions($("#f-category"), rows.map(q=>q.category), "All Categories", $("#f-category").value, "");
     }
   }
 
-  function currentManagerFilter() { return { section:$("#f-section").value, year:$("#f-year").value, month:$("#f-month").value, date:$("#f-date").value, topic:$("#f-topic").value, category:$("#f-category").value, search:$("#f-search").value.trim().toLowerCase(), dateFrom:$("#f-date-from").value, dateTo:$("#f-date-to").value }; }
+  function currentManagerFilter() { return { section:$("#f-section").value, year:$("#f-year").value, month:$("#f-month").value, date:$("#f-date").value, topic:$("#f-topic").value, testSet:$("#f-test-set").value, category:$("#f-category").value, search:$("#f-search").value.trim().toLowerCase(), dateFrom:$("#f-date-from").value, dateTo:$("#f-date-to").value }; }
   function filterQuestions(base, f) {
     return base.filter(q => {
       if(f.section && f.section!=="all" && q.section!==f.section) return false;
       if(f.year && q.year!==f.year) return false; if(f.month && q.month!==f.month) return false; if(f.date && q.date!==f.date) return false;
-      if(f.topic && q.topic!==f.topic) return false; if(f.category && q.category!==f.category) return false;
+      if(f.topic && q.topic!==f.topic) return false; if(f.testSet && q.testSet!==f.testSet) return false; if(f.category && q.category!==f.category) return false;
       if(f.dateFrom && q.section==="current" && q.date && q.date<f.dateFrom) return false; if(f.dateTo && q.section==="current" && q.date && q.date>f.dateTo) return false;
-      if(f.search){ const hay=[q.id,q.question,q.explanation,q.category,q.topic,...(q.options||[])].join(" ").toLowerCase(); if(!hay.includes(f.search))return false; }
+      if(f.search){ const hay=[q.id,q.question,q.explanation,q.category,q.topic,q.testSet,...(q.options||[])].join(" ").toLowerCase(); if(!hay.includes(f.search))return false; }
       return true;
     });
   }
@@ -542,11 +559,11 @@
     const answerLine=correctText!=null?`<div class="answer-line"><b>✓ ${answerLetter(answerIndex)}</b><span>${esc(correctText)}</span></div>`:"";
     const meta=q.section==="current"
       ?`CURRENT · ${esc(q.date||((q.year&&q.month)?`${q.year}-${q.month}`:'NO DATE'))} · ${esc(q.category||'General')}`
-      :`STATIC · ${esc(q.topic||'Static GK')} · ${esc(q.category||'General')}`;
+      :`STATIC · ${esc(q.topic||'Static GK')}${q.testSet?` · ${esc(q.testSet)}`:''} · ${esc(q.category||'General')}`;
     const source=esc(q.sourceFile||q.source||'');
     const context=q.section==="current"
       ?`DATE · ${esc(q.date||((q.year&&q.month)?`${q.year}-${q.month}`:"DATE NOT AVAILABLE"))}`
-      :`TOPIC · ${esc(q.topic||q.category||"Static GK")}`;
+      :`TOPIC · ${esc(q.topic||q.category||"Static GK")}${q.testSet?` · ${esc(q.testSet)}`:''}`;
     const img=imageSrc(q)?`<details class="compact-detail"><summary>Image</summary><div class="detail-body qimage"><img class="zoomable-image" data-zoom-image src="${esc(imageSrc(q))}" alt="Question image" loading="lazy"><div class="zoom-hint">Click image to zoom</div></div></details>`:"";
     const explanation=state.showManagerExplanations&&q.explanation
       ?`<div class="explanation-box" style="margin-top:7px">${esc(q.explanation)}</div>`
@@ -554,7 +571,11 @@
     const subs=state.showAllSubQuestions&&(q.subQuestions||[]).length
       ?`<details class="compact-detail" open><summary>Subquestions (${q.subQuestions.length})</summary><div class="detail-body">${q.subQuestions.map((s,i)=>`<div class="sub"><b>Sub ${i+1}.</b><div style="margin-top:4px">${formatQuestionText(s.question)}</div><div class="sub-answer">Answer → ${answerLetter(s.answer)}${Array.isArray(s.options)&&s.options[s.answer]!=null?` · ${esc(s.options[s.answer])}`:''}</div>${state.showManagerExplanations&&s.explanation?`<div style="margin-top:5px">${esc(s.explanation)}</div>`:''}</div>`).join("")}</div></details>`
       :"";
-    return `<article class="card ${q.section==="static"?"static":"current"}" data-id="${esc(q.id)}"><div class="compact-head"><div class="card-left"><input class="check row-check" type="checkbox" aria-label="Select ${esc(q.id)}" data-id="${esc(q.id)}" ${state.selected.has(q.id)?'checked':''}><span class="qindex">#${overallIndex+1}</span></div><details class="more-menu"><summary title="Question details and actions" aria-label="Question details and actions">⋮</summary><div class="more-pop"><div class="menu-id">${esc(q.id)}</div><div class="menu-meta">${meta}</div>${source?`<div class="menu-source">${source}</div>`:''}<div class="menu-actions"><button class="btn tiny" data-copy="${esc(q.id)}">Copy</button><button class="btn tiny lime" data-edit="${esc(q.id)}">Edit</button><button class="btn tiny danger" data-delete="${esc(q.id)}">Delete</button></div></div></details></div><div class="question-context">${context}</div><div class="qtext">${formatQuestionText(q.question)}</div>${answerLine}${img}${explanation}${subs}</article>`;
+    const duplicateNote=q.duplicateId?`<div class="duplicate-id-note">Duplicate ID exists in another test set. Edit/Delete is disabled for safety until IDs are made unique.</div>`:"";
+    const mutationButtons=q.duplicateId
+      ?`<button class="btn tiny lime" disabled title="Duplicate ID">Edit</button><button class="btn tiny danger" disabled title="Duplicate ID">Delete</button>`
+      :`<button class="btn tiny lime" data-edit="${esc(q.id)}">Edit</button><button class="btn tiny danger" data-delete="${esc(q.id)}">Delete</button>`;
+    return `<article class="card ${q.section==="static"?"static":"current"}" data-id="${esc(q.id)}"><div class="compact-head"><div class="card-left"><input class="check row-check" type="checkbox" aria-label="Select ${esc(q.id)}" data-id="${esc(q.id)}" ${q.duplicateId?'disabled title="Duplicate ID"':''} ${state.selected.has(q.id)?'checked':''}><span class="qindex">#${overallIndex+1}</span></div><details class="more-menu"><summary title="Question details and actions" aria-label="Question details and actions">⋮</summary><div class="more-pop"><div class="menu-id">${esc(q.id)}</div><div class="menu-meta">${meta}</div>${source?`<div class="menu-source">${source}</div>`:''}${duplicateNote}<div class="menu-actions"><button class="btn tiny" data-copy="${esc(q.id)}">Copy</button>${mutationButtons}</div></div></details></div><div class="question-context">${context}</div><div class="qtext">${formatQuestionText(q.question)}</div>${answerLine}${img}${explanation}${subs}</article>`;
   }
 
   function renderList() { const max=Math.max(1,Math.ceil(state.filtered.length/state.pageSize)); const start=(state.page-1)*state.pageSize, end=Math.min(start+state.pageSize,state.filtered.length); const items=state.filtered.slice(start,end); $("#question-list").innerHTML=items.length?items.map((q,i)=>cardHtml(q,start+i)).join(""):'<div class="empty">No questions match these filters.</div>'; $("#page-label").textContent=`PAGE ${state.page} / ${max}`; $("#prev-page").disabled=state.page<=1; $("#next-page").disabled=state.page>=max; }
@@ -575,7 +596,7 @@
     const current=currentRows(), statics=staticRows();
     if(forceLatest) $("#p-section").value=current.length?"current":(statics.length?"static":"all");
     const section=$("#p-section").value;
-    const oldYear=$("#p-year").value, oldMonth=$("#p-month").value, oldDate=$("#p-date").value, oldTopic=$("#p-topic").value, oldCategory=$("#p-category").value;
+    const oldYear=$("#p-year").value, oldMonth=$("#p-month").value, oldDate=$("#p-date").value, oldTopic=$("#p-topic").value, oldTestSet=$("#p-test-set").value, oldCategory=$("#p-category").value;
     if(section==="current" || section==="all"){
       const latest=latestCurrentDate(), latestYear=latest.slice(0,4), latestMonth=latest.slice(5,7);
       const years=uniqDesc(current.map(q=>q.year));
@@ -598,12 +619,21 @@
     if(section==="static" || section==="all"){
       const topics=uniqDesc(statics.map(q=>q.topic));
       const topic=setRawOptions($("#p-topic"),topics,"All Topics",oldTopic,section==="static"&&forceLatest?(topics[0]||""):"");
+      const topicRows=topic?statics.filter(q=>q.topic===topic):statics;
+      const testSets=uniqDesc(topicRows.map(q=>q.testSet));
+      const testSet=setRawOptions($("#p-test-set"),testSets,"All Test Sets",oldTestSet,"");
+      $("#p-test-set").disabled=!testSets.length;
       if(section==="static"){
-        const sr=topic?statics.filter(q=>q.topic===topic):statics;
+        const sr=testSet?topicRows.filter(q=>q.testSet===testSet):topicRows;
         setRawOptions($("#p-category"),sr.map(q=>q.category),"All Categories",oldCategory,"");
       }
       $("#p-topic").disabled=false;
-    }else{setRawOptions($("#p-topic"),[],"All Topics");$("#p-topic").disabled=true;}
+    }else{
+      setRawOptions($("#p-topic"),[],"All Topics");
+      setRawOptions($("#p-test-set"),[],"All Test Sets");
+      $("#p-topic").disabled=true;
+      $("#p-test-set").disabled=true;
+    }
   }
 
   function rebuildPlayerCascade(changed){
@@ -619,7 +649,16 @@
       const month=$("#p-month").value,date=$("#p-date").value;let rows=current;if(year)rows=rows.filter(q=>q.year===year);if(month)rows=rows.filter(q=>q.month===month);if(date)rows=rows.filter(q=>q.date===date);setRawOptions($("#p-category"),rows.map(q=>q.category),"All Categories",$("#p-category").value,"");
     }
     if(section==="static"){
-      const topic=$("#p-topic").value,rows=topic?statics.filter(q=>q.topic===topic):statics;setRawOptions($("#p-category"),rows.map(q=>q.category),"All Categories",$("#p-category").value,"");
+      const topic=$("#p-topic").value;
+      const topicRows=topic?statics.filter(q=>q.topic===topic):statics;
+      if(changed==="topic"){
+        const testSets=uniqDesc(topicRows.map(q=>q.testSet));
+        setRawOptions($("#p-test-set"),testSets,"All Test Sets","","");
+        $("#p-test-set").disabled=!testSets.length;
+      }
+      const testSet=$("#p-test-set").value;
+      const rows=testSet?topicRows.filter(q=>q.testSet===testSet):topicRows;
+      setRawOptions($("#p-category"),rows.map(q=>q.category),"All Categories",$("#p-category").value,"");
     }
   }
 
@@ -633,11 +672,13 @@
     rebuildPlayerCascade("month");
     if(f.date) $("#p-date").value=f.date;
     if(f.topic) $("#p-topic").value=f.topic;
-    rebuildPlayerCascade("date");
+    rebuildPlayerCascade("topic");
+    if(f.testSet && [...$("#p-test-set").options].some(o=>o.value===f.testSet)) $("#p-test-set").value=f.testSet;
+    rebuildPlayerCascade("testSet");
     if(f.category && [...$("#p-category").options].some(o=>o.value===f.category)) $("#p-category").value=f.category;
     loadPlayerQueue(showToast);
   }
-  function playerFilter(){return{section:$("#p-section").value,year:$("#p-year").value,month:$("#p-month").value,date:$("#p-date").value,topic:$("#p-topic").value,category:$("#p-category").value,search:"",dateFrom:"",dateTo:""};}
+  function playerFilter(){return{section:$("#p-section").value,year:$("#p-year").value,month:$("#p-month").value,date:$("#p-date").value,topic:$("#p-topic").value,testSet:$("#p-test-set").value,category:$("#p-category").value,search:"",dateFrom:"",dateTo:""};}
   function shuffle(arr){const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
   function loadPlayerQueue(showToast=true){ stopPlayer(); let queue=filterQuestions(state.all,playerFilter()); let from=Math.max(1,Number($("#p-from").value)||1),to=Number($("#p-to").value)||queue.length; queue=queue.slice(from-1,Math.max(from,to)); if($("#p-order").value==="random")queue=shuffle(queue); state.playerQueue=queue;state.playerIndex=0;state.playerRemaining=Number($("#p-seconds").value)||10;renderPlayer(); if(showToast)toast(`Player loaded ${queue.length} question(s).`); }
   function playerQuestionHtml(q){
@@ -645,14 +686,14 @@
     const opts=(q.options||[]).map((o,i)=>`<div class="player-opt ${Number(q.answer)===i?'correct':''}"><b>${String.fromCharCode(65+i)}.</b> ${esc(o)}</div>`).join("");
     const context=q.section==="current"
       ?`DATE · ${esc(q.date||((q.year&&q.month)?`${q.year}-${q.month}`:"DATE NOT AVAILABLE"))}`
-      :`TOPIC · ${esc(q.topic||q.category||"Static GK")}`;
+      :`TOPIC · ${esc(q.topic||q.category||"Static GK")}${q.testSet?` · ${esc(q.testSet)}`:''}`;
     const subs=(q.subQuestions||[]).length
       ?`<div class="subbox" style="margin-top:14px">${q.subQuestions.map((s,i)=>`<div class="sub"><b>Sub Q${i+1}.</b><div style="margin-top:5px">${formatQuestionText(s.question)}</div><div class="sub-answer">Correct → ${answerLetter(s.answer)}${s.options?.[s.answer]!=null?` · ${esc(s.options[s.answer])}`:''}</div>${state.showPlayerExplanations&&s.explanation?`<div style="margin-top:5px">${esc(s.explanation)}</div>`:''}</div>`).join("")}</div>`
       :"";
     const explanation=state.showPlayerExplanations
       ?`<div class="explanation-box"><b>Explanation</b><br>${esc(q.explanation||'No explanation added.')}</div>`
       :"";
-    return `<div class="player-top"><div><div class="mono">${esc(q.section.toUpperCase())}</div><div class="muted">${esc(q.id)} · ${esc(q.category||'')}</div></div><div class="timer-ring" id="player-countdown">${state.playerRemaining}s</div></div><div class="player-question-context">${context}</div><div class="player-question">${formatQuestionText(q.question)}</div>${imageSrc(q)?`<div class="player-image"><img class="zoomable-image" data-zoom-image src="${esc(imageSrc(q))}" alt="Question image"><div class="zoom-hint">Click image to zoom</div></div>`:''}<div class="player-options">${opts}</div><div class="answer-box"><b>Correct Answer → ${answerLetter(q.answer)}${q.options?.[q.answer]!=null?` · ${esc(q.options[q.answer])}`:''}</b></div>${explanation}${subs}`;
+    return `<div class="player-top"><div><div class="mono">${esc(q.section.toUpperCase())}</div><div class="muted">${esc(q.id)}${q.testSet?` · ${esc(q.testSet)}`:''} · ${esc(q.category||'')}</div></div><div class="timer-ring" id="player-countdown">${state.playerRemaining}s</div></div><div class="player-question-context">${context}</div><div class="player-question">${formatQuestionText(q.question)}</div>${imageSrc(q)?`<div class="player-image"><img class="zoomable-image" data-zoom-image src="${esc(imageSrc(q))}" alt="Question image"><div class="zoom-hint">Click image to zoom</div></div>`:''}<div class="player-options">${opts}</div><div class="answer-box"><b>Correct Answer → ${answerLetter(q.answer)}${q.options?.[q.answer]!=null?` · ${esc(q.options[q.answer])}`:''}</b></div>${explanation}${subs}`;
   }
 
   function renderPlayer(){ const total=state.playerQueue.length,q=state.playerQueue[state.playerIndex]; $("#player-stage").innerHTML=q?playerQuestionHtml(q):'<div class="empty">No questions match the player filters.</div>'; $("#player-queue-info").textContent=total?`Question ${state.playerIndex+1} / ${total} · ${state.playerPlaying?'PLAYING':'PAUSED'}`:'No queue loaded.'; $("#player-play").textContent=state.playerPlaying?"❚❚ Pause":"▶ Play"; }
@@ -669,6 +710,7 @@
     $("#f-month").value="";
     $("#f-date").value="";
     $("#f-topic").value="";
+    $("#f-test-set").value="";
     $("#f-category").value="";
     $("#f-date-from").value="";
     $("#f-date-to").value="";
@@ -691,6 +733,7 @@
     $("#p-month").value="";
     $("#p-date").value="";
     $("#p-topic").value="";
+    $("#p-test-set").value="";
     $("#p-category").value="";
 
     if(section==="current"){
@@ -793,11 +836,12 @@
   $("#f-month").addEventListener("change",()=>{rebuildManagerCascade("month");applyFilters(true,true)});
   $("#f-date").addEventListener("change",()=>{rebuildManagerCascade("date");applyFilters(true,true)});
   $("#f-topic").addEventListener("change",()=>{rebuildManagerCascade("topic");applyFilters(true,true)});
+  $("#f-test-set").addEventListener("change",()=>{rebuildManagerCascade("testSet");applyFilters(true,true)});
   $("#f-category").addEventListener("change",()=>applyFilters(true,true));
   ["#f-date-from","#f-date-to"].forEach(id=>$(id).addEventListener("change",()=>applyFilters(true,true)));
   $("#f-search").addEventListener("input",()=>applyFilters(true)); ["#range-from","#range-to"].forEach(id=>$(id).addEventListener("input",updateRangeSummary));
   $("#select-range").onclick=()=>{state.selected=new Set(rangeItems().map(q=>q.id));renderList();toast(`Selected ${state.selected.size} range question(s).`)};
-  $("#copy-range").onclick=()=>copyQuestions(rangeItems()); $("#delete-range").onclick=()=>deleteIds(rangeItems().map(q=>q.id),"current range");
+  $("#copy-range").onclick=()=>copyQuestions(rangeItems()); $("#delete-range").onclick=()=>{const items=rangeItems();if(items.some(q=>q.duplicateId)){toast("Range contains duplicate IDs. Make those IDs unique before deleting this range.");return;}deleteIds(items.map(q=>q.id),"current range");};
   $("#copy-selected").onclick=()=>copyQuestions(state.all.filter(q=>state.selected.has(q.id))); $("#delete-selected").onclick=()=>deleteIds([...state.selected],"selected");
   $("#delete-date").onclick=()=>{const d=$("#f-date").value;if(!d){toast("Select one Exact Date first.");return;}deleteIds(state.all.filter(q=>q.section==="current"&&q.date===d).map(q=>q.id),`entire date ${d}`)};
   $("#delete-month").onclick=()=>{const y=$("#f-year").value,m=$("#f-month").value;if(!y||!m){toast("Select Year and Month first.");return;}deleteIds(state.all.filter(q=>q.section==="current"&&q.year===y&&q.month===m).map(q=>q.id),`entire month ${y}-${m}`)};
@@ -826,6 +870,7 @@
   $("#p-month").addEventListener("change",()=>{rebuildPlayerCascade("month");loadPlayerQueue(false)});
   $("#p-date").addEventListener("change",()=>{rebuildPlayerCascade("date");loadPlayerQueue(false)});
   $("#p-topic").addEventListener("change",()=>{rebuildPlayerCascade("topic");loadPlayerQueue(false)});
+  $("#p-test-set").addEventListener("change",()=>{rebuildPlayerCascade("testSet");loadPlayerQueue(false)});
   ["#p-category","#p-from","#p-to","#p-order"].forEach(id=>$(id).addEventListener("change",()=>loadPlayerQueue(false)));
   $("#p-seconds").addEventListener("change",()=>{state.playerRemaining=Number($("#p-seconds").value)||10;renderPlayer()});
   $("#refresh-data").onclick=loadData;document.addEventListener("keydown",e=>{if(e.key!=="Escape")return;if($("#image-lightbox").classList.contains("show")){closeImageZoom();return;}if($("#edit-modal").classList.contains("show"))closeEdit()});
