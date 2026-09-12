@@ -1503,7 +1503,7 @@ let roundNumber = 1;
 
 let testPass = 1;
 
-let timeLeft = 600;
+let timeLeft = 180;
 
 let currentRoundWords = [];
 
@@ -1914,7 +1914,7 @@ function startRound(mode = browseMode){
     " • Read 1/" + currentRoundWords.length;
 
   nextBtn.textContent = "Next →";
-  timeLeft = 600;
+  timeLeft = 180;
   updatePoolUI();
   updateLearnedButton();
 }
@@ -1961,7 +1961,7 @@ function nextWord(resetTimer = true){
       const repeatedFirstIndex = getQuizPool().indexOf(currentRoundWords[0]);
       wnumEl.textContent = repeatedFirstIndex >= 0 ? "#" + (repeatedFirstIndex + 1) : "#1";
 
-      if(resetTimer) timeLeft = 600;
+      if(resetTimer) timeLeft = 180;
       return;
     }
 
@@ -1978,7 +1978,7 @@ function nextWord(resetTimer = true){
 
     nextBtn.textContent = "Next →";
 
-    if(resetTimer) timeLeft = 600;
+    if(resetTimer) timeLeft = 180;
     return;
   }
 
@@ -1995,7 +1995,7 @@ function nextWord(resetTimer = true){
     const actualTestIndex = getQuizPool().indexOf(word);
     wnumEl.textContent = actualTestIndex >= 0 ? "#" + (actualTestIndex + 1) : "#" + (testIndex + 1);
 
-    if(resetTimer) timeLeft = 600;
+    if(resetTimer) timeLeft = 180;
     return;
   }
 
@@ -2018,7 +2018,7 @@ function nextWord(resetTimer = true){
       showQuestionCard(currentRoundWords[0]);
       wnumEl.textContent = "#1";
 
-      if(resetTimer) timeLeft = 600;
+      if(resetTimer) timeLeft = 180;
       return;
     }
 
@@ -2037,7 +2037,7 @@ function nextWord(resetTimer = true){
   countEl.textContent = testStatusText(testIndex);
   nextBtn.textContent = "Show answer →";
 
-  if(resetTimer) timeLeft = 600;
+  if(resetTimer) timeLeft = 180;
 }
 
 
@@ -2049,7 +2049,7 @@ function tick(){
 
     nextWord(false);
 
-    timeLeft = 600;
+    timeLeft = 180;
 
   }
 
@@ -2109,7 +2109,7 @@ function showBrowseWord(index){
   wnumEl.textContent = "#" + (browseIndex + 1);
   countEl.textContent = (browseMode === "series" ? "Series" : "Random") + " • " + (browseIndex + 1) + "/" + WORDS.length;
   nextBtn.textContent = "Next →";
-  timeLeft = 600;
+  timeLeft = 180;
 }
 
 function showRandomWord(){
@@ -4504,7 +4504,7 @@ body::before{
 }
 .word-en{
   margin:0 0 8px;
-  color:#fff;
+  color:#c6a6c3;
   font-size:clamp(38px,5vw,64px);
   line-height:1.02;
   letter-spacing:-.045em;
@@ -6243,7 +6243,7 @@ function startRound(mode = browseMode){
     " • Read 1/" + currentRoundWords.length;
 
   nextBtn.textContent = "Next →";
-  timeLeft = 600;
+  timeLeft = 180;
   updatePoolUI();
   updateLearnedButton();
 }
@@ -6290,7 +6290,7 @@ function nextWord(resetTimer = true){
       const repeatedFirstIndex = getQuizPool().indexOf(currentRoundWords[0]);
       wnumEl.textContent = repeatedFirstIndex >= 0 ? "#" + (repeatedFirstIndex + 1) : "#1";
 
-      if(resetTimer) timeLeft = 600;
+      if(resetTimer) timeLeft = 180;
       return;
     }
 
@@ -6307,7 +6307,7 @@ function nextWord(resetTimer = true){
 
     nextBtn.textContent = "Next →";
 
-    if(resetTimer) timeLeft = 600;
+    if(resetTimer) timeLeft = 180;
     return;
   }
 
@@ -6324,7 +6324,7 @@ function nextWord(resetTimer = true){
     const actualTestIndex = getQuizPool().indexOf(word);
     wnumEl.textContent = actualTestIndex >= 0 ? "#" + (actualTestIndex + 1) : "#" + (testIndex + 1);
 
-    if(resetTimer) timeLeft = 600;
+    if(resetTimer) timeLeft = 180;
     return;
   }
 
@@ -6347,7 +6347,7 @@ function nextWord(resetTimer = true){
       showQuestionCard(currentRoundWords[0]);
       wnumEl.textContent = "#1";
 
-      if(resetTimer) timeLeft = 600;
+      if(resetTimer) timeLeft = 180;
       return;
     }
 
@@ -6366,7 +6366,7 @@ function nextWord(resetTimer = true){
   countEl.textContent = testStatusText(testIndex);
   nextBtn.textContent = "Show answer →";
 
-  if(resetTimer) timeLeft = 600;
+  if(resetTimer) timeLeft = 180;
 }
 
 
@@ -6382,7 +6382,7 @@ function tick(){
 
     nextWord(false);
 
-    timeLeft = 600;
+    timeLeft = 180;
 
   }
 
@@ -6442,7 +6442,7 @@ function showBrowseWord(index){
   wnumEl.textContent = "#" + (browseIndex + 1);
   countEl.textContent = (browseMode === "series" ? "Series" : "Random") + " • " + (browseIndex + 1) + "/" + WORDS.length;
   nextBtn.textContent = "Next →";
-  timeLeft = 600;
+  timeLeft = 180;
 }
 
 function showRandomWord(){
@@ -8032,7 +8032,7 @@ function startAutoPlay(){
   answerVisible = false;
 
   // Pause/reset the old timer visually, but do not alter its normal-mode behavior.
-  timeLeft = 600;
+  timeLeft = 180;
   if(clockEl) clockEl.textContent = "10:00";
 
   if(nextBtn){
@@ -8079,7 +8079,7 @@ function stopAutoPlay(restoreNormal = true){
   updateAutoPlayCountdown();
 
   if(nextBtn) nextBtn.disabled = false;
-  timeLeft = 600;
+  timeLeft = 180;
   if(clockEl) clockEl.textContent = "10:00";
 
   // Closing Auto Play returns to exactly the original read -> test workflow.

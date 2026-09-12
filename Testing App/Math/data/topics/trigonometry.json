@@ -29,7 +29,7 @@
       "2x or 1/2x"
     ],
     "correctIndex": 3,
-    "solutionText": "https://youtu.be/pn6eEIS5OZc?si=_maljACTpvvLXzCe",
+    "solutionText": "https://youtu.be/pn6eEIS5OZc?si=ChLWi74gP9KKZO6r&t=787",
     "solutionImage": "/uploads/trigonometry/52e60296ba77e1397c8c9e7f9a52d47d33b09244bf1383715466706e24efe8c8.png",
     "id": "mt84e9dvcld6f7",
     "order": 72,
@@ -90,7 +90,7 @@
     "solutionImage": null,
     "id": "mtcc8bzwhl13qn",
     "order": 100,
-    "attemptStatus": "unattempted",
+    "attemptStatus": "correct",
     "testAllowed": true,
     "special": false
   },

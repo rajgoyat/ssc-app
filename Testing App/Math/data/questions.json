@@ -7,7 +7,7 @@
     "options": [
       "10",
       "12",
-      "14",
+      "2root-14",
       "16"
     ],
     "correctIndex": 2,
@@ -318,7 +318,7 @@
     "solutionImage": "/uploads/compound-interest/1cf23fbdf3bf25146c239c1b048cea082fe1c273639c519ac236c8d8e6839bb1.png",
     "id": "mt3pc9b0sgeck3",
     "order": 19,
-    "attemptStatus": "unattempted",
+    "attemptStatus": "correct",
     "testAllowed": true,
     "special": false
   },
@@ -832,7 +832,7 @@
     "id": "mt57t8peeddyq7",
     "order": 47,
     "attemptStatus": "unattempted",
-    "testAllowed": true,
+    "testAllowed": false,
     "special": false
   },
   {
@@ -1264,7 +1264,7 @@
       "2x or 1/2x"
     ],
     "correctIndex": 3,
-    "solutionText": "https://youtu.be/pn6eEIS5OZc?si=_maljACTpvvLXzCe",
+    "solutionText": "https://youtu.be/pn6eEIS5OZc?si=ChLWi74gP9KKZO6r&t=787",
     "solutionImage": "/uploads/trigonometry/52e60296ba77e1397c8c9e7f9a52d47d33b09244bf1383715466706e24efe8c8.png",
     "id": "mt84e9dvcld6f7",
     "order": 72,
@@ -1876,7 +1876,7 @@
     "solutionImage": null,
     "id": "mtcc8bzwhl13qn",
     "order": 100,
-    "attemptStatus": "unattempted",
+    "attemptStatus": "correct",
     "testAllowed": true,
     "special": false
   },
@@ -2933,15 +2933,15 @@
       "2 : 3",
       "3 : 2",
       "4 : 3",
-      "5 : 4"
+      "3 : 4"
     ],
-    "correctIndex": 1,
+    "correctIndex": 3,
     "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=lH4zGillzG8hL2lA&t=17746",
     "solutionImage": null,
     "special": false,
     "id": "mt9lzzc47tq28",
     "order": 156,
-    "attemptStatus": "unattempted",
+    "attemptStatus": "correct",
     "testAllowed": true
   },
   {
@@ -3682,7 +3682,7 @@
     "special": false,
     "id": "mtu3ouwamc1hq1",
     "order": 193,
-    "attemptStatus": "unattempted",
+    "attemptStatus": "correct",
     "testAllowed": true
   },
   {

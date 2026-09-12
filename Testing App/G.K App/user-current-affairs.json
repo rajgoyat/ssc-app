@@ -1734,5 +1734,305 @@
     "questionImageName": "",
     "source": "user-upload",
     "createdAt": "2026-09-11T11:03:23"
+  },
+  {
+    "id": "ca-2026-09-011-001",
+    "date": "2026-09-11",
+    "category": "Education",
+    "question": "Which institution ranked 1st in India in the Financial Times Masters in Management Ranking 2026?",
+    "options": [
+      "IIM Ahmedabad",
+      "IIM Bangalore",
+      "SPJIMR",
+      "IIM Calcutta"
+    ],
+    "answer": 1,
+    "explanation": "IIM Bangalore ne India me 1st aur globally 21st rank hasil kiya. Total 14 Indian business schools ranking me the. Ranking salary, career progress, international mobility aur ESG factors pe based hoti hai. Ranking 2005 se start hui.",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-12T05:49:17"
+  },
+  {
+    "id": "ca-2026-09-011-002",
+    "date": "2026-09-11",
+    "category": "Education",
+    "question": "Consider the following statements about FT Masters in Management Ranking 2026:\n1. IIM Bangalore ranked 1st in India and 21st globally.\n2. SPJIMR ranked 2nd in India.\n3. University of St. Gallen (Switzerland) was ranked 1st globally.\nWhich of the above statements are correct?",
+    "options": [
+      "1 and 2 only",
+      "1 and 3 only",
+      "2 and 3 only",
+      "All 1, 2 and 3"
+    ],
+    "answer": 3,
+    "explanation": "Sab statements sahi hain. Global top 3: 1st St. Gallen (Switzerland), 2nd Nova School (Portugal), 3rd Shanghai Jiao Tong. India top: IIMB (21), SPJIMR (26), IIM Ahmedabad (27).",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-12T05:49:17"
+  },
+  {
+    "id": "ca-2026-09-011-003",
+    "date": "2026-09-11",
+    "category": "Sports",
+    "question": "Who won the Women's Individual Compound gold medal at the World Archery Para Series 2026 Stage III?",
+    "options": [
+      "Sarita",
+      "Sheetal Devi",
+      "Bhawna",
+      "Payal Nag"
+    ],
+    "answer": 1,
+    "explanation": "Sheetal Devi ne Women's Individual Compound me gold jeeta. Yeh unka World Archery Para Series me pehla individual gold tha. Event 5-9 September 2026 ko Ahmedabad me hua (pehli baar India ne host kiya).",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-12T05:49:17"
+  },
+  {
+    "id": "ca-2026-09-011-004",
+    "date": "2026-09-11",
+    "category": "Sports",
+    "question": "Consider the following statements about World Archery Para Series 2026 Stage III:\n1. India hosted the event for the first time in Ahmedabad.\n2. India won total 15 medals (4 Gold, 3 Silver, 8 Bronze).\n3. India finished 1st in the medal standings.\nWhich of the statements is/are correct?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "All three"
+    ],
+    "answer": 0,
+    "explanation": "1 aur 2 sahi hain. India medal count me highest tha lekin standings me 2nd raha kyunki Czech Republic ne 5 gold ke saath 1st position liya. China 3rd raha.",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-12T05:49:17"
+  },
+  {
+    "id": "ca-2026-09-011-005",
+    "date": "2026-09-11",
+    "category": "Science & Technology",
+    "question": "Which institution developed the 'MatsyaMetri' smartphone application for measuring length and width of fish without physical contact?",
+    "options": [
+      "Central Institute of Fisheries Education",
+      "Central Marine Fisheries Research Institute (CMFRI)",
+      "National Fisheries Development Board",
+      "INCOIS"
+    ],
+    "answer": 1,
+    "explanation": "CMFRI ne MatsyaMetri app banaya. Isse smartphone camera se fish ki length-width bina touch kiye measure hoti hai. Busy fish-landing centres pe research data jaldi collect karne me madad milti hai. CMFRI ICAR ke under aata hai, HQ Kochi (Kerala), established 1947.",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-12T05:49:17"
+  },
+  {
+    "id": "ca-2026-09-011-006",
+    "date": "2026-09-11",
+    "category": "International",
+    "question": "Where was the 9th ASEAN-India Ministerial Meeting on Agriculture and Forestry held?",
+    "options": [
+      "Manila",
+      "Jakarta",
+      "New Delhi",
+      "Bangkok"
+    ],
+    "answer": 2,
+    "explanation": "9 September 2026 ko New Delhi me hua. Co-chaired by Agriculture Minister Shivraj Singh Chouhan aur Philippines ke Agriculture Secretary. Topics: food security, sustainable agriculture, climate-resilient farming. Next (10th) meeting 2028 me hogi.",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-12T05:49:17"
+  },
+  {
+    "id": "ca-2026-09-011-007",
+    "date": "2026-09-11",
+    "category": "International",
+    "question": "Consider the following statements about ASEAN:\n1. ASEAN was established in 1967 in Bangkok.\n2. Currently ASEAN has 11 member countries after Timor-Leste joined in 2025.\n3. India is a full member of ASEAN.\nWhich of the above is/are correct?",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "All three"
+    ],
+    "answer": 0,
+    "explanation": "1 aur 2 sahi hain. India full member nahi hai, Dialogue Partner hai (1992 se). Headquarters Jakarta, Indonesia. Founding members: Indonesia, Malaysia, Philippines, Singapore, Thailand.",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-12T05:49:17"
+  },
+  {
+    "id": "ca-2026-09-011-008",
+    "date": "2026-09-11",
+    "category": "Government Schemes",
+    "question": "Under which scheme were Strategic Investment Plans worth ₹735.70 crore approved for three ITI clusters?",
+    "options": [
+      "Pradhan Mantri Kaushal Vikas Yojana",
+      "PM-SETU",
+      "Skill India Digital",
+      "SANKALP Scheme"
+    ],
+    "answer": 1,
+    "explanation": "PM-SETU (Pradhan Mantri Skilling and Employability Transformation through Upgraded ITIs) ke under Rajasthan (Bhiwadi), Telangana (Medchal) aur UP (Meerut) ke ITI clusters ke liye approve hua. Target: 1000 Government ITIs upgrade karna. Total provision ₹60,000 crore. Nodal Ministry: Skill Development & Entrepreneurship. Started October 2025.",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-12T05:49:17"
+  },
+  {
+    "id": "ca-2026-09-011-009",
+    "date": "2026-09-11",
+    "category": "Environment",
+    "question": "Where is the Global Dryland Congress 2026 being organised?",
+    "options": [
+      "Hyderabad",
+      "Jaipur",
+      "New Delhi",
+      "Bengaluru"
+    ],
+    "answer": 2,
+    "explanation": "10-12 September 2026 ko National Agricultural Science Complex (NASC), New Delhi me. Jointly organised by ICAR aur ICRISAT. Theme: “Transforming Dryland Agriculture with South-South Cooperation”. Dryland areas me sustainable agriculture pe focus.",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-12T05:49:17"
+  },
+  {
+    "id": "ca-2026-09-011-010",
+    "date": "2026-09-11",
+    "category": "Awards",
+    "question": "Who was honoured with the Commonwealth Public Leadership Award in September 2026?",
+    "options": [
+      "Devendra Fadnavis",
+      "Eknath Shinde",
+      "N. Chandrababu Naidu",
+      "Himanta Biswa Sarma"
+    ],
+    "answer": 1,
+    "explanation": "Maharashtra ke Deputy CM Eknath Shinde ko London me House of Lords me yeh award diya gaya. Public service delivery, infrastructure aur welfare initiatives ke liye. Political Party: Shiv Sena.",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-12T05:49:17"
+  },
+  {
+    "id": "ca-2026-09-011-011",
+    "date": "2026-09-11",
+    "category": "Science & Technology",
+    "question": "Which new software has UIDAI launched to simplify Aadhaar authentication?",
+    "options": [
+      "Iris Verification API",
+      "Face Authentication Software Development Kit (SDK)",
+      "Aadhaar Blockchain Gateway",
+      "Biometric Payment Interface"
+    ],
+    "answer": 1,
+    "explanation": "UIDAI ne Face Authentication SDK launch kiya. Isse banks aur businesses local servers pe face authentication chala sakte hain. Speed aur flexibility badhti hai. UIDAI established 28 January 2009, Aadhaar Act 2016 se statutory, MeitY ke under, HQ New Delhi.",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-12T05:49:17"
+  },
+  {
+    "id": "ca-2026-09-011-012",
+    "date": "2026-09-11",
+    "category": "Defence",
+    "question": "Which laboratory has been established by the Indian Army to detect foreign components and security vulnerabilities in drones?",
+    "options": [
+      "PRAHAR Lab",
+      "AASHVAST Lab",
+      "TRINETRA Lab",
+      "GARUDA Lab"
+    ],
+    "answer": 1,
+    "explanation": "AASHVAST Lab DG EME headquarters, New Delhi me establish hui. Chinese-origin components, cyber backdoors, GPS spoofing/jamming aur software vulnerabilities check karti hai. Inaugurated by Army Chief General Dhiraj Seth.",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-12T05:49:17"
+  },
+  {
+    "id": "ca-2026-09-011-013",
+    "date": "2026-09-11",
+    "category": "Important Days",
+    "question": "Digvijay Diwas is observed every year on which date?",
+    "options": [
+      "5 September",
+      "8 September",
+      "11 September",
+      "12 September"
+    ],
+    "answer": 2,
+    "explanation": "11 September ko Swami Vivekananda ke 1893 Chicago speech (World’s Parliament of Religions) ki yaad me manaya jata hai. Ise Universal Brotherhood Day bhi kehte hain. Swami Vivekananda ka original name Narendranath Datta tha, born 12 January 1863. National Youth Day bhi 12 January ko manaate hain.",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-12T05:49:17"
+  },
+  {
+    "id": "ca-2026-09-011-014",
+    "date": "2026-09-11",
+    "category": "Awards",
+    "question": "Which former Chief Justice of India was conferred with the Kalinga Ratna Award in September 2026?",
+    "options": [
+      "Justice N. V. Ramana",
+      "Justice U. U. Lalit",
+      "Justice Dipak Misra",
+      "Justice Ranjan Gogoi"
+    ],
+    "answer": 2,
+    "explanation": "Justice Dipak Misra ko Kalinga Ratna Award diya gaya (September 2026).",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-12T05:49:17"
+  },
+  {
+    "id": "ca-2026-09-011-015",
+    "date": "2026-09-11",
+    "category": "Sports",
+    "question": "In the 2026 Pickleball World Cup, what position did India secure in the overall medal tally?",
+    "options": [
+      "2nd",
+      "3rd",
+      "4th",
+      "7th"
+    ],
+    "answer": 2,
+    "explanation": "India ne overall medal tally me 4th position hasil kiya.",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-12T05:49:17"
   }
 ]

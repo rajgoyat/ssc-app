@@ -109,7 +109,7 @@
     "solutionImage": "/uploads/compound-interest/1cf23fbdf3bf25146c239c1b048cea082fe1c273639c519ac236c8d8e6839bb1.png",
     "id": "mt3pc9b0sgeck3",
     "order": 19,
-    "attemptStatus": "unattempted",
+    "attemptStatus": "correct",
     "testAllowed": true,
     "special": false
   },
@@ -585,7 +585,7 @@
     "id": "mt57t8peeddyq7",
     "order": 47,
     "attemptStatus": "unattempted",
-    "testAllowed": true,
+    "testAllowed": false,
     "special": false
   },
   {
