@@ -16,7 +16,8 @@
     "order": 85,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "HCF & LCM",
@@ -35,7 +36,8 @@
     "order": 87,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "HCF & LCM",
@@ -54,6 +56,7 @@
     "id": "mtikxq87ejyv7p",
     "order": 110,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   }
 ]

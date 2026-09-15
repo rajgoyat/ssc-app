@@ -16,7 +16,8 @@
     "order": 93,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "CP & SP",
@@ -35,7 +36,8 @@
     "order": 107,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "CP & SP",
@@ -54,7 +56,8 @@
     "id": "mti1pb86ymsjuz",
     "order": 109,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "CP & SP",
@@ -73,7 +76,8 @@
     "id": "mttuchsa30g34o",
     "order": 189,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "CP & SP",
@@ -92,7 +96,8 @@
     "id": "mttui16jkld12e",
     "order": 190,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "CP & SP",
@@ -110,6 +115,87 @@
     "special": false,
     "id": "mttvbigvweclxf",
     "order": 191,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "examName": ""
+  },
+  {
+    "category": "CP & SP",
+    "examName": "",
+    "questionText": "A trader gains 72% by selling an article after two successive discounts of 50% and 14% on its marked price. If the cost price of the article is increased by 36%, then what single discount should he now give on the same marked price to get\nthe same profit percentage as earlier?)",
+    "questionImage": null,
+    "options": [
+      "41.52 %",
+      "40.56 %",
+      "46.78 %",
+      "47.46 %"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/5jtFJuxGWj4?si=Hpsg61dgXe07TcEh&t=353",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0v7e2zcv1eqh",
+    "order": 213,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "CP & SP",
+    "examName": "",
+    "questionText": "Two articles are sold for rupees 5,104 each. On one, the seller gains 16% and on the other, he loses 12%. What is his overall gain percent, nearest to two decimal places?",
+    "questionImage": null,
+    "options": [
+      "8 %",
+      "1 %",
+      "0.14 %",
+      "0.08 %"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/5jtFJuxGWj4?si=0G7j7WLTgmj2Jfu8&t=520",
+    "solutionImage": "/uploads/cp-sp/58c166940a2b495b5d692e80da23efdc990e12f65aaa01328f3dd5bd9f50dcc2.png",
+    "special": false,
+    "id": "mu0vmae2l0c6vy",
+    "order": 215,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "CP & SP",
+    "examName": "",
+    "questionText": "X sells his goods 20% cheaper than Y and 20% dearer than Z. How many % is Z's goods cheaper/dearer than Y's?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/5jtFJuxGWj4?si=E28y9pYEz7TRq5zT&t=621",
+    "solutionImage": "/uploads/cp-sp/926cc4ac267f65600ce66a3338c8f3ab8e980cd0b4701b47f4cf1ed0a9d47bca.png",
+    "special": false,
+    "id": "mu0w8yn22bm8nx",
+    "order": 216,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "CP & SP",
+    "examName": "",
+    "questionText": "A vendor buys 22 laptop bags for ₹43,670 and sells them at 20 for 39,760. How many \nlaptop bags should be bought and sold at this rate, to earn a total profit of 1,227?",
+    "questionImage": null,
+    "options": [
+      "433",
+      "409",
+      "405",
+      "426"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/5jtFJuxGWj4?si=jhWo2on-eSA1YY8y&t=1249",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0ymye3nksmp8",
+    "order": 224,
     "attemptStatus": "unattempted",
     "testAllowed": true
   }

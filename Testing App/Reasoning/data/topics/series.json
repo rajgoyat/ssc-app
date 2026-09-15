@@ -340,5 +340,24 @@
     "order": 63,
     "attemptStatus": "unattempted",
     "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "(5, 19, 4)\n(1, 7,4)\n(6,?,1)",
+    "questionImage": null,
+    "options": [
+      "2",
+      "5",
+      "7",
+      "19"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/MqxEmF8sR9Y?si=_troLapVGZq8WQJJ&t=685",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu12k9329y1o3x",
+    "order": 65,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]

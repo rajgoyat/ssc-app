@@ -16,7 +16,8 @@
     "order": 8,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Mensuration",
@@ -35,7 +36,8 @@
     "order": 67,
     "attemptStatus": "correct",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Mensuration",
@@ -54,7 +56,8 @@
     "order": 69,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Mensuration",
@@ -73,7 +76,8 @@
     "order": 71,
     "attemptStatus": "correct",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Mensuration",
@@ -92,11 +96,12 @@
     "order": 97,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Mensuration",
-    "questionText": "Concept of prism\nA prism and a pyramid have the same base and the same height. Find the ratio of the volume of the prism and the pyramid?  (area equilat triangle     if side=2 then area root 3)",
+    "questionText": "Concept of prism\nA prism and a pyramid have the same base and the same height. Find the ratio of the volume of the prism and the pyramid?  (area equilat triangle     if side=2 then area root-3)",
     "questionImage": "/uploads/mensuration/f855c4f75284f60dbb5b60e4712ca5c15dd0155fe4bf7086eae792622213d106.png",
     "options": [
       "3 : 1",
@@ -111,7 +116,8 @@
     "id": "mttelfkaswe64c",
     "order": 181,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mensuration",
@@ -130,7 +136,8 @@
     "id": "mttf8pv76shc4e",
     "order": 182,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mensuration",
@@ -149,7 +156,8 @@
     "id": "mttfhfz0slrfbx",
     "order": 183,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mensuration",
@@ -168,7 +176,8 @@
     "id": "mttfpvnnm167hq",
     "order": 184,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mensuration",
@@ -187,7 +196,8 @@
     "id": "mttfxqy3s2veoo",
     "order": 185,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mensuration",
@@ -206,7 +216,8 @@
     "id": "mttg3pwu855r6l",
     "order": 186,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mensuration",
@@ -225,6 +236,7 @@
     "id": "mttgut0w112791",
     "order": 187,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   }
 ]

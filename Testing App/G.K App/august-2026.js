@@ -28,7 +28,7 @@ const august2026CurrentAffairs = {
     },
     {
       id: "ca-2026-08-19-003",
-      category: "Art & Culture",
+      category: "Art and Culture",
       question:
         "Which renowned sculptor passed away at the age of 75 in Kalaburagi, Karnataka?",
       options: [
@@ -43,7 +43,7 @@ const august2026CurrentAffairs = {
     },
     {
       id: "ca-2026-08-19-004",
-      category: "Defence & Security",
+      category: "Defence & Technology",
       question:
         "Chief of Army Staff General Dhiraj Seth was conferred the Honorary General rank of which country's army?",
       options: ["Bhutan", "Sri Lanka", "Nepal", "Bangladesh"],
@@ -162,7 +162,7 @@ const august2026CurrentAffairs = {
     },
     {
       id: "ca-2026-08-19-014",
-      category: "Defence & Security",
+      category: "Defence & Technology",
       question:
         "The 15th edition of joint military exercise 'Exercise Maitri' is being held between India and which country?",
       options: [
@@ -177,7 +177,7 @@ const august2026CurrentAffairs = {
     },
     {
       id: "ca-2026-08-19-015",
-      category: "Art & Culture",
+      category: "Art and Culture",
       question:
         "Which famous Bengali filmmaker passed away recently at the age of 71?",
       options: ["Raja Sen", "Tapan Sinha", "Mrinal Sen", "Rituparno Ghosh"],
@@ -187,7 +187,7 @@ const august2026CurrentAffairs = {
     },
     {
       id: "ca-2026-08-19-016",
-      category: "Defence & Security",
+      category: "Defence & Technology",
       question:
         "Which organization launched the cybersecurity initiative CYBER KUSHTI 2026?",
       options: [
@@ -198,7 +198,7 @@ const august2026CurrentAffairs = {
       ],
       answer: 3,
       explanation:
-        "CYBER KUSHTI 2026 was launched by the Indian Computer Emergency Response Team (CERT-In).",
+        "→ CYBER KUSHTI → NIELIT → MeitY → Cybersecurity + AI Hackathon.",
     },
     {
       id: "ca-2026-08-19-017",
@@ -288,7 +288,7 @@ const august2026CurrentAffairs = {
       notes: ["6 August 2026: J&K CM Omar Abdullah ने tunnel का inspection किया था"],},
     {
       id: "ca-2026-08-20-003",
-      category: "Defence & Security",
+      category: "Defence & Technology",
       question:
         "How many Indian peacekeepers were awarded the United Nations Medal?",
       options: ["110", "210", "310", "410"],
@@ -403,7 +403,7 @@ const august2026CurrentAffairs = {
     },
     {
       id: "ca-2026-08-20-013",
-      category: "Art & Culture",
+      category: "Art and Culture",
       question: "Which renowned sculptor passed away at the age of 75?",
       options: [
         "Chandrashekhar Y. Shilpi",
@@ -418,7 +418,7 @@ const august2026CurrentAffairs = {
       notes: ["Chandrashekhar Shilpi → 75 → Sculptor → Wood & Stone → Karnataka"],},
     {
       id: "ca-2026-08-20-014",
-      category: "Defence & Security",
+      category: "Defence & Technology",
       question:
         "Chief of Army Staff General Dhiraj Seth received the Honorary General rank of which country's army?",
       options: ["Bhutan", "Sri Lanka", "Nepal", "Bangladesh"],
@@ -728,7 +728,7 @@ const august2026CurrentAffairs = {
     },
     {
       id: "ca-2026-08-21-015",
-      category: "Defence & Security",
+      category: "Defence & Technology",
       question:
         "Which Indian Navy command did Japanese Defense Minister Shinjiro Koizumi visit in Mumbai during his trip to India?",
       options: [
@@ -743,7 +743,7 @@ const august2026CurrentAffairs = {
     },
     {
       id: "ca-2026-08-21-016",
-      category: "Defence & Security",
+      category: "Defence & Technology",
       question: "Where will India host the 5th Coast Guard Global Summit?",
       options: ["Mumbai", "New Delhi", "Kochi", "Visakhapatnam"],
       answer: 1,
@@ -900,7 +900,7 @@ const august2026CurrentAffairs = {
     },
     {
       id: "ca-2026-08-21-030",
-      category: "Defence & Security",
+      category: "Defence & Technology",
       question:
         "Which organization organized the Adab aur Saqafat - Literary Festival 2026 at the Government Degree College, Kargil to celebrate the literary and cultural heritage of Ladakh?",
       options: ["Indian Army", "NITI Aayog", "Ministry of Culture", "NCERT"],
@@ -1320,7 +1320,7 @@ const august2026CurrentAffairs = {
       "The proposed draft regulations mandate that a doctor's licence to practice medicine shall be valid for 5 years, after which it must be renewed.",
   },{
     id: "ca-2026-08-22-025",
-    category: "Defence & Security",
+    category: "Defence & Technology",
     question:
       "Which country will host the 5th Coast Guard Global Summit (CGGS) in February 2027 to mark the 50th Anniversary of its Coast Guard?",
     options: ["Japan", "India", "Australia", "France"],
@@ -1329,7 +1329,7 @@ const august2026CurrentAffairs = {
       "2017: First CGGS was convened by the Japan Coast Guard and Nippon Foundation.\n2025: 4th CGGS was held in Rome, Italy. India won the bid to host the 5th edition.\n2027: India will host the 5th CGGS, with the event scheduled for February and linked to the Indian Coast Guard's 50th anniversary.\nThe Indian Coast Guard was established on 1 February 1977, so 2027 marks 50 years.",
   },{
     id: "ca-2026-08-22-026",
-    category: "Defence & Security",
+    category: "Defence & Technology",
     question:
       "Where was the first inaugural Coast Guard Global Summit (CGGS) held in 2017?",
     options: [
@@ -1432,7 +1432,7 @@ const august2026CurrentAffairs = {
       'Razorpay launched "Razorpay Vulcan", its first AI-powered foundation model built specifically to improve payment processing success rates and fraud detection.',
   },{
     id: "ca-2026-08-22-034",
-    category: "Defence & Security",
+    category: "Defence & Technology",
     question:
       'Where did the Indian Army organize the "Adab Aur Saqafat" Literary Festival 2026?',
     options: ["Leh", "Drass", "Nubra", "Kargil"],
@@ -1524,7 +1524,7 @@ const august2026CurrentAffairs = {
       "Importance: Indigenous/Atmanirbhar defence technology milestone\nKawa UAV → Lucknow → Divyastra Mk3 → Jet-powered → 11 Aug 2026.",
   },{
     id: "ca-2026-08-22-042",
-    category: "Art & Culture",
+    category: "Art and Culture",
     question:
       "Who presented the 2024 National Craftsman Award to senior sculptor Chandrashekhar Y. Shilpi?",
     options: ["Droupadi Murmu", "Narendra Modi", "Amit Shah", "Nirmala Sitharaman"],
@@ -1741,7 +1741,7 @@ const august2026CurrentAffairs = {
       "India's first Virtual Zoo was developed under a Public-Private Partnership (PPP) model at the Kamla Nehru Prani Sangrahalaya (Indore Zoo) in Madhya Pradesh.",
   },{
     id: "ca-2026-08-22-065",
-    category: "Defence & Security",
+    category: "Defence & Technology",
     question:
       "Consider the following statements regarding the 15th edition of Exercise Maitree:\n1. It is a joint military exercise conducted between the armies of India and Thailand.\n2. The 15th edition in August 2026 was hosted in Meghalaya, India.\nWhich of the statements given above is/are correct?",
     options: ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
@@ -1778,7 +1778,7 @@ const august2026CurrentAffairs = {
       "The Army Paralympic Node located in Pune was awarded the Rashtriya Khel Protsahan Puraskar for its contribution to encouraging and training para-athletes.",
   },{
     id: "ca-2026-08-22-068",
-    category: "Art & Culture",
+    category: "Art and Culture",
     question:
       "Renowned sculptor Chandrashekhar Y. Shilpi, who passed away in August 2026, was celebrated for incorporating architectural elements from which region's historical dynasties into his artwork?",
     options: [
@@ -1792,7 +1792,7 @@ const august2026CurrentAffairs = {
       "Chandrashekhar Y. Shilpi was an eminent sculptor from Karnataka whose stone, metal, and wood sculptures reflected the classic temple art and architecture of South Indian dynasties like Chalukya, Hoysala, Chola, Rashtrakuta, and Pallava.",
   },{
     id: "ca-2026-08-22-069",
-    category: "Defence & Security",
+    category: "Defence & Technology",
     question:
       "General Dhiraj Seth was conferred with the honorary rank of General of the Army by which country in August 2026, continuing a reciprocal tradition established in 1950?",
     options: ["Bhutan", "Nepal", "Sri Lanka", "Bangladesh"],
@@ -2504,7 +2504,7 @@ const august2026CurrentAffairs = {
 
   {
     id: "ca-2026-08-25-024",
-    category: "Art & Culture",
+    category: "Art and Culture",
     question:
       "MALHAR 2026 was primarily organised with which objective?",
     options: [
@@ -2954,11 +2954,11 @@ const august2026CurrentAffairs = {
 
   { id: 'ca-2026-08-041', category: 'Sports', question: "In which year was the Durand Cup established? It related to football", options: ['1885', '1888', '1890', '1901'], answer: 1, explanation: 'The Durand Cup was established in 1888 at Shimla.' , subQuestions: [{"question": "Who founded the Durand Cup?", "options": ["Sir Mortimer Durand", "Lord Curzon"], "answer": 0, "explanation": "The tournament was named after Sir Mortimer Durand."}, {"question": "Where was the Durand Cup originally started?", "options": ["Shimla", "Kolkata"], "answer": 0, "explanation": "The Durand Cup was originally started in Shimla in 1888."}, {"question": "Which country hosts the Durand Cup?", "options": ["India", "England"], "answer": 0, "explanation": "The Durand Cup is held in India."}],},
 
-  { id: 'ca-2026-08-042', category: 'Defence & Security', question: 'Where did the Indian Army deploy the country\'s first Baaz Drone Battalion?', options: ['Amritsar', 'Jalandhar Cantonment', 'Pathankot', 'Firozpur'], answer: 1, explanation: 'The Indian Army\'s XI Vajra Corps deployed the first Baaz Drone Battalion at Jalandhar Cantonment.' },
+  { id: 'ca-2026-08-042', category: "Defence & Technology", question: 'Where did the Indian Army deploy the country\'s first Baaz Drone Battalion?', options: ['Amritsar', 'Jalandhar Cantonment', 'Pathankot', 'Firozpur'], answer: 1, explanation: 'The Indian Army\'s XI Vajra Corps deployed the first Baaz Drone Battalion at Jalandhar Cantonment.' },
 
-  { id: 'ca-2026-08-043', category: 'Defence & Security', question: 'Which Indian Army corps deployed the country\'s first Baaz Drone Battalion?', options: ['X Corps', 'XI Vajra Corps', 'XIV Corps', 'XV Corps'], answer: 1, explanation: 'The source identifies the XI Vajra Corps as the formation that deployed the unit.' },
+  { id: 'ca-2026-08-043', category: "Defence & Technology", question: 'Which Indian Army corps deployed the country\'s first Baaz Drone Battalion?', options: ['X Corps', 'XI Vajra Corps', 'XIV Corps', 'XV Corps'], answer: 1, explanation: 'The source identifies the XI Vajra Corps as the formation that deployed the unit.' },
 
-  { id: 'ca-2026-08-044', category: 'Defence & Security', question: 'The Baaz Drone Battalion is intended to support surveillance along approximately how much of the Pakistan border?', options: ['200+ km', '300+ km', '500+ km', '800+ km'], answer: 2, explanation: 'The source says the unit will help monitor a 500+ km border with Pakistan.' },
+  { id: 'ca-2026-08-044', category: "Defence & Technology", question: 'The Baaz Drone Battalion is intended to support surveillance along approximately how much of the Pakistan border?', options: ['200+ km', '300+ km', '500+ km', '800+ km'], answer: 2, explanation: 'The source says the unit will help monitor a 500+ km border with Pakistan.' },
 
   { id: 'ca-2026-08-045', category: 'Sports', question: "Which city will host the 2nd Commonwealth Cue Sports Championships in 2026? held at veer savarkar sports from 7-10 oct", options: ['Mumbai', 'Ahmedabad', 'New Delhi', 'Jaipur'], answer: 1, explanation: "Main 5 disciplines hain: Snooker, English Billiards, Heyball, 10-Ball Pool aur Blackball. Inmein men's aur women's events honge. Official WCBS information ke according 10 medal events planned hain."},
 
@@ -2986,23 +2986,23 @@ const august2026CurrentAffairs = {
 
   { id: 'ca-2026-08-057', category: 'International', question: 'Which US state passed a resolution to observe November 8 as Diwali Day?', options: ['Texas', 'New York', 'California', 'Florida'], answer: 2, explanation: 'The 26 August practice sheet gives California.' },
 
-  { id: 'ca-2026-08-058', category: 'Defence & Security', question: 'In which city was the 9th National Security Strategy Conference held?', options: ['Mumbai', 'New Delhi', 'Hyderabad', 'Lucknow'], answer: 1, explanation: 'The 9th National Security Strategy Conference was held in New Delhi.' },
+  { id: 'ca-2026-08-058', category: "Defence & Technology", question: 'In which city was the 9th National Security Strategy Conference held?', options: ['Mumbai', 'New Delhi', 'Hyderabad', 'Lucknow'], answer: 1, explanation: 'The 9th National Security Strategy Conference was held in New Delhi.' },
 
-  { id: 'ca-2026-08-059', category: 'Defence & Security', question: 'What is the name of India\'s first indigenous assault rifle mentioned as successfully tested in the supplied sheet?', options: ['INSAS-2', 'AK-203 Sher', 'Trichy Carbine', 'Tavor Bharat'], answer: 1, explanation: 'The supplied sheet gives AK-203 Sher.' },
+  { id: 'ca-2026-08-059', category: "Defence & Technology", question: 'What is the name of India\'s first indigenous assault rifle mentioned as successfully tested in the supplied sheet?', options: ['INSAS-2', 'AK-203 Sher', 'Trichy Carbine', 'Tavor Bharat'], answer: 1, explanation: 'The supplied sheet gives AK-203 Sher.' },
 
   { id: 'ca-2026-08-060', category: 'Environment', question: 'Which bird sanctuary was identified as a key breeding ground for the Black-necked Stork?', options: ['Nal Sarovar Bird Sanctuary', 'Khijadia Bird Sanctuary', 'Sultanpur Bird Sanctuary', 'Keoladeo National Park'], answer: 1, explanation: 'The supplied sheet identifies Khijadia Bird Sanctuary.' },
 
-  { id: 'ca-2026-08-061', category: 'Defence & Security', question: 'Which organization\'s training academy launched India\'s first Women Commando Conversion Course (MCCC)?', options: ['CRPF', 'BSF', 'National Security Guard (NSG)', 'CISF'], answer: 2, explanation: 'The supplied sheet gives the National Security Guard (NSG).' },
+  { id: 'ca-2026-08-061', category: "Defence & Technology", question: 'Which organization\'s training academy launched India\'s first Women Commando Conversion Course (MCCC)?', options: ['CRPF', 'BSF', 'National Security Guard (NSG)', 'CISF'], answer: 2, explanation: 'The supplied sheet gives the National Security Guard (NSG).' },
 
   { id: 'ca-2026-08-062', category: 'Environment', question: 'What daily global average sea surface temperature was recorded on 21 and 22 August 2026, excluding polar regions?', options: ['20.1°C', '20.6°C', '21.1°C', '21.6°C'], answer: 2, explanation: 'The supplied sheet gives 21.1°C.' },
 
   { id: 'ca-2026-08-063', category: 'International', question: 'Which country was removed from the US list of State Sponsors of Terrorism, according to the supplied sheet?', options: ['Iran', 'Cuba', 'Syria', 'North Korea'], answer: 2, explanation: 'The supplied sheet gives Syria.' },
 
-  { id: 'ca-2026-08-064', category: 'Defence & Security', question: 'The \'Eagles of Civilization 2026\' joint air exercise was conducted between which two countries?', options: ['India and Egypt', 'Egypt and China', 'China and Pakistan', 'Egypt and Türkiye'], answer: 1, explanation: 'The supplied sheet states Egypt and China.' },
+  { id: 'ca-2026-08-064', category: "Defence & Technology", question: 'The \'Eagles of Civilization 2026\' joint air exercise was conducted between which two countries?', options: ['India and Egypt', 'Egypt and China', 'China and Pakistan', 'Egypt and Türkiye'], answer: 1, explanation: 'The supplied sheet states Egypt and China.' },
 
   { id: 'ca-2026-08-065', category: 'National', question: 'Which state government will constitute the new disaster response force named \'Arjun Vahini\'?', options: ['Odisha', 'Assam', 'West Bengal', 'Bihar'], answer: 2, explanation: 'The supplied sheet gives West Bengal.' },
 
-  { id: 'ca-2026-08-066', category: 'Defence & Security', question: 'Who inaugurated the 9th National Security Strategy Conference 2026?', options: ['Rajnath Singh', 'Amit Shah', 'Ajit Doval', 'Nitin Gadkari'], answer: 1, explanation: "9th National Security Strategies Conference 2026 → 24–25 August 2026 → New Delhi → inaugurated by Union Home Minister Amit Shah → hybrid mode → 850+ participants.\nFocus → Counter-terrorism + MAC intelligence + cybercrime + illegal migration + narcotics + information warfare + Blue Economy security + bio-security + AI use."},
+  { id: 'ca-2026-08-066', category: "Defence & Technology", question: 'Who inaugurated the 9th National Security Strategy Conference 2026?', options: ['Rajnath Singh', 'Amit Shah', 'Ajit Doval', 'Nitin Gadkari'], answer: 1, explanation: "9th National Security Strategies Conference 2026 → 24–25 August 2026 → New Delhi → inaugurated by Union Home Minister Amit Shah → hybrid mode → 850+ participants.\nFocus → Counter-terrorism + MAC intelligence + cybercrime + illegal migration + narcotics + information warfare + Blue Economy security + bio-security + AI use."},
 
   { id: 'ca-2026-08-067', category: 'Environment', question: 'Which wildlife species was confirmed in Karnataka\'s Kishkindha Hills after nearly five decades?', options: ['Leopard', 'Tiger', 'Sloth Bear', 'Wolf'], answer: 1, explanation: 'The supplied sheet gives Tiger.' },
 
@@ -3032,7 +3032,7 @@ const august2026CurrentAffairs = {
 
   { id: 'ca-2026-08-080', category: 'National', question: 'Who won Miss Universe India 2026, according to the supplied sheet?', options: ['Kaziah Liz Mejo', 'Rhea Singha', 'Nandini Gupta', 'Sini Shetty'], answer: 0, explanation: "→ Kaziah Liz Mejo, a 19-year-old law student and model from Kerala, won Miss Universe India 2026\n→ Venue: Zee Studios, Jaipur, Rajasthan\n Miss Universe India 2026 → Kaziah Liz Mejo → Kerala → Jaipur → Puerto Rico\n\n→ 1st Runner-up: Vaishnavi Gannesh — Tamil Nadu\n→ 2nd Runner-up: Anushri Satavlekar — Gujarat.\n"},
 
-  { id: 'ca-2026-08-081', category: 'Defence & Security', question: 'Where was India\'s first 100% indigenous AK-203 assault rifle \'Sher\' manufactured?', options: ['Amethi, Uttar Pradesh', 'Korwa, Uttar Pradesh', 'Kanpur, Uttar Pradesh', 'Jabalpur, Madhya Pradesh'], answer: 1, explanation: 'The supplied sheet gives Korwa, Uttar Pradesh.' },
+  { id: 'ca-2026-08-081', category: "Defence & Technology", question: 'Where was India\'s first 100% indigenous AK-203 assault rifle \'Sher\' manufactured?', options: ['Amethi, Uttar Pradesh', 'Korwa, Uttar Pradesh', 'Kanpur, Uttar Pradesh', 'Jabalpur, Madhya Pradesh'], answer: 1, explanation: 'The supplied sheet gives Korwa, Uttar Pradesh.' },
 
   { id: 'ca-2026-08-082', category: 'Economy', question: 'To which location did Indian Railways operate its first double-stack long-haul container train from JNPT?', options: ['Varnama', 'Vadodara', 'Surat', 'Ahmedabad'], answer: 0, explanation: 'The 25 August practice sheet gives Varnama.' },
 
@@ -3056,9 +3056,9 @@ const august2026CurrentAffairs = {
 
   { id: 'ca-2026-08-092', category: 'Science & Tech', question: 'How many learners will receive foundational AI and Cloud Computing training under the NSDC initiative?', options: ['50,000', '1 lakh', '1.5 lakh', '2 lakh'], answer: 2, explanation: 'The supplied sheet gives \n1.5 lakh learners.' },
 
-  { id: 'ca-2026-08-093', category: 'Defence & Security', question: 'Which Indian Navy sailing training vessel reached Lisbon during the \'Lokayan 26\' expedition?', options: ['INS Tarangini', 'INS Sudarshini', 'INSV Tarini', 'INSV Mhadei'], answer: 1, explanation: "Lokayan 26 → Indian Navy ki 10-month transoceanic sailing expedition hai.\n→ January 2026 mein Kochi se start hui.\n→ Around 22,000 nautical miles cover karne aur 13 countries ke 18 foreign ports visit karne ka programme hai.\n→ Is expedition mein 200+ Navy aur Coast Guard trainees ko sail training milni hai." ,notes: ["Aur 22 August 2026 ko INS Sudarshini Lisbon, Portugal pahunchi. Ye Lokayan 26 voyage ka 15th port visit tha."],},
+  { id: 'ca-2026-08-093', category: "Defence & Technology", question: 'Which Indian Navy sailing training vessel reached Lisbon during the \'Lokayan 26\' expedition?', options: ['INS Tarangini', 'INS Sudarshini', 'INSV Tarini', 'INSV Mhadei'], answer: 1, explanation: "Lokayan 26 → Indian Navy ki 10-month transoceanic sailing expedition hai.\n→ January 2026 mein Kochi se start hui.\n→ Around 22,000 nautical miles cover karne aur 13 countries ke 18 foreign ports visit karne ka programme hai.\n→ Is expedition mein 200+ Navy aur Coast Guard trainees ko sail training milni hai." ,notes: ["Aur 22 August 2026 ko INS Sudarshini Lisbon, Portugal pahunchi. Ye Lokayan 26 voyage ka 15th port visit tha."],},
 
-  { id: 'ca-2026-08-094', category: 'Defence & Security', question: 'Which ASW Shallow Water Craft built by Cochin Shipyard was received by the Indian Navy as the third vessel of its class?', options: ['Mahe', 'Malvan', 'Mangrol', 'Arnala'], answer: 2, explanation: "ASW = Anti-Submarine Warfare\nSWC = Shallow Water Craft\n\nMahe → 1st\nMalvan → 2nd\nMangrol → 3rd ✅" ,notes: ["Shallow Water Craft = kam gehre coastal paani mein operate karne wala naval vessel"],},
+  { id: 'ca-2026-08-094', category: "Defence & Technology", question: 'Which ASW Shallow Water Craft built by Cochin Shipyard was received by the Indian Navy as the third vessel of its class?', options: ['Mahe', 'Malvan', 'Mangrol', 'Arnala'], answer: 2, explanation: "ASW = Anti-Submarine Warfare\nSWC = Shallow Water Craft\n\nMahe → 1st\nMalvan → 2nd\nMangrol → 3rd ✅" ,notes: ["Shallow Water Craft = kam gehre coastal paani mein operate karne wala naval vessel"],},
 
   { id: 'ca-2026-08-095', category: 'Sports', question: 'Where will the 20th Asian Games 2026 be held?', options: ['Tokyo, Japan', 'Aichi-Nagoya, Japan', 'Seoul, South Korea', 'Doha, Qatar'], answer: 1, explanation: "20th → 2026 → Aichi–Nagoya, Japan 🇯🇵\n21st → 2030 → Doha, Qatar 🇶🇦\n22nd → 2034 → Riyadh, Saudi Arabia 🇸🇦\n\n🧠 Exam note\n\n20th Asian Games → Aichi–Nagoya, Japan → 19 Sept–4 Oct 2026 → Japan hosting for 3rd time → Motto: “Imagine One Asia” → India: 492 athletes."},
 
@@ -3109,7 +3109,7 @@ const august2026CurrentAffairs = {
 
 { id: 'ca-2026-08-027-017', category: 'National', question: 'Consider the following statements regarding Khijadiya Bird Sanctuary:\n1. It is located in Jamnagar district of Gujarat.\n2. It has been confirmed as an important breeding site for the Black-necked Stork.\nWhich of the statements given above is/are correct?', options: ['1 only', '2 only', 'Both 1 and 2', 'Neither 1 nor 2'], answer: 2, explanation: "Why in News? — August 2026 me GEER Foundation ki study ke according Khijadiya Bird Sanctuary Black-necked Stork ka important breeding stronghold ban kar saamne aaya.\n\nYaad rakho:\n\nKhijadiya → Jamnagar, Gujarat → Ramsar Site → Central Asian Flyway → Black-necked Stork → 4 nests → 8 fledglings → 100% monitored fledging success.\n\nBlack-necked Stork ka scientific name Ephippiorhynchus asiaticus hai; current sources ise IUCN Near Threatened aur India ke Wild Life (Protection) Act, 1972 ke Schedule II me listed batate hain."},
 
-{ id: 'ca-2026-08-027-018', category: 'National', question: 'Consider the following statements regarding the 2028 India Open Badminton Tournament:\n1. It will be hosted by Guwahati, Assam.\n2. It will be held at the National Centre of Excellence for Badminton instead of the traditional New Delhi venue.\nWhich of the statements given above is/are correct?', options: ['1 only', '2 only', 'Both 1 and 2', 'Neither 1 nor 2'], answer: 2, explanation: 'Both statements are correct. The tournament is planned in Guwahati because its schedule clashes with Republic Day security arrangements in New Delhi.' },
+{ id: 'ca-2026-08-027-018', category: 'National', question: 'Consider the following statements regarding the 2028 India Open Badminton Tournament:\n1. It will be hosted by Guwahati, Assam.\n2. It will be held at the National Centre of Excellence for Badminton instead of the traditional New Delhi venue.\nWhich of the statements given above is/are correct?', options: ['1 only', '2 only', 'Both 1 and 2', 'Neither 1 nor 2'], answer: 2, explanation: "Tournament → India Open Badminton\nCategory → BWF World Tour Super 750\n2027 → New Delhi (2–7 February)\n2028 → Guwahati (25–30 January)\nVenue → National Centre of Excellence for Badminton\n2029 → Tournament New Delhi wapas aayega"},
 
 { id: 'ca-2026-08-027-019', category: 'National', question: 'Consider the following statements regarding the India-Bangladesh Ganga Water Sharing Treaty:\n1. It was signed on 12 December 1996.\n2. It was concluded for a period of 30 years.\nWhich of the statements given above is/are correct?', options: ['1 only', '2 only', 'Both 1 and 2', 'Neither 1 nor 2'], answer: 2, explanation: 'Both statements are correct. The treaty provides for dry-season Ganga water sharing at Farakka and is due to complete its 30-year term in December 2026.' },
 
@@ -3131,9 +3131,9 @@ const august2026CurrentAffairs = {
 
 { id: 'ca-2026-08-028-005', category: 'Government Schemes', question: 'Consider the following statements about the pilot of Mission Samriddh Gaon: \n1. It is initially to be implemented in Budni Block of Sehore district. \n2. Khategaon Block is also included in the pilot. Which is correct?', options: ['1 only', '2 only', 'Both 1 and 2', 'Neither 1 nor 2'], answer: 2, explanation: 'Both statements are correct. The PDF lists Budni and Khategaon as the two blocks selected for the initial pilot in Madhya Pradesh.' },
 
-{ id: 'ca-2026-08-028-006', category: 'Defence', question: 'Consider the following statements regarding Exercise Sahyog HOP TAC: \n1. It is a joint exercise between the Indian Coast Guard and Vietnam Coast Guard. \n2. Its second edition was held in Chennai in August 2026. Which is correct?', options: ['1 only', '2 only', 'Both 1 and 2', 'Neither 1 nor 2'], answer: 2, explanation: 'Both statements are correct. The second ICG-VCG Sahyog HOP TAC exercise was organised in Chennai in August 2026.' },
+{ id: 'ca-2026-08-028-006', category: "Defence & Technology", question: 'Consider the following statements regarding Exercise Sahyog HOP TAC: \n1. It is a joint exercise between the Indian Coast Guard and Vietnam Coast Guard. \n2. Its second edition was held in Chennai in August 2026. Which is correct?', options: ['1 only', '2 only', 'Both 1 and 2', 'Neither 1 nor 2'], answer: 2, explanation: 'Both statements are correct. The second ICG-VCG Sahyog HOP TAC exercise was organised in Chennai in August 2026.' },
 
-{ id: 'ca-2026-08-028-007', category: 'Defence', question: 'Consider the following statements regarding ICGS Ajit: \n1. It was handed over to the Indian Coast Guard by Goa Shipyard Limited. \n2. It is the seventh vessel in a series of eight Fast Patrol Vessels. Which is correct?', options: ['1 only', '2 only', 'Both 1 and 2', 'Neither 1 nor 2'], answer: 2, explanation: 'Both statements are correct. ICGS Ajit (Yard 1277) is the seventh of eight indigenous Fast Patrol Vessels being built by GSL.' },
+{ id: 'ca-2026-08-028-007', category: "Defence & Technology", question: 'Consider the following statements regarding ICGS Ajit: \n1. It was handed over to the Indian Coast Guard by Goa Shipyard Limited. \n2. It is the seventh vessel in a series of eight Fast Patrol Vessels. Which is correct?', options: ['1 only', '2 only', 'Both 1 and 2', 'Neither 1 nor 2'], answer: 2, explanation: 'Both statements are correct. ICGS Ajit (Yard 1277) is the seventh of eight indigenous Fast Patrol Vessels being built by GSL.' },
 
 { id: 'ca-2026-08-028-008', category: 'Important Days', question: 'Consider the following statements regarding World Sanskrit Day: \n1. It is observed every year on Shravan Purnima. \n2. The first World Sanskrit Day was observed in 1969. Which is correct?', options: ['1 only', '2 only', 'Both 1 and 2', 'Neither 1 nor 2'], answer: 2, explanation: 'Both statements are correct. World Sanskrit Day is observed on Shravan Purnima and was first celebrated in 1969.' },
 
@@ -3176,7 +3176,7 @@ const august2026CurrentAffairs = {
 
 { id: 'ca-2026-08-029-010', category: 'Sports', question: 'Consider the following statements regarding Grand Master Trilok Subba: 1. He is from Sikkim. \n2. He was selected to represent India at the World Taekwondo Poomsae Championship 2026 in Chuncheon, South Korea. Which is correct?', options: ['1 only', '2 only', 'Both 1 and 2', 'Neither 1 nor 2'], answer: 2, explanation: "→ Lifetime Achievement Award 🏆 → 2026"},
 
-{ id: 'ca-2026-08-029-011', category: 'Art & Culture', question: 'Consider the following statements regarding the ancient Saraswati idol reported from Madhya Pradesh: 1. It is a black-sandstone idol found at Manasa in Neemuch district. \n2. Saraswati is depicted playing an ancient curved harp-like instrument called Vakra-Veena. Which is correct?', options: ['1 only', '2 only', 'Both 1 and 2', 'Neither 1 nor 2'], answer: 2, explanation: "Saraswati Idol → Manasa → Neemuch, Madhya Pradesh → Ujjain Museum → 2nd century CE → Malava period → ~1,800 years old → Black sandstone → Vakra-Veena (harp-like instrument)."},
+{ id: 'ca-2026-08-029-011', category: "Art and Culture", question: 'Consider the following statements regarding the ancient Saraswati idol reported from Madhya Pradesh: 1. It is a black-sandstone idol found at Manasa in Neemuch district. \n2. Saraswati is depicted playing an ancient curved harp-like instrument called Vakra-Veena. Which is correct?', options: ['1 only', '2 only', 'Both 1 and 2', 'Neither 1 nor 2'], answer: 2, explanation: "Saraswati Idol → Manasa → Neemuch, Madhya Pradesh → Ujjain Museum → 2nd century CE → Malava period → ~1,800 years old → Black sandstone → Vakra-Veena (harp-like instrument)."},
 { id: 'ca-2026-08-029-022', category: 'National', question: 'Consider the following statements regarding the soap factory at Malanpur Industrial Area:\n1. Malanpur Industrial Area is in Madhya Pradesh.\n2. The factory has a production capacity of about 4,000 soaps per minute.\nWhich of the statements given above is/are correct?', options: ['1 only', '2 only', 'Both 1 and 2', 'Neither 1 nor 2'], answer: 2, explanation: "Both statements are correct. Godrej Consumer Products inaugurated the unit in Malanpur Industrial Area with an investment exceeding ₹450 crore and capacity of about 4,000 soaps per minute."}
 ],
 "2026-08-31": [
@@ -3209,7 +3209,7 @@ const august2026CurrentAffairs = {
 
   {
     id: 'ca-2026-08-031-004',
-    category: 'Books, Authors and Polity',
+    category: "Defence & Technology",
     question: 'Consider the following statements regarding “Sankalp Se Siddhi Ka Modi Yug” and its author:\n1. The book was written by Ghanshyam Tiwari and published by Rupa Publications.\n2. It discusses India’s transformation journey over the previous 12 years.\n3. C. P. Radhakrishnan released the book in New Delhi in August 2026.\n4. Ghanshyam Tiwari is a BJP-associated Rajya Sabha MP from Rajasthan who has served as a state minister.\nWhich of the statements given above are correct?',
     options: ['1 and 2 only', '1, 2 and 3 only', '2, 3 and 4 only', '1, 2, 3 and 4'],
     answer: 3,
@@ -3227,7 +3227,7 @@ const august2026CurrentAffairs = {
 
   {
     id: 'ca-2026-08-031-006',
-    category: 'Defence',
+    category: "Defence & Technology",
     question: 'Consider the following statements regarding India’s Javelin missile procurement and the missile system:\n1. India agreed to procure the FGM-148 Javelin Anti-Tank Guided Missile system from the USA through the Foreign Military Sales process.\n2. FMS is a US government-to-government defence sales mechanism.\n3. Javelin is a man-portable, fire-and-forget anti-tank missile designed for use against armoured vehicles.\n4. The system is associated with Raytheon and Lockheed Martin.\nWhich of the statements given above are correct?',
     options: ['1 and 2 only', '1, 2 and 3 only', '2, 3 and 4 only', '1, 2, 3 and 4'],
     answer: 3,
@@ -3245,7 +3245,7 @@ const august2026CurrentAffairs = {
 
   {
     id: 'ca-2026-08-031-008',
-    category: 'Defence',
+    category: "Defence & Technology",
     question: 'Consider the following statements regarding INS Samarthak and the Samarthak-class project:\n1. INS Samarthak is the Indian Navy’s first indigenous Multi-Purpose Vessel and was built by Larsen & Toubro at Kattupalli, Tamil Nadu.\n2. It is 106 metres long, 16.8 metres wide, has a maximum speed of 15 knots and contains more than 75% indigenous content.\n3. It can support surveillance, patrolling and HADR operations.\n4. Two vessels are being built under the ₹887 crore project: INS Samarthak and INS Utkarsh.\nWhich of the statements given above are correct?',
     options: ['1 and 2 only', '1, 2 and 3 only', '2, 3 and 4 only', '1, 2, 3 and 4'],
     answer: 3,

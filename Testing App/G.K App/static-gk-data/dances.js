@@ -103,7 +103,7 @@ const staticDanceQuestions = [
 
 { id: 'static-dance-052', category: 'Manipuri Personalities', question: 'Famous dance guru Rajkumar Singhajit Singh is associated with which dance style?', options: ['Kathak', 'Manipuri', 'Odissi', 'Kathakali'], answer: 1, explanation: 'Rajkumar Singhajit Singh is associated with Manipuri dance. Extra Detail → He has been a major teacher and exponent of the Manipuri classical tradition.' },
 
-{ id: 'static-dance-053', category: 'Mizoram Folk Dance', question: 'Cheraw, popularly known as the bamboo dance, is the traditional cultural dance of which state?', options: ['Jharkhand', 'Uttarakhand', 'Mizoram', 'Manipur'], answer: 2, explanation: 'Cheraw is the famous bamboo dance of Mizoram. Extra Detail → Performers step rhythmically between moving bamboo staves, making timing and coordination essential.' },
+{ id: 'static-dance-053', category: 'Mizoram Folk Dance', question: 'Cheraw, popularly known as the bamboo dance, is the traditional cultural dance of which state?', options: ['Jharkhand', 'Uttarakhand', 'Mizoram', 'Manipur'], answer: 2, explanation: 'Cheraw is the famous bamboo dance of Mizoram. Extra Detail → Performers step rhythmically between moving bamboo staves, making timing and coordination essential.' , notes: ["https://youtube.com/shorts/CMBIZwxoC34?si=4QJY_DiUt4PwG7Lx"],},
 
 { id: 'static-dance-054', category: 'Kathak Personalities', question: 'Pandit Birju Maharaj was a famous dancer of which Indian dance style?', options: ['Odissi', 'Bharatanatyam', 'Kuchipudi', 'Kathak'], answer: 3, explanation: 'Pandit Birju Maharaj was one of India\'s most celebrated Kathak dancers. Extra Detail → He belonged to the Lucknow Kalka-Bindadin gharana and was renowned for rhythm, expression and storytelling.' },
 

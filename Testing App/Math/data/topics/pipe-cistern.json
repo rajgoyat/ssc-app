@@ -16,7 +16,8 @@
     "order": 15,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Pipe & Cistern",
@@ -35,7 +36,8 @@
     "order": 80,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Pipe & Cistern",
@@ -54,7 +56,8 @@
     "order": 99,
     "attemptStatus": "correct",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Pipe & Cistern",
@@ -73,6 +76,7 @@
     "order": 103,
     "attemptStatus": "correct",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   }
 ]

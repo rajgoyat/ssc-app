@@ -16,7 +16,8 @@
     "order": 0,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "id": "algm-3",
@@ -35,7 +36,8 @@
     "order": 1,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "id": "ci-1",
@@ -54,7 +56,8 @@
     "order": 2,
     "attemptStatus": "unattemped",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "id": "ci-2",
@@ -73,7 +76,8 @@
     "order": 5,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "id": "geom-1",
@@ -92,7 +96,8 @@
     "order": 6,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "id": "geom-2",
@@ -111,7 +116,8 @@
     "order": 7,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "id": "geom-3",
@@ -130,7 +136,8 @@
     "order": 8,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "id": "mix-2",
@@ -149,7 +156,8 @@
     "order": 10,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "id": "mix-3",
@@ -168,7 +176,8 @@
     "order": 11,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "id": "profit-1",
@@ -187,7 +196,8 @@
     "order": 12,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "id": "profit-2",
@@ -206,7 +216,8 @@
     "order": 13,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "id": "prog-1",
@@ -225,7 +236,8 @@
     "order": 14,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "id": "tw-1",
@@ -244,7 +256,8 @@
     "order": 15,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -263,7 +276,8 @@
     "order": 16,
     "attemptStatus": "correct",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -282,7 +296,8 @@
     "order": 17,
     "attemptStatus": "correct",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -301,7 +316,8 @@
     "order": 18,
     "attemptStatus": "correct",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -320,7 +336,8 @@
     "order": 19,
     "attemptStatus": "correct",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -339,7 +356,8 @@
     "order": 20,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -358,7 +376,8 @@
     "order": 21,
     "attemptStatus": "correct",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -377,7 +396,8 @@
     "order": 22,
     "attemptStatus": "correct",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -396,7 +416,8 @@
     "order": 23,
     "attemptStatus": "correct",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -415,7 +436,8 @@
     "order": 24,
     "attemptStatus": "correct",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -434,7 +456,8 @@
     "order": 25,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -453,7 +476,8 @@
     "order": 26,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -470,9 +494,10 @@
     "solutionImage": null,
     "id": "mt3sjslro4wrj2",
     "order": 27,
-    "attemptStatus": "unattempted",
+    "attemptStatus": "correct",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -490,8 +515,9 @@
     "id": "mt3swrq2j516lp",
     "order": 28,
     "attemptStatus": "unattempted",
-    "testAllowed": true,
-    "special": false
+    "testAllowed": false,
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -508,9 +534,10 @@
     "solutionImage": null,
     "id": "mt3t1vqqtq5i06",
     "order": 29,
-    "attemptStatus": "unattempted",
+    "attemptStatus": "correct",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -529,7 +556,8 @@
     "order": 30,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "id": "disc-3",
@@ -548,7 +576,8 @@
     "order": 31,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "id": "pct-2",
@@ -566,8 +595,9 @@
     "solutionImage": null,
     "order": 32,
     "attemptStatus": "unattempted",
-    "testAllowed": true,
-    "special": false
+    "testAllowed": false,
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -586,7 +616,8 @@
     "order": 33,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -605,7 +636,8 @@
     "order": 34,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -624,7 +656,8 @@
     "order": 35,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -643,7 +676,8 @@
     "order": 36,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -662,7 +696,8 @@
     "order": 38,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -681,7 +716,8 @@
     "order": 39,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -700,7 +736,8 @@
     "order": 40,
     "attemptStatus": "correct",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -719,7 +756,8 @@
     "order": 41,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -736,9 +774,10 @@
     "solutionImage": "/uploads/compound-interest/ee2d9f1cf13b71e6594ba92e500fd0115bec3fa8d0a874d2997578cef7e9f2d8.png",
     "id": "mt56sqeot39chh",
     "order": 42,
-    "attemptStatus": "unattempted",
+    "attemptStatus": "correct",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -755,9 +794,10 @@
     "solutionImage": "/uploads/compound-interest/a402077dce33de26412157eb7a17e75b7e2d472daae62c5614cbfe20b736b670.png",
     "id": "mt5701e829y3ic",
     "order": 43,
-    "attemptStatus": "unattempted",
+    "attemptStatus": "correct",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -776,7 +816,8 @@
     "order": 44,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -794,8 +835,9 @@
     "id": "mt57lwi56tl30u",
     "order": 45,
     "attemptStatus": "unattempted",
-    "testAllowed": true,
-    "special": false
+    "testAllowed": false,
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -814,7 +856,8 @@
     "order": 46,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -833,7 +876,8 @@
     "order": 47,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -852,7 +896,8 @@
     "order": 48,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -869,9 +914,10 @@
     "solutionImage": "/uploads/compound-interest/e2e5ec973791a7654dc41951b486a14eef94929369121242f6fef5337699e1e1.png",
     "id": "mt58kmf2ju3vp9",
     "order": 49,
-    "attemptStatus": "unattempted",
+    "attemptStatus": "correct",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -890,7 +936,8 @@
     "order": 50,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -909,7 +956,8 @@
     "order": 51,
     "attemptStatus": "correct",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -928,7 +976,8 @@
     "order": 52,
     "attemptStatus": "correct",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Geometry",
@@ -947,7 +996,8 @@
     "order": 53,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Geometry",
@@ -966,7 +1016,8 @@
     "order": 54,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Algebra",
@@ -985,7 +1036,8 @@
     "order": 55,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -1004,7 +1056,8 @@
     "order": 56,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "id": "mt81d0okwibfuh",
@@ -1023,7 +1076,8 @@
     "order": 57,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "id": "mt81o7ut8l16ne",
@@ -1042,7 +1096,8 @@
     "order": 59,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "id": "tri-1",
@@ -1061,7 +1116,8 @@
     "order": 60,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "id": "mt8273uup2217t",
@@ -1080,7 +1136,8 @@
     "order": 61,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Geometry",
@@ -1099,7 +1156,8 @@
     "order": 63,
     "attemptStatus": "correct",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Geometry",
@@ -1118,7 +1176,8 @@
     "order": 64,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Coordinate G",
@@ -1137,7 +1196,8 @@
     "order": 65,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Algebra",
@@ -1156,7 +1216,8 @@
     "order": 66,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Mensuration",
@@ -1175,7 +1236,8 @@
     "order": 67,
     "attemptStatus": "correct",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Simple Interest",
@@ -1194,7 +1256,8 @@
     "order": 68,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Mensuration",
@@ -1213,7 +1276,8 @@
     "order": 69,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Algebra",
@@ -1232,7 +1296,8 @@
     "order": 70,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Mensuration",
@@ -1251,7 +1316,8 @@
     "order": 71,
     "attemptStatus": "correct",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Trigonometry",
@@ -1270,7 +1336,8 @@
     "order": 72,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Coordinate G",
@@ -1289,7 +1356,8 @@
     "order": 73,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Time & Work",
@@ -1308,7 +1376,8 @@
     "order": 74,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Geometry",
@@ -1327,7 +1396,8 @@
     "order": 75,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Trigonometry",
@@ -1346,7 +1416,8 @@
     "order": 76,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Average",
@@ -1365,7 +1436,8 @@
     "order": 79,
     "attemptStatus": "correct",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Pipe & Cistern",
@@ -1384,7 +1456,8 @@
     "order": 80,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Trigonometry",
@@ -1403,7 +1476,8 @@
     "order": 81,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Algebra",
@@ -1422,7 +1496,8 @@
     "order": 82,
     "attemptStatus": "unattemped",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Train",
@@ -1441,7 +1516,8 @@
     "order": 83,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Train",
@@ -1460,7 +1536,8 @@
     "order": 84,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "HCF & LCM",
@@ -1479,7 +1556,8 @@
     "order": 85,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "id": "mtaw4obxia0y5w",
@@ -1498,7 +1576,8 @@
     "order": 86,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Geometry",
@@ -1517,7 +1596,8 @@
     "order": 87,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Percentage",
@@ -1536,7 +1616,8 @@
     "order": 88,
     "attemptStatus": "correct",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "hello",
@@ -1555,7 +1636,8 @@
     "order": 78,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Age",
@@ -1574,7 +1656,8 @@
     "order": 86,
     "attemptStatus": "correct",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "HCF & LCM",
@@ -1593,7 +1676,8 @@
     "order": 87,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Speed & Distance",
@@ -1612,7 +1696,8 @@
     "order": 88,
     "attemptStatus": "correct",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Percentage",
@@ -1631,7 +1716,8 @@
     "order": 89,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Average",
@@ -1650,7 +1736,8 @@
     "order": 90,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Algebra",
@@ -1669,7 +1756,8 @@
     "order": 91,
     "attemptStatus": "correct",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Speed & Distance",
@@ -1688,7 +1776,8 @@
     "order": 90,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Partnership",
@@ -1707,7 +1796,8 @@
     "order": 91,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Geometry",
@@ -1726,7 +1816,8 @@
     "order": 92,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "CP & SP",
@@ -1745,7 +1836,8 @@
     "order": 93,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -1764,7 +1856,8 @@
     "order": 94,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Percentage",
@@ -1781,9 +1874,10 @@
     "solutionImage": "/uploads/percentage/34eef41a3ce6a1db131cf4b5fd85bf62128608a6bed545e1b321c5c3788f0769.png",
     "id": "mtca9cxbuj168y",
     "order": 95,
-    "attemptStatus": "unattempted",
+    "attemptStatus": "correct",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Number System",
@@ -1802,7 +1896,8 @@
     "order": 96,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Mensuration",
@@ -1821,7 +1916,8 @@
     "order": 97,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -1840,7 +1936,8 @@
     "order": 98,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Pipe & Cistern",
@@ -1859,7 +1956,8 @@
     "order": 99,
     "attemptStatus": "correct",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Trigonometry",
@@ -1878,7 +1976,8 @@
     "order": 100,
     "attemptStatus": "correct",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Geometry",
@@ -1897,7 +1996,8 @@
     "order": 101,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Trigonometry",
@@ -1916,7 +2016,8 @@
     "order": 102,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Pipe & Cistern",
@@ -1935,7 +2036,8 @@
     "order": 103,
     "attemptStatus": "correct",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Miscll",
@@ -1954,7 +2056,8 @@
     "order": 104,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Geometry",
@@ -1973,7 +2076,8 @@
     "order": 105,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Trigonometry",
@@ -1992,7 +2096,8 @@
     "order": 106,
     "attemptStatus": "correct",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "CP & SP",
@@ -2011,7 +2116,8 @@
     "order": 107,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Algebra",
@@ -2030,7 +2136,8 @@
     "order": 108,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "CP & SP",
@@ -2049,7 +2156,8 @@
     "id": "mti1pb86ymsjuz",
     "order": 109,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "HCF & LCM",
@@ -2068,7 +2176,8 @@
     "id": "mtikxq87ejyv7p",
     "order": 110,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Geometry",
@@ -2086,8 +2195,9 @@
     "special": false,
     "id": "mtil1296fzjd13",
     "order": 111,
-    "attemptStatus": "unattempted",
-    "testAllowed": true
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Percentage",
@@ -2106,7 +2216,8 @@
     "id": "mtil6u57fec6lh",
     "order": 112,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Geometry",
@@ -2125,7 +2236,8 @@
     "id": "mtil8sjf5m7006",
     "order": 113,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Trigonometry",
@@ -2144,7 +2256,8 @@
     "id": "mtimetuvf6wb8b",
     "order": 114,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Boat & Water",
@@ -2163,7 +2276,8 @@
     "id": "mtimuz8geng8e1",
     "order": 115,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Geometry",
@@ -2182,7 +2296,8 @@
     "id": "mtin81ogw1cotu",
     "order": 116,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Trigonometry",
@@ -2201,7 +2316,8 @@
     "id": "mtinyqej80dfj8",
     "order": 117,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2220,7 +2336,8 @@
     "id": "mtmaz58xv2di2r",
     "order": 118,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2239,7 +2356,8 @@
     "id": "mtmb5hpa2v7861",
     "order": 119,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2258,7 +2376,8 @@
     "id": "mtmbbtay6fdkly",
     "order": 120,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2277,7 +2396,8 @@
     "id": "mtmbzyiv5lzuer",
     "order": 121,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2296,7 +2416,8 @@
     "id": "mtmcccmzakfhzi",
     "order": 122,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2315,7 +2436,8 @@
     "id": "mtmm3pnvuep02m",
     "order": 123,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2334,7 +2456,8 @@
     "id": "mtmmrnaenfnbzj",
     "order": 124,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2353,7 +2476,8 @@
     "id": "mtmn25o306m022",
     "order": 125,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2372,7 +2496,8 @@
     "id": "mtmnsng1wmzxd8",
     "order": 125,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2391,7 +2516,8 @@
     "id": "mtmozpc11sqcmh",
     "order": 126,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2410,7 +2536,8 @@
     "id": "mtmwz1wfvty0i6",
     "order": 127,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2429,7 +2556,8 @@
     "id": "mtbm9mv11qk9g",
     "order": 128,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2448,7 +2576,8 @@
     "id": "mtoyxe97304n4",
     "order": 130,
     "attemptStatus": "unattempted",
-    "testAllowed": false
+    "testAllowed": false,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2467,7 +2596,8 @@
     "id": "mtwhdl1ef5xhk",
     "order": 131,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2486,7 +2616,8 @@
     "id": "mtdtmmqd3pp7m",
     "order": 132,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2505,7 +2636,8 @@
     "id": "mttjpi0vv9dwf",
     "order": 133,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2524,7 +2656,8 @@
     "id": "mtu6jxfwia1wz",
     "order": 134,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2543,7 +2676,8 @@
     "id": "mt77fh4fo5v9g",
     "order": 135,
     "attemptStatus": "unattempted",
-    "testAllowed": false
+    "testAllowed": false,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2562,7 +2696,8 @@
     "id": "mtrq7pijig8e6",
     "order": 136,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2580,8 +2715,9 @@
     "special": false,
     "id": "mt3ao7sq6s38y",
     "order": 137,
-    "attemptStatus": "unattempted",
-    "testAllowed": true
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2600,7 +2736,8 @@
     "id": "mtqwi23gfjvus",
     "order": 138,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2619,7 +2756,8 @@
     "id": "mt54o20zigrx2",
     "order": 139,
     "attemptStatus": "unattempted",
-    "testAllowed": false
+    "testAllowed": false,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2638,7 +2776,8 @@
     "id": "mth5pvojqabni",
     "order": 140,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2656,8 +2795,9 @@
     "special": false,
     "id": "mttx2tcphf0n5",
     "order": 141,
-    "attemptStatus": "unattempted",
-    "testAllowed": true
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2675,8 +2815,9 @@
     "special": false,
     "id": "mtjhnv94o5v55",
     "order": 142,
-    "attemptStatus": "unattempted",
-    "testAllowed": true
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2695,7 +2836,8 @@
     "id": "mtqtpmka8f9qk",
     "order": 143,
     "attemptStatus": "unattempted",
-    "testAllowed": false
+    "testAllowed": false,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2714,7 +2856,8 @@
     "id": "mt0a32jnybvoh",
     "order": 144,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2733,7 +2876,8 @@
     "id": "mtrtj14pexpex",
     "order": 145,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2752,7 +2896,8 @@
     "id": "mtkpbskfwew97",
     "order": 146,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2771,7 +2916,8 @@
     "id": "mtjmwimeyb1ks",
     "order": 147,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2790,7 +2936,8 @@
     "id": "mt46s53qmqrko",
     "order": 148,
     "attemptStatus": "unattempted",
-    "testAllowed": false
+    "testAllowed": false,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2809,7 +2956,8 @@
     "id": "mtz08ght8k4am",
     "order": 149,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2828,7 +2976,8 @@
     "id": "mt6e1u07g0mcp",
     "order": 150,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2847,7 +2996,8 @@
     "id": "mtv95ihw96cj8",
     "order": 151,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2866,7 +3016,8 @@
     "id": "mtt9dmkipat05",
     "order": 152,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2885,7 +3036,8 @@
     "id": "mtuqt7diwrov4",
     "order": 153,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2898,13 +3050,14 @@
       "₹350"
     ],
     "correctIndex": 2,
-    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=o5KDoO0FROZ55JD7&t=16519",
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=o5KDoO0FROZ55JD7&t=16470",
     "solutionImage": null,
     "special": false,
     "id": "mtqtov8tm6usl",
     "order": 154,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2923,7 +3076,8 @@
     "id": "mt7awa7wx4vko",
     "order": 155,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2942,7 +3096,8 @@
     "id": "mt9lzzc47tq28",
     "order": 156,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2961,7 +3116,8 @@
     "id": "mtabisou4653z",
     "order": 157,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2980,7 +3136,8 @@
     "id": "mtz3y5mk83dil",
     "order": 158,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -2999,7 +3156,8 @@
     "id": "mtk7ic9fd4yck",
     "order": 159,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -3018,7 +3176,8 @@
     "id": "mts6oig8a0k6w",
     "order": 160,
     "attemptStatus": "unattempted",
-    "testAllowed": false
+    "testAllowed": false,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -3037,7 +3196,8 @@
     "id": "mtg5t9fy1jt8g",
     "order": 161,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -3056,7 +3216,8 @@
     "id": "mtdu0y8b9cd5n",
     "order": 162,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -3075,7 +3236,8 @@
     "id": "mtxxs0317b8ov",
     "order": 163,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -3094,7 +3256,8 @@
     "id": "mtewiy2r7973k",
     "order": 164,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -3113,7 +3276,8 @@
     "id": "mti9yhrbeuaiw",
     "order": 165,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -3132,7 +3296,8 @@
     "id": "mtoozi2ar7as0",
     "order": 166,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -3151,7 +3316,8 @@
     "id": "mtisyl5djrtj3",
     "order": 167,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -3170,7 +3336,8 @@
     "id": "mtrvfun1ppjr1",
     "order": 168,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "id": "mix-1",
@@ -3189,7 +3356,8 @@
     "order": 9,
     "attemptStatus": "correct",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -3208,7 +3376,8 @@
     "id": "mtmix169a1",
     "order": 169,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -3227,7 +3396,8 @@
     "id": "mtmix170b2",
     "order": 170,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -3246,7 +3416,8 @@
     "id": "mtmix171c3",
     "order": 171,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -3265,7 +3436,8 @@
     "id": "mtmix172d4",
     "order": 172,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -3284,7 +3456,8 @@
     "id": "mtmix173e5",
     "order": 173,
     "attemptStatus": "unattempted",
-    "testAllowed": false
+    "testAllowed": false,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -3303,7 +3476,8 @@
     "id": "mtmix174f6",
     "order": 174,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -3322,7 +3496,8 @@
     "id": "mtmix175g7",
     "order": 175,
     "attemptStatus": "unattempted",
-    "testAllowed": false
+    "testAllowed": false,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -3341,7 +3516,8 @@
     "id": "mtmix176h8",
     "order": 176,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -3360,7 +3536,8 @@
     "id": "mtmix177i9",
     "order": 177,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -3379,7 +3556,8 @@
     "id": "mtmix178j0",
     "order": 178,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -3398,7 +3576,8 @@
     "id": "mtmix179k1",
     "order": 179,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -3416,8 +3595,9 @@
     "special": false,
     "id": "mtmix180l2",
     "order": 180,
-    "attemptStatus": "unattempted",
-    "testAllowed": true
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -3436,11 +3616,12 @@
     "id": "mtmix181m3",
     "order": 181,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": false,
+    "examName": ""
   },
   {
     "category": "Mensuration",
-    "questionText": "Concept of prism\nA prism and a pyramid have the same base and the same height. Find the ratio of the volume of the prism and the pyramid?  (area equilat triangle     if side=2 then area root 3)",
+    "questionText": "Concept of prism\nA prism and a pyramid have the same base and the same height. Find the ratio of the volume of the prism and the pyramid?  (area equilat triangle     if side=2 then area root-3)",
     "questionImage": "/uploads/mensuration/f855c4f75284f60dbb5b60e4712ca5c15dd0155fe4bf7086eae792622213d106.png",
     "options": [
       "3 : 1",
@@ -3455,7 +3636,8 @@
     "id": "mttelfkaswe64c",
     "order": 181,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mensuration",
@@ -3474,7 +3656,8 @@
     "id": "mttf8pv76shc4e",
     "order": 182,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mensuration",
@@ -3493,7 +3676,8 @@
     "id": "mttfhfz0slrfbx",
     "order": 183,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mensuration",
@@ -3512,7 +3696,8 @@
     "id": "mttfpvnnm167hq",
     "order": 184,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mensuration",
@@ -3531,7 +3716,8 @@
     "id": "mttfxqy3s2veoo",
     "order": 185,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mensuration",
@@ -3550,7 +3736,8 @@
     "id": "mttg3pwu855r6l",
     "order": 186,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mensuration",
@@ -3569,7 +3756,8 @@
     "id": "mttgut0w112791",
     "order": 187,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Geometry",
@@ -3588,7 +3776,8 @@
     "id": "mtttrsjholw7yu",
     "order": 188,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "CP & SP",
@@ -3607,7 +3796,8 @@
     "id": "mttuchsa30g34o",
     "order": 189,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "CP & SP",
@@ -3626,7 +3816,8 @@
     "id": "mttui16jkld12e",
     "order": 190,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "CP & SP",
@@ -3645,7 +3836,8 @@
     "id": "mttvbigvweclxf",
     "order": 191,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Ratio and Proportion",
@@ -3664,7 +3856,8 @@
     "id": "mttvrthhdscq7r",
     "order": 192,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Percentage",
@@ -3683,7 +3876,8 @@
     "id": "mtu3ouwamc1hq1",
     "order": 193,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Percentage",
@@ -3702,7 +3896,8 @@
     "id": "mtu4hizo13jijb",
     "order": 194,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Trigonometry",
@@ -3721,7 +3916,8 @@
     "id": "mtvi6l37s4juae",
     "order": 195,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Time & Work",
@@ -3740,7 +3936,8 @@
     "id": "mtvie0hannr7k6",
     "order": 196,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Percentage",
@@ -3759,7 +3956,8 @@
     "id": "mtvihduuj73jy1",
     "order": 197,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -3778,7 +3976,8 @@
     "id": "mtvijvtff2jm58",
     "order": 198,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -3797,7 +3996,8 @@
     "id": "mtvinszdbp6dki",
     "order": 199,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Compound Interest",
@@ -3816,7 +4016,8 @@
     "id": "mtvivbnu32upaw",
     "order": 200,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Train",
@@ -3835,7 +4036,8 @@
     "id": "mtvj735bkkfbdb",
     "order": 201,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Algebra",
@@ -3854,7 +4056,8 @@
     "id": "mtwm9k8f726rvd",
     "order": 202,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Algebra",
@@ -3873,7 +4076,8 @@
     "id": "mtwmb7hbt3p2i1",
     "order": 203,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Algebra",
@@ -3891,6 +4095,467 @@
     "special": false,
     "id": "mtwmd7c2rfkklm",
     "order": 204,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "examName": ""
+  },
+  {
+    "category": "Geometry",
+    "questionText": "Let A be a regular polygon such that the sum of the interior angles of A is 2340° . Find the number of diagonals of A.",
+    "questionImage": null,
+    "options": [
+      "60",
+      "90",
+      "10",
+      "50"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/5jtFJuxGWj4?si=O-2EMJsZmBLPIqfa&t=109   each angle = n-2) * 180 /n",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0t3o43y2ey2a",
+    "order": 205,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "examName": ""
+  },
+  {
+    "category": "Geometry",
+    "questionText": "The sum of the interior angles of a regular polygon A is 1260° and each interior angle of a regular polygon B is 128 . What is the sum of the number of sides of polygons A and B?",
+    "questionImage": null,
+    "options": [
+      "31",
+      "26",
+      "16",
+      "11"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://notebook.google.com/notebook/0118c14a-3faa-4c80-98c7-301e31ac0d24",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0tmq12v33nvr",
+    "order": 206,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "examName": ""
+  },
+  {
+    "category": "Geometry",
+    "questionText": "Question: In a regular polygon, the interior angle exceeds its exterior angle by 132°. Find the number of sides",
+    "questionImage": null,
+    "options": [
+      "13",
+      "16",
+      "15",
+      "12"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://notebook.google.com/notebook/0118c14a-3faa-4c80-98c7-301e31ac0d24",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0tujts8imj14",
+    "order": 207,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "examName": "CGL 2019"
+  },
+  {
+    "category": "Geometry",
+    "examName": "CGL 2018",
+    "questionText": "The sum of all interior angles of a regular polygon is 4 times the sum of all its\nexterior angles. Find the number of sides .",
+    "questionImage": null,
+    "options": [
+      "10",
+      "20",
+      "15",
+      "40"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0u4s5j1uil4q",
+    "order": 208,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "CGL 2022",
+    "questionText": "If the external angle of a regular polygon is 18°, then the number of diagonals in this polygon is  :______________B._: If one of the interior angles of a regular polygon is 15/16 times of one of the interior angles of a regular decagon (n=10), then find the number of diagonals of the polygon",
+    "questionImage": null,
+    "options": [
+      "170",
+      "130",
+      "770",
+      "120"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0ua26rptqvho",
+    "order": 209,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/trigonometry/f86d9d96205f522302834b70c963ab5f70b2f6d47f745e74ad61ce12760bfe60.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/5jtFJuxGWj4?si=3CLU50RyCZY4KUON&t=168",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0ugrw40s7w93",
+    "order": 210,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Percentage",
+    "examName": "",
+    "questionText": "A student multiplied a number by 3/5 instead of 5/3 what is the percentage erroR IN the calculation?",
+    "questionImage": null,
+    "options": [
+      "34",
+      "64",
+      "46",
+      "70"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/5jtFJuxGWj4?si=08NgjKGrJbLFH7lp&t=270",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0uonn1kp3kix",
+    "order": 211,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Coordinate G",
+    "examName": "",
+    "questionText": "Find the distance between the points (2,-4) and (1,2).",
+    "questionImage": null,
+    "options": [
+      "2",
+      "root-37",
+      "8",
+      "6"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/5jtFJuxGWj4?si=L2P5CnqUAruqb4FO&t=334",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0us6809lne3g",
+    "order": 212,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "CP & SP",
+    "examName": "",
+    "questionText": "A trader gains 72% by selling an article after two successive discounts of 50% and 14% on its marked price. If the cost price of the article is increased by 36%, then what single discount should he now give on the same marked price to get\nthe same profit percentage as earlier?)",
+    "questionImage": null,
+    "options": [
+      "41.52 %",
+      "40.56 %",
+      "46.78 %",
+      "47.46 %"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/5jtFJuxGWj4?si=Hpsg61dgXe07TcEh&t=353",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0v7e2zcv1eqh",
+    "order": 213,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Average",
+    "examName": "",
+    "questionText": "The average weight of 12 mangoes is 18 kg. The addition of another new mango reduces the average weight by 500g. What is the weight of the new mango?",
+    "questionImage": null,
+    "options": [
+      "10.5 kg",
+      "13.5 kg",
+      "12.5 kg",
+      "11.5 kg"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/5jtFJuxGWj4?si=1Er6JIX3c2LezipS&t=497",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0vbt9sogvk4i",
+    "order": 214,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "CP & SP",
+    "examName": "",
+    "questionText": "Two articles are sold for rupees 5,104 each. On one, the seller gains 16% and on the other, he loses 12%. What is his overall gain percent, nearest to two decimal places?",
+    "questionImage": null,
+    "options": [
+      "8 %",
+      "1 %",
+      "0.14 %",
+      "0.08 %"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/5jtFJuxGWj4?si=0G7j7WLTgmj2Jfu8&t=520",
+    "solutionImage": "/uploads/cp-sp/58c166940a2b495b5d692e80da23efdc990e12f65aaa01328f3dd5bd9f50dcc2.png",
+    "special": false,
+    "id": "mu0vmae2l0c6vy",
+    "order": 215,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "CP & SP",
+    "examName": "",
+    "questionText": "X sells his goods 20% cheaper than Y and 20% dearer than Z. How many % is Z's goods cheaper/dearer than Y's?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/5jtFJuxGWj4?si=E28y9pYEz7TRq5zT&t=621",
+    "solutionImage": "/uploads/cp-sp/926cc4ac267f65600ce66a3338c8f3ab8e980cd0b4701b47f4cf1ed0a9d47bca.png",
+    "special": false,
+    "id": "mu0w8yn22bm8nx",
+    "order": 216,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Circle",
+    "examName": "",
+    "questionText": "Two circles of radius 7 cm and 5 cm intersect each other at A and B, and the\ndistance between their centres is 10 cm, the length of the common chord AB is:",
+    "questionImage": "/uploads/circle/22a2231583387a50799d034c887e7aa675f883611899598c6009ff43fdae82b4.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/5jtFJuxGWj4?si=2-Vl3RocF5dEyZ2m&t=773",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0wljbq3kfu89",
+    "order": 217,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Time & Work",
+    "examName": "",
+    "questionText": "Anshu can do a piece of work in 24 days, and Kajal can do it in 28 days. They\nwork together for 6 days after which Anshu leaves the work, and the remaining\nwork is completed by Kajal alone. In how many days will the entire work be\ncompleted?",
+    "questionImage": null,
+    "options": [
+      "21",
+      "28",
+      "18",
+      "14"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/5jtFJuxGWj4?si=q6URIWyxZWWV43Rs&t=818",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0wx44l6cb1f7",
+    "order": 218,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Percentage",
+    "examName": "",
+    "questionText": "A large watermelon weighs 20 kg and 96% of its weight is water. When it is kept in the sun, due to evaporation of water, it was observed that now, 95% of its weight is water. What is the new weight of the watermelon?",
+    "questionImage": null,
+    "options": [
+      "16",
+      "26",
+      "14",
+      "15"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/5jtFJuxGWj4?si=floSbZAZSx2EwatD&t=837",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0x204g2boj0g",
+    "order": 219,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Average",
+    "examName": "",
+    "questionText": "The average of 15 numbers is 42. The average of the first 8 numbers is 38 and\nthat of the last 8 numbers is 47. If the 8th number is excluded, what will be the\naverage of the remaining numbers? (Round off to one decimal place).",
+    "questionImage": null,
+    "options": [
+      "40.8",
+      "86",
+      "41.4",
+      "69"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/5jtFJuxGWj4?si=DcxEt2iEjcWf8CSQ&t=921",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0x8iammx3jb0",
+    "order": 220,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A boat travels upstream from B to A and downstream from A to B in 3 hours. If\nthe speed of the boat in still water is 9 km/h and the speed of the current is 3.5\nkm/h, the distance between A and B is: (correct up to two decimal places)",
+    "questionImage": null,
+    "options": [
+      "12.46",
+      "11.46",
+      "16.46",
+      "13.46"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/5jtFJuxGWj4?si=3BEUGaj7VNZZci4j&t=1032",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0xt2ykia5ggb",
+    "order": 221,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Percentage",
+    "examName": "",
+    "questionText": "If the sides of an equilateral triangle are incrcased by 20 %, then by how \npercent will the area of the triangle inerease?",
+    "questionImage": null,
+    "options": [
+      "33%",
+      "63%",
+      "86%",
+      "44%"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/5jtFJuxGWj4?si=f5gVIaqI65bQK5h0&t=1114",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0xwh0oucx6p4",
+    "order": 222,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Average",
+    "examName": "",
+    "questionText": "There are 42 workers in a factory with an average weight of 65 kg. The ratio of the\nnumber of male workers to female workers is 13 : 8. If the average weight of male and\nfemale workers is 72 kg and 'x'kg respactively, then find the value of'x':",
+    "questionImage": null,
+    "options": [
+      "53.625",
+      "60.622",
+      "55.153",
+      "57.177"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/5jtFJuxGWj4?si=XYu-jJnfNbgCb6zF&t=1141",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0yh7hacwdig6",
+    "order": 223,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "CP & SP",
+    "examName": "",
+    "questionText": "A vendor buys 22 laptop bags for ₹43,670 and sells them at 20 for 39,760. How many \nlaptop bags should be bought and sold at this rate, to earn a total profit of 1,227?",
+    "questionImage": null,
+    "options": [
+      "433",
+      "409",
+      "405",
+      "426"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/5jtFJuxGWj4?si=jhWo2on-eSA1YY8y&t=1249",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0ymye3nksmp8",
+    "order": 224,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "What number must be subtracted from each term of ratio 49 : 81 so that the\nratio becomes 7 : 9?",
+    "questionImage": null,
+    "options": [
+      "-62",
+      "-63",
+      "-67",
+      "-70"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/5jtFJuxGWj4?si=PjNNla6h5BiJ7qPJ&t=1321",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0yutby0xwd22",
+    "order": 225,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Coordinate G",
+    "examName": "",
+    "questionText": "A triangle has its sides 5 cm, 12 cm and 13 cm. What will be the area of the\ntriangle formed by joining the mid-point of the three sides?",
+    "questionImage": null,
+    "options": [
+      "4",
+      "1",
+      "7&1/2",
+      "5"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0yzxkq0l46gc",
+    "order": 226,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "One-third of a journey is covered at a speed of 62 km/hr, the next one-third of the journey is covered at a speed of 99 km/hr, and the remaining one-third is covered at a speed of 51 km/hr. What is the average speed for the entire journey, rounded off to 1 decimal place?",
+    "questionImage": null,
+    "options": [
+      "63.8 km/hr",
+      "65.4 km/hr",
+      "67.2 km/hr",
+      "70.7 km/hr"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/5jtFJuxGWj4?si=6lNXo1bifCtT3oru&t=1483",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu109mug5k9t8j",
+    "order": 227,
     "attemptStatus": "unattempted",
     "testAllowed": true
   }

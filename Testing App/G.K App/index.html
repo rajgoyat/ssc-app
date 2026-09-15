@@ -2016,13 +2016,46 @@
         display: flex;
         align-items: flex-start;
         gap: 8px;
-        margin-bottom: 16px;
+        margin-bottom: 10px;
       }
 
       .question-row .question {
         flex: 1;
         min-width: 0;
         margin-bottom: 0;
+      }
+
+      /* Test-only option shuffle button. It changes only the displayed order;
+         the saved question/options/answer stay untouched. */
+      .question-shuffle-btn,
+      .sub-question-shuffle-btn {
+        width: 24px;
+        height: 24px;
+        min-width: 24px;
+        padding: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(255, 173, 103, 0.42);
+        background: rgba(255, 173, 103, 0.06);
+        color: var(--orange);
+        font-size: 12px;
+        line-height: 1;
+        border-radius: 50%;
+        transition: 0.18s ease, transform 0.18s ease;
+      }
+
+      .question-shuffle-btn:hover,
+      .sub-question-shuffle-btn:hover {
+        border-color: var(--orange);
+        background: rgba(255, 173, 103, 0.15);
+        transform: rotate(18deg) scale(1.06);
+      }
+
+      .question-shuffle-btn:focus-visible,
+      .sub-question-shuffle-btn:focus-visible {
+        outline: 2px solid var(--orange);
+        outline-offset: 2px;
       }
 
       .question-edit-box {
@@ -2629,6 +2662,13 @@
         gap: 6px;
         align-items: start;
         margin-bottom: 5px;
+      }
+
+      .sub-question-shuffle-btn {
+        width: 22px;
+        height: 22px;
+        min-width: 22px;
+        font-size: 11px;
       }
 
       .sub-question-number {
@@ -5507,6 +5547,127 @@
         });
       }
 
+      /* ================================
+         PER-QUESTION OPTION SHUFFLE
+         Permanent: writes shuffled options + corrected answer index
+         back to the original question file through server.py.
+         ================================ */
+      function identityOptionOrder(count) {
+        return Array.from({ length: Math.max(0, Number(count) || 0) }, (_, index) => index);
+      }
+
+      function nextRandomOptionOrder(count) {
+        const base = identityOptionOrder(count);
+        if (base.length < 2) return base;
+
+        let next = shuffle(base);
+
+        // Make sure a click visibly changes the option order.
+        if (next.every((value, index) => value === base[index])) {
+          [next[0], next[1]] = [next[1], next[0]];
+        }
+
+        return next;
+      }
+
+      // Once shuffle is saved to the real file, rendering can use the normal
+      // 0..N option order because item.options itself has already been reordered.
+      function mainOptionOrder(item) {
+        const count = Array.isArray(item?.options) ? item.options.length : 0;
+        return identityOptionOrder(count);
+      }
+
+      function subOptionOrder(item, subIndex, optionCount) {
+        return identityOptionOrder(optionCount);
+      }
+
+      function buildPersistentOptionShuffle(options, answerIndex) {
+        const safeOptions = Array.isArray(options) ? [...options] : [];
+        if (safeOptions.length < 2) return null;
+
+        const safeAnswer = Number(answerIndex);
+        if (!Number.isInteger(safeAnswer) || safeAnswer < 0 || safeAnswer >= safeOptions.length) {
+          return null;
+        }
+
+        const order = nextRandomOptionOrder(safeOptions.length);
+        const shuffledOptions = order.map((oldIndex) => safeOptions[oldIndex]);
+        const shuffledAnswer = order.indexOf(safeAnswer);
+
+        return {
+          options: shuffledOptions,
+          answer: shuffledAnswer,
+        };
+      }
+
+      async function persistMainQuestionOptionShuffle(item) {
+        if (!item?.id || !Array.isArray(item.options) || item.options.length < 2) return false;
+
+        const previousOptions = [...item.options];
+        const previousAnswer = Number(item.answer);
+        const shuffled = buildPersistentOptionShuffle(previousOptions, previousAnswer);
+        if (!shuffled) return false;
+
+        // Save options first. If the answer index also changed and that second
+        // save fails, restore the previous option order to avoid a mismatched key.
+        const optionsSaved = await persistQuestionToOriginalFile(
+          item,
+          "options",
+          shuffled.options
+        );
+        if (!optionsSaved) return false;
+
+        if (shuffled.answer !== previousAnswer) {
+          const answerSaved = await persistQuestionToOriginalFile(
+            item,
+            "answer",
+            shuffled.answer
+          );
+
+          if (!answerSaved) {
+            await persistQuestionToOriginalFile(item, "options", previousOptions);
+            return false;
+          }
+        }
+
+        item.options = shuffled.options;
+        item.answer = shuffled.answer;
+        return true;
+      }
+
+      async function persistSubQuestionOptionShuffle(item, subIndex) {
+        const index = Number(subIndex);
+        const existing = cleanSubQuestions(item);
+        const sub = existing[index];
+
+        if (!item?.id || !Number.isInteger(index) || !sub || !Array.isArray(sub.options) || sub.options.length < 2) {
+          return false;
+        }
+
+        const shuffled = buildPersistentOptionShuffle(sub.options, sub.answer);
+        if (!shuffled) return false;
+
+        const updated = existing.map((entry, entryIndex) =>
+          entryIndex === index
+            ? {
+                ...entry,
+                options: shuffled.options,
+                answer: shuffled.answer,
+              }
+            : entry
+        );
+
+        const saved = await persistQuestionToOriginalFile(
+          item,
+          "subQuestions",
+          updated
+        );
+        if (!saved) return false;
+
+        item.subQuestions = updated;
+        return true;
+      }
+
       function subQuestionMarkup(item, type) {
         const subQuestions = cleanSubQuestions(item);
 
@@ -5527,6 +5688,14 @@
                 ${subQuestions.map((sub, subIndex) => {
                   const options = Array.isArray(sub.options) ? sub.options : [];
                   const correctAnswer = Number(sub.answer);
+                  const order = subOptionOrder(item, subIndex, options.length);
+                  const displayedOptions = order.map((originalIndex) => ({
+                    originalIndex,
+                    option: options[originalIndex],
+                  }));
+                  const displayedCorrectIndex = displayedOptions.findIndex(
+                    (entry) => entry.originalIndex === correctAnswer
+                  );
                   const attemptKey = subQuestionAttemptKey(type, item, subIndex);
                   const attempted = subQuestionAttemptState.has(attemptKey)
                     ? Number(subQuestionAttemptState.get(attemptKey))
@@ -5539,21 +5708,30 @@
                         <span class="sub-question-number">Q${subIndex + 1}</span>
                         <div class="sub-question-text">${escapeHtml(String(sub.question || "")).replace(/\n/g, "<br>")}</div>
                         <div class="sub-question-tools">
+                          ${options.length >= 2 ? `
+                            <button
+                              type="button"
+                              class="sub-question-shuffle-btn"
+                              data-sub-question-shuffle="${subIndex}"
+                              title="Shuffle options and save to real file"
+                              aria-label="Shuffle options for sub question ${subIndex + 1}"
+                            >🔀</button>
+                          ` : ""}
                           <button type="button" class="sub-question-tool" data-sub-question-edit="${subIndex}" title="Edit sub question" aria-label="Edit sub question ${subIndex + 1}">✎</button>
                           <button type="button" class="sub-question-tool danger" data-sub-question-delete="${subIndex}" title="Delete sub question" aria-label="Delete sub question ${subIndex + 1}">×</button>
                         </div>
                       </div>
 
                       <div class="sub-question-options">
-                        ${options.map((option, optionIndex) => {
+                        ${displayedOptions.map(({ option, originalIndex }, displayIndex) => {
                           let className = "";
                           if (answered) {
-                            if (optionIndex === correctAnswer) className = "correct";
-                            else if (optionIndex === attempted) className = "wrong";
+                            if (originalIndex === correctAnswer) className = "correct";
+                            else if (originalIndex === attempted) className = "wrong";
                           }
                           return `
-                            <button type="button" class="sub-question-option ${className}" data-sub-question-index="${subIndex}" data-sub-option-index="${optionIndex}" ${answered ? "disabled" : ""}>
-                              <span class="sub-question-option-letter">${String.fromCharCode(65 + optionIndex)}</span>
+                            <button type="button" class="sub-question-option ${className}" data-sub-question-index="${subIndex}" data-sub-option-index="${originalIndex}" ${answered ? "disabled" : ""}>
+                              <span class="sub-question-option-letter">${String.fromCharCode(65 + displayIndex)}</span>
                               <span>${escapeHtml(String(option ?? ""))}</span>
                             </button>`;
                         }).join("")}
@@ -5561,7 +5739,9 @@
 
                       ${answered ? `
                         <div class="sub-question-result ${attempted === correctAnswer ? "" : "wrong"}">
-                          ${attempted === correctAnswer ? "✓ Correct" : `✕ Correct: ${String.fromCharCode(65 + correctAnswer)}`}
+                          ${attempted === correctAnswer
+                            ? "✓ Correct"
+                            : `✕ Correct: ${displayedCorrectIndex >= 0 ? String.fromCharCode(65 + displayedCorrectIndex) : "?"}`}
                           ${sub.explanation ? ` · ${escapeHtml(String(sub.explanation)).replace(/\n/g, "<br>")}` : ""}
                         </div>` : ""}
                     </article>`;
@@ -8539,7 +8719,8 @@
       function optionMarkup(
         item,
         answered,
-        editingOptionIndex
+        editingOptionIndex,
+        type
       ) {
 
         const safeOptions = Array.isArray(item?.options) ? item.options : [];
@@ -8548,25 +8729,34 @@
           return `<div class="no-option-question-note">No options added — this is a study/data question.</div>`;
         }
 
-        return safeOptions
+        const order = mainOptionOrder(item);
+        const displayedOptions = order.map((originalIndex) => ({
+          originalIndex,
+          option: safeOptions[originalIndex],
+        }));
+
+        return displayedOptions
 
           .map(
             (
-              option,
-              index
+              entry,
+              displayIndex
             ) => {
+
+              const originalIndex = entry.originalIndex;
+              const option = entry.option;
 
               const className =
 
                 answered !== null
 
-                  ? index ===
-                    item.answer
+                  ? originalIndex ===
+                    Number(item.answer)
 
                     ? "correct"
 
-                    : index ===
-                      answered
+                    : originalIndex ===
+                      Number(answered)
 
                       ? "wrong"
 
@@ -8578,8 +8768,9 @@
               const isEditing =
                 editingOptionIndex !== null &&
                 Number(editingOptionIndex) ===
-                index;
+                originalIndex;
 
+              const displayLetter = String.fromCharCode(65 + displayIndex);
 
               return `
 
@@ -8588,7 +8779,7 @@
                   <button
                     type="button"
                     class="option ${className}"
-                    data-option="${index}"
+                    data-option="${originalIndex}"
                     ${
                       answered !== null
                         ? "disabled"
@@ -8597,9 +8788,7 @@
                   >
 
                     <span class="letter">
-                      ${String.fromCharCode(
-                        65 + index
-                      )}
+                      ${displayLetter}
                     </span>
 
                     <span>
@@ -8612,10 +8801,10 @@
                   <button
                     type="button"
                     class="option-edit-icon"
-                    title="Edit option ${String.fromCharCode(65 + index)}"
-                    aria-label="Edit option ${String.fromCharCode(65 + index)}"
+                    title="Edit displayed option ${displayLetter}"
+                    aria-label="Edit displayed option ${displayLetter}"
                     data-action="edit-option"
-                    data-option-index="${index}"
+                    data-option-index="${originalIndex}"
                   >
                     ✎
                   </button>
@@ -8629,8 +8818,8 @@
                         <div class="option-edit-box">
 
                           <textarea
-                            data-option-editor="${index}"
-                            aria-label="Edit option ${String.fromCharCode(65 + index)}"
+                            data-option-editor="${originalIndex}"
+                            aria-label="Edit displayed option ${displayLetter}"
                           >${escapeHtml(option)}</textarea>
 
                           <div class="inline-edit-actions">
@@ -8639,7 +8828,7 @@
                               type="button"
                               class="action tiny primary"
                               data-action="save-option"
-                              data-option-index="${index}"
+                              data-option-index="${originalIndex}"
                             >
                               Save
                             </button>
@@ -8648,7 +8837,7 @@
                               type="button"
                               class="action tiny"
                               data-action="cancel-option"
-                              data-option-index="${index}"
+                              data-option-index="${originalIndex}"
                             >
                               Cancel
                             </button>
@@ -9926,6 +10115,15 @@
                       </div>
 
                       <div style="display: flex; gap: 7px; align-items: center; flex: 0 0 auto;">
+                        ${Array.isArray(item.options) && item.options.length >= 2 ? `
+                          <button
+                            type="button"
+                            class="question-shuffle-btn"
+                            data-main-option-shuffle
+                            title="Shuffle options and save to real file"
+                            aria-label="Shuffle options and save to real file"
+                          >🔀</button>
+                        ` : ""}
                         <button
                           type="button"
                           class="edit-icon"
@@ -10012,7 +10210,8 @@
                 ${optionMarkup(
                   item,
                   data.answered,
-                  data.editingOptionIndex
+                  data.editingOptionIndex,
+                  type
                 )}
 
               </div>
@@ -10602,7 +10801,56 @@
 
 
 
-        /* TOPIC SUB QUESTIONS */
+        /* MAIN QUESTION OPTION SHUFFLE — PERMANENT SAVE */
+        panel.querySelector("[data-main-option-shuffle]")?.addEventListener("click", async (event) => {
+          if (!activeItem) return;
+
+          const button = event.currentTarget;
+          button.disabled = true;
+          button.textContent = "…";
+
+          const saved = await persistMainQuestionOptionShuffle(activeItem);
+          if (!saved) {
+            button.disabled = false;
+            button.textContent = "🔀";
+            return;
+          }
+
+          // The real options + answer key have changed, so clear the old attempt.
+          state[type].answered = null;
+          state[type].editingAnswer = false;
+          state[type].editingOptionIndex = null;
+          render(type);
+          showToast("Options shuffled and saved to the real file.");
+        });
+
+
+        /* TOPIC SUB QUESTIONS — PERMANENT SAVE */
+        panel.querySelectorAll("[data-sub-question-shuffle]").forEach((button) => {
+          button.addEventListener("click", async () => {
+            if (!activeItem) return;
+            const subIndex = Number(button.dataset.subQuestionShuffle);
+            if (!Number.isInteger(subIndex)) return;
+
+            button.disabled = true;
+            const oldText = button.textContent;
+            button.textContent = "…";
+
+            const saved = await persistSubQuestionOptionShuffle(activeItem, subIndex);
+            if (!saved) {
+              button.disabled = false;
+              button.textContent = oldText || "🔀";
+              return;
+            }
+
+            subQuestionAttemptState.delete(
+              subQuestionAttemptKey(type, activeItem, subIndex)
+            );
+            render(type);
+            showToast(`Sub question Q${subIndex + 1} options shuffled and saved.`);
+          });
+        });
+
         panel.querySelectorAll("[data-sub-question-index][data-sub-option-index]").forEach((button) => {
           button.addEventListener("click", () => {
             if (!activeItem) return;
@@ -11908,9 +12156,11 @@
             }
           }
 
-          // Save answer after options so a newly-created MCQ already exists
-          // on the server before its correct answer is written.
-          if (newOptions.length >= 2 && (optionsChanged || answerChanged)) {
+          // Save the answer only when the correct-answer index actually changed.
+          // If only option text changed, re-saving the same answer can make the
+          // backend report "no file change was produced" even though the options
+          // were saved successfully.
+          if (newOptions.length >= 2 && answerChanged) {
             const savedAnswer =
               await persistQuestionToOriginalFile(
                 item,

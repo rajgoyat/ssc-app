@@ -16,7 +16,8 @@
     "order": 88,
     "attemptStatus": "correct",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Speed & Distance",
@@ -35,6 +36,27 @@
     "order": 90,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "One-third of a journey is covered at a speed of 62 km/hr, the next one-third of the journey is covered at a speed of 99 km/hr, and the remaining one-third is covered at a speed of 51 km/hr. What is the average speed for the entire journey, rounded off to 1 decimal place?",
+    "questionImage": null,
+    "options": [
+      "63.8 km/hr",
+      "65.4 km/hr",
+      "67.2 km/hr",
+      "70.7 km/hr"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/5jtFJuxGWj4?si=6lNXo1bifCtT3oru&t=1483",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu109mug5k9t8j",
+    "order": 227,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]

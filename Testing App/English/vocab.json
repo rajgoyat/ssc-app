@@ -808,9 +808,9 @@
       "en": "Diffident",
       "hi": "संकोची / आत्म-संशयी",
       "meaning": "Modest or shy because of a lack of self-confidence",
-      "sentence": "The diffident intern rarely spoke up in team meetings.",
+      "sentence": "He was diffident during the interview",
       "syn": "Bashful",
-      "ant": "Confident"
+      "ant": "Confident, bold"
     },
     {
       "en": "Diligent",
@@ -920,7 +920,7 @@
       "en": "Efficacy",
       "hi": "प्रभावकारिता",
       "meaning": "The ability to produce a desired or intended result",
-      "sentence": "Doctors are still studying the efficacy of the new drug.",
+      "sentence": "The efficacy of this medicine is high.\n= Is medicine ki effectiveness bahut achchhi hai.",
       "syn": "Effectiveness",
       "ant": "Inefficacy"
     },
@@ -2680,10 +2680,10 @@
     },
     {
       "en": "Sublime",
-      "hi": "उत्कृष्ट / महान",
+      "hi": "बहुत ही शानदार, उत्कृष्ट, या अत्यंत सुंदर",
       "meaning": "Of such excellence, grandeur, or beauty as to inspire great admiration or awe",
-      "sentence": "The view from the summit was nothing short of sublime.",
-      "syn": "Exalted",
+      "sentence": "The view from the mountain was sublime.\n= Mountain se view bahut hi khoobsurat aur magnificent tha.",
+      "syn": "Exalted,Magnificent, Excellent, Majestic, Splendid",
       "ant": "Ordinary"
     },
     {

@@ -16,7 +16,8 @@
     "order": 74,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Time & Work",
@@ -34,6 +35,27 @@
     "special": false,
     "id": "mtvie0hannr7k6",
     "order": 196,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "examName": ""
+  },
+  {
+    "category": "Time & Work",
+    "examName": "",
+    "questionText": "Anshu can do a piece of work in 24 days, and Kajal can do it in 28 days. They\nwork together for 6 days after which Anshu leaves the work, and the remaining\nwork is completed by Kajal alone. In how many days will the entire work be\ncompleted?",
+    "questionImage": null,
+    "options": [
+      "21",
+      "28",
+      "18",
+      "14"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/5jtFJuxGWj4?si=q6URIWyxZWWV43Rs&t=818",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0wx44l6cb1f7",
+    "order": 218,
     "attemptStatus": "unattempted",
     "testAllowed": true
   }

@@ -467,6 +467,140 @@
 //     setDraft((d) => ({ ...d, options: applyOptionSuffix(options, optionSuffix) }));
 //   }
 
+//   function generateRangeOptions() {
+//     const rawRange = String(optionRange || "").trim();
+//     const match = rawRange.match(
+//       /^\s*(-?\d+(?:\.\d+)?)\s*-\s*(-?\d+(?:\.\d+)?)\s*$/
+//     );
+
+//     if (!match) {
+//       setError(
+//         "Enter range like 10-50 or 5.456-5.987."
+//       );
+//       return;
+//     }
+
+//     const firstText = match[1];
+//     const secondText = match[2];
+//     const first = Number(firstText);
+//     const second = Number(secondText);
+
+//     if (!Number.isFinite(first) || !Number.isFinite(second)) {
+//       setError("Enter a valid numeric range.");
+//       return;
+//     }
+
+//     const decimalPlaces = (value) => {
+//       const dot = value.indexOf(".");
+//       return dot === -1 ? 0 : value.length - dot - 1;
+//     };
+
+//     const precision = Math.max(
+//       decimalPlaces(firstText),
+//       decimalPlaces(secondText)
+//     );
+//     const scale = Math.pow(10, precision);
+
+//     let minScaled = Math.round(Math.min(first, second) * scale);
+//     let maxScaled = Math.round(Math.max(first, second) * scale);
+//     const possibleValues = maxScaled - minScaled + 1;
+
+//     if (possibleValues < 4) {
+//       setError(
+//         `This range can make only ${possibleValues} unique option${possibleValues === 1 ? "" : "s"}. Use a wider range.`
+//       );
+//       return;
+//     }
+
+//     const values = new Set();
+//     while (values.size < 4) {
+//       const randomScaled =
+//         minScaled +
+//         Math.floor(Math.random() * possibleValues);
+//       values.add(randomScaled);
+//     }
+
+//     const options = [...values].map((scaledValue) => {
+//       const numericValue = scaledValue / scale;
+//       return precision > 0
+//         ? numericValue.toFixed(precision)
+//         : String(scaledValue);
+//     });
+
+//     setDraft((d) => ({
+//       ...d,
+//       options: applyOptionSuffix(options, optionSuffix),
+//     }));
+//     setError("");
+//   }
+
+//   function generateRangeOptions() {
+//     const rawRange = String(optionRange || "").trim();
+//     const match = rawRange.match(
+//       /^\s*(-?\d+(?:\.\d+)?)\s*-\s*(-?\d+(?:\.\d+)?)\s*$/
+//     );
+
+//     if (!match) {
+//       setError(
+//         "Enter range like 10-50 or 5.456-5.987."
+//       );
+//       return;
+//     }
+
+//     const firstText = match[1];
+//     const secondText = match[2];
+//     const first = Number(firstText);
+//     const second = Number(secondText);
+
+//     if (!Number.isFinite(first) || !Number.isFinite(second)) {
+//       setError("Enter a valid numeric range.");
+//       return;
+//     }
+
+//     const decimalPlaces = (value) => {
+//       const dot = value.indexOf(".");
+//       return dot === -1 ? 0 : value.length - dot - 1;
+//     };
+
+//     const precision = Math.max(
+//       decimalPlaces(firstText),
+//       decimalPlaces(secondText)
+//     );
+//     const scale = Math.pow(10, precision);
+
+//     const minScaled = Math.round(Math.min(first, second) * scale);
+//     const maxScaled = Math.round(Math.max(first, second) * scale);
+//     const possibleValues = maxScaled - minScaled + 1;
+
+//     if (possibleValues < 4) {
+//       setError(
+//         `This range can make only ${possibleValues} unique option${possibleValues === 1 ? "" : "s"}. Use a wider range.`
+//       );
+//       return;
+//     }
+
+//     const values = new Set();
+//     while (values.size < 4) {
+//       const randomScaled =
+//         minScaled +
+//         Math.floor(Math.random() * possibleValues);
+//       values.add(randomScaled);
+//     }
+
+//     const options = [...values].map((scaledValue) => {
+//       const numericValue = scaledValue / scale;
+//       return precision > 0
+//         ? numericValue.toFixed(precision)
+//         : String(scaledValue);
+//     });
+
+//     setDraft((d) => ({
+//       ...d,
+//       options: applyOptionSuffix(options, optionSuffix),
+//     }));
+//     setError("");
+//   }
+
 //   function handleSave() {
 //     const topic = draft.category.trim();
 //     const hasQ = draft.questionText.trim() || draft.questionImage;
@@ -1658,6 +1792,118 @@
 //   margin-bottom: 8px;
 // }
 
+// .range-option-row {
+//   display: flex;
+//   align-items: center;
+//   gap: 6px;
+//   margin: -2px 0 8px 0;
+//   flex-wrap: wrap;
+// }
+
+// .range-option-input {
+//   width: 118px;
+//   height: 24px;
+//   padding: 0 7px;
+//   border-radius: 6px;
+//   border: 1px solid var(--border);
+//   background: var(--panel-2);
+//   color: var(--text);
+//   font-family: 'JetBrains Mono', monospace;
+//   font-size: 9px;
+//   box-sizing: border-box;
+// }
+
+// .range-option-input:focus {
+//   outline: none;
+//   border-color: var(--cyan);
+//   box-shadow: 0 0 0 2px rgba(103, 199, 221, 0.12);
+// }
+
+// .range-option-btn {
+//   height: 24px;
+//   padding: 0 9px;
+//   border-radius: 6px;
+//   border: 1px solid var(--border);
+//   background: var(--panel-2);
+//   color: var(--cyan);
+//   cursor: pointer;
+//   font-family: 'JetBrains Mono', monospace;
+//   font-size: 9px;
+//   font-weight: 700;
+// }
+
+// .range-option-btn:hover {
+//   border-color: var(--cyan);
+//   color: var(--text);
+//   background: rgba(76, 141, 255, 0.1);
+// }
+
+// .range-option-btn:active {
+//   transform: scale(0.97);
+// }
+
+// .range-option-hint {
+//   color: var(--muted);
+//   font-family: 'JetBrains Mono', monospace;
+//   font-size: 8px;
+// }
+
+// .range-option-row {
+//   display: flex;
+//   align-items: center;
+//   gap: 6px;
+//   margin: -2px 0 8px 0;
+//   flex-wrap: wrap;
+// }
+
+// .range-option-input {
+//   width: 118px;
+//   height: 24px;
+//   padding: 0 7px;
+//   border-radius: 6px;
+//   border: 1px solid var(--border);
+//   background: var(--panel-2);
+//   color: var(--text);
+//   font-family: 'JetBrains Mono', monospace;
+//   font-size: 9px;
+//   box-sizing: border-box;
+// }
+
+// .range-option-input:focus {
+//   outline: none;
+//   border-color: var(--cyan);
+//   box-shadow: 0 0 0 2px rgba(103, 199, 221, 0.12);
+// }
+
+// .range-option-btn {
+//   height: 24px;
+//   padding: 0 9px;
+//   border-radius: 6px;
+//   border: 1px solid var(--border);
+//   background: var(--panel-2);
+//   color: var(--cyan);
+//   cursor: pointer;
+//   font-family: 'JetBrains Mono', monospace;
+//   font-size: 9px;
+//   font-weight: 700;
+// }
+
+// .range-option-btn:hover {
+//   border-color: var(--cyan);
+//   color: var(--text);
+//   background: rgba(76, 141, 255, 0.1);
+// }
+
+// .range-option-btn:active {
+//   transform: scale(0.97);
+// }
+
+// .range-option-hint {
+//   color: var(--muted);
+//   font-family: 'JetBrains Mono', monospace;
+//   font-size: 8px;
+// }
+
 // .option-suffix-row {
 //   display: flex;
 //   align-items: center;
@@ -2378,6 +2624,7 @@ function defaultOptions() {
 function emptyDraft() {
   return {
     category: "",
+    examName: "",
     questionText: "",
     questionImage: null,
     options: defaultOptions(),
@@ -2407,6 +2654,7 @@ function normalizeQuestion(question) {
     ...question,
     options,
     correctIndex,
+    examName: String(question.examName || "").trim(),
     special: question.special === true,
   };
 }
@@ -2436,6 +2684,11 @@ const SECTIONS = [
     key: "special",
     label: "Special",
     icon: ListChecks,
+  },
+  {
+    key: "all",
+    label: "All",
+    icon: ListOrdered,
   },
 ];
 
@@ -2909,6 +3162,201 @@ function ImageField({
   );
 }
 
+
+/* ---------------------------------- bulk array import modal ---------------------------------- */
+
+function BulkQuestionImportModal({ onCancel, onImport }) {
+  const example = `[
+  {
+    "category": "Ratio & Proportion",
+    "question": "If a:b = 2:3, then ...?",
+    "options": ["10", "12", "15", "18"],
+    "answer": 2,
+    "explanation": "Short explanation here or any link",
+    "special": false
+  }
+]  Age
+
+Algebra
+
+Average
+
+Boat & Water
+
+Circle
+
+Compound Interest
+
+Coordinate G
+
+CP & SP
+
+Discount
+
+Geometry
+
+HCF & LCM
+
+Mensuration
+
+Miscll
+
+Mixture & Alligation
+
+Number System
+
+Partnership
+
+Percentage
+
+Pipe & Cistern
+
+Profit & Loss
+
+Progression
+
+Ratio and Proportion
+
+Simple Interest
+
+Speed & Distance
+
+Time & Work
+
+Train
+
+Trigonometry  
+
+use only category from these options and create questions in this format with their correct options`;
+
+  const [text, setText] = useState(example);
+  const [error, setError] = useState("");
+
+  function stripCodeFence(value) {
+    return String(value || "")
+      .trim()
+      .replace(/^```(?:json|javascript|js)?\s*/i, "")
+      .replace(/\s*```$/i, "")
+      .trim();
+  }
+
+  function normalizeBulkItem(item, index) {
+    if (!item || typeof item !== "object" || Array.isArray(item)) {
+      throw new Error(`Question ${index + 1}: each array item must be an object.`);
+    }
+
+    const category = String(item.category ?? item.topic ?? "").trim();
+    const examName = String(item.examName ?? item.exam ?? "").trim();
+    const questionText = String(item.questionText ?? item.question ?? "").trim();
+    const options = Array.isArray(item.options)
+      ? item.options.map((value) => String(value ?? "").trim())
+      : [];
+
+    const rawAnswer = item.correctIndex ?? item.answer;
+    const correctIndex = Number(rawAnswer);
+    const solutionText = String(item.solutionText ?? item.explanation ?? "").trim();
+
+    if (!category) {
+      throw new Error(`Question ${index + 1}: category/topic is required.`);
+    }
+
+    if (!questionText && !item.questionImage) {
+      throw new Error(`Question ${index + 1}: question text is required.`);
+    }
+
+    if (options.length !== 4 || options.some((option) => !option)) {
+      throw new Error(`Question ${index + 1}: exactly 4 non-empty options are required.`);
+    }
+
+    if (!Number.isInteger(correctIndex) || correctIndex < 0 || correctIndex > 3) {
+      throw new Error(`Question ${index + 1}: answer/correctIndex must be 0, 1, 2, or 3.`);
+    }
+
+    return normalizeQuestion({
+      category,
+      examName,
+      questionText,
+      questionImage: item.questionImage || null,
+      options,
+      correctIndex,
+      solutionText,
+      solutionImage: item.solutionImage || null,
+      special: item.special === true,
+    });
+  }
+
+  function handleImport() {
+    try {
+      const cleaned = stripCodeFence(text);
+      const parsed = JSON.parse(cleaned);
+
+      if (!Array.isArray(parsed)) {
+        throw new Error("Paste a JSON array: [ { ... }, { ... } ]");
+      }
+
+      if (parsed.length === 0) {
+        throw new Error("The array is empty. Add at least one question.");
+      }
+
+      const normalized = parsed.map(normalizeBulkItem);
+      setError("");
+      onImport(normalized);
+    } catch (err) {
+      setError(err && err.message ? err.message : "Could not read this array.");
+    }
+  }
+
+  return (
+    <div className="modal-overlay" onClick={onCancel}>
+      <div className="modal bulk-import-modal" onClick={(e) => e.stopPropagation()}>
+        <div className="modal-head">
+          <div>
+            <h2>Multiple Questions · Array Upload</h2>
+            <p className="bulk-import-subtitle">Paste one JSON array and add all questions together.</p>
+          </div>
+          <button className="icon-btn" onClick={onCancel}><X size={16} /></button>
+        </div>
+
+        <div className="modal-body">
+          <div className="bulk-format-note">
+            <b>Supported fields:</b> category, examName, question, options, answer, explanation, special.
+            <span>You can also use questionText, correctIndex and solutionText.</span>
+          </div>
+
+          <div className="field">
+            <label className="field-label">Questions Array</label>
+            <textarea
+              className="textarea bulk-array-textarea"
+              rows={18}
+              value={text}
+              onChange={(e) => setText(e.target.value)}
+              spellCheck={false}
+              placeholder='[{"category":"Algebra","question":"...","options":["A","B","C","D"],"answer":0,"explanation":"..."}]'
+            />
+          </div>
+
+          <div className="bulk-answer-note">
+            <span>Answer index:</span>
+            <code>0 = A</code>
+            <code>1 = B</code>
+            <code>2 = C</code>
+            <code>3 = D</code>
+          </div>
+
+          {error && <p className="error-text bulk-import-error">{error}</p>}
+        </div>
+
+        <div className="modal-foot">
+          <button className="btn btn-ghost" onClick={onCancel}>Cancel</button>
+          <button className="btn btn-primary" onClick={handleImport}>
+            <Upload size={14} /> Import Array
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 /* ---------------------------------- question editor modal ---------------------------------- */
 
 function QuestionEditorModal({
@@ -2928,6 +3376,22 @@ function QuestionEditorModal({
   const [error, setError] = useState("");
   const [optionSuffix, setOptionSuffix] =
     useState("");
+  const [optionRangeStart, setOptionRangeStart] =
+    useState("10");
+  const [optionRangeEnd, setOptionRangeEnd] =
+    useState("20");
+  const rangeAutoFillReadyRef = useRef(false);
+
+  useEffect(() => {
+    // Keep existing options untouched when an old question is opened for editing.
+    // New questions start with the default 10 → 20 range and auto-generated options.
+    if (!rangeAutoFillReadyRef.current) {
+      rangeAutoFillReadyRef.current = true;
+      if (initial) return;
+    }
+
+    generateRangeOptions({ silent: true });
+  }, [optionRangeStart, optionRangeEnd]);
 
   function applyOptionSuffix(
     options,
@@ -3082,6 +3546,103 @@ function QuestionEditorModal({
     }));
   }
 
+  function handleRangeStartChange(value) {
+    const nextStart = String(value ?? "");
+    setOptionRangeStart(nextStart);
+
+    const trimmed = nextStart.trim();
+    if (!/^-?\d+(?:\.\d+)?$/.test(trimmed)) return;
+
+    const numericStart = Number(trimmed);
+    if (!Number.isFinite(numericStart)) return;
+
+    const dot = trimmed.indexOf(".");
+    const precision = dot === -1 ? 0 : trimmed.length - dot - 1;
+    const autoEnd = numericStart + 10;
+    setOptionRangeEnd(
+      precision > 0 ? autoEnd.toFixed(precision) : String(autoEnd)
+    );
+  }
+
+  function clearAllOptions() {
+    setDraft((d) => ({
+      ...d,
+      options: ["", "", "", ""],
+      correctIndex: 0,
+    }));
+    setError("");
+  }
+
+  function generateRangeOptions({ silent = false } = {}) {
+    const firstText = String(optionRangeStart || "").trim();
+    const secondText = String(optionRangeEnd || "").trim();
+
+    if (
+      !/^-?\d+(?:\.\d+)?$/.test(firstText) ||
+      !/^-?\d+(?:\.\d+)?$/.test(secondText)
+    ) {
+      if (!silent) {
+        setError("Enter valid start and end values, like 10 to 20 or 5.456 to 15.456.");
+      }
+      return;
+    }
+
+    const first = Number(firstText);
+    const second = Number(secondText);
+
+    if (!Number.isFinite(first) || !Number.isFinite(second)) {
+      if (!silent) {
+        setError("Enter a valid numeric range.");
+      }
+      return;
+    }
+
+    const decimalPlaces = (value) => {
+      const dot = value.indexOf(".");
+      return dot === -1 ? 0 : value.length - dot - 1;
+    };
+
+    const precision = Math.max(
+      decimalPlaces(firstText),
+      decimalPlaces(secondText)
+    );
+    const scale = Math.pow(10, precision);
+
+    const minScaled = Math.round(Math.min(first, second) * scale);
+    const maxScaled = Math.round(Math.max(first, second) * scale);
+    const possibleValues = maxScaled - minScaled + 1;
+
+    if (possibleValues < 4) {
+      if (!silent) {
+        setError(
+          `This range can make only ${possibleValues} unique option${possibleValues === 1 ? "" : "s"}. Use a wider range.`
+        );
+      }
+      return;
+    }
+
+    const values = new Set();
+    while (values.size < 4) {
+      const randomScaled =
+        minScaled +
+        Math.floor(Math.random() * possibleValues);
+      values.add(randomScaled);
+    }
+
+    const options = [...values].map((scaledValue) => {
+      const numericValue = scaledValue / scale;
+      return precision > 0
+        ? numericValue.toFixed(precision)
+        : String(scaledValue);
+    });
+
+    setDraft((d) => ({
+      ...d,
+      options: applyOptionSuffix(options, optionSuffix),
+    }));
+    setError("");
+  }
+
   function handleSave() {
     const topic =
       draft.category.trim();
@@ -3122,6 +3683,7 @@ function QuestionEditorModal({
     const clean = {
       ...draft,
       category: topic,
+      examName: String(draft.examName || "").trim(),
       questionText:
         draft.questionText.trim(),
       options:
@@ -3192,6 +3754,35 @@ function QuestionEditorModal({
                 />
               ))}
             </datalist>
+          </div>
+
+          <div className="field exam-source-field">
+            <div className="exam-source-head">
+              <label className="field-label exam-source-label">
+                Exam Name
+              </label>
+              <span className="exam-optional-pill">Optional</span>
+            </div>
+
+            <div className="exam-name-wrap">
+              <span className="exam-name-prefix">EXAM</span>
+              <input
+                className="input exam-name-input"
+                value={draft.examName || ""}
+                onChange={(e) =>
+                  setDraft((d) => ({
+                    ...d,
+                    examName: e.target.value,
+                  }))
+                }
+                placeholder="e.g. NIMCET 2026, SSC CGL 2025, CUET PG 2026"
+                aria-label="Exam name in which this question appeared"
+              />
+            </div>
+
+            <p className="exam-source-hint">
+              Add the exam / year if this is a previous-year or exam-based question.
+            </p>
           </div>
 
           <div className="field">
@@ -3286,6 +3877,44 @@ function QuestionEditorModal({
               >
                 1
               </button>
+
+              <button
+                type="button"
+                className="quick-option-btn clear-option-btn"
+                onClick={clearAllOptions}
+                title="Erase all 4 options"
+                aria-label="Erase all options"
+              >
+                ⌫
+              </button>
+            </div>
+
+            <div className="range-option-row">
+              <input
+                type="text"
+                className="range-option-input range-option-input-small"
+                value={optionRangeStart}
+                onChange={(e) => handleRangeStartChange(e.target.value)}
+                placeholder="10"
+                aria-label="First range value"
+                title="First range value. Last range auto-fills as first + 10, and options generate automatically."
+              />
+
+              <span className="range-option-separator">to</span>
+
+              <input
+                type="text"
+                className="range-option-input range-option-input-small"
+                value={optionRangeEnd}
+                onChange={(e) => setOptionRangeEnd(e.target.value)}
+                placeholder="20"
+                aria-label="Last range value"
+                title="Last range value. Changing it automatically regenerates the options."
+              />
+
+              <span className="range-option-hint">
+                auto generate · first + 10 → last · default 10 to 20
+              </span>
             </div>
 
             <div className="option-suffix-row">
@@ -3466,6 +4095,12 @@ function QuestionCard({
         <span className="badge cat">
           {q.category || "General"}
         </span>
+
+        {q.examName && (
+          <span className="badge exam">
+            EXAM · {q.examName}
+          </span>
+        )}
 
         {q.attemptStatus ===
           "correct" && (
@@ -4614,10 +5249,18 @@ function TestRunning({
 
       <div className="card q-card">
         <div className="test-question-heading">
-          <span className="badge cat">
-            {question.category ||
-              "General"}
-          </span>
+          <div className="test-question-badges">
+            <span className="badge cat">
+              {question.category ||
+                "General"}
+            </span>
+
+            {question.examName && (
+              <span className="badge exam">
+                EXAM · {question.examName}
+              </span>
+            )}
+          </div>
 
           <button
             type="button"
@@ -4936,6 +5579,11 @@ function App() {
   ] = useState(false);
 
   const [
+    bulkImportOpen,
+    setBulkImportOpen,
+  ] = useState(false);
+
+  const [
     editingId,
     setEditingId,
   ] = useState(null);
@@ -5144,6 +5792,30 @@ function App() {
     notify(
       "Question added"
     );
+  }
+
+  function addBulkQuestions(drafts) {
+    if (!Array.isArray(drafts) || drafts.length === 0) {
+      return;
+    }
+
+    setQuestions((prev) => {
+      const startOrder = prev.length;
+      const imported = drafts.map((draft, index) =>
+        normalizeQuestion({
+          ...draft,
+          id: uid(),
+          order: startOrder + index,
+          attemptStatus: "unattempted",
+          testAllowed: true,
+        })
+      );
+
+      return [...prev, ...imported];
+    });
+
+    setBulkImportOpen(false);
+    notify(`${drafts.length} question${drafts.length === 1 ? "" : "s"} imported`);
   }
 
   function editQuestionSave(
@@ -6023,6 +6695,15 @@ function App() {
           </button>
 
           <button
+            className="icon-btn bulk-import-btn"
+            onClick={() => setBulkImportOpen(true)}
+            title="Upload multiple questions by array"
+            aria-label="Upload multiple questions by array"
+          >
+            <Upload size={16} />
+          </button>
+
+          <button
             className="add-btn"
             onClick={openNew}
             title="New Question"
@@ -6423,6 +7104,58 @@ function App() {
             }
           />
         )}
+
+        {section ===
+          "all" && (
+          <SectionList
+            title="All Questions"
+            emptyText="No questions yet."
+            items={filterList(
+              questions
+            )}
+            topics={topics}
+            topicFilter={
+              topicFilter
+            }
+            onTopicChange={
+              setTopicFilter
+            }
+            searchQuery={
+              searchQuery
+            }
+            onSearchChange={
+              setSearchQuery
+            }
+            onMarkCorrect={(
+              id
+            ) =>
+              markStatus(
+                id,
+                "correct"
+              )
+            }
+            onMarkWrong={(
+              id
+            ) =>
+              markStatus(
+                id,
+                "wrong"
+              )
+            }
+            onToggleAllow={
+              toggleAllow
+            }
+            onCopy={
+              copyQuestion
+            }
+            onEdit={
+              openEdit
+            }
+            onDelete={
+              deleteQuestion
+            }
+          />
+        )}
       </div>
 
       <div className="navbar">
@@ -6459,6 +7192,13 @@ function App() {
           }
         )}
       </div>
+
+      {bulkImportOpen && (
+        <BulkQuestionImportModal
+          onCancel={() => setBulkImportOpen(false)}
+          onImport={addBulkQuestions}
+        />
+      )}
 
       {editorOpen && (
         <QuestionEditorModal
@@ -6577,6 +7317,88 @@ body {
 .export-btn {
   width: 30px;
   height: 30px;
+}
+
+.bulk-import-btn {
+  width: 34px;
+  height: 34px;
+  border-color: rgba(103, 199, 221, 0.45);
+  color: var(--cyan);
+  background: rgba(103, 199, 221, 0.08);
+}
+
+.bulk-import-btn:hover {
+  border-color: var(--cyan);
+  background: rgba(103, 199, 221, 0.14);
+}
+
+.bulk-import-modal {
+  max-width: 720px;
+}
+
+.bulk-import-modal .modal-head > div:first-child {
+  min-width: 0;
+}
+
+.bulk-import-subtitle {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.bulk-format-note {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(103, 199, 221, 0.25);
+  border-radius: 10px;
+  background: rgba(103, 199, 221, 0.06);
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.bulk-format-note b {
+  color: var(--cyan);
+}
+
+.bulk-array-textarea {
+  min-height: 330px;
+  resize: vertical;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  line-height: 1.55;
+  tab-size: 2;
+}
+
+.bulk-answer-note {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.bulk-answer-note code {
+  padding: 3px 6px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--panel-2);
+  color: var(--text);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+}
+
+.bulk-import-error {
+  padding: 8px 10px;
+  border: 1px solid rgba(240, 138, 109, 0.35);
+  border-radius: 8px;
+  background: rgba(240, 138, 109, 0.07);
 }
 
 .add-btn {
@@ -6728,6 +7550,13 @@ body {
 .badge.cat {
   color: #9be1ed;
   background: #315768;
+}
+
+.badge.exam {
+  color: #e5e7ff;
+  background: linear-gradient(135deg, #3f3b63, #4a4770);
+  border-color: rgba(167, 139, 250, 0.30);
+  box-shadow: inset 0 0 0 1px rgba(229, 231, 255, 0.04);
 }
 
 .badge.ok {
@@ -6966,6 +7795,87 @@ body {
   font-family: 'JetBrains Mono', monospace;
 }
 
+/* Exam source has its own visual treatment so it does not look like a normal question field. */
+.exam-source-field {
+  padding: 12px;
+  border: 1px solid rgba(167, 139, 250, 0.22);
+  border-radius: 12px;
+  background:
+    linear-gradient(135deg, rgba(124, 107, 196, 0.10), rgba(103, 199, 221, 0.025));
+}
+
+.exam-source-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 7px;
+}
+
+.exam-source-label {
+  margin-bottom: 0 !important;
+  color: #d8d7ff !important;
+}
+
+.exam-optional-pill {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #aaa8c9;
+  border: 1px solid rgba(167, 139, 250, 0.20);
+  border-radius: 999px;
+  padding: 3px 7px;
+}
+
+.exam-name-wrap {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: stretch;
+}
+
+.exam-name-prefix {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 54px;
+  padding: 0 10px;
+  border: 1px solid rgba(167, 139, 250, 0.30);
+  border-right: 0;
+  border-radius: 10px 0 0 10px;
+  background: #3f3b63;
+  color: #e5e7ff;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+}
+
+.exam-name-input {
+  border-radius: 0 10px 10px 0 !important;
+  border-color: rgba(167, 139, 250, 0.30) !important;
+}
+
+.exam-name-input:focus {
+  border-color: #9b8cff !important;
+  box-shadow: 0 0 0 3px rgba(155, 140, 255, 0.13) !important;
+}
+
+.exam-source-hint {
+  margin: 7px 0 0;
+  color: #aaa8bd;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.test-question-badges {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
 .field {
   margin-bottom: 14px;
 }
@@ -7029,6 +7939,82 @@ body {
   align-items: center;
   gap: 5px;
   margin-bottom: 8px;
+}
+
+.clear-option-btn {
+  color: var(--rose);
+}
+
+.clear-option-btn:hover {
+  border-color: var(--rose);
+  background: rgba(255, 96, 120, 0.08);
+}
+
+.range-option-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: -2px 0 8px 0;
+  flex-wrap: wrap;
+}
+
+.range-option-input {
+  width: 118px;
+  height: 24px;
+  padding: 0 7px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--panel-2);
+  color: var(--text);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  box-sizing: border-box;
+}
+
+.range-option-input:focus {
+  outline: none;
+  border-color: var(--cyan);
+  box-shadow: 0 0 0 2px rgba(103, 199, 221, 0.12);
+}
+
+.range-option-input-small {
+  width: 82px;
+}
+
+.range-option-separator {
+  color: var(--muted);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.range-option-btn {
+  height: 24px;
+  padding: 0 9px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--panel-2);
+  color: var(--cyan);
+  cursor: pointer;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.range-option-btn:hover {
+  border-color: var(--cyan);
+  color: var(--text);
+  background: rgba(76, 141, 255, 0.1);
+}
+
+.range-option-btn:active {
+  transform: scale(0.97);
+}
+
+.range-option-hint {
+  color: var(--muted);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 8px;
 }
 
 .option-suffix-row {

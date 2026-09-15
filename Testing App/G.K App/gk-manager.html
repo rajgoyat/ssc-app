@@ -838,6 +838,12 @@
   $("#f-topic").addEventListener("change",()=>{rebuildManagerCascade("topic");applyFilters(true,true)});
   $("#f-test-set").addEventListener("change",()=>{rebuildManagerCascade("testSet");applyFilters(true,true)});
   $("#f-category").addEventListener("change",()=>applyFilters(true,true));
+  $("#rename-selected-categories").addEventListener("click",async e=>{
+    e.preventDefault();
+    e.stopPropagation();
+    await renameSelectedCategories();
+    $("#f-category-picker").open=true;
+  });
   ["#f-date-from","#f-date-to"].forEach(id=>$(id).addEventListener("change",()=>applyFilters(true,true)));
   $("#f-search").addEventListener("input",()=>applyFilters(true)); ["#range-from","#range-to"].forEach(id=>$(id).addEventListener("input",updateRangeSummary));
   $("#select-range").onclick=()=>{state.selected=new Set(rangeItems().map(q=>q.id));renderList();toast(`Selected ${state.selected.size} range question(s).`)};
@@ -901,6 +907,8 @@
     .status{color:var(--muted);font:700 9px "Space Mono",monospace}.status.ok{color:var(--lime)}.tabs{display:flex;gap:7px;margin:16px 0}.tab{flex:0 0 auto}.tab.active{background:var(--cyan);border-color:var(--cyan);color:var(--ink)}
     .panel{background:rgba(11,30,38,.96);border:1px solid var(--line);box-shadow:var(--shadow);padding:15px}.panel-title{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:12px;flex-wrap:wrap}.panel-title h2{font-size:20px;margin:0}.muted{color:var(--muted)}.panel-title-main{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}.panel-title-actions{display:flex;align-items:center;gap:7px;flex-wrap:wrap}.toggle-check{display:flex;align-items:center;gap:6px;border:1px solid var(--line);padding:6px 8px;color:var(--muted);font:700 9px "Space Mono",monospace;text-transform:uppercase;cursor:pointer;user-select:none}.toggle-check:hover{border-color:var(--cyan);color:var(--text)}.toggle-check input{margin:0;accent-color:var(--lime)}.manager-tools{display:block}.manager-tools.hidden{display:none}.player-filter-tools{display:grid;gap:10px}.player-filter-tools.hidden{display:none}
     .filters{display:grid;grid-template-columns:repeat(7,minmax(120px,1fr));gap:8px;padding:10px;border:1px solid var(--line);background:rgba(85,230,210,.03);margin-bottom:11px}.field{display:grid;gap:5px;min-width:0}.field label{color:var(--muted);font:700 9px "Space Mono",monospace;text-transform:uppercase;letter-spacing:.06em}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);background:#071920;color:var(--text);padding:8px;outline:none;min-width:0}.field select option{background:#071920;color:#e8f7f4}.field select option:checked{background:#12333d;color:#d4f36b}.field textarea{min-height:92px;resize:vertical;line-height:1.45}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--cyan)}
+    .category-field{position:relative}.category-picker{position:relative;width:100%}.category-picker>summary{list-style:none;width:100%;min-height:35px;border:1px solid var(--line);background:#071920;color:var(--text);padding:8px 30px 8px 9px;cursor:pointer;position:relative;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.category-picker>summary::-webkit-details-marker{display:none}.category-picker>summary::after{content:"▾";position:absolute;right:9px;top:50%;transform:translateY(-50%);color:var(--cyan)}.category-picker[open]>summary{border-color:var(--cyan)}.category-picker[open]>summary::after{content:"▴"}.category-menu{position:absolute;z-index:900;top:calc(100% + 5px);right:0;width:min(340px,calc(100vw - 30px));max-height:310px;overflow:auto;border:1px solid var(--cyan);background:#071920;box-shadow:0 18px 44px rgba(0,0,0,.5);padding:7px}.category-row{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:stretch;border-bottom:1px solid rgba(145,229,220,.1)}.category-row:last-of-type{border-bottom:0}.category-option{width:100%;display:flex;align-items:center;gap:9px;text-align:left;border:0;background:transparent;color:var(--text);padding:8px 7px;cursor:pointer;min-width:0}.category-option:hover{background:rgba(85,230,210,.06)}.category-option>span:nth-child(2){overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.category-circle{width:17px;height:17px;min-width:17px;border-radius:50%;border:1px solid rgba(145,229,220,.55);display:inline-block;position:relative}.category-option.active{color:var(--lime)}.category-option.active .category-circle{border-color:var(--lime);background:var(--lime);box-shadow:inset 0 0 0 4px #071920}.category-option.all-option.active{color:var(--cyan)}.category-option.all-option.active .category-circle{border-color:var(--cyan);background:var(--cyan)}.category-rename{border:0;border-left:1px solid rgba(145,229,220,.1);background:transparent;color:var(--orange);padding:0 9px;font:700 8px "Space Mono",monospace;text-transform:uppercase;cursor:pointer}.category-rename:hover{background:rgba(255,173,103,.08);color:#ffd0a7}.category-picker-empty{padding:12px 8px;color:var(--muted);font-size:11px}.category-menu-actions{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px;margin-top:7px;padding-top:7px;border-top:1px solid rgba(145,229,220,.14)}.category-bulk-rename{min-width:0;color:var(--orange);border-color:rgba(255,173,103,.45)}.category-bulk-rename:hover{color:#ffd0a7;border-color:var(--orange)}.category-done{margin:0}.category-count{color:var(--muted);font:700 8px "Space Mono",monospace;margin-left:auto}.player-controls .category-menu{left:0;right:auto}
+
     .rangebar{display:flex;gap:7px;align-items:end;flex-wrap:wrap;padding:9px;border:1px solid rgba(212,243,107,.17);background:rgba(212,243,107,.025);margin-bottom:11px}.rangebar .field{width:105px}.rangebar .field.date-field{width:155px}.summary{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap;color:var(--muted);font-size:12px;margin:9px 0}.summary b{color:var(--lime)}
     .list{display:grid;gap:6px}.card{position:relative;border:1px solid var(--line);background:rgba(9,28,35,.78);padding:8px 10px}.compact-head{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:26px}.card-left{display:flex;align-items:center;gap:7px;min-width:0}.check{margin:0;accent-color:var(--cyan)}.qindex{color:var(--cyan);font:700 9px "Space Mono",monospace;white-space:nowrap}.qtext{font-size:15px;line-height:1.3;margin:5px 0 7px;white-space:pre-line}.tiny{padding:5px 7px;min-height:27px;font-size:9px}
     .more-menu{position:relative;margin-left:auto}.more-menu>summary{list-style:none;width:30px;height:27px;display:grid;place-items:center;border:1px solid var(--line);font:700 18px/1 "Space Mono",monospace;color:var(--muted);cursor:pointer;user-select:none}.more-menu>summary::-webkit-details-marker{display:none}.more-menu[open]>summary,.more-menu>summary:hover{color:var(--cyan);border-color:var(--cyan)}.more-pop{position:absolute;z-index:120;right:0;top:31px;width:min(330px,calc(100vw - 42px));padding:9px;background:#091c23;border:1px solid var(--cyan);box-shadow:0 16px 42px rgba(0,0,0,.45)}.menu-id{color:var(--cyan);font:700 10px "Space Mono",monospace;word-break:break-all}.menu-meta,.menu-source{margin-top:5px;color:var(--muted);font:700 9px "Space Mono",monospace;text-transform:uppercase;line-height:1.45;word-break:break-word}.menu-source{text-transform:none}.menu-actions{display:flex;gap:5px;flex-wrap:wrap;margin-top:8px;padding-top:8px;border-top:1px solid var(--line)}
@@ -987,7 +995,7 @@
           <div class="field"><label>Exact Date</label><select id="f-date"><option value="">All Dates</option></select></div>
           <div class="field"><label>Topic</label><select id="f-topic"><option value="">All Topics</option></select></div>
           <div class="field"><label>Test Set</label><select id="f-test-set"><option value="">All Test Sets</option></select></div>
-          <div class="field"><label>Category</label><select id="f-category"><option value="">All Categories</option></select></div>
+          <div class="field category-field"><label>Category</label><details class="category-picker" id="f-category-picker"><summary id="f-category-summary">All Categories</summary><div class="category-menu"><div id="f-category-options"></div><div class="category-menu-actions"><button class="btn tiny category-bulk-rename" id="rename-selected-categories" type="button" disabled>✏️ Selected</button><button class="btn tiny category-done" type="button" data-category-done="manager">Done</button></div></div></details></div>
           <div class="field"><label>Search</label><input id="f-search" type="search" placeholder="question / id / explanation" /></div>
         </div>
 
@@ -1031,7 +1039,7 @@
             <div class="field"><label>Date</label><select id="p-date"><option value="">All Dates</option></select></div>
             <div class="field"><label>Topic</label><select id="p-topic"><option value="">All Topics</option></select></div>
             <div class="field"><label>Test Set</label><select id="p-test-set"><option value="">All Test Sets</option></select></div>
-            <div class="field"><label>Category</label><select id="p-category"><option value="">All Categories</option></select></div>
+            <div class="field category-field"><label>Category</label><details class="category-picker" id="p-category-picker"><summary id="p-category-summary">All Categories</summary><div class="category-menu"><div id="p-category-options"></div><button class="btn tiny category-done" type="button" data-category-done="player">Done</button></div></details></div>
             <div class="field"><label>From Q#</label><input id="p-from" type="number" min="1" value="1" /></div>
             <div class="field"><label>To Q#</label><input id="p-to" type="number" min="1" placeholder="last" /></div>
             <div class="field"><label>Next Question After</label><select id="p-seconds"><option value="3">3 sec</option><option value="5">5 sec</option><option value="10" selected>10 sec</option><option value="15">15 sec</option><option value="20">20 sec</option><option value="30">30 sec</option><option value="60">60 sec</option></select></div>
@@ -1077,7 +1085,7 @@
   const $ = (s, root=document) => root.querySelector(s);
   const $$ = (s, root=document) => [...root.querySelectorAll(s)];
   const MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-  const state = { all: [], filtered: [], page: 1, pageSize: 50, selected: new Set(), editing: null, editImageDataUrl: "", editImageName: "", removeEditImage: false, playerQueue: [], playerIndex: 0, playerTimer: null, playerRemaining: 0, playerPlaying: false, managerToolsHidden: false, showAllSubQuestions: false, showManagerExplanations: false, showPlayerExplanations: false, playerFiltersHidden: false };
+  const state = { all: [], filtered: [], page: 1, pageSize: 50, selected: new Set(), editing: null, editImageDataUrl: "", editImageName: "", removeEditImage: false, playerQueue: [], playerIndex: 0, playerTimer: null, playerRemaining: 0, playerPlaying: false, managerToolsHidden: false, showAllSubQuestions: false, showManagerExplanations: false, showPlayerExplanations: false, playerFiltersHidden: false, managerCategories: new Set(), playerCategories: new Set(), managerCategoryOptions: [], playerCategoryOptions: [] };
 
   const esc = (v) => String(v ?? "").replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
 
@@ -1215,6 +1223,173 @@
     return pick;
   }
 
+  function categoryState(kind) {
+    return kind === "player"
+      ? { selected: state.playerCategories, options: state.playerCategoryOptions, optionsId: "#p-category-options", summaryId: "#p-category-summary", pickerId: "#p-category-picker" }
+      : { selected: state.managerCategories, options: state.managerCategoryOptions, optionsId: "#f-category-options", summaryId: "#f-category-summary", pickerId: "#f-category-picker" };
+  }
+
+  function getSelectedCategories(kind) {
+    const cfg=categoryState(kind);
+    return [...cfg.selected];
+  }
+
+  function renderCategoryPicker(kind) {
+    const cfg=categoryState(kind);
+    const box=$(cfg.optionsId), summary=$(cfg.summaryId), picker=$(cfg.pickerId);
+    if(!box || !summary || !picker) return;
+    const selected=[...cfg.selected];
+    const label=!selected.length ? "All Categories" : (selected.length===1 ? selected[0] : `${selected.length} Categories selected`);
+    summary.textContent=label;
+    summary.title=selected.length ? selected.join(", ") : "All Categories";
+    const allActive=!selected.length;
+    const rows=[`<div class="category-row"><button class="category-option all-option ${allActive?"active":""}" type="button" data-category-value="__all__"><span class="category-circle"></span><span>All Categories</span>${allActive?'<span class="category-count">ACTIVE</span>':''}</button></div>`];
+    if(cfg.options.length){
+      rows.push(...cfg.options.map(value=>{
+        const active=cfg.selected.has(value);
+        const rename=kind==="manager" ? `<button class="category-rename" type="button" data-category-rename="${esc(value)}" title="Rename ${esc(value)}">✏️</button>` : "";
+        return `<div class="category-row"><button class="category-option ${active?"active":""}" type="button" data-category-value="${esc(value)}" aria-pressed="${active}"><span class="category-circle"></span><span>${esc(value)}</span></button>${rename}</div>`;
+      }));
+    }else{
+      rows.push('<div class="category-picker-empty">No categories available for these filters.</div>');
+    }
+    box.innerHTML=rows.join("");
+    if(kind==="manager"){
+      const bulkRename=$("#rename-selected-categories");
+      if(bulkRename){
+        bulkRename.disabled=selected.length===0;
+        bulkRename.textContent=selected.length ? `✏ Rename Selected (${selected.length})` : "✏ Rename Selected";
+        bulkRename.title=selected.length ? `Rename ${selected.join(", ")} to one category name` : "Select one or more categories first";
+      }
+    }
+  }
+
+  function setCategoryOptions(kind, values, preferred=[]) {
+    const clean=uniq(values);
+    const selected=kind === "player" ? state.playerCategories : state.managerCategories;
+    const requested=new Set((Array.isArray(preferred)?preferred:[]).filter(v=>clean.includes(v)));
+    selected.clear();
+    requested.forEach(v=>selected.add(v));
+    if(kind === "player") state.playerCategoryOptions=clean; else state.managerCategoryOptions=clean;
+    renderCategoryPicker(kind);
+  }
+
+  function clearCategorySelection(kind) {
+    const selected=kind === "player" ? state.playerCategories : state.managerCategories;
+    selected.clear();
+    renderCategoryPicker(kind);
+  }
+
+  function setSelectedCategories(kind, values) {
+    const cfg=categoryState(kind);
+    const allowed=new Set(cfg.options);
+    cfg.selected.clear();
+    (Array.isArray(values)?values:[]).forEach(v=>{ if(allowed.has(v)) cfg.selected.add(v); });
+    renderCategoryPicker(kind);
+  }
+
+  function toggleCategory(kind, value) {
+    const cfg=categoryState(kind);
+    const picker=$(cfg.pickerId);
+    if(value === "__all__") cfg.selected.clear();
+    else if(cfg.selected.has(value)) cfg.selected.delete(value);
+    else if(cfg.options.includes(value)) cfg.selected.add(value);
+    renderCategoryPicker(kind);
+    // Keep the multi-select open so the next category can be chosen immediately.
+    if(picker) picker.open=true;
+  }
+
+  async function renameSelectedCategories() {
+    const names=getSelectedCategories("manager");
+    if(!names.length){toast("Select one or more categories first.");return;}
+
+    const picker=$("#f-category-picker");
+    if(picker) picker.open=true;
+
+    const suggested=names.length===1 ? names[0] : "";
+    const listPreview=names.join(", ");
+    const nextName=String(prompt(`Rename these ${names.length} selected categor${names.length===1?"y":"ies"} to one name:
+
+${listPreview}
+
+New category name:`,suggested)||"").trim();
+    if(!nextName) return;
+    if(names.length===1 && nextName===names[0]) return;
+
+    const section=$("#f-section").value;
+    const targets=state.all.filter(q=>names.includes(q.category) && (section==="all" || q.section===section));
+    if(!targets.length){toast("No questions found for the selected categories in this source.");return;}
+    if(targets.some(q=>q.duplicateId)){
+      toast("Rename stopped: selected categories contain duplicate question IDs. Make those IDs unique first.");
+      return;
+    }
+
+    const scopeLabel=section==="all" ? "Current Affairs + Static GK" : (section==="current" ? "Current Affairs" : "Static GK");
+    const mergeNote=names.includes(nextName)
+      ? `The selected categories will be merged into existing name “${nextName}”.`
+      : `All selected categories will become “${nextName}”.`;
+    if(!confirm(`Rename ${names.length} selected categor${names.length===1?"y":"ies"} (${listPreview}) to “${nextName}” for ${targets.length} question(s) in ${scopeLabel}?
+
+${mergeNote}`)) return;
+
+    const btn=$("#rename-selected-categories");
+    if(btn) btn.disabled=true;
+    try{
+      toast(`Renaming ${targets.length} question(s)…`);
+      for(const q of targets){
+        if(q.category===nextName) continue;
+        await post("/api/question-update",{id:q.id,action:"category",value:nextName});
+      }
+      state.managerCategories.clear();
+      state.managerCategories.add(nextName);
+      toast(`Merged ${names.length} categor${names.length===1?"y":"ies"} into ${nextName}.`);
+      await loadData();
+      if(state.managerCategoryOptions.includes(nextName)) setSelectedCategories("manager",[nextName]);
+      applyFilters(true,true);
+      if(picker) picker.open=true;
+    }catch(e){
+      toast(`Rename failed: ${e.message}`);
+      if(picker) picker.open=true;
+    }finally{
+      renderCategoryPicker("manager");
+    }
+  }
+
+  async function renameCategory(oldName) {
+    oldName=String(oldName||"").trim();
+    if(!oldName) return;
+    const picker=$("#f-category-picker");
+    if(picker) picker.open=true;
+
+    const nextName=String(prompt(`Rename category "${oldName}" to:`,oldName)||"").trim();
+    if(!nextName || nextName===oldName) return;
+
+    const section=$("#f-section").value;
+    const targets=state.all.filter(q=>q.category===oldName && (section==="all" || q.section===section));
+    if(!targets.length){toast(`No ${oldName} questions found in this source.`);return;}
+    if(targets.some(q=>q.duplicateId)){
+      toast("Rename stopped: this category contains duplicate question IDs. Make those IDs unique first.");
+      return;
+    }
+    const scopeLabel=section==="all" ? "Current Affairs + Static GK" : (section==="current" ? "Current Affairs" : "Static GK");
+    if(!confirm(`Rename category "${oldName}" → "${nextName}" for ${targets.length} question(s) in ${scopeLabel}?`)) return;
+
+    try{
+      toast(`Renaming ${targets.length} question(s)…`);
+      for(const q of targets){
+        await post("/api/question-update",{id:q.id,action:"category",value:nextName});
+      }
+      const wasSelected=state.managerCategories.has(oldName);
+      if(wasSelected){state.managerCategories.delete(oldName);state.managerCategories.add(nextName);}
+      toast(`Renamed ${oldName} → ${nextName} in ${targets.length} question(s).`);
+      await loadData();
+      if(picker) picker.open=true;
+    }catch(e){
+      toast(`Rename failed: ${e.message}`);
+      if(picker) picker.open=true;
+    }
+  }
+
   function showManagerEmpty(message) {
     $("#question-list").innerHTML = `<div class="empty">${esc(message)}</div>`;
     $("#filtered-count").textContent = "0";
@@ -1308,7 +1483,7 @@
     const oldDate=$("#f-date").value;
     const oldTopic=$("#f-topic").value;
     const oldTestSet=$("#f-test-set").value;
-    const oldCategory=$("#f-category").value;
+    const oldCategories=getSelectedCategories("manager");
 
     if (section === "current" || section === "all") {
       const latest=latestCurrentDate();
@@ -1334,7 +1509,7 @@
       $("#f-date").disabled=false;
 
       const categoryBase=date ? current.filter(q=>q.date===date) : monthRows;
-      setRawOptions($("#f-category"), categoryBase.map(q=>q.category), "All Categories", oldCategory, "");
+      setCategoryOptions("manager", categoryBase.map(q=>q.category), oldCategories);
     } else {
       setRawOptions($("#f-year"), [], "All Years");
       setMonthOptions($("#f-month"), []);
@@ -1352,13 +1527,17 @@
       const testSet=setRawOptions($("#f-test-set"), testSets, "All Test Sets", oldTestSet, "");
       $("#f-test-set").disabled=!testSets.length;
       const testSetRows=testSet ? topicRows.filter(q=>q.testSet===testSet) : topicRows;
-      if (section === "static") setRawOptions($("#f-category"), testSetRows.map(q=>q.category), "All Categories", oldCategory, "");
+      if (section === "static") setCategoryOptions("manager", testSetRows.map(q=>q.category), oldCategories);
       $("#f-topic").disabled=false;
     } else {
       setRawOptions($("#f-topic"), [], "All Topics");
       setRawOptions($("#f-test-set"), [], "All Test Sets");
       $("#f-topic").disabled=true;
       $("#f-test-set").disabled=true;
+    }
+
+    if(section === "all") {
+      setCategoryOptions("manager", [...current, ...statics].map(q=>q.category), oldCategories);
     }
   }
 
@@ -1393,7 +1572,7 @@
       if (year) categoryRows=categoryRows.filter(q=>q.year===year);
       if (month) categoryRows=categoryRows.filter(q=>q.month===month);
       if (date) categoryRows=categoryRows.filter(q=>q.date===date);
-      setRawOptions($("#f-category"), categoryRows.map(q=>q.category), "All Categories", $("#f-category").value, "");
+      setCategoryOptions("manager", categoryRows.map(q=>q.category), getSelectedCategories("manager"));
     }
 
     if (section === "static") {
@@ -1406,16 +1585,16 @@
       }
       const testSet=$("#f-test-set").value;
       const rows=testSet ? topicRows.filter(q=>q.testSet===testSet) : topicRows;
-      setRawOptions($("#f-category"), rows.map(q=>q.category), "All Categories", $("#f-category").value, "");
+      setCategoryOptions("manager", rows.map(q=>q.category), getSelectedCategories("manager"));
     }
   }
 
-  function currentManagerFilter() { return { section:$("#f-section").value, year:$("#f-year").value, month:$("#f-month").value, date:$("#f-date").value, topic:$("#f-topic").value, testSet:$("#f-test-set").value, category:$("#f-category").value, search:$("#f-search").value.trim().toLowerCase(), dateFrom:$("#f-date-from").value, dateTo:$("#f-date-to").value }; }
+  function currentManagerFilter() { return { section:$("#f-section").value, year:$("#f-year").value, month:$("#f-month").value, date:$("#f-date").value, topic:$("#f-topic").value, testSet:$("#f-test-set").value, categories:getSelectedCategories("manager"), search:$("#f-search").value.trim().toLowerCase(), dateFrom:$("#f-date-from").value, dateTo:$("#f-date-to").value }; }
   function filterQuestions(base, f) {
     return base.filter(q => {
       if(f.section && f.section!=="all" && q.section!==f.section) return false;
       if(f.year && q.year!==f.year) return false; if(f.month && q.month!==f.month) return false; if(f.date && q.date!==f.date) return false;
-      if(f.topic && q.topic!==f.topic) return false; if(f.testSet && q.testSet!==f.testSet) return false; if(f.category && q.category!==f.category) return false;
+      if(f.topic && q.topic!==f.topic) return false; if(f.testSet && q.testSet!==f.testSet) return false; if(Array.isArray(f.categories) && f.categories.length && !f.categories.includes(q.category)) return false;
       if(f.dateFrom && q.section==="current" && q.date && q.date<f.dateFrom) return false; if(f.dateTo && q.section==="current" && q.date && q.date>f.dateTo) return false;
       if(f.search){ const hay=[q.id,q.question,q.explanation,q.category,q.topic,q.testSet,...(q.options||[])].join(" ").toLowerCase(); if(!hay.includes(f.search))return false; }
       return true;
@@ -1479,7 +1658,7 @@
     const current=currentRows(), statics=staticRows();
     if(forceLatest) $("#p-section").value=current.length?"current":(statics.length?"static":"all");
     const section=$("#p-section").value;
-    const oldYear=$("#p-year").value, oldMonth=$("#p-month").value, oldDate=$("#p-date").value, oldTopic=$("#p-topic").value, oldTestSet=$("#p-test-set").value, oldCategory=$("#p-category").value;
+    const oldYear=$("#p-year").value, oldMonth=$("#p-month").value, oldDate=$("#p-date").value, oldTopic=$("#p-topic").value, oldTestSet=$("#p-test-set").value, oldCategories=getSelectedCategories("player");
     if(section==="current" || section==="all"){
       const latest=latestCurrentDate(), latestYear=latest.slice(0,4), latestMonth=latest.slice(5,7);
       const years=uniqDesc(current.map(q=>q.year));
@@ -1494,7 +1673,7 @@
       const date=setRawOptions($("#p-date"),dates,"All Dates",forceLatest?"":oldDate,forceLatest&&dates.includes(latest)?latest:(dates[0]||""));
       $("#p-year").disabled=$("#p-month").disabled=$("#p-date").disabled=false;
       const cr=date?current.filter(q=>q.date===date):mr;
-      setRawOptions($("#p-category"),cr.map(q=>q.category),"All Categories",oldCategory,"");
+      setCategoryOptions("player",cr.map(q=>q.category),oldCategories);
     }else{
       setRawOptions($("#p-year"),[],"All Years");setMonthOptions($("#p-month"),[]);setRawOptions($("#p-date"),[],"All Dates");
       $("#p-year").disabled=$("#p-month").disabled=$("#p-date").disabled=true;
@@ -1508,7 +1687,7 @@
       $("#p-test-set").disabled=!testSets.length;
       if(section==="static"){
         const sr=testSet?topicRows.filter(q=>q.testSet===testSet):topicRows;
-        setRawOptions($("#p-category"),sr.map(q=>q.category),"All Categories",oldCategory,"");
+        setCategoryOptions("player",sr.map(q=>q.category),oldCategories);
       }
       $("#p-topic").disabled=false;
     }else{
@@ -1517,6 +1696,7 @@
       $("#p-topic").disabled=true;
       $("#p-test-set").disabled=true;
     }
+    if(section==="all") setCategoryOptions("player",[...current,...statics].map(q=>q.category),oldCategories);
   }
 
   function rebuildPlayerCascade(changed){
@@ -1529,7 +1709,7 @@
       }else if(changed==="month"){
         const month=$("#p-month").value, mr=month?yr.filter(q=>q.month===month):yr,dates=uniqDesc(mr.map(q=>q.date));setRawOptions($("#p-date"),dates,"All Dates","",month?(dates[0]||""):"");
       }
-      const month=$("#p-month").value,date=$("#p-date").value;let rows=current;if(year)rows=rows.filter(q=>q.year===year);if(month)rows=rows.filter(q=>q.month===month);if(date)rows=rows.filter(q=>q.date===date);setRawOptions($("#p-category"),rows.map(q=>q.category),"All Categories",$("#p-category").value,"");
+      const month=$("#p-month").value,date=$("#p-date").value;let rows=current;if(year)rows=rows.filter(q=>q.year===year);if(month)rows=rows.filter(q=>q.month===month);if(date)rows=rows.filter(q=>q.date===date);setCategoryOptions("player",rows.map(q=>q.category),getSelectedCategories("player"));
     }
     if(section==="static"){
       const topic=$("#p-topic").value;
@@ -1541,7 +1721,7 @@
       }
       const testSet=$("#p-test-set").value;
       const rows=testSet?topicRows.filter(q=>q.testSet===testSet):topicRows;
-      setRawOptions($("#p-category"),rows.map(q=>q.category),"All Categories",$("#p-category").value,"");
+      setCategoryOptions("player",rows.map(q=>q.category),getSelectedCategories("player"));
     }
   }
 
@@ -1558,10 +1738,10 @@
     rebuildPlayerCascade("topic");
     if(f.testSet && [...$("#p-test-set").options].some(o=>o.value===f.testSet)) $("#p-test-set").value=f.testSet;
     rebuildPlayerCascade("testSet");
-    if(f.category && [...$("#p-category").options].some(o=>o.value===f.category)) $("#p-category").value=f.category;
+    setSelectedCategories("player", f.categories || []);
     loadPlayerQueue(showToast);
   }
-  function playerFilter(){return{section:$("#p-section").value,year:$("#p-year").value,month:$("#p-month").value,date:$("#p-date").value,topic:$("#p-topic").value,testSet:$("#p-test-set").value,category:$("#p-category").value,search:"",dateFrom:"",dateTo:""};}
+  function playerFilter(){return{section:$("#p-section").value,year:$("#p-year").value,month:$("#p-month").value,date:$("#p-date").value,topic:$("#p-topic").value,testSet:$("#p-test-set").value,categories:getSelectedCategories("player"),search:"",dateFrom:"",dateTo:""};}
   function shuffle(arr){const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
   function loadPlayerQueue(showToast=true){ stopPlayer(); let queue=filterQuestions(state.all,playerFilter()); let from=Math.max(1,Number($("#p-from").value)||1),to=Number($("#p-to").value)||queue.length; queue=queue.slice(from-1,Math.max(from,to)); if($("#p-order").value==="random")queue=shuffle(queue); state.playerQueue=queue;state.playerIndex=0;state.playerRemaining=Number($("#p-seconds").value)||10;renderPlayer(); if(showToast)toast(`Player loaded ${queue.length} question(s).`); }
   function playerQuestionHtml(q){
@@ -1594,7 +1774,7 @@
     $("#f-date").value="";
     $("#f-topic").value="";
     $("#f-test-set").value="";
-    $("#f-category").value="";
+    clearCategorySelection("manager");
     $("#f-date-from").value="";
     $("#f-date-to").value="";
 
@@ -1617,7 +1797,7 @@
     $("#p-date").value="";
     $("#p-topic").value="";
     $("#p-test-set").value="";
-    $("#p-category").value="";
+    clearCategorySelection("player");
 
     if(section==="current"){
       populatePlayerFilters(true);
@@ -1720,7 +1900,34 @@
   $("#f-date").addEventListener("change",()=>{rebuildManagerCascade("date");applyFilters(true,true)});
   $("#f-topic").addEventListener("change",()=>{rebuildManagerCascade("topic");applyFilters(true,true)});
   $("#f-test-set").addEventListener("change",()=>{rebuildManagerCascade("testSet");applyFilters(true,true)});
-  $("#f-category").addEventListener("change",()=>applyFilters(true,true));
+  $("#f-category-options").addEventListener("click",async e=>{
+    // Prevent the document outside-click listener from closing this details menu
+    // after its contents are re-rendered.
+    e.stopPropagation();
+    const renameBtn=e.target.closest("[data-category-rename]");
+    if(renameBtn){
+      e.preventDefault();
+      await renameCategory(renameBtn.dataset.categoryRename);
+      return;
+    }
+    const btn=e.target.closest("[data-category-value]");
+    if(!btn)return;
+    e.preventDefault();
+    toggleCategory("manager",btn.dataset.categoryValue);
+    applyFilters(true,true);
+    $("#f-category-picker").open=true;
+  });
+
+  // Bulk category rename: keep this listener in the ACTIVE document.
+  // The button lives outside #f-category-options, so option delegation above
+  // cannot catch its click.
+  $("#rename-selected-categories").addEventListener("click",async e=>{
+    e.preventDefault();
+    e.stopPropagation();
+    await renameSelectedCategories();
+    const picker=$("#f-category-picker");
+    if(picker) picker.open=true;
+  });
   ["#f-date-from","#f-date-to"].forEach(id=>$(id).addEventListener("change",()=>applyFilters(true,true)));
   $("#f-search").addEventListener("input",()=>applyFilters(true)); ["#range-from","#range-to"].forEach(id=>$(id).addEventListener("input",updateRangeSummary));
   $("#select-range").onclick=()=>{state.selected=new Set(rangeItems().map(q=>q.id));renderList();toast(`Selected ${state.selected.size} range question(s).`)};
@@ -1754,8 +1961,27 @@
   $("#p-date").addEventListener("change",()=>{rebuildPlayerCascade("date");loadPlayerQueue(false)});
   $("#p-topic").addEventListener("change",()=>{rebuildPlayerCascade("topic");loadPlayerQueue(false)});
   $("#p-test-set").addEventListener("change",()=>{rebuildPlayerCascade("testSet");loadPlayerQueue(false)});
-  ["#p-category","#p-from","#p-to","#p-order"].forEach(id=>$(id).addEventListener("change",()=>loadPlayerQueue(false)));
+  $("#p-category-options").addEventListener("click",e=>{
+    e.stopPropagation();
+    const btn=e.target.closest("[data-category-value]");
+    if(!btn)return;
+    e.preventDefault();
+    toggleCategory("player",btn.dataset.categoryValue);
+    loadPlayerQueue(false);
+    $("#p-category-picker").open=true;
+  });
+  ["#p-from","#p-to","#p-order"].forEach(id=>$(id).addEventListener("change",()=>loadPlayerQueue(false)));
   $("#p-seconds").addEventListener("change",()=>{state.playerRemaining=Number($("#p-seconds").value)||10;renderPlayer()});
+  $$('[data-category-done]').forEach(btn=>btn.addEventListener("click",e=>{
+    e.stopPropagation();
+    const picker=$(btn.dataset.categoryDone==="player"?"#p-category-picker":"#f-category-picker");
+    picker?.removeAttribute("open");
+  }));
+  document.addEventListener("click",e=>{
+    [$("#f-category-picker"),$("#p-category-picker")].forEach(picker=>{
+      if(picker?.open && !picker.contains(e.target)) picker.removeAttribute("open");
+    });
+  });
   $("#refresh-data").onclick=loadData;document.addEventListener("keydown",e=>{if(e.key!=="Escape")return;if($("#image-lightbox").classList.contains("show")){closeImageZoom();return;}if($("#edit-modal").classList.contains("show"))closeEdit()});
   loadData();
 })();

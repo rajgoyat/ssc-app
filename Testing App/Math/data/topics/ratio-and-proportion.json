@@ -16,6 +16,27 @@
     "id": "mttvrthhdscq7r",
     "order": 192,
     "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "examName": ""
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "What number must be subtracted from each term of ratio 49 : 81 so that the\nratio becomes 7 : 9?",
+    "questionImage": null,
+    "options": [
+      "-62",
+      "-63",
+      "-67",
+      "-70"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/5jtFJuxGWj4?si=PjNNla6h5BiJ7qPJ&t=1321",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0yutby0xwd22",
+    "order": 225,
+    "attemptStatus": "unattempted",
     "testAllowed": true
   }
 ]

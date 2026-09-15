@@ -16,7 +16,8 @@
     "order": 65,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Coordinate G",
@@ -35,6 +36,47 @@
     "order": 73,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
+  },
+  {
+    "category": "Coordinate G",
+    "examName": "",
+    "questionText": "Find the distance between the points (2,-4) and (1,2).",
+    "questionImage": null,
+    "options": [
+      "2",
+      "root-37",
+      "8",
+      "6"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/5jtFJuxGWj4?si=L2P5CnqUAruqb4FO&t=334",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0us6809lne3g",
+    "order": 212,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Coordinate G",
+    "examName": "",
+    "questionText": "A triangle has its sides 5 cm, 12 cm and 13 cm. What will be the area of the\ntriangle formed by joining the mid-point of the three sides?",
+    "questionImage": null,
+    "options": [
+      "4",
+      "1",
+      "7&1/2",
+      "5"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0yzxkq0l46gc",
+    "order": 226,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]

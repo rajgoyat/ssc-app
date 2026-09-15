@@ -16,7 +16,8 @@
     "order": 12,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "id": "profit-2",
@@ -35,6 +36,7 @@
     "order": 13,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   }
 ]

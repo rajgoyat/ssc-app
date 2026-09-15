@@ -1,146 +1,5 @@
 {
-  "errorQuestions": [
-    {
-      "id": "err-mtwvqm7b-sn43v",
-      "category": "Error Sentences",
-      "question": "Hardly had the committee members / arrived at a consensus / when the chairman / adjourned the meeting.",
-      "options": [
-        "Hardly had the committee members",
-        "arrived at a consensus",
-        "when the chairman",
-        "adjourned the meeting"
-      ],
-      "answer": 2,
-      "explanation": "With 'hardly', use 'when', not 'when' after 'hardly had'. Correct: Hardly had the committee members arrived at a consensus when the chairman adjourned the meeting.",
-      "subQuestions": []
-    },
-    {
-      "id": "err-mtwvqm7c-qbz6u",
-      "category": "Error Sentences",
-      "question": "No sooner the train had left / the platform than / the passengers realized / that they had forgotten their luggage.",
-      "options": [
-        "No sooner the train had left",
-        "the platform than",
-        "the passengers realized",
-        "that they had forgotten their luggage"
-      ],
-      "answer": 0,
-      "explanation": "After 'No sooner', inversion is required. Correct: No sooner had the train left the platform than the passengers realized...",
-      "subQuestions": []
-    },
-    {
-      "id": "err-mtwvqm7c-mb91g",
-      "category": "Error Sentences",
-      "question": "Neither the principal nor / the teachers was willing / to take responsibility / for the unexpected delay.",
-      "options": [
-        "Neither the principal nor",
-        "the teachers was willing",
-        "to take responsibility",
-        "for the unexpected delay"
-      ],
-      "answer": 1,
-      "explanation": "With 'neither...nor', the verb agrees with the nearest subject. Since 'teachers' is plural, use 'were willing'.",
-      "subQuestions": []
-    },
-    {
-      "id": "err-mtwvqm7c-4ksbc",
-      "category": "Error Sentences",
-      "question": "The manager asked the employees / that why they had not / submitted the reports / before the deadline.",
-      "options": [
-        "The manager asked the employees",
-        "that why they had not",
-        "submitted the reports",
-        "before the deadline"
-      ],
-      "answer": 1,
-      "explanation": "After 'asked', do not use 'that' before an indirect question. Correct: The manager asked the employees why they had not submitted the reports.",
-      "subQuestions": []
-    },
-    {
-      "id": "err-mtwvqm7c-1r4m0",
-      "category": "Error Sentences",
-      "question": "Each of the candidates / have been instructed / to bring their identity cards / to the examination centre.",
-      "options": [
-        "Each of the candidates",
-        "have been instructed",
-        "to bring their identity cards",
-        "to the examination centre"
-      ],
-      "answer": 1,
-      "explanation": "'Each' is singular and takes a singular verb. Correct: Each of the candidates has been instructed...",
-      "subQuestions": []
-    },
-    {
-      "id": "err-mtwvqm7c-t5vue",
-      "category": "Error Sentences",
-      "question": "The scientist insisted / that the experiment / was repeated under / controlled conditions.",
-      "options": [
-        "The scientist insisted",
-        "that the experiment",
-        "was repeated under",
-        "controlled conditions"
-      ],
-      "answer": 2,
-      "explanation": "After 'insisted that', use the subjunctive form. Correct: The scientist insisted that the experiment be repeated under controlled conditions.",
-      "subQuestions": []
-    },
-    {
-      "id": "err-mtwvqm7c-gi9tl",
-      "category": "Error Sentences",
-      "question": "Scarcely had she entered / the auditorium when / the lights had gone out / unexpectedly.",
-      "options": [
-        "Scarcely had she entered",
-        "the auditorium when",
-        "the lights had gone out",
-        "unexpectedly"
-      ],
-      "answer": 2,
-      "explanation": "After 'scarcely had', the second action should normally be in the simple past. Correct: ...when the lights went out unexpectedly.",
-      "subQuestions": []
-    },
-    {
-      "id": "err-mtwvqm7d-w2wuq",
-      "category": "Error Sentences",
-      "question": "He is one of those writers / who believes that / literature should reflect / the realities of society.",
-      "options": [
-        "He is one of those writers",
-        "who believes that",
-        "literature should reflect",
-        "the realities of society"
-      ],
-      "answer": 1,
-      "explanation": "The relative pronoun 'who' refers to 'writers', which is plural. Correct: He is one of those writers who believe that...",
-      "subQuestions": []
-    },
-    {
-      "id": "err-mtwvqm7d-3efp4",
-      "category": "Error Sentences",
-      "question": "The judge ordered that / the accused should be / released on bail / immediately.",
-      "options": [
-        "The judge ordered that",
-        "the accused should be",
-        "released on bail",
-        "immediately"
-      ],
-      "answer": 1,
-      "explanation": "In formal subjunctive construction after 'ordered that', use the base verb. Correct: The judge ordered that the accused be released on bail immediately.",
-      "subQuestions": []
-    },
-    {
-      "id": "err-mtwvqm7d-a09ji",
-      "category": "Error Sentences",
-      "question": "Had I knew about / the change in schedule, / I would have informed / all the participants.",
-      "options": [
-        "Had I knew about",
-        "the change in schedule",
-        "I would have informed",
-        "all the participants"
-      ],
-      "answer": 0,
-      "explanation": "In an inverted third conditional, use the past perfect. Correct: Had I known about the change in schedule, I would have informed all the participants.",
-      "subQuestions": []
-    }
-  ],
+  "errorQuestions": [],
   "moreQuestions": [
     {
       "id": "more-mtwxsu4s-h2mhb",
@@ -154,6 +13,7 @@
       ],
       "answer": 0,
       "explanation": "The correct sequence is QSPR.\nQ introduces the main idea (government promoting digital payments).\nS gives a specific example of the initiative (BHIM and UPI).\nP shows the result of these efforts (increase in digital transactions).\nR further elaborates the impact, especially in rural areas. This forms a logical flow: promotion → specific steps → overall result → specific impact.",
+      "pool": "new",
       "subQuestions": []
     },
     {
@@ -168,6 +28,7 @@
       ],
       "answer": 0,
       "explanation": "The correct sequence is QRSP.\nQ introduces the topic (RBI’s measures to control bad loans).\nR explains what those measures are.\nS shows the positive outcome of the measures.\nP presents a contrasting reality (problem still remains for small borrowers). This creates a logical structure of problem-solving steps followed by results and remaining challenges.",
+      "pool": "new",
       "subQuestions": []
     },
     {
@@ -182,6 +43,7 @@
       ],
       "answer": 0,
       "explanation": "The correct sequence is RQPS.\nR introduces the scheme (PMJDY).\nQ explains its key feature (zero balance accounts).\nP states the broader objective (financial inclusion).\nS gives the result/impact (millions benefited). The paragraph moves from introduction → feature → purpose → outcome.",
+      "pool": "new",
       "subQuestions": []
     },
     {
@@ -196,6 +58,7 @@
       ],
       "answer": 1,
       "explanation": "The correct sequence is QRPS.\nQ states the basic requirement for banks.\nR explains the purpose behind this requirement.\nP names the practice (priority sector lending).\nS mentions the consequence of not following it. The flow is: rule → objective → name of the concept → consequence.",
+      "pool": "new",
       "subQuestions": []
     },
     {
@@ -210,7 +73,648 @@
       ],
       "answer": 1,
       "explanation": "The correct sequence is PRQS.\nP introduces the problem (rise in cyber frauds).\nR mentions the steps taken by banks.\nQ gives advice to customers.\nS shows that the problem still continues. The paragraph follows a problem → action → advice → remaining challenge structure.",
+      "pool": "new",
       "subQuestions": []
+    },
+    {
+      "id": "more-mtzqtmfm-6v7aa",
+      "category": "Error",
+      "question": " She enjoys reading novels (1)/, listening to music (2)/ and to paint landscapes (3)/ during her free time. (4)",
+      "options": [
+        "Part (1)",
+        "Part (2)",
+        "Part (3)",
+        "Part (4)"
+      ],
+      "answer": 2,
+      "explanation": "Error → Part (3). The sentence violates parallel structure. After 'enjoys', the activities should be expressed in the same grammatical form: 'reading', 'listening' and 'painting'. Therefore, 'to paint landscapes' should be 'painting landscapes'. Correct sentence: 'She enjoys reading novels, listening to music and painting landscapes during her free time.' Rule → Words or phrases joined by 'and' should normally follow the same grammatical pattern.",
+      "pool": "new",
+      "subQuestions": [
+        {
+          "question": "The committee was responsible for reviewing the applications (1)/, verifying the financial documents (2)/ and to determine whether each applicant (3)/ satisfied the prescribed eligibility criteria. (4)",
+          "options": [
+            "Part (1)",
+            "Part (2)",
+            "Part (3)",
+            "Part (4)"
+          ],
+          "answer": 2,
+          "explanation": "Error → Part (3). After 'for', the coordinated activities should remain parallel: reviewing, verifying and determining. 'To determine' breaks the parallel -ing structure. Correct: '...reviewing the applications, verifying the financial documents and determining whether each applicant satisfied...' Rule → When several elements perform the same grammatical function, maintain identical grammatical form.",
+          "pool": "new"
+        },
+        {
+          "question": "The new regulations require manufacturers not only to disclose the chemical composition of their products (1)/ but also maintaining detailed records (2)/ of all safety tests conducted before (3)/ the products are released into the market. (4)",
+          "options": [
+            "Part (1)",
+            "Part (2)",
+            "Part (3)",
+            "Part (4)"
+          ],
+          "answer": 1,
+          "explanation": "Error → Part (2). 'Not only...but also' requires parallel construction. Since the first element is 'to disclose', the second should be 'to maintain'. Correct: '...not only to disclose... but also to maintain detailed records...' This is a common advanced parallelism error because both ideas are grammatically correct independently but not parallel when coordinated.",
+          "pool": "new"
+        }
+      ]
+    },
+    {
+      "id": "more-mtzqtmfo-b62ud",
+      "category": "Error",
+      "question": " The ancient tree is famous for (1)/ it's beautiful, sprawling branches (2)/ which provide shade for the entire park (3)/ during the hot summer months. (4)",
+      "options": [
+        "Part (1)",
+        "Part (2)",
+        "Part (3)",
+        "Part (4)"
+      ],
+      "answer": 1,
+      "explanation": "Error → Part (2). 'It's' is the contraction of 'it is' or 'it has', whereas 'its' is the possessive form of 'it'. Here the sentence refers to the branches belonging to the tree, so 'its' is required. Correct: 'The ancient tree is famous for its beautiful, sprawling branches...' Memory trick → it's = it is; its = belonging to it.",
+      "pool": "new",
+      "subQuestions": [
+        {
+          "question": "The corporation announced that it's long-term strategy (1)/ would focus on reducing its dependence on imported materials (2)/ while strengthening the resilience of (3)/ its domestic supply chain. (4)",
+          "options": [
+            "Part (1)",
+            "Part (2)",
+            "Part (3)",
+            "Part (4)"
+          ],
+          "answer": 0,
+          "explanation": "Error → Part (1). 'It's' means 'it is' or 'it has', neither of which fits before 'long-term strategy'. The possessive determiner 'its' is required. Correct: 'The corporation announced that its long-term strategy...' Test → Replace 'it's' with 'it is'. If the sentence becomes illogical, 'its' is probably required.",
+          "pool": "new"
+        },
+        {
+          "question": "Although the organization has expanded rapidly, (1)/ its yet to establish a reliable mechanism (2)/ for evaluating whether its regional offices (3)/ are complying with the revised standards. (4)",
+          "options": [
+            "Part (1)",
+            "Part (2)",
+            "Part (3)",
+            "Part (4)"
+          ],
+          "answer": 1,
+          "explanation": "Error → Part (2). Here the intended meaning is 'it is yet to establish', so the contraction must be 'it's'. Correct: '...it's yet to establish a reliable mechanism...' Notice the reverse trap: possessive 'its' is incorrect because the sentence needs a subject + verb.",
+          "pool": "new"
+        }
+      ]
+    },
+    {
+      "id": "more-mtzqtmfo-vc1oc",
+      "category": "Error",
+      "question": " She had barely finished writing her essay (1)/ when the power went out, (2)/ leaving her work unsaved (3)/ and her progress lost. (4)",
+      "options": [
+        "Part (1)",
+        "Part (2)",
+        "Part (3)",
+        "Part (4)"
+      ],
+      "answer": 3,
+      "explanation": "No grammatical error is present in the corrected form shown here. The standard construction is 'barely...when'. If the original sentence uses 'then' instead of 'when', the error is in Part (2). Correct structure → 'She had barely finished writing her essay when the power went out.' Important pairs → Hardly/Scarcely/Barely...when; No sooner...than.",
+      "pool": "new",
+      "subQuestions": [
+        {
+          "question": "Hardly had the negotiations begun (1)/ than both parties accused each other (2)/ of violating the conditions (3)/ agreed upon during the preliminary talks. (4)",
+          "options": [
+            "Part (1)",
+            "Part (2)",
+            "Part (3)",
+            "Part (4)"
+          ],
+          "answer": 1,
+          "explanation": "Error → Part (2). 'Hardly' pairs with 'when', not 'than'. Correct: 'Hardly had the negotiations begun when both parties accused each other...' Rule → Hardly/Scarcely/Barely...when; No sooner...than.",
+          "pool": "new"
+        },
+        {
+          "question": "No sooner had the researchers submitted their findings (1)/ when an independent team produced evidence (2)/ that appeared to contradict several (3)/ of their principal conclusions. (4)",
+          "options": [
+            "Part (1)",
+            "Part (2)",
+            "Part (3)",
+            "Part (4)"
+          ],
+          "answer": 1,
+          "explanation": "Error → Part (2). 'No sooner' must be followed by 'than'. Correct: 'No sooner had the researchers submitted their findings than an independent team produced evidence...' Also notice the inversion 'had the researchers submitted', which is required when 'no sooner' begins the clause.",
+          "pool": "new"
+        }
+      ]
+    },
+    {
+      "id": "more-mtzqtmfo-ugwlk",
+      "category": "Error",
+      "question": " My neighbor constantly complains (1)/ for the noise coming from (2)/ the children playing in the park (3)/ near our residential building. (4)",
+      "options": [
+        "Part (1)",
+        "Part (2)",
+        "Part (3)",
+        "Part (4)"
+      ],
+      "answer": 1,
+      "explanation": "Error → Part (2). The verb 'complain' normally takes 'about' when referring to something that causes dissatisfaction. Therefore, 'complains for the noise' should be 'complains about the noise'. Correct: 'My neighbor constantly complains about the noise coming from the children playing in the park.' Rule → complain about something; complain to someone; complain of an illness/problem.",
+      "pool": "new",
+      "subQuestions": [
+        {
+          "question": "Several residents complained to the authorities (1)/ for the excessive noise generated by the construction work (2)/ that continued well beyond (3)/ the permitted working hours. (4)",
+          "options": [
+            "Part (1)",
+            "Part (2)",
+            "Part (3)",
+            "Part (4)"
+          ],
+          "answer": 1,
+          "explanation": "Error → Part (2). We 'complain to' a person or authority, but we 'complain about' a problem. Correct: 'Several residents complained to the authorities about the excessive noise...' Pattern → complain to + person; complain about + issue.",
+          "pool": "new"
+        },
+        {
+          "question": "The patient complained about severe dizziness (1)/ to the physician, who immediately ordered (2)/ a series of neurological tests to determine (3)/ whether further examination was necessary. (4)",
+          "options": [
+            "Part (1)",
+            "Part (2)",
+            "Part (3)",
+            "Part (4)"
+          ],
+          "answer": 3,
+          "explanation": "No error. 'Complain about + problem + to + person' is grammatically valid. This is designed as a trap because both 'about' and 'to' appear in the same sentence but perform different functions.",
+          "pool": "new"
+        }
+      ]
+    },
+    {
+      "id": "more-mtzqtmfo-8bgun",
+      "category": "Error",
+      "question": " Had she not postponed the meeting several times, (1)/ the committee would has had a greater opportunity (2)/ to discuss the budget allocations in detail (3)/ before the quarterly report was finalized. (4)",
+      "options": [
+        "Part (1)",
+        "Part (2)",
+        "Part (3)",
+        "Part (4)"
+      ],
+      "answer": 1,
+      "explanation": "Error → Part (2). After a modal verb such as 'would', we use the base form 'have', not 'has'. The correct expression is 'would have had'. Correct sentence: 'Had she not postponed the meeting several times, the committee would have had a greater opportunity...' 'Had she not postponed...' is an inverted third conditional equivalent to 'If she had not postponed...'.",
+      "pool": "new",
+      "subQuestions": [
+        {
+          "question": "Had the regulatory authority acted sooner, (1)/ the company might has avoided (2)/ several of the financial penalties (3)/ subsequently imposed on it. (4)",
+          "options": [
+            "Part (1)",
+            "Part (2)",
+            "Part (3)",
+            "Part (4)"
+          ],
+          "answer": 1,
+          "explanation": "Error → Part (2). Modal verbs take the base form of the following verb. Therefore, 'might has avoided' must be 'might have avoided'. Structure → might/could/would + have + V3.",
+          "pool": "new"
+        },
+        {
+          "question": "Were the proposal to receive parliamentary approval, (1)/ the ministry would have been required (2)/ to revise several regulations before (3)/ the legislation could be implemented. (4)",
+          "options": [
+            "Part (1)",
+            "Part (2)",
+            "Part (3)",
+            "Part (4)"
+          ],
+          "answer": 3,
+          "explanation": "No error. 'Were the proposal to receive...' is a formal inverted conditional equivalent to 'If the proposal were to receive...'. The main clause 'would have been required' is also grammatically valid in the intended hypothetical context.",
+          "pool": "new"
+        }
+      ]
+    },
+    {
+      "id": "more-mtzqtmfp-j17om",
+      "category": "Error",
+      "question": " A large number of equipments were delivered to the warehouse (1)/ last week (2)/ to support the upcoming production schedule (3)/ without any delay. (4)",
+      "options": [
+        "Part (1)",
+        "Part (2)",
+        "Part (3)",
+        "Part (4)"
+      ],
+      "answer": 0,
+      "explanation": "Error → Part (1). 'Equipment' is an uncountable noun, so 'equipments' is incorrect. Also, 'a large number of' is normally used with countable plural nouns. Correct alternatives: 'A large quantity of equipment was delivered...' or 'A large number of pieces of equipment were delivered...'. Important uncountable nouns → equipment, information, advice, furniture, luggage, machinery.",
+      "pool": "new",
+      "subQuestions": [
+        {
+          "question": "The investigation revealed that several important evidences (1)/ had been overlooked during the initial inquiry, (2)/ raising serious concerns about the reliability (3)/ of the final report. (4)",
+          "options": [
+            "Part (1)",
+            "Part (2)",
+            "Part (3)",
+            "Part (4)"
+          ],
+          "answer": 0,
+          "explanation": "Error → Part (1). 'Evidence' is generally uncountable, so 'evidences' is incorrect in standard exam grammar. Correct: 'several important pieces of evidence' or 'important evidence'. Remember → evidence, advice, information and furniture do not normally take plural -s.",
+          "pool": "new"
+        },
+        {
+          "question": "Much of the machinery installed in the new plant (1)/ were imported from countries (2)/ known for manufacturing highly specialized (3)/ industrial equipment. (4)",
+          "options": [
+            "Part (1)",
+            "Part (2)",
+            "Part (3)",
+            "Part (4)"
+          ],
+          "answer": 1,
+          "explanation": "Error → Part (2). 'Machinery' is an uncountable singular noun and therefore takes a singular verb. Correct: 'Much of the machinery... was imported...' The nearby plural-looking ideas do not alter the number of the main subject.",
+          "pool": "new"
+        }
+      ]
+    },
+    {
+      "id": "more-mtzqtmfp-tl4wc",
+      "category": "Error",
+      "question": " The training programme of the new coach was (1)/ more effective than the previous coach, (2)/ as it offered better structure and helped (3)/ participants stay focused for a greater portion of the day. (4)",
+      "options": [
+        "Part (1)",
+        "Part (2)",
+        "Part (3)",
+        "Part (4)"
+      ],
+      "answer": 1,
+      "explanation": "Error → Part (2). The sentence compares a 'training programme' with a 'coach', which is an illogical comparison. A programme must be compared with another programme. Correct: 'The training programme of the new coach was more effective than that of the previous coach.' Here 'that' substitutes for 'training programme'. Rule → Singular noun comparison → that of; plural noun comparison → those of.",
+      "pool": "new",
+      "subQuestions": [
+        {
+          "question": "The economic policies adopted by the present administration (1)/ are considerably more flexible than the previous government, (2)/ particularly in matters concerning foreign investment (3)/ and industrial regulation. (4)",
+          "options": [
+            "Part (1)",
+            "Part (2)",
+            "Part (3)",
+            "Part (4)"
+          ],
+          "answer": 1,
+          "explanation": "Error → Part (2). 'Policies' are incorrectly compared with 'government'. Correct: '...more flexible than those of the previous government.' Since 'policies' is plural, use 'those of'.",
+          "pool": "new"
+        },
+        {
+          "question": "The intellectual influence of the philosopher was greater (1)/ than that of most of his contemporaries, (2)/ whose writings attracted relatively little attention (3)/ outside academic circles during their lifetimes. (4)",
+          "options": [
+            "Part (1)",
+            "Part (2)",
+            "Part (3)",
+            "Part (4)"
+          ],
+          "answer": 3,
+          "explanation": "No error. 'Influence' is singular and is correctly compared with 'that of most of his contemporaries'. This question tests whether you can recognize a correctly constructed logical comparison rather than mechanically treating 'that of' as suspicious.",
+          "pool": "new"
+        }
+      ]
+    },
+    {
+      "id": "more-mtzqtmfp-68lxw",
+      "category": "Error",
+      "question": " The strict rules of the library don't let students (1)/ to take more than two books (2)/ out at a time, which is often (3)/ inconvenient for researchers. (4)",
+      "options": [
+        "Part (1)",
+        "Part (2)",
+        "Part (3)",
+        "Part (4)"
+      ],
+      "answer": 1,
+      "explanation": "Error → Part (2). After 'let + object', we use the bare infinitive or V1 without 'to'. Therefore, 'let students to take' should be 'let students take'. Correct: 'The strict rules of the library don't let students take more than two books out at a time...' Rule → let + object + V1. Similarly, active 'make + object + V1'; but passive 'be made + to + V1'.",
+      "pool": "new",
+      "subQuestions": [
+        {
+          "question": "The new security protocol makes every visitor (1)/ to present two forms of identification (2)/ before being permitted to enter (3)/ the restricted research area. (4)",
+          "options": [
+            "Part (1)",
+            "Part (2)",
+            "Part (3)",
+            "Part (4)"
+          ],
+          "answer": 1,
+          "explanation": "Error → Part (2). In active voice, 'make + object' takes the bare infinitive. Correct: 'makes every visitor present...' Compare passive: 'Every visitor is made to present...' where 'to' returns.",
+          "pool": "new"
+        },
+        {
+          "question": "The employees were made submit detailed reports (1)/ explaining how the confidential information (2)/ had been accessed without authorization (3)/ during the previous quarter. (4)",
+          "options": [
+            "Part (1)",
+            "Part (2)",
+            "Part (3)",
+            "Part (4)"
+          ],
+          "answer": 0,
+          "explanation": "Error → Part (1). In the passive construction with 'make', 'to' is required. Correct: 'The employees were made to submit detailed reports...' Rule → Active: make + object + V1; Passive: object + be made + to + V1.",
+          "pool": "new"
+        }
+      ]
+    },
+    {
+      "id": "more-mtzqtmfr-bmmsq",
+      "category": "Error",
+      "question": " The manager, along with her entire team, (1)/ expects that the project will be completed (2)/ before the deadline, and they shall submits (3)/ the final report on Friday. (4)",
+      "options": [
+        "Part (1)",
+        "Part (2)",
+        "Part (3)",
+        "Part (4)"
+      ],
+      "answer": 2,
+      "explanation": "Error → Part (3). A modal verb such as 'shall' must be followed by the base form of the verb. Therefore, 'shall submits' should be 'shall submit'. Correct: '...they shall submit the final report on Friday.' Also note that 'along with her entire team' does not change the number of the main subject 'manager', so 'expects' is correct.",
+      "pool": "new",
+      "subQuestions": [
+        {
+          "question": "The chief engineer, together with several consultants, (1)/ have recommended that the damaged section (2)/ be replaced before the bridge (3)/ is reopened to heavy vehicles. (4)",
+          "options": [
+            "Part (1)",
+            "Part (2)",
+            "Part (3)",
+            "Part (4)"
+          ],
+          "answer": 1,
+          "explanation": "Error → Part (2). The main subject is singular 'chief engineer'. The phrase 'together with several consultants' does not make the subject plural. Therefore, 'have recommended' should be 'has recommended'.",
+          "pool": "new"
+        },
+        {
+          "question": "Neither the directors nor the managing partner (1)/ are willing to authorize the expenditure (2)/ unless the auditors can demonstrate (3)/ that it is absolutely necessary. (4)",
+          "options": [
+            "Part (1)",
+            "Part (2)",
+            "Part (3)",
+            "Part (4)"
+          ],
+          "answer": 1,
+          "explanation": "Error → Part (2). With 'neither...nor', the verb agrees with the nearer subject. The nearer subject is singular 'managing partner', so 'are' should be 'is'. Correct: 'Neither the directors nor the managing partner is willing...'",
+          "pool": "new"
+        }
+      ]
+    },
+    {
+      "id": "more-mtzqtmfr-2rtzt",
+      "category": "Error",
+      "question": " Seldom we realize (1)/ how fortunate we are (2)/ to have access to clean water (3)/ and healthy food. (4)",
+      "options": [
+        "Part (1)",
+        "Part (2)",
+        "Part (3)",
+        "Part (4)"
+      ],
+      "answer": 0,
+      "explanation": "Error → Part (1). When a negative or restrictive adverb such as 'seldom' begins a sentence, subject-auxiliary inversion is required. Correct: 'Seldom do we realize how fortunate we are...' Rule → Seldom/Rarely/Never/Hardly/Little + auxiliary + subject + main verb.",
+      "pool": "new",
+      "subQuestions": [
+        {
+          "question": "Little the investigators knew (1)/ that the seemingly insignificant discrepancy (2)/ would eventually expose one of the largest (3)/ accounting frauds in the company's history. (4)",
+          "options": [
+            "Part (1)",
+            "Part (2)",
+            "Part (3)",
+            "Part (4)"
+          ],
+          "answer": 0,
+          "explanation": "Error → Part (1). When negative 'little' meaning 'hardly at all' is fronted, inversion is required. Correct: 'Little did the investigators know...' Structure → Little + did + subject + V1.",
+          "pool": "new"
+        },
+        {
+          "question": "Only after the final witness had testified (1)/ the jury understood how extensively (2)/ the evidence presented earlier had been (3)/ misinterpreted by the prosecution. (4)",
+          "options": [
+            "Part (1)",
+            "Part (2)",
+            "Part (3)",
+            "Part (4)"
+          ],
+          "answer": 1,
+          "explanation": "Error → Part (2). When 'only after...' is placed at the beginning, the main clause undergoes inversion. Correct: 'Only after the final witness had testified did the jury understand...' The subordinate clause itself does not invert.",
+          "pool": "new"
+        }
+      ]
+    },
+    {
+      "id": "more-mtzqtmfs-q1g68",
+      "category": "Error",
+      "question": " The principal emphasized that it was not only a lack of funding for extracurricular activities (1)/ that disheartened students, but the inconsistent support from parents and faculty (2)/ which, despite being crucial for success, (3)/ contribute to a decline in overall participation rates. (4)",
+      "options": [
+        "Part (1)",
+        "Part (2)",
+        "Part (3)",
+        "Part (4)"
+      ],
+      "answer": 3,
+      "explanation": "Error → Part (4). The relative pronoun 'which' refers to the singular noun 'support'. Therefore, the verb must be singular: 'contributes', not 'contribute'. Correct: '...the inconsistent support from parents and faculty which... contributes to a decline...' Rule → The verb in a relative clause agrees with the actual antecedent of the relative pronoun.",
+      "pool": "new",
+      "subQuestions": [
+        {
+          "question": "The rapid expansion of digital platforms, together with the increasing availability of inexpensive smartphones, (1)/ have transformed the manner in which information (2)/ is produced, distributed and consumed (3)/ throughout developing economies. (4)",
+          "options": [
+            "Part (1)",
+            "Part (2)",
+            "Part (3)",
+            "Part (4)"
+          ],
+          "answer": 1,
+          "explanation": "Error → Part (2). The main subject is singular 'expansion'. The phrase 'together with...' does not change the subject's number. Therefore, 'have transformed' should be 'has transformed'.",
+          "pool": "new"
+        },
+        {
+          "question": "The collection of manuscripts that were discovered in the monastery (1)/ contains several documents whose authenticity (2)/ remain a subject of considerable debate (3)/ among historians and linguists. (4)",
+          "options": [
+            "Part (1)",
+            "Part (2)",
+            "Part (3)",
+            "Part (4)"
+          ],
+          "answer": 2,
+          "explanation": "Error → Part (3). The subject of 'remain' is 'authenticity', which is singular. Therefore, 'remain' should be 'remains'. The plural nouns 'documents', 'historians' and 'linguists' are distractors.",
+          "pool": "new"
+        }
+      ]
+    },
+    {
+      "id": "more-mtzqtmfs-q1rdm",
+      "category": "Error",
+      "question": " The coordinator carefully explained about the revised procedures (1)/ to all the participants during the orientation session (2)/ so that everyone could follow the updated guidelines (3)/ without any confusion or delay. (4)",
+      "options": [
+        "Part (1)",
+        "Part (2)",
+        "Part (3)",
+        "Part (4)"
+      ],
+      "answer": 0,
+      "explanation": "Error → Part (1). 'Explain' does not normally take 'about' before its direct object. We say 'explain something to someone'. Correct: 'The coordinator carefully explained the revised procedures to all the participants...' Rule → explain + thing + to + person. Do not use 'explain about' in this structure.",
+      "pool": "new",
+      "subQuestions": [
+        {
+          "question": "The attorney explained the witnesses (1)/ why their earlier statements could not be admitted (2)/ as evidence unless they were supported (3)/ by independently verifiable facts. (4)",
+          "options": [
+            "Part (1)",
+            "Part (2)",
+            "Part (3)",
+            "Part (4)"
+          ],
+          "answer": 0,
+          "explanation": "Error → Part (1). We do not normally say 'explain someone something'. Correct construction: 'The attorney explained to the witnesses why...' Rule → explain + something + to + someone, or explain to + person + clause.",
+          "pool": "new"
+        },
+        {
+          "question": "The professor described to the students (1)/ the theoretical framework on which (2)/ the subsequent analysis of the experimental data (3)/ was primarily based. (4)",
+          "options": [
+            "Part (1)",
+            "Part (2)",
+            "Part (3)",
+            "Part (4)"
+          ],
+          "answer": 3,
+          "explanation": "No error. Unlike 'explain', 'describe' can be used as 'describe something to someone'. Here 'described to the students the theoretical framework' is grammatically acceptable, though the order 'described the framework to the students' is more natural.",
+          "pool": "new"
+        }
+      ]
+    },
+    {
+      "id": "more-mtzqtmfs-pcq1v",
+      "category": "Error",
+      "question": " The cybersecurity team is proficient for detecting (1)/ vulnerabilities in legacy systems that often evade (2)/ conventional monitoring tools and protocols (3)/ during routine audits. (4)",
+      "options": [
+        "Part (1)",
+        "Part (2)",
+        "Part (3)",
+        "Part (4)"
+      ],
+      "answer": 0,
+      "explanation": "Error → Part (1). The adjective 'proficient' normally takes the preposition 'in' or sometimes 'at', not 'for'. Correct: 'The cybersecurity team is proficient in detecting vulnerabilities...' Rule → proficient in + noun/gerund; proficient at + activity is also possible.",
+      "pool": "new",
+      "subQuestions": [
+        {
+          "question": "The newly appointed analyst is capable for identifying (1)/ subtle inconsistencies in financial statements (2)/ that might otherwise remain unnoticed (3)/ during a routine audit. (4)",
+          "options": [
+            "Part (1)",
+            "Part (2)",
+            "Part (3)",
+            "Part (4)"
+          ],
+          "answer": 0,
+          "explanation": "Error → Part (1). 'Capable' is followed by 'of', not 'for'. Correct: 'capable of identifying'. Important combinations → capable of, proficient in, responsible for, interested in, accustomed to.",
+          "pool": "new"
+        },
+        {
+          "question": "Despite being highly skilled in analyzing statistical data, (1)/ the researcher was unfamiliar to the specialized software (2)/ required for processing the exceptionally large datasets (3)/ generated by the experiment. (4)",
+          "options": [
+            "Part (1)",
+            "Part (2)",
+            "Part (3)",
+            "Part (4)"
+          ],
+          "answer": 1,
+          "explanation": "Error → Part (2). The normal construction is 'unfamiliar with', not 'unfamiliar to', when describing a person's lack of knowledge of something. Correct: 'the researcher was unfamiliar with the specialized software.'",
+          "pool": "new"
+        }
+      ]
+    },
+    {
+      "id": "more-mtzqtmfs-628mh",
+      "category": "Error",
+      "question": " The consensus was, not that the data itself was flawed, but that its interpretation by the junior analysts (1)/ were overly optimistic (2)/ given the volatile market conditions (3)/ and the inherent uncertainties. (4)",
+      "options": [
+        "Part (1)",
+        "Part (2)",
+        "Part (3)",
+        "Part (4)"
+      ],
+      "answer": 1,
+      "explanation": "Error → Part (2). The subject of the verb is 'interpretation', which is singular. The phrase 'by the junior analysts' does not change the number of the subject. Therefore, 'were overly optimistic' should be 'was overly optimistic'. Correct: '...its interpretation by the junior analysts was overly optimistic...'.",
+      "pool": "new",
+      "subQuestions": [
+        {
+          "question": "What concerns the committee most (1)/ are not the individual discrepancies themselves (2)/ but the apparent absence of any mechanism (3)/ for detecting them at an earlier stage. (4)",
+          "options": [
+            "Part (1)",
+            "Part (2)",
+            "Part (3)",
+            "Part (4)"
+          ],
+          "answer": 3,
+          "explanation": "This sentence is grammatically defensible as written because the complement following the linking verb may influence number in such constructions. For exam purposes, avoid mechanically changing 'are' merely because the opening clause begins with 'what'. This is a deliberately difficult no-error trap.",
+          "pool": "new"
+        },
+        {
+          "question": "The extent to which the recent amendments have affected small enterprises (1)/ remain difficult to determine because reliable data (2)/ from several rural districts have not yet (3)/ been compiled. (4)",
+          "options": [
+            "Part (1)",
+            "Part (2)",
+            "Part (3)",
+            "Part (4)"
+          ],
+          "answer": 1,
+          "explanation": "Error → Part (2). The main subject is singular 'extent', so 'remain' must be 'remains'. The plural noun 'amendments' inside the subordinate clause is not the subject of the main verb.",
+          "pool": "new"
+        }
+      ]
+    },
+    {
+      "id": "more-mtzqtmfs-ufjxa",
+      "category": "Error",
+      "question": " The venerable institution aims to both preserve ancient texts (1)/ and promoting critical scholarship (2)/ among its burgeoning community (3)/ of young researchers. (4)",
+      "options": [
+        "Part (1)",
+        "Part (2)",
+        "Part (3)",
+        "Part (4)"
+      ],
+      "answer": 1,
+      "explanation": "Error → Part (2). The coordinated verbs must be parallel. Since the construction begins with 'to both preserve', the second verb should be the base form 'promote', not 'promoting'. Correct: 'The institution aims to both preserve ancient texts and promote critical scholarship...' A more formal parallel version is 'aims both to preserve ancient texts and to promote critical scholarship.'",
+      "pool": "new",
+      "subQuestions": [
+        {
+          "question": "The reforms were intended both to increase transparency in public procurement (1)/ and reducing the opportunities for officials (2)/ to manipulate the bidding process (3)/ for personal advantage. (4)",
+          "options": [
+            "Part (1)",
+            "Part (2)",
+            "Part (3)",
+            "Part (4)"
+          ],
+          "answer": 1,
+          "explanation": "Error → Part (2). 'Both...and' requires parallel forms. 'To increase' must be matched by 'to reduce'. Correct: 'both to increase... and to reduce...'.",
+          "pool": "new"
+        },
+        {
+          "question": "The candidate was admired not merely for her ability to identify complex problems (1)/ but also for proposing practical solutions (2)/ that could be implemented without placing (3)/ additional pressure on limited resources. (4)",
+          "options": [
+            "Part (1)",
+            "Part (2)",
+            "Part (3)",
+            "Part (4)"
+          ],
+          "answer": 3,
+          "explanation": "No error. The two coordinated elements are parallel prepositional phrases: 'for her ability...' and 'for proposing...'. The surface forms inside those phrases differ, but the larger grammatical units are parallel.",
+          "pool": "new"
+        }
+      ]
+    },
+    {
+      "id": "more-mtzqtmft-kc05l",
+      "category": "Error",
+      "question": " The new research facility (1)/ is equipped with advanced instruments (2)/ that allows scientists to conduct (3)/ complex molecular experiments. (4)",
+      "options": [
+        "Part (1)",
+        "Part (2)",
+        "Part (3)",
+        "Part (4)"
+      ],
+      "answer": 2,
+      "explanation": "Error → Part (3). The relative pronoun 'that' refers to the plural noun 'instruments'. Therefore, the relative-clause verb must be plural: 'allow', not 'allows'. Correct sentence: 'The new research facility is equipped with advanced instruments that allow scientists to conduct complex molecular experiments.' Rule → Find the antecedent of who/which/that and make the relative-clause verb agree with that antecedent.",
+      "pool": "new",
+      "subQuestions": [
+        {
+          "question": "She is one of the scientists who has consistently argued (1)/ that the apparent correlation between the variables (2)/ should not be interpreted as evidence (3)/ of a direct causal relationship. (4)",
+          "options": [
+            "Part (1)",
+            "Part (2)",
+            "Part (3)",
+            "Part (4)"
+          ],
+          "answer": 0,
+          "explanation": "Error → Part (1). In 'one of the scientists who...', the relative pronoun 'who' ordinarily refers to the plural antecedent 'scientists'. Therefore, the verb should be plural: 'who have consistently argued'. Compare → 'She is the one scientist who has argued...' where 'has' would be correct.",
+          "pool": "new"
+        },
+        {
+          "question": "The only one of the proposals that have received unanimous approval (1)/ recommends establishing an independent body (2)/ to examine complaints that arise (3)/ from conflicts of interest. (4)",
+          "options": [
+            "Part (1)",
+            "Part (2)",
+            "Part (3)",
+            "Part (4)"
+          ],
+          "answer": 0,
+          "explanation": "Error → Part (1). In 'the only one of the proposals that...', the relative clause refers to 'the only one', which is singular. Therefore, 'have received' should be 'has received'. This contrasts with ordinary 'one of the proposals that have...', where the plural verb is generally used.",
+          "pool": "new"
+        }
+      ]
     }
   ]
 }

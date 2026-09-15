@@ -16,7 +16,8 @@
     "order": 10,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "id": "mix-3",
@@ -35,7 +36,8 @@
     "order": 11,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -54,7 +56,8 @@
     "order": 94,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -73,7 +76,8 @@
     "id": "mtmaz58xv2di2r",
     "order": 118,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -92,7 +96,8 @@
     "id": "mtmb5hpa2v7861",
     "order": 119,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -111,7 +116,8 @@
     "id": "mtmbbtay6fdkly",
     "order": 120,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -130,7 +136,8 @@
     "id": "mtmbzyiv5lzuer",
     "order": 121,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -149,7 +156,8 @@
     "id": "mtmcccmzakfhzi",
     "order": 122,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -168,7 +176,8 @@
     "id": "mtmm3pnvuep02m",
     "order": 123,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -187,7 +196,8 @@
     "id": "mtmmrnaenfnbzj",
     "order": 124,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -206,7 +216,8 @@
     "id": "mtmn25o306m022",
     "order": 125,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -225,7 +236,8 @@
     "id": "mtmnsng1wmzxd8",
     "order": 125,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -244,7 +256,8 @@
     "id": "mtmozpc11sqcmh",
     "order": 126,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -263,7 +276,8 @@
     "id": "mtmwz1wfvty0i6",
     "order": 127,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -282,7 +296,8 @@
     "id": "mtbm9mv11qk9g",
     "order": 128,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -301,7 +316,8 @@
     "id": "mtoyxe97304n4",
     "order": 130,
     "attemptStatus": "unattempted",
-    "testAllowed": false
+    "testAllowed": false,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -320,7 +336,8 @@
     "id": "mtwhdl1ef5xhk",
     "order": 131,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -339,7 +356,8 @@
     "id": "mtdtmmqd3pp7m",
     "order": 132,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -358,7 +376,8 @@
     "id": "mttjpi0vv9dwf",
     "order": 133,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -377,7 +396,8 @@
     "id": "mtu6jxfwia1wz",
     "order": 134,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -396,7 +416,8 @@
     "id": "mt77fh4fo5v9g",
     "order": 135,
     "attemptStatus": "unattempted",
-    "testAllowed": false
+    "testAllowed": false,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -415,7 +436,8 @@
     "id": "mtrq7pijig8e6",
     "order": 136,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -433,8 +455,9 @@
     "special": false,
     "id": "mt3ao7sq6s38y",
     "order": 137,
-    "attemptStatus": "unattempted",
-    "testAllowed": true
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -453,7 +476,8 @@
     "id": "mtqwi23gfjvus",
     "order": 138,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -472,7 +496,8 @@
     "id": "mt54o20zigrx2",
     "order": 139,
     "attemptStatus": "unattempted",
-    "testAllowed": false
+    "testAllowed": false,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -491,7 +516,8 @@
     "id": "mth5pvojqabni",
     "order": 140,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -509,8 +535,9 @@
     "special": false,
     "id": "mttx2tcphf0n5",
     "order": 141,
-    "attemptStatus": "unattempted",
-    "testAllowed": true
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -528,8 +555,9 @@
     "special": false,
     "id": "mtjhnv94o5v55",
     "order": 142,
-    "attemptStatus": "unattempted",
-    "testAllowed": true
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -548,7 +576,8 @@
     "id": "mtqtpmka8f9qk",
     "order": 143,
     "attemptStatus": "unattempted",
-    "testAllowed": false
+    "testAllowed": false,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -567,7 +596,8 @@
     "id": "mt0a32jnybvoh",
     "order": 144,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -586,7 +616,8 @@
     "id": "mtrtj14pexpex",
     "order": 145,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -605,7 +636,8 @@
     "id": "mtkpbskfwew97",
     "order": 146,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -624,7 +656,8 @@
     "id": "mtjmwimeyb1ks",
     "order": 147,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -643,7 +676,8 @@
     "id": "mt46s53qmqrko",
     "order": 148,
     "attemptStatus": "unattempted",
-    "testAllowed": false
+    "testAllowed": false,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -662,7 +696,8 @@
     "id": "mtz08ght8k4am",
     "order": 149,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -681,7 +716,8 @@
     "id": "mt6e1u07g0mcp",
     "order": 150,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -700,7 +736,8 @@
     "id": "mtv95ihw96cj8",
     "order": 151,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -719,7 +756,8 @@
     "id": "mtt9dmkipat05",
     "order": 152,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -738,7 +776,8 @@
     "id": "mtuqt7diwrov4",
     "order": 153,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -751,13 +790,14 @@
       "₹350"
     ],
     "correctIndex": 2,
-    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=o5KDoO0FROZ55JD7&t=16519",
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=o5KDoO0FROZ55JD7&t=16470",
     "solutionImage": null,
     "special": false,
     "id": "mtqtov8tm6usl",
     "order": 154,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -776,7 +816,8 @@
     "id": "mt7awa7wx4vko",
     "order": 155,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -795,7 +836,8 @@
     "id": "mt9lzzc47tq28",
     "order": 156,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -814,7 +856,8 @@
     "id": "mtabisou4653z",
     "order": 157,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -833,7 +876,8 @@
     "id": "mtz3y5mk83dil",
     "order": 158,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -852,7 +896,8 @@
     "id": "mtk7ic9fd4yck",
     "order": 159,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -871,7 +916,8 @@
     "id": "mts6oig8a0k6w",
     "order": 160,
     "attemptStatus": "unattempted",
-    "testAllowed": false
+    "testAllowed": false,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -890,7 +936,8 @@
     "id": "mtg5t9fy1jt8g",
     "order": 161,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -909,7 +956,8 @@
     "id": "mtdu0y8b9cd5n",
     "order": 162,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -928,7 +976,8 @@
     "id": "mtxxs0317b8ov",
     "order": 163,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -947,7 +996,8 @@
     "id": "mtewiy2r7973k",
     "order": 164,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -966,7 +1016,8 @@
     "id": "mti9yhrbeuaiw",
     "order": 165,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -985,7 +1036,8 @@
     "id": "mtoozi2ar7as0",
     "order": 166,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -1004,7 +1056,8 @@
     "id": "mtisyl5djrtj3",
     "order": 167,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -1023,7 +1076,8 @@
     "id": "mtrvfun1ppjr1",
     "order": 168,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "id": "mix-1",
@@ -1042,7 +1096,8 @@
     "order": 9,
     "attemptStatus": "correct",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -1061,7 +1116,8 @@
     "id": "mtmix169a1",
     "order": 169,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -1080,7 +1136,8 @@
     "id": "mtmix170b2",
     "order": 170,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -1099,7 +1156,8 @@
     "id": "mtmix171c3",
     "order": 171,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -1118,7 +1176,8 @@
     "id": "mtmix172d4",
     "order": 172,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -1137,7 +1196,8 @@
     "id": "mtmix173e5",
     "order": 173,
     "attemptStatus": "unattempted",
-    "testAllowed": false
+    "testAllowed": false,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -1156,7 +1216,8 @@
     "id": "mtmix174f6",
     "order": 174,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -1175,7 +1236,8 @@
     "id": "mtmix175g7",
     "order": 175,
     "attemptStatus": "unattempted",
-    "testAllowed": false
+    "testAllowed": false,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -1194,7 +1256,8 @@
     "id": "mtmix176h8",
     "order": 176,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -1213,7 +1276,8 @@
     "id": "mtmix177i9",
     "order": 177,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -1232,7 +1296,8 @@
     "id": "mtmix178j0",
     "order": 178,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -1251,7 +1316,8 @@
     "id": "mtmix179k1",
     "order": 179,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -1269,8 +1335,9 @@
     "special": false,
     "id": "mtmix180l2",
     "order": 180,
-    "attemptStatus": "unattempted",
-    "testAllowed": true
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -1289,7 +1356,8 @@
     "id": "mtmix181m3",
     "order": 181,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": false,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -1308,7 +1376,8 @@
     "id": "mtvijvtff2jm58",
     "order": 198,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Mixture & Alligation",
@@ -1327,6 +1396,7 @@
     "id": "mtvinszdbp6dki",
     "order": 199,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   }
 ]

@@ -1,2742 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Vocab Alert</title>
-
-<style>
-:root{
-  --bg:#080d18;
-  --bg2:#0d1424;
-  --ink:#e8edf7;
-  --muted:#8994a8;
-  --gold:#f0b84b;
-  --card:#111a2b;
-  --card2:#162136;
-  --teal:#55b7ae;
-  --red:#d95c4a;
-  --line:rgba(255,255,255,.10);
-  --line2:rgba(255,255,255,.16);
-  --white:#fff;
-}
-
-/* ===== MODERN SCROLLBAR ===== */
-* { scrollbar-width: thin; scrollbar-color: #f0b84b #080d18; }
-*::-webkit-scrollbar { width: 10px; height: 10px; }
-*::-webkit-scrollbar-track { background: linear-gradient(180deg, #080d18 0%, #0d1424 100%); }
-*::-webkit-scrollbar-thumb { background: linear-gradient(180deg, #f0b84b 0%, #d4941f 100%); border-radius: 10px; border: 2px solid #080d18; transition: all 0.3s ease; }
-*::-webkit-scrollbar-thumb:hover { background: linear-gradient(180deg, #ffd966 0%, #f0b84b 100%); box-shadow: 0 0 15px rgba(240, 184, 75, 0.5); }
-
-/* =========================
-   RESET
-========================= */
-
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
-
-html{
-  width:100%;
-  min-height:100%;
-  background:var(--bg);
-}
-
-body{
-  width:100%;
-  min-height:100dvh;
-  background:
-    radial-gradient(circle at top left, rgba(62,124,124,.10), transparent 30%),
-    radial-gradient(circle at bottom right, rgba(232,163,61,.07), transparent 30%),
-    var(--bg);
-
-  font-family:Georgia, serif;
-
-  display:flex;
-  justify-content:center;
-  align-items:flex-start;
-
-  padding:
-    max(18px, env(safe-area-inset-top))
-    max(14px, env(safe-area-inset-right))
-    max(18px, env(safe-area-inset-bottom))
-    max(14px, env(safe-area-inset-left));
-
-  color:var(--ink);
-  overflow-x:hidden;
-}
-
-/* =========================
-   MAIN BOARD
-========================= */
-
-.board{
-  width:100%;
-  max-width:560px;
-  min-width:0;
-}
-
-/* =========================
-   HEADER
-========================= */
-
-.header{
-  width:100%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:10px;
-  margin-bottom:14px;
-  padding:0 3px;
-}
-
-.brand{
-  color:var(--gold);
-  font-family:"Courier New",monospace;
-  letter-spacing:1.5px;
-  font-size:12px;
-  text-transform:uppercase;
-  font-weight:bold;
-  min-width:0;
-  overflow:hidden;
-  text-overflow:ellipsis;
-  white-space:nowrap;
-}
-
-.clock{
-  flex-shrink:0;
-
-  font-family:"Courier New",monospace;
-  color:#fff;
-
-  background:rgba(255,255,255,.06);
-  border:1px solid var(--line2);
-
-  padding:6px 11px;
-  border-radius:7px;
-
-  font-size:14px;
-  letter-spacing:1px;
-
-  min-width:72px;
-  text-align:center;
-
-  box-shadow:0 5px 18px rgba(0,0,0,.25);
-}
-
-/* =========================
-   ALERT CARD
-========================= */
-
-.alertbox{
-  width:100%;
-  background:linear-gradient(
-    145deg,
-    var(--card),
-    #0e1727
-  );
-
-  border:1px solid var(--line);
-  border-radius:12px;
-
-  box-shadow:
-    0 18px 45px rgba(0,0,0,.45),
-    inset 0 1px 0 rgba(255,255,255,.025);
-
-  overflow:hidden;
-
-  transform-origin:top center;
-  animation:pop .4s ease;
-}
-
-@keyframes pop{
-  0%{
-    transform:scale(.96) translateY(-8px);
-    opacity:0;
-  }
-
-  100%{
-    transform:scale(1) translateY(0);
-    opacity:1;
-  }
-}
-
-/* =========================
-   ALERT TOP
-========================= */
-
-.alerttop{
-  background:linear-gradient(
-    135deg,
-    #b94436,
-    var(--red)
-  );
-
-  color:#fff;
-
-  padding:9px 16px;
-
-  font-family:"Courier New",monospace;
-  font-size:10.5px;
-  letter-spacing:1.5px;
-
-  text-transform:uppercase;
-
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-
-  gap:10px;
-}
-
-.alerttop-right{
-  display:flex;
-  align-items:center;
-  gap:9px;
-}
-
-
-.wordnav{display:flex;align-items:center;gap:5px;flex-wrap:nowrap;}
-.contentnav{display:flex;align-items:center;gap:3px;flex-wrap:nowrap;}
-.content-btn{height:23px;padding:0 7px;border-radius:12px;border:1px solid rgba(255,255,255,.38);background:rgba(255,255,255,.12);color:#fff;font-family:"Courier New",monospace;font-size:9px;line-height:1;cursor:pointer;transition:.2s ease;}
-.content-btn:hover{background:rgba(255,255,255,.25);}
-.content-btn.active{background:#fff;color:var(--red);}
-.topmini-btn{width:23px;height:23px;display:inline-flex;align-items:center;justify-content:center;padding:0;border-radius:50%;border:1px solid rgba(255,255,255,.38);background:rgba(255,255,255,.12);color:#fff;font-family:"Courier New",monospace;font-size:11px;line-height:1;cursor:pointer;transition:.2s ease;}
-.topmini-btn:hover{background:rgba(255,255,255,.25);}
-.topmini-btn.active{background:#fff;color:var(--red);}
-.qno-input{width:46px;height:23px;padding:0 5px;border-radius:12px;border:1px solid rgba(255,255,255,.38);background:rgba(255,255,255,.12);color:#fff;text-align:center;font-family:"Courier New",monospace;font-size:9px;outline:none;}
-.qno-input::placeholder{color:rgba(255,255,255,.75);}
-.qno-input:focus{background:rgba(255,255,255,.20);border-color:#fff;}
-
-.topsearch-wrap{display:flex;align-items:center;gap:3px;}
-.topsearch-input{width:92px;height:23px;padding:0 7px;border-radius:12px;border:1px solid rgba(255,255,255,.38);background:rgba(255,255,255,.12);color:#fff;font-family:"Courier New",monospace;font-size:9px;outline:none;}
-.topsearch-input::placeholder{color:rgba(255,255,255,.75);}
-.topsearch-input:focus{width:125px;background:rgba(255,255,255,.20);border-color:#fff;}
-.topsearch-input.not-found{border-color:#ffd1cc;background:rgba(255,255,255,.26);}
-
-.editcur-btn{
-  background:rgba(255,255,255,.13);
-  color:#fff;
-
-  border:1px solid rgba(255,255,255,.35);
-
-  padding:4px 9px;
-  border-radius:13px;
-
-  font-family:"Courier New",monospace;
-  font-size:10px;
-  letter-spacing:.8px;
-
-  text-transform:uppercase;
-
-  cursor:pointer;
-
-  transition:.2s ease;
-}
-
-.editcur-btn:hover{
-  background:rgba(255,255,255,.25);
-}
-
-.editcur-btn:active{
-  transform:scale(.96);
-}
-
-/* =========================
-   ALERT BODY
-========================= */
-
-.alertbody{
-  padding:23px 22px 20px;
-  min-width:0;
-}
-
-.word-en{
-  font-size:29px;
-  line-height:1.15;
-
-  font-weight:bold;
-
-  color:var(--ink);
-
-  margin-bottom:5px;
-
-  overflow-wrap:anywhere;
-  word-break:break-word;
-}
-
-.word-hi{
-  font-size:19px;
-  line-height:1.3;
-
-  color:var(--teal);
-
-  margin-bottom:17px;
-
-  font-weight:600;
-
-  overflow-wrap:anywhere;
-}
-
-.row{
-  display:flex;
-  gap:10px;
-
-  margin-bottom:11px;
-
-  align-items:flex-start;
-
-  min-width:0;
-}
-
-.label{
-  flex:0 0 76px;
-
-  font-family:"Courier New",monospace;
-  font-size:10.5px;
-
-  letter-spacing:.9px;
-  text-transform:uppercase;
-
-  color:var(--muted);
-
-  padding-top:3px;
-}
-
-.val{
-  min-width:0;
-  flex:1;
-
-  font-size:15px;
-  line-height:1.55;
-
-  color:#dfe6f2;
-
-  overflow-wrap:anywhere;
-  word-break:break-word;
-}
-
-#sentence{
-  font-style:italic;
-  color:#b9c3d4;
-}
-
-/* =========================
-   PILLS
-========================= */
-
-.pillrow{
-  display:flex;
-  gap:8px;
-
-  margin-top:15px;
-
-  flex-wrap:wrap;
-}
-
-.pill{
-  max-width:100%;
-
-  padding:5px 11px;
-
-  border-radius:20px;
-
-  font-size:12px;
-
-  font-family:"Courier New",monospace;
-
-  overflow-wrap:anywhere;
-}
-
-.pill.syn{
-  background:rgba(62,180,160,.12);
-  color:#74d2c7;
-  border:1px solid rgba(85,183,174,.55);
-}
-
-.pill.ant{
-  background:rgba(217,92,74,.12);
-  color:#ef8b7c;
-  border:1px solid rgba(217,92,74,.6);
-}
-
-/* =========================
-   CONTROLS
-========================= */
-
-.controls{
-  width:100%;
-
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-
-  gap:12px;
-
-  margin-top:14px;
-
-  padding:0 3px;
-}
-
-.btn{
-  background:var(--gold);
-  color:#111827;
-
-  border:none;
-
-  border-radius:22px;
-
-  font-family:"Courier New",monospace;
-  font-size:10px;
-
-  letter-spacing:.8px;
-
-  text-transform:uppercase;
-  font-weight:bold;
-
-  cursor:pointer;
-
-  height:35px;
-width:60px;
-  transition:.2s ease;
-
-  box-shadow:0 5px 16px rgba(240,184,75,.12);
-}
-
-.btn:hover{
-  filter:brightness(1.06);
-}
-
-.btn:active{
-  transform:scale(.97);
-}
-
-.count{
-  color:#7f8ba0;
-
-  font-family:"Courier New",monospace;
-  font-size:11px;
-
-  line-height:1.4;
-
-  min-width:0;
-
-  overflow-wrap:anywhere;
-}
-
-/* =========================
-   MANAGE BOX
-========================= */
-
-.managebox{
-  width:100%;
-
-  background:linear-gradient(
-    145deg,
-    var(--card),
-    #0e1727
-  );
-
-  border:1px solid var(--line);
-
-  border-radius:12px;
-
-  margin-top:16px;
-
-  box-shadow:
-    0 12px 30px rgba(0,0,0,.35);
-
-  overflow:hidden;
-}
-
-.managetop-title{
-  background:rgba(255,255,255,.025);
-
-  padding:12px 16px;
-
-  font-family:"Courier New",monospace;
-
-  font-size:10.5px;
-  letter-spacing:1.4px;
-
-  text-transform:uppercase;
-
-  color:#cbd4e4;
-
-  font-weight:bold;
-
-  box-shadow:
-    inset 0 -2px 0 var(--gold);
-}
-
-/* =========================
-   SEARCH PANEL
-========================= */
-
-.managebody{
-  padding:12px 10px 14px;
-  display:none;
-}
-
-.managebody.active{
-  display:block;
-}
-
-.searchwrap input{
-  width:100%;
-
-  padding:10px 13px;
-
-  border-radius:20px;
-
-  border:1px solid var(--line2);
-
-  background:#0a111e;
-
-  font-family:Georgia,serif;
-  font-size:14px;
-
-  color:var(--ink);
-
-  outline:none;
-
-  transition:.2s ease;
-
-  margin-bottom:10px;
-}
-
-.searchwrap input::placeholder{
-  color:#657187;
-}
-
-.searchwrap input:focus{
-  border-color:rgba(85,183,174,.65);
-
-  box-shadow:
-    0 0 0 3px rgba(85,183,174,.08);
-}
-
-/* =========================
-   SEARCH RESULTS
-========================= */
-
-.searchresults{
-  max-height:260px;
-  overflow-y:auto;
-
-  scrollbar-width:thin;
-  scrollbar-color:#34445d transparent;
-}
-
-.searchitem{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-
-  gap:10px;
-
-  padding:10px 5px;
-
-  border-bottom:1px solid var(--line);
-
-  cursor:pointer;
-
-  min-width:0;
-
-  transition:.15s ease;
-}
-
-.searchitem:last-child{
-  border-bottom:none;
-}
-
-.searchitem:hover{
-  background:rgba(85,183,174,.07);
-}
-
-.searchitem:active{
-  background:rgba(85,183,174,.12);
-}
-
-.searchitem .si-en{
-  font-weight:bold;
-  color:#e3e9f3;
-  font-size:14px;
-
-  overflow-wrap:anywhere;
-}
-
-.searchitem .si-hi{
-  color:#65c4bb;
-  font-size:12.5px;
-
-  text-align:right;
-
-  overflow-wrap:anywhere;
-}
-
-
-.searchitem{align-items:flex-start;gap:10px;}
-.searchitem-main{flex:1;min-width:0;}
-.searchitem-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px;}
-.searchitem .si-meaning,.searchitem .si-sentence,.searchitem .si-extra{margin-top:4px;font-size:12px;line-height:1.45;color:#aab4c3;overflow-wrap:anywhere;}
-.searchitem .si-sentence{font-style:italic;}
-.searchitem .si-extra{font-family:"Courier New",monospace;font-size:10.5px;color:#7f8b9d;}
-.searchempty{
-  font-family:"Courier New",monospace;
-  font-size:12px;
-
-  color:#68758a;
-
-  padding:2px 3px;
-}
-
-/* =========================
-   MISSING WORD
-========================= */
-
-.savemissing-btn{
-  margin-top:8px;
-
-  background:var(--gold);
-  color:#111827;
-
-  border:none;
-
-  padding:9px 14px;
-
-  border-radius:18px;
-
-  font-family:"Courier New",monospace;
-
-  font-size:11px;
-
-  letter-spacing:.7px;
-
-  text-transform:uppercase;
-
-  font-weight:bold;
-
-  cursor:pointer;
-
-  max-width:100%;
-}
-
-.missinghint{
-  font-family:"Courier New",monospace;
-  font-size:10.5px;
-
-  color:#5f6d83;
-
-  padding:5px 4px 0;
-}
-
-/* =========================
-   EDIT FORM
-========================= */
-
-.editform{
-  display:none;
-
-  margin-top:14px;
-
-  padding-top:14px;
-
-  border-top:1px dashed var(--line2);
-}
-
-.editform.active{
-  display:block;
-}
-
-.edittitle{
-  font-size:19px;
-  line-height:1.25;
-
-  font-weight:bold;
-
-  color:#e7edf7;
-
-  margin-bottom:12px;
-
-  overflow-wrap:anywhere;
-}
-
-.field{
-  margin-bottom:10px;
-}
-
-.field label{
-  display:block;
-
-  font-family:"Courier New",monospace;
-
-  font-size:10px;
-
-  letter-spacing:1px;
-
-  text-transform:uppercase;
-
-  color:#77849a;
-
-  margin-bottom:5px;
-}
-
-.field input,
-.field textarea{
-  width:100%;
-
-  padding:9px 10px;
-
-  border-radius:7px;
-
-  border:1px solid var(--line2);
-
-  background:#0a111e;
-
-  font-family:Georgia,serif;
-
-  font-size:14px;
-
-  color:var(--ink);
-
-  outline:none;
-
-  resize:vertical;
-
-  transition:.2s ease;
-}
-
-.field input:focus,
-.field textarea:focus{
-  border-color:rgba(85,183,174,.65);
-
-  box-shadow:
-    0 0 0 3px rgba(85,183,174,.07);
-}
-
-.field-row{
-  display:flex;
-  gap:10px;
-}
-
-.field-row .field{
-  flex:1;
-  min-width:0;
-}
-
-/* =========================
-   EDIT BUTTONS
-========================= */
-
-.editbtns{
-  display:flex;
-  gap:9px;
-
-  margin-top:7px;
-}
-
-.addbtn,
-.cancelbtn{
-  flex:1;
-
-  min-height:40px;
-
-  border-radius:20px;
-
-  padding:9px 14px;
-
-  font-family:"Courier New",monospace;
-
-  font-size:11px;
-
-  letter-spacing:.7px;
-
-  text-transform:uppercase;
-
-  font-weight:bold;
-
-  cursor:pointer;
-}
-
-.addbtn{
-  background:var(--teal);
-  color:#071412;
-
-  border:none;
-}
-
-.cancelbtn{
-  background:transparent;
-
-  color:#bdc7d7;
-
-  border:1px solid var(--line2);
-}
-
-.addbtn:hover{
-  filter:brightness(1.08);
-}
-
-.cancelbtn:hover{
-  background:rgba(255,255,255,.04);
-}
-
-.addmsg{
-  margin-top:8px;
-
-  font-family:"Courier New",monospace;
-
-  font-size:11px;
-
-  min-height:14px;
-}
-
-
-
-/* =========================
-   SCROLLBAR
-========================= */
-
-::-webkit-scrollbar{
-  width:6px;
-  height:6px;
-}
-
-::-webkit-scrollbar-track{
-  background:transparent;
-}
-
-::-webkit-scrollbar-thumb{
-  background:#34445d;
-  border-radius:10px;
-}
-
-/* =========================
-   TABLET
-========================= */
-
-@media (max-width:600px){
-
-  body{
-    padding-top:max(14px, env(safe-area-inset-top));
-  }
-
-  .board{
-    max-width:100%;
-  }
-
-  .alertbody{
-    padding:21px 18px 18px;
-  }
-
-  .word-en{
-    font-size:27px;
-  }
-
-  .word-hi{
-    font-size:18px;
-  }
-
-  .val{
-    font-size:14.5px;
-  }
-}
-
-/* =========================
-   SMALL MOBILE
-========================= */
-
-@media (max-width:420px){
-
-  .server-state{max-width:82px;font-size:8px;padding:3px 5px;}
-
-  body{
-    padding-left:10px;
-    padding-right:10px;
-  }
-
-  .header{
-    margin-bottom:10px;
-  }
-
-  .brand{
-    font-size:10px;
-    letter-spacing:1px;
-  }
-
-  .clock{
-    font-size:12px;
-    min-width:65px;
-    padding:5px 8px;
-  }
-
-  .alerttop{
-    padding:8px 12px;
-    font-size:9.5px;
-  }
-
-  .editcur-btn{
-    padding:4px 7px;
-    font-size:9px;
-  }
-
-  .alertbody{
-    padding:18px 14px 16px;
-  }
-
-  .word-en{
-    font-size:25px;
-  }
-
-  .word-hi{
-    font-size:17px;
-    margin-bottom:14px;
-  }
-
-  .row{
-    gap:7px;
-  }
-
-  .label{
-    flex-basis:62px;
-    font-size:9px;
-  }
-
-  .val{
-    font-size:13.5px;
-    line-height:1.5;
-  }
-
-  .pill{
-    font-size:10.5px;
-    padding:5px 9px;
-  }
-
-  .controls{
-    gap:8px;
-  }
-
-  .count{
-    font-size:9.5px;
-  }
-
-  .btn{
-    padding:9px 13px;
-    font-size:10.5px;
-    min-height:38px;
-  }
-
-  .managetop-title{
-    padding:11px 13px;
-    font-size:9.5px;
-  }
-
-  .managebody{
-    padding:10px 8px 12px;
-  }
-
-  .field-row{
-    flex-direction:column;
-    gap:0;
-  }
-
-  .editbtns{
-    flex-direction:column;
-  }
-
-}
-
-/* =========================
-   VERY SMALL PHONES
-========================= */
-
-@media (max-width:340px){
-
-  body{
-    padding-left:7px;
-    padding-right:7px;
-  }
-
-  .brand{
-    font-size:9px;
-  }
-
-  .clock{
-    min-width:59px;
-    font-size:11px;
-  }
-
-  .alerttop{
-    padding-left:9px;
-    padding-right:9px;
-  }
-
-  .alertbody{
-    padding-left:11px;
-    padding-right:11px;
-  }
-
-  .word-en{
-    font-size:22px;
-  }
-
-  .word-hi{
-    font-size:15px;
-  }
-
-  .label{
-    flex-basis:55px;
-    font-size:8px;
-  }
-
-  .val{
-    font-size:12.5px;
-  }
-
-  .count{
-    font-size:8.5px;
-  }
-
-  .btn{
-    font-size:9.5px;
-    padding-left:10px;
-    padding-right:10px;
-  }
-}
-
-/* =========================
-   REDUCED MOTION
-========================= */
-
-@media (prefers-reduced-motion:reduce){
-
-  *,
-  *::before,
-  *::after{
-    scroll-behavior:auto !important;
-  }
-
-  .alertbox{
-    animation:none;
-  }
-}
-
-/* =========================
-   DARK MODE FORM CONTROLS
-========================= */
-
-input,
-textarea,
-button{
-  -webkit-tap-highlight-color:transparent;
-}
-
-input,
-textarea{
-  color-scheme:dark;
-}
-
-/* compact header file control + compact search/save area */
-.header-actions{display:flex;align-items:center;gap:6px;flex-shrink:0;}
-.server-state{display:inline-flex;align-items:center;gap:4px;max-width:135px;padding:3px 7px;border-radius:10px;border:1px solid var(--line2);background:rgba(255,255,255,.04);font:9px "Courier New",monospace;color:#94a0b3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-.server-state::before{content:"";width:6px;height:6px;border-radius:50%;background:#68758a;flex:0 0 auto;}
-.server-state.connected{color:#79d6a5;border-color:rgba(72,199,135,.3);background:rgba(72,199,135,.07);}
-.server-state.connected::before{background:#48c787;box-shadow:0 0 7px rgba(72,199,135,.55);}
-.server-state.saving{color:#e8bd67;border-color:rgba(232,163,61,.35);background:rgba(232,163,61,.07);}
-.server-state.saving::before{background:#e8a33d;}
-.server-state.saved{color:#79d6a5;border-color:rgba(72,199,135,.3);background:rgba(72,199,135,.08);}
-.server-state.saved::before{background:#48c787;}
-.server-state.error{color:#ff8d7c;border-color:rgba(192,80,62,.38);background:rgba(192,80,62,.09);}
-.server-state.error::before{background:#df6651;}
-.managebox{margin-top:9px;border-radius:9px;}
-.managetop-title{padding:6px 10px;font-size:9px;letter-spacing:.8px;}
-.managebody{padding:7px 8px 8px;}
-.searchwrap input{padding:6px 9px;border-radius:14px;font-size:12px;margin-bottom:5px;}
-.searchresults{max-height:145px;}
-.searchitem{padding:5px 3px;gap:6px;}
-.searchitem .si-en{font-size:12px;}
-.searchitem .si-hi{font-size:10.5px;}
-.searchitem .si-meaning,.searchitem .si-sentence,.searchitem .si-extra{margin-top:2px;font-size:10px;line-height:1.3;}
-.searchitem .si-extra{font-size:9px;}
-.editform{margin-top:7px;padding-top:7px;}
-.edittitle{font-size:14px;margin-bottom:6px;}
-.field{margin-bottom:5px;}
-.field label{font-size:8.5px;margin-bottom:2px;}
-.field input,.field textarea{padding:5px 7px;font-size:11px;border-radius:5px;}
-.editbtns{gap:6px;margin-top:3px;}
-.addbtn,.cancelbtn{min-height:28px;padding:5px 9px;font-size:9px;}
-.addmsg{margin-top:4px;font-size:9px;min-height:9px;}
-
-.round-setting{display:inline-flex;align-items:center;gap:5px;margin-left:8px;font:9px "Courier New",monospace;color:#8994a8;white-space:nowrap;vertical-align:middle;}
-.round-setting input{width:34px;height:22px;padding:0 3px;border-radius:10px;border:1px solid var(--line2);background:#0a111e;color:var(--ink);text-align:center;font:10px "Courier New",monospace;outline:none;}
-.round-setting input:focus{border-color:rgba(85,183,174,.65);}
-@media(max-width:420px){.round-setting{font-size:8px;margin-left:4px;gap:3px}.round-setting input{width:30px;height:20px;font-size:9px}}
-
-/* NEW / OLD revision controls */
-.pool-switch{display:inline-flex;align-items:center;gap:3px;margin-left:5px;}
-.pool-btn{height:22px;padding:0 7px;border-radius:11px;border:1px solid var(--line2);background:#0a111e;color:#8994a8;font:9px "Courier New",monospace;cursor:pointer;}
-.pool-btn.active{background:rgba(85,183,174,.16);border-color:rgba(85,183,174,.65);color:#79d6cc;}
-.learned-btn{width:22px;height:22px;border-radius:50%;padding:0;border:1px solid rgba(255,255,255,.40);background:rgba(255,255,255,.10);color:#fff;font-size:11px;line-height:1;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;}
-.learned-btn:hover{background:rgba(85,183,174,.25);}
-.learned-btn.old{opacity:.75;cursor:pointer;background:rgba(85,183,174,.18);border-color:rgba(85,183,174,.55);}
-.pool-count{font:8px "Courier New",monospace;color:#7f8ba0;white-space:nowrap;}
-@media(max-width:420px){.pool-btn{height:20px;padding:0 5px;font-size:8px}.learned-btn{width:20px;height:20px;font-size:10px}.pool-count{display:none}}
-
-/* SIMPLE CATEGORY-DRIVEN MCQ TEST */
-.mcq-category-selector-simple{margin-top:0;padding:12px;}
-.mcq-category-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:9px;color:#dbe5f2;font:800 9px "Segoe UI",sans-serif;text-transform:uppercase;letter-spacing:.04em;}
-.mcq-category-head #mcqCategorySelectionSummary{color:#7f8da1;font-weight:700;text-transform:none;letter-spacing:0;}
-.mcq-category-toggle-list{gap:8px;}
-.mcq-category-toggle{min-height:36px;padding:0 12px;border-radius:10px;font:800 9px "Segoe UI",sans-serif;letter-spacing:.01em;}
-.mcq-category-toggle.active{border-color:rgba(106,214,200,.42);background:rgba(106,214,200,.10);color:#8ee7dc;}
-.mcq-category-toggle .mcq-chip-count{display:inline-flex;min-width:20px;justify-content:center;margin-left:6px;padding:2px 6px;border-radius:999px;background:rgba(255,255,255,.07);color:#dce7f5;font-size:8px;}
-.mcq-available-count{color:#78869a;font:700 9px "Segoe UI",sans-serif;text-transform:none;white-space:nowrap;}
-@media(max-width:600px){.mcq-category-head{align-items:flex-start;flex-direction:column;gap:3px}.mcq-category-toggle{flex:1 1 calc(50% - 8px)}.mcq-number-label{width:100%;justify-content:flex-start}.mcq-control-row .small-tool-btn.accent{width:100%}}
-</style>
-</head>
-
-<body>
-
-<div class="board">
-
-  <div class="header">
-    <div class="brand">Vocab Alert · Tier 2</div>
-    <div class="header-actions">
-      <span class="server-state connected" id="topFileStatus" title="English data is loaded and saved through the Python server">Server ✓</span>
-      <div class="clock" id="clock">10:00</div>
-    </div>
-  </div>
-
-  <div class="alertbox" id="box">
-
-    <div class="alerttop">
-
-      <span class="contentnav" title="Choose learning content">
-        <button class="content-btn active" id="vocabModeBtn" type="button">Vocab</button>
-        <button class="content-btn" id="idiomModeBtn" type="button">Idioms</button>
-        <button class="content-btn" id="mixModeBtn" type="button">Mix</button>
-      </span>
-
-      <span class="alerttop-right">
-        <span class="wordnav" title="Word order controls">
-          <button class="topmini-btn active" id="randomModeBtn" title="Random word" aria-label="Random word">⤨</button>
-          <button class="topmini-btn" id="seriesModeBtn" title="Series / alphabetical order" aria-label="Series order">↦</button>
-          <span class="topsearch-wrap">
-            <button class="topmini-btn" id="topSearchBtn" title="Search any word" aria-label="Search any word">⌕</button>
-            <input type="text" id="topSearchInput" class="topsearch-input" list="topWordSuggestions" placeholder="Search" title="Search any word and press Enter" aria-label="Search any word" autocomplete="off">
-            <datalist id="topWordSuggestions"></datalist>
-          </span>
-          <input type="number" id="qnoInput" class="qno-input" min="1" placeholder="Q#" title="Open question number" aria-label="Question number">
-        </span>
-        <button class="learned-btn" id="learnedBtn" title="Move word between New and Old" aria-label="Move word between new and old">✓</button>
-        <button class="editcur-btn" id="editCurrentBtn" title="Edit this word">✎ Edit</button>
-        <span id="wnum">#1</span>
-      </span>
-
-    </div>
-
-    <div class="alertbody">
-
-      <div class="word-en" id="wordEn"></div>
-
-      <div class="word-hi" id="wordHi"></div>
-
-      <div class="row">
-        <span class="label">Meaning</span>
-        <span class="val" id="meaning"></span>
-      </div>
-
-      <div class="row">
-        <span class="label">Sentence</span>
-        <span class="val" id="sentence"></span>
-      </div>
-
-      <div class="pillrow">
-
-        <span
-          class="pill syn"
-          id="syn"
-        ></span>
-
-        <span
-          class="pill ant"
-          id="ant"
-        ></span>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <div class="controls">
-
-    <span
-      class="count"
-      id="count"
-    >
-      Words seen: 0
-    </span>
-    <label class="round-setting" title="How many times each 10-word set will be tested">
-      <input type="number" id="testRoundsInput" min="1" max="20" value="1" aria-label="Test rounds">
-      <span id="roundLabel">round</span>
-    </label>
-    <span class="pool-switch" title="Choose which array to revise/test">
-      <button class="pool-btn active" id="newPoolBtn" type="button">New</button>
-      <button class="pool-btn" id="oldPoolBtn" type="button">Old</button>
-      <span class="pool-count" id="poolCount"></span>
-    </span>
-
-    <button
-      class="btn"
-      id="nextBtn"
-    >
-      Next now →
-    </button>
-
-  </div>
-
-
-  <div class="managebox">
-
-    <div class="managetop-title">
-      ✎ Search &amp; edit words
-    </div>
-
-    <div
-      class="managebody active"
-      id="searchPanel"
-    >
-
-      <div class="searchwrap">
-
-        <input
-          type="text"
-          id="searchInput"
-          placeholder="Search by English or Hindi word..."
-        >
-
-      </div>
-
-      <div
-        class="searchresults"
-        id="searchResults"
-      ></div>
-
-
-      <div
-        class="editform"
-        id="editForm"
-      >
-
-        <div
-          class="edittitle"
-          id="editTitle"
-        ></div>
-
-
-        <div class="field">
-
-          <label>Hindi meaning</label>
-
-          <input
-            type="text"
-            id="editHi"
-          >
-
-        </div>
-
-
-        <div class="field">
-
-          <label>Meaning</label>
-
-          <textarea
-            id="editMeaning"
-            rows="2"
-          ></textarea>
-
-        </div>
-
-
-        <div class="field">
-
-          <label>Sentence</label>
-
-          <textarea
-            id="editSentence"
-            rows="2"
-          ></textarea>
-
-        </div>
-
-
-        <div class="field-row">
-
-          <div class="field">
-
-            <label>Synonym</label>
-
-            <input
-              type="text"
-              id="editSyn"
-            >
-
-          </div>
-
-          <div class="field">
-
-            <label>Antonym (opposite)</label>
-
-            <input
-              type="text"
-              id="editAnt"
-            >
-
-          </div>
-
-        </div>
-
-
-        <div class="editbtns">
-
-          <button
-            class="addbtn"
-            id="saveEditBtn"
-          >
-            Save changes
-          </button>
-
-          <button
-            class="cancelbtn"
-            id="cancelEditBtn"
-          >
-            Cancel
-          </button>
-
-        </div>
-
-        <div
-          class="addmsg"
-          id="editMsg"
-        ></div>
-
-      </div>
-
-    </div>
-
-
-
-  </div>
-
-</div>
-
-
-<script>
-
-/* English data source: Python server.
-   Existing persistent files: vocab.json, idioms.json and missing.json.
-   Error Sentences: error_sentences.json (separate server endpoint).
-   More MCQs keep their existing browser-local storage behavior. */
-
-// ---------- English server storage ----------
-
-let WORDS = [];
-let IDIOM_WORDS = [];
-
-// Learned items are moved to the OLD pools.
-let OLD_WORDS = [];
-let OLD_IDIOM_WORDS = [];
-let quizPoolMode = "new";
-let contentMode = "vocab";
-
-let browseMode = "random";
-let browseIndex = 0;
-let seriesCursor = 0;
-
-// RANDOM MODE MEMORY:
-// Keep track of words already used in the current random cycle so a word
-// cannot appear again in a later random round until every available word
-// in the selected pool has been shown once.
-let randomSeenKeys = new Set();
-let randomCycleKey = "";
-
-let missingWords = [];
-
-function sortWordArray(items){
-  return [...items].sort((a,b) =>
-    String((a && a.en) || "").localeCompare(
-      String((b && b.en) || ""),
-      "en",
-      {sensitivity:"base"}
-    )
-  );
-}
-
-function buildServerPayload(){
-  return {
-    words: WORDS,
-    idioms: IDIOM_WORDS,
-    oldWords: OLD_WORDS,
-    oldIdioms: OLD_IDIOM_WORDS,
-    missingWords: missingWords
-  };
-}
-
-function applyLoadedData(obj){
-  if(!obj || typeof obj !== "object") return false;
-
-  if(Array.isArray(obj.words)){
-    WORDS = sortWordArray(obj.words);
-  }
-
-  if(Array.isArray(obj.idioms)){
-    const sortedIdioms = sortWordArray(obj.idioms);
-    IDIOM_WORDS.splice(0, IDIOM_WORDS.length, ...sortedIdioms);
-  }
-
-  OLD_WORDS = Array.isArray(obj.oldWords)
-    ? sortWordArray(obj.oldWords)
-    : [];
-
-  OLD_IDIOM_WORDS = Array.isArray(obj.oldIdioms)
-    ? sortWordArray(obj.oldIdioms)
-    : [];
-
-  missingWords = Array.isArray(obj.missingWords)
-    ? [...obj.missingWords]
-    : [];
-
-  return true;
-}
-
-function setServerStatus(text, state = ""){
-  const topEl = document.getElementById("topFileStatus");
-  if(!topEl) return;
-
-  topEl.className = "server-state" + (state ? " " + state : "");
-  topEl.title = text || "English server status";
-
-  if(state === "saving") topEl.textContent = "Server · Saving…";
-  else if(state === "saved") topEl.textContent = "Server ✓ · Saved";
-  else if(state === "error") topEl.textContent = "Server error";
-  else topEl.textContent = "Server ✓";
-}
-
-async function loadServerData(){
-  try{
-    setServerStatus("Loading English data from the Python server...", "saving");
-
-    const response = await fetch("/api/english/data", {
-      method:"GET",
-      cache:"no-store"
-    });
-
-    if(!response.ok){
-      throw new Error("Server returned HTTP " + response.status);
-    }
-
-    const result = await response.json();
-
-    if(result && result.data){
-      applyLoadedData(result.data);
-    }
-
-    setServerStatus("English data is connected to the Python server.", "connected");
-    return true;
-
-  }catch(e){
-    console.error("English server load failed:", e);
-    setServerStatus(
-      "Server unavailable. Run python server.py and open http://127.0.0.1:8000/english/.",
-      "error"
-    );
-    return false;
-  }
-}
-
-let lastServerError = "";
-
-async function saveServerData(){
-  try{
-    lastServerError = "";
-    setServerStatus("Saving English data through the Python server...", "saving");
-
-    const response = await fetch("/api/english/data", {
-      method:"POST",
-      headers:{"Content-Type":"application/json"},
-      body:JSON.stringify(buildServerPayload())
-    });
-
-    const result = await response.json().catch(() => ({}));
-
-    if(!response.ok || result.ok === false){
-      throw new Error(result.error || "Server could not save English data");
-    }
-
-    setServerStatus("Saved: vocab.json · idioms.json · missing.json", "saved");
-    return true;
-
-  }catch(e){
-    console.error("English server save failed:", e);
-    lastServerError = e && e.message ? e.message : String(e || "Unknown server error");
-    setServerStatus(
-      "Save failed: " + lastServerError,
-      "error"
-    );
-    return false;
-  }
-}
-// ---------- Quiz ----------
-
-const ROUND_SIZE = 10;
-
-const PHASE = {
-  READ:"read",
-  TEST:"test"
-};
-
-let roundNumber = 1;
-
-let testPass = 1;
-
-let timeLeft = 180;
-
-let currentRoundWords = [];
-
-let currentPhase = PHASE.READ;
-
-let readIndex = 0;
-
-let testIndex = 0;
-
-let answerVisible = false;
-
-let currentWord = null;
-
-
-const boxEl =
-  document.getElementById("box");
-
-const wordEnEl =
-  document.getElementById("wordEn");
-
-const wordHiEl =
-  document.getElementById("wordHi");
-
-const meaningEl =
-  document.getElementById("meaning");
-
-const sentenceEl =
-  document.getElementById("sentence");
-
-const synEl =
-  document.getElementById("syn");
-
-const antEl =
-  document.getElementById("ant");
-
-const clockEl =
-  document.getElementById("clock");
-
-const countEl =
-  document.getElementById("count");
-
-const wnumEl =
-  document.getElementById("wnum");
-
-const nextBtn =
-  document.getElementById("nextBtn");
-
-
-function shuffleWords(items){
-
-  const arr = [...items];
-
-  for(
-    let i = arr.length - 1;
-    i > 0;
-    i--
-  ){
-
-    const j =
-      Math.floor(
-        Math.random() * (i + 1)
-      );
-
-    [
-      arr[i],
-      arr[j]
-    ] =
-    [
-      arr[j],
-      arr[i]
-    ];
-
-  }
-
-  return arr;
-
-}
-
-// Build a stable visible-word key. This also prevents duplicate English
-// entries in the data from appearing twice in the same random cycle.
-function randomWordKey(word){
-  const english = String((word && word.en) || "").trim().toLocaleLowerCase("en-US");
-  if(english) return english;
-
-  // Fallback for an unusual entry with no English label.
-  return JSON.stringify(word || {});
-}
-
-function currentRandomCycleKey(){
-  return quizPoolMode + "::" + contentMode;
-}
-
-function resetRandomCycle(){
-  randomSeenKeys.clear();
-  randomCycleKey = currentRandomCycleKey();
-}
-
-function nextRandomRound(pool){
-  const cycleKey = currentRandomCycleKey();
-
-  // Switching New/Old or Vocab/Idioms/Mix starts a fresh cycle.
-  if(randomCycleKey !== cycleKey){
-    randomSeenKeys.clear();
-    randomCycleKey = cycleKey;
-  }
-
-  // De-duplicate visible words inside the source pool itself.
-  const uniquePool = [];
-  const poolKeys = new Set();
-
-  for(const word of pool){
-    const key = randomWordKey(word);
-    if(poolKeys.has(key)) continue;
-    poolKeys.add(key);
-    uniquePool.push(word);
-  }
-
-  // If data changed while the app is open, forget seen keys that no longer
-  // exist in this pool.
-  for(const key of [...randomSeenKeys]){
-    if(!poolKeys.has(key)) randomSeenKeys.delete(key);
-  }
-
-  let remaining = uniquePool.filter(
-    word => !randomSeenKeys.has(randomWordKey(word))
-  );
-
-  // Only after ALL words have been used once do we start a new random cycle.
-  if(!remaining.length){
-    randomSeenKeys.clear();
-    remaining = [...uniquePool];
-  }
-
-  const batch = shuffleWords(remaining).slice(
-    0,
-    Math.min(ROUND_SIZE, remaining.length)
-  );
-
-  batch.forEach(word => randomSeenKeys.add(randomWordKey(word)));
-  return batch;
-}
-
-
-function showAnswerCard(word){
-
-  currentWord = word;
-
-  wordEnEl.textContent =
-    word.en;
-
-  wordHiEl.textContent =
-    word.hi || "";
-
-  meaningEl.textContent =
-    word.meaning || "";
-
-  sentenceEl.textContent =
-    word.sentence
-      ? "“" + word.sentence + "”"
-      : "";
-
-  synEl.textContent =
-    "Synonym: " +
-    (word.syn || "—");
-
-  antEl.textContent =
-    "Antonym: " +
-    (word.ant || "—");
-
-  updateLearnedButton();
-}
-
-
-function showQuestionCard(word){
-
-  currentWord = word;
-
-  wordEnEl.textContent =
-    word.en;
-
-  wordHiEl.textContent =
-    "???";
-
-  meaningEl.textContent =
-    "Tap to reveal the meaning and answer.";
-
-  sentenceEl.textContent =
-    "";
-
-  synEl.textContent =
-    "Synonym: ?";
-
-  antEl.textContent =
-    "Antonym: ?";
-
-  updateLearnedButton();
-}
-
-
-function getQuizPool(){
-  const vocabPool = quizPoolMode === "old" ? OLD_WORDS : WORDS;
-  const idiomPool = quizPoolMode === "old" ? OLD_IDIOM_WORDS : IDIOM_WORDS;
-  if(contentMode === "idioms") return idiomPool;
-  if(contentMode === "mix") return [...vocabPool, ...idiomPool];
-  return vocabPool;
-}
-
-function getAllSearchWords(){
-  const vocabSearchPool = [...WORDS, ...OLD_WORDS];
-  const idiomSearchPool = [...IDIOM_WORDS, ...OLD_IDIOM_WORDS];
-
-  // Search should respect the currently opened content tab:
-  // Vocab  -> only vocab
-  // Idioms -> only idioms
-  // Mix    -> vocab + idioms
-  if(contentMode === "idioms") return idiomSearchPool;
-  if(contentMode === "mix") return [...vocabSearchPool, ...idiomSearchPool];
-  return vocabSearchPool;
-}
-
-function setContentButtons(mode){
-  document.getElementById("vocabModeBtn")?.classList.toggle("active", mode === "vocab");
-  document.getElementById("idiomModeBtn")?.classList.toggle("active", mode === "idioms");
-  document.getElementById("mixModeBtn")?.classList.toggle("active", mode === "mix");
-}
-
-function updatePoolUI(){
-  const newBtn = document.getElementById("newPoolBtn");
-  const oldBtn = document.getElementById("oldPoolBtn");
-  const poolCount = document.getElementById("poolCount");
-  newBtn?.classList.toggle("active", quizPoolMode === "new");
-  oldBtn?.classList.toggle("active", quizPoolMode === "old");
-  if(poolCount){
-    poolCount.textContent = "N:" + (WORDS.length + IDIOM_WORDS.length) +
-      " O:" + (OLD_WORDS.length + OLD_IDIOM_WORDS.length);
-  }
-}
-
-function updateLearnedButton(){
-  const btn = document.getElementById("learnedBtn");
-  if(!btn) return;
-
-  const isManagedWord = !!currentWord && (
-    WORDS.includes(currentWord) ||
-    OLD_WORDS.includes(currentWord) ||
-    IDIOM_WORDS.includes(currentWord) ||
-    OLD_IDIOM_WORDS.includes(currentWord)
-  );
-  const isOld = !!currentWord && (OLD_WORDS.includes(currentWord) || OLD_IDIOM_WORDS.includes(currentWord));
-
-  btn.classList.toggle("old", isOld);
-  btn.disabled = !isManagedWord;
-
-  // Same tiny circle button works in BOTH directions:
-  // NEW -> OLD and OLD -> NEW.
-  btn.textContent = isOld ? "↩" : "✓";
-  btn.title = isOld
-    ? "Move this word back to New"
-    : isManagedWord
-      ? "Learned — move this word to Old"
-      : "Learned — move this word to Old";
-
-  btn.setAttribute(
-    "aria-label",
-    isOld ? "Move old word back to new" : "Move learned word to old"
-  );
-}
-
-async function toggleCurrentWordPool(){
-  if(!currentWord) return;
-
-  const wasOld = OLD_WORDS.includes(currentWord);
-  const wasNew = WORDS.includes(currentWord);
-  const wasOldIdiom = OLD_IDIOM_WORDS.includes(currentWord);
-  const wasNewIdiom = IDIOM_WORDS.includes(currentWord);
-
-  // OLD -> NEW
-  if(wasOld || wasOldIdiom){
-    const oldPool = wasOldIdiom ? OLD_IDIOM_WORDS : OLD_WORDS;
-    const newPool = wasOldIdiom ? IDIOM_WORDS : WORDS;
-    const oldIndex = oldPool.indexOf(currentWord);
-    if(oldIndex >= 0){
-      const [word] = oldPool.splice(oldIndex, 1);
-
-      if(!newPool.includes(word)){
-        newPool.push(word);
-      }
-
-      newPool.sort((a,b) =>
-        String(a.en || "").localeCompare(
-          String(b.en || ""),
-          "en",
-          {sensitivity:"base"}
-        )
-      );
-    }
-  }
-  // NEW -> OLD
-  else if(wasNew || wasNewIdiom){
-    const newPool = wasNewIdiom ? IDIOM_WORDS : WORDS;
-    const oldPool = wasNewIdiom ? OLD_IDIOM_WORDS : OLD_WORDS;
-    const newIndex = newPool.indexOf(currentWord);
-    if(newIndex >= 0){
-      const [word] = newPool.splice(newIndex, 1);
-
-      if(!oldPool.includes(word)){
-        oldPool.push(word);
-      }
-
-      oldPool.sort((a,b) =>
-        String(a.en || "").localeCompare(
-          String(b.en || ""),
-          "en",
-          {sensitivity:"base"}
-        )
-      );
-    }
-  }else{
-    return;
-  }
-
-  updatePoolUI();
-  fillTopWordSuggestions();
-  renderSearchResults(searchInput?.value || "");
-
-  // Persist NEW/OLD movement through the Python server.
-  await saveServerData();
-
-  // IMPORTANT:
-  // Do NOT restart the active round after moving a word.
-  //
-  // currentRoundWords is a snapshot of the 10 words selected for this round.
-  // So even if a word is moved NEW <-> OLD during READ or TEST,
-  // the current round/test continues from the same place.
-  // The moved word will disappear only from FUTURE rounds of that pool.
-  //
-  // This prevents the test from suddenly ending/resetting in the middle.
-  updateLearnedButton();
-
-  // Keep the current test/read status exactly where it is.
-  if(currentPhase === PHASE.TEST){
-    countEl.textContent = testStatusText(
-      answerVisible ? Math.min(testIndex + 1, currentRoundWords.length) : testIndex
-    );
-    nextBtn.textContent = answerVisible ? "Next question →" : "Show answer →";
-  }else{
-    countEl.textContent =
-      (quizPoolMode === "old" ? "Old" : "New") + " • " +
-      (browseMode === "series" ? "Series" : "Random") +
-      " • Round " + roundNumber +
-      " • Read " + Math.min(readIndex + 1, currentRoundWords.length) +
-      "/" + currentRoundWords.length;
-    nextBtn.textContent = "Next →";
-  }
-}
-
-function startRound(mode = browseMode){
-
-  const pool = getQuizPool();
-
-  if(!pool.length){
-    currentRoundWords = [];
-    countEl.textContent = (quizPoolMode === "old" ? "Old" : "New") + " array is empty";
-    nextBtn.textContent = "Next →";
-    return;
-  }
-
-  browseMode = mode === "series" ? "series" : "random";
-  setBrowseButtons(browseMode);
-  setContentButtons(contentMode);
-
-  if(browseMode === "series"){
-    // SERIES MODE: take the next 10 words in alphabetical order.
-    if(seriesCursor >= pool.length) seriesCursor = 0;
-
-    currentRoundWords = pool.slice(
-      seriesCursor,
-      Math.min(seriesCursor + ROUND_SIZE, pool.length)
-    );
-
-    // If fewer than 10 remain at the end, wrap to the beginning.
-    if(currentRoundWords.length < Math.min(ROUND_SIZE, pool.length)){
-      const needed = Math.min(ROUND_SIZE, pool.length) - currentRoundWords.length;
-      currentRoundWords = currentRoundWords.concat(pool.slice(0, needed));
-    }
-  }else{
-    // RANDOM MODE: no word repeats across random rounds until the complete
-    // selected pool has been shown once. Then a fresh shuffled cycle begins.
-    currentRoundWords = nextRandomRound(pool);
-  }
-
-  currentPhase = PHASE.READ;
-  readIndex = 0;
-  testIndex = 0;
-  testPass = 1;
-  answerVisible = false;
-
-  // Word 1 is already being READ on screen.
-  showAnswerCard(currentRoundWords[0]);
-
-  const actualIndex = pool.indexOf(currentRoundWords[0]);
-  wnumEl.textContent = actualIndex >= 0 ? "#" + (actualIndex + 1) : "#1";
-
-  countEl.textContent =
-    (quizPoolMode === "old" ? "Old" : "New") + " • " +
-    (browseMode === "series" ? "Series" : "Random") +
-    " • Round " + roundNumber +
-    " • Read 1/" + currentRoundWords.length;
-
-  nextBtn.textContent = "Next →";
-  timeLeft = 180;
-  updatePoolUI();
-  updateLearnedButton();
-}
-
-
-function getTestRounds(){
-  const input = document.getElementById("testRoundsInput");
-  const n = parseInt(input?.value, 10);
-  return Number.isFinite(n) ? Math.max(1, Math.min(20, n)) : 1;
-}
-
-function testStatusText(doneCount = 0){
-  const totalPasses = getTestRounds();
-  return (quizPoolMode === "old" ? "Old" : "New") + " • " +
-    (browseMode === "series" ? "Series" : "Random") +
-    " • Round " + roundNumber +
-    " • Test " + testPass + "/" + totalPasses +
-    " • " + doneCount + "/" + currentRoundWords.length;
-}
-
-function nextWord(resetTimer = true){
-
-  animateCard();
-
-  // ---------------- READ PHASE ----------------
-  if(currentPhase === PHASE.READ){
-
-    // Move to the next read word.
-    readIndex += 1;
-
-    // All 10 words have already been shown.
-    // NOW start the test, so word 10 was visible before this click.
-    if(readIndex >= currentRoundWords.length){
-
-      currentPhase = PHASE.TEST;
-      testIndex = 0;
-      testPass = 1;
-      answerVisible = false;
-
-      countEl.textContent = testStatusText(0);
-      nextBtn.textContent = "Show answer →";
-
-      showQuestionCard(currentRoundWords[0]);
-      const repeatedFirstIndex = getQuizPool().indexOf(currentRoundWords[0]);
-      wnumEl.textContent = repeatedFirstIndex >= 0 ? "#" + (repeatedFirstIndex + 1) : "#1";
-
-      if(resetTimer) timeLeft = 180;
-      return;
-    }
-
-    const word = currentRoundWords[readIndex];
-    showAnswerCard(word);
-
-    const actualReadIndex = getQuizPool().indexOf(word);
-    wnumEl.textContent = actualReadIndex >= 0 ? "#" + (actualReadIndex + 1) : "#" + (readIndex + 1);
-    countEl.textContent =
-      (browseMode === "series" ? "Series" : "Random") +
-      " • Round " + roundNumber +
-      " • Read " + (readIndex + 1) +
-      "/" + currentRoundWords.length;
-
-    nextBtn.textContent = "Next →";
-
-    if(resetTimer) timeLeft = 180;
-    return;
-  }
-
-  // ---------------- TEST PHASE ----------------
-
-  // First click on a test word reveals its answer.
-  if(!answerVisible){
-
-    const word = currentRoundWords[testIndex];
-    showAnswerCard(word);
-
-    answerVisible = true;
-    nextBtn.textContent = "Next →";
-    const actualTestIndex = getQuizPool().indexOf(word);
-    wnumEl.textContent = actualTestIndex >= 0 ? "#" + (actualTestIndex + 1) : "#" + (testIndex + 1);
-
-    if(resetTimer) timeLeft = 180;
-    return;
-  }
-
-  // Answer was visible: move to the next test question.
-  testIndex += 1;
-  answerVisible = false;
-
-  // One complete test pass finished.
-  if(testIndex >= currentRoundWords.length){
-
-    const totalPasses = getTestRounds();
-
-    // Repeat testing the SAME 10 words if test rounds > 1.
-    if(testPass < totalPasses){
-      testPass += 1;
-      testIndex = 0;
-
-      countEl.textContent = testStatusText(0);
-      nextBtn.textContent = "Show answer →";
-      showQuestionCard(currentRoundWords[0]);
-      wnumEl.textContent = "#1";
-
-      if(resetTimer) timeLeft = 180;
-      return;
-    }
-
-    // Read 10 -> Test complete -> start the next group of 10.
-    if(browseMode === "series"){
-      seriesCursor = (seriesCursor + currentRoundWords.length) % getQuizPool().length;
-    }
-    roundNumber += 1;
-    startRound(browseMode);
-    return;
-  }
-
-  showQuestionCard(currentRoundWords[testIndex]);
-  const nextActualIndex = getQuizPool().indexOf(currentRoundWords[testIndex]);
-  wnumEl.textContent = nextActualIndex >= 0 ? "#" + (nextActualIndex + 1) : "#" + (testIndex + 1);
-  countEl.textContent = testStatusText(testIndex);
-  nextBtn.textContent = "Show answer →";
-
-  if(resetTimer) timeLeft = 180;
-}
-
-
-function tick(){
-
-  timeLeft--;
-
-  if(timeLeft <= 0){
-
-    nextWord(false);
-
-    timeLeft = 180;
-
-  }
-
-  const m =
-    Math.floor(timeLeft / 60)
-      .toString()
-      .padStart(2,"0");
-
-  const s =
-    (timeLeft % 60)
-      .toString()
-      .padStart(2,"0");
-
-  clockEl.textContent =
-    `${m}:${s}`;
-
-}
-
-
-const editCurrentBtn =
-  document.getElementById(
-    "editCurrentBtn"
-  );
-
-
-editCurrentBtn.onclick = () => {
-
-  if(!currentWord) return;
-
-  openEditForm(currentWord);
-
-  editForm.scrollIntoView({
-    behavior:"smooth",
-    block:"center"
-  });
-
-};
-
-
-function animateCard(){
-  boxEl.style.animation = "none";
-  void boxEl.offsetWidth;
-  boxEl.style.animation = "pop .4s ease";
-}
-
-function setBrowseButtons(mode){
-  document.getElementById("randomModeBtn")?.classList.toggle("active", mode === "random");
-  document.getElementById("seriesModeBtn")?.classList.toggle("active", mode === "series");
-}
-
-function showBrowseWord(index){
-  if(!WORDS.length) return;
-  browseIndex = Math.max(0, Math.min(index, WORDS.length - 1));
-  const word = WORDS[browseIndex];
-  animateCard();
-  showAnswerCard(word);
-  wnumEl.textContent = "#" + (browseIndex + 1);
-  countEl.textContent = (browseMode === "series" ? "Series" : "Random") + " • " + (browseIndex + 1) + "/" + WORDS.length;
-  nextBtn.textContent = "Next →";
-  timeLeft = 180;
-}
-
-function showRandomWord(){
-  if(!getQuizPool().length) return;
-  roundNumber = 1;
-  resetRandomCycle();
-  startRound("random");
-}
-
-function showSeriesWord(index = seriesCursor){
-  const pool = getQuizPool();
-  if(!pool.length) return;
-  seriesCursor = Math.max(0, Math.min(index, pool.length - 1));
-  roundNumber = 1;
-  startRound("series");
-}
-
-function goToWordNumber(value){
-  const pool = getQuizPool();
-  if(!pool.length) return;
-  let number = Number(value);
-  if(!Number.isFinite(number)) return;
-  number = Math.trunc(number);
-  number = Math.max(1, Math.min(number, pool.length));
-  const input = document.getElementById("qnoInput");
-  if(input) input.value = number;
-  showSeriesWord(number - 1);
-}
-
-// Random and Series are both QUIZ modes now.
-// Next always advances READ -> TEST -> next 10-word round.
-nextBtn.onclick = () => nextWord(true);
-
-
-// ---------- Search ----------
-
-const searchInput =
-  document.getElementById(
-    "searchInput"
-  );
-
-const searchResults =
-  document.getElementById(
-    "searchResults"
-  );
-
-
-async function saveMissingWord(word){
-  const normalizedWord = String(word || "").trim();
-  if(!normalizedWord) return false;
-
-  const alreadySaved = missingWords.some(
-    item => String(item || "").trim().toLocaleLowerCase("en") === normalizedWord.toLocaleLowerCase("en")
-  );
-  if(alreadySaved) return true;
-
-  missingWords.push(normalizedWord);
-  const saved = await saveServerData();
-  if(!saved){
-    const addedIndex = missingWords.lastIndexOf(normalizedWord);
-    if(addedIndex !== -1) missingWords.splice(addedIndex, 1);
-  }
-  return saved;
-}
-
-
-function renderSearchResults(query){
-
-  const q =
-    query.trim().toLowerCase();
-
-  searchResults.innerHTML = "";
-
-
-  if(!q){
-
-    return;
-
-  }
-
-
-  const matches =
-    getAllSearchWords().filter(w => {
-      const searchable = [w.en, w.hi, w.meaning, w.sentence, w.syn, w.ant]
-        .filter(Boolean)
-        .join(" ")
-        .toLowerCase();
-      return searchable.includes(q);
-    });
-
-
-  if(matches.length === 0){
-
-    const empty =
-      document.createElement("div");
-
-    empty.className =
-      "searchempty";
-
-    empty.textContent =
-      "No matching word found.";
-
-    searchResults.appendChild(
-      empty
-    );
-
-
-    const alreadySaved =
-      missingWords.some(
-        w =>
-          w.toLowerCase() === q
-      );
-
-
-    if(!alreadySaved){
-
-      const saveBtn =
-        document.createElement(
-          "button"
-        );
-
-      saveBtn.className =
-        "savemissing-btn";
-
-      saveBtn.textContent =
-        'Save "' +
-        query.trim() +
-        '" (not available)';
-
-      saveBtn.onclick = async () => {
-        await saveMissingWord(query.trim());
-        renderSearchResults(
-          searchInput.value
-        );
-
-      };
-
-      searchResults.appendChild(
-        saveBtn
-      );
-
-    }
-
-    return;
-
-  }
-
-
-  matches.forEach(word => {
-
-    const item =
-      document.createElement("div");
-
-    item.className =
-      "searchitem";
-
-    item.innerHTML =
-      '<div class="searchitem-main">' +
-        '<div class="searchitem-head">' +
-          '<span class="si-en">' + escapeHtml(word.en || "") + '</span>' +
-          '<span class="si-hi">' + escapeHtml(word.hi || "") + '</span>' +
-        '</div>' +
-        '<div class="si-meaning"><b>Meaning:</b> ' + escapeHtml(word.meaning || "—") + '</div>' +
-        '<div class="si-sentence"><b>Sentence:</b> ' + escapeHtml(word.sentence || "—") + '</div>' +
-        '<div class="si-extra">' + (OLD_WORDS.includes(word) ? 'OLD' : 'NEW') + ' &nbsp;•&nbsp; Synonym: ' + escapeHtml(word.syn || "—") + ' &nbsp;•&nbsp; Antonym: ' + escapeHtml(word.ant || "—") + '</div>' +
-      '</div>';
-
-
-    item.onclick = () => {
-
-      boxEl.style.animation =
-        "none";
-
-      void boxEl.offsetWidth;
-
-      boxEl.style.animation =
-        "pop .4s ease";
-
-      wordEnEl.textContent =
-        word.en;
-
-      showAnswerCard(word);
-
-      const sourcePool = OLD_IDIOM_WORDS.includes(word)
-        ? OLD_IDIOM_WORDS
-        : IDIOM_WORDS.includes(word)
-          ? IDIOM_WORDS
-          : OLD_WORDS.includes(word) ? OLD_WORDS : WORDS;
-      browseIndex = sourcePool.indexOf(word);
-      wnumEl.textContent = "#" + (browseIndex + 1);
-      countEl.textContent = ((OLD_WORDS.includes(word) || OLD_IDIOM_WORDS.includes(word)) ? "Old" : "New") + " • Search result";
-      nextBtn.textContent = "Next →";
-      updateLearnedButton();
-      const qInput = document.getElementById("qnoInput");
-      if(qInput) qInput.value = browseIndex + 1;
-      openEditForm(word);
-
-      // Successful selection ke baad lower search input clear karo.
-      searchInput.value = "";
-      searchResults.innerHTML = "";
-
-    };
-
-
-    searchResults.appendChild(item);
-
-  });
-
-}
-
-
-function escapeHtml(str){
-
-  const div =
-    document.createElement("div");
-
-  div.textContent =
-    str;
-
-  return div.innerHTML;
-
-}
-
-
-searchInput.addEventListener(
-  "input",
-  () =>
-    renderSearchResults(
-      searchInput.value
-    )
-);
-
-
-// ---------- Edit form ----------
-
-const editForm =
-  document.getElementById(
-    "editForm"
-  );
-
-const editTitle =
-  document.getElementById(
-    "editTitle"
-  );
-
-const editHi =
-  document.getElementById(
-    "editHi"
-  );
-
-const editMeaning =
-  document.getElementById(
-    "editMeaning"
-  );
-
-const editSentence =
-  document.getElementById(
-    "editSentence"
-  );
-
-const editSyn =
-  document.getElementById(
-    "editSyn"
-  );
-
-const editAnt =
-  document.getElementById(
-    "editAnt"
-  );
-
-const saveEditBtn =
-  document.getElementById(
-    "saveEditBtn"
-  );
-
-const cancelEditBtn =
-  document.getElementById(
-    "cancelEditBtn"
-  );
-
-const editMsg =
-  document.getElementById(
-    "editMsg"
-  );
-
-
-let editingWord = null;
-
-
-function openEditForm(word){
-
-  editingWord = word;
-
-  editTitle.textContent =
-    word.en;
-
-  editHi.value =
-    word.hi || "";
-
-  editMeaning.value =
-    word.meaning || "";
-
-  editSentence.value =
-    word.sentence || "";
-
-  editSyn.value =
-    word.syn || "";
-
-  editAnt.value =
-    word.ant || "";
-
-  editMsg.textContent =
-    "";
-
-  editForm.classList.add(
-    "active"
-  );
-
-}
-
-
-function closeEditForm(){
-
-  editingWord = null;
-
-  editForm.classList.remove(
-    "active"
-  );
-
-}
-
-
-saveEditBtn.onclick = async () => {
-
-  if(!editingWord) return;
-
-
-  const meaning =
-    editMeaning.value.trim();
-
-
-  if(!meaning){
-
-    editMsg.style.color =
-      "var(--red)";
-
-    editMsg.textContent =
-      "Meaning cannot be empty.";
-
-    return;
-
-  }
-
-
-  editingWord.hi =
-    editHi.value.trim();
-
-  editingWord.meaning =
-    meaning;
-
-  editingWord.sentence =
-    editSentence.value.trim();
-
-  editingWord.syn =
-    editSyn.value.trim();
-
-  editingWord.ant =
-    editAnt.value.trim();
-
-
-  if(
-    currentWord === editingWord
-  ){
-
-    if(
-      currentPhase === PHASE.TEST &&
-      !answerVisible
-    ){
-
-      showQuestionCard(
-        editingWord
-      );
-
-    }else{
-
-      showAnswerCard(
-        editingWord
-      );
-
-    }
-
-  }
-
-
-  editMsg.style.color =
-    "var(--teal)";
-
-  {
-    const savedOk = await saveServerData();
-
-    if(!savedOk){
-      editMsg.style.color = "var(--red)";
-      editMsg.textContent =
-        'Server save failed: ' + (lastServerError || 'Unknown error');
-      return;
-    }
-
-    editMsg.style.color = "var(--teal)";
-    editMsg.textContent =
-      'Saved "' + editingWord.en + '" ✓ · Server updated';
-  }
-
-  renderSearchResults(
-    searchInput.value
-  );
-
-  // Sirf verified successful save ke baad dialog close ho.
-  setTimeout(() => closeEditForm(), 350);
-
-};
-
-
-cancelEditBtn.onclick =
-  () => closeEditForm();
-
-
-const testRoundsInput = document.getElementById("testRoundsInput");
-const roundLabel = document.getElementById("roundLabel");
-function syncRoundLabel(){
-  const n = getTestRounds();
-  testRoundsInput.value = n;
-  roundLabel.textContent = n === 1 ? "round" : "rounds";
-  if(currentPhase === PHASE.TEST) countEl.textContent = testStatusText(testIndex);
-}
-testRoundsInput?.addEventListener("change", syncRoundLabel);
-testRoundsInput?.addEventListener("input", () => {
-  const n = parseInt(testRoundsInput.value, 10);
-  roundLabel.textContent = n === 1 ? "round" : "rounds";
-});
-
-document.getElementById("learnedBtn")?.addEventListener("click", toggleCurrentWordPool);
-
-document.getElementById("newPoolBtn")?.addEventListener("click", () => {
-  quizPoolMode = "new";
-  seriesCursor = 0;
-  roundNumber = 1;
-  resetRandomCycle();
-  updatePoolUI();
-  startRound(browseMode);
-});
-
-document.getElementById("oldPoolBtn")?.addEventListener("click", () => {
-  quizPoolMode = "old";
-  seriesCursor = 0;
-  roundNumber = 1;
-  resetRandomCycle();
-  updatePoolUI();
-  startRound(browseMode);
-});
-
-setInterval(
-  tick,
-  1000
-);
-
-
-document.getElementById("randomModeBtn")?.addEventListener("click", () => {
-  showRandomWord();
-});
-
-document.getElementById("seriesModeBtn")?.addEventListener("click", () => {
-  const pool = getQuizPool();
-  const currentIndex = currentWord ? pool.indexOf(currentWord) : 0;
-  showSeriesWord(currentIndex >= 0 ? currentIndex : 0);
-});
-
-function chooseContentMode(mode){
-  contentMode = mode;
-  seriesCursor = 0;
-  roundNumber = 1;
-  resetRandomCycle();
-  setContentButtons(contentMode);
-  startRound(browseMode);
-
-  // Refresh search data whenever tab changes, so old-tab results
-  // never remain visible in the new tab.
-  fillTopWordSuggestions();
-
-  if(typeof searchInput !== "undefined" && searchInput){
-    renderSearchResults(searchInput.value || "");
-  }
-
-  if(typeof topSearchInput !== "undefined" && topSearchInput){
-    topSearchInput.classList.remove("not-found");
-  }
-}
-
-document.getElementById("vocabModeBtn")?.addEventListener("click", () => chooseContentMode("vocab"));
-document.getElementById("idiomModeBtn")?.addEventListener("click", () => chooseContentMode("idioms"));
-document.getElementById("mixModeBtn")?.addEventListener("click", () => chooseContentMode("mix"));
-
-document.getElementById("qnoInput")?.addEventListener("change", (e) => {
-  goToWordNumber(e.target.value);
-});
-
-document.getElementById("qnoInput")?.addEventListener("keydown", (e) => {
-  if(e.key === "Enter"){
-    goToWordNumber(e.target.value);
-    e.target.blur();
-  }
-});
-
-// ---------- Top search near Random / Series ----------
-const topSearchInput = document.getElementById("topSearchInput");
-const topSearchBtn = document.getElementById("topSearchBtn");
-const topWordSuggestions = document.getElementById("topWordSuggestions");
-
-function fillTopWordSuggestions(){
-  if(!topWordSuggestions) return;
-  topWordSuggestions.innerHTML = "";
-  getAllSearchWords().forEach(word => {
-    const option = document.createElement("option");
-    option.value = word.en || "";
-    if(word.hi) option.label = word.hi;
-    topWordSuggestions.appendChild(option);
-  });
-}
-
-function openWordFromTopSearch(){
-  const allWords = getAllSearchWords();
-  if(!topSearchInput || !allWords.length) return;
-
-  const raw = topSearchInput.value.trim();
-  const q = raw.toLowerCase();
-  topSearchInput.classList.remove("not-found");
-  if(!q) return;
-
-  let word = allWords.find(w => (w.en || "").toLowerCase() === q);
-  if(!word) word = allWords.find(w => (w.en || "").toLowerCase().startsWith(q));
-  if(!word) word = allWords.find(w => (w.en || "").toLowerCase().includes(q));
-  if(!word){
-    word = allWords.find(w => [w.en,w.hi,w.meaning,w.sentence,w.syn,w.ant]
-      .filter(Boolean)
-      .join(" ")
-      .toLowerCase()
-      .includes(q));
-  }
-
-  if(!word){
-    topSearchInput.classList.add("not-found");
-    topSearchInput.select();
-    return;
-  }
-
-  const sourcePool = OLD_IDIOM_WORDS.includes(word)
-    ? OLD_IDIOM_WORDS
-    : IDIOM_WORDS.includes(word)
-      ? IDIOM_WORDS
-      : OLD_WORDS.includes(word) ? OLD_WORDS : WORDS;
-  const index = sourcePool.indexOf(word);
-  showAnswerCard(word);
-  wnumEl.textContent = "#" + (index + 1);
-  countEl.textContent = (OLD_WORDS.includes(word) ? "Old" : "New") + " • Search result";
-  nextBtn.textContent = "Next →";
-  // Successful top search ke baad input clear karo.
-  topSearchInput.value = "";
-
-  // Lower detailed search ko bhi clear rakho.
-  if(typeof searchInput !== "undefined" && searchInput){
-    searchInput.value = "";
-    searchResults.innerHTML = "";
-  }
-}
-
-topSearchBtn?.addEventListener("click", () => {
-  if(topSearchInput?.value.trim()) openWordFromTopSearch();
-  else topSearchInput?.focus();
-});
-
-topSearchInput?.addEventListener("keydown", (e) => {
-  if(e.key === "Enter"){
-    e.preventDefault();
-    openWordFromTopSearch();
-  }
-});
-
-// Datalist suggestion select/click hote hi upper main card me word open karo.
-topSearchInput?.addEventListener("change", () => {
-  if(topSearchInput.value.trim()){
-    openWordFromTopSearch();
-  }
-});
-
-topSearchInput?.addEventListener("input", () => {
-  topSearchInput.classList.remove("not-found");
-});
-
-
-async function initializeEnglishApp(){
-  const loaded = await loadServerData();
-
-  if(!loaded){
-    WORDS = [];
-    IDIOM_WORDS = [];
-    OLD_WORDS = [];
-    OLD_IDIOM_WORDS = [];
-    missingWords = [];
-  }
-
-  updatePoolUI();
-  syncRoundLabel();
-  fillTopWordSuggestions();
-  resetRandomCycle();
-  startRound("random");
-
-  if(searchInput && searchInput.value){
-    renderSearchResults(searchInput.value);
-  }
-}
-
-initializeEnglishApp();
-
-</script>
-
-<script src="/common-nav.js"></script>
-</body>
-</html> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -4877,6 +2138,16 @@ body::before{
   gap:9px;
   margin:10px 0 12px;
 }
+.question-manager-subtitle{margin-top:3px;color:#728097;font:600 9px/1.45 "Segoe UI",sans-serif;max-width:620px;}
+.answer-bank-toolbar-modern{grid-template-columns:minmax(180px,.9fr) minmax(130px,.55fr) minmax(220px,1.25fr);align-items:end;}
+.answer-filter-field{display:grid;gap:5px;min-width:0;}
+.answer-filter-field>span{color:#738197;font:800 8px "Segoe UI",sans-serif;text-transform:uppercase;letter-spacing:.06em;}
+.answer-search-input{width:100%;min-height:38px;padding:0 11px;border-radius:10px;border:1px solid var(--line);background:#080f18;color:var(--ink);font:600 11px "Segoe UI",sans-serif;outline:none;}
+.answer-search-input:focus{border-color:rgba(106,214,200,.45);box-shadow:0 0 0 4px rgba(106,214,200,.05);}
+.answer-search-input::placeholder{color:#536175;}
+.answer-chip.source{background:rgba(93,155,255,.08);color:#93baff;}
+.answer-bank-parent{margin-top:5px;color:#657286;font:600 9px/1.4 "Segoe UI",sans-serif;white-space:pre-line;}
+.answer-bank-parent b{color:#7f8da1;}
 .answer-bank-source{display:grid;grid-template-columns:1fr 1fr;gap:7px;}
 .answer-source-btn{
   min-height:38px;
@@ -4959,6 +2230,7 @@ body::before{
 
 @media(max-width:640px){
   .answer-bank-toolbar{grid-template-columns:1fr;}
+  .answer-bank-toolbar-modern{grid-template-columns:1fr;}
   .answer-bank-list{max-height:none;}
   .question-editor-overlay{padding:10px;align-items:flex-start;}
   .question-editor-card{max-height:calc(100vh - 20px);border-radius:14px;padding:13px;}
@@ -5034,6 +2306,644 @@ body::before{
   .auto-play-control input{width:44px;height:25px;}
   .auto-play-btn{min-height:26px;padding:4px 8px;font-size:8px;}
 }
+
+/* =========================================================
+   MODERN ENGLISH TEST STUDIO + GENERIC NEW / OLD MCQ POOLS
+   Works for Error Sentences, Para Jumble and future categories.
+========================================================= */
+.mcq-studio-panel{
+  padding:0 !important;
+  overflow:hidden;
+  border-radius:20px !important;
+  border:1px solid rgba(122,212,202,.18) !important;
+  background:
+    radial-gradient(circle at 92% 4%,rgba(106,214,200,.09),transparent 26%),
+    radial-gradient(circle at 2% 92%,rgba(240,184,75,.06),transparent 28%),
+    linear-gradient(180deg,#0b1320 0%,#080e17 100%) !important;
+  box-shadow:0 24px 70px rgba(0,0,0,.34);
+}
+.mcq-studio-hero{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:18px;
+  padding:20px 20px 18px;
+  border-bottom:1px solid rgba(255,255,255,.07);
+  background:linear-gradient(135deg,rgba(106,214,200,.07),rgba(255,255,255,.01) 48%,rgba(240,184,75,.045));
+}
+.mcq-studio-kicker{
+  margin-bottom:5px;
+  color:#6ad6c8;
+  font:800 9px "Segoe UI",sans-serif;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+.mcq-studio-title{
+  color:#f4f8ff;
+  font:800 23px/1.15 "Segoe UI",sans-serif;
+  letter-spacing:-.03em;
+}
+.mcq-studio-subtitle{
+  max-width:640px;
+  margin-top:7px;
+  color:#8390a3;
+  font:500 11px/1.55 "Segoe UI",sans-serif;
+}
+.mcq-studio-close{
+  flex:0 0 auto;
+  width:34px !important;
+  height:34px !important;
+  border-radius:11px !important;
+  background:rgba(255,255,255,.035) !important;
+}
+.mcq-studio-section{
+  margin:14px 16px 0;
+  padding:14px;
+  border:1px solid rgba(255,255,255,.075);
+  border-radius:15px;
+  background:rgba(255,255,255,.018);
+}
+.mcq-studio-section:last-of-type{margin-bottom:16px;}
+.mcq-studio-section-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:12px;
+}
+.mcq-studio-section-head>div{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+.mcq-step-no{
+  display:grid;
+  place-items:center;
+  min-width:26px;
+  height:24px;
+  padding:0 7px;
+  border-radius:8px;
+  background:rgba(106,214,200,.08);
+  border:1px solid rgba(106,214,200,.20);
+  color:#7de1d5;
+  font:800 9px "Segoe UI",sans-serif;
+}
+.mcq-step-title{
+  color:#e8eef8;
+  font:800 12px "Segoe UI",sans-serif;
+}
+.mcq-step-note{
+  color:#6f7d91;
+  font:650 9px "Segoe UI",sans-serif;
+  text-align:right;
+}
+.mcq-pool-segment{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:8px;
+}
+.mcq-pool-choice{
+  min-width:0;
+  display:flex;
+  align-items:center;
+  gap:9px;
+  padding:11px 12px;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:12px;
+  background:#0d1623;
+  color:#8b98aa;
+  text-align:left;
+  cursor:pointer;
+  transition:.18s ease;
+}
+.mcq-pool-choice:hover{
+  transform:translateY(-1px);
+  border-color:rgba(106,214,200,.25);
+  background:#101c2b;
+}
+.mcq-pool-choice.active{
+  border-color:rgba(106,214,200,.42);
+  background:linear-gradient(135deg,rgba(106,214,200,.12),rgba(106,214,200,.045));
+  box-shadow:inset 0 0 0 1px rgba(106,214,200,.04);
+  color:#e8fbf8;
+}
+.mcq-pool-icon{
+  width:32px;
+  height:32px;
+  display:grid;
+  place-items:center;
+  flex:0 0 auto;
+  border-radius:10px;
+  background:rgba(255,255,255,.045);
+  color:#6ad6c8;
+  font:800 13px "Segoe UI",sans-serif;
+}
+.mcq-pool-choice:nth-child(2) .mcq-pool-icon{color:#f0b84b;}
+.mcq-pool-choice:nth-child(3) .mcq-pool-icon{color:#9fb2ff;}
+.mcq-pool-choice b{
+  display:block;
+  color:inherit;
+  font:800 11px "Segoe UI",sans-serif;
+}
+.mcq-pool-choice small{
+  display:block;
+  margin-top:2px;
+  color:#66758a;
+  font:600 8px "Segoe UI",sans-serif;
+}
+.mcq-modern-category-list{
+  display:grid !important;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:8px !important;
+}
+.mcq-modern-category-list .mcq-category-toggle{
+  min-height:50px;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  grid-template-areas:"name count" "mini mini";
+  align-items:center;
+  gap:2px 7px;
+  padding:9px 10px;
+  border-radius:11px;
+  background:#0d1623;
+  border:1px solid rgba(255,255,255,.075);
+  color:#8795a8;
+  text-align:left;
+  text-transform:none;
+  transition:.18s ease;
+}
+.mcq-modern-category-list .mcq-category-toggle:hover{
+  border-color:rgba(240,184,75,.24);
+  background:#111c2b;
+}
+.mcq-modern-category-list .mcq-category-toggle.active{
+  border-color:rgba(240,184,75,.40);
+  background:linear-gradient(135deg,rgba(240,184,75,.10),rgba(240,184,75,.035));
+  color:#ffe0a0;
+}
+.mcq-modern-category-list .mcq-category-toggle.empty-pool{
+  opacity:.48;
+}
+.mcq-category-name{
+  grid-area:name;
+  min-width:0;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  font:800 9px "Segoe UI",sans-serif;
+}
+.mcq-chip-count{
+  grid-area:count;
+  display:grid !important;
+  place-items:center;
+  min-width:24px !important;
+  height:22px;
+  margin:0 !important;
+  padding:0 6px !important;
+  border-radius:8px !important;
+  background:rgba(255,255,255,.055) !important;
+  color:#dce6f5 !important;
+  font:800 8px "Segoe UI",sans-serif !important;
+}
+.mcq-category-mini{
+  grid-area:mini;
+  color:#627087;
+  font:650 7.5px "Segoe UI",sans-serif;
+}
+.mcq-modern-settings{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:9px;
+}
+.mcq-setting-card{
+  min-width:0;
+  padding:10px;
+  border:1px solid rgba(255,255,255,.065);
+  border-radius:11px;
+  background:#0c1521;
+}
+.mcq-setting-label{
+  display:block;
+  margin-bottom:7px;
+  color:#6d7b90;
+  font:800 8px "Segoe UI",sans-serif;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.mcq-setting-card .mcq-order-choice{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:6px;
+}
+.mcq-setting-card .mcq-order-btn{
+  min-height:34px;
+  border-radius:9px;
+  border:1px solid rgba(255,255,255,.08);
+  background:#101b2a;
+  color:#8190a4;
+  font:800 9px "Segoe UI",sans-serif;
+}
+.mcq-setting-card .mcq-order-btn.active{
+  border-color:rgba(106,214,200,.35);
+  background:rgba(106,214,200,.10);
+  color:#8ee7dc;
+}
+.mcq-question-count-wrap{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+.mcq-question-count-wrap .mcq-number-input{
+  width:68px;
+  height:34px;
+  border-radius:9px;
+  background:#070d15;
+  font:800 11px "Segoe UI",sans-serif;
+}
+.mcq-question-count-wrap .mcq-available-count{
+  min-width:0;
+  color:#738198;
+  font:650 9px "Segoe UI",sans-serif;
+}
+.mcq-start-modern{
+  width:100%;
+  min-height:46px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-top:10px;
+  padding:0 15px;
+  border:0;
+  border-radius:12px;
+  background:linear-gradient(135deg,#6ad6c8,#49b7aa);
+  color:#061311;
+  font:850 11px "Segoe UI",sans-serif;
+  cursor:pointer;
+  box-shadow:0 10px 28px rgba(79,189,176,.14);
+  transition:.18s ease;
+}
+.mcq-start-modern:hover:not(:disabled){
+  transform:translateY(-1px);
+  filter:brightness(1.04);
+}
+.mcq-start-modern:disabled{opacity:.42;cursor:not-allowed;}
+.mcq-start-arrow{
+  width:27px;
+  height:27px;
+  display:grid;
+  place-items:center;
+  border-radius:8px;
+  background:rgba(0,0,0,.10);
+  font-size:15px;
+}
+.mcq-modern-test-area{
+  margin:16px !important;
+  padding:0 !important;
+  border:0 !important;
+}
+.mcq-home-state{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  min-height:66px;
+  padding:12px 13px;
+  border:1px solid rgba(106,214,200,.12);
+  border-radius:13px;
+  background:rgba(106,214,200,.035);
+}
+.mcq-home-state.empty{border-color:rgba(255,255,255,.07);background:rgba(255,255,255,.015);}
+.mcq-home-ready-dot{
+  width:9px;height:9px;flex:0 0 auto;border-radius:50%;
+  background:#6ad6c8;box-shadow:0 0 0 6px rgba(106,214,200,.08);
+}
+.mcq-home-icon{
+  width:34px;height:34px;display:grid;place-items:center;flex:0 0 auto;border-radius:10px;
+  background:#0e1927;color:#7b8aa0;font:800 14px "Segoe UI",sans-serif;
+}
+.mcq-home-state>div:nth-child(2){min-width:0;flex:1;}
+.mcq-home-state b{display:block;color:#dce6f3;font:800 10px "Segoe UI",sans-serif;}
+.mcq-home-state span{display:block;margin-top:2px;color:#738198;font:500 9px/1.4 "Segoe UI",sans-serif;}
+.mcq-home-shortcuts{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end;}
+.mcq-home-shortcuts span{
+  margin:0 !important;padding:4px 7px;border-radius:7px;background:#101a28;color:#718096 !important;
+  font:700 8px "Segoe UI",sans-serif !important;
+}
+.mcq-run-shell{
+  padding:16px;
+  border:1px solid rgba(255,255,255,.075);
+  border-radius:17px;
+  background:linear-gradient(180deg,#0c1522,#080f18);
+  box-shadow:0 18px 55px rgba(0,0,0,.25);
+}
+.mcq-run-top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+}
+.mcq-run-title-wrap{min-width:0;}
+.mcq-run-eyebrow{
+  display:block;
+  margin-bottom:3px;
+  color:#6ad6c8;
+  font:800 8px "Segoe UI",sans-serif;
+  letter-spacing:.10em;
+  text-transform:uppercase;
+}
+.mcq-run-title-wrap strong{
+  color:#eef3fa;
+  font:850 17px "Segoe UI",sans-serif;
+}
+.mcq-run-title-wrap strong span{color:#56657b;font-size:12px;}
+.mcq-run-stats{display:flex;gap:5px;flex-wrap:wrap;justify-content:flex-end;}
+.mcq-stat-pill{
+  min-width:43px;
+  padding:5px 8px;
+  border-radius:8px;
+  border:1px solid rgba(255,255,255,.07);
+  background:#101a28;
+  color:#7e8da2;
+  text-align:center;
+  font:800 8px "Segoe UI",sans-serif;
+}
+.mcq-stat-pill.good{color:#7ed8b7;border-color:rgba(85,183,174,.18);}
+.mcq-stat-pill.bad{color:#f18a7b;border-color:rgba(217,92,74,.18);}
+.mcq-stat-pill.skip{color:#e8bd67;border-color:rgba(240,184,75,.16);}
+.mcq-progress-line{
+  height:5px;
+  margin:12px 0;
+  overflow:hidden;
+  border-radius:999px;
+  background:#101a28;
+}
+.mcq-progress-line span{
+  display:block;height:100%;border-radius:inherit;
+  background:linear-gradient(90deg,#6ad6c8,#82e1d5);
+  transition:width .22s ease;
+}
+.mcq-run-meta-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  margin-bottom:10px;
+}
+.mcq-run-tags{display:flex;gap:5px;flex-wrap:wrap;}
+.mcq-tag{
+  padding:4px 7px;
+  border-radius:7px;
+  border:1px solid rgba(255,255,255,.07);
+  background:#101927;
+  color:#728096;
+  font:750 7.5px "Segoe UI",sans-serif;
+}
+.mcq-tag.category{color:#ffe0a0;border-color:rgba(240,184,75,.16);background:rgba(240,184,75,.055);}
+.mcq-tag.new{color:#8ee7dc;border-color:rgba(106,214,200,.18);background:rgba(106,214,200,.055);}
+.mcq-tag.old{color:#d9c684;border-color:rgba(240,184,75,.18);background:rgba(240,184,75,.05);}
+.mcq-run-answered{color:#56657b;font:650 8px "Segoe UI",sans-serif;white-space:nowrap;}
+.mcq-question-card-modern{
+  position:relative;
+  padding:18px !important;
+  border-radius:15px !important;
+  border:1px solid rgba(255,255,255,.075) !important;
+  background:linear-gradient(150deg,#111c2b,#0b131e) !important;
+}
+.mcq-question-number{
+  margin-bottom:7px;
+  color:#526176;
+  font:850 8px "Segoe UI",sans-serif;
+  letter-spacing:.10em;
+}
+.mcq-question-card-modern .mcq-question-text{
+  margin-bottom:16px;
+  color:#f0f4fb;
+  font:650 17px/1.6 "Segoe UI",sans-serif;
+  letter-spacing:-.012em;
+}
+.mcq-question-card-modern .mcq-options{gap:8px;}
+.mcq-question-card-modern .mcq-option{
+  position:relative;
+  grid-template-columns:34px minmax(0,1fr) 22px;
+  align-items:center;
+  min-height:51px;
+  padding:9px 11px;
+  border:1px solid rgba(255,255,255,.075);
+  border-radius:11px;
+  background:#0d1724;
+  color:#cfd9e8;
+  font:500 13px/1.45 "Segoe UI",sans-serif;
+  transition:.15s ease;
+}
+.mcq-question-card-modern .mcq-option:hover:not(:disabled){
+  transform:translateX(2px);
+  border-color:rgba(106,214,200,.30);
+  background:#101d2c;
+}
+.mcq-question-card-modern .mcq-option-letter{
+  width:28px;height:28px;display:grid;place-items:center;padding:0;
+  border-radius:8px;background:#142131;color:#76dcd0;
+  font:850 9px "Segoe UI",sans-serif;
+}
+.mcq-option-text{min-width:0;overflow-wrap:anywhere;}
+.mcq-option-state{
+  width:20px;height:20px;display:grid;place-items:center;border-radius:50%;
+  color:#9aacbd;font:900 9px "Segoe UI",sans-serif;
+}
+.mcq-question-card-modern .mcq-option.correct{
+  border-color:rgba(85,183,174,.45);
+  background:linear-gradient(135deg,rgba(85,183,174,.13),rgba(85,183,174,.055));
+}
+.mcq-question-card-modern .mcq-option.correct .mcq-option-letter{
+  background:rgba(85,183,174,.18);color:#9bf0d2;
+}
+.mcq-question-card-modern .mcq-option.correct .mcq-option-state{
+  background:rgba(85,183,174,.16);color:#88e0bf;
+}
+.mcq-question-card-modern .mcq-option.wrong{
+  border-color:rgba(217,92,74,.42);
+  background:linear-gradient(135deg,rgba(217,92,74,.12),rgba(217,92,74,.045));
+}
+.mcq-question-card-modern .mcq-option.wrong .mcq-option-letter{
+  background:rgba(217,92,74,.16);color:#ff9b8c;
+}
+.mcq-question-card-modern .mcq-option.wrong .mcq-option-state{
+  background:rgba(217,92,74,.14);color:#ff9283;
+}
+.mcq-question-card-modern .mcq-feedback{
+  margin-top:13px;
+  padding:11px 12px;
+  border:0;
+  border-left:3px solid #55b7ae;
+  border-radius:0 9px 9px 0;
+  background:rgba(85,183,174,.06);
+  color:#9ddacb;
+  white-space:pre-line;
+  font:550 11px/1.55 "Segoe UI",sans-serif;
+}
+.mcq-question-card-modern .mcq-feedback.wrong{
+  border-left-color:#d95c4a;
+  background:rgba(217,92,74,.06);
+  color:#f2a397;
+}
+.mcq-run-actions{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:10px;
+  margin-top:11px;
+}
+.mcq-run-actions-left{display:flex;gap:6px;flex-wrap:wrap;}
+.mcq-action-btn{
+  min-height:36px;
+  padding:0 11px;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:9px;
+  background:#101927;
+  color:#8997aa;
+  font:800 8.5px "Segoe UI",sans-serif;
+  cursor:pointer;
+}
+.mcq-action-btn:hover:not(:disabled){border-color:rgba(106,214,200,.26);color:#dfe8f3;}
+.mcq-action-btn.primary{
+  min-width:135px;
+  border:0;
+  background:linear-gradient(135deg,#6ad6c8,#4dbbae);
+  color:#061311;
+}
+.mcq-action-btn.pool{
+  color:#e6bd69;
+  border-color:rgba(240,184,75,.18);
+  background:rgba(240,184,75,.045);
+}
+.mcq-action-btn:disabled{opacity:.45;cursor:wait;}
+.mcq-question-nav{
+  display:flex;
+  gap:5px;
+  flex-wrap:wrap;
+  margin-top:12px;
+  padding-top:11px;
+  border-top:1px solid rgba(255,255,255,.06);
+}
+.mcq-nav-dot{
+  min-width:27px;height:27px;padding:0 5px;
+  border:1px solid rgba(255,255,255,.07);
+  border-radius:7px;
+  background:#0d1623;
+  color:#637188;
+  font:800 8px "Segoe UI",sans-serif;
+  cursor:pointer;
+}
+.mcq-nav-dot.current{background:#6ad6c8;color:#061311;border-color:#6ad6c8;}
+.mcq-nav-dot.correct{color:#7ed8b7;border-color:rgba(85,183,174,.26);background:rgba(85,183,174,.055);}
+.mcq-nav-dot.wrong{color:#f18a7b;border-color:rgba(217,92,74,.25);background:rgba(217,92,74,.05);}
+.mcq-nav-dot.skipped{color:#e8bd67;border-color:rgba(240,184,75,.22);background:rgba(240,184,75,.045);}
+.mcq-result-modern{
+  display:grid;
+  grid-template-columns:120px minmax(0,1fr);
+  gap:17px;
+  padding:19px;
+  border:1px solid rgba(255,255,255,.075);
+  border-radius:17px;
+  background:
+    radial-gradient(circle at 9% 15%,rgba(106,214,200,.08),transparent 25%),
+    linear-gradient(145deg,#0f1927,#09111b);
+}
+.mcq-result-orb{
+  width:112px;height:112px;display:grid;place-items:center;align-content:center;
+  border-radius:50%;
+  border:1px solid rgba(106,214,200,.22);
+  background:radial-gradient(circle,rgba(106,214,200,.08),rgba(106,214,200,.025));
+  box-shadow:inset 0 0 35px rgba(106,214,200,.04);
+}
+.mcq-result-orb .mcq-result-score{color:#8ce8dc;font:900 28px "Segoe UI",sans-serif;}
+.mcq-result-orb small{margin-top:2px;color:#647287;font:750 8px "Segoe UI",sans-serif;text-transform:uppercase;letter-spacing:.08em;}
+.mcq-result-copy{align-self:center;}
+.mcq-result-copy h3{margin:2px 0 5px;color:#f0f5fb;font:850 20px "Segoe UI",sans-serif;letter-spacing:-.03em;}
+.mcq-result-copy p{margin:0;color:#748298;font:500 10px/1.5 "Segoe UI",sans-serif;}
+.mcq-result-grid{
+  grid-column:1/-1;
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:7px;
+}
+.mcq-result-stat{
+  display:grid;
+  grid-template-columns:24px 1fr;
+  grid-template-areas:"icon num" "icon label";
+  align-items:center;
+  column-gap:8px;
+  padding:10px;
+  border:1px solid rgba(255,255,255,.065);
+  border-radius:11px;
+  background:#0d1623;
+}
+.mcq-result-stat>span{
+  grid-area:icon;width:24px;height:24px;display:grid;place-items:center;border-radius:8px;
+  background:rgba(255,255,255,.045);color:#8492a6;font:850 9px "Segoe UI",sans-serif;
+}
+.mcq-result-stat b{grid-area:num;color:#e6edf7;font:850 15px "Segoe UI",sans-serif;line-height:1;}
+.mcq-result-stat small{grid-area:label;margin-top:2px;color:#637086;font:650 7.5px "Segoe UI",sans-serif;}
+.mcq-result-stat.good>span{color:#7ed8b7;}
+.mcq-result-stat.bad>span{color:#f18a7b;}
+.mcq-result-stat.skip>span{color:#e8bd67;}
+.mcq-result-actions{
+  grid-column:1/-1;
+  display:flex;
+  justify-content:flex-end;
+  gap:7px;
+}
+.mcq-result-actions .mcq-action-btn{min-height:38px;}
+.mcq-review-list{grid-column:1/-1;}
+.answer-chip.pool.new{
+  color:#8ee7dc !important;
+  border-color:rgba(106,214,200,.20) !important;
+  background:rgba(106,214,200,.055) !important;
+}
+.answer-chip.pool.old{
+  color:#e8c777 !important;
+  border-color:rgba(240,184,75,.20) !important;
+  background:rgba(240,184,75,.05) !important;
+}
+.question-icon-btn.pool-new{
+  color:#8ee7dc !important;
+  border-color:rgba(106,214,200,.24) !important;
+}
+.question-icon-btn.pool-old{
+  color:#e8c777 !important;
+  border-color:rgba(240,184,75,.24) !important;
+}
+
+@media(max-width:700px){
+  .mcq-studio-hero{padding:16px;}
+  .mcq-studio-title{font-size:20px;}
+  .mcq-studio-section{margin:10px 10px 0;padding:11px;}
+  .mcq-modern-test-area{margin:10px !important;}
+  .mcq-pool-segment{grid-template-columns:1fr;}
+  .mcq-modern-category-list{grid-template-columns:1fr 1fr;}
+  .mcq-modern-settings{grid-template-columns:1fr;}
+  .mcq-studio-section-head{align-items:flex-start;}
+  .mcq-step-note{max-width:48%;}
+  .mcq-run-shell{padding:12px;}
+  .mcq-run-top{align-items:flex-start;}
+  .mcq-question-card-modern{padding:14px !important;}
+  .mcq-question-card-modern .mcq-question-text{font-size:15px;}
+  .mcq-run-actions{align-items:stretch;flex-direction:column;}
+  .mcq-run-actions-left{display:grid;grid-template-columns:repeat(3,1fr);}
+  .mcq-action-btn.primary{width:100%;}
+  .mcq-result-modern{grid-template-columns:1fr;text-align:center;}
+  .mcq-result-orb{margin:0 auto;}
+  .mcq-result-grid{grid-column:1;grid-template-columns:1fr 1fr;text-align:left;}
+  .mcq-result-actions{grid-column:1;flex-direction:column;}
+}
+@media(max-width:420px){
+  .mcq-modern-category-list{grid-template-columns:1fr;}
+  .mcq-run-meta-row{align-items:flex-start;flex-direction:column;}
+  .mcq-run-actions-left{grid-template-columns:1fr;}
+  .mcq-question-card-modern .mcq-option{grid-template-columns:30px minmax(0,1fr) 18px;padding:9px;}
+  .mcq-result-grid{grid-template-columns:1fr 1fr;}
+}
+
 </style>
 
 <style>
@@ -5060,6 +2970,635 @@ body::before{
 @media(max-width:640px){
   .alertbody{padding-bottom:86px;}
   .main-card-next-btn{right:16px;bottom:15px;width:60px;min-width:60px;height:35px;min-height:35px;}
+}
+
+/* =========================================================
+   MCQ FOCUS MODE
+   When a test is running, hide the study workspace and show
+   only the active test question + essential actions.
+========================================================= */
+
+/* GROUPED MAIN + SUBQUESTION TEST */
+.mcq-group-context{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin:10px 0 12px;
+  color:#7f8da1;
+  font:700 9px "Segoe UI",sans-serif;
+}
+.mcq-group-context-left{display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+.mcq-group-category{
+  display:inline-flex;
+  align-items:center;
+  padding:4px 8px;
+  border-radius:999px;
+  border:1px solid rgba(106,214,200,.25);
+  background:rgba(106,214,200,.08);
+  color:#8ee7dc;
+}
+.mcq-group-card{scroll-margin-top:18px;display:flex;flex-direction:column;gap:14px;}
+.mcq-part-block{
+  border:1px solid rgba(255,255,255,.10);
+  border-radius:15px;
+  padding:16px;
+  background:rgba(255,255,255,.025);
+}
+.mcq-part-block.main-part{
+  border-color:rgba(240,184,75,.30);
+  background:linear-gradient(145deg,rgba(240,184,75,.07),rgba(255,255,255,.018));
+}
+.mcq-part-block.sub-part{
+  margin-left:18px;
+  border-left:3px solid rgba(85,183,174,.55);
+  background:rgba(85,183,174,.035);
+}
+.mcq-part-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:10px;}
+.mcq-part-kicker{
+  display:block;
+  color:#f0b84b;
+  font:800 9px "Segoe UI",sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.08em;
+}
+.mcq-sub-part .mcq-part-kicker{color:#78d5ca;}
+.mcq-part-parent-note{display:block;margin-top:3px;color:#6f7d91;font:600 8px "Segoe UI",sans-serif;}
+.mcq-part-pool{
+  flex:0 0 auto;
+  padding:3px 7px;
+  border-radius:999px;
+  font:800 8px "Segoe UI",sans-serif;
+  text-transform:uppercase;
+}
+.mcq-part-pool.new{color:#7edfd3;background:rgba(85,183,174,.10);border:1px solid rgba(85,183,174,.25);}
+.mcq-part-pool.old{color:#f0c777;background:rgba(240,184,75,.09);border:1px solid rgba(240,184,75,.25);}
+.mcq-part-question{color:#eef3fa;font:700 16px/1.55 "Segoe UI",sans-serif;margin-bottom:12px;white-space:pre-wrap;overflow-wrap:anywhere;}
+.mcq-part-options{margin-bottom:0!important;}
+.mcq-part-block .mcq-feedback{margin-top:10px!important;white-space:pre-wrap;}
+@media(max-width:600px){
+  .mcq-group-context{align-items:flex-start;flex-direction:column;gap:5px;}
+  .mcq-part-block{padding:13px;border-radius:13px;}
+  .mcq-part-block.sub-part{margin-left:0;border-left-width:3px;}
+  .mcq-part-question{font-size:15px;line-height:1.5;}
+}
+
+body.mcq-focus-mode{
+  min-height:100dvh;
+  padding:0!important;
+  align-items:flex-start!important;
+  background:
+    radial-gradient(circle at 50% -10%, rgba(85,183,174,.12), transparent 34%),
+    #070b12!important;
+}
+body.mcq-focus-mode .board{
+  width:100%!important;
+  max-width:920px!important;
+  min-height:100dvh;
+  margin:0 auto!important;
+  padding:20px 18px 30px;
+}
+body.mcq-focus-mode #appHeader,
+body.mcq-focus-mode #box,
+body.mcq-focus-mode #studyControls{
+  display:none!important;
+}
+body.mcq-focus-mode #toolsBox{
+  display:block!important;
+  width:100%!important;
+  margin:0!important;
+  padding:0!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  overflow:visible!important;
+}
+body.mcq-focus-mode #toolsBox > .managetop-title,
+body.mcq-focus-mode #searchPanel,
+body.mcq-focus-mode #newDataPanel,
+body.mcq-focus-mode #answerBankPanel,
+body.mcq-focus-mode #missingDataPanel{
+  display:none!important;
+}
+body.mcq-focus-mode #mcqTestPanel{
+  display:block!important;
+  width:100%!important;
+  max-width:none!important;
+  margin:0!important;
+  padding:0!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+}
+body.mcq-focus-mode #mcqTestPanel > .mcq-studio-hero,
+body.mcq-focus-mode #mcqTestPanel > .mcq-studio-section{
+  display:none!important;
+}
+body.mcq-focus-mode #mcqTestArea{
+  display:block!important;
+  width:100%!important;
+  margin:0!important;
+  padding:0!important;
+  border:0!important;
+}
+body.mcq-focus-mode .mcq-run-shell{
+  width:min(100%, 820px);
+  margin:0 auto;
+}
+body.mcq-focus-mode .mcq-run-top{
+  margin:0 0 10px!important;
+}
+body.mcq-focus-mode .mcq-run-stats,
+body.mcq-focus-mode .mcq-run-meta-row,
+body.mcq-focus-mode .mcq-question-nav{
+  display:none!important;
+}
+body.mcq-focus-mode .mcq-run-title-wrap .mcq-run-eyebrow{
+  display:none!important;
+}
+body.mcq-focus-mode .mcq-run-title-wrap strong{
+  display:block;
+  color:#9aa8bc;
+  font:800 11px/1.2 "Segoe UI",sans-serif;
+  letter-spacing:.04em;
+  text-transform:uppercase;
+}
+body.mcq-focus-mode .mcq-run-title-wrap strong span{
+  color:#59677b;
+}
+body.mcq-focus-mode .mcq-progress-line{
+  height:5px;
+  margin-bottom:18px!important;
+  border-radius:999px;
+  background:#141e2d;
+  overflow:hidden;
+}
+body.mcq-focus-mode .mcq-question-card-modern{
+  position:relative;
+  padding:clamp(18px,3vw,30px)!important;
+  border:1px solid rgba(255,255,255,.10)!important;
+  border-radius:20px!important;
+  background:linear-gradient(145deg,#0d1624,#0a111c)!important;
+  box-shadow:0 24px 60px rgba(0,0,0,.34)!important;
+}
+body.mcq-focus-mode .mcq-question-number{
+  margin-bottom:12px!important;
+  color:#55b7ae!important;
+  font:800 10px "Courier New",monospace!important;
+  letter-spacing:.12em!important;
+}
+body.mcq-focus-mode .mcq-question-text{
+  margin-bottom:22px!important;
+  color:#f4f7fb!important;
+  font-size:clamp(18px,2.6vw,25px)!important;
+  line-height:1.55!important;
+}
+body.mcq-focus-mode .mcq-options{
+  gap:10px!important;
+}
+body.mcq-focus-mode .mcq-option{
+  min-height:58px;
+  grid-template-columns:34px minmax(0,1fr) 22px!important;
+  align-items:center!important;
+  padding:12px 14px!important;
+  border-radius:13px!important;
+  background:#111c2c!important;
+  border-color:rgba(255,255,255,.09)!important;
+  font-size:15px!important;
+  line-height:1.45!important;
+  transition:transform .15s ease,border-color .15s ease,background .15s ease!important;
+}
+body.mcq-focus-mode .mcq-option:hover:not(:disabled){
+  transform:translateY(-1px);
+  border-color:rgba(85,183,174,.65)!important;
+  background:#142235!important;
+}
+body.mcq-focus-mode .mcq-option.correct{
+  background:rgba(85,183,174,.13)!important;
+  border-color:rgba(85,183,174,.72)!important;
+}
+body.mcq-focus-mode .mcq-option.wrong{
+  background:rgba(217,92,74,.12)!important;
+  border-color:rgba(217,92,74,.70)!important;
+}
+body.mcq-focus-mode .mcq-option-letter{
+  width:30px;
+  height:30px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:0!important;
+  border-radius:9px;
+  background:rgba(85,183,174,.10);
+  color:#79d6cc!important;
+  font-size:10px!important;
+}
+body.mcq-focus-mode .mcq-feedback{
+  margin-top:16px!important;
+  padding:13px 15px!important;
+  border-radius:11px!important;
+  border-left-width:0!important;
+  border:1px solid rgba(85,183,174,.26)!important;
+  background:rgba(85,183,174,.07)!important;
+  font-size:13px!important;
+  line-height:1.6!important;
+}
+body.mcq-focus-mode .mcq-feedback.wrong{
+  border-color:rgba(217,92,74,.28)!important;
+  background:rgba(217,92,74,.07)!important;
+}
+body.mcq-focus-mode .mcq-run-actions{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:10px!important;
+  margin-top:15px!important;
+  padding:0 2px;
+}
+body.mcq-focus-mode .mcq-run-actions-left{
+  display:flex!important;
+  gap:7px!important;
+  flex-wrap:wrap!important;
+}
+body.mcq-focus-mode .mcq-action-btn{
+  min-height:40px!important;
+  padding:9px 13px!important;
+  border-radius:11px!important;
+}
+body.mcq-focus-mode .mcq-action-btn.primary{
+  min-width:160px;
+}
+body.mcq-focus-mode .mcq-result-modern{
+  width:min(100%,760px);
+  margin:8vh auto 0!important;
+}
+@media(max-width:640px){
+  body.mcq-focus-mode .board{padding:12px 10px 24px;}
+  body.mcq-focus-mode .mcq-run-actions{align-items:stretch!important;flex-direction:column-reverse!important;}
+  body.mcq-focus-mode .mcq-run-actions-left{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));}
+  body.mcq-focus-mode .mcq-action-btn{width:100%!important;min-width:0!important;padding:9px 8px!important;font-size:9px!important;}
+  body.mcq-focus-mode .mcq-action-btn.primary{min-height:46px!important;font-size:10px!important;}
+  body.mcq-focus-mode .mcq-question-card-modern{padding:18px 14px!important;border-radius:16px!important;}
+  body.mcq-focus-mode .mcq-question-text{font-size:18px!important;margin-bottom:17px!important;}
+  body.mcq-focus-mode .mcq-option{min-height:52px;padding:10px!important;font-size:13px!important;}
+}
+
+
+/* =========================================================
+   SIMPLIFIED ACTION HIERARCHY
+   Keep frequent actions visible; group secondary actions in More menus.
+========================================================= */
+.primary-toolbar{display:flex;align-items:center;gap:7px;flex-wrap:wrap;}
+.action-menu{position:relative;display:inline-flex;align-items:center;flex:0 0 auto;}
+.action-menu-popover{
+  position:absolute;right:0;top:calc(100% + 7px);z-index:160;
+  display:none;min-width:178px;padding:6px;
+  border:1px solid rgba(255,255,255,.12);border-radius:12px;
+  background:#0c1420;box-shadow:0 18px 48px rgba(0,0,0,.46);
+}
+.action-menu.open>.action-menu-popover{display:grid;gap:3px;}
+.action-menu-item{
+  width:100%;min-height:34px;padding:7px 10px;border:0;border-radius:8px;
+  background:transparent;color:#dce5f2;text-align:left;cursor:pointer;
+  font:700 10px "Segoe UI",sans-serif;white-space:nowrap;
+}
+.action-menu-item:hover,.action-menu-item:focus{outline:none;background:rgba(106,214,200,.10);color:#8ee7dc;}
+.action-menu-item.danger{color:#ff9b8d;}
+.action-menu-item.danger:hover,.action-menu-item.danger:focus{background:rgba(217,92,74,.12);color:#ffb0a4;}
+.action-menu-close{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  width:100%;min-height:38px;margin:0 0 5px;padding:7px 10px;
+  border:0;border-bottom:1px solid rgba(255,255,255,.10);
+  background:transparent;color:#f1f5fb;cursor:pointer;
+  font:800 10px "Segoe UI",sans-serif;text-align:left;
+}
+.action-menu-close:hover,.action-menu-close:focus{outline:none;color:#8ee7dc;background:rgba(106,214,200,.08);border-radius:8px;}
+.action-menu-close-x{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:26px;height:26px;border-radius:50%;
+  background:rgba(255,255,255,.08);color:#fff;font-size:17px;line-height:1;
+}
+.more-trigger{white-space:nowrap;}
+.question-row-actions.simplified-row-actions{display:flex;align-items:center;gap:5px;flex:0 0 auto;}
+.compact-menu .action-menu-popover{min-width:128px;}
+.mcq-run-actions.simplified,.mcq-result-actions.simplified{align-items:center;justify-content:space-between;gap:8px;}
+.mcq-run-actions.simplified .mcq-run-actions-left{display:flex;align-items:center;gap:7px;}
+.test-more-menu .action-menu-popover,.result-more-menu .action-menu-popover{bottom:calc(100% + 7px);top:auto;min-width:190px;}
+body.mcq-focus-mode .action-menu-popover{z-index:9999;}
+@media(max-width:640px){
+  .manage-title-actions.primary-toolbar{display:flex;grid-template-columns:none;overflow:visible;}
+  .manage-title-actions.primary-toolbar>.manage-action-btn{flex:1 1 auto;min-width:72px;}
+  .manage-title-actions.primary-toolbar>.action-menu{margin-left:auto;}
+  .action-menu-popover{position:fixed;left:10px;right:10px;top:auto;bottom:12px;min-width:0;padding:8px;border-radius:16px;}
+  .action-menu.open>.action-menu-popover{display:grid;}
+  .action-menu-item{min-height:44px;font-size:12px;padding:10px 12px;}
+  .test-more-menu .action-menu-popover,.result-more-menu .action-menu-popover{left:10px;right:10px;bottom:12px;top:auto;}
+}
+
+
+/* =========================================================
+   RESPONSIVE TEST FOCUS + VIEWPORT-SAFE MORE MENU
+   Keep the active test centered/full-width on every screen.
+========================================================= */
+body.mcq-focus-mode,
+body.mcq-focus-mode *{max-width:100%;}
+body.mcq-focus-mode .board{
+  width:100%!important;
+  max-width:none!important;
+  margin:0!important;
+  padding:clamp(10px,2.5vw,24px)!important;
+}
+body.mcq-focus-mode #toolsBox,
+body.mcq-focus-mode #mcqTestPanel,
+body.mcq-focus-mode #mcqTestArea{
+  width:100%!important;
+  max-width:none!important;
+  min-width:0!important;
+}
+body.mcq-focus-mode .mcq-run-shell{
+  width:100%!important;
+  max-width:980px!important;
+  min-width:0!important;
+  margin:0 auto!important;
+  overflow:visible!important;
+}
+body.mcq-focus-mode .mcq-group-card,
+body.mcq-focus-mode .mcq-part-block,
+body.mcq-focus-mode .mcq-options,
+body.mcq-focus-mode .mcq-option{
+  width:100%!important;
+  min-width:0!important;
+}
+body.mcq-focus-mode .mcq-part-block.sub-part{
+  margin-left:0!important;
+}
+body.mcq-focus-mode .mcq-part-question,
+body.mcq-focus-mode .mcq-option-text,
+body.mcq-focus-mode .mcq-feedback{
+  overflow-wrap:anywhere!important;
+  word-break:break-word!important;
+}
+body.mcq-focus-mode .mcq-run-actions.simplified{
+  width:100%!important;
+  min-width:0!important;
+}
+
+/* More menu becomes a true bottom sheet on smaller screens. */
+@media(max-width:800px){
+  body.mcq-focus-mode .action-menu.open::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    z-index:9997;
+    background:rgba(3,7,12,.62);
+    backdrop-filter:blur(2px);
+  }
+  body.mcq-focus-mode .test-more-menu .action-menu-popover,
+  body.mcq-focus-mode .result-more-menu .action-menu-popover{
+    position:fixed!important;
+    left:10px!important;
+    right:10px!important;
+    top:auto!important;
+    bottom:max(10px, env(safe-area-inset-bottom))!important;
+    z-index:9999!important;
+    width:auto!important;
+    min-width:0!important;
+    max-width:none!important;
+    max-height:min(68dvh,460px)!important;
+    overflow-y:auto!important;
+    padding:10px!important;
+    border-radius:18px!important;
+    box-shadow:0 28px 80px rgba(0,0,0,.62)!important;
+  }
+  body.mcq-focus-mode .action-menu-item{
+    min-height:48px!important;
+    white-space:normal!important;
+    font-size:12px!important;
+  }
+  body.mcq-focus-mode .mcq-run-actions.simplified{
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    gap:9px!important;
+  }
+  body.mcq-focus-mode .mcq-run-actions-left{
+    display:grid!important;
+    grid-template-columns:1fr 1fr!important;
+    gap:8px!important;
+    width:100%!important;
+  }
+  body.mcq-focus-mode .mcq-run-actions-left > .mcq-action-btn,
+  body.mcq-focus-mode .mcq-run-actions-left > .action-menu,
+  body.mcq-focus-mode .mcq-run-actions-left .more-trigger{
+    width:100%!important;
+  }
+  body.mcq-focus-mode #mcqNextBtn{
+    width:100%!important;
+    min-height:48px!important;
+    grid-row:1!important;
+  }
+}
+
+@media(max-width:520px){
+  body.mcq-focus-mode .board{padding:8px!important;}
+  body.mcq-focus-mode .mcq-run-shell{
+    padding:10px!important;
+    border-radius:14px!important;
+  }
+  body.mcq-focus-mode .mcq-question-card-modern{
+    padding:10px!important;
+    border-radius:14px!important;
+  }
+  body.mcq-focus-mode .mcq-part-block{
+    padding:11px!important;
+    border-radius:12px!important;
+  }
+  body.mcq-focus-mode .mcq-part-head{
+    align-items:flex-start!important;
+    flex-direction:column!important;
+    gap:6px!important;
+  }
+  body.mcq-focus-mode .mcq-part-question{
+    font-size:15px!important;
+    line-height:1.5!important;
+  }
+  body.mcq-focus-mode .mcq-option{
+    grid-template-columns:30px minmax(0,1fr) 18px!important;
+    gap:8px!important;
+    padding:9px!important;
+    font-size:13px!important;
+  }
+  body.mcq-focus-mode .mcq-group-context{
+    font-size:8px!important;
+  }
+}
+
+
+/* =========================================================
+   FOCUS MODE LAYOUT HOTFIX
+   Desktop used a 2-column dashboard grid. When the study side was hidden,
+   the empty first grid column remained reserved and pushed the test to the
+   right. Focus mode is intentionally a single-column viewport layout.
+========================================================= */
+html:has(body.mcq-focus-mode){
+  width:100%;
+  min-width:0;
+  overflow-x:hidden;
+}
+body.mcq-focus-mode{
+  display:block!important;
+  width:100%!important;
+  min-width:0!important;
+  min-height:100dvh!important;
+  margin:0!important;
+  padding:0!important;
+  overflow-x:hidden!important;
+}
+body.mcq-focus-mode .board,
+body.mcq-focus-mode .board:has(#mcqTestPanel.active){
+  display:block!important;
+  grid-template-columns:none!important;
+  grid-template-rows:none!important;
+  grid-template-areas:none!important;
+  width:100%!important;
+  max-width:100%!important;
+  min-width:0!important;
+  margin:0!important;
+  padding:clamp(10px,2vw,24px)!important;
+}
+body.mcq-focus-mode #toolsBox{
+  position:static!important;
+  top:auto!important;
+  left:auto!important;
+  right:auto!important;
+  grid-area:auto!important;
+  width:100%!important;
+  max-width:none!important;
+  min-width:0!important;
+  max-height:none!important;
+  margin:0!important;
+  padding:0!important;
+  overflow:visible!important;
+  scrollbar-gutter:auto!important;
+}
+body.mcq-focus-mode #mcqTestPanel{
+  display:block!important;
+  position:static!important;
+  width:100%!important;
+  max-width:none!important;
+  min-width:0!important;
+  margin:0!important;
+  padding:0!important;
+  overflow:visible!important;
+}
+body.mcq-focus-mode #mcqTestArea{
+  display:block!important;
+  width:100%!important;
+  max-width:none!important;
+  min-width:0!important;
+  margin:0!important;
+  padding:0!important;
+  overflow:visible!important;
+}
+body.mcq-focus-mode .mcq-run-shell{
+  display:block!important;
+  width:min(100%,1000px)!important;
+  max-width:1000px!important;
+  min-width:0!important;
+  margin:0 auto!important;
+  padding:clamp(10px,1.6vw,18px)!important;
+  overflow:visible!important;
+}
+body.mcq-focus-mode .mcq-question-card-modern,
+body.mcq-focus-mode .mcq-group-card,
+body.mcq-focus-mode .mcq-part-block,
+body.mcq-focus-mode .mcq-options,
+body.mcq-focus-mode .mcq-option{
+  box-sizing:border-box!important;
+  width:100%!important;
+  max-width:100%!important;
+  min-width:0!important;
+}
+body.mcq-focus-mode .mcq-option > span,
+body.mcq-focus-mode .mcq-option-text,
+body.mcq-focus-mode .mcq-part-question,
+body.mcq-focus-mode .mcq-feedback{
+  min-width:0!important;
+  max-width:100%!important;
+  overflow-wrap:anywhere!important;
+  word-break:break-word!important;
+}
+
+/* In focus mode More is viewport-level, so it can never be clipped by
+   dashboard/grid containers. This applies on desktop AND mobile. */
+body.mcq-focus-mode .action-menu.open::before{
+  content:"";
+  position:fixed!important;
+  inset:0!important;
+  z-index:2147483000!important;
+  background:rgba(2,6,11,.62)!important;
+  backdrop-filter:blur(2px);
+}
+body.mcq-focus-mode .test-more-menu .action-menu-popover,
+body.mcq-focus-mode .result-more-menu .action-menu-popover{
+  position:fixed!important;
+  z-index:2147483001!important;
+  left:50%!important;
+  right:auto!important;
+  top:auto!important;
+  bottom:max(18px, env(safe-area-inset-bottom))!important;
+  transform:translateX(-50%)!important;
+  width:min(420px,calc(100vw - 28px))!important;
+  min-width:0!important;
+  max-width:calc(100vw - 28px)!important;
+  max-height:min(70dvh,520px)!important;
+  overflow-x:hidden!important;
+  overflow-y:auto!important;
+  padding:10px!important;
+  border:1px solid rgba(255,255,255,.14)!important;
+  border-radius:18px!important;
+  background:#0c1420!important;
+  box-shadow:0 30px 90px rgba(0,0,0,.68)!important;
+}
+body.mcq-focus-mode .test-more-menu .action-menu-item,
+body.mcq-focus-mode .result-more-menu .action-menu-item{
+  display:block!important;
+  width:100%!important;
+  min-width:0!important;
+  min-height:46px!important;
+  padding:10px 12px!important;
+  white-space:normal!important;
+  overflow-wrap:anywhere!important;
+  text-align:left!important;
+  font-size:12px!important;
+}
+
+@media(max-width:640px){
+  body.mcq-focus-mode .board,
+  body.mcq-focus-mode .board:has(#mcqTestPanel.active){
+    padding:8px!important;
+  }
+  body.mcq-focus-mode .mcq-run-shell{
+    width:100%!important;
+    max-width:100%!important;
+    margin:0!important;
+    padding:8px!important;
+    border-radius:14px!important;
+  }
+  body.mcq-focus-mode .mcq-question-card-modern{
+    padding:9px!important;
+  }
+  body.mcq-focus-mode .mcq-run-actions-left{
+    min-width:0!important;
+  }
+  body.mcq-focus-mode .test-more-menu .action-menu-popover,
+  body.mcq-focus-mode .result-more-menu .action-menu-popover{
+    width:calc(100vw - 16px)!important;
+    max-width:calc(100vw - 16px)!important;
+    bottom:max(8px, env(safe-area-inset-bottom))!important;
+    border-radius:16px!important;
+  }
 }
 </style>
 </head>
@@ -5183,13 +3722,18 @@ body::before{
     <div class="managetop-title">
       <div class="manage-title-row">
         <span>✎ Search &amp; edit words</span>
-        <span class="manage-title-actions">
-          <button class="manage-action-btn" id="toggleSearchPanelBtn" type="button">Hide Search</button>
+        <span class="manage-title-actions primary-toolbar">
           <button class="manage-action-btn primary" id="newDataBtn" type="button">＋ New</button>
-          <button class="manage-action-btn" id="englishMcqTestBtn" type="button">Test</button>
-          <button class="manage-action-btn" id="answerBankBtn" type="button">Answers</button>
-          <button class="manage-action-btn" id="showMissingBtn" type="button">Missing</button>
-          <button class="section-toggle-btn" type="button" data-collapse-section="toolsBox">− Hide</button>
+          <button class="manage-action-btn" id="englishMcqTestBtn" type="button">▶ Test</button>
+          <button class="manage-action-btn" id="answerBankBtn" type="button">Questions</button>
+          <span class="action-menu">
+            <button class="manage-action-btn more-trigger" type="button" aria-haspopup="menu" aria-expanded="false">⋮ More</button>
+            <span class="action-menu-popover" role="menu">
+              <button class="action-menu-item" id="toggleSearchPanelBtn" type="button" role="menuitem">Hide Search</button>
+              <button class="action-menu-item" id="showMissingBtn" type="button" role="menuitem">Missing Items</button>
+              <button class="action-menu-item" type="button" data-collapse-section="toolsBox" role="menuitem">Hide Tools</button>
+            </span>
+          </span>
         </span>
       </div>
     </div>
@@ -5331,7 +3875,7 @@ body::before{
       </div>
 
       <div class="question-format-choice" id="questionFormatChoice" hidden>
-        <button class="question-format-btn active" id="mainOnlyFormatBtn" type="button">Only Main Questions</button>
+        <button class="question-format-btn active" id="mainOnlyFormatBtn" type="button">Single Question</button>
         <button class="question-format-btn" id="mainSubFormatBtn" type="button">Main + Sub Questions</button>
       </div>
 
@@ -5340,60 +3884,131 @@ body::before{
           Choose Word or Idiom. The correct array format will appear here.
         </div>
         <textarea class="array-textarea" id="bulkArrayInput" spellcheck="false"></textarea>
-        <div class="array-actions">
-          <button class="small-tool-btn" id="copyArrayFormatBtn" type="button">Copy format</button>
+        <div class="array-actions primary-toolbar">
           <button class="small-tool-btn accent" id="uploadArrayBtn" type="button">Upload array</button>
-          <button class="small-tool-btn" id="clearArrayBtn" type="button">Clear</button>
+          <span class="action-menu">
+            <button class="small-tool-btn more-trigger" type="button" aria-haspopup="menu" aria-expanded="false">⋮ More</button>
+            <span class="action-menu-popover" role="menu">
+              <button class="action-menu-item" id="copyArrayFormatBtn" type="button" role="menuitem">Copy example</button>
+              <button class="action-menu-item danger" id="clearArrayBtn" type="button" role="menuitem">Clear input</button>
+            </span>
+          </span>
         </div>
         <div class="tool-msg" id="bulkUploadMsg"></div>
       </div>
     </div>
 
-    <div class="tool-panel" id="mcqTestPanel">
-      <div class="tool-panel-head">
-        <div class="tool-panel-title">English MCQ Test</div>
-        <button class="tool-close-btn" id="closeMcqTestPanel" type="button" aria-label="Close">×</button>
-      </div>
-
-      <div class="mcq-category-selector mcq-category-selector-simple">
-        <div class="mcq-category-head">
-          <span>Choose Category</span>
-          <span id="mcqCategorySelectionSummary">0 questions</span>
+    <div class="tool-panel mcq-studio-panel" id="mcqTestPanel">
+      <div class="mcq-studio-hero">
+        <div>
+          <div class="mcq-studio-kicker">Practice Engine</div>
+          <div class="mcq-studio-title">English Test Studio</div>
+          <div class="mcq-studio-subtitle">Choose New / Old questions, select any category and start a focused round.</div>
         </div>
-        <div class="mcq-category-toggle-list" id="mcqCategoryToggleList"></div>
+        <button class="tool-close-btn mcq-studio-close" id="closeMcqTestPanel" type="button" aria-label="Close">×</button>
       </div>
 
-      <div class="mcq-control-row">
-        <div class="mcq-order-choice">
-          <button class="mcq-order-btn active" id="mcqRandomBtn" type="button">⤨ Random</button>
-          <button class="mcq-order-btn" id="mcqSeriesBtn" type="button">↦ Series</button>
+      <div class="mcq-studio-section">
+        <div class="mcq-studio-section-head">
+          <div>
+            <span class="mcq-step-no">01</span>
+            <span class="mcq-step-title">Question Pool</span>
+          </div>
+          <span class="mcq-step-note">Move questions between pools anytime</span>
         </div>
-        <label class="mcq-number-label">Questions
-          <input class="mcq-number-input" id="mcqQuestionLimit" type="number" min="1" max="1" value="1">
-          <span class="mcq-available-count" id="mcqQuestionAvailable">/ 0 total</span>
-        </label>
-        <button class="small-tool-btn accent" id="startMcqTestBtn" type="button">Start Test</button>
+        <div class="mcq-pool-segment" id="mcqPoolSegment">
+          <button class="mcq-pool-choice active" id="mcqNewPoolBtn" type="button" data-mcq-pool="new">
+            <span class="mcq-pool-icon">✦</span>
+            <span><b>New</b><small id="mcqNewPoolCount">0 questions</small></span>
+          </button>
+          <button class="mcq-pool-choice" id="mcqOldPoolBtn" type="button" data-mcq-pool="old">
+            <span class="mcq-pool-icon">✓</span>
+            <span><b>Old</b><small id="mcqOldPoolCount">0 questions</small></span>
+          </button>
+          <button class="mcq-pool-choice" id="mcqAllPoolBtn" type="button" data-mcq-pool="all">
+            <span class="mcq-pool-icon">∞</span>
+            <span><b>All</b><small id="mcqAllPoolCount">0 questions</small></span>
+          </button>
+        </div>
       </div>
 
-      <div class="mcq-test-area" id="mcqTestArea"></div>
+      <div class="mcq-studio-section">
+        <div class="mcq-studio-section-head">
+          <div>
+            <span class="mcq-step-no">02</span>
+            <span class="mcq-step-title">Categories</span>
+          </div>
+          <span id="mcqCategorySelectionSummary" class="mcq-step-note">0 questions selected</span>
+        </div>
+        <div class="mcq-category-toggle-list mcq-modern-category-list" id="mcqCategoryToggleList"></div>
+      </div>
+
+      <div class="mcq-studio-section">
+        <div class="mcq-studio-section-head">
+          <div>
+            <span class="mcq-step-no">03</span>
+            <span class="mcq-step-title">Round Settings</span>
+          </div>
+          <span class="mcq-step-note">Random or series order</span>
+        </div>
+
+        <div class="mcq-modern-settings">
+          <div class="mcq-setting-card">
+            <span class="mcq-setting-label">Order</span>
+            <div class="mcq-order-choice">
+              <button class="mcq-order-btn active" id="mcqRandomBtn" type="button">⤨ Random</button>
+              <button class="mcq-order-btn" id="mcqSeriesBtn" type="button">↦ Series</button>
+            </div>
+          </div>
+
+          <div class="mcq-setting-card">
+            <span class="mcq-setting-label">Questions</span>
+            <div class="mcq-question-count-wrap">
+              <input class="mcq-number-input" id="mcqQuestionLimit" type="number" min="1" max="1" value="1">
+              <span class="mcq-available-count" id="mcqQuestionAvailable">/ 0 available</span>
+            </div>
+          </div>
+        </div>
+
+        <button class="mcq-start-modern" id="startMcqTestBtn" type="button">
+          <span>Start Practice Round</span>
+          <span class="mcq-start-arrow">→</span>
+        </button>
+      </div>
+
+      <div class="mcq-test-area mcq-modern-test-area" id="mcqTestArea"></div>
     </div>
 
 
 
     <div class="tool-panel" id="answerBankPanel">
       <div class="tool-panel-head">
-        <div class="tool-panel-title">Question Bank · Correct Answers</div>
+        <div>
+          <div class="tool-panel-title">Category Question Manager</div>
+          <div class="question-manager-subtitle">Select any category to view, search, edit, delete or move Main + Sub questions between New and Old.</div>
+        </div>
         <button class="tool-close-btn" id="closeAnswerBankPanel" type="button" aria-label="Close">×</button>
       </div>
 
-      <div class="answer-bank-toolbar">
-        <div class="answer-bank-source">
-          <button class="answer-source-btn active" id="answerErrorSourceBtn" type="button">Error Sentences</button>
-          <button class="answer-source-btn" id="answerMoreSourceBtn" type="button">More</button>
-        </div>
-        <div class="answer-category-wrap">
+      <div class="answer-bank-toolbar answer-bank-toolbar-modern">
+        <label class="answer-filter-field">
+          <span>Category</span>
           <select class="answer-category-select" id="answerCategorySelect" aria-label="Select question category"></select>
-        </div>
+        </label>
+
+        <label class="answer-filter-field">
+          <span>Pool</span>
+          <select class="answer-category-select" id="answerPoolSelect" aria-label="Filter by New or Old">
+            <option value="all">All questions</option>
+            <option value="new">New</option>
+            <option value="old">Old</option>
+          </select>
+        </label>
+
+        <label class="answer-filter-field answer-search-field">
+          <span>Search</span>
+          <input class="answer-search-input" id="answerSearchInput" type="search" placeholder="Search question, option or explanation..." autocomplete="off" />
+        </label>
       </div>
 
       <div class="answer-bank-summary" id="answerBankSummary"></div>
@@ -6797,6 +5412,27 @@ const BULK_FORMATS = {
           explanation:"'The number' is the grammatical subject and takes a singular verb."
         }
       ]
+    },
+    {
+      category:"Error Sentences",
+      question:"Choose the part containing the grammatical error: The young man behind the bar / mixes drinks / and pose for photographs / with tourists.",
+      options:["The young man behind the bar", "mixes drinks", "and pose for photographs", "with tourists"],
+      answer:2,
+      explanation:"The singular subject 'young man' requires 'poses'.",
+      subQuestions:[
+        {
+          question:"Which word should replace 'pose' in the sentence?",
+          options:["poses", "posing", "posed", "pose"],
+          answer:0,
+          explanation:"The subject is singular, so the present-tense verb should be 'poses'."
+        },
+        {
+          question:"Why do 'mixes' and 'poses' both end in -s?",
+          options:["They have a singular third-person subject", "They are past tense", "They are infinitives", "They are plural verbs"],
+          answer:0,
+          explanation:"In the simple present, a third-person singular subject normally takes a verb ending in -s/-es."
+        }
+      ]
     }
   ],
   moreMain:[
@@ -6836,6 +5472,27 @@ const BULK_FORMATS = {
           explanation:"Negative imperative → told/asked + object + not to + base verb."
         }
       ]
+    },
+    {
+      category:"Para Jumble",
+      question:"Arrange the four sentences P, Q, R and S in the most logical order.",
+      options:["PQRS", "PRQS", "QPRS", "RPSQ"],
+      answer:1,
+      explanation:"PRQS is the correct sequence because P introduces the idea, R develops it, Q connects the result and S concludes it.",
+      subQuestions:[
+        {
+          question:"Which sentence should come immediately after P?",
+          options:["Q", "R", "S", "None"],
+          answer:1,
+          explanation:"R follows P because it directly develops the idea introduced in P."
+        },
+        {
+          question:"Which sentence acts as the conclusion in the correct sequence?",
+          options:["P", "Q", "R", "S"],
+          answer:3,
+          explanation:"S is the concluding sentence in the sequence PRQS."
+        }
+      ]
     }
   ]
 };
@@ -6851,6 +5508,7 @@ function openToolPanel(panel){
 }
 
 function closeToolPanels(){
+  setMcqFocusMode(false);
   newDataPanel?.classList.remove("active");
   mcqTestPanel?.classList.remove("active");
   missingDataPanel?.classList.remove("active");
@@ -6879,9 +5537,9 @@ function refreshBulkExample(){
   }else if(bulkAddType === "vocab"){
     arrayHelp.textContent = "Paste one JSON array containing multiple vocabulary words. Required fields: en and meaning.";
   }else if(bulkAddType === "error"){
-    arrayHelp.textContent = "Error Sentences MCQ array. Required: question, options, answer. explanation/category are supported. answer is 0-based: 0=A, 1=B, 2=C, 3=D. Optional subQuestions are supported.";
+    arrayHelp.textContent = "Error Sentences MCQ array. Use Single Question or Main + Sub Questions above. Every main question and every sub-question can have its own options, answer and explanation. answer is 0-based: 0=A, 1=B, 2=C, 3=D. Sub-questions automatically use the parent category.";
   }else{
-    arrayHelp.textContent = "More MCQ array: upload any English practice topic (grammar, narration, para jumble, vocabulary MCQ, etc.). Required: question, options, answer. Optional category, explanation and subQuestions are supported.";
+    arrayHelp.textContent = "More MCQ array: use any category such as Para Jumble, Narration, Grammar or a future category. Use Single Question or Main + Sub Questions above. Every main and sub-question supports its own options, answer and explanation. Sub-questions automatically stay under the parent category.";
   }
   bulkUploadMsg.textContent = "";
 }
@@ -6976,11 +5634,12 @@ function normalizeMcqSubQuestion(item){
     : [];
   const answer = Number(item.answer);
   const explanation = String(item.explanation || "").trim();
+  const pool = String(item.pool || "new").toLowerCase() === "old" ? "old" : "new";
 
   if(!question || options.length < 2 || options.length > 8) return null;
   if(options.some(value => !value)) return null;
   if(!Number.isInteger(answer) || answer < 0 || answer >= options.length) return null;
-  return {question, options, answer, explanation};
+  return {question, options, answer, explanation, pool};
 }
 
 function normalizeMcqEntry(item, type){
@@ -7003,6 +5662,7 @@ function normalizeMcqEntry(item, type){
     options:base.options,
     answer:base.answer,
     explanation:base.explanation,
+    pool:base.pool,
     subQuestions
   };
 }
@@ -7060,8 +5720,9 @@ async function uploadMcqArray(parsed){
   updateMcqCounts();
   selectUploadedMcqCategories(uploadedCategories);
 
+  const uploadedSubCount = additions.reduce((total, item) => total + (Array.isArray(item.subQuestions) ? item.subQuestions.length : 0), 0);
   bulkUploadMsg.style.color = "var(--teal)";
-  bulkUploadMsg.textContent = "Added " + additions.length + " main question(s)" +
+  bulkUploadMsg.textContent = "Added " + additions.length + " main + " + uploadedSubCount + " sub question(s)" +
     " · Categories: " + uploadedCategories.join(", ") +
     " · Skipped " + skippedCount + (invalidCount ? " · Invalid " + invalidCount : "") + " ✓";
 }
@@ -7075,11 +5736,18 @@ const startMcqTestBtn = document.getElementById("startMcqTestBtn");
 const mcqTestArea = document.getElementById("mcqTestArea");
 const mcqCategoryToggleList = document.getElementById("mcqCategoryToggleList");
 const mcqCategorySelectionSummary = document.getElementById("mcqCategorySelectionSummary");
+const mcqNewPoolBtn = document.getElementById("mcqNewPoolBtn");
+const mcqOldPoolBtn = document.getElementById("mcqOldPoolBtn");
+const mcqAllPoolBtn = document.getElementById("mcqAllPoolBtn");
+const mcqNewPoolCount = document.getElementById("mcqNewPoolCount");
+const mcqOldPoolCount = document.getElementById("mcqOldPoolCount");
+const mcqAllPoolCount = document.getElementById("mcqAllPoolCount");
 
 // Test UI is category-driven. Error Sentences, Para Jumble and every future
 // category are shown together as toggle chips, regardless of which server bank
 // (errorQuestions / moreQuestions) stores them.
 let mcqSource = "error"; // kept only as a backward-compatible editor fallback
+let mcqPoolMode = "new";
 let mcqOrder = "random";
 let mcqItems = [];
 let mcqIndex = 0;
@@ -7142,10 +5810,24 @@ function getMcqCategoryInfo(){
   getMcqFlatPool().forEach(item => {
     const name = String(item.category || "General").trim() || "General";
     const key = name.toLocaleLowerCase("en-US");
-    if(!map.has(key)) map.set(key,{key,name,count:0});
-    map.get(key).count += 1;
+    if(!map.has(key)) map.set(key,{key,name,newCount:0,oldCount:0,totalCount:0});
+    const bucket = map.get(key);
+    const pool = item.pool === "old" ? "old" : "new";
+    bucket.totalCount += 1;
+    if(pool === "old") bucket.oldCount += 1;
+    else bucket.newCount += 1;
   });
-  return [...map.values()].sort((a,b) => a.name.localeCompare(b.name,"en",{sensitivity:"base"}));
+
+  return [...map.values()]
+    .map(item => ({
+      ...item,
+      count: mcqPoolMode === "all"
+        ? item.totalCount
+        : mcqPoolMode === "old"
+          ? item.oldCount
+          : item.newCount
+    }))
+    .sort((a,b) => a.name.localeCompare(b.name,"en",{sensitivity:"base"}));
 }
 
 function ensureMcqCategorySelection(){
@@ -7161,50 +5843,193 @@ function ensureMcqCategorySelection(){
   return info;
 }
 
+function getMcqPoolFilteredItems(){
+  const all = getMcqFlatPool();
+  if(mcqPoolMode === "all") return all;
+  return all.filter(item => (item.pool === "old" ? "old" : "new") === mcqPoolMode);
+}
+
 function getSelectedMcqPool(){
   ensureMcqCategorySelection();
-  return getMcqFlatPool().filter(item =>
+  return getMcqPoolFilteredItems().filter(item =>
     mcqSelectedCategories.has(String(item.category || "General").trim().toLocaleLowerCase("en-US") || "general")
   );
 }
 
+function getMcqPoolTotals(){
+  const all = getMcqFlatPool();
+  const old = all.filter(item => item.pool === "old").length;
+  return {newCount:all.length-old, oldCount:old, allCount:all.length};
+}
+
+function updateMcqPoolButtons(){
+  const totals = getMcqPoolTotals();
+  mcqNewPoolBtn?.classList.toggle("active", mcqPoolMode === "new");
+  mcqOldPoolBtn?.classList.toggle("active", mcqPoolMode === "old");
+  mcqAllPoolBtn?.classList.toggle("active", mcqPoolMode === "all");
+  if(mcqNewPoolCount) mcqNewPoolCount.textContent = totals.newCount + " question" + (totals.newCount === 1 ? "" : "s");
+  if(mcqOldPoolCount) mcqOldPoolCount.textContent = totals.oldCount + " question" + (totals.oldCount === 1 ? "" : "s");
+  if(mcqAllPoolCount) mcqAllPoolCount.textContent = totals.allCount + " question" + (totals.allCount === 1 ? "" : "s");
+}
+
+function setMcqPoolMode(mode){
+  mcqPoolMode = mode === "old" ? "old" : mode === "all" ? "all" : "new";
+  mcqGlobalRandomSeen.clear();
+  mcqGlobalSeriesCursor = 0;
+  updateMcqPoolButtons();
+  renderMcqCategoryControls(true);
+  renderMcqHome(false);
+}
+
+function buildMcqTestGroups(){
+  ensureMcqCategorySelection();
+
+  const selectedFlat = getMcqPoolFilteredItems().filter(item =>
+    mcqSelectedCategories.has(String(item.category || "General").trim().toLocaleLowerCase("en-US") || "general")
+  );
+
+  const fullFlat = getMcqFlatPool();
+  const selectedKeys = new Set(selectedFlat.map(item =>
+    String(item.source || "error") + "::" + String(item.mainIndex)
+  ));
+
+  const groups = [];
+
+  selectedKeys.forEach(groupKey => {
+    const [source, mainIndexText] = groupKey.split("::");
+    const mainIndex = Number(mainIndexText);
+    const siblings = fullFlat.filter(item =>
+      String(item.source || "error") === source && item.mainIndex === mainIndex
+    );
+
+    const main = siblings.find(item => item.subIndex == null);
+    if(!main) return;
+
+    // If the MAIN question itself is in the selected pool, all of its
+    // subquestions stay attached to it so they are never shown separately.
+    // If only a subquestion matches the selected pool, the main is still shown
+    // as context and only matching subquestions are answerable in this round.
+    const mainSelected = selectedFlat.some(item =>
+      item.source === source && item.mainIndex === mainIndex && item.subIndex == null
+    );
+
+    const parts = [main];
+    const subParts = siblings
+      .filter(item => item.subIndex != null)
+      .filter(item => mainSelected || selectedFlat.some(selected =>
+        selected.source === item.source &&
+        selected.mainIndex === item.mainIndex &&
+        selected.subIndex === item.subIndex
+      ))
+      .sort((a,b) => Number(a.subIndex) - Number(b.subIndex));
+
+    parts.push(...subParts);
+
+    groups.push({
+      source,
+      mainIndex,
+      sourceId:String(main.sourceId || source + "::main-" + mainIndex),
+      category:main.category || "General",
+      question:main.question,
+      main,
+      parts,
+      subQuestions:subParts
+    });
+  });
+
+  return groups.sort((a,b) => {
+    const cat = String(a.category).localeCompare(String(b.category), "en", {sensitivity:"base"});
+    if(cat) return cat;
+    if(a.source !== b.source) return String(a.source).localeCompare(String(b.source));
+    return a.mainIndex - b.mainIndex;
+  });
+}
+
+function mcqGroupPartKey(part){
+  return part && part.subIndex != null ? "sub-" + part.subIndex : "main";
+}
+
+function ensureMcqGroupAnswer(groupIndex){
+  if(!mcqAnswers[groupIndex] || typeof mcqAnswers[groupIndex] !== "object" || !Array.isArray(mcqAnswers[groupIndex].parts)){
+    mcqAnswers[groupIndex] = {parts:[]};
+  }
+  return mcqAnswers[groupIndex];
+}
+
+function getMcqRoundStats(){
+  let correct = 0;
+  let wrong = 0;
+  let skipped = 0;
+  let answered = 0;
+  let total = 0;
+
+  mcqItems.forEach((group, groupIndex) => {
+    const record = mcqAnswers[groupIndex];
+    const parts = Array.isArray(group?.parts) ? group.parts : [];
+    total += parts.length;
+
+    parts.forEach((part, partIndex) => {
+      const answer = record?.parts?.[partIndex];
+      if(!answer) return;
+      answered += 1;
+      if(answer.skipped) skipped += 1;
+      else if(answer.correct) correct += 1;
+      else wrong += 1;
+    });
+  });
+
+  return {correct, wrong, skipped, answered, total};
+}
+
 function syncMcqQuestionLimit(forceTotal = false){
-  const total = getSelectedMcqPool().length;
+  const total = buildMcqTestGroups().length;
   const previousMax = mcqLastAvailableTotal;
   mcqLastAvailableTotal = total;
-  if(mcqQuestionAvailable) mcqQuestionAvailable.textContent = "/ " + total + " total";
+
+  if(mcqQuestionAvailable) mcqQuestionAvailable.textContent = "/ " + total + " main set" + (total === 1 ? "" : "s") + " available";
   if(mcqCategorySelectionSummary){
-    const selectedCount = mcqSelectedCategories.size;
-    mcqCategorySelectionSummary.textContent = total + " question" + (total === 1 ? "" : "s") + " selected";
+    const poolLabel = mcqPoolMode === "all" ? "All" : mcqPoolMode === "old" ? "Old" : "New";
+    mcqCategorySelectionSummary.textContent = total + " " + poolLabel.toLowerCase() + " main set" + (total === 1 ? "" : "s") + " selected";
   }
+
   if(mcqQuestionLimit){
     mcqQuestionLimit.disabled = total === 0;
     mcqQuestionLimit.max = String(Math.max(1,total));
     const current = Number(mcqQuestionLimit.value || 0);
-    // Category change should immediately show the selected pool total. The user
-    // can still type a smaller number afterwards if they want a shorter test.
     if(forceTotal || !current || current > total || current === previousMax){
       mcqQuestionLimit.value = String(total || 0);
     }
   }
+
   if(startMcqTestBtn) startMcqTestBtn.disabled = total === 0;
+  updateMcqPoolButtons();
 }
 
 function renderMcqCategoryControls(forceTotal = false){
   const info = ensureMcqCategorySelection();
   if(mcqCategoryToggleList){
     mcqCategoryToggleList.innerHTML = "";
-    info.forEach(({key,name,count}) => {
+    info.forEach(({key,name,count,newCount,oldCount,totalCount}) => {
       const button = document.createElement("button");
       button.type = "button";
-      button.className = "mcq-category-toggle" + (mcqSelectedCategories.has(key) ? " active" : "");
+      const selected = mcqSelectedCategories.has(key);
+      const unavailable = count === 0;
+      button.className = "mcq-category-toggle" + (selected ? " active" : "") + (unavailable ? " empty-pool" : "");
+
       const label = document.createElement("span");
+      label.className = "mcq-category-name";
       label.textContent = name;
+
       const badge = document.createElement("span");
       badge.className = "mcq-chip-count";
       badge.textContent = String(count);
-      button.append(label,badge);
-      button.title = "Include/exclude " + name + " in this test";
+
+      const detail = document.createElement("small");
+      detail.className = "mcq-category-mini";
+      detail.textContent = "N " + newCount + " · O " + oldCount;
+
+      button.append(label,badge,detail);
+      button.title = name + " — New " + newCount + ", Old " + oldCount + ", Total " + totalCount;
       button.addEventListener("click", () => {
         if(mcqSelectedCategories.has(key)) mcqSelectedCategories.delete(key);
         else mcqSelectedCategories.add(key);
@@ -7228,7 +6053,10 @@ function selectUploadedMcqCategories(categories){
 }
 
 function mcqItemKey(item){
-  return String(item?.sourceId || item?.question || "").toLocaleLowerCase("en-US");
+  return (
+    String(item?.source || "unknown") + "::" +
+    String(item?.sourceId || item?.question || "")
+  ).toLocaleLowerCase("en-US");
 }
 
 function takeRandomMcqBatch(pool, limit){
@@ -7283,145 +6111,365 @@ function setMcqOrder(order){
   mcqSeriesBtn?.classList.toggle("active", mcqOrder === "series");
 }
 
+function setMcqFocusMode(active){
+  document.body.classList.toggle("mcq-focus-mode", !!active);
+  if(active){
+    mcqTestPanel?.classList.add("active");
+    // Put the active question at the top of the viewport immediately.
+    requestAnimationFrame(() => window.scrollTo({top:0, left:0, behavior:"auto"}));
+  }
+}
+
 function renderMcqHome(refreshCategories = true){
+  // Leaving an active round returns the full Test Studio automatically.
+  setMcqFocusMode(false);
   if(!mcqTestArea) return;
   if(refreshCategories) renderMcqCategoryControls(false);
+
   const allPool = getMcqFlatPool();
-  const pool = getSelectedMcqPool();
+  const pool = buildMcqTestGroups();
+  const poolLabel = mcqPoolMode === "all" ? "All Questions" : mcqPoolMode === "old" ? "Old / Revised" : "New / Learning";
+
   if(!allPool.length){
-    mcqTestArea.innerHTML = '<div class="mcq-empty">No English MCQ questions yet. Use <b>＋ New</b> to upload a question array.</div>';
+    mcqTestArea.innerHTML =
+      '<div class="mcq-home-state empty">' +
+        '<div class="mcq-home-icon">＋</div>' +
+        '<div><b>No MCQ questions yet</b><span>Use “New” to upload Error Sentences, Para Jumble or any future category.</span></div>' +
+      '</div>';
     return;
   }
+
   mcqTestArea.innerHTML = pool.length
-    ? '<div class="mcq-empty">Ready · <b>' + pool.length + '</b> selected question(s).</div>'
-    : '<div class="mcq-empty">Select at least one category.</div>';
+    ? '<div class="mcq-home-state">' +
+        '<div class="mcq-home-ready-dot"></div>' +
+        '<div><b>Ready to practise ' + escapeHtml(poolLabel) + '</b><span>' + pool.length + ' main question set' + (pool.length === 1 ? '' : 's') + ' match your current categories. Subquestions stay grouped under their main question.</span></div>' +
+        '<div class="mcq-home-shortcuts"><span>' + escapeHtml(mcqOrder === "series" ? "Series" : "Random") + '</span><span>' + mcqSelectedCategories.size + ' categories</span></div>' +
+      '</div>'
+    : '<div class="mcq-home-state empty">' +
+        '<div class="mcq-home-icon">⌕</div>' +
+        '<div><b>No matching questions</b><span>Choose another pool or enable a category that contains questions.</span></div>' +
+      '</div>';
 }
 
 function startMcqTest(){
-  const pool = getSelectedMcqPool();
+  const pool = buildMcqTestGroups();
   if(!pool.length){ renderMcqHome(); return; }
+
   const requested = Math.max(1, Math.min(pool.length, Number(mcqQuestionLimit?.value || pool.length) || pool.length));
   if(mcqQuestionLimit) mcqQuestionLimit.value = String(requested);
+
   mcqItems = mcqOrder === "series"
     ? takeSeriesMcqBatch(pool, requested)
     : takeRandomMcqBatch(pool, requested);
+
   mcqIndex = 0;
   mcqCorrect = 0;
   mcqAnswers = [];
   mcqLocked = false;
+  setMcqFocusMode(true);
   renderCurrentMcq();
 }
 
-function renderCurrentMcq(){
-  if(!mcqTestArea) return;
-  if(mcqIndex >= mcqItems.length){ renderMcqResult(); return; }
-  const item = mcqItems[mcqIndex];
-  const answered = mcqAnswers[mcqIndex] || null;
-  mcqLocked = !!answered;
-  const scoreText = mcqCorrect + '/' + mcqItems.length;
+async function toggleMcqItemPool(item){
+  if(!item) return false;
+  const bank = item.source === "more" ? MORE_QUESTIONS : ERROR_QUESTIONS;
+  const parent = bank[item.mainIndex];
+  if(!parent) return false;
 
-  mcqTestArea.innerHTML =
-    '<div class="mcq-test-meta"><span>' + escapeHtml(item.category || "General") + ' · ' + escapeHtml(mcqOrder === "series" ? "Series" : "Random") + '</span><span>Q <b>' + (mcqIndex+1) + '/' + mcqItems.length + '</b> · Score <b>' + scoreText + '</b></span></div>' +
-    '<div class="mcq-question-card">' +
-      '<div class="mcq-category">' + escapeHtml(item.category || "General") + ' · ' + escapeHtml(item.kind || "Question") + '</div>' +
-      '<div class="mcq-question-text">' + escapeHtml(item.question) + '</div>' +
-      '<div class="mcq-options" id="mcqOptions">' + item.options.map((option,index) => {
-        const cls = answered
-          ? (index === item.answer ? ' correct' : (index === answered.selected ? ' wrong' : ''))
-          : '';
-        return '<button class="mcq-option' + cls + '" type="button" data-mcq-option="' + index + '"' + (answered ? ' disabled' : '') + '><span class="mcq-option-letter">' + String.fromCharCode(65+index) + '</span><span>' + escapeHtml(option) + '</span></button>';
-      }).join('') + '</div>' +
-      '<div class="mcq-feedback' + (answered ? ' show' + (answered.correct ? '' : ' wrong') : '') + '" id="mcqFeedback">' + (answered ? mcqFeedbackText(item, answered) : '') + '</div>' +
-      '<div class="mcq-test-actions">' +
-        '<button class="small-tool-btn" id="mcqExitBtn" type="button">Exit Test</button>' +
-        '<button class="small-tool-btn mcq-edit-test-btn" id="mcqEditBtn" type="button">✎ Edit</button>' +
-        '<button class="small-tool-btn accent" id="mcqNextBtn" type="button">' + (answered ? (mcqIndex === mcqItems.length-1 ? 'Finish' : 'Next →') : 'Skip →') + '</button>' +
-      '</div>' +
-    '</div>';
+  const target = item.subIndex == null
+    ? parent
+    : (Array.isArray(parent.subQuestions) ? parent.subQuestions[item.subIndex] : null);
 
-  mcqTestArea.querySelectorAll('[data-mcq-option]').forEach(button => {
-    button.addEventListener('click', () => answerMcq(Number(button.dataset.mcqOption)));
-  });
-  document.getElementById('mcqNextBtn')?.addEventListener('click', () => {
-    if(!mcqAnswers[mcqIndex]){
-      mcqAnswers[mcqIndex] = {selected:null, correct:false, skipped:true};
-    }
-    mcqIndex += 1;
-    renderCurrentMcq();
-  });
-  document.getElementById('mcqEditBtn')?.addEventListener('click', () => {
-    const current = mcqItems[mcqIndex];
-    if(!current || typeof window.openEnglishQuestionEditor !== 'function') return;
-    window.openEnglishQuestionEditor({
-      source:current.source || mcqSource,
-      mainIndex:current.mainIndex,
-      subIndex:current.subIndex,
-      category:current.category,
-      kind:current.kind || (current.subIndex == null ? 'Main' : 'Sub'),
-      item:current
-    });
-  });
-  document.getElementById('mcqExitBtn')?.addEventListener('click', renderMcqHome);
+  if(!target) return false;
+
+  const previous = String(target.pool || "new").toLowerCase() === "old" ? "old" : "new";
+  const next = previous === "old" ? "new" : "old";
+  target.pool = next;
+  item.pool = next;
+
+  const saved = await saveEnglishMcqBank(item.source);
+  if(!saved){
+    target.pool = previous;
+    item.pool = previous;
+    return false;
+  }
+
+  updateMcqCounts();
+  if(typeof renderAnswerBank === "function"){
+    try{ renderAnswerBank(); }catch(e){}
+  }
+  return true;
 }
 
-function mcqFeedbackText(item, record){
+function mcqPartFeedbackText(item, record){
   const correctLetter = String.fromCharCode(65 + item.answer);
   const prefix = record.skipped ? 'Skipped.' : (record.correct ? 'Correct ✓' : 'Wrong ✗');
   const explanation = item.explanation ? '\n' + item.explanation : '';
   return escapeHtml(prefix + ' Correct answer: ' + correctLetter + ' — ' + item.options[item.answer] + explanation);
 }
 
-function answerMcq(selected){
-  if(mcqLocked) return;
-  const item = mcqItems[mcqIndex];
-  if(!item || !Number.isInteger(selected)) return;
-  const correct = selected === item.answer;
-  if(correct) mcqCorrect += 1;
-  mcqAnswers[mcqIndex] = {selected, correct, skipped:false};
-  mcqLocked = true;
+function renderMcqPart(part, partIndex, answerRecord){
+  const isMain = part.subIndex == null;
+  const label = isMain ? 'Main Question' : 'Sub Question ' + (Number(part.subIndex) + 1);
+  const partPool = part.pool === 'old' ? 'old' : 'new';
+
+  return '' +
+    '<section class="mcq-part-block' + (isMain ? ' main-part' : ' sub-part') + '">' +
+      '<div class="mcq-part-head">' +
+        '<div>' +
+          '<span class="mcq-part-kicker">' + label + '</span>' +
+          (!isMain ? '<span class="mcq-part-parent-note">Based on the main question above</span>' : '') +
+        '</div>' +
+        '<span class="mcq-part-pool ' + partPool + '">' + (partPool === 'old' ? 'Old' : 'New') + '</span>' +
+      '</div>' +
+      '<div class="mcq-part-question">' + escapeHtml(part.question) + '</div>' +
+      '<div class="mcq-options mcq-part-options">' +
+        part.options.map((option,index) => {
+          const cls = answerRecord
+            ? (index === part.answer ? ' correct' : (index === answerRecord.selected ? ' wrong' : ''))
+            : '';
+          return '<button class="mcq-option' + cls + '" type="button" data-mcq-part="' + partIndex + '" data-mcq-option="' + index + '"' + (answerRecord ? ' disabled' : '') + '>' +
+            '<span class="mcq-option-letter">' + String.fromCharCode(65+index) + '</span>' +
+            '<span class="mcq-option-text">' + escapeHtml(option) + '</span>' +
+            '<span class="mcq-option-state">' + (answerRecord && index === part.answer ? '✓' : answerRecord && index === answerRecord.selected && index !== part.answer ? '✕' : '') + '</span>' +
+          '</button>';
+        }).join('') +
+      '</div>' +
+      '<div class="mcq-feedback' + (answerRecord ? ' show' + (answerRecord.correct ? '' : ' wrong') : '') + '">' +
+        (answerRecord ? mcqPartFeedbackText(part, answerRecord) : '') +
+      '</div>' +
+    '</section>';
+}
+
+function renderCurrentMcq(){
+  if(!mcqTestArea) return;
+  if(mcqIndex >= mcqItems.length){ renderMcqResult(); return; }
+
+  const group = mcqItems[mcqIndex];
+  const groupAnswer = mcqAnswers[mcqIndex] || null;
+  const parts = Array.isArray(group.parts) ? group.parts : [group.main].filter(Boolean);
+  const stats = getMcqRoundStats();
+
+  mcqCorrect = stats.correct;
+  mcqLocked = false;
+
+  const totalSets = mcqItems.length;
+  const progress = totalSets ? Math.round(((mcqIndex + 1) / totalSets) * 100) : 0;
+  const mainItem = group.main || parts[0];
+  const mainPool = mainItem?.pool === "old" ? "old" : "new";
+  const moveText = mainPool === "old" ? "↩ Main to New" : "✓ Main to Old";
+
+  mcqTestArea.innerHTML =
+    '<div class="mcq-run-shell mcq-grouped-run">' +
+      '<div class="mcq-run-top">' +
+        '<div class="mcq-run-title-wrap">' +
+          '<span class="mcq-run-eyebrow">' + escapeHtml(mcqPoolMode === "all" ? "Mixed Pool" : mcqPoolMode === "old" ? "Old Practice" : "New Practice") + '</span>' +
+          '<strong>Question Set ' + (mcqIndex + 1) + ' <span>/ ' + totalSets + '</span></strong>' +
+        '</div>' +
+        '<div class="mcq-run-stats">' +
+          '<span class="mcq-stat-pill good">✓ ' + stats.correct + '</span>' +
+          '<span class="mcq-stat-pill bad">✕ ' + stats.wrong + '</span>' +
+          '<span class="mcq-stat-pill skip">↷ ' + stats.skipped + '</span>' +
+        '</div>' +
+      '</div>' +
+
+      '<div class="mcq-progress-line"><span style="width:' + progress + '%"></span></div>' +
+
+      '<div class="mcq-group-context">' +
+        '<div class="mcq-group-context-left">' +
+          '<span class="mcq-group-category">' + escapeHtml(group.category || "General") + '</span>' +
+          '<span>' + parts.length + ' answerable question' + (parts.length === 1 ? '' : 's') + ' in this set</span>' +
+        '</div>' +
+        '<span>' + stats.answered + '/' + stats.total + ' answered overall</span>' +
+      '</div>' +
+
+      '<div class="mcq-question-card mcq-question-card-modern mcq-group-card">' +
+        parts.map((part, partIndex) => renderMcqPart(part, partIndex, groupAnswer?.parts?.[partIndex] || null)).join('') +
+      '</div>' +
+
+      '<div class="mcq-run-actions simplified">' +
+        '<div class="mcq-run-actions-left">' +
+          '<button class="mcq-action-btn ghost" id="mcqExitBtn" type="button">← Exit</button>' +
+          '<span class="action-menu test-more-menu">' +
+            '<button class="mcq-action-btn ghost more-trigger" type="button" aria-haspopup="menu" aria-expanded="false">⋮ More</button>' +
+            '<span class="action-menu-popover" role="menu">' +
+              '<button class="action-menu-item" id="mcqEditBtn" type="button" role="menuitem">✎ Edit Main</button>' +
+              '<button class="action-menu-item" id="mcqAddSubBtn" type="button" role="menuitem">＋ Add Sub Question</button>' +
+              '<button class="action-menu-item" id="mcqMovePoolBtn" type="button" role="menuitem">' + moveText + '</button>' +
+            '</span>' +
+          '</span>' +
+        '</div>' +
+        '<button class="mcq-action-btn primary" id="mcqNextBtn" type="button">' +
+          (mcqIndex === mcqItems.length-1 ? 'Finish Set →' : 'Next Set →') +
+        '</button>' +
+      '</div>' +
+    '</div>';
+
+  mcqTestArea.querySelectorAll('[data-mcq-option][data-mcq-part]').forEach(button => {
+    button.addEventListener('click', () => answerMcq(Number(button.dataset.mcqPart), Number(button.dataset.mcqOption)));
+  });
+
+  document.getElementById('mcqNextBtn')?.addEventListener('click', () => {
+    const answerBucket = ensureMcqGroupAnswer(mcqIndex);
+    parts.forEach((part, partIndex) => {
+      if(!answerBucket.parts[partIndex]){
+        answerBucket.parts[partIndex] = {selected:null, correct:false, skipped:true};
+      }
+    });
+    mcqIndex += 1;
+    renderCurrentMcq();
+
+    // After moving to the next set, bring the newly rendered question back
+    // into view. requestAnimationFrame waits until renderCurrentMcq() has
+    // finished replacing the test HTML before scrolling.
+    requestAnimationFrame(() => {
+      const nextQuestionTop =
+        mcqTestArea?.querySelector('.mcq-group-card') ||
+        mcqTestArea?.querySelector('.mcq-question-card') ||
+        mcqTestArea;
+
+      nextQuestionTop?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
+  });
+
+  document.getElementById('mcqMovePoolBtn')?.addEventListener('click', async event => {
+    const button = event.currentTarget;
+    button.disabled = true;
+    const oldText = button.textContent;
+    button.textContent = 'Saving…';
+    const ok = await toggleMcqItemPool(mainItem);
+    if(ok){
+      button.textContent = mainItem.pool === "old" ? '↩ Main to New' : '✓ Main to Old';
+      const mainPoolBadge = mcqTestArea.querySelector('.main-part .mcq-part-pool');
+      if(mainPoolBadge){
+        mainPoolBadge.classList.toggle('old', mainItem.pool === "old");
+        mainPoolBadge.classList.toggle('new', mainItem.pool !== "old");
+        mainPoolBadge.textContent = mainItem.pool === "old" ? 'Old' : 'New';
+      }
+    }else{
+      button.textContent = oldText;
+      alert('Could not save New / Old status.');
+    }
+    button.disabled = false;
+  });
+
+  document.getElementById('mcqEditBtn')?.addEventListener('click', () => {
+    if(!mainItem || typeof window.openEnglishQuestionEditor !== 'function') return;
+    window.openEnglishQuestionEditor({
+      source:mainItem.source || mcqSource,
+      mainIndex:mainItem.mainIndex,
+      subIndex:null,
+      category:mainItem.category,
+      kind:'Main',
+      item:mainItem
+    });
+  });
+
+  document.getElementById('mcqAddSubBtn')?.addEventListener('click', () => {
+    if(!mainItem || typeof window.openEnglishSubQuestionCreator !== 'function') return;
+    window.openEnglishSubQuestionCreator(mainItem);
+  });
+
+  document.getElementById('mcqExitBtn')?.addEventListener('click', renderMcqHome);
+}
+
+function answerMcq(partIndex, selected){
+  const group = mcqItems[mcqIndex];
+  const part = group?.parts?.[partIndex];
+  if(!part || !Number.isInteger(selected)) return;
+
+  const answerBucket = ensureMcqGroupAnswer(mcqIndex);
+  if(answerBucket.parts[partIndex]) return;
+
+  const correct = selected === part.answer;
+  answerBucket.parts[partIndex] = {selected, correct, skipped:false};
+  mcqCorrect = getMcqRoundStats().correct;
   renderCurrentMcq();
 }
 
 function renderMcqResult(){
   if(!mcqTestArea) return;
-  const total = mcqItems.length;
-  const skipped = mcqAnswers.filter(item => item?.skipped).length;
-  const wrong = Math.max(0, total - mcqCorrect - skipped);
-  const percent = total ? Math.round((mcqCorrect/total)*100) : 0;
+
+  const stats = getMcqRoundStats();
+  mcqCorrect = stats.correct;
+  const percent = stats.total ? Math.round((stats.correct/stats.total)*100) : 0;
+  const tone = percent >= 80 ? "great" : percent >= 50 ? "mid" : "low";
+  const title = percent >= 80 ? "Strong round" : percent >= 50 ? "Good progress" : "Keep practising";
+
   mcqTestArea.innerHTML =
-    '<div class="mcq-result">' +
-      '<div class="mcq-result-score">' + percent + '%</div>' +
-      '<div class="mcq-result-line">Correct: ' + mcqCorrect + ' · Wrong: ' + wrong + ' · Skipped: ' + skipped + ' · Total: ' + total + '</div>' +
-      '<div class="mcq-test-actions">' +
-        '<button class="small-tool-btn" id="mcqReviewBtn" type="button">Review Wrong/Skipped</button>' +
-        '<button class="small-tool-btn accent" id="mcqRestartBtn" type="button">New Test</button>' +
+    '<div class="mcq-result-modern ' + tone + '">' +
+      '<div class="mcq-result-orb">' +
+        '<span class="mcq-result-score">' + percent + '%</span>' +
+        '<small>accuracy</small>' +
+      '</div>' +
+      '<div class="mcq-result-copy">' +
+        '<span class="mcq-run-eyebrow">Round Complete</span>' +
+        '<h3>' + title + '</h3>' +
+        '<p>You completed ' + mcqItems.length + ' main set' + (mcqItems.length === 1 ? '' : 's') + ' containing ' + stats.total + ' answerable question' + (stats.total === 1 ? '' : 's') + '.</p>' +
+      '</div>' +
+
+      '<div class="mcq-result-grid">' +
+        '<div class="mcq-result-stat good"><span>✓</span><b>' + stats.correct + '</b><small>Correct</small></div>' +
+        '<div class="mcq-result-stat bad"><span>✕</span><b>' + stats.wrong + '</b><small>Wrong</small></div>' +
+        '<div class="mcq-result-stat skip"><span>↷</span><b>' + stats.skipped + '</b><small>Skipped</small></div>' +
+        '<div class="mcq-result-stat total"><span>Σ</span><b>' + stats.total + '</b><small>Total</small></div>' +
+      '</div>' +
+
+      '<div class="mcq-result-actions simplified">' +
+        '<button class="mcq-action-btn ghost" id="mcqResultExitBtn" type="button">← Test Setup</button>' +
+        '<span class="action-menu result-more-menu">' +
+          '<button class="mcq-action-btn ghost more-trigger" type="button" aria-haspopup="menu" aria-expanded="false">⋮ More</button>' +
+          '<span class="action-menu-popover" role="menu">' +
+            '<button class="action-menu-item" id="mcqReviewBtn" type="button" role="menuitem">Review Wrong / Skipped</button>' +
+          '</span>' +
+        '</span>' +
+        '<button class="mcq-action-btn primary" id="mcqRestartBtn" type="button">New Round →</button>' +
       '</div>' +
       '<div class="mcq-review-list" id="mcqReviewList"></div>' +
     '</div>';
+
   document.getElementById('mcqRestartBtn')?.addEventListener('click', startMcqTest);
   document.getElementById('mcqReviewBtn')?.addEventListener('click', renderMcqReview);
+  document.getElementById('mcqResultExitBtn')?.addEventListener('click', () => renderMcqHome());
 }
 
 function renderMcqReview(){
   const list = document.getElementById('mcqReviewList');
   if(!list) return;
-  const rows = mcqItems.map((item,index) => ({item, record:mcqAnswers[index], index}))
-    .filter(row => !row.record?.correct);
+
+  const rows = [];
+  mcqItems.forEach((group, groupIndex) => {
+    const record = mcqAnswers[groupIndex];
+    (group.parts || []).forEach((item, partIndex) => {
+      const partRecord = record?.parts?.[partIndex];
+      if(partRecord?.correct) return;
+      rows.push({group, groupIndex, item, partIndex, record:partRecord});
+    });
+  });
+
   if(!rows.length){
     list.innerHTML = '<div class="mcq-empty">Perfect score — nothing to review.</div>';
     return;
   }
-  list.innerHTML = rows.map(({item,record,index}) => {
+
+  list.innerHTML = rows.map(({group,groupIndex,item,partIndex,record}) => {
     const your = record?.selected == null ? 'Skipped' : String.fromCharCode(65+record.selected) + ' — ' + item.options[record.selected];
     const correct = String.fromCharCode(65+item.answer) + ' — ' + item.options[item.answer];
+    const label = item.subIndex == null ? 'Main Question' : 'Sub Question ' + (Number(item.subIndex) + 1);
     return '<div class="mcq-review-item">' +
-      '<div class="mcq-review-q">Q' + (index+1) + '. ' + escapeHtml(item.question) + '</div>' +
+      '<div class="mcq-review-q">Set ' + (groupIndex+1) + ' · ' + label + '<br>' + escapeHtml(item.question) + '</div>' +
       '<div class="mcq-review-a">Your answer: ' + escapeHtml(your) + '<br><b>Correct: ' + escapeHtml(correct) + '</b></div>' +
       (item.explanation ? '<div class="mcq-review-exp">' + escapeHtml(item.explanation) + '</div>' : '') +
     '</div>';
   }).join('');
 }
 
+mcqNewPoolBtn?.addEventListener('click', () => setMcqPoolMode('new'));
+mcqOldPoolBtn?.addEventListener('click', () => setMcqPoolMode('old'));
+mcqAllPoolBtn?.addEventListener('click', () => setMcqPoolMode('all'));
 mcqRandomBtn?.addEventListener('click', () => setMcqOrder('random'));
 mcqSeriesBtn?.addEventListener('click', () => setMcqOrder('series'));
 startMcqTestBtn?.addEventListener('click', startMcqTest);
@@ -7429,24 +6477,57 @@ startMcqTestBtn?.addEventListener('click', startMcqTest);
 window.onEnglishQuestionEdited = function(context){
   if(!context) return;
   const source = context.source === 'more' ? 'more' : 'error';
-  const freshPool = getMcqFlatPool(source);
-  const fresh = freshPool.find(item => item.mainIndex === Number(context.mainIndex) &&
-    ((item.subIndex == null && context.subIndex == null) || item.subIndex === Number(context.subIndex)));
-  if(!fresh) return;
+  const freshFlat = getMcqFlatPool(source);
 
-  mcqItems = mcqItems.map(item => {
-    const sameSource = (item.source || mcqSource) === source;
-    const sameMain = item.mainIndex === Number(context.mainIndex);
-    const sameSub = (item.subIndex == null && context.subIndex == null) || item.subIndex === Number(context.subIndex);
-    return sameSource && sameMain && sameSub ? {...fresh} : item;
+  mcqItems = mcqItems.map(group => {
+    if(group.source !== source || group.mainIndex !== Number(context.mainIndex)) return group;
+
+    let refreshedParts = (group.parts || []).map(part => {
+      const fresh = freshFlat.find(item =>
+        item.mainIndex === Number(context.mainIndex) &&
+        ((item.subIndex == null && part.subIndex == null) || item.subIndex === part.subIndex)
+      );
+      return fresh ? {...fresh} : part;
+    });
+
+    // When a new sub-question is created during an active test, attach it to
+    // the current set immediately instead of requiring a test restart.
+    if(context.addSub && Number.isInteger(Number(context.newSubIndex))){
+      const newSubIndex = Number(context.newSubIndex);
+      const freshSub = freshFlat.find(item =>
+        item.mainIndex === Number(context.mainIndex) && item.subIndex === newSubIndex
+      );
+      if(freshSub && !refreshedParts.some(part => part.subIndex === newSubIndex)){
+        refreshedParts = [...refreshedParts, {...freshSub}].sort((a,b) => {
+          if(a.subIndex == null) return -1;
+          if(b.subIndex == null) return 1;
+          return Number(a.subIndex) - Number(b.subIndex);
+        });
+      }
+    }
+
+    const refreshedMain = refreshedParts.find(part => part.subIndex == null) || group.main;
+    return {
+      ...group,
+      category:refreshedMain?.category || group.category,
+      question:refreshedMain?.question || group.question,
+      main:refreshedMain,
+      parts:refreshedParts,
+      subQuestions:refreshedParts.filter(part => part.subIndex != null)
+    };
   });
 
-  mcqAnswers.forEach((record,index) => {
-    if(!record || record.skipped) return;
-    const item = mcqItems[index];
-    record.correct = !!item && record.selected === item.answer;
+  mcqAnswers.forEach((groupRecord, groupIndex) => {
+    if(!groupRecord?.parts) return;
+    const group = mcqItems[groupIndex];
+    groupRecord.parts.forEach((record, partIndex) => {
+      if(!record || record.skipped) return;
+      const item = group?.parts?.[partIndex];
+      record.correct = !!item && record.selected === item.answer;
+    });
   });
-  mcqCorrect = mcqAnswers.reduce((sum,record) => sum + (record?.correct ? 1 : 0), 0);
+
+  mcqCorrect = getMcqRoundStats().correct;
   updateMcqCounts();
   renderMcqCategoryControls();
   if(mcqTestPanel?.classList.contains('active') && mcqItems.length && mcqIndex < mcqItems.length){
@@ -8395,9 +7476,9 @@ initializeEnglishApp();
   const answerBankBtn = document.getElementById('answerBankBtn');
   const answerBankPanel = document.getElementById('answerBankPanel');
   const closeAnswerBankPanel = document.getElementById('closeAnswerBankPanel');
-  const answerErrorSourceBtn = document.getElementById('answerErrorSourceBtn');
-  const answerMoreSourceBtn = document.getElementById('answerMoreSourceBtn');
   const answerCategorySelect = document.getElementById('answerCategorySelect');
+  const answerPoolSelect = document.getElementById('answerPoolSelect');
+  const answerSearchInput = document.getElementById('answerSearchInput');
   const answerBankSummary = document.getElementById('answerBankSummary');
   const answerBankList = document.getElementById('answerBankList');
   const answerBankMsg = document.getElementById('answerBankMsg');
@@ -8415,7 +7496,6 @@ initializeEnglishApp();
   const questionEditorExplanation = document.getElementById('questionEditorExplanation');
   const questionEditorMsg = document.getElementById('questionEditorMsg');
 
-  let answerManagerSource = 'error';
   let editorContext = null;
 
   function questionBankFor(source){
@@ -8423,7 +7503,7 @@ initializeEnglishApp();
   }
 
   function sourceLabel(source){
-    return source === 'more' ? 'More' : 'Error Sentences';
+    return source === 'more' ? 'More MCQ' : 'Error Bank';
   }
 
   function closeAllQuestionPanelsExcept(panel){
@@ -8432,34 +7512,62 @@ initializeEnglishApp();
     });
   }
 
-  function getCategories(source){
-    const seen = new Set();
-    const values = [];
-    questionBankFor(source).forEach(item => {
-      const category = String(item?.category || (source === 'error' ? 'Error Sentences' : 'More')).trim() || 'General';
-      const key = category.toLocaleLowerCase('en-US');
-      if(seen.has(key)) return;
-      seen.add(key);
-      values.push(category);
+  function allManagerRows(){
+    const rows = [];
+    ['error','more'].forEach(source => {
+      questionBankFor(source).forEach((main, mainIndex) => {
+        if(!main || typeof main !== 'object') return;
+        const category = String(main.category || (source === 'error' ? 'Error Sentences' : 'More')).trim() || 'General';
+        const normalizedMain = normalizeMcqSubQuestion(main);
+        if(normalizedMain){
+          rows.push({source, mainIndex, subIndex:null, category, kind:'Main', item:normalizedMain, parentQuestion:''});
+        }
+        if(Array.isArray(main.subQuestions)){
+          main.subQuestions.forEach((sub, subIndex) => {
+            const normalized = normalizeMcqSubQuestion(sub);
+            if(!normalized) return;
+            rows.push({
+              source,
+              mainIndex,
+              subIndex,
+              category,
+              kind:'Sub',
+              item:normalized,
+              parentQuestion:String(main.question || '').trim()
+            });
+          });
+        }
+      });
     });
-    return values.sort((a,b) => a.localeCompare(b, 'en', {sensitivity:'base'}));
+    return rows;
+  }
+
+  function getCategories(){
+    const map = new Map();
+    allManagerRows().forEach(row => {
+      const key = row.category.toLocaleLowerCase('en-US');
+      const record = map.get(key) || {name:row.category, count:0};
+      record.count += 1;
+      map.set(key, record);
+    });
+    return [...map.values()].sort((a,b) => a.name.localeCompare(b.name, 'en', {sensitivity:'base'}));
   }
 
   function refreshAnswerCategorySelect(){
     if(!answerCategorySelect) return;
     const previous = answerCategorySelect.value;
-    const categories = getCategories(answerManagerSource);
+    const categories = getCategories();
     answerCategorySelect.innerHTML = '';
 
     const all = document.createElement('option');
     all.value = '__all__';
-    all.textContent = 'All categories';
+    all.textContent = 'All categories (' + allManagerRows().length + ')';
     answerCategorySelect.appendChild(all);
 
-    categories.forEach(category => {
+    categories.forEach(record => {
       const option = document.createElement('option');
-      option.value = category;
-      option.textContent = category;
+      option.value = record.name;
+      option.textContent = record.name + ' (' + record.count + ')';
       answerCategorySelect.appendChild(option);
     });
 
@@ -8467,27 +7575,22 @@ initializeEnglishApp();
     answerCategorySelect.value = exists ? previous : '__all__';
   }
 
-  function answerRows(source, categoryValue){
-    const rows = [];
-    questionBankFor(source).forEach((main, mainIndex) => {
-      if(!main || typeof main !== 'object') return;
-      const category = String(main.category || (source === 'error' ? 'Error Sentences' : 'More')).trim() || 'General';
-      if(categoryValue && categoryValue !== '__all__' && category !== categoryValue) return;
-
-      const normalizedMain = normalizeMcqSubQuestion(main);
-      if(normalizedMain){
-        rows.push({source, mainIndex, subIndex:null, category, kind:'Main', item:normalizedMain});
-      }
-
-      if(Array.isArray(main.subQuestions)){
-        main.subQuestions.forEach((sub, subIndex) => {
-          const normalized = normalizeMcqSubQuestion(sub);
-          if(!normalized) return;
-          rows.push({source, mainIndex, subIndex, category, kind:'Sub', item:normalized});
-        });
-      }
+  function answerRows(categoryValue, poolValue = 'all', query = ''){
+    const normalizedQuery = String(query || '').trim().toLocaleLowerCase('en-US');
+    return allManagerRows().filter(row => {
+      if(categoryValue && categoryValue !== '__all__' && row.category !== categoryValue) return false;
+      const pool = row.item.pool === 'old' ? 'old' : 'new';
+      if(poolValue !== 'all' && pool !== poolValue) return false;
+      if(!normalizedQuery) return true;
+      const haystack = [
+        row.category,
+        row.item.question,
+        row.item.explanation,
+        row.parentQuestion,
+        ...(Array.isArray(row.item.options) ? row.item.options : [])
+      ].join(' ').toLocaleLowerCase('en-US');
+      return haystack.includes(normalizedQuery);
     });
-    return rows;
   }
 
   function makeIconButton(icon, title, className, onClick){
@@ -8501,25 +7604,65 @@ initializeEnglishApp();
     return button;
   }
 
+  async function toggleManagedRowPool(row){
+    const bank = questionBankFor(row.source);
+    const parent = bank[row.mainIndex];
+    if(!parent) return;
+
+    const target = row.subIndex == null
+      ? parent
+      : (Array.isArray(parent.subQuestions) ? parent.subQuestions[row.subIndex] : null);
+
+    if(!target) return;
+
+    const previous = String(target.pool || 'new').toLowerCase() === 'old' ? 'old' : 'new';
+    const next = previous === 'old' ? 'new' : 'old';
+    target.pool = next;
+
+    if(!await saveEnglishMcqBank(row.source)){
+      target.pool = previous;
+      if(answerBankMsg){
+        answerBankMsg.style.color = 'var(--red)';
+        answerBankMsg.textContent = 'Could not save New / Old status.';
+      }
+      return;
+    }
+
+    mcqGlobalRandomSeen.clear();
+    mcqGlobalSeriesCursor = 0;
+    updateMcqCounts();
+    renderAnswerBank();
+    if(mcqTestPanel?.classList.contains('active')) renderMcqHome();
+
+    if(answerBankMsg){
+      answerBankMsg.style.color = 'var(--teal)';
+      answerBankMsg.textContent = next === 'old' ? 'Moved to Old ✓' : 'Moved back to New ↩';
+    }
+  }
+
   function renderAnswerBank(){
     if(!answerBankList) return;
     refreshAnswerCategorySelect();
-    const selectedCategory = answerCategorySelect?.value || '__all__';
-    const rows = answerRows(answerManagerSource, selectedCategory);
 
-    answerErrorSourceBtn?.classList.toggle('active', answerManagerSource === 'error');
-    answerMoreSourceBtn?.classList.toggle('active', answerManagerSource === 'more');
+    const selectedCategory = answerCategorySelect?.value || '__all__';
+    const selectedPool = answerPoolSelect?.value || 'all';
+    const query = answerSearchInput?.value || '';
+    const rows = answerRows(selectedCategory, selectedPool, query);
+
     if(answerBankSummary){
       const categoryText = selectedCategory === '__all__' ? 'All categories' : selectedCategory;
-      answerBankSummary.textContent = sourceLabel(answerManagerSource) + ' · ' + categoryText + ' · ' + rows.length + ' question(s)';
+      const poolText = selectedPool === 'all' ? 'All pools' : (selectedPool === 'old' ? 'Old' : 'New');
+      const queryText = query.trim() ? ' · Search: “' + query.trim() + '”' : '';
+      answerBankSummary.textContent = categoryText + ' · ' + poolText + ' · ' + rows.length + ' question(s)' + queryText;
     }
+
     answerBankList.innerHTML = '';
     if(answerBankMsg) answerBankMsg.textContent = '';
 
     if(!rows.length){
       const empty = document.createElement('div');
       empty.className = 'mcq-empty';
-      empty.textContent = 'No questions found in this category.';
+      empty.textContent = 'No questions found for this category / pool / search.';
       answerBankList.appendChild(empty);
       return;
     }
@@ -8537,28 +7680,76 @@ initializeEnglishApp();
 
       const meta = document.createElement('div');
       meta.className = 'answer-bank-meta';
+
       const qChip = document.createElement('span');
       qChip.className = 'answer-chip';
       qChip.textContent = 'Q' + (visibleIndex + 1);
+
       const catChip = document.createElement('span');
       catChip.className = 'answer-chip';
       catChip.textContent = row.category;
+
+      const sourceChip = document.createElement('span');
+      sourceChip.className = 'answer-chip source';
+      sourceChip.textContent = sourceLabel(row.source);
+
       const kindChip = document.createElement('span');
       kindChip.className = 'answer-chip kind';
       kindChip.textContent = row.kind;
-      meta.append(qChip, catChip, kindChip);
+
+      const poolChip = document.createElement('span');
+      const rowPool = row.item.pool === 'old' ? 'old' : 'new';
+      poolChip.className = 'answer-chip pool ' + rowPool;
+      poolChip.textContent = rowPool === 'old' ? 'Old' : 'New';
+      meta.append(qChip, catChip, sourceChip, kindChip, poolChip);
 
       const question = document.createElement('div');
       question.className = 'answer-bank-q';
       question.textContent = row.item.question;
       main.append(meta, question);
 
+      if(row.kind === 'Sub' && row.parentQuestion){
+        const parent = document.createElement('div');
+        parent.className = 'answer-bank-parent';
+        parent.innerHTML = '<b>Parent:</b> ' + escapeHtml(row.parentQuestion);
+        main.appendChild(parent);
+      }
+
       const actions = document.createElement('div');
-      actions.className = 'question-row-actions';
-      actions.append(
-        makeIconButton('✎', 'Edit question, options, correct answer & explanation', '', () => openQuestionEditor(row)),
-        makeIconButton('🗑', 'Delete question', 'delete', () => deleteManagedQuestion(row))
+      actions.className = 'question-row-actions simplified-row-actions';
+
+      const moveButton = makeIconButton(
+        row.item.pool === 'old' ? '↩' : '✓',
+        row.item.pool === 'old' ? 'Move this question back to New' : 'Move this question to Old',
+        row.item.pool === 'old' ? 'pool-old' : 'pool-new',
+        () => toggleManagedRowPool(row)
       );
+      const editButton = makeIconButton('✎', 'Edit question, options, correct answer & explanation', '', () => openQuestionEditor(row));
+
+      const menuWrap = document.createElement('span');
+      menuWrap.className = 'action-menu compact-menu';
+      const menuTrigger = document.createElement('button');
+      menuTrigger.type = 'button';
+      menuTrigger.className = 'question-icon-btn more-trigger';
+      menuTrigger.textContent = '⋮';
+      menuTrigger.title = 'More actions';
+      menuTrigger.setAttribute('aria-label', 'More actions');
+      menuTrigger.setAttribute('aria-haspopup', 'menu');
+      menuTrigger.setAttribute('aria-expanded', 'false');
+
+      const menu = document.createElement('span');
+      menu.className = 'action-menu-popover';
+      menu.setAttribute('role', 'menu');
+      const deleteButton = document.createElement('button');
+      deleteButton.type = 'button';
+      deleteButton.className = 'action-menu-item danger';
+      deleteButton.textContent = '🗑 Delete';
+      deleteButton.setAttribute('role', 'menuitem');
+      deleteButton.addEventListener('click', () => deleteManagedQuestion(row));
+      menu.appendChild(deleteButton);
+      menuWrap.append(menuTrigger, menu);
+
+      actions.append(moveButton, editButton, menuWrap);
       head.append(main, actions);
       card.appendChild(head);
 
@@ -8574,14 +7765,9 @@ initializeEnglishApp();
         explanation.textContent = row.item.explanation;
         card.appendChild(explanation);
       }
+
       answerBankList.appendChild(card);
     });
-  }
-
-  function setAnswerManagerSource(source){
-    answerManagerSource = source === 'more' ? 'more' : 'error';
-    if(answerCategorySelect) answerCategorySelect.value = '__all__';
-    renderAnswerBank();
   }
 
   function openAnswerBank(){
@@ -8590,6 +7776,7 @@ initializeEnglishApp();
     answerBankPanel?.classList.add('active');
     renderAnswerBank();
     answerBankPanel?.scrollIntoView({behavior:'smooth', block:'nearest'});
+    setTimeout(() => answerCategorySelect?.focus(), 0);
   }
 
   function closeAnswerBank(){
@@ -8687,6 +7874,43 @@ initializeEnglishApp();
 
   window.openEnglishQuestionEditor = openQuestionEditor;
 
+  function openSubQuestionCreator(mainItem){
+    if(!mainItem) return;
+    const source = mainItem.source === 'more' ? 'more' : 'error';
+    const bank = questionBankFor(source);
+    const mainIndex = Number(mainItem.mainIndex);
+    const parent = bank[mainIndex];
+    if(!parent) return;
+
+    editorContext = {
+      source,
+      mainIndex,
+      subIndex:null,
+      addSub:true,
+      category:String(parent.category || mainItem.category || 'General'),
+      kind:'Sub'
+    };
+
+    if(questionEditorTitle) questionEditorTitle.textContent = '＋ Add Sub Question';
+    if(questionEditorCategory){
+      questionEditorCategory.value = String(parent.category || mainItem.category || 'General');
+      questionEditorCategory.disabled = true;
+      questionEditorCategory.title = 'Sub-question automatically uses its parent category.';
+    }
+    if(questionEditorText) questionEditorText.value = '';
+    if(questionEditorExplanation) questionEditorExplanation.value = '';
+    if(questionEditorOptions) questionEditorOptions.innerHTML = '';
+    ['','','',''].forEach(value => addEditorOption(value));
+    refreshEditorAnswer(0);
+    if(questionEditorAnswer) questionEditorAnswer.value = '0';
+    if(questionEditorMsg) questionEditorMsg.textContent = 'This sub-question will be added under the current main question.';
+    editorOverlay?.classList.add('active');
+    editorOverlay?.setAttribute('aria-hidden','false');
+    setTimeout(() => questionEditorText?.focus(), 0);
+  }
+
+  window.openEnglishSubQuestionCreator = openSubQuestionCreator;
+
   function closeQuestionEditor(){
     editorContext = null;
     editorOverlay?.classList.remove('active');
@@ -8706,14 +7930,19 @@ initializeEnglishApp();
     if(options.length < 2 || options.length > 8){ if(questionEditorMsg) questionEditorMsg.textContent = 'Use 2 to 8 options.'; return; }
     if(options.some(option => !option)){ if(questionEditorMsg) questionEditorMsg.textContent = 'Fill every option or remove the empty row.'; return; }
     if(!Number.isInteger(answer) || answer < 0 || answer >= options.length){ if(questionEditorMsg) questionEditorMsg.textContent = 'Choose a valid correct answer.'; return; }
-    if(editorContext.subIndex == null && !category){ if(questionEditorMsg) questionEditorMsg.textContent = 'Category cannot be empty.'; return; }
+    if(editorContext.subIndex == null && !editorContext.addSub && !category){ if(questionEditorMsg) questionEditorMsg.textContent = 'Category cannot be empty.'; return; }
 
     const bank = questionBankFor(editorContext.source);
     const parent = bank[editorContext.mainIndex];
     if(!parent) return;
     const backup = JSON.stringify(bank);
 
-    if(editorContext.subIndex == null){
+    if(editorContext.addSub){
+      if(!Array.isArray(parent.subQuestions)) parent.subQuestions = [];
+      const newSubIndex = parent.subQuestions.length;
+      parent.subQuestions.push({question, options, answer, explanation, pool:'new'});
+      editorContext.newSubIndex = newSubIndex;
+    }else if(editorContext.subIndex == null){
       parent.category = category;
       parent.question = question;
       parent.options = options;
@@ -8721,7 +7950,8 @@ initializeEnglishApp();
       parent.explanation = explanation;
     }else{
       if(!Array.isArray(parent.subQuestions) || !parent.subQuestions[editorContext.subIndex]) return;
-      parent.subQuestions[editorContext.subIndex] = {question, options, answer, explanation};
+      const existingPool = String(parent.subQuestions[editorContext.subIndex].pool || 'new').toLowerCase() === 'old' ? 'old' : 'new';
+      parent.subQuestions[editorContext.subIndex] = {question, options, answer, explanation, pool:existingPool};
     }
 
     if(!await saveEnglishMcqBank(editorContext.source)){
@@ -8747,7 +7977,7 @@ initializeEnglishApp();
     }
     if(answerBankMsg){
       answerBankMsg.style.color = 'var(--teal)';
-      answerBankMsg.textContent = 'Question updated ✓';
+      answerBankMsg.textContent = savedContext.addSub ? 'Sub-question added ✓' : 'Question updated ✓';
     }
   }
 
@@ -8794,9 +8024,9 @@ initializeEnglishApp();
 
   answerBankBtn?.addEventListener('click', openAnswerBank);
   closeAnswerBankPanel?.addEventListener('click', closeAnswerBank);
-  answerErrorSourceBtn?.addEventListener('click', () => setAnswerManagerSource('error'));
-  answerMoreSourceBtn?.addEventListener('click', () => setAnswerManagerSource('more'));
   answerCategorySelect?.addEventListener('change', renderAnswerBank);
+  answerPoolSelect?.addEventListener('change', renderAnswerBank);
+  answerSearchInput?.addEventListener('input', renderAnswerBank);
   addQuestionOptionBtn?.addEventListener('click', () => addEditorOption(''));
   closeQuestionEditorBtn?.addEventListener('click', closeQuestionEditor);
   cancelQuestionEditBtn?.addEventListener('click', closeQuestionEditor);
@@ -8814,6 +8044,83 @@ initializeEnglishApp();
 </script>
 
 <script src="/common-nav.js">
+</script>
+
+<script>
+(function setupSimplifiedActionMenus(){
+  function closeMenus(except){
+    document.querySelectorAll('.action-menu.open').forEach(menu => {
+      if(menu === except) return;
+      menu.classList.remove('open');
+      menu.querySelector(':scope > .more-trigger')?.setAttribute('aria-expanded','false');
+    });
+  }
+
+  function ensureCloseButton(menu){
+    const popover = menu?.querySelector(':scope > .action-menu-popover');
+    if(!popover || popover.querySelector(':scope > .action-menu-close')) return;
+
+    const closeBtn = document.createElement('button');
+    closeBtn.type = 'button';
+    closeBtn.className = 'action-menu-close';
+    closeBtn.setAttribute('aria-label', 'Close More menu');
+    closeBtn.innerHTML = '<span>More options</span><span class="action-menu-close-x" aria-hidden="true">×</span>';
+    popover.prepend(closeBtn);
+  }
+
+  document.addEventListener('click', event => {
+    const closeBtn = event.target.closest('.action-menu-close');
+    if(closeBtn){
+      event.preventDefault();
+      event.stopPropagation();
+      const menu = closeBtn.closest('.action-menu');
+      if(menu){
+        menu.classList.remove('open');
+        menu.querySelector(':scope > .more-trigger')?.setAttribute('aria-expanded','false');
+        menu.querySelector(':scope > .more-trigger')?.focus();
+      }
+      return;
+    }
+
+    const trigger = event.target.closest('.more-trigger');
+    if(trigger){
+      const menu = trigger.closest('.action-menu');
+      if(!menu) return;
+      event.preventDefault();
+      event.stopPropagation();
+      const willOpen = !menu.classList.contains('open');
+      closeMenus(menu);
+      if(willOpen) ensureCloseButton(menu);
+      menu.classList.toggle('open', willOpen);
+      trigger.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+      return;
+    }
+
+    const menuItem = event.target.closest('.action-menu-item');
+    if(menuItem){
+      const menu = menuItem.closest('.action-menu');
+      requestAnimationFrame(() => {
+        menu?.classList.remove('open');
+        menu?.querySelector(':scope > .more-trigger')?.setAttribute('aria-expanded','false');
+      });
+      return;
+    }
+
+    // The dim focus-mode backdrop is a ::before pseudo-element on the open
+    // menu. Clicking that backdrop targets the menu wrapper itself.
+    const openMenu = event.target.closest?.('.action-menu.open');
+    if(openMenu && event.target === openMenu){
+      closeMenus();
+      return;
+    }
+
+    if(!event.target.closest('.action-menu')) closeMenus();
+  });
+
+  document.addEventListener('keydown', event => {
+    if(event.key === 'Escape') closeMenus();
+  });
+})();
 </script>
 </body>
 </html>

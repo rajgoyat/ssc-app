@@ -15,8 +15,9 @@
     "solutionImage": null,
     "order": 32,
     "attemptStatus": "unattempted",
-    "testAllowed": true,
-    "special": false
+    "testAllowed": false,
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Percentage",
@@ -35,7 +36,8 @@
     "order": 88,
     "attemptStatus": "correct",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Percentage",
@@ -54,7 +56,8 @@
     "order": 89,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Percentage",
@@ -71,9 +74,10 @@
     "solutionImage": "/uploads/percentage/34eef41a3ce6a1db131cf4b5fd85bf62128608a6bed545e1b321c5c3788f0769.png",
     "id": "mtca9cxbuj168y",
     "order": 95,
-    "attemptStatus": "unattempted",
+    "attemptStatus": "correct",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Percentage",
@@ -92,7 +96,8 @@
     "id": "mtil6u57fec6lh",
     "order": 112,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Percentage",
@@ -111,7 +116,8 @@
     "id": "mtu3ouwamc1hq1",
     "order": 193,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Percentage",
@@ -130,7 +136,8 @@
     "id": "mtu4hizo13jijb",
     "order": 194,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Percentage",
@@ -148,6 +155,67 @@
     "special": false,
     "id": "mtvihduuj73jy1",
     "order": 197,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "examName": ""
+  },
+  {
+    "category": "Percentage",
+    "examName": "",
+    "questionText": "A student multiplied a number by 3/5 instead of 5/3 what is the percentage erroR IN the calculation?",
+    "questionImage": null,
+    "options": [
+      "34",
+      "64",
+      "46",
+      "70"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/5jtFJuxGWj4?si=08NgjKGrJbLFH7lp&t=270",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0uonn1kp3kix",
+    "order": 211,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Percentage",
+    "examName": "",
+    "questionText": "A large watermelon weighs 20 kg and 96% of its weight is water. When it is kept in the sun, due to evaporation of water, it was observed that now, 95% of its weight is water. What is the new weight of the watermelon?",
+    "questionImage": null,
+    "options": [
+      "16",
+      "26",
+      "14",
+      "15"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/5jtFJuxGWj4?si=floSbZAZSx2EwatD&t=837",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0x204g2boj0g",
+    "order": 219,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Percentage",
+    "examName": "",
+    "questionText": "If the sides of an equilateral triangle are incrcased by 20 %, then by how \npercent will the area of the triangle inerease?",
+    "questionImage": null,
+    "options": [
+      "33%",
+      "63%",
+      "86%",
+      "44%"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/5jtFJuxGWj4?si=f5gVIaqI65bQK5h0&t=1114",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0xwh0oucx6p4",
+    "order": 222,
     "attemptStatus": "unattempted",
     "testAllowed": true
   }

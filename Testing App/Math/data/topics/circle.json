@@ -16,6 +16,27 @@
     "order": 7,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
+  },
+  {
+    "category": "Circle",
+    "examName": "",
+    "questionText": "Two circles of radius 7 cm and 5 cm intersect each other at A and B, and the\ndistance between their centres is 10 cm, the length of the common chord AB is:",
+    "questionImage": "/uploads/circle/22a2231583387a50799d034c887e7aa675f883611899598c6009ff43fdae82b4.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/5jtFJuxGWj4?si=2-Vl3RocF5dEyZ2m&t=773",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0wljbq3kfu89",
+    "order": 217,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]

@@ -359,6 +359,7 @@ const january2026CurrentAffairs = {
 };
 
 // Include the complete common test set in every January date test.
+
 if (typeof testQuestions !== "undefined" && Array.isArray(testQuestions)) {
   Object.keys(january2026CurrentAffairs).forEach((date) => {
     const existingIds = new Set(

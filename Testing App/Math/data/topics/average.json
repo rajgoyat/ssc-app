@@ -16,7 +16,8 @@
     "order": 79,
     "attemptStatus": "correct",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Average",
@@ -35,6 +36,67 @@
     "order": 90,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
+  },
+  {
+    "category": "Average",
+    "examName": "",
+    "questionText": "The average weight of 12 mangoes is 18 kg. The addition of another new mango reduces the average weight by 500g. What is the weight of the new mango?",
+    "questionImage": null,
+    "options": [
+      "10.5 kg",
+      "13.5 kg",
+      "12.5 kg",
+      "11.5 kg"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/5jtFJuxGWj4?si=1Er6JIX3c2LezipS&t=497",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0vbt9sogvk4i",
+    "order": 214,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Average",
+    "examName": "",
+    "questionText": "The average of 15 numbers is 42. The average of the first 8 numbers is 38 and\nthat of the last 8 numbers is 47. If the 8th number is excluded, what will be the\naverage of the remaining numbers? (Round off to one decimal place).",
+    "questionImage": null,
+    "options": [
+      "40.8",
+      "86",
+      "41.4",
+      "69"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/5jtFJuxGWj4?si=DcxEt2iEjcWf8CSQ&t=921",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0x8iammx3jb0",
+    "order": 220,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Average",
+    "examName": "",
+    "questionText": "There are 42 workers in a factory with an average weight of 65 kg. The ratio of the\nnumber of male workers to female workers is 13 : 8. If the average weight of male and\nfemale workers is 72 kg and 'x'kg respactively, then find the value of'x':",
+    "questionImage": null,
+    "options": [
+      "53.625",
+      "60.622",
+      "55.153",
+      "57.177"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/5jtFJuxGWj4?si=XYu-jJnfNbgCb6zF&t=1141",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0yh7hacwdig6",
+    "order": 223,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]

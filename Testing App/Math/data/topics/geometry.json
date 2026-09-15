@@ -16,7 +16,8 @@
     "order": 6,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Geometry",
@@ -35,7 +36,8 @@
     "order": 53,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Geometry",
@@ -54,7 +56,8 @@
     "order": 54,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Geometry",
@@ -73,7 +76,8 @@
     "order": 63,
     "attemptStatus": "correct",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Geometry",
@@ -92,7 +96,8 @@
     "order": 64,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Geometry",
@@ -111,7 +116,8 @@
     "order": 75,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Geometry",
@@ -130,7 +136,8 @@
     "order": 87,
     "attemptStatus": "unattempted",
     "testAllowed": false,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Geometry",
@@ -149,7 +156,8 @@
     "order": 92,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Geometry",
@@ -168,7 +176,8 @@
     "order": 101,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Geometry",
@@ -187,7 +196,8 @@
     "order": 105,
     "attemptStatus": "unattempted",
     "testAllowed": true,
-    "special": false
+    "special": false,
+    "examName": ""
   },
   {
     "category": "Geometry",
@@ -205,8 +215,9 @@
     "special": false,
     "id": "mtil1296fzjd13",
     "order": 111,
-    "attemptStatus": "unattempted",
-    "testAllowed": true
+    "attemptStatus": "correct",
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Geometry",
@@ -225,7 +236,8 @@
     "id": "mtil8sjf5m7006",
     "order": 113,
     "attemptStatus": "correct",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Geometry",
@@ -244,7 +256,8 @@
     "id": "mtin81ogw1cotu",
     "order": 116,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": true,
+    "examName": ""
   },
   {
     "category": "Geometry",
@@ -262,6 +275,107 @@
     "special": false,
     "id": "mtttrsjholw7yu",
     "order": 188,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "examName": ""
+  },
+  {
+    "category": "Geometry",
+    "questionText": "Let A be a regular polygon such that the sum of the interior angles of A is 2340° . Find the number of diagonals of A.",
+    "questionImage": null,
+    "options": [
+      "60",
+      "90",
+      "10",
+      "50"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/5jtFJuxGWj4?si=O-2EMJsZmBLPIqfa&t=109   each angle = n-2) * 180 /n",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0t3o43y2ey2a",
+    "order": 205,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "examName": ""
+  },
+  {
+    "category": "Geometry",
+    "questionText": "The sum of the interior angles of a regular polygon A is 1260° and each interior angle of a regular polygon B is 128 . What is the sum of the number of sides of polygons A and B?",
+    "questionImage": null,
+    "options": [
+      "31",
+      "26",
+      "16",
+      "11"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://notebook.google.com/notebook/0118c14a-3faa-4c80-98c7-301e31ac0d24",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0tmq12v33nvr",
+    "order": 206,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "examName": ""
+  },
+  {
+    "category": "Geometry",
+    "questionText": "Question: In a regular polygon, the interior angle exceeds its exterior angle by 132°. Find the number of sides",
+    "questionImage": null,
+    "options": [
+      "13",
+      "16",
+      "15",
+      "12"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://notebook.google.com/notebook/0118c14a-3faa-4c80-98c7-301e31ac0d24",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0tujts8imj14",
+    "order": 207,
+    "attemptStatus": "unattempted",
+    "testAllowed": true,
+    "examName": "CGL 2019"
+  },
+  {
+    "category": "Geometry",
+    "examName": "CGL 2018",
+    "questionText": "The sum of all interior angles of a regular polygon is 4 times the sum of all its\nexterior angles. Find the number of sides .",
+    "questionImage": null,
+    "options": [
+      "10",
+      "20",
+      "15",
+      "40"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0u4s5j1uil4q",
+    "order": 208,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "CGL 2022",
+    "questionText": "If the external angle of a regular polygon is 18°, then the number of diagonals in this polygon is  :______________B._: If one of the interior angles of a regular polygon is 15/16 times of one of the interior angles of a regular decagon (n=10), then find the number of diagonals of the polygon",
+    "questionImage": null,
+    "options": [
+      "170",
+      "130",
+      "770",
+      "120"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu0ua26rptqvho",
+    "order": 209,
     "attemptStatus": "unattempted",
     "testAllowed": true
   }
