@@ -128,7 +128,7 @@
     "solutionImage": null,
     "id": "mtbcm0c8huxuow",
     "order": 31,
-    "attemptStatus": "unattempted",
+    "attemptStatus": "correct",
     "testAllowed": true,
     "special": false
   },
@@ -299,7 +299,7 @@
     "solutionImage": null,
     "id": "mtpkwybnmphtor",
     "order": 51,
-    "attemptStatus": "unattempted",
+    "attemptStatus": "correct",
     "testAllowed": true,
     "special": false
   },
@@ -357,6 +357,25 @@
     "special": false,
     "id": "mu12k9329y1o3x",
     "order": 65,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "4  4  8  12  16  28  32  ?",
+    "questionImage": null,
+    "options": [
+      "30",
+      "20",
+      "70",
+      "60"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/712h3FYDZVs?si=h4K4ScYHRcCfNGJs&t=674",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu2jk0qquyytdg",
+    "order": 69,
     "attemptStatus": "unattempted",
     "testAllowed": true
   }

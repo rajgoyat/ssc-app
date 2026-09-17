@@ -131,5 +131,24 @@
     "attemptStatus": "unattempted",
     "testAllowed": true,
     "special": false
+  },
+  {
+    "category": "ABC123",
+    "questionText": "In a certain code language, 'SOAP' is coded as '5279' and 'ATOP' is coded as '4527'. What is the code for 'T' in the given code language?",
+    "questionImage": null,
+    "options": [
+      "5",
+      "4",
+      "7",
+      "2"
+    ],
+    "correctIndex": 1,
+    "solutionText": "SOAP and ATOP have three common letters A, O and P. Their codes also have three common digits 5, 2 and 7. The only new letter in ATOP is T, and the only new digit in 4527 is 4. Therefore, T is coded as 4.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu2hw041yq2qt6",
+    "order": 67,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]

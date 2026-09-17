@@ -280,7 +280,7 @@
     "solutionImage": null,
     "id": "mt5n5wgm87xp6m",
     "order": 15,
-    "attemptStatus": "unattempted",
+    "attemptStatus": "correct",
     "testAllowed": true,
     "special": false
   },
@@ -527,7 +527,7 @@
     "solutionImage": null,
     "id": "mtbcm0c8huxuow",
     "order": 31,
-    "attemptStatus": "unattempted",
+    "attemptStatus": "correct",
     "testAllowed": true,
     "special": false
   },
@@ -983,7 +983,7 @@
     "solutionImage": null,
     "id": "mtpkwybnmphtor",
     "order": 51,
-    "attemptStatus": "unattempted",
+    "attemptStatus": "correct",
     "testAllowed": true,
     "special": false
   },
@@ -1250,6 +1250,82 @@
     "special": false,
     "id": "mu12k9329y1o3x",
     "order": 65,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "ABCD",
+    "questionText": "FACN is related to LFIS in a certain way based on the English alphabetical order. In the same way, DUAH is related to JZGM. To which of the following options is VJSW related, following the same logic?",
+    "questionImage": null,
+    "options": [
+      "BOBY",
+      "BYOB",
+      "BOYB",
+      "BBOY"
+    ],
+    "correctIndex": 2,
+    "solutionText": "The letters are shifted alternately by +6 and +5. FACN → F+6=L, A+5=F, C+6=I, N+5=S → LFIS. Similarly, VJSW → V+6=B, J+5=O, S+6=Y, W+5=B → BOYB.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu2hw041md11sf",
+    "order": 66,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "ABC123",
+    "questionText": "In a certain code language, 'SOAP' is coded as '5279' and 'ATOP' is coded as '4527'. What is the code for 'T' in the given code language?",
+    "questionImage": null,
+    "options": [
+      "5",
+      "4",
+      "7",
+      "2"
+    ],
+    "correctIndex": 1,
+    "solutionText": "SOAP and ATOP have three common letters A, O and P. Their codes also have three common digits 5, 2 and 7. The only new letter in ATOP is T, and the only new digit in 4527 is 4. Therefore, T is coded as 4.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu2hw041yq2qt6",
+    "order": 67,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Probabiliy",
+    "questionText": "A bag contains 6 red balls, 4 yellow balls and 2 green balls. Three balls are picked at random. What is the probability that at most two are yellow?",
+    "questionImage": null,
+    "options": [
+      "54/55",
+      "51/55",
+      "52/55",
+      "None"
+    ],
+    "correctIndex": 0,
+    "solutionText": "At most two yellow means 0, 1 or 2 yellow balls. Easy method: 3 yellow na hone ki probability nikalni hai. So first calculate the probability of getting all 3 yellow balls and subtract it from 1. Total balls = 12. P(3 yellow) = C(4,3) / C(12,3) = 4/220 = 1/55. Therefore, P(at most 2 yellow) = 1 - 1/55 = 54/55. Video explanation: https://youtu.be/712h3FYDZVs?si=fFChkyoAPjU-Pp8P&t=152",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu2hw0414cwvro",
+    "order": 68,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "4  4  8  12  16  28  32  ?",
+    "questionImage": null,
+    "options": [
+      "30",
+      "20",
+      "70",
+      "60"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/712h3FYDZVs?si=h4K4ScYHRcCfNGJs&t=674",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu2jk0qquyytdg",
+    "order": 69,
     "attemptStatus": "unattempted",
     "testAllowed": true
   }

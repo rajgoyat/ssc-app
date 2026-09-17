@@ -2504,5 +2504,424 @@
     "questionImageName": "",
     "source": "user-upload",
     "createdAt": "2026-09-13T05:19:30"
+  },
+  {
+    "id": "ca-2026-09-014-001",
+    "date": "2026-09-14",
+    "category": "General",
+    "question": "With reference to the recent developments in Yemen, consider the following statements:\n1. Houthi forces captured Mocha, a historic Red Sea port city.\n2. Mocha was earlier controlled by Saudi-backed forces supporting the internationally recognised Yemeni government.\n3. The capture of Mocha has reduced Houthi influence along Yemen's western Red Sea coast.\nWhich of the statements given above are correct?",
+    "options": [
+      "1 only",
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "answer": 1,
+    "explanation": "Statements 1 and 2 are correct, while Statement 3 is incorrect. Iran-backed Houthi forces captured Mocha (Mokha/Al-Makha), a historic Red Sea port city of Yemen. The city was earlier under Saudi-backed forces supporting the internationally recognised Yemeni government. Mocha par control se Houthis ka western Red Sea coast par influence badhta hai. Isse Bab el-Mandeb ke paas maritime activity, commercial/oil shipping aur Yemen government's western coastal supply lines par pressure badh sakta hai. Yemen ki capital Sana'a hai; uske neighbours Saudi Arabia aur Oman hain; major ports Aden, Hodeidah aur Mocha hain.",
+    "subQuestions": [
+      {
+        "question": "Consider the following statements about the Bab el-Mandeb Strait:\n1. Its Arabic meaning is “Gate of Tears”.\n2. It lies between the Arabian Peninsula and the Horn of Africa.\n3. It connects the Red Sea directly with the Persian Gulf.\n4. Yemen, Djibouti and Eritrea are among the countries bordering the strait.\nWhich of the statements given above are correct?",
+        "options": [
+          "1, 2 and 4 only",
+          "1 and 3 only",
+          "2, 3 and 4 only",
+          "1, 2, 3 and 4"
+        ],
+        "answer": 0,
+        "explanation": "Statements 1, 2 and 4 are correct. Bab el-Mandeb Red Sea ko Gulf of Aden se connect karta hai, aur aage Indian Ocean se maritime connectivity deta hai; Persian Gulf se direct connection nahi hai."
+      },
+      {
+        "question": "With reference to the Houthi movement, consider the following statements:\n1. It is an armed rebel group based in Yemen.\n2. It captured Yemen's capital Sana'a in 2014.\n3. It is mainly supported by Iran.\n4. It has been in conflict with the Yemeni government and a Saudi Arabia-led coalition.\nWhich of the statements given above are correct?",
+        "options": [
+          "1 and 2 only",
+          "2 and 3 only",
+          "1, 3 and 4 only",
+          "1, 2, 3 and 4"
+        ],
+        "answer": 3,
+        "explanation": "All four statements are correct. Houthis northern Yemen ke bade hisson par control rakhte hain aur Red Sea/Bab el-Mandeb area mein ships par attacks ki wajah se bhi news mein rahe hain."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-15T11:08:35"
+  },
+  {
+    "id": "ca-2026-09-014-002",
+    "date": "2026-09-14",
+    "category": "General",
+    "question": "Consider the following statements regarding the G20 Energy Ministerial Meeting scheduled for 14–16 September 2026:\n1. It is being held in Houston, United States.\n2. It is being organised under the US G20 Presidency.\n3. India is represented by Union Minister Manohar Lal.\n4. The meeting is confined only to trade and financial regulation issues.\nWhich of the statements given above are correct?",
+    "options": [
+      "1 and 2 only",
+      "1, 2 and 3 only",
+      "2, 3 and 4 only",
+      "1, 2, 3 and 4"
+    ],
+    "answer": 1,
+    "explanation": "Statements 1, 2 and 3 are correct. Meeting Houston, USA mein US G20 Presidency ke under ho rahi hai aur India ko Union Minister of Power and Housing & Urban Affairs Manohar Lal represent kar rahe hain. Agenda mein Energy Security, Affordable Energy, Infrastructure Approvals aur Critical-mineral Supply Chains jaise issues shamil hain. India apne Energy System, Policy Reforms, Mineral Recycling, Supply Diversification aur Technology-neutral Energy Approach ko present karega.",
+    "subQuestions": [
+      {
+        "question": "Consider the following statements about the G20:\n1. It was formed on 26 September 1999.\n2. It currently has 21 members: 19 countries, the European Union and the African Union.\n3. The first G20 Leaders' Summit was held in Washington D.C. in 2008.\nWhich of the statements given above are correct?",
+        "options": [
+          "1 only",
+          "1 and 2 only",
+          "2 and 3 only",
+          "1, 2 and 3"
+        ],
+        "answer": 3,
+        "explanation": "All three statements are correct. G20 major economies ka international forum hai jahan global economy, trade, finance, climate change aur development jaise issues discuss hote hain."
+      },
+      {
+        "question": "Which of the following pairs regarding G20 Summits is/are correctly matched?\n1. 2023 — New Delhi, India — Theme: “Vasudhaiva Kutumbakam – One Earth, One Family, One Future”\n2. 2025 — Johannesburg, South Africa — 20th Summit\n3. 2026 — Miami, United States — 21st Summit",
+        "options": [
+          "1 only",
+          "1 and 2 only",
+          "2 and 3 only",
+          "1, 2 and 3"
+        ],
+        "answer": 3,
+        "explanation": "All three pairs are correct according to the source. India hosted the 2023 Summit on 9–10 September in New Delhi; the 2025 Summit was scheduled for 22–23 November in Johannesburg; and the 2026 Summit is the 21st G20 Summit in Miami."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-15T11:08:35"
+  },
+  {
+    "id": "ca-2026-09-014-003",
+    "date": "2026-09-14",
+    "category": "General",
+    "question": "With reference to Hindi Diwas in India, consider the following statements:\n1. Hindi Diwas is observed every year on 14 September.\n2. On 14 September 1949, the Constituent Assembly accepted Hindi in Devanagari script as the Official Language of the Union.\n3. Hindi Diwas has been observed since 1953 in memory of this decision.\n4. The Constitution declares Hindi as the national language of India.\nWhich of the statements given above are correct?",
+    "options": [
+      "1 and 2 only",
+      "1, 2 and 3 only",
+      "2, 3 and 4 only",
+      "1, 2, 3 and 4"
+    ],
+    "answer": 1,
+    "explanation": "Statements 1, 2 and 3 are correct. Statement 4 is incorrect: source mein Hindi ko Union ki Official Language ke context mein explain kiya gaya hai, national language ke roop mein nahi. 14 September 1949 ke Constituent Assembly decision ki memory mein 1953 se Hindi Diwas manaya ja raha hai. Government ministries/institutions is occasion par Hindi Week, Hindi Fortnight aur Hindi Month bhi organise karte hain.",
+    "subQuestions": [
+      {
+        "question": "Match the following constitutional provisions with their subject:\n1. Article 343 — Official Language of the Union\n2. Article 344 — Official Language Commission and related Parliamentary Committee\n3. Article 351 — Promotion and development of Hindi\nWhich of the pairs given above are correctly matched?",
+        "options": [
+          "1 only",
+          "1 and 2 only",
+          "2 and 3 only",
+          "1, 2 and 3"
+        ],
+        "answer": 3,
+        "explanation": "All three are correctly matched. Constitution mein language-related provisions Part XVII mein hain, with major provisions from Articles 343 to 351."
+      },
+      {
+        "question": "Which statement correctly describes World Hindi Day?",
+        "options": [
+          "It is observed on 14 September and began in 1953",
+          "It is observed on 10 January and began in 2006",
+          "It is observed on 26 January and began in 1950",
+          "It is observed on 14 November and began in 1949"
+        ],
+        "answer": 1,
+        "explanation": "World Hindi Day har saal 10 January ko manaya jata hai aur source ke according iski shuruaat 2006 mein hui."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-15T11:08:35"
+  },
+  {
+    "id": "ca-2026-09-014-004",
+    "date": "2026-09-14",
+    "category": "General",
+    "question": "Consider the following statements about the Duleep Trophy 2026–27 final:\n1. East Zone won the title under the captaincy of Ishan Kishan.\n2. The final was played against South Zone at M.A. Chidambaram Stadium, Chennai.\n3. Although the final ended in a draw, East Zone was declared champion on the basis of its 372-run first-innings lead.\n4. It was East Zone's fourth Duleep Trophy title.\nWhich of the statements given above are correct?",
+    "options": [
+      "1 and 2 only",
+      "1, 2 and 3 only",
+      "2, 3 and 4 only",
+      "1, 2, 3 and 4"
+    ],
+    "answer": 1,
+    "explanation": "Statements 1, 2 and 3 are correct. Statement 4 is incorrect because this was East Zone's third Duleep Trophy title; its earlier titles came in 2011–12 and 2012–13. Final draw raha, lekin tournament rules ke under first-innings lead ke basis par East Zone champion bana.",
+    "subQuestions": [
+      {
+        "question": "Consider the following statements regarding awards and prize money in the Duleep Trophy 2026–27:\n1. East Zone received ₹1 crore as winner.\n2. South Zone received ₹50 lakh as runner-up.\n3. Ishan Kishan was Player of the Match in the final.\n4. Tilak Varma was Player of the Tournament.\nWhich of the statements given above are correct?",
+        "options": [
+          "1, 2 and 3 only",
+          "1, 3 and 4 only",
+          "2 and 4 only",
+          "1, 2, 3 and 4"
+        ],
+        "answer": 3,
+        "explanation": "All four statements are correct. Source mein Ishan Kishan ke final performance ko 270 runs + 80 runs ke saath highlight kiya gaya hai."
+      },
+      {
+        "question": "Which of the following statements about the Duleep Trophy is incorrect?",
+        "options": [
+          "It is a first-class cricket competition involving geographical zones",
+          "It is named after former Indian cricketer Duleepsinhji",
+          "Its first edition was held in 1961–62",
+          "Central Zone is the most successful team with 19 titles"
+        ],
+        "answer": 3,
+        "explanation": "West Zone is listed as the most successful team with 19 titles. The 2025 champion was Central Zone, which won its 7th title."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-15T11:08:35"
+  },
+  {
+    "id": "ca-2026-09-014-005",
+    "date": "2026-09-14",
+    "category": "General",
+    "question": "With reference to the five orangutans recently found in India, consider the following statements:\n1. They were found in a Protected Reserve Forest area of Balasore district, Odisha.\n2. The group consisted of three males and two females, all roughly below one year of age.\n3. They were shifted to Nandankanan Zoological Park, Bhubaneswar.\n4. Preliminary assessment suggested that they could be Sumatran orangutans.\nWhich of the statements given above are correct?",
+    "options": [
+      "1 and 2 only",
+      "1, 2 and 3 only",
+      "2, 3 and 4 only",
+      "1, 2, 3 and 4"
+    ],
+    "answer": 3,
+    "explanation": "All four statements are correct. Animals ko safe environment, veterinary care aur monitoring ke liye Nandankanan Zoological Park le jaya gaya aur quarantine mein rakha gaya. Case mein possible transnational wildlife trafficking network ki bhi investigation ho rahi hai. Orangutan ek Great Ape hai aur iska naam roughly “Person of the Forest” meaning se juda hai.",
+    "subQuestions": [
+      {
+        "question": "Consider the following statements about orangutans:\n1. Orangutans are native to India.\n2. Their natural habitats are mainly tropical forests of Borneo and Sumatra in Indonesia and Malaysia.\n3. Three species are recognised: Bornean, Sumatran and Tapanuli orangutans.\n4. All three species are listed as Critically Endangered on the IUCN Red List.\nWhich of the statements given above are correct?",
+        "options": [
+          "1 and 2 only",
+          "2, 3 and 4 only",
+          "1, 3 and 4 only",
+          "1, 2, 3 and 4"
+        ],
+        "answer": 1,
+        "explanation": "Statement 1 is incorrect. Orangutans India ki native species nahi hain. Statements 2, 3 and 4 source ke according correct hain."
+      },
+      {
+        "question": "In the IUCN conservation context, the term “Critically Endangered” indicates that a species:",
+        "options": [
+          "Faces a very high risk of extinction",
+          "Has already become extinct in the wild",
+          "Has a stable population with no major threat",
+          "Is found only in protected zoos"
+        ],
+        "answer": 0,
+        "explanation": "Critically Endangered ka matlab species par extinction ka bahut high risk hai; adequate conservation na ho to future mein serious extinction threat ho sakta hai."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-15T11:08:35"
+  },
+  {
+    "id": "ca-2026-09-014-006",
+    "date": "2026-09-14",
+    "category": "General",
+    "question": "With reference to state-wise semiconductor design support under the ChipIN Centre, consider the following statements:\n1. Karnataka ranked first in performance.\n2. 81 organisations from Karnataka used ChipIN Centre facilities.\n3. Karnataka recorded 73 chip tape-outs and about 88 lakh hours of EDA tool usage.\n4. Tamil Nadu recorded more participating organisations than Karnataka.\nWhich of the statements given above are correct?",
+    "options": [
+      "1 and 2 only",
+      "1, 2 and 3 only",
+      "2, 3 and 4 only",
+      "1, 2, 3 and 4"
+    ],
+    "answer": 1,
+    "explanation": "Statements 1, 2 and 3 are correct. Statement 4 is incorrect because Tamil Nadu had 79 organisations, while Karnataka had 81. Chip tape-out ka meaning design ko final stage tak le jana, manufacturing ke liye ready banana hai. EDA = Electronic Design Automation; Karnataka-linked organisations ne lagbhag 88 lakh hours EDA tools par chip design/testing work kiya.",
+    "subQuestions": [
+      {
+        "question": "Consider the following statements about the ChipIN Centre:\n1. It is a shared semiconductor design facility intended to strengthen India's chip-design ecosystem.\n2. It provides expensive design tools and infrastructure to startups, researchers, students and semiconductor designers.\n3. It started in 2022.\nWhich of the statements given above are correct?",
+        "options": [
+          "1 only",
+          "1 and 2 only",
+          "2 and 3 only",
+          "1, 2 and 3"
+        ],
+        "answer": 3,
+        "explanation": "All three statements are correct according to the source."
+      },
+      {
+        "question": "Which of the following state-performance pairs under the ChipIN Centre is/are correctly matched?\n1. Tamil Nadu — 79 organisations, 33 tape-outs\n2. Telangana — 42 organisations, 28 tape-outs",
+        "options": [
+          "1 only",
+          "2 only",
+          "Both 1 and 2",
+          "Neither 1 nor 2"
+        ],
+        "answer": 2,
+        "explanation": "Both pairs are correctly matched."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-15T11:08:35"
+  },
+  {
+    "id": "ca-2026-09-014-007",
+    "date": "2026-09-14",
+    "category": "General",
+    "question": "Consider the following statements regarding India's National HPV Vaccination Campaign:\n1. More than 80 lakh HPV vaccine doses have been administered under the campaign.\n2. Uttar Pradesh ranked first by vaccinating more than 22 lakh adolescent girls.\n3. The campaign was launched on 28 February 2026 from Ajmer, Rajasthan.\n4. The campaign requires a compulsory two-dose vaccination schedule for every eligible girl.\nWhich of the statements given above are correct?",
+    "options": [
+      "1 and 2 only",
+      "1, 2 and 3 only",
+      "2, 3 and 4 only",
+      "1, 2, 3 and 4"
+    ],
+    "answer": 1,
+    "explanation": "Statements 1, 2 and 3 are correct. Statement 4 is incorrect because the source describes a free, voluntary, single-dose HPV vaccine for the eligible group. Campaign ka main objective cervical cancer ki prevention hai. It was launched by Prime Minister Narendra Modi from Ajmer, Rajasthan. Target group roughly 1.15 crore hai.",
+    "subQuestions": [
+      {
+        "question": "Consider the following eligibility-related statements under the National HPV Vaccination Campaign:\n1. The primary target is 14-year-old girls.\n2. Vaccination is free and voluntary at government health centres.\n3. Parental consent is required.\n4. Girls turning 15 within 90 days after the campaign launch are also eligible.\nWhich of the statements given above are correct?",
+        "options": [
+          "1 and 2 only",
+          "1, 2 and 3 only",
+          "2, 3 and 4 only",
+          "1, 2, 3 and 4"
+        ],
+        "answer": 3,
+        "explanation": "All four statements are correct according to the source."
+      },
+      {
+        "question": "The primary public-health objective of the National HPV Vaccination Campaign mentioned in the source is to prevent:",
+        "options": [
+          "Cervical cancer",
+          "Malaria",
+          "Tuberculosis",
+          "Dengue"
+        ],
+        "answer": 0,
+        "explanation": "Campaign ka main objective cervical cancer ki prevention hai."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-15T11:08:35"
+  },
+  {
+    "id": "ca-2026-09-014-008",
+    "date": "2026-09-14",
+    "category": "General",
+    "question": "Consider the following statements about the Consumer Protection (E-Commerce) (Amendment) Rules, 2026:\n1. They were notified by the Department of Consumer Affairs.\n2. They amend the Consumer Protection (E-Commerce) Rules, 2020.\n3. They will come into force from 1 January 2027.\n4. Their stated focus includes greater transparency and protection from fake discounts, misleading search results, sponsored content, dark patterns and hidden charges.\nWhich of the statements given above are correct?",
+    "options": [
+      "1 and 2 only",
+      "1, 2 and 3 only",
+      "2, 3 and 4 only",
+      "1, 2, 3 and 4"
+    ],
+    "answer": 3,
+    "explanation": "All four statements are correct. 2026 amendment ka focus online shopping mein transparency badhana aur consumers ko manipulative/misleading practices se protect karna hai. Ye rules 1 January 2027 se effective honge.",
+    "subQuestions": [
+      {
+        "question": "With reference to the Consumer Protection (E-Commerce) Rules, 2020, consider the following statements:\n1. E-commerce platforms must provide seller identity and contact details.\n2. Consumers should receive clear information about return, refund, cancellation and warranty.\n3. E-commerce entities should avoid misleading advertisements and false information.\nWhich of the statements given above are correct?",
+        "options": [
+          "1 only",
+          "1 and 2 only",
+          "2 and 3 only",
+          "1, 2 and 3"
+        ],
+        "answer": 3,
+        "explanation": "All three statements are correct. 2020 Rules online shopping mein consumer rights aur transparency improve karne ke liye banaye gaye the."
+      },
+      {
+        "question": "Which of the following was cited as a reason for strengthening e-commerce consumer-protection rules?",
+        "options": [
+          "Increase in fake products, misleading discounts and refund/return problems",
+          "Ban on all online marketplaces",
+          "Removal of seller information from platforms",
+          "Ending warranty disclosures for consumers"
+        ],
+        "answer": 0,
+        "explanation": "Online shopping ke growth ke saath fake products, misleading discounts, refund/return issues aur incomplete product information jaise problems badhne ko reason bataya gaya."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-15T11:08:35"
+  },
+  {
+    "id": "ca-2026-09-014-009",
+    "date": "2026-09-14",
+    "category": "General",
+    "question": "Consider the following statements about the Forbes–Statista World's Top Performing Banks 2026 ranking:\n1. It was issued jointly by Forbes and Statista for the first time.\n2. The ranking covered 500 banks across 89 countries.\n3. It was based mainly on objective financial data such as profitability, financial strength and growth.\n4. HDFC Bank ranked third globally and was the only Indian bank in the top 10.\nWhich of the statements given above are correct?",
+    "options": [
+      "1 and 2 only",
+      "2, 3 and 4 only",
+      "1, 3 and 4 only",
+      "1, 2, 3 and 4"
+    ],
+    "answer": 3,
+    "explanation": "All four statements are correct. Ranking ka purpose different countries ke banks ki measurable financial performance compare karna tha. HDFC Bank third position par raha aur top 10 mein only Indian bank tha.",
+    "subQuestions": [
+      {
+        "question": "What is the correct order of the top three banks in the Forbes–Statista World's Top Performing Banks 2026 ranking?",
+        "options": [
+          "DBS Bank — OCBC — HDFC Bank",
+          "OCBC — DBS Bank — HDFC Bank",
+          "HDFC Bank — OCBC — DBS Bank",
+          "OCBC — HDFC Bank — DBS Bank"
+        ],
+        "answer": 1,
+        "explanation": "Top three were: 1. OCBC (Singapore), 2. DBS Bank (Singapore), 3. HDFC Bank (India)."
+      },
+      {
+        "question": "Consider the following statements:\n1. HDFC Bank was established in August 1994 and began banking operations in January 1995.\n2. Its headquarters is in Mumbai, Maharashtra.\n3. Forbes is an American business media company, while Statista is a German data and statistics company.\nWhich of the statements given above are correct?",
+        "options": [
+          "1 only",
+          "1 and 2 only",
+          "2 and 3 only",
+          "1, 2 and 3"
+        ],
+        "answer": 3,
+        "explanation": "All three statements are correct according to the source."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-15T11:08:35"
+  },
+  {
+    "id": "ca-2026-09-014-010",
+    "date": "2026-09-14",
+    "category": "General",
+    "question": "With reference to Stanzin Tsangyang, consider the following statements:\n1. She is from the Zanskar region of Ladakh.\n2. She became the first woman from Zanskar to be commissioned as an Indian Army officer.\n3. She completed military training at the Officers Training Academy (OTA), Chennai.\n4. She was part of a batch of 342 cadets completing training at OTA.\nWhich of the statements given above are correct?",
+    "options": [
+      "1 and 2 only",
+      "1, 2 and 3 only",
+      "2, 3 and 4 only",
+      "1, 2, 3 and 4"
+    ],
+    "answer": 3,
+    "explanation": "All four statements are correct. Stanzin Tsangyang ka commissioning Zanskar region ke liye historic milestone hai. OTA Chennai Indian Army ki major officer-training academies mein se ek hai aur mainly Short Service Commission (SSC) officers ko train karti hai.",
+    "subQuestions": [
+      {
+        "question": "Consider the following statements about OTA Chennai and Zanskar:\n1. OTA Chennai mainly trains officers for the Short Service Commission.\n2. Zanskar is a remote, high-altitude region of Ladakh.\n3. At the time of Stanzin's enrolment, Zanskar was part of Kargil district; it was made a separate district in 2026.\nWhich of the statements given above are correct?",
+        "options": [
+          "1 only",
+          "1 and 2 only",
+          "2 and 3 only",
+          "1, 2 and 3"
+        ],
+        "answer": 3,
+        "explanation": "All three statements are correct according to the source."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-15T11:08:35"
   }
 ]

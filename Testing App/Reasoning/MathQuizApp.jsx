@@ -866,6 +866,305 @@ function ImageField({
   );
 }
 
+/* ---------------------------------- bulk array import modal ---------------------------------- */
+
+const BULK_ALLOWED_CATEGORIES = [
+  "ABC123",
+  "ABCD",
+  "AP & GP",
+  "Blood",
+  "Calendar",
+  "Clock",
+  "Counting",
+  "Dice",
+  "P&C",
+  "Position",
+  "Probabiliy",
+  "Series",
+];
+
+function BulkQuestionImportModal({ onCancel, onImport }) {
+  const example = `[
+  {
+    "category": "ABC123",
+    "question": "If CAT is coded as DBU, then DOG is coded as?",
+    "options": ["EPH", "EOG", "FPH", "DOH"],
+    "answer": 0,
+    "explanation": "Each letter is shifted by +1.",
+    "special": false
+  },
+  {
+    "category": "Blood",
+    "question": "A is the brother of B. B is the mother of C. How is A related to C?",
+    "options": ["Father", "Uncle", "Brother", "Grandfather"],
+    "answer": 1,
+    "explanation": "A is the brother of C's mother, so A is C's maternal uncle.",
+    "special": false
+  }
+]`;
+
+  const [text, setText] =
+    useState(example);
+
+  const [error, setError] =
+    useState("");
+
+  function stripCodeFence(value) {
+    return String(value || "")
+      .trim()
+      .replace(
+        /^```(?:json|javascript|js)?\s*/i,
+        ""
+      )
+      .replace(/\s*```$/i, "")
+      .trim();
+  }
+
+  function normalizeBulkItem(
+    item,
+    index
+  ) {
+    if (
+      !item ||
+      typeof item !== "object" ||
+      Array.isArray(item)
+    ) {
+      throw new Error(
+        `Question ${index + 1}: each array item must be an object.`
+      );
+    }
+
+    const category = String(
+      item.category ??
+        item.topic ??
+        ""
+    ).trim();
+
+    const questionText = String(
+      item.questionText ??
+        item.question ??
+        ""
+    ).trim();
+
+    const options = Array.isArray(
+      item.options
+    )
+      ? item.options.map((value) =>
+          String(value ?? "").trim()
+        )
+      : [];
+
+    const rawAnswer =
+      item.correctIndex ??
+      item.answer;
+
+    const correctIndex =
+      Number(rawAnswer);
+
+    const solutionText = String(
+      item.solutionText ??
+        item.explanation ??
+        ""
+    ).trim();
+
+    if (!category) {
+      throw new Error(
+        `Question ${index + 1}: category/topic is required.`
+      );
+    }
+
+    if (!BULK_ALLOWED_CATEGORIES.includes(category)) {
+      throw new Error(
+        `Question ${index + 1}: category must be one of: ${BULK_ALLOWED_CATEGORIES.join(", ")}.`
+      );
+    }
+
+    if (
+      !questionText &&
+      !item.questionImage
+    ) {
+      throw new Error(
+        `Question ${index + 1}: question text or questionImage is required.`
+      );
+    }
+
+    if (
+      options.length !== 4 ||
+      options.some(
+        (option) => !option
+      )
+    ) {
+      throw new Error(
+        `Question ${index + 1}: exactly 4 non-empty options are required.`
+      );
+    }
+
+    if (
+      !Number.isInteger(
+        correctIndex
+      ) ||
+      correctIndex < 0 ||
+      correctIndex > 3
+    ) {
+      throw new Error(
+        `Question ${index + 1}: answer/correctIndex must be 0, 1, 2, or 3.`
+      );
+    }
+
+    return normalizeQuestion({
+      category,
+      questionText,
+      questionImage:
+        item.questionImage || null,
+      options,
+      correctIndex,
+      solutionText,
+      solutionImage:
+        item.solutionImage || null,
+      special:
+        item.special === true,
+    });
+  }
+
+  function handleImport() {
+    try {
+      const cleaned =
+        stripCodeFence(text);
+
+      const parsed =
+        JSON.parse(cleaned);
+
+      if (!Array.isArray(parsed)) {
+        throw new Error(
+          "Paste a JSON array: [ { ... }, { ... } ]"
+        );
+      }
+
+      if (parsed.length === 0) {
+        throw new Error(
+          "The array is empty. Add at least one question."
+        );
+      }
+
+      const normalized =
+        parsed.map(
+          normalizeBulkItem
+        );
+
+      setError("");
+      onImport(normalized);
+    } catch (err) {
+      setError(
+        err && err.message
+          ? err.message
+          : "Could not read this array."
+      );
+    }
+  }
+
+  return (
+    <div
+      className="modal-overlay"
+      onClick={onCancel}
+    >
+      <div
+        className="modal bulk-import-modal"
+        onClick={(e) =>
+          e.stopPropagation()
+        }
+      >
+        <div className="modal-head">
+          <div>
+            <h2>
+              Multiple Questions · Array Upload
+            </h2>
+
+            <p className="bulk-import-subtitle">
+              Paste one JSON array and add all questions together.
+            </p>
+          </div>
+
+          <button
+            className="icon-btn"
+            onClick={onCancel}
+            title="Close"
+          >
+            <X size={16} />
+          </button>
+        </div>
+
+        <div className="modal-body">
+          <div className="bulk-format-note">
+            <b>Supported fields:</b>
+            <span>
+              category, question, options, answer, explanation, special
+            </span>
+            <span>
+              Use category only from: {BULK_ALLOWED_CATEGORIES.join(", ")}.
+            </span>
+            <span>
+              If a source/link is provided, include that link inside the explanation field.
+            </span>
+            <span>
+              Aliases also work: topic, questionText, correctIndex, solutionText.
+            </span>
+          </div>
+
+          <div className="field">
+            <label className="field-label">
+              Questions Array
+            </label>
+
+            <textarea
+              className="textarea bulk-array-textarea"
+              rows={18}
+              value={text}
+              onChange={(e) =>
+                setText(
+                  e.target.value
+                )
+              }
+              spellCheck={false}
+              placeholder='[{"category":"ABC123","question":"...","options":["A","B","C","D"],"answer":0,"explanation":"..."}]'
+            />
+          </div>
+
+          <div className="bulk-answer-note">
+            <span>Answer index:</span>
+            <code>0 = A</code>
+            <code>1 = B</code>
+            <code>2 = C</code>
+            <code>3 = D</code>
+          </div>
+
+          {error && (
+            <p className="error-text bulk-import-error">
+              {error}
+            </p>
+          )}
+        </div>
+
+        <div className="modal-foot">
+          <button
+            className="btn btn-ghost"
+            onClick={onCancel}
+          >
+            Cancel
+          </button>
+
+          <button
+            className="btn btn-primary"
+            onClick={handleImport}
+          >
+            <Upload size={14} />
+            Import Array
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 /* ---------------------------------- editor ---------------------------------- */
 
 function QuestionEditorModal({
@@ -890,6 +1189,11 @@ function QuestionEditorModal({
     optionSuffix,
     setOptionSuffix,
   ] = useState("");
+
+  const [
+    alphabetLength,
+    setAlphabetLength,
+  ] = useState("3");
 
   function applyOptionSuffix(
     options,
@@ -973,6 +1277,58 @@ function QuestionEditorModal({
         options,
       };
     });
+  }
+
+  function randomDayOptions() {
+    const days = [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday",
+    ];
+
+    const options = shuffleArr(days).slice(0, 4);
+
+    setDraft((d) => ({
+      ...d,
+      options,
+    }));
+
+    setError("");
+  }
+
+  function randomAlphabetOptions() {
+    const requestedLength = Number.parseInt(alphabetLength, 10);
+    const length = Number.isInteger(requestedLength)
+      ? Math.min(Math.max(requestedLength, 1), 12)
+      : 1;
+
+    const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const values = new Set();
+    let guard = 0;
+
+    while (values.size < 4 && guard < 500) {
+      let value = "";
+
+      for (let i = 0; i < length; i++) {
+        value += chars[
+          Math.floor(Math.random() * chars.length)
+        ];
+      }
+
+      values.add(value);
+      guard += 1;
+    }
+
+    setDraft((d) => ({
+      ...d,
+      options: [...values],
+    }));
+
+    setError("");
   }
 
   function generateOptions(type) {
@@ -1213,6 +1569,7 @@ function QuestionEditorModal({
                     "number"
                   )
                 }
+                title="Random numbers"
               >
                 2
               </button>
@@ -1225,6 +1582,7 @@ function QuestionEditorModal({
                     "decimal"
                   )
                 }
+                title="Random decimals"
               >
                 .
               </button>
@@ -1237,6 +1595,7 @@ function QuestionEditorModal({
                     "letter"
                   )
                 }
+                title="A, B, C, D"
               >
                 a
               </button>
@@ -1249,9 +1608,41 @@ function QuestionEditorModal({
                     "digit"
                   )
                 }
+                title="Random single digits"
               >
                 1
               </button>
+
+              <button
+                type="button"
+                className="quick-option-btn quick-option-btn-wide"
+                onClick={randomDayOptions}
+                title="Fill 4 random day names"
+              >
+                DAY
+              </button>
+
+              <button
+                type="button"
+                className="quick-option-btn quick-option-btn-wide"
+                onClick={randomAlphabetOptions}
+                title="Generate 4 random alphabet options"
+              >
+                ABC
+              </button>
+
+              <input
+                type="number"
+                className="alphabet-count-input"
+                min={1}
+                max={12}
+                value={alphabetLength}
+                onChange={(e) =>
+                  setAlphabetLength(e.target.value)
+                }
+                title="Letters per alphabet option"
+                aria-label="Letters per alphabet option"
+              />
             </div>
 
             <div className="option-suffix-row">
@@ -2353,17 +2744,32 @@ function TestRunning({
             )}
 
             <button
-              className="btn btn-xs btn-ghost"
+              className={
+                "btn btn-xs weak-action-btn" +
+                (question.attemptStatus ===
+                "correct"
+                  ? " weak-action-done"
+                  : " btn-ghost")
+              }
               onClick={() =>
                 onMark(
                   "correct"
                 )
               }
+              title={
+                question.attemptStatus ===
+                "correct"
+                  ? "Question is already in Weak. Click to remove."
+                  : "Move this question to Weak"
+              }
             >
               <CheckCircle2
                 size={13}
               />
-              Move to Weak
+              {question.attemptStatus ===
+              "correct"
+                ? "Added to Weak ✓"
+                : "Move to Weak"}
             </button>
           </div>
         )}
@@ -2484,6 +2890,11 @@ function App() {
   const [
     editorOpen,
     setEditorOpen,
+  ] = useState(false);
+
+  const [
+    bulkImportOpen,
+    setBulkImportOpen,
   ] = useState(false);
 
   const [
@@ -2653,6 +3064,52 @@ function App() {
     );
   }
 
+  function addBulkQuestions(
+    drafts
+  ) {
+    if (
+      !Array.isArray(drafts) ||
+      drafts.length === 0
+    ) {
+      return;
+    }
+
+    setQuestions((prev) => {
+      const startOrder =
+        prev.length;
+
+      const imported =
+        drafts.map(
+          (draft, index) =>
+            normalizeQuestion({
+              ...draft,
+              id: uid(),
+              order:
+                startOrder +
+                index,
+              attemptStatus:
+                "unattempted",
+              testAllowed: true,
+            })
+        );
+
+      return [
+        ...prev,
+        ...imported,
+      ];
+    });
+
+    setBulkImportOpen(false);
+
+    notify(
+      `${drafts.length} question${
+        drafts.length === 1
+          ? ""
+          : "s"
+      } imported ✓`
+    );
+  }
+
   function editQuestionSave(
     id,
     draft
@@ -2734,6 +3191,16 @@ function App() {
     id,
     status
   ) {
+    const current =
+      questions.find(
+        (q) => q.id === id
+      );
+
+    const isRemoving =
+      current &&
+      current.attemptStatus ===
+        status;
+
     setQuestions((prev) =>
       prev.map((q) => {
         if (
@@ -2770,6 +3237,16 @@ function App() {
         };
       })
     );
+
+    if (
+      status === "correct"
+    ) {
+      notify(
+        isRemoving
+          ? "Removed from Weak"
+          : "Moved to Weak ✓"
+      );
+    }
   }
 
   function toggleAllow(id) {
@@ -3178,12 +3655,29 @@ function App() {
           </span>
         </div>
 
-        <button
-          className="add-btn"
-          onClick={openNew}
-        >
-          <Plus size={16} />
-        </button>
+        <div className="header-actions">
+          <button
+            className="icon-btn bulk-import-btn"
+            onClick={() =>
+              setBulkImportOpen(
+                true
+              )
+            }
+            title="Upload multiple questions by array"
+            aria-label="Upload multiple questions by array"
+          >
+            <Upload size={16} />
+          </button>
+
+          <button
+            className="add-btn"
+            onClick={openNew}
+            title="New Question"
+            aria-label="New Question"
+          >
+            <Plus size={16} />
+          </button>
+        </div>
       </div>
 
       <div className="header-stats">
@@ -3622,6 +4116,19 @@ function App() {
         )}
       </div>
 
+      {bulkImportOpen && (
+        <BulkQuestionImportModal
+          onCancel={() =>
+            setBulkImportOpen(
+              false
+            )
+          }
+          onImport={
+            addBulkQuestions
+          }
+        />
+      )}
+
       {editorOpen && (
         <QuestionEditorModal
           initial={
@@ -3723,6 +4230,25 @@ body {
 
 .brand-accent {
   color: var(--cyan);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bulk-import-btn {
+  width: 34px;
+  height: 34px;
+  border-color: rgba(103,199,221,.45);
+  color: var(--cyan);
+  background: rgba(103,199,221,.08);
+}
+
+.bulk-import-btn:hover {
+  border-color: var(--cyan);
+  background: rgba(103,199,221,.14);
 }
 
 .add-btn {
@@ -4167,6 +4693,22 @@ body {
   border-color: var(--green) !important;
 }
 
+.weak-action-btn {
+  transition: background .18s, border-color .18s, color .18s, transform .18s;
+}
+
+.weak-action-done {
+  background: #49613c;
+  border-color: var(--green);
+  color: #dff7bb;
+  font-weight: 700;
+}
+
+.weak-action-done:hover {
+  border-color: #c8ed91;
+  transform: translateY(-1px);
+}
+
 .active-bad {
   color: var(--rose) !important;
 
@@ -4458,6 +5000,77 @@ body {
   color: var(--rose);
 }
 
+/* ---------------- BULK ARRAY IMPORT ---------------- */
+
+.bulk-import-modal {
+  max-width: 720px;
+}
+
+.bulk-import-modal .modal-head > div:first-child {
+  min-width: 0;
+}
+
+.bulk-import-subtitle {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.bulk-format-note {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(103,199,221,.25);
+  border-radius: 10px;
+  background: rgba(103,199,221,.06);
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.bulk-format-note b {
+  color: var(--cyan);
+}
+
+.bulk-array-textarea {
+  min-height: 330px;
+  resize: vertical;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  line-height: 1.55;
+  tab-size: 2;
+}
+
+.bulk-answer-note {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.bulk-answer-note code {
+  padding: 3px 6px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--panel-2);
+  color: var(--text);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+}
+
+.bulk-import-error {
+  padding: 8px 10px;
+  border: 1px solid rgba(240,138,109,.35);
+  border-radius: 8px;
+  background: rgba(240,138,109,.07);
+}
+
 /* ---------------- MODAL ---------------- */
 
 .modal-overlay {
@@ -4555,6 +5168,34 @@ body {
   color: var(--cyan);
 
   cursor: pointer;
+}
+
+.quick-option-btn-wide {
+  width: auto;
+  min-width: 42px;
+  padding: 0 8px;
+  border-radius: 999px;
+  font-size: 9px;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+}
+
+.alphabet-count-input {
+  width: 38px;
+  height: 24px;
+  padding: 0 5px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--panel-2);
+  color: var(--text);
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+}
+
+.alphabet-count-input:focus {
+  outline: none;
+  border-color: var(--cyan);
 }
 
 .option-suffix-row {
@@ -4761,6 +5402,7 @@ body {
   .nav-btn {
     font-size: 8px;
   }
+
 }
 `;
 

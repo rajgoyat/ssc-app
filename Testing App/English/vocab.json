@@ -293,14 +293,6 @@
       "ant": "Dissociate"
     },
     {
-      "en": "Astute",
-      "hi": "चतुर / सूझबूझ वाला",
-      "meaning": "Very clever and good at judging people or situations",
-      "sentence": "The astute businessman quickly understood the situation.",
-      "syn": "Shrewd",
-      "ant": "Foolish"
-    },
-    {
       "en": "Atrocious",
       "hi": "अत्यंत बुरा / भयानक",
       "meaning": "Extremely bad, unpleasant, or cruel.\nKoi cheez jo bahut hi buri, bhayanak ya cruel ho.",
@@ -393,14 +385,6 @@
       "sentence": "She sat beside her mother.",
       "syn": "Next to",
       "ant": "Away from"
-    },
-    {
-      "en": "Besides",
-      "hi": "इसके अलावा / अतिरिक्त",
-      "meaning": "In addition to; apart from",
-      "sentence": "Besides English, he can speak Hindi and French.",
-      "syn": "Moreover",
-      "ant": "Excluding"
     },
     {
       "en": "Bewildered",
@@ -1289,14 +1273,6 @@
       "ant": "Silence"
     },
     {
-      "en": "Garrulous",
-      "hi": "बातूनी",
-      "meaning": "Excessively talkative",
-      "sentence": "The garrulous taxi driver talked non-stop for the whole ride.",
-      "syn": "Talkative",
-      "ant": "Taciturn"
-    },
-    {
       "en": "graphic",
       "hi": "चित्रात्मक / स्पष्ट वर्णनात्मक",
       "meaning": "Presented in a clear, detailed, or visual manner.",
@@ -1531,7 +1507,7 @@
     {
       "en": "Implacable",
       "hi": "कठोर / जिसे शांत न किया जा सके",
-      "meaning": "Unable to be placated or appeased",
+      "meaning": "Unable to be placated or appeased_______jo bilkul na mane / na pighle / apna gussa ya dushmani na chhode.",
       "sentence": "He remained implacable, refusing to forgive even after years.",
       "syn": "Unappeasable",
       "ant": "Pacifiable"
@@ -1763,14 +1739,6 @@
       "sentence": "The heat made everyone feel lethargic by mid-afternoon.",
       "syn": "Sluggish",
       "ant": "Energetic"
-    },
-    {
-      "en": "Loquacious",
-      "hi": "बातूनी",
-      "meaning": "Tending to talk a great deal; talkative",
-      "sentence": "The loquacious guide talked non-stop throughout the tour.",
-      "syn": "Voluble",
-      "ant": "Silent"
     },
     {
       "en": "Lucid",
@@ -3013,12 +2981,44 @@
   ],
   "oldWords": [
     {
+      "en": "Astute",
+      "hi": "चतुर / सूझबूझ वाला",
+      "meaning": "Very clever and good at judging people or situations",
+      "sentence": "The astute businessman quickly understood the situation.",
+      "syn": "Shrewd",
+      "ant": "Foolish"
+    },
+    {
+      "en": "Besides",
+      "hi": "इसके अलावा / अतिरिक्त",
+      "meaning": "In addition to; apart from",
+      "sentence": "Besides English, he can speak Hindi and French.",
+      "syn": "Moreover",
+      "ant": "Excluding"
+    },
+    {
       "en": "Engaging",
       "hi": "आकर्षक / दिलचस्प",
       "meaning": "Interesting, pleasant, or attractive enough to hold someone's attention.\nKoi cheez jo itni interesting ya attractive ho ki attention banaye rakhe.",
       "sentence": "The teacher made the lesson engaging for the students.",
       "syn": "Captivating",
       "ant": "Boring"
+    },
+    {
+      "en": "Garrulous",
+      "hi": "बातूनी",
+      "meaning": "Excessively talkative",
+      "sentence": "The garrulous taxi driver talked non-stop for the whole ride.",
+      "syn": "Talkative",
+      "ant": "Taciturn"
+    },
+    {
+      "en": "Loquacious",
+      "hi": "बातूनी",
+      "meaning": "Tending to talk a great deal; talkative",
+      "sentence": "The loquacious guide talked non-stop throughout the tour.",
+      "syn": "Voluble",
+      "ant": "Silent"
     }
   ]
 }

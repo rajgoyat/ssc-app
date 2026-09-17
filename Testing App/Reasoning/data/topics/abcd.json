@@ -74,5 +74,24 @@
     "order": 60,
     "attemptStatus": "unattempted",
     "testAllowed": true
+  },
+  {
+    "category": "ABCD",
+    "questionText": "FACN is related to LFIS in a certain way based on the English alphabetical order. In the same way, DUAH is related to JZGM. To which of the following options is VJSW related, following the same logic?",
+    "questionImage": null,
+    "options": [
+      "BOBY",
+      "BYOB",
+      "BOYB",
+      "BBOY"
+    ],
+    "correctIndex": 2,
+    "solutionText": "The letters are shifted alternately by +6 and +5. FACN → F+6=L, A+5=F, C+6=I, N+5=S → LFIS. Similarly, VJSW → V+6=B, J+5=O, S+6=Y, W+5=B → BOYB.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu2hw041md11sf",
+    "order": 66,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]
