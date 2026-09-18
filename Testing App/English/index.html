@@ -4371,11 +4371,11 @@ async function loadServerData(){
       cache:"no-store"
     });
 
-    if(!response.ok){
-      throw new Error("Server returned HTTP " + response.status);
-    }
+    const result = await response.json().catch(() => ({}));
 
-    const result = await response.json();
+    if(!response.ok || result.ok === false){
+      throw new Error(result.error || ("Server returned HTTP " + response.status));
+    }
 
     if(result && result.data){
       applyLoadedData(result.data);
@@ -8041,9 +8041,6 @@ initializeEnglishApp();
 })();
 
 
-</script>
-
-<script src="/common-nav.js">
 </script>
 
 <script>

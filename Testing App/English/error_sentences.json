@@ -648,7 +648,7 @@
       ],
       "answer": 1,
       "explanation": "Error → Part (2). The coordinated verbs must be parallel. Since the construction begins with 'to both preserve', the second verb should be the base form 'promote', not 'promoting'. Correct: 'The institution aims to both preserve ancient texts and promote critical scholarship...' A more formal parallel version is 'aims both to preserve ancient texts and to promote critical scholarship.'",
-      "pool": "new",
+      "pool": "old",
       "subQuestions": [
         {
           "question": "The reforms were intended both to increase transparency in public procurement (1)/ and reducing the opportunities for officials (2)/ to manipulate the bidding process (3)/ for personal advantage. (4)",
@@ -715,6 +715,2391 @@
           "pool": "new"
         }
       ]
+    },
+    {
+      "id": "more-mu6ucy0q-zj8cn",
+      "category": "error-105",
+      "question": "Neither of the two candidates / have submitted / their application forms / before the deadline.",
+      "options": [
+        "Neither of the two candidates",
+        "have submitted",
+        "their application forms",
+        "before the deadline."
+      ],
+      "answer": 1,
+      "explanation": "'Neither of' is followed by a singular verb. Correct: Neither of the two candidates has submitted...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy0s-uuu5e",
+      "category": "error-105",
+      "question": "Each of the students / were given / a copy of / the new syllabus.",
+      "options": [
+        "Each of the students",
+        "were given",
+        "a copy of",
+        "the new syllabus."
+      ],
+      "answer": 1,
+      "explanation": "'Each of' takes a singular verb. Correct: Each of the students was given...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy0s-t8pk8",
+      "category": "error-105",
+      "question": "The quality of the products / manufactured by this company / have declined / over the past year.",
+      "options": [
+        "The quality of the products",
+        "manufactured by this company",
+        "have declined",
+        "over the past year."
+      ],
+      "answer": 2,
+      "explanation": "The subject is 'quality' (singular), not 'products'. Correct: ...has declined over the past year.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy0s-gtqbb",
+      "category": "error-105",
+      "question": "A large number of people / was present / at the public meeting / held yesterday.",
+      "options": [
+        "A large number of people",
+        "was present",
+        "at the public meeting",
+        "held yesterday."
+      ],
+      "answer": 1,
+      "explanation": "'A number of' + plural noun takes a plural verb. Correct: ...were present at the public meeting...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy0s-deofk",
+      "category": "error-105",
+      "question": "Either Ramesh or his brothers / is responsible / for the damage / caused to the property.",
+      "options": [
+        "Either Ramesh or his brothers",
+        "is responsible",
+        "for the damage",
+        "caused to the property."
+      ],
+      "answer": 1,
+      "explanation": "With 'either...or', the verb agrees with the nearer subject 'brothers' (plural). Correct: ...are responsible...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy0s-eetho",
+      "category": "error-105",
+      "question": "I have completed / my homework / before my mother / came back home.",
+      "options": [
+        "I have completed",
+        "my homework",
+        "before my mother",
+        "came back home."
+      ],
+      "answer": 0,
+      "explanation": "An action completed before another past action needs past perfect. Correct: I had completed my homework...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy0s-ygt28",
+      "category": "error-105",
+      "question": "She is living / in this city / since she was born / twenty years ago.",
+      "options": [
+        "She is living",
+        "in this city",
+        "since she was born",
+        "twenty years ago."
+      ],
+      "answer": 0,
+      "explanation": "'Since' with a duration from the past requires present perfect continuous. Correct: She has been living...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy0s-412z3",
+      "category": "error-105",
+      "question": "By the time the police arrived, / the thief / has already escaped / from the spot.",
+      "options": [
+        "By the time the police arrived,",
+        "the thief",
+        "has already escaped",
+        "from the spot."
+      ],
+      "answer": 2,
+      "explanation": "An action completed before another past action needs past perfect. Correct: ...the thief had already escaped...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy0s-kefnc",
+      "category": "error-105",
+      "question": "He will call you / as soon as / he will reach / the airport.",
+      "options": [
+        "He will call you",
+        "as soon as",
+        "he will reach",
+        "the airport."
+      ],
+      "answer": 2,
+      "explanation": "'Will' is not used in a time clause introduced by 'as soon as'. Correct: ...as soon as he reaches the airport.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy0s-lvucg",
+      "category": "error-105",
+      "question": "I am knowing / him / for the last / ten years.",
+      "options": [
+        "I am knowing",
+        "him",
+        "for the last",
+        "ten years."
+      ],
+      "answer": 0,
+      "explanation": "'Know' is a stative verb and is not used in the continuous form. Correct: I have known him for the last ten years.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy0t-84lbp",
+      "category": "error-105",
+      "question": "He is / an European / and speaks / three languages.",
+      "options": [
+        "He is",
+        "an European",
+        "and speaks",
+        "three languages."
+      ],
+      "answer": 1,
+      "explanation": "'European' begins with a consonant sound (/j/), so 'a' is used. Correct: He is a European...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy0t-qt3lm",
+      "category": "error-105",
+      "question": "She bought / an new laptop / for her / online classes.",
+      "options": [
+        "She bought",
+        "an new laptop",
+        "for her",
+        "online classes."
+      ],
+      "answer": 1,
+      "explanation": "'New' begins with a consonant sound, so 'a' is used. Correct: She bought a new laptop...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy0t-fdr9a",
+      "category": "error-105",
+      "question": "The Ganga is / the longest river / in the India / among all rivers.",
+      "options": [
+        "The Ganga is",
+        "the longest river",
+        "in the India",
+        "among all rivers."
+      ],
+      "answer": 2,
+      "explanation": "No article is used before the name of a country. Correct: ...in India among all rivers.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy0t-76urj",
+      "category": "error-105",
+      "question": "He is / the honest man / I have / ever met.",
+      "options": [
+        "He is",
+        "the honest man",
+        "I have",
+        "ever met."
+      ],
+      "answer": 1,
+      "explanation": "'Honest' begins with a silent 'h', so 'an' is used. Correct: He is an honest man...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy0t-wfbxy",
+      "category": "error-105",
+      "question": "This is / an unique opportunity / to work / abroad.",
+      "options": [
+        "This is",
+        "an unique opportunity",
+        "to work",
+        "abroad."
+      ],
+      "answer": 1,
+      "explanation": "'Unique' begins with a consonant sound (/j/), so 'a' is used. Correct: This is a unique opportunity...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy0t-tgb5j",
+      "category": "error-105",
+      "question": "He is good / in mathematics / and enjoys / solving puzzles.",
+      "options": [
+        "He is good",
+        "in mathematics",
+        "and enjoys",
+        "solving puzzles."
+      ],
+      "answer": 1,
+      "explanation": "The correct preposition is 'at'. Correct: He is good at mathematics...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy0u-z4xt2",
+      "category": "error-105",
+      "question": "She is married / with a doctor / who works / in the city hospital.",
+      "options": [
+        "She is married",
+        "with a doctor",
+        "who works",
+        "in the city hospital."
+      ],
+      "answer": 1,
+      "explanation": "The correct preposition is 'to'. Correct: She is married to a doctor...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy0u-v4lz1",
+      "category": "error-105",
+      "question": "I am / angry on him / for breaking / my phone.",
+      "options": [
+        "I am",
+        "angry on him",
+        "for breaking",
+        "my phone."
+      ],
+      "answer": 1,
+      "explanation": "The correct preposition is 'with' for a person. Correct: I am angry with him...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy0u-7qhqp",
+      "category": "error-105",
+      "question": "He was / accused for theft / and produced / before the court.",
+      "options": [
+        "He was",
+        "accused for theft",
+        "and produced",
+        "before the court."
+      ],
+      "answer": 1,
+      "explanation": "The correct preposition is 'of'. Correct: He was accused of theft...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy0u-an0b1",
+      "category": "error-105",
+      "question": "The train arrived / to the station / ten minutes / before schedule.",
+      "options": [
+        "The train arrived",
+        "to the station",
+        "ten minutes",
+        "before schedule."
+      ],
+      "answer": 1,
+      "explanation": "The correct preposition is 'at'. Correct: The train arrived at the station...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy0u-7gxph",
+      "category": "error-105",
+      "question": "Ravi told to his friend / that he / would help him / with the project.",
+      "options": [
+        "Ravi told to his friend",
+        "that he",
+        "would help him",
+        "with the project."
+      ],
+      "answer": 0,
+      "explanation": "'Tell' does not take 'to' before the object. Correct: Ravi told his friend...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy0v-vbt9k",
+      "category": "error-105",
+      "question": "This is the book / whom I / bought / yesterday.",
+      "options": [
+        "This is the book",
+        "whom I",
+        "bought",
+        "yesterday."
+      ],
+      "answer": 1,
+      "explanation": "'Whom' refers to persons; a thing needs 'which/that'. Correct: This is the book which I bought...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy0v-bvqip",
+      "category": "error-105",
+      "question": "Between you and I, / this plan / will not / succeed.",
+      "options": [
+        "Between you and I,",
+        "this plan",
+        "will not",
+        "succeed."
+      ],
+      "answer": 0,
+      "explanation": "A preposition ('between') takes the objective case. Correct: Between you and me...",
+      "pool": "old",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy0v-i7qof",
+      "category": "error-105",
+      "question": "Everyone of the players / gave their best / in the / final match.",
+      "options": [
+        "Everyone of the players",
+        "gave their best",
+        "in the",
+        "final match."
+      ],
+      "answer": 0,
+      "explanation": "'Everyone' (one word) means people in general; here it should be 'Every one'. Correct: Every one of the players...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy0w-u5cis",
+      "category": "error-105",
+      "question": "He is more intelligent / than me / in / our class.",
+      "options": [
+        "He is more intelligent",
+        "than me",
+        "in",
+        "our class."
+      ],
+      "answer": 1,
+      "explanation": "In formal usage, the subjective case is used after 'than'. Correct: ...than I (am)...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy0w-3wmrt",
+      "category": "error-105",
+      "question": "This is / the most best solution / to / the problem.",
+      "options": [
+        "This is",
+        "the most best solution",
+        "to",
+        "the problem."
+      ],
+      "answer": 1,
+      "explanation": "'Best' is already superlative; 'most' cannot be added. Correct: This is the best solution...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy0w-t81rs",
+      "category": "error-105",
+      "question": "Delhi is / more hotter / than / Shimla in summer.",
+      "options": [
+        "Delhi is",
+        "more hotter",
+        "than",
+        "Shimla in summer."
+      ],
+      "answer": 1,
+      "explanation": "Double comparatives are incorrect. Correct: Delhi is hotter than Shimla...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy0x-xmxsv",
+      "category": "error-105",
+      "question": "He is / the most unique / person / I have ever met.",
+      "options": [
+        "He is",
+        "the most unique",
+        "person",
+        "I have ever met."
+      ],
+      "answer": 1,
+      "explanation": "'Unique' is an absolute adjective and cannot be compared. Correct: He is a unique person...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy0x-9ll18",
+      "category": "error-105",
+      "question": "Of the two brothers, / Rahul is / the most intelligent / and hardworking.",
+      "options": [
+        "Of the two brothers,",
+        "Rahul is",
+        "the most intelligent",
+        "and hardworking."
+      ],
+      "answer": 2,
+      "explanation": "When comparing two things, the comparative (not superlative) form is used. Correct: ...the more intelligent...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy0x-qerb4",
+      "category": "error-105",
+      "question": "She sings / more better / than / her sister.",
+      "options": [
+        "She sings",
+        "more better",
+        "than",
+        "her sister."
+      ],
+      "answer": 1,
+      "explanation": "'Better' is already comparative; 'more' cannot be added. Correct: She sings better than her sister.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy0x-zczu2",
+      "category": "error-105",
+      "question": "He is not only / intelligent but also / very / hardworking too.",
+      "options": [
+        "He is not only",
+        "intelligent but also",
+        "very",
+        "hardworking too."
+      ],
+      "answer": 3,
+      "explanation": "'Too' is redundant with 'not only...but also'. Correct: ...very hardworking.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy0y-3tfql",
+      "category": "error-105",
+      "question": "Neither Rita nor Sita / were present / at the / meeting yesterday.",
+      "options": [
+        "Neither Rita nor Sita",
+        "were present",
+        "at the",
+        "meeting yesterday."
+      ],
+      "answer": 1,
+      "explanation": "With 'neither...nor', the verb agrees with the nearer subject (singular here). Correct: ...was present...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy0y-uq8pr",
+      "category": "error-105",
+      "question": "Although he was tired, / but he / continued / working.",
+      "options": [
+        "Although he was tired,",
+        "but he",
+        "continued",
+        "working."
+      ],
+      "answer": 1,
+      "explanation": "'Although' and 'but' cannot be used together in the same sentence. Correct: Although he was tired, he continued working.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy0y-h4zmj",
+      "category": "error-105",
+      "question": "Scarcely had he reached home / than / the phone / rang.",
+      "options": [
+        "Scarcely had he reached home",
+        "than",
+        "the phone",
+        "rang."
+      ],
+      "answer": 1,
+      "explanation": "'Scarcely' is paired with 'when', not 'than'. Correct: Scarcely had he reached home when the phone rang.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy0z-blmn7",
+      "category": "error-105",
+      "question": "He is so weak / that / he cannot / to walk.",
+      "options": [
+        "He is so weak",
+        "that",
+        "he cannot",
+        "to walk."
+      ],
+      "answer": 3,
+      "explanation": "No 'to' is used after the modal 'cannot'. Correct: ...he cannot walk.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy0z-ifzza",
+      "category": "error-105",
+      "question": "She likes / reading books, / to write poems / and painting pictures.",
+      "options": [
+        "She likes",
+        "reading books,",
+        "to write poems",
+        "and painting pictures."
+      ],
+      "answer": 2,
+      "explanation": "All items in a list must have the same grammatical form. Correct: ...writing poems...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy10-elvlm",
+      "category": "error-105",
+      "question": "The manager asked us / to complete the report, / submitting it on time / and to present it clearly.",
+      "options": [
+        "The manager asked us",
+        "to complete the report,",
+        "submitting it on time",
+        "and to present it clearly."
+      ],
+      "answer": 2,
+      "explanation": "Parallel infinitives are required throughout. Correct: ...to submit it on time...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy11-hldpb",
+      "category": "error-105",
+      "question": "He is known / for his honesty, / diligence and / being punctual.",
+      "options": [
+        "He is known",
+        "for his honesty,",
+        "diligence and",
+        "being punctual."
+      ],
+      "answer": 3,
+      "explanation": "The list should use parallel nouns. Correct: ...honesty, diligence and punctuality.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy11-d4obz",
+      "category": "error-105",
+      "question": "The plan involves / cutting costs, / increasing revenue / and to hire fewer staff.",
+      "options": [
+        "The plan involves",
+        "cutting costs,",
+        "increasing revenue",
+        "and to hire fewer staff."
+      ],
+      "answer": 3,
+      "explanation": "Parallel gerunds are required. Correct: ...and hiring fewer staff.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy11-gpcqp",
+      "category": "error-105",
+      "question": "Good leaders listen carefully, / communicate clearly / and takes / responsibility.",
+      "options": [
+        "Good leaders listen carefully,",
+        "communicate clearly",
+        "and takes",
+        "responsibility."
+      ],
+      "answer": 2,
+      "explanation": "The plural subject 'leaders' requires 'take', keeping parallel verb forms. Correct: ...and take responsibility.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy12-e70ik",
+      "category": "error-105",
+      "question": "Walking through the forest, / the birds / were seen / by us clearly.",
+      "options": [
+        "Walking through the forest,",
+        "the birds",
+        "were seen",
+        "by us clearly."
+      ],
+      "answer": 1,
+      "explanation": "The dangling modifier must refer to the doer of the action, 'us', not 'the birds'. Correct: Walking through the forest, we clearly saw the birds.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy12-hp6m6",
+      "category": "error-105",
+      "question": "Having finished the assignment, / the television / was turned on / by the boy.",
+      "options": [
+        "Having finished the assignment,",
+        "the television",
+        "was turned on",
+        "by the boy."
+      ],
+      "answer": 1,
+      "explanation": "The modifier should refer to 'the boy', not 'the television'. Correct: Having finished the assignment, the boy turned on the television.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy12-44wqx",
+      "category": "error-105",
+      "question": "Reading the newspaper, / a loud noise / disturbed / him suddenly.",
+      "options": [
+        "Reading the newspaper,",
+        "a loud noise",
+        "disturbed",
+        "him suddenly."
+      ],
+      "answer": 1,
+      "explanation": "A noise cannot read a newspaper; the modifier must refer to 'him'. Correct: Reading the newspaper, he was suddenly disturbed by a loud noise.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy13-ly92g",
+      "category": "error-105",
+      "question": "Excited about the trip, / the bags / were packed / by the children quickly.",
+      "options": [
+        "Excited about the trip,",
+        "the bags",
+        "were packed",
+        "by the children quickly."
+      ],
+      "answer": 1,
+      "explanation": "The modifier should refer to 'the children', not 'the bags'. Correct: Excited about the trip, the children quickly packed the bags.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy13-ckxfg",
+      "category": "error-105",
+      "question": "After finishing dinner, / the dishes / were washed / by Priya.",
+      "options": [
+        "After finishing dinner,",
+        "the dishes",
+        "were washed",
+        "by Priya."
+      ],
+      "answer": 1,
+      "explanation": "The modifier should refer to 'Priya', not 'the dishes'. Correct: After finishing dinner, Priya washed the dishes.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy13-6doyj",
+      "category": "error-105",
+      "question": "She gave me / many advices / on how / to succeed.",
+      "options": [
+        "She gave me",
+        "many advices",
+        "on how",
+        "to succeed."
+      ],
+      "answer": 1,
+      "explanation": "'Advice' is uncountable and has no plural form. Correct: ...a lot of advice...",
+      "pool": "old",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy14-tlbez",
+      "category": "error-105",
+      "question": "He has / very little / furnitures / in his new house.",
+      "options": [
+        "He has",
+        "very little",
+        "furnitures",
+        "in his new house."
+      ],
+      "answer": 2,
+      "explanation": "'Furniture' is uncountable and has no plural form. Correct: ...very little furniture...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy14-ldp6w",
+      "category": "error-105",
+      "question": "I need / some informations / about / the new policy.",
+      "options": [
+        "I need",
+        "some informations",
+        "about",
+        "the new policy."
+      ],
+      "answer": 1,
+      "explanation": "'Information' is uncountable and has no plural form. Correct: I need some information...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy14-pyg8r",
+      "category": "error-105",
+      "question": "There are / less students / in the class / this year than last year.",
+      "options": [
+        "There are",
+        "less students",
+        "in the class",
+        "this year than last year."
+      ],
+      "answer": 1,
+      "explanation": "'Students' is countable, so 'fewer' is used, not 'less'. Correct: There are fewer students...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy15-y8v2f",
+      "category": "error-105",
+      "question": "She bought / a jewelry / for her / sister's wedding.",
+      "options": [
+        "She bought",
+        "a jewelry",
+        "for her",
+        "sister's wedding."
+      ],
+      "answer": 1,
+      "explanation": "'Jewelry' is uncountable and does not take the article 'a'. Correct: She bought jewelry / a piece of jewelry...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy15-zlxju",
+      "category": "error-105",
+      "question": "Please return back / the book / to the library / by tomorrow.",
+      "options": [
+        "Please return back",
+        "the book",
+        "to the library",
+        "by tomorrow."
+      ],
+      "answer": 0,
+      "explanation": "'Return' already means 'go/give back'; 'back' is redundant. Correct: Please return the book...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy15-ikth5",
+      "category": "error-105",
+      "question": "He entered into the room / and / sat down / quietly.",
+      "options": [
+        "He entered into the room",
+        "and",
+        "sat down",
+        "quietly."
+      ],
+      "answer": 0,
+      "explanation": "'Enter' already means 'go into'; 'into' is redundant. Correct: He entered the room...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy16-fgyod",
+      "category": "error-105",
+      "question": "The two twins / look exactly / alike / in every way.",
+      "options": [
+        "The two twins",
+        "look exactly",
+        "alike",
+        "in every way."
+      ],
+      "answer": 0,
+      "explanation": "'Twins' already implies two; 'two' is redundant. Correct: The twins look exactly alike...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy16-b4rbr",
+      "category": "error-105",
+      "question": "She repeated again / the same point / during / the discussion.",
+      "options": [
+        "She repeated again",
+        "the same point",
+        "during",
+        "the discussion."
+      ],
+      "answer": 0,
+      "explanation": "'Repeated' already implies doing it again; 'again' is redundant. Correct: She repeated the same point...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy17-5gbuj",
+      "category": "error-105",
+      "question": "The final outcome / of the match / surprised / everyone present.",
+      "options": [
+        "The final outcome",
+        "of the match",
+        "surprised",
+        "everyone present."
+      ],
+      "answer": 0,
+      "explanation": "'Outcome' already implies a final result; 'final' is redundant. Correct: The outcome of the match surprised...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy17-7rd9t",
+      "category": "error-105",
+      "question": "He called off / the meeting / due to / bad whether.",
+      "options": [
+        "He called off",
+        "the meeting",
+        "due to",
+        "bad whether."
+      ],
+      "answer": 3,
+      "explanation": "The correct spelling is 'weather', not 'whether'. Correct: ...due to bad weather.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy17-e7vib",
+      "category": "error-105",
+      "question": "She look after / her ailing mother / with great / care and patience.",
+      "options": [
+        "She look after",
+        "her ailing mother",
+        "with great",
+        "care and patience."
+      ],
+      "answer": 0,
+      "explanation": "The singular subject 'She' requires 'looks'. Correct: She looks after her ailing mother...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy18-j1rip",
+      "category": "error-105",
+      "question": "He is used to / get up early / since / his college days.",
+      "options": [
+        "He is used to",
+        "get up early",
+        "since",
+        "his college days."
+      ],
+      "answer": 1,
+      "explanation": "'Used to' (habitual) is followed by a gerund. Correct: ...used to getting up early...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy18-40snn",
+      "category": "error-105",
+      "question": "I look forward to / hear from you / at the / earliest.",
+      "options": [
+        "I look forward to",
+        "hear from you",
+        "at the",
+        "earliest."
+      ],
+      "answer": 1,
+      "explanation": "'Look forward to' is followed by a gerund. Correct: ...look forward to hearing from you...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy19-1cvng",
+      "category": "error-105",
+      "question": "He gave up / to smoke / after / his heart attack.",
+      "options": [
+        "He gave up",
+        "to smoke",
+        "after",
+        "his heart attack."
+      ],
+      "answer": 1,
+      "explanation": "'Give up' is followed by a gerund. Correct: He gave up smoking...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy19-z0eg5",
+      "category": "error-105",
+      "question": "She enjoys / to sing / in front of / a large audience.",
+      "options": [
+        "She enjoys",
+        "to sing",
+        "in front of",
+        "a large audience."
+      ],
+      "answer": 1,
+      "explanation": "'Enjoy' is followed by a gerund, not an infinitive. Correct: She enjoys singing...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy1a-0oszk",
+      "category": "error-105",
+      "question": "He suggested me / to take / a break / from work.",
+      "options": [
+        "He suggested me",
+        "to take",
+        "a break",
+        "from work."
+      ],
+      "answer": 0,
+      "explanation": "'Suggest' does not take object + infinitive. Correct: He suggested that I take a break / He suggested taking a break.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy1b-4eyzu",
+      "category": "error-105",
+      "question": "They decided / postponing / the trip / due to rain.",
+      "options": [
+        "They decided",
+        "postponing",
+        "the trip",
+        "due to rain."
+      ],
+      "answer": 1,
+      "explanation": "'Decide' is followed by an infinitive. Correct: They decided to postpone the trip...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy1b-rgnop",
+      "category": "error-105",
+      "question": "I am planning / going / to Goa / next month.",
+      "options": [
+        "I am planning",
+        "going",
+        "to Goa",
+        "next month."
+      ],
+      "answer": 1,
+      "explanation": "'Plan' is followed by an infinitive. Correct: I am planning to go to Goa...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy1c-tsw1h",
+      "category": "error-105",
+      "question": "She avoided / to answer / the / tricky question.",
+      "options": [
+        "She avoided",
+        "to answer",
+        "the",
+        "tricky question."
+      ],
+      "answer": 1,
+      "explanation": "'Avoid' is followed by a gerund, not an infinitive. Correct: She avoided answering the tricky question.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy1c-to446",
+      "category": "error-105",
+      "question": "My brother who lives in Mumbai, / is / a software engineer / by profession.",
+      "options": [
+        "My brother who lives in Mumbai,",
+        "is",
+        "a software engineer",
+        "by profession."
+      ],
+      "answer": 0,
+      "explanation": "A defining (restrictive) clause should not be set off by a comma. Correct: My brother who lives in Mumbai is a software engineer...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy1d-2m0g8",
+      "category": "error-105",
+      "question": "Its a beautiful / day / to go / for a picnic.",
+      "options": [
+        "Its a beautiful",
+        "day",
+        "to go",
+        "for a picnic."
+      ],
+      "answer": 0,
+      "explanation": "The contraction of 'it is' requires an apostrophe. Correct: It's a beautiful day...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy1e-vzvfy",
+      "category": "error-105",
+      "question": "The company's / annual report, / was released / yesterday.",
+      "options": [
+        "The company's",
+        "annual report,",
+        "was released",
+        "yesterday."
+      ],
+      "answer": 1,
+      "explanation": "No comma should separate the subject from the verb. Correct: The company's annual report was released yesterday.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy1e-0k4o2",
+      "category": "error-105",
+      "question": "He asked me, / where / I was going / yesterday.",
+      "options": [
+        "He asked me,",
+        "where",
+        "I was going",
+        "yesterday."
+      ],
+      "answer": 0,
+      "explanation": "No comma is required before an indirect/reported question. Correct: He asked me where I was going yesterday.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy1f-y9jq0",
+      "category": "error-105",
+      "question": "Although it was raining, / however / we decided / to go out.",
+      "options": [
+        "Although it was raining,",
+        "however",
+        "we decided",
+        "to go out."
+      ],
+      "answer": 1,
+      "explanation": "'Although' and 'however' should not be used together. Correct: Although it was raining, we decided to go out.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy1f-5f0w7",
+      "category": "error-105",
+      "question": "The committee have / decided / to postpone / the elections.",
+      "options": [
+        "The committee have",
+        "decided",
+        "to postpone",
+        "the elections."
+      ],
+      "answer": 0,
+      "explanation": "'Committee' acting as one unit takes a singular verb. Correct: The committee has decided...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy1g-om0hs",
+      "category": "error-105",
+      "question": "Mathematics are / my favorite / subject / in school.",
+      "options": [
+        "Mathematics are",
+        "my favorite",
+        "subject",
+        "in school."
+      ],
+      "answer": 0,
+      "explanation": "Names of subjects ending in 's' take a singular verb. Correct: Mathematics is my favorite subject...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy1g-h4o2j",
+      "category": "error-105",
+      "question": "The news about the floods / were / very / disturbing.",
+      "options": [
+        "The news about the floods",
+        "were",
+        "very",
+        "disturbing."
+      ],
+      "answer": 1,
+      "explanation": "'News' is uncountable and always singular. Correct: The news about the floods was very disturbing.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy1i-dhn3y",
+      "category": "error-105",
+      "question": "Ten kilometers / are / a long distance / to walk daily.",
+      "options": [
+        "Ten kilometers",
+        "are",
+        "a long distance",
+        "to walk daily."
+      ],
+      "answer": 1,
+      "explanation": "A measurement treated as a single unit takes a singular verb. Correct: Ten kilometers is a long distance...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy1j-msi78",
+      "category": "error-105",
+      "question": "Physics / deal with / matter / and energy.",
+      "options": [
+        "Physics",
+        "deal with",
+        "matter",
+        "and energy."
+      ],
+      "answer": 1,
+      "explanation": "Names of subjects ending in 's' take a singular verb. Correct: Physics deals with matter and energy.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy1j-4eivc",
+      "category": "error-105",
+      "question": "There are / much people / at the / concert tonight.",
+      "options": [
+        "There are",
+        "much people",
+        "at the",
+        "concert tonight."
+      ],
+      "answer": 1,
+      "explanation": "'People' is countable, so 'many' is used, not 'much'. Correct: There are many people...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy1k-ad1a2",
+      "category": "error-105",
+      "question": "He has / fewer knowledge / than / his colleagues.",
+      "options": [
+        "He has",
+        "fewer knowledge",
+        "than",
+        "his colleagues."
+      ],
+      "answer": 1,
+      "explanation": "'Knowledge' is uncountable, so 'less' is used, not 'fewer'. Correct: He has less knowledge...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy1k-92zdl",
+      "category": "error-105",
+      "question": "I have / much less / friends / than my brother.",
+      "options": [
+        "I have",
+        "much less",
+        "friends",
+        "than my brother."
+      ],
+      "answer": 1,
+      "explanation": "'Friends' is countable, so 'far fewer' is used, not 'much less'. Correct: I have far fewer friends...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy1l-v9sbd",
+      "category": "error-105",
+      "question": "She is / the elder / of the three sisters / in the family.",
+      "options": [
+        "She is",
+        "the elder",
+        "of the three sisters",
+        "in the family."
+      ],
+      "answer": 1,
+      "explanation": "For more than two, the superlative form is required. Correct: She is the eldest of the three sisters...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy1l-pkn0y",
+      "category": "error-105",
+      "question": "He is / the eldest / between / the two boys.",
+      "options": [
+        "He is",
+        "the eldest",
+        "between",
+        "the two boys."
+      ],
+      "answer": 1,
+      "explanation": "When comparing only two, the comparative form is used. Correct: He is the elder of the two boys.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy1m-qrmfy",
+      "category": "error-105",
+      "question": "The letter / was wrote / by / him yesterday.",
+      "options": [
+        "The letter",
+        "was wrote",
+        "by",
+        "him yesterday."
+      ],
+      "answer": 1,
+      "explanation": "The passive voice needs the past participle, not the past tense. Correct: The letter was written by him...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy1p-ec0kf",
+      "category": "error-105",
+      "question": "The window / was broke / by / the naughty boy.",
+      "options": [
+        "The window",
+        "was broke",
+        "by",
+        "the naughty boy."
+      ],
+      "answer": 1,
+      "explanation": "The passive voice needs the past participle 'broken'. Correct: The window was broken by the naughty boy.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy1q-n9gks",
+      "category": "error-105",
+      "question": "English is speaking / by / most people / around the world.",
+      "options": [
+        "English is speaking",
+        "by",
+        "most people",
+        "around the world."
+      ],
+      "answer": 0,
+      "explanation": "Passive voice requires 'is spoken', not the active continuous form. Correct: English is spoken by most people...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy1r-05ew7",
+      "category": "error-105",
+      "question": "The project will be / completing / by / next month.",
+      "options": [
+        "The project will be",
+        "completing",
+        "by",
+        "next month."
+      ],
+      "answer": 1,
+      "explanation": "The passive future needs the past participle. Correct: The project will be completed by next month.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy1s-1t4tq",
+      "category": "error-105",
+      "question": "A new policy / has been / making / by the government.",
+      "options": [
+        "A new policy",
+        "has been",
+        "making",
+        "by the government."
+      ],
+      "answer": 2,
+      "explanation": "The passive perfect needs the past participle 'made'. Correct: A new policy has been made by the government.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy1t-i2acg",
+      "category": "error-105",
+      "question": "She said that / she is coming / to the party / tomorrow.",
+      "options": [
+        "She said that",
+        "she is coming",
+        "to the party",
+        "tomorrow."
+      ],
+      "answer": 1,
+      "explanation": "Reported speech requires tense backshift. Correct: She said that she was coming to the party...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy1t-s92vc",
+      "category": "error-105",
+      "question": "He told me that / he will help me / with the / project.",
+      "options": [
+        "He told me that",
+        "he will help me",
+        "with the",
+        "project."
+      ],
+      "answer": 1,
+      "explanation": "'Will' changes to 'would' in reported speech. Correct: He told me that he would help me...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy1u-m1eof",
+      "category": "error-105",
+      "question": "The teacher said / that the earth revolve / around / the sun.",
+      "options": [
+        "The teacher said",
+        "that the earth revolve",
+        "around",
+        "the sun."
+      ],
+      "answer": 1,
+      "explanation": "The singular subject 'earth' requires 'revolves'. Correct: ...that the earth revolves around the sun.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy1u-1pqvs",
+      "category": "error-105",
+      "question": "She asked me / that where / I was / going.",
+      "options": [
+        "She asked me",
+        "that where",
+        "I was",
+        "going."
+      ],
+      "answer": 1,
+      "explanation": "'That' is not used before a reported question word. Correct: She asked me where I was going.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy1v-v4b8p",
+      "category": "error-105",
+      "question": "He said to me / that he is / feeling / unwell.",
+      "options": [
+        "He said to me",
+        "that he is",
+        "feeling",
+        "unwell."
+      ],
+      "answer": 1,
+      "explanation": "Reported speech requires tense backshift. Correct: He told me that he was feeling unwell.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy1w-xrk6o",
+      "category": "error-105",
+      "question": "If I was you, / I would / accept / the offer.",
+      "options": [
+        "If I was you,",
+        "I would",
+        "accept",
+        "the offer."
+      ],
+      "answer": 0,
+      "explanation": "The subjunctive mood requires 'were' in hypothetical conditionals. Correct: If I were you, I would accept the offer.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy1w-7z9t6",
+      "category": "error-105",
+      "question": "If it will rain / tomorrow, / we will / cancel the picnic.",
+      "options": [
+        "If it will rain",
+        "tomorrow,",
+        "we will",
+        "cancel the picnic."
+      ],
+      "answer": 0,
+      "explanation": "'Will' is not used in the if-clause of a first conditional. Correct: If it rains tomorrow...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy1x-mbl3b",
+      "category": "error-105",
+      "question": "Had I known about / the meeting, / I would have / attend it.",
+      "options": [
+        "Had I known about",
+        "the meeting,",
+        "I would have",
+        "attend it."
+      ],
+      "answer": 3,
+      "explanation": "'Would have' must be followed by a past participle. Correct: ...I would have attended it.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy1y-rrpdx",
+      "category": "error-105",
+      "question": "If she studies hard, / she will passed / the exam / easily.",
+      "options": [
+        "If she studies hard,",
+        "she will passed",
+        "the exam",
+        "easily."
+      ],
+      "answer": 1,
+      "explanation": "'Will' is followed by the base form of the verb. Correct: ...she will pass the exam easily.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy1z-ojsvz",
+      "category": "error-105",
+      "question": "Unless you will not / hurry up, / you will / miss the train.",
+      "options": [
+        "Unless you will not",
+        "hurry up,",
+        "you will",
+        "miss the train."
+      ],
+      "answer": 0,
+      "explanation": "'Unless' already means 'if not'; a double negative and 'will' are incorrect here. Correct: Unless you hurry up, you will miss the train.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy20-qx6pp",
+      "category": "error-105",
+      "question": "She bought / a black beautiful / leather bag / from the market.",
+      "options": [
+        "She bought",
+        "a black beautiful",
+        "leather bag",
+        "from the market."
+      ],
+      "answer": 1,
+      "explanation": "Opinion adjectives come before color adjectives. Correct: ...a beautiful black leather bag...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy20-jngmm",
+      "category": "error-105",
+      "question": "He has / a old wooden / small box / in his room.",
+      "options": [
+        "He has",
+        "a old wooden",
+        "small box",
+        "in his room."
+      ],
+      "answer": 1,
+      "explanation": "'Old' begins with a vowel sound, so 'an' is needed, and size should precede age. Correct: ...a small old wooden box...",
+      "pool": "old",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy21-or1qc",
+      "category": "error-105",
+      "question": "I saw / a red big / balloon / in the sky.",
+      "options": [
+        "I saw",
+        "a red big",
+        "balloon",
+        "in the sky."
+      ],
+      "answer": 1,
+      "explanation": "Size adjectives come before color adjectives. Correct: ...a big red balloon...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy22-mbo6c",
+      "category": "error-105",
+      "question": "She wore / a leather red / jacket / to the party.",
+      "options": [
+        "She wore",
+        "a leather red",
+        "jacket",
+        "to the party."
+      ],
+      "answer": 1,
+      "explanation": "Color adjectives come before material adjectives. Correct: ...a red leather jacket...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy22-smxcl",
+      "category": "error-105",
+      "question": "They live in / a modern beautiful / house / near the lake.",
+      "options": [
+        "They live in",
+        "a modern beautiful",
+        "house",
+        "near the lake."
+      ],
+      "answer": 1,
+      "explanation": "Opinion adjectives come before age/style adjectives. Correct: ...a beautiful modern house...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy23-6h6vp",
+      "category": "error-105",
+      "question": "This is the house / where / I was born / in it.",
+      "options": [
+        "This is the house",
+        "where",
+        "I was born",
+        "in it."
+      ],
+      "answer": 3,
+      "explanation": "'In it' is redundant since 'where' already indicates location. Correct: This is the house where I was born.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy24-wsv2e",
+      "category": "error-105",
+      "question": "The man which / is standing there / is / my uncle.",
+      "options": [
+        "The man which",
+        "is standing there",
+        "is",
+        "my uncle."
+      ],
+      "answer": 0,
+      "explanation": "'Which' refers to things, not persons; 'who' is needed. Correct: The man who is standing there...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy24-l9adx",
+      "category": "error-105",
+      "question": "This is the reason / why / he resigned / for it.",
+      "options": [
+        "This is the reason",
+        "why",
+        "he resigned",
+        "for it."
+      ],
+      "answer": 3,
+      "explanation": "'For it' is redundant since 'why' already indicates reason. Correct: This is the reason why he resigned.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy25-zq2eu",
+      "category": "error-105",
+      "question": "The book who / I borrowed / from you / was excellent.",
+      "options": [
+        "The book who",
+        "I borrowed",
+        "from you",
+        "was excellent."
+      ],
+      "answer": 0,
+      "explanation": "'Who' refers to persons; a thing needs 'which/that'. Correct: The book that I borrowed...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy26-v5bou",
+      "category": "error-105",
+      "question": "That is the girl / who's bag / was stolen / yesterday.",
+      "options": [
+        "That is the girl",
+        "who's bag",
+        "was stolen",
+        "yesterday."
+      ],
+      "answer": 1,
+      "explanation": "The possessive form 'whose' is needed, not the contraction 'who's' (who is). Correct: ...whose bag was stolen...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy26-bivot",
+      "category": "error-105",
+      "question": "The principle / of the school / addressed / the students.",
+      "options": [
+        "The principle",
+        "of the school",
+        "addressed",
+        "the students."
+      ],
+      "answer": 0,
+      "explanation": "The head of a school is the 'principal', not 'principle' (a rule). Correct: The principal of the school addressed...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy27-326po",
+      "category": "error-105",
+      "question": "I need / your advise / on this / matter.",
+      "options": [
+        "I need",
+        "your advise",
+        "on this",
+        "matter."
+      ],
+      "answer": 1,
+      "explanation": "'Advise' is a verb; the noun form is 'advice'. Correct: I need your advice on this matter.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy28-vyafc",
+      "category": "error-105",
+      "question": "He lost / his patience / and / loose his temper.",
+      "options": [
+        "He lost",
+        "his patience",
+        "and",
+        "loose his temper."
+      ],
+      "answer": 3,
+      "explanation": "'Loose' means not tight; the verb needed is 'lose'. Correct: ...and lose his temper.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy29-ziher",
+      "category": "error-105",
+      "question": "She has / a stationary / shop / near her house.",
+      "options": [
+        "She has",
+        "a stationary",
+        "shop",
+        "near her house."
+      ],
+      "answer": 1,
+      "explanation": "'Stationary' means motionless; a shop selling paper goods is a 'stationery' shop. Correct: ...a stationery shop...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6ucy29-fkah6",
+      "category": "error-105",
+      "question": "Please check / weather / the / information is correct.",
+      "options": [
+        "Please check",
+        "weather",
+        "the",
+        "information is correct."
+      ],
+      "answer": 1,
+      "explanation": "'Weather' refers to climate; the conjunction needed is 'whether'. Correct: Please check whether the information is correct.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6vircj-ruvno",
+      "category": "error-110",
+      "question": "The report, along with all its annexures, / were submitted / to the committee / for review.",
+      "options": [
+        "The report, along with all its annexures,",
+        "were submitted",
+        "to the committee",
+        "for review."
+      ],
+      "answer": 1,
+      "explanation": "Phrases like 'along with', 'together with', 'as well as' do not make the subject plural; the verb agrees with 'report'. Correct: ...was submitted...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6vircp-rjd8e",
+      "category": "error-110",
+      "question": "One of the most pressing issues facing the nation / remain / the eradication / of poverty.",
+      "options": [
+        "One of the most pressing issues facing the nation",
+        "remain",
+        "the eradication",
+        "of poverty."
+      ],
+      "answer": 1,
+      "explanation": "The subject of the sentence is 'One', not 'issues'. Correct: ...remains the eradication of poverty.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6vircr-ope82",
+      "category": "error-110",
+      "question": "Not only the minister but also his aides / was present / at the inaugural / ceremony.",
+      "options": [
+        "Not only the minister but also his aides",
+        "was present",
+        "at the inaugural",
+        "ceremony."
+      ],
+      "answer": 1,
+      "explanation": "With 'not only...but also', the verb agrees with the nearer subject 'aides' (plural). Correct: ...were present...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6vircs-e48d1",
+      "category": "error-110",
+      "question": "The board, comprising eminent economists and bureaucrats, / were unanimous / in its decision / to defer the policy.",
+      "options": [
+        "The board, comprising eminent economists and bureaucrats,",
+        "were unanimous",
+        "in its decision",
+        "to defer the policy."
+      ],
+      "answer": 1,
+      "explanation": "The collective noun 'board' is treated as singular (note the singular pronoun 'its' used later). Correct: ...was unanimous...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6virct-mqyr5",
+      "category": "error-110",
+      "question": "It is essential / that every candidate / submits / the form on time.",
+      "options": [
+        "It is essential",
+        "that every candidate",
+        "submits",
+        "the form on time."
+      ],
+      "answer": 2,
+      "explanation": "After expressions like 'it is essential/necessary/imperative that', the subjunctive (base form) is used regardless of subject. Correct: ...that every candidate submit the form...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6vircu-0m9g0",
+      "category": "error-110",
+      "question": "The committee recommended / that the erring official / is suspended / immediately.",
+      "options": [
+        "The committee recommended",
+        "that the erring official",
+        "is suspended",
+        "immediately."
+      ],
+      "answer": 2,
+      "explanation": "'Recommend that' takes the subjunctive form 'be'. Correct: ...that the erring official be suspended immediately.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6vircv-1c01t",
+      "category": "error-110",
+      "question": "The judge ordered / that the accused / appears / before the court the next day.",
+      "options": [
+        "The judge ordered",
+        "that the accused",
+        "appears",
+        "before the court the next day."
+      ],
+      "answer": 2,
+      "explanation": "'Order that' takes the subjunctive base form. Correct: ...that the accused appear before the court...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6vircw-k9tkh",
+      "category": "error-110",
+      "question": "I wish / I was / more prepared / for the interview.",
+      "options": [
+        "I wish",
+        "I was",
+        "more prepared",
+        "for the interview."
+      ],
+      "answer": 1,
+      "explanation": "Unreal wishes about the present require the subjunctive 'were'. Correct: I wish I were more prepared...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6vircy-z7jmn",
+      "category": "error-110",
+      "question": "Never I had imagined / that the outcome / would be / so favourable.",
+      "options": [
+        "Never I had imagined",
+        "that the outcome",
+        "would be",
+        "so favourable."
+      ],
+      "answer": 0,
+      "explanation": "A negative adverbial at the start of a sentence requires subject-auxiliary inversion. Correct: Never had I imagined...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6vircz-wdo42",
+      "category": "error-110",
+      "question": "No sooner he had reached the venue / than / the ceremony / began.",
+      "options": [
+        "No sooner he had reached the venue",
+        "than",
+        "the ceremony",
+        "began."
+      ],
+      "answer": 0,
+      "explanation": "'No sooner' at the start of a clause requires inversion. Correct: No sooner had he reached the venue than...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6vird0-5welx",
+      "category": "error-110",
+      "question": "Not only he criticised the policy / but also / proposed / an alternative.",
+      "options": [
+        "Not only he criticised the policy",
+        "but also",
+        "proposed",
+        "an alternative."
+      ],
+      "answer": 0,
+      "explanation": "'Not only' at the start of a clause requires inversion with a supporting auxiliary. Correct: Not only did he criticise the policy but also proposed...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6vird1-qq1gs",
+      "category": "error-110",
+      "question": "Hardly he had sat down / when / the alarm / rang.",
+      "options": [
+        "Hardly he had sat down",
+        "when",
+        "the alarm",
+        "rang."
+      ],
+      "answer": 0,
+      "explanation": "'Hardly' at the start of a sentence requires inversion. Correct: Hardly had he sat down when...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6vird3-bk737",
+      "category": "error-110",
+      "question": "The authorities have decided to dispense / off the services / of the errant / officer.",
+      "options": [
+        "The authorities have decided to dispense",
+        "off the services",
+        "of the errant",
+        "officer."
+      ],
+      "answer": 1,
+      "explanation": "The correct idiom is 'dispense with', meaning to do without/discontinue. Correct: ...dispense with the services...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6vird4-illm3",
+      "category": "error-110",
+      "question": "He was compensated / with the losses / incurred / during the strike.",
+      "options": [
+        "He was compensated",
+        "with the losses",
+        "incurred",
+        "during the strike."
+      ],
+      "answer": 1,
+      "explanation": "The correct idiom is 'compensated for'. Correct: He was compensated for the losses...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6vird6-3888h",
+      "category": "error-110",
+      "question": "The new policy is expected / to comply to / the international / standards.",
+      "options": [
+        "The new policy is expected",
+        "to comply to",
+        "the international",
+        "standards."
+      ],
+      "answer": 1,
+      "explanation": "The correct idiom is 'comply with'. Correct: ...to comply with the international standards.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6vird7-oexfs",
+      "category": "error-110",
+      "question": "She succeeded to persuade / him / to reconsider / his decision.",
+      "options": [
+        "She succeeded to persuade",
+        "him",
+        "to reconsider",
+        "his decision."
+      ],
+      "answer": 0,
+      "explanation": "'Succeed' is followed by 'in' + gerund, not an infinitive. Correct: She succeeded in persuading him...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6vird8-rkm4j",
+      "category": "error-110",
+      "question": "The new tax policy is likely / to effect / the common man's / purchasing power adversely.",
+      "options": [
+        "The new tax policy is likely",
+        "to effect",
+        "the common man's",
+        "purchasing power adversely."
+      ],
+      "answer": 1,
+      "explanation": "'Affect' (verb) means to influence; 'effect' (usually a noun) means a result. Correct: ...to affect the common man's purchasing power...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6vird9-grxdz",
+      "category": "error-110",
+      "question": "From his evasive answers, / the investigators / implied / that he was guilty.",
+      "options": [
+        "From his evasive answers,",
+        "the investigators",
+        "implied",
+        "that he was guilty."
+      ],
+      "answer": 2,
+      "explanation": "A listener 'infers' from evidence; a speaker 'implies'. Correct: ...the investigators inferred that he was guilty.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6virdb-saiir",
+      "category": "error-110",
+      "question": "The cabinet is comprised / of fifteen / ministers / including the PM.",
+      "options": [
+        "The cabinet is comprised",
+        "of fifteen",
+        "ministers",
+        "including the PM."
+      ],
+      "answer": 0,
+      "explanation": "In careful formal usage, 'comprise' means 'to consist of' and is not followed by 'of', nor used in the passive. Correct: The cabinet comprises fifteen ministers... (or 'is composed of').",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6virdc-qnfb7",
+      "category": "error-110",
+      "question": "The two proposals are entirely discreet / and / cannot / be combined.",
+      "options": [
+        "The two proposals are entirely discreet",
+        "and",
+        "cannot",
+        "be combined."
+      ],
+      "answer": 0,
+      "explanation": "'Discreet' means careful/prudent; 'separate/distinct' is 'discrete'. Correct: The two proposals are entirely discrete...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6virdd-3auxx",
+      "category": "error-110",
+      "question": "The minister assured that the measures / would be / continual / until normalcy returns.",
+      "options": [
+        "The minister assured that the measures",
+        "would be",
+        "continual",
+        "until normalcy returns."
+      ],
+      "answer": 2,
+      "explanation": "'Continual' means repeated with breaks; uninterrupted action needs 'continuous'. Correct: ...would be continuous until normalcy returns.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6virde-cjupf",
+      "category": "error-110",
+      "question": "The court passed a judicious verdict / based on / the evidence / presented before it.",
+      "options": [
+        "The court passed a judicious verdict",
+        "based on",
+        "the evidence",
+        "presented before it."
+      ],
+      "answer": 0,
+      "explanation": "'Judicial' relates to courts of law; 'judicious' means wise. Correct: The court passed a judicial verdict...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6virdf-b727c",
+      "category": "error-110",
+      "question": "The volcano has been dormant for decades, / but scientists warn / that an eruption / is eminent.",
+      "options": [
+        "The volcano has been dormant for decades,",
+        "but scientists warn",
+        "that an eruption",
+        "is eminent."
+      ],
+      "answer": 3,
+      "explanation": "'Eminent' means distinguished/famous; about to happen is 'imminent'. Correct: ...an eruption is imminent.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6virdg-n0d52",
+      "category": "error-110",
+      "question": "The policy aims not only at reducing poverty / but also at ensuring / that the marginalised have access to healthcare, education / and to seek employment.",
+      "options": [
+        "The policy aims not only at reducing poverty",
+        "but also at ensuring",
+        "that the marginalised have access to healthcare, education",
+        "and to seek employment."
+      ],
+      "answer": 3,
+      "explanation": "The list of things accessed must remain parallel nouns. Correct: ...healthcare, education and employment.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6virdi-6w49w",
+      "category": "error-110",
+      "question": "The report highlights the need for transparency, / accountability / and for strengthening / institutional mechanisms.",
+      "options": [
+        "The report highlights the need for transparency,",
+        "accountability",
+        "and for strengthening",
+        "institutional mechanisms."
+      ],
+      "answer": 2,
+      "explanation": "The list should maintain parallel noun structure throughout. Correct: ...transparency, accountability and institutional strengthening.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6virdk-hnvan",
+      "category": "error-110",
+      "question": "The candidate was praised / not for his eloquence / but because / he was sincere.",
+      "options": [
+        "The candidate was praised",
+        "not for his eloquence",
+        "but because",
+        "he was sincere."
+      ],
+      "answer": 3,
+      "explanation": "The correlative 'not...but' requires parallel structures. Correct: ...but for his sincerity.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6virdm-9724p",
+      "category": "error-110",
+      "question": "The two departments have agreed / to extend mutual cooperation / to each other / in the coming years.",
+      "options": [
+        "The two departments have agreed",
+        "to extend mutual cooperation",
+        "to each other",
+        "in the coming years."
+      ],
+      "answer": 2,
+      "explanation": "'Mutual' already implies reciprocity between the two parties, making 'to each other' redundant. Correct: ...to extend mutual cooperation in the coming years.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6virdn-udsmr",
+      "category": "error-110",
+      "question": "The committee will revert back / with its recommendations / within / a fortnight.",
+      "options": [
+        "The committee will revert back",
+        "with its recommendations",
+        "within",
+        "a fortnight."
+      ],
+      "answer": 0,
+      "explanation": "'Revert' already means to go/come back; 'back' is redundant. Correct: The committee will revert with its recommendations...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6virdo-is05y",
+      "category": "error-110",
+      "question": "The final and concluding session / of the conference / was addressed / by the Prime Minister.",
+      "options": [
+        "The final and concluding session",
+        "of the conference",
+        "was addressed",
+        "by the Prime Minister."
+      ],
+      "answer": 0,
+      "explanation": "'Final' and 'concluding' mean the same thing; using both is redundant. Correct: The concluding session of the conference...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6virdp-19g7l",
+      "category": "error-110",
+      "question": "The basic fundamentals / of economics / must be / understood by policymakers.",
+      "options": [
+        "The basic fundamentals",
+        "of economics",
+        "must be",
+        "understood by policymakers."
+      ],
+      "answer": 0,
+      "explanation": "'Fundamentals' already means the basic principles; 'basic' is redundant. Correct: The fundamentals of economics...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6virdq-g0xhf",
+      "category": "error-110",
+      "question": "Having been elected unopposed, / the responsibility of the panchayat / was assumed / by the new sarpanch with enthusiasm.",
+      "options": [
+        "Having been elected unopposed,",
+        "the responsibility of the panchayat",
+        "was assumed",
+        "by the new sarpanch with enthusiasm."
+      ],
+      "answer": 1,
+      "explanation": "The modifier must refer to the person who was elected, 'the new sarpanch', not 'the responsibility'. Correct: Having been elected unopposed, the new sarpanch assumed the responsibility of the panchayat with enthusiasm.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6virds-r4o58",
+      "category": "error-110",
+      "question": "Grappling with a severe fiscal deficit, / the reforms / were introduced / by the finance minister.",
+      "options": [
+        "Grappling with a severe fiscal deficit,",
+        "the reforms",
+        "were introduced",
+        "by the finance minister."
+      ],
+      "answer": 1,
+      "explanation": "'The reforms' cannot grapple with a deficit; the modifier must refer to 'the finance minister'. Correct: Grappling with a severe fiscal deficit, the finance minister introduced the reforms.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6virdu-r1ljy",
+      "category": "error-110",
+      "question": "Convinced of his innocence, / the case / was withdrawn / by the prosecution.",
+      "options": [
+        "Convinced of his innocence,",
+        "the case",
+        "was withdrawn",
+        "by the prosecution."
+      ],
+      "answer": 1,
+      "explanation": "'The case' cannot be convinced; the modifier must refer to 'the prosecution'. Correct: Convinced of his innocence, the prosecution withdrew the case.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6virdw-xnpw4",
+      "category": "error-110",
+      "question": "The manager told the staff / that / they must submitted / the report by Friday.",
+      "options": [
+        "The manager told the staff",
+        "that",
+        "they must submitted",
+        "the report by Friday."
+      ],
+      "answer": 2,
+      "explanation": "A modal auxiliary ('must') is followed by the base form of the verb. Correct: ...they must submit the report...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6virdx-9q8gi",
+      "category": "error-110",
+      "question": "He mentioned / that he might / has / gone abroad for further studies.",
+      "options": [
+        "He mentioned",
+        "that he might",
+        "has",
+        "gone abroad for further studies."
+      ],
+      "answer": 2,
+      "explanation": "The perfect modal form requires 'have', not 'has', irrespective of subject. Correct: ...that he might have gone abroad...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6virdz-rb6kf",
+      "category": "error-110",
+      "question": "If he worked harder / in his youth, / he would have been / a successful entrepreneur today.",
+      "options": [
+        "If he worked harder",
+        "in his youth,",
+        "he would have been",
+        "a successful entrepreneur today."
+      ],
+      "answer": 0,
+      "explanation": "A past condition affecting a present result needs the past perfect in the if-clause. Correct: If he had worked harder in his youth, he would be a successful entrepreneur today.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6virdz-73z12",
+      "category": "error-110",
+      "question": "The economy is recovering steadily, / however, / inflation / remains a concern.",
+      "options": [
+        "The economy is recovering steadily,",
+        "however,",
+        "inflation",
+        "remains a concern."
+      ],
+      "answer": 0,
+      "explanation": "When 'however' joins two independent clauses, a semicolon (not a comma) must precede it. Correct: The economy is recovering steadily; however, inflation remains a concern.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6vire3-lx2o5",
+      "category": "error-110",
+      "question": "The report was comprehensive, / it covered every aspect / of the / policy in detail.",
+      "options": [
+        "The report was comprehensive,",
+        "it covered every aspect",
+        "of the",
+        "policy in detail."
+      ],
+      "answer": 0,
+      "explanation": "This is a comma splice: two independent clauses cannot be joined by a comma alone. Correct: The report was comprehensive; it covered every aspect of the policy in detail.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6vire4-xg9t8",
+      "category": "error-110",
+      "question": "The scheme is conducive / for / economic / growth.",
+      "options": [
+        "The scheme is conducive",
+        "for",
+        "economic",
+        "growth."
+      ],
+      "answer": 1,
+      "explanation": "The correct idiom is 'conducive to'. Correct: The scheme is conducive to economic growth.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6vire5-kc9yt",
+      "category": "error-110",
+      "question": "He remained apprehensive / for / the outcome / of the trial.",
+      "options": [
+        "He remained apprehensive",
+        "for",
+        "the outcome",
+        "of the trial."
+      ],
+      "answer": 1,
+      "explanation": "The correct idiom is 'apprehensive of/about'. Correct: He remained apprehensive of the outcome...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6vire7-6nrle",
+      "category": "error-110",
+      "question": "He is averse / of / taking risks / in business.",
+      "options": [
+        "He is averse",
+        "of",
+        "taking risks",
+        "in business."
+      ],
+      "answer": 1,
+      "explanation": "The correct idiom is 'averse to'. Correct: He is averse to taking risks in business.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6vire8-aej6k",
+      "category": "error-110",
+      "question": "The two events did not coincide / to / each other / as expected.",
+      "options": [
+        "The two events did not coincide",
+        "to",
+        "each other",
+        "as expected."
+      ],
+      "answer": 1,
+      "explanation": "The correct idiom is 'coincide with'. Correct: The two events did not coincide with each other...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6vire9-xd90n",
+      "category": "error-110",
+      "question": "He is senior / than / me / in the department.",
+      "options": [
+        "He is senior",
+        "than",
+        "me",
+        "in the department."
+      ],
+      "answer": 1,
+      "explanation": "Latin comparative adjectives (senior, junior, superior, inferior, prior) take 'to', not 'than'. Correct: He is senior to me...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6vireb-c11tf",
+      "category": "error-110",
+      "question": "This model is superior / than / the previous / version.",
+      "options": [
+        "This model is superior",
+        "than",
+        "the previous",
+        "version."
+      ],
+      "answer": 1,
+      "explanation": "'Superior' takes 'to', not 'than'. Correct: This model is superior to the previous version.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6virec-6ne17",
+      "category": "error-110",
+      "question": "Her performance was inferior / than / that of / her competitor.",
+      "options": [
+        "Her performance was inferior",
+        "than",
+        "that of",
+        "her competitor."
+      ],
+      "answer": 1,
+      "explanation": "'Inferior' takes 'to', not 'than'. Correct: Her performance was inferior to that of her competitor.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6viref-kk2oe",
+      "category": "error-110",
+      "question": "He is junior / than / her / by two years.",
+      "options": [
+        "He is junior",
+        "than",
+        "her",
+        "by two years."
+      ],
+      "answer": 1,
+      "explanation": "'Junior' takes 'to', not 'than'. Correct: He is junior to her by two years.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6vireh-1anfz",
+      "category": "error-110",
+      "question": "He forgot / meeting / her / the following day as planned.",
+      "options": [
+        "He forgot",
+        "meeting",
+        "her",
+        "the following day as planned."
+      ],
+      "answer": 1,
+      "explanation": "'Forget + infinitive' refers to a future obligation not carried out; 'forget + gerund' refers to a past event. Since the meeting was planned for later, the infinitive is needed. Correct: He forgot to meet her the following day...",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6virej-dgn7c",
+      "category": "error-110",
+      "question": "I remember / to post / the letter / yesterday.",
+      "options": [
+        "I remember",
+        "to post",
+        "the letter",
+        "yesterday."
+      ],
+      "answer": 1,
+      "explanation": "'Remember + gerund' refers to recalling a past action already done. Correct: I remember posting the letter yesterday.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "more-mu6virel-c42h6",
+      "category": "error-110",
+      "question": "Please remember / locking / the door / before you leave.",
+      "options": [
+        "Please remember",
+        "locking",
+        "the door",
+        "before you leave."
+      ],
+      "answer": 1,
+      "explanation": "'Remember + infinitive' refers to a future obligation (don't forget to do it). Correct: Please remember to lock the door before you leave.",
+      "pool": "new",
+      "subQuestions": []
     }
   ]
 }

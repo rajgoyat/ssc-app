@@ -72,7 +72,7 @@
     "id": "mt5kvy71iednx5",
     "order": 11,
     "attemptStatus": "unattempted",
-    "testAllowed": true,
+    "testAllowed": false,
     "special": false
   },
   {
@@ -90,7 +90,7 @@
     "solutionImage": null,
     "id": "mt8eoqvto47tux",
     "order": 18,
-    "attemptStatus": "unattempted",
+    "attemptStatus": "correct",
     "testAllowed": true,
     "special": false
   },
@@ -185,7 +185,7 @@
     "solutionImage": null,
     "id": "mtifvwmzlc2v9x",
     "order": 35,
-    "attemptStatus": "unattempted",
+    "attemptStatus": "correct",
     "testAllowed": true,
     "special": false
   },
@@ -223,7 +223,7 @@
     "solutionImage": null,
     "id": "mtjv19ce2c8f2u",
     "order": 39,
-    "attemptStatus": "unattempted",
+    "attemptStatus": "correct",
     "testAllowed": true,
     "special": false
   },
@@ -338,7 +338,7 @@
     "special": false,
     "id": "mtvea0l8nl9yj9",
     "order": 63,
-    "attemptStatus": "unattempted",
+    "attemptStatus": "correct",
     "testAllowed": true
   },
   {
@@ -352,7 +352,7 @@
       "19"
     ],
     "correctIndex": 3,
-    "solutionText": "https://youtu.be/MqxEmF8sR9Y?si=_troLapVGZq8WQJJ&t=685",
+    "solutionText": "https://youtu.be/MqxEmF8sR9Y?si=_troLapVGZq8WQJJ&t=685  b - c = a*3",
     "solutionImage": null,
     "special": false,
     "id": "mu12k9329y1o3x",
@@ -371,11 +371,49 @@
       "60"
     ],
     "correctIndex": 3,
-    "solutionText": "https://youtu.be/712h3FYDZVs?si=h4K4ScYHRcCfNGJs&t=674",
+    "solutionText": "https://youtu.be/712h3FYDZVs?si=h4K4ScYHRcCfNGJs&t=674\n\nfirst series multiply second series add",
     "solutionImage": null,
     "special": false,
     "id": "mu2jk0qquyytdg",
     "order": 69,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "(4,2,6)\n(9,3,9)\n(24,6, ?)",
+    "questionImage": null,
+    "options": [
+      "13",
+      "15",
+      "14",
+      "12"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/VFkSvqeTNKk?t=365           b*c/3",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu6q2kewvawt8p",
+    "order": 71,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "[16,4,4)\n(30,5, 15)\n[8, 2,?]",
+    "questionImage": null,
+    "options": [
+      "6",
+      "2",
+      "4",
+      "7"
+    ],
+    "correctIndex": 1,
+    "solutionText": "a-c   /3",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu6q994auoshql",
+    "order": 72,
     "attemptStatus": "unattempted",
     "testAllowed": true
   }

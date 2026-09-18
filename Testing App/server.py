@@ -59,6 +59,28 @@ def _read_json_object(path):
     return data
 
 
+def _read_english_pool_file(path, primary_key, old_key=None):
+    """Read current object format and older raw-array English data files."""
+    data = json.loads(path.read_text(encoding="utf-8"))
+
+    # Older versions stored vocab/idioms/missing data directly as a JSON array.
+    if isinstance(data, list):
+        return list(data), []
+
+    if not isinstance(data, dict):
+        raise ValueError(f"{path.name} must contain a JSON object or array")
+
+    primary = data.get(primary_key, [])
+    old_items = data.get(old_key, []) if old_key else []
+
+    if not isinstance(primary, list):
+        raise ValueError(f'{path.name} field "{primary_key}" must be an array')
+    if old_key and not isinstance(old_items, list):
+        raise ValueError(f'{path.name} field "{old_key}" must be an array')
+
+    return list(primary), list(old_items)
+
+
 def _word_key(word):
     if not isinstance(word, dict):
         return ""
@@ -92,13 +114,22 @@ def _validate_unique_missing_words(items):
 
 
 def _validate_english_data(data):
+    # Keep the storage contract strict about array types, but do not reject
+    # older user data merely because the same word exists in New and Old.
+    # The browser can load that data and the user can clean/move it normally.
     for key in ("words", "idioms", "oldWords", "oldIdioms", "missingWords"):
         if not isinstance(data.get(key), list):
             raise ValueError(f'English data "{key}" must be an array')
 
-    _validate_unique_word_pools(data["words"], data["oldWords"], "vocabulary")
-    _validate_unique_word_pools(data["idioms"], data["oldIdioms"], "idiom")
-    _validate_unique_missing_words(data["missingWords"])
+    for key in ("words", "idioms", "oldWords", "oldIdioms"):
+        for index, item in enumerate(data[key], start=1):
+            if not isinstance(item, dict):
+                raise ValueError(f'English data "{key}" item {index} must be an object')
+
+    for index, item in enumerate(data["missingWords"], start=1):
+        if not isinstance(item, str):
+            raise ValueError(f'English missingWords item {index} must be a string')
+
     return data
 
 
@@ -255,19 +286,25 @@ def persist_english_error_sentences(payload):
 
 
 def load_english_data():
-    """Load English data only from vocab.json, idioms.json and missing.json."""
+    """Load English data from both current and legacy file shapes."""
     ensure_english_data_files()
 
-    vocab = _read_json_object(ENGLISH_VOCAB_FILE)
-    idioms = _read_json_object(ENGLISH_IDIOMS_FILE)
-    missing = _read_json_object(ENGLISH_MISSING_FILE)
+    words, old_words = _read_english_pool_file(
+        ENGLISH_VOCAB_FILE, "words", "oldWords"
+    )
+    idioms, old_idioms = _read_english_pool_file(
+        ENGLISH_IDIOMS_FILE, "idioms", "oldIdioms"
+    )
+    missing_words, _ = _read_english_pool_file(
+        ENGLISH_MISSING_FILE, "missingWords"
+    )
 
     data = {
-        "words": vocab.get("words", []),
-        "oldWords": vocab.get("oldWords", []),
-        "idioms": idioms.get("idioms", []),
-        "oldIdioms": idioms.get("oldIdioms", []),
-        "missingWords": missing.get("missingWords", []),
+        "words": words,
+        "oldWords": old_words,
+        "idioms": idioms,
+        "oldIdioms": old_idioms,
+        "missingWords": missing_words,
     }
     return _validate_english_data(data)
 
@@ -384,6 +421,7 @@ class UnifiedHandler(SimpleHTTPRequestHandler):
             "api/gk-bulk-delete",
             "api/gk-question-image",
             "api/question-update",
+            "api/saved-test-ids",
         }
         if path in gk_api_paths:
             return "gk"
@@ -450,6 +488,7 @@ class UnifiedHandler(SimpleHTTPRequestHandler):
                 "managerEndpoint": True,
                 "bulkDeleteEndpoint": True,
                 "questionImageUpdateEndpoint": True,
+                "savedTestEndpoint": True,
                 "gkServerVersion": getattr(GK, "SERVER_VERSION", "unknown"),
                 "baseDir": str(GK.BASE_DIR),
             })
@@ -520,6 +559,19 @@ class UnifiedHandler(SimpleHTTPRequestHandler):
             except (OSError, ValueError, json.JSONDecodeError, UnicodeDecodeError) as error:
                 self.send_json(HTTPStatus.BAD_REQUEST, {"ok": False, "error": str(error)})
             return
+        if path == "/api/saved-test-ids" and subject == "gk":
+            try:
+                data = GK.read_saved_test_ids()
+                self.send_json(HTTPStatus.OK, {
+                    "ok": True,
+                    "staticGK": data["staticGK"],
+                    "currentAffairs": data["currentAffairs"],
+                    "file": GK.SAVED_TEST_IDS_FILE.name,
+                })
+            except (OSError, ValueError, json.JSONDecodeError, UnicodeDecodeError) as error:
+                self.send_json(HTTPStatus.BAD_REQUEST, {"ok": False, "error": str(error)})
+            return
+
         if path == "/api/changes" and subject == "gk":
             self.send_json(HTTPStatus.OK, {"version": 1, "deletedIds": [], "visibility": {}, "addedExplanations": {}, "originalExplanations": {}, "correctedAnswers": {}})
             return
@@ -550,6 +602,20 @@ class UnifiedHandler(SimpleHTTPRequestHandler):
                 saved = persist_english_data(payload)
                 self.send_json(HTTPStatus.OK, {"ok": True, "data": saved, "files": ["vocab.json", "idioms.json", "missing.json"]})
                 return
+            if path == "/api/saved-test-ids" and subject == "gk":
+                saved = GK.update_saved_test_ids(
+                    payload.get("action", ""),
+                    payload.get("section", ""),
+                    payload.get("id"),
+                )
+                self.send_json(HTTPStatus.OK, {
+                    "ok": True,
+                    "staticGK": saved["staticGK"],
+                    "currentAffairs": saved["currentAffairs"],
+                    "file": GK.SAVED_TEST_IDS_FILE.name,
+                })
+                return
+
             if path == "/api/current-question-create" and subject == "gk":
                 record = GK.create_user_current_affairs_question(payload)
                 self.send_json(HTTPStatus.OK, {
@@ -623,6 +689,7 @@ class UnifiedHandler(SimpleHTTPRequestHandler):
                     payload.get("dataUrl", ""),
                     payload.get("name", ""),
                     bool(payload.get("remove")),
+                    payload.get("size"),
                 )
                 self.send_json(HTTPStatus.OK, {"ok": True, "file": file_name, "id": question_id})
                 return
@@ -677,8 +744,10 @@ if __name__ == "__main__":
     print("GK image API: POST /api/date-image-save")
     print("GK image API: POST /api/date-image-delete")
     print("GK manager API: GET /api/gk-manager-data")
+    print("GK saved test API: GET /api/saved-test-ids")
     print("GK manager API: POST /api/gk-bulk-delete")
     print("GK manager API: POST /api/gk-question-image")
+    print("GK saved test API: POST /api/saved-test-ids")
     try:
         server.serve_forever()
     except KeyboardInterrupt:

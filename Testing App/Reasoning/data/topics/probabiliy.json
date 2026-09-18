@@ -93,5 +93,24 @@
     "order": 68,
     "attemptStatus": "unattempted",
     "testAllowed": true
+  },
+  {
+    "category": "Probabiliy",
+    "questionText": "There are 4 black, 3 red and 5 green balls in a\nbox. Two balls are randomly picked out. Find\nthe probability of them being of same colour?",
+    "questionImage": null,
+    "options": [
+      "19/66",
+      "35/66",
+      "42/66",
+      "14/66"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/VFkSvqeTNKk?t=194",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu6pp2f2a47a5s",
+    "order": 70,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]

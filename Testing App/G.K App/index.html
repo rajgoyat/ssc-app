@@ -549,6 +549,158 @@
         color: var(--cyan);
       }
 
+
+      /* ================================
+         SAVED TEST / QUESTION ID TRACKER
+         ================================ */
+      .saved-test-control {
+        position: relative;
+        flex: 0 0 auto;
+      }
+
+      .saved-test-control > summary {
+        list-style: none;
+        border: 1px solid var(--line);
+        background: transparent;
+        color: var(--text);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        padding: 6px 9px;
+        font: 700 10px "Space Mono", monospace;
+        text-transform: uppercase;
+        cursor: pointer;
+        user-select: none;
+        white-space: nowrap;
+      }
+
+      .saved-test-control > summary::-webkit-details-marker {
+        display: none;
+      }
+
+      .saved-test-control[open] > summary,
+      .saved-test-control > summary:hover {
+        border-color: var(--cyan);
+        color: var(--cyan);
+      }
+
+      .saved-test-status-badge {
+        min-width: 30px;
+        padding: 2px 5px;
+        border: 1px solid rgba(255, 119, 119, 0.42);
+        color: var(--red);
+        text-align: center;
+        font-size: 8px;
+        line-height: 1.2;
+      }
+
+      .saved-test-status-badge.on {
+        border-color: rgba(212, 243, 107, 0.52);
+        color: var(--lime);
+      }
+
+      .saved-test-menu {
+        position: absolute;
+        top: calc(100% + 6px);
+        right: 0;
+        z-index: 1900;
+        width: min(340px, calc(100vw - 24px));
+        padding: 11px;
+        border: 1px solid var(--line);
+        background: rgba(9, 28, 35, 0.99);
+        box-shadow: var(--shadow);
+      }
+
+      .saved-test-menu-status {
+        margin-bottom: 10px;
+        padding: 8px 9px;
+        border-left: 3px solid var(--cyan);
+        background: rgba(85, 230, 210, 0.055);
+        color: var(--muted);
+        font-size: 10px;
+        line-height: 1.45;
+      }
+
+      .saved-test-menu-status b {
+        color: var(--text);
+      }
+
+      .saved-test-group {
+        display: grid;
+        grid-template-columns: 62px minmax(0, 1fr);
+        gap: 8px;
+        align-items: start;
+        padding: 8px 0;
+        border-top: 1px solid rgba(145, 229, 220, 0.12);
+      }
+
+      .saved-test-group:first-of-type {
+        border-top: 0;
+        padding-top: 0;
+      }
+
+      .saved-test-group-label {
+        padding-top: 7px;
+        color: var(--muted);
+        font: 700 9px "Space Mono", monospace;
+        text-transform: uppercase;
+        letter-spacing: 0.07em;
+      }
+
+      .saved-test-group-actions {
+        display: flex;
+        gap: 6px;
+        flex-wrap: wrap;
+      }
+
+      .saved-test-menu-btn {
+        min-height: 29px;
+        border: 1px solid var(--line);
+        background: transparent;
+        color: var(--text);
+        padding: 6px 8px;
+        font: 700 9px "Space Mono", monospace;
+        text-transform: uppercase;
+      }
+
+      .saved-test-menu-btn:hover {
+        border-color: var(--cyan);
+        color: var(--cyan);
+      }
+
+      .saved-test-menu-btn.on-action {
+        border-color: rgba(212, 243, 107, 0.35);
+        color: var(--lime);
+      }
+
+      .saved-test-menu-btn.test-action {
+        border-color: rgba(85, 230, 210, 0.38);
+        color: var(--cyan);
+      }
+
+      .saved-test-menu-btn.reset-action {
+        border-color: rgba(255, 119, 119, 0.36);
+        color: var(--red);
+      }
+
+      .saved-test-menu-btn.off-action {
+        border-color: rgba(255, 173, 103, 0.38);
+        color: var(--orange);
+      }
+
+      @media (max-width: 760px) {
+        .saved-test-menu {
+          position: fixed;
+          top: 72px;
+          right: 10px;
+          left: 10px;
+          width: auto;
+          max-height: calc(100vh - 90px);
+          overflow-y: auto;
+        }
+      }
+
       /* ================================
          04 FEB CURRENT AFFAIRS IMAGES
          ================================ */
@@ -758,6 +910,59 @@
         margin: 0 auto;
       }
 
+      /* Small question images sit beside the question on wider screens.
+         Large remains the existing full-width layout. */
+      .question-row.with-small-image {
+        align-items: flex-start;
+      }
+
+      .question-media-block.small {
+        flex: 0 1 36%;
+        width: min(36%, 260px);
+        max-width: 260px;
+        min-width: 150px;
+        margin: 0;
+        padding: 6px;
+      }
+
+      .question-media-block.small img {
+        width: 100%;
+        max-height: 220px;
+        object-fit: contain;
+      }
+
+      .question-toolbar {
+        display: flex;
+        gap: 7px;
+        align-items: center;
+        flex: 0 0 auto;
+      }
+
+      .question-image-size-control {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        min-height: 30px;
+        color: var(--muted);
+        font: 700 9px "Space Mono", monospace;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      .question-image-size-control select {
+        min-width: 92px;
+        height: 30px;
+        padding: 4px 7px;
+        border: 1px solid var(--line);
+        background: #091c23;
+        color: var(--text);
+        outline: none;
+      }
+
+      .question-image-size-control select:focus {
+        border-color: var(--cyan);
+      }
+
       .question-row > .question-edit-box {
         flex: 1 1 100%;
         min-width: 0;
@@ -775,6 +980,28 @@
         .question-media-block img {
           width: 100%;
           max-height: none;
+        }
+
+        .question-row.with-small-image {
+          flex-wrap: wrap;
+        }
+
+        .question-row.with-small-image .question {
+          order: 1;
+          flex: 1 1 calc(100% - 120px);
+        }
+
+        .question-row.with-small-image .question-toolbar {
+          order: 2;
+        }
+
+        .question-row.with-small-image .question-media-block.small {
+          order: 3;
+          flex: 0 0 min(72%, 320px);
+          width: min(72%, 320px);
+          max-width: 320px;
+          min-width: 0;
+          margin: 6px 0 8px;
         }
       }
 
@@ -1974,6 +2201,152 @@
         background: rgba(212, 243, 107, 0.16);
         color: var(--lime);
         transform: scale(1.08);
+      }
+
+
+      /* ================================
+         QUESTION CATEGORY VIEW / EDIT
+         ================================ */
+      .category-edit-icon {
+        border-color: rgba(255, 173, 103, 0.42);
+        background: rgba(255, 173, 103, 0.07);
+        color: var(--orange);
+      }
+
+      .category-edit-icon:hover {
+        border-color: var(--orange);
+        background: rgba(255, 173, 103, 0.16);
+        color: var(--orange);
+      }
+
+      .question-category-modal {
+        position: fixed;
+        inset: 0;
+        z-index: 2600;
+        display: none;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 72px 14px 24px;
+        background: rgba(1, 10, 14, 0.78);
+        overflow-y: auto;
+      }
+
+      .question-category-modal.show {
+        display: flex;
+      }
+
+      .question-category-dialog {
+        width: min(520px, 100%);
+        border: 1px solid rgba(255, 173, 103, 0.58);
+        background: #091c23;
+        box-shadow: 0 22px 70px rgba(0, 0, 0, 0.5);
+      }
+
+      .question-category-head {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 14px 15px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .question-category-title {
+        color: var(--orange);
+        font: 700 11px "Space Mono", monospace;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      .question-category-subtitle {
+        margin-top: 5px;
+        color: var(--muted);
+        font-size: 11px;
+        line-height: 1.4;
+      }
+
+      .question-category-close {
+        width: 30px;
+        height: 30px;
+        border: 1px solid var(--line);
+        background: transparent;
+        color: var(--text);
+        font-size: 18px;
+      }
+
+      .question-category-close:hover {
+        border-color: var(--red);
+        color: var(--red);
+      }
+
+      .question-category-body {
+        display: grid;
+        gap: 13px;
+        padding: 15px;
+      }
+
+      .question-category-current {
+        padding: 10px 11px;
+        border-left: 3px solid var(--orange);
+        background: rgba(255, 173, 103, 0.07);
+        color: var(--text);
+        font-size: 12px;
+        line-height: 1.45;
+        word-break: break-word;
+      }
+
+      .question-category-current strong {
+        display: block;
+        margin-bottom: 4px;
+        color: var(--orange);
+        font: 700 9px "Space Mono", monospace;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      .question-category-field {
+        display: grid;
+        gap: 6px;
+      }
+
+      .question-category-field label {
+        color: var(--muted);
+        font: 700 9px "Space Mono", monospace;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      .question-category-field select {
+        width: 100%;
+        min-height: 40px;
+        padding: 8px 10px;
+        border: 1px solid var(--line);
+        background: #06171d;
+        color: var(--text);
+        outline: none;
+      }
+
+      .question-category-field select:focus {
+        border-color: var(--orange);
+      }
+
+      .question-category-question {
+        max-height: 120px;
+        overflow-y: auto;
+        padding: 9px 10px;
+        border: 1px solid var(--line);
+        background: rgba(85, 230, 210, 0.035);
+        color: var(--muted);
+        font-size: 11px;
+        line-height: 1.45;
+        white-space: pre-line;
+      }
+
+      .question-category-actions {
+        display: flex;
+        justify-content: flex-end;
+        gap: 8px;
+        flex-wrap: wrap;
       }
 
       /* Smaller cyan version for answer editor */
@@ -3196,6 +3569,69 @@
               ＋ Question
             </button>
 
+
+            <details class="saved-test-control" id="saved-test-control">
+              <summary
+                title="Save question IDs and run tests from saved IDs"
+                aria-label="Saved question ID test controls"
+              >
+                ◉ Saved Test
+                <span class="saved-test-status-badge" id="saved-test-status">OFF</span>
+              </summary>
+
+              <div class="saved-test-menu" id="saved-test-menu">
+                <div class="saved-test-menu-status" id="saved-test-menu-status">
+                  <b>Recording:</b> OFF<br>
+                  Static IDs: 0 · Current Affairs IDs: 0
+                </div>
+
+                <div class="saved-test-group">
+                  <div class="saved-test-group-label">ON</div>
+                  <div class="saved-test-group-actions">
+                    <button type="button" class="saved-test-menu-btn on-action" data-saved-test-on="staticGK">
+                      Static
+                    </button>
+                    <button type="button" class="saved-test-menu-btn on-action" data-saved-test-on="currentAffairs">
+                      Current Affairs
+                    </button>
+                  </div>
+                </div>
+
+                <div class="saved-test-group">
+                  <div class="saved-test-group-label">OFF</div>
+                  <div class="saved-test-group-actions">
+                    <button type="button" class="saved-test-menu-btn off-action" data-saved-test-off>
+                      Stop Recording
+                    </button>
+                  </div>
+                </div>
+
+                <div class="saved-test-group">
+                  <div class="saved-test-group-label">TEST</div>
+                  <div class="saved-test-group-actions">
+                    <button type="button" class="saved-test-menu-btn test-action" data-saved-test-run="staticGK">
+                      Static
+                    </button>
+                    <button type="button" class="saved-test-menu-btn test-action" data-saved-test-run="currentAffairs">
+                      Current Affairs
+                    </button>
+                  </div>
+                </div>
+
+                <div class="saved-test-group">
+                  <div class="saved-test-group-label">RESET</div>
+                  <div class="saved-test-group-actions">
+                    <button type="button" class="saved-test-menu-btn reset-action" data-saved-test-reset="staticGK">
+                      Static
+                    </button>
+                    <button type="button" class="saved-test-menu-btn reset-action" data-saved-test-reset="currentAffairs">
+                      Current Affairs
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </details>
+
             <!-- <button class="file-control-btn" id="create-changes-file" type="button">
               Create Changes File
             </button> -->
@@ -3366,6 +3802,15 @@
 
               <div class="question-upload-image-actions">
                 <button type="button" class="action tiny" id="question-upload-image-file-btn">Choose file instead</button>
+
+                <label class="question-image-size-control" for="question-upload-image-size">
+                  Display
+                  <select id="question-upload-image-size" aria-label="Question image display size">
+                    <option value="large" selected>Large</option>
+                    <option value="small">Small</option>
+                  </select>
+                </label>
+
                 <button type="button" class="action tiny danger" id="question-upload-image-remove" style="display:none;">Remove image</button>
                 <input id="question-upload-image-file" type="file" accept="image/*" hidden />
               </div>
@@ -3567,6 +4012,36 @@
             <button type="submit" class="action tiny primary" id="sub-question-save">💾 Save Sub Question</button>
           </div>
         </form>
+      </div>
+    </div>
+
+    <!-- ================================
+         QUESTION CATEGORY VIEW / EDIT
+         ================================ -->
+    <div class="question-category-modal" id="question-category-modal" aria-hidden="true">
+      <div class="question-category-dialog" role="dialog" aria-modal="true" aria-labelledby="question-category-title">
+        <div class="question-category-head">
+          <div>
+            <div class="question-category-title" id="question-category-title">🏷 Question Category</div>
+            <div class="question-category-subtitle" id="question-category-subtitle">View or change this question's category.</div>
+          </div>
+          <button type="button" class="question-category-close" id="question-category-close" aria-label="Close category editor">×</button>
+        </div>
+        <div class="question-category-body">
+          <div class="question-category-current">
+            <strong>Current Category</strong>
+            <span id="question-category-current">—</span>
+          </div>
+          <div class="question-category-question" id="question-category-question"></div>
+          <div class="question-category-field">
+            <label for="question-category-select">Select Existing Category</label>
+            <select id="question-category-select" aria-label="Select existing question category"></select>
+          </div>
+          <div class="question-category-actions">
+            <button type="button" class="action tiny" id="question-category-cancel">Cancel</button>
+            <button type="button" class="action tiny primary" id="question-category-save">Save Category</button>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -3810,6 +4285,7 @@
         const imageFileButton = $("#question-upload-image-file-btn");
         const imageFileInput = $("#question-upload-image-file");
         const imageRemoveButton = $("#question-upload-image-remove");
+        const imageSizeSelect = $("#question-upload-image-size");
         const imagePreview = $("#question-upload-image-preview");
         const imagePreviewImg = $("#question-upload-image-preview-img");
 
@@ -4856,6 +5332,10 @@
           optionsBox.innerHTML = "";
           clearPendingQuestionImage();
 
+          if (imageSizeSelect) {
+            imageSizeSelect.value = "large";
+          }
+
           if (arrayInput) arrayInput.value = "";
           if (newFileInput) newFileInput.value = "";
           if (newFileTopicInput) {
@@ -5202,6 +5682,8 @@
                   ...questions[0],
                   questionImageDataUrl: pendingQuestionImageDataUrl,
                   questionImageName: pendingQuestionImageName || "question-image",
+                  questionImageSize:
+                    imageSizeSelect?.value === "small" ? "small" : "large",
                 };
               }
 
@@ -5434,6 +5916,8 @@
                       pendingQuestionImageDataUrl || "",
                     questionImageName:
                       pendingQuestionImageName || "",
+                    questionImageSize:
+                      imageSizeSelect?.value === "small" ? "small" : "large",
                   }
                 : {
                     date,
@@ -5446,6 +5930,8 @@
                       pendingQuestionImageDataUrl || "",
                     questionImageName:
                       pendingQuestionImageName || "",
+                    questionImageSize:
+                      imageSizeSelect?.value === "small" ? "small" : "large",
                   };
 
             const response = await fetch(endpoint, {
@@ -7038,6 +7524,373 @@
 
 
       /* ================================
+         SAVED TEST / QUESTION ID TRACKER
+         The server stores both arrays in one saved-test-ids.json file.
+         Recording itself is intentionally NOT persisted and always starts OFF.
+         ================================ */
+
+      const savedTestState = {
+        enabled: false,
+        captureType: null,
+        testType: null,
+        loaded: false,
+        ids: {
+          staticGK: new Set(),
+          currentAffairs: new Set(),
+        },
+        pendingWrite: Promise.resolve(),
+      };
+
+      function savedTestTypeLabel(type) {
+        return type === "currentAffairs"
+          ? "Current Affairs"
+          : "Static";
+      }
+
+      function normalizeSavedTestPayload(payload) {
+        const source = payload && typeof payload === "object"
+          ? payload
+          : {};
+
+        const staticIds = Array.isArray(source.staticGK)
+          ? source.staticGK
+          : [];
+
+        const currentIds = Array.isArray(source.currentAffairs)
+          ? source.currentAffairs
+          : [];
+
+        return {
+          staticGK: staticIds
+            .map((id) => String(id || "").trim())
+            .filter(Boolean),
+          currentAffairs: currentIds
+            .map((id) => String(id || "").trim())
+            .filter(Boolean),
+        };
+      }
+
+      function updateSavedTestUi() {
+        const badge = document.querySelector("#saved-test-status");
+        const status = document.querySelector("#saved-test-menu-status");
+
+        const staticCount = savedTestState.ids.staticGK.size;
+        const currentCount = savedTestState.ids.currentAffairs.size;
+
+        if (badge) {
+          if (savedTestState.enabled && savedTestState.captureType) {
+            badge.textContent = savedTestState.captureType === "staticGK"
+              ? "ON S"
+              : "ON CA";
+            badge.classList.add("on");
+          } else {
+            badge.textContent = "OFF";
+            badge.classList.remove("on");
+          }
+        }
+
+        if (status) {
+          const recording =
+            savedTestState.enabled && savedTestState.captureType
+              ? `ON · ${savedTestTypeLabel(savedTestState.captureType)}`
+              : "OFF";
+
+          const testing = savedTestState.testType
+            ? `<br><b>Active saved test:</b> ${savedTestTypeLabel(savedTestState.testType)}`
+            : "";
+
+          status.innerHTML = `
+            <b>Recording:</b> ${recording}<br>
+            Static IDs: ${staticCount} · Current Affairs IDs: ${currentCount}
+            ${testing}
+          `;
+        }
+      }
+
+      async function loadSavedTestIdsFromServer() {
+        try {
+          const response = await fetch("/api/saved-test-ids", {
+            cache: "no-store",
+          });
+
+          if (!response.ok) {
+            throw new Error(`Server returned ${response.status}`);
+          }
+
+          const result = await response.json();
+          const payload = normalizeSavedTestPayload(result);
+
+          savedTestState.ids.staticGK = new Set(payload.staticGK);
+          savedTestState.ids.currentAffairs = new Set(payload.currentAffairs);
+          savedTestState.loaded = true;
+          updateSavedTestUi();
+          return true;
+        } catch (error) {
+          console.error("Could not load saved test IDs:", error);
+          savedTestState.loaded = false;
+          updateSavedTestUi();
+          return false;
+        }
+      }
+
+      function queueSavedTestRequest(body) {
+        const run = async () => {
+          const response = await fetch("/api/saved-test-ids", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(body),
+          });
+
+          let result = {};
+          try {
+            result = await response.json();
+          } catch {
+            result = {};
+          }
+
+          if (!response.ok || result.ok === false) {
+            throw new Error(
+              result.error ||
+              `Server returned ${response.status}`
+            );
+          }
+
+          return result;
+        };
+
+        const request = savedTestState.pendingWrite.then(run, run);
+        savedTestState.pendingWrite = request.catch(() => {});
+        return request;
+      }
+
+      async function saveQuestionIdForSavedTest(type, id) {
+        if (!id || !savedTestState.ids[type]) return false;
+
+        const normalizedId = String(id).trim();
+        if (!normalizedId) return false;
+
+        if (savedTestState.ids[type].has(normalizedId)) {
+          return true;
+        }
+
+        // Reserve immediately so repeated renders do not create duplicate POSTs.
+        savedTestState.ids[type].add(normalizedId);
+        updateSavedTestUi();
+
+        try {
+          const result = await queueSavedTestRequest({
+            action: "add",
+            section: type,
+            id: normalizedId,
+          });
+
+          const payload = normalizeSavedTestPayload(result);
+          if (payload.staticGK.length || payload.currentAffairs.length) {
+            savedTestState.ids.staticGK = new Set(payload.staticGK);
+            savedTestState.ids.currentAffairs = new Set(payload.currentAffairs);
+          }
+
+          updateSavedTestUi();
+          return true;
+        } catch (error) {
+          savedTestState.ids[type].delete(normalizedId);
+          updateSavedTestUi();
+          console.error("Could not save question ID:", error);
+          updateFileStatus("SAVED TEST ID SAVE FAILED", false);
+          return false;
+        }
+      }
+
+      function recordCurrentQuestionIfNeeded(type, item) {
+        if (
+          !savedTestState.enabled ||
+          savedTestState.captureType !== type ||
+          !item?.id
+        ) {
+          return;
+        }
+
+        void saveQuestionIdForSavedTest(type, item.id);
+      }
+
+      function allCurrentAffairsQuestionItems() {
+        return Object.values(quizData.currentAffairs).flatMap((year) =>
+          Object.values(year).flatMap((month) =>
+            Object.values(month).flat().flat()
+          )
+        );
+      }
+
+      function savedQuestionsForType(type) {
+        const ids = [...(savedTestState.ids[type] || [])];
+
+        const source = type === "staticGK"
+          ? (Array.isArray(staticGKQuestions) ? staticGKQuestions : [])
+          : allCurrentAffairsQuestionItems();
+
+        const byId = new Map(
+          source
+            .filter((item) => item?.id)
+            .map((item) => [String(item.id).trim(), item])
+        );
+
+        return ids
+          .map((id) => byId.get(String(id).trim()))
+          .filter(Boolean);
+      }
+
+      function startSavedTestRecording(type) {
+        if (!savedTestState.ids[type]) return;
+
+        savedTestState.enabled = true;
+        savedTestState.captureType = type;
+        updateSavedTestUi();
+
+        const currentItem = state[type]?.questions?.[state[type].index];
+        recordCurrentQuestionIfNeeded(type, currentItem);
+
+        showToast(`${savedTestTypeLabel(type)} ID recording ON.`);
+      }
+
+      function stopSavedTestRecording() {
+        savedTestState.enabled = false;
+        savedTestState.captureType = null;
+        updateSavedTestUi();
+        showToast("Saved test ID recording OFF.");
+      }
+
+      function runSavedIdTest(type) {
+        const questions = savedQuestionsForType(type);
+
+        if (!questions.length) {
+          showToast(`No saved ${savedTestTypeLabel(type)} question IDs.`);
+          return;
+        }
+
+        // Only one special saved-ID test is active at a time.
+        savedTestState.testType = type;
+
+        state[type].orderMode = "Series";
+        state[type].startFrom = 1;
+        resetQuestions(type, { preserveSavedTest: true });
+        render(type);
+        updateSavedTestUi();
+
+        document.querySelector(
+          type === "staticGK" ? "#static-panel" : "#current-panel"
+        )?.scrollIntoView({ behavior: "smooth", block: "start" });
+
+        showToast(
+          `${savedTestTypeLabel(type)} saved test started: ${questions.length} questions.`
+        );
+      }
+
+      async function resetSavedTestIds(type) {
+        if (!savedTestState.ids[type]) return;
+
+        const label = savedTestTypeLabel(type);
+        const count = savedTestState.ids[type].size;
+
+        if (!count) {
+          showToast(`${label} saved IDs are already empty.`);
+          return;
+        }
+
+        const confirmed = window.confirm(
+          `Reset ${label} saved test IDs?\n\nThis will clear only ${label} IDs.`
+        );
+
+        if (!confirmed) return;
+
+        try {
+          const result = await queueSavedTestRequest({
+            action: "reset",
+            section: type,
+          });
+
+          const payload = normalizeSavedTestPayload(result);
+
+          // Server normally returns the full file. If it does not, clear only
+          // the requested section locally and keep the other section untouched.
+          if (Array.isArray(result.staticGK) || Array.isArray(result.currentAffairs)) {
+            savedTestState.ids.staticGK = new Set(payload.staticGK);
+            savedTestState.ids.currentAffairs = new Set(payload.currentAffairs);
+          } else {
+            savedTestState.ids[type].clear();
+          }
+
+          // A reset should stay empty. If this section was being recorded,
+          // turn recording OFF so the visible question is not re-added instantly.
+          if (savedTestState.captureType === type) {
+            savedTestState.enabled = false;
+            savedTestState.captureType = null;
+          }
+
+          if (savedTestState.testType === type) {
+            savedTestState.testType = null;
+            resetQuestions(type);
+            render(type);
+          }
+
+          updateSavedTestUi();
+          showToast(`${label} saved IDs reset.`);
+        } catch (error) {
+          console.error(`Could not reset ${label} saved IDs:`, error);
+          showToast(`${label} reset failed.`);
+        }
+      }
+
+      function setupSavedTestControl() {
+        const control = document.querySelector("#saved-test-control");
+        if (!control) return;
+
+        updateSavedTestUi();
+
+        control.querySelectorAll("[data-saved-test-on]").forEach((button) => {
+          button.addEventListener("click", (event) => {
+            event.preventDefault();
+            event.stopPropagation();
+            startSavedTestRecording(button.dataset.savedTestOn);
+          });
+        });
+
+        control.querySelector("[data-saved-test-off]")?.addEventListener(
+          "click",
+          (event) => {
+            event.preventDefault();
+            event.stopPropagation();
+            stopSavedTestRecording();
+          }
+        );
+
+        control.querySelectorAll("[data-saved-test-run]").forEach((button) => {
+          button.addEventListener("click", (event) => {
+            event.preventDefault();
+            event.stopPropagation();
+            runSavedIdTest(button.dataset.savedTestRun);
+            control.open = false;
+          });
+        });
+
+        control.querySelectorAll("[data-saved-test-reset]").forEach((button) => {
+          button.addEventListener("click", async (event) => {
+            event.preventDefault();
+            event.stopPropagation();
+            await resetSavedTestIds(button.dataset.savedTestReset);
+          });
+        });
+
+        document.addEventListener("click", (event) => {
+          if (!control.contains(event.target)) {
+            control.open = false;
+          }
+        });
+      }
+
+
+      /* ================================
          HELPERS
          ================================ */
 
@@ -7589,6 +8442,63 @@
         return typeof item.questionImage === "string" ? item.questionImage : "";
       }
 
+      function normalizeQuestionImageSize(value) {
+        return String(value || "").toLowerCase() === "small"
+          ? "small"
+          : "large";
+      }
+
+      function getQuestionImageSize(item) {
+        return normalizeQuestionImageSize(item?.questionImageSize);
+      }
+
+      async function persistQuestionImageToServer(
+        item,
+        dataUrl = "",
+        name = "question-image",
+        remove = false
+      ) {
+        if (!item?.id) return false;
+
+        try {
+          const response = await fetch("/api/gk-question-image", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              id: item.id,
+              dataUrl,
+              name,
+              remove,
+              size: getQuestionImageSize(item),
+            }),
+          });
+
+          const result = await response.json().catch(() => ({}));
+
+          if (!response.ok || !result.ok) {
+            throw new Error(
+              result.error || `Server returned ${response.status}`
+            );
+          }
+
+          updateFileStatus(
+            result.file ? `SAVED: ${result.file}` : "IMAGE SAVED TO SERVER",
+            true
+          );
+
+          return true;
+        } catch (error) {
+          console.error("Question image server save failed:", error);
+          updateFileStatus("IMAGE SERVER SAVE FAILED", false);
+          showToast(
+            `Image save failed: ${error.message || "Unknown server error"}`
+          );
+          return false;
+        }
+      }
+
       function saveQuestionImage(item, src) {
         if (!item?.id || !src) return false;
 
@@ -7603,8 +8513,17 @@
         }
       }
 
-      function removeQuestionImage(item) {
-        if (!item?.id) return;
+      async function removeQuestionImage(item) {
+        if (!item?.id) return false;
+
+        const saved = await persistQuestionImageToServer(
+          item,
+          "",
+          "question-image",
+          true
+        );
+
+        if (!saved) return false;
 
         try {
           localStorage.removeItem(questionImageStorageKey(item));
@@ -7613,6 +8532,9 @@
         }
 
         item.questionImage = "";
+        item.questionImageId = "";
+        item.questionImageName = "";
+        return true;
       }
 
       async function addQuestionImageFile(item, file, source = "paste") {
@@ -7630,9 +8552,23 @@
           showToast(source === "paste" ? "Pasting image..." : "Preparing image...");
           const src = await compressDateImage(file);
 
+          const serverSaved = await persistQuestionImageToServer(
+            item,
+            src,
+            file.name || `${source}-image`,
+            false
+          );
+
+          if (!serverSaved) return false;
           if (!saveQuestionImage(item, src)) return false;
 
-          showToast(source === "paste" ? "Image pasted." : "Image added.");
+          item.questionImageName = file.name || `${source}-image`;
+
+          showToast(
+            source === "paste"
+              ? `Image pasted (${getQuestionImageSize(item)}).`
+              : `Image added (${getQuestionImageSize(item)}).`
+          );
           return true;
         } catch (error) {
           console.error("Question image add failed:", error);
@@ -8453,7 +9389,17 @@
          RESET QUESTIONS
          ================================ */
 
-      function resetQuestions(type) {
+      function resetQuestions(type, options = {}) {
+
+        // Any normal filter/date/topic reset exits the special saved-ID test.
+        // Only the saved-test runner and end-of-test restart preserve it.
+        if (
+          savedTestState.testType === type &&
+          options.preserveSavedTest !== true
+        ) {
+          savedTestState.testType = null;
+          updateSavedTestUi();
+        }
 
         // A new date/month/year/topic/test must start with untouched subquestions.
         // Otherwise old Map entries can make a correct option look pre-ticked.
@@ -8462,9 +9408,11 @@
         if (type === "staticGK") {
 
           const pool =
-            active(
-              staticPool()
-            );
+            savedTestState.testType === "staticGK"
+              ? active(savedQuestionsForType("staticGK"))
+              : active(
+                  staticPool()
+                );
 
 
           if (
@@ -8535,9 +9483,11 @@
         } else {
 
           const pool =
-            active(
-              currentPool()
-            );
+            savedTestState.testType === "currentAffairs"
+              ? active(savedQuestionsForType("currentAffairs"))
+              : active(
+                  currentPool()
+                );
 
 
           if (
@@ -8931,6 +9881,10 @@
           data.questions[
             data.index
           ];
+
+        // When recording is ON for this section, every question actually shown
+        // in the quiz is stored once by ID in saved-test-ids.json.
+        recordCurrentQuestionIfNeeded(type, item);
 
 
         const label =
@@ -9942,7 +10896,13 @@
               </div>
 
 
-              <div class="question-row">
+              <div class="question-row ${
+                !data.editingQuestion &&
+                getQuestionImage(item) &&
+                getQuestionImageSize(item) === "small"
+                  ? "with-small-image"
+                  : ""
+              }">
 
                 ${
                   data.editingQuestion
@@ -9980,6 +10940,17 @@
                             >
                               Choose file instead
                             </button>
+
+                            <label class="question-image-size-control">
+                              Display
+                              <select
+                                data-question-image-size
+                                aria-label="Question image display size"
+                              >
+                                <option value="large" ${getQuestionImageSize(item) === "large" ? "selected" : ""}>Large</option>
+                                <option value="small" ${getQuestionImageSize(item) === "small" ? "selected" : ""}>Small</option>
+                              </select>
+                            </label>
 
                             <input
                               type="file"
@@ -10114,7 +11085,22 @@
                         ${formatQuestionText(item.question)}
                       </div>
 
-                      <div style="display: flex; gap: 7px; align-items: center; flex: 0 0 auto;">
+                      ${
+                        getQuestionImage(item) &&
+                        getQuestionImageSize(item) === "small"
+                          ? `
+                            <div class="question-media-block small">
+                              <img
+                                src="${getQuestionImage(item)}"
+                                alt="Question image"
+                                loading="lazy"
+                              />
+                            </div>
+                          `
+                          : ""
+                      }
+
+                      <div class="question-toolbar">
                         ${Array.isArray(item.options) && item.options.length >= 2 ? `
                           <button
                             type="button"
@@ -10135,6 +11121,15 @@
                         </button>
                         <button
                           type="button"
+                          class="edit-icon category-edit-icon"
+                          title="View / Change Category"
+                          aria-label="View or change question category"
+                          data-action="edit-category"
+                        >
+                          🏷
+                        </button>
+                        <button
+                          type="button"
                           class="edit-icon"
                           title="Paste/Change Image"
                           aria-label="Paste or change image"
@@ -10151,7 +11146,9 @@
               </div>
 
               ${
-                !data.editingQuestion && getQuestionImage(item)
+                !data.editingQuestion &&
+                getQuestionImage(item) &&
+                getQuestionImageSize(item) === "large"
                   ? `
                     <div class="question-media-block">
                       <img
@@ -10223,11 +11220,60 @@
               }
 
               ${
-                (!Array.isArray(item.options) || item.options.length === 0) && item.explanation
+                !data.editingQuestion &&
+                (!Array.isArray(item.options) || item.options.length === 0)
                   ? `
                     <div class="standalone-question-explanation">
                       <strong style="display:block;color:var(--lime);font:700 10px 'Space Mono',monospace;text-transform:uppercase;letter-spacing:.08em;margin-bottom:5px;">Explanation / Extra Data</strong>
-                      ${escapeHtml(item.explanation).replace(/\n/g, "<br>")}
+
+                      ${
+                        data.editingExplanation
+                          ? `
+                            <textarea
+                              data-original-explanation
+                              aria-label="Edit explanation"
+                              style="width:100%;min-height:110px;resize:vertical;color:var(--text);background:#091c23;border:1px solid var(--cyan);padding:10px;outline:none;line-height:1.45;"
+                            >${escapeHtml(item.explanation || "")}</textarea>
+
+                            <div style="display:flex;gap:7px;flex-wrap:wrap;margin-top:8px;">
+                              <button
+                                type="button"
+                                class="action save-explanation"
+                                data-action="save-original-explanation"
+                              >
+                                Save explanation
+                              </button>
+
+                              <button
+                                type="button"
+                                class="action edit-explanation"
+                                data-action="cancel-original-explanation"
+                              >
+                                Cancel
+                              </button>
+                            </div>
+                          `
+                          : `
+                            <div>
+                              ${
+                                item.explanation
+                                  ? escapeHtml(item.explanation).replace(/\n/g, "<br>")
+                                  : `<span style="color:var(--muted);">No explanation added.</span>`
+                              }
+
+                              <button
+                                type="button"
+                                class="edit-icon"
+                                title="Edit explanation"
+                                aria-label="Edit explanation"
+                                data-action="edit-explanation"
+                                style="margin-left:7px;"
+                              >
+                                ✎
+                              </button>
+                            </div>
+                          `
+                      }
                     </div>
                   `
                   : ""
@@ -10431,6 +11477,37 @@
           "[data-question-image-remove]"
         );
 
+        const questionImageSizeSelect = panel.querySelector(
+          "[data-question-image-size]"
+        );
+
+        questionImageSizeSelect?.addEventListener("change", async (event) => {
+          if (!activeItem) return;
+
+          const previousSize = getQuestionImageSize(activeItem);
+          const nextSize = normalizeQuestionImageSize(event.target.value);
+
+          activeItem.questionImageSize = nextSize;
+
+          const saved = await persistQuestionToOriginalFile(
+            activeItem,
+            "imageSize",
+            nextSize
+          );
+
+          if (!saved) {
+            activeItem.questionImageSize = previousSize;
+            event.target.value = previousSize;
+            return;
+          }
+
+          showToast(
+            nextSize === "small"
+              ? "Image size set to Small."
+              : "Image size set to Large."
+          );
+        });
+
         questionPasteZone?.addEventListener("click", () => {
           questionPasteZone.focus();
         });
@@ -10475,12 +11552,14 @@
           if (added) render(type);
         });
 
-        questionImageRemoveButton?.addEventListener("click", () => {
+        questionImageRemoveButton?.addEventListener("click", async () => {
           if (!activeItem) return;
 
           if (!window.confirm("Remove this question image?")) return;
 
-          removeQuestionImage(activeItem);
+          const removed = await removeQuestionImage(activeItem);
+          if (!removed) return;
+
           render(type);
           showToast("Question image removed.");
         });
@@ -11556,6 +12635,177 @@
 
 
 
+
+      /* ================================
+         QUESTION CATEGORY VIEW / EDIT
+         ================================ */
+
+      const questionCategoryEditorState = {
+        type: null,
+        item: null,
+        saving: false,
+      };
+
+      function categoryItemsForType(type) {
+        if (type === "currentAffairs") {
+          return Object.values(quizData.currentAffairs || {}).flatMap((year) =>
+            Object.values(year || {}).flatMap((month) =>
+              Object.values(month || {}).flat().flat()
+            )
+          );
+        }
+
+        return Array.isArray(quizData.staticGK)
+          ? quizData.staticGK
+          : [];
+      }
+
+      function existingCategoriesForType(type, currentCategory = "") {
+        const categories = new Set(
+          categoryItemsForType(type)
+            .map((candidate) => String(candidate?.category || "").trim())
+            .filter(Boolean)
+        );
+
+        const current = String(currentCategory || "").trim();
+        if (current) categories.add(current);
+
+        return [...categories].sort((a, b) =>
+          a.localeCompare(b, undefined, { sensitivity: "base" })
+        );
+      }
+
+      function closeQuestionCategoryEditor() {
+        const modal = $("#question-category-modal");
+        if (!modal) return;
+
+        modal.classList.remove("show");
+        modal.setAttribute("aria-hidden", "true");
+        questionCategoryEditorState.type = null;
+        questionCategoryEditorState.item = null;
+        questionCategoryEditorState.saving = false;
+      }
+
+      function openQuestionCategoryEditor(type, item) {
+        if (!item) return;
+
+        const modal = $("#question-category-modal");
+        const currentBox = $("#question-category-current");
+        const questionBox = $("#question-category-question");
+        const select = $("#question-category-select");
+        const subtitle = $("#question-category-subtitle");
+
+        if (!modal || !currentBox || !questionBox || !select) return;
+
+        const currentCategory = String(item.category || "").trim();
+        const categories = existingCategoriesForType(type, currentCategory);
+
+        questionCategoryEditorState.type = type;
+        questionCategoryEditorState.item = item;
+        questionCategoryEditorState.saving = false;
+
+        currentBox.textContent = currentCategory || "No category";
+        questionBox.textContent = String(item.question || "");
+
+        if (subtitle) {
+          subtitle.textContent = type === "currentAffairs"
+            ? "Current Affairs · choose from existing Current Affairs categories."
+            : "Static GK · choose from existing Static GK categories.";
+        }
+
+        select.innerHTML = categories.length
+          ? categories
+              .map((category) => `
+                <option value="${escapeHtml(category)}" ${category === currentCategory ? "selected" : ""}>
+                  ${escapeHtml(category)}
+                </option>
+              `)
+              .join("")
+          : `<option value="">No existing category found</option>`;
+
+        select.disabled = !categories.length;
+        $("#question-category-save").disabled = !categories.length;
+
+        modal.classList.add("show");
+        modal.setAttribute("aria-hidden", "false");
+
+        requestAnimationFrame(() => select.focus());
+      }
+
+      async function saveQuestionCategoryFromEditor() {
+        if (questionCategoryEditorState.saving) return;
+
+        const { type, item } = questionCategoryEditorState;
+        const select = $("#question-category-select");
+        const saveButton = $("#question-category-save");
+
+        if (!type || !item || !select) return;
+
+        const newCategory = String(select.value || "").trim();
+        const oldCategory = String(item.category || "").trim();
+
+        if (!newCategory) {
+          showToast("Select a category first.");
+          return;
+        }
+
+        if (newCategory === oldCategory) {
+          closeQuestionCategoryEditor();
+          showToast(`Category: ${newCategory}`);
+          return;
+        }
+
+        questionCategoryEditorState.saving = true;
+        if (saveButton) {
+          saveButton.disabled = true;
+          saveButton.textContent = "Saving...";
+        }
+
+        const saved = await persistQuestionToOriginalFile(
+          item,
+          "category",
+          newCategory
+        );
+
+        if (saveButton) {
+          saveButton.disabled = false;
+          saveButton.textContent = "Save Category";
+        }
+        questionCategoryEditorState.saving = false;
+
+        if (!saved) return;
+
+        item.category = newCategory;
+
+        // Keep the visible saved-test question list intact. In normal filtered
+        // mode, re-rendering the current panel is enough; the changed category
+        // will be reflected the next time filters are rebuilt/reset.
+        closeQuestionCategoryEditor();
+        render(type);
+        showToast(`Category changed to ${newCategory}`);
+      }
+
+      function setupQuestionCategoryEditor() {
+        const modal = $("#question-category-modal");
+        const closeButton = $("#question-category-close");
+        const cancelButton = $("#question-category-cancel");
+        const saveButton = $("#question-category-save");
+
+        closeButton?.addEventListener("click", closeQuestionCategoryEditor);
+        cancelButton?.addEventListener("click", closeQuestionCategoryEditor);
+        saveButton?.addEventListener("click", saveQuestionCategoryFromEditor);
+
+        modal?.addEventListener("click", (event) => {
+          if (event.target === modal) closeQuestionCategoryEditor();
+        });
+
+        document.addEventListener("keydown", (event) => {
+          if (event.key === "Escape" && modal?.classList.contains("show")) {
+            closeQuestionCategoryEditor();
+          }
+        });
+      }
+
       /* ================================
          ACTION HANDLER
          ================================ */
@@ -11615,7 +12865,10 @@
 
           } else {
 
-            resetQuestions(type);
+            resetQuestions(
+              type,
+              { preserveSavedTest: savedTestState.testType === type }
+            );
 
           }
 
@@ -11946,6 +13199,19 @@
 
         }
 
+
+
+        /* ================================
+           VIEW / CHANGE CATEGORY
+           ================================ */
+
+        if (
+          action === "edit-category" &&
+          item
+        ) {
+          openQuestionCategoryEditor(type, item);
+          return;
+        }
 
 
         /* ================================
@@ -12429,6 +13695,8 @@
         setupGlobalCategoryFilter();
         setupQuestionUpload();
         setupSubQuestionEditor();
+        setupSavedTestControl();
+      setupQuestionCategoryEditor();
 
         updateFileStatus(
           "CONNECTING TO SERVER...",
@@ -12446,6 +13714,9 @@
 
         // Load Static GK questions created from the same + Question form.
         await loadUserStaticGKQuestions();
+
+        // Load saved question IDs. Recording still starts OFF on every page load.
+        await loadSavedTestIdsFromServer();
 
         // Always start Current Affairs on the latest available date.
         setLatestCurrentAffairsDate();

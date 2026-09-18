@@ -27,6 +27,11 @@ USER_STATIC_GK_FILE = BASE_DIR / "user-static-gk.json"
 USER_STATIC_GK_LOCK = threading.Lock()
 STATIC_QUESTION_IMAGES_DIR = BASE_DIR / "static-question-images"
 
+# Saved Test keeps Static GK and Current Affairs question IDs in one file.
+SAVED_TEST_IDS_FILE = BASE_DIR / "saved-test-ids.json"
+SAVED_TEST_IDS_LOCK = threading.Lock()
+SAVED_TEST_SECTIONS = ("staticGK", "currentAffairs")
+
 STATIC_GK_DATA_DIR = BASE_DIR / "static-gk-data"
 STATIC_GK_AGGREGATOR_FILE = BASE_DIR / "static-gk.js"
 STATIC_GK_INDEX_FILE = BASE_DIR / "index.html"
@@ -90,6 +95,85 @@ def atomic_write_bytes(path: Path, data: bytes):
             os.remove(temp_name)
 
 
+def _normalize_saved_test_ids(data):
+    """Return a clean Saved Test document with unique IDs in insertion order."""
+    source = data if isinstance(data, dict) else {}
+    cleaned = {}
+
+    for section in SAVED_TEST_SECTIONS:
+        raw_ids = source.get(section, [])
+        if not isinstance(raw_ids, list):
+            raw_ids = []
+
+        seen = set()
+        ids = []
+        for raw_id in raw_ids:
+            question_id = str(raw_id or "").strip()
+            if not question_id or question_id in seen:
+                continue
+            seen.add(question_id)
+            ids.append(question_id)
+
+        cleaned[section] = ids
+
+    return cleaned
+
+
+def _read_saved_test_ids_unlocked():
+    if not SAVED_TEST_IDS_FILE.exists():
+        return {"staticGK": [], "currentAffairs": []}
+
+    try:
+        data = json.loads(SAVED_TEST_IDS_FILE.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError, UnicodeDecodeError):
+        return {"staticGK": [], "currentAffairs": []}
+
+    return _normalize_saved_test_ids(data)
+
+
+def read_saved_test_ids():
+    """Read the single Saved Test ID file safely."""
+    with SAVED_TEST_IDS_LOCK:
+        return _read_saved_test_ids_unlocked()
+
+
+def _write_saved_test_ids_unlocked(data):
+    cleaned = _normalize_saved_test_ids(data)
+    atomic_write(
+        SAVED_TEST_IDS_FILE,
+        json.dumps(cleaned, ensure_ascii=False, indent=2),
+    )
+    return cleaned
+
+
+def update_saved_test_ids(action: str, section: str, question_id=None):
+    """Add one ID or reset exactly one Saved Test section."""
+    action = str(action or "").strip().lower()
+    section = str(section or "").strip()
+
+    if section not in SAVED_TEST_SECTIONS:
+        raise ValueError('section must be "staticGK" or "currentAffairs".')
+
+    if action not in ("add", "reset"):
+        raise ValueError('action must be "add" or "reset".')
+
+    with SAVED_TEST_IDS_LOCK:
+        data = _read_saved_test_ids_unlocked()
+
+        if action == "reset":
+            data[section] = []
+        else:
+            question_id = str(question_id or "").strip()
+            if not question_id:
+                raise ValueError("Question id is required for add action.")
+            if len(question_id) > 300:
+                raise ValueError("Question id is too long.")
+            if question_id not in data[section]:
+                data[section].append(question_id)
+
+        return _write_saved_test_ids_unlocked(data)
+
+
 def validate_image_date(value: str):
     value = str(value or "").strip()
     try:
@@ -97,6 +181,13 @@ def validate_image_date(value: str):
     except ValueError as error:
         raise ValueError("Date must be in YYYY-MM-DD format.") from error
     return parsed.strftime("%Y-%m-%d")
+
+
+def normalize_question_image_size(value):
+    value = str(value or "large").strip().lower()
+    if value not in {"small", "large"}:
+        raise ValueError('Question image size must be "small" or "large".')
+    return value
 
 
 def read_date_images_index():
@@ -551,6 +642,7 @@ def normalize_user_question_payload(payload):
 
     question_image_data_url = str(payload.get("questionImageDataUrl", "") or "").strip()
     question_image_name = str(payload.get("questionImageName", "") or "").strip()
+    question_image_size = normalize_question_image_size(payload.get("questionImageSize", "large"))
     sub_questions = normalize_sub_questions(payload.get("subQuestions", []))
 
     return {
@@ -562,6 +654,7 @@ def normalize_user_question_payload(payload):
         "explanation": explanation,
         "questionImageDataUrl": question_image_data_url,
         "questionImageName": question_image_name,
+        "questionImageSize": question_image_size,
         "subQuestions": sub_questions,
     }
 
@@ -647,6 +740,7 @@ def normalize_static_question_payload(payload, forced_topic=None):
 
     question_image_data_url = str(payload.get("questionImageDataUrl", "") or "").strip()
     question_image_name = str(payload.get("questionImageName", "") or "").strip()
+    question_image_size = normalize_question_image_size(payload.get("questionImageSize", "large"))
     sub_questions = normalize_sub_questions(payload.get("subQuestions", []))
 
     return {
@@ -660,6 +754,7 @@ def normalize_static_question_payload(payload, forced_topic=None):
         "explanation": explanation,
         "questionImageDataUrl": question_image_data_url,
         "questionImageName": question_image_name,
+        "questionImageSize": question_image_size,
         "subQuestions": sub_questions,
     }
 
@@ -847,6 +942,9 @@ def update_user_static_gk_question(question_id: str, action: str, value):
                 raise ValueError("Category cannot be empty.")
             item["category"] = category
 
+        elif action == "imageSize":
+            item["questionImageSize"] = normalize_question_image_size(value)
+
         elif action == "add-note":
             note = str(value or "").strip()
             if not note:
@@ -1028,6 +1126,9 @@ def update_user_current_affairs_question(question_id: str, action: str, value):
             if not category:
                 raise ValueError("Category cannot be empty.")
             item["category"] = category
+
+        elif action == "imageSize":
+            item["questionImageSize"] = normalize_question_image_size(value)
 
         elif action == "add-note":
             note = str(value or "").strip()
@@ -1391,6 +1492,7 @@ def update_question(
             payload.get("dataUrl", ""),
             payload.get("name", ""),
             bool(payload.get("remove")),
+            payload.get("size"),
         )
 
     try:
@@ -1541,6 +1643,15 @@ def update_question(
             obj,
             "category",
             json.dumps(category, ensure_ascii=False),
+        )
+        new_text = text[:start] + new_obj + text[end:]
+
+    elif action == "imageSize":
+        image_size = normalize_question_image_size(value)
+        new_obj = replace_or_add_field(
+            obj,
+            "questionImageSize",
+            json.dumps(image_size, ensure_ascii=False),
         )
         new_text = text[:start] + new_obj + text[end:]
 
@@ -2084,6 +2195,9 @@ def _normalize_static_file_question(raw, category: str):
         "subQuestions": normalize_sub_questions(raw.get("subQuestions", [])),
         "questionImageDataUrl": str(raw.get("questionImageDataUrl", "") or "").strip(),
         "questionImageName": str(raw.get("questionImageName", "") or "").strip(),
+        "questionImageSize": normalize_question_image_size(
+            raw.get("questionImageSize", "large")
+        ),
     }
 
 
@@ -2104,6 +2218,9 @@ def _stored_static_js_record(record):
             stored["questionImageId"] = record["questionImageId"]
         if record.get("questionImageName"):
             stored["questionImageName"] = record["questionImageName"]
+        stored["questionImageSize"] = normalize_question_image_size(
+            record.get("questionImageSize", "large")
+        )
     return stored
 
 
@@ -2305,6 +2422,7 @@ def _create_static_records_in_source(source, category: str, raw_questions):
                 else ""
             ),
             "questionImageName": image_name if image_url else "",
+            "questionImageSize": clean.get("questionImageSize", "large"),
             "topic": topic,
             "mainCategory": topic,
             "sourceFile": source["fileName"],
@@ -2989,23 +3107,50 @@ def delete_questions_by_ids(question_ids):
     }
 
 
-def _replace_question_image_fields_in_js(path: Path, text: str, start: int, end: int, item, image_url: str, image_name: str):
+def _replace_question_image_fields_in_js(
+    path: Path,
+    text: str,
+    start: int,
+    end: int,
+    item,
+    image_url: str,
+    image_name: str,
+    image_size=None,
+):
     obj = text[start:end]
     new_obj = replace_or_add_field(obj, "questionImage", json.dumps(image_url, ensure_ascii=False))
     image_id = f"img-{re.sub(r'[^A-Za-z0-9_-]', '_', str(item.get('id', '')))}-001" if image_url else ""
     new_obj = replace_or_add_field(new_obj, "questionImageId", json.dumps(image_id, ensure_ascii=False))
     new_obj = replace_or_add_field(new_obj, "questionImageName", json.dumps(image_name if image_url else "", ensure_ascii=False))
+    if image_size is not None:
+        image_size = normalize_question_image_size(image_size)
+        new_obj = replace_or_add_field(
+            new_obj,
+            "questionImageSize",
+            json.dumps(image_size, ensure_ascii=False),
+        )
     new_text = text[:start] + new_obj + text[end:]
     atomic_write(path, new_text)
     return path.relative_to(BASE_DIR).as_posix()
 
 
-def update_question_image(question_id: str, data_url: str = "", name: str = "", remove: bool = False):
+def update_question_image(
+    question_id: str,
+    data_url: str = "",
+    name: str = "",
+    remove: bool = False,
+    image_size=None,
+):
     question_id = str(question_id or "").strip()
     if not question_id:
         raise ValueError("Question id is required.")
     data_url = str(data_url or "").strip()
     name = str(name or "Image").strip() or "Image"
+    normalized_image_size = (
+        normalize_question_image_size(image_size)
+        if image_size is not None
+        else None
+    )
     if not remove and not data_url:
         raise ValueError("Image data is required, or set remove=true.")
 
@@ -3024,6 +3169,8 @@ def update_question_image(question_id: str, data_url: str = "", name: str = "", 
             item["questionImage"] = image_url
             item["questionImageId"] = f"img-{re.sub(r'[^A-Za-z0-9_-]', '_', question_id)}-001" if image_url else ""
             item["questionImageName"] = name if image_url else ""
+            if normalized_image_size is not None:
+                item["questionImageSize"] = normalized_image_size
             items[index] = item
             write_user_current_affairs(items)
             return USER_CURRENT_AFFAIRS_FILE.name
@@ -3043,6 +3190,8 @@ def update_question_image(question_id: str, data_url: str = "", name: str = "", 
             item["questionImage"] = image_url
             item["questionImageId"] = f"img-{re.sub(r'[^A-Za-z0-9_-]', '_', question_id)}-001" if image_url else ""
             item["questionImageName"] = name if image_url else ""
+            if normalized_image_size is not None:
+                item["questionImageSize"] = normalized_image_size
             items[index] = item
             write_user_static_gk(items)
             return USER_STATIC_GK_FILE.name
@@ -3079,6 +3228,7 @@ def update_question_image(question_id: str, data_url: str = "", name: str = "", 
         {"id": question_id},
         image_url,
         name,
+        normalized_image_size,
     )
 
 
@@ -3143,6 +3293,7 @@ class QuizHandler(
                 "managerEndpoint": True,
                 "bulkDeleteEndpoint": True,
                 "questionImageUpdateEndpoint": True,
+                "savedTestEndpoint": True,
                 "baseDir": str(BASE_DIR),
             })
             return
@@ -3204,6 +3355,16 @@ class QuizHandler(
                 })
             return
 
+        if path == "/api/saved-test-ids":
+            data = read_saved_test_ids()
+            self.send_json({
+                "ok": True,
+                "staticGK": data["staticGK"],
+                "currentAffairs": data["currentAffairs"],
+                "file": SAVED_TEST_IDS_FILE.name,
+            })
+            return
+
         # Compatibility for current frontend init
         if path == "/api/changes":
             self.send_json({
@@ -3239,6 +3400,7 @@ class QuizHandler(
             "/api/static-question-create-bulk",
             "/api/gk-bulk-delete",
             "/api/gk-question-image",
+            "/api/saved-test-ids",
         }
         if path not in allowed_paths:
             self.send_json(
@@ -3273,6 +3435,20 @@ class QuizHandler(
             data = json.loads(
                 raw.decode("utf-8")
             )
+
+            if path == "/api/saved-test-ids":
+                saved = update_saved_test_ids(
+                    data.get("action", ""),
+                    data.get("section", ""),
+                    data.get("id"),
+                )
+                self.send_json({
+                    "ok": True,
+                    "staticGK": saved["staticGK"],
+                    "currentAffairs": saved["currentAffairs"],
+                    "file": SAVED_TEST_IDS_FILE.name,
+                })
+                return
 
             if path == "/api/current-question-create":
                 record = create_user_current_affairs_question(data)
@@ -3348,6 +3524,7 @@ class QuizHandler(
                     data.get("dataUrl", ""),
                     data.get("name", ""),
                     bool(data.get("remove")),
+                    data.get("size"),
                 )
                 self.send_json({"ok": True, "id": question_id, "file": file_name})
                 return
@@ -3442,6 +3619,7 @@ if __name__ == "__main__":
     print("GET  /api/static-source-files ENABLED")
     print("GET  /api/date-images         ENABLED")
     print("GET  /api/gk-manager-data     ENABLED")
+    print("GET  /api/saved-test-ids      ENABLED")
     print("POST /api/current-question-create ENABLED")
     print("POST /api/current-question-create-bulk ENABLED")
     print("POST /api/static-question-create ENABLED")
@@ -3451,6 +3629,7 @@ if __name__ == "__main__":
     print("POST /api/question-update     ENABLED")
     print("POST /api/gk-bulk-delete      ENABLED")
     print("POST /api/gk-question-image   ENABLED")
+    print("POST /api/saved-test-ids      ENABLED")
     print(
         "Question edits will be written "
         "directly into original .js files."

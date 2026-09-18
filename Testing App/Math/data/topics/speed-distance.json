@@ -58,5 +58,1345 @@
     "order": 227,
     "attemptStatus": "unattempted",
     "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "A car can cover a distance of 144 km in 1.8 hours. In what time (in hours) will it cover double the distance when its speed is increased by 20%?",
+    "questionImage": null,
+    "options": [
+      "2 hours",
+      "2.5 hours",
+      "3 hours",
+      "3.2 hours"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?si=N6CLi0951ybO5AK3&t=4365",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi8b4y0oa",
+    "order": 228,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "A man cycling at a speed of 24 kmph reaches college 11 minutes late, if he had cycled at a speed of 30 kmph, he would have reached 8 minutes earlier. Find the distance between the hostel and the college?",
+    "questionImage": null,
+    "options": [
+      "32 km",
+      "36 km",
+      "38 km",
+      "40 km"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?si=xMAqdVk5mKbr5tZx&t=6661",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi8h8bvpr",
+    "order": 229,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "Jai travels from his house to school at a speed of 10 km/hr and reaches late by 5 minutes. if he increases his speed by 3 km/hr, he will reach the school 4 minutes early. What is the distance between his house and the school?",
+    "questionImage": null,
+    "options": [
+      "5 km",
+      "6 km",
+      "6.5 km",
+      "7.5 km"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?si=gcAfD3MHroaebEIA&t=6858",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi8665uz6",
+    "order": 230,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "If Raman drives his bike at a speed of 24 km/h, he reaches his office 5 minutes late. If he drives at a speed of 30 km/h, he reaches his office 4 minutes early. How much time (in minutes) will he take to reach his office at a speed of 27 km/h?",
+    "questionImage": null,
+    "options": [
+      "36 minutes",
+      "38 minutes",
+      "40 minutes",
+      "42 minutes"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?si=tll2dlPkQblJYqF-&t=7230",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi8ha336p",
+    "order": 231,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "A train covers the distance between two stations X and Y in 10 hours. If the speed of the train is reduced by 45 km/h, then it travels the same distance in 16 hours. Find the distance between the two stations.",
+    "questionImage": null,
+    "options": [
+      "1080 km",
+      "1200 km",
+      "1280 km",
+      "1440 km"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?si=lI6TEvr3uakzMGnh&t=7564",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi83kmiui",
+    "order": 232,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "If a train runs at 40 km/hr, it reaches its destination late by 10 min, but if it runs at 45 km/hr, it is late by 4 min. What is the correct time for the train to complete the journey?",
+    "questionImage": null,
+    "options": [
+      "34 minutes",
+      "45 minutes",
+      "44 minutes",
+      "24 minutes"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?si=Wcr3JtMvwia1SofD&t=8100",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi8reepq4",
+    "order": 233,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "A person goes to his office by scooter at the speed of 80 km/hr and reaches 60 minutes earlier. If he goes at the speed 50 km/hr, then he reaches 48 minutes late. What what will be the speed of the scooter to reach on the usual time?",
+    "questionImage": null,
+    "options": [
+      "56 km/h",
+      "60 km/h",
+      "62.5 km/h",
+      "64 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?si=krIPQJT1wpPkzbSj&t=8354",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi8azyd98",
+    "order": 234,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "A train covered a certain distance at a uniform speed, If the train had been 12 km/h faster, it would have taken 8 hours less than the scheduled time. If thetrain were slower by 12 km/h, the train would have taken 12 hours more than thescheduled time. Find the length of the journey (in km).",
+    "questionImage": null,
+    "options": [
+      "1200 km",
+      "1320 km",
+      "1440 km",
+      "1560 km"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?si=yBAYSBzWV_Hz5BPD&t=8794",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi8ukvoy3",
+    "order": 235,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "The ratio of the speeds of two trucks is 7: 4. The time taken by the faster truck to cover a distance of 196 km is 7 hours less than the other. Find the speed of the slower truck.",
+    "questionImage": null,
+    "options": [
+      "10 km/h",
+      "12 km/h",
+      "14 km/h",
+      "16 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?si=iN_SmyMsEsRwZ3u8&t=9163",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi8xlxvxa",
+    "order": 236,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "A train can travel 40% faster than a car. Both the train and car start from point A at the same time and reach point B, which is 70 kms away from A, at the same time. On the way, however, the train lost about 15 minutes while stopping at stations. The speed of the train in km/his:",
+    "questionImage": null,
+    "options": [
+      "100 km/h",
+      "108 km/h",
+      "112 km/h",
+      "120 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?si=-Ny-2UHC9IhdwKjB&t=9458",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi85tw2lb",
+    "order": 237,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "In covering a distance of 182 km, Salaj takes 4 hours more than Kevin. If Salaj doubles his speed, then he would take 9 hours less than Kevin. Salaj's speed is:",
+    "questionImage": null,
+    "options": [
+      "6 km/h",
+      "7 km/h",
+      "8 km/h",
+      "14 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?si=EBAXj1MVEgfRnDnw&t=9735",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi8knnu4q",
+    "order": 238,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "Train A takes 1&4/5 h more than the time taken by train B to cover a distance of 360 km. If the speed of train A doubles, it will take 36 min less than the time taken by train B to travel the same distance. What is the speed (in km/h) of train B?",
+    "questionImage": null,
+    "options": [
+      "100 km/h",
+      "110 km/h",
+      "120 km/h",
+      "125 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?si=S4Qa82XqivReBM99&t=10186",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi8bsaaxw",
+    "order": 239,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "Due to engine failure, an express train runs at 9/10 of its normal speed and reaches at 2:34 pm instead of 2:28 pm. At what time did he start walking?",
+    "questionImage": null,
+    "options": [
+      "1:32 PM",
+      "1:34 PM",
+      "1:36 PM",
+      "1:40 PM"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?si=mWGAL1ZQJfiz61SU&t=10895",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi898mepi",
+    "order": 240,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "Rohan is travelling on his cycle and has calculated to reach point A at 2 pm, if he travels at 12 km/h. he will reach there at 12 noon, if he travels at 18 km/h. at what speed must he travel to reach A at 1PM?",
+    "questionImage": null,
+    "options": [
+      "13.5 km/h",
+      "14 km/h",
+      "14.4 km/h",
+      "15 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?si=75x8ajJ_MCQ78z5S&t=11327",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi8olf8pm",
+    "order": 241,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "Two trains, A and B, start simultaneously from two stations X and Y that are 600 km apart and cross each other at a distance of 225 km from X. If it took train B 8 hours to complete the journey, in how many hours did train A complete it?",
+    "questionImage": null,
+    "options": [
+      "12 hours",
+      "13⅓ hours",
+      "14 hours",
+      "16 hours"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?si=aG98F6l0Wzz_zYW-&t=12318",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi8ij33ae",
+    "order": 242,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "A car leaves place Z at 2PM and moves towards place T which is at a distance of D km at a uniform spccd. A bus leaves place T at 3 PM and moves towards place Z at a uniform speed. The speed of car is half of bus. If they meet 04:40 PM at a point which is 184 km away from Z. The value of D is:",
+    "questionImage": null,
+    "options": [
+      "368 km",
+      "396 km",
+      "414 km",
+      "432 km"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?si=nmRbqEsbM9NoHoGk&t=12680",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi8gmm97g",
+    "order": 243,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "A and B started travelling towards each other at the same time, from places X to Y and Y to X, respectively. After crossing each other, A and B took 2.45 hours and 4.05 hours to each Y and X, respectively. If the speed of B was 8.4 km/h, then what was the speed of A?",
+    "questionImage": null,
+    "options": [
+      "9.6 km/h",
+      "10.8 km/h",
+      "11.2 km/h",
+      "12.6 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?si=pNDUNxHiXVCNyo0q&t=14585",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi8xn49f1",
+    "order": 244,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "Two persons Ram and Shyam start simultaneously in the opposite direction from two points A and B at 9:00 am. Each of them runs towards starting point of other. After crossing each other Ram and Shyam took 80 minutes and 45 minutes to reach their destination. At what time they will meet each other.",
+    "questionImage": null,
+    "options": [
+      "9:45 AM",
+      "10:00 AM",
+      "10:15 AM",
+      "10:30 AM"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?si=-nzBH_2lrC7YdJxm&t=15386",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi8epv4jp",
+    "order": 245,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "X gets on an elevator at the I1th floor of a building and rides up at the rate of 57 floors per minute. At the same time, Y gets on an elevator at the 51st floor of the same building and rides down at the rate of 63 floors per minute. If they continue traveling at these rates, then at which floor will their paths cross ?",
+    "questionImage": null,
+    "options": [
+      "28th floor",
+      "29th floor",
+      "30th floor",
+      "31st floor"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?si=79exdXVNoqJBXzTP&t=15700",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi8vwwnid",
+    "order": 246,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "Two guns are fired from the same place at an interval of 9 minutes. A person approaching the place observes that 8 minutes 48 seconds have elapsed between the hearing of the sound of the two guns. If the velocity of the sound is 330 m/s, at what speed was the person approaching that place (in km/h)?",
+    "questionImage": null,
+    "options": [
+      "24 km/h",
+      "27 km/h",
+      "30 km/h",
+      "33 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?si=TF-_cgUXtSVGRaBl&t=15970",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi8dj9t4j",
+    "order": 247,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "From a taxi stand, two cabs start at a speed of 54 km/hr at an interval of 29 minutes, both cabs travelling in the same direction. A man coming in the opposite direction towards the taxi stand meets the cabs at an interval of 12 minutes. Find the speed (in km/hr) of the man.",
+    "questionImage": null,
+    "options": [
+      "72 km/h",
+      "75 km/h",
+      "76.5 km/h",
+      "81 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?si=XTdDcCH3XJeMjblG&t=16492",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi8w1k42q",
+    "order": 248,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "The buses are departed after every 21 minutes, but a beautiful girl going away from the bus depot meets the buses after every 28 minutes. Find the speed ofbuses if the speed of girl is 30 km/hr.",
+    "questionImage": null,
+    "options": [
+      "80 km/h",
+      "90 km/h",
+      "100 km/h",
+      "120 km/h"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?si=JGVnJIN9m8oQfmTH&t=17053",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi85hfi4e",
+    "order": 249,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "A train covers 400 km at a uniform speed. If the speed had been 10 km/h more, it would have taken 2 hour less for the same journey. Find the speed of the train?",
+    "questionImage": null,
+    "options": [
+      "35 km/h",
+      "40 km/h",
+      "45 km/h",
+      "50 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?si=Qyc7q_7ZU8CMI1G3&t=17297",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi8gfj3mf",
+    "order": 250,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "A train covers 360 km at a uniform speed if the speed had been 10 km/h more it would have taken 3 hours less for a journey. What is the speed of the train (in km/h)?",
+    "questionImage": null,
+    "options": [
+      "25 km/h",
+      "30 km/h",
+      "35 km/h",
+      "40 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?si=oJYbwoSybgxlJ-TN&t=17638",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi8lfw3gh",
+    "order": 251,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "Due to traffic, the speed of a car is reduced by 15 km/hr so it takes 1.5 hours more to cover a distance of 1260 km. Find the initial speed of the car?",
+    "questionImage": null,
+    "options": [
+      "105 km/h",
+      "110 km/h",
+      "120 km/h",
+      "125 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?si=mVFdQHefIYZTTr3p&t=17732",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi8t0ho8x",
+    "order": 252,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "The distance between two places is 1200 km. To cover this distance, a person X takes 5 hours lesser than another person Y, whose average speed is 40 km/h lesser than that of X The time taken by Y to complete the travel is:",
+    "questionImage": null,
+    "options": [
+      "12 hours",
+      "15 hours",
+      "20 hours",
+      "25 hours"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?si=mP3uJ8oBhvs__1GA&t=18161",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi8isqovu",
+    "order": 253,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "A man goes to Nagpur from Visakhapatnam at a speed of 24 km/hr and returns to Visakhapatnam at speed of 40 km/hr, through the same route. What is his average speed (in km/hr) of the entire journey?",
+    "questionImage": null,
+    "options": [
+      "28 km/h",
+      "30 km/h",
+      "32 km/h",
+      "35 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?si=o6ISkQWhTDLQlWe6&t=19799",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi89rfd7c",
+    "order": 254,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "For a journey of 600 km, a truck covers the first 300 km at a speed of 42 km/hr. What speed (in km/hr) must it maintain for the remaining distance to achieve an average speed of 60 km/hr?",
+    "questionImage": null,
+    "options": [
+      "90 km/h",
+      "100 km/h",
+      "105 km/h",
+      "110 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?si=w73XG7AamBCYl2FX&t=20439",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi8y52til",
+    "order": 255,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "Ansh walks to his school at a certain speed from his home in the morning and returns in the afternoon at a speed, which is 2km/h slower than his speed in the morning. If the average speed of Ansh of going to and coming back from the school is 4.8 km/h, find the sum of the speeds (in km/h) of Ansh in the morning and afternoon.",
+    "questionImage": null,
+    "options": [
+      "8 km/h",
+      "9 km/h",
+      "10 km/h",
+      "12 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?si=G9kuaTvpJjau3FKR&t=20711",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi88oedcl",
+    "order": 256,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "A car travels 120 km at an unknown speed x km/n and then returns at (x + 20) km/h. The average speed for the whole journey is 60 km/h. Find the value of x. (Round to one decimal place.)",
+    "questionImage": null,
+    "options": [
+      "48.4 km/h",
+      "50 km/h",
+      "51.6 km/h",
+      "52.8 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=20893",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi8lpzux9",
+    "order": 257,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "Rama walks to her office 5 km away from home. In the morning, she covers the distance in 1 hour whereas, while returning home in the evening, she takes 15 more minutes to cover the same distance. Find her average speed (in km/h) during the two-way journey?",
+    "questionImage": null,
+    "options": [
+      "4.0 km/h",
+      "4.2 km/h",
+      "4.44 km/h",
+      "4.8 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=21614",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi8w9zy90",
+    "order": 258,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "Mithila covers 50 km by bus in 90 minutes. After deboarding the bus, she takes rest for 15 minutes and covers another 30 km by a taxi in 35 minutes. Find the average speed (in km/h) for the whole journey.",
+    "questionImage": null,
+    "options": [
+      "32 km/h",
+      "34.29 km/h",
+      "36 km/h",
+      "38.4 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=21759",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi80pomy1",
+    "order": 259,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "An aeroplane travels distances 1320 km, 1760 km and 2095 km at the rate of 528 km/h, 352 km/h and 419 km/h, respectively-Find the average speed (in km/h) of the aeroplane.",
+    "questionImage": null,
+    "options": [
+      "396 km/h",
+      "399.3 km/h",
+      "414 km/h",
+      "420 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=22852",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi8jv01j4",
+    "order": 260,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "A man covers equal distances at the speeds of 19 km/hr, 8 km/hr and 5 km/hr His average speed for the entire journey is:",
+    "questionImage": null,
+    "options": [
+      "7.3 km/h",
+      "7.94 km/h",
+      "8.5 km/h",
+      "9.0 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=25159",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi8jdb6rr",
+    "order": 261,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "Three-fifth of a journey is covered at a speed of 84 km/hr, and the remaining distance is covered at the rate of 56 km/hr. The average speed for the whole journey (in km/hr) is:",
+    "questionImage": null,
+    "options": [
+      "64 km/h",
+      "68 km/h",
+      "70 km/h",
+      "72 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=26112",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi8yf4lz0",
+    "order": 262,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "Mohan complete a certain journey by car. If he covered 30% of the distance at 90 km/h, 45% of the distance at 135 km/h and the remaining distance at 75 km/h. his average speed (in km/h). His gyergge speed (in km/h) for the entire journey is?",
+    "questionImage": null,
+    "options": [
+      "90 km/h",
+      "96 km/h",
+      "100 km/h",
+      "104 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=27310",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi8w84nsu",
+    "order": 263,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "Rishika travels a certain distance at a speed of 52 km/hr and double the earlier distance at 39 km/hr. She then returns to the starting point through the same route. If her average speed for the entire journey is 56 km/h, then what is her speed (in km/hr) for the return journey?",
+    "questionImage": null,
+    "options": [
+      "72.8 km/h",
+      "78 km/h",
+      "81.9 km/h",
+      "84.5 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=27531",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi8gc0px9",
+    "order": 264,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "One-third of a journey is covered at a speed of 2 km/hr, the next one-third of the journey is covered at a speed of 87 km/hr and the remaining journey is covered at a speed of 53 km/hr. The average speed (in km/hr, rounded off to 1 decimal place) for the entire journey is:",
+    "questionImage": null,
+    "options": [
+      "5.2 km/h",
+      "5.7 km/h",
+      "6.1 km/h",
+      "6.5 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=28314",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi8git28o",
+    "order": 265,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "Anita travelled a distance for 11 minutes at the speed of 35 km/h in an autorikshaw. She travelled for 11 minutes in a taxi at 55 km/h and finally she travelled for 11 minutes by bus at 42 km/h to reach home. Find her average speed for the whole journey.",
+    "questionImage": null,
+    "options": [
+      "40 km/h",
+      "42 km/h",
+      "44 km/h",
+      "46 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=28885",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi8yruoy4",
+    "order": 266,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "A tourist covers his 120 km journey in three stages. In the first stage, he travels at a speed of x km/hr. In the second stage, he increases his speed by 50%. In the third stage, he reduces his second-stage speed by 20%. He spends equal time on all the 3 stages, and his average speed for the entire journey is 48 km/hr Find the value of x correct to one decimal place.",
+    "questionImage": null,
+    "options": [
+      "36.9 km/h",
+      "38.9 km/h",
+      "40.9 km/h",
+      "42.9 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=29156",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi8gzofa1",
+    "order": 267,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "A woman travelled at a speed of 20 m/min for 90 min, and at a speed of 72 m/min for 66 min. Her average speed (in m/min) for the entire journey is:",
+    "questionImage": null,
+    "options": [
+      "40 m/min",
+      "42 m/min",
+      "44 m/min",
+      "46 m/min"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=29282",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi812otkg",
+    "order": 268,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "A person drove at 53 kmph for 2.5 hours, then increased his speed by 28 kmph, and reached the destination in another hour. Find the average speed (in kmph) of the person during the entire journey.",
+    "questionImage": null,
+    "options": [
+      "59 km/h",
+      "60 km/h",
+      "61 km/h",
+      "63 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=29823",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi8mrci4d",
+    "order": 269,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "A man travels for 2 hours at a speed of 40 km/h. the next 5 hours at a speed of 26 km/h and the next 60 km at 12km/h. What is his average speed (in km/h) for the whole journey?",
+    "questionImage": null,
+    "options": [
+      "20 km/h",
+      "22.5 km/h",
+      "24 km/h",
+      "25 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=29915",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi8o9tavf",
+    "order": 270,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "A car runs for 10 hours and Its speed during the ith hour is i3 km per hour, where i=1,2,3 ... ,10. The average speed of the car for the journey is km per hour.",
+    "questionImage": null,
+    "options": [
+      "285 km/h",
+      "300 km/h",
+      "302.5 km/h",
+      "325 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=30281",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi8r7rf2h",
+    "order": 271,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "A car, during its entire journey of 5 hours, travels the first 45 minutes at a certain speed, the next 75 minutes at a speed of 85 km/h, and the last 3 hours at a speed of 70 km/h. During its entire journey, the average speed of the car is found to be 73 km/h. What is the speed (in km/n) of the car during the first 45 minutes?",
+    "questionImage": null,
+    "options": [
+      "60 km/h",
+      "65 km/h",
+      "70 km/h",
+      "75 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=30623",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi83o2m46",
+    "order": 272,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "When some person covers an equal distance with a gait of V1 and V2 km/h, his average gait is 5 km/hr. But when he travels with these moves in equal time periods, his average speed is 5.5 km/h. Determine the positive difference between both moves.",
+    "questionImage": null,
+    "options": [
+      "√10 km/h",
+      "√11 km/h",
+      "√12 km/h",
+      "3 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=31405",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi9z4n5wu",
+    "order": 273,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "Vinay and Mahesh are 250 meters apart from each other. They are moving towards each other with the speed of 36 km/h and 54 km/h respectively. In how much time will they meet each other?",
+    "questionImage": null,
+    "options": [
+      "8 seconds",
+      "10 seconds",
+      "12 seconds",
+      "15 seconds"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=32900",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi9kdygzj",
+    "order": 274,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "Places A and B are 396 km apart. Train X leaves from A for B and train Y leaves from B for A at the same time on the same day on parallel tracks. Both trains meet after 5½ hours. The speed of Y is 10 km/h more than that of X. What is the speed (in km/h) of Y?",
+    "questionImage": null,
+    "options": [
+      "31 km/h",
+      "41 km/h",
+      "54 km/h",
+      "56 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=33032",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi9urn0or",
+    "order": 275,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "The distance between two stations A and B is 200 km. A train runs from A to B at a speed of 75 km/h, while another train runs from B to A at a speed of 85 km/h. What will be the distance between the two trains (in km) 3 minutes before they meet?",
+    "questionImage": null,
+    "options": [
+      "6 km",
+      "8 km",
+      "10 km",
+      "12 km"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=33473",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi90wgipv",
+    "order": 276,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "Two people drive towards each other from two places which are 56 km apart. The speed of the first person is 12 km/h and the speed of the other is 14 km/h. after how long will they be 4 km apart if they start driving at the same time?",
+    "questionImage": null,
+    "options": [
+      "1.5 hours",
+      "2 hours",
+      "2.5 hours",
+      "3 hours"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=33629",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi935gjsz",
+    "order": 277,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "A carriage driving in a fog passed a man who was walking at the speed of 3 km/h in the same direction. He could see the carriage for 4 min and it was visible to him up to a distance of 100 m. What was the speed of the carriage?",
+    "questionImage": null,
+    "options": [
+      "4 km/h",
+      "4.5 km/h",
+      "5 km/h",
+      "5.5 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=33734",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi9qvzu63",
+    "order": 278,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "The driver of a car, which is travelling at a speed of 75 km/h, locates a bus 80 m ahead of him, travelling in the same direction. After 15 seconds, he finds that the bus is 40 m behind the car. What is the speed of the bus (in km/n)?",
+    "questionImage": null,
+    "options": [
+      "42.6 km/h",
+      "46.2 km/h",
+      "50.4 km/h",
+      "54 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=34310",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi9y5b6e3",
+    "order": 279,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "A car and a bus were travelling in the same direction. At 7:30 a.m. the car travelling at a speed of 72 km/h was 4.2 km behind the bus. At 8.15 a.m. the car was 15.8 km ahead of the bus. What is the ratia of the speed of the car to the speed of the bus?",
+    "questionImage": null,
+    "options": [
+      "72:55",
+      "27:17",
+      "36:29",
+      "48:37"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=34513",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi9cdpcq7",
+    "order": 280,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "A ship develops a leak 20 km from the shore. Despite the leak, the ship is able to move towards the shore at a speed of 12 km/hr. However, the ship can stay afloat only for 23 minutes. If a rescue vessel were to leave from the shore towards the ship and it takes 8 minutes to evacuate the crew and passengers of the ship, what should be the minimum speed of the rescue vessel in order to be able to successfully rescue the people aboard the ship?",
+    "questionImage": null,
+    "options": [
+      "60 km/h",
+      "64 km/h",
+      "68 km/h",
+      "72 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=34716",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi9s2zdkx",
+    "order": 281,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "Ajit Singh left from place P at 9.30 a.m. for place Q, and David Raj left place Q at 1.30 p.m. for place P. The distance between them is 416 km. If Ajit Singh's speed is 44 km/h and David Raj's speed is 52km/h, then at what time will they meet each other?",
+    "questionImage": null,
+    "options": [
+      "3:30 PM",
+      "4:00 PM",
+      "4:30 PM",
+      "5:00 PM"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=35025",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi9ljr43h",
+    "order": 282,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "A policeman started following a thief who was 1,200 metres ahead of him. The thief is running at 2.5 km/h, while the speed of the policeman is 3.75 km/h. Find the distance covered by the thief (in metres) just when he was caught.",
+    "questionImage": null,
+    "options": [
+      "1800 m",
+      "2200 m",
+      "2400 m",
+      "2600 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=36368",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi9t8nxfg",
+    "order": 283,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "A policeman spots a thief at a distance of 360 m. Both the policeman and the4 thief simultaneously start running, with the former chasing the latter. While the thief runs at the speed of 8 km/h, the policeman runs at 9.2 km/h. How many metres will the policeman have to run before he catches up with the thief?",
+    "questionImage": null,
+    "options": [
+      "2400 m",
+      "2640 m",
+      "2760 m",
+      "2880 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=36652",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi9xkom7z",
+    "order": 284,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "The two trains leave Varanasi for Lucknow at 11.00 a.m. and at 11.30 a.m, respectively and travel at a speed of 110 km/h. and 140 km/h. respectively. How many kilometers from Varanasi will both trains meet?",
+    "questionImage": null,
+    "options": [
+      "245 km",
+      "256.67 km",
+      "266.67 km",
+      "280 km"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=36660",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi9nmfzuu",
+    "order": 285,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "A thief is noticed by a policeman from a distance of 500 m. The thief starts running and the policeman chases him. The thief and the policeman run at the speed of 12 km/h and 13 km/h, respectively. What is the distance between them after 12 minutes?",
+    "questionImage": null,
+    "options": [
+      "250 m",
+      "280 m",
+      "300 m",
+      "320 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=37180",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi9y9figs",
+    "order": 286,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "A leaves point X at 9:00 AM and reaches point Y at 1:00 PM. B leaves point Y at 9:00 AM and reaches point X at 3:00 PM. At what time will they meet?",
+    "questionImage": null,
+    "options": [
+      "11:18 AM",
+      "11:24 AM",
+      "11:30 AM",
+      "11:36 AM"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=37348",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi9lu3rdp",
+    "order": 287,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "A logistics van leaves Jaipur at 5:00 a.m. and reaches Agra at 9:00 a.m. Another delivery van leaves Agra at 7:00 a.m. and reaches Jaipur at 10:30 a.m. At what time do the two vans cross each other on the highway?",
+    "questionImage": null,
+    "options": [
+      "7:45 AM",
+      "7:56 AM",
+      "8:15 AM",
+      "8:45 AM"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=37977",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi9rx2yjo",
+    "order": 288,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "A car starts running at an initial speed of 60km/h, with its speed increasing every hour by 10km/h. How many hours will it take to cover a distance of 1210km?",
+    "questionImage": null,
+    "options": [
+      "9 hours",
+      "10 hours",
+      "11 hours",
+      "12 hours"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=39010",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi9k6z06s",
+    "order": 289,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "Excluding stoppages, the speed of a bus is 45 kmph and including stoppages, it is 27 kmph. For how many minutes does the bus stop per hour?",
+    "questionImage": null,
+    "options": [
+      "20 minutes",
+      "22 minutes",
+      "24 minutes",
+      "27 minutes"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=39037",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi9pjfxfx",
+    "order": 290,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "A man walks at a speed of 42km/h. After every 13 kilometre, he takes a rest for 9 minutes. How much time will he take to cover a distance of 91km?",
+    "questionImage": null,
+    "options": [
+      "2 h 31 min",
+      "2 h 49 min",
+      "3 h 4 min",
+      "3 h 13 min"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=39372",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi9wt7n0i",
+    "order": 291,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "A train travels at a speed of 66 km/h and halts at five junctions for a certain time. It covers a distance of 1485 km in one day. For how long (in minutes) does the train stop at each junction, if it halts for the same period of time at all the junctions?",
+    "questionImage": null,
+    "options": [
+      "15 minutes",
+      "18 minutes",
+      "20 minutes",
+      "24 minutes"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=39519",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi9jp8es2",
+    "order": 292,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "A man walks to a viewpoint and returns to the starting point by his car and thus takes a total time of 8 hours 15 minutes. He would have gained 5 hours by driving both ways. How long would he have taken to walk both ways?",
+    "questionImage": null,
+    "options": [
+      "12 h 30 min",
+      "13 h",
+      "13 h 15 min",
+      "13 h 30 min"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=40048",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi9nf57df",
+    "order": 293,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "The taxi charges in a city consist of a fixed charge together with the charge for the distance covered. For a distance of 20 km, the charge paid is ₹200 and for a distanceof 25 km, the charge paid is ₹245. How much does a person have to pay for covering a distance of 1km?",
+    "questionImage": null,
+    "options": [
+      "₹20",
+      "₹25",
+      "₹29",
+      "₹30"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=40432",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu5n9qi9htg2ke",
+    "order": 294,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]

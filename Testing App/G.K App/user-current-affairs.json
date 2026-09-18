@@ -2923,5 +2923,1183 @@
     "questionImageName": "",
     "source": "user-upload",
     "createdAt": "2026-09-15T11:08:35"
+  },
+  {
+    "id": "ca-2026-09-015-001",
+    "date": "2026-09-15",
+    "category": "Sports",
+    "question": "Consider the following statements regarding the Women’s T20 Asia Cup 2026:\n1. India defeated defending champions Sri Lanka by 72 runs in the final held at Dubai International Cricket Stadium on 13 September 2026.\n2. This victory marked India’s 8th Women’s Asia Cup title overall (4 in ODI and 4 in T20 formats).",
+    "options": [
+      "Both statements 1 and 2 are correct",
+      "Only statement 1 is correct",
+      "Only statement 2 is correct",
+      "Neither statement 1 nor 2 is correct"
+    ],
+    "answer": 0,
+    "explanation": "India won the Women’s T20 Asia Cup 2026 by defeating Sri Lanka by 72 runs in the final at Dubai. Shafali Verma was Player of the Match and Harmanpreet Kaur captained the side. It is India’s 8th overall title (T20 wins in 2012, 2016, 2022 and 2026). Sri Lanka had won the 2024 edition for the first time. The 2026 edition was the 10th overall and 6th T20 edition, organised by the Asian Cricket Council (ACC). First edition was held in 2004 in Sri Lanka (ODI format).",
+    "subQuestions": [
+      {
+        "question": "Who was named Player of the Match in the final of the Women’s T20 Asia Cup 2026?",
+        "options": [
+          "Smriti Mandhana",
+          "Shafali Verma",
+          "Harmanpreet Kaur"
+        ],
+        "answer": 1,
+        "explanation": "Shafali Verma was awarded Player of the Match for her outstanding batting performance in the final."
+      },
+      {
+        "question": "In which years has India won the T20 editions of the Women’s Asia Cup?",
+        "options": [
+          "2012, 2016, 2022 and 2026",
+          "2016, 2018, 2022 and 2024",
+          "2004, 2012, 2016 and 2022"
+        ],
+        "answer": 0,
+        "explanation": "India has won the T20 format titles in 2012, 2016, 2022 and 2026."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-17T15:56:31"
+  },
+  {
+    "id": "ca-2026-09-015-002",
+    "date": "2026-09-15",
+    "category": "National",
+    "question": "Consider the following statements about the Nuakhai festival:\n1. Nuakhai is primarily an agricultural festival celebrated mainly in Odisha (and some areas of Chhattisgarh and Jharkhand).\n2. It is observed on the Panchami Tithi of Bhadrapada month (the day after Ganesh Chaturthi) and was celebrated on 15 September in 2026.",
+    "options": [
+      "Both statements 1 and 2 are correct",
+      "Only statement 1 is correct",
+      "Only statement 2 is correct",
+      "Neither statement 1 nor 2 is correct"
+    ],
+    "answer": 0,
+    "explanation": "Nuakhai (Nua = new, Khai = food) is a harvest festival of new rice celebrated mainly in Odisha. New paddy (Nuakhai Nabanna) is first offered to Goddess Samaleswari and other deities. Folk dances such as Dalkhai, Rasarkeli, Humo and Karma are performed. It falls on Bhadrapada Panchami (day after Ganesh Chaturthi).",
+    "subQuestions": [
+      {
+        "question": "What does the word ‘Nuakhai’ literally mean?",
+        "options": [
+          "New food / new rice",
+          "First ploughing",
+          "Harvest dance"
+        ],
+        "answer": 0,
+        "explanation": "‘Nua’ means new and ‘Khai’ means food; the festival marks the tasting of the new rice harvest."
+      },
+      {
+        "question": "To which deity is the new rice (Nuakhai Nabanna) first offered during the festival?",
+        "options": [
+          "Samaleswari Devi",
+          "Jagannath",
+          "Durga"
+        ],
+        "answer": 0,
+        "explanation": "The new rice is offered to Goddess Samaleswari and other deities before being consumed by the family."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-17T15:56:31"
+  },
+  {
+    "id": "ca-2026-09-015-003",
+    "date": "2026-09-15",
+    "category": "National",
+    "question": "Consider the following statements regarding the world’s longest steel slag road:\n1. A 1.85 km four-lane divided road built with processed steel slag aggregates was constructed in Raigarh, Chhattisgarh by Jindal Steel Limited and CSIR-CRRI.\n2. It has been recognised by Guinness World Records as the world’s longest road built with processed steel slag aggregates.",
+    "options": [
+      "Neither statement 1 nor 2 is correct",
+      "Only statement 1 is correct",
+      "Only statement 2 is correct",
+      "Both statements 1 and 2 are correct"
+    ],
+    "answer": 3,
+    "explanation": "Processed steel slag (industrial waste from steel making) is converted into strong aggregates that can replace natural stone in road construction. Benefits include reduced quarrying, lower construction cost (up to ~40%), waste utilisation and support to circular economy. The first steel-slag road in India was built in Surat, Gujarat. CSIR-CRRI (established 1952, HQ New Delhi) specialises in roads, highways and transportation research.",
+    "subQuestions": [
+      {
+        "question": "Where was India’s first steel-slag road constructed?",
+        "options": [
+          "Surat, Gujarat",
+          "Raigarh, Chhattisgarh",
+          "Rourkela, Odisha"
+        ],
+        "answer": 0,
+        "explanation": "The first steel-slag road in India was constructed in Surat, Gujarat."
+      },
+      {
+        "question": "What is the approximate length of the steel slag road in Raigarh that set the Guinness record?",
+        "options": [
+          "1.85 km",
+          "2.5 km",
+          "5 km"
+        ],
+        "answer": 0,
+        "explanation": "The road is 1.85 km long and four-lane divided."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-17T15:56:31"
+  },
+  {
+    "id": "ca-2026-09-015-004",
+    "date": "2026-09-15",
+    "category": "International",
+    "question": "Consider the following statements about the Colombo Security Conclave (CSC) Table Top Exercise 2026:\n1. The three-day Table Top Exercise was held at the Eastern Naval Command, Visakhapatnam.\n2. The main objective was to prepare a coordinated response against illicit maritime activities in the Indian Ocean Region and to enhance Maritime Domain Awareness.",
+    "options": [
+      "Only statement 1 is correct",
+      "Both statements 1 and 2 are correct",
+      "Only statement 2 is correct",
+      "Neither statement 1 nor 2 is correct"
+    ],
+    "answer": 1,
+    "explanation": "Colombo Security Conclave is a regional security grouping focused on maritime security in the Indian Ocean Region. Current members: India, Sri Lanka, Maldives, Mauritius, Bangladesh and Seychelles. Secretariat is in Colombo. It began in 2011 as a trilateral arrangement among India, Sri Lanka and Maldives. A Table Top Exercise is a planning exercise using maps and hypothetical scenarios (not a live combat drill).",
+    "subQuestions": [
+      {
+        "question": "How many member countries does the Colombo Security Conclave currently have?",
+        "options": [
+          "6",
+          "4",
+          "8"
+        ],
+        "answer": 0,
+        "explanation": "The six members are India, Sri Lanka, Maldives, Mauritius, Bangladesh and Seychelles."
+      },
+      {
+        "question": "In which year did the Colombo Security Conclave originate as a trilateral maritime security arrangement?",
+        "options": [
+          "2011",
+          "2015",
+          "2008"
+        ],
+        "answer": 0,
+        "explanation": "It started in 2011 among India, Sri Lanka and Maldives."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-17T15:56:31"
+  },
+  {
+    "id": "ca-2026-09-015-005",
+    "date": "2026-09-15",
+    "category": "National",
+    "question": "Consider the following statements about the proposed DRDO weapons and missile test range:\n1. The West Bengal government has approved the setting up of a DRDO weapons and missile-testing facility at Junput coastal village in Purba Medinipur district.\n2. The facility will serve as an additional operational area on the Bay of Bengal coast, approximately 70 km from the existing Chandipur range in Odisha.",
+    "options": [
+      "Both statements 1 and 2 are correct",
+      "Only statement 1 is correct",
+      "Only statement 2 is correct",
+      "Neither statement 1 nor 2 is correct"
+    ],
+    "answer": 0,
+    "explanation": "DRDO plans to establish a new weapons and missile testing range at Junput, West Bengal, on the Bay of Bengal coast to expand testing capacity beyond the existing Integrated Test Range at Chandipur, Odisha.",
+    "subQuestions": [
+      {
+        "question": "In which district of West Bengal is the proposed DRDO test range located?",
+        "options": [
+          "Purba Medinipur",
+          "South 24 Parganas",
+          "Paschim Medinipur"
+        ],
+        "answer": 0,
+        "explanation": "The proposed site is Junput coastal village in Purba Medinipur district."
+      },
+      {
+        "question": "Which existing DRDO test range is located nearest to the proposed Junput facility?",
+        "options": [
+          "Chandipur, Odisha",
+          "Pokhran, Rajasthan",
+          "Sriharikota, Andhra Pradesh"
+        ],
+        "answer": 0,
+        "explanation": "Chandipur (Integrated Test Range) in Odisha is the nearest existing facility, about 70 km away."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-17T15:56:31"
+  },
+  {
+    "id": "ca-2026-09-015-006",
+    "date": "2026-09-15",
+    "category": "International",
+    "question": "Consider the following statements regarding the World Circular Economy Forum (WCEF) 2026:\n1. The 2026 edition is being held in South Asia for the first time.\n2. The theme of WCEF 2026 is “Circular Economy – Transition for People and Prosperity”.",
+    "options": [
+      "Both statements 1 and 2 are correct",
+      "Only statement 1 is correct",
+      "Only statement 2 is correct",
+      "Neither statement 1 nor 2 is correct"
+    ],
+    "answer": 0,
+    "explanation": "World Circular Economy Forum started in 2017 in Helsinki, Finland (initiative of Finnish Innovation Fund Sitra). The 9th edition (2025) was held in São Paulo, Brazil. Discussions focus on circular economy financing, sustainable cities, responsible consumption, material flows, waste reduction, recycling, reuse, sustainable production and green employment.",
+    "subQuestions": [
+      {
+        "question": "In which year was the first World Circular Economy Forum held?",
+        "options": [
+          "2017",
+          "2015",
+          "2019"
+        ],
+        "answer": 0,
+        "explanation": "The first WCEF was organised in 2017 in Helsinki, Finland."
+      },
+      {
+        "question": "Which organisation initiated the World Circular Economy Forum?",
+        "options": [
+          "Finnish Innovation Fund Sitra",
+          "United Nations Environment Programme",
+          "World Economic Forum"
+        ],
+        "answer": 0,
+        "explanation": "WCEF is a global initiative of the Finnish Innovation Fund Sitra."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-17T15:56:31"
+  },
+  {
+    "id": "ca-2026-09-015-007",
+    "date": "2026-09-15",
+    "category": "Sports",
+    "question": "Consider the following statements about the Archery World Cup Final 2026:\n1. Dhiraj Bommadevara became the first Indian male recurve archer to win an individual gold medal at the Archery World Cup Final.\n2. He defeated Japan’s Junya Nakanishi in the final held in Saltillo, Mexico.",
+    "options": [
+      "Both statements 1 and 2 are correct",
+      "Only statement 1 is correct",
+      "Only statement 2 is correct",
+      "Neither statement 1 nor 2 is correct"
+    ],
+    "answer": 0,
+    "explanation": "Dhiraj Bommadevara (from Vijayawada, Andhra Pradesh; associated with Indian Army) won the Men’s Individual Recurve gold at the Hyundai Archery World Cup Final 2026. He is only the second Indian recurve archer overall to win a World Cup Final title (after Dola Banerjee, who won the women’s individual recurve gold in 2007 in Dubai).",
+    "subQuestions": [
+      {
+        "question": "Who was the first Indian archer to win a World Cup Final title?",
+        "options": [
+          "Dola Banerjee",
+          "Atanu Das",
+          "Deepika Kumari"
+        ],
+        "answer": 0,
+        "explanation": "Dola Banerjee won the Women’s Individual Recurve gold at the 2007 Archery World Cup Final in Dubai."
+      },
+      {
+        "question": "Where was the Archery World Cup Final 2026 held?",
+        "options": [
+          "Saltillo, Mexico",
+          "Dubai, UAE",
+          "Paris, France"
+        ],
+        "answer": 0,
+        "explanation": "The 2026 Final was held in Saltillo, Mexico."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-17T15:56:31"
+  },
+  {
+    "id": "ca-2026-09-015-008",
+    "date": "2026-09-15",
+    "category": "International",
+    "question": "Consider the following statements regarding the BRICS New Delhi Declaration 2026:\n1. The declaration was adopted during the BRICS Summit hosted by India.\n2. One of the key proposals that was NOT included related to certain economic or geopolitical issues as per the official text.",
+    "options": [
+      "Both statements 1 and 2 are correct",
+      "Only statement 1 is correct",
+      "Only statement 2 is correct",
+      "Neither statement 1 nor 2 is correct"
+    ],
+    "answer": 0,
+    "explanation": "The BRICS New Delhi Declaration 2026 outlined the grouping’s positions on various global issues. Specific proposals included or excluded are based on the official communiqué released after the summit.",
+    "subQuestions": [
+      {
+        "question": "Which city hosted the BRICS Summit that produced the 2026 New Delhi Declaration?",
+        "options": [
+          "Moscow",
+          "Beijing",
+          "New Delhi"
+        ],
+        "answer": 2,
+        "explanation": "The declaration is named after the host city New Delhi."
+      },
+      {
+        "question": "BRICS is a grouping of which type of economies?",
+        "options": [
+          "Emerging economies",
+          "Only African economies",
+          "Only developed economies"
+        ],
+        "answer": 0,
+        "explanation": "BRICS brings together major emerging economies."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-17T15:56:31"
+  },
+  {
+    "id": "ca-2026-09-015-009",
+    "date": "2026-09-15",
+    "category": "Sports",
+    "question": "Consider the following statements about the Men’s Junior Asia Cup Hockey 2026:\n1. India defeated a specific Asian side in the final to win the title.\n2. The tournament is a key developmental event for under-21 hockey players in Asia.",
+    "options": [
+      "Both statements 1 and 2 are correct",
+      "Only statement 1 is correct",
+      "Only statement 2 is correct",
+      "Neither statement 1 nor 2 is correct"
+    ],
+    "answer": 0,
+    "explanation": "India emerged champions of the Men’s Junior Asia Cup Hockey 2026 by winning the final. The event serves as an important platform for young Asian hockey talent.",
+    "subQuestions": [
+      {
+        "question": "What is the age category for the Junior Asia Cup Hockey?",
+        "options": [
+          "Under-16",
+          "Under-18",
+          "Under-21"
+        ],
+        "answer": 2,
+        "explanation": "Junior Asia Cup is contested by under-21 national teams."
+      },
+      {
+        "question": "Which sport’s junior continental championship is referred to here?",
+        "options": [
+          "Hockey",
+          "Football",
+          "Cricket"
+        ],
+        "answer": 0,
+        "explanation": "It is the Men’s Junior Asia Cup in Hockey."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-17T15:56:31"
+  },
+  {
+    "id": "ca-2026-09-015-010",
+    "date": "2026-09-15",
+    "category": "International",
+    "question": "Consider the following statements about the International Day of Democracy:\n1. It is observed every year on 15 September.\n2. The day was established by the United Nations to promote and uphold the principles of democracy.",
+    "options": [
+      "Both statements 1 and 2 are correct",
+      "Only statement 1 is correct",
+      "Only statement 2 is correct",
+      "Neither statement 1 nor 2 is correct"
+    ],
+    "answer": 0,
+    "explanation": "The International Day of Democracy is celebrated annually on 15 September. It was proclaimed by the UN General Assembly to strengthen democratic values and institutions worldwide.",
+    "subQuestions": [
+      {
+        "question": "On which date is the International Day of Democracy observed?",
+        "options": [
+          "15 September",
+          "26 January",
+          "10 December"
+        ],
+        "answer": 0,
+        "explanation": "It is observed every year on 15 September."
+      },
+      {
+        "question": "Which organisation established the International Day of Democracy?",
+        "options": [
+          "United Nations",
+          "UNESCO",
+          "Commonwealth"
+        ],
+        "answer": 0,
+        "explanation": "The day was established by the United Nations General Assembly."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-17T15:56:31"
+  },
+  {
+    "id": "ca-2026-09-017-001",
+    "date": "2026-09-17",
+    "category": "National",
+    "question": "Consider the following statements about the Kishau Multipurpose Project:\n1. The project is proposed on the Tons River along the Uttarakhand–Himachal Pradesh border.\n2. The project is designed to generate 660 MW of hydroelectric power and has an irrigation potential of about 97,000 hectares.",
+    "options": [],
+    "answer": 0,
+    "explanation": "Tons River at the Uttarakhand–Himachal Pradesh border, covering the Dehradun and Sirmaur districts. \nThe dam height is 232.6 metres. It will support water storage, irrigation, drinking water supply .\nSix states—Uttar Pradesh, Uttarakhand, Himachal Pradesh, Haryana, Rajasthan and Delhi—signed the project agreement in New Delhi.",
+    "subQuestions": [
+      {
+        "question": "The Kishau Multipurpose Project is proposed on which river?",
+        "options": [
+          "Sutlej River",
+          "Tons River",
+          "Beas River"
+        ],
+        "answer": 1,
+        "explanation": "The project is proposed on the Tons River."
+      },
+      {
+        "question": "What is the proposed hydroelectric power generation capacity of the Kishau Multipurpose Project?",
+        "options": [
+          "800 MW",
+          "500 MW",
+          "660 MW"
+        ],
+        "answer": 2,
+        "explanation": "The project is expected to support 660 MW of hydroelectric power generation."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-17T15:57:29"
+  },
+  {
+    "id": "ca-2026-09-017-002",
+    "date": "2026-09-17",
+    "category": "International",
+    "question": "Consider the following statements regarding India–Vietnam relations:\n1. India and Vietnam decided to observe 2027 as the 'Year of India–Vietnam Friendship'.\n2. The year 2027 will mark 55 years of diplomatic relations between India and Vietnam.\n3. Vietnam currency = Vietnamese Dong and capital - Hanoi and PM=Le Minh Hung and President=To Lam",
+    "options": [],
+    "answer": 0,
+    "explanation": "At the 19th India–Vietnam Joint Commission Meeting held in New Delhi, the two countries decided to observe 2027 as the 'Year of India–Vietnam Friendship'. \n\nIn 2027, India and Vietnam will complete 55 years of diplomatic relations. The meeting was co-chaired by India's External Affairs Minister Dr. S. Jaishankar and Vietnam's Foreign Minister Le Hoai Trung.",
+    "subQuestions": [
+      {
+        "question": "Which year will be observed as the 'Year of India–Vietnam Friendship'?",
+        "options": [
+          "2026",
+          "2027",
+          "2028"
+        ],
+        "answer": 1,
+        "explanation": "India and Vietnam decided to observe 2027 as the 'Year of India–Vietnam Friendship'."
+      },
+      {
+        "question": "Which cultural programmes are planned by India and Vietnam for 2027?",
+        "options": [
+          "India Cultural Week in Vietnam and Vietnam Cultural Week in India",
+          "Only India Cultural Week in Vietnam",
+          "Only Vietnam Cultural Week in India"
+        ],
+        "answer": 0,
+        "explanation": "Both countries plan to organise India Cultural Week in Vietnam and Vietnam Cultural Week in India during 2027."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-17T15:57:29"
+  },
+  {
+    "id": "ca-2026-09-017-003",
+    "date": "2026-09-17",
+    "category": "Economy",
+    "question": "Consider the following statements about the new UPI MDR framework:\n1. Person-to-Merchant (P2M) UPI transactions up to ₹2,000 will remain free from MDR.\n2. Person-to-Person (P2P) UPI transactions remain free irrespective of the transaction amount.",
+    "options": [],
+    "answer": 0,
+    "explanation": "MDR stands for Merchant Discount Rate and is a charge taken from the merchant in the payment ecosystem;\n it is not a government or NPCI tax and cannot be recovered from the customer.",
+    "subQuestions": [
+      {
+        "question": "For specified P2M UPI transactions above ₹2,000, what MDR rate is mentioned in the framework?",
+        "options": [
+          "0.2%",
+          "0.4%",
+          "0.8%"
+        ],
+        "answer": 1,
+        "explanation": "The PDF states that specified P2M transactions above ₹2,000 attract 0.4% MDR."
+      },
+      {
+        "question": "What is the maximum MDR mentioned for transactions of ₹75,000 or more?",
+        "options": [
+          "₹200",
+          "₹300",
+          "₹500"
+        ],
+        "answer": 1,
+        "explanation": "For transactions of ₹75,000 or more, the framework mentions a maximum MDR of ₹300."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-17T15:57:29"
+  },
+  {
+    "id": "ca-2026-09-017-004",
+    "date": "2026-09-17",
+    "category": "Environment",
+    "question": "Consider the following statements about Tso Kar Lake and its restoration project:\n1. Tso Kar is a high-altitude lake in the Changthang region of Ladakh, located at about 15,000 feet.\n2. The Ladakh Administration plans to divert water from the Rupsho Kharnak glacier stream to revive the shrinking lake.",
+    "options": [],
+    "answer": 0,
+    "explanation": " The administration started a project to divert water from the Rupsho Kharnak glacier stream, about 11 km away, using gravity flow and low-cost earthen channels. \n\n The lake's area has fallen by around 70% in about a decade, from roughly 11,000 acres to about 3,200 acres.",
+    "subQuestions": [
+      {
+        "question": "When was the Tso Kar Wetland Complex designated as a Ramsar Site ?",
+        "options": [
+          "2 February 2022",
+          "17 November 2020",
+          "5 June 2021"
+        ],
+        "answer": 1,
+        "explanation": "The Tso Kar Wetland Complex is listed as a Ramsar Site from 17 November 2020."
+      },
+      {
+        "question": "Which major bird is associated with the Tso Kar Wetland Complex in the PDF?",
+        "options": [
+          "Great Indian Bustard",
+          "Black-necked Crane",
+          "Sarus Crane"
+        ],
+        "answer": 1,
+        "explanation": "The Black-necked Crane is mentioned as a major bird of the Tso Kar Wetland Complex."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-17T15:57:29"
+  },
+  {
+    "id": "ca-2026-09-017-005",
+    "date": "2026-09-17",
+    "category": "Sports",
+    "question": "Consider the following statements about the Global Chess League 2026:\n1. Ganges Grandmasters won Season 4 of the Global Chess League by defeating defending champions Alpine SG Pipers in the final.\n2. The 2026 season was held in Bengaluru, Karnataka, and it was the first GCL title for Ganges Grandmasters.",
+    "options": [],
+    "answer": 0,
+    "explanation": "Both statements are correct. Global Chess League Season 4 in 2026 was organised in Bengaluru, Karnataka. Ganges Grandmasters defeated defending champions Alpine SG Pipers to win their first GCL title. FYERS American Gambits finished third, \n\nwhile Greek chess player Stavroula Tsolakidou was named Player of the Tournament.",
+    "subQuestions": [
+      {
+        "question": "The Global Chess League is a joint initiative of which two organisations?",
+        "options": [
+          "Tech Mahindra and FIDE",
+          "Tech Mahindra and BCCI",
+          "FIDE and IOC"
+        ],
+        "answer": 0,
+        "explanation": "The Global Chess League is a joint initiative of Tech Mahindra and FIDE."
+      },
+      {
+        "question": "How many players are there per franchise in the Global Chess League format mentioned in the PDF?",
+        "options": [
+          "5",
+          "6",
+          "8"
+        ],
+        "answer": 1,
+        "explanation": "The PDF states that each GCL franchise has 6 players."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-17T15:57:29"
+  },
+  {
+    "id": "ca-2026-09-017-006",
+    "date": "2026-09-17",
+    "category": "Health",
+    "question": "Consider the following statements about World Patient Safety Day 2026:\n1. World Patient Safety Day is observed every year on 17 September.\n2. The 2026 theme is 'Safe care for noncommunicable diseases' and the campaign slogan is 'Safe care for life!'.",
+    "options": [],
+    "answer": 0,
+    "explanation": " 'Safe care for noncommunicable diseases' with the slogan 'Safe care for life!'. The focus includes patient safety in the prevention, diagnosis, treatment and long-term management of NCDs such as heart disease, stroke, cancer, diabetes and chronic respiratory diseases.",
+    "subQuestions": [
+      {
+        "question": "In which year was the first World Patient Safety Day observed?",
+        "options": [
+          "2018",
+          "2019",
+          "2020"
+        ],
+        "answer": 1,
+        "explanation": "The first World Patient Safety Day was observed on 17 September 2019."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-17T15:57:29"
+  },
+  {
+    "id": "ca-2026-09-017-007",
+    "date": "2026-09-17",
+    "category": "State",
+    "question": "Consider the following statements about Kumik Village:\n1. Kumik Village in the Zanskar Valley was declared Ladakh's first officially designated Heritage Village in September 2026.\n2. The designation aims to preserve its traditional architecture, Buddhist heritage, agricultural practices and local lifestyle while promoting community-based sustainable tourism.",
+    "options": [],
+    "answer": 0,
+    "explanation": " The initiative seeks to preserve its traditional architecture, Buddhist heritage, agriculture and living culture, while promoting community-based sustainable tourism.",
+    "subQuestions": [
+      {
+        "question": "During which event was Kumik declared Ladakh's first officially designated Heritage Village?",
+        "options": [
+          "Hemis Festival 2026",
+          "11th Ladakh Zanskar Festival 2026",
+          "Sindhu Darshan Festival 2026"
+        ],
+        "answer": 1,
+        "explanation": "The declaration was made during the 11th Ladakh Zanskar Festival 2026."
+      },
+      {
+        "question": "Where was the 11th Ladakh Zanskar Festival 2026 organised?",
+        "options": [
+          "Pangong Lake",
+          "Tso Moriri",
+          "Sani Lake, Zanskar"
+        ],
+        "answer": 2,
+        "explanation": "The festival was held at Sani Lake, Zanskar, on 15–16 September 2026."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-17T15:57:29"
+  },
+  {
+    "id": "ca-2026-09-017-008",
+    "date": "2026-09-17",
+    "category": "National",
+    "question": "Consider the following statements about CRPF's CoBRA force:\n1. Sanjukta Parashar became the first woman Inspector General of CRPF's CoBRA force in September 2026.\n2. CoBRA is a specialised CRPF commando force trained for jungle warfare, guerrilla warfare and counter-insurgency operations.",
+    "options": [],
+    "answer": 0,
+    "explanation": " Sanjukta Parashar, a 2006-batch Assam–Meghalaya cadre IPS officer, became the first woman Inspector General of the CoBRA force and took command from Danesh Rana. ",
+    "subQuestions": [
+      {
+        "question": "How many battalions does CoBRA have ?",
+        "options": [
+          "8",
+          "10",
+          "12"
+        ],
+        "answer": 1,
+        "explanation": "The PDF states that CoBRA has a total of 10 battalions."
+      },
+      {
+        "question": "CRPF works under which ministry?",
+        "options": [
+          "Ministry of Defence",
+          "Ministry of Home Affairs",
+          "Ministry of Personnel"
+        ],
+        "answer": 1,
+        "explanation": "CRPF is a Central Armed Police Force working under the Ministry of Home Affairs."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-17T15:57:29"
+  },
+  {
+    "id": "ca-2026-09-017-009",
+    "date": "2026-09-17",
+    "category": "Government Scheme",
+    "question": "Consider the following statements about the PM Vishwakarma Scheme:\n1. PM Vishwakarma is a Central Sector Scheme launched on 17 September 2023 on Vishwakarma Jayanti.\n2. The scheme covers 18 traditional trades and has a financial outlay of ₹13,000 crore for FY 2023–24 to FY 2027–28.",
+    "options": [],
+    "answer": 0,
+    "explanation": "PM Vishwakarma is a Central Sector Scheme for traditional artisans and craftspeople working with their hands and traditional tools. It was launched on 17 September 2023 on Vishwakarma Jayanti.\n It covers 18 traditional trades and has a financial outlay of ₹13,000 crore for FY 2023–24 to FY 2027–28. The scheme focuses on skill training, modern tools, affordable credit and market access.\n→ ₹3 lakh total collateral-free credit",
+    "subQuestions": [
+      {
+        "question": "How many traditional trades are included under PM Vishwakarma?",
+        "options": [
+          "12",
+          "18",
+          "24"
+        ],
+        "answer": 1,
+        "explanation": "The scheme includes 18 traditional trades."
+      },
+      {
+        "question": "What registration milestone had the scheme reached by 16 September 2026 ?",
+        "options": [
+          "20 lakh",
+          "30 lakh",
+          "50 lakh"
+        ],
+        "answer": 1,
+        "explanation": "By 16 September 2026, the scheme had achieved the target of 30 lakh registrations."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-17T15:57:29"
+  },
+  {
+    "id": "ca-2026-09-017-010",
+    "date": "2026-09-17",
+    "category": "Sports",
+    "question": "Consider the following statements about future UEFA Champions League finals:\n1. The 2028 UEFA Champions League Final is scheduled at the Munich Football Arena (Allianz Arena) in Munich.\n2. The 2029 UEFA Champions League Final is scheduled at Camp Nou in Barcelona.\n3. Munich and Barcelona will host the UEFA Champions League finals in 2028 and 2029?",
+    "options": [],
+    "answer": 0,
+    "explanation": "UEFA selected Munich's Allianz Arena for the 2028 final and Barcelona's Camp Nou for the 2029 final. The 2027 final is listed for Estadio Metropolitano in Madrid. UEFA organises the UEFA Champions League, Europe's major club football competition.",
+    "subQuestions": [
+      {
+        "question": "Where is the 2027 UEFA Champions League Final scheduled to be held ?",
+        "options": [
+          "Estadio Metropolitano, Madrid",
+          "Camp Nou, Barcelona",
+          "Allianz Arena, Munich"
+        ],
+        "answer": 0,
+        "explanation": "The 2027 final is listed at Estadio Metropolitano in Madrid."
+      },
+      {
+        "question": "From which season has the competition been known as the UEFA Champions League?",
+        "options": [
+          "1988–89",
+          "1992–93",
+          "1996–97"
+        ],
+        "answer": 1,
+        "explanation": "The competition began in 1955 as the European Champion Clubs' Cup and has been known as the UEFA Champions League since the 1992–93 season."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-17T15:57:29"
+  },
+  {
+    "id": "ca-2026-09-016-001",
+    "date": "2026-09-16",
+    "category": "Sports",
+    "question": "Consider the following statements about the US Open 2026:\n1. Elena Rybakina of Kazakhstan defeated Aryna Sabalenka of Belarus in the women's singles final to win her first US Open title.\n2. Alexander Zverev of Germany defeated Ben Shelton of the USA to win the men's singles title; it was his first US Open and second Grand Slam singles title.",
+    "options": [],
+    "answer": 2,
+    "explanation": "Both statements are correct . Rybakina's US Open 2026 title was her third Grand Slam singles title after Wimbledon 2022 and Australian Open 2026. Zverev's first Grand Slam title was the French Open 2026. The US Open 2026 was the 146th edition, was played in Queens, New York City, on hard court, and the tournament was founded in 1881. The PDF also lists the 2026 Australian Open winners as Carlos Alcaraz and Elena Rybakina; French Open winners as Alexander Zverev and Mirra Andreeva; and Wimbledon winners as Jannik Sinner and Linda Noskova.",
+    "subQuestions": [
+      {
+        "question": "Which pair represents Elena Rybakina's other Grand Slam singles titles mentioned in the PDF?",
+        "options": [
+          "Wimbledon 2023 and US Open 2025",
+          "French Open 2025 and Wimbledon 2026",
+          "Australian Open 2025 and French Open 2026",
+          "Wimbledon 2022 and Australian Open 2026"
+        ],
+        "answer": 3,
+        "explanation": "The PDF states that Rybakina's other Grand Slam titles were Wimbledon 2022 and Australian Open 2026."
+      },
+      {
+        "question": "In which year was the US Open founded, ?",
+        "options": [
+          "1877",
+          "1891",
+          "1881",
+          "1905"
+        ],
+        "answer": 2,
+        "explanation": "The PDF gives 1881 as the founding year of the US Open."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-17T16:02:10"
+  },
+  {
+    "id": "ca-2026-09-016-002",
+    "date": "2026-09-16",
+    "category": "Environment",
+    "question": "Consider the following statements about World Ozone Day and the Montreal Protocol:\n1. World Ozone Day is observed every year on 16 September and is officially called the International Day for the Preservation of the Ozone Layer.\n2. The Montreal Protocol was signed on 16 September 1987 and became effective on 1 January 1989.",
+    "options": [],
+    "answer": 2,
+    "explanation": "Both statements are correct. World Ozone Day was first observed on 16 September 1995. The PDF says the day commemorates the Montreal Protocol, an international treaty aimed at protecting the ozone layer by phasing out ozone-depleting substances. It also states that 198 countries have ratified the Protocol.",
+    "subQuestions": [
+      {
+        "question": "What is the World Ozone Day 2026 theme given in the PDF?",
+        "options": [
+          "Restore the Ozone, Restore the Earth",
+          "Global action for a cooler planet - Celebrating 10 years of sustainable cooling under the Kigali Amendment to the Montreal Protocol",
+          "Ozone for Life: 50 Years of Global Action",
+          "Cooling without Warming"
+        ],
+        "answer": 1,
+        "explanation": "The PDF gives the 2026 theme as 'Global action for a cooler planet - Celebrating 10 years of sustainable cooling under the Kigali Amendment to the Montreal Protocol'."
+      },
+      {
+        "question": "How many countries are mentioned in the PDF as ratifiers of the Montreal Protocol?",
+        "options": [
+          "195",
+          "196",
+          "198",
+          "200"
+        ],
+        "answer": 2,
+        "explanation": "The PDF lists 198 countries as ratifiers."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-17T16:02:10"
+  },
+  {
+    "id": "ca-2026-09-016-003",
+    "date": "2026-09-16",
+    "category": "Persons in News",
+    "question": "Consider the following statements about Padman Shri Solomon Pappaiah:\n1. Solomon Pappaiah was known as a Tamil scholar, professor, author and television orator, and he helped popularise the Tamil Pattimandram debate tradition through television.\n2. He received the Kalaimamani Award in 2000 and the Padma Shri in 2021 for Literature and Education.",
+    "options": [],
+    "answer": 2,
+    "explanation": "Both statements are correct . Solomon Pappaiah was born in 1936 in Madurai and moderated thousands of Pattimandram debates. He was also known for explaining Thirukkural, Sangam literature, Kamban and Bharathiyar in simple Tamil.",
+    "subQuestions": [
+      {
+        "question": "Where and when was Solomon Pappaiah born, ?",
+        "options": [
+          "1936, Madurai",
+          "1940, Chennai",
+          "1932, Coimbatore",
+          "1938, Tiruchirappalli"
+        ],
+        "answer": 0,
+        "explanation": "The PDF mentions his birth as 1936 in Madurai."
+      },
+      {
+        "question": "What is Pattimandram?",
+        "options": [
+          "A Tamil classical dance form",
+          "A structured public-debate tradition in Tamil",
+          "A school of Carnatic music",
+          "A Tamil archaeological method"
+        ],
+        "answer": 1,
+        "explanation": "The PDF defines Pattimandram as a structured public-debate tradition in which two teams argue for and against a social, cultural or literary topic and a moderator gives a decision after analysing the arguments."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-17T16:02:10"
+  },
+  {
+    "id": "ca-2026-09-016-004",
+    "date": "2026-09-16",
+    "category": "Economy",
+    "question": "Consider the following statements about India's foreign exchange reserves in September 2026:\n1. India's foreign exchange reserves reached a record $785.7 billion and India overtook Russia to become the world's fourth-largest holder of forex reserves.\n2. Foreign Currency Assets were about $648.17 billion, the largest component of India's reserves, while the overall reserves had increased by about $44.9 billion.",
+    "options": [],
+    "answer": 2,
+    "explanation": "Both statements are correct . The increase was linked in the PDF to dollar inflows from FCNR(B) deposits under an RBI special foreign-currency swap facility. The global comparison shown in the PDF places China first, Japan second, Switzerland third and India fourth.",
+    "subQuestions": [
+      {
+        "question": "Which country did India overtake to become the fourth-largest holder of foreign exchange reserves?",
+        "options": [
+          "China",
+          "Japan",
+          "Switzerland",
+          "Russia"
+        ],
+        "answer": 3,
+        "explanation": "The PDF states that India overtook Russia."
+      },
+      {
+        "question": "Which sequence correctly shows the top three countries ahead of India in the PDF's forex-reserve ranking?",
+        "options": [
+          "Japan - China - Switzerland",
+          "China - Japan - Switzerland",
+          "China - Switzerland - Japan",
+          "Switzerland - China - Japan"
+        ],
+        "answer": 1,
+        "explanation": "The PDF lists China first, Japan second and Switzerland third."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-17T16:02:10"
+  },
+  {
+    "id": "ca-2026-09-016-005",
+    "date": "2026-09-16",
+    "category": "Science & Technology",
+    "question": "Consider the following statements about the CHAAYANKAN Project:\n1. CHAAYANKAN is a three-year research and development project to modernise tea-plantation monitoring in India using AI and space technology, involving Tea Board India, NRSC of ISRO and NIT Rourkela.\n2. It combines satellite, drone, weather and ground-observation data for mapping tea-growing areas, identifying plant stress, forecasting pests and diseases, and estimating green-leaf yield.",
+    "options": [],
+    "answer": 2,
+    "explanation": "Both statements are correct. The PDF describes CHAAYANKAN as an AI-based tea-plantation monitoring project. Tea Board India is described as a statutory body under the Ministry of Commerce & Industry, responsible for development, regulation, research and promotion of India's tea industry.",
+    "subQuestions": [
+      {
+        "question": "Tea Board India functions under which ministry?",
+        "options": [
+          "Ministry of Agriculture & Farmers Welfare",
+          "Ministry of Commerce & Industry",
+          "Ministry of Food Processing Industries",
+          "Ministry of Science & Technology"
+        ],
+        "answer": 1,
+        "explanation": "The PDF places Tea Board India under the Ministry of Commerce & Industry."
+      },
+      {
+        "question": "Tea Board India was constituted on which date under the Tea Act, 1953?",
+        "options": [
+          "1 April 1954",
+          "1 January 1953",
+          "15 August 1954",
+          "26 January 1955"
+        ],
+        "answer": 0,
+        "explanation": "The PDF states that Tea Board India was constituted on 1 April 1954 under the Tea Act, 1953, with its head office in Kolkata."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-17T16:02:10"
+  },
+  {
+    "id": "ca-2026-09-016-006",
+    "date": "2026-09-16",
+    "category": "International Economy",
+    "question": "Consider the following statements about the India-MERCOSUR Preferential Trade Agreement:\n1. India and MERCOSUR signed the First Additional Protocol to their PTA to make trade faster, easier and more paperless, including acceptance of electronic Certificates of Origin.\n2. India granted tariff concessions on 450 products and MERCOSUR on 452 products; MERCOSUR's secretariat is in Montevideo, Uruguay.",
+    "options": [],
+    "answer": 2,
+    "explanation": "Both statements are correct . MERCOSUR, or the Southern Common Market, is described as a South American regional trade bloc formed to promote trade and economic cooperation among its members. Bolivia is also mentioned as a member country.",
+    "subQuestions": [
+      {
+        "question": "Which countries are listed as the founding members of MERCOSUR?",
+        "options": [
+          "Argentina, Brazil, Paraguay and Uruguay",
+          "Brazil, Chile, Peru and Bolivia",
+          "Argentina, Colombia, Brazil and Chile",
+          "Uruguay, Peru, Ecuador and Paraguay"
+        ],
+        "answer": 0,
+        "explanation": "The PDF lists Argentina, Brazil, Paraguay and Uruguay as the founding countries."
+      },
+      {
+        "question": "When was MERCOSUR established?",
+        "options": [
+          "26 March 1991",
+          "1 January 1995",
+          "15 August 1989",
+          "10 December 1992"
+        ],
+        "answer": 0,
+        "explanation": "The PDF gives 26 March 1991 as MERCOSUR's establishment date."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-17T16:02:10"
+  },
+  {
+    "id": "ca-2026-09-016-007",
+    "date": "2026-09-16",
+    "category": "Environment",
+    "question": "Consider the following statements about the MISHTI scheme:\n1. Under MISHTI, Gujarat completed mangrove plantation over 27,652 hectares against a cumulative target of 29,250 hectares for 2023-24 to 2026-27, achieving about 94.5% of the target.\n2. MISHTI stands for Mangrove Initiative for Shoreline Habitats and Tangible Incomes and was started on 5 June 2023.",
+    "options": [],
+    "answer": 2,
+    "explanation": "Both statements are correct. The PDF says MISHTI promotes restoration, reforestation and afforestation of mangroves in coastal areas. Its broader goals include coastal biodiversity, fisheries, shoreline protection, climate resilience and local livelihoods.",
+    "subQuestions": [
+      {
+        "question": "Why are mangroves described as a 'natural shield' for coasts in the PDF?",
+        "options": [
+          "They replace coral reefs completely",
+          "They prevent all tidal movement",
+          "They increase coastal erosion",
+          "They reduce coastal erosion and help protect shores from marine storms"
+        ],
+        "answer": 3,
+        "explanation": "The PDF notes that mangroves reduce coastal erosion, protect coasts from marine storms, provide habitat, support biodiversity, store carbon and support local livelihoods."
+      },
+      {
+        "question": "What is the full form of MISHTI?",
+        "options": [
+          "Mangrove Initiative for Shoreline Habitats and Tangible Incomes",
+          "Marine Initiative for Sustainable Habitats and Tribal Income",
+          "Marine India Shoreline Habitat and Tourism Initiative",
+          "Mangrove Integration Scheme for Habitat and Tidal Improvement"
+        ],
+        "answer": 0,
+        "explanation": "MISHTI stands for Mangrove Initiative for Shoreline Habitats and Tangible Incomes."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-17T16:02:10"
+  },
+  {
+    "id": "ca-2026-09-016-008",
+    "date": "2026-09-16",
+    "category": "Awards & Entertainment",
+    "question": "Consider the following statements about the 78th Primetime Emmy Awards 2026:\n1. The ceremony was held on 14 September 2026 at the Peacock Theater in Los Angeles, and Widow's Bay won Outstanding Comedy Series.\n2. Widow's Bay is described in the PDF as an Apple TV comedy-horror show and it won 14 Emmy Awards for one season, setting a record for the most Emmy wins in a single comedy-series season.",
+    "options": [],
+    "answer": 2,
+    "explanation": "Both statements are correct . The Primetime Emmy Awards are described as awards for the best American television programmes. The PDF says they began on 25 January 1949 and are organised by the Academy of Television Arts & Sciences (ATAS).",
+    "subQuestions": [
+      {
+        "question": "Which show is listed in the PDF as the Outstanding Drama Series winner?",
+        "options": [
+          "Hacks",
+          "The Pitt",
+          "Pluribus",
+          "Widow's Bay"
+        ],
+        "answer": 1,
+        "explanation": "The PDF's winners table lists The Pitt as Outstanding Drama Series."
+      },
+      {
+        "question": "Who organises the Primetime Emmy Awards, ?",
+        "options": [
+          "Academy of Motion Picture Arts and Sciences",
+          "Academy of Television Arts & Sciences (ATAS)",
+          "Hollywood Foreign Press Association",
+          "Screen Actors Guild"
+        ],
+        "answer": 1,
+        "explanation": "The PDF names the Academy of Television Arts & Sciences (ATAS) as the organiser."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-17T16:02:10"
+  },
+  {
+    "id": "ca-2026-09-016-009",
+    "date": "2026-09-16",
+    "category": "International Relations",
+    "question": "Consider the following statements about India's electricity exports to Nepal in 2026:\n1. A severe flash flood struck the Bhotekoshi River in Nepal's Rasuwa district on 26 August 2026 and affected the Trishuli River system.\n2. India's Ministry of Power approved electricity exports to the Nepal Electricity Authority for 18 hours per day from 13 September to 31 December 2026.",
+    "options": [],
+    "answer": 2,
+    "explanation": "Both statements are correct . The flood damaged hydropower infrastructure in Nepal and reduced domestic electricity generation, after which India approved temporary electricity exports.",
+    "subQuestions": [
+      {
+        "question": "To which flood-hit neighbouring country did India approve electricity exports until 31 December 2026?",
+        "options": [
+          "Bhutan",
+          "Bangladesh",
+          "Nepal",
+          "Sri Lanka"
+        ],
+        "answer": 2,
+        "explanation": "The country was Nepal."
+      },
+      {
+        "question": "For how many hours per day were electricity exports approved?",
+        "options": [
+          "12 hours",
+          "16 hours",
+          "18 hours",
+          "24 hours"
+        ],
+        "answer": 2,
+        "explanation": "The PDF states that exports were approved for 18 hours per day."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-17T16:02:10"
+  },
+  {
+    "id": "ca-2026-09-016-010",
+    "date": "2026-09-16",
+    "category": "Science & Technology",
+    "question": "Consider the following statements about SEMICON India 2026 and the India Semiconductor Mission:\n1. The fifth edition of SEMICON India 2026 is scheduled for 17-19 September 2026 at Yashobhoomi, Dwarka, New Delhi, with the inauguration on 17 September by Prime Minister Narendra Modi.\n2. The India Semiconductor Mission started in December 2021 under MeitY, and the PDF mentions a total outlay of ₹76,000 crore under the Semicon India Programme.",
+    "options": [],
+    "answer": 2,
+    "explanation": "Both statements are correct . SEMICON India is presented as a semiconductor conference and exhibition covering chip design, manufacturing, supply chains, investment and skill development. Its broader objective is to build India into a global semiconductor hub.",
+    "subQuestions": [
+      {
+        "question": "Where was the first edition of SEMICON India held, ?",
+        "options": [
+          "New Delhi in 2021",
+          "Bengaluru in 2022",
+          "Gandhinagar in 2023",
+          "Hyderabad in 2022"
+        ],
+        "answer": 1,
+        "explanation": "The PDF says the first edition was held in Bengaluru in 2022."
+      },
+      {
+        "question": "Which ministry is associated with the India Semiconductor Mission?",
+        "options": [
+          "Ministry of Heavy Industries",
+          "Ministry of Electronics & Information Technology (MeitY)",
+          "Ministry of Commerce & Industry",
+          "Ministry of Science & Technology"
+        ],
+        "answer": 1,
+        "explanation": "The PDF places the India Semiconductor Mission under the Ministry of Electronics & Information Technology (MeitY)."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-17T16:02:10"
+  },
+  {
+    "id": "ca-2026-09-016-021",
+    "date": "2026-09-16",
+    "category": "Questions of the Day",
+    "question": "Consider the following statements from the PDF's 'Questions of the Day' section:\n1. Mohana Singh Jitarwal is identified as the first woman pilot to fly the Tejas fighter aircraft.\n2. Jordan is identified as the first country in the world to become leprosy-free.",
+    "options": [],
+    "answer": 2,
+    "explanation": "Both statements are explicitly provided with answers in the PDF's Questions of the Day section. The same section also repeats that World Ozone Day is celebrated on 16 September.",
+    "subQuestions": [
+      {
+        "question": "Who is identified in the PDF as the first woman pilot to fly the Tejas fighter aircraft?",
+        "options": [
+          "Mohana Singh Jitarwal",
+          "Avani Chaturvedi",
+          "Bhawana Kanth",
+          "Shivangi Singh"
+        ],
+        "answer": 0,
+        "explanation": "The PDF gives Mohana Singh Jitarwal as the answer."
+      },
+      {
+        "question": "Which country is identified in the PDF as the first in the world to become leprosy-free?",
+        "options": [
+          "Jordan",
+          "Bhutan",
+          "Sri Lanka",
+          "Maldives"
+        ],
+        "answer": 0,
+        "explanation": "The PDF gives Jordan as the answer."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-17T16:02:10"
   }
 ]
