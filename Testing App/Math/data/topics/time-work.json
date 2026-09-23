@@ -58,5 +58,65 @@
     "order": 218,
     "attemptStatus": "unattempted",
     "testAllowed": true
+  },
+  {
+    "category": "Time & Work",
+    "examName": "",
+    "questionText": "Sachin can complete a piece of work in 80 days. He works on it for 10 days, and then Sourav finishes the remaining work alone in 42 days. In how many days\ncan Sachin and Sourav work together to finish the job?",
+    "questionImage": null,
+    "options": [
+      "27 days",
+      "26 days",
+      "32 days",
+      "30 days"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/jaH0B4lWmGM?t=130 use chatgpt mehod in this question",
+    "solutionImage": null,
+    "special": false,
+    "id": "mudorlc4e96ymv",
+    "order": 427,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Time & Work",
+    "examName": "",
+    "questionText": "P and Q together can complete a work in 24 days. They started the work\ntogether but after 8 days P left the work. Remaining work is completed by Q in\n20 more days. P alone can complete this entire work in how many days?",
+    "questionImage": null,
+    "options": [
+      "150",
+      "160",
+      "120",
+      "100"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/jaH0B4lWmGM?t=800",
+    "solutionImage": null,
+    "special": false,
+    "id": "mudqd1ap2lyiz2",
+    "order": 433,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Time & Work",
+    "examName": "",
+    "questionText": "P and Q together can complete a work in 24 days. They started the work\ntogether but after 8 days P left the work. Remaining work is completed by Q\nin 20 more days. P alone can complete this entire work in how many days?",
+    "questionImage": null,
+    "options": [
+      "110",
+      "190",
+      "120",
+      "170"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/jaH0B4lWmGM?t=794",
+    "solutionImage": "/uploads/time-work/07f77bc31846228ddb806b4dc4ef5936506b2bfd616bb72433485136b7170a83.png",
+    "special": false,
+    "id": "mudqpqi0xpq7s3",
+    "order": 434,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]

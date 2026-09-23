@@ -1398,5 +1398,45 @@
     "attemptStatus": "unattempted",
     "testAllowed": true,
     "examName": ""
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "Alloy A contains metals x and y only in the ratio 3:2, while alloy B contains them\nin the ratio 5:6 Alloy c is prepared by mixing alloys A and B in the ratio 4:3. The\npercentage of x in alloy cis:",
+    "questionImage": null,
+    "options": [
+      "52.60%",
+      "58.09%",
+      "57.29%",
+      "53.77%"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/kkyTvdGJG_A?t=200",
+    "solutionImage": null,
+    "special": false,
+    "id": "mudjxhapxp4z46",
+    "order": 423,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "A container has 60 litres of a mixture of acid and water in the ratio 7:3. 20% of\nthe mixture is taken out and replaced with water. This operation is repeated\nonce more. What is the final percentage of acid in the mixture?",
+    "questionImage": null,
+    "options": [
+      "42.7%",
+      "37.7%",
+      "44.8%",
+      "39.1%"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/jaH0B4lWmGM?t=503",
+    "solutionImage": null,
+    "special": false,
+    "id": "mudpmjf4m78ivg",
+    "order": 431,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]

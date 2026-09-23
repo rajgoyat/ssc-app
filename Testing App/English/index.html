@@ -2240,6 +2240,54 @@ body::before{
 
 
 
+/* ===== FRONTEND-EDITABLE NORMAL TIMER ===== */
+.normal-timer-setting{
+  display:inline-flex;
+  align-items:center;
+  gap:5px;
+  min-height:34px;
+  padding:5px 8px;
+  border:1px solid var(--line2);
+  border-radius:12px;
+  background:rgba(255,255,255,.04);
+  color:#9aa7ba;
+  font:700 9px "Courier New",monospace;
+  white-space:nowrap;
+}
+.normal-timer-setting input{
+  width:44px;
+  height:25px;
+  padding:0 4px;
+  border-radius:8px;
+  border:1px solid var(--line2);
+  background:#0a111b;
+  color:var(--ink);
+  text-align:center;
+  font:700 10px "Courier New",monospace;
+  outline:none;
+}
+.normal-timer-setting input:focus,
+.normal-timer-setting select:focus{
+  border-color:rgba(106,214,200,.60);
+  box-shadow:0 0 0 3px rgba(106,214,200,.07);
+}
+.normal-timer-setting select{
+  height:25px;
+  padding:0 6px;
+  border-radius:8px;
+  border:1px solid var(--line2);
+  background:#0a111b;
+  color:var(--ink);
+  font:700 10px "Courier New",monospace;
+  outline:none;
+  cursor:pointer;
+}
+@media(max-width:520px){
+  .normal-timer-setting{padding:4px 6px;font-size:8px;}
+  .normal-timer-setting input{width:38px;height:23px;font-size:9px;}
+  .normal-timer-setting select{height:23px;padding:0 4px;font-size:9px;}
+}
+
 /* ===== AUTO PLAY TIMER ===== */
 .auto-play-control{
   display:inline-flex;
@@ -3612,7 +3660,15 @@ body.mcq-focus-mode .result-more-menu .action-menu-item{
     <div class="header-actions">
       <button class="section-toggle-btn" type="button" data-collapse-section="appHeader">− Hide</button>
       <span class="server-state connected" id="topFileStatus" title="English data is loaded and saved through the Python server">Server ✓</span>
-      <div class="clock" id="clock">2:00</div>
+      <label class="normal-timer-setting" title="Change the normal study timer from the frontend">
+        <span>Timer</span>
+        <input type="number" id="normalTimerMinutesInput" min="1" max="180" value="3" inputmode="numeric" aria-label="Normal study timer value">
+        <select id="normalTimerUnitSelect" aria-label="Normal study timer unit">
+          <option value="minutes" selected>min</option>
+          <option value="seconds">sec</option>
+        </select>
+      </label>
+      <div class="clock" id="clock">03:00</div>
     </div>
   </div>
 
@@ -4439,7 +4495,7 @@ let roundNumber = 1;
 
 let testPass = 1;
 
-let timeLeft = 180;
+let timeLeft = 3 * 60;
 
 let currentRoundWords = [];
 
@@ -4485,6 +4541,101 @@ const antEl =
 
 const clockEl =
   document.getElementById("clock");
+
+// ===== FRONTEND-EDITABLE NORMAL STUDY TIMER (MINUTES / SECONDS) =====
+const normalTimerMinutesInput = document.getElementById("normalTimerMinutesInput");
+const normalTimerUnitSelect = document.getElementById("normalTimerUnitSelect");
+const NORMAL_TIMER_STORAGE_KEY = "vocabAlertNormalTimerMinutes"; // old key kept for migration
+const NORMAL_TIMER_VALUE_KEY = "vocabAlertNormalTimerValue";
+const NORMAL_TIMER_UNIT_KEY = "vocabAlertNormalTimerUnit";
+
+function getNormalTimerUnit(){
+  return normalTimerUnitSelect?.value === "seconds" ? "seconds" : "minutes";
+}
+
+function clampNormalTimerValue(value, unit = getNormalTimerUnit()){
+  const parsed = parseInt(value, 10);
+  const fallback = unit === "seconds" ? 30 : 3;
+  const max = unit === "seconds" ? 10800 : 180;
+  return Number.isFinite(parsed) ? Math.max(1, Math.min(max, parsed)) : fallback;
+}
+
+function formatNormalTimer(totalSeconds){
+  const safe = Math.max(0, Math.floor(Number(totalSeconds) || 0));
+  const minutes = Math.floor(safe / 60).toString().padStart(2, "0");
+  const seconds = (safe % 60).toString().padStart(2, "0");
+  return `${minutes}:${seconds}`;
+}
+
+function getNormalTimerSeconds(){
+  const unit = getNormalTimerUnit();
+  const value = clampNormalTimerValue(normalTimerMinutesInput?.value, unit);
+  return unit === "seconds" ? value : value * 60;
+}
+
+function saveNormalTimerSetting(value, unit){
+  try{
+    localStorage.setItem(NORMAL_TIMER_VALUE_KEY, String(value));
+    localStorage.setItem(NORMAL_TIMER_UNIT_KEY, unit);
+  }catch(_err){}
+}
+
+function syncNormalTimerInputLimits(){
+  if(!normalTimerMinutesInput) return;
+  const unit = getNormalTimerUnit();
+  normalTimerMinutesInput.min = "1";
+  normalTimerMinutesInput.max = unit === "seconds" ? "10800" : "180";
+  normalTimerMinutesInput.setAttribute("aria-label", `Normal study timer in ${unit}`);
+}
+
+function resetNormalTimer(){
+  const unit = getNormalTimerUnit();
+  const value = clampNormalTimerValue(normalTimerMinutesInput?.value, unit);
+  if(normalTimerMinutesInput) normalTimerMinutesInput.value = String(value);
+  syncNormalTimerInputLimits();
+  saveNormalTimerSetting(value, unit);
+  timeLeft = unit === "seconds" ? value : value * 60;
+  if(clockEl) clockEl.textContent = formatNormalTimer(timeLeft);
+}
+
+(function loadNormalTimerSetting(){
+  let savedValue = null;
+  let savedUnit = null;
+  let oldSavedMinutes = null;
+  try{
+    savedValue = localStorage.getItem(NORMAL_TIMER_VALUE_KEY);
+    savedUnit = localStorage.getItem(NORMAL_TIMER_UNIT_KEY);
+    oldSavedMinutes = localStorage.getItem(NORMAL_TIMER_STORAGE_KEY);
+  }catch(_err){}
+
+  const unit = savedUnit === "seconds" ? "seconds" : "minutes";
+  if(normalTimerUnitSelect) normalTimerUnitSelect.value = unit;
+  const rawValue = savedValue ?? oldSavedMinutes ?? normalTimerMinutesInput?.value ?? (unit === "seconds" ? 30 : 3);
+  const value = clampNormalTimerValue(rawValue, unit);
+  if(normalTimerMinutesInput) normalTimerMinutesInput.value = String(value);
+  syncNormalTimerInputLimits();
+  timeLeft = unit === "seconds" ? value : value * 60;
+  if(clockEl) clockEl.textContent = formatNormalTimer(timeLeft);
+})();
+
+normalTimerMinutesInput?.addEventListener("change", resetNormalTimer);
+normalTimerMinutesInput?.addEventListener("keydown", (event) => {
+  if(event.key === "Enter"){
+    event.preventDefault();
+    resetNormalTimer();
+    normalTimerMinutesInput.blur();
+  }
+});
+normalTimerUnitSelect?.addEventListener("change", () => {
+  // Convenient defaults when switching units: 3 min -> 180 sec and vice versa.
+  const unit = getNormalTimerUnit();
+  const current = parseInt(normalTimerMinutesInput?.value, 10);
+  if(normalTimerMinutesInput && Number.isFinite(current)){
+    if(unit === "seconds" && current <= 180) normalTimerMinutesInput.value = String(current * 60);
+    if(unit === "minutes" && current > 180) normalTimerMinutesInput.value = String(Math.max(1, Math.round(current / 60)));
+  }
+  resetNormalTimer();
+});
 
 const countEl =
   document.getElementById("count");
@@ -4858,7 +5009,7 @@ function startRound(mode = browseMode){
     " • Read 1/" + currentRoundWords.length;
 
   nextBtn.textContent = "Next →";
-  timeLeft = 180;
+  resetNormalTimer();
   updatePoolUI();
   updateLearnedButton();
 }
@@ -4905,7 +5056,7 @@ function nextWord(resetTimer = true){
       const repeatedFirstIndex = getQuizPool().indexOf(currentRoundWords[0]);
       wnumEl.textContent = repeatedFirstIndex >= 0 ? "#" + (repeatedFirstIndex + 1) : "#1";
 
-      if(resetTimer) timeLeft = 180;
+      if(resetTimer) resetNormalTimer();
       return;
     }
 
@@ -4922,7 +5073,7 @@ function nextWord(resetTimer = true){
 
     nextBtn.textContent = "Next →";
 
-    if(resetTimer) timeLeft = 180;
+    if(resetTimer) resetNormalTimer();
     return;
   }
 
@@ -4939,7 +5090,7 @@ function nextWord(resetTimer = true){
     const actualTestIndex = getQuizPool().indexOf(word);
     wnumEl.textContent = actualTestIndex >= 0 ? "#" + (actualTestIndex + 1) : "#" + (testIndex + 1);
 
-    if(resetTimer) timeLeft = 180;
+    if(resetTimer) resetNormalTimer();
     return;
   }
 
@@ -4962,7 +5113,7 @@ function nextWord(resetTimer = true){
       showQuestionCard(currentRoundWords[0]);
       wnumEl.textContent = "#1";
 
-      if(resetTimer) timeLeft = 180;
+      if(resetTimer) resetNormalTimer();
       return;
     }
 
@@ -4981,13 +5132,13 @@ function nextWord(resetTimer = true){
   countEl.textContent = testStatusText(testIndex);
   nextBtn.textContent = "Show answer →";
 
-  if(resetTimer) timeLeft = 180;
+  if(resetTimer) resetNormalTimer();
 }
 
 
 function tick(){
 
-  // The original 10-minute timer remains unchanged in normal mode.
+  // The normal study timer uses the frontend value selected by the user.
   // While Auto Play is active it is paused so it can never trigger the normal test flow.
   if(autoPlayActive) return;
 
@@ -4997,7 +5148,7 @@ function tick(){
 
     nextWord(false);
 
-    timeLeft = 180;
+    resetNormalTimer();
 
   }
 
@@ -5057,7 +5208,7 @@ function showBrowseWord(index){
   wnumEl.textContent = "#" + (browseIndex + 1);
   countEl.textContent = (browseMode === "series" ? "Series" : "Random") + " • " + (browseIndex + 1) + "/" + WORDS.length;
   nextBtn.textContent = "Next →";
-  timeLeft = 180;
+  resetNormalTimer();
 }
 
 function showRandomWord(){
@@ -7112,9 +7263,8 @@ function startAutoPlay(){
   currentPhase = PHASE.READ;
   answerVisible = false;
 
-  // Pause/reset the old timer visually, but do not alter its normal-mode behavior.
-  timeLeft = 180;
-  if(clockEl) clockEl.textContent = "10:00";
+  // Pause/reset the normal timer visually without changing the user's selected duration.
+  resetNormalTimer();
 
   if(nextBtn){
     nextBtn.disabled = true;
@@ -7160,8 +7310,7 @@ function stopAutoPlay(restoreNormal = true){
   updateAutoPlayCountdown();
 
   if(nextBtn) nextBtn.disabled = false;
-  timeLeft = 180;
-  if(clockEl) clockEl.textContent = "10:00";
+  resetNormalTimer();
 
   // Closing Auto Play returns to exactly the original read -> test workflow.
   if(restoreNormal && wasActive){

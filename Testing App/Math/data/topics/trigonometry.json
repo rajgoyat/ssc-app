@@ -218,5 +218,25 @@
     "order": 210,
     "attemptStatus": "unattempted",
     "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "If p=sec  +tan 0 and q = cosec 0- cot 0, then what is (p- q- pq) equal to?",
+    "questionImage": null,
+    "options": [
+      "3",
+      "1",
+      "-1",
+      "4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/kkyTvdGJG_A?t=364",
+    "solutionImage": null,
+    "special": false,
+    "id": "mudl8nteuah0n6",
+    "order": 424,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]

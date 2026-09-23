@@ -58,5 +58,505 @@
     "order": 295,
     "attemptStatus": "unattempted",
     "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A boat takes 83 minutes to go 33.2 km upstream. The ratio of the speed of the boat in still water to that of the stream is 8:5. How much total time (in hours) will the boat take to go 47.1 km upstream and 55.9 km downstream?",
+    "questionImage": null,
+    "options": [
+      "2 hours",
+      "2.25 hours",
+      "2.5 hours",
+      "2.75 hours"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Upstream speed = 33.2 × 60/83 = 24 km/h. Boat : Stream = 8:5, so upstream speed = 3 parts = 24, hence 1 part = 8. Downstream speed = 13 × 8 = 104 km/h. Total time = 47.1/24 + 55.9/104 = 1.9625 + 0.5375 = 2.5 hours. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=4649",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqiwmq7nnh",
+    "order": 296,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A man's speed in still water is 4 km/h more than the speed of the current. If the man takes a total of 10 hours to cover 45 km downstream and 35 km upstream, then the speed of the man in still water is:",
+    "questionImage": null,
+    "options": [
+      "16 km/h",
+      "18 km/h",
+      "20 km/h",
+      "24 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Let stream speed = x km/h. Then speed in still water = x + 4. Upstream speed = 4 km/h and downstream speed = 2x + 4. So 45/(2x+4) + 35/4 = 10. Solving gives x = 16, hence still-water speed = 20 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=4805",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixki524k",
+    "order": 297,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "Two boats A and B start moving towards each other from two places 272 km apart. The speeds of boats A and B in still water are 32 km/h and 36 km/h respectively. If A moves downstream and B moves upstream, then in how much time will they meet each other?",
+    "questionImage": null,
+    "options": [
+      "3 hours",
+      "4 hours",
+      "5 hours",
+      "6 hours"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Let stream speed be x. Speed of A downstream = 32 + x and speed of B upstream = 36 - x. Relative speed = (32 + x) + (36 - x) = 68 km/h. Time = 272/68 = 4 hours. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=5086",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixomwini",
+    "order": 298,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "The ratio of the speed of a motorboat to that of the current of water is 55:7. The boat goes along with the current in 6 hours 24 minutes. It will come back in:",
+    "questionImage": null,
+    "options": [
+      "7 hours 44 minutes",
+      "8 hours",
+      "8 hours 16 minutes",
+      "8 hours 32 minutes"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Boat : Stream = 55:7. Downstream speed = 62 parts and upstream speed = 48 parts. For the same distance, time ratio is inverse of speed ratio. Return time = 6 hours 24 minutes × 62/48 = 8 hours 16 minutes. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=5136",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqix5nnmiv",
+    "order": 299,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A boat covers a distance of 375 metres upstream in 30 minutes and returns back to the starting point in 18 minutes. Find the ratio of the speed of the boat in still water to the speed of the stream.",
+    "questionImage": null,
+    "options": [
+      "3:1",
+      "4:1",
+      "5:2",
+      "5:1"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Upstream speed = 0.375/0.5 = 0.75 km/h and downstream speed = 0.375/0.3 = 1.25 km/h. Still-water speed = (1.25 + 0.75)/2 = 1 km/h and stream speed = (1.25 - 0.75)/2 = 0.25 km/h. Required ratio = 1:0.25 = 4:1. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=5328",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixms22ex",
+    "order": 300,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A boat running upstream takes 8 hours 48 minutes to cover a certain distance, while it takes 4 hours to cover the same distance downstream. The speed of the current is how much percentage less than the speed of the boat in still water?",
+    "questionImage": null,
+    "options": [
+      "37.5%",
+      "50%",
+      "62.5%",
+      "75%"
+    ],
+    "correctIndex": 2,
+    "solutionText": "8 hours 48 minutes = 8.8 hours. For equal distance, downstream speed : upstream speed = 8.8:4 = 11:5. Therefore boat speed = (11+5)/2 = 8 parts and current speed = (11-5)/2 = 3 parts. Current is (8-3)/8 × 100 = 62.5% less than boat speed. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=5530",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixndxqj8",
+    "order": 301,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "Ashu can row at 7.5 km/h in still water. He finds that it takes four times as much time to row upstream as it takes to row downstream for the same distance. The speed of the stream is:",
+    "questionImage": null,
+    "options": [
+      "3 km/h",
+      "4 km/h",
+      "4.5 km/h",
+      "5 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "For equal distance, if upstream time is four times downstream time, then downstream speed is four times upstream speed. Thus 7.5 + x = 4(7.5 - x). Solving gives x = 4.5 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=5850",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixt1hi17",
+    "order": 302,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A diver rowing at a speed of 3 km/h in still water takes double the time going 50 km upstream compared to going 50 km downstream. The speed of the diver against the stream is:",
+    "questionImage": null,
+    "options": [
+      "1 km/h",
+      "1.5 km/h",
+      "2 km/h",
+      "2.5 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "For the same distance, upstream time is twice downstream time, so upstream speed is half the downstream speed. Thus 3 - x = (3 + x)/2. This gives stream speed x = 1 km/h. Therefore speed against the stream = 3 - 1 = 2 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=6232",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixdo7fbi",
+    "order": 303,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A man can row 30 km upstream and 55 km downstream in the same amount of time as he can row 38.5 km downstream and 37.5 km upstream. Find the ratio of the rowing speed in still water to the speed of the current.",
+    "questionImage": null,
+    "options": [
+      "7:3",
+      "8:3",
+      "11:5",
+      "5:2"
+    ],
+    "correctIndex": 1,
+    "solutionText": "30/U + 55/D = 37.5/U + 38.5/D. Therefore 16.5/D = 7.5/U, giving D:U = 11:5. Hence boat speed : stream speed = (11+5):(11-5) = 16:6 = 8:3. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=6744",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixnwguje",
+    "order": 304,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A man rows to a place at a distance of 72 km and comes back in 36 hours. He finds that he can row 12 km with the stream in the same time as 4 km against the stream. The speed of the stream is:",
+    "questionImage": null,
+    "options": [
+      "2 km/h",
+      "8/3 km/h",
+      "3 km/h",
+      "10/3 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "12/D = 4/U, so D = 3U. Let U = x and D = 3x. Then 72/x + 72/(3x) = 36, giving x = 8/3. Stream speed = (D-U)/2 = (8 - 8/3)/2 = 8/3 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=7433",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqix0zzzny",
+    "order": 305,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A man rows 48 km and back in 48 hours. He can row 4 km with the stream in the same time as 3 km against the stream. The speed of the stream is:",
+    "questionImage": null,
+    "options": [
+      "7/12 km/h",
+      "7/24 km/h",
+      "5/24 km/h",
+      "1/3 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "4/D = 3/U, hence D:U = 4:3. Let D = 4x and U = 3x. Then 48/(4x) + 48/(3x) = 48. This gives x = 7/12. Stream speed = (4x-3x)/2 = x/2 = 7/24 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=7863",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixpfm4wp",
+    "order": 306,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A man can row a boat at a speed of 10 km/h in still water. If the river is flowing at 4.5 km/h, it takes 2 hours to go to a point and come back to the starting point. At what distance is the place located, rounded off to two decimal places?",
+    "questionImage": null,
+    "options": [
+      "7.50 km",
+      "7.98 km",
+      "8.25 km",
+      "8.75 km"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Downstream speed = 14.5 km/h and upstream speed = 5.5 km/h. Using distance = (S1 × S2)/(S1 + S2) × total time, distance = (14.5 × 5.5)/(14.5 + 5.5) × 2 = 7.975 ≈ 7.98 km. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=8696",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixu3qnij",
+    "order": 307,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A man can row 12 km/h in still water. When the river is running at 2.2 km/h, it takes him 1.2 hours to row to a place and come back. How far is the place?",
+    "questionImage": null,
+    "options": [
+      "6.48 km",
+      "6.96 km",
+      "7.20 km",
+      "7.44 km"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Downstream speed = 14.2 km/h and upstream speed = 9.8 km/h. Distance = (14.2 × 9.8)/(14.2 + 9.8) × 1.2 = 6.958 km ≈ 6.96 km. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=9134",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixguat2z",
+    "order": 308,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "The speed of a boat in still water is 20 km/h, while the river is flowing at a speed of 8 km/h. The time taken to cover a certain distance upstream is 6 hours more than the time taken to cover the same distance downstream. Find the distance.",
+    "questionImage": null,
+    "options": [
+      "108 km",
+      "120 km",
+      "126 km",
+      "132 km"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Upstream speed = 20 - 8 = 12 km/h and downstream speed = 20 + 8 = 28 km/h. Let distance = D. Then D/12 - D/28 = 6. Solving gives D = 126 km. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=9350",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixsdxnk9",
+    "order": 309,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A boat goes 112 km downstream and comes back to the starting point in 11.5 hours. If the speed of the current is 9 km/h, then the speed of the boat in still water is:",
+    "questionImage": null,
+    "options": [
+      "21 km/h",
+      "23 km/h",
+      "25 km/h",
+      "27 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Let boat speed in still water = x. Then downstream speed = x + 9 and upstream speed = x - 9. Therefore 112/(x+9) + 112/(x-9) = 11.5. Solving gives x = 23 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=9709",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixfkp4xo",
+    "order": 310,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "The speed of a stream is 6 km/h. A boat can go 56 km downstream and 39 km upstream in 7 hours. What is the speed of the boat in still water?",
+    "questionImage": null,
+    "options": [
+      "12 km/h",
+      "15 km/h",
+      "18 km/h",
+      "21 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Let boat speed = x. Downstream speed = x + 6 and upstream speed = x - 6. Thus 56/(x+6) + 39/(x-6) = 7. Solving gives x = 15 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=9938",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixnq2o4i",
+    "order": 311,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "The speed of a boat in still water is 8 km/h. It can go 12 km upstream and 18 km downstream in 4 hours. Find the speed of the stream, rounded off to two decimal places.",
+    "questionImage": null,
+    "options": [
+      "2.50 km/h",
+      "2.75 km/h",
+      "2.89 km/h",
+      "3.25 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Let stream speed = x. Then 12/(8-x) + 18/(8+x) = 4. On simplification, x = (3 + √73)/4 ≈ 2.89 km/h. In the square-root method, 4 can be written as √16 before combining/dividing the radical terms. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=11401",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixyr3ayh",
+    "order": 312,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A man covers 39 km upstream and 116 km downstream in 7 hours. He also covers 65 km upstream and 87 km downstream in 8 hours. Find the speed of the boat in still water.",
+    "questionImage": null,
+    "options": [
+      "18 km/h",
+      "20 km/h",
+      "21 km/h",
+      "23 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Let upstream and downstream speeds be U and D. Then 39/U + 116/D = 7 and 65/U + 87/D = 8. Solving gives U = 13 km/h and D = 29 km/h. Therefore still-water speed = (29 + 13)/2 = 21 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=11503",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixqej25i",
+    "order": 313,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A boat can go 30 km downstream and 24 km upstream in 2 hours 27 minutes. Also, it can go 10 km downstream and 4 km upstream in 37 minutes. What is the speed of the boat upstream?",
+    "questionImage": null,
+    "options": [
+      "18 km/h",
+      "20 km/h",
+      "22 km/h",
+      "24 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Let downstream speed = D and upstream speed = U. Then 30/D + 24/U = 147/60 and 10/D + 4/U = 37/60. Solving the two equations gives D = 24 km/h and U = 20 km/h. Required upstream speed = 20 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=12200",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixnyad6f",
+    "order": 314,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A boat moves at a speed of 7 km/h in still water. The boat goes 40 km downstream and then 40 km upstream. It is observed that the total time taken for this journey is 560 minutes less than the time it would take if the speed of the stream were 2 km/h faster. What is the initial speed of the stream?",
+    "questionImage": null,
+    "options": [
+      "2 km/h",
+      "3 km/h",
+      "4 km/h",
+      "5 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Let initial stream speed = x. Initial round-trip time = 40/(7+x) + 40/(7-x). If stream speed becomes x+2, time = 40/(9+x) + 40/(5-x). The increase is 560 minutes = 28/3 hours. Solving gives x = 3 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=14404",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixv9o8hi",
+    "order": 315,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "X and Y are two points in a river. Points P and Q divide the straight line XY into three equal parts. The river flows along XY and the time taken by a boat to row from X to Q and from Y to Q are in the ratio 4:5. The ratio of the speed of the boat downstream to that of the river current is equal to:",
+    "questionImage": null,
+    "options": [
+      "7:3",
+      "8:3",
+      "10:3",
+      "5:2"
+    ],
+    "correctIndex": 2,
+    "solutionText": "XQ is twice YQ. If downstream speed is D and upstream speed is U, then (2/D):(1/U) = 4:5. Thus 2U/D = 4/5, giving D:U = 5:2. Therefore (B+C):(B-C) = 5:2, which gives B:C = 7:3. Hence downstream speed : current speed = (7+3):3 = 10:3. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=12900",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixr5g1b3",
+    "order": 316,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A man travels by a motorboat down a river to his office and back. With the speed of the river unchanged, if he doubles the speed of his motorboat, then his travel time gets reduced by 75%. The ratio of the original speed of the motorboat to the speed of the river is:",
+    "questionImage": null,
+    "options": [
+      "√5:2",
+      "√7:2",
+      "3:2",
+      "2:1"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Let original boat speed be B and stream speed be C. Original round-trip time is proportional to 1/(B+C) + 1/(B-C). After doubling boat speed, it is proportional to 1/(2B+C) + 1/(2B-C). A 75% reduction means new time = 1/4 of original time. Solving gives B/C = √7/2, so required ratio = √7:2. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=13539",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqix3e6hux",
+    "order": 317,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A boat covers a round trip journey between two points A and B in a river in T hours. If its speed in still water becomes 2 times, it would take 80/161 T hours for the same journey. Find the ratio of its speed in still water to the speed of the river.",
+    "questionImage": null,
+    "options": [
+      "9:1",
+      "10:1",
+      "11:1",
+      "12:1"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Let boat speed = B and current speed = C. Original round-trip time is proportional to 2B/(B²-C²). After boat speed doubles, time is proportional to 4B/(4B²-C²). Their ratio is 80/161. Solving gives B²/C² = 121, hence B:C = 11:1. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=13748",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqix3g61jn",
+    "order": 318,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A swimmer swims from a point P against the current for 6 minutes and then swims back along the current for the next 6 minutes and reaches a point Q. If the distance between P and Q is 120 m, then the speed of the current is:",
+    "questionImage": null,
+    "options": [
+      "0.5 km/h",
+      "0.6 km/h",
+      "0.8 km/h",
+      "1.0 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "6 minutes = 0.1 hour. In equal upstream and downstream times, the swimmer's own speed cancels out. Net distance = [(B+C) - (B-C)] × 0.1 = 2C × 0.1 = 0.2C. Given net distance = 120 m = 0.12 km. Thus 0.2C = 0.12, so C = 0.6 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=13896",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixcuhnsu",
+    "order": 319,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A man rows a boat a certain distance downstream in 9 hours, while it takes 18 hours to row the same distance upstream. How many hours will it take him to row three-fifth of the same distance in still water?",
+    "questionImage": null,
+    "options": [
+      "6.8 hours",
+      "7 hours",
+      "7.2 hours",
+      "7.5 hours"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Let the distance be D. Downstream speed = D/9 and upstream speed = D/18. Speed in still water = (D/9 + D/18)/2 = D/12. Time for 3D/5 in still water = (3D/5)/(D/12) = 36/5 = 7.2 hours, i.e. 7 hours 12 minutes. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=14200",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixzynp56",
+    "order": 320,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]

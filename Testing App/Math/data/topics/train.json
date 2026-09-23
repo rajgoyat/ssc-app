@@ -58,5 +58,665 @@
     "attemptStatus": "unattempted",
     "testAllowed": true,
     "examName": ""
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "The platform of a station 400 m long starts exactly where the last span of a bridge 1.2 km long ends. How long will a train 200 m long and travelling at a speed of 72 km/h take to cover the distance between the starting point of the span of the bridge and the far end of the platform?",
+    "questionImage": null,
+    "options": [
+      "80 seconds",
+      "85 seconds",
+      "90 seconds",
+      "100 seconds"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Speed = 72 km/h = 20 m/s. Total distance covered by the train = 1200 + 400 + 200 = 1800 m. Time = 1800/20 = 90 seconds.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfqp3q1my",
+    "order": 321,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "A 280 m long train running at a speed of 72 km/h passes a platform in 30 seconds. Find the length of the platform.",
+    "questionImage": null,
+    "options": [
+      "280 m",
+      "300 m",
+      "320 m",
+      "340 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "72 km/h = 20 m/s. Total distance in 30 seconds = 20 × 30 = 600 m. Platform length = 600 - 280 = 320 m. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=17143",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfqzt9hz7",
+    "order": 322,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "A train is 591 m long and it crosses a platform in 1.7 minutes while running at a speed of 36 km/h. Find the difference between the length of the train and the platform.",
+    "questionImage": null,
+    "options": [
+      "142 m",
+      "152 m",
+      "162 m",
+      "172 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "1.7 minutes = 102 seconds and 36 km/h = 10 m/s. Total distance = 1020 m, so platform length = 1020 - 591 = 429 m. Difference = 591 - 429 = 162 m. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=17230",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfq4c1rc8",
+    "order": 323,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "A train travelling at 36 km/h crosses a pole in 25 seconds. How much time will it take to cross a bridge 350 m long?",
+    "questionImage": null,
+    "options": [
+      "50 seconds",
+      "55 seconds",
+      "60 seconds",
+      "65 seconds"
+    ],
+    "correctIndex": 2,
+    "solutionText": "36 km/h = 10 m/s. Train length = 10 × 25 = 250 m. To cross the bridge, distance = 250 + 350 = 600 m. Time = 600/10 = 60 seconds. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=17629",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfq8ua239",
+    "order": 324,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "A train crosses a platform 180 m long in 60 seconds at a speed of 72 km/h. The time taken by the train to cross an electric pole is:",
+    "questionImage": null,
+    "options": [
+      "45 seconds",
+      "48 seconds",
+      "51 seconds",
+      "54 seconds"
+    ],
+    "correctIndex": 2,
+    "solutionText": "72 km/h = 20 m/s. Train + platform length = 20 × 60 = 1200 m. Train length = 1200 - 180 = 1020 m. Pole crossing time = 1020/20 = 51 seconds. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=18259",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfqy8ssnj",
+    "order": 325,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "The speed of a train is 42 km/h. It crosses an electric pole in 27 seconds and a platform in 51 seconds. What is the length of the platform?",
+    "questionImage": null,
+    "options": [
+      "260 m",
+      "270 m",
+      "280 m",
+      "290 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Platform crossing requires 51 - 27 = 24 extra seconds. Speed = 42 km/h = 35/3 m/s. Platform length = 24 × 35/3 = 280 m. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=18360",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfqfpckg6",
+    "order": 326,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "A 360 m long train running at uniform speed crosses a platform in 55 seconds and a man standing on the platform in 24 seconds. What is the length of the platform?",
+    "questionImage": null,
+    "options": [
+      "435 m",
+      "450 m",
+      "465 m",
+      "480 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Train speed = 360/24 = 15 m/s. In 55 seconds total distance = 15 × 55 = 825 m. Platform length = 825 - 360 = 465 m. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=18887",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfq6rbg48",
+    "order": 327,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "A train passes two tunnels of lengths 2091 m and 1259 m in 89 seconds and 63 seconds, respectively. What is the length of the train?",
+    "questionImage": null,
+    "options": [
+      "707 m",
+      "737 m",
+      "757 m",
+      "777 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "For the same train speed, (L + 2091)/89 = (L + 1259)/63. Solving gives train length L = 757 m. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=18956",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfqtaclwb",
+    "order": 328,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "A train passes two tunnels of lengths 2708 m and 2195 m in 88 seconds and 76 seconds, respectively. What is the length of the train?",
+    "questionImage": null,
+    "options": [
+      "954 m",
+      "1004 m",
+      "1054 m",
+      "1104 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Using (L + 2708)/88 = (L + 2195)/76 and solving, the length of the train is 1054 m. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=19369",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfqczk4gi",
+    "order": 329,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "A 629 m long train crosses a man walking at a speed of 10.4 km/h in the opposite direction in 12 seconds. What is the speed of the train?",
+    "questionImage": null,
+    "options": [
+      "168.3 km/h",
+      "173.3 km/h",
+      "178.3 km/h",
+      "183.3 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Relative speed = 629/12 m/s = 188.7 km/h. Since they move in opposite directions, train speed = 188.7 - 10.4 = 178.3 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=19572",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfqpbfbki",
+    "order": 330,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "A 240 m long train overtakes a man walking at 6 km/h in the same direction in 9 seconds. How much time will it take to pass a 372 m long tunnel with the same speed?",
+    "questionImage": null,
+    "options": [
+      "18 seconds",
+      "20 seconds",
+      "21.6 seconds",
+      "24 seconds"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Relative speed with man = 240/9 = 96 km/h. Train speed = 96 + 6 = 102 km/h. Tunnel crossing distance = 240 + 372 = 612 m. Time = 612/(102/3.6) = 21.6 seconds. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=20233",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfqe8z75m",
+    "order": 331,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "The speed of a train is 78 km/h. It crosses a tunnel in 45 seconds and overtakes a person walking at 6 km/h in the same direction in 15 seconds. The length of the tunnel is:",
+    "questionImage": null,
+    "options": [
+      "625 m",
+      "650 m",
+      "675 m",
+      "700 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Relative speed with person = 78 - 6 = 72 km/h = 20 m/s. Train length = 20 × 15 = 300 m. In 45 seconds the train covers 78/3.6 × 45 = 975 m. Tunnel length = 975 - 300 = 675 m. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=20328",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfqvltdix",
+    "order": 332,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "A 234 m long train passes a person running at 9 km/h in the opposite direction in 6 seconds. In how much time will it pass another person moving at 23.4 km/h in the same direction?",
+    "questionImage": null,
+    "options": [
+      "6.8 seconds",
+      "7.2 seconds",
+      "7.8 seconds",
+      "8.4 seconds"
+    ],
+    "correctIndex": 2,
+    "solutionText": "First relative speed = 234/6 = 39 m/s = 140.4 km/h. Train speed = 140.4 - 9 = 131.4 km/h. Relative speed with second person = 131.4 - 23.4 = 108 km/h = 30 m/s. Time = 234/30 = 7.8 seconds. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=20843",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfqmfkjv7",
+    "order": 333,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "Two trains are moving in opposite directions at speeds of 50 km/h and 90 km/h. The length of one train is 430 m. The time taken by them to cross each other is 31 seconds. Find the length of the other train, rounded off to two decimal places.",
+    "questionImage": null,
+    "options": [
+      "745.56 m",
+      "765.56 m",
+      "775.56 m",
+      "785.56 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Relative speed = 50 + 90 = 140 km/h = 350/9 m/s. Total length = 350/9 × 31 = 1205.56 m. Other train length = 1205.56 - 430 = 775.56 m. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=22402",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfri1fq8g",
+    "order": 334,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "Two trains having lengths of 430 m and 120 m are running at speeds of 70 km/h and 100 km/h, respectively, in the same direction. The time taken in minutes by the faster train, coming from behind, to completely cross the other train is:",
+    "questionImage": null,
+    "options": [
+      "0.9 minutes",
+      "1 minute",
+      "1.1 minutes",
+      "1.2 minutes"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Relative speed = 100 - 70 = 30 km/h = 25/3 m/s. Total length = 430 + 120 = 550 m. Time = 550 ÷ (25/3) = 66 seconds = 1.1 minutes. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=23115",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfrs1xzdc",
+    "order": 335,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "Two trains of equal length are running on parallel lines in the same direction at speeds of 97 km/h and 21 km/h. The faster train passes the slower train in 45 seconds. The length of each train is:",
+    "questionImage": null,
+    "options": [
+      "425 m",
+      "450 m",
+      "475 m",
+      "500 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Relative speed = 97 - 21 = 76 km/h. In 45 seconds, relative distance = 950 m. Since both trains have equal lengths, each train = 950/2 = 475 m. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=23482",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfrzap9v1",
+    "order": 336,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "A train overtakes two persons walking along a railway track. The first walks at 5.4 km/h and the other at 18 km/h. The train needs 30 seconds and 44 seconds, respectively, to overtake them. What is the speed of the train if both persons are walking in the same direction as the train?",
+    "questionImage": null,
+    "options": [
+      "42 km/h",
+      "45 km/h",
+      "48 km/h",
+      "51 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Train length is the same in both cases. Therefore 30(V - 5.4) = 44(V - 18). Solving gives V = 45 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=23886",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfrn4ljtk",
+    "order": 337,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "A train overtakes two people walking along a railway track. The first person walks at 7.2 km/h and the second at 14.4 km/h. The train takes 29.9 seconds to pass the first person and 43.7 seconds to pass the second person. What is the speed of the train if both are walking in the same direction?",
+    "questionImage": null,
+    "options": [
+      "27 km/h",
+      "28.8 km/h",
+      "30 km/h",
+      "32.4 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Equating train length: 29.9(V - 7.2) = 43.7(V - 14.4). Solving gives train speed V = 30 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=24335",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfrfdw2ds",
+    "order": 338,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "Two trains A and B of lengths 180 m and 220 m, respectively, are running on parallel tracks in opposite directions. They cross each other in 12 seconds. If the same trains move in the same direction, they take 60 seconds for the faster train to completely cross the slower one. Find the speed of the faster train.",
+    "questionImage": null,
+    "options": [
+      "66 km/h",
+      "68 km/h",
+      "72 km/h",
+      "75 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Total length = 400 m. Opposite-direction relative speed = 400/12 = 120 km/h. Same-direction relative speed = 400/60 = 24 km/h. Faster speed = (120 + 24)/2 = 72 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=25089",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfrq2fpd9",
+    "order": 339,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "The speeds of train A and train B are 46.8 km/h and 61.2 km/h, respectively. Their lengths are in the ratio 3:5. When running in opposite directions, they completely cross each other in 12 seconds. How much time will train B take to cross a 336 m long tunnel?",
+    "questionImage": null,
+    "options": [
+      "30 seconds",
+      "32 seconds",
+      "33 seconds",
+      "36 seconds"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Relative speed = 46.8 + 61.2 = 108 km/h = 30 m/s. Total train length = 30 × 12 = 360 m. In ratio 3:5, B's length = 225 m. Distance to cross tunnel = 225 + 336 = 561 m. Speed of B = 61.2 km/h = 17 m/s. Time = 561/17 = 33 seconds. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=25273",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfr33mqwm",
+    "order": 340,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "Train A running at 99 km/h takes 46 seconds to completely cross train B running at 72 km/h in the opposite direction. The length of train B is 1.5 times the length of train A. Train B crosses a bridge completely in 82 seconds. Find the length of the bridge.",
+    "questionImage": null,
+    "options": [
+      "309 m",
+      "319 m",
+      "329 m",
+      "339 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Relative speed = 99 + 72 = 171 km/h = 47.5 m/s. Total train length = 47.5 × 46 = 2185 m. If B = 1.5A, then A = 874 m and B = 1311 m. B covers 20 × 82 = 1640 m while crossing the bridge. Bridge length = 1640 - 1311 = 329 m. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=25610",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfribrp1m",
+    "order": 341,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "A 490 m long train passes a man travelling in the same direction at 9 km/h in 12 seconds. How much time will it take for this train to completely pass another 500 m long train travelling in the opposite direction at 42 km/h?",
+    "questionImage": null,
+    "options": [
+      "16 seconds",
+      "17 seconds",
+      "18 seconds",
+      "20 seconds"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Relative speed with man = 490/12 = 147 km/h. Train speed = 147 + 9 = 156 km/h. Against the second train, relative speed = 156 + 42 = 198 km/h = 55 m/s. Total length = 490 + 500 = 990 m. Time = 990/55 = 18 seconds. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=26800",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfrrjjl6b",
+    "order": 342,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "A train travelling at the speed of x km/h crossed a 300 m long platform in 30 seconds and overtook a man walking in the same direction at 6 km/h in 20 seconds. What is the value of x?",
+    "questionImage": null,
+    "options": [
+      "84 km/h",
+      "90 km/h",
+      "96 km/h",
+      "102 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Let train speed be v m/s. Train length = 20(v - 5/3). Also, train length + 300 = 30v. Solving gives v = 80/3 m/s = 96 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=26904",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfr2tlg7z",
+    "order": 343,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "Train P can cross a pole in 8 seconds, while train Q takes 15 seconds to cross train P when they travel in opposite directions on parallel tracks. If the ratio of the length of train P to train Q is 2:3 and the speed of train P is 54 km/h, find the speed of train Q.",
+    "questionImage": null,
+    "options": [
+      "15 km/h",
+      "18 km/h",
+      "21 km/h",
+      "24 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Speed of P = 54 km/h = 15 m/s. Length of P = 15 × 8 = 120 m. Since P:Q length = 2:3, Q length = 180 m. Total length = 300 m. Relative speed = 300/15 = 20 m/s = 72 km/h. Therefore Q speed = 72 - 54 = 18 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=27510",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfr9x9nwl",
+    "order": 344,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "Train P, going at 51 km/h, completely passes train Q of length 225 m going in the same direction at 22 km/h in 7.5 minutes. How much time will P take to completely cross train R of length 420 m going at 21 km/h in the opposite direction?",
+    "questionImage": null,
+    "options": [
+      "181 seconds",
+      "186 seconds",
+      "191 seconds",
+      "196 seconds"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Relative speed of P and Q = 29 km/h. In 7.5 minutes, total length P + Q = 3625 m, so P length = 3625 - 225 = 3400 m. With R, relative speed = 51 + 21 = 72 km/h = 20 m/s. Total length = 3400 + 420 = 3820 m. Time = 3820/20 = 191 seconds. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=27816",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfrb5y9ju",
+    "order": 345,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "Train A is 260 m long and crosses a platform of length 160 m in 28 seconds. Train B is 340 m long and passes a stationary man in 20 seconds. Both trains travel at constant speeds on parallel straight tracks. Find the time taken when the faster train completely overtakes the slower train while moving in the same direction.",
+    "questionImage": null,
+    "options": [
+      "240 seconds",
+      "270 seconds",
+      "300 seconds",
+      "330 seconds"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Speed of A = (260 + 160)/28 = 15 m/s. Speed of B = 340/20 = 17 m/s. Relative speed = 2 m/s. Total train length = 260 + 340 = 600 m. Time = 600/2 = 300 seconds. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=28650",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfrem8m0n",
+    "order": 346,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "Two trains are travelling towards each other on parallel tracks, 9660 km apart. Train A initially travels at 80 km/h and train B initially travels at 60 km/h. If train A's speed is reduced by 10% and train B's speed is increased by 10%, what is the ratio of the time taken for the trains to meet initially to the time taken after their speed adjustments?",
+    "questionImage": null,
+    "options": [
+      "68:69",
+      "69:70",
+      "70:69",
+      "70:71"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Initial relative speed = 80 + 60 = 140 km/h. New speeds = 72 km/h and 66 km/h, so new relative speed = 138 km/h. Time is inversely proportional to relative speed. Initial time : new time = 138:140 = 69:70. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=29300",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfrzxs4tx",
+    "order": 347,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "Two trains of equal length take 10 seconds and 16 seconds, respectively, to cross a pole. If these trains are moving in the same direction, how long will they take to completely cross each other?",
+    "questionImage": null,
+    "options": [
+      "48 seconds",
+      "50 seconds",
+      "53.33 seconds",
+      "56 seconds"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Let each train length be L. Speeds are L/10 and L/16. Relative speed = L/10 - L/16 = 3L/80. Distance to cross each other = 2L. Time = 2L ÷ (3L/80) = 160/3 = 53.33 seconds. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=29426",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfrl8t485",
+    "order": 348,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "A passenger train and a goods train are running on parallel railway tracks. If the passenger train takes four times as long to pass the goods train while running in the same direction as when they run in opposite directions, what is the ratio of the speed of the passenger train to that of the goods train?",
+    "questionImage": null,
+    "options": [
+      "4:3",
+      "5:3",
+      "5:2",
+      "7:4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Let passenger and goods train speeds be P and G. Same-direction time/opposite-direction time = (P+G)/(P-G) = 4. Therefore P + G = 4P - 4G, giving 3P = 5G. Hence P:G = 5:3. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=29823",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfryr2ouy",
+    "order": 349,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "Two trains of lengths 250 m and 200 m run on parallel tracks. When running in the same direction, the faster train crosses the slower one in 37.5 seconds. When running in opposite directions at the same respective speeds, they completely cross each other in 7.5 seconds. Find the ratio of the speed of the faster train to the slower train.",
+    "questionImage": null,
+    "options": [
+      "4:3",
+      "3:2",
+      "5:3",
+      "2:1"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Total length = 450 m. Difference of speeds = 450/37.5 = 12 m/s. Sum of speeds = 450/7.5 = 60 m/s. Faster speed = 36 m/s and slower speed = 24 m/s. Ratio = 36:24 = 3:2. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=30254",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfry7tk04",
+    "order": 350,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "Two trains whose lengths differ by 170 m cross each other in 16 seconds when moving in opposite directions, but cross each other in 36 seconds when moving in the same direction. Find the speed of the faster train if the speed of the slower train is 35 km/h.",
+    "questionImage": null,
+    "options": [
+      "84 km/h",
+      "88 km/h",
+      "91 km/h",
+      "95 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Short method: For the same total train length, (sum of speeds)/(difference of speeds) = same-direction time/opposite-direction time = 36/16 = 9/4. Let faster speed = x. Then (x+35)/(x-35) = 9/4. Solving gives x = 91 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=30475",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfrbcfx77",
+    "order": 351,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "Two trains are moving in the same direction at speeds of 40 km/h and 20 km/h, respectively. The faster train completely overtakes a man seated in the slower train in 10 seconds. Find the length of the faster train, rounded off to the nearest integer value in metres.",
+    "questionImage": null,
+    "options": [
+      "52 m",
+      "54 m",
+      "56 m",
+      "60 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Relative speed = 40 - 20 = 20 km/h = 50/9 m/s. To overtake a man, the faster train covers only its own length. Length = 50/9 × 10 = 55.56 m ≈ 56 m. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=31000",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfret4ard",
+    "order": 352,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "Two trains start from stations A and B towards each other and meet after 4\nhours. Train from A travels 20% faster than train from B. If the distance between\nA and B is 528 km, find the speed of the slower train.",
+    "questionImage": null,
+    "options": [
+      "60",
+      "51",
+      "24",
+      "15"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/kkyTvdGJG_A?t=600",
+    "solutionImage": null,
+    "special": false,
+    "id": "mudm25ymp0cmxy",
+    "order": 426,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]

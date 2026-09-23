@@ -1,0 +1,362 @@
+[
+  {
+    "category": "Race",
+    "examName": "",
+    "questionText": "Geeta runs 5/2 times as fast as Babita. In a race, if Geeta gives a lead of 40 m to Babita, find the distance from Geeta's starting point where both of them will meet, correct up to two decimal places.",
+    "questionImage": null,
+    "options": [
+      "60.00 m",
+      "64.67 m",
+      "66.67 m",
+      "70.00 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Speed ratio Geeta : Babita = 5 : 2. Let Geeta travel x m, then Babita travels x - 40 m. Therefore x/(x-40) = 5/2. Solving gives x = 200/3 = 66.67 m. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=34077",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9h3opm2x762r",
+    "order": 353,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Race",
+    "examName": "",
+    "questionText": "A takes 3 minutes 40 seconds while B takes 4 minutes to complete a race. A beats B by 60 metres in the race if both start simultaneously from the starting point. Find the length of the course.",
+    "questionImage": null,
+    "options": [
+      "660 m",
+      "700 m",
+      "720 m",
+      "750 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "A takes 220 seconds and B takes 240 seconds. Their speed ratio A:B = 240:220 = 12:11. When A completes the race, B covers 11/12 of the race. Difference = 1/12 of race = 60 m. Hence race length = 60 × 12 = 720 m. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=34721",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9h3opnncry3b",
+    "order": 354,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Race",
+    "examName": "",
+    "questionText": "In a 1200 m race, the ratio of the speeds of two contestants Meenal and Nitu is 5:7. If Meenal has a start of 500 m, then Meenal wins by:",
+    "questionImage": null,
+    "options": [
+      "180 m",
+      "200 m",
+      "220 m",
+      "240 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Meenal has to run only 1200 - 500 = 700 m. Speed ratio Meenal:Nitu = 5:7. When Meenal covers 700 m, Nitu covers 700 × 7/5 = 980 m. Nitu is still 1200 - 980 = 220 m from the finish. Therefore Meenal wins by 220 m. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=35219",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9h3opn371cuu",
+    "order": 355,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Race",
+    "examName": "",
+    "questionText": "In a 120 m race, P beats S by 6 m. In a 100 m race, if S is given a head start of 7.5 m, who wins and by how many metres?",
+    "questionImage": null,
+    "options": [
+      "P wins by 2.63 m",
+      "S wins by 2.63 m",
+      "S wins by 5 m",
+      "P wins by 5 m"
+    ],
+    "correctIndex": 1,
+    "solutionText": "From the 120 m race, speed ratio P:S = 120:114 = 20:19. In the 100 m race, S has to run only 92.5 m. When S completes 92.5 m, P covers 92.5 × 20/19 = 97.37 m. P is 2.63 m short of the finish, so S wins by approximately 2.63 m. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=35605",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9h3opn3vm1gh",
+    "order": 356,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Race",
+    "examName": "",
+    "questionText": "In a 1500 m race, X beats Y by 100 m and X beats Z by 240 m. By what distance does Y beat Z in the same race?",
+    "questionImage": null,
+    "options": [
+      "120 m",
+      "140 m",
+      "150 m",
+      "160 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "X:Y = 1500:1400 = 15:14 and X:Z = 1500:1260 = 25:21. Therefore Y:Z = 10:9. When Y covers 1500 m, Z covers 1500 × 9/10 = 1350 m. Hence Y beats Z by 150 m. Video explanation: https://youtu.be/1Yd2-DpWmGQ?list=PLXcRgYnwyGko&t=37233",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9h3opnnpsbtz",
+    "order": 357,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Race",
+    "examName": "",
+    "questionText": "In a 1000 m race, Anushka gives a start of 100 m to Kareena and beats her by 200 m. In the same race Anushka gives a start of 100 m to Deepika and beats her by 300 m. By how many metres would Kareena beat Deepika in a 50 m race?",
+    "questionImage": null,
+    "options": [
+      "5.71 m",
+      "6.25 m",
+      "7.14 m",
+      "8.33 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "When Anushka runs 1000 m, Kareena runs 700 m and Deepika runs 600 m. Thus Kareena:Deepika = 700:600 = 7:6. In a 50 m race, when Kareena completes 50 m, Deepika covers 50 × 6/7 = 42.86 m. Kareena wins by 50 - 42.86 = 7.14 m. Video explanation: https://youtu.be/1Yd2-DpWmGQ?list=PLXcRgYnwyGko&t=37427",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9h3opng6g20u",
+    "order": 358,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Race",
+    "examName": "",
+    "questionText": "Three runners Aman, Ramesh and Naresh run a race, with Aman finishing 48 metres ahead of Ramesh and 68 metres ahead of Naresh. In another race of the same length, Ramesh finishes 25 metres ahead of Naresh. Each runner travels the entire distance at a constant speed. Find the length of the race.",
+    "questionImage": null,
+    "options": [
+      "200 m",
+      "220 m",
+      "240 m",
+      "260 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Let race length be x. From Aman's race, Ramesh:Naresh = (x-48):(x-68). From the second race, Ramesh:Naresh = x:(x-25). Equating the ratios and solving gives x = 240 m. Video explanation: https://youtu.be/1Yd2-DpWmGQ?list=PLXcRgYnwyGko&t=37630",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9h3opnohnwda",
+    "order": 359,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Race",
+    "examName": "",
+    "questionText": "In a car race, car A beats car B by 45 km, car B beats car C by 50 km and car A beats car C by 90 km. What is the distance over which the race is conducted?",
+    "questionImage": null,
+    "options": [
+      "400 km",
+      "425 km",
+      "450 km",
+      "500 km"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Let race distance be x km. Then B/A = (x-45)/x, C/B = (x-50)/x and C/A = (x-90)/x. Therefore [(x-45)(x-50)]/x² = (x-90)/x. Solving gives x = 450 km. Video explanation: https://youtu.be/1Yd2-DpWmGQ?list=PLXcRgYnwyGko&t=38376",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9h3opn44m1wb",
+    "order": 360,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Race",
+    "examName": "",
+    "questionText": "A and B take part in a 100 m race. A runs at 5 km/h. A gives B a start of 8 m and still beats him by 8 seconds. What is the speed of B?",
+    "questionImage": null,
+    "options": [
+      "3.96 km/h",
+      "4.14 km/h",
+      "4.32 km/h",
+      "4.50 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "A's speed = 5 km/h = 25/18 m/s. Time taken by A for 100 m = 72 seconds. Since A beats B by 8 seconds, B takes 80 seconds to cover 92 m. B's speed = 92/80 = 1.15 m/s = 4.14 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?list=PLXcRgYnwyGko&t=39024",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9h3opnd1oz6p",
+    "order": 361,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Race",
+    "examName": "",
+    "questionText": "In a 400 m race, A runs at a speed of 16 m/s. If A gives B a start of 15 m and still beats him by 10 seconds, then what is the speed of B?",
+    "questionImage": null,
+    "options": [
+      "10 m/s",
+      "11 m/s",
+      "12 m/s",
+      "14 m/s"
+    ],
+    "correctIndex": 1,
+    "solutionText": "A takes 400/16 = 25 seconds. Since A beats B by 10 seconds, B takes 35 seconds to complete his required distance of 400 - 15 = 385 m. Therefore B's speed = 385/35 = 11 m/s. Video explanation: https://youtu.be/1Yd2-DpWmGQ?list=PLXcRgYnwyGko&t=39335",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9h3opny5901c",
+    "order": 362,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Race",
+    "examName": "",
+    "questionText": "In a 1200 m race, bike A beats bike B by 100 m. Bike B beats bike C by 100 m in a 600 m race. If bike A beats bike C by 30 seconds in a 720 m race, then what is the speed of bike C?",
+    "questionImage": null,
+    "options": [
+      "18 km/h",
+      "19.2 km/h",
+      "20.4 km/h",
+      "21.6 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "A:B = 1200:1100 = 12:11 and B:C = 600:500 = 6:5. Therefore A:C = 72:55. Let speeds be 72x and 55x m/s. For 720 m, time difference = 720/(55x) - 720/(72x) = 30 seconds. Solving gives C's speed = 17/3 m/s = 20.4 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?list=PLXcRgYnwyGko&t=39578",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9h3opnla9keu",
+    "order": 363,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Race",
+    "examName": "",
+    "questionText": "In a 1 km linear race, P beats Q by 120 metres or 30 seconds. What is the time taken by P to cover the race?",
+    "questionImage": null,
+    "options": [
+      "200 seconds",
+      "210 seconds",
+      "220 seconds",
+      "240 seconds"
+    ],
+    "correctIndex": 2,
+    "solutionText": "When P finishes 1000 m, Q has covered 880 m. Q covers the remaining 120 m in 30 seconds, so Q's speed = 4 m/s. P:Q speed ratio = 1000:880 = 25:22, so P's speed = 50/11 m/s. Time taken by P = 1000 ÷ (50/11) = 220 seconds. Video explanation: https://youtu.be/1Yd2-DpWmGQ?list=PLXcRgYnwyGko&t=39997",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9h3opno0zlpf",
+    "order": 364,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Race",
+    "examName": "",
+    "questionText": "In a 1 km race, A beats B by 30 seconds and B beats C by 15 seconds. If A beats C by 180 m, find the time taken by A to run 1 km.",
+    "questionImage": null,
+    "options": [
+      "195 seconds",
+      "200 seconds",
+      "205 seconds",
+      "210 seconds"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Let A take t seconds. B takes t + 30 seconds and C takes t + 45 seconds. When A completes 1000 m, C covers 820 m. Therefore t/(t+45) = 820/1000. Solving gives t = 205 seconds. Video explanation: https://youtu.be/1Yd2-DpWmGQ?list=PLXcRgYnwyGko&t=40276",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9h3opn9z2c73",
+    "order": 365,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Race",
+    "examName": "",
+    "questionText": "In a 200 m linear race, if A gives B a start of 25 m, then A wins the race by 10 seconds. Alternatively, if A gives B a start of 45 m, the race ends in a dead heat. How long does A take to run 200 m?",
+    "questionImage": null,
+    "options": [
+      "70 seconds",
+      "75 seconds",
+      "77.5 seconds",
+      "80 seconds"
+    ],
+    "correctIndex": 2,
+    "solutionText": "With a 45 m start, B runs 155 m in the same time that A runs 200 m. Let A's time be T. B takes 175T/155 seconds to cover 175 m. This is 10 seconds more than T. So 175T/155 - T = 10. Solving gives T = 77.5 seconds. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=40794",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9h3opngqksp8",
+    "order": 366,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Race",
+    "examName": "",
+    "questionText": "In a 1500 m race, if vehicle P gives vehicle Q a start of 200 m, then vehicle P wins the race by 8 seconds. Alternatively, if vehicle P gives vehicle Q a start of 400 m, the race ends in a dead heat. How long does vehicle P take to run 1500 m?",
+    "questionImage": null,
+    "options": [
+      "40 seconds",
+      "42 seconds",
+      "44 seconds",
+      "48 seconds"
+    ],
+    "correctIndex": 2,
+    "solutionText": "With a 400 m start, Q has to cover 1100 m in the same time P covers 1500 m. Let P's time be T. With a 200 m start, Q has to cover 1300 m, taking 1300T/1100 seconds. Since P wins by 8 seconds, 1300T/1100 - T = 8. Solving gives T = 44 seconds. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=41296",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9h3opnnszigo",
+    "order": 367,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Race",
+    "examName": "",
+    "questionText": "Savitha and Pramika decided to run a 2250 m race. Savitha gave Pramika a 396 m head start and also allowed her to start 9 seconds before Savitha. Pramika ran at 6 m/s and Savitha caught up with Pramika 250 seconds after Savitha started running. What was Savitha's speed during the race?",
+    "questionImage": null,
+    "options": [
+      "7.2 m/s",
+      "7.5 m/s",
+      "7.8 m/s",
+      "8.1 m/s"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Before Savitha catches her, Pramika runs for 250 + 9 = 259 seconds. Distance covered by Pramika after her own start = 259 × 6 = 1554 m. Including the 396 m head start, catch-up point = 1950 m from Savitha's start. Savitha covers 1950 m in 250 seconds, so her speed = 1950/250 = 7.8 m/s. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=41516",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9h3opnpgivia",
+    "order": 368,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Race",
+    "examName": "",
+    "questionText": "Ramesh walks a certain distance and rides back in 5 hours 45 minutes. If he could ride both ways in 3 hours 30 minutes, find the time required by Ramesh to walk both ways.",
+    "questionImage": null,
+    "options": [
+      "7 hours",
+      "7 hours 30 minutes",
+      "8 hours",
+      "8 hours 30 minutes"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Riding both ways takes 3 hours 30 minutes, so riding one way takes 1 hour 45 minutes. Walking one way + riding one way = 5 hours 45 minutes. Therefore walking one way = 4 hours. Walking both ways = 8 hours. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=41827",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9h3opn0qt1rq",
+    "order": 369,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Race",
+    "examName": "",
+    "questionText": "A monkey climbing up a greased pole ascends 10 m in one minute and slips down 2 m in the alternate minute. If the pole is 63 m high, how long will it take to reach the top of the pole?",
+    "questionImage": null,
+    "options": [
+      "14 minutes",
+      "14 minutes 30 seconds",
+      "14 minutes 42 seconds",
+      "15 minutes"
+    ],
+    "correctIndex": 2,
+    "solutionText": "In every 2 minutes, the monkey gains 10 - 2 = 8 m. After 14 minutes, it has completed 7 such cycles and reaches 56 m. It then needs 7 m more. At 10 m per minute, 7 m takes 0.7 minute = 42 seconds. Total time = 14 minutes 42 seconds. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=42225",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9h3opnd9pfks",
+    "order": 370,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  }
+]

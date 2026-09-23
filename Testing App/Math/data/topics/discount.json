@@ -18,5 +18,85 @@
     "testAllowed": false,
     "special": false,
     "examName": ""
+  },
+  {
+    "category": "Discount",
+    "examName": "",
+    "questionText": "A dealer sells an article by allowing a 13% discount on its marked price and gains 20%. If the cost price of the article is increased by 10%, what discount percentage should he allow now on the same marked price, so as to earn the same percentage of profit as before?",
+    "questionImage": null,
+    "options": [
+      "6.8%",
+      "5.9%",
+      "3.4%",
+      "4.3%"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/_fnLOxc6eCw?list=PLXcRgYnwyGko&t=10512",
+    "solutionImage": null,
+    "special": false,
+    "id": "mucue24e77oo13",
+    "order": 420,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Discount",
+    "examName": "",
+    "questionText": "A dealer marks his goods at 40% above the cost price. He sells 60% of the goods\nat the marked price giving 10% discount and the rest by giving 50% discount on\nthe marked price. What is his overall profit/loss per cent?",
+    "questionImage": null,
+    "options": [
+      "profit 2.8%",
+      "profit 3.6%",
+      "loss 2.8%",
+      "loss 3.6%"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/_fnLOxc6eCw?list=PLXcRgYnwyGko&t=10809",
+    "solutionImage": null,
+    "special": false,
+    "id": "mucv1vofrno1po",
+    "order": 421,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Discount",
+    "examName": "",
+    "questionText": "A furniture store initially sells a particular dining table for ₹Z, making a profit of 25%. During a festive sale, the marked price of the same table is increased to ₹1.6Z. A discount of 20% is then offered on the new marked price.\n\nWhat is the percentage profit earned by the store during the festive sale?",
+    "questionImage": null,
+    "options": [
+      "62%",
+      "49%",
+      "31%",
+      "60%"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/_fnLOxc6eCw?list=PLXcRgYnwyGko&t=11070",
+    "solutionImage": null,
+    "special": false,
+    "id": "mucvg29jfb37e0",
+    "order": 422,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Discount",
+    "examName": "",
+    "questionText": "A trader gains 50% by selling an article after two successive discounts of 25%\nand 80% on its marked price. If the cost price of the article is increased by 74%,\nthen what single discount should he now give on the same marked price to get\nthe same profit percentage as carlier?",
+    "questionImage": null,
+    "options": [
+      "73.9%",
+      "75.5%",
+      "77.5%",
+      "74.7%"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/jaH0B4lWmGM?t=369",
+    "solutionImage": null,
+    "special": false,
+    "id": "mudphoqg5rqoul",
+    "order": 430,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]

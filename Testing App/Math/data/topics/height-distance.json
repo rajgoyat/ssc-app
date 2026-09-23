@@ -1,0 +1,22 @@
+[
+  {
+    "category": "Height & Distance",
+    "examName": "",
+    "questionText": "A person walking along a straight road observes that at two consecutive\nkilometer-stones the angles of elevation of a hill in front of him are 30° and 60° respectively. What is the height of the hill?",
+    "questionImage": null,
+    "options": [
+      "2root-3",
+      "root-3",
+      "root-3 /2",
+      "3root-3"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/kkyTvdGJG_A?t=420",
+    "solutionImage": null,
+    "special": false,
+    "id": "mudlksfxy37a6z",
+    "order": 425,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  }
+]

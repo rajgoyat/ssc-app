@@ -48,9 +48,9 @@
       "10.28%",
       "12.50%",
       "15.00%",
-      "20.00%"
+      "25.00%"
     ],
-    "correctIndex": 1,
+    "correctIndex": 3,
     "solutionText": "Let the amount be A = P(1 + r/200)^(3) because 18 months = 3 half-years. Given A/P = 729/512 = (9/8)^3. So 1 + r/200 = 9/8, hence r/200 = 1/8, r = 25%. But if semi-annual compounding is used in a standard exam setting, the intended answer often appears as 10.28% depending on the exact setup. For this direct interpretation, the rate is 25% per annum.",
     "solutionImage": null,
     "order": 2,
@@ -1450,7 +1450,7 @@
       "60"
     ],
     "correctIndex": 1,
-    "solutionText": "",
+    "solutionText": "https://share.google/aimode/VFTKPfgnq6cuS3rI7",
     "solutionImage": null,
     "id": "mt9fzjodkx0vlo",
     "order": 80,
@@ -5916,6 +5916,2806 @@
     "special": false,
     "id": "mu6ccd5jhkmcnr",
     "order": 295,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A boat takes 83 minutes to go 33.2 km upstream. The ratio of the speed of the boat in still water to that of the stream is 8:5. How much total time (in hours) will the boat take to go 47.1 km upstream and 55.9 km downstream?",
+    "questionImage": null,
+    "options": [
+      "2 hours",
+      "2.25 hours",
+      "2.5 hours",
+      "2.75 hours"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Upstream speed = 33.2 × 60/83 = 24 km/h. Boat : Stream = 8:5, so upstream speed = 3 parts = 24, hence 1 part = 8. Downstream speed = 13 × 8 = 104 km/h. Total time = 47.1/24 + 55.9/104 = 1.9625 + 0.5375 = 2.5 hours. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=4649",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqiwmq7nnh",
+    "order": 296,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A man's speed in still water is 4 km/h more than the speed of the current. If the man takes a total of 10 hours to cover 45 km downstream and 35 km upstream, then the speed of the man in still water is:",
+    "questionImage": null,
+    "options": [
+      "16 km/h",
+      "18 km/h",
+      "20 km/h",
+      "24 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Let stream speed = x km/h. Then speed in still water = x + 4. Upstream speed = 4 km/h and downstream speed = 2x + 4. So 45/(2x+4) + 35/4 = 10. Solving gives x = 16, hence still-water speed = 20 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=4805",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixki524k",
+    "order": 297,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "Two boats A and B start moving towards each other from two places 272 km apart. The speeds of boats A and B in still water are 32 km/h and 36 km/h respectively. If A moves downstream and B moves upstream, then in how much time will they meet each other?",
+    "questionImage": null,
+    "options": [
+      "3 hours",
+      "4 hours",
+      "5 hours",
+      "6 hours"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Let stream speed be x. Speed of A downstream = 32 + x and speed of B upstream = 36 - x. Relative speed = (32 + x) + (36 - x) = 68 km/h. Time = 272/68 = 4 hours. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=5086",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixomwini",
+    "order": 298,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "The ratio of the speed of a motorboat to that of the current of water is 55:7. The boat goes along with the current in 6 hours 24 minutes. It will come back in:",
+    "questionImage": null,
+    "options": [
+      "7 hours 44 minutes",
+      "8 hours",
+      "8 hours 16 minutes",
+      "8 hours 32 minutes"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Boat : Stream = 55:7. Downstream speed = 62 parts and upstream speed = 48 parts. For the same distance, time ratio is inverse of speed ratio. Return time = 6 hours 24 minutes × 62/48 = 8 hours 16 minutes. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=5136",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqix5nnmiv",
+    "order": 299,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A boat covers a distance of 375 metres upstream in 30 minutes and returns back to the starting point in 18 minutes. Find the ratio of the speed of the boat in still water to the speed of the stream.",
+    "questionImage": null,
+    "options": [
+      "3:1",
+      "4:1",
+      "5:2",
+      "5:1"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Upstream speed = 0.375/0.5 = 0.75 km/h and downstream speed = 0.375/0.3 = 1.25 km/h. Still-water speed = (1.25 + 0.75)/2 = 1 km/h and stream speed = (1.25 - 0.75)/2 = 0.25 km/h. Required ratio = 1:0.25 = 4:1. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=5328",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixms22ex",
+    "order": 300,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A boat running upstream takes 8 hours 48 minutes to cover a certain distance, while it takes 4 hours to cover the same distance downstream. The speed of the current is how much percentage less than the speed of the boat in still water?",
+    "questionImage": null,
+    "options": [
+      "37.5%",
+      "50%",
+      "62.5%",
+      "75%"
+    ],
+    "correctIndex": 2,
+    "solutionText": "8 hours 48 minutes = 8.8 hours. For equal distance, downstream speed : upstream speed = 8.8:4 = 11:5. Therefore boat speed = (11+5)/2 = 8 parts and current speed = (11-5)/2 = 3 parts. Current is (8-3)/8 × 100 = 62.5% less than boat speed. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=5530",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixndxqj8",
+    "order": 301,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "Ashu can row at 7.5 km/h in still water. He finds that it takes four times as much time to row upstream as it takes to row downstream for the same distance. The speed of the stream is:",
+    "questionImage": null,
+    "options": [
+      "3 km/h",
+      "4 km/h",
+      "4.5 km/h",
+      "5 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "For equal distance, if upstream time is four times downstream time, then downstream speed is four times upstream speed. Thus 7.5 + x = 4(7.5 - x). Solving gives x = 4.5 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=5850",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixt1hi17",
+    "order": 302,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A diver rowing at a speed of 3 km/h in still water takes double the time going 50 km upstream compared to going 50 km downstream. The speed of the diver against the stream is:",
+    "questionImage": null,
+    "options": [
+      "1 km/h",
+      "1.5 km/h",
+      "2 km/h",
+      "2.5 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "For the same distance, upstream time is twice downstream time, so upstream speed is half the downstream speed. Thus 3 - x = (3 + x)/2. This gives stream speed x = 1 km/h. Therefore speed against the stream = 3 - 1 = 2 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=6232",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixdo7fbi",
+    "order": 303,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A man can row 30 km upstream and 55 km downstream in the same amount of time as he can row 38.5 km downstream and 37.5 km upstream. Find the ratio of the rowing speed in still water to the speed of the current.",
+    "questionImage": null,
+    "options": [
+      "7:3",
+      "8:3",
+      "11:5",
+      "5:2"
+    ],
+    "correctIndex": 1,
+    "solutionText": "30/U + 55/D = 37.5/U + 38.5/D. Therefore 16.5/D = 7.5/U, giving D:U = 11:5. Hence boat speed : stream speed = (11+5):(11-5) = 16:6 = 8:3. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=6744",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixnwguje",
+    "order": 304,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A man rows to a place at a distance of 72 km and comes back in 36 hours. He finds that he can row 12 km with the stream in the same time as 4 km against the stream. The speed of the stream is:",
+    "questionImage": null,
+    "options": [
+      "2 km/h",
+      "8/3 km/h",
+      "3 km/h",
+      "10/3 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "12/D = 4/U, so D = 3U. Let U = x and D = 3x. Then 72/x + 72/(3x) = 36, giving x = 8/3. Stream speed = (D-U)/2 = (8 - 8/3)/2 = 8/3 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=7433",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqix0zzzny",
+    "order": 305,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A man rows 48 km and back in 48 hours. He can row 4 km with the stream in the same time as 3 km against the stream. The speed of the stream is:",
+    "questionImage": null,
+    "options": [
+      "7/12 km/h",
+      "7/24 km/h",
+      "5/24 km/h",
+      "1/3 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "4/D = 3/U, hence D:U = 4:3. Let D = 4x and U = 3x. Then 48/(4x) + 48/(3x) = 48. This gives x = 7/12. Stream speed = (4x-3x)/2 = x/2 = 7/24 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=7863",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixpfm4wp",
+    "order": 306,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A man can row a boat at a speed of 10 km/h in still water. If the river is flowing at 4.5 km/h, it takes 2 hours to go to a point and come back to the starting point. At what distance is the place located, rounded off to two decimal places?",
+    "questionImage": null,
+    "options": [
+      "7.50 km",
+      "7.98 km",
+      "8.25 km",
+      "8.75 km"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Downstream speed = 14.5 km/h and upstream speed = 5.5 km/h. Using distance = (S1 × S2)/(S1 + S2) × total time, distance = (14.5 × 5.5)/(14.5 + 5.5) × 2 = 7.975 ≈ 7.98 km. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=8696",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixu3qnij",
+    "order": 307,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A man can row 12 km/h in still water. When the river is running at 2.2 km/h, it takes him 1.2 hours to row to a place and come back. How far is the place?",
+    "questionImage": null,
+    "options": [
+      "6.48 km",
+      "6.96 km",
+      "7.20 km",
+      "7.44 km"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Downstream speed = 14.2 km/h and upstream speed = 9.8 km/h. Distance = (14.2 × 9.8)/(14.2 + 9.8) × 1.2 = 6.958 km ≈ 6.96 km. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=9134",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixguat2z",
+    "order": 308,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "The speed of a boat in still water is 20 km/h, while the river is flowing at a speed of 8 km/h. The time taken to cover a certain distance upstream is 6 hours more than the time taken to cover the same distance downstream. Find the distance.",
+    "questionImage": null,
+    "options": [
+      "108 km",
+      "120 km",
+      "126 km",
+      "132 km"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Upstream speed = 20 - 8 = 12 km/h and downstream speed = 20 + 8 = 28 km/h. Let distance = D. Then D/12 - D/28 = 6. Solving gives D = 126 km. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=9350",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixsdxnk9",
+    "order": 309,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A boat goes 112 km downstream and comes back to the starting point in 11.5 hours. If the speed of the current is 9 km/h, then the speed of the boat in still water is:",
+    "questionImage": null,
+    "options": [
+      "21 km/h",
+      "23 km/h",
+      "25 km/h",
+      "27 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Let boat speed in still water = x. Then downstream speed = x + 9 and upstream speed = x - 9. Therefore 112/(x+9) + 112/(x-9) = 11.5. Solving gives x = 23 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=9709",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixfkp4xo",
+    "order": 310,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "The speed of a stream is 6 km/h. A boat can go 56 km downstream and 39 km upstream in 7 hours. What is the speed of the boat in still water?",
+    "questionImage": null,
+    "options": [
+      "12 km/h",
+      "15 km/h",
+      "18 km/h",
+      "21 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Let boat speed = x. Downstream speed = x + 6 and upstream speed = x - 6. Thus 56/(x+6) + 39/(x-6) = 7. Solving gives x = 15 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=9938",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixnq2o4i",
+    "order": 311,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "The speed of a boat in still water is 8 km/h. It can go 12 km upstream and 18 km downstream in 4 hours. Find the speed of the stream, rounded off to two decimal places.",
+    "questionImage": null,
+    "options": [
+      "2.50 km/h",
+      "2.75 km/h",
+      "2.89 km/h",
+      "3.25 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Let stream speed = x. Then 12/(8-x) + 18/(8+x) = 4. On simplification, x = (3 + √73)/4 ≈ 2.89 km/h. In the square-root method, 4 can be written as √16 before combining/dividing the radical terms. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=11401",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixyr3ayh",
+    "order": 312,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A man covers 39 km upstream and 116 km downstream in 7 hours. He also covers 65 km upstream and 87 km downstream in 8 hours. Find the speed of the boat in still water.",
+    "questionImage": null,
+    "options": [
+      "18 km/h",
+      "20 km/h",
+      "21 km/h",
+      "23 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Let upstream and downstream speeds be U and D. Then 39/U + 116/D = 7 and 65/U + 87/D = 8. Solving gives U = 13 km/h and D = 29 km/h. Therefore still-water speed = (29 + 13)/2 = 21 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=11503",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixqej25i",
+    "order": 313,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A boat can go 30 km downstream and 24 km upstream in 2 hours 27 minutes. Also, it can go 10 km downstream and 4 km upstream in 37 minutes. What is the speed of the boat upstream?",
+    "questionImage": null,
+    "options": [
+      "18 km/h",
+      "20 km/h",
+      "22 km/h",
+      "24 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Let downstream speed = D and upstream speed = U. Then 30/D + 24/U = 147/60 and 10/D + 4/U = 37/60. Solving the two equations gives D = 24 km/h and U = 20 km/h. Required upstream speed = 20 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=12200",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixnyad6f",
+    "order": 314,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A boat moves at a speed of 7 km/h in still water. The boat goes 40 km downstream and then 40 km upstream. It is observed that the total time taken for this journey is 560 minutes less than the time it would take if the speed of the stream were 2 km/h faster. What is the initial speed of the stream?",
+    "questionImage": null,
+    "options": [
+      "2 km/h",
+      "3 km/h",
+      "4 km/h",
+      "5 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Let initial stream speed = x. Initial round-trip time = 40/(7+x) + 40/(7-x). If stream speed becomes x+2, time = 40/(9+x) + 40/(5-x). The increase is 560 minutes = 28/3 hours. Solving gives x = 3 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=14404",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixv9o8hi",
+    "order": 315,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "X and Y are two points in a river. Points P and Q divide the straight line XY into three equal parts. The river flows along XY and the time taken by a boat to row from X to Q and from Y to Q are in the ratio 4:5. The ratio of the speed of the boat downstream to that of the river current is equal to:",
+    "questionImage": null,
+    "options": [
+      "7:3",
+      "8:3",
+      "10:3",
+      "5:2"
+    ],
+    "correctIndex": 2,
+    "solutionText": "XQ is twice YQ. If downstream speed is D and upstream speed is U, then (2/D):(1/U) = 4:5. Thus 2U/D = 4/5, giving D:U = 5:2. Therefore (B+C):(B-C) = 5:2, which gives B:C = 7:3. Hence downstream speed : current speed = (7+3):3 = 10:3. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=12900",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixr5g1b3",
+    "order": 316,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A man travels by a motorboat down a river to his office and back. With the speed of the river unchanged, if he doubles the speed of his motorboat, then his travel time gets reduced by 75%. The ratio of the original speed of the motorboat to the speed of the river is:",
+    "questionImage": null,
+    "options": [
+      "√5:2",
+      "√7:2",
+      "3:2",
+      "2:1"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Let original boat speed be B and stream speed be C. Original round-trip time is proportional to 1/(B+C) + 1/(B-C). After doubling boat speed, it is proportional to 1/(2B+C) + 1/(2B-C). A 75% reduction means new time = 1/4 of original time. Solving gives B/C = √7/2, so required ratio = √7:2. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=13539",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqix3e6hux",
+    "order": 317,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A boat covers a round trip journey between two points A and B in a river in T hours. If its speed in still water becomes 2 times, it would take 80/161 T hours for the same journey. Find the ratio of its speed in still water to the speed of the river.",
+    "questionImage": null,
+    "options": [
+      "9:1",
+      "10:1",
+      "11:1",
+      "12:1"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Let boat speed = B and current speed = C. Original round-trip time is proportional to 2B/(B²-C²). After boat speed doubles, time is proportional to 4B/(4B²-C²). Their ratio is 80/161. Solving gives B²/C² = 121, hence B:C = 11:1. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=13748",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqix3g61jn",
+    "order": 318,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A swimmer swims from a point P against the current for 6 minutes and then swims back along the current for the next 6 minutes and reaches a point Q. If the distance between P and Q is 120 m, then the speed of the current is:",
+    "questionImage": null,
+    "options": [
+      "0.5 km/h",
+      "0.6 km/h",
+      "0.8 km/h",
+      "1.0 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "6 minutes = 0.1 hour. In equal upstream and downstream times, the swimmer's own speed cancels out. Net distance = [(B+C) - (B-C)] × 0.1 = 2C × 0.1 = 0.2C. Given net distance = 120 m = 0.12 km. Thus 0.2C = 0.12, so C = 0.6 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=13896",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixcuhnsu",
+    "order": 319,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Boat & Water",
+    "examName": "",
+    "questionText": "A man rows a boat a certain distance downstream in 9 hours, while it takes 18 hours to row the same distance upstream. How many hours will it take him to row three-fifth of the same distance in still water?",
+    "questionImage": null,
+    "options": [
+      "6.8 hours",
+      "7 hours",
+      "7.2 hours",
+      "7.5 hours"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Let the distance be D. Downstream speed = D/9 and upstream speed = D/18. Speed in still water = (D/9 + D/18)/2 = D/12. Time for 3D/5 in still water = (3D/5)/(D/12) = 36/5 = 7.2 hours, i.e. 7 hours 12 minutes. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=14200",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9grqixzynp56",
+    "order": 320,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "The platform of a station 400 m long starts exactly where the last span of a bridge 1.2 km long ends. How long will a train 200 m long and travelling at a speed of 72 km/h take to cover the distance between the starting point of the span of the bridge and the far end of the platform?",
+    "questionImage": null,
+    "options": [
+      "80 seconds",
+      "85 seconds",
+      "90 seconds",
+      "100 seconds"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Speed = 72 km/h = 20 m/s. Total distance covered by the train = 1200 + 400 + 200 = 1800 m. Time = 1800/20 = 90 seconds.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfqp3q1my",
+    "order": 321,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "A 280 m long train running at a speed of 72 km/h passes a platform in 30 seconds. Find the length of the platform.",
+    "questionImage": null,
+    "options": [
+      "280 m",
+      "300 m",
+      "320 m",
+      "340 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "72 km/h = 20 m/s. Total distance in 30 seconds = 20 × 30 = 600 m. Platform length = 600 - 280 = 320 m. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=17143",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfqzt9hz7",
+    "order": 322,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "A train is 591 m long and it crosses a platform in 1.7 minutes while running at a speed of 36 km/h. Find the difference between the length of the train and the platform.",
+    "questionImage": null,
+    "options": [
+      "142 m",
+      "152 m",
+      "162 m",
+      "172 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "1.7 minutes = 102 seconds and 36 km/h = 10 m/s. Total distance = 1020 m, so platform length = 1020 - 591 = 429 m. Difference = 591 - 429 = 162 m. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=17230",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfq4c1rc8",
+    "order": 323,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "A train travelling at 36 km/h crosses a pole in 25 seconds. How much time will it take to cross a bridge 350 m long?",
+    "questionImage": null,
+    "options": [
+      "50 seconds",
+      "55 seconds",
+      "60 seconds",
+      "65 seconds"
+    ],
+    "correctIndex": 2,
+    "solutionText": "36 km/h = 10 m/s. Train length = 10 × 25 = 250 m. To cross the bridge, distance = 250 + 350 = 600 m. Time = 600/10 = 60 seconds. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=17629",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfq8ua239",
+    "order": 324,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "A train crosses a platform 180 m long in 60 seconds at a speed of 72 km/h. The time taken by the train to cross an electric pole is:",
+    "questionImage": null,
+    "options": [
+      "45 seconds",
+      "48 seconds",
+      "51 seconds",
+      "54 seconds"
+    ],
+    "correctIndex": 2,
+    "solutionText": "72 km/h = 20 m/s. Train + platform length = 20 × 60 = 1200 m. Train length = 1200 - 180 = 1020 m. Pole crossing time = 1020/20 = 51 seconds. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=18259",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfqy8ssnj",
+    "order": 325,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "The speed of a train is 42 km/h. It crosses an electric pole in 27 seconds and a platform in 51 seconds. What is the length of the platform?",
+    "questionImage": null,
+    "options": [
+      "260 m",
+      "270 m",
+      "280 m",
+      "290 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Platform crossing requires 51 - 27 = 24 extra seconds. Speed = 42 km/h = 35/3 m/s. Platform length = 24 × 35/3 = 280 m. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=18360",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfqfpckg6",
+    "order": 326,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "A 360 m long train running at uniform speed crosses a platform in 55 seconds and a man standing on the platform in 24 seconds. What is the length of the platform?",
+    "questionImage": null,
+    "options": [
+      "435 m",
+      "450 m",
+      "465 m",
+      "480 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Train speed = 360/24 = 15 m/s. In 55 seconds total distance = 15 × 55 = 825 m. Platform length = 825 - 360 = 465 m. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=18887",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfq6rbg48",
+    "order": 327,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "A train passes two tunnels of lengths 2091 m and 1259 m in 89 seconds and 63 seconds, respectively. What is the length of the train?",
+    "questionImage": null,
+    "options": [
+      "707 m",
+      "737 m",
+      "757 m",
+      "777 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "For the same train speed, (L + 2091)/89 = (L + 1259)/63. Solving gives train length L = 757 m. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=18956",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfqtaclwb",
+    "order": 328,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "A train passes two tunnels of lengths 2708 m and 2195 m in 88 seconds and 76 seconds, respectively. What is the length of the train?",
+    "questionImage": null,
+    "options": [
+      "954 m",
+      "1004 m",
+      "1054 m",
+      "1104 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Using (L + 2708)/88 = (L + 2195)/76 and solving, the length of the train is 1054 m. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=19369",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfqczk4gi",
+    "order": 329,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "A 629 m long train crosses a man walking at a speed of 10.4 km/h in the opposite direction in 12 seconds. What is the speed of the train?",
+    "questionImage": null,
+    "options": [
+      "168.3 km/h",
+      "173.3 km/h",
+      "178.3 km/h",
+      "183.3 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Relative speed = 629/12 m/s = 188.7 km/h. Since they move in opposite directions, train speed = 188.7 - 10.4 = 178.3 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=19572",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfqpbfbki",
+    "order": 330,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "A 240 m long train overtakes a man walking at 6 km/h in the same direction in 9 seconds. How much time will it take to pass a 372 m long tunnel with the same speed?",
+    "questionImage": null,
+    "options": [
+      "18 seconds",
+      "20 seconds",
+      "21.6 seconds",
+      "24 seconds"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Relative speed with man = 240/9 = 96 km/h. Train speed = 96 + 6 = 102 km/h. Tunnel crossing distance = 240 + 372 = 612 m. Time = 612/(102/3.6) = 21.6 seconds. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=20233",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfqe8z75m",
+    "order": 331,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "The speed of a train is 78 km/h. It crosses a tunnel in 45 seconds and overtakes a person walking at 6 km/h in the same direction in 15 seconds. The length of the tunnel is:",
+    "questionImage": null,
+    "options": [
+      "625 m",
+      "650 m",
+      "675 m",
+      "700 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Relative speed with person = 78 - 6 = 72 km/h = 20 m/s. Train length = 20 × 15 = 300 m. In 45 seconds the train covers 78/3.6 × 45 = 975 m. Tunnel length = 975 - 300 = 675 m. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=20328",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfqvltdix",
+    "order": 332,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "A 234 m long train passes a person running at 9 km/h in the opposite direction in 6 seconds. In how much time will it pass another person moving at 23.4 km/h in the same direction?",
+    "questionImage": null,
+    "options": [
+      "6.8 seconds",
+      "7.2 seconds",
+      "7.8 seconds",
+      "8.4 seconds"
+    ],
+    "correctIndex": 2,
+    "solutionText": "First relative speed = 234/6 = 39 m/s = 140.4 km/h. Train speed = 140.4 - 9 = 131.4 km/h. Relative speed with second person = 131.4 - 23.4 = 108 km/h = 30 m/s. Time = 234/30 = 7.8 seconds. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=20843",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfqmfkjv7",
+    "order": 333,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "Two trains are moving in opposite directions at speeds of 50 km/h and 90 km/h. The length of one train is 430 m. The time taken by them to cross each other is 31 seconds. Find the length of the other train, rounded off to two decimal places.",
+    "questionImage": null,
+    "options": [
+      "745.56 m",
+      "765.56 m",
+      "775.56 m",
+      "785.56 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Relative speed = 50 + 90 = 140 km/h = 350/9 m/s. Total length = 350/9 × 31 = 1205.56 m. Other train length = 1205.56 - 430 = 775.56 m. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=22402",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfri1fq8g",
+    "order": 334,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "Two trains having lengths of 430 m and 120 m are running at speeds of 70 km/h and 100 km/h, respectively, in the same direction. The time taken in minutes by the faster train, coming from behind, to completely cross the other train is:",
+    "questionImage": null,
+    "options": [
+      "0.9 minutes",
+      "1 minute",
+      "1.1 minutes",
+      "1.2 minutes"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Relative speed = 100 - 70 = 30 km/h = 25/3 m/s. Total length = 430 + 120 = 550 m. Time = 550 ÷ (25/3) = 66 seconds = 1.1 minutes. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=23115",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfrs1xzdc",
+    "order": 335,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "Two trains of equal length are running on parallel lines in the same direction at speeds of 97 km/h and 21 km/h. The faster train passes the slower train in 45 seconds. The length of each train is:",
+    "questionImage": null,
+    "options": [
+      "425 m",
+      "450 m",
+      "475 m",
+      "500 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Relative speed = 97 - 21 = 76 km/h. In 45 seconds, relative distance = 950 m. Since both trains have equal lengths, each train = 950/2 = 475 m. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=23482",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfrzap9v1",
+    "order": 336,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "A train overtakes two persons walking along a railway track. The first walks at 5.4 km/h and the other at 18 km/h. The train needs 30 seconds and 44 seconds, respectively, to overtake them. What is the speed of the train if both persons are walking in the same direction as the train?",
+    "questionImage": null,
+    "options": [
+      "42 km/h",
+      "45 km/h",
+      "48 km/h",
+      "51 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Train length is the same in both cases. Therefore 30(V - 5.4) = 44(V - 18). Solving gives V = 45 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=23886",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfrn4ljtk",
+    "order": 337,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "A train overtakes two people walking along a railway track. The first person walks at 7.2 km/h and the second at 14.4 km/h. The train takes 29.9 seconds to pass the first person and 43.7 seconds to pass the second person. What is the speed of the train if both are walking in the same direction?",
+    "questionImage": null,
+    "options": [
+      "27 km/h",
+      "28.8 km/h",
+      "30 km/h",
+      "32.4 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Equating train length: 29.9(V - 7.2) = 43.7(V - 14.4). Solving gives train speed V = 30 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=24335",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfrfdw2ds",
+    "order": 338,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "Two trains A and B of lengths 180 m and 220 m, respectively, are running on parallel tracks in opposite directions. They cross each other in 12 seconds. If the same trains move in the same direction, they take 60 seconds for the faster train to completely cross the slower one. Find the speed of the faster train.",
+    "questionImage": null,
+    "options": [
+      "66 km/h",
+      "68 km/h",
+      "72 km/h",
+      "75 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Total length = 400 m. Opposite-direction relative speed = 400/12 = 120 km/h. Same-direction relative speed = 400/60 = 24 km/h. Faster speed = (120 + 24)/2 = 72 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=25089",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfrq2fpd9",
+    "order": 339,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "The speeds of train A and train B are 46.8 km/h and 61.2 km/h, respectively. Their lengths are in the ratio 3:5. When running in opposite directions, they completely cross each other in 12 seconds. How much time will train B take to cross a 336 m long tunnel?",
+    "questionImage": null,
+    "options": [
+      "30 seconds",
+      "32 seconds",
+      "33 seconds",
+      "36 seconds"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Relative speed = 46.8 + 61.2 = 108 km/h = 30 m/s. Total train length = 30 × 12 = 360 m. In ratio 3:5, B's length = 225 m. Distance to cross tunnel = 225 + 336 = 561 m. Speed of B = 61.2 km/h = 17 m/s. Time = 561/17 = 33 seconds. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=25273",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfr33mqwm",
+    "order": 340,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "Train A running at 99 km/h takes 46 seconds to completely cross train B running at 72 km/h in the opposite direction. The length of train B is 1.5 times the length of train A. Train B crosses a bridge completely in 82 seconds. Find the length of the bridge.",
+    "questionImage": null,
+    "options": [
+      "309 m",
+      "319 m",
+      "329 m",
+      "339 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Relative speed = 99 + 72 = 171 km/h = 47.5 m/s. Total train length = 47.5 × 46 = 2185 m. If B = 1.5A, then A = 874 m and B = 1311 m. B covers 20 × 82 = 1640 m while crossing the bridge. Bridge length = 1640 - 1311 = 329 m. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=25610",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfribrp1m",
+    "order": 341,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "A 490 m long train passes a man travelling in the same direction at 9 km/h in 12 seconds. How much time will it take for this train to completely pass another 500 m long train travelling in the opposite direction at 42 km/h?",
+    "questionImage": null,
+    "options": [
+      "16 seconds",
+      "17 seconds",
+      "18 seconds",
+      "20 seconds"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Relative speed with man = 490/12 = 147 km/h. Train speed = 147 + 9 = 156 km/h. Against the second train, relative speed = 156 + 42 = 198 km/h = 55 m/s. Total length = 490 + 500 = 990 m. Time = 990/55 = 18 seconds. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=26800",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfrrjjl6b",
+    "order": 342,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "A train travelling at the speed of x km/h crossed a 300 m long platform in 30 seconds and overtook a man walking in the same direction at 6 km/h in 20 seconds. What is the value of x?",
+    "questionImage": null,
+    "options": [
+      "84 km/h",
+      "90 km/h",
+      "96 km/h",
+      "102 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Let train speed be v m/s. Train length = 20(v - 5/3). Also, train length + 300 = 30v. Solving gives v = 80/3 m/s = 96 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=26904",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfr2tlg7z",
+    "order": 343,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "Train P can cross a pole in 8 seconds, while train Q takes 15 seconds to cross train P when they travel in opposite directions on parallel tracks. If the ratio of the length of train P to train Q is 2:3 and the speed of train P is 54 km/h, find the speed of train Q.",
+    "questionImage": null,
+    "options": [
+      "15 km/h",
+      "18 km/h",
+      "21 km/h",
+      "24 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Speed of P = 54 km/h = 15 m/s. Length of P = 15 × 8 = 120 m. Since P:Q length = 2:3, Q length = 180 m. Total length = 300 m. Relative speed = 300/15 = 20 m/s = 72 km/h. Therefore Q speed = 72 - 54 = 18 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=27510",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfr9x9nwl",
+    "order": 344,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "Train P, going at 51 km/h, completely passes train Q of length 225 m going in the same direction at 22 km/h in 7.5 minutes. How much time will P take to completely cross train R of length 420 m going at 21 km/h in the opposite direction?",
+    "questionImage": null,
+    "options": [
+      "181 seconds",
+      "186 seconds",
+      "191 seconds",
+      "196 seconds"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Relative speed of P and Q = 29 km/h. In 7.5 minutes, total length P + Q = 3625 m, so P length = 3625 - 225 = 3400 m. With R, relative speed = 51 + 21 = 72 km/h = 20 m/s. Total length = 3400 + 420 = 3820 m. Time = 3820/20 = 191 seconds. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=27816",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfrb5y9ju",
+    "order": 345,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "Train A is 260 m long and crosses a platform of length 160 m in 28 seconds. Train B is 340 m long and passes a stationary man in 20 seconds. Both trains travel at constant speeds on parallel straight tracks. Find the time taken when the faster train completely overtakes the slower train while moving in the same direction.",
+    "questionImage": null,
+    "options": [
+      "240 seconds",
+      "270 seconds",
+      "300 seconds",
+      "330 seconds"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Speed of A = (260 + 160)/28 = 15 m/s. Speed of B = 340/20 = 17 m/s. Relative speed = 2 m/s. Total train length = 260 + 340 = 600 m. Time = 600/2 = 300 seconds. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=28650",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfrem8m0n",
+    "order": 346,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "Two trains are travelling towards each other on parallel tracks, 9660 km apart. Train A initially travels at 80 km/h and train B initially travels at 60 km/h. If train A's speed is reduced by 10% and train B's speed is increased by 10%, what is the ratio of the time taken for the trains to meet initially to the time taken after their speed adjustments?",
+    "questionImage": null,
+    "options": [
+      "68:69",
+      "69:70",
+      "70:69",
+      "70:71"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Initial relative speed = 80 + 60 = 140 km/h. New speeds = 72 km/h and 66 km/h, so new relative speed = 138 km/h. Time is inversely proportional to relative speed. Initial time : new time = 138:140 = 69:70. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=29300",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfrzxs4tx",
+    "order": 347,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "Two trains of equal length take 10 seconds and 16 seconds, respectively, to cross a pole. If these trains are moving in the same direction, how long will they take to completely cross each other?",
+    "questionImage": null,
+    "options": [
+      "48 seconds",
+      "50 seconds",
+      "53.33 seconds",
+      "56 seconds"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Let each train length be L. Speeds are L/10 and L/16. Relative speed = L/10 - L/16 = 3L/80. Distance to cross each other = 2L. Time = 2L ÷ (3L/80) = 160/3 = 53.33 seconds. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=29426",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfrl8t485",
+    "order": 348,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "A passenger train and a goods train are running on parallel railway tracks. If the passenger train takes four times as long to pass the goods train while running in the same direction as when they run in opposite directions, what is the ratio of the speed of the passenger train to that of the goods train?",
+    "questionImage": null,
+    "options": [
+      "4:3",
+      "5:3",
+      "5:2",
+      "7:4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Let passenger and goods train speeds be P and G. Same-direction time/opposite-direction time = (P+G)/(P-G) = 4. Therefore P + G = 4P - 4G, giving 3P = 5G. Hence P:G = 5:3. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=29823",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfryr2ouy",
+    "order": 349,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "Two trains of lengths 250 m and 200 m run on parallel tracks. When running in the same direction, the faster train crosses the slower one in 37.5 seconds. When running in opposite directions at the same respective speeds, they completely cross each other in 7.5 seconds. Find the ratio of the speed of the faster train to the slower train.",
+    "questionImage": null,
+    "options": [
+      "4:3",
+      "3:2",
+      "5:3",
+      "2:1"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Total length = 450 m. Difference of speeds = 450/37.5 = 12 m/s. Sum of speeds = 450/7.5 = 60 m/s. Faster speed = 36 m/s and slower speed = 24 m/s. Ratio = 36:24 = 3:2. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=30254",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfry7tk04",
+    "order": 350,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "Two trains whose lengths differ by 170 m cross each other in 16 seconds when moving in opposite directions, but cross each other in 36 seconds when moving in the same direction. Find the speed of the faster train if the speed of the slower train is 35 km/h.",
+    "questionImage": null,
+    "options": [
+      "84 km/h",
+      "88 km/h",
+      "91 km/h",
+      "95 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Short method: For the same total train length, (sum of speeds)/(difference of speeds) = same-direction time/opposite-direction time = 36/16 = 9/4. Let faster speed = x. Then (x+35)/(x-35) = 9/4. Solving gives x = 91 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=30475",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfrbcfx77",
+    "order": 351,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "Two trains are moving in the same direction at speeds of 40 km/h and 20 km/h, respectively. The faster train completely overtakes a man seated in the slower train in 10 seconds. Find the length of the faster train, rounded off to the nearest integer value in metres.",
+    "questionImage": null,
+    "options": [
+      "52 m",
+      "54 m",
+      "56 m",
+      "60 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Relative speed = 40 - 20 = 20 km/h = 50/9 m/s. To overtake a man, the faster train covers only its own length. Length = 50/9 × 10 = 55.56 m ≈ 56 m. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=31000",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9gwqfret4ard",
+    "order": 352,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Race",
+    "examName": "",
+    "questionText": "Geeta runs 5/2 times as fast as Babita. In a race, if Geeta gives a lead of 40 m to Babita, find the distance from Geeta's starting point where both of them will meet, correct up to two decimal places.",
+    "questionImage": null,
+    "options": [
+      "60.00 m",
+      "64.67 m",
+      "66.67 m",
+      "70.00 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Speed ratio Geeta : Babita = 5 : 2. Let Geeta travel x m, then Babita travels x - 40 m. Therefore x/(x-40) = 5/2. Solving gives x = 200/3 = 66.67 m. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=34077",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9h3opm2x762r",
+    "order": 353,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Race",
+    "examName": "",
+    "questionText": "A takes 3 minutes 40 seconds while B takes 4 minutes to complete a race. A beats B by 60 metres in the race if both start simultaneously from the starting point. Find the length of the course.",
+    "questionImage": null,
+    "options": [
+      "660 m",
+      "700 m",
+      "720 m",
+      "750 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "A takes 220 seconds and B takes 240 seconds. Their speed ratio A:B = 240:220 = 12:11. When A completes the race, B covers 11/12 of the race. Difference = 1/12 of race = 60 m. Hence race length = 60 × 12 = 720 m. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=34721",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9h3opnncry3b",
+    "order": 354,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Race",
+    "examName": "",
+    "questionText": "In a 1200 m race, the ratio of the speeds of two contestants Meenal and Nitu is 5:7. If Meenal has a start of 500 m, then Meenal wins by:",
+    "questionImage": null,
+    "options": [
+      "180 m",
+      "200 m",
+      "220 m",
+      "240 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Meenal has to run only 1200 - 500 = 700 m. Speed ratio Meenal:Nitu = 5:7. When Meenal covers 700 m, Nitu covers 700 × 7/5 = 980 m. Nitu is still 1200 - 980 = 220 m from the finish. Therefore Meenal wins by 220 m. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=35219",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9h3opn371cuu",
+    "order": 355,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Race",
+    "examName": "",
+    "questionText": "In a 120 m race, P beats S by 6 m. In a 100 m race, if S is given a head start of 7.5 m, who wins and by how many metres?",
+    "questionImage": null,
+    "options": [
+      "P wins by 2.63 m",
+      "S wins by 2.63 m",
+      "S wins by 5 m",
+      "P wins by 5 m"
+    ],
+    "correctIndex": 1,
+    "solutionText": "From the 120 m race, speed ratio P:S = 120:114 = 20:19. In the 100 m race, S has to run only 92.5 m. When S completes 92.5 m, P covers 92.5 × 20/19 = 97.37 m. P is 2.63 m short of the finish, so S wins by approximately 2.63 m. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=35605",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9h3opn3vm1gh",
+    "order": 356,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Race",
+    "examName": "",
+    "questionText": "In a 1500 m race, X beats Y by 100 m and X beats Z by 240 m. By what distance does Y beat Z in the same race?",
+    "questionImage": null,
+    "options": [
+      "120 m",
+      "140 m",
+      "150 m",
+      "160 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "X:Y = 1500:1400 = 15:14 and X:Z = 1500:1260 = 25:21. Therefore Y:Z = 10:9. When Y covers 1500 m, Z covers 1500 × 9/10 = 1350 m. Hence Y beats Z by 150 m. Video explanation: https://youtu.be/1Yd2-DpWmGQ?list=PLXcRgYnwyGko&t=37233",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9h3opnnpsbtz",
+    "order": 357,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Race",
+    "examName": "",
+    "questionText": "In a 1000 m race, Anushka gives a start of 100 m to Kareena and beats her by 200 m. In the same race Anushka gives a start of 100 m to Deepika and beats her by 300 m. By how many metres would Kareena beat Deepika in a 50 m race?",
+    "questionImage": null,
+    "options": [
+      "5.71 m",
+      "6.25 m",
+      "7.14 m",
+      "8.33 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "When Anushka runs 1000 m, Kareena runs 700 m and Deepika runs 600 m. Thus Kareena:Deepika = 700:600 = 7:6. In a 50 m race, when Kareena completes 50 m, Deepika covers 50 × 6/7 = 42.86 m. Kareena wins by 50 - 42.86 = 7.14 m. Video explanation: https://youtu.be/1Yd2-DpWmGQ?list=PLXcRgYnwyGko&t=37427",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9h3opng6g20u",
+    "order": 358,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Race",
+    "examName": "",
+    "questionText": "Three runners Aman, Ramesh and Naresh run a race, with Aman finishing 48 metres ahead of Ramesh and 68 metres ahead of Naresh. In another race of the same length, Ramesh finishes 25 metres ahead of Naresh. Each runner travels the entire distance at a constant speed. Find the length of the race.",
+    "questionImage": null,
+    "options": [
+      "200 m",
+      "220 m",
+      "240 m",
+      "260 m"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Let race length be x. From Aman's race, Ramesh:Naresh = (x-48):(x-68). From the second race, Ramesh:Naresh = x:(x-25). Equating the ratios and solving gives x = 240 m. Video explanation: https://youtu.be/1Yd2-DpWmGQ?list=PLXcRgYnwyGko&t=37630",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9h3opnohnwda",
+    "order": 359,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Race",
+    "examName": "",
+    "questionText": "In a car race, car A beats car B by 45 km, car B beats car C by 50 km and car A beats car C by 90 km. What is the distance over which the race is conducted?",
+    "questionImage": null,
+    "options": [
+      "400 km",
+      "425 km",
+      "450 km",
+      "500 km"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Let race distance be x km. Then B/A = (x-45)/x, C/B = (x-50)/x and C/A = (x-90)/x. Therefore [(x-45)(x-50)]/x² = (x-90)/x. Solving gives x = 450 km. Video explanation: https://youtu.be/1Yd2-DpWmGQ?list=PLXcRgYnwyGko&t=38376",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9h3opn44m1wb",
+    "order": 360,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Race",
+    "examName": "",
+    "questionText": "A and B take part in a 100 m race. A runs at 5 km/h. A gives B a start of 8 m and still beats him by 8 seconds. What is the speed of B?",
+    "questionImage": null,
+    "options": [
+      "3.96 km/h",
+      "4.14 km/h",
+      "4.32 km/h",
+      "4.50 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "A's speed = 5 km/h = 25/18 m/s. Time taken by A for 100 m = 72 seconds. Since A beats B by 8 seconds, B takes 80 seconds to cover 92 m. B's speed = 92/80 = 1.15 m/s = 4.14 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?list=PLXcRgYnwyGko&t=39024",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9h3opnd1oz6p",
+    "order": 361,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Race",
+    "examName": "",
+    "questionText": "In a 400 m race, A runs at a speed of 16 m/s. If A gives B a start of 15 m and still beats him by 10 seconds, then what is the speed of B?",
+    "questionImage": null,
+    "options": [
+      "10 m/s",
+      "11 m/s",
+      "12 m/s",
+      "14 m/s"
+    ],
+    "correctIndex": 1,
+    "solutionText": "A takes 400/16 = 25 seconds. Since A beats B by 10 seconds, B takes 35 seconds to complete his required distance of 400 - 15 = 385 m. Therefore B's speed = 385/35 = 11 m/s. Video explanation: https://youtu.be/1Yd2-DpWmGQ?list=PLXcRgYnwyGko&t=39335",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9h3opny5901c",
+    "order": 362,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Race",
+    "examName": "",
+    "questionText": "In a 1200 m race, bike A beats bike B by 100 m. Bike B beats bike C by 100 m in a 600 m race. If bike A beats bike C by 30 seconds in a 720 m race, then what is the speed of bike C?",
+    "questionImage": null,
+    "options": [
+      "18 km/h",
+      "19.2 km/h",
+      "20.4 km/h",
+      "21.6 km/h"
+    ],
+    "correctIndex": 2,
+    "solutionText": "A:B = 1200:1100 = 12:11 and B:C = 600:500 = 6:5. Therefore A:C = 72:55. Let speeds be 72x and 55x m/s. For 720 m, time difference = 720/(55x) - 720/(72x) = 30 seconds. Solving gives C's speed = 17/3 m/s = 20.4 km/h. Video explanation: https://youtu.be/1Yd2-DpWmGQ?list=PLXcRgYnwyGko&t=39578",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9h3opnla9keu",
+    "order": 363,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Race",
+    "examName": "",
+    "questionText": "In a 1 km linear race, P beats Q by 120 metres or 30 seconds. What is the time taken by P to cover the race?",
+    "questionImage": null,
+    "options": [
+      "200 seconds",
+      "210 seconds",
+      "220 seconds",
+      "240 seconds"
+    ],
+    "correctIndex": 2,
+    "solutionText": "When P finishes 1000 m, Q has covered 880 m. Q covers the remaining 120 m in 30 seconds, so Q's speed = 4 m/s. P:Q speed ratio = 1000:880 = 25:22, so P's speed = 50/11 m/s. Time taken by P = 1000 ÷ (50/11) = 220 seconds. Video explanation: https://youtu.be/1Yd2-DpWmGQ?list=PLXcRgYnwyGko&t=39997",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9h3opno0zlpf",
+    "order": 364,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Race",
+    "examName": "",
+    "questionText": "In a 1 km race, A beats B by 30 seconds and B beats C by 15 seconds. If A beats C by 180 m, find the time taken by A to run 1 km.",
+    "questionImage": null,
+    "options": [
+      "195 seconds",
+      "200 seconds",
+      "205 seconds",
+      "210 seconds"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Let A take t seconds. B takes t + 30 seconds and C takes t + 45 seconds. When A completes 1000 m, C covers 820 m. Therefore t/(t+45) = 820/1000. Solving gives t = 205 seconds. Video explanation: https://youtu.be/1Yd2-DpWmGQ?list=PLXcRgYnwyGko&t=40276",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9h3opn9z2c73",
+    "order": 365,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Race",
+    "examName": "",
+    "questionText": "In a 200 m linear race, if A gives B a start of 25 m, then A wins the race by 10 seconds. Alternatively, if A gives B a start of 45 m, the race ends in a dead heat. How long does A take to run 200 m?",
+    "questionImage": null,
+    "options": [
+      "70 seconds",
+      "75 seconds",
+      "77.5 seconds",
+      "80 seconds"
+    ],
+    "correctIndex": 2,
+    "solutionText": "With a 45 m start, B runs 155 m in the same time that A runs 200 m. Let A's time be T. B takes 175T/155 seconds to cover 175 m. This is 10 seconds more than T. So 175T/155 - T = 10. Solving gives T = 77.5 seconds. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=40794",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9h3opngqksp8",
+    "order": 366,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Race",
+    "examName": "",
+    "questionText": "In a 1500 m race, if vehicle P gives vehicle Q a start of 200 m, then vehicle P wins the race by 8 seconds. Alternatively, if vehicle P gives vehicle Q a start of 400 m, the race ends in a dead heat. How long does vehicle P take to run 1500 m?",
+    "questionImage": null,
+    "options": [
+      "40 seconds",
+      "42 seconds",
+      "44 seconds",
+      "48 seconds"
+    ],
+    "correctIndex": 2,
+    "solutionText": "With a 400 m start, Q has to cover 1100 m in the same time P covers 1500 m. Let P's time be T. With a 200 m start, Q has to cover 1300 m, taking 1300T/1100 seconds. Since P wins by 8 seconds, 1300T/1100 - T = 8. Solving gives T = 44 seconds. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=41296",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9h3opnnszigo",
+    "order": 367,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Race",
+    "examName": "",
+    "questionText": "Savitha and Pramika decided to run a 2250 m race. Savitha gave Pramika a 396 m head start and also allowed her to start 9 seconds before Savitha. Pramika ran at 6 m/s and Savitha caught up with Pramika 250 seconds after Savitha started running. What was Savitha's speed during the race?",
+    "questionImage": null,
+    "options": [
+      "7.2 m/s",
+      "7.5 m/s",
+      "7.8 m/s",
+      "8.1 m/s"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Before Savitha catches her, Pramika runs for 250 + 9 = 259 seconds. Distance covered by Pramika after her own start = 259 × 6 = 1554 m. Including the 396 m head start, catch-up point = 1950 m from Savitha's start. Savitha covers 1950 m in 250 seconds, so her speed = 1950/250 = 7.8 m/s. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=41516",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9h3opnpgivia",
+    "order": 368,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Race",
+    "examName": "",
+    "questionText": "Ramesh walks a certain distance and rides back in 5 hours 45 minutes. If he could ride both ways in 3 hours 30 minutes, find the time required by Ramesh to walk both ways.",
+    "questionImage": null,
+    "options": [
+      "7 hours",
+      "7 hours 30 minutes",
+      "8 hours",
+      "8 hours 30 minutes"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Riding both ways takes 3 hours 30 minutes, so riding one way takes 1 hour 45 minutes. Walking one way + riding one way = 5 hours 45 minutes. Therefore walking one way = 4 hours. Walking both ways = 8 hours. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=41827",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9h3opn0qt1rq",
+    "order": 369,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Race",
+    "examName": "",
+    "questionText": "A monkey climbing up a greased pole ascends 10 m in one minute and slips down 2 m in the alternate minute. If the pole is 63 m high, how long will it take to reach the top of the pole?",
+    "questionImage": null,
+    "options": [
+      "14 minutes",
+      "14 minutes 30 seconds",
+      "14 minutes 42 seconds",
+      "15 minutes"
+    ],
+    "correctIndex": 2,
+    "solutionText": "In every 2 minutes, the monkey gains 10 - 2 = 8 m. After 14 minutes, it has completed 7 such cycles and reaches 56 m. It then needs 7 m more. At 10 m per minute, 7 m takes 0.7 minute = 42 seconds. Total time = 14 minutes 42 seconds. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=42225",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9h3opnd9pfks",
+    "order": 370,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/geometry/3b5944f6f81bb9ce9235c8d3bb31b32f27d04ba4aa8a1be6cb3bcaf8815bf358.png",
+    "options": [
+      "900",
+      "420",
+      "320",
+      "180"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=13168",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9ml0w8o0tt2t",
+    "order": 371,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/geometry/a698c45ad2da3b0ebc2f42a04705aae4f216c483ef35a3bb229f9a156468018d.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=13312",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9mmf7egbefsi",
+    "order": 372,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/geometry/b35e506d18557023f2c61e4b8eeb90f62415d5ae12a580dfaeb6efe72f2fef1b.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=15800",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9mz457lnmgjw",
+    "order": 373,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/geometry/136e1d12bc87a972e61b38158faed32a1796e9fba97b766993e4431d3ab39f76.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9ndd4lb8ztfq",
+    "order": 374,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/geometry/cf7ddc1883d436e17c189c5bd05a47acb89b9abec28ed4231eace0941cb586f4.png",
+    "options": [
+      "19",
+      "13",
+      "12",
+      "41"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=17187",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9njwygal8q7v",
+    "order": 375,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/geometry/14868a94598232bbe048ee1b6f2d4a74656036e63aba386d3afdf5ec959385a8.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=22273",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9nxb8edhma3l",
+    "order": 376,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/geometry/5fd3458e9ed86160cd37199e12ba583364c44b70fde608d459ab37f36e1a107f.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=23502",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9o5a0i6b8518",
+    "order": 377,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/geometry/156b9e126c3c689e13a0b0a57d65ee6b69cf32e3513ec740fc19a9755ecc142e.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=23865",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9o7w4ye92t4q",
+    "order": 378,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/geometry/87deb6470c56d99ffb0e8e363e3f4d0271207a9bf4ecdc55c1683367898948d5.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=24170",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9ocmpwkkf3jd",
+    "order": 379,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/geometry/d3e9ed31e3e8bef8e9f7e57b06f061afe1d757a7adda4eac5feef3bff8f200b6.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=25327",
+    "solutionImage": null,
+    "special": false,
+    "id": "mu9p20b7d3zhe0",
+    "order": 380,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/geometry/532224f0489d6ad264653b0a1976f73d7b976cdc1fbc84690edfb657fdb115ea.png",
+    "options": [
+      "20",
+      "30",
+      "80",
+      "50"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=51637",
+    "solutionImage": null,
+    "special": false,
+    "id": "muao74f8vykta9",
+    "order": 381,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/geometry/ddabb73f9ae4c6457cd83872792469cd5c7991cf6f5cfae9bf4221e18cdc06fa.png",
+    "options": [
+      "31/60",
+      "8",
+      "4",
+      "9"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "special": false,
+    "id": "muavnuv6jk4wan",
+    "order": 382,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/geometry/c4ed6b979546566a8e2da834cf4527d84e9c21a64ebcc9100a425c698d64556b.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=54143",
+    "solutionImage": "/uploads/geometry/3d40971e0590a04bfb3255cc40c9827439e64c67eebf0c193fda20da8d5c0574.png",
+    "special": false,
+    "id": "muavr3wk4pl5sk",
+    "order": 383,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/geometry/3131b2ec13b1d7ccf9645345f5cb8cfa68e7a4893d91715b4092f587deea8faa.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=55841",
+    "solutionImage": null,
+    "special": false,
+    "id": "muawdtshka2g7x",
+    "order": 384,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/geometry/5743533d6ef223d26252ee8d591f46609fdbf1b4556f798d173b8672144fdff1.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=70524",
+    "solutionImage": null,
+    "special": false,
+    "id": "mub0r3wt9vpy92",
+    "order": 385,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "34rerge",
+    "questionImage": "/uploads/geometry/fee7cab154da6241ba5453385755096df7c474e8a28effdceeba853a1976a448.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=70746",
+    "solutionImage": null,
+    "special": false,
+    "id": "mub0xg6buyrf7w",
+    "order": 386,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "465rtuy",
+    "questionImage": "/uploads/geometry/a757a1758b558090ad0baa96aa91add0650ec474fd69da751ade58d1b3e45c21.png",
+    "options": [
+      "5",
+      "6",
+      "2",
+      "1"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=71000",
+    "solutionImage": null,
+    "special": false,
+    "id": "mub110cttvtr1i",
+    "order": 387,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "43t5gr",
+    "questionImage": "/uploads/geometry/5474f5fcbac15c53574cc2b16bdca706f0534a252d28bef47c56d07168ca3591.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=71308",
+    "solutionImage": null,
+    "special": false,
+    "id": "mub135ouur6zxc",
+    "order": 388,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "CONCEPT",
+    "questionImage": "/uploads/geometry/d06d83a96929883d716e6e34241253c012e87f10d9ad0ff31029d4e4be644003.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "special": false,
+    "id": "mub1dys96fpywq",
+    "order": 389,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "concept jh",
+    "questionImage": "/uploads/geometry/cde4b8304aa518d4b74109e4225e080e0a02e467f41dcf1d82a08035161660d4.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "special": false,
+    "id": "mub50d06x2xgie",
+    "order": 390,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "CONCEPT 34554rrgrtg",
+    "questionImage": "/uploads/geometry/dc1d5f73b62e1e96c80ee41d05bb47bf4ca1f2ca9d1472bba4d86c5a878de4b2.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=88300",
+    "solutionImage": null,
+    "special": false,
+    "id": "mub5rc12bx7dpp",
+    "order": 391,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "43t5yf",
+    "questionImage": "/uploads/geometry/0afe792351fa51f226d1df2875033dc03f0a66ccbaffe49b1400049a3066c4ad.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=88706",
+    "solutionImage": null,
+    "special": false,
+    "id": "mub5st5p17r2sk",
+    "order": 392,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "CONCEPT 345tyr4",
+    "questionImage": "/uploads/geometry/57f97e399aec2d9820230fa8d14c122462f407bc857a12437c496c1f7ce6cafc.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=89867",
+    "solutionImage": null,
+    "special": false,
+    "id": "mub62kvrnstwk1",
+    "order": 393,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "4678t7y8oih",
+    "questionImage": "/uploads/geometry/89cb99b651643d6784081dd91ce1772c4ac90298a5d4a0b8680471e110b15518.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=89965",
+    "solutionImage": null,
+    "special": false,
+    "id": "mub64yp3o9952i",
+    "order": 394,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "32465ytfg",
+    "questionImage": "/uploads/geometry/767e80183e69fe03d10dd8041762ec7ce9d232232817040b1509b9c1f3a0b778.png",
+    "options": [
+      "12",
+      "16",
+      "14",
+      "13"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=90470",
+    "solutionImage": null,
+    "special": false,
+    "id": "mub6dis1clwke6",
+    "order": 395,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "then area of smaller circle",
+    "questionImage": "/uploads/geometry/73ed449dae107e51eb525ab6474e9a1bf27f4459dc1041e65aebe55c890c527a.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=90850",
+    "solutionImage": null,
+    "special": false,
+    "id": "mub6hpmyly6bcy",
+    "order": 396,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "324rtdf",
+    "questionImage": "/uploads/geometry/aee355f745f451370cc2d306df4721e2a4e7e14ee104622a14b4d21b1320c7c5.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=95184",
+    "solutionImage": null,
+    "special": false,
+    "id": "mub966m2adcp32",
+    "order": 397,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "3465yt",
+    "questionImage": "/uploads/geometry/d62efa4f9fd7c8333aa81ea48310e4f90b274d5eba9ff1c463a1499056212e26.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=98336",
+    "solutionImage": null,
+    "special": false,
+    "id": "mub980dou4hi7q",
+    "order": 398,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In triangle ABC G is Centroid AC=18, find GD.",
+    "questionImage": "/uploads/geometry/5432b338f0a3f389209ce05754d39bb87222f6d7d427bd75f95f3dafa6d74b25.png",
+    "options": [
+      "1",
+      "7",
+      "6",
+      "2"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=111157",
+    "solutionImage": null,
+    "special": false,
+    "id": "muc1u004xg3juq",
+    "order": 399,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "CONCEPT 34565YTR",
+    "questionImage": "/uploads/geometry/6029cb07f28a8f2d2c71486cda0f03a83557337b81e8c792efe14f87533837f6.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=112993",
+    "solutionImage": null,
+    "special": false,
+    "id": "muc2q6jlbtw66k",
+    "order": 400,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "Find the Radius",
+    "questionImage": "/uploads/geometry/eaec080a00e492a30e04457bb5a7ba8ce27848c81737aa614b7f4e9b8e4de30f.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=117061",
+    "solutionImage": null,
+    "special": false,
+    "id": "muc42vzv90u005",
+    "order": 401,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/geometry/ce936cc5c1fe86d12cc677d6447384e5f78bd7c0a6d4db77d79c124e5884765f.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=117360",
+    "solutionImage": null,
+    "special": false,
+    "id": "muc448723j11c7",
+    "order": 402,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "3454y6t",
+    "questionImage": "/uploads/geometry/83d2f57c938ce01d53a775f27ad01eb0f01517ebaaedc6dcbe405f07ec716682.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=124636",
+    "solutionImage": null,
+    "special": false,
+    "id": "muc7c3f9y8fwee",
+    "order": 403,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/geometry/51a2a31922964c92f02dcfc75bfd85abbf58d12998e5a694f835e116b1ba0748.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=127514",
+    "solutionImage": null,
+    "special": false,
+    "id": "muc7sf6p30kp2d",
+    "order": 404,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "4eytrf",
+    "questionImage": "/uploads/geometry/fc7e271d25139b06e1c718fbfcef1dbf039671565e46ec4ed22e289d51656c67.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=128124",
+    "solutionImage": null,
+    "special": false,
+    "id": "muc85mktzgx2u7",
+    "order": 405,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "576tiyuh",
+    "questionImage": "/uploads/geometry/ffa03bb5168740872c7c1dc75251a68986d4cebf7a521ef3e63577b72b6adbe8.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=129638",
+    "solutionImage": null,
+    "special": false,
+    "id": "muc8gik8d3aznr",
+    "order": 406,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "345ytjh",
+    "questionImage": "/uploads/geometry/91ed4935f728dbfe0bf54255c2603e15742811496b03d7c429ae57e9e30b3966.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=129870",
+    "solutionImage": null,
+    "special": false,
+    "id": "muc8rfs78oc963",
+    "order": 407,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "345y6t",
+    "questionImage": "/uploads/geometry/d54c05465f89f24cba7f7d28271476e057cf80350313563dd22bf4d0bc3b7d56.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=130212",
+    "solutionImage": null,
+    "special": false,
+    "id": "muc8ta63zvsp4f",
+    "order": 408,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "3564y",
+    "questionImage": "/uploads/geometry/43d4e5741b8fbc3dde152d44de076dff834a3ebbd72df1a4009d2e3078935d18.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=131129",
+    "solutionImage": null,
+    "special": false,
+    "id": "muc92vl9rm59kn",
+    "order": 409,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/geometry/e2f6f9bb9a6e1f7f2d40084acfa8c6934a80e7c94a34dd15ca0f0d3fea3305f2.png",
+    "options": [
+      "18",
+      "15",
+      "20",
+      "18"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=132732",
+    "solutionImage": null,
+    "special": false,
+    "id": "muc970zph2pbcr",
+    "order": 410,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "rtyh3456",
+    "questionImage": "/uploads/geometry/da95e6a193e92f231acf8ac684b35a97d5b6c70c430fb6369b088cbc643a4f71.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=152426",
+    "solutionImage": null,
+    "special": false,
+    "id": "mucbhedfzardb2",
+    "order": 411,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "43t5ytrhg",
+    "questionImage": "/uploads/geometry/5dc00775712a3c94a044f53be25c5c52c04d589d6c6917421076b2f3f3b368da.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=153987",
+    "solutionImage": null,
+    "special": false,
+    "id": "mucbqml28ntmq0",
+    "order": 412,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "find angle B",
+    "questionImage": "/uploads/geometry/32f36d551ffb9dd699b94991523a53c468fc70034b72fdb257e504cc90bec2d8.png",
+    "options": [
+      "81",
+      "65",
+      "29",
+      "37"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=155197",
+    "solutionImage": null,
+    "special": false,
+    "id": "mucc2pyvkncv1j",
+    "order": 413,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "average hoga chord",
+    "questionImage": "/uploads/geometry/1f19df6d192e16ebcc61b650201bfa06abdb43963a79acce131f02142a4c00c6.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=156552",
+    "solutionImage": null,
+    "special": false,
+    "id": "muccsbrhmsrvmq",
+    "order": 414,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "345ytr",
+    "questionImage": "/uploads/geometry/cb9be10ccd0f517f7c7d5fd52a3807db8c610358097aa5eef50add9b8a5524e4.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=158000",
+    "solutionImage": null,
+    "special": false,
+    "id": "mucd0t7rbdldlb",
+    "order": 415,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "5465yt",
+    "questionImage": "/uploads/geometry/06033169927c3964774506b1a0ae81b3c2c5010da35eb98a43935d7db2dab69b.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=158274",
+    "solutionImage": null,
+    "special": false,
+    "id": "mucd5baxottiet",
+    "order": 416,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "4t5yrj",
+    "questionImage": "/uploads/geometry/fdc138f834dea941c058649428e8be35c4b0f8ea9ad99d170db49c47c19310c7.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=158417",
+    "solutionImage": null,
+    "special": false,
+    "id": "mucdjl7rlsz6ac",
+    "order": 417,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "345y6fg",
+    "questionImage": "/uploads/geometry/aade26d3eaec4db08212da753fd0a354900014da514aabb66c896ba95a0e3985.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=159626",
+    "solutionImage": null,
+    "special": false,
+    "id": "mucdqhp4fklbzz",
+    "order": 418,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "467utiyo",
+    "questionImage": "/uploads/geometry/14e53dc0f8e620c6a465cbb1c050a443ce74386b8efe6b810d251f42b322b90e.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=160898",
+    "solutionImage": null,
+    "special": false,
+    "id": "mucdzt7fcmgzk3",
+    "order": 419,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Discount",
+    "examName": "",
+    "questionText": "A dealer sells an article by allowing a 13% discount on its marked price and gains 20%. If the cost price of the article is increased by 10%, what discount percentage should he allow now on the same marked price, so as to earn the same percentage of profit as before?",
+    "questionImage": null,
+    "options": [
+      "6.8%",
+      "5.9%",
+      "3.4%",
+      "4.3%"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/_fnLOxc6eCw?list=PLXcRgYnwyGko&t=10512",
+    "solutionImage": null,
+    "special": false,
+    "id": "mucue24e77oo13",
+    "order": 420,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Discount",
+    "examName": "",
+    "questionText": "A dealer marks his goods at 40% above the cost price. He sells 60% of the goods\nat the marked price giving 10% discount and the rest by giving 50% discount on\nthe marked price. What is his overall profit/loss per cent?",
+    "questionImage": null,
+    "options": [
+      "profit 2.8%",
+      "profit 3.6%",
+      "loss 2.8%",
+      "loss 3.6%"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/_fnLOxc6eCw?list=PLXcRgYnwyGko&t=10809",
+    "solutionImage": null,
+    "special": false,
+    "id": "mucv1vofrno1po",
+    "order": 421,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Discount",
+    "examName": "",
+    "questionText": "A furniture store initially sells a particular dining table for ₹Z, making a profit of 25%. During a festive sale, the marked price of the same table is increased to ₹1.6Z. A discount of 20% is then offered on the new marked price.\n\nWhat is the percentage profit earned by the store during the festive sale?",
+    "questionImage": null,
+    "options": [
+      "62%",
+      "49%",
+      "31%",
+      "60%"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/_fnLOxc6eCw?list=PLXcRgYnwyGko&t=11070",
+    "solutionImage": null,
+    "special": false,
+    "id": "mucvg29jfb37e0",
+    "order": 422,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "Alloy A contains metals x and y only in the ratio 3:2, while alloy B contains them\nin the ratio 5:6 Alloy c is prepared by mixing alloys A and B in the ratio 4:3. The\npercentage of x in alloy cis:",
+    "questionImage": null,
+    "options": [
+      "52.60%",
+      "58.09%",
+      "57.29%",
+      "53.77%"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/kkyTvdGJG_A?t=200",
+    "solutionImage": null,
+    "special": false,
+    "id": "mudjxhapxp4z46",
+    "order": 423,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "If p=sec  +tan 0 and q = cosec 0- cot 0, then what is (p- q- pq) equal to?",
+    "questionImage": null,
+    "options": [
+      "3",
+      "1",
+      "-1",
+      "4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/kkyTvdGJG_A?t=364",
+    "solutionImage": null,
+    "special": false,
+    "id": "mudl8nteuah0n6",
+    "order": 424,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Height & Distance",
+    "examName": "",
+    "questionText": "A person walking along a straight road observes that at two consecutive\nkilometer-stones the angles of elevation of a hill in front of him are 30° and 60° respectively. What is the height of the hill?",
+    "questionImage": null,
+    "options": [
+      "2root-3",
+      "root-3",
+      "root-3 /2",
+      "3root-3"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/kkyTvdGJG_A?t=420",
+    "solutionImage": null,
+    "special": false,
+    "id": "mudlksfxy37a6z",
+    "order": 425,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "Two trains start from stations A and B towards each other and meet after 4\nhours. Train from A travels 20% faster than train from B. If the distance between\nA and B is 528 km, find the speed of the slower train.",
+    "questionImage": null,
+    "options": [
+      "60",
+      "51",
+      "24",
+      "15"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/kkyTvdGJG_A?t=600",
+    "solutionImage": null,
+    "special": false,
+    "id": "mudm25ymp0cmxy",
+    "order": 426,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Time & Work",
+    "examName": "",
+    "questionText": "Sachin can complete a piece of work in 80 days. He works on it for 10 days, and then Sourav finishes the remaining work alone in 42 days. In how many days\ncan Sachin and Sourav work together to finish the job?",
+    "questionImage": null,
+    "options": [
+      "27 days",
+      "26 days",
+      "32 days",
+      "30 days"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/jaH0B4lWmGM?t=130 use chatgpt mehod in this question",
+    "solutionImage": null,
+    "special": false,
+    "id": "mudorlc4e96ymv",
+    "order": 427,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Compound Interest",
+    "examName": "",
+    "questionText": "A person finds that the compound interest on a sum at 5% per annum for three\nyears is greater than the simple interest by ₹183. What is the sum?",
+    "questionImage": null,
+    "options": [
+      "23000",
+      "28000",
+      "30000",
+      "24000"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/jaH0B4lWmGM?t=183",
+    "solutionImage": null,
+    "special": false,
+    "id": "mudox2o7r6xycn",
+    "order": 428,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "R is a point outside a circle and is 18 cm away from its centre. A secant drawn\nfrom the point R intersects the circle at points A and B is such a way that\nRA=7cm and AB=5cm. The radius of the circle (in cm) is:",
+    "questionImage": null,
+    "options": [
+      "1root-15",
+      "8root-15",
+      "4root-15",
+      "2root-15"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/jaH0B4lWmGM?t=300",
+    "solutionImage": null,
+    "special": false,
+    "id": "mudp22lssomp05",
+    "order": 429,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Discount",
+    "examName": "",
+    "questionText": "A trader gains 50% by selling an article after two successive discounts of 25%\nand 80% on its marked price. If the cost price of the article is increased by 74%,\nthen what single discount should he now give on the same marked price to get\nthe same profit percentage as carlier?",
+    "questionImage": null,
+    "options": [
+      "73.9%",
+      "75.5%",
+      "77.5%",
+      "74.7%"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/jaH0B4lWmGM?t=369",
+    "solutionImage": null,
+    "special": false,
+    "id": "mudphoqg5rqoul",
+    "order": 430,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "A container has 60 litres of a mixture of acid and water in the ratio 7:3. 20% of\nthe mixture is taken out and replaced with water. This operation is repeated\nonce more. What is the final percentage of acid in the mixture?",
+    "questionImage": null,
+    "options": [
+      "42.7%",
+      "37.7%",
+      "44.8%",
+      "39.1%"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/jaH0B4lWmGM?t=503",
+    "solutionImage": null,
+    "special": false,
+    "id": "mudpmjf4m78ivg",
+    "order": 431,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Compound Interest",
+    "examName": "",
+    "questionText": "A sum of ₹10,000 is invested for 2 years at 20% per annum interest, compounded\nhalf-yearly. What is the compound interest earned at the end of 2 years?",
+    "questionImage": null,
+    "options": [
+      "4690",
+      "4656",
+      "4641",
+      "4715"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/jaH0B4lWmGM?t=734",
+    "solutionImage": null,
+    "special": false,
+    "id": "mudq42flv95dwl",
+    "order": 432,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Time & Work",
+    "examName": "",
+    "questionText": "P and Q together can complete a work in 24 days. They started the work\ntogether but after 8 days P left the work. Remaining work is completed by Q in\n20 more days. P alone can complete this entire work in how many days?",
+    "questionImage": null,
+    "options": [
+      "150",
+      "160",
+      "120",
+      "100"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/jaH0B4lWmGM?t=800",
+    "solutionImage": null,
+    "special": false,
+    "id": "mudqd1ap2lyiz2",
+    "order": 433,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Time & Work",
+    "examName": "",
+    "questionText": "P and Q together can complete a work in 24 days. They started the work\ntogether but after 8 days P left the work. Remaining work is completed by Q\nin 20 more days. P alone can complete this entire work in how many days?",
+    "questionImage": null,
+    "options": [
+      "110",
+      "190",
+      "120",
+      "170"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/jaH0B4lWmGM?t=794",
+    "solutionImage": "/uploads/time-work/07f77bc31846228ddb806b4dc4ef5936506b2bfd616bb72433485136b7170a83.png",
+    "special": false,
+    "id": "mudqpqi0xpq7s3",
+    "order": 434,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Compound Interest",
+    "examName": "",
+    "questionText": "If the difference between the compound interest and simple interest on Rs. 16,000 for 2\nyears at a certain rate of interest per annum is Rs. 102.40, then find the rate of interest\nper annum.",
+    "questionImage": null,
+    "options": [
+      "15",
+      "8%",
+      "19",
+      "16"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/jaH0B4lWmGM?t=896",
+    "solutionImage": null,
+    "special": false,
+    "id": "mudrd8bkk169a9",
+    "order": 435,
     "attemptStatus": "unattempted",
     "testAllowed": true
   }

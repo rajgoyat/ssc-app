@@ -4533,6 +4533,10 @@ function TestSetup({
       topics.length &&
     topics.length > 0;
 
+  const perTopicMode =
+    config.selectionMode ===
+    "perTopic";
+
   function toggleTopic(topic) {
     setConfig((c) => {
       const current =
@@ -4849,12 +4853,64 @@ function TestSetup({
 
         <div className="field">
           <label className="field-label">
-            Number of Questions (max{" "}
-            {Math.max(
-              testPoolCount,
-              1
-            )}
-            )
+            Question Selection
+          </label>
+
+          <div className="topic-actions">
+            <button
+              type="button"
+              className={
+                "btn btn-xs " +
+                (!perTopicMode
+                  ? "btn-primary"
+                  : "btn-ghost")
+              }
+              onClick={() =>
+                setConfig((c) => ({
+                  ...c,
+                  selectionMode:
+                    "total",
+                }))
+              }
+            >
+              Total questions
+            </button>
+
+            <button
+              type="button"
+              className={
+                "btn btn-xs " +
+                (perTopicMode
+                  ? "btn-primary"
+                  : "btn-ghost")
+              }
+              onClick={() =>
+                setConfig((c) => ({
+                  ...c,
+                  selectionMode:
+                    "perTopic",
+                }))
+              }
+            >
+              Per chapter
+            </button>
+          </div>
+
+          <p className="hint">
+            {perTopicMode
+              ? "Select how many random questions to take from every selected chapter."
+              : "Select the total number of random questions for the whole test."}
+          </p>
+        </div>
+
+        <div className="field">
+          <label className="field-label">
+            {perTopicMode
+              ? "Questions Per Chapter"
+              : `Number of Questions (max ${Math.max(
+                  testPoolCount,
+                  1
+                )})`}
           </label>
 
           <input
@@ -4865,7 +4921,13 @@ function TestSetup({
               1
             )}
             className="input"
-            value={config.count}
+            value={
+              perTopicMode
+                ? Number(
+                    config.perTopicCount
+                  ) || 20
+                : config.count
+            }
             disabled={
               testPoolCount === 0
             }
@@ -4893,7 +4955,14 @@ function TestSetup({
 
               setConfig((c) => ({
                 ...c,
-                count: v,
+                ...(perTopicMode
+                  ? {
+                      perTopicCount:
+                        v,
+                    }
+                  : {
+                      count: v,
+                    }),
               }));
             }}
             onBlur={(e) => {
@@ -4920,10 +4989,28 @@ function TestSetup({
 
               setConfig((c) => ({
                 ...c,
-                count: v,
+                ...(perTopicMode
+                  ? {
+                      perTopicCount:
+                        v,
+                    }
+                  : {
+                      count: v,
+                    }),
               }));
             }}
           />
+
+          {perTopicMode && (
+            <p className="hint">
+              If a chapter has fewer
+              questions than this number,
+              all available questions from
+              that chapter will be used.
+              Final questions are mixed in
+              random order.
+            </p>
+          )}
         </div>
 
         <div className="test-selection-summary">
@@ -4949,6 +5036,17 @@ function TestSetup({
             Pool:{" "}
             <b>
               {testPoolCount}
+            </b>
+          </span>
+
+          <span>
+            Mode:{" "}
+            <b>
+              {perTopicMode
+                ? `${Number(
+                    config.perTopicCount
+                  ) || 20} / chapter`
+                : `${config.count} total`}
             </b>
           </span>
         </div>
@@ -4999,6 +5097,9 @@ function TestRunning({
 
   const [timerRunning, setTimerRunning] =
     useState(false);
+
+  const [showQuestionNumbers, setShowQuestionNumbers] =
+    useState(true);
 
   useEffect(() => {
     if (!timerRunning) {
@@ -5174,76 +5275,119 @@ function TestRunning({
 
       {ids &&
         ids.length > 1 && (
-          <div className="q-jump-row">
-            <span className="q-jump-label">
-              Jump to any question:
-            </span>
-
-            <div className="q-jump-grid">
-              {ids.map(
-                (qid, i) => {
-                  const qa =
-                    answers
-                      ? answers[
-                          qid
-                        ]
-                      : null;
-
-                  const qq =
-                    allQuestions
-                      ? allQuestions.find(
-                          (
-                            x
-                          ) =>
-                            x.id ===
-                            qid
-                        )
-                      : null;
-
-                  let cls =
-                    "q-jump-btn";
-
-                  if (
-                    i ===
-                    index
-                  ) {
-                    cls +=
-                      " current";
-                  } else if (
-                    qa &&
-                    qq
-                  ) {
-                    cls +=
-                      qa.selected ===
-                      qq.correctIndex
-                        ? " ans-correct"
-                        : " ans-wrong";
-                  }
-
-                  return (
-                    <button
-                      key={qid}
-                      type="button"
-                      className={
-                        cls
-                      }
-                      onClick={() =>
-                        onJump(
-                          i
-                        )
-                      }
-                      title={
-                        "Go to question " +
-                        (i +
-                          1)
-                      }
-                    >
-                      {i + 1}
-                    </button>
-                  );
-                }
+          <div
+            className={
+              "q-jump-row" +
+              (showQuestionNumbers
+                ? ""
+                : " collapsed")
+            }
+          >
+            <div className="q-jump-head">
+              {showQuestionNumbers && (
+                <span className="q-jump-label">
+                  Jump to any question:
+                </span>
               )}
+
+              <button
+                type="button"
+                className="q-jump-toggle"
+                onClick={() =>
+                  setShowQuestionNumbers(
+                    (shown) => !shown
+                  )
+                }
+                title={
+                  showQuestionNumbers
+                    ? "Hide question numbers"
+                    : "Show question numbers"
+                }
+                aria-expanded={
+                  showQuestionNumbers
+                }
+              >
+                {showQuestionNumbers ? (
+                  <>
+                    <EyeOff size={12} />
+                    Hide numbers
+                  </>
+                ) : (
+                  <>
+                    <Eye size={12} />
+                    Show question numbers
+                  </>
+                )}
+              </button>
             </div>
+
+            {showQuestionNumbers && (
+              <div className="q-jump-grid">
+                {ids.map(
+                  (qid, i) => {
+                    const qa =
+                      answers
+                        ? answers[
+                            qid
+                          ]
+                        : null;
+
+                    const qq =
+                      allQuestions
+                        ? allQuestions.find(
+                            (
+                              x
+                            ) =>
+                              x.id ===
+                              qid
+                          )
+                        : null;
+
+                    let cls =
+                      "q-jump-btn";
+
+                    if (
+                      i ===
+                      index
+                    ) {
+                      cls +=
+                        " current";
+                    } else if (
+                      qa &&
+                      qq
+                    ) {
+                      cls +=
+                        qa.selected ===
+                        qq.correctIndex
+                          ? " ans-correct"
+                          : " ans-wrong";
+                    }
+
+                    return (
+                      <button
+                        key={qid}
+                        type="button"
+                        className={
+                          cls
+                        }
+                        onClick={() =>
+                          onJump(
+                            i
+                          )
+                        }
+                        title={
+                          "Go to question " +
+                          (i +
+                            1)
+                        }
+                      >
+                        {i + 1}
+                      </button>
+                    );
+                  }
+                )}
+              </div>
+            )}
           </div>
         )}
 
@@ -5595,6 +5739,8 @@ function App() {
     pool: "allowed",
     topics: [],
     count: 5,
+    selectionMode: "total",
+    perTopicCount: 20,
   });
 
   const [
@@ -6418,9 +6564,30 @@ function App() {
           ? c.pool
           : "allowed";
 
+      const selectionMode =
+        c.selectionMode ===
+        "perTopic"
+          ? "perTopic"
+          : "total";
+
+      const perTopicCount =
+        Math.max(
+          1,
+          Math.min(
+            Number(
+              c.perTopicCount
+            ) || 20,
+            max
+          )
+        );
+
       const unchanged =
         pool === c.pool &&
         count === c.count &&
+        selectionMode ===
+          c.selectionMode &&
+        perTopicCount ===
+          c.perTopicCount &&
         JSON.stringify(
           nextTopics
         ) ===
@@ -6436,6 +6603,8 @@ function App() {
             topics:
               nextTopics,
             count,
+            selectionMode,
+            perTopicCount,
           };
     });
   }, [
@@ -6493,29 +6662,95 @@ function App() {
       return;
     }
 
-    const count =
-      Math.max(
-        1,
-        Math.min(
+    let selectedQuestions = [];
+
+    if (
+      testConfig.selectionMode ===
+      "perTopic"
+    ) {
+      const perTopicCount =
+        Math.max(
+          1,
           Number(
-            testConfig.count
-          ) || 1,
-          combinedPool.length
-        )
+            testConfig.perTopicCount
+          ) || 20
+        );
+
+      const effectiveTopics =
+        selectedTopics.length > 0
+          ? selectedTopics
+          : [
+              ...new Set(
+                sourceList.map(
+                  (q) =>
+                    (
+                      q.category ||
+                      "General"
+                    ).trim()
+                )
+              ),
+            ];
+
+      effectiveTopics.forEach(
+        (topic) => {
+          const chapterPool =
+            sourceList.filter(
+              (q) =>
+                (
+                  q.category ||
+                  "General"
+                ).trim() ===
+                topic
+            );
+
+          const chapterPick =
+            shuffleArr(
+              chapterPool
+            ).slice(
+              0,
+              Math.min(
+                perTopicCount,
+                chapterPool.length
+              )
+            );
+
+          selectedQuestions.push(
+            ...chapterPick
+          );
+        }
       );
 
-    const shuffledPool =
-      shuffleArr(
-        combinedPool
-      );
+      // Mix questions from all chapters so chapters do not appear in blocks.
+      selectedQuestions =
+        shuffleArr(
+          selectedQuestions
+        );
+    } else {
+      const count =
+        Math.max(
+          1,
+          Math.min(
+            Number(
+              testConfig.count
+            ) || 1,
+            combinedPool.length
+          )
+        );
+
+      selectedQuestions =
+        shuffleArr(
+          combinedPool
+        ).slice(
+          0,
+          count
+        );
+    }
 
     const ids =
-      shuffledPool
-        .slice(0, count)
-        .map(
-          (q) =>
-            q.id
-        );
+      selectedQuestions.map(
+        (q) =>
+          q.id
+      );
 
     if (
       ids.length === 0
@@ -8310,14 +8545,50 @@ body {
   background: #332b34;
 }
 
+.q-jump-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
 .q-jump-label {
   display: block;
   font-size: 10px;
   color: var(--muted);
   font-family: 'JetBrains Mono', monospace;
-  margin-bottom: 6px;
+  margin: 0;
   text-transform: uppercase;
   letter-spacing: 0.4px;
+}
+
+.q-jump-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: auto;
+  padding: 4px 7px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  background: var(--panel-2);
+  color: var(--muted);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  cursor: pointer;
+}
+
+.q-jump-toggle:hover {
+  border-color: var(--cyan);
+  color: var(--text);
+}
+
+.q-jump-row.collapsed {
+  padding: 5px 8px;
+}
+
+.q-jump-row.collapsed .q-jump-head {
+  margin-bottom: 0;
 }
 
 .q-jump-grid {

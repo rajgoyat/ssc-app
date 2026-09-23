@@ -66,7 +66,7 @@
     },
     {
       "en": "Abominable",
-      "hi": "घृणित / बहुत बुरा",
+      "hi": "घृणित / बहुत बुरा / bahut hi ganda / bahut bura / ghatiya / nafrat ke layak.",
       "meaning": "Causing moral revulsion; extremely unpleasant",
       "sentence": "The abominable treatment of the workers shocked everyone.",
       "syn": "Detestable",
@@ -99,7 +99,7 @@
     {
       "en": "Abrupt",
       "hi": "अचानक / रूखा",
-      "meaning": "Sudden and unexpected; curt in manner",
+      "meaning": "Sudden and unexpected; curt in manner____________Volcano jab Erupt (phat-ta) hai, toh bina bataaye bilkul Abruptly (achaank) phat-ta hai.",
       "sentence": "The meeting came to an abrupt end.",
       "syn": "Sudden",
       "ant": "Gradual"
@@ -124,7 +124,7 @@
       "en": "Abstain",
       "hi": "परहेज़ करना / दूर रहना",
       "meaning": "To restrain oneself from doing or enjoying something",
-      "sentence": "He decided to abstain from voting on the motion.",
+      "sentence": "He decided to abstain from alcohol. (Usne alcohol se door rehne/parhez karne ka faisla kiya.)",
       "syn": "Refrain",
       "ant": "Indulge"
     },
@@ -147,8 +147,8 @@
     {
       "en": "Absurd",
       "hi": "बेतुका",
-      "meaning": "Wildly unreasonable or illogical",
-      "sentence": "The suggestion sounds absurd to me.",
+      "meaning": "extremely silly, ridiculous, or unreasonable (befukoofana / besir-pair ki baat)",
+      "sentence": "The suggestion sounds absurd to me.______________Jab koi faltu aur bina kisi matlab ki baat karta hai, toh sir-dard hone lagta hai kyunki wo baat bilkul Absurd (ridiculous) hoti hai.",
       "syn": "Ridiculous",
       "ant": "Sensible"
     },
@@ -202,7 +202,7 @@
     },
     {
       "en": "Acclimatise",
-      "hi": "अनुकूल बनाना",
+      "hi": "अनुकूल बनाना_________naye mahawl, mausam ya sthiti me dhalna (dhalke set ho jana / dhal jaana)",
       "meaning": "To become accustomed to a new climate or conditions",
       "sentence": "It took him a week to acclimatise to the hills.",
       "syn": "Adjust",
@@ -210,7 +210,7 @@
     },
     {
       "en": "Accolade",
-      "hi": "सम्मान / पुरस्कार",
+      "hi": "सम्मान / पुरस्कार____________praise, award, or honor given as a special acknowledge (taareef, puraskar, ya samman)",
       "meaning": "An award or expression of praise given as a mark of honour",
       "sentence": "The scientist received the highest accolade in her field.",
       "syn": "Honour",
@@ -1939,7 +1939,7 @@
     {
       "en": "Blunt",
       "hi": "कुंद / बेबाक",
-      "meaning": "Not sharp; also speaking plainly without trying to be polite",
+      "meaning": "Not sharp; also speaking plainly without trying to be polite  _________________--Forthright: Saaf aur imaandar baat karna (respectful & honest).\n\nBlunt: Bilkul bina filter ke muh par bol dena (kabhi-kabhi samne wale ko bura lag sakta hai).",
       "sentence": "His blunt reply hurt her feelings.",
       "syn": "Forthright",
       "ant": "Tactful"
@@ -2834,9 +2834,9 @@
     },
     {
       "en": "Condolence",
-      "hi": "शोक-संवेदना",
+      "hi": "शोक-संवेदना...... शोक-संदेश",
       "meaning": "An expression of sympathy for someone's loss",
-      "sentence": "He sent a message of condolence.",
+      "sentence": "We sent a letter of condolence to the grieving family.",
       "syn": "Sympathy",
       "ant": "Congratulation"
     },
@@ -3812,7 +3812,7 @@
       "en": "Derogatory",
       "hi": "अपमानजनक",
       "meaning": "Showing a critical or disrespectful attitude",
-      "sentence": "He was suspended for making derogatory remarks.",
+      "sentence": "He was punished for making derogatory remarks about his colleagues",
       "syn": "Insulting",
       "ant": "Complimentary"
     },
@@ -4609,14 +4609,6 @@
       "ant": "Conclude"
     },
     {
-      "en": "Embellish",
-      "hi": "सजाना / संवारना",
-      "meaning": "Make something more attractive by the addition of decorative details",
-      "sentence": "He tends to embellish his stories to make them more exciting.",
-      "syn": "Adorn",
-      "ant": "Deface"
-    },
-    {
       "en": "Embezzle",
       "hi": "गबन करना",
       "meaning": "To steal money placed in one's trust",
@@ -4650,7 +4642,7 @@
     },
     {
       "en": "Emulate",
-      "hi": "अनुकरण करना",
+      "hi": "अनुकरण करना_________Kisi ke acche gunn ko follow karna / Unke jaisa banne ki koshish karna",
       "meaning": "To match or imitate someone, usually out of admiration",
       "sentence": "Young players try to emulate their idols.",
       "syn": "Imitate",
@@ -4799,14 +4791,6 @@
       "sentence": "Discounts were offered to entice customers.",
       "syn": "Lure",
       "ant": "Repel"
-    },
-    {
-      "en": "Ephemeral",
-      "hi": "क्षणभंगुर",
-      "meaning": "Lasting for a very short time",
-      "sentence": "Fame in social media can be ephemeral, fading within days.",
-      "syn": "Transient",
-      "ant": "Permanent"
     },
     {
       "en": "Ephemerality",
@@ -5274,9 +5258,9 @@
     },
     {
       "en": "Facetious",
-      "hi": "हंसोड़ / ठिठोलिया",
+      "hi": "हंसोड़, संजीदगी न दिखाने वाला, या बेवक्त मज़ाक उड़ाने वाला",
       "meaning": "Treating serious issues with deliberately inappropriate humor",
-      "sentence": "His facetious remark about quitting was clearly meant as a joke.",
+      "sentence": "Stop making facetious remarks about a serious issue.",
       "syn": "Flippant",
       "ant": "Serious"
     },
@@ -5333,7 +5317,7 @@
       "hi": "गहराई से समझना",
       "meaning": "To understand something difficult after much thought",
       "sentence": "I cannot fathom his real intention.",
-      "syn": "Comprehend",
+      "syn": "Understand / Comprehend (समझना / बोध होना)Comprehend",
       "ant": "Misunderstand"
     },
     {
@@ -5596,7 +5580,7 @@
       "en": "Fretful",
       "hi": "बेचैन / चिड़चिड़ा",
       "meaning": "Distressed or irritable, especially from worry",
-      "sentence": "The fretful baby cried all night.",
+      "sentence": "The fretful baby cried all night because of a toothache.\n\nअर्थ: दांत के दर्द के कारण चिड़चिड़ा / बेचैन बच्चा पूरी रात रोता रहा।",
       "syn": "Restless",
       "ant": "Content"
     },
@@ -6514,10 +6498,10 @@
     },
     {
       "en": "Indignation",
-      "hi": "रोष / क्षोभ",
+      "hi": "रोष / क्षोभ__________हिंदी में मतलब अन्याय या गलत बात पर होने वाला गुस्सा, आक्रोष, या नैतिक रोष होता है।",
       "meaning": "Anger at unfair or unjust treatment",
-      "sentence": "The verdict caused public indignation.",
-      "syn": "Outrage",
+      "sentence": "The news of the fraud provoked widespread public indignation",
+      "syn": "Outrage ,     Resentment (नाराजगी)",
       "ant": "Pleasure"
     },
     {
@@ -7602,9 +7586,9 @@
     },
     {
       "en": "Nefarious",
-      "hi": "कुटिल / दुष्ट",
+      "hi": "कुटिल / कुख्यात, दुष्ट, अति-पापी",
       "meaning": "Wicked or criminal, typically of an action or activity",
-      "sentence": "The film's villain hatches a nefarious plot to rob the bank.",
+      "sentence": "The villain planned a nefarious scheme to take over the city.",
       "syn": "Wicked",
       "ant": "Noble"
     },
@@ -7826,10 +7810,10 @@
     },
     {
       "en": "Odious",
-      "hi": "घृणित",
+      "hi": "घिनौना, घृणास्पद, अप्रिय या बेहद घटिया",
       "meaning": "Extremely unpleasant; repulsive",
-      "sentence": "Comparison between the two is odious.",
-      "syn": "Detestable",
+      "sentence": "Cruelty to animals is an odious crime.",
+      "syn": "Hateful (नफ़रत के क़ाबिल)  Repulsive / Detestable (घिनौना या घृणास्पद)  Obnoxious (अप्रिय या कष्टदायक)  Revolting (विद्रूप / घिनौना)",
       "ant": "Delightful"
     },
     {
@@ -7898,10 +7882,10 @@
     },
     {
       "en": "Opprobrium",
-      "hi": "निंदा / कलंक",
+      "hi": "निंदा / कलंक ___अनादर, गंभीर लोक-निंदा, लांछन या कलंक",
       "meaning": "Harsh public criticism or disgrace",
       "sentence": "The scandal brought him public opprobrium.",
-      "syn": "Disgrace",
+      "syn": "Disgrace (अपमान / बदनामी)  Condemnation (निंदा)  Infamy (कलंक / अपयश)  Censureship (भर्त्सना)",
       "ant": "Honour"
     },
     {
@@ -8695,14 +8679,6 @@
       "sentence": "He is a prominent lawyer in the city.",
       "syn": "Notable",
       "ant": "Insignificant"
-    },
-    {
-      "en": "Propagate",
-      "hi": "प्रचार करना / फैलाना",
-      "meaning": "To spread ideas or reproduce plants",
-      "sentence": "They propagate their ideas through social media.",
-      "syn": "Spread",
-      "ant": "Suppress"
     },
     {
       "en": "Propensity",
@@ -9530,10 +9506,10 @@
     },
     {
       "en": "Scourge",
-      "hi": "अभिशाप / कोड़ा",
+      "hi": "अभिशाप /  विपत्ति",
       "meaning": "A cause of great trouble or suffering",
-      "sentence": "Unemployment is the scourge of our times.",
-      "syn": "Affliction",
+      "sentence": "Unemployment is the scourge of our times. / Poverty and disease are the twin scourges of developing nations",
+      "syn": "Affliction / Curse (कष्ट / श्राप) _____ Plague / Menace (महामारी / खतरा या उपद्रव)  ________Torment / Devastate (सताना / तबाह करना)",
       "ant": "Blessing"
     },
     {
@@ -10290,9 +10266,9 @@
     },
     {
       "en": "Terse",
-      "hi": "संक्षिप्त और रूखा",
+      "hi": "संक्षिप्त, रूखा, या नपे-तुले शब्दों में कहा गया",
       "meaning": "Brief and to the point, sometimes curt",
-      "sentence": "He gave a terse reply and left.",
+      "sentence": "He gave a terse one-word reply to my long email.",
       "syn": "Curt",
       "ant": "Verbose"
     },
@@ -11155,12 +11131,28 @@
       "ant": "None"
     },
     {
+      "en": "Embellish",
+      "hi": "सजाना / संवारना",
+      "meaning": "Make something more attractive by the addition of decorative details",
+      "sentence": "He tends to embellish his stories to make them more exciting.",
+      "syn": "Adorn",
+      "ant": "Deface"
+    },
+    {
       "en": "Engaging",
       "hi": "आकर्षक / दिलचस्प",
       "meaning": "Interesting, pleasant, or attractive enough to hold someone's attention.\nKoi cheez jo itni interesting ya attractive ho ki attention banaye rakhe.",
       "sentence": "The teacher made the lesson engaging for the students.",
       "syn": "Captivating",
       "ant": "Boring"
+    },
+    {
+      "en": "Ephemeral",
+      "hi": "क्षणभंगुर",
+      "meaning": "Lasting for a very short time",
+      "sentence": "Fame in social media can be ephemeral, fading within days.",
+      "syn": "Transient",
+      "ant": "Permanent"
     },
     {
       "en": "Garrulous",
@@ -11177,6 +11169,14 @@
       "sentence": "The loquacious guide talked non-stop throughout the tour.",
       "syn": "Voluble",
       "ant": "Silent"
+    },
+    {
+      "en": "Propagate",
+      "hi": "प्रचार करना / फैलाना",
+      "meaning": "To spread ideas or reproduce plants",
+      "sentence": "They propagate their ideas through social media.",
+      "syn": "Spread",
+      "ant": "Suppress"
     }
   ]
 }
