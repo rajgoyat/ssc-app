@@ -111,13 +111,8 @@ const august2026CurrentAffairs = {
       category: "Science & Tech",
       question:
         "What is the name of Romania's first and only nuclear power plant that was shut down in August 2026 due to severe drought?",
-      options: [
-        "Paks Nuclear Power Plant",
-        "Olkiluoto Nuclear Power Plant",
-        "Zaporizhzhia Nuclear Power Plant",
-        "Cernavoda Nuclear Power Plant",
-      ],
-      answer: 3,
+      options: ["Cernavoda Nuclear Power Plant", "Paks Nuclear Power Plant", "Zaporizhzhia Nuclear Power Plant", "Olkiluoto Nuclear Power Plant"],
+      answer: 0,
       explanation:
         "Due to a severe drought lowering the water level of the Danube River, both reactors at Romania's Cernavoda Nuclear Power Plant were shut down safely due to insufficient cooling water.",
     },
@@ -897,7 +892,8 @@ const august2026CurrentAffairs = {
       answer: 0,
       explanation:
         "The 140-year-old Parichha Dam/Weir is located in Uttar Pradesh.",
-    },
+    
+      subQuestions: [{"question": "Tehri Dam is built on which river?", "options": ["Alaknanda", "Bhagirathi", "Yamuna"], "answer": 1, "explanation": "Tehri Dam is built on the Bhagirathi River in Uttarakhand."}, {"question": "Hirakud Dam is built across which river?", "options": ["Godavari", "Mahanadi", "Krishna"], "answer": 1, "explanation": "Hirakud Dam is built across the Mahanadi River in Odisha."}, {"question": "Sardar Sarovar Dam is built on which river?", "options": ["Narmada", "Tapi", "Sabarmati"], "answer": 0, "explanation": "Sardar Sarovar Dam is built on the Narmada River in Gujarat."}, {"question": "Bhakra Dam is built on which river?", "options": ["Sutlej", "Beas", "Ravi"], "answer": 0, "explanation": "Bhakra Dam is built on the Sutlej River in Himachal Pradesh."}, {"question": "Nagarjuna Sagar Dam is built on which river?", "options": ["Godavari", "Krishna", "Kaveri"], "answer": 1, "explanation": "Nagarjuna Sagar Dam is built on the Krishna River."}, {"question": "Gandhi Sagar Dam is built on which river?", "options": ["Chambal", "Narmada", "Son"], "answer": 0, "explanation": "Gandhi Sagar Dam is built on the Chambal River in Madhya Pradesh."}, {"question": "Idukki Dam is built on which river?", "options": ["Pamba", "Bharathapuzha", "Periyar"], "answer": 2, "explanation": "Idukki Dam is built on the Periyar River in Kerala."}, {"question": "Mettur Dam is built on which river?", "options": ["Vaigai", "Krishna", "Kaveri"], "answer": 2, "explanation": "Mettur Dam is built on the Kaveri River in Tamil Nadu."}, {"question": "Koyna Dam is built on which river?", "options": ["Godavari", "Koyna", "Bhima"], "answer": 1, "explanation": "Koyna Dam is built on the Koyna River in Maharashtra."}, {"question": "Tungabhadra Dam is built on which river?", "options": ["Tungabhadra", "Krishna", "Bhima"], "answer": 0, "explanation": "Tungabhadra Dam is built on the Tungabhadra River in Karnataka."}, {"question": "Which dam is associated with the Chambal Valley Project?", "options": ["Hirakud", "Tehri", "Gandhi Sagar"], "answer": 2, "explanation": "Gandhi Sagar Dam is one of the major dams of the Chambal Valley Project."}],},
     {
       id: "ca-2026-08-21-030",
       category: "Defence & Technology",
@@ -2704,13 +2700,8 @@ const august2026CurrentAffairs = {
     category: "Environment",
     question:
       "Which set correctly describes the Jojri River?",
-    options: [
-      "Rajasthan — 83 km — originates at Pandalu/Poondloo — joins Luni",
-      "Gujarat — 83 km — originates at Aravalli — joins Sabarmati",
-      "Rajasthan — 150 km — originates at Nagaur — joins Chambal",
-      "Madhya Pradesh — 83 km — originates at Pandalu — joins Narmada"
-    ],
-    answer: 0,
+    options: ["Madhya Pradesh — 83 km — originates at Pandalu — joins Narmada", "Gujarat — 83 km — originates at Aravalli — joins Sabarmati", "Rajasthan — 83 km — originates at Pandalu/Poondloo — joins Luni", "Rajasthan — 150 km — originates at Nagaur — joins Chambal"],
+    answer: 2,
     explanation:
       "The Jojri River is in Rajasthan, is about 83 km long, originates at Pandalu/Poondloo in Nagaur and joins the Luni River."
   },
@@ -3127,7 +3118,7 @@ const august2026CurrentAffairs = {
 
 { id: 'ca-2026-08-028-003', category: 'Culture & Tourism', question: 'Consider the following statements regarding the 2nd Suru Festival: \n1. It is being held at Damsna Picnic Spot in Kargil, Ladakh. \n2. It is a two-day festival organised against the backdrop of the Nun-Kun Peaks. Which is correct?', options: ['1 only', '2 only', 'Both 1 and 2', 'Neither 1 nor 2'], answer: 2, explanation: 'Both statements are correct. The second Suru Festival is a two-day event at Damsna Picnic Spot in Kargil with the Nun-Kun Peaks in the background.' },
 
-{ id: 'ca-2026-08-028-004', category: 'Government Schemes', question: 'Consider the following statements regarding Mission Samriddh Gaon: \n1. It was launched by Union Minister Shivraj Singh Chouhan. \n2. Its objective is to develop poverty-free and employment-rich villages. Which is correct?', options: ['1 only', '2 only', 'Both 1 and 2', 'Neither 1 nor 2'], answer: 2, explanation: 'Both statements are correct. Mission Samriddh Gaon focuses on poverty reduction, livelihoods and self-reliant rural communities.' },
+{ id: 'ca-2026-08-028-004', category: 'Government Schemes', question: 'Consider the following statements regarding Mission Samriddh Gaon: \n1. It was launched by Union Minister Shivraj Singh Chouhan. \n2. Its objective is to develop poverty-free and employment-rich villages. Which is correct?', options: ['1 only', '2 only', 'Both 1 and 2', 'Neither 1 nor 2'], answer: 2, explanation: "Mission Samriddh Gaon → 2026 → Rural Development Ministry → Poverty-free + employment-rich villages → Pilot: Budni (Sehore) & Khategaon (Dewas), MP.", notes: ["August 2026 by Union Rural Development Minister Shivraj Singh Chouhan."],},
 
 { id: 'ca-2026-08-028-005', category: 'Government Schemes', question: 'Consider the following statements about the pilot of Mission Samriddh Gaon: \n1. It is initially to be implemented in Budni Block of Sehore district. \n2. Khategaon Block is also included in the pilot. Which is correct?', options: ['1 only', '2 only', 'Both 1 and 2', 'Neither 1 nor 2'], answer: 2, explanation: 'Both statements are correct. The PDF lists Budni and Khategaon as the two blocks selected for the initial pilot in Madhya Pradesh.' },
 

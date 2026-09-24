@@ -1804,7 +1804,7 @@
       "en": "Keep a Stiff Upper Lip",
       "hi": "मुश्किल में भावनाएँ छिपाकर मजबूत दिखना",
       "meaning": "Hide emotion in face of adversity",
-      "sentence": "This was a clear example of \"Keep a Stiff Upper Lip\" because someone chose to hide emotion in face of adversity.",
+      "sentence": "Keep a stiff upper lip ka matlab hota hai mushkil situation me bhi himmat na harna aur apni feelings ko control me rakhna.\n\nSimple Hinglish: andar se dukhi ya pareshan ho, lekin bahar se strong rehna.\n\nExample: Even after losing the match, he kept a stiff upper lip.\n= Match haarne ke baad bhi usne himmat nahi haari aur khud ko sambhale rakha.",
       "syn": "Whistle in the Dark — डर के बावजूद बहादुरी का दिखावा करना",
       "ant": "Express feelings openly — भावनाएँ खुलकर व्यक्त करना"
     },
@@ -2618,9 +2618,9 @@
     },
     {
       "en": "Put on a Brave Face",
-      "hi": "पर बहादरी का मखौटा लगाना",
-      "meaning": "Hide distress under brave expression",
-      "sentence": "People could describe the situation as \"Put on a Brave Face\" because someone chose to hide distress under brave expression.",
+      "hi": "andar se pareshan, dukhi ya dara hua hona, lekin bahar se strong aur confident dikhna.",
+      "meaning": "apni tension ya fear chhupa kar himmat dikhana.",
+      "sentence": "She put on a brave face before the interview",
       "syn": "Whistle in the Dark — डर के बावजूद बहादुरी का दिखावा करना",
       "ant": "Show fear openly — डर खुलकर दिखाना"
     },
@@ -3322,9 +3322,9 @@
     },
     {
       "en": "Thorn in One's Side",
-      "hi": "लगातार परेशानी की वजह",
+      "hi": "लगातार परेशानी की वजह___________Thorn = kaanta → kaanta baar-baar chubhe",
       "meaning": "A constant source of trouble",
-      "sentence": "This was a clear example of \"Thorn in One's Side\" because there was a constant source of trouble.",
+      "sentence": "That noisy neighbor is a thorn in my side",
       "syn": "Albatross Around One's Neck — गले की हड्डी / ऐसा बोझ जिससे बच न सकें",
       "ant": "Source of relief — राहत का स्रोत"
     },
@@ -3570,9 +3570,9 @@
     },
     {
       "en": "To Sup with the Devil",
-      "hi": "से मेल कर अपने को मुसीबत में डालना",
+      "hi": "bure aadmi ke saath milkar kaam karna ya uske saath deal karna.",
       "meaning": "Get entangled with one's own bad alliance",
-      "sentence": "The expression \"To Sup with the Devil\" suited the moment because someone chose to get entangled with one's own bad alliance.",
+      "sentence": "He had to sup with the devil to get the information.",
       "syn": "Hoist with One's Own Petard — अपनी ही चाल में फँसना",
       "ant": "Avoid harmful alliances — हानिकारक गठजोड़ से बचना"
     },

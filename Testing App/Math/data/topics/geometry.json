@@ -1378,5 +1378,4705 @@
     "order": 429,
     "attemptStatus": "unattempted",
     "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "P, Q and R are the three angles of a triangle. If P - Q = 20° and Q - R = 26°, then ∠P is equal to:",
+    "questionImage": null,
+    "options": [
+      "52°",
+      "46°",
+      "92°",
+      "82°"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=10459",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonmh70gx8",
+    "order": 436,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "PQR is a triangle. The bisectors of the internal angle ∠Q and external angle ∠R intersect at S. If ∠QSR = 40°, then ∠P is:",
+    "questionImage": null,
+    "options": [
+      "40°",
+      "60°",
+      "80°",
+      "30°"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=22184",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonmxnpkxd",
+    "order": 437,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In △ABC, AD ⊥ BC at D and AE is the bisector of A. If /b = 82\" and ∠C = 38°, then what is the measure of ∠DAE?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=23128",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonmzgr7ji",
+    "order": 438,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In △ABC, D is a point on AC such that AB = BD = DC. If ∠BAD = 70°, then the measure of ∠B is:",
+    "questionImage": null,
+    "options": [
+      "80°",
+      "75°",
+      "85°",
+      "70°"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=24400",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonmeh56da",
+    "order": 439,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a triangle HJK, HJ = HK. G is a point on HJ such that HG = GK = JK. What is the degree measure of two-thirds of (∠HGK + ∠GKJ)?",
+    "questionImage": null,
+    "options": [
+      "84°",
+      "136°",
+      "90°",
+      "96°"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=24800",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonmqssdob",
+    "order": 440,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In △ABC, D is a point on BC such that ∠BAD = 1/2 ∠ADC, ∠BAC = 77° and ∠C = 45°. What is the measure of ∠ADB?",
+    "questionImage": null,
+    "options": [
+      "77°",
+      "64°",
+      "58°",
+      "45°"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=25045",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonmcnf878",
+    "order": 441,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "The internal bisectors of ∠Q and ∠R of triangle PQR meet at S. If ∠P = 75°, then ∠QSR is:",
+    "questionImage": null,
+    "options": [
+      "105.5°",
+      "102.5°",
+      "112.5°",
+      "127.5°"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=25879",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonmsxhfzg",
+    "order": 442,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "The sides PQ and PR of △PQR are produced to points S and T, respectively. The bisectors of ∠SQR and ∠TRQ meet at U. If ∠QUR = 79°, then the measure of ∠P is:",
+    "questionImage": null,
+    "options": [
+      "49°",
+      "41°",
+      "23°",
+      "22°"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=26320",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonmtx9lir",
+    "order": 443,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a quadrilateral WXYZ, ∠W = 74° and ∠X = 58°. The bisectors of ∠Y and ∠Z meet at O. What is the measure of ∠ZOY?",
+    "questionImage": null,
+    "options": [
+      "68°",
+      "60°",
+      "66°",
+      "59°"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=27550",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonm8iuzdm",
+    "order": 444,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a quadrilateral ABCD, the bisectors of ∠C and ∠D meet at E. If ∠CED = 56° and ∠A = 49°, then the measure of ∠B is:",
+    "questionImage": null,
+    "options": [
+      "54°",
+      "67°",
+      "71°",
+      "63°"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=27660",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonmnj75u3",
+    "order": 445,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In quadrilateral PQRS, the bisectors of ∠R and ∠S meet at point T inside the quadrilateral and ∠STR = 32.5°. If the ratio of ∠P to ∠Q is 4:9, then what is the difference between the measures of ∠Q and ∠P?",
+    "questionImage": null,
+    "options": [
+      "24°",
+      "27°",
+      "28°",
+      "25°"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=27810",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonmfyd008",
+    "order": 446,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In triangle ABC, ∠C is an obtuse angle. The bisectors of the exterior angles at A and B meet BC and AC produced at D and E respectively. If AB = AD = BE, then ∠ACB is:",
+    "questionImage": null,
+    "options": [
+      "120°",
+      "108°",
+      "105°",
+      "116°"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=28047",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonml5b95m",
+    "order": 447,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In △PQR, ∠P = 120°, PS ⟂ QR at S and PQ + QS = SR. Then the measure of ∠Q is:",
+    "questionImage": null,
+    "options": [
+      "40°",
+      "20°",
+      "30°",
+      "50°"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=28594",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonmpz4a9x",
+    "order": 448,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "Select the correct statement about the properties of a triangle?",
+    "questionImage": null,
+    "options": [
+      "The sum of two sides may be equal to the third side.",
+      "The sum of two sides is always equal to the third side.",
+      "The sum of two sides is always greater than the third side.",
+      "The sum of two sides is always less than the third side."
+    ],
+    "correctIndex": 2,
+    "solutionText": "",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonm05ffb4",
+    "order": 449,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "The lengths of the three sides of a triangle are 19 cm, 25 cm and y cm. Which of the following options gives the possible value of y more accurately?",
+    "questionImage": null,
+    "options": [
+      "6 < y < 44",
+      "6 ≤ y < 44",
+      "6 < y ≤ 44",
+      "6 ≤ y ≤ 44"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=32076",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnc2052u",
+    "order": 450,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "The lengths of two sides of a triangle are 14 cm and 9 cm. Which of the options below can be the length of the third side?",
+    "questionImage": null,
+    "options": [
+      "17 cm",
+      "23 cm",
+      "24 cm",
+      "5 cm"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=32215",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnyfz5kz",
+    "order": 451,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "Taking any three of the line segments out of segments of length 2 cm, 5 cm, 7 cm and 8 cm, the number of triangles that can be formed is:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "3",
+      "4",
+      "2"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=32383",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnjebtn7",
+    "order": 452,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "If a and b are the lengths of two sides of a triangle such that the product ab = 24, where a and b are integers, then how many such triangles are possible?",
+    "questionImage": null,
+    "options": [
+      "18",
+      "16",
+      "12",
+      "15"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=32634",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonn7m65od",
+    "order": 453,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "x, y and z are the sides of a triangle. If z is the largest side and x² + y² > z², then the triangle is a:",
+    "questionImage": null,
+    "options": [
+      "Right-angled triangle",
+      "Acute-angled triangle",
+      "Obtuse-angled triangle",
+      "Isosceles right-angled triangle"
+    ],
+    "correctIndex": 1,
+    "solutionText": "",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnta6345",
+    "order": 454,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "The sides of a triangle are in the ratio 4:5:6. The triangle is:",
+    "questionImage": null,
+    "options": [
+      "Acute-angled",
+      "Right-angled",
+      "Obtuse-angled",
+      "Either acute-angled or right-angled"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=33560",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonn5m2stt",
+    "order": 455,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "A triangle with side lengths 13.3, 19 and 24.7 must be:",
+    "questionImage": null,
+    "options": [
+      "Acute-angled",
+      "Obtuse-angled",
+      "Right-angled",
+      "None"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=33657",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonn8x2075",
+    "order": 456,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "Which of the following sets of lengths (in cm) will give three sides of an obtuse- angled triangle?",
+    "questionImage": null,
+    "options": [
+      "15, 62, 64",
+      "16, 63, 65",
+      "17, 64, 66",
+      "18, 65, 67"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=34026",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonndpyxh7",
+    "order": 457,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "If three altitudes of a triangle is in the ratio 3:4: 5, then triangle is?",
+    "questionImage": null,
+    "options": [
+      "Acute-angled",
+      "Right-angled",
+      "Obtuse-angled",
+      "Equilateral triangle"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=35070",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnmonjga",
+    "order": 458,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "The sides of a scalene acute triangle are 14, 22 and x, where x is an integer and 22 is the largest side. What will be the average of the minimum and maximum values of x?",
+    "questionImage": null,
+    "options": [
+      "18",
+      "19",
+      "21",
+      "20.5"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=35680",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonncxg67y",
+    "order": 459,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In an obtuse-angled triangle PQR, ∠Q is obtuse. If PQ = 11 cm and QR = 15 cm, find the minimum possible integer length of PR.",
+    "questionImage": null,
+    "options": [
+      "18 cm",
+      "19 cm",
+      "22 cm",
+      "23 cm"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=35810",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonncifqj0",
+    "order": 460,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "8, 15,31,x are sides of quadrilateral what is the range of x",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=39380",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonn622ddh",
+    "order": 461,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "Triangle ABC Is right-angled at B, and point D lies on BC such that BD = 5 cm, AD = 13 cm. and AC = 37 cm. Find the length of DC (in cm).",
+    "questionImage": null,
+    "options": [
+      "25",
+      "35",
+      "5",
+      "30"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=39500",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonndlnpnh",
+    "order": 462,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "Calculate the area of a triangle whose side lengths are √2, 3√2 and 2√5.",
+    "questionImage": null,
+    "options": [
+      "√6",
+      "3",
+      "√10",
+      "√15/2"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=39858",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonn3k646h",
+    "order": 463,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "an acute angled triangle ABC, AD is a perpendicular drawn from 'A' on the side BC. If AB = 16 cm, BD = 4 cm and CD = 8 cm, then find the length of side AC.",
+    "questionImage": null,
+    "options": [
+      "4√19 cm",
+      "2√19 cm",
+      "6√19 cm",
+      "8√19 cm"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=40200",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonn7b7mf5",
+    "order": 464,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In an acute angled triangle XYZ, XP is an altitude drawn on side YZ. O is a point on XP such that XY = 12 cm, OY = 5 cm, and oZ = 9 cm, then find the length of XZ.",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=40800",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonndzj85y",
+    "order": 465,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "A pole 23 m long reaches a window which is 3 √5 m above the ground on one side of a street. Keeping its foot at the same point, the pole is turned to the other side of the street to reach a window 415 m high. What is the width (in m) of the street?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=41374",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnl156di",
+    "order": 466,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "5 m long ladder is leaning against a wall and it reaches the wall at a point 3 m high. By how much distance the ladder should be moved towards the wall so that its top reaches a point 4.8 m high.",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=41854",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnhyxk3l",
+    "order": 467,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a triangle ABC, ∠B = 90°, if points D and E are on side BC such that BD= DE= EC, then which of the following is true?",
+    "questionImage": null,
+    "options": [
+      "5AE2 = 2AC2 + 3AD2",
+      "8AE = 5AC' + 3AD7",
+      "8AE2 = 3AC2 4 SAD2",
+      "5AE4 = 2AC2 + ∠AD-"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=42000",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnq40ezw",
+    "order": 468,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a triangle ABC, 4B=30° and ∠C=45°. If BC=50cm then find the length of AB? √3+1 100",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=4581050",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnj2h577",
+    "order": 469,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "If the angles of a triangle are 30° and 45° and the included side is (108 +6) cm.then what is the area of the triangle?",
+    "questionImage": null,
+    "options": [
+      "18(3+1) cm²",
+      "12(√3+1) cm²",
+      "(15",
+      "24(√3+1)cm²"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=46162",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonn303emw",
+    "order": 470,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "Let ABC be a triangle with area 36 square cm. if AB = 9 cm, BC = 12 cm and ABC = 0, then what is cos equal to?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=46663",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnugf9gg",
+    "order": 471,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "If three sides af a triangle are 8cm, 17cm and x em. for what value of x area of triangle is maximum?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=46780",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnx3t0c9",
+    "order": 472,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a triangle ABC, AB=8cm, AC=12cm, AD is the angle bisector of ∠BAC. If ∠BAC = 60°. What is the length of AD?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=47252",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnv9g4rs",
+    "order": 473,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In the triangle ABC, AB = 15 cm and AC = 10 cm and ∠BAC = 60°. What is the value of the length of the side BC?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=48499",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonn7nm8zh",
+    "order": 474,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In triangle XYZ, sides XY = 12 cm, YZ =15 cm and angle ∠Y =120°. What is the length of side XZ? XYZ, XY=12 cm, YZ= 15 cm ZY=120° X2?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=48654",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnypbb32",
+    "order": 475,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In △∠MN, ∠M = 8√2 cm, ∠N =17 cm and ∠∠MN =135°. What is the length (in cm) of MN?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=49200",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonn4q5fxa",
+    "order": 476,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In an obtuse-angled triangle ABC, the length of its longest side AB is 50 cm and one of the other two sides is 42 cm. If the area of the triangle is 294 cm², what is the length (in cm) of its third side?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=49318",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnjtx2vi",
+    "order": 477,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a triangle ABC, if three sides are a = 5, b=7 and c=3, then find angle B?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=49710",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonndk45dx",
+    "order": 478,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In isosceles △ABC, AB = AC = 17cm,D is any point on BC such that AD=15cm and CD=4cm then find length of BD?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=50120",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonn81qqgo",
+    "order": 479,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In triangleABC, D'is a point on BC such that BAD = DAC If.AB = 24, AC = 16 and BC = 12.5 then find the length of, BD.",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=50880",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnxn7s2b",
+    "order": 480,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In △ABC, AD is the bisector of ∠BAC, meeting BC at D. if AC = 21cm, BC=12cm and the length of BD is 2cm less than DC, then length of side AB is:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=51207",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonn5i6y6q",
+    "order": 481,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "ABC is right- angled triangle, right-angled at B. D is a point on AC such that AD = 12cm and CD = 16 em if BD bisects ∠ABC then the perimeter of △ABC will be:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=51369",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonn85yvml",
+    "order": 482,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a triangle ABC with sides 6cm, 7cm, and 8cm, the angle bisectar of the largest angle divides the opposite side into two segments. What is the length of the shorter segment?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=51890",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnhlhlvy",
+    "order": 483,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "A flag pole on the top of a mall building is 75m high. To an observer at a height of 400m, the mall building and the pole subtend equal angle 0. If the height of the mall building is 325m. Then find the horizontal distance (in m) of the observer from the pole.",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=51978",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnmypg0p",
+    "order": 484,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In △ABC, C = 90° and D is a point on CB such that AD is the bisector of ∠A. If AC = 5 cm and BC = 12 cm, then what is the length of AD?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=52440",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnna946u",
+    "order": 485,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In the given triangle PQR, S and T are two points on side PQ and PR respectively such that PS:SQ=3:4 and PT:TR=6:5,if area of area of △PQR? STQR -177cm² then Find",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=53400",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonn01tg27",
+    "order": 486,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a triangle PQR, S and T are the points on PQ and PR respectively. If ST isperpendicular to PR, area of triangle PQR is 320cm², PR=28cm, QS:PS=9:7, PT:TR=2:5 then find the length of ST?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=53533",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnwcg8ze",
+    "order": 487,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a triangle ABC, AD is angle bisector of ∠A and AB:AC=3:4, If the area of triangle ABC is 350cm², then what is the area (in cm²) of triangle ADC?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=55700",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnvn9yqv",
+    "order": 488,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In triangle ABC, D is a point on BC such that BD: DC = 3: 4. E is a point on AD such that AE: ED = 2: 3. Find the ratio area (ECD): area (AEB).",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=56371",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonngttxgk",
+    "order": 489,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In △ABC and △DEF, we have AB/df = bC/de = ac/ef, then which of the following is true?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=57430",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonn84szam",
+    "order": 490,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "If in triangle PQR and triangle DEF, P = 52\", ∠Q = 74\", ∠R = 54°, ∠D = 54°,∠E = 74°, ∠F = 52°, then which of the following is correct?",
+    "questionImage": null,
+    "options": [
+      "AQR~ΔFED",
+      "ΔPRQ~ΔFED",
+      "ARQP~AFEDX",
+      "△PQR-ADEFX"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=58806",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonn973i51",
+    "order": 491,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "The areas of two similar triangles are 841 cm² and 676 cm², respectively. What is the ratio of their corresponding altitudes?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=58920",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnk6vr73",
+    "order": 492,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "△ABC - △PQR. The perimeters of △ABC and △PQR are 72 cm and 43.2 cm, respectively. What is the ratio of the area of △ABC to the area of △PQR?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=59000",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnlp5f89",
+    "order": 493,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "The perimeters of two similar triangles ABC and PQR are 156 cm and 46.8 cm, respectively. If BC = 19.5 cm and QR = x cm, then the value of x is:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=61521",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonntj7u88",
+    "order": 494,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "It is given that △ABC ~ AEDF such that AB = 5 cm, AC = 7.5 cm, DF =15 cm and ED = 12.5 cm. Find the sum of the remaining sides of the triangles.",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=61736",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonn7w0iv0",
+    "order": 495,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "Let △ABC ~ AQPR and (Area of △ABC): (Area of △PQR) = 121: 64. IfQP =14.4 cm, PR = 12cm and Ac =18cm, then what is the length of AB?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=62138",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnvalcsb",
+    "order": 496,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "△ABC is similar to △PQR. AB = 4 cm, BC = 8 cm and AC = 10 cm. If QR = 16 cm, then what is the area of △PQR?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=62183",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonn2iijnk",
+    "order": 497,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "Two isosceles triangles have equal vertical angles and their areas are in the ratio 4.84: 5.29. What is the ratio of their corresponding heights?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=62492",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonn9fet7u",
+    "order": 498,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "Triangle ABC is similar to triangle PQR. AM and PS are medians, If AM/PS=3/5 the area of triangle PQR is 150 cm² and BC = 6 cm, then the sum of the lengths of AM and QR is:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnxjwfbg",
+    "order": 499,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In △ABC, XY is drawn parallel to BC, cutting sides at X and Y, where AB = 5.4 cm, BC = 7.2 cm and BX = 3 cm. What is the length of XY (in cm)?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=63025",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonn3dq024",
+    "order": 500,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In △ABC, D and E are points on the sides AB and AC, respectively, such that DE || BC. If AD = 5 cm, DB = 9 cm, AE = 4 cm and BC = 15.4 cm, then the sum of the lengths of DE and EC (in cm) is:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=63201",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnqv9c74",
+    "order": 501,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a triangle ABC, points P and Q are on AB and AC, respectively, such that AP = 4cm, PB = 6cm, AQ = 5cm and QC = 7.5cm. If PQ = 6cm, then find BC (in cm).",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=63506",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnh58zll",
+    "order": 502,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In triangle ABC, D and E are points on sides AB and AC such that DE || BC. If AD = 4 cm, DB = 12 cm, AE = 3 cm, and EC = 9 cm, what is the ratio of the area of triangle ADE to the area of triangle ABC?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=63771",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnvgkypn",
+    "order": 503,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In triangle ABC, D is a point on BC. Through D, a line parallel to AB meets AC at E. If CD=6 cm, BD=3 cm, and the area of triangle CDE is 54 cm², then the area of triangle ABC is:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=63896",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnnmc49u",
+    "order": 504,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a △ABC, D and E are points lie on AB and AC. M and N are points lie on BD and EC respectively. If DE || MN || BC, AD:DM=3:2, DM:MB=6:7 and area of DENM=432cm² then find the area of MNCB?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=64824",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnheqni9",
+    "order": 505,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In triangle ABC, M& N is a point on side AB & AC respectively & O is an intersection point of side MC & NB. Given AM:MB =7:9 & MN is parallel to BC. Find the area ratio of AMON to ABOC?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=65143",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonn9kakin",
+    "order": 506,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In △ABC, DE || AB, Where D and E are points on sides AC and BC, respectively. F is a point between C and D such that EF || BD. If AD = 15 cm, DC = 10 cm, then the length of CF is:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=65482",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnv3zl10",
+    "order": 507,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In △ABC, DE || AB, Where D and E are points on sides AC and BC, respectively. F is a point between C and D such that EF || BD/If AD = 15 cm, DC = 10 cm, then the length of CF is:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=65701",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonntvqr3m",
+    "order": 508,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a triangle ABC, D and E are the points on side AC and BC, respectively such that DEI AB. F is a point on CE such that DF || AE. If CE= 6 cm, and CF =2.5 cm, then BC is equal to:-",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=65889",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnez5q83",
+    "order": 509,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a triangle ABC, D and E are the points on side AC and BC, respectively such that DE || AB. F is a point on CE such that DF || AE. If FE =12 cm, and BE = 28 cm, then CF is equal to:-",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=66059",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnd62vfz",
+    "order": 510,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In △ABC, D and E are two points on sides AC and AB, respectively,such that ADE =< B.if AD=7.6cm,AE=7.2cm,BE=4.2cm and BC=8.4cm then DE is equal to?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=66934",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnjssx0t",
+    "order": 511,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In △ADC, E and B are the points on the sides AD and AC respectively such that ABE=∠ADC) if AE=6cm,BC=2cm,BE=3cm and CD=5cm then, (AB+DE) is equal to?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=67204",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnrvjckz",
+    "order": 512,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a triangle PQR, RS intersects PQ at point S. The sides of the triangle QR = 36 cm, SQ = 27 cm, RS = 18 cm and ∠QRS = QPR. What is the ratio of the perimeter of APRS to that of AQSR?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=67582",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnqw74xw",
+    "order": 513,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a triangle ABC, AC = 8.4 cm and BC = 14 cm, P is a point on AB such that CP = 11.2 cm and ∠ACP = ∠B. What is the length (in cm) of BP?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=68067",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnk7ab6d",
+    "order": 514,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "D is a point on the side BC of a △ABC such that ∠ADC = ∠BAC. If CA = 10cm and BC =16cm, then the length of CD is:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=68520",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonn77xoas",
+    "order": 515,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In △ABC, P is a point on AB such that PB: AP = 3: 4 and PQ is parallel to AC. If AR and QS are perpendicular to PC and QS = 9 cm, what is the length (in cm) of AR?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=68820",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnaljedx",
+    "order": 516,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In △ABC, AB = AC and D is a point on side AC such that BD = BC. If AB = 12.5cm and BC = 5cm, then what is the measure of DC?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=69022",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnr6e223",
+    "order": 517,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "Two poles of heights 10 m and 15 m are 25 m apart. What is the height of the point of intersection of the lines joining the tip of each pole to the foot of the other pole?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=69927",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnkfoxlv",
+    "order": 518,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "Let $ be as an arbitrary point on the side PQ of an acute-angled △PQR. Let T be the point of intersection of QR extended with the straight line PT drawn parallel to SR through P. let U be the point of intersection of PR extended with the straight line QU drawn parallel to SR through Q. if PT=a and QU=b, then the length of SR is?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=70019",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonncoyrek",
+    "order": 519,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In triangle ABC, P and Q are the mid points of AB and AC, respectively. R is a point on PQ such that PR: RQ = 3: 5 and QR =20 cm, then what is the length (in cm) of BC?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=71656",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnercb0j",
+    "order": 520,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "The mid points of AB and AC of a triangle ABC are X and Y, respectively. If BC + XY = 24 units, then the value of BC - XY is?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=71680",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnub7kqr",
+    "order": 521,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a △ABC, D, E and F are the mid-points of side BC, CA and AB respectively. If BC = 25.6 cm, CA =18.8 cm and AB =20.4 cm, what is the perimeter (in cm) of the △DEF?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=72234",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnvby1rd",
+    "order": 522,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "Let A,B,C be the mid-points of sides XY,YZ and XZ, respectively of △XYZ. If the area of △XYZ is 8464 \"cm²\", then find the area (in \"cm²\") of △ABC.",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=72302",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonn8avgnj",
+    "order": 523,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "ABC is a triangle with sides AB = 41 cm, BC = 28 cm and CA = 15 cm. If D, E and F are the midpoints of AB, BC and CA respectively, then what is the area of the triangle DEF?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=72437",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnfwrdxv",
+    "order": 524,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "On a plane area there are two vertical towers separated by 100 feet apart. The shorter tower is 40 feet tall. A pole of length 6 feet stands on the line joining the base of two towers so that the tip of the towers and tip of the pole are also on the same line. If the distance of the pole from the shorter tower is 75 feet, then what is the height of the taller tower (approximately)?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=72504",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonn6kf2sc",
+    "order": 525,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "Suhas, a 3.15 m tall tree, and an 11.25 m tall building are positioned such that their feet on the ground are collinear and the tree is located between Suhas and the building. The tree is located at a distance of 45 m from the building. Further, the eyes of Suhas, the top of the tree, and the top of the building fall in one line, and the eyes of Suhas are at a height of 1.8 m from the ground. At what distance (in m) from Suhas is the tree located?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=72995",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonneqtuz6",
+    "order": 526,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "WXYZ is a quadrilateral in which XQ and P are perpendicular to WY such that XQ = P. Diagonals ZX and WY intersect each other at point O. If OX = 12 cm, then find the value of zx (in cm).",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=77346",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnvy2eiq",
+    "order": 527,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "Let D and E be two points on the side BC of △ABC such that AD = AE and ∠BAD = ∠EAC. If AB = (3x+1) cm, BD = 9 cm, AC = 34 cm and EC = (y +1) cm, then the value of (x + y) is:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=77933",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonn7xgz73",
+    "order": 528,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a triangle △PQR, ∠R = 62°. The perpendicular bisector of PQ at S meets QR at T. If ∠TPR = 38°, what is the measure of ∠PQR?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=78327",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonn5nlcqc",
+    "order": 529,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In △ABC, Mis the midpoint of the side AB. N is a point in the interior of ABC such that CN is the bisector of ∠C and CN ⊥ NB. What is the length (in cm) of MN, if BC =10 cm and AC = 15 cm?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=78708 https://youtu.be/EBYNCG2Q30A?t=81566",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnhkxuk4",
+    "order": 530,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In triangle ∠MN, ∠∠MN = 67° and ∠∠NM = 42°. If P is the incenter of △∠MN, find the measure of ∠MPN.",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=81566",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnozorcf",
+    "order": 531,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a triangle ABC, I is a point which is cquidistant from all sides of triangle. If ∠B=56 then find AIB+∠BIC =?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=81719",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnz14x9e",
+    "order": 532,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In ABC, AD is perpendicular to BC and AE is the bisector of BAC. If ABC = 58° and ∠ACB=34°, then find the measure of DAE.",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=81912",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonn48ldad",
+    "order": 533,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "The area of a triangle is 15 sq cm and the radius of its incircle is 3 cm. Its perimeter is equal to:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=82457",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnbcjn4h",
+    "order": 534,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "What is the radius of the incircle of the triangle whose sides are 51cm, 37cm and 20cm?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=82800",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnduswpl",
+    "order": 535,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "The lengths of the three sides of a triangle are 13 cm, 14 cm and 15 cm, respectively. Find the area (in cm²) of the incircle of this triangle. [Use T = 3.14]",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=83172",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnufvxmg",
+    "order": 536,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a triangle PQR, PQR=90°, PQ=10cm and PR=26cm, then what is the value (in em of inradius of incircle?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=84300",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnew29e3",
+    "order": 537,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "ABC is a right angled triangle right angled at A. The bisectors of the acute angles intersect at the point M. If the distance from M to the hypotenuse is 3vZ, then what is the distance from M to A?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=84563",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnsuxh4e",
+    "order": 538,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "The sides of a triangle are 36 cm, 105 cm and 111 cm. The inradius of the triangle What is?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=84373",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonngd2tdb",
+    "order": 539,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "ABC is a right angled triangle right angled at A. The bisectors of the acute angles intersect at the point M. If the distance from M to the hypotenuse is 3root-2, then what is the distance from M to A?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=84493",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonn313qju",
+    "order": 540,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "The incenter of a triangle is located at (3,4). The length of the altitude from the incenter to side AB is 2 units. What is the radius of the incircle of the triangle?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=86099",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonn6cee9a",
+    "order": 541,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "Inside △ABC a semicircle is drawn on side BC, if AB = 25, BC = 17 & AC = 26 then find radius of semicircle whose diameter lies on side BC and touches another two sides =? wrirte special=true in this question",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=86142",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonny5rmgs",
+    "order": 542,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "The perimeter of △ABC is 24 cm and its side BC = 9 cm. AD is the bisector of ∠BAC, while l is the incentre. What is the value of Al:ID?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=87063",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonnrpshpo",
+    "order": 543,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "Three sides of a △ABC are, BC=28cm, CA=23cm and AB=47cm. the internal bisector of A meets BC at D, and the bisector passes through incentre O. find AO:OD?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=87100",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonoh1lknq",
+    "order": 544,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In the given figure, a circle is inscribed in △PQR, such that it touches the sides PQ, QR and RP at points D, E, F, respectively. If the lengths of the sides PQ = 15 cm, QR = 11 cm and RP=13 cm, then find the length of PD?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=87524",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aononiom6s",
+    "order": 545,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "A circle is inscribed in A ABC, touching AB, BC and AC at the points P.Q and R respectively. If AB - BC = 4 cm, AB - AC = 2 cm and the perimeter of A ABC = 36 cm, then PB + AR (in cm) is:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=88119",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonoeb9cl9",
+    "order": 546,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "A triangle PQR is drawn to circumscribe a circle of radius 6cm such that segments QT and TR into which QR is divided by the point of contact T, are of lengths 12cm and 9 cm respectively.if the area of △PQR =189cm² then length of side PQ is?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=88863",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonomn1o4i",
+    "order": 547,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a scalene triangle field, a pole is situated and angle of elevation from the corners to the top of the pole are equal then the pole is situated on which point of triangular ficld.",
+    "questionImage": null,
+    "options": [
+      "Circumcontro",
+      "Incentre",
+      "orthocenter",
+      "Controid"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=92676",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonoeeaayx",
+    "order": 548,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "If O and I is the circumcenter and incenter of a triangle DEF respectively ∠EOF=124°, then EIF =?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=94776",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonois18fu",
+    "order": 549,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "A triangle ABC is inscribed in a circle with center O. AO is produced to meet the circle at K and AD 1 BC. If ∠B =80° and ∠C = 64°, then the measure of ∠DAK is:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=94874",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aono9rj97k",
+    "order": 550,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "sides of a triangle are 9 cm, 6 cm and 5 cm. What is the value of circumradius of this triangle?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=97791",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonoy6myys",
+    "order": 551,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "If the circumradius of triangle ABC is 12 em, and its area is 48 cm², find the product of its sides.",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=97912",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonozl6etu",
+    "order": 552,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "If a triangle has an obtuse angle, where will its circumcentre be located?,?,",
+    "questionImage": null,
+    "options": [
+      "On the longest side of the triangle.",
+      "On the vertex of the obtuse angle.",
+      "Inside the triangle.",
+      "Outside the triangle"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonogvjkk8",
+    "order": 553,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "The sides of a triangle are 56 cm, 90 cm and 106 cm. The circumference of its circumcircle is:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=98078",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aono0aoyrm",
+    "order": 554,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "The sides of a triangle are 11 cm, 60 cm and 61 cm. What is the radius of the circle circumscribing the triangle?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=98070",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aono1nyzlg",
+    "order": 555,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In triangle DEF, side lengths are DE = 75 cm, EF = 100 cm, and DF = 125 cm. Let M be the midpoint of side DF. Find the length of EM.",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=98210 https://youtu.be/EBYNCG2Q30A?t=98336",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonocga64v",
+    "order": 556,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a circle of radius 10cm with center O, PQ and PR are two chords each of length 12cm. PO intersects chord QR at the point S. The length of OS is: and what is the length of chord QR",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=98497",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aono0gahtg",
+    "order": 557,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a circle of radius 10cm with center O, PQ and PR are two chords each of length 12cm. PO intersects chord QR at the point S. The length of OS is:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=100055",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonoc4zqub",
+    "order": 558,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "Find the radio of circum-radius to in-radius if sides of triangle are in the ratio 4:5:7?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=100197",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonoc60jyk",
+    "order": 559,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a right-angled triangle, the Orthocenter lies at which of the following points?,?,",
+    "questionImage": null,
+    "options": [
+      "The midpoiai of the buotenuse.",
+      "The vertex",
+      "A point on",
+      "The mid e."
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonomm4ptd",
+    "order": 560,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "For a triangle with one interior angle greater than 900, where is its Orthocenter located? 90°,?",
+    "questionImage": null,
+    "options": [
+      "On one of the sides of the triangle.",
+      "Outside the triangle.",
+      "Inside the triangle.",
+      "At one of the vertices of the trianglo."
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonoskzc2y",
+    "order": 561,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In any triangle sum of all three altitude will be: -",
+    "questionImage": null,
+    "options": [
+      "Equal to sum of all three sides",
+      "Less than the sum of all three sides",
+      "Greater than the sum of all three sides",
+      "Equal to twice of the sum of all three sides"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aono25gfaw",
+    "order": 562,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "in △ABC, the perpendiculars drawn from A, B and C meet the opposite sides at D, E and F, respectively. AD, BE and CF intersect at point P. If EPD=122° and the bisectors of A and ∠B meet at Q, then the measure of AQB is:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=101857",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aono6q4ew7",
+    "order": 563,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In triangle PQR, QS is perpendicular to PR, RT is perpendicular to PQ and QS and RT intersect each other at O. The bisectors of OQR and ORQ meet at point M. If QPR= 56°, then wat will be the measure of QMR?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=102093",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonopoe9d9",
+    "order": 564,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In triangle ABC, O is the orthocentre and I is the incentre. If ∠BIC - BOC = 90°, what is A?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=102286",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aononkwlzt",
+    "order": 565,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "What is the distance between the orthocenter and the circumcenter of a triangle whose sides measure 36cm, 77cm and 85cm?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=102400",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aono6qpu4e",
+    "order": 566,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a triangle PQR, PX, QY and RZ be altitudes intersecting at O. If PO=6cm, PX=8cm and QO=4cm, then what is the value (in cm) of QY?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=102784",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aono5lixp8",
+    "order": 567,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "Let AD be the altitude of a triangle ABC. If (AB + AC) = p, (AB -AC) = q and (BD - CD) = r, then what is BC equal to?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=103052",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aono8a22ov",
+    "order": 568,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "If the distance between centroid and circumcentre of a triangle is Gcm the find distance between orthocentre and circumcentre?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=103368",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonozm7joe",
+    "order": 569,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "If M is the mid-point of the side BC of ABC, and the area of ABM is 19 cm², then the area of ABC is:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=103696",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonopso3r0",
+    "order": 570,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "Asha cuts a triangle out of a cardboard and tries to balance the triangle horizontally at the tip of her finger. On what point will she be able to balance the shape for any kind of triangle?",
+    "questionImage": null,
+    "options": [
+      "Incentre",
+      "circumcentre",
+      "Centroid",
+      "Orthocenter"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=105123",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonolyw4q9",
+    "order": 571,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "The point A of a triangle ABC moves parallel to the straight-line BC. Which one among the following also moves along a straight line parallel to BC? ABC A, BC BC?",
+    "questionImage": null,
+    "options": [
+      "Circumcentre",
+      "Centroid",
+      "Incontre",
+      "Orthocenter"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=105245",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aono7fjoct",
+    "order": 572,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In △ABC, D is the mid-point of BC and G is the centroid. if GD = 10 cm, then the length of AD is",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=105421",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonorlyqz7",
+    "order": 573,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In XYZ, if G is the centroid and XL is the median with length 18 cm, then the length of XG is:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=105511",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonoxm057e",
+    "order": 574,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In triangle ABC, D, E and F are the midpoints of sidesBC, C and AB, respectively. The medians AD, BE and CF meet at point G.of What is the ratio of the length median to the distance from vertex to centroid?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=105602",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonoog4dko",
+    "order": 575,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "Which of the following statements is always true for an equilateral triangle??",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=106045",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aono79qn5g",
+    "order": 576,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In an equilateral triangle ABC of side 18 em, what is the sum (in em) of the perpendicular distances of the centroid G from the sides of the triangle?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=106089",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonon68fi1",
+    "order": 577,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In △ABC. AB = 6 cm, AC = 8 cm, and BC = 9 cm. The length of median AD is:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=106521",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aono8h18t5",
+    "order": 578,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In △PQR, C is the centroid and PQ=30cm, QR=36cm and PR=50cm. If D is the midpoint of QR, then what is the length (in cm) of CD?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=106834",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonooar43t",
+    "order": 579,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In △ABC, two medians AD and BE intersect at G at right angles. If AD = 12 cm and BE = 9 cm, then the length of AB is equal to:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=106978",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonorzz9b9",
+    "order": 580,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "Two medians AD and BE of a triangle ABC intersect at G at right angles. If BE=36cm and AD=21cm then find BC?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=107101",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonouhb402",
+    "order": 581,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "Two medians JX and KY of JKL intersect each other at Z at right angles. If KL = 22 cmm and KY = 12 cm, then what is the length of JX?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=107241",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aono5pmx65",
+    "order": 582,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "If G is the centroid of triangle ABC and AG =BC, then ∠BGC is?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=107589",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonoinsx1k",
+    "order": 583,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "G is centroid of given PQR, GN=6cm, GM=4.5cm PGQ=90°, then find the length of GR.",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=107859",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonoepk45o",
+    "order": 584,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "The lengths of three medians of a triangle are 6.5cm, 7cm and, 7.5cm. the area (in cm²) of the triangle is?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=108400",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aono5dr6k4",
+    "order": 585,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In △ABC, D and E are the mid points of sides BC and AC, respectively. If AD=10.8 cm, BE=14.4 cm and AD and BE intersect at G at a right angle, then the area (in cm²) of ABC is:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=109029",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonoktmc2j",
+    "order": 586,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In triangle ABC, AC = 16 and median AD and BE are 12 and 18 respectively. Find the area of triangle ABC?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=109112",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonoov65dt",
+    "order": 587,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a triangle ABC, BD & CE are two medians which intersect each other at right angle. AB = 22, AC =19, find BC =?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=109853",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonou3sewv",
+    "order": 588,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "A ABC is an isosceles triangle in which AB=AC. if medians on equal sides are perpendicular to each other BC=root-10cm then find length of each equal sides? ADA",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=110294",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonol35u98",
+    "order": 589,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In the triangle ABC, the sum of square of all sides is 64 cm². Find the sum of square of all three medians?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=110942",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aono9sgfqh",
+    "order": 590,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "The sides of a triangle are k, 1.5k and 2.25k. what is the sum of the squares ofits medians?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=111000",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonoeepnwi",
+    "order": 591,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In triangle ABC, a line segment DE is drawn parallel to side BC through the centroid G. D lies on AB and E lies on AC. What is the ratio of the area of the smaller triangle ADE to the area of trapezoid DECB?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=111389",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonopm4ycw",
+    "order": 592,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In triangle ABC, medians AD, BE and CF intersect at centroid G. What is the ratio of the area of triangle GAB to the area of triangle ABC?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=111731",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonozpums1",
+    "order": 593,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In triangle ABC, medians AD, BE and CF intersect at the Centroid G. e area If th of triangle ABC is 60 CM²,what is the area of triangle GBC?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=111826",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aono2ar6kj",
+    "order": 594,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In ABC, the medians AD, BE and CF meet at O. What is the ratio of the area of ABD to that the area of AAOE?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=111907",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonovd2kz1",
+    "order": 595,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a triangle ABC, E and F are midpoints of side AB and AC respectively and G is the centroid of the triangle, then what is the ratio of area of triangle EFG to that of triangle ABC?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=112601",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonors23vi",
+    "order": 596,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In △ABC, AB = 48 cm, BC = 55 cm and AC = 73 cm. If O is the centroid of the triangle, then the length (in cm) of BO (correct to one decimal place) is:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=113060",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonotr3dvq",
+    "order": 597,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a right angled triangle ABC, the angle at B is 90°. If AB = 6 cm and Bc = 8 cm, what is the distance between the centroid G and the orthocentre H?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=113233",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonodax9fk",
+    "order": 598,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "A farmer owns a triangular plot of land with coordinates A(2,3), B(8,3) and c(5,9). He wants to place a scarecrow at the centroid of the field. What are the coordinates of the centroid?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=113376",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aono7j2q0k",
+    "order": 599,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "If a triangle has sides a, b, c and fixed sum a + b + c = 18, then the maximum possible area (in cm²) of the triangle is:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=115602",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonoh4y05q",
+    "order": 600,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "The height of an equilateral triangle is 18 cm. Its area is",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=115726",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonoeflr2b",
+    "order": 601,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In an equilateral triangle with side length 'a', what is the ratio of the circumradius to the inradius?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=115761",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aono6qpgxm",
+    "order": 602,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "An equilateral triangle has a side length of 24 cm. What is the radius of its circumcircle?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=115832",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonog0t43q",
+    "order": 603,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "From a circle of radius r units, the largest equilateral triangle is cut out. What is the length (in units) of the side of the triangle?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=115889",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonokdn48c",
+    "order": 604,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "Radius of incircle of an equilateral triangle is 9ROOT-3. What will be the perimeter of this equilateral triangle?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=115960",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonoalz0t8",
+    "order": 605,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "The difference between the area of the circumscribed circle and the area of the inscribed circle of an equilateral triangle is 2156sq cm. What is the area in cm² of the equilateral triangle?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=116457",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonoznvar6",
+    "order": 606,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "The length of a side of an equilateral triangle is 18 cm. The area (in cm²) of the region lying between the circumcircle and the incircle of the triangle is.",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=116779",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonob7zf7k",
+    "order": 607,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "If sum of the areas of the circumcircle and the incircle of an equilateral triangle is 770 cm², then what is the area (in cm?) of the triangle?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=116896",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonori6ym2",
+    "order": 608,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "△ABC is an equilateral triangle. D divides BC in the ratio 2: 3. Then find the value of 25AD2.",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=117584",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonoxee1zy",
+    "order": 609,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "ABC is an equilateral triangle. D is a point on side BC such that BD: BC = 2: 7 fAD=5√39 cm, then the side of the triangle is:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=117945",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonoy58ndh",
+    "order": 610,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "Given an equilateral triangle T1 with side 24cm, a second triangle T2 is formed by joining the midpoints of the sides of T1. Then a third triangle T3 is formed by joining the midpoints of the sides of T2. If this process of forming triangles is continued, the sum of the areas, in sq cm, of infinitely many such triangles T1, T2, T3........ will be?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=118600",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonov7z1f1",
+    "order": 611,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "If the altitude from two vertices of a triangle to the opposite sides are equal, then the triangle will be:, SSC CGL 2024 Pre",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonol8plts",
+    "order": 612,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "If triangles ABC and PQR are both isosceles with AB = AC and PQ = PR, respectively. If also AB = PQ and BC = QR and angle B = 50°, then what is the measure of angle R?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=119381",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonolpp6i0",
+    "order": 613,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "An isosceles EMNP is inscribed in a circle. If MN = MP = 16y5 cm, and NP = 32 cm, what is the radius (in cm) of the circle?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=119467",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aono5db3x0",
+    "order": 614,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "If the length of each of the two equal sides of an isosceles triangle is 15 cm and the. adjacent angle is 30°, then the area of the triangle is:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=119700",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonodw2x5t",
+    "order": 615,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "The area (in m²) of a triangular field, whose sides are 85 m, 85 m and 154 m, is",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=119860 https://youtu.be/EBYNCG2Q30A?t=119975",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aono6oahbf",
+    "order": 616,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In an isosceles triangle ABC, AB=AC and AD is perpendicular to BC at D. If AD =8 cm and perimeter of △ABC is 64 cm, then the area of △ABC is:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=120024",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonorswpxg",
+    "order": 617,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "If the height of an isosceles triangle is 20cm and the perimeter is 100cm. Find the area of the triangle?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=120087",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aono4rqukd",
+    "order": 618,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "If the perimeter of an isosceles right triangle is 15(√2 + 1) cm, then the area of the triangle will be:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=120641",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonoq1rr48",
+    "order": 619,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "ABC is a triangle right angled at B. Let D be the midpoint on AC. If BD = 6.5 cm, then what is AB² + BC² equal to?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=121913",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aono2hajnz",
+    "order": 620,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "What is the radius of the circle inscribed in a triangle whose sides are 4 cm, 7.5 cm and 8.5 cm?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=122042",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonolc6ij5",
+    "order": 621,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a △ABC, angle BAC = 90°. If BC = 25cm, then what is length of the median AD?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=122073",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonoqpmxmk",
+    "order": 622,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "If the sides of a triangle are 12 cm, 35 cm and 37 cm, then the circum radius is:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=122139",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonodq62ii",
+    "order": 623,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "△ABC is inscribed in a circle with Centre O. If AB = 21 cm, BC = 20 cm and AC = 29 cm, then what is the length of the circumradius of the triangle?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=122197",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aono18qxkr",
+    "order": 624,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "ABC is a right-angled triangle with ∠ABC = 90°. If m(AB) = 28 cm, and m(BC) = 96 cm, find the area (in cm²) of the circum-circle of △ABC. (Use Tr = 3.14.)",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=122265",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonoqt13dv",
+    "order": 625,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "A triangular plot has sides 15 m, 20 m, and 25 m. A circular pond is built inside touching all three sides. Find the radius of the pond.",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=122441",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonoevxlsh",
+    "order": 626,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "What is the distance between the orthocenter and the circumcenter of a triangle whose sides measure 18cm, 80cm and 82cm?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=122489",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aono06g7zr",
+    "order": 627,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "If the sides of a triangle are 39cm, 80cm and 89cm respectively, then find the distance between its orthocentre and incentre?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=122793",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonolowmx0",
+    "order": 628,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "The area of a right-angled triangle is 40 sq cm and its perimeter is 40 cm. the length of its hypotenuse is?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=123577",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aononxkk7o",
+    "order": 629,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "If the perimeter of a right angle triangle is 144cm and its circumradius is 32.5cm. Find its area?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=123814",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonown6hcr",
+    "order": 630,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "If the inradius and circumradius of a right angle triangle are 3cm and 10cm respectively then find the area of the triangle?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=124024",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonoelqnro",
+    "order": 631,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "The difference between the two perpendicular sides of a right-angled triangle is 17 cm and its area is 84 cm³. What is the perimeter (in cm) of the triangle?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=124100 https://youtu.be/EBYNCG2Q30A?t=124636",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aono6yohfq",
+    "order": 632,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "△ABC is a right-angled triangle where m/ABC = 90°. If m(AB) = 15 cm, M(BC) = 20 cm, and BD.1 AC, intersecting AC at the point D, find m(BD) (in cm).",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=125287",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonohxooaq",
+    "order": 633,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a triangle ABC, ∠A = 90°, M is the mid-point of BC and D is a point on BC such that AD1 BC. If AB=7cm and AC= 24 cm, then AD: AM is equal to:-",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=125542",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aono93xe9e",
+    "order": 634,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "What is the length of (in cm) of the smallest altitude of the triangle whose sides are 5 cm, 12 cm and 13 cm? (correct to one decimal place)",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=125726",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonoui102v",
+    "order": 635,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "A right triangleABC is inscribed in a circle with a diameter of 10 cm. An altitude BD is drawn from the vertex B to the hypotenuse AC If the length of the leg.ABis cm, what is the length of the segment AD?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=127256 https://youtu.be/EBYNCG2Q30A?t=127514",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonob33j7t",
+    "order": 636,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a triangle ABC, ∠BAC = 90and AD is perpendicular to BC. if AD = 8.4 cm and BD = 4.8 cm. then the length of BC is:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=127639",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonojx65e8",
+    "order": 637,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In △ABC, A = 90°, AD perpe BC at D. If AB = 12 cm and AC = 16 cm, then what is the length (in cm) of BD?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=127922",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonoyr11q5",
+    "order": 638,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a right angled ABC, if ∠ABC=90°, BN is perpendicular to AC, AB=12 cm, and AC=20 cm, then AN: NC is:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=127961",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aono3ielr7",
+    "order": 639,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "Points D and E are taken on the sides BC and AB of a right-angled triangle ABC, Where AC is hypotenuse. Then? D E ABC BC AB, AC?",
+    "questionImage": null,
+    "options": [
+      "AD²+CE² = BC²+AB²",
+      "AD²+CE² = DE²+AC²",
+      "AB²+AC² = 2DE2",
+      "AD²+CE² =AC² - DE²"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=129248",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonotz7wy6",
+    "order": 640,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "Points M and N are on the sides PQ and QR respectively of a triangle PQR, right angled at Q. If PN =9 cm, MR = 7 cm, and MN = 3 cm, then find the length of PR (in cm).",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=129544",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonoj1ra5r",
+    "order": 641,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a right-angled triangle, the lengths of the medians from the vertices of acute angles are 7 cm and 4root-6 cm. What is the length of the hypotenuse of the triangle (in cm)?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=129768",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonors8ak3",
+    "order": 642,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "The area of rhombus is 336 square cm. if the length of one of its diagonals is 48 cm, then what is the perimeter of the rhombus?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=140280",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aono39hm6o",
+    "order": 643,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a trapezium ABCD, DC||AB, AB = 12 cn and DC = 7.2 cm. What is the length of the line segment joining the mid-points of its diagonals?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=143125",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonos99pen",
+    "order": 644,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "ABCD is a trapezium, where Ab is parallel to DC. If AB = 4 cm, BC = 3 cm, CD = 7 cm and DA = 2 cm, then what is the area of the trapezium?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=144141",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonowe1yqv",
+    "order": 645,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "ABCD is a trapezium in which AB||CD an AB=4CD. The diagonals of the trapezium intersects at O. what is the ratio of area of triangle DCB to the area AABO?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=144491",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonoaei9zh",
+    "order": 646,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a trapezium ABCD, AB|ICD, BC=AD, AC=20cm, and distance between parallel sides is 12cm, then find the area of trapezium?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=145756",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonok3yr6z",
+    "order": 647,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "One chord of a circle is given as 20.5 cm. Then the radius (r) of the circle must be:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=150464",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonohpbluz",
+    "order": 648,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "A chord of a circle is equal to its radius of length 9 cm. Find the angle subtended by it in major segment.",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=150583",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aono5yq9nf",
+    "order": 649,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "The chord of a circle is √3 times its radius. The angle subtended by this chord at the minor arc is k times the angle subtended at the major arc. What is the value of k?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=150819",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonp0kgys3",
+    "order": 650,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "10. O is the centre of a circle and A is a point on a major arc BC of the circle. ∠BOC and ∠BAC are the angles made by the minor arc BC circumference, respectively. ABO = 40° ACO = 30°, then find BOC.",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=151611",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonpz89ehm",
+    "order": 651,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a circle with center O, an arc ABC subtends an angle of 132° at the center of the circle. Chord AB is produced to point P, then ZCBP is equal to:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=151883",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonp9zvv6c",
+    "order": 652,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "Two circles intersects at two points B and C. Through B two lines segments ABD and PBQ are drawn to intersect the circles at A, D and P and Q respectively. Where A, P are on same circle and Q, D are on same. If ACP = 55°, then find / QCD?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=152111",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonpm409on",
+    "order": 653,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "PA and PB are two tangent lin drawn from O, the outer point of the circle with O center. If the points A and B lie on the circle such that APB = 128°, then find the value of OAB.",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=153177",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonpz53nvb",
+    "order": 654,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "ABCD is a cyclic quadrilateral such that AB is a diameter of the circle circumscribing it and ADC =148°. What is the measure of the BAC?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=153372",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonpo06e08",
+    "order": 655,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "PA and PB are tangents to a circle with center O, from a point P outside the circle, A and B are points on the circle. C is a point on arc AB, if ACB = 71°, then APB is equal to:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=154293",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonpm7bvry",
+    "order": 656,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "BCD is a cyclic quadrilateral. The tangents to the circle at the points A and C on it, intersect at P. If ABC = 98°, then what is the measure of APC?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=154449",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonp30gzyk",
+    "order": 657,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a circle with centre O, PAX and PBY a the tangents to the circle at points A and B, from an external point P. Q is any point on the circle such that QAX = 59° and ∠QBY = 72°. What is the measure of AQB?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=155242",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonpllb2y6",
+    "order": 658,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "AB is a diameter of a circle with centre O. The tangent at a point C on the circle and AB, when produced, meet at the point P. If APC = 38°, then what is the measure of PCB?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=155363",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonpi3ftq6",
+    "order": 659,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "Points P, Q, R, S and T lie in this order on circle with centre O. If chord TS is parallel to diameter PR and RQT = 58°, then find the measure (in degrees) of RTS.",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=155541",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonp7wh8rn",
+    "order": 660,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "ABP and ACQ are two tangents of a circle at point B and C respectively and CD is the diameter of circle.if PAQ=50° then find DBP?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=155867",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonp7xg2u5",
+    "order": 661,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a circle, O is the centre of the circle. Chords AB and CD intersect at P. If AOD = 32° and COB = 26°, then the measure of APD lies between",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=157208",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonptcxgcd",
+    "order": 662,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a circle with center O, two chords AB and CD intersects at P If AOD=100° and BOC=70° then find APC?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=157354 https://youtu.be/EBYNCG2Q30A?t=156552",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonpiad40q",
+    "order": 663,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "Two chords AB and CD of a circle with center intersect each other at P. If ∠AOC=35° and ∠APC=58°, then the value of ∠BOD is",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=157445",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonpovglxn",
+    "order": 664,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "In a circle with center O, AC and BD are two chords. AC and BD meet at E when produced. If AB is the diameter and ∠AEB = 68, then the measure of DOC is:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=157931",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonqli177i",
+    "order": 665,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "AB and CD are two chords in a circle with centre O and AD is a diameter. AB and CD produced meet at a point Poutside the circle. If APD = 25° and DAP=39°, then the measure of CBD is:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=158696",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonqyxfjv8",
+    "order": 666,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "Two circles touch each other externally at T, RS is a direct common tangent to the two circles touching the circles at P and Q. TPQ=42°. PQT (in degrees) is:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=159389",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonqab1zkf",
+    "order": 667,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "Two circles touch each other at point X. A common tangent touch them at two distinct points Y and Z. If another tangent passing through X cut YZ at A and XA=16 cm, then what is the value (in cm) of YZ?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=159462",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonqnqz9ji",
+    "order": 668,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "Two circles touch each other at point X. A common tangent touch them at two distinct points Y and Z. If another tangent passing through X cut YZ at A and XA=16 cm, then what is the value (in cm) of YZ?",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=159498 https://youtu.be/EBYNCG2Q30A?t=159626",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonqfruh6r",
+    "order": 669,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "AB is a chord in a circle with cent O. AB is produced to C such that BC is equal to the radius of the circle. C is joined to O and produced to meet the circle at D. If ACD = 32°, then the measure of AOD is....",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/EBYNCG2Q30A?t=159844 https://youtu.be/EBYNCG2Q30A?t=160898",
+    "solutionImage": null,
+    "special": false,
+    "id": "mue9aonqsyenzd",
+    "order": 670,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]

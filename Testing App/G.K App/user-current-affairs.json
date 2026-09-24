@@ -3526,11 +3526,11 @@
       {
         "question": "In which year was the first World Patient Safety Day observed?",
         "options": [
-          "2018",
           "2019",
-          "2020"
+          "2020",
+          "2018"
         ],
-        "answer": 1,
+        "answer": 0,
         "explanation": "The first World Patient Safety Day was observed on 17 September 2019."
       }
     ],
@@ -4814,11 +4814,11 @@
       {
         "question": "What annual budget was stated for the Thaaimaman Thanga Mothiram Scheme?",
         "options": [
-          "₹555.83 crore",
           "₹755.83 crore",
+          "₹555.83 crore",
           "₹955.83 crore"
         ],
-        "answer": 1,
+        "answer": 0,
         "explanation": "The PDF states that an annual budget of ₹755.83 crore was allocated for the scheme."
       }
     ],
@@ -6423,5 +6423,445 @@
     "questionImageName": "",
     "source": "user-upload",
     "createdAt": "2026-09-22T15:06:42"
+  },
+  {
+    "id": "ca-2026-09-023-001",
+    "date": "2026-09-23",
+    "category": "Polity",
+    "question": "According to the Supreme Court, furnishing written grounds of arrest to an arrested person is related to which Fundamental Right?",
+    "options": [
+      "Article 19(1)",
+      "Article 20(3)",
+      "Article 21A",
+      "Article 22(1)"
+    ],
+    "answer": 3,
+    "explanation": "In Jaskaran Jeet Singh Deol v. State of Punjab, the Supreme Court stated that the grounds of arrest must be supplied in writing and in a language understood by the arrested person. This protection flows from Article 22(1); failure to provide written grounds can make the arrest illegal.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "Under Article 22(2), an arrested person must ordinarily be produced before the nearest Magistrate within how many hours, excluding journey time?",
+        "options": [
+          "12 hours",
+          "24 hours",
+          "36 hours",
+          "48 hours"
+        ],
+        "answer": 1,
+        "explanation": "Article 22(2) requires production before the nearest Magistrate within 24 hours, excluding the time necessary for the journey."
+      },
+      {
+        "question": "Which section of the BNSS provides for informing an arrested person of the offence and grounds of arrest?",
+        "options": [
+          "Section 47",
+          "Section 58",
+          "Section 35",
+          "Section 187"
+        ],
+        "answer": 0,
+        "explanation": "The PDF identifies Section 47 of the BNSS as the provision requiring communication of the offence and grounds of arrest."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-24T11:10:33"
+  },
+  {
+    "id": "ca-2026-09-023-002",
+    "date": "2026-09-23",
+    "category": "Defence & Technology",
+    "question": "Where has the 18th edition of the India-Mongolia Joint Military Exercise 'Nomadic Elephant 2026' commenced?",
+    "options": [
+      "Umroi, Meghalaya",
+      "Pithoragarh, Uttarakhand",
+      "Bakloh, Himachal Pradesh",
+      "Vairengte, Mizoram"
+    ],
+    "answer": 1,
+    "explanation": "The 18th edition of Exercise Nomadic Elephant began on 21 September 2026 at the Foreign Training Node, Pithoragarh, Uttarakhand, and is scheduled from 21 September to 3 October 2026.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "In which year did Exercise Nomadic Elephant begin?",
+        "options": [
+          "2004",
+          "2006",
+          "2008",
+          "2010"
+        ],
+        "answer": 1,
+        "explanation": "The PDF states that Exercise Nomadic Elephant started in 2006."
+      },
+      {
+        "question": "Where was the 17th edition of Exercise Nomadic Elephant held in 2025?",
+        "options": [
+          "Ulaanbaatar, Mongolia",
+          "New Delhi, India",
+          "Kathmandu, Nepal",
+          "Astana, Kazakhstan"
+        ],
+        "answer": 0,
+        "explanation": "The 17th edition was held in 2025 at Ulaanbaatar, Mongolia."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-24T11:10:33"
+  },
+  {
+    "id": "ca-2026-09-023-003",
+    "date": "2026-09-23",
+    "category": "State",
+    "question": "Which language has the Karnataka government decided to recognise as the state's second additional official administrative language?",
+    "options": [
+      "Konkani",
+      "Kodava",
+      "Tulu",
+      "Telugu"
+    ],
+    "answer": 2,
+    "explanation": "The Karnataka government decided to give Tulu additional official status for administrative use alongside Kannada. The status described in the PDF is limited to Dakshina Kannada and Udupi districts.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "Tulu belongs to which language family?",
+        "options": [
+          "Indo-Aryan",
+          "Dravidian",
+          "Tibeto-Burman",
+          "Austroasiatic"
+        ],
+        "answer": 1,
+        "explanation": "Tulu is a Dravidian language spoken mainly in coastal Karnataka, especially Dakshina Kannada and Udupi."
+      },
+      {
+        "question": "Which Article of the Constitution deals with the official language or languages of a State?",
+        "options": [
+          "Article 343",
+          "Article 344",
+          "Article 345",
+          "Article 351"
+        ],
+        "answer": 2,
+        "explanation": "Article 345 allows a State Legislature to adopt one or more languages in use in the State as official language(s)."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-24T11:10:33"
+  },
+  {
+    "id": "ca-2026-09-023-004",
+    "date": "2026-09-23",
+    "category": "Sports",
+    "question": "Which country will host the Asian Senior Wushu Championships for the first time in 2028?",
+    "options": [
+      "India",
+      "Nepal",
+      "Indonesia",
+      "Uzbekistan"
+    ],
+    "answer": 0,
+    "explanation": "India has been awarded the 11th Asian Senior Wushu Championships in 2028. The championship is proposed to be held in Ahmedabad.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "Which body organises the Asian Senior Wushu Championships?",
+        "options": [
+          "International Wushu Federation",
+          "Wushu Federation of Asia",
+          "Asian Games Federation",
+          "Olympic Council of Asia"
+        ],
+        "answer": 1,
+        "explanation": "The Asian Senior Wushu Championships are organised by the Wushu Federation of Asia (WFA)."
+      },
+      {
+        "question": "Where was the first Asian Wushu Championship held in 1987?",
+        "options": [
+          "Beijing, China",
+          "Seoul, South Korea",
+          "Yokohama, Japan",
+          "Macao, China"
+        ],
+        "answer": 2,
+        "explanation": "The first championship was held in 1987 at Yokohama, Japan. The Wushu Federation of Asia was also established during that period on 25 September 1987."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-24T11:10:33"
+  },
+  {
+    "id": "ca-2026-09-023-005",
+    "date": "2026-09-23",
+    "category": "Environment",
+    "question": "On which day is World Rhino Day celebrated globally to raise awareness about rhino conservation?",
+    "options": [
+      "22 September",
+      "23 September",
+      "21 September",
+      "25 September"
+    ],
+    "answer": 0,
+    "explanation": "World Rhino Day is observed every year on 22 September. WWF-South Africa first announced the day in 2010, and from 2011 it developed into an international event for African and Asian rhinos.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "What is the scientific name of the Greater One-Horned Rhinoceros?",
+        "options": [
+          "Rhinoceros unicornis",
+          "Diceros bicornis",
+          "Ceratotherium simum",
+          "Dicerorhinus sumatrensis"
+        ],
+        "answer": 0,
+        "explanation": "The scientific name of the Greater One-Horned Rhinoceros is Rhinoceros unicornis."
+      },
+      {
+        "question": "What IUCN status is given in the PDF for the Greater One-Horned Rhinoceros?",
+        "options": [
+          "Endangered",
+          "Vulnerable",
+          "Near Threatened",
+          "Critically Endangered"
+        ],
+        "answer": 1,
+        "explanation": "The PDF lists the Greater One-Horned Rhinoceros as Vulnerable."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-24T11:10:33"
+  },
+  {
+    "id": "ca-2026-09-023-006",
+    "date": "2026-09-23",
+    "category": "Health",
+    "question": "What is the theme of the 11th Ayurveda Day 2026?",
+    "options": [
+      "Har Din Har Ghar Ayurveda",
+      "Ayurveda for One Health",
+      "Ayurveda for a Healthier Tomorrow",
+      "Ayurveda Innovations for Global Health"
+    ],
+    "answer": 2,
+    "explanation": "The 11th Ayurveda Day is being observed on 23 September 2026 with the theme 'Ayurveda for a Healthier Tomorrow'. The main national event is stated to be in Nagpur, Maharashtra.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "In which year was the first Ayurveda Day observed?",
+        "options": [
+          "2014",
+          "2015",
+          "2016",
+          "2017"
+        ],
+        "answer": 2,
+        "explanation": "The PDF states that the first Ayurveda Day was observed in 2016."
+      },
+      {
+        "question": "From which year was 23 September fixed as the permanent date for Ayurveda Day?",
+        "options": [
+          "2023",
+          "2024",
+          "2025",
+          "2026"
+        ],
+        "answer": 2,
+        "explanation": "According to the PDF, from 2025 onward 23 September was fixed as the permanent date for Ayurveda Day."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-24T11:10:33"
+  },
+  {
+    "id": "ca-2026-09-023-007",
+    "date": "2026-09-23",
+    "category": "Economy",
+    "question": "To what level has Moody's raised India's real GDP growth forecast for FY 2026-27?",
+    "options": [
+      "6.2%",
+      "6.5%",
+      "6.8%",
+      "7.0%"
+    ],
+    "answer": 3,
+    "explanation": "Moody's Ratings raised India's FY 2026-27 real GDP growth forecast from 6% to 7%, an increase of 1 percentage point or 100 basis points.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "By how many basis points did Moody's raise India's FY 2026-27 real GDP growth forecast?",
+        "options": [
+          "25 basis points",
+          "50 basis points",
+          "75 basis points",
+          "100 basis points"
+        ],
+        "answer": 3,
+        "explanation": "The forecast was raised from 6% to 7%, which equals 1 percentage point or 100 basis points."
+      },
+      {
+        "question": "What was India's real GDP growth in the first quarter (April-June 2026) of FY27, according to the PDF?",
+        "options": [
+          "6.8%",
+          "7.2%",
+          "7.8%",
+          "8.2%"
+        ],
+        "answer": 2,
+        "explanation": "The PDF states that India's real GDP growth in April-June 2026 was 7.8%."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-24T11:10:33"
+  },
+  {
+    "id": "ca-2026-09-023-008",
+    "date": "2026-09-23",
+    "category": "Defence",
+    "question": "What is the name of India's first indigenous long-range One-Way Attack drone, as described in the PDF?",
+    "options": [
+      "KAL",
+      "GARUD",
+      "TRINETRA",
+      "VAJRA"
+    ],
+    "answer": 0,
+    "explanation": "KAL, developed by Noida-based defence technology company IG Defence, completed testing at the Pokhran Field Firing Range in Rajasthan. The company describes it as India's first indigenous long-range One-Way Attack drone.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "What is the approximate range of the KAL One-Way Attack drone?",
+        "options": [
+          "500 km",
+          "750 km",
+          "1,000 km",
+          "1,500 km"
+        ],
+        "answer": 2,
+        "explanation": "The PDF gives KAL an approximate range of 1,000 km."
+      },
+      {
+        "question": "What is the maximum payload of KAL according to the PDF?",
+        "options": [
+          "25 kg",
+          "40 kg",
+          "50 kg",
+          "75 kg"
+        ],
+        "answer": 2,
+        "explanation": "The PDF lists KAL's maximum payload as 50 kg."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-24T11:10:33"
+  },
+  {
+    "id": "ca-2026-09-023-009",
+    "date": "2026-09-23",
+    "category": "State Scheme",
+    "question": "Which state became the first to launch the 'Swamitva Adhikar Abhilekh Nispadan Evam Panjiyan Yojana-2026' for free registration of rural properties?",
+    "options": [
+      "Uttar Pradesh",
+      "Madhya Pradesh",
+      "Rajasthan",
+      "Chhattisgarh"
+    ],
+    "answer": 1,
+    "explanation": "Madhya Pradesh launched the scheme to provide free execution and registration of ownership records for rural properties prepared under the SVAMITVA Scheme. Stamp duty, registration fee and related charges are to be borne by the state government.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "What does SVAMITVA stand for?",
+        "options": [
+          "Survey and Verification of Agricultural Mapping in Tribal and Village Areas",
+          "System of Village Abadi Mapping and Integrated Title Verification Administration",
+          "Survey of Village Assets and Mapping through Integrated Technology and Village Administration",
+          "Survey of Villages Abadi and Mapping with Improvised Technology in Village Areas"
+        ],
+        "answer": 3,
+        "explanation": "SVAMITVA stands for 'Survey of Villages Abadi and Mapping with Improvised Technology in Village Areas'."
+      },
+      {
+        "question": "Which ministry is the nodal ministry for the SVAMITVA Scheme?",
+        "options": [
+          "Ministry of Rural Development",
+          "Ministry of Panchayati Raj",
+          "Ministry of Housing and Urban Affairs",
+          "Ministry of Agriculture and Farmers Welfare"
+        ],
+        "answer": 1,
+        "explanation": "The PDF identifies the Ministry of Panchayati Raj as the nodal ministry for the SVAMITVA Scheme."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-24T11:10:33"
+  },
+  {
+    "id": "ca-2026-09-023-010",
+    "date": "2026-09-23",
+    "category": "Appointment",
+    "question": "Who has recently been given the additional charge of Chairperson of the Insolvency and Bankruptcy Board of India (IBBI)?",
+    "options": [
+      "Ravi Mital",
+      "Jayanti Prasad",
+      "Sandip Garg",
+      "Bhushan Kumar Sinha"
+    ],
+    "answer": 1,
+    "explanation": "The Central Government gave IBBI Whole-Time Member Jayanti Prasad additional charge as Chairperson from 13 September 2026. He succeeded Ravi Mital, whose tenure ended on attaining the age of 65.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "When was the Insolvency and Bankruptcy Board of India (IBBI) established?",
+        "options": [
+          "1 October 2015",
+          "1 October 2016",
+          "1 January 2017",
+          "1 April 2016"
+        ],
+        "answer": 1,
+        "explanation": "IBBI was established on 1 October 2016."
+      },
+      {
+        "question": "Which ministry administers the Insolvency and Bankruptcy Board of India?",
+        "options": [
+          "Ministry of Finance",
+          "Ministry of Commerce and Industry",
+          "Ministry of Corporate Affairs",
+          "Ministry of Law and Justice"
+        ],
+        "answer": 2,
+        "explanation": "The PDF lists the Ministry of Corporate Affairs as IBBI's administrative ministry."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-24T11:10:33"
   }
 ]

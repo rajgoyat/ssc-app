@@ -15,7 +15,7 @@
     "id": "mth8tth2it2lx8",
     "order": 104,
     "attemptStatus": "unattempted",
-    "testAllowed": true,
+    "testAllowed": false,
     "special": false,
     "examName": ""
   }

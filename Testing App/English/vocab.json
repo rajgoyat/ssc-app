@@ -2317,7 +2317,7 @@
       "hi": "कड़ी आलोचना करना / दंड देना",
       "meaning": "Reprimand someone severely",
       "sentence": "The coach castigated the team for their careless mistakes.",
-      "syn": "Chastise",
+      "syn": "Chastise = strongly scold or punish",
       "ant": "Praise"
     },
     {
@@ -3756,8 +3756,8 @@
       "en": "Deplore",
       "hi": "खेद प्रकट करना / निंदा करना",
       "meaning": "To feel or express strong disapproval of something",
-      "sentence": "We deplore the use of violence.",
-      "syn": "Denounce",
+      "sentence": "We deplore the use of violence.  Hum hinsa ki kadi ninda karte hain.",
+      "syn": "Denounce = publicly condemn.",
       "ant": "Applaud"
     },
     {
@@ -4981,7 +4981,7 @@
       "hi": "टालमटोल करने वाला",
       "meaning": "Avoiding giving a clear or direct answer",
       "sentence": "The witness gave evasive answers to the questions.",
-      "syn": "Indirect",
+      "syn": "Indirect____Vague (Ojhhal / Jo spasht na ho)",
       "ant": "Direct"
     },
     {
@@ -9773,7 +9773,7 @@
       "hi": "गंदा / घिनौना",
       "meaning": "Extremely dirty and unpleasant",
       "sentence": "They lived in squalid conditions.",
-      "syn": "Filthy",
+      "syn": "Filthy = बहुत गंदा / मैला / बेहद अशुद्ध",
       "ant": "Clean"
     },
     {

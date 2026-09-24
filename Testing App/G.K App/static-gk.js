@@ -18,3 +18,24 @@ const staticGKCategories = {
 
 };
 const staticGKQuestions = Object.values(staticGKCategories).flat();
+
+/* AUTO STATIC SOURCE START: staticComplete.js */
+if (typeof staticStaticCompleteQuestions !== "undefined") {
+  if (typeof staticGKQuestions !== "undefined" && Array.isArray(staticGKQuestions)) {
+    staticStaticCompleteQuestions.forEach((item) => {
+      if (!staticGKQuestions.some((question) => question && question.id === item.id)) {
+        staticGKQuestions.push(item);
+      }
+    });
+  }
+
+  if (
+    typeof staticGKCategories !== "undefined" &&
+    staticGKCategories &&
+    typeof staticGKCategories === "object"
+  ) {
+    staticGKCategories["Static Complete"] = staticStaticCompleteQuestions;
+  }
+}
+/* AUTO STATIC SOURCE END: staticComplete.js */
+
