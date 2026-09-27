@@ -5645,12 +5645,12 @@
     "questionText": "A chord of a circle is equal to its radius of length 9 cm. Find the angle subtended by it in major segment.",
     "questionImage": null,
     "options": [
-      "1",
-      "2",
-      "3",
-      "4"
+      "24",
+      "23",
+      "30",
+      "27"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "solutionText": "https://youtu.be/EBYNCG2Q30A?t=150583",
     "solutionImage": null,
     "special": false,

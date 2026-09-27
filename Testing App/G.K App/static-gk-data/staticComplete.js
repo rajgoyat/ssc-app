@@ -180,8 +180,7 @@ const staticStaticCompleteQuestions =
       "Vallathol Menon and Kalyanikutty Amma"
     ],
     "answer": 2,
-    "explanation": "E. Krishna Iyer and Rukmini Devi Arundale as revivalists of Bharatanatyam."
-  },
+    "explanation": "Confusion mat karna:\n\nAbhinaya Darpana → Nandikeshvara\nNatya Shastra → Bharata Muni\nBharatanatyam Revival → E. Krishna Iyer + Rukmini Devi Arundale\nKalakshetra → Rukmini Devi Arundale → 1936\n\n10-second revision:\n👉 Bharatanatyam → Revival → Krishna Iyer + Rukmini Devi → Kalakshetra → 1936"},
   {
     "id": "static-gk-015",
     "category": "organisations",
@@ -206,8 +205,7 @@ const staticStaticCompleteQuestions =
       "Tillana"
     ],
     "answer": 2,
-    "explanation": "Alarippu is the opening stage of the Bharatanatyam performance order."
-  },
+    "explanation": "Alarippu.....To adorn with flowering...nritta\nJatiswaram ...no acting ...no expression \nShabadam .....nritya with expressions story telling \nVarnam....nritta nritya natya ....centre of the dance\nPadam...emotion and sentiments\nThillana....fast dance\nManglam....invoking the blessings of god"},
   {
     "id": "static-gk-017",
     "category": "art-culture",
@@ -264,12 +262,7 @@ const staticStaticCompleteQuestions =
     "id": "static-gk-021",
     "category": "art-culture",
     "question": "Which Bharatanatyam item is a fast-paced romantic abhinaya?",
-    "options": [
-      "Alarippu",
-      "Nritta",
-      "Javali",
-      "Varnam"
-    ],
+    "options": ["Alarippu", "Nritta", "Tillana", "Varnam"],
     "answer": 2,
     "explanation": "Javali is described as fast-paced romantic abhinaya."
   },
@@ -622,8 +615,7 @@ const staticStaticCompleteQuestions =
       "Algoza"
     ],
     "answer": 2,
-    "explanation": "Chenda is listed among Kathakali's main instruments."
-  },
+    "explanation": "Main musical instruments: Chenda, Maddalam, Elathalam (cymbals), Chengila (gong).\n"},
   {
     "id": "static-gk-049",
     "category": "organisations",

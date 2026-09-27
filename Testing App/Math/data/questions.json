@@ -5422,7 +5422,7 @@
   {
     "category": "Speed & Distance",
     "examName": "",
-    "questionText": "A car runs for 10 hours and Its speed during the ith hour is i3 km per hour, where i=1,2,3 ... ,10. The average speed of the car for the journey is km per hour.",
+    "questionText": "A car runs for 10 hours and Its speed during the i^th hour is i^3 km per hour, where i=1,2,3 ... ,10. The average speed of the car for the journey is km per hour.",
     "questionImage": null,
     "options": [
       "285 km/h",
@@ -5431,7 +5431,7 @@
       "325 km/h"
     ],
     "correctIndex": 2,
-    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=30281",
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=30146",
     "solutionImage": null,
     "special": false,
     "id": "mu5n9qi8r7rf2h",
@@ -6671,9 +6671,9 @@
       "8.4 seconds"
     ],
     "correctIndex": 2,
-    "solutionText": "First relative speed = 234/6 = 39 m/s = 140.4 km/h. Train speed = 140.4 - 9 = 131.4 km/h. Relative speed with second person = 131.4 - 23.4 = 108 km/h = 30 m/s. Time = 234/30 = 7.8 seconds. Video explanation: https://youtu.be/1Yd2-DpWmGQ?t=20843",
+    "solutionText": "https://youtu.be/1Yd2-DpWmGQ?t=20778  sir is question ka apna solution dekhna and cloud ai ka solution dekhna link=== https://claude.ai/share/f14df72d-d73c-408f-a40a-bca6893a6672                sir cloud ai questions ka bahut short solution de deta hai but mujhe samaj nahi ata\nagar ye solution samaj nahi aye cloud ka to iska explaination yha hai ==>>   https://share.gemini.google/GAvCfJN5XMnf",
     "solutionImage": null,
-    "special": false,
+    "special": true,
     "id": "mu9gwqfqmfkjv7",
     "order": 333,
     "attemptStatus": "unattempted",
@@ -8510,7 +8510,7 @@
       "root-3 /2",
       "3root-3"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "solutionText": "https://youtu.be/kkyTvdGJG_A?t=420",
     "solutionImage": null,
     "special": false,
@@ -12985,12 +12985,12 @@
     "questionText": "A chord of a circle is equal to its radius of length 9 cm. Find the angle subtended by it in major segment.",
     "questionImage": null,
     "options": [
-      "1",
-      "2",
-      "3",
-      "4"
+      "24",
+      "23",
+      "30",
+      "27"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "solutionText": "https://youtu.be/EBYNCG2Q30A?t=150583",
     "solutionImage": null,
     "special": false,

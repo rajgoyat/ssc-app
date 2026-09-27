@@ -913,21 +913,32 @@
       /* Small question images sit beside the question on wider screens.
          Large remains the existing full-width layout. */
       .question-row.with-small-image {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
         align-items: flex-start;
+        gap: 12px;
+      }
+
+      .question-row.with-small-image .question {
+        order: 1;
+        flex: 1 1 75%;
+        min-width: 0;
       }
 
       .question-media-block.small {
-        flex: 0 1 36%;
-        width: min(36%, 260px);
-        max-width: 260px;
-        min-width: 150px;
+        order: 2;
+        flex: 0 0 22%;
+        width: 22%;
+        max-width: 180px;
+        min-width: 90px;
         margin: 0;
-        padding: 6px;
+        padding: 4px;
       }
 
       .question-media-block.small img {
         width: 100%;
-        max-height: 220px;
+        max-height: 150px;
         object-fit: contain;
       }
 
@@ -983,25 +994,28 @@
         }
 
         .question-row.with-small-image {
-          flex-wrap: wrap;
+          flex-wrap: nowrap;
+          gap: 8px;
         }
 
         .question-row.with-small-image .question {
           order: 1;
-          flex: 1 1 calc(100% - 120px);
-        }
-
-        .question-row.with-small-image .question-toolbar {
-          order: 2;
+          flex: 1 1 78%;
+          min-width: 0;
         }
 
         .question-row.with-small-image .question-media-block.small {
-          order: 3;
-          flex: 0 0 min(72%, 320px);
-          width: min(72%, 320px);
-          max-width: 320px;
-          min-width: 0;
-          margin: 6px 0 8px;
+          order: 2;
+          flex: 0 0 20%;
+          width: 20%;
+          max-width: 120px;
+          min-width: 65px;
+          margin: 0;
+          padding: 3px;
+        }
+
+        .question-row.with-small-image .question-media-block.small img {
+          max-height: 100px;
         }
       }
 
@@ -1978,6 +1992,15 @@
         align-items: center;
         color: var(--muted);
         margin-bottom: 12px;
+      }
+
+      .question-meta-toolbar {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        margin-left: auto;
+        margin-right: 10px;
+        flex: 0 0 auto;
       }
 
       .progress {
@@ -10862,6 +10885,49 @@
 
                 ${dateLine}
 
+                <div class="question-toolbar question-meta-toolbar">
+                  ${Array.isArray(item.options) && item.options.length >= 2 ? `
+                    <button
+                      type="button"
+                      class="question-shuffle-btn"
+                      data-main-option-shuffle
+                      title="Shuffle options and save to real file"
+                      aria-label="Shuffle options and save to real file"
+                    >🔀</button>
+                  ` : ""}
+
+                  <button
+                    type="button"
+                    class="edit-icon"
+                    title="Edit question"
+                    aria-label="Edit question"
+                    data-action="edit-question"
+                  >
+                    ✎
+                  </button>
+
+                  <button
+                    type="button"
+                    class="edit-icon category-edit-icon"
+                    title="View / Change Category"
+                    aria-label="View or change question category"
+                    data-action="edit-category"
+                  >
+                    🏷
+                  </button>
+
+                  <button
+                    type="button"
+                    class="edit-icon"
+                    title="Paste/Change Image"
+                    aria-label="Paste or change image"
+                    data-action="edit-question-image"
+                    style="background: rgba(85, 230, 210, 0.1); border-color: rgba(85, 230, 210, 0.35);"
+                  >
+                    📸
+                  </button>
+                </div>
+
                 <span class="mono">
 
                   ${
@@ -11101,45 +11167,6 @@
                           : ""
                       }
 
-                      <div class="question-toolbar">
-                        ${Array.isArray(item.options) && item.options.length >= 2 ? `
-                          <button
-                            type="button"
-                            class="question-shuffle-btn"
-                            data-main-option-shuffle
-                            title="Shuffle options and save to real file"
-                            aria-label="Shuffle options and save to real file"
-                          >🔀</button>
-                        ` : ""}
-                        <button
-                          type="button"
-                          class="edit-icon"
-                          title="Edit question"
-                          aria-label="Edit question"
-                          data-action="edit-question"
-                        >
-                          ✎
-                        </button>
-                        <button
-                          type="button"
-                          class="edit-icon category-edit-icon"
-                          title="View / Change Category"
-                          aria-label="View or change question category"
-                          data-action="edit-category"
-                        >
-                          🏷
-                        </button>
-                        <button
-                          type="button"
-                          class="edit-icon"
-                          title="Paste/Change Image"
-                          aria-label="Paste or change image"
-                          data-action="edit-question-image"
-                          style="background: rgba(85, 230, 210, 0.1); border-color: rgba(85, 230, 210, 0.35);"
-                        >
-                          📸
-                        </button>
-                      </div>
 
                     `
                 }
@@ -11352,28 +11379,34 @@
 
             <div class="panel-heading">
 
-              <div>
+              ${
+                data.visible
+                  ? `
+                    <div>
 
-                <div class="section-tag mono">
+                      <div class="section-tag mono">
 
-                  <i></i>
+                        <i></i>
 
-                  ${label}
+                        ${label}
 
-                </div>
+                      </div>
 
 
-                <h3>
+                      <h3>
 
-                  ${
-                    isCurrent
-                      ? "What is happening now?"
-                      : "Know the fundamentals."
-                  }
+                        ${
+                          isCurrent
+                            ? "What is happening now?"
+                            : "Know the fundamentals."
+                        }
 
-                </h3>
+                      </h3>
 
-              </div>
+                    </div>
+                  `
+                  : ""
+              }
 
 
               <div>
@@ -11398,20 +11431,21 @@
                 </div>
 
 
-                <div
-                  class="count mono"
-                  style="
-                    text-align:right;
-                    margin-top:7px
-                  "
-                >
-
-                  ${
-                    data.questions.length
-                  }
-                  Qs
-
-                </div>
+                ${
+                  data.visible
+                    ? `
+                      <div
+                        class="count mono"
+                        style="
+                          text-align:right;
+                          margin-top:7px
+                        "
+                      >
+                        ${data.questions.length} Qs
+                      </div>
+                    `
+                    : ""
+                }
 
               </div>
 

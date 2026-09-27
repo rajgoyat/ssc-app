@@ -922,7 +922,7 @@
   {
     "category": "Speed & Distance",
     "examName": "",
-    "questionText": "A car runs for 10 hours and Its speed during the ith hour is i3 km per hour, where i=1,2,3 ... ,10. The average speed of the car for the journey is km per hour.",
+    "questionText": "A car runs for 10 hours and Its speed during the i^th hour is i^3 km per hour, where i=1,2,3 ... ,10. The average speed of the car for the journey is km per hour.",
     "questionImage": null,
     "options": [
       "285 km/h",
@@ -931,7 +931,7 @@
       "325 km/h"
     ],
     "correctIndex": 2,
-    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=30281",
+    "solutionText": "https://youtu.be/o4eTtrJXYNQ?t=30146",
     "solutionImage": null,
     "special": false,
     "id": "mu5n9qi8r7rf2h",

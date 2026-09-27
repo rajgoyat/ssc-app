@@ -6863,5 +6863,845 @@
     "questionImageName": "",
     "source": "user-upload",
     "createdAt": "2026-09-24T11:10:33"
+  },
+  {
+    "id": "ca-2026-09-024-001",
+    "date": "2026-09-24",
+    "category": "Defense / Current Affairs",
+    "question": "Where will the Indian Air Force host the second edition of Exercise Tarang Shakti 2026?",
+    "options": [
+      "Gwalior, Madhya Pradesh",
+      "Jodhpur, Rajasthan",
+      "Sulur, Tamil Nadu",
+      "Pune, Maharashtra"
+    ],
+    "answer": 1,
+    "explanation": "The Indian Air Force (IAF) will host the second edition of Exercise Tarang Shakti 2026 at Air Force Station Jodhpur, Rajasthan, from 26 September to 12 October 2026.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "Where was the first edition of Exercise Tarang Shakti held in 2024?",
+        "options": [
+          "Air Force Station Sulur, Tamil Nadu",
+          "Air Force Station Jodhpur, Rajasthan",
+          "Air Force Station Gwalior, Madhya Pradesh"
+        ],
+        "answer": 0,
+        "explanation": "The first edition of Exercise Tarang Shakti was held in 2024 at Air Force Station Sulur, Tamil Nadu."
+      },
+      {
+        "question": "What is the frequency of organizing Exercise Tarang Shakti by the Indian Air Force?",
+        "options": [
+          "Annual (Every year)",
+          "Biennial (Every two years)",
+          "Triennial (Every three years)"
+        ],
+        "answer": 1,
+        "explanation": "Exercise Tarang Shakti is a biennial multinational air exercise organized every two years."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-25T19:12:42"
+  },
+  {
+    "id": "ca-2026-09-024-002",
+    "date": "2026-09-24",
+    "category": "Awards & Cinema / Current Affairs",
+    "question": "Who directed the Indian film 'Angh', which won the Platform Prize at Toronto International Film Festival (TIFF) 2026?",
+    "options": [
+      "Rima Das",
+      "Theja Rio",
+      "Santosh Davakhar",
+      "Payal Kapadia"
+    ],
+    "answer": 1,
+    "explanation": "'Angh', directed by Naga filmmaker Theja Rio, won the Platform Prize at TIFF 2026. It is the debut feature film by Theja Rio depicting 1960s Nagaland.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "What prize money is awarded to the winner of the TIFF Platform Prize?",
+        "options": [
+          "20,000 Canadian Dollars",
+          "10,000 US Dollars",
+          "50,000 Canadian Dollars"
+        ],
+        "answer": 0,
+        "explanation": "The Platform Prize awarded at the Toronto International Film Festival carries a cash prize of 20,000 Canadian Dollars."
+      },
+      {
+        "question": "In which year was the Toronto International Film Festival (TIFF) first organized?",
+        "options": [
+          "1985",
+          "1991",
+          "1976"
+        ],
+        "answer": 2,
+        "explanation": "The Toronto International Film Festival (TIFF) was first held in 1976 in Toronto, Canada."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-25T19:12:42"
+  },
+  {
+    "id": "ca-2026-09-024-003",
+    "date": "2026-09-24",
+    "category": "International Relations",
+    "question": "Which countries constitute the Visegrad Group (V4)?",
+    "options": [
+      "Poland, Hungary, Slovakia and Czech Republic",
+      "Poland, Germany, France and Hungary",
+      "Hungary, Austria, Germany and Slovakia",
+      "Czech Republic, Austria, Poland and Romania"
+    ],
+    "answer": 0,
+    "explanation": "The Visegrad Group (V4) is a regional cultural and political alliance of four Central European nations: Poland, Hungary, Slovakia, and the Czech Republic.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "In which year was the Visegrad Group (V4) established?",
+        "options": [
+          "1991",
+          "1995",
+          "2001"
+        ],
+        "answer": 0,
+        "explanation": "The Visegrad Group was established in 1991 following a summit meeting in the Hungarian town of Visegrád."
+      },
+      {
+        "question": "Where was the inaugural V4 + India Foreign Ministers' Meeting held during the 81st session of UNGA?",
+        "options": [
+          "Bratislava",
+          "New Delhi",
+          "New York"
+        ],
+        "answer": 2,
+        "explanation": "The V4 + India Foreign Ministers' meeting was held in New York during the 81st session of the United Nations General Assembly."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-25T19:12:42"
+  },
+  {
+    "id": "ca-2026-09-024-004",
+    "date": "2026-09-24",
+    "category": "Important Days & Themes",
+    "question": "What is the theme of the International Day of Sign Languages 2026?",
+    "options": [
+      "Sign Languages for Inclusive Societies",
+      "Declaring Deaf People's Human Rights",
+      "Sign Language Unites Us",
+      "Building an Accessible Digital World"
+    ],
+    "answer": 1,
+    "explanation": "The theme of the International Day of Sign Languages 2026 is 'Declaring Deaf People's Human Rights'.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "On which date is the International Day of Sign Languages observed every year?",
+        "options": [
+          "23 September",
+          "21 September",
+          "25 September"
+        ],
+        "answer": 0,
+        "explanation": "The International Day of Sign Languages is observed annually across the world on 23 September."
+      },
+      {
+        "question": "Where is the headquarters of the World Federation of the Deaf (WFD) located?",
+        "options": [
+          "Geneva, Switzerland",
+          "Helsinki, Finland",
+          "Paris, France"
+        ],
+        "answer": 1,
+        "explanation": "The World Federation of the Deaf (WFD) was established on 23 September 1951 and is headquartered in Helsinki, Finland."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-25T19:12:42"
+  },
+  {
+    "id": "ca-2026-09-024-005",
+    "date": "2026-09-24",
+    "category": "International News & Heritage",
+    "question": "Where is the Jaffna Thiruvalluvar Cultural Centre located?",
+    "options": [
+      "Mauritius",
+      "Sri Lanka",
+      "Maldives",
+      "Seychelles"
+    ],
+    "answer": 1,
+    "explanation": "The Jaffna Thiruvalluvar Cultural Centre is located in Jaffna, Sri Lanka, and was built with grant assistance of around 12 million USD from the Government of India.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "In which year was the foundation stone of the Jaffna Cultural Centre laid by PM Narendra Modi?",
+        "options": [
+          "March 2015",
+          "March 2018",
+          "February 2020"
+        ],
+        "answer": 0,
+        "explanation": "Prime Minister Narendra Modi laid the foundation stone for the centre in March 2015 during his visit to Jaffna."
+      },
+      {
+        "question": "The cultural centre is named in honor of which historic personality?",
+        "options": [
+          "Subramania Bharati",
+          "Thiruvalluvar",
+          "Kambar"
+        ],
+        "answer": 1,
+        "explanation": "The centre is named in honor of the celebrated Tamil poet and philosopher Thiruvalluvar."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-25T19:12:42"
+  },
+  {
+    "id": "ca-2026-09-024-006",
+    "date": "2026-09-24",
+    "category": "National / Defense & Security",
+    "question": "Where was the 3rd National Conference of Chiefs of Anti-Narcotics Task Force held?",
+    "options": [
+      "New Delhi",
+      "Mumbai",
+      "Shimla",
+      "Bhopal"
+    ],
+    "answer": 0,
+    "explanation": "The 3rd National Conference of Anti-Narcotics Task Force Heads was organized by the Narcotics Control Bureau (NCB) in New Delhi on 22–23 September 2026.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "Which Union Ministry is the administrative ministry for the Narcotics Control Bureau (NCB)?",
+        "options": [
+          "Ministry of Home Affairs",
+          "Ministry of Health and Family Welfare",
+          "Ministry of Social Justice and Empowerment"
+        ],
+        "answer": 0,
+        "explanation": "The Narcotics Control Bureau operates under the administrative authority of the Ministry of Home Affairs."
+      },
+      {
+        "question": "Under which Act was the Narcotics Control Bureau (NCB) constituted in March 1986?",
+        "options": [
+          "Prevention of Illicit Traffic in Narcotic Drugs Act, 1988",
+          "Narcotic Drugs and Psychotropic Substances (NDPS) Act, 1985",
+          "Drugs and Cosmetics Act, 1940"
+        ],
+        "answer": 1,
+        "explanation": "NCB was established on 17 March 1986 under the provisions of the Narcotic Drugs and Psychotropic Substances (NDPS) Act, 1985."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-25T19:12:42"
+  },
+  {
+    "id": "ca-2026-09-024-007",
+    "date": "2026-09-24",
+    "category": "Science & Space Technology",
+    "question": "ISRO and ESA have extended their cooperative agreement in the space sector till which date?",
+    "options": [
+      "8 January 2029",
+      "8 January 2030",
+      "8 January 2032",
+      "8 January 2035"
+    ],
+    "answer": 2,
+    "explanation": "ISRO and the European Space Agency (ESA) signed letters to extend their Cooperative Agreement for another 5 years until 8 January 2032.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "When was the European Space Agency (ESA) established?",
+        "options": [
+          "30 May 1975",
+          "15 August 1969",
+          "1 January 1980"
+        ],
+        "answer": 0,
+        "explanation": "The European Space Agency (ESA) was established on 30 May 1975 and is headquartered in Paris, France."
+      },
+      {
+        "question": "In which year did the original Space Cooperation Framework Agreement between ISRO and ESA first enter into force?",
+        "options": [
+          "January 2002",
+          "January 2010",
+          "January 1995"
+        ],
+        "answer": 0,
+        "explanation": "The formal cooperation agreement between ISRO and ESA originally came into force in January 2002."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-25T19:12:42"
+  },
+  {
+    "id": "ca-2026-09-024-008",
+    "date": "2026-09-24",
+    "category": "Economy & Finance",
+    "question": "Which institution plans to issue India's first Blue Bond?",
+    "options": [
+      "NABARD",
+      "SIDBI",
+      "Sagarmala Finance Corporation",
+      "India Infrastructure Finance Company"
+    ],
+    "answer": 2,
+    "explanation": "Sagarmala Finance Corporation Limited (SFCL) plans to issue India's first Blue Bond to raise approximately ₹600 Crore for sustainable maritime infrastructure projects.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "What primary purpose do Blue Bonds serve in financial markets?",
+        "options": [
+          "Funding digital infrastructure and IT projects",
+          "Financing marine, ocean, and sustainable water resources projects",
+          "Funding renewable solar energy installations on land"
+        ],
+        "answer": 1,
+        "explanation": "Blue Bonds are debt instruments specifically earmarked to fund marine conservation, sustainable shipping, port infrastructure, and clean water resources."
+      },
+      {
+        "question": "Which administrative ministry governs Sagarmala Finance Corporation Limited?",
+        "options": [
+          "Ministry of Finance",
+          "Ministry of Ports, Shipping and Waterways",
+          "Ministry of Environment, Forest and Climate Change"
+        ],
+        "answer": 1,
+        "explanation": "Sagarmala Finance Corporation Limited operates under the Ministry of Ports, Shipping and Waterways."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-25T19:12:42"
+  },
+  {
+    "id": "ca-2026-09-024-009",
+    "date": "2026-09-24",
+    "category": "Persons in News / Science & Medicine",
+    "question": "Recently Padma Shri awardee Dr. G. Vijayaraghavan passed away. He is considered the pioneer of which medical technology in India?",
+    "options": [
+      "Robotic heart surgery",
+      "2D Echocardiography",
+      "Artificial heart transplantation",
+      "Coronary CT Angiography"
+    ],
+    "answer": 1,
+    "explanation": "Dr. G. Vijayaraghavan was a renowned cardiologist known as the pioneer of 2D Echocardiography in India. He established India's first 2D Echo lab in May 1979 in Thiruvananthapuram.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "In which year was Dr. G. Vijayaraghavan conferred the Padma Shri award?",
+        "options": [
+          "2001",
+          "2009",
+          "2015"
+        ],
+        "answer": 1,
+        "explanation": "Dr. G. Vijayaraghavan was honored with the Padma Shri award in 2009 for his contributions to cardiology."
+      },
+      {
+        "question": "What type of wave technology is utilized in 2D Echocardiography for cardiac imaging?",
+        "options": [
+          "Ultrasound Waves",
+          "X-Ray Radiation",
+          "Magnetic Resonance Field"
+        ],
+        "answer": 0,
+        "explanation": "2D Echocardiography uses high-frequency ultrasound waves to create real-time two-dimensional structural images of the heart."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-25T19:12:42"
+  },
+  {
+    "id": "ca-2026-09-024-010",
+    "date": "2026-09-24",
+    "category": "Banking & Economy",
+    "question": "When will the RBI's new 'Minimum Capital Requirements for Market Risk Directions, 2026' come into effect?",
+    "options": [
+      "1 January 2027",
+      "1 April 2027",
+      "1 July 2027",
+      "1 April 2028"
+    ],
+    "answer": 1,
+    "explanation": "The Reserve Bank of India's 'Minimum Capital Requirements for Market Risk Directions, 2026' will come into force starting 1 April 2027.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "Which of the following categories of banks is EXEMPTED from the new Market Risk directions?",
+        "options": [
+          "State Bank of India",
+          "Foreign Banks operating in India",
+          "Small Finance Banks and Payments Banks"
+        ],
+        "answer": 2,
+        "explanation": "The directions apply to commercial banks but exclude Small Finance Banks, Payments Banks, and Local Area Banks."
+      },
+      {
+        "question": "The new RBI Market Risk directions align with which international regulatory framework?",
+        "options": [
+          "Basel-III Framework",
+          "Financial Action Task Force (FATF)",
+          "Bretton Woods Accord"
+        ],
+        "answer": 0,
+        "explanation": "These directions are designed to align bank capital management in India with the revised international Basel-III framework."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-25T19:12:42"
+  },
+  {
+    "id": "ca-2026-09-025-001",
+    "date": "2026-09-25",
+    "category": "Defence",
+    "question": "Exercise Varuna is conducted between the navies of which two countries?",
+    "options": [
+      "USA",
+      "France",
+      "Russia",
+      "UK"
+    ],
+    "answer": 1,
+    "explanation": "Exercise Varuna is a bilateral maritime exercise between India and France. Its 24th edition was held from 22 September 2026 at Toulon and the Western Mediterranean Sea, France. Indian Navy's guided-missile frigate INS Trishul took part in it.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "In which year did Exercise Varuna start?",
+        "options": [
+          "1998",
+          "2001",
+          "2005"
+        ],
+        "answer": 1,
+        "explanation": "Exercise Varuna started in 2001 between India and France."
+      },
+      {
+        "question": "Which is the India-France defence exercise between the two armies?",
+        "options": [
+          "Exercise Garuda",
+          "Exercise Shakti",
+          "Exercise Konkan"
+        ],
+        "answer": 1,
+        "explanation": "Exercise Shakti is conducted between the Indian Army and the French Army, while Exercise Garuda is between the Indian Air Force and the French Air and Space Force."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-25T19:13:12"
+  },
+  {
+    "id": "ca-2026-09-025-002",
+    "date": "2026-09-25",
+    "category": "Summit/Conference",
+    "question": "Where was the World Circular Economy Forum 2026 held?",
+    "options": [
+      "New Delhi",
+      "Gandhinagar",
+      "Bhopal",
+      "Mumbai"
+    ],
+    "answer": 1,
+    "explanation": "The 10th edition of the World Circular Economy Forum (WCEF) 2026 was held at the Mahatma Mandir Convention and Exhibition Centre, Gandhinagar, Gujarat. It was jointly organised by CPCB and Finland's Finnish Innovation Fund Sitra, and was the first WCEF edition held in South Asia.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "What was the theme of WCEF 2026?",
+        "options": [
+          "Circular Economy - Transition for People and Prosperity",
+          "Sustainable Growth for All",
+          "Net Zero by Design"
+        ],
+        "answer": 0,
+        "explanation": "The theme of WCEF 2026 was 'Circular Economy - Transition for People and Prosperity'."
+      },
+      {
+        "question": "Where and in which year was the World Circular Economy Forum first started?",
+        "options": [
+          "2017, Helsinki, Finland",
+          "2015, Geneva, Switzerland",
+          "2019, Berlin, Germany"
+        ],
+        "answer": 0,
+        "explanation": "WCEF was started in 2017 at Helsinki, Finland, initiated by the Finnish Innovation Fund Sitra."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-25T19:13:12"
+  },
+  {
+    "id": "ca-2026-09-025-003",
+    "date": "2026-09-25",
+    "category": "Polity",
+    "question": "Under which Article of the Constitution is the Inter-State Council constituted?",
+    "options": [
+      "Article 262",
+      "Article 263",
+      "Article 280",
+      "Article 356"
+    ],
+    "answer": 1,
+    "explanation": "The Inter-State Council is constituted under Article 263 of the Constitution. President Droupadi Murmu recently issued the Inter-State Council (Amendment) Order, 2026, amending the Inter-State Council Order, 1990, notified by the Ministry of Home Affairs in September 2026.",
+    "questionImageSize": "small",
+    "subQuestions": [
+      {
+        "question": "In which year was the Inter-State Council established on the recommendation of the Sarkaria Commission?",
+        "options": [
+          "1985",
+          "1990",
+          "1995"
+        ],
+        "answer": 1,
+        "explanation": "The Inter-State Council was established on 28 May 1990 through a Presidential Order based on the recommendation of the Sarkaria Commission."
+      },
+      {
+        "question": "Article 262 of the Constitution is related to which subject?",
+        "options": [
+          "Inter-State river-water disputes",
+          "Formation of new states",
+          "Emergency provisions"
+        ],
+        "answer": 0,
+        "explanation": "Article 262 deals with Inter-State river-water disputes, while Article 263 deals with the Inter-State Council and Centre-State/Inter-State coordination."
+      }
+    ],
+    "questionImage": "current-affairs-question-images/2026-09-25/ca-2026-09-025-003.webp",
+    "questionImageId": "img-ca-2026-09-025-003-001",
+    "questionImageName": "image.png",
+    "source": "user-upload",
+    "createdAt": "2026-09-25T19:13:12"
+  },
+  {
+    "id": "ca-2026-09-025-004",
+    "date": "2026-09-25",
+    "category": "Important Days",
+    "question": "When is World Maritime Day observed every year?",
+    "options": [
+      "10 October",
+      "25 September",
+      "5 June",
+      "15 August"
+    ],
+    "answer": 1,
+    "explanation": "World Maritime Day is observed every year on 25 September by the International Maritime Organization (IMO), a UN body. It was established by IMO in 1978. The theme for 2026 is 'From Policy To Practice - Powering Maritime Excellence'.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "Antyodaya Diwas, also observed on 25 September, marks the birth anniversary of whom?",
+        "options": [
+          "Pandit Deendayal Upadhyaya",
+          "Lal Bahadur Shastri",
+          "Jayaprakash Narayan"
+        ],
+        "answer": 0,
+        "explanation": "Antyodaya Diwas is observed on the birth anniversary of Pandit Deendayal Upadhyaya, who spoke about the development of the last poor person."
+      },
+      {
+        "question": "What is the theme of World Pharmacists Day 2026, also observed on 25 September?",
+        "options": [
+          "Empowering pharmacists for healthier futures",
+          "Pharmacists for a Healthier World",
+          "Safe Medicines for All"
+        ],
+        "answer": 0,
+        "explanation": "World Pharmacists Day 2026's theme is 'Empowering pharmacists for healthier futures'. This day started on 25th September 2014."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-25T19:13:12"
+  },
+  {
+    "id": "ca-2026-09-025-005",
+    "date": "2026-09-25",
+    "category": "Environment",
+    "question": "The Global Water Resources 2025 Status Report has been released by which organization?",
+    "options": [
+      "World Meteorological Organization (WMO)",
+      "World Health Organization (WHO)",
+      "World Bank",
+      "United Nations"
+    ],
+    "answer": 0,
+    "explanation": "The State of Global Water Resources Report is released every year by the World Meteorological Organization (WMO). As per the 2025 report, 2025 was the fourth consecutive year when glaciers in all major glaciated regions lost ice mass.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "How much ice mass did glaciers lose in 2025 as per the report?",
+        "options": [
+          "408 ± 132 Gigatonnes",
+          "200 ± 50 Gigatonnes",
+          "600 ± 100 Gigatonnes"
+        ],
+        "answer": 0,
+        "explanation": "Glaciers lost approximately 408 ± 132 Gigatonnes of ice mass in 2025, contributing to about 1.1 ± 0.4 mm of global sea-level rise."
+      },
+      {
+        "question": "Where is the headquarters of WMO located?",
+        "options": [
+          "Geneva, Switzerland",
+          "Paris, France",
+          "New York, USA"
+        ],
+        "answer": 0,
+        "explanation": "WMO's headquarters is located in Geneva, Switzerland. It was established on 23 March 1950 and has 193 members."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-25T19:13:12"
+  },
+  {
+    "id": "ca-2026-09-025-006",
+    "date": "2026-09-25",
+    "category": "Science & Technology",
+    "question": "Which institution became India's first NIT to establish a dedicated campus-based astronomical observatory?",
+    "options": [
+      "NIT Rourkela",
+      "NIT Tiruchirappalli",
+      "NIT Srinagar",
+      "NIT Surathkal"
+    ],
+    "answer": 2,
+    "explanation": "NIT Srinagar became India's first NIT to establish a dedicated campus-based Astronomical Observatory, named 'Observatory For Astronomy And Astrophysics', developed with scientific guidance and collaboration of the Indian Institute of Astrophysics (IIA), Bengaluru.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "In which year was the Indian Institute of Astrophysics (IIA) established?",
+        "options": [
+          "1971",
+          "1981",
+          "1991"
+        ],
+        "answer": 0,
+        "explanation": "IIA was established in 1971 and is headquartered in Bengaluru, Karnataka."
+      },
+      {
+        "question": "Which of these is NOT a main objective of the NIT Srinagar observatory?",
+        "options": [
+          "Practical training in astronomy and astrophysics",
+          "Assisting faculty and students in research",
+          "Launching satellites into orbit"
+        ],
+        "answer": 2,
+        "explanation": "The observatory's objectives include practical training, research assistance, observation/imaging of space objects, and promoting astrophotography — not launching satellites."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-25T19:13:12"
+  },
+  {
+    "id": "ca-2026-09-025-007",
+    "date": "2026-09-25",
+    "category": "Sports",
+    "question": "Which Indian city will host the UCI Road World Championships in 2032?",
+    "options": [
+      "New Delhi",
+      "Bengaluru",
+      "Pune",
+      "Ahmedabad"
+    ],
+    "answer": 2,
+    "explanation": "India will host the UCI Road World Championships for the first time in 2032, in Pune, Maharashtra. The host city was announced during the 195th UCI Congress held in Montréal, Canada.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "UCI (Union Cycliste Internationale) was established in which year?",
+        "options": [
+          "14 April 1900",
+          "10 May 1920",
+          "1 January 1950"
+        ],
+        "answer": 0,
+        "explanation": "UCI was established on 14 April 1900 and is headquartered in Aigle, Switzerland."
+      },
+      {
+        "question": "In which year was the Cycling Federation of India (CFI) established?",
+        "options": [
+          "1946",
+          "1956",
+          "1966"
+        ],
+        "answer": 0,
+        "explanation": "The Cycling Federation of India was established in 1946, with its registered office in New Delhi."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-25T19:13:12"
+  },
+  {
+    "id": "ca-2026-09-025-008",
+    "date": "2026-09-25",
+    "category": "Economy/Environment",
+    "question": "Where has Maruti Suzuki commissioned its first Green Hydrogen Plant?",
+    "options": [
+      "Kharkhoda, Haryana",
+      "Manesar, Haryana",
+      "Hansalpur, Gujarat",
+      "Gurugram, Haryana"
+    ],
+    "answer": 1,
+    "explanation": "Maruti Suzuki India Limited has started its first Green Hydrogen Electrolyser Plant at its Manesar manufacturing facility in Haryana. This pilot plant has a capacity of 300 kW and will use surplus solar electricity to produce green hydrogen through electrolysis.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "Maruti Suzuki India Limited was established in which year, originally as Maruti Udyog Limited?",
+        "options": [
+          "1971",
+          "1981",
+          "1991"
+        ],
+        "answer": 1,
+        "explanation": "Maruti Suzuki India Limited was established in 1981 as Maruti Udyog Limited; it is a subsidiary of Japan's Suzuki Motor Corporation."
+      },
+      {
+        "question": "Green Hydrogen produced at the plant will be mixed with which fuel for use in manufacturing operations?",
+        "options": [
+          "Natural gas",
+          "Diesel",
+          "Petrol"
+        ],
+        "answer": 0,
+        "explanation": "The hydrogen produced will be stored and mixed with natural gas, to be used as process fuel in manufacturing operations."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-25T19:13:12"
+  },
+  {
+    "id": "ca-2026-09-025-009",
+    "date": "2026-09-25",
+    "category": "Obituary",
+    "question": "Surya Krishnamurthy passed away recently, he was related to which field?",
+    "options": [
+      "Politics",
+      "Theatre and Cultural Activities",
+      "Film Direction",
+      "Sports"
+    ],
+    "answer": 1,
+    "explanation": "Renowned cultural organiser, theatre director and former ISRO scientist Soorya Krishnamoorthy passed away on 23 September 2026 in Thiruvananthapuram. He worked with Dr. A.P.J. Abdul Kalam at ISRO and took voluntary retirement in 1999 after about 27 years of service to dedicate his time to art and culture.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "Which organisation founded by Soorya Krishnamoorthy in 1977 organises the Soorya Festival?",
+        "options": [
+          "Soorya Stage and Film Society",
+          "Kerala Sangeetha Nataka Akademi",
+          "Kalaimamani Academy"
+        ],
+        "answer": 0,
+        "explanation": "He founded the Soorya Stage and Film Society in Thiruvananthapuram in 1977, which organises the Soorya Festival."
+      },
+      {
+        "question": "For how many consecutive days is the Soorya Festival held, making it one of the longest cultural festivals?",
+        "options": [
+          "51 days",
+          "111 days",
+          "365 days"
+        ],
+        "answer": 1,
+        "explanation": "The Soorya Festival is held continuously for 111 days, making it one of the longest cultural festivals."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-25T19:13:12"
+  },
+  {
+    "id": "ca-2026-09-025-010",
+    "date": "2026-09-25",
+    "category": "Environment/Science",
+    "question": "In which district was the plant species Ophiopogon japonicus recorded for the first time in India?",
+    "options": [
+      "Dimapur, Nagaland",
+      "West Kameng, Arunachal Pradesh",
+      "West Sikkim, Sikkim",
+      "Chamoli, Uttarakhand"
+    ],
+    "answer": 1,
+    "explanation": "The Wildlife Institute of India recorded Ophiopogon japonicus for the first time in India in the West Kameng district of Arunachal Pradesh. The sample was found in 2025 at an elevation of about 2,185 metres in a temperate broadleaf forest, extending the species' known geographical distribution to the Eastern Himalaya and India.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "Ophiopogon japonicus is native to which region?",
+        "options": [
+          "East Asia",
+          "South America",
+          "Central Africa"
+        ],
+        "answer": 0,
+        "explanation": "Ophiopogon japonicus is native to East Asia and is found in countries like China, Japan, Korea, Vietnam and Nepal."
+      },
+      {
+        "question": "In which year was the Wildlife Institute of India (WII) established?",
+        "options": [
+          "1972",
+          "1982",
+          "1992"
+        ],
+        "answer": 1,
+        "explanation": "WII was established in 1982 and got the status of an Autonomous Institution in 1986; its headquarters is at Chandrabani, Dehradun, Uttarakhand."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-25T19:13:12"
   }
 ]
