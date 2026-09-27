@@ -1,16 +1,2336 @@
+// // const { useState, useEffect, useRef } = React;
+// // function Icon({ symbol, size = 16 }) {
+// //   return React.createElement("span", { style: { display: "inline-block", width: size, textAlign: "center", fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, lineHeight: 1 } }, symbol);
+// // }
+// // const iconSymbols = {
+// //   Play: "▶", CheckCircle2: "✓", XCircle: "✕", EyeOff: "◌", Eye: "◉", ListChecks: "☷", Plus: "＋", X: "×",
+// //   Pencil: "✎", Copy: "⧉", Trash2: "⌫", Upload: "↥", ChevronLeft: "‹", ChevronRight: "›", Shuffle: "⤨",
+// //   ListOrdered: "☷", RotateCcw: "↶",
+// // };
+// // const icons = Object.fromEntries(Object.entries(iconSymbols).map(([name, symbol]) => [name, (props) => <Icon {...props} symbol={symbol} />]));
+// // const {
+// //   Play, CheckCircle2, XCircle, EyeOff, Eye, ListChecks, Plus, X, Pencil,
+// //   Copy, Trash2, Upload, ChevronLeft, ChevronRight, Shuffle, ListOrdered, RotateCcw
+// // } = icons;
+
+// // /* ---------------------------------- helpers ---------------------------------- */
+
+// // function uid() {
+// //   return Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
+// // }
+
+// // const SUPERSCRIPTS = { "0": "⁰", "1": "¹", "2": "²", "3": "³", "4": "⁴", "5": "⁵", "6": "⁶", "7": "⁷", "8": "⁸", "9": "⁹" };
+// // const SUBSCRIPTS = { "0": "₀", "1": "₁", "2": "₂", "3": "₃", "4": "₄", "5": "₅", "6": "₆", "7": "₇", "8": "₈", "9": "₉" };
+
+// // function formatMathText(value) {
+// //   return String(value || "")
+// //     .replace(/root-\s*(\d+(?:\.\d+)?)/gi, (_, number) => "√" + number)
+// //     .replace(/\b(\d+)\s*&\s*(\d+)\s*\/\s*(\d+)\b/g, (_, whole, numerator, denominator) =>
+// //       whole +
+// //       [...numerator].map((digit) => SUPERSCRIPTS[digit]).join("") +
+// //       "⁄" +
+// //       [...denominator].map((digit) => SUBSCRIPTS[digit]).join("")
+// //     )
+// //     .replace(/\^([0-9]+)/g, (_, power) => [...power].map((digit) => SUPERSCRIPTS[digit]).join(""));
+// // }
+// // function renderTextWithClickableLinks(value) {
+// //   const parts = String(value || "").split(/(https?:\/\/[^\s]+)/g);
+
+// //   return parts.map((part, index) => {
+// //     if (/^https?:\/\//i.test(part)) {
+// //       return (
+// //         <a
+// //           key={index}
+// //           href={part}
+// //           target="_blank"
+// //           rel="noopener noreferrer"
+// //           onClick={(e) => e.stopPropagation()}
+// //         >
+// //           {part}
+// //         </a>
+// //       );
+// //     }
+
+// //     return <React.Fragment key={index}>{formatMathText(part)}</React.Fragment>;
+// //   });
+// // }
+
+
+// // function shuffleArr(arr) {
+// //   const a = [...arr];
+// //   for (let i = a.length - 1; i > 0; i--) {
+// //     const j = Math.floor(Math.random() * (i + 1));
+// //     [a[i], a[j]] = [a[j], a[i]];
+// //   }
+// //   return a;
+// // }
+
+// // function sampleQuestions() {
+// //   const topicData = window.MATH_TOPIC_DATA || {};
+// //   const allQuestions = Object.values(topicData).flatMap((topicQuestions) => Array.isArray(topicQuestions) ? topicQuestions : []);
+
+// //   if (allQuestions.length > 0) {
+// //     return allQuestions.map((question, index) => ({
+// //       ...question,
+// //       id: question.id || `topic-${index}`,
+// //       order: typeof question.order === "number" ? question.order : index,
+// //       attemptStatus: question.attemptStatus || "unattempted",
+// //       testAllowed: question.testAllowed !== false,
+// //     }));
+// //   }
+
+// //   return [
+// //     {
+// //       id: "s1", order: 0, category: "Algebra",
+// //       questionText: "If (x + y)^2 = xy + 8 and x^3 - y^3 = 96, then what is the value of x - y?",
+// //       questionImage: null,
+// //       options: ["12", "20", "-12", "16"],
+// //       correctIndex: 0,
+// //       solutionText: "From (x+y)^2 = x^2 + 2xy + y^2 = xy + 8, we get x^2 + xy + y^2 = 8. Using x^3 - y^3 = (x-y)(x^2 + xy + y^2), substitute: x^3 - y^3 = (x-y) \u00d7 8. Since x^3 - y^3 = 96, we get 8(x-y) = 96, so x-y = 12.",
+// //       solutionImage: null,
+// //       attemptStatus: "unattempted",
+// //       testAllowed: true,
+// //     },
+// //     {
+// //       id: "s2", order: 1, category: "Algebra",
+// //       questionText: "Solve for x: 2x + 5 = 15",
+// //       questionImage: null,
+// //       options: ["3", "5", "7", "10"],
+// //       correctIndex: 1,
+// //       solutionText: "Subtract 5 from both sides: 2x = 10. Divide both sides by 2: x = 5.",
+// //       solutionImage: null,
+// //       attemptStatus: "unattempted",
+// //       testAllowed: true,
+// //     },
+// //     {
+// //       id: "s3", order: 2, category: "Geometry",
+// //       questionText: "Find the area of a circle with radius 7 cm. (Use \u03c0 = 22/7)",
+// //       questionImage: null,
+// //       options: ["144 cm\u00b2", "150 cm\u00b2", "154 cm\u00b2", "160 cm\u00b2"],
+// //       correctIndex: 2,
+// //       solutionText: "Area = \u03c0r\u00b2 = (22/7) \u00d7 7 \u00d7 7 = 154 cm\u00b2.",
+// //       solutionImage: null,
+// //       attemptStatus: "unattempted",
+// //       testAllowed: true,
+// //     },
+// //     {
+// //       id: "s4", order: 3, category: "Percentage",
+// //       questionText: "What is 15% of 200?",
+// //       questionImage: null,
+// //       options: ["20", "25", "30", "35"],
+// //       correctIndex: 2,
+// //       solutionText: "15% of 200 = (15/100) \u00d7 200 = 30.",
+// //       solutionImage: null,
+// //       attemptStatus: "unattempted",
+// //       testAllowed: true,
+// //     },
+// //     {
+// //       id: "s5", order: 4, category: "Algebra",
+// //       questionText: "If a = 3 and b = 4, what is a\u00b2 + b\u00b2?",
+// //       questionImage: null,
+// //       options: ["7", "12", "25", "49"],
+// //       correctIndex: 2,
+// //       solutionText: "a\u00b2 + b\u00b2 = 3\u00b2 + 4\u00b2 = 9 + 16 = 25.",
+// //       solutionImage: null,
+// //       attemptStatus: "unattempted",
+// //       testAllowed: true,
+// //     },
+// //     {
+// //       id: "s6", order: 5, category: "Number Theory",
+// //       questionText: "What is the LCM of 4 and 6?",
+// //       questionImage: null,
+// //       options: ["8", "10", "12", "24"],
+// //       correctIndex: 2,
+// //       solutionText: "Multiples of 4: 4, 8, 12, 16\u2026 Multiples of 6: 6, 12, 18\u2026 The smallest common multiple is 12.",
+// //       solutionImage: null,
+// //       attemptStatus: "unattempted",
+// //       testAllowed: true,
+// //     },
+// //   ];
+// // }
+
+// // function createQuestionStorage() {
+// //   const localStorageAdapter = window.storage || {
+// //     get: async (key) => window.localStorage.getItem(key),
+// //     set: async (key, value) => window.localStorage.setItem(key, value),
+// //     remove: async (key) => window.localStorage.removeItem(key),
+// //   };
+
+// //   return {
+// //     async get(key) {
+// //       try {
+// //         const response = await fetch("/api/questions", { cache: "no-store" });
+// //         if (!response.ok) throw new Error("Question API is unavailable");
+// //         const payload = await response.json();
+// //         return JSON.stringify(Array.isArray(payload.questions) ? payload.questions : []);
+// //       } catch (error) {
+// //         return localStorageAdapter.get(key);
+// //       }
+// //     },
+// //     async set(key, value) {
+// //       try {
+// //         const response = await fetch("/api/questions", {
+// //           method: "POST",
+// //           headers: { "Content-Type": "application/json" },
+// //           body: value,
+// //         });
+// //         if (!response.ok) throw new Error("Could not save questions");
+// //       } catch (error) {
+// //         await localStorageAdapter.set(key, value);
+// //       }
+// //     },
+// //     async delete(key, id) {
+// //       try {
+// //         const response = await fetch(`/api/questions?id=${encodeURIComponent(id)}`, {
+// //           method: "DELETE",
+// //           headers: { "Content-Type": "application/json" },
+// //         });
+// //         if (!response.ok) throw new Error("Could not delete question");
+// //         const payload = await response.json();
+// //         const questions = Array.isArray(payload.questions) ? payload.questions : [];
+// //         await localStorageAdapter.set(key, JSON.stringify(questions));
+// //         return questions;
+// //       } catch (error) {
+// //         const current = JSON.parse((await localStorageAdapter.get(key)) || "[]");
+// //         const remaining = current.filter((question) => String(question.id) !== String(id));
+// //         await localStorageAdapter.set(key, JSON.stringify(remaining));
+// //         return remaining;
+// //       }
+// //     },
+// //   };
+// // }
+
+// // function defaultOptions() {
+// //   return ["1", "2", "3", "4"];
+// // }
+
+// // function emptyDraft() {
+// //   return { category: "", questionText: "", questionImage: null, options: defaultOptions(), correctIndex: 0, solutionText: "", solutionImage: null, special: false };
+// // }
+
+// // function normalizeQuestion(question) {
+// //   const options = Array.isArray(question.options) && question.options.length ? question.options : defaultOptions();
+// //   const parsedIndex = Number(question.correctIndex);
+// //   const correctIndex = Number.isInteger(parsedIndex) && parsedIndex >= 0 && parsedIndex < options.length ? parsedIndex : 0;
+// //   return { ...question, options, correctIndex, special: question.special === true };
+// // }
+
+// // const SECTIONS = [
+// //   { key: "test", label: "Test", icon: Play },
+// //   { key: "correct", label: "Weak", icon: CheckCircle2 },
+// //   { key: "hidden", label: "Hidden", icon: EyeOff },
+// //   { key: "allowed", label: "Allowed", icon: ListChecks },
+// //   { key: "special", label: "Special", icon: ListChecks },
+// // ];
+
+// // /* ---------------------------------- image crop modal ---------------------------------- */
+
+// // function ImageCropModal({ src, onCancel, onApply }) {
+// //   const imgRef = useRef(null);
+// //   const [disp, setDisp] = useState(null);
+// //   const [crop, setCrop] = useState(null);
+// //   const dragRef = useRef(null);
+
+// //   function onImgLoad(e) {
+// //     const rect = e.target.getBoundingClientRect();
+// //     const d = { w: rect.width, h: rect.height };
+// //     setDisp(d);
+// //     setCrop({ x: 0, y: 0, w: d.w, h: d.h });
+// //   }
+
+// //   function clamp(v, min, max) { return Math.min(Math.max(v, min), max); }
+
+// //   function onDragMove(e) {
+// //     if (!dragRef.current || !disp) return;
+// //     e.preventDefault();
+// //     const point = e.touches ? e.touches[0] : e;
+// //     const dx = point.clientX - dragRef.current.startX;
+// //     const dy = point.clientY - dragRef.current.startY;
+// //     const { mode, orig } = dragRef.current;
+// //     if (mode === "move") {
+// //       const nx = clamp(orig.x + dx, 0, disp.w - orig.w);
+// //       const ny = clamp(orig.y + dy, 0, disp.h - orig.h);
+// //       setCrop((c) => ({ ...c, x: nx, y: ny }));
+// //     } else if (mode === "resize") {
+// //       const nw = clamp(orig.w + dx, 30, disp.w - orig.x);
+// //       const nh = clamp(orig.h + dy, 30, disp.h - orig.y);
+// //       setCrop((c) => ({ ...c, w: nw, h: nh }));
+// //     }
+// //   }
+
+// //   function endDrag() {
+// //     dragRef.current = null;
+// //     window.removeEventListener("mousemove", onDragMove);
+// //     window.removeEventListener("mouseup", endDrag);
+// //     window.removeEventListener("touchmove", onDragMove);
+// //     window.removeEventListener("touchend", endDrag);
+// //   }
+
+// //   function startDrag(mode, e) {
+// //     e.preventDefault();
+// //     e.stopPropagation();
+// //     const point = e.touches ? e.touches[0] : e;
+// //     dragRef.current = { mode, startX: point.clientX, startY: point.clientY, orig: { ...crop } };
+// //     window.addEventListener("mousemove", onDragMove);
+// //     window.addEventListener("mouseup", endDrag);
+// //     window.addEventListener("touchmove", onDragMove, { passive: false });
+// //     window.addEventListener("touchend", endDrag);
+// //   }
+
+// //   function applyCrop() {
+// //     if (!crop || !disp || !imgRef.current) { onCancel(); return; }
+// //     const img = imgRef.current;
+// //     const scaleX = img.naturalWidth / disp.w;
+// //     const scaleY = img.naturalHeight / disp.h;
+// //     const sx = crop.x * scaleX, sy = crop.y * scaleY, sw = crop.w * scaleX, sh = crop.h * scaleY;
+// //     const canvas = document.createElement("canvas");
+// //     canvas.width = Math.max(1, Math.round(sw));
+// //     canvas.height = Math.max(1, Math.round(sh));
+// //     const ctx = canvas.getContext("2d");
+// //     ctx.drawImage(img, sx, sy, sw, sh, 0, 0, canvas.width, canvas.height);
+// //     onApply(canvas.toDataURL("image/png"));
+// //   }
+
+// //   return (
+// //     <div className="modal-overlay" onClick={onCancel}>
+// //       <div className="modal crop-modal" onClick={(e) => e.stopPropagation()}>
+// //         <div className="modal-head">
+// //           <h2>Crop Image</h2>
+// //           <button className="icon-btn" onClick={onCancel}><X size={16} /></button>
+// //         </div>
+// //         <div className="modal-body">
+// //           <div className="crop-wrap">
+// //             <img ref={imgRef} src={src} onLoad={onImgLoad} alt="to crop" draggable={false} />
+// //             {crop && (
+// //               <div
+// //                 className="crop-box"
+// //                 style={{ left: crop.x, top: crop.y, width: crop.w, height: crop.h }}
+// //                 onMouseDown={(e) => startDrag("move", e)}
+// //                 onTouchStart={(e) => startDrag("move", e)}
+// //               >
+// //                 <div
+// //                   className="crop-handle"
+// //                   onMouseDown={(e) => startDrag("resize", e)}
+// //                   onTouchStart={(e) => startDrag("resize", e)}
+// //                 />
+// //               </div>
+// //             )}
+// //           </div>
+// //           <p className="hint">Drag the box to move it, drag the corner handle to resize.</p>
+// //         </div>
+// //         <div className="modal-foot">
+// //           <button className="btn btn-ghost" onClick={onCancel}>Cancel</button>
+// //           <button className="btn btn-primary" onClick={applyCrop}>Apply Crop</button>
+// //         </div>
+// //       </div>
+// //     </div>
+// //   );
+// // }
+
+// // /* ---------------------------------- image field ---------------------------------- */
+
+// // function ImageField({ label, value, onChange }) {
+// //   const fileRef = useRef(null);
+// //   const [cropSrc, setCropSrc] = useState(null);
+
+// //   function handleFile(file) {
+// //     if (!file) return;
+// //     const reader = new FileReader();
+// //     reader.onload = () => setCropSrc(reader.result);
+// //     reader.readAsDataURL(file);
+// //   }
+
+// //   function handlePaste(e) {
+// //     const items = (e.clipboardData && e.clipboardData.items) || [];
+// //     for (const item of items) {
+// //       if (item.type && item.type.startsWith("image/")) {
+// //         handleFile(item.getAsFile());
+// //         e.preventDefault();
+// //         break;
+// //       }
+// //     }
+// //   }
+
+// //   return (
+// //     <div className="field">
+// //       <label className="field-label">{label}</label>
+// //       {value ? (
+// //         <div className="imgpreview">
+// //           <img src={value} alt="" />
+// //           <div className="imgpreview-actions">
+// //             <button type="button" className="btn btn-ghost btn-xs" onClick={() => setCropSrc(value)}><Pencil size={12} /> Edit</button>
+// //             <button type="button" className="btn btn-ghost btn-xs" onClick={() => onChange(null)}><Trash2 size={12} /> Remove</button>
+// //           </div>
+// //         </div>
+// //       ) : (
+// //         <div className="imgdrop" tabIndex={0} onPaste={handlePaste} onClick={(e) => e.currentTarget.focus()}>
+// //           <button type="button" className="btn btn-ghost btn-xs" onClick={() => fileRef.current && fileRef.current.click()}>
+// //             <Upload size={14} /> Choose image
+// //           </button>
+// //           <span>Click here to paste an image (Ctrl/Cmd+V), or choose a file</span>
+// //         </div>
+// //       )}
+// //       <input
+// //         ref={fileRef} type="file" accept="image/*" style={{ display: "none" }}
+// //         onChange={(e) => { handleFile(e.target.files[0]); e.target.value = ""; }}
+// //       />
+// //       {cropSrc && (
+// //         <ImageCropModal
+// //           src={cropSrc}
+// //           onCancel={() => setCropSrc(null)}
+// //           onApply={(dataUrl) => { onChange(dataUrl); setCropSrc(null); }}
+// //         />
+// //       )}
+// //     </div>
+// //   );
+// // }
+
+// // /* ---------------------------------- question editor modal ---------------------------------- */
+
+// // function QuestionEditorModal({ initial, topics, onCancel, onSave }) {
+// //   const [draft, setDraft] = useState(() => (initial ? JSON.parse(JSON.stringify(initial)) : emptyDraft()));
+// //   const [error, setError] = useState("");
+// //   // Text entered here is appended to the end of every option.
+// //   // Example: options 16, 24, 32, 40 + suffix "%" => 16 %, 24 %, 32 %, 40 %.
+// //   const [optionSuffix, setOptionSuffix] = useState("");
+
+// //   function applyOptionSuffix(options, suffix) {
+// //     const cleanSuffix = String(suffix ?? "");
+// //     if (!cleanSuffix) return options.map((o) => String(o));
+
+// //     return options.map((o) => {
+// //       const value = String(o ?? "");
+// //       // Do not duplicate the suffix if it is already present.
+// //       return value.endsWith(cleanSuffix) ? value : value + cleanSuffix;
+// //     });
+// //   }
+
+// //   function changeOptionSuffix(value) {
+// //     const nextSuffix = String(value ?? "");
+// //     setOptionSuffix(nextSuffix);
+
+// //     setDraft((d) => {
+// //       const previousSuffix = optionSuffix;
+// //       const options = d.options.map((o) => {
+// //         let value = String(o ?? "");
+
+// //         // Remove the previously applied suffix before applying the new one.
+// //         if (previousSuffix && value.endsWith(previousSuffix)) {
+// //           value = value.slice(0, -previousSuffix.length);
+// //         }
+
+// //         return nextSuffix ? value + nextSuffix : value;
+// //       });
+
+// //       return { ...d, options };
+// //     });
+// //   }
+
+// //   function updateOption(i, val) {
+// //     setDraft((d) => {
+// //       const options = [...d.options];
+// //       options[i] = val;
+// //       return { ...d, options };
+// //     });
+// //   }
+
+// //   // Quick option generators:
+// //   // 2 = random integer options
+// //   // . = random decimal options with 2 decimal places
+// //   // a = A, B, C, D
+// //   // 1 = random single-digit options (1-9)
+// //   function generateOptions(type) {
+// //     let options = [];
+
+// //     if (type === "number") {
+// //       const values = new Set();
+// //       while (values.size < 4) {
+// //         values.add(String(Math.floor(Math.random() * 100) + 1));
+// //       }
+// //       options = [...values];
+// //     } else if (type === "decimal") {
+// //       const values = new Set();
+// //       while (values.size < 4) {
+// //         values.add((Math.floor(Math.random() * 9999) / 100).toFixed(2));
+// //       }
+// //       options = [...values];
+// //     } else if (type === "letter") {
+// //       options = ["A", "B", "C", "D"];
+// //     } else if (type === "digit") {
+// //       const values = new Set();
+// //       while (values.size < 4) {
+// //         values.add(String(Math.floor(Math.random() * 9) + 1));
+// //       }
+// //       options = [...values];
+// //     }
+
+// //     setDraft((d) => ({ ...d, options: applyOptionSuffix(options, optionSuffix) }));
+// //   }
+
+// //   function generateRangeOptions() {
+// //     const rawRange = String(optionRange || "").trim();
+// //     const match = rawRange.match(
+// //       /^\s*(-?\d+(?:\.\d+)?)\s*-\s*(-?\d+(?:\.\d+)?)\s*$/
+// //     );
+
+// //     if (!match) {
+// //       setError(
+// //         "Enter range like 10-50 or 5.456-5.987."
+// //       );
+// //       return;
+// //     }
+
+// //     const firstText = match[1];
+// //     const secondText = match[2];
+// //     const first = Number(firstText);
+// //     const second = Number(secondText);
+
+// //     if (!Number.isFinite(first) || !Number.isFinite(second)) {
+// //       setError("Enter a valid numeric range.");
+// //       return;
+// //     }
+
+// //     const decimalPlaces = (value) => {
+// //       const dot = value.indexOf(".");
+// //       return dot === -1 ? 0 : value.length - dot - 1;
+// //     };
+
+// //     const precision = Math.max(
+// //       decimalPlaces(firstText),
+// //       decimalPlaces(secondText)
+// //     );
+// //     const scale = Math.pow(10, precision);
+
+// //     let minScaled = Math.round(Math.min(first, second) * scale);
+// //     let maxScaled = Math.round(Math.max(first, second) * scale);
+// //     const possibleValues = maxScaled - minScaled + 1;
+
+// //     if (possibleValues < 4) {
+// //       setError(
+// //         `This range can make only ${possibleValues} unique option${possibleValues === 1 ? "" : "s"}. Use a wider range.`
+// //       );
+// //       return;
+// //     }
+
+// //     const values = new Set();
+// //     while (values.size < 4) {
+// //       const randomScaled =
+// //         minScaled +
+// //         Math.floor(Math.random() * possibleValues);
+// //       values.add(randomScaled);
+// //     }
+
+// //     const options = [...values].map((scaledValue) => {
+// //       const numericValue = scaledValue / scale;
+// //       return precision > 0
+// //         ? numericValue.toFixed(precision)
+// //         : String(scaledValue);
+// //     });
+
+// //     setDraft((d) => ({
+// //       ...d,
+// //       options: applyOptionSuffix(options, optionSuffix),
+// //     }));
+// //     setError("");
+// //   }
+
+// //   function generateRangeOptions() {
+// //     const rawRange = String(optionRange || "").trim();
+// //     const match = rawRange.match(
+// //       /^\s*(-?\d+(?:\.\d+)?)\s*-\s*(-?\d+(?:\.\d+)?)\s*$/
+// //     );
+
+// //     if (!match) {
+// //       setError(
+// //         "Enter range like 10-50 or 5.456-5.987."
+// //       );
+// //       return;
+// //     }
+
+// //     const firstText = match[1];
+// //     const secondText = match[2];
+// //     const first = Number(firstText);
+// //     const second = Number(secondText);
+
+// //     if (!Number.isFinite(first) || !Number.isFinite(second)) {
+// //       setError("Enter a valid numeric range.");
+// //       return;
+// //     }
+
+// //     const decimalPlaces = (value) => {
+// //       const dot = value.indexOf(".");
+// //       return dot === -1 ? 0 : value.length - dot - 1;
+// //     };
+
+// //     const precision = Math.max(
+// //       decimalPlaces(firstText),
+// //       decimalPlaces(secondText)
+// //     );
+// //     const scale = Math.pow(10, precision);
+
+// //     const minScaled = Math.round(Math.min(first, second) * scale);
+// //     const maxScaled = Math.round(Math.max(first, second) * scale);
+// //     const possibleValues = maxScaled - minScaled + 1;
+
+// //     if (possibleValues < 4) {
+// //       setError(
+// //         `This range can make only ${possibleValues} unique option${possibleValues === 1 ? "" : "s"}. Use a wider range.`
+// //       );
+// //       return;
+// //     }
+
+// //     const values = new Set();
+// //     while (values.size < 4) {
+// //       const randomScaled =
+// //         minScaled +
+// //         Math.floor(Math.random() * possibleValues);
+// //       values.add(randomScaled);
+// //     }
+
+// //     const options = [...values].map((scaledValue) => {
+// //       const numericValue = scaledValue / scale;
+// //       return precision > 0
+// //         ? numericValue.toFixed(precision)
+// //         : String(scaledValue);
+// //     });
+
+// //     setDraft((d) => ({
+// //       ...d,
+// //       options: applyOptionSuffix(options, optionSuffix),
+// //     }));
+// //     setError("");
+// //   }
+
+// //   function handleSave() {
+// //     const topic = draft.category.trim();
+// //     const hasQ = draft.questionText.trim() || draft.questionImage;
+// //     const optsFilled = draft.options.every((o) => o.trim());
+// //     if (!topic) { setError("Add a topic before saving the question."); return; }
+// //     if (!hasQ) { setError("Add question text or a question image."); return; }
+// //     if (!optsFilled) { setError("Fill in all 4 options."); return; }
+// //     const clean = {
+// //       ...draft,
+// //       category: topic,
+// //       questionText: draft.questionText.trim(),
+// //       options: draft.options.map((o) => o.trim()),
+// //       correctIndex: Number(draft.correctIndex),
+// //       solutionText: draft.solutionText.trim(),
+// //     };
+// //     onSave(clean);
+// //   }
+
+// //   return (
+// //     <div className="modal-overlay" onClick={onCancel}>
+// //       <div className="modal" onClick={(e) => e.stopPropagation()}>
+// //         <div className="modal-head">
+// //           <h2>{initial ? "Edit Question" : "New Question"}</h2>
+// //           <button className="icon-btn" onClick={onCancel}><X size={16} /></button>
+// //         </div>
+// //         <div className="modal-body">
+// //           <div className="field">
+// //             <label className="field-label">Topic</label>
+// //             <input className="input" list="question-topics" value={draft.category} onChange={(e) => setDraft((d) => ({ ...d, category: e.target.value }))} placeholder="Select an existing topic or type a new one" />
+// //             <datalist id="question-topics">
+// //               {topics.map((topic) => <option key={topic} value={topic} />)}
+// //             </datalist>
+// //           </div>
+
+// //           <div className="field">
+// //             <label className="field-label">Question Text</label>
+// //             <textarea className="textarea" rows={3} value={draft.questionText} onChange={(e) => setDraft((d) => ({ ...d, questionText: e.target.value }))} placeholder="Type the question..." />
+// //           </div>
+// //           <ImageField label="Question Image (optional)" value={draft.questionImage} onChange={(img) => setDraft((d) => ({ ...d, questionImage: img }))} />
+
+// //           <div className="field">
+// //             <label className="field-label">Options</label>
+
+// //             <div className="quick-option-tools">
+// //               <button
+// //                 type="button"
+// //                 className="quick-option-btn"
+// //                 onClick={() => generateOptions("number")}
+// //                 title="Generate 4 random number options"
+// //               >
+// //                 2
+// //               </button>
+// //               <button
+// //                 type="button"
+// //                 className="quick-option-btn"
+// //                 onClick={() => generateOptions("decimal")}
+// //                 title="Generate 4 random decimal options"
+// //               >
+// //                 .
+// //               </button>
+// //               <button
+// //                 type="button"
+// //                 className="quick-option-btn"
+// //                 onClick={() => generateOptions("letter")}
+// //                 title="Generate A, B, C, D"
+// //               >
+// //                 a
+// //               </button>
+// //               <button
+// //                 type="button"
+// //                 className="quick-option-btn"
+// //                 onClick={() => generateOptions("digit")}
+// //                 title="Generate 4 random options from 1 to 9"
+// //               >
+// //                 1
+// //               </button>
+// //             </div>
+
+// //             <div className="option-suffix-row">
+// //               <input
+// //                 type="text"
+// //                 className="option-suffix-input"
+// //                 value={optionSuffix}
+// //                 onChange={(e) => changeOptionSuffix(e.target.value)}
+// //                 placeholder="%"
+// //                 aria-label="Apply text to end of all options"
+// //                 title="Whatever you type here will be added after every option"
+// //               />
+// //               <span className="option-suffix-hint">append to all options</span>
+// //             </div>
+
+// //             {draft.options.map((opt, i) => (
+// //               <div className="option-edit-row" key={i}>
+// //                 <button type="button" className={"radio-dot" + (draft.correctIndex === i ? " checked" : "")} onClick={() => setDraft((d) => ({ ...d, correctIndex: i }))} title="Mark as correct answer">
+// //                   {String.fromCharCode(65 + i)}
+// //                 </button>
+// //                 <input className="input" value={opt} onChange={(e) => updateOption(i, e.target.value)} placeholder={"Option " + String.fromCharCode(65 + i)} />
+// //               </div>
+// //             ))}
+// //           </div>
+
+// //           <div className="field">
+// //             <label className="field-label">Solution</label>
+// //             <textarea className="textarea" rows={3} value={draft.solutionText} onChange={(e) => setDraft((d) => ({ ...d, solutionText: e.target.value }))} placeholder="Explain the solution..." />
+// //           </div>
+// //           <ImageField label="Solution Image (optional)" value={draft.solutionImage} onChange={(img) => setDraft((d) => ({ ...d, solutionImage: img }))} />
+
+// //           <div className="field">
+// //             <label className="topic-check">
+// //               <input
+// //                 type="checkbox"
+// //                 checked={draft.special === true}
+// //                 onChange={(e) => setDraft((d) => ({ ...d, special: e.target.checked }))}
+// //               />
+// //               <span>Special / Important Question</span>
+// //             </label>
+// //           </div>
+
+// //           {error && <p className="error-text">{error}</p>}
+// //         </div>
+// //         <div className="modal-foot">
+// //           <button className="btn btn-ghost" onClick={onCancel}>Cancel</button>
+// //           <button className="btn btn-primary" onClick={handleSave}>Save Question</button>
+// //         </div>
+// //       </div>
+// //     </div>
+// //   );
+// // }
+
+// // /* ---------------------------------- question card ---------------------------------- */
+
+// // function QuestionCard({ q, onMarkCorrect, onMarkWrong, onToggleAllow, onCopy, onEdit, onDelete, showStatusActions = true, showWrongAction = true }) {
+// //   const [showSolution, setShowSolution] = useState(false);
+// //   const [showOptions, setShowOptions] = useState(false);
+// //   return (
+// //     <div className="card">
+// //       <div className="card-top">
+// //         <span className="badge cat">{q.category || "General"}</span>
+// //         {q.attemptStatus === "correct" && <span className="badge ok">Weak</span>}
+// //         {q.attemptStatus === "wrong" && <span className="badge bad">Wrong</span>}
+// //         {!q.testAllowed && <span className="badge hide">Hidden</span>}
+// //       </div>
+// //       <div
+// //         className="card-q question-toggle"
+// //         onClick={() => setShowOptions((shown) => !shown)}
+// //         onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setShowOptions((shown) => !shown); } }}
+// //         role="button"
+// //         tabIndex={0}
+// //         title={showOptions ? "Hide options" : "Show options"}
+// //       >
+// //         {q.questionText && <p>{formatMathText(q.questionText)}</p>}
+// //         {q.questionImage && <img className="card-img" src={q.questionImage} alt="question" />}
+// //         <span className="question-hint">{showOptions ? "Click question to hide options" : "Click question to show options"}</span>
+// //       </div>
+// //       {showOptions && (
+// //         <div className="opt-list">
+// //           {q.options.map((opt, i) => (
+// //             <div key={i} className={"opt-row" + (i === q.correctIndex ? " opt-correct" : "")}>
+// //               <span className="opt-letter">{String.fromCharCode(65 + i)}</span><span>{formatMathText(opt)}</span>
+// //             </div>
+// //           ))}
+// //         </div>
+// //       )}
+// //       <button type="button" className="link-btn" onClick={() => setShowSolution((s) => !s)}>
+// //         {showSolution ? "Hide solution" : "Show solution"}
+// //       </button>
+// //       {showSolution && (
+// //         <div className="solution">
+// //           {q.solutionText && <p>{renderTextWithClickableLinks(q.solutionText)}</p>}
+// //           {q.solutionImage && <img className="card-img" src={q.solutionImage} alt="solution" />}
+// //           {!q.solutionText && !q.solutionImage && <p className="muted">No solution provided.</p>}
+// //         </div>
+// //       )}
+// //       <div className="card-actions">
+// //         {showStatusActions && <>
+// //           <button
+// //             className={"icon-btn" + (q.attemptStatus === "correct" ? " active-ok" : "")}
+// //             onClick={onMarkCorrect}
+// //             title={q.attemptStatus === "correct" ? "Move back to Allowed / New" : "Move to Weak"}
+// //           >
+// //             <CheckCircle2 size={15} />
+// //           </button>
+// //           {showWrongAction && (
+// //             <button className={"icon-btn" + (q.attemptStatus === "wrong" ? " active-bad" : "")} onClick={onMarkWrong} title="Mark Wrong">
+// //               <XCircle size={15} />
+// //             </button>
+// //           )}
+// //         </>}
+// //         <button
+// //           className="visibility-btn"
+// //           onClick={onToggleAllow}
+// //           title={q.testAllowed ? "Move to Hidden / Perfect" : "Move back to Allowed / New"}
+// //         >
+// //           {q.testAllowed ? <EyeOff size={15} /> : <Eye size={15} />}
+// //           <span>{q.testAllowed ? "Hide" : "Allow"}</span>
+// //         </button>
+// //         <button className="icon-btn" onClick={onCopy} title="Copy Question"><Copy size={15} /></button>
+// //         <button className="icon-btn" onClick={onEdit} title="Edit"><Pencil size={15} /></button>
+// //         <button className="icon-btn danger" onClick={onDelete} title="Delete"><Trash2 size={15} /></button>
+// //       </div>
+// //     </div>
+// //   );
+// // }
+
+// // /* ---------------------------------- section list ---------------------------------- */
+
+// // function TopicFilter({ topics, value, onChange, searchValue, onSearchChange }) {
+// //   return (
+// //     <div className="topic-filter">
+// //       {topics.length > 0 && (
+// //         <>
+// //           <label className="field-label" htmlFor="topic-filter">Filter by topic</label>
+// //           <select id="topic-filter" className="input topic-select" value={value} onChange={(e) => onChange(e.target.value)}>
+// //             <option value="all">All topics</option>
+// //             {topics.map((topic) => <option key={topic} value={topic}>{topic}</option>)}
+// //           </select>
+// //         </>
+// //       )}
+// //       <input
+// //         type="search"
+// //         className="input search-input"
+// //         value={searchValue}
+// //         onChange={(e) => onSearchChange(e.target.value)}
+// //         placeholder="Search questions..."
+// //         aria-label="Search questions"
+// //       />
+// //     </div>
+// //   );
+// // }
+
+// // function SectionList({ title, emptyText, items, topics, topicFilter, onTopicChange, searchQuery, onSearchChange, onMarkCorrect, onMarkWrong, onToggleAllow, onCopy, onEdit, onDelete, showStatusActions = true, showWrongAction = true }) {
+// //   const sorted = [...items].sort((a, b) => a.order - b.order);
+// //   return (
+// //     <div className="section-wrap">
+// //       <div className="section-head"><h2>{title}</h2><span className="count-pill">{items.length}</span></div>
+// //       <TopicFilter topics={topics} value={topicFilter} onChange={onTopicChange} searchValue={searchQuery} onSearchChange={onSearchChange} />
+// //       {sorted.length === 0 ? (
+// //         <div className="empty-state">{emptyText}</div>
+// //       ) : (
+// //         <div className="card-list">
+// //           {sorted.map((q) => (
+// //             <QuestionCard
+// //               key={q.id} q={q}
+// //               onMarkCorrect={() => onMarkCorrect(q.id)}
+// //               onMarkWrong={() => onMarkWrong(q.id)}
+// //               onToggleAllow={() => onToggleAllow(q.id)}
+// //               onCopy={() => onCopy(q.id)}
+// //               onEdit={() => onEdit(q.id)}
+// //               onDelete={() => onDelete(q.id)}
+// //               showStatusActions={showStatusActions}
+// //               showWrongAction={showWrongAction}
+// //             />
+// //           ))}
+// //         </div>
+// //       )}
+// //     </div>
+// //   );
+// // }
+
+// // /* ---------------------------------- test mode ---------------------------------- */
+
+// // function TestSetup({ testPoolCount, topics, config, setConfig, onStart }) {
+// //   const selectedTopics = Array.isArray(config.topics) ? config.topics : [];
+// //   const allTopicsSelected = selectedTopics.length === topics.length && topics.length > 0;
+
+// //   function toggleTopic(topic) {
+// //     setConfig((c) => {
+// //       const current = Array.isArray(c.topics) ? c.topics : [];
+// //       const next = current.includes(topic)
+// //         ? current.filter((t) => t !== topic)
+// //         : [...current, topic];
+// //       return { ...c, topics: next };
+// //     });
+// //   }
+
+// //   function selectAllTopics() {
+// //     setConfig((c) => ({ ...c, topics: [...topics] }));
+// //   }
+
+// //   function clearTopics() {
+// //     setConfig((c) => ({ ...c, topics: [] }));
+// //   }
+
+// //   const sourceLabel =
+// //     config.pool === "weak"
+// //       ? "Weak questions"
+// //       : config.pool === "hidden"
+// //         ? "Hidden / Perfect questions"
+// //         : config.pool === "special"
+// //           ? "Special questions"
+// //           : config.pool === "all"
+// //             ? "All questions"
+// //             : "Allowed / New questions";
+
+// //   const topicLabel =
+// //     selectedTopics.length === 0
+// //       ? "All topics"
+// //       : selectedTopics.length === topics.length
+// //         ? "All topics"
+// //         : selectedTopics.join(", ");
+
+// //   return (
+// //     <div className="test-setup">
+// //       <div className="setup-card">
+// //         <h2>Start a Test</h2>
+// //         <p className="muted">
+// //           {testPoolCount} question{testPoolCount !== 1 ? "s" : ""} available
+// //           {selectedTopics.length ? ` from ${topicLabel}` : " from all topics"}.
+// //         </p>
+
+// //         <div className="field">
+// //           <label className="field-label">Question Source</label>
+// //           <div className="test-source-grid">
+// //             <button
+// //               type="button"
+// //               className={"source-choice" + (config.pool === "allowed" ? " selected" : "")}
+// //               onClick={() => setConfig((c) => ({ ...c, pool: "allowed" }))}
+// //             >
+// //               <span className="source-title">Allowed / New</span>
+// //               <span className="source-desc">New or not-yet-classified questions</span>
+// //             </button>
+
+// //             <button
+// //               type="button"
+// //               className={"source-choice" + (config.pool === "weak" ? " selected" : "")}
+// //               onClick={() => setConfig((c) => ({ ...c, pool: "weak" }))}
+// //             >
+// //               <span className="source-title">Weak</span>
+// //               <span className="source-desc">Questions you need more practice in</span>
+// //             </button>
+
+// //             <button
+// //               type="button"
+// //               className={"source-choice" + (config.pool === "hidden" ? " selected" : "")}
+// //               onClick={() => setConfig((c) => ({ ...c, pool: "hidden" }))}
+// //             >
+// //               <span className="source-title">Hidden / Perfect</span>
+// //               <span className="source-desc">Questions you already know well</span>
+// //             </button>
+
+// //             <button
+// //               type="button"
+// //               className={"source-choice" + (config.pool === "special" ? " selected" : "")}
+// //               onClick={() => setConfig((c) => ({ ...c, pool: "special" }))}
+// //             >
+// //               <span className="source-title">Special</span>
+// //               <span className="source-desc">Special / Important questions</span>
+// //             </button>
+
+// //             <button
+// //               type="button"
+// //               className={"source-choice" + (config.pool === "all" ? " selected" : "")}
+// //               onClick={() => setConfig((c) => ({ ...c, pool: "all" }))}
+// //             >
+// //               <span className="source-title">All</span>
+// //               <span className="source-desc">All questions</span>
+// //             </button>
+// //           </div>
+// //           <p className="hint">Every section can be tested separately.</p>
+// //         </div>
+
+// //         <div className="field">
+// //           <div className="topic-select-head">
+// //             <label className="field-label">Select Topics</label>
+// //             <div className="topic-actions">
+// //               <button type="button" className="link-btn" onClick={selectAllTopics} disabled={allTopicsSelected}>Select all</button>
+// //               <button type="button" className="link-btn" onClick={clearTopics} disabled={selectedTopics.length === 0}>Clear</button>
+// //             </div>
+// //           </div>
+
+// //           {topics.length === 0 ? (
+// //             <div className="empty-state">No topics available.</div>
+// //           ) : (
+// //             <div className="topic-check-grid">
+// //               {topics.map((topic) => {
+// //                 const checked = selectedTopics.includes(topic);
+// //                 return (
+// //                   <label key={topic} className={"topic-check" + (checked ? " checked" : "")}>
+// //                     <input
+// //                       type="checkbox"
+// //                       checked={checked}
+// //                       onChange={() => toggleTopic(topic)}
+// //                     />
+// //                     <span>{topic}</span>
+// //                   </label>
+// //                 );
+// //               })}
+// //             </div>
+// //           )}
+// //           <p className="hint">
+// //             {selectedTopics.length === 0
+// //               ? "No topic selected = all topics."
+// //               : `${selectedTopics.length} topic${selectedTopics.length === 1 ? "" : "s"} selected.`}
+// //           </p>
+// //         </div>
+
+// //         <div className="field">
+// //           <label className="field-label">Number of Questions (max {Math.max(testPoolCount, 1)})</label>
+// //           <input
+// //             type="number"
+// //             min={1}
+// //             max={Math.max(testPoolCount, 1)}
+// //             className="input"
+// //             value={config.count}
+// //             disabled={testPoolCount === 0}
+// //             onChange={(e) => {
+// //               let v = parseInt(e.target.value || "1", 10);
+// //               if (isNaN(v)) v = 1;
+// //               v = Math.max(1, Math.min(v, Math.max(testPoolCount, 1)));
+// //               setConfig((c) => ({ ...c, count: v }));
+// //             }}
+// //             onBlur={(e) => {
+// //               let v = parseInt(e.target.value || "1", 10);
+// //               if (isNaN(v)) v = 1;
+// //               v = Math.max(1, Math.min(v, Math.max(testPoolCount, 1)));
+// //               setConfig((c) => ({ ...c, count: v }));
+// //             }}
+// //           />
+// //         </div>
+
+// //         <div className="test-selection-summary">
+// //           <span>Source: <b>{sourceLabel}</b></span>
+// //           <span>Topics: <b>{selectedTopics.length === 0 || allTopicsSelected ? "All" : selectedTopics.length}</b></span>
+// //           <span>Pool: <b>{testPoolCount}</b></span>
+// //         </div>
+
+// //         <button className="btn btn-primary btn-block" disabled={testPoolCount === 0} onClick={onStart}>
+// //           <Play size={14} /> Start Test
+// //         </button>
+// //         {testPoolCount === 0 && (
+// //           <p className="warn-text">
+// //             No questions available for this selection. Try another source or topic.
+// //           </p>
+// //         )}
+// //       </div>
+// //     </div>
+// //   );
+// // }
+
+// // function TestRunning({ question, index, total, answer, onSelect, onMark, onNext, onBack, onExit, isLast, onHide, ids, answers, allQuestions, onJump }) {
+// //   const [timerSeconds, setTimerSeconds] = useState(0);
+// //   const [timerRunning, setTimerRunning] = useState(false);
+
+// //   useEffect(() => {
+// //     if (!timerRunning) return;
+// //     const timerId = setInterval(() => setTimerSeconds((seconds) => seconds + 1), 1000);
+// //     return () => clearInterval(timerId);
+// //   }, [timerRunning]);
+
+// //   const timerText = `${String(Math.floor(timerSeconds / 60)).padStart(2, "0")}:${String(timerSeconds % 60).padStart(2, "0")}`;
+
+// //   if (!question) {
+// //     return (
+// //       <div className="test-running">
+// //         <div className="empty-state">This question is no longer available.</div>
+// //         <div className="test-nav">
+// //           <button className="btn btn-ghost" disabled={index === 0} onClick={onBack}><ChevronLeft size={14} /> Back</button>
+// //           <button className="btn btn-primary" onClick={onNext}>{isLast ? "Finish" : "Next"} <ChevronRight size={14} /></button>
+// //         </div>
+// //       </div>
+// //     );
+// //   }
+// //   const revealed = answer && answer.revealed;
+// //   return (
+// //     <div className="test-running">
+// //       <div className="test-topbar">
+// //         <button className="link-btn" onClick={onExit}><X size={14} /> Exit</button>
+// //         <span className="progress-label">Question {index + 1} / {total}</span>
+// //         <div className="tiny-timer" aria-label="Test timer">
+// //           <span className="tiny-timer-time">{timerText}</span>
+// //           <button type="button" className="tiny-timer-btn" onClick={() => setTimerRunning(true)} disabled={timerRunning} title="Start timer">▶</button>
+// //           <button type="button" className="tiny-timer-btn" onClick={() => setTimerRunning(false)} disabled={!timerRunning} title="Stop timer">■</button>
+// //           <button type="button" className="tiny-timer-btn" onClick={() => { setTimerRunning(false); setTimerSeconds(0); }} title="Reset timer">↺</button>
+// //         </div>
+// //         <button className="link-btn hide-q-btn" onClick={() => onHide(question.id)} title="Move this question to Hidden / Perfect"><EyeOff size={14} /> Hide / Perfect</button>
+// //       </div>
+// //       <div className="progress-track"><div className="progress-fill" style={{ width: ((index + 1) / total) * 100 + "%" }} /></div>
+// //       {ids && ids.length > 1 && (
+// //         <div className="q-jump-row">
+// //           <span className="q-jump-label">Jump to any question:</span>
+// //           <div className="q-jump-grid">
+// //             {ids.map((qid, i) => {
+// //               const qa = answers ? answers[qid] : null;
+// //               const qq = allQuestions ? allQuestions.find((x) => x.id === qid) : null;
+// //               let cls = "q-jump-btn";
+// //               if (i === index) cls += " current";
+// //               else if (qa && qq) cls += qa.selected === qq.correctIndex ? " ans-correct" : " ans-wrong";
+// //               return (
+// //                 <button key={qid} type="button" className={cls} onClick={() => onJump(i)} title={"Go to question " + (i + 1)}>
+// //                   {i + 1}
+// //                 </button>
+// //               );
+// //             })}
+// //           </div>
+// //         </div>
+// //       )}
+// //       <div className="card q-card">
+// //         <span className="badge cat">{question.category || "General"}</span>
+// //         {question.questionText && <p className="q-text">{formatMathText(question.questionText)}</p>}
+// //         {question.questionImage && <img className="card-img" src={question.questionImage} alt="question" />}
+// //         <div className="opt-list test-opts">
+// //           {question.options.map((opt, i) => {
+// //             let cls = "opt-row selectable";
+// //             if (revealed) {
+// //               if (i === question.correctIndex) cls += " opt-correct-answer";
+// //               else if (answer && i === answer.selected) cls += " opt-wrong-answer";
+// //             } else if (answer && answer.selected === i) cls += " opt-picked";
+// //             return (
+// //               <button key={i} type="button" className={cls} disabled={revealed} onClick={() => onSelect(i)}>
+// //                 <span className="opt-letter">{String.fromCharCode(65 + i)}</span><span>{formatMathText(opt)}</span>
+// //               </button>
+// //             );
+// //           })}
+// //         </div>
+// //         {revealed && (
+// //           <div className="solution reveal">
+// //             <div className="solution-head">
+// //               {answer.selected === question.correctIndex
+// //                 ? <span className="badge ok">Correct!</span>
+// //                 : <span className="badge bad">Incorrect</span>}
+// //             </div>
+// //             {question.solutionText && <p>{renderTextWithClickableLinks(question.solutionText)}</p>}
+// //             {question.solutionImage && <img className="card-img" src={question.solutionImage} alt="solution" />}
+// //             <div className="mark-row">
+// //               <button
+// //                 className={"btn btn-xs" + (question.attemptStatus === "correct" ? " btn-ok-active" : " btn-ghost")}
+// //                 onClick={() => onMark("correct")}
+// //               >
+// //                 <CheckCircle2 size={13} /> {question.attemptStatus === "correct" ? "Remove from Weak" : "Move to Weak"}
+// //               </button>
+// //             </div>
+// //           </div>
+// //         )}
+// //       </div>
+// //       <div className="test-nav">
+// //         <button className="btn btn-ghost" disabled={index === 0} onClick={onBack}><ChevronLeft size={14} /> Back</button>
+// //         <button className="btn btn-primary" onClick={onNext}>{isLast ? "Finish" : "Next"} <ChevronRight size={14} /></button>
+// //       </div>
+// //     </div>
+// //   );
+// // }
+
+// // function TestSummary({ ids, questions, onDone }) {
+// //   const qs = ids.map((id) => questions.find((q) => q.id === id)).filter(Boolean);
+// //   const correct = qs.filter((q) => q.attemptStatus === "correct").length;
+// //   const wrong = qs.filter((q) => q.attemptStatus === "wrong").length;
+// //   const unattempted = qs.length - correct - wrong;
+// //   return (
+// //     <div className="summary">
+// //       <h2>Test Complete</h2>
+// //       <div className="summary-grid">
+// //         <div className="summary-stat ok"><b>{correct}</b><span>Correct</span></div>
+// //         <div className="summary-stat bad"><b>{wrong}</b><span>Wrong</span></div>
+// //         <div className="summary-stat neutral"><b>{unattempted}</b><span>Unmarked</span></div>
+// //       </div>
+// //       <div className="summary-actions">
+// //         <button className="btn btn-primary btn-block" onClick={onDone}><RotateCcw size={14} /> Done / New Test</button>
+// //       </div>
+// //     </div>
+// //   );
+// // }
+
+// // /* ---------------------------------- app ---------------------------------- */
+
+// // function App() {
+// //   const [questions, setQuestions] = useState([]);
+// //   const [loaded, setLoaded] = useState(false);
+// //   const [section, setSection] = useState("test");
+// //   const [editorOpen, setEditorOpen] = useState(false);
+// //   const [editingId, setEditingId] = useState(null);
+// //   const [testConfig, setTestConfig] = useState({ pool: "allowed", topics: [], count: 5 });
+// //   const [testSession, setTestSession] = useState(null);
+// //   const [toast, setToast] = useState("");
+// //   const [topicFilter, setTopicFilter] = useState("all");
+// //   const [searchQuery, setSearchQuery] = useState("");
+
+// //   useEffect(() => {
+// //     let cancelled = false;
+// //     (async () => {
+// //       const STORAGE_KEY = "mathquiz:questions";
+// //       const storage = createQuestionStorage();
+
+// //       let data = [];
+
+// //       try {
+// //         const saved = await storage.get(STORAGE_KEY);
+// //         const value = typeof saved === "string" ? saved : saved && saved.value;
+// //         if (value !== null && value !== undefined && value !== "") {
+// //           const parsed = JSON.parse(value);
+// //           if (Array.isArray(parsed)) {
+// //             data = parsed;
+// //           }
+// //         }
+// //       } catch (e) {}
+
+// //       if (data.length === 0) {
+// //         const topicData = window.MATH_TOPIC_DATA || {};
+// //         const allQuestions = Object.values(topicData).flatMap((topicQuestions) => Array.isArray(topicQuestions) ? topicQuestions : []);
+// //         data = allQuestions.length > 0 ? allQuestions : sampleQuestions();
+// //       }
+
+// //       data = data.map((question, index) => normalizeQuestion({
+// //         ...question,
+// //         id: question.id || `topic-${index}`,
+// //         order: typeof question.order === "number" ? question.order : index,
+// //         attemptStatus: question.attemptStatus || "unattempted",
+// //         testAllowed: question.testAllowed !== false,
+// //       }));
+
+// //       try { await storage.set(STORAGE_KEY, JSON.stringify(data)); } catch (e) {}
+// //       if (!cancelled) { setQuestions(data); setLoaded(true); }
+// //     })();
+// //     return () => { cancelled = true; };
+// //   }, []);
+
+// //   useEffect(() => {
+// //     if (!loaded) return;
+// //     const t = setTimeout(() => {
+// //       const storage = createQuestionStorage();
+// //       storage.set("mathquiz:questions", JSON.stringify(questions)).catch(() => {});
+// //     }, 400);
+// //     return () => clearTimeout(t);
+// //   }, [questions, loaded]);
+
+// //   function notify(msg) { setToast(msg); setTimeout(() => setToast(""), 1800); }
+
+// //   function addQuestion(draft) {
+// //     setQuestions((prev) => [...prev, { ...draft, id: uid(), order: prev.length, attemptStatus: "unattempted", testAllowed: true }]);
+// //     notify("Question added");
+// //   }
+// //   function editQuestionSave(id, draft) {
+// //     setQuestions((prev) => prev.map((q) => (q.id === id ? { ...q, ...draft } : q)));
+// //     notify("Question updated");
+// //   }
+// //   function deleteQuestion(id) {
+// //     const question = questions.find((q) => q.id === id);
+// //     const preview = question && question.questionText
+// //       ? question.questionText.slice(0, 90) + (question.questionText.length > 90 ? "…" : "")
+// //       : "this question";
+
+// //     const confirmed = window.confirm(
+// //       `Are you sure you want to permanently delete "${preview}"?\n\nThis action cannot be undone.`
+// //     );
+
+// //     if (!confirmed) return;
+
+// //     const storage = createQuestionStorage();
+// //     setQuestions((prev) => {
+// //       const remaining = prev.filter((q) => q.id !== id);
+// //       storage.delete("mathquiz:questions", id).catch(() => {});
+// //       return remaining;
+// //     });
+// //     notify("Question deleted");
+// //   }
+// //   async function copyQuestion(id) {
+// //     const question = questions.find((q) => q.id === id);
+// //     if (!question) return;
+
+// //     const textToCopy = String(question.questionText || "").trim();
+// //     if (!textToCopy) {
+// //       notify("No question text to copy");
+// //       return;
+// //     }
+
+// //     try {
+// //       if (navigator.clipboard && window.isSecureContext) {
+// //         await navigator.clipboard.writeText(textToCopy);
+// //       } else {
+// //         const textarea = document.createElement("textarea");
+// //         textarea.value = textToCopy;
+// //         textarea.style.position = "fixed";
+// //         textarea.style.left = "-9999px";
+// //         textarea.style.top = "-9999px";
+// //         document.body.appendChild(textarea);
+// //         textarea.focus();
+// //         textarea.select();
+// //         document.execCommand("copy");
+// //         document.body.removeChild(textarea);
+// //       }
+// //       notify("Question text copied");
+// //     } catch (error) {
+// //       notify("Could not copy question text");
+// //     }
+// //   }
+// //   function markStatus(id, status) {
+// //     setQuestions((prev) => prev.map((q) => {
+// //       if (q.id !== id) return q;
+
+// //       // "correct" is now the Weak bucket.
+// //       if (status === "correct") {
+// //         if (q.attemptStatus === "correct") {
+// //           return { ...q, attemptStatus: "unattempted", testAllowed: true };
+// //         }
+// //         return { ...q, attemptStatus: "correct", testAllowed: true };
+// //       }
+
+// //       // Kept for the existing Special section behavior.
+// //       return { ...q, attemptStatus: q.attemptStatus === status ? "unattempted" : status };
+// //     }));
+// //   }
+
+// //   function toggleAllow(id) {
+// //     setQuestions((prev) => prev.map((q) => {
+// //       if (q.id !== id) return q;
+
+// //       if (!q.testAllowed) {
+// //         // Hidden -> Allowed / New
+// //         return { ...q, testAllowed: true, attemptStatus: "unattempted" };
+// //       }
+
+// //       // Allowed or Weak -> Hidden / Perfect.
+// //       // Reset Weak so the question belongs to only one normal section.
+// //       return { ...q, testAllowed: false, attemptStatus: "unattempted" };
+// //     }));
+// //   }
+
+// //   function hideFromTest(id) {
+// //     setQuestions((prev) => prev.map((q) =>
+// //       q.id === id
+// //         ? { ...q, testAllowed: false, attemptStatus: "unattempted" }
+// //         : q
+// //     ));
+// //     notify("Moved to Hidden / Perfect");
+// //   }
+
+// //   function openNew() { setEditingId(null); setEditorOpen(true); }
+// //   function openEdit(id) { setEditingId(id); setEditorOpen(true); }
+// //   function closeEditor() { setEditorOpen(false); setEditingId(null); }
+// //   function saveEditor(draft) {
+// //     if (editingId) editQuestionSave(editingId, draft); else addQuestion(draft);
+// //     closeEditor();
+// //   }
+// //   function exportTrigonometryData() {
+// //     const topicQuestions = questions
+// //       .filter((q) => (q.category || "").trim().toLowerCase() === "trigonometry")
+// //       .sort((a, b) => a.order - b.order)
+// //       .map(({ id, category, questionText, questionImage, options, correctIndex, solutionText, solutionImage }) => ({
+// //         id,
+// //         category,
+// //         questionText,
+// //         questionImage: questionImage || null,
+// //         options,
+// //         correctIndex,
+// //         solutionText,
+// //         solutionImage: solutionImage || null,
+// //       }));
+
+// //     if (topicQuestions.length === 0) {
+// //       notify("No Trigonometry questions to export");
+// //       return;
+// //     }
+
+// //     const content = `window.MATH_TOPIC_DATA = window.MATH_TOPIC_DATA || {};\nwindow.MATH_TOPIC_DATA.trigonometry = ${JSON.stringify(topicQuestions, null, 2)};\n`;
+// //     const url = URL.createObjectURL(new Blob([content], { type: "text/javascript" }));
+// //     const link = document.createElement("a");
+// //     link.href = url;
+// //     link.download = "trigonometry.js";
+// //     link.click();
+// //     URL.revokeObjectURL(url);
+// //     notify("Downloaded trigonometry.js");
+// //   }
+
+// //   const correctList = questions.filter((q) => q.attemptStatus === "correct");
+// //   const hiddenList = questions.filter((q) => !q.testAllowed);
+// //   // Allowed / New = anything visible in tests and not marked Weak.
+// //   // NOTE: "special" is an independent tag, not a bucket state — a special
+// //   // question that is testAllowed and not Weak will show up here too,
+// //   // in addition to showing up in the Special tab.
+// //   const allowedList = questions.filter((q) => q.testAllowed && q.attemptStatus !== "correct");
+// //   const specialList = questions.filter((q) => q.special === true);
+// //   const topics = [...new Set(questions.map((q) => (q.category || "General").trim()).filter(Boolean))].sort((a, b) => a.localeCompare(b));
+// //   const filterByTopic = (items) => topicFilter === "all" ? items : items.filter((q) => (q.category || "General") === topicFilter);
+// //   const filterBySearch = (items) => {
+// //     const query = searchQuery.trim().toLowerCase();
+// //     if (!query) return items;
+// //     return items.filter((q) => {
+// //       const inText = (q.questionText || "").toLowerCase().includes(query);
+// //       const inOptions = (q.options || []).some((o) => (o || "").toLowerCase().includes(query));
+// //       const inSolution = (q.solutionText || "").toLowerCase().includes(query);
+// //       const inCategory = (q.category || "").toLowerCase().includes(query);
+// //       return inText || inOptions || inSolution || inCategory;
+// //     });
+// //   };
+// //   const filterList = (items) => filterBySearch(filterByTopic(items));
+
+// //   useEffect(() => {
+// //     setTestConfig((c) => {
+// //       const currentTopics = Array.isArray(c.topics) ? c.topics : [];
+// //       const validTopics = currentTopics.filter((topic) => topics.includes(topic));
+// //       const nextTopics = currentTopics.length === 0
+// //         ? []
+// //         : validTopics;
+// //       const sourceList =
+// //         c.pool === "weak"
+// //           ? correctList
+// //           : c.pool === "hidden"
+// //             ? hiddenList
+// //             : c.pool === "special"
+// //               ? specialList
+// //               : c.pool === "all"
+// //                 ? questions
+// //                 : allowedList;
+// //       const topicPool = nextTopics.length === 0
+// //         ? sourceList
+// //         : sourceList.filter((q) => nextTopics.includes((q.category || "General").trim()));
+// //       const max = Math.max(topicPool.length, 1);
+// //       const count = Math.min(Math.max(Number(c.count) || 1, 1), max);
+// //       const pool = ["allowed", "weak", "hidden", "special", "all"].includes(c.pool) ? c.pool : "allowed";
+
+// //       const unchanged =
+// //         pool === c.pool &&
+// //         count === c.count &&
+// //         JSON.stringify(nextTopics) === JSON.stringify(currentTopics);
+
+// //       return unchanged ? c : { ...c, pool, topics: nextTopics, count };
+// //     });
+// //   }, [questions, allowedList.length, correctList.length, hiddenList.length, specialList.length, topics.join("|")]);
+
+// //   function startTest() {
+// //     const sourceList =
+// //       testConfig.pool === "weak"
+// //         ? correctList
+// //         : testConfig.pool === "hidden"
+// //           ? hiddenList
+// //           : testConfig.pool === "special"
+// //             ? specialList
+// //             : testConfig.pool === "all"
+// //               ? questions
+// //               : allowedList;
+
+// //     const selectedTopics = Array.isArray(testConfig.topics) ? testConfig.topics : [];
+
+// //     // STEP 1: Build ONE flat, combined pool of every question that matches
+// //     // the chosen source + selected topics. Newly added questions are simply
+// //     // part of this same flat array — nothing here depends on insertion order.
+// //     const combinedPool = selectedTopics.length === 0
+// //       ? [...sourceList]
+// //       : sourceList.filter((q) => selectedTopics.includes((q.category || "General").trim()));
+
+// //     if (combinedPool.length === 0) return;
+
+// //     const count = Math.max(1, Math.min(Number(testConfig.count) || 1, combinedPool.length));
+
+// //     // STEP 2: Shuffle the WHOLE combined pool first (fresh random order
+// //     // every time a test starts). This guarantees new / old / special
+// //     // questions are all equally likely to land anywhere in the run.
+// //     const shuffledPool = shuffleArr(combinedPool);
+
+// //     // STEP 3: Only AFTER shuffling do we slice out how many questions
+// //     // this test actually needs.
+// //     const ids = shuffledPool.slice(0, count).map((q) => q.id);
+// //     if (ids.length === 0) return;
+
+// //     setTestSession({
+// //       ids,
+// //       idx: 0,
+// //       answers: {},
+// //       finished: false,
+// //       pool: testConfig.pool,
+// //       topics: selectedTopics
+// //     });
+// //   }
+// //   function selectOption(i) {
+// //     setTestSession((prev) => {
+// //       if (!prev) return prev;
+// //       const qid = prev.ids[prev.idx];
+// //       return { ...prev, answers: { ...prev.answers, [qid]: { selected: i, revealed: true } } };
+// //     });
+// //   }
+// //   function markFromTest(status) {
+// //     if (!testSession) return;
+// //     const qid = testSession.ids[testSession.idx];
+// //     markStatus(qid, status);
+// //   }
+// //   function nextQuestion() {
+// //     setTestSession((prev) => {
+// //       if (!prev) return prev;
+// //       if (prev.idx < prev.ids.length - 1) return { ...prev, idx: prev.idx + 1 };
+// //       return { ...prev, finished: true };
+// //     });
+// //   }
+// //   function backQuestion() {
+// //     setTestSession((prev) => (prev && prev.idx > 0 ? { ...prev, idx: prev.idx - 1 } : prev));
+// //   }
+// //   function jumpToQuestion(i) {
+// //     setTestSession((prev) => (prev ? { ...prev, idx: i } : prev));
+// //   }
+// //   function exitTest() { setTestSession(null); }
+
+// //   if (!loaded) {
+// //     return (
+// //       <div className="app loading-screen">
+// //         <style>{CSS}</style>
+// //         <div className="loader">Loading question bank\u2026</div>
+// //       </div>
+// //     );
+// //   }
+
+// //   const editingQuestion = editingId ? questions.find((q) => q.id === editingId) : null;
+
+// //   return (
+// //     <div className="app">
+// //       <style>{CSS}</style>
+// //       <div className="header">
+// //         <div className="header-title"><span className="brand">MATH</span><span className="brand-accent">::BANK</span></div>
+// //         <div className="header-actions">
+// //           <button className="icon-btn export-btn" onClick={exportTrigonometryData} title="Download Trigonometry data" aria-label="Download Trigonometry data"><Icon symbol="v" size={16} /></button>
+// //           <button className="add-btn" onClick={openNew} title="New Question"><Plus size={16} /></button>
+// //         </div>
+// //       </div>
+// //       <div className="header-stats">
+// //         <span className="stat"><b>{questions.length}</b>Total</span>
+// //         <span className="stat ok-c"><b>{correctList.length}</b>Weak</span>
+// //         <span className="stat amber-c"><b>{hiddenList.length}</b>Hidden</span>
+// //         <span className="stat cyan-c"><b>{allowedList.length}</b>Allowed</span>
+// //       </div>
+
+// //       <div className="content">
+// //         {section === "test" && (
+// //           !testSession ? (
+// //             <TestSetup
+// //               testPoolCount={(() => {
+// //                 const sourceList =
+// //                   testConfig.pool === "weak"
+// //                     ? correctList
+// //                     : testConfig.pool === "hidden"
+// //                       ? hiddenList
+// //                       : testConfig.pool === "special"
+// //                         ? specialList
+// //                         : testConfig.pool === "all"
+// //                           ? questions
+// //                           : allowedList;
+// //                 const selectedTopics = Array.isArray(testConfig.topics) ? testConfig.topics : [];
+// //                 return selectedTopics.length === 0
+// //                   ? sourceList.length
+// //                   : sourceList.filter((q) => selectedTopics.includes((q.category || "General").trim())).length;
+// //               })()}
+// //               topics={topics} config={testConfig} setConfig={setTestConfig} onStart={startTest}
+// //             />
+// //           ) : testSession.finished ? (
+// //             <TestSummary ids={testSession.ids} questions={questions} onDone={exitTest} />
+// //           ) : (
+// //             (() => {
+// //               const qid = testSession.ids[testSession.idx];
+// //               const question = questions.find((q) => q.id === qid);
+// //               const answer = testSession.answers[qid];
+// //               return (
+// //                 <TestRunning
+// //                   question={question} index={testSession.idx} total={testSession.ids.length} answer={answer}
+// //                   onSelect={selectOption} onMark={markFromTest} onNext={nextQuestion} onBack={backQuestion} onExit={exitTest}
+// //                   isLast={testSession.idx === testSession.ids.length - 1}
+// //                   onHide={hideFromTest}
+// //                   ids={testSession.ids}
+// //                   answers={testSession.answers}
+// //                   allQuestions={questions}
+// //                   onJump={jumpToQuestion}
+// //                 />
+// //               );
+// //             })()
+// //           )
+// //         )}
+// //         {section === "correct" && (
+// //           <SectionList title="Weak Questions" emptyText="No weak questions yet." items={filterList(correctList)} topics={topics} topicFilter={topicFilter} onTopicChange={setTopicFilter}
+// //             searchQuery={searchQuery} onSearchChange={setSearchQuery}
+// //             onMarkCorrect={(id) => markStatus(id, "correct")} onMarkWrong={(id) => markStatus(id, "wrong")} onToggleAllow={toggleAllow}
+// //             onCopy={copyQuestion} onEdit={openEdit} onDelete={deleteQuestion} showWrongAction={false} />
+// //         )}
+// //         {section === "hidden" && (
+// //           <SectionList title="Hidden / Perfect Questions" emptyText="No hidden/perfect questions yet." items={filterList(hiddenList)} topics={topics} topicFilter={topicFilter} onTopicChange={setTopicFilter}
+// //             searchQuery={searchQuery} onSearchChange={setSearchQuery}
+// //             onMarkCorrect={(id) => markStatus(id, "correct")} onMarkWrong={(id) => markStatus(id, "wrong")} onToggleAllow={toggleAllow}
+// //             onCopy={copyQuestion} onEdit={openEdit} onDelete={deleteQuestion} showWrongAction={false} />
+// //         )}
+// //         {section === "allowed" && (
+// //           <SectionList title="Allowed / New Questions" emptyText="No new/allowed questions yet." items={filterList(allowedList)} topics={topics} topicFilter={topicFilter} onTopicChange={setTopicFilter}
+// //             searchQuery={searchQuery} onSearchChange={setSearchQuery}
+// //             onMarkCorrect={(id) => markStatus(id, "correct")} onMarkWrong={(id) => markStatus(id, "wrong")} onToggleAllow={toggleAllow}
+// //             onCopy={copyQuestion} onEdit={openEdit} onDelete={deleteQuestion} showStatusActions={false} showWrongAction={false} />
+// //         )}
+// //         {section === "special" && (
+// //           <SectionList title="Special / Important Questions" emptyText="No special questions yet." items={filterList(specialList)} topics={topics} topicFilter={topicFilter} onTopicChange={setTopicFilter}
+// //             searchQuery={searchQuery} onSearchChange={setSearchQuery}
+// //             onMarkCorrect={(id) => markStatus(id, "correct")} onMarkWrong={(id) => markStatus(id, "wrong")} onToggleAllow={toggleAllow}
+// //             onCopy={copyQuestion} onEdit={openEdit} onDelete={deleteQuestion} />
+// //         )}
+// //       </div>
+
+// //       <div className="navbar">
+// //         {SECTIONS.map((s) => {
+// //           const Icon = s.icon;
+// //           return (
+// //             <button key={s.key} className={"nav-btn" + (section === s.key ? " active" : "")} onClick={() => setSection(s.key)}>
+// //               <Icon size={17} />
+// //               <span>{s.label}</span>
+// //             </button>
+// //           );
+// //         })}
+// //       </div>
+
+// //       {editorOpen && <QuestionEditorModal initial={editingQuestion} topics={topics} onCancel={closeEditor} onSave={saveEditor} />}
+// //       {toast && <div className="toast">{toast}</div>}
+// //     </div>
+// //   );
+// // }
+
+// // /* ---------------------------------- styles ---------------------------------- */
+
+// // const CSS = `
+// // @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;500;600&display=swap');
+
+// // .app {
+// //   --bg: #0B0F17;
+// //   --panel: #121826;
+// //   --panel-2: #171F30;
+// //   --border: #232C40;
+// //   --cyan: #4C8DFF;
+// //   --violet: #4C8DFF;
+// //   --green: #34C77B;
+// //   --rose: #F2555B;
+// //   --amber: #D9A441;
+// //   --text: #E7ECF5;
+// //   --muted: #8592A6;
+
+// //   width: min(100%, 860px);
+// //   max-width: 860px;
+// //   margin: 0 auto;
+// //   min-height: 100vh;
+// //   display: flex;
+// //   flex-direction: column;
+// //   background: var(--bg);
+// //   color: var(--text);
+// //   font-family: 'Inter', sans-serif;
+// //   font-size: 13px;
+// //   position: relative;
+// // }
+
+// // .app.loading-screen { align-items: center; justify-content: center; }
+// // .loader { font-family: 'JetBrains Mono', monospace; color: var(--cyan); letter-spacing: 1px; font-size: 12px; }
+
+// // .header {
+// //   display: flex; align-items: center; justify-content: space-between;
+// //   padding: 14px 14px 8px 14px; position: sticky; top: 0; z-index: 5;
+// //   background: linear-gradient(180deg, rgba(7,10,19,0.98), rgba(7,10,19,0.85));
+// //   backdrop-filter: blur(6px);
+// //   border-bottom: 1px solid var(--border);
+// // }
+// // .header-title { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 17px; letter-spacing: 0.5px; }
+// // .brand { color: var(--text); }
+// // .brand-accent { color: var(--cyan); }
+// // .header-actions { display: flex; align-items: center; gap: 8px; }
+// // .export-btn { width: 30px; height: 30px; }
+// // .add-btn {
+// //   width: 30px; height: 30px; border-radius: 8px; display: flex; align-items: center; justify-content: center;
+// //   background: var(--cyan); color: #0A0E1A; border: none; cursor: pointer;
+// // }
+// // .add-btn:hover { filter: brightness(1.1); }
+
+// // .header-stats {
+// //   display: flex; gap: 6px; padding: 8px 14px; overflow-x: auto;
+// //   border-bottom: 1px solid var(--border); background: rgba(14,21,38,0.5);
+// // }
+// // .stat {
+// //   font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--muted);
+// //   background: var(--panel-2); border: 1px solid var(--border); border-radius: 6px;
+// //   padding: 4px 7px; display: flex; align-items: center; gap: 4px; white-space: nowrap;
+// // }
+// // .stat b { color: var(--text); font-size: 11px; }
+// // .stat.ok-c b { color: var(--green); } .stat.bad-c b { color: var(--rose); }
+// // .stat.amber-c b { color: var(--amber); } .stat.cyan-c b { color: var(--cyan); }
+
+// // .content { flex: 1 1 auto; overflow-y: auto; padding: 12px 12px 20px 12px; }
+
+// // .section-wrap {}
+// // .section-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+// // .section-head h2 { font-family: 'Space Grotesk', sans-serif; font-size: 14px; font-weight: 700; margin: 0; }
+// // .count-pill {
+// //   font-family: 'JetBrains Mono', monospace; font-size: 10px; background: var(--panel-2);
+// //   border: 1px solid var(--border); color: var(--cyan); border-radius: 20px; padding: 2px 8px;
+// // }
+// // .empty-state {
+// //   border: 1px dashed var(--border); border-radius: 10px; padding: 24px 14px; text-align: center;
+// //   color: var(--muted); font-size: 12px;
+// // }
+// // .card-list { display: flex; flex-direction: column; gap: 10px; }
+
+// // .card {
+// //   background: var(--panel);
+// //   border: 1px solid var(--border); border-radius: 10px; padding: 12px;
+// //   position: relative;
+// // }
+// // .card-top { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
+// // .badge {
+// //   font-family: 'JetBrains Mono', monospace; font-size: 9px; padding: 3px 7px; border-radius: 5px;
+// //   border: 1px solid var(--border); color: var(--muted); text-transform: uppercase; letter-spacing: 0.4px;
+// // }
+// // .badge.cat { color: var(--cyan); border-color: var(--border); background: var(--panel-2); }
+// // .badge.ok { color: var(--green); border-color: var(--border); background: var(--panel-2); }
+// // .badge.bad { color: var(--rose); border-color: var(--border); background: var(--panel-2); }
+// // .badge.hide { color: var(--amber); border-color: var(--border); background: var(--panel-2); }
+
+// // .card-q p { margin: 0 0 6px 0; font-size: 13px; line-height: 1.45; }
+// // .card-img { max-width: 100%; border-radius: 8px; border: 1px solid var(--border); display: block; margin: 6px 0; }
+// // .question-toggle { cursor: pointer; border-radius: 7px; padding: 4px; margin: -4px; }
+// // .question-toggle:hover, .question-toggle:focus { background: rgba(76,141,255,0.08); outline: none; }
+// // .question-hint { display: block; color: var(--muted); font-family: 'JetBrains Mono', monospace; font-size: 9px; margin-top: 5px; }
+
+// // .opt-list { display: flex; flex-direction: column; gap: 5px; margin: 6px 0; }
+// // .opt-row {
+// //   display: flex; align-items: center; gap: 8px; padding: 6px 8px; border-radius: 7px;
+// //   background: rgba(32,51,49,0.035); border: 1px solid var(--border); font-size: 12px;
+// // }
+// // .opt-row.opt-correct { border-color: var(--green); background: var(--panel-2); }
+// // .opt-letter {
+// //   font-family: 'JetBrains Mono', monospace; font-size: 10px; width: 18px; height: 18px; flex: 0 0 auto;
+// //   border-radius: 5px; background: var(--panel-2); display: flex; align-items: center; justify-content: center;
+// //   color: var(--cyan); border: 1px solid var(--border);
+// // }
+
+// // .link-btn {
+// //   background: none; border: none; color: var(--cyan); font-size: 11px; cursor: pointer; padding: 2px 0;
+// //   font-family: 'JetBrains Mono', monospace;
+// // }
+// // .solution {
+// //   margin-top: 6px; padding: 8px; border-radius: 8px; background: var(--panel-2);
+// //   border: 1px solid var(--border); font-size: 12px; line-height: 1.4;
+// // }
+// // .solution p { margin: 0 0 6px 0; }
+// // .muted { color: var(--muted); }
+
+// // .card-actions { display: flex; gap: 6px; margin-top: 10px; flex-wrap: wrap; }
+// // .icon-btn {
+// //   width: 28px; height: 28px; border-radius: 7px; border: 1px solid var(--border); background: var(--panel-2);
+// //   color: var(--muted); display: flex; align-items: center; justify-content: center; cursor: pointer;
+// // }
+// // .visibility-btn {
+// //   min-height: 28px; border-radius: 7px; border: 1px solid var(--border); background: var(--panel-2);
+// //   color: var(--muted); display: inline-flex; align-items: center; justify-content: center; gap: 5px;
+// //   padding: 0 8px; cursor: pointer; font-size: 10px; font-family: 'JetBrains Mono', monospace;
+// // }
+// // .visibility-btn:hover { color: var(--text); border-color: var(--cyan); }
+// // .icon-btn:hover { color: var(--text); border-color: var(--cyan); }
+// // .icon-btn.active-ok { color: var(--green); border-color: var(--green); background: var(--panel-2); }
+// // .icon-btn.active-bad { color: var(--rose); border-color: var(--rose); background: var(--panel-2); }
+// // .icon-btn.danger:hover { color: var(--rose); border-color: var(--rose); }
+
+// // .navbar {
+// //   display: flex; position: sticky; bottom: 0; z-index: 5;
+// //   background: linear-gradient(0deg, rgba(7,10,19,0.98), rgba(7,10,19,0.85));
+// //   border-top: 1px solid var(--border); backdrop-filter: blur(6px);
+// // }
+// // .nav-btn {
+// //   flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 9px 2px 8px 2px;
+// //   background: none; border: none; color: var(--muted); cursor: pointer; font-size: 9px;
+// //   font-family: 'JetBrains Mono', monospace; letter-spacing: 0.3px; position: relative;
+// // }
+// // .nav-btn.active { color: var(--cyan); }
+// // .nav-btn.active::before {
+// //   content: ''; position: absolute; top: 0; left: 25%; right: 25%; height: 2px; background: var(--cyan);
+// //   border-radius: 2px;
+// // }
+
+// // .toast {
+// //   position: fixed; bottom: 68px; left: 50%; transform: translateX(-50%); z-index: 50;
+// //   background: var(--panel-2); border: 1px solid var(--border); color: var(--text); font-size: 11px;
+// //   padding: 8px 14px; border-radius: 20px;
+// //   font-family: 'JetBrains Mono', monospace;
+// // }
+
+// // .field { margin-bottom: 14px; }
+// // .field-label {
+// //   display: block; font-size: 10px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--muted);
+// //   margin-bottom: 6px; font-family: 'JetBrains Mono', monospace;
+// // }
+// // .input, .textarea {
+// //   width: 100%; background: var(--panel-2); border: 1px solid var(--border); border-radius: 8px;
+// //   color: var(--text); padding: 8px 10px; font-size: 13px; font-family: 'Inter', sans-serif;
+// //   box-sizing: border-box;
+// // }
+// // .input:focus, .textarea:focus { outline: none; border-color: var(--cyan); }
+// // .textarea { resize: vertical; }
+// // .hint { font-size: 10px; color: var(--muted); margin: 4px 0 0 0; }
+// // .error-text { color: var(--rose); font-size: 11px; margin: 4px 0; }
+// // .warn-text { color: var(--amber); font-size: 11px; margin-top: 8px; text-align: center; }
+
+// // .quick-option-tools {
+// //   display: flex;
+// //   align-items: center;
+// //   gap: 5px;
+// //   margin-bottom: 8px;
+// // }
+
+// // .range-option-row {
+// //   display: flex;
+// //   align-items: center;
+// //   gap: 6px;
+// //   margin: -2px 0 8px 0;
+// //   flex-wrap: wrap;
+// // }
+
+// // .range-option-input {
+// //   width: 118px;
+// //   height: 24px;
+// //   padding: 0 7px;
+// //   border-radius: 6px;
+// //   border: 1px solid var(--border);
+// //   background: var(--panel-2);
+// //   color: var(--text);
+// //   font-family: 'JetBrains Mono', monospace;
+// //   font-size: 9px;
+// //   box-sizing: border-box;
+// // }
+
+// // .range-option-input:focus {
+// //   outline: none;
+// //   border-color: var(--cyan);
+// //   box-shadow: 0 0 0 2px rgba(103, 199, 221, 0.12);
+// // }
+
+// // .range-option-btn {
+// //   height: 24px;
+// //   padding: 0 9px;
+// //   border-radius: 6px;
+// //   border: 1px solid var(--border);
+// //   background: var(--panel-2);
+// //   color: var(--cyan);
+// //   cursor: pointer;
+// //   font-family: 'JetBrains Mono', monospace;
+// //   font-size: 9px;
+// //   font-weight: 700;
+// // }
+
+// // .range-option-btn:hover {
+// //   border-color: var(--cyan);
+// //   color: var(--text);
+// //   background: rgba(76, 141, 255, 0.1);
+// // }
+
+// // .range-option-btn:active {
+// //   transform: scale(0.97);
+// // }
+
+// // .range-option-hint {
+// //   color: var(--muted);
+// //   font-family: 'JetBrains Mono', monospace;
+// //   font-size: 8px;
+// // }
+
+// // .range-option-row {
+// //   display: flex;
+// //   align-items: center;
+// //   gap: 6px;
+// //   margin: -2px 0 8px 0;
+// //   flex-wrap: wrap;
+// // }
+
+// // .range-option-input {
+// //   width: 118px;
+// //   height: 24px;
+// //   padding: 0 7px;
+// //   border-radius: 6px;
+// //   border: 1px solid var(--border);
+// //   background: var(--panel-2);
+// //   color: var(--text);
+// //   font-family: 'JetBrains Mono', monospace;
+// //   font-size: 9px;
+// //   box-sizing: border-box;
+// // }
+
+// // .range-option-input:focus {
+// //   outline: none;
+// //   border-color: var(--cyan);
+// //   box-shadow: 0 0 0 2px rgba(103, 199, 221, 0.12);
+// // }
+
+// // .range-option-btn {
+// //   height: 24px;
+// //   padding: 0 9px;
+// //   border-radius: 6px;
+// //   border: 1px solid var(--border);
+// //   background: var(--panel-2);
+// //   color: var(--cyan);
+// //   cursor: pointer;
+// //   font-family: 'JetBrains Mono', monospace;
+// //   font-size: 9px;
+// //   font-weight: 700;
+// // }
+
+// // .range-option-btn:hover {
+// //   border-color: var(--cyan);
+// //   color: var(--text);
+// //   background: rgba(76, 141, 255, 0.1);
+// // }
+
+// // .range-option-btn:active {
+// //   transform: scale(0.97);
+// // }
+
+// // .range-option-hint {
+// //   color: var(--muted);
+// //   font-family: 'JetBrains Mono', monospace;
+// //   font-size: 8px;
+// // }
+
+// // .option-suffix-row {
+// //   display: flex;
+// //   align-items: center;
+// //   gap: 6px;
+// //   margin: -2px 0 8px 0;
+// // }
+
+// // .option-suffix-input {
+// //   width: 38px;
+// //   height: 22px;
+// //   padding: 0 4px;
+// //   border-radius: 5px;
+// //   border: 1px solid var(--border);
+// //   background: var(--panel-2);
+// //   color: var(--text);
+// //   font-family: 'JetBrains Mono', monospace;
+// //   font-size: 10px;
+// //   text-align: center;
+// //   box-sizing: border-box;
+// // }
+
+// // .option-suffix-input:focus {
+// //   outline: none;
+// //   border-color: var(--cyan);
+// // }
+
+// // .option-suffix-hint {
+// //   color: var(--muted);
+// //   font-family: 'JetBrains Mono', monospace;
+// //   font-size: 8px;
+// // }
+
+// // .quick-option-btn {
+// //   width: 22px;
+// //   height: 22px;
+// //   padding: 0;
+// //   border-radius: 50%;
+// //   border: 1px solid var(--border);
+// //   background: var(--panel-2);
+// //   color: var(--cyan);
+// //   display: inline-flex;
+// //   align-items: center;
+// //   justify-content: center;
+// //   cursor: pointer;
+// //   font-family: 'JetBrains Mono', monospace;
+// //   font-size: 10px;
+// //   font-weight: 600;
+// //   line-height: 1;
+// // }
+
+// // .quick-option-btn:hover {
+// //   border-color: var(--cyan);
+// //   color: var(--text);
+// //   background: rgba(76,141,255,0.10);
+// // }
+
+// // .quick-option-btn:active {
+// //   transform: scale(0.94);
+// // }
+
+// // .option-edit-row { display: flex; gap: 8px; align-items: center; margin-bottom: 6px; }
+// // .radio-dot {
+// //   width: 26px; height: 26px; border-radius: 7px; flex: 0 0 auto; border: 1px solid var(--border);
+// //   background: var(--panel-2); color: var(--muted); font-family: 'JetBrains Mono', monospace; font-size: 11px;
+// //   cursor: pointer;
+// // }
+// // .radio-dot.checked { background: var(--green); color: #06110C; border-color: var(--green); }
+
+// // .imgdrop {
+// //   border: 1px dashed var(--border); border-radius: 8px; padding: 16px 10px; text-align: center;
+// //   color: var(--muted); font-size: 11px; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 6px;
+// // }
+// // .imgdrop:hover { border-color: var(--cyan); color: var(--cyan); }
+// // .imgpreview { position: relative; }
+// // .imgpreview img { max-width: 100%; border-radius: 8px; border: 1px solid var(--border); display: block; }
+// // .imgpreview-actions { display: flex; gap: 6px; margin-top: 6px; }
+
+// // .btn {
+// //   font-family: 'Inter', sans-serif; font-weight: 600; font-size: 12px; border-radius: 8px; padding: 9px 14px;
+// //   border: 1px solid var(--border); background: var(--panel-2); color: var(--text); cursor: pointer;
+// //   display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+// // }
+// // .btn:disabled { opacity: 0.4; cursor: not-allowed; }
+// // .btn-primary { background: var(--cyan); color: #0A0E1A; border-color: var(--cyan); }
+// // .btn-primary:hover:not(:disabled) { filter: brightness(1.08); }
+// // .btn-ghost { background: transparent; }
+// // .btn-block { width: 100%; }
+// // .btn-xs { font-size: 11px; padding: 6px 9px; }
+// // .btn-ok-active { background: var(--panel-2); color: var(--green); border-color: var(--green); }
+// // .btn-bad-active { background: var(--panel-2); color: var(--rose); border-color: var(--rose); }
+
+// // .toggle-row { display: flex; gap: 6px; }
+// // .toggle-btn {
+// //   flex: 1; padding: 8px; border-radius: 8px; border: 1px solid var(--border); background: var(--panel-2);
+// //   color: var(--muted); font-size: 11px; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 5px;
+// // }
+// // .toggle-btn.active { color: var(--cyan); border-color: var(--cyan); background: var(--panel-2); }
+
+// // .test-setup, .test-running, .summary { display: flex; flex-direction: column; }
+// // .setup-card {
+// //   background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 16px; margin-top: 10px;
+// // }
+// // .setup-card h2 { font-family: 'Space Grotesk', sans-serif; font-size: 15px; margin: 0 0 6px 0; }
+// // .setup-card p.muted { font-size: 11px; margin: 0 0 14px 0; }
+
+// // .test-topbar { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
+// // .progress-label { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--muted); }
+// // .tiny-timer { display: inline-flex; align-items: center; gap: 3px; padding: 3px 5px; border: 1px solid var(--border); border-radius: 5px; background: var(--panel-2); }
+// // .tiny-timer-time { min-width: 42px; font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 600; line-height: 1; color: var(--text); text-align: center; }
+// // .tiny-timer-btn { width: 20px; height: 20px; padding: 0; border: 0; border-radius: 3px; background: transparent; color: var(--muted); font-size: 10px; line-height: 20px; text-align: center; cursor: pointer; }
+// // .tiny-timer-btn:hover:not(:disabled) { background: var(--border); color: var(--text); }
+// // .tiny-timer-btn:disabled { opacity: 0.3; cursor: default; }
+// // .hide-q-btn { color: var(--amber); }
+// // .progress-track { height: 4px; border-radius: 3px; background: var(--panel-2); overflow: hidden; margin-bottom: 12px; }
+// // .progress-fill { height: 100%; background: var(--cyan); }
+
+// // .q-jump-row { margin-bottom: 12px; }
+// // .q-jump-label {
+// //   display: block; font-size: 10px; color: var(--muted); font-family: 'JetBrains Mono', monospace;
+// //   margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.4px;
+// // }
+// // .q-jump-grid { display: flex; flex-wrap: wrap; gap: 6px; }
+// // .q-jump-btn {
+// //   width: 26px;padding: 1px; height: 26px; border-radius: 6px; border: 1px solid var(--border); background: var(--panel-2);
+// //   color: var(--muted); font-family: 'JetBrains Mono', monospace; font-size: 11px; cursor: pointer;
+// // }
+// // .q-jump-btn:hover { border-color: var(--cyan); color: var(--text); }
+// // .q-jump-btn.current { border-color: var(--cyan); background: var(--cyan); color: #0A0E1A; }
+// // .q-jump-btn.ans-correct { border-color: var(--green); color: var(--green); }
+// // .q-jump-btn.ans-wrong { border-color: var(--rose); color: var(--rose); }
+
+// // .q-card .q-text { font-size: 14px; font-weight: 500; margin: 4px 0 8px 0; }
+// // .test-opts .opt-row.selectable {
+// //   width: 100%; text-align: left; cursor: pointer; color: var(--text); font-family: 'Inter', sans-serif;
+// // }
+// // .test-opts .opt-row.selectable:hover:not(:disabled) { border-color: var(--cyan); }
+// // .opt-row.opt-picked { border-color: var(--cyan); background: var(--panel-2); }
+// // .opt-row.opt-correct-answer { border-color: var(--green); background: var(--panel-2); }
+// // .opt-row.opt-wrong-answer { border-color: var(--rose); background: var(--panel-2); }
+
+// // .solution.reveal { margin-top: 10px; }
+// // .solution-head { margin-bottom: 6px; }
+// // .mark-row { display: flex; gap: 6px; margin-top: 8px; }
+
+// // .test-nav { display: flex; justify-content: space-between; gap: 8px; margin-top: 12px; }
+
+// // .summary { align-items: center; text-align: center; padding-top: 30px; }
+// // .summary h2 { font-family: 'Space Grotesk', sans-serif; font-size: 18px; margin-bottom: 16px; }
+// // .summary-grid { display: flex; gap: 10px; margin-bottom: 20px; width: 100%; }
+// // .summary-stat {
+// //   flex: 1; background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 14px 6px;
+// //   display: flex; flex-direction: column; gap: 4px;
+// // }
+// // .summary-stat b { font-family: 'JetBrains Mono', monospace; font-size: 20px; }
+// // .summary-stat span { font-size: 10px; color: var(--muted); }
+// // .summary-stat.ok b { color: var(--green); } .summary-stat.bad b { color: var(--rose); } .summary-stat.neutral b { color: var(--muted); }
+// // .summary-actions { width: 100%; }
+
+// // .modal-overlay {
+// //   position: fixed; inset: 0; background: rgba(4,6,12,0.75); backdrop-filter: blur(3px);
+// //   display: flex; align-items: flex-end; justify-content: center; z-index: 100;
+// // }
+// // .modal {
+// //   background: var(--panel); border: 1px solid var(--border); border-radius: 16px 16px 0 0; width: 100%;
+// //   max-width: 430px; max-height: 88vh; display: flex; flex-direction: column; box-shadow: 0 -10px 40px rgba(0,0,0,0.5);
+// // }
+// // .modal-head { display: flex; align-items: center; justify-content: space-between; padding: 14px; border-bottom: 1px solid var(--border); }
+// // .modal-head h2 { font-family: 'Space Grotesk', sans-serif; font-size: 14px; margin: 0; }
+// // .modal-body { padding: 14px; overflow-y: auto; }
+// // .modal-foot { display: flex; gap: 8px; padding: 12px 14px; border-top: 1px solid var(--border); }
+// // .modal-foot .btn { flex: 1; }
+
+// // .crop-modal .modal-body { display: flex; flex-direction: column; align-items: center; }
+// // .crop-wrap { position: relative; display: inline-block; max-width: 100%; touch-action: none; }
+// // .crop-wrap img { display: block; max-width: 100%; max-height: 60vh; user-select: none; }
+// // .crop-box {
+// //   position: absolute; border: 2px solid var(--cyan); box-shadow: 0 0 0 2000px rgba(4,6,12,0.55); cursor: move;
+// // }
+// // .crop-handle {
+// //   position: absolute; right: -6px; bottom: -6px; width: 14px; height: 14px; border-radius: 3px;
+// //   background: var(--cyan); cursor: se-resize;
+// // }
+
+// // /* visual refresh */
+// // :root { background: #202b35; }
+// // * { box-sizing: border-box; }
+// // body { margin: 0; background: #202b35; }
+// // .app {
+// //   --bg: #202b35; --panel: #2c3a46; --panel-2: #354957; --border: #55707a;
+// //   --cyan: #58b7b1; --green: #7acb9b; --rose: #ee806f; --amber: #e6b35b;
+// //   --text: #f3e5cf; --muted: #b2c0bd;
+// //   width: min(100%, 980px); max-width: 980px; background: var(--bg); color: var(--text);
+// //   font-family: 'DM Sans', sans-serif; font-size: 14px; box-shadow: 0 0 80px rgba(42,49,44,.08);
+// // }
+// // .header { padding: 26px 32px 18px; background: rgba(32,43,53,.96); backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); }
+// // .header-title { font-family: 'Space Grotesk', sans-serif; font-size: 22px; letter-spacing: -.04em; }
+// // .brand-accent { color: var(--cyan); }
+// // .add-btn { width: 42px; height: 42px; border-radius: 50%; background: var(--amber); color: #202b35; box-shadow: none; transition: background .2s, transform .2s; }
+// // .add-btn:hover { transform: rotate(5deg); background: #d19a43; }
+// // .header-stats { gap: 9px; padding: 15px 32px; background: rgba(44,58,70,.94); border-bottom: 1px solid var(--border); }
+// // .stat { font-size: 11px; background: #3b505d; border: 1px solid var(--border); border-radius: 999px; padding: 7px 11px; }
+// // .stat b { font-family: 'Space Grotesk', sans-serif; font-size: 13px; }.stat.ok-c b { color: var(--green); }.stat.bad-c b { color: var(--rose); }.stat.amber-c b { color: var(--amber); }.stat.cyan-c b { color: var(--cyan); }
+// // .content { padding: 28px 32px 36px; }
+// // .section-head { margin-bottom: 16px; }.section-head h2 { font-family: 'Space Grotesk', sans-serif; font-size: 19px; letter-spacing: -.03em; }.count-pill { background: #e2f0ec; color: var(--cyan); border: 0; border-radius: 999px; padding: 5px 10px; }
+// // .empty-state { border: 1px dashed #8f8c73; border-radius: 16px; padding: 40px 18px; background: rgba(86,91,83,.72); }.card-list { gap: 14px; }
+// // .card { background: var(--panel); border: 1px solid var(--border); border-radius: 18px; padding: 20px; box-shadow: 0 8px 22px rgba(18,24,20,.2); transition: transform .2s, box-shadow .2s; }.card:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(18,24,20,.34); }
+// // .badge { font-size: 10px; font-weight: 700; padding: 5px 9px; border-radius: 999px; border-color: transparent; }.badge.cat { color: #8bd0cc; background: #315d5e; }.badge.ok { color: #e7d98b; background: #625d37; }.badge.bad { color: #f1ae95; background: #70473d; }.badge.hide { color: #f0c87e; background: #695334; }
+// // .card-q p { font-size: 16px; line-height: 1.5; font-weight: 500; }.question-toggle:hover, .question-toggle:focus { background: #f4f8f4; }
+// // .opt-list { gap: 7px; margin: 12px 0; }.opt-row { padding: 10px 12px; border-radius: 11px; background: var(--panel-2); border-color: var(--border); font-size: 13px; }.opt-row.opt-correct { border-color: var(--green); background: #6e693c; }.opt-letter { width: 24px; height: 24px; border-radius: 8px; background: #858573; color: #f0c87e; border: 0; }
+// // .link-btn { color: var(--cyan); font-weight: 700; }.solution { padding: 12px; border-radius: 12px; background: #3b505d; border-color: var(--border); color: var(--text); font-size: 13px; }
+// // .card-actions { gap: 7px; margin-top: 15px; }.icon-btn, .visibility-btn { border-radius: 9px; background: var(--panel-2); border-color: var(--border); }.visibility-btn:hover, .icon-btn:hover { color: var(--cyan); border-color: var(--cyan); }
+// // .navbar { background: rgba(44,58,70,.96); border-top-color: var(--border); backdrop-filter: blur(14px); padding: 5px 18px 8px; }.nav-btn { padding: 10px 2px 7px; font-size: 10px; font-family: 'DM Sans', sans-serif; font-weight: 600; }.nav-btn.active { color: var(--amber); }.nav-btn.active::before { top: -5px; height: 3px; background: var(--amber); }
+// // .toast { bottom: 78px; background: var(--text); color: #e8eee6; padding: 10px 16px; border-radius: 999px; box-shadow: 0 8px 20px rgba(23,39,45,.2); }
+// // .field-label { font-size: 11px; font-weight: 700; color: #d8cdb5; font-family: 'DM Sans', sans-serif; letter-spacing: 0; }.input, .textarea { background: #77796b; border-color: var(--border); border-radius: 10px; padding: 11px 12px; font-family: 'DM Sans', sans-serif; }.input:focus, .textarea:focus { border-color: var(--cyan); box-shadow: 0 0 0 3px rgba(47,143,145,.25); }
+// // .radio-dot { width: 32px; height: 32px; border-radius: 9px; }.radio-dot.checked { background: var(--green); color: #3f4540; border-color: var(--green); }.imgdrop { border-color: #8f8c73; border-radius: 12px; padding: 20px 12px; }.imgdrop:hover { border-color: var(--cyan); color: #8bd0cc; }
+// // .btn { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 13px; border-radius: 10px; padding: 10px 15px; }.btn-primary { background: var(--amber); color: #202b35; border-color: var(--amber); box-shadow: none; }.btn-primary:hover:not(:disabled) { transform: translateY(-1px); background: #d19a43; }.toggle-btn.active { color: #f3e5cf; border-color: var(--cyan); background: #285b61; }
+// // .setup-card { background: var(--panel); border-color: var(--border); border-radius: 20px; padding: 27px; width: min(100%, 620px); box-shadow: 0 12px 28px rgba(10,18,25,.18); }.setup-card h2 { font-family: 'Space Grotesk', sans-serif; font-size: 26px; letter-spacing: -.04em; }.progress-track { height: 7px; background: #354957; }.progress-fill { background: var(--cyan); border-radius: 8px; }.q-card .q-text { font-size: 22px; line-height: 1.35; }.test-opts .opt-row.selectable:hover:not(:disabled) { border-color: var(--cyan); background: #285b61; color: var(--text); }.opt-row.opt-picked { border-color: var(--cyan); background: #285b61; color: var(--text); }.opt-row.opt-correct-answer { border-color: var(--green); background: #35634f; color: var(--text); }.opt-row.opt-wrong-answer { border-color: var(--rose); background: #713f43; color: var(--text); }
+// // .summary h2 { font-family: 'Space Grotesk', sans-serif; font-size: 30px; }.summary-stat { background: var(--panel); border-color: var(--border); border-radius: 16px; padding: 18px 8px; }.summary-stat b { font-family: 'Space Grotesk', sans-serif; font-size: 28px; }.summary-stat.ok b { color: var(--green); }.summary-stat.bad b { color: var(--rose); }
+// // .modal-overlay { background: rgba(23,39,45,.42); backdrop-filter: blur(7px); }.modal { background: var(--panel); border-color: var(--border); border-radius: 22px 22px 0 0; max-width: 560px; box-shadow: 0 -18px 60px rgba(23,39,45,.2); }.modal-head { padding: 18px 22px; }.modal-head h2 { font-family: 'Space Grotesk', sans-serif; font-size: 19px; }.modal-body { padding: 22px; }.modal-foot { padding: 15px 22px; }
+// // @media (max-width: 640px) { .header { padding: 20px 18px 14px; }.header-stats { padding: 12px 18px; }.content { padding: 22px 18px 28px; }.card { padding: 16px; border-radius: 15px; }.setup-card { padding: 21px; }.q-card .q-text { font-size: 19px; }.navbar { padding-left: 6px; padding-right: 6px; } }
+
+// // /* final color system */
+// // :root { background: #241d24; }
+// // body { background: #241d24; }
+// // .app {
+// //   --bg: #241d24; --panel: #3a303a; --panel-2: #4b3d48; --border: #745b68;
+// //   --cyan: #67c7dd; --green: #a8d86e; --rose: #f08a6d; --amber: #f0b653;
+// //   --text: #f4e7d2; --muted: #c4b4b2;
+// //   background: var(--bg); color: var(--text);
+// // }
+// // .header { background: rgba(36,29,36,.97); border-color: var(--border); }
+// // .brand-accent { color: var(--cyan); }
+// // .add-btn { background: var(--amber); color: #241d24; box-shadow: none; }
+// // .add-btn:hover { background: #d99a3e; box-shadow: none; }
+// // .header-stats { background: rgba(58,48,58,.96); border-color: var(--border); }
+// // .stat { background: #51434e; border-color: var(--border); color: var(--muted); }
+// // .stat b { color: var(--text); }.stat.ok-c b { color: var(--green); }.stat.bad-c b { color: var(--rose); }.stat.amber-c b { color: var(--amber); }.stat.cyan-c b { color: var(--cyan); }
+// // .section-head h2 { color: var(--text); }.count-pill { background: #354e5b; color: var(--cyan); }
+// // .empty-state { border-color: #806878; background: #332b34; color: var(--muted); }
+// // .card { background: var(--panel); border-color: var(--border); box-shadow: 0 8px 22px rgba(12,8,13,.28); }.card:hover { box-shadow: 0 12px 28px rgba(12,8,13,.42); }
+// // .badge.cat { color: #9be1ed; background: #315768; }.badge.ok { color: #c8ed91; background: #49613c; }.badge.bad { color: #ffb09a; background: #6d403e; }.badge.hide { color: #ffd77d; background: #66502f; }
+// // .question-toggle:hover, .question-toggle:focus { background: #463846; }
+// // .opt-row { background: var(--panel-2); border-color: var(--border); color: var(--text); }.opt-row.opt-correct { background: #49613c; border-color: var(--green); }.opt-letter { background: #5c4e59; color: var(--cyan); }
+// // .link-btn { color: var(--cyan); }.solution { background: #302c38; border-color: #665a73; color: var(--text); }
+// // .icon-btn, .visibility-btn { background: var(--panel-2); border-color: var(--border); color: var(--muted); }.visibility-btn:hover, .icon-btn:hover { color: var(--cyan); border-color: var(--cyan); }.icon-btn.active-ok { color: var(--green); border-color: var(--green); }.icon-btn.active-bad { color: var(--rose); border-color: var(--rose); }
+// // .navbar { background: rgba(58,48,58,.98); border-color: var(--border); }.nav-btn { color: var(--muted); }.nav-btn.active { color: var(--amber); }.nav-btn.active::before { background: var(--amber); }
+// // .toast { background: #151116; color: var(--text); border: 1px solid var(--border); }
+// // .field-label { color: #dfc7b7; }.input, .textarea { background: #51434e; border-color: var(--border); color: var(--text); }.input:focus, .textarea:focus { border-color: var(--cyan); box-shadow: 0 0 0 3px rgba(103,199,221,.2); }
+// // .radio-dot { background: var(--panel-2); border-color: var(--border); color: var(--muted); }.radio-dot.checked { background: var(--green); color: #241d24; border-color: var(--green); }.imgdrop { border-color: var(--border); color: var(--muted); }.imgdrop:hover { border-color: var(--cyan); color: var(--cyan); }
+// // .btn { background: var(--panel-2); border-color: var(--border); color: var(--text); }.btn-primary { background: var(--amber); border-color: var(--amber); color: #241d24; box-shadow: none; }.btn-primary:hover:not(:disabled) { background: #d99a3e; }.btn-ghost { background: transparent; }.btn-ok-active { color: var(--green); border-color: var(--green); background: #364c35; }.btn-bad-active { color: var(--rose); border-color: var(--rose); background: #603b3d; }
+// // .toggle-btn { background: var(--panel-2); border-color: var(--border); color: var(--muted); }.toggle-btn.active { color: var(--text); border-color: var(--cyan); background: #315768; }
+// // .setup-card { background: var(--panel); border-color: var(--border); box-shadow: 0 12px 28px rgba(12,8,13,.26); }.progress-track { background: #4b3d48; }.progress-fill { background: var(--cyan); }.q-card .q-text { color: var(--text); }
+// // .test-opts .opt-row.selectable:hover:not(:disabled) { border-color: var(--cyan); background: #315768; color: var(--text); }.opt-row.opt-picked { background: #315768; border-color: var(--cyan); }.opt-row.opt-correct-answer { background: #49613c; border-color: var(--green); }.opt-row.opt-wrong-answer { background: #6d403e; border-color: var(--rose); }
+// // .summary-stat { background: var(--panel); border-color: var(--border); }.summary-stat.ok b { color: var(--green); }.summary-stat.bad b { color: var(--rose); }.summary-stat.neutral b { color: var(--muted); }
+// // .modal-overlay { background: rgba(20,14,21,.72); }.modal { background: var(--panel); border-color: var(--border); }.modal-head, .modal-foot { border-color: var(--border); }
+// // .topic-filter { display: flex; align-items: center; gap: 10px; margin: -4px 0 16px; padding: 10px 12px; border: 1px solid var(--border); border-radius: 12px; background: #332b34; flex-wrap: wrap; }.topic-filter .field-label { margin: 0; white-space: nowrap; }.topic-select { max-width: 240px; padding: 8px 10px; cursor: pointer; }.topic-select option { background: #3a303a; color: #f4e7d2; }
+// // .search-input { max-width: 260px; flex: 1 1 180px; }
+// // .q-jump-row { padding: 10px 12px; border: 1px solid var(--border); border-radius: 12px; background: #332b34; }
+// // @media (max-width: 640px) { .topic-filter { align-items: stretch; flex-direction: column; gap: 6px; }.topic-select { max-width: none; width: 100%; }.search-input { max-width: none; max-height: 30px; } }
+
+// // .test-source-grid {
+// //   display: grid;
+// //   grid-template-columns: repeat(5, minmax(0, 1fr));
+// //   gap: 7px;
+// // }
+// // .source-choice {
+// //   text-align: left;
+// //   border: 1px solid var(--border);
+// //   background: var(--panel-2);
+// //   color: var(--text);
+// //   border-radius: 8px;
+// //   padding: 9px;
+// //   cursor: pointer;
+// // }
+// // .source-choice:hover, .source-choice.selected {
+// //   border-color: var(--cyan);
+// //   background: rgba(76,141,255,0.10);
+// // }
+// // .source-title {
+// //   display: block;
+// //   font-family: 'Space Grotesk', sans-serif;
+// //   font-weight: 700;
+// //   font-size: 11px;
+// //   margin-bottom: 3px;
+// // }
+// // .source-desc {
+// //   display: block;
+// //   color: var(--muted);
+// //   font-size: 9px;
+// //   line-height: 1.35;
+// // }
+// // .topic-select-head {
+// //   display: flex;
+// //   justify-content: space-between;
+// //   align-items: center;
+// //   gap: 8px;
+// //   margin-bottom: 7px;
+// // }
+// // .topic-select-head .field-label { margin-bottom: 0; }
+// // .topic-actions { display: flex; gap: 8px; }
+// // .topic-actions .link-btn:disabled { opacity: 0.35; cursor: default; }
+// // .topic-check-grid {
+// //   display: grid;
+// //   grid-template-columns: repeat(2, minmax(0, 1fr));
+// //   gap: 6px;
+// //   max-height: 230px;
+// //   overflow-y: auto;
+// //   padding: 2px;
+// // }
+// // .topic-check {
+// //   display: flex;
+// //   align-items: center;
+// //   gap: 7px;
+// //   min-width: 0;
+// //   border: 1px solid var(--border);
+// //   background: var(--panel-2);
+// //   border-radius: 7px;
+// //   padding: 7px 8px;
+// //   cursor: pointer;
+// //   color: var(--muted);
+// // }
+// // .topic-check.checked {
+// //   color: var(--text);
+// //   border-color: var(--cyan);
+// //   background: rgba(76,141,255,0.10);
+// // }
+// // .topic-check input {
+// //   width: 14px;
+// //   height: 14px;
+// //   accent-color: var(--cyan);
+// //   flex: 0 0 auto;
+// // }
+// // .topic-check span {
+// //   overflow: hidden;
+// //   text-overflow: ellipsis;
+// //   white-space: nowrap;
+// // }
+// // .test-selection-summary {
+// //   display: flex;
+// //   flex-wrap: wrap;
+// //   gap: 6px;
+// //   margin: 8px 0 10px;
+// // }
+// // .test-selection-summary span {
+// //   font-family: 'JetBrains Mono', monospace;
+// //   font-size: 9px;
+// //   color: var(--muted);
+// //   background: var(--panel-2);
+// //   border: 1px solid var(--border);
+// //   border-radius: 6px;
+// //   padding: 5px 7px;
+// // }
+// // .test-selection-summary b { color: var(--text); }
+
+// // @media (max-width: 560px) {
+// //   .test-source-grid { grid-template-columns: 1fr; }
+// //   .topic-check-grid { grid-template-columns: 1fr; }
+// // }
+// // `;
+
+// // if (typeof document !== "undefined" && document.getElementById("root")) {
+// //   ReactDOM.createRoot(document.getElementById("root")).render(React.createElement(App));
+// // }
 // const { useState, useEffect, useRef } = React;
+
 // function Icon({ symbol, size = 16 }) {
-//   return React.createElement("span", { style: { display: "inline-block", width: size, textAlign: "center", fontFamily: "'Space Grotesk', sans-serif", fontWeight: 700, lineHeight: 1 } }, symbol);
+//   return React.createElement(
+//     "span",
+//     {
+//       style: {
+//         display: "inline-block",
+//         width: size,
+//         textAlign: "center",
+//         fontFamily: "'Space Grotesk', sans-serif",
+//         fontWeight: 700,
+//         lineHeight: 1,
+//       },
+//     },
+//     symbol
+//   );
 // }
+
 // const iconSymbols = {
-//   Play: "▶", CheckCircle2: "✓", XCircle: "✕", EyeOff: "◌", Eye: "◉", ListChecks: "☷", Plus: "＋", X: "×",
-//   Pencil: "✎", Copy: "⧉", Trash2: "⌫", Upload: "↥", ChevronLeft: "‹", ChevronRight: "›", Shuffle: "⤨",
-//   ListOrdered: "☷", RotateCcw: "↶",
+//   Play: "▶",
+//   CheckCircle2: "✓",
+//   XCircle: "✕",
+//   EyeOff: "◌",
+//   Eye: "◉",
+//   ListChecks: "☷",
+//   Plus: "＋",
+//   X: "×",
+//   Pencil: "✎",
+//   Copy: "⧉",
+//   Trash2: "⌫",
+//   Upload: "↥",
+//   ChevronLeft: "‹",
+//   ChevronRight: "›",
+//   Shuffle: "⤨",
+//   ListOrdered: "☷",
+//   RotateCcw: "↶",
 // };
-// const icons = Object.fromEntries(Object.entries(iconSymbols).map(([name, symbol]) => [name, (props) => <Icon {...props} symbol={symbol} />]));
+
+// const icons = Object.fromEntries(
+//   Object.entries(iconSymbols).map(([name, symbol]) => [
+//     name,
+//     (props) => <Icon {...props} symbol={symbol} />,
+//   ])
+// );
+
 // const {
-//   Play, CheckCircle2, XCircle, EyeOff, Eye, ListChecks, Plus, X, Pencil,
-//   Copy, Trash2, Upload, ChevronLeft, ChevronRight, Shuffle, ListOrdered, RotateCcw
+//   Play,
+//   CheckCircle2,
+//   XCircle,
+//   EyeOff,
+//   Eye,
+//   ListChecks,
+//   Plus,
+//   X,
+//   Pencil,
+//   Copy,
+//   Trash2,
+//   Upload,
+//   ChevronLeft,
+//   ChevronRight,
+//   Shuffle,
+//   ListOrdered,
+//   RotateCcw,
 // } = icons;
 
 // /* ---------------------------------- helpers ---------------------------------- */
@@ -19,20 +2339,48 @@
 //   return Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
 // }
 
-// const SUPERSCRIPTS = { "0": "⁰", "1": "¹", "2": "²", "3": "³", "4": "⁴", "5": "⁵", "6": "⁶", "7": "⁷", "8": "⁸", "9": "⁹" };
-// const SUBSCRIPTS = { "0": "₀", "1": "₁", "2": "₂", "3": "₃", "4": "₄", "5": "₅", "6": "₆", "7": "₇", "8": "₈", "9": "₉" };
+// const SUPERSCRIPTS = {
+//   "0": "⁰",
+//   "1": "¹",
+//   "2": "²",
+//   "3": "³",
+//   "4": "⁴",
+//   "5": "⁵",
+//   "6": "⁶",
+//   "7": "⁷",
+//   "8": "⁸",
+//   "9": "⁹",
+// };
+
+// const SUBSCRIPTS = {
+//   "0": "₀",
+//   "1": "₁",
+//   "2": "₂",
+//   "3": "₃",
+//   "4": "₄",
+//   "5": "₅",
+//   "6": "₆",
+//   "7": "₇",
+//   "8": "₈",
+//   "9": "₉",
+// };
 
 // function formatMathText(value) {
 //   return String(value || "")
 //     .replace(/root-\s*(\d+(?:\.\d+)?)/gi, (_, number) => "√" + number)
-//     .replace(/\b(\d+)\s*&\s*(\d+)\s*\/\s*(\d+)\b/g, (_, whole, numerator, denominator) =>
-//       whole +
-//       [...numerator].map((digit) => SUPERSCRIPTS[digit]).join("") +
-//       "⁄" +
-//       [...denominator].map((digit) => SUBSCRIPTS[digit]).join("")
+//     .replace(
+//       /\b(\d+)\s*&\s*(\d+)\s*\/\s*(\d+)\b/g,
+//       (_, whole, numerator, denominator) =>
+//         whole +
+//         [...numerator].map((digit) => SUPERSCRIPTS[digit]).join("") +
+//         "⁄" +
+//         [...denominator].map((digit) => SUBSCRIPTS[digit]).join("")
 //     )
-//     .replace(/\^([0-9]+)/g, (_, power) => [...power].map((digit) => SUPERSCRIPTS[digit]).join(""));
+//     .replace(/\^([0-9]+)/g, (_, power) =>
+//       [...power].map((digit) => SUPERSCRIPTS[digit]).join("")
+//     );
 // }
+
 // function renderTextWithClickableLinks(value) {
 //   const parts = String(value || "").split(/(https?:\/\/[^\s]+)/g);
 
@@ -51,23 +2399,31 @@
 //       );
 //     }
 
-//     return <React.Fragment key={index}>{formatMathText(part)}</React.Fragment>;
+//     return (
+//       <React.Fragment key={index}>
+//         {formatMathText(part)}
+//       </React.Fragment>
+//     );
 //   });
 // }
 
-
 // function shuffleArr(arr) {
 //   const a = [...arr];
+
 //   for (let i = a.length - 1; i > 0; i--) {
 //     const j = Math.floor(Math.random() * (i + 1));
 //     [a[i], a[j]] = [a[j], a[i]];
 //   }
+
 //   return a;
 // }
 
 // function sampleQuestions() {
 //   const topicData = window.MATH_TOPIC_DATA || {};
-//   const allQuestions = Object.values(topicData).flatMap((topicQuestions) => Array.isArray(topicQuestions) ? topicQuestions : []);
+
+//   const allQuestions = Object.values(topicData).flatMap((topicQuestions) =>
+//     Array.isArray(topicQuestions) ? topicQuestions : []
+//   );
 
 //   if (allQuestions.length > 0) {
 //     return allQuestions.map((question, index) => ({
@@ -81,67 +2437,84 @@
 
 //   return [
 //     {
-//       id: "s1", order: 0, category: "Algebra",
-//       questionText: "If (x + y)^2 = xy + 8 and x^3 - y^3 = 96, then what is the value of x - y?",
+//       id: "s1",
+//       order: 0,
+//       category: "Algebra",
+//       questionText:
+//         "If (x + y)^2 = xy + 8 and x^3 - y^3 = 96, then what is the value of x - y?",
 //       questionImage: null,
 //       options: ["12", "20", "-12", "16"],
 //       correctIndex: 0,
-//       solutionText: "From (x+y)^2 = x^2 + 2xy + y^2 = xy + 8, we get x^2 + xy + y^2 = 8. Using x^3 - y^3 = (x-y)(x^2 + xy + y^2), substitute: x^3 - y^3 = (x-y) \u00d7 8. Since x^3 - y^3 = 96, we get 8(x-y) = 96, so x-y = 12.",
+//       solutionText:
+//         "From (x+y)^2 = x^2 + 2xy + y^2 = xy + 8, we get x^2 + xy + y^2 = 8. Using x^3 - y^3 = (x-y)(x^2 + xy + y^2), substitute: x^3 - y^3 = (x-y) × 8. Since x^3 - y^3 = 96, we get 8(x-y) = 96, so x-y = 12.",
 //       solutionImage: null,
 //       attemptStatus: "unattempted",
 //       testAllowed: true,
 //     },
 //     {
-//       id: "s2", order: 1, category: "Algebra",
+//       id: "s2",
+//       order: 1,
+//       category: "Algebra",
 //       questionText: "Solve for x: 2x + 5 = 15",
 //       questionImage: null,
 //       options: ["3", "5", "7", "10"],
 //       correctIndex: 1,
-//       solutionText: "Subtract 5 from both sides: 2x = 10. Divide both sides by 2: x = 5.",
+//       solutionText:
+//         "Subtract 5 from both sides: 2x = 10. Divide both sides by 2: x = 5.",
 //       solutionImage: null,
 //       attemptStatus: "unattempted",
 //       testAllowed: true,
 //     },
 //     {
-//       id: "s3", order: 2, category: "Geometry",
-//       questionText: "Find the area of a circle with radius 7 cm. (Use \u03c0 = 22/7)",
+//       id: "s3",
+//       order: 2,
+//       category: "Geometry",
+//       questionText:
+//         "Find the area of a circle with radius 7 cm. (Use π = 22/7)",
 //       questionImage: null,
-//       options: ["144 cm\u00b2", "150 cm\u00b2", "154 cm\u00b2", "160 cm\u00b2"],
+//       options: ["144 cm²", "150 cm²", "154 cm²", "160 cm²"],
 //       correctIndex: 2,
-//       solutionText: "Area = \u03c0r\u00b2 = (22/7) \u00d7 7 \u00d7 7 = 154 cm\u00b2.",
+//       solutionText: "Area = πr² = (22/7) × 7 × 7 = 154 cm².",
 //       solutionImage: null,
 //       attemptStatus: "unattempted",
 //       testAllowed: true,
 //     },
 //     {
-//       id: "s4", order: 3, category: "Percentage",
+//       id: "s4",
+//       order: 3,
+//       category: "Percentage",
 //       questionText: "What is 15% of 200?",
 //       questionImage: null,
 //       options: ["20", "25", "30", "35"],
 //       correctIndex: 2,
-//       solutionText: "15% of 200 = (15/100) \u00d7 200 = 30.",
+//       solutionText: "15% of 200 = (15/100) × 200 = 30.",
 //       solutionImage: null,
 //       attemptStatus: "unattempted",
 //       testAllowed: true,
 //     },
 //     {
-//       id: "s5", order: 4, category: "Algebra",
-//       questionText: "If a = 3 and b = 4, what is a\u00b2 + b\u00b2?",
+//       id: "s5",
+//       order: 4,
+//       category: "Algebra",
+//       questionText: "If a = 3 and b = 4, what is a² + b²?",
 //       questionImage: null,
 //       options: ["7", "12", "25", "49"],
 //       correctIndex: 2,
-//       solutionText: "a\u00b2 + b\u00b2 = 3\u00b2 + 4\u00b2 = 9 + 16 = 25.",
+//       solutionText: "a² + b² = 3² + 4² = 9 + 16 = 25.",
 //       solutionImage: null,
 //       attemptStatus: "unattempted",
 //       testAllowed: true,
 //     },
 //     {
-//       id: "s6", order: 5, category: "Number Theory",
+//       id: "s6",
+//       order: 5,
+//       category: "Number Theory",
 //       questionText: "What is the LCM of 4 and 6?",
 //       questionImage: null,
 //       options: ["8", "10", "12", "24"],
 //       correctIndex: 2,
-//       solutionText: "Multiples of 4: 4, 8, 12, 16\u2026 Multiples of 6: 6, 12, 18\u2026 The smallest common multiple is 12.",
+//       solutionText:
+//         "Multiples of 4: 4, 8, 12, 16… Multiples of 6: 6, 12, 18… The smallest common multiple is 12.",
 //       solutionImage: null,
 //       attemptStatus: "unattempted",
 //       testAllowed: true,
@@ -159,41 +2532,85 @@
 //   return {
 //     async get(key) {
 //       try {
-//         const response = await fetch("/api/questions", { cache: "no-store" });
-//         if (!response.ok) throw new Error("Question API is unavailable");
+//         const response = await fetch("/api/questions", {
+//           cache: "no-store",
+//         });
+
+//         if (!response.ok) {
+//           throw new Error("Question API is unavailable");
+//         }
+
 //         const payload = await response.json();
-//         return JSON.stringify(Array.isArray(payload.questions) ? payload.questions : []);
+
+//         return JSON.stringify(
+//           Array.isArray(payload.questions) ? payload.questions : []
+//         );
 //       } catch (error) {
 //         return localStorageAdapter.get(key);
 //       }
 //     },
+
 //     async set(key, value) {
 //       try {
 //         const response = await fetch("/api/questions", {
 //           method: "POST",
-//           headers: { "Content-Type": "application/json" },
+//           headers: {
+//             "Content-Type": "application/json",
+//           },
 //           body: value,
 //         });
-//         if (!response.ok) throw new Error("Could not save questions");
+
+//         if (!response.ok) {
+//           throw new Error("Could not save questions");
+//         }
 //       } catch (error) {
 //         await localStorageAdapter.set(key, value);
 //       }
 //     },
+
 //     async delete(key, id) {
 //       try {
-//         const response = await fetch(`/api/questions?id=${encodeURIComponent(id)}`, {
-//           method: "DELETE",
-//           headers: { "Content-Type": "application/json" },
-//         });
-//         if (!response.ok) throw new Error("Could not delete question");
+//         const response = await fetch(
+//           `/api/questions?id=${encodeURIComponent(id)}`,
+//           {
+//             method: "DELETE",
+//             headers: {
+//               "Content-Type": "application/json",
+//             },
+//           }
+//         );
+
+//         if (!response.ok) {
+//           throw new Error("Could not delete question");
+//         }
+
 //         const payload = await response.json();
-//         const questions = Array.isArray(payload.questions) ? payload.questions : [];
-//         await localStorageAdapter.set(key, JSON.stringify(questions));
+
+//         const questions = Array.isArray(payload.questions)
+//           ? payload.questions
+//           : [];
+
+//         await localStorageAdapter.set(
+//           key,
+//           JSON.stringify(questions)
+//         );
+
 //         return questions;
 //       } catch (error) {
-//         const current = JSON.parse((await localStorageAdapter.get(key)) || "[]");
-//         const remaining = current.filter((question) => String(question.id) !== String(id));
-//         await localStorageAdapter.set(key, JSON.stringify(remaining));
+//         const current = JSON.parse(
+//           (await localStorageAdapter.get(key)) || "[]"
+//         );
+
+//         const remaining = current.filter(
+//           (question) =>
+//             String(question.id) !== String(id)
+//         );
+
+//         await localStorageAdapter.set(
+//           key,
+//           JSON.stringify(remaining)
+//         );
+
 //         return remaining;
 //       }
 //     },
@@ -205,27 +2622,83 @@
 // }
 
 // function emptyDraft() {
-//   return { category: "", questionText: "", questionImage: null, options: defaultOptions(), correctIndex: 0, solutionText: "", solutionImage: null, special: false };
+//   return {
+//     category: "",
+//     examName: "",
+//     questionText: "",
+//     questionImage: null,
+//     options: defaultOptions(),
+//     correctIndex: 0,
+//     solutionText: "",
+//     solutionImage: null,
+//     special: false,
+//   };
 // }
 
 // function normalizeQuestion(question) {
-//   const options = Array.isArray(question.options) && question.options.length ? question.options : defaultOptions();
+//   const options =
+//     Array.isArray(question.options) && question.options.length
+//       ? question.options
+//       : defaultOptions();
+
 //   const parsedIndex = Number(question.correctIndex);
-//   const correctIndex = Number.isInteger(parsedIndex) && parsedIndex >= 0 && parsedIndex < options.length ? parsedIndex : 0;
-//   return { ...question, options, correctIndex, special: question.special === true };
+
+//   const correctIndex =
+//     Number.isInteger(parsedIndex) &&
+//     parsedIndex >= 0 &&
+//     parsedIndex < options.length
+//       ? parsedIndex
+//       : 0;
+
+//   return {
+//     ...question,
+//     options,
+//     correctIndex,
+//     examName: String(question.examName || "").trim(),
+//     special: question.special === true,
+//   };
 // }
 
 // const SECTIONS = [
-//   { key: "test", label: "Test", icon: Play },
-//   { key: "correct", label: "Weak", icon: CheckCircle2 },
-//   { key: "hidden", label: "Hidden", icon: EyeOff },
-//   { key: "allowed", label: "Allowed", icon: ListChecks },
-//   { key: "special", label: "Special", icon: ListChecks },
+//   {
+//     key: "test",
+//     label: "Test",
+//     icon: Play,
+//   },
+//   {
+//     key: "correct",
+//     label: "Weak",
+//     icon: CheckCircle2,
+//   },
+//   {
+//     key: "hidden",
+//     label: "Hidden",
+//     icon: EyeOff,
+//   },
+//   {
+//     key: "allowed",
+//     label: "Allowed",
+//     icon: ListChecks,
+//   },
+//   {
+//     key: "special",
+//     label: "Special",
+//     icon: ListChecks,
+//   },
+//   {
+//     key: "all",
+//     label: "All",
+//     icon: ListOrdered,
+//   },
 // ];
 
 // /* ---------------------------------- image crop modal ---------------------------------- */
 
-// function ImageCropModal({ src, onCancel, onApply }) {
+// function ImageCropModal({
+//   src,
+//   onCancel,
+//   onApply,
+// }) {
 //   const imgRef = useRef(null);
 //   const [disp, setDisp] = useState(null);
 //   const [crop, setCrop] = useState(null);
@@ -233,94 +2706,315 @@
 
 //   function onImgLoad(e) {
 //     const rect = e.target.getBoundingClientRect();
-//     const d = { w: rect.width, h: rect.height };
+
+//     const d = {
+//       w: rect.width,
+//       h: rect.height,
+//     };
+
 //     setDisp(d);
-//     setCrop({ x: 0, y: 0, w: d.w, h: d.h });
+
+//     setCrop({
+//       x: 0,
+//       y: 0,
+//       w: d.w,
+//       h: d.h,
+//     });
 //   }
 
-//   function clamp(v, min, max) { return Math.min(Math.max(v, min), max); }
+//   function clamp(v, min, max) {
+//     return Math.min(Math.max(v, min), max);
+//   }
 
 //   function onDragMove(e) {
-//     if (!dragRef.current || !disp) return;
+//     if (!dragRef.current || !disp) {
+//       return;
+//     }
+
 //     e.preventDefault();
-//     const point = e.touches ? e.touches[0] : e;
-//     const dx = point.clientX - dragRef.current.startX;
-//     const dy = point.clientY - dragRef.current.startY;
-//     const { mode, orig } = dragRef.current;
+
+//     const point = e.touches
+//       ? e.touches[0]
+//       : e;
+
+//     const dx =
+//       point.clientX -
+//       dragRef.current.startX;
+
+//     const dy =
+//       point.clientY -
+//       dragRef.current.startY;
+
+//     const {
+//       mode,
+//       orig,
+//     } = dragRef.current;
+
 //     if (mode === "move") {
-//       const nx = clamp(orig.x + dx, 0, disp.w - orig.w);
-//       const ny = clamp(orig.y + dy, 0, disp.h - orig.h);
-//       setCrop((c) => ({ ...c, x: nx, y: ny }));
+//       const nx = clamp(
+//         orig.x + dx,
+//         0,
+//         disp.w - orig.w
+//       );
+
+//       const ny = clamp(
+//         orig.y + dy,
+//         0,
+//         disp.h - orig.h
+//       );
+
+//       setCrop((c) => ({
+//         ...c,
+//         x: nx,
+//         y: ny,
+//       }));
 //     } else if (mode === "resize") {
-//       const nw = clamp(orig.w + dx, 30, disp.w - orig.x);
-//       const nh = clamp(orig.h + dy, 30, disp.h - orig.y);
-//       setCrop((c) => ({ ...c, w: nw, h: nh }));
+//       const nw = clamp(
+//         orig.w + dx,
+//         30,
+//         disp.w - orig.x
+//       );
+
+//       const nh = clamp(
+//         orig.h + dy,
+//         30,
+//         disp.h - orig.y
+//       );
+
+//       setCrop((c) => ({
+//         ...c,
+//         w: nw,
+//         h: nh,
+//       }));
 //     }
 //   }
 
 //   function endDrag() {
 //     dragRef.current = null;
-//     window.removeEventListener("mousemove", onDragMove);
-//     window.removeEventListener("mouseup", endDrag);
-//     window.removeEventListener("touchmove", onDragMove);
-//     window.removeEventListener("touchend", endDrag);
+
+//     window.removeEventListener(
+//       "mousemove",
+//       onDragMove
+//     );
+
+//     window.removeEventListener(
+//       "mouseup",
+//       endDrag
+//     );
+
+//     window.removeEventListener(
+//       "touchmove",
+//       onDragMove
+//     );
+
+//     window.removeEventListener(
+//       "touchend",
+//       endDrag
+//     );
 //   }
 
 //   function startDrag(mode, e) {
 //     e.preventDefault();
 //     e.stopPropagation();
-//     const point = e.touches ? e.touches[0] : e;
-//     dragRef.current = { mode, startX: point.clientX, startY: point.clientY, orig: { ...crop } };
-//     window.addEventListener("mousemove", onDragMove);
-//     window.addEventListener("mouseup", endDrag);
-//     window.addEventListener("touchmove", onDragMove, { passive: false });
-//     window.addEventListener("touchend", endDrag);
+
+//     const point = e.touches
+//       ? e.touches[0]
+//       : e;
+
+//     dragRef.current = {
+//       mode,
+//       startX: point.clientX,
+//       startY: point.clientY,
+//       orig: {
+//         ...crop,
+//       },
+//     };
+
+//     window.addEventListener(
+//       "mousemove",
+//       onDragMove
+//     );
+
+//     window.addEventListener(
+//       "mouseup",
+//       endDrag
+//     );
+
+//     window.addEventListener(
+//       "touchmove",
+//       onDragMove,
+//       {
+//         passive: false,
+//       }
+//     );
+
+//     window.addEventListener(
+//       "touchend",
+//       endDrag
+//     );
 //   }
 
 //   function applyCrop() {
-//     if (!crop || !disp || !imgRef.current) { onCancel(); return; }
+//     if (
+//       !crop ||
+//       !disp ||
+//       !imgRef.current
+//     ) {
+//       onCancel();
+//       return;
+//     }
+
 //     const img = imgRef.current;
-//     const scaleX = img.naturalWidth / disp.w;
-//     const scaleY = img.naturalHeight / disp.h;
-//     const sx = crop.x * scaleX, sy = crop.y * scaleY, sw = crop.w * scaleX, sh = crop.h * scaleY;
-//     const canvas = document.createElement("canvas");
-//     canvas.width = Math.max(1, Math.round(sw));
-//     canvas.height = Math.max(1, Math.round(sh));
-//     const ctx = canvas.getContext("2d");
-//     ctx.drawImage(img, sx, sy, sw, sh, 0, 0, canvas.width, canvas.height);
-//     onApply(canvas.toDataURL("image/png"));
+
+//     const scaleX =
+//       img.naturalWidth /
+//       disp.w;
+
+//     const scaleY =
+//       img.naturalHeight /
+//       disp.h;
+
+//     const sx =
+//       crop.x *
+//       scaleX;
+
+//     const sy =
+//       crop.y *
+//       scaleY;
+
+//     const sw =
+//       crop.w *
+//       scaleX;
+
+//     const sh =
+//       crop.h *
+//       scaleY;
+
+//     const canvas =
+//       document.createElement("canvas");
+
+//     canvas.width = Math.max(
+//       1,
+//       Math.round(sw)
+//     );
+
+//     canvas.height = Math.max(
+//       1,
+//       Math.round(sh)
+//     );
+
+//     const ctx =
+//       canvas.getContext("2d");
+
+//     ctx.drawImage(
+//       img,
+//       sx,
+//       sy,
+//       sw,
+//       sh,
+//       0,
+//       0,
+//       canvas.width,
+//       canvas.height
+//     );
+
+//     onApply(
+//       canvas.toDataURL("image/png")
+//     );
 //   }
 
 //   return (
-//     <div className="modal-overlay" onClick={onCancel}>
-//       <div className="modal crop-modal" onClick={(e) => e.stopPropagation()}>
+//     <div
+//       className="modal-overlay"
+//       onClick={onCancel}
+//     >
+//       <div
+//         className="modal crop-modal"
+//         onClick={(e) =>
+//           e.stopPropagation()
+//         }
+//       >
 //         <div className="modal-head">
 //           <h2>Crop Image</h2>
-//           <button className="icon-btn" onClick={onCancel}><X size={16} /></button>
+
+//           <button
+//             className="icon-btn"
+//             onClick={onCancel}
+//           >
+//             <X size={16} />
+//           </button>
 //         </div>
+
 //         <div className="modal-body">
 //           <div className="crop-wrap">
-//             <img ref={imgRef} src={src} onLoad={onImgLoad} alt="to crop" draggable={false} />
+//             <img
+//               ref={imgRef}
+//               src={src}
+//               onLoad={onImgLoad}
+//               alt="to crop"
+//               draggable={false}
+//             />
+
 //             {crop && (
 //               <div
 //                 className="crop-box"
-//                 style={{ left: crop.x, top: crop.y, width: crop.w, height: crop.h }}
-//                 onMouseDown={(e) => startDrag("move", e)}
-//                 onTouchStart={(e) => startDrag("move", e)}
+//                 style={{
+//                   left: crop.x,
+//                   top: crop.y,
+//                   width: crop.w,
+//                   height: crop.h,
+//                 }}
+//                 onMouseDown={(e) =>
+//                   startDrag(
+//                     "move",
+//                     e
+//                   )
+//                 }
+//                 onTouchStart={(e) =>
+//                   startDrag(
+//                     "move",
+//                     e
+//                   )
+//                 }
 //               >
 //                 <div
 //                   className="crop-handle"
-//                   onMouseDown={(e) => startDrag("resize", e)}
-//                   onTouchStart={(e) => startDrag("resize", e)}
+//                   onMouseDown={(e) =>
+//                     startDrag(
+//                       "resize",
+//                       e
+//                     )
+//                   }
+//                   onTouchStart={(e) =>
+//                     startDrag(
+//                       "resize",
+//                       e
+//                     )
+//                   }
 //                 />
 //               </div>
 //             )}
 //           </div>
-//           <p className="hint">Drag the box to move it, drag the corner handle to resize.</p>
+
+//           <p className="hint">
+//             Drag the box to move it, drag the corner handle to resize.
+//           </p>
 //         </div>
+
 //         <div className="modal-foot">
-//           <button className="btn btn-ghost" onClick={onCancel}>Cancel</button>
-//           <button className="btn btn-primary" onClick={applyCrop}>Apply Crop</button>
+//           <button
+//             className="btn btn-ghost"
+//             onClick={onCancel}
+//           >
+//             Cancel
+//           </button>
+
+//           <button
+//             className="btn btn-primary"
+//             onClick={applyCrop}
+//           >
+//             Apply Crop
+//           </button>
 //         </div>
 //       </div>
 //     </div>
@@ -329,23 +3023,44 @@
 
 // /* ---------------------------------- image field ---------------------------------- */
 
-// function ImageField({ label, value, onChange }) {
+// function ImageField({
+//   label,
+//   value,
+//   onChange,
+// }) {
 //   const fileRef = useRef(null);
 //   const [cropSrc, setCropSrc] = useState(null);
 
 //   function handleFile(file) {
-//     if (!file) return;
+//     if (!file) {
+//       return;
+//     }
+
 //     const reader = new FileReader();
-//     reader.onload = () => setCropSrc(reader.result);
+
+//     reader.onload = () =>
+//       setCropSrc(reader.result);
+
 //     reader.readAsDataURL(file);
 //   }
 
 //   function handlePaste(e) {
-//     const items = (e.clipboardData && e.clipboardData.items) || [];
+//     const items =
+//       (e.clipboardData &&
+//         e.clipboardData.items) ||
+//       [];
+
 //     for (const item of items) {
-//       if (item.type && item.type.startsWith("image/")) {
-//         handleFile(item.getAsFile());
+//       if (
+//         item.type &&
+//         item.type.startsWith("image/")
+//       ) {
+//         handleFile(
+//           item.getAsFile()
+//         );
+
 //         e.preventDefault();
+
 //         break;
 //       }
 //     }
@@ -353,207 +3068,532 @@
 
 //   return (
 //     <div className="field">
-//       <label className="field-label">{label}</label>
+//       <label className="field-label">
+//         {label}
+//       </label>
+
 //       {value ? (
 //         <div className="imgpreview">
-//           <img src={value} alt="" />
+//           <img
+//             src={value}
+//             alt=""
+//           />
+
 //           <div className="imgpreview-actions">
-//             <button type="button" className="btn btn-ghost btn-xs" onClick={() => setCropSrc(value)}><Pencil size={12} /> Edit</button>
-//             <button type="button" className="btn btn-ghost btn-xs" onClick={() => onChange(null)}><Trash2 size={12} /> Remove</button>
+//             <button
+//               type="button"
+//               className="btn btn-ghost btn-xs"
+//               onClick={() =>
+//                 setCropSrc(value)
+//               }
+//             >
+//               <Pencil size={12} />
+//               Edit
+//             </button>
+
+//             <button
+//               type="button"
+//               className="btn btn-ghost btn-xs"
+//               onClick={() =>
+//                 onChange(null)
+//               }
+//             >
+//               <Trash2 size={12} />
+//               Remove
+//             </button>
 //           </div>
 //         </div>
 //       ) : (
-//         <div className="imgdrop" tabIndex={0} onPaste={handlePaste} onClick={(e) => e.currentTarget.focus()}>
-//           <button type="button" className="btn btn-ghost btn-xs" onClick={() => fileRef.current && fileRef.current.click()}>
-//             <Upload size={14} /> Choose image
+//         <div
+//           className="imgdrop"
+//           tabIndex={0}
+//           onPaste={handlePaste}
+//           onClick={(e) =>
+//             e.currentTarget.focus()
+//           }
+//         >
+//           <button
+//             type="button"
+//             className="btn btn-ghost btn-xs"
+//             onClick={() =>
+//               fileRef.current &&
+//               fileRef.current.click()
+//             }
+//           >
+//             <Upload size={14} />
+//             Choose image
 //           </button>
-//           <span>Click here to paste an image (Ctrl/Cmd+V), or choose a file</span>
+
+//           <span>
+//             Click here to paste an image (Ctrl/Cmd+V), or choose a file
+//           </span>
 //         </div>
 //       )}
+
 //       <input
-//         ref={fileRef} type="file" accept="image/*" style={{ display: "none" }}
-//         onChange={(e) => { handleFile(e.target.files[0]); e.target.value = ""; }}
+//         ref={fileRef}
+//         type="file"
+//         accept="image/*"
+//         style={{
+//           display: "none",
+//         }}
+//         onChange={(e) => {
+//           handleFile(
+//             e.target.files[0]
+//           );
+
+//           e.target.value = "";
+//         }}
 //       />
+
 //       {cropSrc && (
 //         <ImageCropModal
 //           src={cropSrc}
-//           onCancel={() => setCropSrc(null)}
-//           onApply={(dataUrl) => { onChange(dataUrl); setCropSrc(null); }}
+//           onCancel={() =>
+//             setCropSrc(null)
+//           }
+//           onApply={(dataUrl) => {
+//             onChange(dataUrl);
+//             setCropSrc(null);
+//           }}
 //         />
 //       )}
 //     </div>
 //   );
 // }
 
+
+// /* ---------------------------------- bulk array import modal ---------------------------------- */
+
+// function BulkQuestionImportModal({ onCancel, onImport }) {
+//   const example = `[
+//   {
+//     "category": "Ratio & Proportion",
+//     "question": "If a:b = 2:3, then ...?",
+//     "options": ["10", "12", "15", "18"],
+//     "answer": 2,
+//     "explanation": "Short explanation here or any link",
+//     "special": false
+//   }
+// ]  Age
+
+// Algebra
+
+// Average
+
+// Boat & Water
+
+// Circle
+
+// Compound Interest
+
+// Coordinate G
+
+// CP & SP
+
+// Discount
+
+// Geometry
+
+// HCF & LCM
+
+// Mensuration
+
+// Miscll
+
+// Mixture & Alligation
+
+// Number System
+
+// Partnership
+
+// Percentage
+
+// Pipe & Cistern
+
+// Profit & Loss
+
+// Progression
+
+// Ratio and Proportion
+
+// Simple Interest
+
+// Speed & Distance
+
+// Time & Work
+
+// Train
+
+// Trigonometry  
+
+// use only category from these options and create questions in this format with their correct options`;
+
+//   const [text, setText] = useState(example);
+//   const [error, setError] = useState("");
+
+//   function stripCodeFence(value) {
+//     return String(value || "")
+//       .trim()
+//       .replace(/^```(?:json|javascript|js)?\s*/i, "")
+//       .replace(/\s*```$/i, "")
+//       .trim();
+//   }
+
+//   function normalizeBulkItem(item, index) {
+//     if (!item || typeof item !== "object" || Array.isArray(item)) {
+//       throw new Error(`Question ${index + 1}: each array item must be an object.`);
+//     }
+
+//     const category = String(item.category ?? item.topic ?? "").trim();
+//     const examName = String(item.examName ?? item.exam ?? "").trim();
+//     const questionText = String(item.questionText ?? item.question ?? "").trim();
+//     const options = Array.isArray(item.options)
+//       ? item.options.map((value) => String(value ?? "").trim())
+//       : [];
+
+//     const rawAnswer = item.correctIndex ?? item.answer;
+//     const correctIndex = Number(rawAnswer);
+//     const solutionText = String(item.solutionText ?? item.explanation ?? "").trim();
+
+//     if (!category) {
+//       throw new Error(`Question ${index + 1}: category/topic is required.`);
+//     }
+
+//     if (!questionText && !item.questionImage) {
+//       throw new Error(`Question ${index + 1}: question text is required.`);
+//     }
+
+//     if (options.length !== 4 || options.some((option) => !option)) {
+//       throw new Error(`Question ${index + 1}: exactly 4 non-empty options are required.`);
+//     }
+
+//     if (!Number.isInteger(correctIndex) || correctIndex < 0 || correctIndex > 3) {
+//       throw new Error(`Question ${index + 1}: answer/correctIndex must be 0, 1, 2, or 3.`);
+//     }
+
+//     return normalizeQuestion({
+//       category,
+//       examName,
+//       questionText,
+//       questionImage: item.questionImage || null,
+//       options,
+//       correctIndex,
+//       solutionText,
+//       solutionImage: item.solutionImage || null,
+//       special: item.special === true,
+//     });
+//   }
+
+//   function handleImport() {
+//     try {
+//       const cleaned = stripCodeFence(text);
+//       const parsed = JSON.parse(cleaned);
+
+//       if (!Array.isArray(parsed)) {
+//         throw new Error("Paste a JSON array: [ { ... }, { ... } ]");
+//       }
+
+//       if (parsed.length === 0) {
+//         throw new Error("The array is empty. Add at least one question.");
+//       }
+
+//       const normalized = parsed.map(normalizeBulkItem);
+//       setError("");
+//       onImport(normalized);
+//     } catch (err) {
+//       setError(err && err.message ? err.message : "Could not read this array.");
+//     }
+//   }
+
+//   return (
+//     <div className="modal-overlay" onClick={onCancel}>
+//       <div className="modal bulk-import-modal" onClick={(e) => e.stopPropagation()}>
+//         <div className="modal-head">
+//           <div>
+//             <h2>Multiple Questions · Array Upload</h2>
+//             <p className="bulk-import-subtitle">Paste one JSON array and add all questions together.</p>
+//           </div>
+//           <button className="icon-btn" onClick={onCancel}><X size={16} /></button>
+//         </div>
+
+//         <div className="modal-body">
+//           <div className="bulk-format-note">
+//             <b>Supported fields:</b> category, examName, question, options, answer, explanation, special.
+//             <span>You can also use questionText, correctIndex and solutionText.</span>
+//           </div>
+
+//           <div className="field">
+//             <label className="field-label">Questions Array</label>
+//             <textarea
+//               className="textarea bulk-array-textarea"
+//               rows={18}
+//               value={text}
+//               onChange={(e) => setText(e.target.value)}
+//               spellCheck={false}
+//               placeholder='[{"category":"Algebra","question":"...","options":["A","B","C","D"],"answer":0,"explanation":"..."}]'
+//             />
+//           </div>
+
+//           <div className="bulk-answer-note">
+//             <span>Answer index:</span>
+//             <code>0 = A</code>
+//             <code>1 = B</code>
+//             <code>2 = C</code>
+//             <code>3 = D</code>
+//           </div>
+
+//           {error && <p className="error-text bulk-import-error">{error}</p>}
+//         </div>
+
+//         <div className="modal-foot">
+//           <button className="btn btn-ghost" onClick={onCancel}>Cancel</button>
+//           <button className="btn btn-primary" onClick={handleImport}>
+//             <Upload size={14} /> Import Array
+//           </button>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
 // /* ---------------------------------- question editor modal ---------------------------------- */
 
-// function QuestionEditorModal({ initial, topics, onCancel, onSave }) {
-//   const [draft, setDraft] = useState(() => (initial ? JSON.parse(JSON.stringify(initial)) : emptyDraft()));
-//   const [error, setError] = useState("");
-//   // Text entered here is appended to the end of every option.
-//   // Example: options 16, 24, 32, 40 + suffix "%" => 16 %, 24 %, 32 %, 40 %.
-//   const [optionSuffix, setOptionSuffix] = useState("");
+// function QuestionEditorModal({
+//   initial,
+//   topics,
+//   onCancel,
+//   onSave,
+// }) {
+//   const [draft, setDraft] = useState(() =>
+//     initial
+//       ? JSON.parse(
+//           JSON.stringify(initial)
+//         )
+//       : emptyDraft()
+//   );
 
-//   function applyOptionSuffix(options, suffix) {
-//     const cleanSuffix = String(suffix ?? "");
-//     if (!cleanSuffix) return options.map((o) => String(o));
+//   const [error, setError] = useState("");
+//   const [optionSuffix, setOptionSuffix] =
+//     useState("");
+//   const [optionRangeStart, setOptionRangeStart] =
+//     useState("10");
+//   const [optionRangeEnd, setOptionRangeEnd] =
+//     useState("20");
+//   const rangeAutoFillReadyRef = useRef(false);
+
+//   useEffect(() => {
+//     // Keep existing options untouched when an old question is opened for editing.
+//     // New questions start with the default 10 → 20 range and auto-generated options.
+//     if (!rangeAutoFillReadyRef.current) {
+//       rangeAutoFillReadyRef.current = true;
+//       if (initial) return;
+//     }
+
+//     generateRangeOptions({ silent: true });
+//   }, [optionRangeStart, optionRangeEnd]);
+
+//   function applyOptionSuffix(
+//     options,
+//     suffix
+//   ) {
+//     const cleanSuffix = String(
+//       suffix ?? ""
+//     );
+
+//     if (!cleanSuffix) {
+//       return options.map((o) =>
+//         String(o)
+//       );
+//     }
 
 //     return options.map((o) => {
-//       const value = String(o ?? "");
-//       // Do not duplicate the suffix if it is already present.
-//       return value.endsWith(cleanSuffix) ? value : value + cleanSuffix;
+//       const value = String(
+//         o ?? ""
+//       );
+
+//       return value.endsWith(
+//         cleanSuffix
+//       )
+//         ? value
+//         : value + cleanSuffix;
 //     });
 //   }
 
 //   function changeOptionSuffix(value) {
-//     const nextSuffix = String(value ?? "");
+//     const nextSuffix = String(
+//       value ?? ""
+//     );
+
 //     setOptionSuffix(nextSuffix);
 
 //     setDraft((d) => {
-//       const previousSuffix = optionSuffix;
-//       const options = d.options.map((o) => {
-//         let value = String(o ?? "");
+//       const previousSuffix =
+//         optionSuffix;
 
-//         // Remove the previously applied suffix before applying the new one.
-//         if (previousSuffix && value.endsWith(previousSuffix)) {
-//           value = value.slice(0, -previousSuffix.length);
-//         }
+//       const options =
+//         d.options.map((o) => {
+//           let value = String(
+//             o ?? ""
+//           );
 
-//         return nextSuffix ? value + nextSuffix : value;
-//       });
+//           if (
+//             previousSuffix &&
+//             value.endsWith(
+//               previousSuffix
+//             )
+//           ) {
+//             value = value.slice(
+//               0,
+//               -previousSuffix.length
+//             );
+//           }
 
-//       return { ...d, options };
+//           return nextSuffix
+//             ? value + nextSuffix
+//             : value;
+//         });
+
+//       return {
+//         ...d,
+//         options,
+//       };
 //     });
 //   }
 
 //   function updateOption(i, val) {
 //     setDraft((d) => {
-//       const options = [...d.options];
+//       const options = [
+//         ...d.options,
+//       ];
+
 //       options[i] = val;
-//       return { ...d, options };
+
+//       return {
+//         ...d,
+//         options,
+//       };
 //     });
 //   }
 
-//   // Quick option generators:
-//   // 2 = random integer options
-//   // . = random decimal options with 2 decimal places
-//   // a = A, B, C, D
-//   // 1 = random single-digit options (1-9)
 //   function generateOptions(type) {
 //     let options = [];
 
 //     if (type === "number") {
 //       const values = new Set();
+
 //       while (values.size < 4) {
-//         values.add(String(Math.floor(Math.random() * 100) + 1));
+//         values.add(
+//           String(
+//             Math.floor(
+//               Math.random() * 100
+//             ) + 1
+//           )
+//         );
 //       }
+
 //       options = [...values];
-//     } else if (type === "decimal") {
+//     } else if (
+//       type === "decimal"
+//     ) {
 //       const values = new Set();
+
 //       while (values.size < 4) {
-//         values.add((Math.floor(Math.random() * 9999) / 100).toFixed(2));
+//         values.add(
+//           (
+//             Math.floor(
+//               Math.random() *
+//                 9999
+//             ) / 100
+//           ).toFixed(2)
+//         );
 //       }
+
 //       options = [...values];
-//     } else if (type === "letter") {
-//       options = ["A", "B", "C", "D"];
-//     } else if (type === "digit") {
+//     } else if (
+//       type === "letter"
+//     ) {
+//       options = [
+//         "A",
+//         "B",
+//         "C",
+//         "D",
+//       ];
+//     } else if (
+//       type === "digit"
+//     ) {
 //       const values = new Set();
+
 //       while (values.size < 4) {
-//         values.add(String(Math.floor(Math.random() * 9) + 1));
+//         values.add(
+//           String(
+//             Math.floor(
+//               Math.random() * 9
+//             ) + 1
+//           )
+//         );
 //       }
+
 //       options = [...values];
 //     }
-
-//     setDraft((d) => ({ ...d, options: applyOptionSuffix(options, optionSuffix) }));
-//   }
-
-//   function generateRangeOptions() {
-//     const rawRange = String(optionRange || "").trim();
-//     const match = rawRange.match(
-//       /^\s*(-?\d+(?:\.\d+)?)\s*-\s*(-?\d+(?:\.\d+)?)\s*$/
-//     );
-
-//     if (!match) {
-//       setError(
-//         "Enter range like 10-50 or 5.456-5.987."
-//       );
-//       return;
-//     }
-
-//     const firstText = match[1];
-//     const secondText = match[2];
-//     const first = Number(firstText);
-//     const second = Number(secondText);
-
-//     if (!Number.isFinite(first) || !Number.isFinite(second)) {
-//       setError("Enter a valid numeric range.");
-//       return;
-//     }
-
-//     const decimalPlaces = (value) => {
-//       const dot = value.indexOf(".");
-//       return dot === -1 ? 0 : value.length - dot - 1;
-//     };
-
-//     const precision = Math.max(
-//       decimalPlaces(firstText),
-//       decimalPlaces(secondText)
-//     );
-//     const scale = Math.pow(10, precision);
-
-//     let minScaled = Math.round(Math.min(first, second) * scale);
-//     let maxScaled = Math.round(Math.max(first, second) * scale);
-//     const possibleValues = maxScaled - minScaled + 1;
-
-//     if (possibleValues < 4) {
-//       setError(
-//         `This range can make only ${possibleValues} unique option${possibleValues === 1 ? "" : "s"}. Use a wider range.`
-//       );
-//       return;
-//     }
-
-//     const values = new Set();
-//     while (values.size < 4) {
-//       const randomScaled =
-//         minScaled +
-//         Math.floor(Math.random() * possibleValues);
-//       values.add(randomScaled);
-//     }
-
-//     const options = [...values].map((scaledValue) => {
-//       const numericValue = scaledValue / scale;
-//       return precision > 0
-//         ? numericValue.toFixed(precision)
-//         : String(scaledValue);
-//     });
 
 //     setDraft((d) => ({
 //       ...d,
-//       options: applyOptionSuffix(options, optionSuffix),
+//       options: applyOptionSuffix(
+//         options,
+//         optionSuffix
+//       ),
+//     }));
+//   }
+
+//   function handleRangeStartChange(value) {
+//     const nextStart = String(value ?? "");
+//     setOptionRangeStart(nextStart);
+
+//     const trimmed = nextStart.trim();
+//     if (!/^-?\d+(?:\.\d+)?$/.test(trimmed)) return;
+
+//     const numericStart = Number(trimmed);
+//     if (!Number.isFinite(numericStart)) return;
+
+//     const dot = trimmed.indexOf(".");
+//     const precision = dot === -1 ? 0 : trimmed.length - dot - 1;
+//     const autoEnd = numericStart + 10;
+//     setOptionRangeEnd(
+//       precision > 0 ? autoEnd.toFixed(precision) : String(autoEnd)
+//     );
+//   }
+
+//   function clearAllOptions() {
+//     setDraft((d) => ({
+//       ...d,
+//       options: ["", "", "", ""],
+//       correctIndex: 0,
 //     }));
 //     setError("");
 //   }
 
-//   function generateRangeOptions() {
-//     const rawRange = String(optionRange || "").trim();
-//     const match = rawRange.match(
-//       /^\s*(-?\d+(?:\.\d+)?)\s*-\s*(-?\d+(?:\.\d+)?)\s*$/
-//     );
+//   function generateRangeOptions({ silent = false } = {}) {
+//     const firstText = String(optionRangeStart || "").trim();
+//     const secondText = String(optionRangeEnd || "").trim();
 
-//     if (!match) {
-//       setError(
-//         "Enter range like 10-50 or 5.456-5.987."
-//       );
+//     if (
+//       !/^-?\d+(?:\.\d+)?$/.test(firstText) ||
+//       !/^-?\d+(?:\.\d+)?$/.test(secondText)
+//     ) {
+//       if (!silent) {
+//         setError("Enter valid start and end values, like 10 to 20 or 5.456 to 15.456.");
+//       }
 //       return;
 //     }
 
-//     const firstText = match[1];
-//     const secondText = match[2];
 //     const first = Number(firstText);
 //     const second = Number(secondText);
 
 //     if (!Number.isFinite(first) || !Number.isFinite(second)) {
-//       setError("Enter a valid numeric range.");
+//       if (!silent) {
+//         setError("Enter a valid numeric range.");
+//       }
 //       return;
 //     }
 
@@ -573,9 +3613,11 @@
 //     const possibleValues = maxScaled - minScaled + 1;
 
 //     if (possibleValues < 4) {
-//       setError(
-//         `This range can make only ${possibleValues} unique option${possibleValues === 1 ? "" : "s"}. Use a wider range.`
-//       );
+//       if (!silent) {
+//         setError(
+//           `This range can make only ${possibleValues} unique option${possibleValues === 1 ? "" : "s"}. Use a wider range.`
+//         );
+//       }
 //       return;
 //     }
 
@@ -602,81 +3644,277 @@
 //   }
 
 //   function handleSave() {
-//     const topic = draft.category.trim();
-//     const hasQ = draft.questionText.trim() || draft.questionImage;
-//     const optsFilled = draft.options.every((o) => o.trim());
-//     if (!topic) { setError("Add a topic before saving the question."); return; }
-//     if (!hasQ) { setError("Add question text or a question image."); return; }
-//     if (!optsFilled) { setError("Fill in all 4 options."); return; }
+//     const topic =
+//       draft.category.trim();
+
+//     const hasQ =
+//       draft.questionText.trim() ||
+//       draft.questionImage;
+
+//     const optsFilled =
+//       draft.options.every((o) =>
+//         o.trim()
+//       );
+
+//     if (!topic) {
+//       setError(
+//         "Add a topic before saving the question."
+//       );
+
+//       return;
+//     }
+
+//     if (!hasQ) {
+//       setError(
+//         "Add question text or a question image."
+//       );
+
+//       return;
+//     }
+
+//     if (!optsFilled) {
+//       setError(
+//         "Fill in all 4 options."
+//       );
+
+//       return;
+//     }
+
 //     const clean = {
 //       ...draft,
 //       category: topic,
-//       questionText: draft.questionText.trim(),
-//       options: draft.options.map((o) => o.trim()),
-//       correctIndex: Number(draft.correctIndex),
-//       solutionText: draft.solutionText.trim(),
+//       examName: String(draft.examName || "").trim(),
+//       questionText:
+//         draft.questionText.trim(),
+//       options:
+//         draft.options.map((o) =>
+//           o.trim()
+//         ),
+//       correctIndex: Number(
+//         draft.correctIndex
+//       ),
+//       solutionText:
+//         draft.solutionText.trim(),
 //     };
+
 //     onSave(clean);
 //   }
 
 //   return (
-//     <div className="modal-overlay" onClick={onCancel}>
-//       <div className="modal" onClick={(e) => e.stopPropagation()}>
+//     <div
+//       className="modal-overlay"
+//       onClick={onCancel}
+//     >
+//       <div
+//         className="modal"
+//         onClick={(e) =>
+//           e.stopPropagation()
+//         }
+//       >
 //         <div className="modal-head">
-//           <h2>{initial ? "Edit Question" : "New Question"}</h2>
-//           <button className="icon-btn" onClick={onCancel}><X size={16} /></button>
+//           <h2>
+//             {initial
+//               ? "Edit Question"
+//               : "New Question"}
+//           </h2>
+
+//           <button
+//             className="icon-btn"
+//             onClick={onCancel}
+//           >
+//             <X size={16} />
+//           </button>
 //         </div>
+
 //         <div className="modal-body">
 //           <div className="field">
-//             <label className="field-label">Topic</label>
-//             <input className="input" list="question-topics" value={draft.category} onChange={(e) => setDraft((d) => ({ ...d, category: e.target.value }))} placeholder="Select an existing topic or type a new one" />
+//             <label className="field-label">
+//               Topic
+//             </label>
+
+//             <input
+//               className="input"
+//               list="question-topics"
+//               value={draft.category}
+//               onChange={(e) =>
+//                 setDraft((d) => ({
+//                   ...d,
+//                   category:
+//                     e.target.value,
+//                 }))
+//               }
+//               placeholder="Select an existing topic or type a new one"
+//             />
+
 //             <datalist id="question-topics">
-//               {topics.map((topic) => <option key={topic} value={topic} />)}
+//               {topics.map((topic) => (
+//                 <option
+//                   key={topic}
+//                   value={topic}
+//                 />
+//               ))}
 //             </datalist>
 //           </div>
 
-//           <div className="field">
-//             <label className="field-label">Question Text</label>
-//             <textarea className="textarea" rows={3} value={draft.questionText} onChange={(e) => setDraft((d) => ({ ...d, questionText: e.target.value }))} placeholder="Type the question..." />
+//           <div className="field exam-source-field">
+//             <div className="exam-source-head">
+//               <label className="field-label exam-source-label">
+//                 Exam Name
+//               </label>
+//               <span className="exam-optional-pill">Optional</span>
+//             </div>
+
+//             <div className="exam-name-wrap">
+//               <span className="exam-name-prefix">EXAM</span>
+//               <input
+//                 className="input exam-name-input"
+//                 value={draft.examName || ""}
+//                 onChange={(e) =>
+//                   setDraft((d) => ({
+//                     ...d,
+//                     examName: e.target.value,
+//                   }))
+//                 }
+//                 placeholder="e.g. NIMCET 2026, SSC CGL 2025, CUET PG 2026"
+//                 aria-label="Exam name in which this question appeared"
+//               />
+//             </div>
+
+//             <p className="exam-source-hint">
+//               Add the exam / year if this is a previous-year or exam-based question.
+//             </p>
 //           </div>
-//           <ImageField label="Question Image (optional)" value={draft.questionImage} onChange={(img) => setDraft((d) => ({ ...d, questionImage: img }))} />
 
 //           <div className="field">
-//             <label className="field-label">Options</label>
+//             <label className="field-label">
+//               Question Text
+//             </label>
+
+//             <textarea
+//               className="textarea"
+//               rows={3}
+//               value={
+//                 draft.questionText
+//               }
+//               onChange={(e) =>
+//                 setDraft((d) => ({
+//                   ...d,
+//                   questionText:
+//                     e.target.value,
+//                 }))
+//               }
+//               placeholder="Type the question..."
+//             />
+//           </div>
+
+//           <ImageField
+//             label="Question Image (optional)"
+//             value={
+//               draft.questionImage
+//             }
+//             onChange={(img) =>
+//               setDraft((d) => ({
+//                 ...d,
+//                 questionImage: img,
+//               }))
+//             }
+//           />
+
+//           <div className="field">
+//             <label className="field-label">
+//               Options
+//             </label>
 
 //             <div className="quick-option-tools">
 //               <button
 //                 type="button"
 //                 className="quick-option-btn"
-//                 onClick={() => generateOptions("number")}
+//                 onClick={() =>
+//                   generateOptions(
+//                     "number"
+//                   )
+//                 }
 //                 title="Generate 4 random number options"
 //               >
 //                 2
 //               </button>
+
 //               <button
 //                 type="button"
 //                 className="quick-option-btn"
-//                 onClick={() => generateOptions("decimal")}
+//                 onClick={() =>
+//                   generateOptions(
+//                     "decimal"
+//                   )
+//                 }
 //                 title="Generate 4 random decimal options"
 //               >
 //                 .
 //               </button>
+
 //               <button
 //                 type="button"
 //                 className="quick-option-btn"
-//                 onClick={() => generateOptions("letter")}
+//                 onClick={() =>
+//                   generateOptions(
+//                     "letter"
+//                   )
+//                 }
 //                 title="Generate A, B, C, D"
 //               >
 //                 a
 //               </button>
+
 //               <button
 //                 type="button"
 //                 className="quick-option-btn"
-//                 onClick={() => generateOptions("digit")}
+//                 onClick={() =>
+//                   generateOptions(
+//                     "digit"
+//                   )
+//                 }
 //                 title="Generate 4 random options from 1 to 9"
 //               >
 //                 1
 //               </button>
+
+//               <button
+//                 type="button"
+//                 className="quick-option-btn clear-option-btn"
+//                 onClick={clearAllOptions}
+//                 title="Erase all 4 options"
+//                 aria-label="Erase all options"
+//               >
+//                 ⌫
+//               </button>
+//             </div>
+
+//             <div className="range-option-row">
+//               <input
+//                 type="text"
+//                 className="range-option-input range-option-input-small"
+//                 value={optionRangeStart}
+//                 onChange={(e) => handleRangeStartChange(e.target.value)}
+//                 placeholder="10"
+//                 aria-label="First range value"
+//                 title="First range value. Last range auto-fills as first + 10, and options generate automatically."
+//               />
+
+//               <span className="range-option-separator">to</span>
+
+//               <input
+//                 type="text"
+//                 className="range-option-input range-option-input-small"
+//                 value={optionRangeEnd}
+//                 onChange={(e) => setOptionRangeEnd(e.target.value)}
+//                 placeholder="20"
+//                 aria-label="Last range value"
+//                 title="Last range value. Changing it automatically regenerates the options."
+//               />
+
+//               <span className="range-option-hint">
+//                 auto generate · first + 10 → last · default 10 to 20
+//               </span>
 //             </div>
 
 //             <div className="option-suffix-row">
@@ -684,46 +3922,148 @@
 //                 type="text"
 //                 className="option-suffix-input"
 //                 value={optionSuffix}
-//                 onChange={(e) => changeOptionSuffix(e.target.value)}
+//                 onChange={(e) =>
+//                   changeOptionSuffix(
+//                     e.target.value
+//                   )
+//                 }
 //                 placeholder="%"
 //                 aria-label="Apply text to end of all options"
 //                 title="Whatever you type here will be added after every option"
 //               />
-//               <span className="option-suffix-hint">append to all options</span>
+
+//               <span className="option-suffix-hint">
+//                 append to all options
+//               </span>
 //             </div>
 
-//             {draft.options.map((opt, i) => (
-//               <div className="option-edit-row" key={i}>
-//                 <button type="button" className={"radio-dot" + (draft.correctIndex === i ? " checked" : "")} onClick={() => setDraft((d) => ({ ...d, correctIndex: i }))} title="Mark as correct answer">
-//                   {String.fromCharCode(65 + i)}
-//                 </button>
-//                 <input className="input" value={opt} onChange={(e) => updateOption(i, e.target.value)} placeholder={"Option " + String.fromCharCode(65 + i)} />
-//               </div>
-//             ))}
+//             {draft.options.map(
+//               (opt, i) => (
+//                 <div
+//                   className="option-edit-row"
+//                   key={i}
+//                 >
+//                   <button
+//                     type="button"
+//                     className={
+//                       "radio-dot" +
+//                       (draft.correctIndex ===
+//                       i
+//                         ? " checked"
+//                         : "")
+//                     }
+//                     onClick={() =>
+//                       setDraft((d) => ({
+//                         ...d,
+//                         correctIndex: i,
+//                       }))
+//                     }
+//                     title="Mark as correct answer"
+//                   >
+//                     {String.fromCharCode(
+//                       65 + i
+//                     )}
+//                   </button>
+
+//                   <input
+//                     className="input"
+//                     value={opt}
+//                     onChange={(e) =>
+//                       updateOption(
+//                         i,
+//                         e.target.value
+//                       )
+//                     }
+//                     placeholder={
+//                       "Option " +
+//                       String.fromCharCode(
+//                         65 + i
+//                       )
+//                     }
+//                   />
+//                 </div>
+//               )
+//             )}
 //           </div>
 
 //           <div className="field">
-//             <label className="field-label">Solution</label>
-//             <textarea className="textarea" rows={3} value={draft.solutionText} onChange={(e) => setDraft((d) => ({ ...d, solutionText: e.target.value }))} placeholder="Explain the solution..." />
+//             <label className="field-label">
+//               Explanation / Solution
+//             </label>
+
+//             <textarea
+//               className="textarea"
+//               rows={4}
+//               value={
+//                 draft.solutionText
+//               }
+//               onChange={(e) =>
+//                 setDraft((d) => ({
+//                   ...d,
+//                   solutionText:
+//                     e.target.value,
+//                 }))
+//               }
+//               placeholder="Write or edit the explanation / solution..."
+//             />
 //           </div>
-//           <ImageField label="Solution Image (optional)" value={draft.solutionImage} onChange={(img) => setDraft((d) => ({ ...d, solutionImage: img }))} />
+
+//           <ImageField
+//             label="Explanation / Solution Image (optional)"
+//             value={
+//               draft.solutionImage
+//             }
+//             onChange={(img) =>
+//               setDraft((d) => ({
+//                 ...d,
+//                 solutionImage: img,
+//               }))
+//             }
+//           />
 
 //           <div className="field">
 //             <label className="topic-check">
 //               <input
 //                 type="checkbox"
-//                 checked={draft.special === true}
-//                 onChange={(e) => setDraft((d) => ({ ...d, special: e.target.checked }))}
+//                 checked={
+//                   draft.special === true
+//                 }
+//                 onChange={(e) =>
+//                   setDraft((d) => ({
+//                     ...d,
+//                     special:
+//                       e.target.checked,
+//                   }))
+//                 }
 //               />
-//               <span>Special / Important Question</span>
+
+//               <span>
+//                 Special / Important Question
+//               </span>
 //             </label>
 //           </div>
 
-//           {error && <p className="error-text">{error}</p>}
+//           {error && (
+//             <p className="error-text">
+//               {error}
+//             </p>
+//           )}
 //         </div>
+
 //         <div className="modal-foot">
-//           <button className="btn btn-ghost" onClick={onCancel}>Cancel</button>
-//           <button className="btn btn-primary" onClick={handleSave}>Save Question</button>
+//           <button
+//             className="btn btn-ghost"
+//             onClick={onCancel}
+//           >
+//             Cancel
+//           </button>
+
+//           <button
+//             className="btn btn-primary"
+//             onClick={handleSave}
+//           >
+//             Save Question
+//           </button>
 //         </div>
 //       </div>
 //     </div>
@@ -732,74 +4072,282 @@
 
 // /* ---------------------------------- question card ---------------------------------- */
 
-// function QuestionCard({ q, onMarkCorrect, onMarkWrong, onToggleAllow, onCopy, onEdit, onDelete, showStatusActions = true, showWrongAction = true }) {
-//   const [showSolution, setShowSolution] = useState(false);
-//   const [showOptions, setShowOptions] = useState(false);
+// function QuestionCard({
+//   q,
+//   onMarkCorrect,
+//   onMarkWrong,
+//   onToggleAllow,
+//   onCopy,
+//   onEdit,
+//   onDelete,
+//   showStatusActions = true,
+//   showWrongAction = true,
+// }) {
+//   const [showSolution, setShowSolution] =
+//     useState(false);
+
+//   const [showOptions, setShowOptions] =
+//     useState(false);
+
 //   return (
 //     <div className="card">
 //       <div className="card-top">
-//         <span className="badge cat">{q.category || "General"}</span>
-//         {q.attemptStatus === "correct" && <span className="badge ok">Weak</span>}
-//         {q.attemptStatus === "wrong" && <span className="badge bad">Wrong</span>}
-//         {!q.testAllowed && <span className="badge hide">Hidden</span>}
+//         <span className="badge cat">
+//           {q.category || "General"}
+//         </span>
+
+//         {q.examName && (
+//           <span className="badge exam">
+//             EXAM · {q.examName}
+//           </span>
+//         )}
+
+//         {q.attemptStatus ===
+//           "correct" && (
+//           <span className="badge ok">
+//             Weak
+//           </span>
+//         )}
+
+//         {q.attemptStatus ===
+//           "wrong" && (
+//           <span className="badge bad">
+//             Wrong
+//           </span>
+//         )}
+
+//         {!q.testAllowed && (
+//           <span className="badge hide">
+//             Hidden
+//           </span>
+//         )}
 //       </div>
+
 //       <div
 //         className="card-q question-toggle"
-//         onClick={() => setShowOptions((shown) => !shown)}
-//         onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setShowOptions((shown) => !shown); } }}
+//         onClick={() =>
+//           setShowOptions(
+//             (shown) => !shown
+//           )
+//         }
+//         onKeyDown={(e) => {
+//           if (
+//             e.key === "Enter" ||
+//             e.key === " "
+//           ) {
+//             e.preventDefault();
+
+//             setShowOptions(
+//               (shown) => !shown
+//             );
+//           }
+//         }}
 //         role="button"
 //         tabIndex={0}
-//         title={showOptions ? "Hide options" : "Show options"}
+//         title={
+//           showOptions
+//             ? "Hide options"
+//             : "Show options"
+//         }
 //       >
-//         {q.questionText && <p>{formatMathText(q.questionText)}</p>}
-//         {q.questionImage && <img className="card-img" src={q.questionImage} alt="question" />}
-//         <span className="question-hint">{showOptions ? "Click question to hide options" : "Click question to show options"}</span>
+//         {q.questionText && (
+//           <p>
+//             {formatMathText(
+//               q.questionText
+//             )}
+//           </p>
+//         )}
+
+//         {q.questionImage && (
+//           <img
+//             className="card-img"
+//             src={
+//               q.questionImage
+//             }
+//             alt="question"
+//           />
+//         )}
+
+//         <span className="question-hint">
+//           {showOptions
+//             ? "Click question to hide options"
+//             : "Click question to show options"}
+//         </span>
 //       </div>
+
 //       {showOptions && (
 //         <div className="opt-list">
-//           {q.options.map((opt, i) => (
-//             <div key={i} className={"opt-row" + (i === q.correctIndex ? " opt-correct" : "")}>
-//               <span className="opt-letter">{String.fromCharCode(65 + i)}</span><span>{formatMathText(opt)}</span>
-//             </div>
-//           ))}
+//           {q.options.map(
+//             (opt, i) => (
+//               <div
+//                 key={i}
+//                 className={
+//                   "opt-row" +
+//                   (i ===
+//                   q.correctIndex
+//                     ? " opt-correct"
+//                     : "")
+//                 }
+//               >
+//                 <span className="opt-letter">
+//                   {String.fromCharCode(
+//                     65 + i
+//                   )}
+//                 </span>
+
+//                 <span>
+//                   {formatMathText(
+//                     opt
+//                   )}
+//                 </span>
+//               </div>
+//             )
+//           )}
 //         </div>
 //       )}
-//       <button type="button" className="link-btn" onClick={() => setShowSolution((s) => !s)}>
-//         {showSolution ? "Hide solution" : "Show solution"}
+
+//       <button
+//         type="button"
+//         className="link-btn"
+//         onClick={() =>
+//           setShowSolution(
+//             (s) => !s
+//           )
+//         }
+//       >
+//         {showSolution
+//           ? "Hide solution"
+//           : "Show solution"}
 //       </button>
+
 //       {showSolution && (
 //         <div className="solution">
-//           {q.solutionText && <p>{renderTextWithClickableLinks(q.solutionText)}</p>}
-//           {q.solutionImage && <img className="card-img" src={q.solutionImage} alt="solution" />}
-//           {!q.solutionText && !q.solutionImage && <p className="muted">No solution provided.</p>}
+//           {q.solutionText && (
+//             <p>
+//               {renderTextWithClickableLinks(
+//                 q.solutionText
+//               )}
+//             </p>
+//           )}
+
+//           {q.solutionImage && (
+//             <img
+//               className="card-img"
+//               src={
+//                 q.solutionImage
+//               }
+//               alt="solution"
+//             />
+//           )}
+
+//           {!q.solutionText &&
+//             !q.solutionImage && (
+//               <p className="muted">
+//                 No solution provided.
+//               </p>
+//             )}
 //         </div>
 //       )}
+
 //       <div className="card-actions">
-//         {showStatusActions && <>
-//           <button
-//             className={"icon-btn" + (q.attemptStatus === "correct" ? " active-ok" : "")}
-//             onClick={onMarkCorrect}
-//             title={q.attemptStatus === "correct" ? "Move back to Allowed / New" : "Move to Weak"}
-//           >
-//             <CheckCircle2 size={15} />
-//           </button>
-//           {showWrongAction && (
-//             <button className={"icon-btn" + (q.attemptStatus === "wrong" ? " active-bad" : "")} onClick={onMarkWrong} title="Mark Wrong">
-//               <XCircle size={15} />
+//         {showStatusActions && (
+//           <>
+//             <button
+//               className={
+//                 "icon-btn" +
+//                 (q.attemptStatus ===
+//                 "correct"
+//                   ? " active-ok"
+//                   : "")
+//               }
+//               onClick={
+//                 onMarkCorrect
+//               }
+//               title={
+//                 q.attemptStatus ===
+//                 "correct"
+//                   ? "Move back to Allowed / New"
+//                   : "Move to Weak"
+//               }
+//             >
+//               <CheckCircle2
+//                 size={15}
+//               />
 //             </button>
-//           )}
-//         </>}
+
+//             {showWrongAction && (
+//               <button
+//                 className={
+//                   "icon-btn" +
+//                   (q.attemptStatus ===
+//                   "wrong"
+//                     ? " active-bad"
+//                     : "")
+//                 }
+//                 onClick={
+//                   onMarkWrong
+//                 }
+//                 title="Mark Wrong"
+//               >
+//                 <XCircle
+//                   size={15}
+//                 />
+//               </button>
+//             )}
+//           </>
+//         )}
+
 //         <button
 //           className="visibility-btn"
-//           onClick={onToggleAllow}
-//           title={q.testAllowed ? "Move to Hidden / Perfect" : "Move back to Allowed / New"}
+//           onClick={
+//             onToggleAllow
+//           }
+//           title={
+//             q.testAllowed
+//               ? "Move to Hidden / Perfect"
+//               : "Move back to Allowed / New"
+//           }
 //         >
-//           {q.testAllowed ? <EyeOff size={15} /> : <Eye size={15} />}
-//           <span>{q.testAllowed ? "Hide" : "Allow"}</span>
+//           {q.testAllowed ? (
+//             <EyeOff
+//               size={15}
+//             />
+//           ) : (
+//             <Eye
+//               size={15}
+//             />
+//           )}
+
+//           <span>
+//             {q.testAllowed
+//               ? "Hide"
+//               : "Allow"}
+//           </span>
 //         </button>
-//         <button className="icon-btn" onClick={onCopy} title="Copy Question"><Copy size={15} /></button>
-//         <button className="icon-btn" onClick={onEdit} title="Edit"><Pencil size={15} /></button>
-//         <button className="icon-btn danger" onClick={onDelete} title="Delete"><Trash2 size={15} /></button>
+
+//         <button
+//           className="icon-btn"
+//           onClick={onCopy}
+//           title="Copy Question"
+//         >
+//           <Copy size={15} />
+//         </button>
+
+//         <button
+//           className="icon-btn"
+//           onClick={onEdit}
+//           title="Edit"
+//         >
+//           <Pencil size={15} />
+//         </button>
+
+//         <button
+//           className="icon-btn danger"
+//           onClick={onDelete}
+//           title="Delete"
+//         >
+//           <Trash2 size={15} />
+//         </button>
 //       </div>
 //     </div>
 //   );
@@ -807,23 +4355,61 @@
 
 // /* ---------------------------------- section list ---------------------------------- */
 
-// function TopicFilter({ topics, value, onChange, searchValue, onSearchChange }) {
+// function TopicFilter({
+//   topics,
+//   value,
+//   onChange,
+//   searchValue,
+//   onSearchChange,
+// }) {
 //   return (
 //     <div className="topic-filter">
 //       {topics.length > 0 && (
 //         <>
-//           <label className="field-label" htmlFor="topic-filter">Filter by topic</label>
-//           <select id="topic-filter" className="input topic-select" value={value} onChange={(e) => onChange(e.target.value)}>
-//             <option value="all">All topics</option>
-//             {topics.map((topic) => <option key={topic} value={topic}>{topic}</option>)}
+//           <label
+//             className="field-label"
+//             htmlFor="topic-filter"
+//           >
+//             Filter by topic
+//           </label>
+
+//           <select
+//             id="topic-filter"
+//             className="input topic-select"
+//             value={value}
+//             onChange={(e) =>
+//               onChange(
+//                 e.target.value
+//               )
+//             }
+//           >
+//             <option value="all">
+//               All topics
+//             </option>
+
+//             {topics.map(
+//               (topic) => (
+//                 <option
+//                   key={topic}
+//                   value={topic}
+//                 >
+//                   {topic}
+//                 </option>
+//               )
+//             )}
 //           </select>
 //         </>
 //       )}
+
 //       <input
 //         type="search"
 //         className="input search-input"
 //         value={searchValue}
-//         onChange={(e) => onSearchChange(e.target.value)}
+//         onChange={(e) =>
+//           onSearchChange(
+//             e.target.value
+//           )
+//         }
 //         placeholder="Search questions..."
 //         aria-label="Search questions"
 //       />
@@ -831,27 +4417,95 @@
 //   );
 // }
 
-// function SectionList({ title, emptyText, items, topics, topicFilter, onTopicChange, searchQuery, onSearchChange, onMarkCorrect, onMarkWrong, onToggleAllow, onCopy, onEdit, onDelete, showStatusActions = true, showWrongAction = true }) {
-//   const sorted = [...items].sort((a, b) => a.order - b.order);
+// function SectionList({
+//   title,
+//   emptyText,
+//   items,
+//   topics,
+//   topicFilter,
+//   onTopicChange,
+//   searchQuery,
+//   onSearchChange,
+//   onMarkCorrect,
+//   onMarkWrong,
+//   onToggleAllow,
+//   onCopy,
+//   onEdit,
+//   onDelete,
+//   showStatusActions = true,
+//   showWrongAction = true,
+// }) {
+//   const sorted = [
+//     ...items,
+//   ].sort(
+//     (a, b) =>
+//       a.order - b.order
+//   );
+
 //   return (
 //     <div className="section-wrap">
-//       <div className="section-head"><h2>{title}</h2><span className="count-pill">{items.length}</span></div>
-//       <TopicFilter topics={topics} value={topicFilter} onChange={onTopicChange} searchValue={searchQuery} onSearchChange={onSearchChange} />
+//       <div className="section-head">
+//         <h2>{title}</h2>
+
+//         <span className="count-pill">
+//           {items.length}
+//         </span>
+//       </div>
+
+//       <TopicFilter
+//         topics={topics}
+//         value={topicFilter}
+//         onChange={
+//           onTopicChange
+//         }
+//         searchValue={
+//           searchQuery
+//         }
+//         onSearchChange={
+//           onSearchChange
+//         }
+//       />
+
 //       {sorted.length === 0 ? (
-//         <div className="empty-state">{emptyText}</div>
+//         <div className="empty-state">
+//           {emptyText}
+//         </div>
 //       ) : (
 //         <div className="card-list">
 //           {sorted.map((q) => (
 //             <QuestionCard
-//               key={q.id} q={q}
-//               onMarkCorrect={() => onMarkCorrect(q.id)}
-//               onMarkWrong={() => onMarkWrong(q.id)}
-//               onToggleAllow={() => onToggleAllow(q.id)}
-//               onCopy={() => onCopy(q.id)}
-//               onEdit={() => onEdit(q.id)}
-//               onDelete={() => onDelete(q.id)}
-//               showStatusActions={showStatusActions}
-//               showWrongAction={showWrongAction}
+//               key={q.id}
+//               q={q}
+//               onMarkCorrect={() =>
+//                 onMarkCorrect(
+//                   q.id
+//                 )
+//               }
+//               onMarkWrong={() =>
+//                 onMarkWrong(
+//                   q.id
+//                 )
+//               }
+//               onToggleAllow={() =>
+//                 onToggleAllow(
+//                   q.id
+//                 )
+//               }
+//               onCopy={() =>
+//                 onCopy(q.id)
+//               }
+//               onEdit={() =>
+//                 onEdit(q.id)
+//               }
+//               onDelete={() =>
+//                 onDelete(q.id)
+//               }
+//               showStatusActions={
+//                 showStatusActions
+//               }
+//               showWrongAction={
+//                 showWrongAction
+//               }
 //             />
 //           ))}
 //         </div>
@@ -860,176 +4514,554 @@
 //   );
 // }
 
-// /* ---------------------------------- test mode ---------------------------------- */
+// /* ---------------------------------- test setup ---------------------------------- */
 
-// function TestSetup({ testPoolCount, topics, config, setConfig, onStart }) {
-//   const selectedTopics = Array.isArray(config.topics) ? config.topics : [];
-//   const allTopicsSelected = selectedTopics.length === topics.length && topics.length > 0;
+// function TestSetup({
+//   testPoolCount,
+//   topics,
+//   config,
+//   setConfig,
+//   onStart,
+// }) {
+//   const selectedTopics =
+//     Array.isArray(config.topics)
+//       ? config.topics
+//       : [];
+
+//   const allTopicsSelected =
+//     selectedTopics.length ===
+//       topics.length &&
+//     topics.length > 0;
+
+//   const perTopicMode =
+//     config.selectionMode ===
+//     "perTopic";
 
 //   function toggleTopic(topic) {
 //     setConfig((c) => {
-//       const current = Array.isArray(c.topics) ? c.topics : [];
-//       const next = current.includes(topic)
-//         ? current.filter((t) => t !== topic)
-//         : [...current, topic];
-//       return { ...c, topics: next };
+//       const current =
+//         Array.isArray(c.topics)
+//           ? c.topics
+//           : [];
+
+//       const next =
+//         current.includes(topic)
+//           ? current.filter(
+//               (t) => t !== topic
+//             )
+//           : [
+//               ...current,
+//               topic,
+//             ];
+
+//       return {
+//         ...c,
+//         topics: next,
+//       };
 //     });
 //   }
 
 //   function selectAllTopics() {
-//     setConfig((c) => ({ ...c, topics: [...topics] }));
+//     setConfig((c) => ({
+//       ...c,
+//       topics: [
+//         ...topics,
+//       ],
+//     }));
 //   }
 
 //   function clearTopics() {
-//     setConfig((c) => ({ ...c, topics: [] }));
+//     setConfig((c) => ({
+//       ...c,
+//       topics: [],
+//     }));
 //   }
 
 //   const sourceLabel =
 //     config.pool === "weak"
 //       ? "Weak questions"
-//       : config.pool === "hidden"
-//         ? "Hidden / Perfect questions"
-//         : config.pool === "special"
-//           ? "Special questions"
-//           : config.pool === "all"
-//             ? "All questions"
-//             : "Allowed / New questions";
+//       : config.pool ===
+//         "hidden"
+//       ? "Hidden / Perfect questions"
+//       : config.pool ===
+//         "special"
+//       ? "Special questions"
+//       : config.pool ===
+//         "all"
+//       ? "All questions"
+//       : "Allowed / New questions";
 
 //   const topicLabel =
 //     selectedTopics.length === 0
 //       ? "All topics"
-//       : selectedTopics.length === topics.length
-//         ? "All topics"
-//         : selectedTopics.join(", ");
+//       : selectedTopics.length ===
+//         topics.length
+//       ? "All topics"
+//       : selectedTopics.join(
+//           ", "
+//         );
 
 //   return (
 //     <div className="test-setup">
 //       <div className="setup-card">
-//         <h2>Start a Test</h2>
+//         <h2>
+//           Start a Test
+//         </h2>
+
 //         <p className="muted">
-//           {testPoolCount} question{testPoolCount !== 1 ? "s" : ""} available
-//           {selectedTopics.length ? ` from ${topicLabel}` : " from all topics"}.
+//           {testPoolCount} question
+//           {testPoolCount !== 1
+//             ? "s"
+//             : ""}{" "}
+//           available
+//           {selectedTopics.length
+//             ? ` from ${topicLabel}`
+//             : " from all topics"}
+//           .
 //         </p>
 
 //         <div className="field">
-//           <label className="field-label">Question Source</label>
+//           <label className="field-label">
+//             Question Source
+//           </label>
+
 //           <div className="test-source-grid">
 //             <button
 //               type="button"
-//               className={"source-choice" + (config.pool === "allowed" ? " selected" : "")}
-//               onClick={() => setConfig((c) => ({ ...c, pool: "allowed" }))}
+//               className={
+//                 "source-choice" +
+//                 (config.pool ===
+//                 "allowed"
+//                   ? " selected"
+//                   : "")
+//               }
+//               onClick={() =>
+//                 setConfig((c) => ({
+//                   ...c,
+//                   pool: "allowed",
+//                 }))
+//               }
 //             >
-//               <span className="source-title">Allowed / New</span>
-//               <span className="source-desc">New or not-yet-classified questions</span>
+//               <span className="source-title">
+//                 Allowed / New
+//               </span>
+
+//               <span className="source-desc">
+//                 New or not-yet-classified questions
+//               </span>
 //             </button>
 
 //             <button
 //               type="button"
-//               className={"source-choice" + (config.pool === "weak" ? " selected" : "")}
-//               onClick={() => setConfig((c) => ({ ...c, pool: "weak" }))}
+//               className={
+//                 "source-choice" +
+//                 (config.pool ===
+//                 "weak"
+//                   ? " selected"
+//                   : "")
+//               }
+//               onClick={() =>
+//                 setConfig((c) => ({
+//                   ...c,
+//                   pool: "weak",
+//                 }))
+//               }
 //             >
-//               <span className="source-title">Weak</span>
-//               <span className="source-desc">Questions you need more practice in</span>
+//               <span className="source-title">
+//                 Weak
+//               </span>
+
+//               <span className="source-desc">
+//                 Questions you need more practice in
+//               </span>
 //             </button>
 
 //             <button
 //               type="button"
-//               className={"source-choice" + (config.pool === "hidden" ? " selected" : "")}
-//               onClick={() => setConfig((c) => ({ ...c, pool: "hidden" }))}
+//               className={
+//                 "source-choice" +
+//                 (config.pool ===
+//                 "hidden"
+//                   ? " selected"
+//                   : "")
+//               }
+//               onClick={() =>
+//                 setConfig((c) => ({
+//                   ...c,
+//                   pool: "hidden",
+//                 }))
+//               }
 //             >
-//               <span className="source-title">Hidden / Perfect</span>
-//               <span className="source-desc">Questions you already know well</span>
+//               <span className="source-title">
+//                 Hidden / Perfect
+//               </span>
+
+//               <span className="source-desc">
+//                 Questions you already know well
+//               </span>
 //             </button>
 
 //             <button
 //               type="button"
-//               className={"source-choice" + (config.pool === "special" ? " selected" : "")}
-//               onClick={() => setConfig((c) => ({ ...c, pool: "special" }))}
+//               className={
+//                 "source-choice" +
+//                 (config.pool ===
+//                 "special"
+//                   ? " selected"
+//                   : "")
+//               }
+//               onClick={() =>
+//                 setConfig((c) => ({
+//                   ...c,
+//                   pool: "special",
+//                 }))
+//               }
 //             >
-//               <span className="source-title">Special</span>
-//               <span className="source-desc">Special / Important questions</span>
+//               <span className="source-title">
+//                 Special
+//               </span>
+
+//               <span className="source-desc">
+//                 Special / Important questions
+//               </span>
 //             </button>
 
 //             <button
 //               type="button"
-//               className={"source-choice" + (config.pool === "all" ? " selected" : "")}
-//               onClick={() => setConfig((c) => ({ ...c, pool: "all" }))}
+//               className={
+//                 "source-choice" +
+//                 (config.pool ===
+//                 "all"
+//                   ? " selected"
+//                   : "")
+//               }
+//               onClick={() =>
+//                 setConfig((c) => ({
+//                   ...c,
+//                   pool: "all",
+//                 }))
+//               }
 //             >
-//               <span className="source-title">All</span>
-//               <span className="source-desc">All questions</span>
+//               <span className="source-title">
+//                 All
+//               </span>
+
+//               <span className="source-desc">
+//                 All questions
+//               </span>
 //             </button>
 //           </div>
-//           <p className="hint">Every section can be tested separately.</p>
-//         </div>
 
-//         <div className="field">
-//           <div className="topic-select-head">
-//             <label className="field-label">Select Topics</label>
-//             <div className="topic-actions">
-//               <button type="button" className="link-btn" onClick={selectAllTopics} disabled={allTopicsSelected}>Select all</button>
-//               <button type="button" className="link-btn" onClick={clearTopics} disabled={selectedTopics.length === 0}>Clear</button>
-//             </div>
-//           </div>
-
-//           {topics.length === 0 ? (
-//             <div className="empty-state">No topics available.</div>
-//           ) : (
-//             <div className="topic-check-grid">
-//               {topics.map((topic) => {
-//                 const checked = selectedTopics.includes(topic);
-//                 return (
-//                   <label key={topic} className={"topic-check" + (checked ? " checked" : "")}>
-//                     <input
-//                       type="checkbox"
-//                       checked={checked}
-//                       onChange={() => toggleTopic(topic)}
-//                     />
-//                     <span>{topic}</span>
-//                   </label>
-//                 );
-//               })}
-//             </div>
-//           )}
 //           <p className="hint">
-//             {selectedTopics.length === 0
-//               ? "No topic selected = all topics."
-//               : `${selectedTopics.length} topic${selectedTopics.length === 1 ? "" : "s"} selected.`}
+//             Every section can be tested separately.
 //           </p>
 //         </div>
 
 //         <div className="field">
-//           <label className="field-label">Number of Questions (max {Math.max(testPoolCount, 1)})</label>
+//           <div className="topic-select-head">
+//             <label className="field-label">
+//               Select Topics
+//             </label>
+
+//             <div className="topic-actions">
+//               <button
+//                 type="button"
+//                 className="link-btn"
+//                 onClick={
+//                   selectAllTopics
+//                 }
+//                 disabled={
+//                   allTopicsSelected
+//                 }
+//               >
+//                 Select all
+//               </button>
+
+//               <button
+//                 type="button"
+//                 className="link-btn"
+//                 onClick={
+//                   clearTopics
+//                 }
+//                 disabled={
+//                   selectedTopics.length ===
+//                   0
+//                 }
+//               >
+//                 Clear
+//               </button>
+//             </div>
+//           </div>
+
+//           {topics.length === 0 ? (
+//             <div className="empty-state">
+//               No topics available.
+//             </div>
+//           ) : (
+//             <div className="topic-check-grid">
+//               {topics.map(
+//                 (topic) => {
+//                   const checked =
+//                     selectedTopics.includes(
+//                       topic
+//                     );
+
+//                   return (
+//                     <label
+//                       key={topic}
+//                       className={
+//                         "topic-check" +
+//                         (checked
+//                           ? " checked"
+//                           : "")
+//                       }
+//                     >
+//                       <input
+//                         type="checkbox"
+//                         checked={
+//                           checked
+//                         }
+//                         onChange={() =>
+//                           toggleTopic(
+//                             topic
+//                           )
+//                         }
+//                       />
+
+//                       <span>
+//                         {topic}
+//                       </span>
+//                     </label>
+//                   );
+//                 }
+//               )}
+//             </div>
+//           )}
+
+//           <p className="hint">
+//             {selectedTopics.length ===
+//             0
+//               ? "No topic selected = all topics."
+//               : `${selectedTopics.length} topic${
+//                   selectedTopics.length ===
+//                   1
+//                     ? ""
+//                     : "s"
+//                 } selected.`}
+//           </p>
+//         </div>
+
+//         <div className="field">
+//           <label className="field-label">
+//             Question Selection
+//           </label>
+
+//           <div className="topic-actions">
+//             <button
+//               type="button"
+//               className={
+//                 "btn btn-xs " +
+//                 (!perTopicMode
+//                   ? "btn-primary"
+//                   : "btn-ghost")
+//               }
+//               onClick={() =>
+//                 setConfig((c) => ({
+//                   ...c,
+//                   selectionMode:
+//                     "total",
+//                 }))
+//               }
+//             >
+//               Total questions
+//             </button>
+
+//             <button
+//               type="button"
+//               className={
+//                 "btn btn-xs " +
+//                 (perTopicMode
+//                   ? "btn-primary"
+//                   : "btn-ghost")
+//               }
+//               onClick={() =>
+//                 setConfig((c) => ({
+//                   ...c,
+//                   selectionMode:
+//                     "perTopic",
+//                 }))
+//               }
+//             >
+//               Per chapter
+//             </button>
+//           </div>
+
+//           <p className="hint">
+//             {perTopicMode
+//               ? "Select how many random questions to take from every selected chapter."
+//               : "Select the total number of random questions for the whole test."}
+//           </p>
+//         </div>
+
+//         <div className="field">
+//           <label className="field-label">
+//             {perTopicMode
+//               ? "Questions Per Chapter"
+//               : `Number of Questions (max ${Math.max(
+//                   testPoolCount,
+//                   1
+//                 )})`}
+//           </label>
+
 //           <input
 //             type="number"
 //             min={1}
-//             max={Math.max(testPoolCount, 1)}
+//             max={Math.max(
+//               testPoolCount,
+//               1
+//             )}
 //             className="input"
-//             value={config.count}
-//             disabled={testPoolCount === 0}
+//             value={
+//               perTopicMode
+//                 ? Number(
+//                     config.perTopicCount
+//                   ) || 20
+//                 : config.count
+//             }
+//             disabled={
+//               testPoolCount === 0
+//             }
 //             onChange={(e) => {
-//               let v = parseInt(e.target.value || "1", 10);
-//               if (isNaN(v)) v = 1;
-//               v = Math.max(1, Math.min(v, Math.max(testPoolCount, 1)));
-//               setConfig((c) => ({ ...c, count: v }));
+//               let v = parseInt(
+//                 e.target.value ||
+//                   "1",
+//                 10
+//               );
+
+//               if (isNaN(v)) {
+//                 v = 1;
+//               }
+
+//               v = Math.max(
+//                 1,
+//                 Math.min(
+//                   v,
+//                   Math.max(
+//                     testPoolCount,
+//                     1
+//                   )
+//                 )
+//               );
+
+//               setConfig((c) => ({
+//                 ...c,
+//                 ...(perTopicMode
+//                   ? {
+//                       perTopicCount:
+//                         v,
+//                     }
+//                   : {
+//                       count: v,
+//                     }),
+//               }));
 //             }}
 //             onBlur={(e) => {
-//               let v = parseInt(e.target.value || "1", 10);
-//               if (isNaN(v)) v = 1;
-//               v = Math.max(1, Math.min(v, Math.max(testPoolCount, 1)));
-//               setConfig((c) => ({ ...c, count: v }));
+//               let v = parseInt(
+//                 e.target.value ||
+//                   "1",
+//                 10
+//               );
+
+//               if (isNaN(v)) {
+//                 v = 1;
+//               }
+
+//               v = Math.max(
+//                 1,
+//                 Math.min(
+//                   v,
+//                   Math.max(
+//                     testPoolCount,
+//                     1
+//                   )
+//                 )
+//               );
+
+//               setConfig((c) => ({
+//                 ...c,
+//                 ...(perTopicMode
+//                   ? {
+//                       perTopicCount:
+//                         v,
+//                     }
+//                   : {
+//                       count: v,
+//                     }),
+//               }));
 //             }}
 //           />
+
+//           {perTopicMode && (
+//             <p className="hint">
+//               If a chapter has fewer
+//               questions than this number,
+//               all available questions from
+//               that chapter will be used.
+//               Final questions are mixed in
+//               random order.
+//             </p>
+//           )}
 //         </div>
 
 //         <div className="test-selection-summary">
-//           <span>Source: <b>{sourceLabel}</b></span>
-//           <span>Topics: <b>{selectedTopics.length === 0 || allTopicsSelected ? "All" : selectedTopics.length}</b></span>
-//           <span>Pool: <b>{testPoolCount}</b></span>
+//           <span>
+//             Source:{" "}
+//             <b>
+//               {sourceLabel}
+//             </b>
+//           </span>
+
+//           <span>
+//             Topics:{" "}
+//             <b>
+//               {selectedTopics.length ===
+//                 0 ||
+//               allTopicsSelected
+//                 ? "All"
+//                 : selectedTopics.length}
+//             </b>
+//           </span>
+
+//           <span>
+//             Pool:{" "}
+//             <b>
+//               {testPoolCount}
+//             </b>
+//           </span>
+
+//           <span>
+//             Mode:{" "}
+//             <b>
+//               {perTopicMode
+//                 ? `${Number(
+//                     config.perTopicCount
+//                   ) || 20} / chapter`
+//                 : `${config.count} total`}
+//             </b>
+//           </span>
 //         </div>
 
-//         <button className="btn btn-primary btn-block" disabled={testPoolCount === 0} onClick={onStart}>
-//           <Play size={14} /> Start Test
+//         <button
+//           className="btn btn-primary btn-block"
+//           disabled={
+//             testPoolCount === 0
+//           }
+//           onClick={onStart}
+//         >
+//           <Play size={14} />
+//           Start Test
 //         </button>
+
 //         {testPoolCount === 0 && (
 //           <p className="warn-text">
 //             No questions available for this selection. Try another source or topic.
@@ -1040,124 +5072,628 @@
 //   );
 // }
 
-// function TestRunning({ question, index, total, answer, onSelect, onMark, onNext, onBack, onExit, isLast, onHide, ids, answers, allQuestions, onJump }) {
-//   const [timerSeconds, setTimerSeconds] = useState(0);
-//   const [timerRunning, setTimerRunning] = useState(false);
+// /* ---------------------------------- test running ---------------------------------- */
+
+// function TestRunning({
+//   question,
+//   index,
+//   total,
+//   answer,
+//   onSelect,
+//   onMark,
+//   onNext,
+//   onBack,
+//   onExit,
+//   isLast,
+//   onHide,
+//   onEdit,
+//   ids,
+//   answers,
+//   allQuestions,
+//   onJump,
+// }) {
+//   const [timerSeconds, setTimerSeconds] =
+//     useState(0);
+
+//   const [timerRunning, setTimerRunning] =
+//     useState(false);
+
+//   const [showQuestionNumbers, setShowQuestionNumbers] =
+//     useState(true);
 
 //   useEffect(() => {
-//     if (!timerRunning) return;
-//     const timerId = setInterval(() => setTimerSeconds((seconds) => seconds + 1), 1000);
-//     return () => clearInterval(timerId);
+//     if (!timerRunning) {
+//       return;
+//     }
+
+//     const timerId =
+//       setInterval(
+//         () =>
+//           setTimerSeconds(
+//             (seconds) =>
+//               seconds + 1
+//           ),
+//         1000
+//       );
+
+//     return () =>
+//       clearInterval(timerId);
 //   }, [timerRunning]);
 
-//   const timerText = `${String(Math.floor(timerSeconds / 60)).padStart(2, "0")}:${String(timerSeconds % 60).padStart(2, "0")}`;
+//   const timerText =
+//     `${String(
+//       Math.floor(
+//         timerSeconds / 60
+//       )
+//     ).padStart(2, "0")}:` +
+//     `${String(
+//       timerSeconds % 60
+//     ).padStart(2, "0")}`;
 
 //   if (!question) {
 //     return (
 //       <div className="test-running">
-//         <div className="empty-state">This question is no longer available.</div>
+//         <div className="empty-state">
+//           This question is no longer available.
+//         </div>
+
 //         <div className="test-nav">
-//           <button className="btn btn-ghost" disabled={index === 0} onClick={onBack}><ChevronLeft size={14} /> Back</button>
-//           <button className="btn btn-primary" onClick={onNext}>{isLast ? "Finish" : "Next"} <ChevronRight size={14} /></button>
+//           <button
+//             className="btn btn-ghost"
+//             disabled={
+//               index === 0
+//             }
+//             onClick={onBack}
+//           >
+//             <ChevronLeft
+//               size={14}
+//             />
+//             Back
+//           </button>
+
+//           <button
+//             className="btn btn-primary"
+//             onClick={onNext}
+//           >
+//             {isLast
+//               ? "Finish"
+//               : "Next"}{" "}
+//             <ChevronRight
+//               size={14}
+//             />
+//           </button>
 //         </div>
 //       </div>
 //     );
 //   }
-//   const revealed = answer && answer.revealed;
+
+//   const revealed =
+//     answer &&
+//     answer.revealed;
+
 //   return (
 //     <div className="test-running">
 //       <div className="test-topbar">
-//         <button className="link-btn" onClick={onExit}><X size={14} /> Exit</button>
-//         <span className="progress-label">Question {index + 1} / {total}</span>
-//         <div className="tiny-timer" aria-label="Test timer">
-//           <span className="tiny-timer-time">{timerText}</span>
-//           <button type="button" className="tiny-timer-btn" onClick={() => setTimerRunning(true)} disabled={timerRunning} title="Start timer">▶</button>
-//           <button type="button" className="tiny-timer-btn" onClick={() => setTimerRunning(false)} disabled={!timerRunning} title="Stop timer">■</button>
-//           <button type="button" className="tiny-timer-btn" onClick={() => { setTimerRunning(false); setTimerSeconds(0); }} title="Reset timer">↺</button>
+//         <button
+//           className="link-btn"
+//           onClick={onExit}
+//         >
+//           <X size={14} />
+//           Exit
+//         </button>
+
+//         <span className="progress-label">
+//           Question {index + 1} /{" "}
+//           {total}
+//         </span>
+
+//         <div
+//           className="tiny-timer"
+//           aria-label="Test timer"
+//         >
+//           <span className="tiny-timer-time">
+//             {timerText}
+//           </span>
+
+//           <button
+//             type="button"
+//             className="tiny-timer-btn"
+//             onClick={() =>
+//               setTimerRunning(true)
+//             }
+//             disabled={
+//               timerRunning
+//             }
+//             title="Start timer"
+//           >
+//             ▶
+//           </button>
+
+//           <button
+//             type="button"
+//             className="tiny-timer-btn"
+//             onClick={() =>
+//               setTimerRunning(false)
+//             }
+//             disabled={
+//               !timerRunning
+//             }
+//             title="Stop timer"
+//           >
+//             ■
+//           </button>
+
+//           <button
+//             type="button"
+//             className="tiny-timer-btn"
+//             onClick={() => {
+//               setTimerRunning(false);
+//               setTimerSeconds(0);
+//             }}
+//             title="Reset timer"
+//           >
+//             ↺
+//           </button>
 //         </div>
-//         <button className="link-btn hide-q-btn" onClick={() => onHide(question.id)} title="Move this question to Hidden / Perfect"><EyeOff size={14} /> Hide / Perfect</button>
+
+//         <button
+//           type="button"
+//           className="link-btn test-edit-btn"
+//           onClick={() =>
+//             onEdit(question.id)
+//           }
+//           title="Edit question, options, correct answer and explanation"
+//         >
+//           <Pencil size={14} />
+//           Edit
+//         </button>
+
+//         <button
+//           className="link-btn hide-q-btn"
+//           onClick={() =>
+//             onHide(question.id)
+//           }
+//           title="Move this question to Hidden / Perfect"
+//         >
+//           <EyeOff size={14} />
+//           Hide / Perfect
+//         </button>
 //       </div>
-//       <div className="progress-track"><div className="progress-fill" style={{ width: ((index + 1) / total) * 100 + "%" }} /></div>
-//       {ids && ids.length > 1 && (
-//         <div className="q-jump-row">
-//           <span className="q-jump-label">Jump to any question:</span>
-//           <div className="q-jump-grid">
-//             {ids.map((qid, i) => {
-//               const qa = answers ? answers[qid] : null;
-//               const qq = allQuestions ? allQuestions.find((x) => x.id === qid) : null;
-//               let cls = "q-jump-btn";
-//               if (i === index) cls += " current";
-//               else if (qa && qq) cls += qa.selected === qq.correctIndex ? " ans-correct" : " ans-wrong";
+
+//       <div className="progress-track">
+//         <div
+//           className="progress-fill"
+//           style={{
+//             width:
+//               ((index + 1) /
+//                 total) *
+//                 100 +
+//               "%",
+//           }}
+//         />
+//       </div>
+
+//       {ids &&
+//         ids.length > 1 && (
+//           <div
+//             className={
+//               "q-jump-row" +
+//               (showQuestionNumbers
+//                 ? ""
+//                 : " collapsed")
+//             }
+//           >
+//             <div className="q-jump-head">
+//               {showQuestionNumbers && (
+//                 <span className="q-jump-label">
+//                   Jump to any question:
+//                 </span>
+//               )}
+
+//               <button
+//                 type="button"
+//                 className="q-jump-toggle"
+//                 onClick={() =>
+//                   setShowQuestionNumbers(
+//                     (shown) => !shown
+//                   )
+//                 }
+//                 title={
+//                   showQuestionNumbers
+//                     ? "Hide question numbers"
+//                     : "Show question numbers"
+//                 }
+//                 aria-expanded={
+//                   showQuestionNumbers
+//                 }
+//               >
+//                 {showQuestionNumbers ? (
+//                   <>
+//                     <EyeOff size={12} />
+//                     Hide numbers
+//                   </>
+//                 ) : (
+//                   <>
+//                     <Eye size={12} />
+//                     Show question numbers
+//                   </>
+//                 )}
+//               </button>
+//             </div>
+
+//             {showQuestionNumbers && (
+//               <div className="q-jump-grid">
+//                 {ids.map(
+//                   (qid, i) => {
+//                     const qa =
+//                       answers
+//                         ? answers[
+//                             qid
+//                           ]
+//                         : null;
+
+//                     const qq =
+//                       allQuestions
+//                         ? allQuestions.find(
+//                             (
+//                               x
+//                             ) =>
+//                               x.id ===
+//                               qid
+//                           )
+//                         : null;
+
+//                     let cls =
+//                       "q-jump-btn";
+
+//                     if (
+//                       i ===
+//                       index
+//                     ) {
+//                       cls +=
+//                         " current";
+//                     } else if (
+//                       qa &&
+//                       qq
+//                     ) {
+//                       cls +=
+//                         qa.selected ===
+//                         qq.correctIndex
+//                           ? " ans-correct"
+//                           : " ans-wrong";
+//                     }
+
+//                     return (
+//                       <button
+//                         key={qid}
+//                         type="button"
+//                         className={
+//                           cls
+//                         }
+//                         onClick={() =>
+//                           onJump(
+//                             i
+//                           )
+//                         }
+//                         title={
+//                           "Go to question " +
+//                           (i +
+//                             1)
+//                         }
+//                       >
+//                         {i + 1}
+//                       </button>
+//                     );
+//                   }
+//                 )}
+//               </div>
+//             )}
+//           </div>
+//         )}
+
+//       <div className="card q-card">
+//         <div className="test-question-heading">
+//           <div className="test-question-badges">
+//             <span className="badge cat">
+//               {question.category ||
+//                 "General"}
+//             </span>
+
+//             {question.examName && (
+//               <span className="badge exam">
+//                 EXAM · {question.examName}
+//               </span>
+//             )}
+//           </div>
+
+//           <button
+//             type="button"
+//             className="test-inline-edit-btn"
+//             onClick={() =>
+//               onEdit(
+//                 question.id
+//               )
+//             }
+//             title="Edit this question"
+//           >
+//             <Pencil
+//               size={12}
+//             />
+//             Edit Question
+//           </button>
+//         </div>
+
+//         {question.questionText && (
+//           <p className="q-text">
+//             {formatMathText(
+//               question.questionText
+//             )}
+//           </p>
+//         )}
+
+//         {question.questionImage && (
+//           <img
+//             className="card-img"
+//             src={
+//               question.questionImage
+//             }
+//             alt="question"
+//           />
+//         )}
+
+//         <div className="opt-list test-opts">
+//           {question.options.map(
+//             (opt, i) => {
+//               let cls =
+//                 "opt-row selectable";
+
+//               if (
+//                 revealed
+//               ) {
+//                 if (
+//                   i ===
+//                   question.correctIndex
+//                 ) {
+//                   cls +=
+//                     " opt-correct-answer";
+//                 } else if (
+//                   answer &&
+//                   i ===
+//                     answer.selected
+//                 ) {
+//                   cls +=
+//                     " opt-wrong-answer";
+//                 }
+//               } else if (
+//                 answer &&
+//                 answer.selected ===
+//                   i
+//               ) {
+//                 cls +=
+//                   " opt-picked";
+//               }
+
 //               return (
-//                 <button key={qid} type="button" className={cls} onClick={() => onJump(i)} title={"Go to question " + (i + 1)}>
-//                   {i + 1}
+//                 <button
+//                   key={i}
+//                   type="button"
+//                   className={
+//                     cls
+//                   }
+//                   disabled={
+//                     revealed
+//                   }
+//                   onClick={() =>
+//                     onSelect(
+//                       i
+//                     )
+//                   }
+//                 >
+//                   <span className="opt-letter">
+//                     {String.fromCharCode(
+//                       65 + i
+//                     )}
+//                   </span>
+
+//                   <span>
+//                     {formatMathText(
+//                       opt
+//                     )}
+//                   </span>
 //                 </button>
 //               );
-//             })}
-//           </div>
+//             }
+//           )}
 //         </div>
-//       )}
-//       <div className="card q-card">
-//         <span className="badge cat">{question.category || "General"}</span>
-//         {question.questionText && <p className="q-text">{formatMathText(question.questionText)}</p>}
-//         {question.questionImage && <img className="card-img" src={question.questionImage} alt="question" />}
-//         <div className="opt-list test-opts">
-//           {question.options.map((opt, i) => {
-//             let cls = "opt-row selectable";
-//             if (revealed) {
-//               if (i === question.correctIndex) cls += " opt-correct-answer";
-//               else if (answer && i === answer.selected) cls += " opt-wrong-answer";
-//             } else if (answer && answer.selected === i) cls += " opt-picked";
-//             return (
-//               <button key={i} type="button" className={cls} disabled={revealed} onClick={() => onSelect(i)}>
-//                 <span className="opt-letter">{String.fromCharCode(65 + i)}</span><span>{formatMathText(opt)}</span>
-//               </button>
-//             );
-//           })}
-//         </div>
+
 //         {revealed && (
 //           <div className="solution reveal">
 //             <div className="solution-head">
-//               {answer.selected === question.correctIndex
-//                 ? <span className="badge ok">Correct!</span>
-//                 : <span className="badge bad">Incorrect</span>}
+//               {answer.selected ===
+//               question.correctIndex ? (
+//                 <span className="badge ok">
+//                   Correct!
+//                 </span>
+//               ) : (
+//                 <span className="badge bad">
+//                   Incorrect
+//                 </span>
+//               )}
+
+//               <button
+//                 type="button"
+//                 className="solution-edit-btn"
+//                 onClick={() =>
+//                   onEdit(
+//                     question.id
+//                   )
+//                 }
+//                 title="Edit question, options or explanation"
+//               >
+//                 <Pencil
+//                   size={12}
+//                 />
+//                 Edit
+//               </button>
 //             </div>
-//             {question.solutionText && <p>{renderTextWithClickableLinks(question.solutionText)}</p>}
-//             {question.solutionImage && <img className="card-img" src={question.solutionImage} alt="solution" />}
+
+//             {question.solutionText && (
+//               <p>
+//                 {renderTextWithClickableLinks(
+//                   question.solutionText
+//                 )}
+//               </p>
+//             )}
+
+//             {question.solutionImage && (
+//               <img
+//                 className="card-img"
+//                 src={
+//                   question.solutionImage
+//                 }
+//                 alt="solution"
+//               />
+//             )}
+
+//             {!question.solutionText &&
+//               !question.solutionImage && (
+//                 <p className="muted">
+//                   No explanation provided.
+//                 </p>
+//               )}
+
 //             <div className="mark-row">
 //               <button
-//                 className={"btn btn-xs" + (question.attemptStatus === "correct" ? " btn-ok-active" : " btn-ghost")}
-//                 onClick={() => onMark("correct")}
+//                 className={
+//                   "btn btn-xs" +
+//                   (question.attemptStatus ===
+//                   "correct"
+//                     ? " btn-ok-active"
+//                     : " btn-ghost")
+//                 }
+//                 onClick={() =>
+//                   onMark(
+//                     "correct"
+//                   )
+//                 }
 //               >
-//                 <CheckCircle2 size={13} /> {question.attemptStatus === "correct" ? "Remove from Weak" : "Move to Weak"}
+//                 <CheckCircle2
+//                   size={13}
+//                 />
+
+//                 {question.attemptStatus ===
+//                 "correct"
+//                   ? "Remove from Weak"
+//                   : "Move to Weak"}
 //               </button>
 //             </div>
 //           </div>
 //         )}
 //       </div>
+
 //       <div className="test-nav">
-//         <button className="btn btn-ghost" disabled={index === 0} onClick={onBack}><ChevronLeft size={14} /> Back</button>
-//         <button className="btn btn-primary" onClick={onNext}>{isLast ? "Finish" : "Next"} <ChevronRight size={14} /></button>
+//         <button
+//           className="btn btn-ghost"
+//           disabled={
+//             index === 0
+//           }
+//           onClick={onBack}
+//         >
+//           <ChevronLeft
+//             size={14}
+//           />
+//           Back
+//         </button>
+
+//         <button
+//           className="btn btn-primary"
+//           onClick={onNext}
+//         >
+//           {isLast
+//             ? "Finish"
+//             : "Next"}{" "}
+//           <ChevronRight
+//             size={14}
+//           />
+//         </button>
 //       </div>
 //     </div>
 //   );
 // }
 
-// function TestSummary({ ids, questions, onDone }) {
-//   const qs = ids.map((id) => questions.find((q) => q.id === id)).filter(Boolean);
-//   const correct = qs.filter((q) => q.attemptStatus === "correct").length;
-//   const wrong = qs.filter((q) => q.attemptStatus === "wrong").length;
-//   const unattempted = qs.length - correct - wrong;
+// function TestSummary({
+//   ids,
+//   questions,
+//   onDone,
+// }) {
+//   const qs = ids
+//     .map((id) =>
+//       questions.find(
+//         (q) =>
+//           q.id === id
+//       )
+//     )
+//     .filter(Boolean);
+
+//   const correct = qs.filter(
+//     (q) =>
+//       q.attemptStatus ===
+//       "correct"
+//   ).length;
+
+//   const wrong = qs.filter(
+//     (q) =>
+//       q.attemptStatus ===
+//       "wrong"
+//   ).length;
+
+//   const unattempted =
+//     qs.length -
+//     correct -
+//     wrong;
+
 //   return (
 //     <div className="summary">
-//       <h2>Test Complete</h2>
+//       <h2>
+//         Test Complete
+//       </h2>
+
 //       <div className="summary-grid">
-//         <div className="summary-stat ok"><b>{correct}</b><span>Correct</span></div>
-//         <div className="summary-stat bad"><b>{wrong}</b><span>Wrong</span></div>
-//         <div className="summary-stat neutral"><b>{unattempted}</b><span>Unmarked</span></div>
+//         <div className="summary-stat ok">
+//           <b>{correct}</b>
+//           <span>
+//             Correct
+//           </span>
+//         </div>
+
+//         <div className="summary-stat bad">
+//           <b>{wrong}</b>
+//           <span>
+//             Wrong
+//           </span>
+//         </div>
+
+//         <div className="summary-stat neutral">
+//           <b>
+//             {unattempted}
+//           </b>
+
+//           <span>
+//             Unmarked
+//           </span>
+//         </div>
 //       </div>
+
 //       <div className="summary-actions">
-//         <button className="btn btn-primary btn-block" onClick={onDone}><RotateCcw size={14} /> Done / New Test</button>
+//         <button
+//           className="btn btn-primary btn-block"
+//           onClick={onDone}
+//         >
+//           <RotateCcw
+//             size={14}
+//           />
+//           Done / New Test
+//         </button>
 //       </div>
 //     </div>
 //   );
@@ -1166,442 +5702,1759 @@
 // /* ---------------------------------- app ---------------------------------- */
 
 // function App() {
-//   const [questions, setQuestions] = useState([]);
-//   const [loaded, setLoaded] = useState(false);
-//   const [section, setSection] = useState("test");
-//   const [editorOpen, setEditorOpen] = useState(false);
-//   const [editingId, setEditingId] = useState(null);
-//   const [testConfig, setTestConfig] = useState({ pool: "allowed", topics: [], count: 5 });
-//   const [testSession, setTestSession] = useState(null);
-//   const [toast, setToast] = useState("");
-//   const [topicFilter, setTopicFilter] = useState("all");
-//   const [searchQuery, setSearchQuery] = useState("");
+//   const [
+//     questions,
+//     setQuestions,
+//   ] = useState([]);
+
+//   const [
+//     loaded,
+//     setLoaded,
+//   ] = useState(false);
+
+//   const [
+//     section,
+//     setSection,
+//   ] = useState("test");
+
+//   const [
+//     editorOpen,
+//     setEditorOpen,
+//   ] = useState(false);
+
+//   const [
+//     bulkImportOpen,
+//     setBulkImportOpen,
+//   ] = useState(false);
+
+//   const [
+//     editingId,
+//     setEditingId,
+//   ] = useState(null);
+
+//   const [
+//     testConfig,
+//     setTestConfig,
+//   ] = useState({
+//     pool: "allowed",
+//     topics: [],
+//     count: 5,
+//     selectionMode: "total",
+//     perTopicCount: 20,
+//   });
+
+//   const [
+//     testSession,
+//     setTestSession,
+//   ] = useState(null);
+
+//   const [
+//     toast,
+//     setToast,
+//   ] = useState("");
+
+//   const [
+//     topicFilter,
+//     setTopicFilter,
+//   ] = useState("all");
+
+//   const [
+//     searchQuery,
+//     setSearchQuery,
+//   ] = useState("");
 
 //   useEffect(() => {
 //     let cancelled = false;
+
 //     (async () => {
-//       const STORAGE_KEY = "mathquiz:questions";
-//       const storage = createQuestionStorage();
+//       const STORAGE_KEY =
+//         "mathquiz:questions";
+
+//       const storage =
+//         createQuestionStorage();
 
 //       let data = [];
 
 //       try {
-//         const saved = await storage.get(STORAGE_KEY);
-//         const value = typeof saved === "string" ? saved : saved && saved.value;
-//         if (value !== null && value !== undefined && value !== "") {
-//           const parsed = JSON.parse(value);
-//           if (Array.isArray(parsed)) {
+//         const saved =
+//           await storage.get(
+//             STORAGE_KEY
+//           );
+
+//         const value =
+//           typeof saved ===
+//           "string"
+//             ? saved
+//             : saved &&
+//               saved.value;
+
+//         if (
+//           value !== null &&
+//           value !==
+//             undefined &&
+//           value !== ""
+//         ) {
+//           const parsed =
+//             JSON.parse(
+//               value
+//             );
+
+//           if (
+//             Array.isArray(
+//               parsed
+//             )
+//           ) {
 //             data = parsed;
 //           }
 //         }
 //       } catch (e) {}
 
-//       if (data.length === 0) {
-//         const topicData = window.MATH_TOPIC_DATA || {};
-//         const allQuestions = Object.values(topicData).flatMap((topicQuestions) => Array.isArray(topicQuestions) ? topicQuestions : []);
-//         data = allQuestions.length > 0 ? allQuestions : sampleQuestions();
+//       if (
+//         data.length === 0
+//       ) {
+//         const topicData =
+//           window.MATH_TOPIC_DATA ||
+//           {};
+
+//         const allQuestions =
+//           Object.values(
+//             topicData
+//           ).flatMap(
+//             (
+//               topicQuestions
+//             ) =>
+//               Array.isArray(
+//                 topicQuestions
+//               )
+//                 ? topicQuestions
+//                 : []
+//           );
+
+//         data =
+//           allQuestions.length >
+//           0
+//             ? allQuestions
+//             : sampleQuestions();
 //       }
 
-//       data = data.map((question, index) => normalizeQuestion({
-//         ...question,
-//         id: question.id || `topic-${index}`,
-//         order: typeof question.order === "number" ? question.order : index,
-//         attemptStatus: question.attemptStatus || "unattempted",
-//         testAllowed: question.testAllowed !== false,
-//       }));
+//       data = data.map(
+//         (
+//           question,
+//           index
+//         ) =>
+//           normalizeQuestion({
+//             ...question,
+//             id:
+//               question.id ||
+//               `topic-${index}`,
+//             order:
+//               typeof question.order ===
+//               "number"
+//                 ? question.order
+//                 : index,
+//             attemptStatus:
+//               question.attemptStatus ||
+//               "unattempted",
+//             testAllowed:
+//               question.testAllowed !==
+//               false,
+//           })
+//       );
 
-//       try { await storage.set(STORAGE_KEY, JSON.stringify(data)); } catch (e) {}
-//       if (!cancelled) { setQuestions(data); setLoaded(true); }
+//       try {
+//         await storage.set(
+//           STORAGE_KEY,
+//           JSON.stringify(
+//             data
+//           )
+//         );
+//       } catch (e) {}
+
+//       if (
+//         !cancelled
+//       ) {
+//         setQuestions(data);
+//         setLoaded(true);
+//       }
 //     })();
-//     return () => { cancelled = true; };
+
+//     return () => {
+//       cancelled = true;
+//     };
 //   }, []);
 
 //   useEffect(() => {
-//     if (!loaded) return;
-//     const t = setTimeout(() => {
-//       const storage = createQuestionStorage();
-//       storage.set("mathquiz:questions", JSON.stringify(questions)).catch(() => {});
-//     }, 400);
-//     return () => clearTimeout(t);
-//   }, [questions, loaded]);
+//     if (!loaded) {
+//       return;
+//     }
 
-//   function notify(msg) { setToast(msg); setTimeout(() => setToast(""), 1800); }
+//     const t =
+//       setTimeout(() => {
+//         const storage =
+//           createQuestionStorage();
 
-//   function addQuestion(draft) {
-//     setQuestions((prev) => [...prev, { ...draft, id: uid(), order: prev.length, attemptStatus: "unattempted", testAllowed: true }]);
-//     notify("Question added");
+//         storage
+//           .set(
+//             "mathquiz:questions",
+//             JSON.stringify(
+//               questions
+//             )
+//           )
+//           .catch(() => {});
+//       }, 400);
+
+//     return () =>
+//       clearTimeout(t);
+//   }, [
+//     questions,
+//     loaded,
+//   ]);
+
+//   function notify(msg) {
+//     setToast(msg);
+
+//     setTimeout(
+//       () =>
+//         setToast(""),
+//       1800
+//     );
 //   }
-//   function editQuestionSave(id, draft) {
-//     setQuestions((prev) => prev.map((q) => (q.id === id ? { ...q, ...draft } : q)));
-//     notify("Question updated");
-//   }
-//   function deleteQuestion(id) {
-//     const question = questions.find((q) => q.id === id);
-//     const preview = question && question.questionText
-//       ? question.questionText.slice(0, 90) + (question.questionText.length > 90 ? "…" : "")
-//       : "this question";
 
-//     const confirmed = window.confirm(
-//       `Are you sure you want to permanently delete "${preview}"?\n\nThis action cannot be undone.`
+//   function addQuestion(
+//     draft
+//   ) {
+//     setQuestions((prev) => [
+//       ...prev,
+//       {
+//         ...draft,
+//         id: uid(),
+//         order: prev.length,
+//         attemptStatus:
+//           "unattempted",
+//         testAllowed: true,
+//       },
+//     ]);
+
+//     notify(
+//       "Question added"
+//     );
+//   }
+
+//   function addBulkQuestions(drafts) {
+//     if (!Array.isArray(drafts) || drafts.length === 0) {
+//       return;
+//     }
+
+//     setQuestions((prev) => {
+//       const startOrder = prev.length;
+//       const imported = drafts.map((draft, index) =>
+//         normalizeQuestion({
+//           ...draft,
+//           id: uid(),
+//           order: startOrder + index,
+//           attemptStatus: "unattempted",
+//           testAllowed: true,
+//         })
+//       );
+
+//       return [...prev, ...imported];
+//     });
+
+//     setBulkImportOpen(false);
+//     notify(`${drafts.length} question${drafts.length === 1 ? "" : "s"} imported`);
+//   }
+
+//   function editQuestionSave(
+//     id,
+//     draft
+//   ) {
+//     setQuestions((prev) =>
+//       prev.map((q) =>
+//         q.id === id
+//           ? {
+//               ...q,
+//               ...draft,
+//             }
+//           : q
+//       )
 //     );
 
-//     if (!confirmed) return;
+//     /*
+//       IMPORTANT:
+//       If a question was already answered in the current test and then edited,
+//       clear only that question's old test answer. This lets the user answer
+//       the updated question again without losing the current test session.
+//     */
+//     setTestSession((prev) => {
+//       if (!prev) {
+//         return prev;
+//       }
 
-//     const storage = createQuestionStorage();
+//       if (
+//         !prev.answers ||
+//         !prev.answers[id]
+//       ) {
+//         return prev;
+//       }
+
+//       const nextAnswers = {
+//         ...prev.answers,
+//       };
+
+//       delete nextAnswers[id];
+
+//       return {
+//         ...prev,
+//         answers:
+//           nextAnswers,
+//       };
+//     });
+
+//     notify(
+//       "Question updated"
+//     );
+//   }
+
+//   function deleteQuestion(id) {
+//     const question =
+//       questions.find(
+//         (q) =>
+//           q.id === id
+//       );
+
+//     const preview =
+//       question &&
+//       question.questionText
+//         ? question.questionText.slice(
+//             0,
+//             90
+//           ) +
+//           (question.questionText.length >
+//           90
+//             ? "…"
+//             : "")
+//         : "this question";
+
+//     const confirmed =
+//       window.confirm(
+//         `Are you sure you want to permanently delete "${preview}"?\n\nThis action cannot be undone.`
+//       );
+
+//     if (!confirmed) {
+//       return;
+//     }
+
+//     const storage =
+//       createQuestionStorage();
+
 //     setQuestions((prev) => {
-//       const remaining = prev.filter((q) => q.id !== id);
-//       storage.delete("mathquiz:questions", id).catch(() => {});
+//       const remaining =
+//         prev.filter(
+//           (q) =>
+//             q.id !== id
+//         );
+
+//       storage
+//         .delete(
+//           "mathquiz:questions",
+//           id
+//         )
+//         .catch(() => {});
+
 //       return remaining;
 //     });
-//     notify("Question deleted");
-//   }
-//   async function copyQuestion(id) {
-//     const question = questions.find((q) => q.id === id);
-//     if (!question) return;
 
-//     const textToCopy = String(question.questionText || "").trim();
+//     notify(
+//       "Question deleted"
+//     );
+//   }
+
+//   async function copyQuestion(
+//     id
+//   ) {
+//     const question =
+//       questions.find(
+//         (q) =>
+//           q.id === id
+//       );
+
+//     if (!question) {
+//       return;
+//     }
+
+//     const textToCopy =
+//       String(
+//         question.questionText ||
+//           ""
+//       ).trim();
+
 //     if (!textToCopy) {
-//       notify("No question text to copy");
+//       notify(
+//         "No question text to copy"
+//       );
+
 //       return;
 //     }
 
 //     try {
-//       if (navigator.clipboard && window.isSecureContext) {
-//         await navigator.clipboard.writeText(textToCopy);
+//       if (
+//         navigator.clipboard &&
+//         window.isSecureContext
+//       ) {
+//         await navigator.clipboard.writeText(
+//           textToCopy
+//         );
 //       } else {
-//         const textarea = document.createElement("textarea");
-//         textarea.value = textToCopy;
-//         textarea.style.position = "fixed";
-//         textarea.style.left = "-9999px";
-//         textarea.style.top = "-9999px";
-//         document.body.appendChild(textarea);
+//         const textarea =
+//           document.createElement(
+//             "textarea"
+//           );
+
+//         textarea.value =
+//           textToCopy;
+
+//         textarea.style.position =
+//           "fixed";
+
+//         textarea.style.left =
+//           "-9999px";
+
+//         textarea.style.top =
+//           "-9999px";
+
+//         document.body.appendChild(
+//           textarea
+//         );
+
 //         textarea.focus();
 //         textarea.select();
-//         document.execCommand("copy");
-//         document.body.removeChild(textarea);
+
+//         document.execCommand(
+//           "copy"
+//         );
+
+//         document.body.removeChild(
+//           textarea
+//         );
 //       }
-//       notify("Question text copied");
+
+//       notify(
+//         "Question text copied"
+//       );
 //     } catch (error) {
-//       notify("Could not copy question text");
+//       notify(
+//         "Could not copy question text"
+//       );
 //     }
 //   }
-//   function markStatus(id, status) {
-//     setQuestions((prev) => prev.map((q) => {
-//       if (q.id !== id) return q;
 
-//       // "correct" is now the Weak bucket.
-//       if (status === "correct") {
-//         if (q.attemptStatus === "correct") {
-//           return { ...q, attemptStatus: "unattempted", testAllowed: true };
+//   function markStatus(
+//     id,
+//     status
+//   ) {
+//     setQuestions((prev) =>
+//       prev.map((q) => {
+//         if (
+//           q.id !== id
+//         ) {
+//           return q;
 //         }
-//         return { ...q, attemptStatus: "correct", testAllowed: true };
-//       }
 
-//       // Kept for the existing Special section behavior.
-//       return { ...q, attemptStatus: q.attemptStatus === status ? "unattempted" : status };
-//     }));
+//         if (
+//           status ===
+//           "correct"
+//         ) {
+//           if (
+//             q.attemptStatus ===
+//             "correct"
+//           ) {
+//             return {
+//               ...q,
+//               attemptStatus:
+//                 "unattempted",
+//               testAllowed: true,
+//             };
+//           }
+
+//           return {
+//             ...q,
+//             attemptStatus:
+//               "correct",
+//             testAllowed: true,
+//           };
+//         }
+
+//         return {
+//           ...q,
+//           attemptStatus:
+//             q.attemptStatus ===
+//             status
+//               ? "unattempted"
+//               : status,
+//         };
+//       })
+//     );
 //   }
 
 //   function toggleAllow(id) {
-//     setQuestions((prev) => prev.map((q) => {
-//       if (q.id !== id) return q;
+//     setQuestions((prev) =>
+//       prev.map((q) => {
+//         if (
+//           q.id !== id
+//         ) {
+//           return q;
+//         }
 
-//       if (!q.testAllowed) {
-//         // Hidden -> Allowed / New
-//         return { ...q, testAllowed: true, attemptStatus: "unattempted" };
-//       }
+//         if (
+//           !q.testAllowed
+//         ) {
+//           return {
+//             ...q,
+//             testAllowed: true,
+//             attemptStatus:
+//               "unattempted",
+//           };
+//         }
 
-//       // Allowed or Weak -> Hidden / Perfect.
-//       // Reset Weak so the question belongs to only one normal section.
-//       return { ...q, testAllowed: false, attemptStatus: "unattempted" };
-//     }));
+//         return {
+//           ...q,
+//           testAllowed: false,
+//           attemptStatus:
+//             "unattempted",
+//         };
+//       })
+//     );
 //   }
 
 //   function hideFromTest(id) {
-//     setQuestions((prev) => prev.map((q) =>
-//       q.id === id
-//         ? { ...q, testAllowed: false, attemptStatus: "unattempted" }
-//         : q
-//     ));
-//     notify("Moved to Hidden / Perfect");
+//     setQuestions((prev) =>
+//       prev.map((q) =>
+//         q.id === id
+//           ? {
+//               ...q,
+//               testAllowed: false,
+//               attemptStatus:
+//                 "unattempted",
+//             }
+//           : q
+//       )
+//     );
+
+//     notify(
+//       "Moved to Hidden / Perfect"
+//     );
 //   }
 
-//   function openNew() { setEditingId(null); setEditorOpen(true); }
-//   function openEdit(id) { setEditingId(id); setEditorOpen(true); }
-//   function closeEditor() { setEditorOpen(false); setEditingId(null); }
+//   function openNew() {
+//     setEditingId(null);
+//     setEditorOpen(true);
+//   }
+
+//   function openEdit(id) {
+//     setEditingId(id);
+//     setEditorOpen(true);
+//   }
+
+//   function closeEditor() {
+//     setEditorOpen(false);
+//     setEditingId(null);
+//   }
+
 //   function saveEditor(draft) {
-//     if (editingId) editQuestionSave(editingId, draft); else addQuestion(draft);
+//     if (editingId) {
+//       editQuestionSave(
+//         editingId,
+//         draft
+//       );
+//     } else {
+//       addQuestion(draft);
+//     }
+
 //     closeEditor();
 //   }
-//   function exportTrigonometryData() {
-//     const topicQuestions = questions
-//       .filter((q) => (q.category || "").trim().toLowerCase() === "trigonometry")
-//       .sort((a, b) => a.order - b.order)
-//       .map(({ id, category, questionText, questionImage, options, correctIndex, solutionText, solutionImage }) => ({
-//         id,
-//         category,
-//         questionText,
-//         questionImage: questionImage || null,
-//         options,
-//         correctIndex,
-//         solutionText,
-//         solutionImage: solutionImage || null,
-//       }));
 
-//     if (topicQuestions.length === 0) {
-//       notify("No Trigonometry questions to export");
+//   function exportTrigonometryData() {
+//     const topicQuestions =
+//       questions
+//         .filter(
+//           (q) =>
+//             (
+//               q.category ||
+//               ""
+//             )
+//               .trim()
+//               .toLowerCase() ===
+//             "trigonometry"
+//         )
+//         .sort(
+//           (a, b) =>
+//             a.order -
+//             b.order
+//         )
+//         .map(
+//           ({
+//             id,
+//             category,
+//             questionText,
+//             questionImage,
+//             options,
+//             correctIndex,
+//             solutionText,
+//             solutionImage,
+//           }) => ({
+//             id,
+//             category,
+//             questionText,
+//             questionImage:
+//               questionImage ||
+//               null,
+//             options,
+//             correctIndex,
+//             solutionText,
+//             solutionImage:
+//               solutionImage ||
+//               null,
+//           })
+//         );
+
+//     if (
+//       topicQuestions.length ===
+//       0
+//     ) {
+//       notify(
+//         "No Trigonometry questions to export"
+//       );
+
 //       return;
 //     }
 
-//     const content = `window.MATH_TOPIC_DATA = window.MATH_TOPIC_DATA || {};\nwindow.MATH_TOPIC_DATA.trigonometry = ${JSON.stringify(topicQuestions, null, 2)};\n`;
-//     const url = URL.createObjectURL(new Blob([content], { type: "text/javascript" }));
-//     const link = document.createElement("a");
+//     const content =
+//       `window.MATH_TOPIC_DATA = window.MATH_TOPIC_DATA || {};\n` +
+//       `window.MATH_TOPIC_DATA.trigonometry = ${JSON.stringify(
+//         topicQuestions,
+//         null,
+//         2
+//       )};\n`;
+
+//     const url =
+//       URL.createObjectURL(
+//         new Blob(
+//           [content],
+//           {
+//             type: "text/javascript",
+//           }
+//         )
+//       );
+
+//     const link =
+//       document.createElement(
+//         "a"
+//       );
+
 //     link.href = url;
-//     link.download = "trigonometry.js";
+
+//     link.download =
+//       "trigonometry.js";
+
 //     link.click();
-//     URL.revokeObjectURL(url);
-//     notify("Downloaded trigonometry.js");
+
+//     URL.revokeObjectURL(
+//       url
+//     );
+
+//     notify(
+//       "Downloaded trigonometry.js"
+//     );
 //   }
 
-//   const correctList = questions.filter((q) => q.attemptStatus === "correct");
-//   const hiddenList = questions.filter((q) => !q.testAllowed);
-//   // Allowed / New = anything visible in tests and not marked Weak.
-//   // NOTE: "special" is an independent tag, not a bucket state — a special
-//   // question that is testAllowed and not Weak will show up here too,
-//   // in addition to showing up in the Special tab.
-//   const allowedList = questions.filter((q) => q.testAllowed && q.attemptStatus !== "correct");
-//   const specialList = questions.filter((q) => q.special === true);
-//   const topics = [...new Set(questions.map((q) => (q.category || "General").trim()).filter(Boolean))].sort((a, b) => a.localeCompare(b));
-//   const filterByTopic = (items) => topicFilter === "all" ? items : items.filter((q) => (q.category || "General") === topicFilter);
-//   const filterBySearch = (items) => {
-//     const query = searchQuery.trim().toLowerCase();
-//     if (!query) return items;
-//     return items.filter((q) => {
-//       const inText = (q.questionText || "").toLowerCase().includes(query);
-//       const inOptions = (q.options || []).some((o) => (o || "").toLowerCase().includes(query));
-//       const inSolution = (q.solutionText || "").toLowerCase().includes(query);
-//       const inCategory = (q.category || "").toLowerCase().includes(query);
-//       return inText || inOptions || inSolution || inCategory;
-//     });
-//   };
-//   const filterList = (items) => filterBySearch(filterByTopic(items));
+//   const correctList =
+//     questions.filter(
+//       (q) =>
+//         q.attemptStatus ===
+//         "correct"
+//     );
+
+//   const hiddenList =
+//     questions.filter(
+//       (q) =>
+//         !q.testAllowed
+//     );
+
+//   const allowedList =
+//     questions.filter(
+//       (q) =>
+//         q.testAllowed &&
+//         q.attemptStatus !==
+//           "correct"
+//     );
+
+//   const specialList =
+//     questions.filter(
+//       (q) =>
+//         q.special === true
+//     );
+
+//   const topics = [
+//     ...new Set(
+//       questions
+//         .map((q) =>
+//           (
+//             q.category ||
+//             "General"
+//           ).trim()
+//         )
+//         .filter(Boolean)
+//     ),
+//   ].sort((a, b) =>
+//     a.localeCompare(b)
+//   );
+
+//   const filterByTopic =
+//     (items) =>
+//       topicFilter === "all"
+//         ? items
+//         : items.filter(
+//             (q) =>
+//               (q.category ||
+//                 "General") ===
+//               topicFilter
+//           );
+
+//   const filterBySearch =
+//     (items) => {
+//       const query =
+//         searchQuery
+//           .trim()
+//           .toLowerCase();
+
+//       if (!query) {
+//         return items;
+//       }
+
+//       return items.filter(
+//         (q) => {
+//           const inText =
+//             (
+//               q.questionText ||
+//               ""
+//             )
+//               .toLowerCase()
+//               .includes(query);
+
+//           const inOptions =
+//             (
+//               q.options ||
+//               []
+//             ).some((o) =>
+//               (o || "")
+//                 .toLowerCase()
+//                 .includes(query)
+//             );
+
+//           const inSolution =
+//             (
+//               q.solutionText ||
+//               ""
+//             )
+//               .toLowerCase()
+//               .includes(query);
+
+//           const inCategory =
+//             (
+//               q.category ||
+//               ""
+//             )
+//               .toLowerCase()
+//               .includes(query);
+
+//           return (
+//             inText ||
+//             inOptions ||
+//             inSolution ||
+//             inCategory
+//           );
+//         }
+//       );
+//     };
+
+//   const filterList =
+//     (items) =>
+//       filterBySearch(
+//         filterByTopic(
+//           items
+//         )
+//       );
 
 //   useEffect(() => {
 //     setTestConfig((c) => {
-//       const currentTopics = Array.isArray(c.topics) ? c.topics : [];
-//       const validTopics = currentTopics.filter((topic) => topics.includes(topic));
-//       const nextTopics = currentTopics.length === 0
-//         ? []
-//         : validTopics;
+//       const currentTopics =
+//         Array.isArray(
+//           c.topics
+//         )
+//           ? c.topics
+//           : [];
+
+//       const validTopics =
+//         currentTopics.filter(
+//           (topic) =>
+//             topics.includes(
+//               topic
+//             )
+//         );
+
+//       const nextTopics =
+//         currentTopics.length ===
+//         0
+//           ? []
+//           : validTopics;
+
 //       const sourceList =
 //         c.pool === "weak"
 //           ? correctList
-//           : c.pool === "hidden"
-//             ? hiddenList
-//             : c.pool === "special"
-//               ? specialList
-//               : c.pool === "all"
-//                 ? questions
-//                 : allowedList;
-//       const topicPool = nextTopics.length === 0
-//         ? sourceList
-//         : sourceList.filter((q) => nextTopics.includes((q.category || "General").trim()));
-//       const max = Math.max(topicPool.length, 1);
-//       const count = Math.min(Math.max(Number(c.count) || 1, 1), max);
-//       const pool = ["allowed", "weak", "hidden", "special", "all"].includes(c.pool) ? c.pool : "allowed";
+//           : c.pool ===
+//             "hidden"
+//           ? hiddenList
+//           : c.pool ===
+//             "special"
+//           ? specialList
+//           : c.pool ===
+//             "all"
+//           ? questions
+//           : allowedList;
+
+//       const topicPool =
+//         nextTopics.length ===
+//         0
+//           ? sourceList
+//           : sourceList.filter(
+//               (q) =>
+//                 nextTopics.includes(
+//                   (
+//                     q.category ||
+//                     "General"
+//                   ).trim()
+//                 )
+//             );
+
+//       const max =
+//         Math.max(
+//           topicPool.length,
+//           1
+//         );
+
+//       const count =
+//         Math.min(
+//           Math.max(
+//             Number(
+//               c.count
+//             ) || 1,
+//             1
+//           ),
+//           max
+//         );
+
+//       const pool =
+//         [
+//           "allowed",
+//           "weak",
+//           "hidden",
+//           "special",
+//           "all",
+//         ].includes(c.pool)
+//           ? c.pool
+//           : "allowed";
+
+//       const selectionMode =
+//         c.selectionMode ===
+//         "perTopic"
+//           ? "perTopic"
+//           : "total";
+
+//       const perTopicCount =
+//         Math.max(
+//           1,
+//           Math.min(
+//             Number(
+//               c.perTopicCount
+//             ) || 20,
+//             max
+//           )
+//         );
 
 //       const unchanged =
 //         pool === c.pool &&
 //         count === c.count &&
-//         JSON.stringify(nextTopics) === JSON.stringify(currentTopics);
+//         selectionMode ===
+//           c.selectionMode &&
+//         perTopicCount ===
+//           c.perTopicCount &&
+//         JSON.stringify(
+//           nextTopics
+//         ) ===
+//           JSON.stringify(
+//             currentTopics
+//           );
 
-//       return unchanged ? c : { ...c, pool, topics: nextTopics, count };
+//       return unchanged
+//         ? c
+//         : {
+//             ...c,
+//             pool,
+//             topics:
+//               nextTopics,
+//             count,
+//             selectionMode,
+//             perTopicCount,
+//           };
 //     });
-//   }, [questions, allowedList.length, correctList.length, hiddenList.length, specialList.length, topics.join("|")]);
+//   }, [
+//     questions,
+//     allowedList.length,
+//     correctList.length,
+//     hiddenList.length,
+//     specialList.length,
+//     topics.join("|"),
+//   ]);
 
 //   function startTest() {
 //     const sourceList =
-//       testConfig.pool === "weak"
+//       testConfig.pool ===
+//       "weak"
 //         ? correctList
-//         : testConfig.pool === "hidden"
-//           ? hiddenList
-//           : testConfig.pool === "special"
-//             ? specialList
-//             : testConfig.pool === "all"
-//               ? questions
-//               : allowedList;
+//         : testConfig.pool ===
+//           "hidden"
+//         ? hiddenList
+//         : testConfig.pool ===
+//           "special"
+//         ? specialList
+//         : testConfig.pool ===
+//           "all"
+//         ? questions
+//         : allowedList;
 
-//     const selectedTopics = Array.isArray(testConfig.topics) ? testConfig.topics : [];
+//     const selectedTopics =
+//       Array.isArray(
+//         testConfig.topics
+//       )
+//         ? testConfig.topics
+//         : [];
 
-//     // STEP 1: Build ONE flat, combined pool of every question that matches
-//     // the chosen source + selected topics. Newly added questions are simply
-//     // part of this same flat array — nothing here depends on insertion order.
-//     const combinedPool = selectedTopics.length === 0
-//       ? [...sourceList]
-//       : sourceList.filter((q) => selectedTopics.includes((q.category || "General").trim()));
+//     const combinedPool =
+//       selectedTopics.length ===
+//       0
+//         ? [
+//             ...sourceList,
+//           ]
+//         : sourceList.filter(
+//             (q) =>
+//               selectedTopics.includes(
+//                 (
+//                   q.category ||
+//                   "General"
+//                 ).trim()
+//               )
+//           );
 
-//     if (combinedPool.length === 0) return;
+//     if (
+//       combinedPool.length ===
+//       0
+//     ) {
+//       return;
+//     }
 
-//     const count = Math.max(1, Math.min(Number(testConfig.count) || 1, combinedPool.length));
+//     let selectedQuestions = [];
 
-//     // STEP 2: Shuffle the WHOLE combined pool first (fresh random order
-//     // every time a test starts). This guarantees new / old / special
-//     // questions are all equally likely to land anywhere in the run.
-//     const shuffledPool = shuffleArr(combinedPool);
+//     if (
+//       testConfig.selectionMode ===
+//       "perTopic"
+//     ) {
+//       const perTopicCount =
+//         Math.max(
+//           1,
+//           Number(
+//             testConfig.perTopicCount
+//           ) || 20
+//         );
 
-//     // STEP 3: Only AFTER shuffling do we slice out how many questions
-//     // this test actually needs.
-//     const ids = shuffledPool.slice(0, count).map((q) => q.id);
-//     if (ids.length === 0) return;
+//       const effectiveTopics =
+//         selectedTopics.length > 0
+//           ? selectedTopics
+//           : [
+//               ...new Set(
+//                 sourceList.map(
+//                   (q) =>
+//                     (
+//                       q.category ||
+//                       "General"
+//                     ).trim()
+//                 )
+//               ),
+//             ];
+
+//       effectiveTopics.forEach(
+//         (topic) => {
+//           const chapterPool =
+//             sourceList.filter(
+//               (q) =>
+//                 (
+//                   q.category ||
+//                   "General"
+//                 ).trim() ===
+//                 topic
+//             );
+
+//           const chapterPick =
+//             shuffleArr(
+//               chapterPool
+//             ).slice(
+//               0,
+//               Math.min(
+//                 perTopicCount,
+//                 chapterPool.length
+//               )
+//             );
+
+//           selectedQuestions.push(
+//             ...chapterPick
+//           );
+//         }
+//       );
+
+//       // Mix questions from all chapters so chapters do not appear in blocks.
+//       selectedQuestions =
+//         shuffleArr(
+//           selectedQuestions
+//         );
+//     } else {
+//       const count =
+//         Math.max(
+//           1,
+//           Math.min(
+//             Number(
+//               testConfig.count
+//             ) || 1,
+//             combinedPool.length
+//           )
+//         );
+
+//       selectedQuestions =
+//         shuffleArr(
+//           combinedPool
+//         ).slice(
+//           0,
+//           count
+//         );
+//     }
+
+//     const ids =
+//       selectedQuestions.map(
+//         (q) =>
+//           q.id
+//       );
+
+//     if (
+//       ids.length === 0
+//     ) {
+//       return;
+//     }
 
 //     setTestSession({
 //       ids,
 //       idx: 0,
 //       answers: {},
 //       finished: false,
-//       pool: testConfig.pool,
-//       topics: selectedTopics
+//       pool:
+//         testConfig.pool,
+//       topics:
+//         selectedTopics,
 //     });
 //   }
+
 //   function selectOption(i) {
-//     setTestSession((prev) => {
-//       if (!prev) return prev;
-//       const qid = prev.ids[prev.idx];
-//       return { ...prev, answers: { ...prev.answers, [qid]: { selected: i, revealed: true } } };
-//     });
+//     setTestSession(
+//       (prev) => {
+//         if (!prev) {
+//           return prev;
+//         }
+
+//         const qid =
+//           prev.ids[
+//             prev.idx
+//           ];
+
+//         return {
+//           ...prev,
+//           answers: {
+//             ...prev.answers,
+//             [qid]: {
+//               selected: i,
+//               revealed: true,
+//             },
+//           },
+//         };
+//       }
+//     );
 //   }
-//   function markFromTest(status) {
-//     if (!testSession) return;
-//     const qid = testSession.ids[testSession.idx];
-//     markStatus(qid, status);
+
+//   function markFromTest(
+//     status
+//   ) {
+//     if (!testSession) {
+//       return;
+//     }
+
+//     const qid =
+//       testSession.ids[
+//         testSession.idx
+//       ];
+
+//     markStatus(
+//       qid,
+//       status
+//     );
 //   }
+
 //   function nextQuestion() {
-//     setTestSession((prev) => {
-//       if (!prev) return prev;
-//       if (prev.idx < prev.ids.length - 1) return { ...prev, idx: prev.idx + 1 };
-//       return { ...prev, finished: true };
-//     });
+//     setTestSession(
+//       (prev) => {
+//         if (!prev) {
+//           return prev;
+//         }
+
+//         if (
+//           prev.idx <
+//           prev.ids.length -
+//             1
+//         ) {
+//           return {
+//             ...prev,
+//             idx:
+//               prev.idx + 1,
+//           };
+//         }
+
+//         return {
+//           ...prev,
+//           finished: true,
+//         };
+//       }
+//     );
 //   }
+
 //   function backQuestion() {
-//     setTestSession((prev) => (prev && prev.idx > 0 ? { ...prev, idx: prev.idx - 1 } : prev));
+//     setTestSession(
+//       (prev) =>
+//         prev &&
+//         prev.idx > 0
+//           ? {
+//               ...prev,
+//               idx:
+//                 prev.idx -
+//                 1,
+//             }
+//           : prev
+//     );
 //   }
-//   function jumpToQuestion(i) {
-//     setTestSession((prev) => (prev ? { ...prev, idx: i } : prev));
+
+//   function jumpToQuestion(
+//     i
+//   ) {
+//     setTestSession(
+//       (prev) =>
+//         prev
+//           ? {
+//               ...prev,
+//               idx: i,
+//             }
+//           : prev
+//     );
 //   }
-//   function exitTest() { setTestSession(null); }
+
+//   function exitTest() {
+//     setTestSession(null);
+//   }
 
 //   if (!loaded) {
 //     return (
 //       <div className="app loading-screen">
-//         <style>{CSS}</style>
-//         <div className="loader">Loading question bank\u2026</div>
+//         <style>
+//           {CSS}
+//         </style>
+
+//         <div className="loader">
+//           Loading question bank…
+//         </div>
 //       </div>
 //     );
 //   }
 
-//   const editingQuestion = editingId ? questions.find((q) => q.id === editingId) : null;
+//   const editingQuestion =
+//     editingId
+//       ? questions.find(
+//           (q) =>
+//             q.id ===
+//             editingId
+//         )
+//       : null;
 
 //   return (
 //     <div className="app">
-//       <style>{CSS}</style>
+//       <style>
+//         {CSS}
+//       </style>
+
 //       <div className="header">
-//         <div className="header-title"><span className="brand">MATH</span><span className="brand-accent">::BANK</span></div>
+//         <div className="header-title">
+//           <span className="brand">
+//             MATH
+//           </span>
+
+//           <span className="brand-accent">
+//             ::BANK
+//           </span>
+//         </div>
+
 //         <div className="header-actions">
-//           <button className="icon-btn export-btn" onClick={exportTrigonometryData} title="Download Trigonometry data" aria-label="Download Trigonometry data"><Icon symbol="v" size={16} /></button>
-//           <button className="add-btn" onClick={openNew} title="New Question"><Plus size={16} /></button>
+//           <button
+//             className="icon-btn export-btn"
+//             onClick={
+//               exportTrigonometryData
+//             }
+//             title="Download Trigonometry data"
+//             aria-label="Download Trigonometry data"
+//           >
+//             <Icon
+//               symbol="v"
+//               size={16}
+//             />
+//           </button>
+
+//           <button
+//             className="icon-btn bulk-import-btn"
+//             onClick={() => setBulkImportOpen(true)}
+//             title="Upload multiple questions by array"
+//             aria-label="Upload multiple questions by array"
+//           >
+//             <Upload size={16} />
+//           </button>
+
+//           <button
+//             className="add-btn"
+//             onClick={openNew}
+//             title="New Question"
+//           >
+//             <Plus size={16} />
+//           </button>
 //         </div>
 //       </div>
+
 //       <div className="header-stats">
-//         <span className="stat"><b>{questions.length}</b>Total</span>
-//         <span className="stat ok-c"><b>{correctList.length}</b>Weak</span>
-//         <span className="stat amber-c"><b>{hiddenList.length}</b>Hidden</span>
-//         <span className="stat cyan-c"><b>{allowedList.length}</b>Allowed</span>
+//         <span className="stat">
+//           <b>
+//             {questions.length}
+//           </b>
+//           Total
+//         </span>
+
+//         <span className="stat ok-c">
+//           <b>
+//             {correctList.length}
+//           </b>
+//           Weak
+//         </span>
+
+//         <span className="stat amber-c">
+//           <b>
+//             {hiddenList.length}
+//           </b>
+//           Hidden
+//         </span>
+
+//         <span className="stat cyan-c">
+//           <b>
+//             {allowedList.length}
+//           </b>
+//           Allowed
+//         </span>
 //       </div>
 
 //       <div className="content">
-//         {section === "test" && (
-//           !testSession ? (
+//         {section ===
+//           "test" &&
+//           (!testSession ? (
 //             <TestSetup
 //               testPoolCount={(() => {
 //                 const sourceList =
-//                   testConfig.pool === "weak"
+//                   testConfig.pool ===
+//                   "weak"
 //                     ? correctList
-//                     : testConfig.pool === "hidden"
-//                       ? hiddenList
-//                       : testConfig.pool === "special"
-//                         ? specialList
-//                         : testConfig.pool === "all"
-//                           ? questions
-//                           : allowedList;
-//                 const selectedTopics = Array.isArray(testConfig.topics) ? testConfig.topics : [];
-//                 return selectedTopics.length === 0
+//                     : testConfig.pool ===
+//                       "hidden"
+//                     ? hiddenList
+//                     : testConfig.pool ===
+//                       "special"
+//                     ? specialList
+//                     : testConfig.pool ===
+//                       "all"
+//                     ? questions
+//                     : allowedList;
+
+//                 const selectedTopics =
+//                   Array.isArray(
+//                     testConfig.topics
+//                   )
+//                     ? testConfig.topics
+//                     : [];
+
+//                 return selectedTopics.length ===
+//                   0
 //                   ? sourceList.length
-//                   : sourceList.filter((q) => selectedTopics.includes((q.category || "General").trim())).length;
+//                   : sourceList.filter(
+//                       (q) =>
+//                         selectedTopics.includes(
+//                           (
+//                             q.category ||
+//                             "General"
+//                           ).trim()
+//                         )
+//                     ).length;
 //               })()}
-//               topics={topics} config={testConfig} setConfig={setTestConfig} onStart={startTest}
+//               topics={topics}
+//               config={
+//                 testConfig
+//               }
+//               setConfig={
+//                 setTestConfig
+//               }
+//               onStart={
+//                 startTest
+//               }
 //             />
 //           ) : testSession.finished ? (
-//             <TestSummary ids={testSession.ids} questions={questions} onDone={exitTest} />
+//             <TestSummary
+//               ids={
+//                 testSession.ids
+//               }
+//               questions={
+//                 questions
+//               }
+//               onDone={
+//                 exitTest
+//               }
+//             />
 //           ) : (
 //             (() => {
-//               const qid = testSession.ids[testSession.idx];
-//               const question = questions.find((q) => q.id === qid);
-//               const answer = testSession.answers[qid];
+//               const qid =
+//                 testSession.ids[
+//                   testSession.idx
+//                 ];
+
+//               const question =
+//                 questions.find(
+//                   (q) =>
+//                     q.id ===
+//                     qid
+//                 );
+
+//               const answer =
+//                 testSession.answers[
+//                   qid
+//                 ];
+
 //               return (
 //                 <TestRunning
-//                   question={question} index={testSession.idx} total={testSession.ids.length} answer={answer}
-//                   onSelect={selectOption} onMark={markFromTest} onNext={nextQuestion} onBack={backQuestion} onExit={exitTest}
-//                   isLast={testSession.idx === testSession.ids.length - 1}
-//                   onHide={hideFromTest}
-//                   ids={testSession.ids}
-//                   answers={testSession.answers}
-//                   allQuestions={questions}
-//                   onJump={jumpToQuestion}
+//                   question={
+//                     question
+//                   }
+//                   index={
+//                     testSession.idx
+//                   }
+//                   total={
+//                     testSession.ids
+//                       .length
+//                   }
+//                   answer={
+//                     answer
+//                   }
+//                   onSelect={
+//                     selectOption
+//                   }
+//                   onMark={
+//                     markFromTest
+//                   }
+//                   onNext={
+//                     nextQuestion
+//                   }
+//                   onBack={
+//                     backQuestion
+//                   }
+//                   onExit={
+//                     exitTest
+//                   }
+//                   isLast={
+//                     testSession.idx ===
+//                     testSession.ids
+//                       .length -
+//                       1
+//                   }
+//                   onHide={
+//                     hideFromTest
+//                   }
+//                   onEdit={
+//                     openEdit
+//                   }
+//                   ids={
+//                     testSession.ids
+//                   }
+//                   answers={
+//                     testSession.answers
+//                   }
+//                   allQuestions={
+//                     questions
+//                   }
+//                   onJump={
+//                     jumpToQuestion
+//                   }
 //                 />
 //               );
 //             })()
-//           )
+//           ))}
+
+//         {section ===
+//           "correct" && (
+//           <SectionList
+//             title="Weak Questions"
+//             emptyText="No weak questions yet."
+//             items={filterList(
+//               correctList
+//             )}
+//             topics={topics}
+//             topicFilter={
+//               topicFilter
+//             }
+//             onTopicChange={
+//               setTopicFilter
+//             }
+//             searchQuery={
+//               searchQuery
+//             }
+//             onSearchChange={
+//               setSearchQuery
+//             }
+//             onMarkCorrect={(
+//               id
+//             ) =>
+//               markStatus(
+//                 id,
+//                 "correct"
+//               )
+//             }
+//             onMarkWrong={(
+//               id
+//             ) =>
+//               markStatus(
+//                 id,
+//                 "wrong"
+//               )
+//             }
+//             onToggleAllow={
+//               toggleAllow
+//             }
+//             onCopy={
+//               copyQuestion
+//             }
+//             onEdit={
+//               openEdit
+//             }
+//             onDelete={
+//               deleteQuestion
+//             }
+//             showWrongAction={
+//               false
+//             }
+//           />
 //         )}
-//         {section === "correct" && (
-//           <SectionList title="Weak Questions" emptyText="No weak questions yet." items={filterList(correctList)} topics={topics} topicFilter={topicFilter} onTopicChange={setTopicFilter}
-//             searchQuery={searchQuery} onSearchChange={setSearchQuery}
-//             onMarkCorrect={(id) => markStatus(id, "correct")} onMarkWrong={(id) => markStatus(id, "wrong")} onToggleAllow={toggleAllow}
-//             onCopy={copyQuestion} onEdit={openEdit} onDelete={deleteQuestion} showWrongAction={false} />
+
+//         {section ===
+//           "hidden" && (
+//           <SectionList
+//             title="Hidden / Perfect Questions"
+//             emptyText="No hidden/perfect questions yet."
+//             items={filterList(
+//               hiddenList
+//             )}
+//             topics={topics}
+//             topicFilter={
+//               topicFilter
+//             }
+//             onTopicChange={
+//               setTopicFilter
+//             }
+//             searchQuery={
+//               searchQuery
+//             }
+//             onSearchChange={
+//               setSearchQuery
+//             }
+//             onMarkCorrect={(
+//               id
+//             ) =>
+//               markStatus(
+//                 id,
+//                 "correct"
+//               )
+//             }
+//             onMarkWrong={(
+//               id
+//             ) =>
+//               markStatus(
+//                 id,
+//                 "wrong"
+//               )
+//             }
+//             onToggleAllow={
+//               toggleAllow
+//             }
+//             onCopy={
+//               copyQuestion
+//             }
+//             onEdit={
+//               openEdit
+//             }
+//             onDelete={
+//               deleteQuestion
+//             }
+//             showWrongAction={
+//               false
+//             }
+//           />
 //         )}
-//         {section === "hidden" && (
-//           <SectionList title="Hidden / Perfect Questions" emptyText="No hidden/perfect questions yet." items={filterList(hiddenList)} topics={topics} topicFilter={topicFilter} onTopicChange={setTopicFilter}
-//             searchQuery={searchQuery} onSearchChange={setSearchQuery}
-//             onMarkCorrect={(id) => markStatus(id, "correct")} onMarkWrong={(id) => markStatus(id, "wrong")} onToggleAllow={toggleAllow}
-//             onCopy={copyQuestion} onEdit={openEdit} onDelete={deleteQuestion} showWrongAction={false} />
+
+//         {section ===
+//           "allowed" && (
+//           <SectionList
+//             title="Allowed / New Questions"
+//             emptyText="No new/allowed questions yet."
+//             items={filterList(
+//               allowedList
+//             )}
+//             topics={topics}
+//             topicFilter={
+//               topicFilter
+//             }
+//             onTopicChange={
+//               setTopicFilter
+//             }
+//             searchQuery={
+//               searchQuery
+//             }
+//             onSearchChange={
+//               setSearchQuery
+//             }
+//             onMarkCorrect={(
+//               id
+//             ) =>
+//               markStatus(
+//                 id,
+//                 "correct"
+//               )
+//             }
+//             onMarkWrong={(
+//               id
+//             ) =>
+//               markStatus(
+//                 id,
+//                 "wrong"
+//               )
+//             }
+//             onToggleAllow={
+//               toggleAllow
+//             }
+//             onCopy={
+//               copyQuestion
+//             }
+//             onEdit={
+//               openEdit
+//             }
+//             onDelete={
+//               deleteQuestion
+//             }
+//             showStatusActions={
+//               false
+//             }
+//             showWrongAction={
+//               false
+//             }
+//           />
 //         )}
-//         {section === "allowed" && (
-//           <SectionList title="Allowed / New Questions" emptyText="No new/allowed questions yet." items={filterList(allowedList)} topics={topics} topicFilter={topicFilter} onTopicChange={setTopicFilter}
-//             searchQuery={searchQuery} onSearchChange={setSearchQuery}
-//             onMarkCorrect={(id) => markStatus(id, "correct")} onMarkWrong={(id) => markStatus(id, "wrong")} onToggleAllow={toggleAllow}
-//             onCopy={copyQuestion} onEdit={openEdit} onDelete={deleteQuestion} showStatusActions={false} showWrongAction={false} />
+
+//         {section ===
+//           "special" && (
+//           <SectionList
+//             title="Special / Important Questions"
+//             emptyText="No special questions yet."
+//             items={filterList(
+//               specialList
+//             )}
+//             topics={topics}
+//             topicFilter={
+//               topicFilter
+//             }
+//             onTopicChange={
+//               setTopicFilter
+//             }
+//             searchQuery={
+//               searchQuery
+//             }
+//             onSearchChange={
+//               setSearchQuery
+//             }
+//             onMarkCorrect={(
+//               id
+//             ) =>
+//               markStatus(
+//                 id,
+//                 "correct"
+//               )
+//             }
+//             onMarkWrong={(
+//               id
+//             ) =>
+//               markStatus(
+//                 id,
+//                 "wrong"
+//               )
+//             }
+//             onToggleAllow={
+//               toggleAllow
+//             }
+//             onCopy={
+//               copyQuestion
+//             }
+//             onEdit={
+//               openEdit
+//             }
+//             onDelete={
+//               deleteQuestion
+//             }
+//           />
 //         )}
-//         {section === "special" && (
-//           <SectionList title="Special / Important Questions" emptyText="No special questions yet." items={filterList(specialList)} topics={topics} topicFilter={topicFilter} onTopicChange={setTopicFilter}
-//             searchQuery={searchQuery} onSearchChange={setSearchQuery}
-//             onMarkCorrect={(id) => markStatus(id, "correct")} onMarkWrong={(id) => markStatus(id, "wrong")} onToggleAllow={toggleAllow}
-//             onCopy={copyQuestion} onEdit={openEdit} onDelete={deleteQuestion} />
+
+//         {section ===
+//           "all" && (
+//           <SectionList
+//             title="All Questions"
+//             emptyText="No questions yet."
+//             items={filterList(
+//               questions
+//             )}
+//             topics={topics}
+//             topicFilter={
+//               topicFilter
+//             }
+//             onTopicChange={
+//               setTopicFilter
+//             }
+//             searchQuery={
+//               searchQuery
+//             }
+//             onSearchChange={
+//               setSearchQuery
+//             }
+//             onMarkCorrect={(
+//               id
+//             ) =>
+//               markStatus(
+//                 id,
+//                 "correct"
+//               )
+//             }
+//             onMarkWrong={(
+//               id
+//             ) =>
+//               markStatus(
+//                 id,
+//                 "wrong"
+//               )
+//             }
+//             onToggleAllow={
+//               toggleAllow
+//             }
+//             onCopy={
+//               copyQuestion
+//             }
+//             onEdit={
+//               openEdit
+//             }
+//             onDelete={
+//               deleteQuestion
+//             }
+//           />
 //         )}
 //       </div>
 
 //       <div className="navbar">
-//         {SECTIONS.map((s) => {
-//           const Icon = s.icon;
-//           return (
-//             <button key={s.key} className={"nav-btn" + (section === s.key ? " active" : "")} onClick={() => setSection(s.key)}>
-//               <Icon size={17} />
-//               <span>{s.label}</span>
-//             </button>
-//           );
-//         })}
+//         {SECTIONS.map(
+//           (s) => {
+//             const Icon =
+//               s.icon;
+
+//             return (
+//               <button
+//                 key={s.key}
+//                 className={
+//                   "nav-btn" +
+//                   (section ===
+//                   s.key
+//                     ? " active"
+//                     : "")
+//                 }
+//                 onClick={() =>
+//                   setSection(
+//                     s.key
+//                   )
+//                 }
+//               >
+//                 <Icon
+//                   size={17}
+//                 />
+
+//                 <span>
+//                   {s.label}
+//                 </span>
+//               </button>
+//             );
+//           }
+//         )}
 //       </div>
 
-//       {editorOpen && <QuestionEditorModal initial={editingQuestion} topics={topics} onCancel={closeEditor} onSave={saveEditor} />}
-//       {toast && <div className="toast">{toast}</div>}
+//       {bulkImportOpen && (
+//         <BulkQuestionImportModal
+//           onCancel={() => setBulkImportOpen(false)}
+//           onImport={addBulkQuestions}
+//         />
+//       )}
+
+//       {editorOpen && (
+//         <QuestionEditorModal
+//           initial={
+//             editingQuestion
+//           }
+//           topics={topics}
+//           onCancel={
+//             closeEditor
+//           }
+//           onSave={
+//             saveEditor
+//           }
+//         />
+//       )}
+
+//       {toast && (
+//         <div className="toast">
+//           {toast}
+//         </div>
+//       )}
 //     </div>
 //   );
 // }
@@ -1611,21 +7464,33 @@
 // const CSS = `
 // @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;500;600&display=swap');
 
-// .app {
-//   --bg: #0B0F17;
-//   --panel: #121826;
-//   --panel-2: #171F30;
-//   --border: #232C40;
-//   --cyan: #4C8DFF;
-//   --violet: #4C8DFF;
-//   --green: #34C77B;
-//   --rose: #F2555B;
-//   --amber: #D9A441;
-//   --text: #E7ECF5;
-//   --muted: #8592A6;
+// :root {
+//   background: #241d24;
+// }
 
-//   width: min(100%, 860px);
-//   max-width: 860px;
+// * {
+//   box-sizing: border-box;
+// }
+
+// body {
+//   margin: 0;
+//   background: #241d24;
+// }
+
+// .app {
+//   --bg: #241d24;
+//   --panel: #3a303a;
+//   --panel-2: #4b3d48;
+//   --border: #745b68;
+//   --cyan: #67c7dd;
+//   --green: #a8d86e;
+//   --rose: #f08a6d;
+//   --amber: #f0b653;
+//   --text: #f4e7d2;
+//   --muted: #c4b4b2;
+
+//   width: min(100%, 980px);
+//   max-width: 980px;
 //   margin: 0 auto;
 //   min-height: 100vh;
 //   display: flex;
@@ -1633,157 +7498,676 @@
 //   background: var(--bg);
 //   color: var(--text);
 //   font-family: 'Inter', sans-serif;
-//   font-size: 13px;
+//   font-size: 14px;
 //   position: relative;
+//   box-shadow: 0 0 80px rgba(12, 8, 13, 0.25);
 // }
 
-// .app.loading-screen { align-items: center; justify-content: center; }
-// .loader { font-family: 'JetBrains Mono', monospace; color: var(--cyan); letter-spacing: 1px; font-size: 12px; }
+// .app.loading-screen {
+//   align-items: center;
+//   justify-content: center;
+// }
+
+// .loader {
+//   font-family: 'JetBrains Mono', monospace;
+//   color: var(--cyan);
+//   letter-spacing: 1px;
+//   font-size: 12px;
+// }
 
 // .header {
-//   display: flex; align-items: center; justify-content: space-between;
-//   padding: 14px 14px 8px 14px; position: sticky; top: 0; z-index: 5;
-//   background: linear-gradient(180deg, rgba(7,10,19,0.98), rgba(7,10,19,0.85));
-//   backdrop-filter: blur(6px);
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   padding: 26px 32px 18px;
+//   position: sticky;
+//   top: 0;
+//   z-index: 5;
+//   background: rgba(36, 29, 36, 0.97);
+//   backdrop-filter: blur(14px);
 //   border-bottom: 1px solid var(--border);
 // }
-// .header-title { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 17px; letter-spacing: 0.5px; }
-// .brand { color: var(--text); }
-// .brand-accent { color: var(--cyan); }
-// .header-actions { display: flex; align-items: center; gap: 8px; }
-// .export-btn { width: 30px; height: 30px; }
-// .add-btn {
-//   width: 30px; height: 30px; border-radius: 8px; display: flex; align-items: center; justify-content: center;
-//   background: var(--cyan); color: #0A0E1A; border: none; cursor: pointer;
+
+// .header-title {
+//   font-family: 'Space Grotesk', sans-serif;
+//   font-weight: 700;
+//   font-size: 22px;
+//   letter-spacing: -0.04em;
 // }
-// .add-btn:hover { filter: brightness(1.1); }
+
+// .brand {
+//   color: var(--text);
+// }
+
+// .brand-accent {
+//   color: var(--cyan);
+// }
+
+// .header-actions {
+//   display: flex;
+//   align-items: center;
+//   gap: 8px;
+// }
+
+// .export-btn {
+//   width: 30px;
+//   height: 30px;
+// }
+
+// .bulk-import-btn {
+//   width: 34px;
+//   height: 34px;
+//   border-color: rgba(103, 199, 221, 0.45);
+//   color: var(--cyan);
+//   background: rgba(103, 199, 221, 0.08);
+// }
+
+// .bulk-import-btn:hover {
+//   border-color: var(--cyan);
+//   background: rgba(103, 199, 221, 0.14);
+// }
+
+// .bulk-import-modal {
+//   max-width: 720px;
+// }
+
+// .bulk-import-modal .modal-head > div:first-child {
+//   min-width: 0;
+// }
+
+// .bulk-import-subtitle {
+//   margin: 4px 0 0;
+//   color: var(--muted);
+//   font-size: 10px;
+//   line-height: 1.4;
+// }
+
+// .bulk-format-note {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 4px;
+//   padding: 10px 12px;
+//   margin-bottom: 12px;
+//   border: 1px solid rgba(103, 199, 221, 0.25);
+//   border-radius: 10px;
+//   background: rgba(103, 199, 221, 0.06);
+//   color: var(--muted);
+//   font-size: 10px;
+//   line-height: 1.5;
+// }
+
+// .bulk-format-note b {
+//   color: var(--cyan);
+// }
+
+// .bulk-array-textarea {
+//   min-height: 330px;
+//   resize: vertical;
+//   font-family: 'JetBrains Mono', monospace;
+//   font-size: 11px;
+//   line-height: 1.55;
+//   tab-size: 2;
+// }
+
+// .bulk-answer-note {
+//   display: flex;
+//   flex-wrap: wrap;
+//   align-items: center;
+//   gap: 6px;
+//   margin-top: 8px;
+//   color: var(--muted);
+//   font-size: 10px;
+// }
+
+// .bulk-answer-note code {
+//   padding: 3px 6px;
+//   border: 1px solid var(--border);
+//   border-radius: 6px;
+//   background: var(--panel-2);
+//   color: var(--text);
+//   font-family: 'JetBrains Mono', monospace;
+//   font-size: 9px;
+// }
+
+// .bulk-import-error {
+//   padding: 8px 10px;
+//   border: 1px solid rgba(240, 138, 109, 0.35);
+//   border-radius: 8px;
+//   background: rgba(240, 138, 109, 0.07);
+// }
+
+// .add-btn {
+//   width: 42px;
+//   height: 42px;
+//   border-radius: 50%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   background: var(--amber);
+//   color: #241d24;
+//   border: none;
+//   cursor: pointer;
+//   transition: background 0.2s, transform 0.2s;
+// }
+
+// .add-btn:hover {
+//   transform: rotate(5deg);
+//   background: #d99a3e;
+// }
 
 // .header-stats {
-//   display: flex; gap: 6px; padding: 8px 14px; overflow-x: auto;
-//   border-bottom: 1px solid var(--border); background: rgba(14,21,38,0.5);
+//   display: flex;
+//   gap: 9px;
+//   padding: 15px 32px;
+//   overflow-x: auto;
+//   border-bottom: 1px solid var(--border);
+//   background: rgba(58, 48, 58, 0.96);
 // }
+
 // .stat {
-//   font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--muted);
-//   background: var(--panel-2); border: 1px solid var(--border); border-radius: 6px;
-//   padding: 4px 7px; display: flex; align-items: center; gap: 4px; white-space: nowrap;
+//   font-family: 'JetBrains Mono', monospace;
+//   font-size: 11px;
+//   color: var(--muted);
+//   background: #51434e;
+//   border: 1px solid var(--border);
+//   border-radius: 999px;
+//   padding: 7px 11px;
+//   display: flex;
+//   align-items: center;
+//   gap: 4px;
+//   white-space: nowrap;
 // }
-// .stat b { color: var(--text); font-size: 11px; }
-// .stat.ok-c b { color: var(--green); } .stat.bad-c b { color: var(--rose); }
-// .stat.amber-c b { color: var(--amber); } .stat.cyan-c b { color: var(--cyan); }
 
-// .content { flex: 1 1 auto; overflow-y: auto; padding: 12px 12px 20px 12px; }
+// .stat b {
+//   color: var(--text);
+//   font-family: 'Space Grotesk', sans-serif;
+//   font-size: 13px;
+// }
 
-// .section-wrap {}
-// .section-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
-// .section-head h2 { font-family: 'Space Grotesk', sans-serif; font-size: 14px; font-weight: 700; margin: 0; }
+// .stat.ok-c b {
+//   color: var(--green);
+// }
+
+// .stat.bad-c b {
+//   color: var(--rose);
+// }
+
+// .stat.amber-c b {
+//   color: var(--amber);
+// }
+
+// .stat.cyan-c b {
+//   color: var(--cyan);
+// }
+
+// .content {
+//   flex: 1 1 auto;
+//   overflow-y: auto;
+//   padding: 28px 32px 36px;
+// }
+
+// .section-head {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   margin-bottom: 16px;
+// }
+
+// .section-head h2 {
+//   font-family: 'Space Grotesk', sans-serif;
+//   font-size: 19px;
+//   font-weight: 700;
+//   margin: 0;
+//   letter-spacing: -0.03em;
+//   color: var(--text);
+// }
+
 // .count-pill {
-//   font-family: 'JetBrains Mono', monospace; font-size: 10px; background: var(--panel-2);
-//   border: 1px solid var(--border); color: var(--cyan); border-radius: 20px; padding: 2px 8px;
+//   font-family: 'JetBrains Mono', monospace;
+//   font-size: 10px;
+//   background: #354e5b;
+//   border: 0;
+//   color: var(--cyan);
+//   border-radius: 999px;
+//   padding: 5px 10px;
 // }
+
 // .empty-state {
-//   border: 1px dashed var(--border); border-radius: 10px; padding: 24px 14px; text-align: center;
-//   color: var(--muted); font-size: 12px;
+//   border: 1px dashed #806878;
+//   border-radius: 16px;
+//   padding: 40px 18px;
+//   text-align: center;
+//   color: var(--muted);
+//   font-size: 12px;
+//   background: #332b34;
 // }
-// .card-list { display: flex; flex-direction: column; gap: 10px; }
+
+// .card-list {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 14px;
+// }
 
 // .card {
 //   background: var(--panel);
-//   border: 1px solid var(--border); border-radius: 10px; padding: 12px;
+//   border: 1px solid var(--border);
+//   border-radius: 18px;
+//   padding: 20px;
 //   position: relative;
+//   box-shadow: 0 8px 22px rgba(12, 8, 13, 0.28);
+//   transition: transform 0.2s, box-shadow 0.2s;
 // }
-// .card-top { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
+
+// .card:hover {
+//   transform: translateY(-2px);
+//   box-shadow: 0 12px 28px rgba(12, 8, 13, 0.42);
+// }
+
+// .card-top {
+//   display: flex;
+//   gap: 6px;
+//   flex-wrap: wrap;
+//   margin-bottom: 8px;
+// }
+
 // .badge {
-//   font-family: 'JetBrains Mono', monospace; font-size: 9px; padding: 3px 7px; border-radius: 5px;
-//   border: 1px solid var(--border); color: var(--muted); text-transform: uppercase; letter-spacing: 0.4px;
+//   font-family: 'JetBrains Mono', monospace;
+//   font-size: 10px;
+//   font-weight: 700;
+//   padding: 5px 9px;
+//   border-radius: 999px;
+//   border: 1px solid transparent;
+//   color: var(--muted);
+//   text-transform: uppercase;
+//   letter-spacing: 0.4px;
 // }
-// .badge.cat { color: var(--cyan); border-color: var(--border); background: var(--panel-2); }
-// .badge.ok { color: var(--green); border-color: var(--border); background: var(--panel-2); }
-// .badge.bad { color: var(--rose); border-color: var(--border); background: var(--panel-2); }
-// .badge.hide { color: var(--amber); border-color: var(--border); background: var(--panel-2); }
 
-// .card-q p { margin: 0 0 6px 0; font-size: 13px; line-height: 1.45; }
-// .card-img { max-width: 100%; border-radius: 8px; border: 1px solid var(--border); display: block; margin: 6px 0; }
-// .question-toggle { cursor: pointer; border-radius: 7px; padding: 4px; margin: -4px; }
-// .question-toggle:hover, .question-toggle:focus { background: rgba(76,141,255,0.08); outline: none; }
-// .question-hint { display: block; color: var(--muted); font-family: 'JetBrains Mono', monospace; font-size: 9px; margin-top: 5px; }
+// .badge.cat {
+//   color: #9be1ed;
+//   background: #315768;
+// }
 
-// .opt-list { display: flex; flex-direction: column; gap: 5px; margin: 6px 0; }
+// .badge.exam {
+//   color: #e5e7ff;
+//   background: linear-gradient(135deg, #3f3b63, #4a4770);
+//   border-color: rgba(167, 139, 250, 0.30);
+//   box-shadow: inset 0 0 0 1px rgba(229, 231, 255, 0.04);
+// }
+
+// .badge.ok {
+//   color: #c8ed91;
+//   background: #49613c;
+// }
+
+// .badge.bad {
+//   color: #ffb09a;
+//   background: #6d403e;
+// }
+
+// .badge.hide {
+//   color: #ffd77d;
+//   background: #66502f;
+// }
+
+// .card-q p {
+//   margin: 0 0 6px 0;
+//   font-size: 16px;
+//   line-height: 1.5;
+//   font-weight: 500;
+// }
+
+// .card-img {
+//   max-width: 100%;
+//   border-radius: 8px;
+//   border: 1px solid var(--border);
+//   display: block;
+//   margin: 6px 0;
+// }
+
+// .question-toggle {
+//   cursor: pointer;
+//   border-radius: 7px;
+//   padding: 4px;
+//   margin: -4px;
+// }
+
+// .question-toggle:hover,
+// .question-toggle:focus {
+//   background: #463846;
+//   outline: none;
+// }
+
+// .question-hint {
+//   display: block;
+//   color: var(--muted);
+//   font-family: 'JetBrains Mono', monospace;
+//   font-size: 9px;
+//   margin-top: 5px;
+// }
+
+// .opt-list {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 7px;
+//   margin: 12px 0;
+// }
+
 // .opt-row {
-//   display: flex; align-items: center; gap: 8px; padding: 6px 8px; border-radius: 7px;
-//   background: rgba(32,51,49,0.035); border: 1px solid var(--border); font-size: 12px;
+//   display: flex;
+//   align-items: center;
+//   gap: 8px;
+//   padding: 10px 12px;
+//   border-radius: 11px;
+//   background: var(--panel-2);
+//   border: 1px solid var(--border);
+//   font-size: 13px;
+//   color: var(--text);
 // }
-// .opt-row.opt-correct { border-color: var(--green); background: var(--panel-2); }
+
+// .opt-row.opt-correct {
+//   border-color: var(--green);
+//   background: #49613c;
+// }
+
 // .opt-letter {
-//   font-family: 'JetBrains Mono', monospace; font-size: 10px; width: 18px; height: 18px; flex: 0 0 auto;
-//   border-radius: 5px; background: var(--panel-2); display: flex; align-items: center; justify-content: center;
-//   color: var(--cyan); border: 1px solid var(--border);
+//   font-family: 'JetBrains Mono', monospace;
+//   font-size: 10px;
+//   width: 24px;
+//   height: 24px;
+//   flex: 0 0 auto;
+//   border-radius: 8px;
+//   background: #5c4e59;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   color: var(--cyan);
+//   border: 0;
 // }
 
 // .link-btn {
-//   background: none; border: none; color: var(--cyan); font-size: 11px; cursor: pointer; padding: 2px 0;
+//   background: none;
+//   border: none;
+//   color: var(--cyan);
+//   font-size: 11px;
+//   cursor: pointer;
+//   padding: 2px 0;
+//   font-family: 'JetBrains Mono', monospace;
+//   font-weight: 700;
+// }
+
+// .solution {
+//   margin-top: 6px;
+//   padding: 12px;
+//   border-radius: 12px;
+//   background: #302c38;
+//   border: 1px solid #665a73;
+//   color: var(--text);
+//   font-size: 13px;
+//   line-height: 1.4;
+// }
+
+// .solution p {
+//   margin: 0 0 6px 0;
+// }
+
+// .muted {
+//   color: var(--muted);
+// }
+
+// .card-actions {
+//   display: flex;
+//   gap: 7px;
+//   margin-top: 15px;
+//   flex-wrap: wrap;
+// }
+
+// .icon-btn {
+//   width: 28px;
+//   height: 28px;
+//   border-radius: 9px;
+//   border: 1px solid var(--border);
+//   background: var(--panel-2);
+//   color: var(--muted);
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   cursor: pointer;
+// }
+
+// .visibility-btn {
+//   min-height: 28px;
+//   border-radius: 9px;
+//   border: 1px solid var(--border);
+//   background: var(--panel-2);
+//   color: var(--muted);
+//   display: inline-flex;
+//   align-items: center;
+//   justify-content: center;
+//   gap: 5px;
+//   padding: 0 8px;
+//   cursor: pointer;
+//   font-size: 10px;
 //   font-family: 'JetBrains Mono', monospace;
 // }
-// .solution {
-//   margin-top: 6px; padding: 8px; border-radius: 8px; background: var(--panel-2);
-//   border: 1px solid var(--border); font-size: 12px; line-height: 1.4;
-// }
-// .solution p { margin: 0 0 6px 0; }
-// .muted { color: var(--muted); }
 
-// .card-actions { display: flex; gap: 6px; margin-top: 10px; flex-wrap: wrap; }
-// .icon-btn {
-//   width: 28px; height: 28px; border-radius: 7px; border: 1px solid var(--border); background: var(--panel-2);
-//   color: var(--muted); display: flex; align-items: center; justify-content: center; cursor: pointer;
+// .visibility-btn:hover,
+// .icon-btn:hover {
+//   color: var(--cyan);
+//   border-color: var(--cyan);
 // }
-// .visibility-btn {
-//   min-height: 28px; border-radius: 7px; border: 1px solid var(--border); background: var(--panel-2);
-//   color: var(--muted); display: inline-flex; align-items: center; justify-content: center; gap: 5px;
-//   padding: 0 8px; cursor: pointer; font-size: 10px; font-family: 'JetBrains Mono', monospace;
+
+// .icon-btn.active-ok {
+//   color: var(--green);
+//   border-color: var(--green);
 // }
-// .visibility-btn:hover { color: var(--text); border-color: var(--cyan); }
-// .icon-btn:hover { color: var(--text); border-color: var(--cyan); }
-// .icon-btn.active-ok { color: var(--green); border-color: var(--green); background: var(--panel-2); }
-// .icon-btn.active-bad { color: var(--rose); border-color: var(--rose); background: var(--panel-2); }
-// .icon-btn.danger:hover { color: var(--rose); border-color: var(--rose); }
+
+// .icon-btn.active-bad {
+//   color: var(--rose);
+//   border-color: var(--rose);
+// }
+
+// .icon-btn.danger:hover {
+//   color: var(--rose);
+//   border-color: var(--rose);
+// }
 
 // .navbar {
-//   display: flex; position: sticky; bottom: 0; z-index: 5;
-//   background: linear-gradient(0deg, rgba(7,10,19,0.98), rgba(7,10,19,0.85));
-//   border-top: 1px solid var(--border); backdrop-filter: blur(6px);
+//   display: flex;
+//   position: sticky;
+//   bottom: 0;
+//   z-index: 5;
+//   background: rgba(58, 48, 58, 0.98);
+//   border-top: 1px solid var(--border);
+//   backdrop-filter: blur(14px);
+//   padding: 5px 18px 8px;
 // }
+
 // .nav-btn {
-//   flex: 1; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 9px 2px 8px 2px;
-//   background: none; border: none; color: var(--muted); cursor: pointer; font-size: 9px;
-//   font-family: 'JetBrains Mono', monospace; letter-spacing: 0.3px; position: relative;
+//   flex: 1;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   gap: 3px;
+//   padding: 10px 2px 7px;
+//   background: none;
+//   border: none;
+//   color: var(--muted);
+//   cursor: pointer;
+//   font-size: 10px;
+//   font-family: 'Inter', sans-serif;
+//   font-weight: 600;
+//   letter-spacing: 0.3px;
+//   position: relative;
 // }
-// .nav-btn.active { color: var(--cyan); }
+
+// .nav-btn.active {
+//   color: var(--amber);
+// }
+
 // .nav-btn.active::before {
-//   content: ''; position: absolute; top: 0; left: 25%; right: 25%; height: 2px; background: var(--cyan);
+//   content: "";
+//   position: absolute;
+//   top: -5px;
+//   left: 25%;
+//   right: 25%;
+//   height: 3px;
+//   background: var(--amber);
 //   border-radius: 2px;
 // }
 
 // .toast {
-//   position: fixed; bottom: 68px; left: 50%; transform: translateX(-50%); z-index: 50;
-//   background: var(--panel-2); border: 1px solid var(--border); color: var(--text); font-size: 11px;
-//   padding: 8px 14px; border-radius: 20px;
+//   position: fixed;
+//   bottom: 78px;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   z-index: 50;
+//   background: #151116;
+//   border: 1px solid var(--border);
+//   color: var(--text);
+//   font-size: 11px;
+//   padding: 10px 16px;
+//   border-radius: 999px;
 //   font-family: 'JetBrains Mono', monospace;
 // }
 
-// .field { margin-bottom: 14px; }
-// .field-label {
-//   display: block; font-size: 10px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--muted);
-//   margin-bottom: 6px; font-family: 'JetBrains Mono', monospace;
+// /* Exam source has its own visual treatment so it does not look like a normal question field. */
+// .exam-source-field {
+//   padding: 12px;
+//   border: 1px solid rgba(167, 139, 250, 0.22);
+//   border-radius: 12px;
+//   background:
+//     linear-gradient(135deg, rgba(124, 107, 196, 0.10), rgba(103, 199, 221, 0.025));
 // }
-// .input, .textarea {
-//   width: 100%; background: var(--panel-2); border: 1px solid var(--border); border-radius: 8px;
-//   color: var(--text); padding: 8px 10px; font-size: 13px; font-family: 'Inter', sans-serif;
+
+// .exam-source-head {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   gap: 10px;
+//   margin-bottom: 7px;
+// }
+
+// .exam-source-label {
+//   margin-bottom: 0 !important;
+//   color: #d8d7ff !important;
+// }
+
+// .exam-optional-pill {
+//   font-family: 'JetBrains Mono', monospace;
+//   font-size: 9px;
+//   font-weight: 700;
+//   letter-spacing: 0.5px;
+//   text-transform: uppercase;
+//   color: #aaa8c9;
+//   border: 1px solid rgba(167, 139, 250, 0.20);
+//   border-radius: 999px;
+//   padding: 3px 7px;
+// }
+
+// .exam-name-wrap {
+//   display: grid;
+//   grid-template-columns: auto minmax(0, 1fr);
+//   align-items: stretch;
+// }
+
+// .exam-name-prefix {
+//   display: inline-flex;
+//   align-items: center;
+//   justify-content: center;
+//   min-width: 54px;
+//   padding: 0 10px;
+//   border: 1px solid rgba(167, 139, 250, 0.30);
+//   border-right: 0;
+//   border-radius: 10px 0 0 10px;
+//   background: #3f3b63;
+//   color: #e5e7ff;
+//   font-family: 'JetBrains Mono', monospace;
+//   font-size: 10px;
+//   font-weight: 800;
+//   letter-spacing: 0.7px;
+// }
+
+// .exam-name-input {
+//   border-radius: 0 10px 10px 0 !important;
+//   border-color: rgba(167, 139, 250, 0.30) !important;
+// }
+
+// .exam-name-input:focus {
+//   border-color: #9b8cff !important;
+//   box-shadow: 0 0 0 3px rgba(155, 140, 255, 0.13) !important;
+// }
+
+// .exam-source-hint {
+//   margin: 7px 0 0;
+//   color: #aaa8bd;
+//   font-size: 10px;
+//   line-height: 1.4;
+// }
+
+// .test-question-badges {
+//   display: flex;
+//   align-items: center;
+//   gap: 6px;
+//   flex-wrap: wrap;
+// }
+
+// .field {
+//   margin-bottom: 14px;
+// }
+
+// .field-label {
+//   display: block;
+//   font-size: 11px;
+//   font-weight: 700;
+//   text-transform: uppercase;
+//   letter-spacing: 0;
+//   color: #dfc7b7;
+//   margin-bottom: 6px;
+//   font-family: 'Inter', sans-serif;
+// }
+
+// .input,
+// .textarea {
+//   width: 100%;
+//   background: #51434e;
+//   border: 1px solid var(--border);
+//   border-radius: 10px;
+//   color: var(--text);
+//   padding: 11px 12px;
+//   font-size: 13px;
+//   font-family: 'Inter', sans-serif;
 //   box-sizing: border-box;
 // }
-// .input:focus, .textarea:focus { outline: none; border-color: var(--cyan); }
-// .textarea { resize: vertical; }
-// .hint { font-size: 10px; color: var(--muted); margin: 4px 0 0 0; }
-// .error-text { color: var(--rose); font-size: 11px; margin: 4px 0; }
-// .warn-text { color: var(--amber); font-size: 11px; margin-top: 8px; text-align: center; }
+
+// .input:focus,
+// .textarea:focus {
+//   outline: none;
+//   border-color: var(--cyan);
+//   box-shadow: 0 0 0 3px rgba(103, 199, 221, 0.2);
+// }
+
+// .textarea {
+//   resize: vertical;
+// }
+
+// .hint {
+//   font-size: 10px;
+//   color: var(--muted);
+//   margin: 4px 0 0 0;
+// }
+
+// .error-text {
+//   color: var(--rose);
+//   font-size: 11px;
+//   margin: 4px 0;
+// }
+
+// .warn-text {
+//   color: var(--amber);
+//   font-size: 11px;
+//   margin-top: 8px;
+//   text-align: center;
+// }
 
 // .quick-option-tools {
 //   display: flex;
@@ -1792,6 +8176,15 @@
 //   margin-bottom: 8px;
 // }
 
+// .clear-option-btn {
+//   color: var(--rose);
+// }
+
+// .clear-option-btn:hover {
+//   border-color: var(--rose);
+//   background: rgba(255, 96, 120, 0.08);
+// }
+
 // .range-option-row {
 //   display: flex;
 //   align-items: center;
@@ -1819,60 +8212,15 @@
 //   box-shadow: 0 0 0 2px rgba(103, 199, 221, 0.12);
 // }
 
-// .range-option-btn {
-//   height: 24px;
-//   padding: 0 9px;
-//   border-radius: 6px;
-//   border: 1px solid var(--border);
-//   background: var(--panel-2);
-//   color: var(--cyan);
-//   cursor: pointer;
+// .range-option-input-small {
+//   width: 82px;
+// }
+
+// .range-option-separator {
+//   color: var(--muted);
 //   font-family: 'JetBrains Mono', monospace;
 //   font-size: 9px;
 //   font-weight: 700;
-// }
-
-// .range-option-btn:hover {
-//   border-color: var(--cyan);
-//   color: var(--text);
-//   background: rgba(76, 141, 255, 0.1);
-// }
-
-// .range-option-btn:active {
-//   transform: scale(0.97);
-// }
-
-// .range-option-hint {
-//   color: var(--muted);
-//   font-family: 'JetBrains Mono', monospace;
-//   font-size: 8px;
-// }
-
-// .range-option-row {
-//   display: flex;
-//   align-items: center;
-//   gap: 6px;
-//   margin: -2px 0 8px 0;
-//   flex-wrap: wrap;
-// }
-
-// .range-option-input {
-//   width: 118px;
-//   height: 24px;
-//   padding: 0 7px;
-//   border-radius: 6px;
-//   border: 1px solid var(--border);
-//   background: var(--panel-2);
-//   color: var(--text);
-//   font-family: 'JetBrains Mono', monospace;
-//   font-size: 9px;
-//   box-sizing: border-box;
-// }
-
-// .range-option-input:focus {
-//   outline: none;
-//   border-color: var(--cyan);
-//   box-shadow: 0 0 0 2px rgba(103, 199, 221, 0.12);
 // }
 
 // .range-option-btn {
@@ -1957,218 +8305,580 @@
 // .quick-option-btn:hover {
 //   border-color: var(--cyan);
 //   color: var(--text);
-//   background: rgba(76,141,255,0.10);
+//   background: rgba(76, 141, 255, 0.1);
 // }
 
 // .quick-option-btn:active {
 //   transform: scale(0.94);
 // }
 
-// .option-edit-row { display: flex; gap: 8px; align-items: center; margin-bottom: 6px; }
+// .option-edit-row {
+//   display: flex;
+//   gap: 8px;
+//   align-items: center;
+//   margin-bottom: 6px;
+// }
+
 // .radio-dot {
-//   width: 26px; height: 26px; border-radius: 7px; flex: 0 0 auto; border: 1px solid var(--border);
-//   background: var(--panel-2); color: var(--muted); font-family: 'JetBrains Mono', monospace; font-size: 11px;
+//   width: 32px;
+//   height: 32px;
+//   border-radius: 9px;
+//   flex: 0 0 auto;
+//   border: 1px solid var(--border);
+//   background: var(--panel-2);
+//   color: var(--muted);
+//   font-family: 'JetBrains Mono', monospace;
+//   font-size: 11px;
 //   cursor: pointer;
 // }
-// .radio-dot.checked { background: var(--green); color: #06110C; border-color: var(--green); }
+
+// .radio-dot.checked {
+//   background: var(--green);
+//   color: #241d24;
+//   border-color: var(--green);
+// }
 
 // .imgdrop {
-//   border: 1px dashed var(--border); border-radius: 8px; padding: 16px 10px; text-align: center;
-//   color: var(--muted); font-size: 11px; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 6px;
+//   border: 1px dashed var(--border);
+//   border-radius: 12px;
+//   padding: 20px 12px;
+//   text-align: center;
+//   color: var(--muted);
+//   font-size: 11px;
+//   cursor: pointer;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   gap: 6px;
 // }
-// .imgdrop:hover { border-color: var(--cyan); color: var(--cyan); }
-// .imgpreview { position: relative; }
-// .imgpreview img { max-width: 100%; border-radius: 8px; border: 1px solid var(--border); display: block; }
-// .imgpreview-actions { display: flex; gap: 6px; margin-top: 6px; }
+
+// .imgdrop:hover {
+//   border-color: var(--cyan);
+//   color: var(--cyan);
+// }
+
+// .imgpreview {
+//   position: relative;
+// }
+
+// .imgpreview img {
+//   max-width: 100%;
+//   border-radius: 8px;
+//   border: 1px solid var(--border);
+//   display: block;
+// }
+
+// .imgpreview-actions {
+//   display: flex;
+//   gap: 6px;
+//   margin-top: 6px;
+// }
 
 // .btn {
-//   font-family: 'Inter', sans-serif; font-weight: 600; font-size: 12px; border-radius: 8px; padding: 9px 14px;
-//   border: 1px solid var(--border); background: var(--panel-2); color: var(--text); cursor: pointer;
-//   display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+//   font-family: 'Inter', sans-serif;
+//   font-weight: 700;
+//   font-size: 13px;
+//   border-radius: 10px;
+//   padding: 10px 15px;
+//   border: 1px solid var(--border);
+//   background: var(--panel-2);
+//   color: var(--text);
+//   cursor: pointer;
+//   display: inline-flex;
+//   align-items: center;
+//   justify-content: center;
+//   gap: 6px;
 // }
-// .btn:disabled { opacity: 0.4; cursor: not-allowed; }
-// .btn-primary { background: var(--cyan); color: #0A0E1A; border-color: var(--cyan); }
-// .btn-primary:hover:not(:disabled) { filter: brightness(1.08); }
-// .btn-ghost { background: transparent; }
-// .btn-block { width: 100%; }
-// .btn-xs { font-size: 11px; padding: 6px 9px; }
-// .btn-ok-active { background: var(--panel-2); color: var(--green); border-color: var(--green); }
-// .btn-bad-active { background: var(--panel-2); color: var(--rose); border-color: var(--rose); }
 
-// .toggle-row { display: flex; gap: 6px; }
-// .toggle-btn {
-//   flex: 1; padding: 8px; border-radius: 8px; border: 1px solid var(--border); background: var(--panel-2);
-//   color: var(--muted); font-size: 11px; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 5px;
+// .btn:disabled {
+//   opacity: 0.4;
+//   cursor: not-allowed;
 // }
-// .toggle-btn.active { color: var(--cyan); border-color: var(--cyan); background: var(--panel-2); }
 
-// .test-setup, .test-running, .summary { display: flex; flex-direction: column; }
+// .btn-primary {
+//   background: var(--amber);
+//   color: #241d24;
+//   border-color: var(--amber);
+// }
+
+// .btn-primary:hover:not(:disabled) {
+//   transform: translateY(-1px);
+//   background: #d99a3e;
+// }
+
+// .btn-ghost {
+//   background: transparent;
+// }
+
+// .btn-block {
+//   width: 100%;
+// }
+
+// .btn-xs {
+//   font-size: 11px;
+//   padding: 6px 9px;
+// }
+
+// .btn-ok-active {
+//   color: var(--green);
+//   border-color: var(--green);
+//   background: #364c35;
+// }
+
+// .btn-bad-active {
+//   color: var(--rose);
+//   border-color: var(--rose);
+//   background: #603b3d;
+// }
+
+// .test-setup,
+// .test-running,
+// .summary {
+//   display: flex;
+//   flex-direction: column;
+// }
+
 // .setup-card {
-//   background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 16px; margin-top: 10px;
+//   background: var(--panel);
+//   border: 1px solid var(--border);
+//   border-radius: 20px;
+//   padding: 27px;
+//   margin-top: 10px;
+//   width: min(100%, 620px);
+//   box-shadow: 0 12px 28px rgba(12, 8, 13, 0.26);
 // }
-// .setup-card h2 { font-family: 'Space Grotesk', sans-serif; font-size: 15px; margin: 0 0 6px 0; }
-// .setup-card p.muted { font-size: 11px; margin: 0 0 14px 0; }
 
-// .test-topbar { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 6px; flex-wrap: wrap; }
-// .progress-label { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--muted); }
-// .tiny-timer { display: inline-flex; align-items: center; gap: 3px; padding: 3px 5px; border: 1px solid var(--border); border-radius: 5px; background: var(--panel-2); }
-// .tiny-timer-time { min-width: 42px; font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 600; line-height: 1; color: var(--text); text-align: center; }
-// .tiny-timer-btn { width: 20px; height: 20px; padding: 0; border: 0; border-radius: 3px; background: transparent; color: var(--muted); font-size: 10px; line-height: 20px; text-align: center; cursor: pointer; }
-// .tiny-timer-btn:hover:not(:disabled) { background: var(--border); color: var(--text); }
-// .tiny-timer-btn:disabled { opacity: 0.3; cursor: default; }
-// .hide-q-btn { color: var(--amber); }
-// .progress-track { height: 4px; border-radius: 3px; background: var(--panel-2); overflow: hidden; margin-bottom: 12px; }
-// .progress-fill { height: 100%; background: var(--cyan); }
+// .setup-card h2 {
+//   font-family: 'Space Grotesk', sans-serif;
+//   font-size: 26px;
+//   margin: 0 0 6px 0;
+//   letter-spacing: -0.04em;
+// }
 
-// .q-jump-row { margin-bottom: 12px; }
+// .setup-card p.muted {
+//   font-size: 11px;
+//   margin: 0 0 14px 0;
+// }
+
+// .test-topbar {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   gap: 8px;
+//   margin-bottom: 6px;
+//   flex-wrap: wrap;
+// }
+
+// .progress-label {
+//   font-family: 'JetBrains Mono', monospace;
+//   font-size: 10px;
+//   color: var(--muted);
+// }
+
+// .tiny-timer {
+//   display: inline-flex;
+//   align-items: center;
+//   gap: 3px;
+//   padding: 3px 5px;
+//   border: 1px solid var(--border);
+//   border-radius: 5px;
+//   background: var(--panel-2);
+// }
+
+// .tiny-timer-time {
+//   min-width: 42px;
+//   font-family: 'JetBrains Mono', monospace;
+//   font-size: 11px;
+//   font-weight: 600;
+//   line-height: 1;
+//   color: var(--text);
+//   text-align: center;
+// }
+
+// .tiny-timer-btn {
+//   width: 20px;
+//   height: 20px;
+//   padding: 0;
+//   border: 0;
+//   border-radius: 3px;
+//   background: transparent;
+//   color: var(--muted);
+//   font-size: 10px;
+//   line-height: 20px;
+//   text-align: center;
+//   cursor: pointer;
+// }
+
+// .tiny-timer-btn:hover:not(:disabled) {
+//   background: var(--border);
+//   color: var(--text);
+// }
+
+// .tiny-timer-btn:disabled {
+//   opacity: 0.3;
+//   cursor: default;
+// }
+
+// .hide-q-btn {
+//   color: var(--amber);
+// }
+
+// .progress-track {
+//   height: 7px;
+//   border-radius: 3px;
+//   background: #4b3d48;
+//   overflow: hidden;
+//   margin-bottom: 12px;
+// }
+
+// .progress-fill {
+//   height: 100%;
+//   background: var(--cyan);
+//   border-radius: 8px;
+// }
+
+// .q-jump-row {
+//   margin-bottom: 12px;
+//   padding: 10px 12px;
+//   border: 1px solid var(--border);
+//   border-radius: 12px;
+//   background: #332b34;
+// }
+
+// .q-jump-head {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   gap: 8px;
+//   margin-bottom: 6px;
+// }
+
 // .q-jump-label {
-//   display: block; font-size: 10px; color: var(--muted); font-family: 'JetBrains Mono', monospace;
-//   margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.4px;
+//   display: block;
+//   font-size: 10px;
+//   color: var(--muted);
+//   font-family: 'JetBrains Mono', monospace;
+//   margin: 0;
+//   text-transform: uppercase;
+//   letter-spacing: 0.4px;
 // }
-// .q-jump-grid { display: flex; flex-wrap: wrap; gap: 6px; }
+
+// .q-jump-toggle {
+//   display: inline-flex;
+//   align-items: center;
+//   gap: 5px;
+//   margin-left: auto;
+//   padding: 4px 7px;
+//   border: 1px solid var(--border);
+//   border-radius: 7px;
+//   background: var(--panel-2);
+//   color: var(--muted);
+//   font-family: 'JetBrains Mono', monospace;
+//   font-size: 9px;
+//   cursor: pointer;
+// }
+
+// .q-jump-toggle:hover {
+//   border-color: var(--cyan);
+//   color: var(--text);
+// }
+
+// .q-jump-row.collapsed {
+//   padding: 5px 8px;
+// }
+
+// .q-jump-row.collapsed .q-jump-head {
+//   margin-bottom: 0;
+// }
+
+// .q-jump-grid {
+//   display: flex;
+//   flex-wrap: wrap;
+//   gap: 6px;
+// }
+
 // .q-jump-btn {
-//   width: 26px;padding: 1px; height: 26px; border-radius: 6px; border: 1px solid var(--border); background: var(--panel-2);
-//   color: var(--muted); font-family: 'JetBrains Mono', monospace; font-size: 11px; cursor: pointer;
+//   width: 26px;
+//   padding: 1px;
+//   height: 26px;
+//   border-radius: 6px;
+//   border: 1px solid var(--border);
+//   background: var(--panel-2);
+//   color: var(--muted);
+//   font-family: 'JetBrains Mono', monospace;
+//   font-size: 11px;
+//   cursor: pointer;
 // }
-// .q-jump-btn:hover { border-color: var(--cyan); color: var(--text); }
-// .q-jump-btn.current { border-color: var(--cyan); background: var(--cyan); color: #0A0E1A; }
-// .q-jump-btn.ans-correct { border-color: var(--green); color: var(--green); }
-// .q-jump-btn.ans-wrong { border-color: var(--rose); color: var(--rose); }
 
-// .q-card .q-text { font-size: 14px; font-weight: 500; margin: 4px 0 8px 0; }
+// .q-jump-btn:hover {
+//   border-color: var(--cyan);
+//   color: var(--text);
+// }
+
+// .q-jump-btn.current {
+//   border-color: var(--cyan);
+//   background: var(--cyan);
+//   color: #241d24;
+// }
+
+// .q-jump-btn.ans-correct {
+//   border-color: var(--green);
+//   color: var(--green);
+// }
+
+// .q-jump-btn.ans-wrong {
+//   border-color: var(--rose);
+//   color: var(--rose);
+// }
+
+// .q-card .q-text {
+//   font-size: 22px;
+//   font-weight: 500;
+//   line-height: 1.35;
+//   margin: 4px 0 8px 0;
+//   color: var(--text);
+// }
+
 // .test-opts .opt-row.selectable {
-//   width: 100%; text-align: left; cursor: pointer; color: var(--text); font-family: 'Inter', sans-serif;
+//   width: 100%;
+//   text-align: left;
+//   cursor: pointer;
+//   color: var(--text);
+//   font-family: 'Inter', sans-serif;
 // }
-// .test-opts .opt-row.selectable:hover:not(:disabled) { border-color: var(--cyan); }
-// .opt-row.opt-picked { border-color: var(--cyan); background: var(--panel-2); }
-// .opt-row.opt-correct-answer { border-color: var(--green); background: var(--panel-2); }
-// .opt-row.opt-wrong-answer { border-color: var(--rose); background: var(--panel-2); }
 
-// .solution.reveal { margin-top: 10px; }
-// .solution-head { margin-bottom: 6px; }
-// .mark-row { display: flex; gap: 6px; margin-top: 8px; }
+// .test-opts .opt-row.selectable:hover:not(:disabled) {
+//   border-color: var(--cyan);
+//   background: #315768;
+//   color: var(--text);
+// }
 
-// .test-nav { display: flex; justify-content: space-between; gap: 8px; margin-top: 12px; }
+// .opt-row.opt-picked {
+//   border-color: var(--cyan);
+//   background: #315768;
+// }
 
-// .summary { align-items: center; text-align: center; padding-top: 30px; }
-// .summary h2 { font-family: 'Space Grotesk', sans-serif; font-size: 18px; margin-bottom: 16px; }
-// .summary-grid { display: flex; gap: 10px; margin-bottom: 20px; width: 100%; }
+// .opt-row.opt-correct-answer {
+//   border-color: var(--green);
+//   background: #49613c;
+// }
+
+// .opt-row.opt-wrong-answer {
+//   border-color: var(--rose);
+//   background: #6d403e;
+// }
+
+// .solution.reveal {
+//   margin-top: 10px;
+// }
+
+// .solution-head {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   gap: 8px;
+//   margin-bottom: 6px;
+// }
+
+// .mark-row {
+//   display: flex;
+//   gap: 6px;
+//   margin-top: 8px;
+// }
+
+// .test-nav {
+//   display: flex;
+//   justify-content: space-between;
+//   gap: 8px;
+//   margin-top: 12px;
+// }
+
+// .summary {
+//   align-items: center;
+//   text-align: center;
+//   padding-top: 30px;
+// }
+
+// .summary h2 {
+//   font-family: 'Space Grotesk', sans-serif;
+//   font-size: 30px;
+//   margin-bottom: 16px;
+// }
+
+// .summary-grid {
+//   display: flex;
+//   gap: 10px;
+//   margin-bottom: 20px;
+//   width: 100%;
+// }
+
 // .summary-stat {
-//   flex: 1; background: var(--panel); border: 1px solid var(--border); border-radius: 10px; padding: 14px 6px;
-//   display: flex; flex-direction: column; gap: 4px;
+//   flex: 1;
+//   background: var(--panel);
+//   border: 1px solid var(--border);
+//   border-radius: 16px;
+//   padding: 18px 8px;
+//   display: flex;
+//   flex-direction: column;
+//   gap: 4px;
 // }
-// .summary-stat b { font-family: 'JetBrains Mono', monospace; font-size: 20px; }
-// .summary-stat span { font-size: 10px; color: var(--muted); }
-// .summary-stat.ok b { color: var(--green); } .summary-stat.bad b { color: var(--rose); } .summary-stat.neutral b { color: var(--muted); }
-// .summary-actions { width: 100%; }
+
+// .summary-stat b {
+//   font-family: 'Space Grotesk', sans-serif;
+//   font-size: 28px;
+// }
+
+// .summary-stat span {
+//   font-size: 10px;
+//   color: var(--muted);
+// }
+
+// .summary-stat.ok b {
+//   color: var(--green);
+// }
+
+// .summary-stat.bad b {
+//   color: var(--rose);
+// }
+
+// .summary-stat.neutral b {
+//   color: var(--muted);
+// }
+
+// .summary-actions {
+//   width: 100%;
+// }
 
 // .modal-overlay {
-//   position: fixed; inset: 0; background: rgba(4,6,12,0.75); backdrop-filter: blur(3px);
-//   display: flex; align-items: flex-end; justify-content: center; z-index: 100;
+//   position: fixed;
+//   inset: 0;
+//   background: rgba(20, 14, 21, 0.72);
+//   backdrop-filter: blur(7px);
+//   display: flex;
+//   align-items: flex-end;
+//   justify-content: center;
+//   z-index: 100;
 // }
+
 // .modal {
-//   background: var(--panel); border: 1px solid var(--border); border-radius: 16px 16px 0 0; width: 100%;
-//   max-width: 430px; max-height: 88vh; display: flex; flex-direction: column; box-shadow: 0 -10px 40px rgba(0,0,0,0.5);
+//   background: var(--panel);
+//   border: 1px solid var(--border);
+//   border-radius: 22px 22px 0 0;
+//   width: 100%;
+//   max-width: 560px;
+//   max-height: 88vh;
+//   display: flex;
+//   flex-direction: column;
+//   box-shadow: 0 -18px 60px rgba(23, 39, 45, 0.2);
 // }
-// .modal-head { display: flex; align-items: center; justify-content: space-between; padding: 14px; border-bottom: 1px solid var(--border); }
-// .modal-head h2 { font-family: 'Space Grotesk', sans-serif; font-size: 14px; margin: 0; }
-// .modal-body { padding: 14px; overflow-y: auto; }
-// .modal-foot { display: flex; gap: 8px; padding: 12px 14px; border-top: 1px solid var(--border); }
-// .modal-foot .btn { flex: 1; }
 
-// .crop-modal .modal-body { display: flex; flex-direction: column; align-items: center; }
-// .crop-wrap { position: relative; display: inline-block; max-width: 100%; touch-action: none; }
-// .crop-wrap img { display: block; max-width: 100%; max-height: 60vh; user-select: none; }
+// .modal-head {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   padding: 18px 22px;
+//   border-bottom: 1px solid var(--border);
+// }
+
+// .modal-head h2 {
+//   font-family: 'Space Grotesk', sans-serif;
+//   font-size: 19px;
+//   margin: 0;
+// }
+
+// .modal-body {
+//   padding: 22px;
+//   overflow-y: auto;
+// }
+
+// .modal-foot {
+//   display: flex;
+//   gap: 8px;
+//   padding: 15px 22px;
+//   border-top: 1px solid var(--border);
+// }
+
+// .modal-foot .btn {
+//   flex: 1;
+// }
+
+// .crop-modal .modal-body {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+// .crop-wrap {
+//   position: relative;
+//   display: inline-block;
+//   max-width: 100%;
+//   touch-action: none;
+// }
+
+// .crop-wrap img {
+//   display: block;
+//   max-width: 100%;
+//   max-height: 60vh;
+//   user-select: none;
+// }
+
 // .crop-box {
-//   position: absolute; border: 2px solid var(--cyan); box-shadow: 0 0 0 2000px rgba(4,6,12,0.55); cursor: move;
+//   position: absolute;
+//   border: 2px solid var(--cyan);
+//   box-shadow: 0 0 0 2000px rgba(4, 6, 12, 0.55);
+//   cursor: move;
 // }
+
 // .crop-handle {
-//   position: absolute; right: -6px; bottom: -6px; width: 14px; height: 14px; border-radius: 3px;
-//   background: var(--cyan); cursor: se-resize;
+//   position: absolute;
+//   right: -6px;
+//   bottom: -6px;
+//   width: 14px;
+//   height: 14px;
+//   border-radius: 3px;
+//   background: var(--cyan);
+//   cursor: se-resize;
 // }
 
-// /* visual refresh */
-// :root { background: #202b35; }
-// * { box-sizing: border-box; }
-// body { margin: 0; background: #202b35; }
-// .app {
-//   --bg: #202b35; --panel: #2c3a46; --panel-2: #354957; --border: #55707a;
-//   --cyan: #58b7b1; --green: #7acb9b; --rose: #ee806f; --amber: #e6b35b;
-//   --text: #f3e5cf; --muted: #b2c0bd;
-//   width: min(100%, 980px); max-width: 980px; background: var(--bg); color: var(--text);
-//   font-family: 'DM Sans', sans-serif; font-size: 14px; box-shadow: 0 0 80px rgba(42,49,44,.08);
+// .topic-filter {
+//   display: flex;
+//   align-items: center;
+//   gap: 10px;
+//   margin: -4px 0 16px;
+//   padding: 10px 12px;
+//   border: 1px solid var(--border);
+//   border-radius: 12px;
+//   background: #332b34;
+//   flex-wrap: wrap;
 // }
-// .header { padding: 26px 32px 18px; background: rgba(32,43,53,.96); backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); }
-// .header-title { font-family: 'Space Grotesk', sans-serif; font-size: 22px; letter-spacing: -.04em; }
-// .brand-accent { color: var(--cyan); }
-// .add-btn { width: 42px; height: 42px; border-radius: 50%; background: var(--amber); color: #202b35; box-shadow: none; transition: background .2s, transform .2s; }
-// .add-btn:hover { transform: rotate(5deg); background: #d19a43; }
-// .header-stats { gap: 9px; padding: 15px 32px; background: rgba(44,58,70,.94); border-bottom: 1px solid var(--border); }
-// .stat { font-size: 11px; background: #3b505d; border: 1px solid var(--border); border-radius: 999px; padding: 7px 11px; }
-// .stat b { font-family: 'Space Grotesk', sans-serif; font-size: 13px; }.stat.ok-c b { color: var(--green); }.stat.bad-c b { color: var(--rose); }.stat.amber-c b { color: var(--amber); }.stat.cyan-c b { color: var(--cyan); }
-// .content { padding: 28px 32px 36px; }
-// .section-head { margin-bottom: 16px; }.section-head h2 { font-family: 'Space Grotesk', sans-serif; font-size: 19px; letter-spacing: -.03em; }.count-pill { background: #e2f0ec; color: var(--cyan); border: 0; border-radius: 999px; padding: 5px 10px; }
-// .empty-state { border: 1px dashed #8f8c73; border-radius: 16px; padding: 40px 18px; background: rgba(86,91,83,.72); }.card-list { gap: 14px; }
-// .card { background: var(--panel); border: 1px solid var(--border); border-radius: 18px; padding: 20px; box-shadow: 0 8px 22px rgba(18,24,20,.2); transition: transform .2s, box-shadow .2s; }.card:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(18,24,20,.34); }
-// .badge { font-size: 10px; font-weight: 700; padding: 5px 9px; border-radius: 999px; border-color: transparent; }.badge.cat { color: #8bd0cc; background: #315d5e; }.badge.ok { color: #e7d98b; background: #625d37; }.badge.bad { color: #f1ae95; background: #70473d; }.badge.hide { color: #f0c87e; background: #695334; }
-// .card-q p { font-size: 16px; line-height: 1.5; font-weight: 500; }.question-toggle:hover, .question-toggle:focus { background: #f4f8f4; }
-// .opt-list { gap: 7px; margin: 12px 0; }.opt-row { padding: 10px 12px; border-radius: 11px; background: var(--panel-2); border-color: var(--border); font-size: 13px; }.opt-row.opt-correct { border-color: var(--green); background: #6e693c; }.opt-letter { width: 24px; height: 24px; border-radius: 8px; background: #858573; color: #f0c87e; border: 0; }
-// .link-btn { color: var(--cyan); font-weight: 700; }.solution { padding: 12px; border-radius: 12px; background: #3b505d; border-color: var(--border); color: var(--text); font-size: 13px; }
-// .card-actions { gap: 7px; margin-top: 15px; }.icon-btn, .visibility-btn { border-radius: 9px; background: var(--panel-2); border-color: var(--border); }.visibility-btn:hover, .icon-btn:hover { color: var(--cyan); border-color: var(--cyan); }
-// .navbar { background: rgba(44,58,70,.96); border-top-color: var(--border); backdrop-filter: blur(14px); padding: 5px 18px 8px; }.nav-btn { padding: 10px 2px 7px; font-size: 10px; font-family: 'DM Sans', sans-serif; font-weight: 600; }.nav-btn.active { color: var(--amber); }.nav-btn.active::before { top: -5px; height: 3px; background: var(--amber); }
-// .toast { bottom: 78px; background: var(--text); color: #e8eee6; padding: 10px 16px; border-radius: 999px; box-shadow: 0 8px 20px rgba(23,39,45,.2); }
-// .field-label { font-size: 11px; font-weight: 700; color: #d8cdb5; font-family: 'DM Sans', sans-serif; letter-spacing: 0; }.input, .textarea { background: #77796b; border-color: var(--border); border-radius: 10px; padding: 11px 12px; font-family: 'DM Sans', sans-serif; }.input:focus, .textarea:focus { border-color: var(--cyan); box-shadow: 0 0 0 3px rgba(47,143,145,.25); }
-// .radio-dot { width: 32px; height: 32px; border-radius: 9px; }.radio-dot.checked { background: var(--green); color: #3f4540; border-color: var(--green); }.imgdrop { border-color: #8f8c73; border-radius: 12px; padding: 20px 12px; }.imgdrop:hover { border-color: var(--cyan); color: #8bd0cc; }
-// .btn { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 13px; border-radius: 10px; padding: 10px 15px; }.btn-primary { background: var(--amber); color: #202b35; border-color: var(--amber); box-shadow: none; }.btn-primary:hover:not(:disabled) { transform: translateY(-1px); background: #d19a43; }.toggle-btn.active { color: #f3e5cf; border-color: var(--cyan); background: #285b61; }
-// .setup-card { background: var(--panel); border-color: var(--border); border-radius: 20px; padding: 27px; width: min(100%, 620px); box-shadow: 0 12px 28px rgba(10,18,25,.18); }.setup-card h2 { font-family: 'Space Grotesk', sans-serif; font-size: 26px; letter-spacing: -.04em; }.progress-track { height: 7px; background: #354957; }.progress-fill { background: var(--cyan); border-radius: 8px; }.q-card .q-text { font-size: 22px; line-height: 1.35; }.test-opts .opt-row.selectable:hover:not(:disabled) { border-color: var(--cyan); background: #285b61; color: var(--text); }.opt-row.opt-picked { border-color: var(--cyan); background: #285b61; color: var(--text); }.opt-row.opt-correct-answer { border-color: var(--green); background: #35634f; color: var(--text); }.opt-row.opt-wrong-answer { border-color: var(--rose); background: #713f43; color: var(--text); }
-// .summary h2 { font-family: 'Space Grotesk', sans-serif; font-size: 30px; }.summary-stat { background: var(--panel); border-color: var(--border); border-radius: 16px; padding: 18px 8px; }.summary-stat b { font-family: 'Space Grotesk', sans-serif; font-size: 28px; }.summary-stat.ok b { color: var(--green); }.summary-stat.bad b { color: var(--rose); }
-// .modal-overlay { background: rgba(23,39,45,.42); backdrop-filter: blur(7px); }.modal { background: var(--panel); border-color: var(--border); border-radius: 22px 22px 0 0; max-width: 560px; box-shadow: 0 -18px 60px rgba(23,39,45,.2); }.modal-head { padding: 18px 22px; }.modal-head h2 { font-family: 'Space Grotesk', sans-serif; font-size: 19px; }.modal-body { padding: 22px; }.modal-foot { padding: 15px 22px; }
-// @media (max-width: 640px) { .header { padding: 20px 18px 14px; }.header-stats { padding: 12px 18px; }.content { padding: 22px 18px 28px; }.card { padding: 16px; border-radius: 15px; }.setup-card { padding: 21px; }.q-card .q-text { font-size: 19px; }.navbar { padding-left: 6px; padding-right: 6px; } }
 
-// /* final color system */
-// :root { background: #241d24; }
-// body { background: #241d24; }
-// .app {
-//   --bg: #241d24; --panel: #3a303a; --panel-2: #4b3d48; --border: #745b68;
-//   --cyan: #67c7dd; --green: #a8d86e; --rose: #f08a6d; --amber: #f0b653;
-//   --text: #f4e7d2; --muted: #c4b4b2;
-//   background: var(--bg); color: var(--text);
+// .topic-filter .field-label {
+//   margin: 0;
+//   white-space: nowrap;
 // }
-// .header { background: rgba(36,29,36,.97); border-color: var(--border); }
-// .brand-accent { color: var(--cyan); }
-// .add-btn { background: var(--amber); color: #241d24; box-shadow: none; }
-// .add-btn:hover { background: #d99a3e; box-shadow: none; }
-// .header-stats { background: rgba(58,48,58,.96); border-color: var(--border); }
-// .stat { background: #51434e; border-color: var(--border); color: var(--muted); }
-// .stat b { color: var(--text); }.stat.ok-c b { color: var(--green); }.stat.bad-c b { color: var(--rose); }.stat.amber-c b { color: var(--amber); }.stat.cyan-c b { color: var(--cyan); }
-// .section-head h2 { color: var(--text); }.count-pill { background: #354e5b; color: var(--cyan); }
-// .empty-state { border-color: #806878; background: #332b34; color: var(--muted); }
-// .card { background: var(--panel); border-color: var(--border); box-shadow: 0 8px 22px rgba(12,8,13,.28); }.card:hover { box-shadow: 0 12px 28px rgba(12,8,13,.42); }
-// .badge.cat { color: #9be1ed; background: #315768; }.badge.ok { color: #c8ed91; background: #49613c; }.badge.bad { color: #ffb09a; background: #6d403e; }.badge.hide { color: #ffd77d; background: #66502f; }
-// .question-toggle:hover, .question-toggle:focus { background: #463846; }
-// .opt-row { background: var(--panel-2); border-color: var(--border); color: var(--text); }.opt-row.opt-correct { background: #49613c; border-color: var(--green); }.opt-letter { background: #5c4e59; color: var(--cyan); }
-// .link-btn { color: var(--cyan); }.solution { background: #302c38; border-color: #665a73; color: var(--text); }
-// .icon-btn, .visibility-btn { background: var(--panel-2); border-color: var(--border); color: var(--muted); }.visibility-btn:hover, .icon-btn:hover { color: var(--cyan); border-color: var(--cyan); }.icon-btn.active-ok { color: var(--green); border-color: var(--green); }.icon-btn.active-bad { color: var(--rose); border-color: var(--rose); }
-// .navbar { background: rgba(58,48,58,.98); border-color: var(--border); }.nav-btn { color: var(--muted); }.nav-btn.active { color: var(--amber); }.nav-btn.active::before { background: var(--amber); }
-// .toast { background: #151116; color: var(--text); border: 1px solid var(--border); }
-// .field-label { color: #dfc7b7; }.input, .textarea { background: #51434e; border-color: var(--border); color: var(--text); }.input:focus, .textarea:focus { border-color: var(--cyan); box-shadow: 0 0 0 3px rgba(103,199,221,.2); }
-// .radio-dot { background: var(--panel-2); border-color: var(--border); color: var(--muted); }.radio-dot.checked { background: var(--green); color: #241d24; border-color: var(--green); }.imgdrop { border-color: var(--border); color: var(--muted); }.imgdrop:hover { border-color: var(--cyan); color: var(--cyan); }
-// .btn { background: var(--panel-2); border-color: var(--border); color: var(--text); }.btn-primary { background: var(--amber); border-color: var(--amber); color: #241d24; box-shadow: none; }.btn-primary:hover:not(:disabled) { background: #d99a3e; }.btn-ghost { background: transparent; }.btn-ok-active { color: var(--green); border-color: var(--green); background: #364c35; }.btn-bad-active { color: var(--rose); border-color: var(--rose); background: #603b3d; }
-// .toggle-btn { background: var(--panel-2); border-color: var(--border); color: var(--muted); }.toggle-btn.active { color: var(--text); border-color: var(--cyan); background: #315768; }
-// .setup-card { background: var(--panel); border-color: var(--border); box-shadow: 0 12px 28px rgba(12,8,13,.26); }.progress-track { background: #4b3d48; }.progress-fill { background: var(--cyan); }.q-card .q-text { color: var(--text); }
-// .test-opts .opt-row.selectable:hover:not(:disabled) { border-color: var(--cyan); background: #315768; color: var(--text); }.opt-row.opt-picked { background: #315768; border-color: var(--cyan); }.opt-row.opt-correct-answer { background: #49613c; border-color: var(--green); }.opt-row.opt-wrong-answer { background: #6d403e; border-color: var(--rose); }
-// .summary-stat { background: var(--panel); border-color: var(--border); }.summary-stat.ok b { color: var(--green); }.summary-stat.bad b { color: var(--rose); }.summary-stat.neutral b { color: var(--muted); }
-// .modal-overlay { background: rgba(20,14,21,.72); }.modal { background: var(--panel); border-color: var(--border); }.modal-head, .modal-foot { border-color: var(--border); }
-// .topic-filter { display: flex; align-items: center; gap: 10px; margin: -4px 0 16px; padding: 10px 12px; border: 1px solid var(--border); border-radius: 12px; background: #332b34; flex-wrap: wrap; }.topic-filter .field-label { margin: 0; white-space: nowrap; }.topic-select { max-width: 240px; padding: 8px 10px; cursor: pointer; }.topic-select option { background: #3a303a; color: #f4e7d2; }
-// .search-input { max-width: 260px; flex: 1 1 180px; }
-// .q-jump-row { padding: 10px 12px; border: 1px solid var(--border); border-radius: 12px; background: #332b34; }
-// @media (max-width: 640px) { .topic-filter { align-items: stretch; flex-direction: column; gap: 6px; }.topic-select { max-width: none; width: 100%; }.search-input { max-width: none; max-height: 30px; } }
+
+// .topic-select {
+//   max-width: 240px;
+//   padding: 8px 10px;
+//   cursor: pointer;
+// }
+
+// .topic-select option {
+//   background: #3a303a;
+//   color: #f4e7d2;
+// }
+
+// .search-input {
+//   max-width: 260px;
+//   flex: 1 1 180px;
+// }
 
 // .test-source-grid {
 //   display: grid;
 //   grid-template-columns: repeat(5, minmax(0, 1fr));
 //   gap: 7px;
 // }
+
 // .source-choice {
 //   text-align: left;
 //   border: 1px solid var(--border);
@@ -2178,10 +8888,13 @@
 //   padding: 9px;
 //   cursor: pointer;
 // }
-// .source-choice:hover, .source-choice.selected {
+
+// .source-choice:hover,
+// .source-choice.selected {
 //   border-color: var(--cyan);
-//   background: rgba(76,141,255,0.10);
+//   background: rgba(76, 141, 255, 0.1);
 // }
+
 // .source-title {
 //   display: block;
 //   font-family: 'Space Grotesk', sans-serif;
@@ -2189,12 +8902,14 @@
 //   font-size: 11px;
 //   margin-bottom: 3px;
 // }
+
 // .source-desc {
 //   display: block;
 //   color: var(--muted);
 //   font-size: 9px;
 //   line-height: 1.35;
 // }
+
 // .topic-select-head {
 //   display: flex;
 //   justify-content: space-between;
@@ -2202,9 +8917,21 @@
 //   gap: 8px;
 //   margin-bottom: 7px;
 // }
-// .topic-select-head .field-label { margin-bottom: 0; }
-// .topic-actions { display: flex; gap: 8px; }
-// .topic-actions .link-btn:disabled { opacity: 0.35; cursor: default; }
+
+// .topic-select-head .field-label {
+//   margin-bottom: 0;
+// }
+
+// .topic-actions {
+//   display: flex;
+//   gap: 8px;
+// }
+
+// .topic-actions .link-btn:disabled {
+//   opacity: 0.35;
+//   cursor: default;
+// }
+
 // .topic-check-grid {
 //   display: grid;
 //   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2213,6 +8940,7 @@
 //   overflow-y: auto;
 //   padding: 2px;
 // }
+
 // .topic-check {
 //   display: flex;
 //   align-items: center;
@@ -2225,28 +8953,33 @@
 //   cursor: pointer;
 //   color: var(--muted);
 // }
+
 // .topic-check.checked {
 //   color: var(--text);
 //   border-color: var(--cyan);
-//   background: rgba(76,141,255,0.10);
+//   background: rgba(76, 141, 255, 0.1);
 // }
+
 // .topic-check input {
 //   width: 14px;
 //   height: 14px;
 //   accent-color: var(--cyan);
 //   flex: 0 0 auto;
 // }
+
 // .topic-check span {
 //   overflow: hidden;
 //   text-overflow: ellipsis;
 //   white-space: nowrap;
 // }
+
 // .test-selection-summary {
 //   display: flex;
 //   flex-wrap: wrap;
 //   gap: 6px;
 //   margin: 8px 0 10px;
 // }
+
 // .test-selection-summary span {
 //   font-family: 'JetBrains Mono', monospace;
 //   font-size: 9px;
@@ -2256,17 +8989,151 @@
 //   border-radius: 6px;
 //   padding: 5px 7px;
 // }
-// .test-selection-summary b { color: var(--text); }
+
+// .test-selection-summary b {
+//   color: var(--text);
+// }
+
+// /* -------- NEW: edit controls inside test mode -------- */
+
+// .test-question-heading {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   gap: 10px;
+//   margin-bottom: 8px;
+// }
+
+// .test-edit-btn {
+//   display: inline-flex;
+//   align-items: center;
+//   gap: 4px;
+//   color: var(--cyan);
+// }
+
+// .test-inline-edit-btn {
+//   border: 1px solid var(--border);
+//   background: var(--panel-2);
+//   color: var(--cyan);
+//   border-radius: 7px;
+//   padding: 5px 8px;
+//   font-size: 10px;
+//   font-family: 'JetBrains Mono', monospace;
+//   cursor: pointer;
+//   display: inline-flex;
+//   align-items: center;
+//   gap: 5px;
+// }
+
+// .test-inline-edit-btn:hover {
+//   border-color: var(--cyan);
+//   color: var(--text);
+// }
+
+// .solution-edit-btn {
+//   border: 1px solid var(--border);
+//   background: var(--panel-2);
+//   color: var(--cyan);
+//   border-radius: 6px;
+//   padding: 4px 7px;
+//   cursor: pointer;
+//   font-family: 'JetBrains Mono', monospace;
+//   font-size: 9px;
+//   display: inline-flex;
+//   align-items: center;
+//   gap: 4px;
+// }
+
+// .solution-edit-btn:hover {
+//   border-color: var(--cyan);
+//   color: var(--text);
+// }
+
+// @media (max-width: 640px) {
+//   .header {
+//     padding: 20px 18px 14px;
+//   }
+
+//   .header-stats {
+//     padding: 12px 18px;
+//   }
+
+//   .content {
+//     padding: 22px 18px 28px;
+//   }
+
+//   .card {
+//     padding: 16px;
+//     border-radius: 15px;
+//   }
+
+//   .setup-card {
+//     padding: 21px;
+//   }
+
+//   .q-card .q-text {
+//     font-size: 19px;
+//   }
+
+//   .navbar {
+//     padding-left: 6px;
+//     padding-right: 6px;
+//   }
+
+//   .topic-filter {
+//     align-items: stretch;
+//     flex-direction: column;
+//     gap: 6px;
+//   }
+
+//   .topic-select {
+//     max-width: none;
+//     width: 100%;
+//   }
+
+//   .search-input {
+//     max-width: none;
+//     max-height: 30px;
+//   }
+
+//   .test-topbar {
+//     gap: 6px;
+//   }
+
+//   .test-inline-edit-btn {
+//     padding: 5px 7px;
+//   }
+// }
 
 // @media (max-width: 560px) {
-//   .test-source-grid { grid-template-columns: 1fr; }
-//   .topic-check-grid { grid-template-columns: 1fr; }
+//   .test-source-grid {
+//     grid-template-columns: 1fr;
+//   }
+
+//   .topic-check-grid {
+//     grid-template-columns: 1fr;
+//   }
 // }
 // `;
 
-// if (typeof document !== "undefined" && document.getElementById("root")) {
-//   ReactDOM.createRoot(document.getElementById("root")).render(React.createElement(App));
+// if (
+//   typeof document !==
+//     "undefined" &&
+//   document.getElementById(
+//     "root"
+//   )
+// ) {
+//   ReactDOM.createRoot(
+//     document.getElementById(
+//       "root"
+//     )
+//   ).render(
+//     React.createElement(
+//       App
+//     )
+//   );
 // }
+
 const { useState, useEffect, useRef } = React;
 
 function Icon({ symbol, size = 16 }) {
@@ -7462,10 +14329,10 @@ function App() {
 /* ---------------------------------- styles ---------------------------------- */
 
 const CSS = `
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&display=swap');
 
 :root {
-  background: #241d24;
+  background: #0c1222;
 }
 
 * {
@@ -7474,33 +14341,45 @@ const CSS = `
 
 body {
   margin: 0;
-  background: #241d24;
+  background: #0c1222;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .app {
-  --bg: #241d24;
-  --panel: #3a303a;
-  --panel-2: #4b3d48;
-  --border: #745b68;
-  --cyan: #67c7dd;
-  --green: #a8d86e;
-  --rose: #f08a6d;
-  --amber: #f0b653;
-  --text: #f4e7d2;
-  --muted: #c4b4b2;
+  --bg: #0c1222;
+  --panel: #141c2e;
+  --panel-2: #1a2438;
+  --panel-3: #222e45;
+  --border: #2a3a55;
+  --border-soft: rgba(42, 58, 85, 0.6);
+  --cyan: #38bdf8;
+  --cyan-dim: rgba(56, 189, 248, 0.12);
+  --cyan-glow: rgba(56, 189, 248, 0.25);
+  --green: #4ade80;
+  --green-dim: rgba(74, 222, 128, 0.12);
+  --rose: #fb7185;
+  --rose-dim: rgba(251, 113, 133, 0.12);
+  --amber: #fbbf24;
+  --amber-dim: rgba(251, 191, 36, 0.12);
+  --violet: #a78bfa;
+  --violet-dim: rgba(167, 139, 250, 0.12);
+  --text: #f1f5f9;
+  --muted: #94a3b8;
+  --muted-2: #64748b;
 
-  width: min(100%, 980px);
-  max-width: 980px;
+  width: min(100%, 960px);
+  max-width: 960px;
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   background: var(--bg);
   color: var(--text);
-  font-family: 'Inter', sans-serif;
-  font-size: 14px;
+  font-family: 'Source Sans 3', system-ui, sans-serif;
+  font-size: 14.5px;
   position: relative;
-  box-shadow: 0 0 80px rgba(12, 8, 13, 0.25);
+  line-height: 1.5;
 }
 
 .app.loading-screen {
@@ -7509,30 +14388,41 @@ body {
 }
 
 .loader {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'IBM Plex Mono', monospace;
   color: var(--cyan);
-  letter-spacing: 1px;
-  font-size: 12px;
+  letter-spacing: 0.08em;
+  font-size: 13px;
+  font-weight: 500;
+  animation: pulse 1.6s ease-in-out infinite;
 }
 
+@keyframes pulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+/* ---------- HEADER ---------- */
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 26px 32px 18px;
+  padding: 20px 28px 16px;
   position: sticky;
   top: 0;
-  z-index: 5;
-  background: rgba(36, 29, 36, 0.97);
-  backdrop-filter: blur(14px);
-  border-bottom: 1px solid var(--border);
+  z-index: 20;
+  background: rgba(12, 18, 34, 0.85);
+  backdrop-filter: blur(16px) saturate(1.4);
+  border-bottom: 1px solid var(--border-soft);
 }
 
 .header-title {
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 700;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
   font-size: 22px;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.03em;
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
 }
 
 .brand {
@@ -7541,205 +14431,144 @@ body {
 
 .brand-accent {
   color: var(--cyan);
+  font-weight: 700;
 }
 
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
 
 .export-btn {
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
 }
 
 .bulk-import-btn {
-  width: 34px;
-  height: 34px;
-  border-color: rgba(103, 199, 221, 0.45);
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border-color: rgba(56, 189, 248, 0.35);
   color: var(--cyan);
-  background: rgba(103, 199, 221, 0.08);
+  background: var(--cyan-dim);
 }
 
 .bulk-import-btn:hover {
   border-color: var(--cyan);
-  background: rgba(103, 199, 221, 0.14);
-}
-
-.bulk-import-modal {
-  max-width: 720px;
-}
-
-.bulk-import-modal .modal-head > div:first-child {
-  min-width: 0;
-}
-
-.bulk-import-subtitle {
-  margin: 4px 0 0;
-  color: var(--muted);
-  font-size: 10px;
-  line-height: 1.4;
-}
-
-.bulk-format-note {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  padding: 10px 12px;
-  margin-bottom: 12px;
-  border: 1px solid rgba(103, 199, 221, 0.25);
-  border-radius: 10px;
-  background: rgba(103, 199, 221, 0.06);
-  color: var(--muted);
-  font-size: 10px;
-  line-height: 1.5;
-}
-
-.bulk-format-note b {
-  color: var(--cyan);
-}
-
-.bulk-array-textarea {
-  min-height: 330px;
-  resize: vertical;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 11px;
-  line-height: 1.55;
-  tab-size: 2;
-}
-
-.bulk-answer-note {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 6px;
-  margin-top: 8px;
-  color: var(--muted);
-  font-size: 10px;
-}
-
-.bulk-answer-note code {
-  padding: 3px 6px;
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  background: var(--panel-2);
-  color: var(--text);
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 9px;
-}
-
-.bulk-import-error {
-  padding: 8px 10px;
-  border: 1px solid rgba(240, 138, 109, 0.35);
-  border-radius: 8px;
-  background: rgba(240, 138, 109, 0.07);
+  background: rgba(56, 189, 248, 0.2);
+  color: #e0f2fe;
 }
 
 .add-btn {
   width: 42px;
   height: 42px;
-  border-radius: 50%;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--amber);
-  color: #241d24;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #0c1222;
   border: none;
   cursor: pointer;
-  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 4px 14px rgba(56, 189, 248, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .add-btn:hover {
-  transform: rotate(5deg);
-  background: #d99a3e;
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 6px 20px rgba(56, 189, 248, 0.45);
 }
 
+/* ---------- STATS BAR ---------- */
 .header-stats {
   display: flex;
-  gap: 9px;
-  padding: 15px 32px;
+  gap: 10px;
+  padding: 12px 28px;
   overflow-x: auto;
-  border-bottom: 1px solid var(--border);
-  background: rgba(58, 48, 58, 0.96);
+  border-bottom: 1px solid var(--border-soft);
+  background: rgba(20, 28, 46, 0.6);
+  scrollbar-width: none;
+}
+
+.header-stats::-webkit-scrollbar {
+  display: none;
 }
 
 .stat {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 11px;
   color: var(--muted);
-  background: #51434e;
+  background: var(--panel-2);
   border: 1px solid var(--border);
   border-radius: 999px;
-  padding: 7px 11px;
+  padding: 6px 12px;
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
   white-space: nowrap;
+  transition: border-color 0.15s;
+}
+
+.stat:hover {
+  border-color: var(--cyan);
 }
 
 .stat b {
   color: var(--text);
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-size: 13px;
+  font-weight: 700;
 }
 
-.stat.ok-c b {
-  color: var(--green);
-}
+.stat.ok-c b { color: var(--green); }
+.stat.bad-c b { color: var(--rose); }
+.stat.amber-c b { color: var(--amber); }
+.stat.cyan-c b { color: var(--cyan); }
 
-.stat.bad-c b {
-  color: var(--rose);
-}
-
-.stat.amber-c b {
-  color: var(--amber);
-}
-
-.stat.cyan-c b {
-  color: var(--cyan);
-}
-
+/* ---------- CONTENT ---------- */
 .content {
   flex: 1 1 auto;
   overflow-y: auto;
-  padding: 28px 32px 36px;
+  padding: 24px 28px 40px;
 }
 
 .section-head {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .section-head h2 {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 19px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 20px;
   font-weight: 700;
   margin: 0;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
   color: var(--text);
 }
 
 .count-pill {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 10px;
-  background: #354e5b;
-  border: 0;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  background: var(--cyan-dim);
+  border: 1px solid rgba(56, 189, 248, 0.25);
   color: var(--cyan);
   border-radius: 999px;
-  padding: 5px 10px;
+  padding: 4px 12px;
 }
 
 .empty-state {
-  border: 1px dashed #806878;
+  border: 1.5px dashed var(--border);
   border-radius: 16px;
-  padding: 40px 18px;
+  padding: 48px 20px;
   text-align: center;
   color: var(--muted);
-  font-size: 12px;
-  background: #332b34;
+  font-size: 13px;
+  background: rgba(26, 36, 56, 0.4);
 }
 
 .card-list {
@@ -7748,162 +14577,175 @@ body {
   gap: 14px;
 }
 
+/* ---------- CARDS ---------- */
 .card {
   background: var(--panel);
   border: 1px solid var(--border);
-  border-radius: 18px;
-  padding: 20px;
+  border-radius: 16px;
+  padding: 18px 20px;
   position: relative;
-  box-shadow: 0 8px 22px rgba(12, 8, 13, 0.28);
-  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s;
 }
 
 .card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 28px rgba(12, 8, 13, 0.42);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  border-color: rgba(56, 189, 248, 0.25);
 }
 
 .card-top {
   display: flex;
   gap: 6px;
   flex-wrap: wrap;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .badge {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 10px;
-  font-weight: 700;
-  padding: 5px 9px;
+  font-weight: 600;
+  padding: 4px 10px;
   border-radius: 999px;
   border: 1px solid transparent;
   color: var(--muted);
   text-transform: uppercase;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.04em;
 }
 
 .badge.cat {
-  color: #9be1ed;
-  background: #315768;
+  color: #7dd3fc;
+  background: rgba(56, 189, 248, 0.12);
+  border-color: rgba(56, 189, 248, 0.2);
 }
 
 .badge.exam {
-  color: #e5e7ff;
-  background: linear-gradient(135deg, #3f3b63, #4a4770);
-  border-color: rgba(167, 139, 250, 0.30);
-  box-shadow: inset 0 0 0 1px rgba(229, 231, 255, 0.04);
+  color: #c4b5fd;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(56, 189, 248, 0.08));
+  border-color: rgba(167, 139, 250, 0.3);
 }
 
 .badge.ok {
-  color: #c8ed91;
-  background: #49613c;
+  color: #86efac;
+  background: var(--green-dim);
+  border-color: rgba(74, 222, 128, 0.25);
 }
 
 .badge.bad {
-  color: #ffb09a;
-  background: #6d403e;
+  color: #fda4af;
+  background: var(--rose-dim);
+  border-color: rgba(251, 113, 133, 0.25);
 }
 
 .badge.hide {
-  color: #ffd77d;
-  background: #66502f;
+  color: #fcd34d;
+  background: var(--amber-dim);
+  border-color: rgba(251, 191, 36, 0.25);
 }
 
 .card-q p {
   margin: 0 0 6px 0;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 500;
+  font-size: 15.5px;
+  line-height: 1.55;
+  color: var(--text);
 }
 
 .card-img {
   max-width: 100%;
-  border-radius: 8px;
+  border-radius: 10px;
   border: 1px solid var(--border);
   display: block;
-  margin: 6px 0;
+  margin: 8px 0;
 }
 
 .question-toggle {
   cursor: pointer;
-  border-radius: 7px;
-  padding: 4px;
-  margin: -4px;
+  border-radius: 10px;
+  padding: 6px;
+  margin: -6px;
+  transition: background 0.15s;
 }
 
 .question-toggle:hover,
 .question-toggle:focus {
-  background: #463846;
+  background: rgba(56, 189, 248, 0.06);
   outline: none;
 }
 
 .question-hint {
   display: block;
-  color: var(--muted);
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 9px;
-  margin-top: 5px;
+  color: var(--muted-2);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  margin-top: 6px;
 }
 
 .opt-list {
   display: flex;
   flex-direction: column;
-  gap: 7px;
-  margin: 12px 0;
+  gap: 6px;
+  margin: 10px 0;
 }
 
 .opt-row {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   padding: 10px 12px;
-  border-radius: 11px;
+  border-radius: 10px;
   background: var(--panel-2);
   border: 1px solid var(--border);
-  font-size: 13px;
+  font-size: 13.5px;
   color: var(--text);
+  transition: border-color 0.15s, background 0.15s;
 }
 
 .opt-row.opt-correct {
   border-color: var(--green);
-  background: #49613c;
+  background: rgba(74, 222, 128, 0.1);
 }
 
 .opt-letter {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 10px;
-  width: 24px;
-  height: 24px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  width: 26px;
+  height: 26px;
   flex: 0 0 auto;
   border-radius: 8px;
-  background: #5c4e59;
+  background: var(--panel-3);
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--cyan);
-  border: 0;
+  border: 1px solid var(--border);
 }
 
 .link-btn {
   background: none;
   border: none;
   color: var(--cyan);
-  font-size: 11px;
+  font-size: 12px;
   cursor: pointer;
-  padding: 2px 0;
-  font-family: 'JetBrains Mono', monospace;
-  font-weight: 700;
+  padding: 4px 0;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 500;
+  transition: color 0.15s;
+}
+
+.link-btn:hover {
+  color: #7dd3fc;
 }
 
 .solution {
-  margin-top: 6px;
-  padding: 12px;
+  margin-top: 8px;
+  padding: 12px 14px;
   border-radius: 12px;
-  background: #302c38;
-  border: 1px solid #665a73;
+  background: var(--panel-2);
+  border: 1px solid var(--border);
   color: var(--text);
-  font-size: 13px;
-  line-height: 1.4;
+  font-size: 13.5px;
+  line-height: 1.5;
 }
 
 .solution p {
@@ -7916,14 +14758,15 @@ body {
 
 .card-actions {
   display: flex;
-  gap: 7px;
-  margin-top: 15px;
+  gap: 6px;
+  margin-top: 14px;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .icon-btn {
-  width: 28px;
-  height: 28px;
+  width: 32px;
+  height: 32px;
   border-radius: 9px;
   border: 1px solid var(--border);
   background: var(--panel-2);
@@ -7932,10 +14775,11 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
 }
 
 .visibility-btn {
-  min-height: 28px;
+  min-height: 32px;
   border-radius: 9px;
   border: 1px solid var(--border);
   background: var(--panel-2);
@@ -7944,42 +14788,48 @@ body {
   align-items: center;
   justify-content: center;
   gap: 5px;
-  padding: 0 8px;
+  padding: 0 10px;
   cursor: pointer;
-  font-size: 10px;
-  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-family: 'IBM Plex Mono', monospace;
+  transition: color 0.15s, border-color 0.15s;
 }
 
 .visibility-btn:hover,
 .icon-btn:hover {
   color: var(--cyan);
   border-color: var(--cyan);
+  background: var(--cyan-dim);
 }
 
 .icon-btn.active-ok {
   color: var(--green);
   border-color: var(--green);
+  background: var(--green-dim);
 }
 
 .icon-btn.active-bad {
   color: var(--rose);
   border-color: var(--rose);
+  background: var(--rose-dim);
 }
 
 .icon-btn.danger:hover {
   color: var(--rose);
   border-color: var(--rose);
+  background: var(--rose-dim);
 }
 
+/* ---------- NAVBAR ---------- */
 .navbar {
   display: flex;
   position: sticky;
   bottom: 0;
-  z-index: 5;
-  background: rgba(58, 48, 58, 0.98);
-  border-top: 1px solid var(--border);
-  backdrop-filter: blur(14px);
-  padding: 5px 18px 8px;
+  z-index: 20;
+  background: rgba(20, 28, 46, 0.92);
+  border-top: 1px solid var(--border-soft);
+  backdrop-filter: blur(16px) saturate(1.3);
+  padding: 6px 12px 10px;
 }
 
 .nav-btn {
@@ -7988,55 +14838,67 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 3px;
-  padding: 10px 2px 7px;
+  padding: 10px 2px 6px;
   background: none;
   border: none;
-  color: var(--muted);
+  color: var(--muted-2);
   cursor: pointer;
   font-size: 10px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-weight: 600;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.02em;
   position: relative;
+  transition: color 0.15s;
+}
+
+.nav-btn:hover {
+  color: var(--muted);
 }
 
 .nav-btn.active {
-  color: var(--amber);
+  color: var(--cyan);
 }
 
 .nav-btn.active::before {
   content: "";
   position: absolute;
-  top: -5px;
-  left: 25%;
-  right: 25%;
+  top: 0;
+  left: 28%;
+  right: 28%;
   height: 3px;
-  background: var(--amber);
-  border-radius: 2px;
+  background: linear-gradient(90deg, transparent, var(--cyan), transparent);
+  border-radius: 0 0 3px 3px;
 }
 
+/* ---------- TOAST ---------- */
 .toast {
   position: fixed;
-  bottom: 78px;
+  bottom: 80px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 50;
-  background: #151116;
+  background: var(--panel-3);
   border: 1px solid var(--border);
   color: var(--text);
-  font-size: 11px;
-  padding: 10px 16px;
+  font-size: 12px;
+  padding: 10px 18px;
   border-radius: 999px;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'IBM Plex Mono', monospace;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  animation: toastIn 0.25s ease;
 }
 
-/* Exam source has its own visual treatment so it does not look like a normal question field. */
+@keyframes toastIn {
+  from { opacity: 0; transform: translateX(-50%) translateY(8px); }
+  to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+/* ---------- EXAM SOURCE ---------- */
 .exam-source-field {
-  padding: 12px;
-  border: 1px solid rgba(167, 139, 250, 0.22);
-  border-radius: 12px;
-  background:
-    linear-gradient(135deg, rgba(124, 107, 196, 0.10), rgba(103, 199, 221, 0.025));
+  padding: 14px;
+  border: 1px solid rgba(167, 139, 250, 0.25);
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.08), rgba(56, 189, 248, 0.03));
 }
 
 .exam-source-head {
@@ -8044,24 +14906,25 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  margin-bottom: 7px;
+  margin-bottom: 8px;
 }
 
 .exam-source-label {
   margin-bottom: 0 !important;
-  color: #d8d7ff !important;
+  color: #c4b5fd !important;
 }
 
 .exam-optional-pill {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #aaa8c9;
-  border: 1px solid rgba(167, 139, 250, 0.20);
+  color: #a5b4fc;
+  border: 1px solid rgba(167, 139, 250, 0.25);
   border-radius: 999px;
-  padding: 3px 7px;
+  padding: 3px 8px;
+  background: rgba(139, 92, 246, 0.1);
 }
 
 .exam-name-wrap {
@@ -8074,34 +14937,35 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 54px;
-  padding: 0 10px;
-  border: 1px solid rgba(167, 139, 250, 0.30);
+  min-width: 56px;
+  padding: 0 12px;
+  border: 1px solid rgba(167, 139, 250, 0.3);
   border-right: 0;
   border-radius: 10px 0 0 10px;
-  background: #3f3b63;
-  color: #e5e7ff;
-  font-family: 'JetBrains Mono', monospace;
+  background: rgba(139, 92, 246, 0.2);
+  color: #e0e7ff;
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 0.7px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
 }
 
 .exam-name-input {
   border-radius: 0 10px 10px 0 !important;
-  border-color: rgba(167, 139, 250, 0.30) !important;
+  border-color: rgba(167, 139, 250, 0.3) !important;
 }
 
 .exam-name-input:focus {
-  border-color: #9b8cff !important;
-  box-shadow: 0 0 0 3px rgba(155, 140, 255, 0.13) !important;
+  border-color: #a78bfa !important;
+  box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.15) !important;
 }
 
 .exam-source-hint {
-  margin: 7px 0 0;
-  color: #aaa8bd;
-  font-size: 10px;
+  margin: 8px 0 0;
+  color: #a5b4fc;
+  font-size: 11px;
   line-height: 1.4;
+  opacity: 0.8;
 }
 
 .test-question-badges {
@@ -8111,39 +14975,41 @@ body {
   flex-wrap: wrap;
 }
 
+/* ---------- FORM FIELDS ---------- */
 .field {
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 .field-label {
   display: block;
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0;
-  color: #dfc7b7;
-  margin-bottom: 6px;
-  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  margin-bottom: 7px;
+  font-family: 'Outfit', sans-serif;
 }
 
 .input,
 .textarea {
   width: 100%;
-  background: #51434e;
+  background: var(--panel-2);
   border: 1px solid var(--border);
   border-radius: 10px;
   color: var(--text);
-  padding: 11px 12px;
-  font-size: 13px;
-  font-family: 'Inter', sans-serif;
+  padding: 11px 13px;
+  font-size: 14px;
+  font-family: 'Source Sans 3', sans-serif;
   box-sizing: border-box;
+  transition: border-color 0.15s, box-shadow 0.15s;
 }
 
 .input:focus,
 .textarea:focus {
   outline: none;
   border-color: var(--cyan);
-  box-shadow: 0 0 0 3px rgba(103, 199, 221, 0.2);
+  box-shadow: 0 0 0 3px var(--cyan-glow);
 }
 
 .textarea {
@@ -8151,29 +15017,30 @@ body {
 }
 
 .hint {
-  font-size: 10px;
-  color: var(--muted);
-  margin: 4px 0 0 0;
+  font-size: 11px;
+  color: var(--muted-2);
+  margin: 5px 0 0 0;
 }
 
 .error-text {
   color: var(--rose);
-  font-size: 11px;
-  margin: 4px 0;
+  font-size: 12px;
+  margin: 6px 0;
 }
 
 .warn-text {
   color: var(--amber);
-  font-size: 11px;
-  margin-top: 8px;
+  font-size: 12px;
+  margin-top: 10px;
   text-align: center;
 }
 
+/* ---------- OPTION TOOLS ---------- */
 .quick-option-tools {
   display: flex;
   align-items: center;
-  gap: 5px;
-  margin-bottom: 8px;
+  gap: 6px;
+  margin-bottom: 10px;
 }
 
 .clear-option-btn {
@@ -8182,64 +15049,65 @@ body {
 
 .clear-option-btn:hover {
   border-color: var(--rose);
-  background: rgba(255, 96, 120, 0.08);
+  background: var(--rose-dim);
 }
 
 .range-option-row {
   display: flex;
   align-items: center;
   gap: 6px;
-  margin: -2px 0 8px 0;
+  margin: 0 0 10px 0;
   flex-wrap: wrap;
 }
 
 .range-option-input {
-  width: 118px;
-  height: 24px;
-  padding: 0 7px;
-  border-radius: 6px;
+  width: 110px;
+  height: 28px;
+  padding: 0 8px;
+  border-radius: 8px;
   border: 1px solid var(--border);
   background: var(--panel-2);
   color: var(--text);
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 9px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
   box-sizing: border-box;
 }
 
 .range-option-input:focus {
   outline: none;
   border-color: var(--cyan);
-  box-shadow: 0 0 0 2px rgba(103, 199, 221, 0.12);
+  box-shadow: 0 0 0 2px var(--cyan-glow);
 }
 
 .range-option-input-small {
-  width: 82px;
+  width: 80px;
 }
 
 .range-option-separator {
-  color: var(--muted);
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 9px;
-  font-weight: 700;
+  color: var(--muted-2);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
 }
 
 .range-option-btn {
-  height: 24px;
-  padding: 0 9px;
-  border-radius: 6px;
+  height: 28px;
+  padding: 0 10px;
+  border-radius: 8px;
   border: 1px solid var(--border);
   background: var(--panel-2);
   color: var(--cyan);
   cursor: pointer;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 9px;
-  font-weight: 700;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  transition: border-color 0.15s, background 0.15s;
 }
 
 .range-option-btn:hover {
   border-color: var(--cyan);
   color: var(--text);
-  background: rgba(76, 141, 255, 0.1);
+  background: var(--cyan-dim);
 }
 
 .range-option-btn:active {
@@ -8247,28 +15115,28 @@ body {
 }
 
 .range-option-hint {
-  color: var(--muted);
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 8px;
+  color: var(--muted-2);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
 }
 
 .option-suffix-row {
   display: flex;
   align-items: center;
   gap: 6px;
-  margin: -2px 0 8px 0;
+  margin: 0 0 10px 0;
 }
 
 .option-suffix-input {
-  width: 38px;
-  height: 22px;
+  width: 42px;
+  height: 26px;
   padding: 0 4px;
-  border-radius: 5px;
+  border-radius: 6px;
   border: 1px solid var(--border);
   background: var(--panel-2);
   color: var(--text);
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 10px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
   text-align: center;
   box-sizing: border-box;
 }
@@ -8279,16 +15147,16 @@ body {
 }
 
 .option-suffix-hint {
-  color: var(--muted);
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 8px;
+  color: var(--muted-2);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
 }
 
 .quick-option-btn {
-  width: 22px;
-  height: 22px;
+  width: 28px;
+  height: 28px;
   padding: 0;
-  border-radius: 50%;
+  border-radius: 8px;
   border: 1px solid var(--border);
   background: var(--panel-2);
   color: var(--cyan);
@@ -8296,16 +15164,17 @@ body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 10px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
   font-weight: 600;
   line-height: 1;
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
 }
 
 .quick-option-btn:hover {
   border-color: var(--cyan);
   color: var(--text);
-  background: rgba(76, 141, 255, 0.1);
+  background: var(--cyan-dim);
 }
 
 .quick-option-btn:active {
@@ -8316,45 +15185,49 @@ body {
   display: flex;
   gap: 8px;
   align-items: center;
-  margin-bottom: 6px;
+  margin-bottom: 7px;
 }
 
 .radio-dot {
-  width: 32px;
-  height: 32px;
-  border-radius: 9px;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
   flex: 0 0 auto;
   border: 1px solid var(--border);
   background: var(--panel-2);
   color: var(--muted);
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 11px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
   cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
 }
 
 .radio-dot.checked {
   background: var(--green);
-  color: #241d24;
+  color: #0c1222;
   border-color: var(--green);
 }
 
 .imgdrop {
-  border: 1px dashed var(--border);
+  border: 1.5px dashed var(--border);
   border-radius: 12px;
-  padding: 20px 12px;
+  padding: 22px 14px;
   text-align: center;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 12px;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
 }
 
 .imgdrop:hover {
   border-color: var(--cyan);
   color: var(--cyan);
+  background: var(--cyan-dim);
 }
 
 .imgpreview {
@@ -8363,7 +15236,7 @@ body {
 
 .imgpreview img {
   max-width: 100%;
-  border-radius: 8px;
+  border-radius: 10px;
   border: 1px solid var(--border);
   display: block;
 }
@@ -8371,15 +15244,16 @@ body {
 .imgpreview-actions {
   display: flex;
   gap: 6px;
-  margin-top: 6px;
+  margin-top: 8px;
 }
 
+/* ---------- BUTTONS ---------- */
 .btn {
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
   font-size: 13px;
   border-radius: 10px;
-  padding: 10px 15px;
+  padding: 10px 16px;
   border: 1px solid var(--border);
   background: var(--panel-2);
   color: var(--text);
@@ -8388,6 +15262,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 6px;
+  transition: background 0.15s, border-color 0.15s, transform 0.15s;
 }
 
 .btn:disabled {
@@ -8396,14 +15271,15 @@ body {
 }
 
 .btn-primary {
-  background: var(--amber);
-  color: #241d24;
-  border-color: var(--amber);
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #0c1222;
+  border-color: transparent;
+  box-shadow: 0 2px 10px rgba(56, 189, 248, 0.3);
 }
 
 .btn-primary:hover:not(:disabled) {
   transform: translateY(-1px);
-  background: #d99a3e;
+  box-shadow: 0 4px 16px rgba(56, 189, 248, 0.4);
 }
 
 .btn-ghost {
@@ -8415,22 +15291,23 @@ body {
 }
 
 .btn-xs {
-  font-size: 11px;
-  padding: 6px 9px;
+  font-size: 12px;
+  padding: 6px 10px;
 }
 
 .btn-ok-active {
   color: var(--green);
   border-color: var(--green);
-  background: #364c35;
+  background: var(--green-dim);
 }
 
 .btn-bad-active {
   color: var(--rose);
   border-color: var(--rose);
-  background: #603b3d;
+  background: var(--rose-dim);
 }
 
+/* ---------- TEST SETUP ---------- */
 .test-setup,
 .test-running,
 .summary {
@@ -8442,53 +15319,56 @@ body {
   background: var(--panel);
   border: 1px solid var(--border);
   border-radius: 20px;
-  padding: 27px;
-  margin-top: 10px;
-  width: min(100%, 620px);
-  box-shadow: 0 12px 28px rgba(12, 8, 13, 0.26);
+  padding: 28px;
+  margin-top: 8px;
+  width: min(100%, 640px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
 }
 
 .setup-card h2 {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 26px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 24px;
   margin: 0 0 6px 0;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.03em;
+  font-weight: 700;
 }
 
 .setup-card p.muted {
-  font-size: 11px;
-  margin: 0 0 14px 0;
+  font-size: 13px;
+  margin: 0 0 18px 0;
+  color: var(--muted);
 }
 
 .test-topbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 8px;
-  margin-bottom: 6px;
+  gap: 10px;
+  margin-bottom: 8px;
   flex-wrap: wrap;
 }
 
 .progress-label {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 10px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
   color: var(--muted);
+  font-weight: 500;
 }
 
 .tiny-timer {
   display: inline-flex;
   align-items: center;
-  gap: 3px;
-  padding: 3px 5px;
+  gap: 4px;
+  padding: 4px 8px;
   border: 1px solid var(--border);
-  border-radius: 5px;
+  border-radius: 8px;
   background: var(--panel-2);
 }
 
 .tiny-timer-time {
-  min-width: 42px;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 11px;
+  min-width: 44px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
   font-weight: 600;
   line-height: 1;
   color: var(--text);
@@ -8496,17 +15376,18 @@ body {
 }
 
 .tiny-timer-btn {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   padding: 0;
   border: 0;
-  border-radius: 3px;
+  border-radius: 5px;
   background: transparent;
   color: var(--muted);
-  font-size: 10px;
-  line-height: 20px;
+  font-size: 11px;
+  line-height: 22px;
   text-align: center;
   cursor: pointer;
+  transition: background 0.15s, color 0.15s;
 }
 
 .tiny-timer-btn:hover:not(:disabled) {
@@ -8524,25 +15405,26 @@ body {
 }
 
 .progress-track {
-  height: 7px;
-  border-radius: 3px;
-  background: #4b3d48;
+  height: 6px;
+  border-radius: 4px;
+  background: var(--panel-2);
   overflow: hidden;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .progress-fill {
   height: 100%;
-  background: var(--cyan);
-  border-radius: 8px;
+  background: linear-gradient(90deg, #0ea5e9, #38bdf8);
+  border-radius: 4px;
+  transition: width 0.3s ease;
 }
 
 .q-jump-row {
-  margin-bottom: 12px;
-  padding: 10px 12px;
+  margin-bottom: 14px;
+  padding: 12px 14px;
   border: 1px solid var(--border);
   border-radius: 12px;
-  background: #332b34;
+  background: var(--panel-2);
 }
 
 .q-jump-head {
@@ -8550,17 +15432,17 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .q-jump-label {
   display: block;
-  font-size: 10px;
+  font-size: 11px;
   color: var(--muted);
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'IBM Plex Mono', monospace;
   margin: 0;
   text-transform: uppercase;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.04em;
 }
 
 .q-jump-toggle {
@@ -8568,14 +15450,15 @@ body {
   align-items: center;
   gap: 5px;
   margin-left: auto;
-  padding: 4px 7px;
+  padding: 5px 8px;
   border: 1px solid var(--border);
   border-radius: 7px;
-  background: var(--panel-2);
+  background: var(--panel-3);
   color: var(--muted);
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 9px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
   cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
 }
 
 .q-jump-toggle:hover {
@@ -8584,7 +15467,7 @@ body {
 }
 
 .q-jump-row.collapsed {
-  padding: 5px 8px;
+  padding: 6px 10px;
 }
 
 .q-jump-row.collapsed .q-jump-head {
@@ -8598,16 +15481,18 @@ body {
 }
 
 .q-jump-btn {
-  width: 26px;
-  padding: 1px;
-  height: 26px;
-  border-radius: 6px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 8px;
   border: 1px solid var(--border);
-  background: var(--panel-2);
+  background: var(--panel-3);
   color: var(--muted);
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 11px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  font-weight: 500;
   cursor: pointer;
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
 }
 
 .q-jump-btn:hover {
@@ -8618,25 +15503,30 @@ body {
 .q-jump-btn.current {
   border-color: var(--cyan);
   background: var(--cyan);
-  color: #241d24;
+  color: #0c1222;
+  font-weight: 700;
 }
 
 .q-jump-btn.ans-correct {
   border-color: var(--green);
   color: var(--green);
+  background: var(--green-dim);
 }
 
 .q-jump-btn.ans-wrong {
   border-color: var(--rose);
   color: var(--rose);
+  background: var(--rose-dim);
 }
 
 .q-card .q-text {
-  font-size: 22px;
-  font-weight: 500;
-  line-height: 1.35;
-  margin: 4px 0 8px 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 6px 0 12px 0;
   color: var(--text);
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: -0.01em;
 }
 
 .test-opts .opt-row.selectable {
@@ -8644,32 +15534,32 @@ body {
   text-align: left;
   cursor: pointer;
   color: var(--text);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Source Sans 3', sans-serif;
 }
 
 .test-opts .opt-row.selectable:hover:not(:disabled) {
   border-color: var(--cyan);
-  background: #315768;
+  background: rgba(56, 189, 248, 0.1);
   color: var(--text);
 }
 
 .opt-row.opt-picked {
   border-color: var(--cyan);
-  background: #315768;
+  background: rgba(56, 189, 248, 0.12);
 }
 
 .opt-row.opt-correct-answer {
   border-color: var(--green);
-  background: #49613c;
+  background: rgba(74, 222, 128, 0.12);
 }
 
 .opt-row.opt-wrong-answer {
   border-color: var(--rose);
-  background: #6d403e;
+  background: rgba(251, 113, 133, 0.12);
 }
 
 .solution.reveal {
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 .solution-head {
@@ -8677,38 +15567,41 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .mark-row {
   display: flex;
   gap: 6px;
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
 .test-nav {
   display: flex;
   justify-content: space-between;
-  gap: 8px;
-  margin-top: 12px;
+  gap: 10px;
+  margin-top: 16px;
 }
 
+/* ---------- SUMMARY ---------- */
 .summary {
   align-items: center;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 36px;
 }
 
 .summary h2 {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 30px;
-  margin-bottom: 16px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
 }
 
 .summary-grid {
   display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
+  gap: 12px;
+  margin-bottom: 24px;
   width: 100%;
 }
 
@@ -8717,43 +15610,42 @@ body {
   background: var(--panel);
   border: 1px solid var(--border);
   border-radius: 16px;
-  padding: 18px 8px;
+  padding: 20px 10px;
   display: flex;
   flex-direction: column;
   gap: 4px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 .summary-stat b {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-size: 28px;
+  font-weight: 700;
 }
 
 .summary-stat span {
-  font-size: 10px;
+  font-size: 11px;
   color: var(--muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
-.summary-stat.ok b {
-  color: var(--green);
-}
-
-.summary-stat.bad b {
-  color: var(--rose);
-}
-
-.summary-stat.neutral b {
-  color: var(--muted);
-}
+.summary-stat.ok b { color: var(--green); }
+.summary-stat.bad b { color: var(--rose); }
+.summary-stat.neutral b { color: var(--muted); }
 
 .summary-actions {
   width: 100%;
+  max-width: 320px;
 }
 
+/* ---------- MODALS ---------- */
 .modal-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(20, 14, 21, 0.72);
-  backdrop-filter: blur(7px);
+  background: rgba(6, 10, 20, 0.75);
+  backdrop-filter: blur(8px);
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -8763,13 +15655,13 @@ body {
 .modal {
   background: var(--panel);
   border: 1px solid var(--border);
-  border-radius: 22px 22px 0 0;
+  border-radius: 20px 20px 0 0;
   width: 100%;
   max-width: 560px;
-  max-height: 88vh;
+  max-height: 90vh;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 -18px 60px rgba(23, 39, 45, 0.2);
+  box-shadow: 0 -12px 48px rgba(0, 0, 0, 0.4);
 }
 
 .modal-head {
@@ -8781,20 +15673,22 @@ body {
 }
 
 .modal-head h2 {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 19px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
   margin: 0;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 .modal-body {
-  padding: 22px;
+  padding: 20px 22px;
   overflow-y: auto;
 }
 
 .modal-foot {
   display: flex;
-  gap: 8px;
-  padding: 15px 22px;
+  gap: 10px;
+  padding: 14px 22px;
   border-top: 1px solid var(--border);
 }
 
@@ -8818,37 +15712,40 @@ body {
 .crop-wrap img {
   display: block;
   max-width: 100%;
-  max-height: 60vh;
+  max-height: 55vh;
   user-select: none;
+  border-radius: 8px;
 }
 
 .crop-box {
   position: absolute;
   border: 2px solid var(--cyan);
-  box-shadow: 0 0 0 2000px rgba(4, 6, 12, 0.55);
+  box-shadow: 0 0 0 2000px rgba(6, 10, 20, 0.6);
   cursor: move;
 }
 
 .crop-handle {
   position: absolute;
-  right: -6px;
-  bottom: -6px;
-  width: 14px;
-  height: 14px;
-  border-radius: 3px;
+  right: -7px;
+  bottom: -7px;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
   background: var(--cyan);
   cursor: se-resize;
+  box-shadow: 0 0 0 2px var(--panel);
 }
 
+/* ---------- TOPIC FILTER ---------- */
 .topic-filter {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin: -4px 0 16px;
-  padding: 10px 12px;
+  gap: 12px;
+  margin: -2px 0 18px;
+  padding: 12px 14px;
   border: 1px solid var(--border);
   border-radius: 12px;
-  background: #332b34;
+  background: var(--panel-2);
   flex-wrap: wrap;
 }
 
@@ -8859,13 +15756,13 @@ body {
 
 .topic-select {
   max-width: 240px;
-  padding: 8px 10px;
+  padding: 8px 12px;
   cursor: pointer;
 }
 
 .topic-select option {
-  background: #3a303a;
-  color: #f4e7d2;
+  background: var(--panel);
+  color: var(--text);
 }
 
 .search-input {
@@ -8873,10 +15770,11 @@ body {
   flex: 1 1 180px;
 }
 
+/* ---------- TEST SOURCE GRID ---------- */
 .test-source-grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 7px;
+  gap: 8px;
 }
 
 .source-choice {
@@ -8884,29 +15782,31 @@ body {
   border: 1px solid var(--border);
   background: var(--panel-2);
   color: var(--text);
-  border-radius: 8px;
-  padding: 9px;
+  border-radius: 10px;
+  padding: 10px 11px;
   cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
 }
 
 .source-choice:hover,
 .source-choice.selected {
   border-color: var(--cyan);
-  background: rgba(76, 141, 255, 0.1);
+  background: var(--cyan-dim);
 }
 
 .source-title {
   display: block;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Outfit', sans-serif;
   font-weight: 700;
-  font-size: 11px;
+  font-size: 12px;
   margin-bottom: 3px;
+  letter-spacing: -0.01em;
 }
 
 .source-desc {
   display: block;
   color: var(--muted);
-  font-size: 9px;
+  font-size: 10px;
   line-height: 1.35;
 }
 
@@ -8915,7 +15815,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 8px;
-  margin-bottom: 7px;
+  margin-bottom: 8px;
 }
 
 .topic-select-head .field-label {
@@ -8936,7 +15836,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 6px;
-  max-height: 230px;
+  max-height: 240px;
   overflow-y: auto;
   padding: 2px;
 }
@@ -8944,25 +15844,26 @@ body {
 .topic-check {
   display: flex;
   align-items: center;
-  gap: 7px;
+  gap: 8px;
   min-width: 0;
   border: 1px solid var(--border);
   background: var(--panel-2);
-  border-radius: 7px;
-  padding: 7px 8px;
+  border-radius: 8px;
+  padding: 8px 10px;
   cursor: pointer;
   color: var(--muted);
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
 }
 
 .topic-check.checked {
   color: var(--text);
   border-color: var(--cyan);
-  background: rgba(76, 141, 255, 0.1);
+  background: var(--cyan-dim);
 }
 
 .topic-check input {
-  width: 14px;
-  height: 14px;
+  width: 15px;
+  height: 15px;
   accent-color: var(--cyan);
   flex: 0 0 auto;
 }
@@ -8971,37 +15872,37 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-size: 13px;
 }
 
 .test-selection-summary {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin: 8px 0 10px;
+  margin: 10px 0 12px;
 }
 
 .test-selection-summary span {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 9px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
   color: var(--muted);
   background: var(--panel-2);
   border: 1px solid var(--border);
-  border-radius: 6px;
-  padding: 5px 7px;
+  border-radius: 7px;
+  padding: 5px 9px;
 }
 
 .test-selection-summary b {
   color: var(--text);
 }
 
-/* -------- NEW: edit controls inside test mode -------- */
-
+/* ---------- TEST EDIT CONTROLS ---------- */
 .test-question-heading {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .test-edit-btn {
@@ -9015,33 +15916,36 @@ body {
   border: 1px solid var(--border);
   background: var(--panel-2);
   color: var(--cyan);
-  border-radius: 7px;
-  padding: 5px 8px;
-  font-size: 10px;
-  font-family: 'JetBrains Mono', monospace;
+  border-radius: 8px;
+  padding: 5px 10px;
+  font-size: 11px;
+  font-family: 'IBM Plex Mono', monospace;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   gap: 5px;
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
 }
 
 .test-inline-edit-btn:hover {
   border-color: var(--cyan);
   color: var(--text);
+  background: var(--cyan-dim);
 }
 
 .solution-edit-btn {
   border: 1px solid var(--border);
   background: var(--panel-2);
   color: var(--cyan);
-  border-radius: 6px;
-  padding: 4px 7px;
+  border-radius: 7px;
+  padding: 4px 8px;
   cursor: pointer;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 9px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
   display: inline-flex;
   align-items: center;
   gap: 4px;
+  transition: border-color 0.15s, color 0.15s;
 }
 
 .solution-edit-btn:hover {
@@ -9049,41 +15953,120 @@ body {
   color: var(--text);
 }
 
+/* ---------- BULK IMPORT ---------- */
+.bulk-import-modal {
+  max-width: 720px;
+}
+
+.bulk-import-modal .modal-head > div:first-child {
+  min-width: 0;
+}
+
+.bulk-import-subtitle {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.bulk-format-note {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  border-radius: 12px;
+  background: var(--cyan-dim);
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.bulk-format-note b {
+  color: var(--cyan);
+}
+
+.bulk-array-textarea {
+  min-height: 320px;
+  resize: vertical;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  line-height: 1.55;
+  tab-size: 2;
+}
+
+.bulk-answer-note {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.bulk-answer-note code {
+  padding: 3px 7px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--panel-2);
+  color: var(--text);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+}
+
+.bulk-import-error {
+  padding: 10px 12px;
+  border: 1px solid rgba(251, 113, 133, 0.35);
+  border-radius: 10px;
+  background: var(--rose-dim);
+}
+
+/* ---------- RESPONSIVE ---------- */
 @media (max-width: 640px) {
   .header {
-    padding: 20px 18px 14px;
+    padding: 16px 16px 12px;
+  }
+
+  .header-title {
+    font-size: 18px;
   }
 
   .header-stats {
-    padding: 12px 18px;
+    padding: 10px 16px;
   }
 
   .content {
-    padding: 22px 18px 28px;
+    padding: 18px 16px 28px;
   }
 
   .card {
-    padding: 16px;
-    border-radius: 15px;
+    padding: 14px 16px;
+    border-radius: 14px;
   }
 
   .setup-card {
-    padding: 21px;
+    padding: 20px;
+  }
+
+  .setup-card h2 {
+    font-size: 20px;
   }
 
   .q-card .q-text {
-    font-size: 19px;
+    font-size: 17px;
   }
 
   .navbar {
-    padding-left: 6px;
-    padding-right: 6px;
+    padding-left: 4px;
+    padding-right: 4px;
   }
 
   .topic-filter {
     align-items: stretch;
     flex-direction: column;
-    gap: 6px;
+    gap: 8px;
   }
 
   .topic-select {
@@ -9093,7 +16076,6 @@ body {
 
   .search-input {
     max-width: none;
-    max-height: 30px;
   }
 
   .test-topbar {
@@ -9101,16 +16083,26 @@ body {
   }
 
   .test-inline-edit-btn {
-    padding: 5px 7px;
+    padding: 5px 8px;
+  }
+
+  .modal {
+    max-height: 92vh;
   }
 }
 
 @media (max-width: 560px) {
   .test-source-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .topic-check-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 400px) {
+  .test-source-grid {
     grid-template-columns: 1fr;
   }
 }

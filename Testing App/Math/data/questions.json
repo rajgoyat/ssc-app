@@ -248,9 +248,9 @@
       "5",
       "6",
       "7",
-      "8"
+      "10"
     ],
-    "correctIndex": 2,
+    "correctIndex": 3,
     "solutionText": "",
     "solutionImage": "/uploads/time-work/0da6576ccf173a6e8c2d03cac4447d0915a457c6633028cc6cf993397bb44aa5.png",
     "order": 15,
@@ -1127,7 +1127,7 @@
     "options": [
       "10",
       "12",
-      "14",
+      "2root-14",
       "16"
     ],
     "correctIndex": 2,
@@ -13405,12 +13405,12 @@
     "questionText": "AB is a chord in a circle with cent O. AB is produced to C such that BC is equal to the radius of the circle. C is joined to O and produced to meet the circle at D. If ACD = 32°, then the measure of AOD is....",
     "questionImage": null,
     "options": [
-      "1",
-      "2",
-      "3",
-      "4"
+      "93",
+      "99",
+      "96",
+      "98"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "solutionText": "https://youtu.be/EBYNCG2Q30A?t=159844 https://youtu.be/EBYNCG2Q30A?t=160898",
     "solutionImage": null,
     "special": false,
