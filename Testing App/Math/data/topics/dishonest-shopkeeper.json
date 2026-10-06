@@ -1,0 +1,62 @@
+[
+  {
+    "category": "Dishonest Shopkeeper",
+    "examName": "",
+    "questionText": "A merchant goes to a wholesaler to purchase 500 kg of goods. The wholesaler has a scale that reads 1200 g instead of 1 kg. Later, the merchant sells 5 kg at a markup of 25% on the cost price. What is the merchant's net profit percentage approximately?",
+    "questionImage": null,
+    "options": [
+      "8.39 %",
+      "4.16 %",
+      "3.93 %",
+      "3.89 %"
+    ],
+    "correctIndex": 1,
+    "solutionText": "The wholesaler's 1 kg reading actually gives 1.2 kg. Thus the merchant effectively buys 1.2 kg for the price of 1 kg. Effective cost per actual kg = 1/1.2 of the quoted cost. Selling at 25% markup gives 1.25 times the quoted cost, so profit = 1.25 × 1.2 − 1 = 0.5 = 50%. Video: https://youtu.be/IrieMxUzEvE?list=PLXcRgYnwyGko&t=7146",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaop13whow",
+    "order": 702,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Dishonest Shopkeeper",
+    "examName": "",
+    "questionText": "B purchased 15 kg apples at the rate of ₹2180 per kg from a wholesaler who uses a weight of 950 grams for the 1 kg weight. B sold all these apples at ₹2180 per kg but used a weight of 750 grams for the 1 kg weight. Find the percentage profit earned by B in the transaction, correct to 2 decimal places.",
+    "questionImage": null,
+    "options": [
+      "24.67%",
+      "25.67%",
+      "26.67%",
+      "27.67%"
+    ],
+    "correctIndex": 2,
+    "solutionText": "B pays for 15 nominal kg but actually receives 15 × 950/1000 = 14.25 kg. Cost = 15 × ₹2180 = ₹32700. At the time of selling, B gives only 750 g for each nominal kg. Thus 14.25 kg becomes 14.25/0.75 = 19 nominal kg. Selling price = 19 × ₹2180 = ₹41420. Profit = ₹8720. Profit% = 8720/32700 × 100 = 26.67%. Video: https://youtu.be/IrieMxUzEvE?list=PLXcRgYnwyGko&t=7307",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaopoe8n18",
+    "order": 703,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Dishonest Shopkeeper",
+    "examName": "",
+    "questionText": "A dishonest shopkeeper cheats his supplier by taking 1 kg of goods but paying for only 900 g. He then cheats his customers by giving 900 g instead of 1 kg, while charging the price of 1 kg. If he sells the goods at the same price at which he buys them, what is his overall gain percentage?",
+    "questionImage": null,
+    "options": [
+      "10%",
+      "11.11%",
+      "12.5%",
+      "20%"
+    ],
+    "correctIndex": 1,
+    "solutionText": "For the price paid for 900 g, the shopkeeper receives 1 kg. He then sells 900 g for the price of 1 kg. Take the price of 1 kg as ₹1. Cost of 1 kg received = ₹0.90, while revenue from selling 900 g = ₹1. Gain = ₹0.10. Gain% = 0.10/0.90 × 100 = 11.11%.",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaoph5fant",
+    "order": 704,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  }
+]

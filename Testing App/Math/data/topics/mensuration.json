@@ -238,5 +238,105 @@
     "attemptStatus": "unattempted",
     "testAllowed": true,
     "examName": ""
+  },
+  {
+    "category": "Mensuration",
+    "examName": "",
+    "questionText": "A cylindrical vessel of radius 3.5 m is full of water. If 15400 litres of water is taken out from it, then the drop in the water level in the vessel will be:",
+    "questionImage": null,
+    "options": [
+      "0.4 m",
+      "0.5 m",
+      "0.6 m",
+      "0.8 m"
+    ],
+    "correctIndex": 0,
+    "solutionText": "15400 litres = 15.4 m³. Volume removed = πr²h. Thus 15.4 = 22/7 × 3.5² × h = 38.5h. Therefore h = 15.4/38.5 = 0.4 m. Link: https://youtu.be/UNklq50VFbY?t=787",
+    "solutionImage": null,
+    "special": false,
+    "id": "mumb3o22b93o78",
+    "order": 680,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mensuration",
+    "examName": "",
+    "questionText": "How many smaller pieces are obtained by making 8 cuts in the X-plane, 9 cuts in the Y-plane and 11 cuts in the Z-plane on the same cube?",
+    "questionImage": null,
+    "options": [
+      "792",
+      "990",
+      "1080",
+      "1200"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Cuts parallel to each coordinate plane divide the cube into (8+1), (9+1) and (11+1) sections along the three directions. Therefore number of smaller pieces = 9 × 10 × 12 = 1080. Link: https://youtu.be/UNklq50VFbY?t=1187",
+    "solutionImage": null,
+    "special": false,
+    "id": "mumb3o22e0m7pd",
+    "order": 683,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mensuration",
+    "examName": "",
+    "questionText": "Find the volume of a regular tetrahedron whose side length is 10 m.",
+    "questionImage": null,
+    "options": [
+      "250√2/3 m³",
+      "500√2/3 m³",
+      "250√3/3 m³",
+      "1000√2/3 m³"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Volume of a regular tetrahedron = a³/(6√2). For a = 10 m, volume = 1000/(6√2) = 500/(3√2) = 250√2/3 m³. Link: https://youtu.be/UNklq50VFbY?t=1220",
+    "solutionImage": null,
+    "special": false,
+    "id": "mumb3o22or07mf",
+    "order": 684,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mensuration",
+    "examName": "",
+    "questionText": "In a right circular cone, the radius and height are in the ratio 5:12. If its curved surface area is 650π cm², find its volume. If the cone is melted and recast into spheres of radius 2.5 cm, how many complete spheres can be formed?",
+    "questionImage": null,
+    "options": [
+      "149",
+      "150",
+      "151",
+      "152"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Let radius = 5k and height = 12k, so slant height = 13k. CSA = πrl = 65πk² = 650π, hence k² = 10. Cone volume = 1000π√10 cm³. Volume of one sphere of radius 2.5 cm = (4/3)π(2.5)³. Number of complete spheres ≈ 151.78, so 151 complete spheres can be formed.",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaopxjn5in",
+    "order": 701,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mensuration",
+    "examName": "",
+    "questionText": "A right triangle with sides 3 cm, 4 cm and 5 cm is rotated about the side of 3 cm to form a cone. The volume of the cone so formed is:",
+    "questionImage": null,
+    "options": [
+      "12π cm³",
+      "16π cm³",
+      "20π cm³",
+      "24π cm³"
+    ],
+    "correctIndex": 2,
+    "solutionText": "On rotation about the 3 cm side, height = 3 cm and radius = 4 cm. Volume = 1/3 × π × 4² × 3 = 16π cm³. EXP: https://youtu.be/9TozM1cVe0M?t=2564",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7cqx43jo522",
+    "order": 729,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]

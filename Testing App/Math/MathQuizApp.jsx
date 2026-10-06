@@ -3175,59 +3175,7 @@
 //     "explanation": "Short explanation here or any link",
 //     "special": false
 //   }
-// ]  Age
-
-// Algebra
-
-// Average
-
-// Boat & Water
-
-// Circle
-
-// Compound Interest
-
-// Coordinate G
-
-// CP & SP
-
-// Discount
-
-// Geometry
-
-// HCF & LCM
-
-// Mensuration
-
-// Miscll
-
-// Mixture & Alligation
-
-// Number System
-
-// Partnership
-
-// Percentage
-
-// Pipe & Cistern
-
-// Profit & Loss
-
-// Progression
-
-// Ratio and Proportion
-
-// Simple Interest
-
-// Speed & Distance
-
-// Time & Work
-
-// Train
-
-// Trigonometry  
-
-// use only category from these options and create questions in this format with their correct options`;
+// ]`;
 
 //   const [text, setText] = useState(example);
 //   const [error, setError] = useState("");
@@ -9134,6 +9082,7 @@
 //   );
 // }
 
+
 const { useState, useEffect, useRef } = React;
 
 function Icon({ symbol, size = 16 }) {
@@ -10032,69 +9981,25 @@ function ImageField({
 
 /* ---------------------------------- bulk array import modal ---------------------------------- */
 
-function BulkQuestionImportModal({ onCancel, onImport }) {
+function BulkQuestionImportModal({ onCancel, onImport, topics = [] }) {
+  const availableTopics = [...new Set(
+    (Array.isArray(topics) ? topics : [])
+      .map((topic) => String(topic ?? "").trim())
+      .filter(Boolean)
+  )].sort((a, b) => a.localeCompare(b));
+
+  const exampleCategory = availableTopics[0] || "Your Topic";
+
   const example = `[
   {
-    "category": "Ratio & Proportion",
+    "category": "${exampleCategory}",
     "question": "If a:b = 2:3, then ...?",
     "options": ["10", "12", "15", "18"],
     "answer": 2,
     "explanation": "Short explanation here or any link",
     "special": false
   }
-]  Age
-
-Algebra
-
-Average
-
-Boat & Water
-
-Circle
-
-Compound Interest
-
-Coordinate G
-
-CP & SP
-
-Discount
-
-Geometry
-
-HCF & LCM
-
-Mensuration
-
-Miscll
-
-Mixture & Alligation
-
-Number System
-
-Partnership
-
-Percentage
-
-Pipe & Cistern
-
-Profit & Loss
-
-Progression
-
-Ratio and Proportion
-
-Simple Interest
-
-Speed & Distance
-
-Time & Work
-
-Train
-
-Trigonometry  
-
-use only category from these options and create questions in this format with their correct options`;
+]`;
 
   const [text, setText] = useState(example);
   const [error, setError] = useState("");
@@ -10152,6 +10057,27 @@ use only category from these options and create questions in this format with th
     });
   }
 
+  async function handleCopyGuide() {
+    const guideText = [
+      text.trim(),
+      availableTopics.join("\n"),
+      "use only category from these options and create questions in this format with their correct options",
+    ].filter(Boolean).join("\n\n");
+
+    try {
+      await navigator.clipboard.writeText(guideText);
+    } catch (err) {
+      const fallback = document.createElement("textarea");
+      fallback.value = guideText;
+      fallback.style.position = "fixed";
+      fallback.style.left = "-9999px";
+      document.body.appendChild(fallback);
+      fallback.select();
+      document.execCommand("copy");
+      document.body.removeChild(fallback);
+    }
+  }
+
   function handleImport() {
     try {
       const cleaned = stripCodeFence(text);
@@ -10185,11 +10111,6 @@ use only category from these options and create questions in this format with th
         </div>
 
         <div className="modal-body">
-          <div className="bulk-format-note">
-            <b>Supported fields:</b> category, examName, question, options, answer, explanation, special.
-            <span>You can also use questionText, correctIndex and solutionText.</span>
-          </div>
-
           <div className="field">
             <label className="field-label">Questions Array</label>
             <textarea
@@ -10198,8 +10119,27 @@ use only category from these options and create questions in this format with th
               value={text}
               onChange={(e) => setText(e.target.value)}
               spellCheck={false}
-              placeholder='[{"category":"Algebra","question":"...","options":["A","B","C","D"],"answer":0,"explanation":"..."}]'
+              placeholder='[{"category":"Your Topic","question":"...","options":["A","B","C","D"],"answer":0,"explanation":"..."}]'
             />
+          </div>
+
+          <div className="bulk-topic-guide">
+            <div className="bulk-topic-guide-head">
+              <span className="bulk-topic-guide-title">Available Categories</span>
+              <button type="button" className="btn btn-ghost bulk-copy-guide-btn" onClick={handleCopyGuide}>
+                Copy
+              </button>
+            </div>
+            {availableTopics.length > 0 ? (
+              <div className="bulk-topic-list-text">
+                {availableTopics.map((topic) => (
+                  <div key={topic}>{topic}</div>
+                ))}
+              </div>
+            ) : (
+              <p className="hint">No categories found in the current question data.</p>
+            )}
+            <p className="bulk-topic-instruction">use only category from these options and create questions in this format with their correct options</p>
           </div>
 
           <div className="bulk-answer-note">
@@ -13782,19 +13722,6 @@ function App() {
         </div>
 
         <div className="header-actions">
-          <button
-            className="icon-btn export-btn"
-            onClick={
-              exportTrigonometryData
-            }
-            title="Download Trigonometry data"
-            aria-label="Download Trigonometry data"
-          >
-            <Icon
-              symbol="v"
-              size={16}
-            />
-          </button>
 
           <button
             className="icon-btn bulk-import-btn"
@@ -14297,6 +14224,7 @@ function App() {
 
       {bulkImportOpen && (
         <BulkQuestionImportModal
+          topics={topics}
           onCancel={() => setBulkImportOpen(false)}
           onImport={addBulkQuestions}
         />
@@ -14364,7 +14292,7 @@ body {
   --amber-dim: rgba(251, 191, 36, 0.12);
   --violet: #a78bfa;
   --violet-dim: rgba(167, 139, 250, 0.12);
-  --text: #f1f5f9;
+  --text: #bbc7d3;
   --muted: #94a3b8;
   --muted-2: #64748b;
 
@@ -14440,11 +14368,6 @@ body {
   gap: 10px;
 }
 
-.export-btn {
-  width: 36px;
-  height: 36px;
-  border-radius: 10px;
-}
 
 .bulk-import-btn {
   width: 36px;
@@ -15969,24 +15892,6 @@ body {
   line-height: 1.4;
 }
 
-.bulk-format-note {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  padding: 12px 14px;
-  margin-bottom: 14px;
-  border: 1px solid rgba(56, 189, 248, 0.25);
-  border-radius: 12px;
-  background: var(--cyan-dim);
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.5;
-}
-
-.bulk-format-note b {
-  color: var(--cyan);
-}
-
 .bulk-array-textarea {
   min-height: 320px;
   resize: vertical;
@@ -15994,6 +15899,49 @@ body {
   font-size: 12px;
   line-height: 1.55;
   tab-size: 2;
+}
+
+.bulk-topic-guide-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.bulk-topic-guide-title {
+  color: var(--cyan);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.bulk-copy-guide-btn {
+  padding: 5px 10px;
+  font-size: 11px;
+}
+
+.bulk-topic-guide {
+  margin-top: 12px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--panel-2);
+}
+
+.bulk-topic-list-text {
+  color: var(--text);
+  font-size: 12px;
+  line-height: 1.55;
+  white-space: normal;
+}
+
+.bulk-topic-instruction {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.45;
 }
 
 .bulk-answer-note {
@@ -16105,6 +16053,64 @@ body {
   .test-source-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* ---------- EYE-COMFORT COLOUR & FOCUS OVERRIDES ---------- */
+/* Softer slate panels and muted teal reduce glare during long study sessions. */
+:root,
+body {
+  background: #111827;
+}
+
+.app {
+  --bg: #111827;
+  --panel: #182235;
+  --panel-2: #202c40;
+  --panel-3: #29374d;
+  --border: #3a4a63;
+  --border-soft: rgba(78, 97, 125, 0.55);
+  --cyan: #72b7c6;
+  --cyan-dim: rgba(114, 183, 198, 0.12);
+  --cyan-glow: rgba(114, 183, 198, 0.20);
+  --green: #7bc69b;
+  --green-dim: rgba(123, 198, 155, 0.12);
+  --rose: #df8d9b;
+  --rose-dim: rgba(223, 141, 155, 0.12);
+  --amber: #d9b56c;
+  --amber-dim: rgba(217, 181, 108, 0.12);
+  --violet: #aa9bd6;
+  --violet-dim: rgba(170, 155, 214, 0.12);
+  --text: #bbcadd;
+  --muted: #aab7c9;
+  --muted-2: #7f90a8;
+}
+
+/* A clear but low-glare focus ring for keyboard, input, and paste targets. */
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid #72b7c6;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 4px rgba(114, 183, 198, 0.16);
+}
+
+/* Replace the original saturated cyan gradients. */
+.add-btn,
+.btn-primary {
+  background: linear-gradient(135deg, #7fbfca, #4d94a6);
+  color: #10202b;
+  box-shadow: 0 2px 10px rgba(77, 148, 166, 0.22);
+}
+
+.progress-fill {
+  background: linear-gradient(90deg, #4d94a6, #7fbfca);
+}
+
+.bulk-import-btn:hover {
+  background: rgba(114, 183, 198, 0.18);
+  color: #dceff2;
 }
 `;
 

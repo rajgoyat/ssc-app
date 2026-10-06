@@ -298,5 +298,25 @@
     "attemptStatus": "unattempted",
     "testAllowed": true,
     "examName": ""
+  },
+  {
+    "category": "Algebra",
+    "examName": "",
+    "questionText": "Find the equation of the line with slope -2 passing through the point (3, 5).",
+    "questionImage": null,
+    "options": [
+      "y = 2x - 1",
+      "y = -2x + 11",
+      "y = -2x + 5",
+      "y = 2x + 11"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Using y - y₁ = m(x - x₁): y - 5 = -2(x - 3), so y = -2x + 11. Video: https://youtu.be/jYEwmTyhvS8?t=1068",
+    "solutionImage": null,
+    "special": false,
+    "id": "munnrkg8eji05k",
+    "order": 686,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]

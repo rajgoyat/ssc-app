@@ -718,5 +718,25 @@
     "order": 426,
     "attemptStatus": "unattempted",
     "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "A 234 m long train passes a person running at 9 km/h in the opposite direction in 6 seconds. In how much time will it pass another person moving at 23.4 km/h in the same direction?",
+    "questionImage": null,
+    "options": [
+      "7.2 seconds",
+      "7.5 seconds",
+      "7.8 seconds",
+      "8.2 seconds"
+    ],
+    "correctIndex": 2,
+    "solutionText": "First relative speed = 234/6 = 39 m/s. The difference between opposite-direction and same-direction relative speeds = 9 + 23.4 = 32.4 km/h = 9 m/s. Therefore second relative speed = 39 − 9 = 30 m/s. Time = 234/30 = 7.8 seconds. Source video: https://youtu.be/1Yd2-DpWmGQ?t=20843 and https://youtu.be/1Yd2-DpWmGQ?t=20778. Additional explanation: https://share.gemini.google/GAvCfJN5XMnf. Claude solution: https://claude.ai/share/f14df72d-d73c-408f-a40a-bca6893a6672",
+    "solutionImage": null,
+    "special": true,
+    "id": "munppaopdt98d2",
+    "order": 707,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]

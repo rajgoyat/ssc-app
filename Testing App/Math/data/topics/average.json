@@ -98,5 +98,265 @@
     "order": 223,
     "attemptStatus": "unattempted",
     "testAllowed": true
+  },
+  {
+    "category": "Average",
+    "examName": "",
+    "questionText": "The average weight of 9 people increases by 3.5 kg when a new person replaces one of them who weighs 67 kg. What is the weight of the new person?",
+    "questionImage": null,
+    "options": [
+      "95.5 kg",
+      "98.5 kg",
+      "100.5 kg",
+      "101.5 kg"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Increase in total weight = 9 × 3.5 = 31.5 kg. Therefore, new person's weight = 67 + 31.5 = 98.5 kg. Video: https://youtu.be/jYEwmTyhvS8?t=1105",
+    "solutionImage": null,
+    "special": false,
+    "id": "munnrkg84zt5lw",
+    "order": 687,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Average",
+    "examName": "",
+    "questionText": "The average weight of 27 students of a class is 53 kg. If the weight of the teacher is included, the average rises by 700 grams. Find the weight (in kg) of the teacher.",
+    "questionImage": null,
+    "options": [
+      "70.6 kg",
+      "71.6 kg",
+      "72.6 kg",
+      "73.6 kg"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Total weight of 27 students = 27 × 53 = 1431 kg. New total for 28 people = 28 × 53.7 = 1503.6 kg. Teacher's weight = 1503.6 − 1431 = 72.6 kg. Video: https://youtu.be/f9pJ5-BLO2s?t=1740",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaoo536tfb",
+    "order": 689,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Average",
+    "examName": "",
+    "questionText": "The average weight of 28 persons in a team is 69 kg. If one of them weighing 89 kg is replaced by a new person, the average gets decreased by 1 kg. Find the weight of the new person.",
+    "questionImage": null,
+    "options": [
+      "59 kg",
+      "60 kg",
+      "61 kg",
+      "62 kg"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Original total = 28 × 69 = 1932 kg. New average = 68 kg, so new total = 28 × 68 = 1904 kg. New person's weight = 1904 − (1932 − 89) = 61 kg. Video: https://youtu.be/f9pJ5-BLO2s?t=1939",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaop43jcmm",
+    "order": 690,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Average",
+    "examName": "",
+    "questionText": "If the mean of 15 numbers is 25 and one number, 36.2, is removed, what is the mean of the remaining numbers?",
+    "questionImage": null,
+    "options": [
+      "23.8",
+      "24.2",
+      "24.6",
+      "25.2"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Total of 15 numbers = 15 × 25 = 375. Remaining total = 375 − 36.2 = 338.8. Mean = 338.8 ÷ 14 = 24.2. Video: https://youtu.be/f9pJ5-BLO2s?t=2230",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaop66vjj0",
+    "order": 691,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Average",
+    "examName": "",
+    "questionText": "The average weight of 15 persons is increased by 1.2 kg when one of them whose weight is 51 kg is replaced by a new man. What is the weight of the new man?",
+    "questionImage": null,
+    "options": [
+      "67 kg",
+      "68 kg",
+      "69 kg",
+      "70 kg"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Increase in total weight = 15 × 1.2 = 18 kg. New man's weight = 51 + 18 = 69 kg. Video: https://youtu.be/f9pJ5-BLO2s?t=2350",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaopxjpu7r",
+    "order": 692,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Average",
+    "examName": "",
+    "questionText": "The average height of 50 students in a class is 150 cm. Five of them, whose average height is 146 cm, leave the class, and five others, whose average height is 156 cm, join the class. What is the new average height?",
+    "questionImage": null,
+    "options": [
+      "150 cm",
+      "151 cm",
+      "152 cm",
+      "153 cm"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Original total = 50 × 150 = 7500 cm. Height of students leaving = 5 × 146 = 730 cm. Height of new students = 5 × 156 = 780 cm. New total = 7500 − 730 + 780 = 7550 cm. New average = 7550 ÷ 50 = 151 cm. Video: https://youtu.be/f9pJ5-BLO2s?t=2427",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaop1ghjtb",
+    "order": 693,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Average",
+    "examName": "",
+    "questionText": "In a group of 32 students, the average weight was 18.5 kg. When 4 students left the group, the average came down to 15.5 kg. What was the average weight of those 4 students?",
+    "questionImage": null,
+    "options": [
+      "37.5 kg",
+      "38.5 kg",
+      "39.5 kg",
+      "40.5 kg"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Original total = 32 × 18.5 = 592 kg. Remaining total = 28 × 15.5 = 434 kg. Weight of 4 students = 592 − 434 = 158 kg. Average = 158 ÷ 4 = 39.5 kg. Video: https://youtu.be/f9pJ5-BLO2s?t=3408",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaopqtpiex",
+    "order": 694,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Average",
+    "examName": "",
+    "questionText": "The average of 11 numbers arranged in an order is 41. The average of the first five numbers is 18 and that of the last five numbers is 64. What is the sixth number?",
+    "questionImage": null,
+    "options": [
+      "39",
+      "40",
+      "41",
+      "42"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Total of 11 numbers = 11 × 41 = 451. First 5 total = 5 × 18 = 90. Last 5 total = 5 × 64 = 320. Sixth number = 451 − 90 − 320 = 41. Video: https://youtu.be/f9pJ5-BLO2s?t=3462",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaop8sab99",
+    "order": 695,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Average",
+    "examName": "",
+    "questionText": "The average of 83 results is 48.5. If the average of the first 59 results is 45.5 and that of the last 23 results is 53.5, find the 60th result.",
+    "questionImage": null,
+    "options": [
+      "108.5",
+      "109.5",
+      "110.5",
+      "111.5"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Total of 83 results = 83 × 48.5 = 4025.5. First 59 total = 59 × 45.5 = 2684.5. Last 23 total = 23 × 53.5 = 1230.5. The first 59 and last 23 leave only the 60th result, so 60th result = 4025.5 − 2684.5 − 1230.5 = 110.5. Video: https://youtu.be/f9pJ5-BLO2s?t=3775",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaopfyh1g7",
+    "order": 696,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Average",
+    "examName": "",
+    "questionText": "The average marks of 13 students in a subject is 66. If the average of the first seven students is 67 and that of the last seven students is 69, then the marks of the seventh student are:",
+    "questionImage": null,
+    "options": [
+      "90",
+      "92",
+      "94",
+      "96"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Total marks = 13 × 66 = 858. First 7 total = 7 × 67 = 469. Last 7 total = 7 × 69 = 483. Seventh student's marks = 469 + 483 − 858 = 94. Video: https://youtu.be/f9pJ5-BLO2s?t=3872",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaopipg4hp",
+    "order": 697,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Average",
+    "examName": "",
+    "questionText": "Mean temperature of a city for a week is 28°C. If the mean temperature for Monday, Tuesday, Wednesday and Thursday is 27.5°C and the mean temperature for Thursday, Friday, Saturday and Sunday is 29°C, the temperature recorded for Thursday is:",
+    "questionImage": null,
+    "options": [
+      "28°C",
+      "29°C",
+      "30°C",
+      "31°C"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Weekly total = 7 × 28 = 196°C. Mon–Thu total = 4 × 27.5 = 110°C. Thu–Sun total = 4 × 29 = 116°C. Thursday is counted twice, so Thursday = 110 + 116 − 196 = 30°C. Video: https://youtu.be/f9pJ5-BLO2s?t=4342",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaoppwi7we",
+    "order": 698,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Average",
+    "examName": "",
+    "questionText": "The average of 41 numbers is 62. The average of the first 18 numbers is 65.5, and the average of the last 24 numbers is 61.5. If the 18th number from the beginning is excluded, what is the average of the remaining numbers?",
+    "questionImage": null,
+    "options": [
+      "60.525",
+      "60.625",
+      "60.725",
+      "60.825"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Total = 41 × 62 = 2542. First 18 total = 18 × 65.5 = 1179. Last 24 total = 24 × 61.5 = 1476. The 18th number is common to both groups, so it = 1179 + 1476 − 2542 = 113. Remaining total = 2542 − 113 = 2429. Average = 2429 ÷ 40 = 60.725. Video: https://youtu.be/f9pJ5-BLO2s",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaopo3hnmr",
+    "order": 699,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Average",
+    "examName": "",
+    "questionText": "A car runs for 10 hours and its speed during the ith hour is i³ km per hour, where i = 1, 2, 3, ..., 10. The average speed of the car for the journey is:",
+    "questionImage": null,
+    "options": [
+      "302 km/h",
+      "302.5 km/h",
+      "305 km/h",
+      "312.5 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Average speed = total distance ÷ total time. Since each speed is maintained for 1 hour, total distance = 1³ + 2³ + ... + 10³. Sum of cubes = [10×11/2]² = 3025. Therefore average speed = 3025/10 = 302.5 km/h. Video: https://youtu.be/o4eTtrJXYNQ?t=30146",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaopal4a9y",
+    "order": 706,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]

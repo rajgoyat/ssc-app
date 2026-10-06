@@ -58,5 +58,25 @@
     "attemptStatus": "unattempted",
     "testAllowed": true,
     "examName": ""
+  },
+  {
+    "category": "HCF & LCM",
+    "examName": "",
+    "questionText": "A man wants to plant 52 palm trees, 78 banana trees and 130 mango trees in equal rows (in terms of number of trees). Also, he wants to make only one type of tree in one row. The minimum number of rows required are:",
+    "questionImage": null,
+    "options": [
+      "10",
+      "12",
+      "13",
+      "20"
+    ],
+    "correctIndex": 0,
+    "solutionText": "HCF of 52, 78 and 130 = 26. So each row will contain 26 trees. Number of rows = 52/26 + 78/26 + 130/26 = 2 + 3 + 5 = 10. Link: https://youtu.be/UNklq50VFbY?t=207",
+    "solutionImage": null,
+    "special": false,
+    "id": "mumb3o21tfanmf",
+    "order": 671,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]

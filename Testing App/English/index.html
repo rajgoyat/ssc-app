@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -316,11 +317,13 @@ body{
 
   overflow-wrap:anywhere;
   word-break:break-word;
+  white-space:pre-wrap;
 }
 
 #sentence{
   font-style:italic;
   color:#b9c3d4;
+  white-space:pre-wrap;
 }
 
 /* =========================
@@ -348,6 +351,7 @@ body{
   font-family:"Courier New",monospace;
 
   overflow-wrap:anywhere;
+  white-space:pre-wrap;
 }
 
 .pill.syn{
@@ -705,6 +709,7 @@ width:60px;
   outline:none;
 
   resize:vertical;
+  white-space:pre-wrap;
 
   transition:.2s ease;
 }
@@ -1799,13 +1804,15 @@ body::before{
   color:#e7edf6;
   font-size:16px;
   line-height:1.62;
+  white-space:pre-line;
 }
-#sentence{color:#b9c5d6;}
+#sentence{color:#b9c5d6;white-space:pre-line;}
 .pillrow{margin-top:10px;gap:9px;}
 .pill{
   padding:8px 13px;
   border-radius:11px;
   font:600 11px "Segoe UI",sans-serif;
+  white-space:pre-line;
 }
 .pill.syn{background:rgba(106,214,200,.08);border-color:rgba(106,214,200,.24);color:#8ee7dc;}
 .pill.ant{background:rgba(255,118,106,.07);border-color:rgba(255,118,106,.22);color:#ff9a90;}
@@ -3752,7 +3759,11 @@ body.mcq-focus-mode .result-more-menu .action-menu-item{
     >
       Words seen: 0
     </span>
-    <label class="round-setting" title="How many times each 10-word set will be tested">
+    <label class="round-setting" title="How many words in each read/test set">
+      <input type="number" id="wordsPerRoundInput" min="1" max="100" value="10" aria-label="Words per round">
+      <span id="wordsPerRoundLabel">words</span>
+    </label>
+    <label class="round-setting" title="How many times each word-set will be tested">
       <input type="number" id="testRoundsInput" min="1" max="20" value="1" aria-label="Test rounds">
       <span id="roundLabel">round</span>
     </label>
@@ -3868,10 +3879,10 @@ body.mcq-focus-mode .result-more-menu .action-menu-item{
 
             <label>Synonym</label>
 
-            <input
-              type="text"
+            <textarea
               id="editSyn"
-            >
+              rows="2"
+            ></textarea>
 
           </div>
 
@@ -3879,10 +3890,10 @@ body.mcq-focus-mode .result-more-menu .action-menu-item{
 
             <label>Antonym (opposite)</label>
 
-            <input
-              type="text"
+            <textarea
               id="editAnt"
-            >
+              rows="2"
+            ></textarea>
 
           </div>
 
@@ -4484,7 +4495,13 @@ async function saveServerData(){
 }
 // ---------- Quiz ----------
 
-const ROUND_SIZE = 10;
+const DEFAULT_ROUND_SIZE = 10;
+
+function getRoundSize(){
+  const input = document.getElementById("wordsPerRoundInput");
+  const n = parseInt(input?.value, 10);
+  return Number.isFinite(n) ? Math.max(1, Math.min(100, n)) : DEFAULT_ROUND_SIZE;
+}
 
 const PHASE = {
   READ:"read",
@@ -4734,7 +4751,7 @@ function nextRandomRound(pool){
 
   const batch = shuffleWords(remaining).slice(
     0,
-    Math.min(ROUND_SIZE, remaining.length)
+    Math.min(getRoundSize(), remaining.length)
   );
 
   batch.forEach(word => randomSeenKeys.add(randomWordKey(word)));
@@ -4930,7 +4947,7 @@ async function toggleCurrentWordPool(){
   // IMPORTANT:
   // Do NOT restart the active round after moving a word.
   //
-  // currentRoundWords is a snapshot of the 10 words selected for this round.
+  // currentRoundWords is a snapshot of the words selected for this round.
   // So even if a word is moved NEW <-> OLD during READ or TEST,
   // the current round/test continues from the same place.
   // The moved word will disappear only from FUTURE rounds of that pool.
@@ -4971,17 +4988,17 @@ function startRound(mode = browseMode){
   setContentButtons(contentMode);
 
   if(browseMode === "series"){
-    // SERIES MODE: take the next 10 words in alphabetical order.
+    // SERIES MODE: take the next N words in alphabetical order (N = words-per-round setting).
     if(seriesCursor >= pool.length) seriesCursor = 0;
 
     currentRoundWords = pool.slice(
       seriesCursor,
-      Math.min(seriesCursor + ROUND_SIZE, pool.length)
+      Math.min(seriesCursor + getRoundSize(), pool.length)
     );
 
     // If fewer than 10 remain at the end, wrap to the beginning.
-    if(currentRoundWords.length < Math.min(ROUND_SIZE, pool.length)){
-      const needed = Math.min(ROUND_SIZE, pool.length) - currentRoundWords.length;
+    if(currentRoundWords.length < Math.min(getRoundSize(), pool.length)){
+      const needed = Math.min(getRoundSize(), pool.length) - currentRoundWords.length;
       currentRoundWords = currentRoundWords.concat(pool.slice(0, needed));
     }
   }else{
@@ -5040,7 +5057,7 @@ function nextWord(resetTimer = true){
     // Move to the next read word.
     readIndex += 1;
 
-    // All 10 words have already been shown.
+    // All words in this set have already been shown.
     // NOW start the test, so word 10 was visible before this click.
     if(readIndex >= currentRoundWords.length){
 
@@ -5103,7 +5120,7 @@ function nextWord(resetTimer = true){
 
     const totalPasses = getTestRounds();
 
-    // Repeat testing the SAME 10 words if test rounds > 1.
+    // Repeat testing the SAME word-set if test rounds > 1.
     if(testPass < totalPasses){
       testPass += 1;
       testIndex = 0;
@@ -5239,7 +5256,7 @@ function goToWordNumber(value){
 }
 
 // Random and Series are both QUIZ modes now.
-// Next always advances READ -> TEST -> next 10-word round.
+// Next always advances READ -> TEST -> next word-set round.
 nextBtn.onclick = () => {
   if(autoPlayActive) return;
   nextWord(true);
@@ -6734,10 +6751,14 @@ async function uploadBulkArray(){
 
   let addedCount = 0;
   let skippedCount = 0;
+  const duplicateWords = [];
 
   validEntries.forEach(entry => {
+    // Duplicate checking is based ONLY on the main English word (en).
+    // Meaning, Hindi, sentence, synonyms, etc. are intentionally ignored.
     if(wordExistsInType(entry.en, bulkAddType)){
       skippedCount += 1;
+      duplicateWords.push(entry.en);
       return;
     }
 
@@ -6757,7 +6778,10 @@ async function uploadBulkArray(){
   if(!addedCount){
     bulkUploadMsg.style.color = "var(--gold)";
     bulkUploadMsg.textContent =
-      "Nothing new to add. Skipped " + skippedCount +
+      "Nothing new to add." +
+      (duplicateWords.length
+        ? " These words are already present: " + duplicateWords.join(", ") + "."
+        : "") +
       (invalidCount ? " · Invalid " + invalidCount : "");
     return;
   }
@@ -6789,6 +6813,9 @@ async function uploadBulkArray(){
   bulkUploadMsg.textContent =
     "Added " + addedCount +
     " · Skipped " + skippedCount +
+    (duplicateWords.length
+      ? " · Already present: " + duplicateWords.join(", ")
+      : "") +
     (invalidCount ? " · Invalid " + invalidCount : "") +
     " ✓";
 }
@@ -7071,10 +7098,10 @@ saveEditBtn.onclick = async () => {
 
 
   const meaning =
-    editMeaning.value.trim();
+    editMeaning.value;
 
 
-  if(!meaning){
+  if(!meaning.trim()){
 
     editMsg.style.color =
       "var(--red)";
@@ -7088,19 +7115,19 @@ saveEditBtn.onclick = async () => {
 
 
   editingWord.hi =
-    editHi.value.trim();
+    editHi.value;
 
   editingWord.meaning =
     meaning;
 
   editingWord.sentence =
-    editSentence.value.trim();
+    editSentence.value;
 
   editingWord.syn =
-    editSyn.value.trim();
+    editSyn.value;
 
   editingWord.ant =
-    editAnt.value.trim();
+    editAnt.value;
 
 
   if(
@@ -7346,16 +7373,35 @@ autoPlaySecondsInput?.addEventListener("keydown", (event) => {
 
 const testRoundsInput = document.getElementById("testRoundsInput");
 const roundLabel = document.getElementById("roundLabel");
+const wordsPerRoundInput = document.getElementById("wordsPerRoundInput");
+const wordsPerRoundLabel = document.getElementById("wordsPerRoundLabel");
+
+function syncWordsPerRoundLabel(){
+  const n = getRoundSize();
+  if(wordsPerRoundInput) wordsPerRoundInput.value = n;
+  if(wordsPerRoundLabel) wordsPerRoundLabel.textContent = n === 1 ? "word" : "words";
+}
+
 function syncRoundLabel(){
   const n = getTestRounds();
-  testRoundsInput.value = n;
-  roundLabel.textContent = n === 1 ? "round" : "rounds";
+  if(testRoundsInput) testRoundsInput.value = n;
+  if(roundLabel) roundLabel.textContent = n === 1 ? "round" : "rounds";
   if(currentPhase === PHASE.TEST) countEl.textContent = testStatusText(testIndex);
 }
+
+wordsPerRoundInput?.addEventListener("change", () => {
+  syncWordsPerRoundLabel();
+  // Apply the new set size on the next round start only — do not interrupt an active round.
+});
+wordsPerRoundInput?.addEventListener("input", () => {
+  const n = parseInt(wordsPerRoundInput.value, 10);
+  if(wordsPerRoundLabel) wordsPerRoundLabel.textContent = n === 1 ? "word" : "words";
+});
+
 testRoundsInput?.addEventListener("change", syncRoundLabel);
 testRoundsInput?.addEventListener("input", () => {
   const n = parseInt(testRoundsInput.value, 10);
-  roundLabel.textContent = n === 1 ? "round" : "rounds";
+  if(roundLabel) roundLabel.textContent = n === 1 ? "round" : "rounds";
 });
 
 document.getElementById("learnedBtn")?.addEventListener("click", toggleCurrentWordPool);
@@ -7565,6 +7611,7 @@ async function initializeEnglishApp(){
 
   updatePoolUI();
   syncRoundLabel();
+  syncWordsPerRoundLabel();
   fillTopWordSuggestions();
   renderMissingManager();
 

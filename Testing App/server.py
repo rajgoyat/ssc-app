@@ -1,7 +1,7 @@
 """Unified server for English, GK, Math and Reasoning apps.
 
 Run from this folder with: python server.py
-Open: http://127.0.0.1:8000
+Open: http://0.0.0.0:8000
 """
 
 import importlib.util
@@ -730,7 +730,7 @@ def subject_module(subject):
 
 
 if __name__ == "__main__":
-    server = ThreadingHTTPServer(("127.0.0.1", 8000), UnifiedHandler)
+    server = ThreadingHTTPServer(("0.0.0.0", 8000), UnifiedHandler)
     print("Study App Hub is running at http://127.0.0.1:8000")
     print("Apps: /english/ /gk/ /math/ /reasoning/")
     print("GK question API: GET /api/current-user-questions")

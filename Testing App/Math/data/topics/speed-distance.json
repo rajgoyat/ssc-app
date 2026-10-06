@@ -1398,5 +1398,25 @@
     "order": 294,
     "attemptStatus": "unattempted",
     "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "Two cyclists start at the same time from towns A and B, which are 210 km apart, and travel towards each other. The cyclist from A rides at 28 km/h, and the cyclist from B rides at 32 km/h. Find the time taken by the cyclist from B to reach town A after meeting.",
+    "questionImage": null,
+    "options": [
+      "3.06 hours",
+      "4.06 hours",
+      "3.45 hours",
+      "4.45 hours"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Relative speed = 28 + 32 = 60 km/h. Time to meet = 210/60 = 3.5 hours. Distance covered by A before meeting = 28 × 3.5 = 98 km. After meeting, B covers 98 km to reach A, so time = 98/32 = 3.0625 ≈ 3.06 hours. Video: https://youtu.be/jYEwmTyhvS8?t=1210",
+    "solutionImage": null,
+    "special": false,
+    "id": "munnrkg803pz3q",
+    "order": 688,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]

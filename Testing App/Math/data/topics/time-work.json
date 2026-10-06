@@ -118,5 +118,65 @@
     "order": 434,
     "attemptStatus": "unattempted",
     "testAllowed": true
+  },
+  {
+    "category": "Time & Work",
+    "examName": "",
+    "questionText": "15 persons begin to work together on a job, but after some days 6 persons leave. As a result, the job which could have been completed in 42 days is completed in 54 days. After how many days from the commencement of the work did 6 persons leave?",
+    "questionImage": null,
+    "options": [
+      "20 days",
+      "22 days",
+      "24 days",
+      "26 days"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Total work = 15 × 42 = 630 person-days. Let 6 persons leave after x days. Then 15x + 9(54 − x) = 630. Therefore 6x = 144 and x = 24 days. Video: https://youtu.be/8zBE1a-fKJg?t=11007",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaopl11gvg",
+    "order": 700,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Time & Work",
+    "examName": "",
+    "questionText": "A and B together can do a piece of work in 20 days. A worked for 15 days and left. B finished the remaining work alone in 42 days. In how many days could B finish the whole work alone?",
+    "questionImage": null,
+    "options": [
+      "96 days",
+      "102 days",
+      "108 days",
+      "112 days"
+    ],
+    "correctIndex": 2,
+    "solutionText": "A and B complete 15/20 = 3/4 of the work in 15 days. Remaining work = 1/4. B completes this remaining 1/4 in 42 − 15 = 27 days. Therefore B alone completes the whole work in 27 × 4 = 108 days.",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaopd9uikh",
+    "order": 705,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Time & Work",
+    "examName": "",
+    "questionText": "Three workers A, B, and C can complete a task. A takes x days to finish the work alone, while B takes 15 days more than A. C is twice as efficient as A. A and B started working together but A left after 10 days. Then, C joined B and they worked together for 10 days to complete the remaining work. If worker D is 20% more efficient than (A + B) combined, find the time taken by D to complete the same work.",
+    "questionImage": null,
+    "options": [
+      "20 days",
+      "150/7 days",
+      "25 days",
+      "30 days"
+    ],
+    "correctIndex": 1,
+    "solutionText": "x=45, B=60. A+B efficiency=7/180. D=1.2×7/180=7/150 → time=150/7 days.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5ylpd0s",
+    "order": 802,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]

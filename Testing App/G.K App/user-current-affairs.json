@@ -7703,5 +7703,1447 @@
     "questionImageName": "",
     "source": "user-upload",
     "createdAt": "2026-09-25T19:13:12"
+  },
+  {
+    "id": "ca-2026-09-026-001",
+    "date": "2026-09-26",
+    "category": "International",
+    "question": "The L.69 Group, recently in the news, primarily advocates reform of which institution?",
+    "options": [
+      "World Trade Organization",
+      "UN Security Council",
+      "International Monetary Fund",
+      "International Court of Justice"
+    ],
+    "answer": 1,
+    "explanation": "L.69 Group developing countries ka coalition hai jo UN Security Council (UNSC) mein comprehensive reform, better representation, permanent aur non-permanent seats badhane aur working methods mein improvement ki demand karta hai.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "L.69 Group kis UN General Assembly Draft Resolution se associated hai?",
+        "options": [
+          "A/61/L.69",
+          "A/62/L.70",
+          "A/60/L.69"
+        ],
+        "answer": 0,
+        "explanation": "L.69 naam UN General Assembly Draft Resolution A/61/L.69 (2007) se associated hai."
+      },
+      {
+        "question": "C-10 kis organization se associated African grouping hai?",
+        "options": [
+          "African Union",
+          "European Union",
+          "ASEAN"
+        ],
+        "answer": 0,
+        "explanation": "C-10 (Committee of Ten) African Union se associated grouping hai jo UNSC reform par Africa ki common position ko promote karta hai."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-28T14:38:07"
+  },
+  {
+    "id": "ca-2026-09-026-002",
+    "date": "2026-09-26",
+    "category": "National",
+    "question": "Which state organised the Pluck & Pay Festival to promote rural tourism and farmers' livelihoods?",
+    "options": [
+      "Manipur",
+      "Mizoram",
+      "Nagaland",
+      "Sikkim"
+    ],
+    "answer": 1,
+    "explanation": "Mizoram ne apna pehla Pluck & Pay Festival Khawzawl mein 23–25 September 2026 tak organise kiya. Iska aim farm-based tourism aur farmers ki income ko promote karna tha.",
+    "questionImageSize": "small",
+    "subQuestions": [
+      {
+        "question": "Pluck & Pay Festival 2026 kahan organise hua?",
+        "options": [
+          "Imphal, Manipur",
+          "Khawzawl, Mizoram",
+          "Aizawl, Mizoram"
+        ],
+        "answer": 1,
+        "explanation": "Festival Khawzawl, Mizoram mein organise hua."
+      },
+      {
+        "question": "Pluck & Pay model mein visitors kya karte hain?",
+        "options": [
+          "Farms se fruits aur vegetables khud pick karke farmer ko directly payment karte hain",
+          "Sirf packaged products purchase karte hain",
+          "Government outlets se vegetables kharidte hain"
+        ],
+        "answer": 0,
+        "explanation": "Visitors farms aur orchards mein jaakar fruits aur vegetables khud pick karte hain aur payment directly farmer ko karte hain."
+      }
+    ],
+    "questionImage": "current-affairs-question-images/2026-09-26/ca-2026-09-026-002.webp",
+    "questionImageId": "img-ca-2026-09-026-002-001",
+    "questionImageName": "image.png",
+    "source": "user-upload",
+    "createdAt": "2026-09-28T14:38:07"
+  },
+  {
+    "id": "ca-2026-09-026-003",
+    "date": "2026-09-26",
+    "category": "International",
+    "question": "Which woman farmer from Mizoram has been selected by FAO for the '100 Women Heroes in Agrifood Systems and Rural Development' recognition?",
+    "options": [
+      "ZT Lalrithangi",
+      "Lalhlimpuii",
+      "Vanlalhriatsangi",
+      "Malsawmtluangi"
+    ],
+    "answer": 0,
+    "explanation": "ZT Lalrithangi, also known as Pi Mari-i, Mizoram ke Lawngtlai district ke Sangau village ki woman farmer hain. FAO ne unhe '100 Women Heroes in Agrifood Systems and Rural Development' list mein recognise kiya.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "ZT Lalrithangi ne strawberry farming kis year mein start ki?",
+        "options": [
+          "2022",
+          "2024",
+          "2025"
+        ],
+        "answer": 1,
+        "explanation": "ZT Lalrithangi ne 2024 mein approximately 1,000 strawberry plants ke saath farming start ki."
+      },
+      {
+        "question": "ZT Lalrithangi kis district se associated hain?",
+        "options": [
+          "Lawngtlai",
+          "Khawzawl",
+          "Aizawl"
+        ],
+        "answer": 0,
+        "explanation": "Woh Mizoram ke Lawngtlai district ke Sangau village se associated hain."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-28T14:38:07"
+  },
+  {
+    "id": "ca-2026-09-026-004",
+    "date": "2026-09-26",
+    "category": "National",
+    "question": "Recently, India and the Netherlands signed a technical cooperation agreement for which project aimed at creating the world's largest man-made freshwater reservoir?",
+    "options": [
+      "Kalpasar Project",
+      "Polavaram Project",
+      "Ken-Betwa Project",
+      "Tehri Dam Project"
+    ],
+    "answer": 0,
+    "explanation": "India aur Netherlands ne Gujarat ke Kalpasar Project ke liye technical cooperation agreements sign kiye. Project ka aim Khambhat Gulf par world's largest man-made freshwater reservoir create karna hai.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "Kalpasar Project kis state mein hai?",
+        "options": [
+          "Gujarat",
+          "Rajasthan",
+          "Maharashtra"
+        ],
+        "answer": 0,
+        "explanation": "Kalpasar Project Gujarat mein Khambhat Gulf par proposed hai."
+      },
+      {
+        "question": "Kalpasar Project mein kin rivers ka water store karne ka proposal hai?",
+        "options": [
+          "Narmada, Tapi, Mahi and Sabarmati",
+          "Ganga, Yamuna, Godavari and Krishna",
+          "Narmada, Godavari, Krishna and Mahanadi"
+        ],
+        "answer": 0,
+        "explanation": "Project mein Narmada, Tapi, Mahi aur Sabarmati rivers ka water store karne ka proposal hai."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-28T14:38:07"
+  },
+  {
+    "id": "ca-2026-09-026-005",
+    "date": "2026-09-26",
+    "category": "International",
+    "question": "The 'OneSCD' Global Partnership launched during the 81st United Nations General Assembly is related to the care of which disease?",
+    "options": [
+      "Tuberculosis",
+      "Sickle Cell Disease",
+      "Hepatitis-B",
+      "Thalassemia"
+    ],
+    "answer": 1,
+    "explanation": "OneSCD Global Partnership Sickle Cell Disease care se related hai. Iska objective SCD patients ke liye equitable, accessible aur effective healthcare ko advance karna hai.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "India ne OneSCD Global Partnership ke launch ko kis roop mein support kiya?",
+        "options": [
+          "Co-host",
+          "Observer",
+          "Sponsor only"
+        ],
+        "answer": 0,
+        "explanation": "India ne OneSCD partnership ke launch ko co-host kiya."
+      },
+      {
+        "question": "India ne National Sickle Cell Anaemia Elimination Mission kis year mein launch kiya?",
+        "options": [
+          "2021",
+          "2023",
+          "2025"
+        ],
+        "answer": 1,
+        "explanation": "India ne 2023 mein National Sickle Cell Anaemia Elimination Mission launch kiya, jiska target 2047 tak Sickle Cell Anaemia ko public-health problem ke roop mein eliminate karna hai."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-28T14:38:07"
+  },
+  {
+    "id": "ca-2026-09-026-006",
+    "date": "2026-09-26",
+    "category": "Environment",
+    "question": "What is the theme of World Environmental Health Day 2026?",
+    "options": [
+      "Clean Air, Healthy People",
+      "Environmental Health - Standing with Science to Protect Communities",
+      "Healthy Environment for a Healthy Future",
+      "Strengthening Environmental Health Systems"
+    ],
+    "answer": 1,
+    "explanation": "World Environmental Health Day 2026 ki theme 'Environmental Health - Standing with Science to Protect Communities' hai. Yeh day har saal 26 September ko observe kiya jata hai.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "World Environmental Health Day har saal kis date ko observe kiya jata hai?",
+        "options": [
+          "5 June",
+          "26 September",
+          "16 October"
+        ],
+        "answer": 1,
+        "explanation": "World Environmental Health Day har saal 26 September ko observe kiya jata hai."
+      },
+      {
+        "question": "World Environmental Health Day ki shuruaat kis year mein hui?",
+        "options": [
+          "2001",
+          "2011",
+          "2021"
+        ],
+        "answer": 1,
+        "explanation": "Is day ki shuruaat 26 September 2011 ko Indonesia mein hui thi."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-28T14:38:07"
+  },
+  {
+    "id": "ca-2026-09-026-007",
+    "date": "2026-09-26",
+    "category": "National",
+    "question": "Dr Anand Pandurangi, who recently passed away, was primarily associated with which field?",
+    "options": [
+      "Cardiology",
+      "Psychiatry",
+      "Neurology",
+      "Oncology"
+    ],
+    "answer": 1,
+    "explanation": "Dr Anand Pandurangi Karnataka ke psychiatrist aur community mental-health expert the. Unhone North Karnataka mein mental-health treatment, counselling aur awareness ke field mein kaam kiya.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "Dr Anand Pandurangi kaun se field ke expert the?",
+        "options": [
+          "Community Mental Health",
+          "Cardiology",
+          "Oncology"
+        ],
+        "answer": 0,
+        "explanation": "Woh Psychiatry aur Community Mental Health se associated the."
+      },
+      {
+        "question": "Dr Anand Pandurangi ko kaun se awards mile the?",
+        "options": [
+          "Karnataka Rajyotsava Award and Dr B. C. Roy Award",
+          "Bharat Ratna and Padma Vibhushan",
+          "Arjuna Award and Dronacharya Award"
+        ],
+        "answer": 0,
+        "explanation": "Unke major recognitions mein Karnataka Rajyotsava Award, Dr B. C. Roy Award aur Dr Kateel Appu Pai National Memorial Award – 2017 included the."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-28T14:38:07"
+  },
+  {
+    "id": "ca-2026-09-026-008",
+    "date": "2026-09-26",
+    "category": "National",
+    "question": "Who has been appointed as the Director of Jawaharlal Nehru Aluminium Research Development and Design Centre (JNARDDC)?",
+    "options": [
+      "Dr. Rohit Kumar Gupta",
+      "Dr. Anil Kumar Verma",
+      "Dr. Rajesh Kumar Singh",
+      "Dr. Sanjay Kumar Sharma"
+    ],
+    "answer": 0,
+    "explanation": "Dr. Rohit Kumar Gupta ne JNARDDC ke Director ka padbhar grahan kiya. Woh aluminium, non-ferrous metals, critical minerals aur mineral recycling se related research aur technology-development programmes lead karenge.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "JNARDDC kis Ministry se associated hai?",
+        "options": [
+          "Ministry of Mines",
+          "Ministry of Steel",
+          "Ministry of Heavy Industries"
+        ],
+        "answer": 0,
+        "explanation": "JNARDDC Ministry of Mines, Government of India se associated central government autonomous R&D body hai."
+      },
+      {
+        "question": "JNARDDC kab established hua tha?",
+        "options": [
+          "1989",
+          "1996",
+          "2001"
+        ],
+        "answer": 0,
+        "explanation": "JNARDDC established 1989 mein hua tha aur fully established 1996 mein hua."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-28T14:38:07"
+  },
+  {
+    "id": "ca-2026-09-026-009",
+    "date": "2026-09-26",
+    "category": "International",
+    "question": "What is the theme of the BRICS Theatre Festival 2026?",
+    "options": [
+      "Culture for One Earth",
+      "Shared Stories, Shared Futures",
+      "Theatre for Global Peace",
+      "Traditions Beyond Borders"
+    ],
+    "answer": 1,
+    "explanation": "BRICS Theatre Festival 2026 ki theme 'Shared Stories, Shared Futures' hai. Festival India’s BRICS Presidency 2026 ke under New Delhi mein 12–14 October 2026 ko organise kiya jana hai.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "BRICS Theatre Festival 2026 kahan organise kiya jana hai?",
+        "options": [
+          "New Delhi",
+          "Mumbai",
+          "Bengaluru"
+        ],
+        "answer": 0,
+        "explanation": "Festival New Delhi mein 12–14 October 2026 ko organise kiya jana hai."
+      },
+      {
+        "question": "BRICS mein 2026 ke source ke according kitne member countries hain?",
+        "options": [
+          "10",
+          "11",
+          "12"
+        ],
+        "answer": 1,
+        "explanation": "Source mein BRICS ke 11 members listed hain: Brazil, Russia, India, China, South Africa, Egypt, Ethiopia, Indonesia, Iran, Saudi Arabia aur UAE."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-28T14:38:07"
+  },
+  {
+    "id": "ca-2026-09-026-010",
+    "date": "2026-09-26",
+    "category": "International",
+    "question": "India participated in which edition of the East Asia Summit Economic Ministers' Meeting in September 2026?",
+    "options": [
+      "12th",
+      "13th",
+      "14th",
+      "15th"
+    ],
+    "answer": 2,
+    "explanation": "India ne September 2026 mein Manila, Philippines mein hui 14th East Asia Summit Economic Ministers' Meeting mein participate kiya. Indian delegation ka leadership Department of Commerce ke Additional Secretary Nitin Kumar Yadav ne kiya.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "14th East Asia Summit Economic Ministers' Meeting kahan hui?",
+        "options": [
+          "Manila, Philippines",
+          "Kuala Lumpur, Malaysia",
+          "New Delhi, India"
+        ],
+        "answer": 0,
+        "explanation": "Meeting Manila, Philippines mein hui."
+      },
+      {
+        "question": "East Asia Summit kis year mein start hua tha?",
+        "options": [
+          "2005",
+          "2010",
+          "2015"
+        ],
+        "answer": 0,
+        "explanation": "East Asia Summit 2005 mein Kuala Lumpur, Malaysia mein start hua tha."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-28T14:38:07"
+  },
+  {
+    "id": "ca-2026-09-028-001",
+    "date": "2026-09-28",
+    "category": "National",
+    "question": "Who was appointed as the new Chairperson of CBSE in September 2026?",
+    "options": [
+      "Rahul Singh",
+      "Dr. Mandeep Kumar Bhandari",
+      "Sanjay Kumar",
+      "Vineet Joshi"
+    ],
+    "answer": 1,
+    "explanation": "Dr. Mandeep Kumar Bhandari was appointed as the new Chairperson of CBSE in September 2026. The appointment was approved by the Appointments Committee of the Cabinet (ACC) on 25 September 2026. He replaced Lokhande Prashant Sitaram. CBSE was initially established in 1929 and its headquarters is in New Delhi.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "CBSE is an autonomous education board under which Ministry?",
+        "options": [
+          "Ministry of Home Affairs",
+          "Ministry of Education",
+          "Ministry of Culture",
+          "Ministry of Skill Development"
+        ],
+        "answer": 1,
+        "explanation": "CBSE is an autonomous education board under the Ministry of Education."
+      },
+      {
+        "question": "In which year was CBSE initially established?",
+        "options": [
+          "1929",
+          "1947",
+          "1950",
+          "1961"
+        ],
+        "answer": 0,
+        "explanation": "According to the PDF, CBSE was initially established in 1929."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-28T15:14:43"
+  },
+  {
+    "id": "ca-2026-09-028-002",
+    "date": "2026-09-28",
+    "category": "Polity",
+    "question": "Which Article of the Constitution provides for the removal of the Chief Election Commissioner (CEC) from office?",
+    "options": [
+      "Article 320",
+      "Article 324(5)",
+      "Article 326",
+      "Article 329"
+    ],
+    "answer": 1,
+    "explanation": "Article 324(5) provides that the Chief Election Commissioner can be removed in the same manner and on the same grounds as a Judge of the Supreme Court. The main grounds are proved misbehaviour and incapacity.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "The CEC is removed in the same manner as which Judge?",
+        "options": [
+          "High Court Judge",
+          "Supreme Court Judge",
+          "District Court Judge",
+          "Tribunal Member"
+        ],
+        "answer": 1,
+        "explanation": "The CEC is removed in the same manner and on the same grounds as a Supreme Court Judge."
+      },
+      {
+        "question": "According to the PDF, how many Lok Sabha MPs' signatures are required for a CEC removal motion?",
+        "options": [
+          "50",
+          "75",
+          "100",
+          "150"
+        ],
+        "answer": 2,
+        "explanation": "According to the PDF, at least 100 MPs' signatures are required in the Lok Sabha."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-28T15:14:43"
+  },
+  {
+    "id": "ca-2026-09-028-003",
+    "date": "2026-09-28",
+    "category": "Defence",
+    "question": "In the notified disturbed areas of which states has the Centre extended AFSPA (Armed Forces [Special Powers]  Act 1958) for six months?",
+    "options": [
+      "Manipur",
+      "Nagaland",
+      "Arunachal Pradesh",
+      "All of the above"
+    ],
+    "answer": 3,
+    "explanation": "The Central Government has extended AFSPA in the notified disturbed areas of Manipur, Nagaland and Arunachal Pradesh for another six months from 1 October 2026. It does not automatically apply to the entire states; it applies to the notified areas.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "What is the full form of AFSPA?",
+        "options": [
+          "Armed Forces Special Protection Act",
+          "Armed Forces (Special Powers) Act",
+          "Armed Force Security Powers Act",
+          "Armed Forces State Protection Act"
+        ],
+        "answer": 1,
+        "explanation": "AFSPA stands for Armed Forces (Special Powers) Act, 1958."
+      },
+      {
+        "question": "In which year was AFSPA passed by Parliament?",
+        "options": [
+          "1947",
+          "1950",
+          "1958",
+          "1972"
+        ],
+        "answer": 2,
+        "explanation": "The Armed Forces (Special Powers) Act was passed by Parliament in 1958."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-28T15:14:43"
+  },
+  {
+    "id": "ca-2026-09-028-004",
+    "date": "2026-09-28",
+    "category": "International",
+    "question": "When is World Tourism Day celebrated every year?",
+    "options": [
+      "15 August",
+      "27 September",
+      "10 December",
+      "5 June"
+    ],
+    "answer": 1,
+    "explanation": "World Tourism Day is celebrated every year on 27 September. The 2026 theme mentioned in the PDF is “Digital Agenda and Artificial Intelligence to Redesign Tourism.”",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "In which year did World Tourism Day begin according to the PDF?",
+        "options": [
+          "1975",
+          "1980",
+          "1985",
+          "1990"
+        ],
+        "answer": 1,
+        "explanation": "According to the PDF, World Tourism Day began in 1980 through UNWTO."
+      },
+      {
+        "question": "Where is the headquarters of UNWTO located?",
+        "options": [
+          "Paris, France",
+          "New York, USA",
+          "Madrid, Spain",
+          "Geneva, Switzerland"
+        ],
+        "answer": 2,
+        "explanation": "According to the PDF, the headquarters of UNWTO is in Madrid, Spain."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-28T15:14:43"
+  },
+  {
+    "id": "ca-2026-09-028-005",
+    "date": "2026-09-28",
+    "category": "Economy",
+    "question": "When will the India–New Zealand Free Trade Agreement come into effect?",
+    "options": [
+      "1 October 2026",
+      "20 October 2026",
+      "1 November 2026",
+      "15 November 2026"
+    ],
+    "answer": 1,
+    "explanation": "The India–New Zealand Free Trade Agreement will come into effect on 20 October 2026. The agreement was signed on 27 April 2026. According to the PDF, Indian exporters will receive 100% duty-free access to the New Zealand market.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "When was the India–New Zealand FTA signed?",
+        "options": [
+          "27 April 2026",
+          "15 March 2026",
+          "20 October 2026",
+          "1 January 2026"
+        ],
+        "answer": 0,
+        "explanation": "According to the PDF, the FTA was signed on 27 April 2026."
+      },
+      {
+        "question": "What is the main purpose of a Free Trade Agreement?",
+        "options": [
+          "To increase military cooperation",
+          "To reduce or eliminate customs duties and trade barriers",
+          "To increase visa restrictions",
+          "To replace currencies"
+        ],
+        "answer": 1,
+        "explanation": "A Free Trade Agreement aims to reduce or eliminate customs duties and other trade barriers between countries."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-28T15:14:43"
+  },
+  {
+    "id": "ca-2026-09-028-006",
+    "date": "2026-09-28",
+    "category": "State Scheme",
+    "question": "The Orunodoi Scheme is associated with which state?",
+    "options": [
+      "Gujarat",
+      "Tamil Nadu",
+      "Assam",
+      "Manipur"
+    ],
+    "answer": 2,
+    "explanation": "The Orunodoi Scheme is a major Direct Benefit Transfer (DBT) welfare scheme of the Assam Government. It aims to provide monthly financial assistance to women from poor and economically weaker families.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "When was the Orunodoi Scheme launched?",
+        "options": [
+          "2 October 2020",
+          "15 August 2020",
+          "26 January 2021",
+          "1 April 2021"
+        ],
+        "answer": 0,
+        "explanation": "According to the PDF, the Orunodoi Scheme was launched on 2 October 2020."
+      },
+      {
+        "question": "How much assistance was decided for Orunodoi beneficiaries for October 2026?",
+        "options": [
+          "₹1,000",
+          "₹1,250",
+          "₹1,500",
+          "₹2,000"
+        ],
+        "answer": 2,
+        "explanation": "₹1,500 was decided for October 2026, including a one-time ₹250 increase for the festive period."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-28T15:14:43"
+  },
+  {
+    "id": "ca-2026-09-028-007",
+    "date": "2026-09-28",
+    "category": "Environment",
+    "question": "Which state government announced the 'Parali Protection Force'?",
+    "options": [
+      "Punjab",
+      "Haryana",
+      "Uttar Pradesh",
+      "Rajasthan"
+    ],
+    "answer": 1,
+    "explanation": "The Haryana Government announced the formation of a Parali Protection Force at district and block levels to prevent crop-residue burning. It will include personnel from the Police, Agriculture Department and administration.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "What is the main purpose of the Parali Protection Force?",
+        "options": [
+          "To purchase new crops",
+          "To prevent and monitor crop-residue burning",
+          "To provide loans to farmers",
+          "To purchase agricultural land"
+        ],
+        "answer": 1,
+        "explanation": "Its main purpose is to prevent crop-residue burning, monitor fire incidents and ensure action against violations."
+      },
+      {
+        "question": "What incentive per acre was mentioned for the proper use of crop-residue management machinery?",
+        "options": [
+          "₹500",
+          "₹1,000",
+          "₹1,200",
+          "₹1,500"
+        ],
+        "answer": 2,
+        "explanation": "According to the PDF, Haryana Government will provide an incentive of ₹1,200 per acre for proper use of crop-residue management machinery."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-28T15:14:43"
+  },
+  {
+    "id": "ca-2026-09-028-008",
+    "date": "2026-09-28",
+    "category": "Environment",
+    "question": "The inaugural 'Cool Leaders Award' was launched by the Cool Coalition led by which organisation?",
+    "options": [
+      "UNDP",
+      "UNEP",
+      "UNFCCC",
+      "World Bank"
+    ],
+    "answer": 1,
+    "explanation": "The UNEP-led Cool Coalition launched the inaugural Cool Leaders Award during the Global Cooling Pledge Assembly 2026 in Singapore.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "In which year was the Cool Coalition launched?",
+        "options": [
+          "2015",
+          "2017",
+          "2019",
+          "2021"
+        ],
+        "answer": 2,
+        "explanation": "According to the PDF, the Cool Coalition was launched by UNEP in 2019 in the context of the Climate Action Summit."
+      },
+      {
+        "question": "Who were selected as the first Cool Leaders?",
+        "options": [
+          "Singapore, UAE and Dong Mingzhu",
+          "India, Japan and Bill Gates",
+          "China, India and Elon Musk",
+          "Nepal, Bhutan and UAE"
+        ],
+        "answer": 0,
+        "explanation": "Singapore, the United Arab Emirates and Dong Mingzhu were selected as the first Cool Leaders."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-28T15:14:43"
+  },
+  {
+    "id": "ca-2026-09-028-009",
+    "date": "2026-09-28",
+    "category": "International",
+    "question": "Which country proposed the establishment of a Himalayan Climate Resilience Mechanism at the United Nations General Assembly?",
+    "options": [
+      "Bhutan",
+      "Nepal",
+      "Bangladesh",
+      "Myanmar"
+    ],
+    "answer": 1,
+    "explanation": "Nepal's Prime Minister Balendra Shah proposed the establishment of a Himalayan Climate Resilience Mechanism at the 81st United Nations General Assembly on 24 September 2026. The proposal involves leadership by Nepal, India and China.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "What is the main objective of the Himalayan Climate Resilience Mechanism?",
+        "options": [
+          "To promote tourism",
+          "To increase cooperation against Himalayan climate risks and natural disasters",
+          "To remove trade barriers",
+          "To establish a military alliance"
+        ],
+        "answer": 1,
+        "explanation": "The proposed mechanism aims to increase regional cooperation to address climate risks and natural disasters in the Himalayas."
+      },
+      {
+        "question": "Which three countries are proposed to lead the mechanism?",
+        "options": [
+          "India, Nepal and China",
+          "India, Bhutan and Bangladesh",
+          "Nepal, Pakistan and China",
+          "India, Myanmar and Nepal"
+        ],
+        "answer": 0,
+        "explanation": "According to the PDF, Nepal, India and China are proposed to lead the mechanism."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-28T15:14:43"
+  },
+  {
+    "id": "ca-2026-09-028-010",
+    "date": "2026-09-28",
+    "category": "Agriculture",
+    "question": "APEDA facilitated the first commercial export consignment of GI-tagged 'Gulbarga Tur Dal' to which country?",
+    "options": [
+      "Sri Lanka",
+      "Maldives",
+      "Mauritius",
+      "Nepal"
+    ],
+    "answer": 1,
+    "explanation": "APEDA facilitated the first commercial export consignment of Karnataka's GI-tagged Gulbarga Tur Dal to the Maldives. The first shipment weighed 1 metric tonne.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "In which year did Gulbarga Tur Dal receive its GI Tag?",
+        "options": [
+          "2017",
+          "2018",
+          "2019",
+          "2020"
+        ],
+        "answer": 2,
+        "explanation": "According to the PDF, Gulbarga Tur Dal received its GI Tag in 2019."
+      },
+      {
+        "question": "Gulbarga Tur Dal is associated with which region?",
+        "options": [
+          "Maharashtra",
+          "Kalaburagi, Karnataka",
+          "Telangana",
+          "Andhra Pradesh"
+        ],
+        "answer": 1,
+        "explanation": "Gulbarga Tur Dal is the famous Tur Dal of the Kalaburagi region of Karnataka."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-28T15:14:43"
+  },
+  {
+    "id": "ca-2026-09-029-001",
+    "date": "2026-09-29",
+    "category": "International",
+    "question": "What is India's rank in the World Economic Forum's Travel and Tourism Development Index 2026?",
+    "options": [
+      "25th",
+      "31st",
+      "39th",
+      "42nd"
+    ],
+    "answer": 1,
+    "explanation": "The World Economic Forum released the Travel and Tourism Development Index (TTDI) 2026. India ranked 31st among 110 countries, improving from 39th in 2024. India was the best-performing country in South Asia.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "Which organization publishes the Travel and Tourism Development Index?",
+        "options": [
+          "World Bank",
+          "World Economic Forum",
+          "UN Tourism",
+          "IMF"
+        ],
+        "answer": 1,
+        "explanation": "The Travel and Tourism Development Index is published by the World Economic Forum."
+      },
+      {
+        "question": "What was India's rank in the TTDI 2024?",
+        "options": [
+          "31st",
+          "35th",
+          "39th",
+          "42nd"
+        ],
+        "answer": 2,
+        "explanation": "India ranked 39th in the 2024 edition."
+      },
+      {
+        "question": "Which country ranked first in the TTDI 2026?",
+        "options": [
+          "United States",
+          "China",
+          "Spain",
+          "Japan"
+        ],
+        "answer": 3,
+        "explanation": "Japan ranked first, followed by the United States and Spain."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-30T07:12:40"
+  },
+  {
+    "id": "ca-2026-09-029-002",
+    "date": "2026-09-29",
+    "category": "National",
+    "question": "Who was selected for the National Lata Mangeshkar Award 2026?",
+    "options": [
+      "A.R. Rahman",
+      "Shankar Mahadevan",
+      "Shantanu Moitra",
+      "Amit Trivedi"
+    ],
+    "answer": 2,
+    "explanation": "Indian music composer and music director Shantanu Moitra was selected for the National Lata Mangeshkar Award 2026 for his contribution to music direction. The award ceremony was held in Indore on 28 September 2026.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "The National Lata Mangeshkar Award is given by which state?",
+        "options": [
+          "Maharashtra",
+          "Madhya Pradesh",
+          "Uttar Pradesh",
+          "Gujarat"
+        ],
+        "answer": 1,
+        "explanation": "The award is given by the Madhya Pradesh Government through the Culture Department."
+      },
+      {
+        "question": "When was the National Lata Mangeshkar Award started?",
+        "options": [
+          "1990",
+          "1975",
+          "1984",
+          "1980"
+        ],
+        "answer": 2,
+        "explanation": "The award was started in 1984."
+      },
+      {
+        "question": "Who received the National Lata Mangeshkar Award 2025 for playback singing?",
+        "options": [
+          "Shankar Mahadevan",
+          "Shantanu Moitra",
+          "Sonu Nigam",
+          "A.R. Rahman"
+        ],
+        "answer": 2,
+        "explanation": "Sonu Nigam received the award in 2025 for playback singing."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-30T07:12:40"
+  },
+  {
+    "id": "ca-2026-09-029-003",
+    "date": "2026-09-29",
+    "category": "Sports",
+    "question": "Who became the fastest batsman to score 15,000 runs in men's ODI cricket?",
+    "options": [
+      "Virat Kohli",
+      "Vaibhav Suryavanshi",
+      "Rohit Sharma",
+      "Shubman Gill"
+    ],
+    "answer": 0,
+    "explanation": "Virat Kohli became the fastest batsman to reach 15,000 ODI runs, achieving the milestone in 315 ODI innings. He became only the second player to cross 15,000 ODI runs after Sachin Tendulkar.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "In how many ODI innings did Virat Kohli complete 15,000 runs?",
+        "options": [
+          "300",
+          "315",
+          "325",
+          "350"
+        ],
+        "answer": 1,
+        "explanation": "Virat Kohli completed 15,000 ODI runs in 315 innings."
+      },
+      {
+        "question": "Who was the first batsman to score 15,000+ ODI runs?",
+        "options": [
+          "Virat Kohli",
+          "Rohit Sharma",
+          "Sachin Tendulkar",
+          "Kumar Sangakkara"
+        ],
+        "answer": 2,
+        "explanation": "Sachin Tendulkar was the first player to cross 15,000 ODI runs."
+      },
+      {
+        "question": "What was Virat Kohli's ODI century count mentioned in the source?",
+        "options": [
+          "50th",
+          "55th",
+          "60th",
+          "65th"
+        ],
+        "answer": 1,
+        "explanation": "The source states that this was his 55th ODI century and 86th international century."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-30T07:12:40"
+  },
+  {
+    "id": "ca-2026-09-029-004",
+    "date": "2026-09-29",
+    "category": "Art and Culture",
+    "question": "Where was the 65th National Exhibition of Art 2026 held?",
+    "options": [
+      "New Delhi",
+      "Surat",
+      "Chennai",
+      "Bengaluru"
+    ],
+    "answer": 0,
+    "explanation": "The 65th National Exhibition of Art was held at Lalit Kala Art Galleries, Rabindra Bhavan, New Delhi. Lalit Kala Akademi announced awards for 20 artists.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "Which organization conducts the National Exhibition of Art?",
+        "options": [
+          "Sangeet Natak Akademi",
+          "Lalit Kala Akademi",
+          "Sahitya Akademi",
+          "National School of Drama"
+        ],
+        "answer": 1,
+        "explanation": "The National Exhibition of Art is a major annual visual-art event of Lalit Kala Akademi."
+      },
+      {
+        "question": "When was the National Exhibition of Art started?",
+        "options": [
+          "1950",
+          "1954",
+          "1955",
+          "1960"
+        ],
+        "answer": 2,
+        "explanation": "The National Exhibition of Art started in 1955."
+      },
+      {
+        "question": "When was Lalit Kala Akademi established?",
+        "options": [
+          "1947",
+          "1950",
+          "1954",
+          "1956"
+        ],
+        "answer": 2,
+        "explanation": "Lalit Kala Akademi was established on 5 August 1954."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-30T07:12:40"
+  },
+  {
+    "id": "ca-2026-09-029-005",
+    "date": "2026-09-29",
+    "category": "Environment",
+    "question": "Hurricane Polo, seen in the news in September 2026, developed in which oceanic region?",
+    "options": [
+      "North Atlantic Ocean",
+      "Eastern Pacific Ocean",
+      "North Indian Ocean",
+      "South Atlantic Ocean"
+    ],
+    "answer": 1,
+    "explanation": "Hurricane Polo developed in the Eastern Pacific Ocean near Mexico in September 2026 and strengthened into a Category 5 hurricane.",
+    "questionImageSize": "small",
+    "subQuestions": [
+      {
+        "question": "Where did Hurricane Polo develop?",
+        "options": [
+          "Near Mexico",
+          "Near Japan",
+          "Near India",
+          "Near Australia"
+        ],
+        "answer": 0,
+        "explanation": "Hurricane Polo developed in the Eastern Pacific Ocean near Mexico."
+      },
+      {
+        "question": "What is a tropical cyclone called in the Northwest Pacific?",
+        "options": [
+          "Hurricane",
+          "Typhoon",
+          "Cyclone",
+          "Tornado"
+        ],
+        "answer": 1,
+        "explanation": "Tropical cyclones in the Northwest Pacific are called typhoons."
+      },
+      {
+        "question": "What are tropical cyclones in the North Indian Ocean generally called?",
+        "options": [
+          "Hurricanes",
+          "Typhoons",
+          "Cyclones",
+          "Willy-willies"
+        ],
+        "answer": 2,
+        "explanation": "They are generally called cyclones in the North Indian Ocean."
+      }
+    ],
+    "questionImage": "current-affairs-question-images/2026-09-29/ca-2026-09-029-005.webp",
+    "questionImageId": "img-ca-2026-09-029-005-001",
+    "questionImageName": "image.png",
+    "source": "user-upload",
+    "createdAt": "2026-09-30T07:12:40"
+  },
+  {
+    "id": "ca-2026-09-029-006",
+    "date": "2026-09-29",
+    "category": "Sports",
+    "question": "Which trophy was awarded to India for the best combined performance in the Open and Women's sections at the 46th FIDE Chess Olympiad 2026?",
+    "options": [
+      "Hamilton-Russell Cup",
+      "Vera Menchik Cup",
+      "Nona Gaprindashvili Trophy",
+      "Mitropa Cup"
+    ],
+    "answer": 2,
+    "explanation": "India won the Nona Gaprindashvili Trophy for the best combined performance in the Open and Women's sections at the 46th FIDE Chess Olympiad 2026 in Samarkand, Uzbekistan.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "Where was the 46th FIDE Chess Olympiad 2026 held?",
+        "options": [
+          "Chennai",
+          "Budapest",
+          "Samarkand",
+          "Tashkent"
+        ],
+        "answer": 2,
+        "explanation": "The Olympiad was held in Samarkand, Uzbekistan."
+      },
+      {
+        "question": "Which medal did India win in the Open section?",
+        "options": [
+          "Gold",
+          "Silver",
+          "Bronze",
+          "No medal"
+        ],
+        "answer": 1,
+        "explanation": "India won the Silver Medal in the Open section."
+      },
+      {
+        "question": "Which medal did India win in the Women's section?",
+        "options": [
+          "Gold",
+          "Silver",
+          "Bronze",
+          "No medal"
+        ],
+        "answer": 2,
+        "explanation": "India won the Bronze Medal in the Women's section."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-30T07:12:40"
+  },
+  {
+    "id": "ca-2026-09-029-007",
+    "date": "2026-09-29",
+    "category": "Economy",
+    "question": "India's first port-based e-Methanol production plant is being established at which port?",
+    "options": [
+      "Paradip Port",
+      "Deendayal Port, Kandla",
+      "V.O. Chidambaranar Port",
+      "Jawaharlal Nehru Port"
+    ],
+    "answer": 1,
+    "explanation": "India's first port-based e-Methanol production plant is being established at Deendayal Port Authority in Kandla, Gujarat. The project is a joint initiative of Deendayal Port Authority and Assam Petro-Chemicals Limited.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "What is the planned capacity of the e-Methanol plant?",
+        "options": [
+          "50 tonnes/day",
+          "100 tonnes/day",
+          "150 tonnes/day",
+          "200 tonnes/day"
+        ],
+        "answer": 2,
+        "explanation": "The planned production capacity is 150 tonnes per day."
+      },
+      {
+        "question": "What is e-Methanol produced using?",
+        "options": [
+          "Coal and oxygen",
+          "Green hydrogen and captured CO2",
+          "Petroleum and water",
+          "Natural gas only"
+        ],
+        "answer": 1,
+        "explanation": "e-Methanol can be produced using green hydrogen made with renewable electricity and captured CO2."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-30T07:12:40"
+  },
+  {
+    "id": "ca-2026-09-029-008",
+    "date": "2026-09-29",
+    "category": "National",
+    "question": "How many ports were notified as India's first 'Mega Ports' in September 2026?",
+    "options": [
+      "Two",
+      "Three",
+      "Four",
+      "Six"
+    ],
+    "answer": 2,
+    "explanation": "The Ministry of Ports, Shipping and Waterways notified four ports as India's first Mega Ports under Section 73 of the Indian Ports Act, 2025.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "Which of the following was notified as a Mega Port in September 2026?",
+        "options": [
+          "Deendayal Port",
+          "Kochi Port",
+          "Visakhapatnam Port",
+          "Kolkata Port"
+        ],
+        "answer": 0,
+        "explanation": "Deendayal Port was one of India's first four notified Mega Ports."
+      },
+      {
+        "question": "What is the cargo threshold for a Bulk & Other Cargo port to qualify as a Mega Port?",
+        "options": [
+          "50 MMT",
+          "100 MMT",
+          "150 MMT",
+          "200 MMT"
+        ],
+        "answer": 2,
+        "explanation": "A port handling at least 150 million metric tonnes of bulk and other cargo annually falls under the stated Mega Port category."
+      },
+      {
+        "question": "What does TEU stand for?",
+        "options": [
+          "Twenty-foot Equivalent Unit",
+          "Twenty-eight Equivalent Unit",
+          "Trade Export Unit",
+          "Terminal Equipment Unit"
+        ],
+        "answer": 0,
+        "explanation": "TEU stands for Twenty-foot Equivalent Unit and is a standard measure of container traffic."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-30T07:12:40"
+  },
+  {
+    "id": "ca-2026-09-029-009",
+    "date": "2026-09-29",
+    "category": "Agriculture",
+    "question": "Where was the National Conference on Agriculture for Rabi Campaign 2026 organised?",
+    "options": [
+      "Bhopal",
+      "Hyderabad",
+      "New Delhi",
+      "Lucknow"
+    ],
+    "answer": 2,
+    "explanation": "The Department of Agriculture and Farmers' Welfare organised the National Conference on Agriculture for Rabi Campaign 2026 in New Delhi on 28–29 September 2026.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "Which crops are generally classified as Rabi crops?",
+        "options": [
+          "Wheat, barley and gram",
+          "Rice, maize and cotton",
+          "Jute, rice and sugarcane",
+          "Tea, coffee and rubber"
+        ],
+        "answer": 0,
+        "explanation": "Major Rabi crops include wheat, barley, gram, lentil, mustard and pea."
+      },
+      {
+        "question": "Rabi crops are generally sown during which period?",
+        "options": [
+          "June–August",
+          "October–December",
+          "January–March",
+          "April–June"
+        ],
+        "answer": 1,
+        "explanation": "Rabi crops are generally sown between October and December."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-30T07:12:40"
+  },
+  {
+    "id": "ca-2026-09-029-010",
+    "date": "2026-09-29",
+    "category": "Science and Technology",
+    "question": "NASA–ISRO's NISAR satellite captured the eruption and lava flow of which volcano?",
+    "options": [
+      "Mount Etna",
+      "Krasheninnikov",
+      "Mount Fuji",
+      "Mauna Loa"
+    ],
+    "answer": 1,
+    "explanation": "The NASA–ISRO NISAR satellite captured radar images of the eruption and lava flow of Krasheninnikov Volcano in Russia's Kamchatka Peninsula.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "Where is Krasheninnikov Volcano located?",
+        "options": [
+          "Kamchatka Peninsula",
+          "Iceland",
+          "Hawaii",
+          "Italy"
+        ],
+        "answer": 0,
+        "explanation": "Krasheninnikov Volcano is located in Russia's Kamchatka Peninsula."
+      },
+      {
+        "question": "What does NISAR stand for?",
+        "options": [
+          "National Indian Space and Radar",
+          "NASA-ISRO Synthetic Aperture Radar",
+          "New Imaging Satellite and Radar",
+          "NASA Indian Satellite Research"
+        ],
+        "answer": 1,
+        "explanation": "NISAR stands for NASA-ISRO Synthetic Aperture Radar."
+      },
+      {
+        "question": "What is a major advantage of Synthetic Aperture Radar?",
+        "options": [
+          "It works only during daytime",
+          "It works only in clear weather",
+          "It can observe day and night and through clouds",
+          "It works only over oceans"
+        ],
+        "answer": 2,
+        "explanation": "SAR can collect observations during both day and night and can operate through clouds and poor weather conditions."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-30T07:12:40"
+  },
+  {
+    "id": "ca-2026-09-029-016",
+    "date": "2026-09-29",
+    "category": "Schemes",
+    "question": "The Orunodoi scheme is associated with which state?",
+    "options": [
+      "Gujarat",
+      "Tamil Nadu",
+      "Assam",
+      "Manipur"
+    ],
+    "answer": 2,
+    "explanation": "Orunodoi is a scheme associated with Assam.",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-30T07:12:40"
+  },
+  {
+    "id": "ca-2026-09-029-020",
+    "date": "2026-09-29",
+    "category": "Agriculture",
+    "question": "APEDA facilitated the first commercial export consignment of GI-tagged Gulbarga Tur Dal to which country?",
+    "options": [
+      "Sri Lanka",
+      "Maldives",
+      "Mauritius",
+      "Nepal"
+    ],
+    "answer": 1,
+    "explanation": "APEDA facilitated the first commercial export consignment of GI-tagged Gulbarga Tur Dal to the Maldives.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "Which organisation facilitated the export?",
+        "options": [
+          "APEDA",
+          "FSSAI",
+          "NABARD",
+          "SEBI"
+        ],
+        "answer": 0,
+        "explanation": "The Agricultural and Processed Food Products Export Development Authority (APEDA) facilitated the export."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-09-30T07:12:40"
   }
 ]

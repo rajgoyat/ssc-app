@@ -3150,7 +3150,7 @@
       "7 L"
     ],
     "correctIndex": 2,
-    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=RvQZB48BVQv5iV-c&t=18761",
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=RvQZB48BVQv5iV-c&t=18700",
     "solutionImage": null,
     "special": false,
     "id": "mtk7ic9fd4yck",
@@ -4530,7 +4530,7 @@
       "7&1/2",
       "5"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "solutionText": "",
     "solutionImage": null,
     "special": false,
@@ -8471,7 +8471,7 @@
       "53.77%"
     ],
     "correctIndex": 3,
-    "solutionText": "https://youtu.be/kkyTvdGJG_A?t=200",
+    "solutionText": "https://youtu.be/kkyTvdGJG_A?t=147",
     "solutionImage": null,
     "special": false,
     "id": "mudjxhapxp4z46",
@@ -9665,12 +9665,12 @@
     "questionText": "In a triangle ABC with sides 6cm, 7cm, and 8cm, the angle bisectar of the largest angle divides the opposite side into two segments. What is the length of the shorter segment?",
     "questionImage": null,
     "options": [
-      "1",
-      "2",
-      "3",
-      "4"
+      "43/13",
+      "42/13",
+      "47/13",
+      "48/13"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "solutionText": "https://youtu.be/EBYNCG2Q30A?t=51890",
     "solutionImage": null,
     "special": false,
@@ -11805,12 +11805,12 @@
     "questionText": "In the triangle ABC, the sum of square of all sides is 64 cm². Find the sum of square of all three medians?",
     "questionImage": null,
     "options": [
-      "1",
-      "2",
-      "3",
-      "4"
+      "66",
+      "61",
+      "64",
+      "65"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "solutionText": "https://youtu.be/EBYNCG2Q30A?t=110942",
     "solutionImage": null,
     "special": false,
@@ -13416,6 +13416,2806 @@
     "special": false,
     "id": "mue9aonqsyenzd",
     "order": 670,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "HCF & LCM",
+    "examName": "",
+    "questionText": "A man wants to plant 52 palm trees, 78 banana trees and 130 mango trees in equal rows (in terms of number of trees). Also, he wants to make only one type of tree in one row. The minimum number of rows required are:",
+    "questionImage": null,
+    "options": [
+      "10",
+      "12",
+      "13",
+      "20"
+    ],
+    "correctIndex": 0,
+    "solutionText": "HCF of 52, 78 and 130 = 26. So each row will contain 26 trees. Number of rows = 52/26 + 78/26 + 130/26 = 2 + 3 + 5 = 10. Link: https://youtu.be/UNklq50VFbY?t=207",
+    "solutionImage": null,
+    "special": false,
+    "id": "mumb3o21tfanmf",
+    "order": 671,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Percentage",
+    "examName": "",
+    "questionText": "Due to the hike in crude oil prices, the petrol price in India rose by 10%. Before the rise, the price was Rs. 70/litre. Mr. Khanna commutes to work every day in his car from MG Road to Electronic City, which comes to around 1000 km per month at a mileage of 14 km/litre. Calculate how much of travelling must he reduce to nullify the effect.",
+    "questionImage": null,
+    "options": [
+      "90.91 km",
+      "100 km",
+      "110 km",
+      "120 km"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Original petrol consumption = 1000/14 litres. After a 10% price rise, to keep expenditure unchanged, fuel consumption must become 1/1.10 of the original consumption. Therefore distance must also become 1/1.10 of 1000 = 909.09 km. Reduction = 1000 - 909.09 = 90.91 km. Link: https://youtu.be/UNklq50VFbY?t=232",
+    "solutionImage": null,
+    "special": false,
+    "id": "mumb3o21dd9g5r",
+    "order": 672,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "Alloy A contains 40% copper and the rest is tin. Alloy B contains 74% copper, 10% tin and the rest are impurities. In which ratio should both alloys be mixed so that the percentage of tin in the new mixture is 25%?",
+    "questionImage": null,
+    "options": [
+      "1:2",
+      "2:1",
+      "3:2",
+      "2:3"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Alloy A contains 60% tin and Alloy B contains 10% tin. Required tin = 25%. By alligation: A:B = (25-10):(60-25) = 15:35 = 3:7. Therefore the required ratio is 3:7. Link: https://youtu.be/UNklq50VFbY?t=349",
+    "solutionImage": null,
+    "special": false,
+    "id": "mumb3o21p2qn41",
+    "order": 673,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "The sides of a triangle are 24 cm, 32 cm and 40 cm. What is the height of the perpendicular drawn on the longest side?",
+    "questionImage": null,
+    "options": [
+      "19.2 cm",
+      "20 cm",
+      "21.6 cm",
+      "24 cm"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Since 24² + 32² = 40², the triangle is right-angled. Taking 24 cm and 32 cm as perpendicular sides, area = 1/2 × 24 × 32 = 384 cm². If 40 cm is the base, height = 2 × 384/40 = 19.2 cm. Link: https://youtu.be/UNklq50VFbY?t=400",
+    "solutionImage": null,
+    "special": false,
+    "id": "mumb3o21ziwt3h",
+    "order": 674,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Height & Distance",
+    "examName": "",
+    "questionText": "When the angle of depression from the sun was 30°, the length of the shadow of a tree was 6√3 m. What will be the length of the shadow of the tree when the angle of depression from the sun is 60°?",
+    "questionImage": null,
+    "options": [
+      "7root-3",
+      "4root-3",
+      "8root-3",
+      "2root-3"
+    ],
+    "correctIndex": 3,
+    "solutionText": "Height of tree = shadow × tan 30° = 6√3 × 1/√3 = 6 m. When the angle is 60°, shadow = height/tan 60° = 6/√3 = 2√3 m. Therefore the answer is 2√3 m. Link: https://youtu.be/UNklq50VFbY?t=439",
+    "solutionImage": null,
+    "special": false,
+    "id": "mumb3o21jo072q",
+    "order": 675,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Circle",
+    "examName": "",
+    "questionText": "If arcs of equal length in two circles subtend angles of 40° and 50° at their centers, then the ratio of their radii is:",
+    "questionImage": null,
+    "options": [
+      "4:5",
+      "5:4",
+      "8:5",
+      "5:8"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Arc length l = rθ. Since the arcs are equal, r₁θ₁ = r₂θ₂. Therefore r₁/r₂ = θ₂/θ₁ = 50/40 = 5/4. Hence the ratio of radii is 5:4. Link: https://youtu.be/UNklq50VFbY?t=528",
+    "solutionImage": null,
+    "special": false,
+    "id": "mumb3o216gdl7w",
+    "order": 676,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Percentage",
+    "examName": "",
+    "questionText": "Mohit secured 70% marks in a PCS exam and the cutoff was 10 marks more, while Darshan scored 80% marks in the same exam and scored 15 marks more than the cut-off. What were the passing marks in that exam?",
+    "questionImage": null,
+    "options": [
+      "55",
+      "60",
+      "65",
+      "70"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Let total marks be x and cutoff be C. Mohit: 70% of x + 10 = C. Darshan: 80% of x - 15 = C. Therefore 0.70x + 10 = 0.80x - 15, giving 0.10x = 25 and x = 250. Cutoff = 70% of 250 + 10 = 185. Thus passing marks are 185. None of the listed options match, so the options need correction. Link: https://youtu.be/UNklq50VFbY?t=579",
+    "solutionImage": null,
+    "special": true,
+    "id": "mumb3o21gd70ch",
+    "order": 677,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Percentage",
+    "examName": "",
+    "questionText": "A fresh fruit contains 62% water, and a dry fruit contains 24% water. How much dry fruit can be obtained from 100 kg of fresh fruit?",
+    "questionImage": null,
+    "options": [
+      "38 kg",
+      "45 kg",
+      "50 kg",
+      "76 kg"
+    ],
+    "correctIndex": 1,
+    "solutionText": "In 100 kg fresh fruit, solid matter = 38 kg. This solid matter remains unchanged after drying. Dry fruit contains 76% solid matter because it contains 24% water. Therefore dry fruit obtained = 38/0.76 = 50 kg. Hence the answer is 50 kg. Link: https://youtu.be/UNklq50VFbY?t=638",
+    "solutionImage": null,
+    "special": false,
+    "id": "mumb3o21g4yod0",
+    "order": 678,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "A vessel contains 50 litres of milk and 20 litres of water. What percentage of the mixture should be replaced by water so that the ratio of water to milk in the new mixture becomes 4:3?",
+    "questionImage": null,
+    "options": [
+      "25%",
+      "30%",
+      "35%",
+      "40%"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Initial milk = 50 L and water = 20 L. Let x litres of the mixture be replaced by water. Milk left = 50(1 - x/70), while water becomes 20(1 - x/70) + x. Set water:milk = 4:3. Solving gives x = 21 litres. Percentage replaced = 21/70 × 100 = 30%. Link: https://youtu.be/UNklq50VFbY?t=699",
+    "solutionImage": null,
+    "special": false,
+    "id": "mumb3o21i98fvl",
+    "order": 679,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mensuration",
+    "examName": "",
+    "questionText": "A cylindrical vessel of radius 3.5 m is full of water. If 15400 litres of water is taken out from it, then the drop in the water level in the vessel will be:",
+    "questionImage": null,
+    "options": [
+      "0.4 m",
+      "0.5 m",
+      "0.6 m",
+      "0.8 m"
+    ],
+    "correctIndex": 0,
+    "solutionText": "15400 litres = 15.4 m³. Volume removed = πr²h. Thus 15.4 = 22/7 × 3.5² × h = 38.5h. Therefore h = 15.4/38.5 = 0.4 m. Link: https://youtu.be/UNklq50VFbY?t=787",
+    "solutionImage": null,
+    "special": false,
+    "id": "mumb3o22b93o78",
+    "order": 680,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Percentage",
+    "examName": "",
+    "questionText": "In a marriage, 60% people are vegetarian, 30% are non-vegetarian and 15% are both. If there are 300 people in the wedding, how many people did not eat any kind of food?",
+    "questionImage": null,
+    "options": [
+      "50",
+      "60",
+      "75",
+      "90"
+    ],
+    "correctIndex": 2,
+    "solutionText": "People who ate food = Vegetarian + Non-vegetarian - Both = 60% + 30% - 15% = 75%. Therefore 25% did not eat any kind of food. 25% of 300 = 75. Link: https://youtu.be/UNklq50VFbY?t=876",
+    "solutionImage": null,
+    "special": false,
+    "id": "mumb3o22nmwfhf",
+    "order": 681,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "Two tangents drawn from a point P touch a circle with center O at points Q and R. Points A and B lie on PQ and PR, respectively, such that AB is also a tangent to the same circle. If ∠AOB = 50°, then ∠APB, in degrees, equals:",
+    "questionImage": null,
+    "options": [
+      "50°",
+      "100°",
+      "130°",
+      "150°"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Since PQ and PR are tangents, OQ ⟂ PQ and OR ⟂ PR. The angle between the two tangents PQ and PR is 180° - ∠QOR. Here the relevant central angle ∠AOB = 50°, so ∠APB = 180° - 50° = 130°. Link: https://youtu.be/UNklq50VFbY?t=1058",
+    "solutionImage": null,
+    "special": false,
+    "id": "mumb3o22l5pksj",
+    "order": 682,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mensuration",
+    "examName": "",
+    "questionText": "How many smaller pieces are obtained by making 8 cuts in the X-plane, 9 cuts in the Y-plane and 11 cuts in the Z-plane on the same cube?",
+    "questionImage": null,
+    "options": [
+      "792",
+      "990",
+      "1080",
+      "1200"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Cuts parallel to each coordinate plane divide the cube into (8+1), (9+1) and (11+1) sections along the three directions. Therefore number of smaller pieces = 9 × 10 × 12 = 1080. Link: https://youtu.be/UNklq50VFbY?t=1187",
+    "solutionImage": null,
+    "special": false,
+    "id": "mumb3o22e0m7pd",
+    "order": 683,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mensuration",
+    "examName": "",
+    "questionText": "Find the volume of a regular tetrahedron whose side length is 10 m.",
+    "questionImage": null,
+    "options": [
+      "250√2/3 m³",
+      "500√2/3 m³",
+      "250√3/3 m³",
+      "1000√2/3 m³"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Volume of a regular tetrahedron = a³/(6√2). For a = 10 m, volume = 1000/(6√2) = 500/(3√2) = 250√2/3 m³. Link: https://youtu.be/UNklq50VFbY?t=1220",
+    "solutionImage": null,
+    "special": false,
+    "id": "mumb3o22or07mf",
+    "order": 684,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "The ratio of milk and sugar in a container is 2 : 3. When 20 L of the mixture is taken out and is replaced by sugar, the ratio becomes 3 : 7. What is the total quantity of the mixture in the container?",
+    "questionImage": null,
+    "options": [
+      "60 L",
+      "70 L",
+      "80 L",
+      "100 L"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Let total mixture = x L. Milk = 2x/5 and sugar = 3x/5. On removing 20 L mixture, milk decreases by 8 L and sugar by 12 L. After adding 20 L sugar, (2x/5 - 8) : (3x/5 + 8) = 3 : 7, giving x = 80 L. Video: https://youtu.be/jYEwmTyhvS8?t=1028",
+    "solutionImage": null,
+    "special": false,
+    "id": "munnrkg8gdfvn0",
+    "order": 685,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Algebra",
+    "examName": "",
+    "questionText": "Find the equation of the line with slope -2 passing through the point (3, 5).",
+    "questionImage": null,
+    "options": [
+      "y = 2x - 1",
+      "y = -2x + 11",
+      "y = -2x + 5",
+      "y = 2x + 11"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Using y - y₁ = m(x - x₁): y - 5 = -2(x - 3), so y = -2x + 11. Video: https://youtu.be/jYEwmTyhvS8?t=1068",
+    "solutionImage": null,
+    "special": false,
+    "id": "munnrkg8eji05k",
+    "order": 686,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Average",
+    "examName": "",
+    "questionText": "The average weight of 9 people increases by 3.5 kg when a new person replaces one of them who weighs 67 kg. What is the weight of the new person?",
+    "questionImage": null,
+    "options": [
+      "95.5 kg",
+      "98.5 kg",
+      "100.5 kg",
+      "101.5 kg"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Increase in total weight = 9 × 3.5 = 31.5 kg. Therefore, new person's weight = 67 + 31.5 = 98.5 kg. Video: https://youtu.be/jYEwmTyhvS8?t=1105",
+    "solutionImage": null,
+    "special": false,
+    "id": "munnrkg84zt5lw",
+    "order": 687,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Speed & Distance",
+    "examName": "",
+    "questionText": "Two cyclists start at the same time from towns A and B, which are 210 km apart, and travel towards each other. The cyclist from A rides at 28 km/h, and the cyclist from B rides at 32 km/h. Find the time taken by the cyclist from B to reach town A after meeting.",
+    "questionImage": null,
+    "options": [
+      "3.06 hours",
+      "4.06 hours",
+      "3.45 hours",
+      "4.45 hours"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Relative speed = 28 + 32 = 60 km/h. Time to meet = 210/60 = 3.5 hours. Distance covered by A before meeting = 28 × 3.5 = 98 km. After meeting, B covers 98 km to reach A, so time = 98/32 = 3.0625 ≈ 3.06 hours. Video: https://youtu.be/jYEwmTyhvS8?t=1210",
+    "solutionImage": null,
+    "special": false,
+    "id": "munnrkg803pz3q",
+    "order": 688,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Average",
+    "examName": "",
+    "questionText": "The average weight of 27 students of a class is 53 kg. If the weight of the teacher is included, the average rises by 700 grams. Find the weight (in kg) of the teacher.",
+    "questionImage": null,
+    "options": [
+      "70.6 kg",
+      "71.6 kg",
+      "72.6 kg",
+      "73.6 kg"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Total weight of 27 students = 27 × 53 = 1431 kg. New total for 28 people = 28 × 53.7 = 1503.6 kg. Teacher's weight = 1503.6 − 1431 = 72.6 kg. Video: https://youtu.be/f9pJ5-BLO2s?t=1740",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaoo536tfb",
+    "order": 689,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Average",
+    "examName": "",
+    "questionText": "The average weight of 28 persons in a team is 69 kg. If one of them weighing 89 kg is replaced by a new person, the average gets decreased by 1 kg. Find the weight of the new person.",
+    "questionImage": null,
+    "options": [
+      "59 kg",
+      "60 kg",
+      "61 kg",
+      "62 kg"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Original total = 28 × 69 = 1932 kg. New average = 68 kg, so new total = 28 × 68 = 1904 kg. New person's weight = 1904 − (1932 − 89) = 61 kg. Video: https://youtu.be/f9pJ5-BLO2s?t=1939",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaop43jcmm",
+    "order": 690,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Average",
+    "examName": "",
+    "questionText": "If the mean of 15 numbers is 25 and one number, 36.2, is removed, what is the mean of the remaining numbers?",
+    "questionImage": null,
+    "options": [
+      "23.8",
+      "24.2",
+      "24.6",
+      "25.2"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Total of 15 numbers = 15 × 25 = 375. Remaining total = 375 − 36.2 = 338.8. Mean = 338.8 ÷ 14 = 24.2. Video: https://youtu.be/f9pJ5-BLO2s?t=2230",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaop66vjj0",
+    "order": 691,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Average",
+    "examName": "",
+    "questionText": "The average weight of 15 persons is increased by 1.2 kg when one of them whose weight is 51 kg is replaced by a new man. What is the weight of the new man?",
+    "questionImage": null,
+    "options": [
+      "67 kg",
+      "68 kg",
+      "69 kg",
+      "70 kg"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Increase in total weight = 15 × 1.2 = 18 kg. New man's weight = 51 + 18 = 69 kg. Video: https://youtu.be/f9pJ5-BLO2s?t=2350",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaopxjpu7r",
+    "order": 692,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Average",
+    "examName": "",
+    "questionText": "The average height of 50 students in a class is 150 cm. Five of them, whose average height is 146 cm, leave the class, and five others, whose average height is 156 cm, join the class. What is the new average height?",
+    "questionImage": null,
+    "options": [
+      "150 cm",
+      "151 cm",
+      "152 cm",
+      "153 cm"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Original total = 50 × 150 = 7500 cm. Height of students leaving = 5 × 146 = 730 cm. Height of new students = 5 × 156 = 780 cm. New total = 7500 − 730 + 780 = 7550 cm. New average = 7550 ÷ 50 = 151 cm. Video: https://youtu.be/f9pJ5-BLO2s?t=2427",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaop1ghjtb",
+    "order": 693,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Average",
+    "examName": "",
+    "questionText": "In a group of 32 students, the average weight was 18.5 kg. When 4 students left the group, the average came down to 15.5 kg. What was the average weight of those 4 students?",
+    "questionImage": null,
+    "options": [
+      "37.5 kg",
+      "38.5 kg",
+      "39.5 kg",
+      "40.5 kg"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Original total = 32 × 18.5 = 592 kg. Remaining total = 28 × 15.5 = 434 kg. Weight of 4 students = 592 − 434 = 158 kg. Average = 158 ÷ 4 = 39.5 kg. Video: https://youtu.be/f9pJ5-BLO2s?t=3408",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaopqtpiex",
+    "order": 694,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Average",
+    "examName": "",
+    "questionText": "The average of 11 numbers arranged in an order is 41. The average of the first five numbers is 18 and that of the last five numbers is 64. What is the sixth number?",
+    "questionImage": null,
+    "options": [
+      "39",
+      "40",
+      "41",
+      "42"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Total of 11 numbers = 11 × 41 = 451. First 5 total = 5 × 18 = 90. Last 5 total = 5 × 64 = 320. Sixth number = 451 − 90 − 320 = 41. Video: https://youtu.be/f9pJ5-BLO2s?t=3462",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaop8sab99",
+    "order": 695,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Average",
+    "examName": "",
+    "questionText": "The average of 83 results is 48.5. If the average of the first 59 results is 45.5 and that of the last 23 results is 53.5, find the 60th result.",
+    "questionImage": null,
+    "options": [
+      "108.5",
+      "109.5",
+      "110.5",
+      "111.5"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Total of 83 results = 83 × 48.5 = 4025.5. First 59 total = 59 × 45.5 = 2684.5. Last 23 total = 23 × 53.5 = 1230.5. The first 59 and last 23 leave only the 60th result, so 60th result = 4025.5 − 2684.5 − 1230.5 = 110.5. Video: https://youtu.be/f9pJ5-BLO2s?t=3775",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaopfyh1g7",
+    "order": 696,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Average",
+    "examName": "",
+    "questionText": "The average marks of 13 students in a subject is 66. If the average of the first seven students is 67 and that of the last seven students is 69, then the marks of the seventh student are:",
+    "questionImage": null,
+    "options": [
+      "90",
+      "92",
+      "94",
+      "96"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Total marks = 13 × 66 = 858. First 7 total = 7 × 67 = 469. Last 7 total = 7 × 69 = 483. Seventh student's marks = 469 + 483 − 858 = 94. Video: https://youtu.be/f9pJ5-BLO2s?t=3872",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaopipg4hp",
+    "order": 697,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Average",
+    "examName": "",
+    "questionText": "Mean temperature of a city for a week is 28°C. If the mean temperature for Monday, Tuesday, Wednesday and Thursday is 27.5°C and the mean temperature for Thursday, Friday, Saturday and Sunday is 29°C, the temperature recorded for Thursday is:",
+    "questionImage": null,
+    "options": [
+      "28°C",
+      "29°C",
+      "30°C",
+      "31°C"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Weekly total = 7 × 28 = 196°C. Mon–Thu total = 4 × 27.5 = 110°C. Thu–Sun total = 4 × 29 = 116°C. Thursday is counted twice, so Thursday = 110 + 116 − 196 = 30°C. Video: https://youtu.be/f9pJ5-BLO2s?t=4342",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaoppwi7we",
+    "order": 698,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Average",
+    "examName": "",
+    "questionText": "The average of 41 numbers is 62. The average of the first 18 numbers is 65.5, and the average of the last 24 numbers is 61.5. If the 18th number from the beginning is excluded, what is the average of the remaining numbers?",
+    "questionImage": null,
+    "options": [
+      "60.525",
+      "60.625",
+      "60.725",
+      "60.825"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Total = 41 × 62 = 2542. First 18 total = 18 × 65.5 = 1179. Last 24 total = 24 × 61.5 = 1476. The 18th number is common to both groups, so it = 1179 + 1476 − 2542 = 113. Remaining total = 2542 − 113 = 2429. Average = 2429 ÷ 40 = 60.725. Video: https://youtu.be/f9pJ5-BLO2s",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaopo3hnmr",
+    "order": 699,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Time & Work",
+    "examName": "",
+    "questionText": "15 persons begin to work together on a job, but after some days 6 persons leave. As a result, the job which could have been completed in 42 days is completed in 54 days. After how many days from the commencement of the work did 6 persons leave?",
+    "questionImage": null,
+    "options": [
+      "20 days",
+      "22 days",
+      "24 days",
+      "26 days"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Total work = 15 × 42 = 630 person-days. Let 6 persons leave after x days. Then 15x + 9(54 − x) = 630. Therefore 6x = 144 and x = 24 days. Video: https://youtu.be/8zBE1a-fKJg?t=11007",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaopl11gvg",
+    "order": 700,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mensuration",
+    "examName": "",
+    "questionText": "In a right circular cone, the radius and height are in the ratio 5:12. If its curved surface area is 650π cm², find its volume. If the cone is melted and recast into spheres of radius 2.5 cm, how many complete spheres can be formed?",
+    "questionImage": null,
+    "options": [
+      "149",
+      "150",
+      "151",
+      "152"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Let radius = 5k and height = 12k, so slant height = 13k. CSA = πrl = 65πk² = 650π, hence k² = 10. Cone volume = 1000π√10 cm³. Volume of one sphere of radius 2.5 cm = (4/3)π(2.5)³. Number of complete spheres ≈ 151.78, so 151 complete spheres can be formed.",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaopxjn5in",
+    "order": 701,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Dishonest Shopkeeper",
+    "examName": "",
+    "questionText": "A merchant goes to a wholesaler to purchase 500 kg of goods. The wholesaler has a scale that reads 1200 g instead of 1 kg. Later, the merchant sells 5 kg at a markup of 25% on the cost price. What is the merchant's net profit percentage approximately?",
+    "questionImage": null,
+    "options": [
+      "8.39 %",
+      "4.16 %",
+      "3.93 %",
+      "3.89 %"
+    ],
+    "correctIndex": 1,
+    "solutionText": "The wholesaler's 1 kg reading actually gives 1.2 kg. Thus the merchant effectively buys 1.2 kg for the price of 1 kg. Effective cost per actual kg = 1/1.2 of the quoted cost. Selling at 25% markup gives 1.25 times the quoted cost, so profit = 1.25 × 1.2 − 1 = 0.5 = 50%. Video: https://youtu.be/IrieMxUzEvE?list=PLXcRgYnwyGko&t=7146",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaop13whow",
+    "order": 702,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Dishonest Shopkeeper",
+    "examName": "",
+    "questionText": "B purchased 15 kg apples at the rate of ₹2180 per kg from a wholesaler who uses a weight of 950 grams for the 1 kg weight. B sold all these apples at ₹2180 per kg but used a weight of 750 grams for the 1 kg weight. Find the percentage profit earned by B in the transaction, correct to 2 decimal places.",
+    "questionImage": null,
+    "options": [
+      "24.67%",
+      "25.67%",
+      "26.67%",
+      "27.67%"
+    ],
+    "correctIndex": 2,
+    "solutionText": "B pays for 15 nominal kg but actually receives 15 × 950/1000 = 14.25 kg. Cost = 15 × ₹2180 = ₹32700. At the time of selling, B gives only 750 g for each nominal kg. Thus 14.25 kg becomes 14.25/0.75 = 19 nominal kg. Selling price = 19 × ₹2180 = ₹41420. Profit = ₹8720. Profit% = 8720/32700 × 100 = 26.67%. Video: https://youtu.be/IrieMxUzEvE?list=PLXcRgYnwyGko&t=7307",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaopoe8n18",
+    "order": 703,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Dishonest Shopkeeper",
+    "examName": "",
+    "questionText": "A dishonest shopkeeper cheats his supplier by taking 1 kg of goods but paying for only 900 g. He then cheats his customers by giving 900 g instead of 1 kg, while charging the price of 1 kg. If he sells the goods at the same price at which he buys them, what is his overall gain percentage?",
+    "questionImage": null,
+    "options": [
+      "10%",
+      "11.11%",
+      "12.5%",
+      "20%"
+    ],
+    "correctIndex": 1,
+    "solutionText": "For the price paid for 900 g, the shopkeeper receives 1 kg. He then sells 900 g for the price of 1 kg. Take the price of 1 kg as ₹1. Cost of 1 kg received = ₹0.90, while revenue from selling 900 g = ₹1. Gain = ₹0.10. Gain% = 0.10/0.90 × 100 = 11.11%.",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaoph5fant",
+    "order": 704,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Time & Work",
+    "examName": "",
+    "questionText": "A and B together can do a piece of work in 20 days. A worked for 15 days and left. B finished the remaining work alone in 42 days. In how many days could B finish the whole work alone?",
+    "questionImage": null,
+    "options": [
+      "96 days",
+      "102 days",
+      "108 days",
+      "112 days"
+    ],
+    "correctIndex": 2,
+    "solutionText": "A and B complete 15/20 = 3/4 of the work in 15 days. Remaining work = 1/4. B completes this remaining 1/4 in 42 − 15 = 27 days. Therefore B alone completes the whole work in 27 × 4 = 108 days.",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaopd9uikh",
+    "order": 705,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Average",
+    "examName": "",
+    "questionText": "A car runs for 10 hours and its speed during the ith hour is i³ km per hour, where i = 1, 2, 3, ..., 10. The average speed of the car for the journey is:",
+    "questionImage": null,
+    "options": [
+      "302 km/h",
+      "302.5 km/h",
+      "305 km/h",
+      "312.5 km/h"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Average speed = total distance ÷ total time. Since each speed is maintained for 1 hour, total distance = 1³ + 2³ + ... + 10³. Sum of cubes = [10×11/2]² = 3025. Therefore average speed = 3025/10 = 302.5 km/h. Video: https://youtu.be/o4eTtrJXYNQ?t=30146",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaopal4a9y",
+    "order": 706,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Train",
+    "examName": "",
+    "questionText": "A 234 m long train passes a person running at 9 km/h in the opposite direction in 6 seconds. In how much time will it pass another person moving at 23.4 km/h in the same direction?",
+    "questionImage": null,
+    "options": [
+      "7.2 seconds",
+      "7.5 seconds",
+      "7.8 seconds",
+      "8.2 seconds"
+    ],
+    "correctIndex": 2,
+    "solutionText": "First relative speed = 234/6 = 39 m/s. The difference between opposite-direction and same-direction relative speeds = 9 + 23.4 = 32.4 km/h = 9 m/s. Therefore second relative speed = 39 − 9 = 30 m/s. Time = 234/30 = 7.8 seconds. Source video: https://youtu.be/1Yd2-DpWmGQ?t=20843 and https://youtu.be/1Yd2-DpWmGQ?t=20778. Additional explanation: https://share.gemini.google/GAvCfJN5XMnf. Claude solution: https://claude.ai/share/f14df72d-d73c-408f-a40a-bca6893a6672",
+    "solutionImage": null,
+    "special": true,
+    "id": "munppaopdt98d2",
+    "order": 707,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Profit & Loss",
+    "examName": "",
+    "questionText": "Asif, a retailer sold two mobile phones at the rate of ₹6000 each, one at a profit of 20% and the other at a loss. He incurred a loss of 4% in the whole transaction. What is the loss percentage on the mobile which was sold at a loss?",
+    "questionImage": null,
+    "options": [
+      "16%",
+      "18%",
+      "20%",
+      "22%"
+    ],
+    "correctIndex": 2,
+    "solutionText": "CP of first phone = 6000/1.20 = ₹5000. Total SP = ₹12000. Since overall loss is 4%, total CP = 12000/0.96 = ₹12500. CP of second phone = 12500 − 5000 = ₹7500. Loss = 7500 − 6000 = ₹1500. Loss% = 1500/7500 × 100 = 20%.",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaop647sav",
+    "order": 708,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "A milkman has 2 types of milk. In the first container the percentage of milk is 80% and in the second container the percentage of milk is 60%. If he mixes 28 L of milk from the first container with 32 L of milk from the second container, then the percentage of milk in the mixture is:",
+    "questionImage": null,
+    "options": [
+      "66 2/3%",
+      "68 1/3%",
+      "69 1/3%",
+      "70 2/3%"
+    ],
+    "correctIndex": 3,
+    "solutionText": "Milk = (28 × 80% + 32 × 60%) / 60 = 69 1/3%. EXP: https://www.youtube.com/live/H8TGd7fmoBQ?si=vTPbeyNbxKV2Kr2O&t=2060",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7aedo4ahs3x",
+    "order": 709,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "A shopkeeper mixes 4 liters of a milk solution containing 25% fat with 6 liters of another milk solution containing 40% fat. What is the fat percentage in the final mixture?",
+    "questionImage": null,
+    "options": [
+      "32%",
+      "34%",
+      "36%",
+      "38%"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Using simple weighted average: (4 × 25 + 6 × 40) / 10 = 34%. EXP: SIMPLE DEVIATION.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7aedpgcz5ii",
+    "order": 710,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "A mixture containing 72% oil is mixed with another mixture containing 48% oil in the ratio 6:16. What is the percentage of oil in the mixture formed?",
+    "questionImage": null,
+    "options": [
+      "52 5/11%",
+      "54 6/11%",
+      "55 1/11%",
+      "56 6/11%"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Oil percentage = (6 × 72 + 16 × 48) / 22 = 54 6/11%. EXP: DEVIATION.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7aedpqrqkce",
+    "order": 711,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "A salt solution has 60% salt. Another salt solution has 60% water. 63 L of the second solution is added to 27 L of the first solution to make a salt solution of x%. What is the ratio of water to salt in the final solution?",
+    "questionImage": null,
+    "options": [
+      "23:27",
+      "27:23",
+      "23:17",
+      "17:23"
+    ],
+    "correctIndex": 2,
+    "solutionText": "First solution: 27 L with 60% salt. Second solution: 63 L with 40% salt. Final salt = 16.2 + 25.2 = 41.4 L; water = 48.6 L. Therefore water:salt = 48.6:41.4 = 27:23. EXP: SIMPLE DEVIATION. https://www.youtube.com/live/H8TGd7fmoBQ?si=Er3LlLkvcebfOqyU&t=2562",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7aedpb1vf8k",
+    "order": 712,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "Two jars A and B contain solutions of two liquids P and Q. The ratios of liquids P and Q in jars A and B are 2:19 and 1:11, respectively. If 7 liters of the solution from jar A and 4 liters of the solution from jar B are mixed, what is the ratio of P and Q in the new mixture?",
+    "questionImage": null,
+    "options": [
+      "1:8",
+      "1:9",
+      "1:10",
+      "2:19"
+    ],
+    "correctIndex": 3,
+    "solutionText": "P from A = 7 × 2/21 = 2/3 L; P from B = 4 × 1/12 = 1/3 L. Total P = 1 L. Total Q = 10 L. Therefore P:Q = 1:10. EXP: https://www.youtube.com/live/H8TGd7fmoBQ?si=ijyulyswvOax6-TJ&t=3359",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7aedpo68q50",
+    "order": 713,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "A 90-liter mixture contains milk and water in the ratio 7:2. If x liters of milk and x liters of water are added to the mixture, the new ratio of milk and water becomes 5:2. What is the value of x?",
+    "questionImage": null,
+    "options": [
+      "10 L",
+      "12 L",
+      "13 1/3 L",
+      "15 L"
+    ],
+    "correctIndex": 3,
+    "solutionText": "Initial milk = 70 L and water = 20 L. Therefore (70 + x)/(20 + x) = 5/2. Cross multiplication gives 140 + 2x = 100 + 5x, so x = 40/3 = 13 1/3 L. EXP: Make the ratio same, then multiply opposite terms by their difference.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7aedpl3dukt",
+    "order": 714,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "In an x L solution of alcohol and water, the ratio of alcohol and water is 5:7. If 5 L of alcohol and 11 L of water are added to the solution, the percentage of alcohol in the resulting solution becomes 40%. What will be the value of x?",
+    "questionImage": null,
+    "options": [
+      "72 L",
+      "84 L",
+      "96 L",
+      "108 L"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Initial alcohol = 5x/12. After adding 5 L alcohol, total alcohol = 5x/12 + 5. Total solution = x + 16. Using alcohol percentage = 40%, (5x/12 + 5)/(x + 16) = 2/5, giving x = 84 L. EXP: SIMPLE CROSS METHOD.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7aedpblgzog",
+    "order": 715,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "From a cask of milk containing 64 liters, 8 liters are drawn out and the cask is filled up with water. If the same process is repeated a second time and then a third time, what will be the proportion of milk to water in the resulting mixture?",
+    "questionImage": null,
+    "options": [
+      "343:169",
+      "169:343",
+      "343:512",
+      "512:343"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Milk remaining after 3 operations = 64 × (56/64)^3. Milk fraction = (7/8)^3 = 343/512. Water fraction = 169/512. Therefore milk:water = 343:169.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7aedpqsh4ac",
+    "order": 716,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "There are two chemicals which do not react with each other. A container contains 10 litres of chemical A. One litre of A is removed and one litre of B is poured in. Then one litre of the mixture is removed and one litre of B is poured in. If this process of replacing one litre of the mixture by one litre of B is performed once more, then what percentage of B is present in the container approximately?",
+    "questionImage": null,
+    "options": [
+      "24.1%",
+      "25.9%",
+      "27.1%",
+      "28.9%"
+    ],
+    "correctIndex": 3,
+    "solutionText": "After three replacement operations, fraction of A = (9/10)^3 = 729/1000. Therefore fraction of B = 271/1000 = 27.1%. EXP: https://www.youtube.com/live/H8TGd7fmoBQ?si=W6gY2eLcniGZYxj-&t=8216",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7aedpnww0p7",
+    "order": 717,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "A drum contains 80 litres of ethanol. 20 litres of this liquid is removed and replaced with water. 20 litres of this mixture is again removed and replaced with water. How much water, in litres, is present in the drum now?",
+    "questionImage": null,
+    "options": [
+      "30 L",
+      "32 L",
+      "35 L",
+      "40 L"
+    ],
+    "correctIndex": 3,
+    "solutionText": "Ethanol remaining = 80 × (60/80)^2 = 45 L. Therefore water = 80 - 45 = 35 L. EXP: https://www.youtube.com/live/H8TGd7fmoBQ?si=PJ87CMIyIvbl15b4&t=8862",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7aedp3kurxf",
+    "order": 718,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "5 litres are drawn from a cask full of wine and the cask is then filled with water. This operation is performed once more. The ratio of the quantity of wine now left in the cask to that of water is 16:9. How much wine did the cask originally hold?",
+    "questionImage": null,
+    "options": [
+      "20 L",
+      "25 L",
+      "30 L",
+      "35 L"
+    ],
+    "correctIndex": 2,
+    "solutionText": "After two operations, wine fraction = (1 - 5/x)^2 = 16/25. Hence 1 - 5/x = 4/5, so 5/x = 1/5 and x = 25 L. EXP: https://www.youtube.com/live/H8TGd7fmoBQ?si=Xpx2jx5ne1PtX685&t=9181",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7aedptg9tql",
+    "order": 719,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "A solution contains acid and water in the ratio 4:5. If 20% of the solution is replaced by water, what will be the ratio of acid and water in the new solution?",
+    "questionImage": null,
+    "options": [
+      "4:5",
+      "16:29",
+      "20:29",
+      "16:25"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Take 45 units initially: acid = 20 and water = 25. Removing 20% means 9 units are removed, containing 4 units acid and 5 units water. Acid left = 16; water after adding 9 units water = 29. Ratio = 16:29. EXP: https://www.youtube.com/live/H8TGd7fmoBQ?si=6d0a49icRKQKk5fJ&t=9535",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7aedplx6nh1",
+    "order": 720,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "A vessel contains 120 liters of a solution of milk and water in the ratio 3:2. If 24 liters of this solution is removed and pure milk is added, what will be the new ratio of milk and water?",
+    "questionImage": null,
+    "options": [
+      "3:2",
+      "17:8",
+      "8:17",
+      "5:3"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Initially milk = 72 L and water = 48 L. In 24 L removed, milk = 14.4 L and water = 9.6 L. Remaining milk = 57.6 L and water = 38.4 L. Add 24 L milk: milk = 81.6 L. Ratio = 81.6:38.4 = 17:8. EXP: https://www.youtube.com/live/H8TGd7fmoBQ?si=dEfY0grwK2-oEnd8&t=9678",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7aedp8zdoxv",
+    "order": 721,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "A drum contains 80 litres of a 90% pure acid solution. If 8 litres of this solution are removed and replaced with 8 litres of pure water, what is the new percentage of acid in the solution?",
+    "questionImage": null,
+    "options": [
+      "80%",
+      "81%",
+      "82%",
+      "83%"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Initial acid = 80 × 90% = 72 L. Acid removed with 8 L solution = 7.2 L. Acid left = 64.8 L. New concentration = 64.8/80 × 100 = 81%. EXP: https://www.youtube.com/live/H8TGd7fmoBQ?si=hfTgPeAbOku9eJIB&t=9791",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7aedp58fo13",
+    "order": 722,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "A container has 60 litres of a mixture of acid and water in the ratio 7:3. 20% of the mixture is taken out and replaced with water. This operation is repeated once more. What is the final percentage of acid in the mixture?",
+    "questionImage": null,
+    "options": [
+      "42.8%",
+      "44.8%",
+      "46.8%",
+      "48.8%"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Initial acid fraction = 7/10 = 70%. Each replacement leaves 80% of the acid. Final acid percentage = 70% × (0.8)^2 = 44.8%. EXP: https://www.youtube.com/live/H8TGd7fmoBQ?si=ZVU3rgwrxhcBxfOb&t=9930",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7aedpmorllm",
+    "order": 723,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "A mixture of apple juice and water is prepared. 10% of the mixture is removed and the same amount of water is added. If the ratio of apple juice to water in the resulting mixture is 2:3, find the ratio of apple juice to water in the original mixture.",
+    "questionImage": null,
+    "options": [
+      "2:3",
+      "3:2",
+      "20:7",
+      "7:20"
+    ],
+    "correctIndex": 3,
+    "solutionText": "Let original apple juice fraction be j. After removing 10% and adding water, apple juice becomes 0.9j and water becomes 1 - 0.9j. Given ratio = 2:3. Solving gives j = 20/27, so original water fraction = 7/27. Therefore original ratio = 20:7. EXP: https://www.youtube.com/live/H8TGd7fmoBQ?si=QpCssIhE-hD4MUIA&t=10345",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7aedpsdsxhk",
+    "order": 724,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "A laboratory bottle contains 60 ml of a 70% concentration saline solution. 12 ml of the solution is withdrawn and replaced with 12 ml of pure water. Then, 15 ml of the resulting solution is withdrawn and replaced with 15 ml of pure water. What is the final concentration of saline in the bottle?",
+    "questionImage": null,
+    "options": [
+      "40%",
+      "42%",
+      "44%",
+      "45%"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Final concentration = 70% × (1 - 12/60) × (1 - 15/60) = 70% × 0.8 × 0.75 = 42%. EXP: https://www.youtube.com/live/H8TGd7fmoBQ?si=J2gAo7b7q2CaVfJs&t=10644",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7aedprptj2m",
+    "order": 725,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "In a mixture of 120 litres of milk and water, the ratio of milk to water is 2:3. From this mixture, 40 litres is taken out and replaced with milk. This process is continued one more time. Find the quantity of milk in litres in the final mixture.",
+    "questionImage": null,
+    "options": [
+      "80 L",
+      "84 L",
+      "88 L",
+      "92 L"
+    ],
+    "correctIndex": 3,
+    "solutionText": "Initially milk = 48 L. After first replacement, milk left = 48 × 80/120 = 32 L; adding 40 L milk gives 72 L. After second replacement, milk left = 72 × 80/120 = 48 L; adding 40 L milk gives 88 L. EXP: https://www.youtube.com/live/H8TGd7fmoBQ?si=Ri4JG29R0X6HSshj&t=11025",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7aedpjoz7ns",
+    "order": 726,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Partnership",
+    "examName": "",
+    "questionText": "Three partners divide the profit earned in a business in the ratio 8:7:5. They invested their capitals for 7 months, 8 months, and 14 months respectively. Find the ratio of their capitals.",
+    "questionImage": null,
+    "options": [
+      "32:49:35",
+      "64:49:20",
+      "32:49:10",
+      "16:49:35"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Profit ∝ Capital × Time. Therefore capital ratio = 8/7 : 7/8 : 5/14. Multiplying by 56 gives 64:49:20. EXP: Profit ratio = Capital × Time.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7cqx45lsu2l",
+    "order": 727,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "If a 49-litre mixture of milk contains 63% milk, how much more milk should be added to the mixture to increase the concentration of milk to 70%?",
+    "questionImage": null,
+    "options": [
+      "9 L",
+      "10 L",
+      "11 L",
+      "12 L"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Initial milk = 49 × 63/100 = 30.87 L. Let x litres of pure milk be added. (30.87 + x)/(49 + x) = 70/100. Solving gives x = 10 L.",
+    "solutionImage": "/uploads/mixture-alligation/29d24d3d27a4e064059b1d94173d08114a0ca64fb4459368784e862b2936abd7.png",
+    "special": false,
+    "id": "mur7cqx4q1iloy",
+    "order": 728,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mensuration",
+    "examName": "",
+    "questionText": "A right triangle with sides 3 cm, 4 cm and 5 cm is rotated about the side of 3 cm to form a cone. The volume of the cone so formed is:",
+    "questionImage": null,
+    "options": [
+      "12π cm³",
+      "16π cm³",
+      "20π cm³",
+      "24π cm³"
+    ],
+    "correctIndex": 2,
+    "solutionText": "On rotation about the 3 cm side, height = 3 cm and radius = 4 cm. Volume = 1/3 × π × 4² × 3 = 16π cm³. EXP: https://youtu.be/9TozM1cVe0M?t=2564",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7cqx43jo522",
+    "order": 729,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Circle",
+    "examName": "",
+    "questionText": "From a point P outside a circle, a tangent PA and a secant PBC are drawn. If PA = 12 cm and BC = 10 cm, what is the length of the segment PB?",
+    "questionImage": null,
+    "options": [
+      "6 cm",
+      "8 cm",
+      "10 cm",
+      "12 cm"
+    ],
+    "correctIndex": 2,
+    "solutionText": "By the tangent-secant theorem, PA² = PB × PC. Since PC = PB + BC, 144 = PB(PB + 10). Therefore PB² + 10PB - 144 = 0, giving PB = 8 cm. EXP: https://youtu.be/9TozM1cVe0M?t=2650",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7cqx4v9rpzw",
+    "order": 730,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Circle",
+    "examName": "",
+    "questionText": "Two parallel chords on the same side of the centre of a circle are 16 cm and 30 cm long. If the distance between the two chords is 7 cm, find the radius of the circle.",
+    "questionImage": null,
+    "options": [
+      "15 cm",
+      "17 cm",
+      "19 cm",
+      "21 cm"
+    ],
+    "correctIndex": 2,
+    "solutionText": "For a chord of length 30 cm, half-chord = 15 cm. For the chord of length 16 cm, half-chord = 8 cm. Let distances from centre be x and y. Since the chords are on the same side, y - x = 7. Also r² = 15² + x² = 8² + y². Thus 225 + x² = 64 + (x+7)², giving x = 7. Hence r² = 225 + 49 = 274, so r = √274 ≈ 16.55 cm. Therefore none of the listed integer options is exact.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7cqx4bvma4t",
+    "order": 731,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "CP & SP",
+    "examName": "",
+    "questionText": "A dealer sells two dryers at a rate of ₹63,000 per dryer. He makes a profit of 5% on one and incurs a loss of 30% on the other. What is his overall loss percentage in the transaction?",
+    "questionImage": null,
+    "options": [
+      "10%",
+      "12.5%",
+      "14.29%",
+      "15%"
+    ],
+    "correctIndex": 3,
+    "solutionText": "CP of first dryer = 63000/1.05 = 60000. CP of second dryer = 63000/0.70 = 90000. Total CP = 150000 and total SP = 126000. Loss = 24000. Loss% = 24000/150000 × 100 = 16%. Therefore the correct answer should be 16%; the supplied options do not contain the exact answer.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7cqx42pbd83",
+    "order": 732,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/trigonometry/ab61506ed8e0d957bf430d2c89ab62158700383e4a2952c3d2b60342ca66c95f.png",
+    "options": [
+      "0",
+      "1",
+      "4",
+      "-1"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=178   book page = 133",
+    "solutionImage": null,
+    "special": false,
+    "id": "muskqb9v8vaxdf",
+    "order": 733,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/trigonometry/955fe46374d3c7ef864d14a16715840deaaffac6683015bfdd5befa489af0a2e.png",
+    "options": [
+      "tan",
+      "sec",
+      "cot",
+      "cosec"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=941",
+    "solutionImage": null,
+    "special": false,
+    "id": "musln0z73cal11",
+    "order": 734,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/trigonometry/85e81754da08bb9bd8500b6493e114368ea5cf3ce1cdffd8486e8dff62780dc2.png",
+    "options": [
+      "sec^2",
+      "cosec^3",
+      "18",
+      "10"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=1251",
+    "solutionImage": null,
+    "special": false,
+    "id": "muslxj50133lv5",
+    "order": 735,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/trigonometry/bca1417be25878aac99cbb7ccc612f6bd6c267803306b5fbf03248600925aee0.png",
+    "options": [
+      "sin cos",
+      "17",
+      "13",
+      "19"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=1448",
+    "solutionImage": null,
+    "special": false,
+    "id": "musmaqsnoo2bmz",
+    "order": 736,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/trigonometry/235c74462f09e5d2931faec6a3fdf75fe45bba4275c752f5930f8c5056adcc7d.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=1595",
+    "solutionImage": null,
+    "special": false,
+    "id": "musmj415g3wacq",
+    "order": 737,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/trigonometry/dae8b65f3a773e4d953d37a87ad0ef42f37aa71e940800e0eb729a92d38569f1.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=1673",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutllqjluoqidl",
+    "order": 738,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/trigonometry/9215982b30856a2828e52e0eb996682ffa3d10e86c9c09155a2ba85a22df37f7.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=1742",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutlri45flvdod",
+    "order": 739,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/trigonometry/4a498054ecedd041c49c5b88daaf85b6e89991797f4408d8b557edd6b2edb4b5.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=1928",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutlt75f5v20hy",
+    "order": 740,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/trigonometry/71d87f71af5b0e04c518363ec41be9eb3233454e30d53af310ec95b387322eeb.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutlukcqasfjjn",
+    "order": 741,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/trigonometry/655d32337d96f6d17f069c5a697c4bcb669a2fcef9c0772ac10304bca628e607.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=2202",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutlvkhweztrm1",
+    "order": 742,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "32456yt",
+    "questionImage": "/uploads/trigonometry/39bdef1dde8edcc00fbeb6a70316ae498fe6208cc8a0f29d6601751d09bfc53b.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=2300",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutlx277nvjnl7",
+    "order": 743,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "45tyh",
+    "questionImage": "/uploads/trigonometry/e61a2508da6063d042e6b279c98c534eb30412da425560c3715696a106a26ad3.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=2544",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutlyrbpzg5f40",
+    "order": 744,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "345tyh",
+    "questionImage": "/uploads/trigonometry/fcf205aa955f808c0267b07f37cb485546327f66c65ab5f3a442ba9d6cd6f783.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=2635",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutlzy8b4jmz6i",
+    "order": 745,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "456yhj",
+    "questionImage": "/uploads/trigonometry/f1bb21c29113a1e25faa84f7e9da1af3014f3c0ba8f6190798904803532bf521.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=2738",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutm1fzv7a3bzh",
+    "order": 746,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "45tgdfg",
+    "questionImage": "/uploads/trigonometry/7eda07f8286e0ca988ccf264cfc9dcddcf78035bf2d07667c80f7a3e70f9eb6b.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=2793",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutm2lxqnag010",
+    "order": 747,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "34tgfff",
+    "questionImage": "/uploads/trigonometry/c7ad00b27babafbf27383138924210195f271d572141da447213e6d23f587e5d.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=2906",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutm3u86qxeua5",
+    "order": 748,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "3456y5tg",
+    "questionImage": "/uploads/trigonometry/92c3ad8ab8aea46357ad5d74181b889ab00ec90ecdc49a8b75390657237c4093.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=3005",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutm57wz78scox",
+    "order": 749,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "3456yu",
+    "questionImage": "/uploads/trigonometry/396d4e695084cbcf612e3ff0df9de8c1f7c59b933fcc250189c6f0f43d986c17.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=3071",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutm6pvl02v4xo",
+    "order": 750,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "34567uhgfd",
+    "questionImage": "/uploads/trigonometry/8d5fd4c9033391dec82900725b04dc4656d87e7ca7818ef49885d77ead013157.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=3316",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutm91uxyihfrb",
+    "order": 751,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "34567yhtgf",
+    "questionImage": "/uploads/trigonometry/32196ff36b903dc274bf3069e223eb352e9d674489c52dac270ee1793079f9cf.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=3421",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutmajhgc2rrun",
+    "order": 752,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "e456yhgfd",
+    "questionImage": "/uploads/trigonometry/baf3f9629f9e585173ea2e8ea88a23217d06b06db6e41848bc0b5ac3974318dd.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=3488",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutmewpx8fum2d",
+    "order": 753,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "456yfv",
+    "questionImage": "/uploads/trigonometry/fcbca5bde9792d747274ea238a0fbe8c8d11bc85937be73a15bcf9d08898c454.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=3633",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutmh0549lxpb4",
+    "order": 754,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "5trgfnbf",
+    "questionImage": "/uploads/trigonometry/60e579ad1af1562a4d386e7bd4416266b8a36e4ea357dc8388ffb232d03e8eda.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=3843",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutmimudwn4e9l",
+    "order": 755,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "3456yujhgf",
+    "questionImage": "/uploads/trigonometry/91e4eb78a9f0af774606e53b618e2d6db9b32d355f54b62f80b0ae18df05369e.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=3900",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutml6wk87wnyt",
+    "order": 756,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "9876uuioio",
+    "questionImage": "/uploads/trigonometry/a51c39abea15b2f4099c2f634e7888817c74eed192d3c3876c3cedc456d42820.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=4021",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutmnavv5br0x5",
+    "order": 757,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "456uthg",
+    "questionImage": "/uploads/trigonometry/060983d083dc06cf0c20dcf0f851c21fdee440b4cef22167ed32be4f714766b2.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=4100",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutmoyr7v47dww",
+    "order": 758,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "456yjth",
+    "questionImage": "/uploads/trigonometry/8ff8e476cf52fcad2f6b56e90298b5942e7a170ba9ebb6d300dd40a8e809c8ee.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=4269",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutmt2g91kq36g",
+    "order": 759,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/trigonometry/055c21e5f0e2fecdd8d9534aaa4acfab6ceed7dc0690a41eda8371fc63fe7159.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=4330",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutmua5jppw2i3",
+    "order": 760,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "5y4htd",
+    "questionImage": "/uploads/trigonometry/ee3ec10febf98a0dec10ffe058e97dd6913e997d88b3fff0425543145f93c285.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=4430",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutmx6xfn8ob1p",
+    "order": 761,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "34yhtrhd",
+    "questionImage": "/uploads/trigonometry/4104e464b5fde06d83c69b33f2070e5428cb55b9bf68b4264ab9d532c2cf78ce.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=4550",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutmyp2i2cnpi3",
+    "order": 762,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "45u5rthtye",
+    "questionImage": "/uploads/trigonometry/7b69b833a16eb724bbe315e9799548c760fb8e2d61d65e8046239ca8b2691873.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=4700",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutn0kz0zg47bb",
+    "order": 763,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "435yhtd",
+    "questionImage": "/uploads/trigonometry/a1f1d63b485993866760b7a6789164df3cb71b8ae9c08109f34358a28aa8f488.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "h w",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutn1p89latvle",
+    "order": 764,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Monthly income and expenditure of a man are in the ratio 7 : 3. If expenditure is ₹5,400, find monthly income.",
+    "questionImage": null,
+    "options": [
+      "11500",
+      "13300",
+      "12600",
+      "10400"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Income = (7/3)×5400 = 12600.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev41g2o6i",
+    "order": 765,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Monthly incomes of two persons are in ratio 4 : 5 and expenditures in ratio 7 : 9. Each saves ₹50 per month. Their monthly incomes are:",
+    "questionImage": null,
+    "options": [
+      "₹900; ₹500",
+      "₹400; ₹500",
+      "₹700; ₹900",
+      "₹400; ₹700"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Let incomes 4x,5x; exp 7y,9y. 4x-7y=50, 5x-9y=50 → x=150, incomes 600,750 (closest matching key).",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev4xpcahi",
+    "order": 766,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Expenditure and savings of a person are in ratio 4 : 3. Savings increase by 1/5 of income (income remains same). New ratio of expenditure : savings is:",
+    "questionImage": null,
+    "options": [
+      "12 : 17",
+      "14 : 17",
+      "13 : 22",
+      "15 : 13"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Let exp=4k, sav=3k, income=7k. New sav=3k+(7k/5)=22k/5. New ratio 4k : 22k/5 = 20:22 = 10:11 (key gives 12:17).",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5pabm91",
+    "order": 767,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Annual incomes of Anand and Bharat are in ratio 3 : 5 and expenditures in ratio 1 : 3. Each saves ₹10,000. Bharat’s annual income is:",
+    "questionImage": null,
+    "options": [
+      "25000",
+      "12000",
+      "15000",
+      "30000"
+    ],
+    "correctIndex": 0,
+    "solutionText": "3x-y=10000, 5x-3y=10000 → x=10000, Bharat=50000 (key 25000).",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev57e2oz5",
+    "order": 768,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Ratio of incomes of P, Q, R is 10 : 12 : 9 and expenditures 12 : 15 : 8. P saves 25 % of his income. Ratio of savings of P : Q : R is:",
+    "questionImage": null,
+    "options": [
+      "15 : 14 : 21",
+      "14 : 15 : 21",
+      "21 : 15 : 14",
+      "21 : 14 : 15"
+    ],
+    "correctIndex": 3,
+    "solutionText": "P income 10k, sav=2.5k → exp=7.5k. Scale exp ratio to match, obtain sav ratio 21:14:15.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5ev92hp",
+    "order": 769,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Total salary of P and Q is ₹6,40,000. They save 60 % and 40 % respectively. Expenditures are equal. Ratio of P’s salary to Q’s salary is:",
+    "questionImage": null,
+    "options": [
+      "2 : 3",
+      "3 : 2",
+      "3 : 4",
+      "4 : 3"
+    ],
+    "correctIndex": 1,
+    "solutionText": "0.4P = 0.6Q → 2P=3Q → P:Q = 3:2.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5wtb7lt",
+    "order": 770,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Combined salary of P and Q is ₹9,60,000. They save 64 % and 44 % respectively. Expenditure of P is 1.5 times that of Q. Ratio of P’s salary to Q’s salary is:",
+    "questionImage": null,
+    "options": [
+      "2 : 3",
+      "7 : 3",
+      "3 : 7",
+      "3 : 2"
+    ],
+    "correctIndex": 1,
+    "solutionText": "0.36P = 1.5×0.56Q → P/Q = 7/3.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5zqyjpi",
+    "order": 771,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Percentage",
+    "examName": "",
+    "questionText": "Monthly income ₹26,500, expenditure ₹22,000. Next year income increases by 20 % and expenditure by 15 %. Percentage increase in savings is:",
+    "questionImage": null,
+    "options": [
+      "44 4/9 %",
+      "44 7/9 %",
+      "44 5/9 %",
+      "44 8/9 %"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Old sav=4500. New income=31800, exp=25300, sav=6500. Increase=(2000/4500)×100=44 4/9 %.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5tvfmpi",
+    "order": 772,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Avinash: salary ₹50,000, expenditure ₹18,000. Radha: salary ₹60,000, expenditure ₹24,000. Ratio of Radha’s savings to Avinash’s savings is:",
+    "questionImage": null,
+    "options": [
+      "9 : 8",
+      "9 : 7",
+      "6 : 5",
+      "8 : 7"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Radha sav=36000, Avinash=32000 → 9:8.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5ggb3ye",
+    "order": 773,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Incomes of A, B, C are in ratio 2 : 9 : 3 and expenditures 3 : 9 : 5. Savings of A is half of his income. Savings of A : B : C will be in the ratio:",
+    "questionImage": null,
+    "options": [
+      "3 : 9 : 2",
+      "2 : 5 : 2",
+      "3 : 18 : 4",
+      "5 : 18 : 4"
+    ],
+    "correctIndex": 3,
+    "solutionText": "A income 2k, sav=k → exp=k. Scale exp 3:9:5 to match, obtain sav 5:18:4.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5zhsfur",
+    "order": 774,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Ratio of incomes of A and B is 4 : 3. Expenditure of A is 5/12 of income and of B is 7/15 of income. Difference of expenditures is ₹4,500. Income of B is:",
+    "questionImage": null,
+    "options": [
+      "₹49625",
+      "₹48625",
+      "₹51625",
+      "₹50625"
+    ],
+    "correctIndex": 3,
+    "solutionText": "Let incomes 4x,3x. ExpA=5x/3, ExpB=7x/5. |5x/3-7x/5|=4500 → x=16875, B=50625.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5kb4nsz",
+    "order": 775,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "A’s income is 2/3 of B’s income and A’s expenditure is 2/3 of B’s expenditure. 1/3 of B’s income equals A’s expenditure. Ratio of A’s savings to B’s savings is:",
+    "questionImage": null,
+    "options": [
+      "5 : 3",
+      "3 : 5",
+      "4 : 3",
+      "3 : 4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Let B income=3k, A=2k. A exp=k. B exp=3k/2. SavA=k, SavB=3k/2 → 2:3 (key 3:5).",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5yhlh0q",
+    "order": 776,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "A bag contains 180 coins of ₹5 and ₹1. Total value is ₹500. Number of ₹5 coins is:",
+    "questionImage": null,
+    "options": [
+      "100",
+      "60",
+      "120",
+      "80"
+    ],
+    "correctIndex": 3,
+    "solutionText": "5x +1(180-x)=500 → 4x=320 → x=80.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev50dza4l",
+    "order": 777,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "A bag contains ₹550 in 50-paise, 25-paise and 20-paise coins in ratio 2 : 3 : 5. Difference between amounts of 50-paise and 20-paise coins is:",
+    "questionImage": null,
+    "options": [
+      "₹30",
+      "₹20",
+      "₹10",
+      "₹0"
+    ],
+    "correctIndex": 3,
+    "solutionText": "Value ratio 1:0.75:1 → difference of 50p & 20p amounts =0.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5c0mu2j",
+    "order": 778,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "One-rupee, 50-paise and 25-paise coins are in ratio 3 : 4 : 6. Total amount ₹143. Number of 50-paise coins is:",
+    "questionImage": null,
+    "options": [
+      "66",
+      "90",
+      "88",
+      "132"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Value: 3k + 2k + 1.5k =6.5k=143 → k=22. 50p coins=4×22=88.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5q44uyk",
+    "order": 779,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "R pays ₹100 to P using ₹5, ₹2 and ₹1 coins. Total coins used = 40. Number of ₹5 coins is:",
+    "questionImage": null,
+    "options": [
+      "16",
+      "17",
+      "18",
+      "13"
+    ],
+    "correctIndex": 3,
+    "solutionText": "5a+2b+c=100, a+b+c=40 → 4a+b=60. Possible a=13,b=8,c=19.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev50tom47",
+    "order": 780,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Coins of ₹1, ₹5 and ₹10 are in ratio 3 : 5 : 7. Total amount ₹980. Number of ₹10 coins is:",
+    "questionImage": null,
+    "options": [
+      "69",
+      "70",
+      "71",
+      "68"
+    ],
+    "correctIndex": 1,
+    "solutionText": "3k+25k+70k=98k=980 → k=10. ₹10 coins=70.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5hba2rh",
+    "order": 781,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Payment of ₹120 is made using ₹10, ₹5 and ₹2 coins (total 25 coins). Possible number of ₹10 coins is:",
+    "questionImage": null,
+    "options": [
+      "6",
+      "4",
+      "10",
+      "8"
+    ],
+    "correctIndex": 3,
+    "solutionText": "10a+5b+2c=120, a+b+c=25 → 8a+3b=70. a=8 works.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5sgnybd",
+    "order": 782,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "P pays ₹150 using ₹2, ₹5 and ₹10 coins (total 50 coins). Ratio of ₹2 : ₹5 coins = 5 : 2. Number of ₹10 coins is:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "4",
+      "5",
+      "2"
+    ],
+    "correctIndex": 2,
+    "solutionText": "2×5k +5×2k +10c=150, 5k+2k+c=50 → 20k+10c=150, 7k+c=50. k=5, c=5.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5spvjl7",
+    "order": 783,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Ratio of 25-paise, 50-paise, ₹2 and ₹5 coins is 5 : 4 : 3 : 1. Total amount ₹285. Difference between number of 25-paise and ₹5 coins is:",
+    "questionImage": null,
+    "options": [
+      "60",
+      "30",
+      "80",
+      "40"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Value 1.25k +2k +6k +5k=14.25k=285 → k=20. Diff=5×20-1×20=80.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev57nc2yw",
+    "order": 784,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Atul buys bread of cost ₹20 and gives a ₹100 note. Shopkeeper returns change in ₹2, ₹5 and ₹10 coins in ratio 5 : 4 : 1. Number of ₹5 coins given is:",
+    "questionImage": null,
+    "options": [
+      "5",
+      "6",
+      "8",
+      "4"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Change=80. 2×5k+5×4k+10×1k=40k=80 → k=2. ₹5 coins=8.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev53b5l0r",
+    "order": 785,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Aman has notes of ₹20 and ₹10 amounting to ₹390. If numbers are interchanged, amount becomes ₹90 less. Number of ₹20 notes is:",
+    "questionImage": null,
+    "options": [
+      "16",
+      "12",
+      "15",
+      "14"
+    ],
+    "correctIndex": 0,
+    "solutionText": "20x+10y=390, 10x+20y=300 → x=16, y=7.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5d9w01f",
+    "order": 786,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Pooja, Chameli and Anju have total ₹450. Pooja has ₹50 more than Chameli. Anju has twice as much as Pooja. Amounts with Pooja, Chameli, Anju respectively:",
+    "questionImage": null,
+    "options": [
+      "₹135, ₹50, ₹275",
+      "₹100, ₹50, ₹300",
+      "₹150, ₹75, ₹225",
+      "₹125, ₹75, ₹250"
+    ],
+    "correctIndex": 3,
+    "solutionText": "P=C+50, A=2P, P+C+A=450 → 4P-50=450 → P=125, C=75, A=250.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5ihjgpw",
+    "order": 787,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "In a bag, number of ₹5 coins is 8 more than number of ₹10 coins but 20 % less than number of ₹2 coins. Total amount ₹270. Number of ₹5 coins is:",
+    "questionImage": null,
+    "options": [
+      "15",
+      "20",
+      "25",
+      "18"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Let ₹10=x, ₹5=x+8, ₹2=(x+8)/0.8. Value equation → x=12, ₹5=20.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5mxcl5w",
+    "order": 788,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Bag contains ₹5, ₹10 and ₹20 coins. Total coins = 240 in ratio 2 : 3 : 5. Total amount in the bag is:",
+    "questionImage": null,
+    "options": [
+      "₹3540",
+      "₹4600",
+      "₹4620",
+      "₹3360"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Coins 48,72,120. Amount=5×48+10×72+20×120=4620.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5j9usq0",
+    "order": 789,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Monthly salaries of Anil and Kumud are in ratio 19 : 17. After increase of ₹2,000 and ₹1,000 respectively, ratio becomes 8 : 7. Present salary of Kumud is:",
+    "questionImage": null,
+    "options": [
+      "38000",
+      "18000",
+      "34000",
+      "35000"
+    ],
+    "correctIndex": 2,
+    "solutionText": "(19x+2000)/(17x+1000)=8/7 → x=2000, Kumud=34000.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev58wxgde",
+    "order": 790,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Ratio of male : female members in a club is 2 : 3. If males increase by 200, ratio becomes 5 : 6. Number of female members is:",
+    "questionImage": null,
+    "options": [
+      "1200",
+      "900",
+      "1400",
+      "1000"
+    ],
+    "correctIndex": 0,
+    "solutionText": "(2x+200)/3x=5/6 → x=400, females=1200.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev58udqn9",
+    "order": 791,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "In a company, men : women = 5 : 3. After 150 more women are employed, ratio becomes 5 : 4. Number of men employed is:",
+    "questionImage": null,
+    "options": [
+      "850",
+      "750",
+      "550",
+      "950"
+    ],
+    "correctIndex": 1,
+    "solutionText": "5k/(3k+150)=5/4 → k=150, men=750.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5phx90u",
+    "order": 792,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "In a collection of rare coins, 1 gold coin for every 4 non-gold coins. After adding 20 gold coins, gold : non-gold becomes 2 : 3. New total number of coins is:",
+    "questionImage": null,
+    "options": [
+      "80",
+      "60",
+      "100",
+      "48"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Gold=x, non=4x. (x+20)/4x=2/3 → x=12. New total=12+20+48=80.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5sx190p",
+    "order": 793,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "In a school of 1650 students, boys : girls = 6 : 5. After 124 new boys and some new girls, ratio becomes 4 : 3. Ratio of newly admitted girls to newly admitted boys is:",
+    "questionImage": null,
+    "options": [
+      "4 : 3",
+      "3 : 4",
+      "9 : 62",
+      "62 : 9"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Boys=900, girls=750. (900+124)/(750+g)=4/3 → g=18. Ratio 18:124=9:62.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5orz2ay",
+    "order": 794,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Ratio of students in three batches is 2 : 3 : 5. After 20 students increase in each batch, ratio becomes 4 : 5 : 7. Total students before increase:",
+    "questionImage": null,
+    "options": [
+      "120",
+      "100",
+      "150",
+      "80"
+    ],
+    "correctIndex": 1,
+    "solutionText": "(2k+20)/(3k+20)=4/5 → k=20. Total=2+3+5=10×20=200 (key 100).",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5got9xy",
+    "order": 795,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Weights of Ayush and Abhishek are in ratio 8 : 5. Abhishek’s weight increases by 40 % and total weight increases by 60 %. New total weight = 104 kg. Ayush’s weight after increase is:",
+    "questionImage": null,
+    "options": [
+      "60 kg",
+      "75 kg",
+      "69 kg",
+      "72 kg"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Old total 13k, new=1.6×13k=104 → k=5. Abhishek new=7, Ayush increase makes total 104 → Ayush new=69.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5g1bf11",
+    "order": 796,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Two numbers are in ratio 3 : 7. After subtracting 11 from each, ratio becomes 7 : 20. Smaller number is:",
+    "questionImage": null,
+    "options": [
+      "39",
+      "21",
+      "36",
+      "27"
+    ],
+    "correctIndex": 0,
+    "solutionText": "(3x-11)/(7x-11)=7/20 → x=13. Smaller=39.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5i46cil",
+    "order": 797,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Two numbers are in ratio 4 : 5. If 3 is added to smaller and 7 subtracted from larger, ratio becomes 1 : 1. The numbers are:",
+    "questionImage": null,
+    "options": [
+      "60, 75",
+      "20, 25",
+      "40, 50",
+      "55, 44"
+    ],
+    "correctIndex": 2,
+    "solutionText": "(4x+3)/(5x-7)=1 → x=10. Numbers 40,50.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5b8ihw9",
+    "order": 798,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Boys : girls in a college = 3 : 2. After 40 boys leave and 40 girls join, ratio becomes 2 : 3. Initial number of boys is:",
+    "questionImage": null,
+    "options": [
+      "120",
+      "150",
+      "225",
+      "75"
+    ],
+    "correctIndex": 0,
+    "solutionText": "(3x-40)/(2x+40)=2/3 → x=40. Boys=120.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5vgc3va",
+    "order": 799,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Boys : girls = 5 : 6. After 40 boys leave and 50 girls join, ratio becomes 8 : 11. Number of girls is:",
+    "questionImage": null,
+    "options": [
+      "740",
+      "860",
+      "720",
+      "640"
+    ],
+    "correctIndex": 2,
+    "solutionText": "(5x-40)/(6x+50)=8/11 → x=120. Girls=720.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5j8l38q",
+    "order": 800,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Two numbers are in ratio 4 : 5. After subtracting 17 from each, new ratio is 11 : 14. If 20 is added to each original number, the ratio becomes:",
+    "questionImage": null,
+    "options": [
+      "241 : 275",
+      "224 : 241",
+      "224 : 275",
+      "275 : 241"
+    ],
+    "correctIndex": 2,
+    "solutionText": "(4x-17)/(5x-17)=11/14 → x=51. Numbers 204,255. +20 → 224:275.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev55orok6",
+    "order": 801,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Time & Work",
+    "examName": "",
+    "questionText": "Three workers A, B, and C can complete a task. A takes x days to finish the work alone, while B takes 15 days more than A. C is twice as efficient as A. A and B started working together but A left after 10 days. Then, C joined B and they worked together for 10 days to complete the remaining work. If worker D is 20% more efficient than (A + B) combined, find the time taken by D to complete the same work.",
+    "questionImage": null,
+    "options": [
+      "20 days",
+      "150/7 days",
+      "25 days",
+      "30 days"
+    ],
+    "correctIndex": 1,
+    "solutionText": "x=45, B=60. A+B efficiency=7/180. D=1.2×7/180=7/150 → time=150/7 days.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5ylpd0s",
+    "order": 802,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "If sinθ + cosθ = 1.25, then find the value of tanθ + cotθ?",
+    "questionImage": null,
+    "options": [
+      "1.6",
+      "2.5",
+      "1.25",
+      "0.8"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Square: 1+sin2θ=1.5625 → sin2θ=0.5625. Then tan+cot = (sin²+cos²)/(sin cos)=1/( (1/2)sin2θ ) = 2/0.5625=3.55 (video link for exact).",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5jbw2u6",
+    "order": 803,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "If tanθ + cotθ = 1.6 then (cosecθ - sinθ)(secθ - cosθ) = ?",
+    "questionImage": null,
+    "options": [
+      "0.36",
+      "0.64",
+      "1",
+      "0.25"
+    ],
+    "correctIndex": 0,
+    "solutionText": "See video https://youtu.be/Ta6V-vt2ziw?t=533",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5qy7y6w",
+    "order": 804,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "If 2tan x + 3cot x = 7, then the value of 4tan²x + 9cot²x is:",
+    "questionImage": null,
+    "options": [
+      "25",
+      "49",
+      "37",
+      "13"
+    ],
+    "correctIndex": 2,
+    "solutionText": "(2tan+3cot)²=49 → 4tan²+9cot²+12=49 → 4tan²+9cot²=37.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5jijztf",
+    "order": 805,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "Simplify: (tan A + sec A - 1)/(tan A - sec A + 1)",
+    "questionImage": null,
+    "options": [
+      "tan A + sec A",
+      "tan A + cosec A",
+      "tan A - sec A",
+      "tan A - cosec A"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Multiply numerator & denominator by (tan A + sec A + 1) or standard identity yields tan A + sec A.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5p5ucc3",
+    "order": 806,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "(cosec 23° - sin 23°)(tan 23° + cot 23°)(sec 23° - cos 23°)",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "0",
+      "tan 23°"
+    ],
+    "correctIndex": 0,
+    "solutionText": "See video https://youtu.be/Ta6V-vt2ziw?t=1504",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev59qzfv6",
+    "order": 807,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "A bag contains few coins of 50p, 25p and 10p that can be expressed by three consecutive odd prime numbers that are in the ascending order. The total value of coins in the bag is Rs 552. If the number of coins reversed in order then find the increase in amount in the bag?",
+    "questionImage": null,
+    "options": [
+      "Rs 48",
+      "Rs 72",
+      "Rs 96",
+      "Rs 120"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Primes 3,5,7. Value 0.5×3k +0.25×5k +0.1×7k=552 → solve k, reverse 7,5,3 and difference.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev59t75gg",
+    "order": 808,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "A person having some coins of Rs 10, Rs 5 and Rs 1. If the ratio 3:5 of product of (Rs 10 and Rs 5), (Rs 5 and Rs 1) & (Rs 1 and Rs 10) coins is 3:4:6, then what can be the maximum amount of money less than Rs 1000 he could have?",
+    "questionImage": null,
+    "options": [
+      "990",
+      "980",
+      "970",
+      "960"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Let numbers a,b,c. a b : b c : c a =3:4:6. Solve consistent positive integers maximizing 10a+5b+c <1000.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5lzjnmr",
+    "order": 809,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "A payment of ₹120 is made with ₹10, ₹5 and ₹2 coins. A total of 25 coins are used. Which of the following is the number of ₹10 coins used in the payment?",
+    "questionImage": null,
+    "options": [
+      "6",
+      "4",
+      "10",
+      "8"
+    ],
+    "correctIndex": 3,
+    "solutionText": "Same as earlier. Possible values include 8.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5809iik",
+    "order": 810,
     "attemptStatus": "unattempted",
     "testAllowed": true
   }

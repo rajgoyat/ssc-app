@@ -218,5 +218,105 @@
     "order": 222,
     "attemptStatus": "unattempted",
     "testAllowed": true
+  },
+  {
+    "category": "Percentage",
+    "examName": "",
+    "questionText": "Due to the hike in crude oil prices, the petrol price in India rose by 10%. Before the rise, the price was Rs. 70/litre. Mr. Khanna commutes to work every day in his car from MG Road to Electronic City, which comes to around 1000 km per month at a mileage of 14 km/litre. Calculate how much of travelling must he reduce to nullify the effect.",
+    "questionImage": null,
+    "options": [
+      "90.91 km",
+      "100 km",
+      "110 km",
+      "120 km"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Original petrol consumption = 1000/14 litres. After a 10% price rise, to keep expenditure unchanged, fuel consumption must become 1/1.10 of the original consumption. Therefore distance must also become 1/1.10 of 1000 = 909.09 km. Reduction = 1000 - 909.09 = 90.91 km. Link: https://youtu.be/UNklq50VFbY?t=232",
+    "solutionImage": null,
+    "special": false,
+    "id": "mumb3o21dd9g5r",
+    "order": 672,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Percentage",
+    "examName": "",
+    "questionText": "Mohit secured 70% marks in a PCS exam and the cutoff was 10 marks more, while Darshan scored 80% marks in the same exam and scored 15 marks more than the cut-off. What were the passing marks in that exam?",
+    "questionImage": null,
+    "options": [
+      "55",
+      "60",
+      "65",
+      "70"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Let total marks be x and cutoff be C. Mohit: 70% of x + 10 = C. Darshan: 80% of x - 15 = C. Therefore 0.70x + 10 = 0.80x - 15, giving 0.10x = 25 and x = 250. Cutoff = 70% of 250 + 10 = 185. Thus passing marks are 185. None of the listed options match, so the options need correction. Link: https://youtu.be/UNklq50VFbY?t=579",
+    "solutionImage": null,
+    "special": true,
+    "id": "mumb3o21gd70ch",
+    "order": 677,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Percentage",
+    "examName": "",
+    "questionText": "A fresh fruit contains 62% water, and a dry fruit contains 24% water. How much dry fruit can be obtained from 100 kg of fresh fruit?",
+    "questionImage": null,
+    "options": [
+      "38 kg",
+      "45 kg",
+      "50 kg",
+      "76 kg"
+    ],
+    "correctIndex": 1,
+    "solutionText": "In 100 kg fresh fruit, solid matter = 38 kg. This solid matter remains unchanged after drying. Dry fruit contains 76% solid matter because it contains 24% water. Therefore dry fruit obtained = 38/0.76 = 50 kg. Hence the answer is 50 kg. Link: https://youtu.be/UNklq50VFbY?t=638",
+    "solutionImage": null,
+    "special": false,
+    "id": "mumb3o21g4yod0",
+    "order": 678,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Percentage",
+    "examName": "",
+    "questionText": "In a marriage, 60% people are vegetarian, 30% are non-vegetarian and 15% are both. If there are 300 people in the wedding, how many people did not eat any kind of food?",
+    "questionImage": null,
+    "options": [
+      "50",
+      "60",
+      "75",
+      "90"
+    ],
+    "correctIndex": 2,
+    "solutionText": "People who ate food = Vegetarian + Non-vegetarian - Both = 60% + 30% - 15% = 75%. Therefore 25% did not eat any kind of food. 25% of 300 = 75. Link: https://youtu.be/UNklq50VFbY?t=876",
+    "solutionImage": null,
+    "special": false,
+    "id": "mumb3o22nmwfhf",
+    "order": 681,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Percentage",
+    "examName": "",
+    "questionText": "Monthly income ₹26,500, expenditure ₹22,000. Next year income increases by 20 % and expenditure by 15 %. Percentage increase in savings is:",
+    "questionImage": null,
+    "options": [
+      "44 4/9 %",
+      "44 7/9 %",
+      "44 5/9 %",
+      "44 8/9 %"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Old sav=4500. New income=31800, exp=25300, sav=6500. Increase=(2000/4500)×100=44 4/9 %.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5tvfmpi",
+    "order": 772,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]

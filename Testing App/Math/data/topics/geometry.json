@@ -2325,12 +2325,12 @@
     "questionText": "In a triangle ABC with sides 6cm, 7cm, and 8cm, the angle bisectar of the largest angle divides the opposite side into two segments. What is the length of the shorter segment?",
     "questionImage": null,
     "options": [
-      "1",
-      "2",
-      "3",
-      "4"
+      "43/13",
+      "42/13",
+      "47/13",
+      "48/13"
     ],
-    "correctIndex": 0,
+    "correctIndex": 3,
     "solutionText": "https://youtu.be/EBYNCG2Q30A?t=51890",
     "solutionImage": null,
     "special": false,
@@ -4465,12 +4465,12 @@
     "questionText": "In the triangle ABC, the sum of square of all sides is 64 cm². Find the sum of square of all three medians?",
     "questionImage": null,
     "options": [
-      "1",
-      "2",
-      "3",
-      "4"
+      "66",
+      "61",
+      "64",
+      "65"
     ],
-    "correctIndex": 0,
+    "correctIndex": 2,
     "solutionText": "https://youtu.be/EBYNCG2Q30A?t=110942",
     "solutionImage": null,
     "special": false,
@@ -6076,6 +6076,46 @@
     "special": false,
     "id": "mue9aonqsyenzd",
     "order": 670,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "The sides of a triangle are 24 cm, 32 cm and 40 cm. What is the height of the perpendicular drawn on the longest side?",
+    "questionImage": null,
+    "options": [
+      "19.2 cm",
+      "20 cm",
+      "21.6 cm",
+      "24 cm"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Since 24² + 32² = 40², the triangle is right-angled. Taking 24 cm and 32 cm as perpendicular sides, area = 1/2 × 24 × 32 = 384 cm². If 40 cm is the base, height = 2 × 384/40 = 19.2 cm. Link: https://youtu.be/UNklq50VFbY?t=400",
+    "solutionImage": null,
+    "special": false,
+    "id": "mumb3o21ziwt3h",
+    "order": 674,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Geometry",
+    "examName": "",
+    "questionText": "Two tangents drawn from a point P touch a circle with center O at points Q and R. Points A and B lie on PQ and PR, respectively, such that AB is also a tangent to the same circle. If ∠AOB = 50°, then ∠APB, in degrees, equals:",
+    "questionImage": null,
+    "options": [
+      "50°",
+      "100°",
+      "130°",
+      "150°"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Since PQ and PR are tangents, OQ ⟂ PQ and OR ⟂ PR. The angle between the two tangents PQ and PR is 180° - ∠QOR. Here the relevant central angle ∠AOB = 50°, so ∠APB = 180° - 50° = 130°. Link: https://youtu.be/UNklq50VFbY?t=1058",
+    "solutionImage": null,
+    "special": false,
+    "id": "mumb3o22l5pksj",
+    "order": 682,
     "attemptStatus": "unattempted",
     "testAllowed": true
   }

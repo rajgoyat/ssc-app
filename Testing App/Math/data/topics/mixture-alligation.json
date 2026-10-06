@@ -890,7 +890,7 @@
       "7 L"
     ],
     "correctIndex": 2,
-    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=RvQZB48BVQv5iV-c&t=18761",
+    "solutionText": "https://www.youtube.com/live/H8TGd7fmoBQ?si=RvQZB48BVQv5iV-c&t=18700",
     "solutionImage": null,
     "special": false,
     "id": "mtk7ic9fd4yck",
@@ -1411,7 +1411,7 @@
       "53.77%"
     ],
     "correctIndex": 3,
-    "solutionText": "https://youtu.be/kkyTvdGJG_A?t=200",
+    "solutionText": "https://youtu.be/kkyTvdGJG_A?t=147",
     "solutionImage": null,
     "special": false,
     "id": "mudjxhapxp4z46",
@@ -1436,6 +1436,446 @@
     "special": false,
     "id": "mudpmjf4m78ivg",
     "order": 431,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "Alloy A contains 40% copper and the rest is tin. Alloy B contains 74% copper, 10% tin and the rest are impurities. In which ratio should both alloys be mixed so that the percentage of tin in the new mixture is 25%?",
+    "questionImage": null,
+    "options": [
+      "1:2",
+      "2:1",
+      "3:2",
+      "2:3"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Alloy A contains 60% tin and Alloy B contains 10% tin. Required tin = 25%. By alligation: A:B = (25-10):(60-25) = 15:35 = 3:7. Therefore the required ratio is 3:7. Link: https://youtu.be/UNklq50VFbY?t=349",
+    "solutionImage": null,
+    "special": false,
+    "id": "mumb3o21p2qn41",
+    "order": 673,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "A vessel contains 50 litres of milk and 20 litres of water. What percentage of the mixture should be replaced by water so that the ratio of water to milk in the new mixture becomes 4:3?",
+    "questionImage": null,
+    "options": [
+      "25%",
+      "30%",
+      "35%",
+      "40%"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Initial milk = 50 L and water = 20 L. Let x litres of the mixture be replaced by water. Milk left = 50(1 - x/70), while water becomes 20(1 - x/70) + x. Set water:milk = 4:3. Solving gives x = 21 litres. Percentage replaced = 21/70 × 100 = 30%. Link: https://youtu.be/UNklq50VFbY?t=699",
+    "solutionImage": null,
+    "special": false,
+    "id": "mumb3o21i98fvl",
+    "order": 679,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "The ratio of milk and sugar in a container is 2 : 3. When 20 L of the mixture is taken out and is replaced by sugar, the ratio becomes 3 : 7. What is the total quantity of the mixture in the container?",
+    "questionImage": null,
+    "options": [
+      "60 L",
+      "70 L",
+      "80 L",
+      "100 L"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Let total mixture = x L. Milk = 2x/5 and sugar = 3x/5. On removing 20 L mixture, milk decreases by 8 L and sugar by 12 L. After adding 20 L sugar, (2x/5 - 8) : (3x/5 + 8) = 3 : 7, giving x = 80 L. Video: https://youtu.be/jYEwmTyhvS8?t=1028",
+    "solutionImage": null,
+    "special": false,
+    "id": "munnrkg8gdfvn0",
+    "order": 685,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "A milkman has 2 types of milk. In the first container the percentage of milk is 80% and in the second container the percentage of milk is 60%. If he mixes 28 L of milk from the first container with 32 L of milk from the second container, then the percentage of milk in the mixture is:",
+    "questionImage": null,
+    "options": [
+      "66 2/3%",
+      "68 1/3%",
+      "69 1/3%",
+      "70 2/3%"
+    ],
+    "correctIndex": 3,
+    "solutionText": "Milk = (28 × 80% + 32 × 60%) / 60 = 69 1/3%. EXP: https://www.youtube.com/live/H8TGd7fmoBQ?si=vTPbeyNbxKV2Kr2O&t=2060",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7aedo4ahs3x",
+    "order": 709,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "A shopkeeper mixes 4 liters of a milk solution containing 25% fat with 6 liters of another milk solution containing 40% fat. What is the fat percentage in the final mixture?",
+    "questionImage": null,
+    "options": [
+      "32%",
+      "34%",
+      "36%",
+      "38%"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Using simple weighted average: (4 × 25 + 6 × 40) / 10 = 34%. EXP: SIMPLE DEVIATION.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7aedpgcz5ii",
+    "order": 710,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "A mixture containing 72% oil is mixed with another mixture containing 48% oil in the ratio 6:16. What is the percentage of oil in the mixture formed?",
+    "questionImage": null,
+    "options": [
+      "52 5/11%",
+      "54 6/11%",
+      "55 1/11%",
+      "56 6/11%"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Oil percentage = (6 × 72 + 16 × 48) / 22 = 54 6/11%. EXP: DEVIATION.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7aedpqrqkce",
+    "order": 711,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "A salt solution has 60% salt. Another salt solution has 60% water. 63 L of the second solution is added to 27 L of the first solution to make a salt solution of x%. What is the ratio of water to salt in the final solution?",
+    "questionImage": null,
+    "options": [
+      "23:27",
+      "27:23",
+      "23:17",
+      "17:23"
+    ],
+    "correctIndex": 2,
+    "solutionText": "First solution: 27 L with 60% salt. Second solution: 63 L with 40% salt. Final salt = 16.2 + 25.2 = 41.4 L; water = 48.6 L. Therefore water:salt = 48.6:41.4 = 27:23. EXP: SIMPLE DEVIATION. https://www.youtube.com/live/H8TGd7fmoBQ?si=Er3LlLkvcebfOqyU&t=2562",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7aedpb1vf8k",
+    "order": 712,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "Two jars A and B contain solutions of two liquids P and Q. The ratios of liquids P and Q in jars A and B are 2:19 and 1:11, respectively. If 7 liters of the solution from jar A and 4 liters of the solution from jar B are mixed, what is the ratio of P and Q in the new mixture?",
+    "questionImage": null,
+    "options": [
+      "1:8",
+      "1:9",
+      "1:10",
+      "2:19"
+    ],
+    "correctIndex": 3,
+    "solutionText": "P from A = 7 × 2/21 = 2/3 L; P from B = 4 × 1/12 = 1/3 L. Total P = 1 L. Total Q = 10 L. Therefore P:Q = 1:10. EXP: https://www.youtube.com/live/H8TGd7fmoBQ?si=ijyulyswvOax6-TJ&t=3359",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7aedpo68q50",
+    "order": 713,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "A 90-liter mixture contains milk and water in the ratio 7:2. If x liters of milk and x liters of water are added to the mixture, the new ratio of milk and water becomes 5:2. What is the value of x?",
+    "questionImage": null,
+    "options": [
+      "10 L",
+      "12 L",
+      "13 1/3 L",
+      "15 L"
+    ],
+    "correctIndex": 3,
+    "solutionText": "Initial milk = 70 L and water = 20 L. Therefore (70 + x)/(20 + x) = 5/2. Cross multiplication gives 140 + 2x = 100 + 5x, so x = 40/3 = 13 1/3 L. EXP: Make the ratio same, then multiply opposite terms by their difference.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7aedpl3dukt",
+    "order": 714,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "In an x L solution of alcohol and water, the ratio of alcohol and water is 5:7. If 5 L of alcohol and 11 L of water are added to the solution, the percentage of alcohol in the resulting solution becomes 40%. What will be the value of x?",
+    "questionImage": null,
+    "options": [
+      "72 L",
+      "84 L",
+      "96 L",
+      "108 L"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Initial alcohol = 5x/12. After adding 5 L alcohol, total alcohol = 5x/12 + 5. Total solution = x + 16. Using alcohol percentage = 40%, (5x/12 + 5)/(x + 16) = 2/5, giving x = 84 L. EXP: SIMPLE CROSS METHOD.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7aedpblgzog",
+    "order": 715,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "From a cask of milk containing 64 liters, 8 liters are drawn out and the cask is filled up with water. If the same process is repeated a second time and then a third time, what will be the proportion of milk to water in the resulting mixture?",
+    "questionImage": null,
+    "options": [
+      "343:169",
+      "169:343",
+      "343:512",
+      "512:343"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Milk remaining after 3 operations = 64 × (56/64)^3. Milk fraction = (7/8)^3 = 343/512. Water fraction = 169/512. Therefore milk:water = 343:169.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7aedpqsh4ac",
+    "order": 716,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "There are two chemicals which do not react with each other. A container contains 10 litres of chemical A. One litre of A is removed and one litre of B is poured in. Then one litre of the mixture is removed and one litre of B is poured in. If this process of replacing one litre of the mixture by one litre of B is performed once more, then what percentage of B is present in the container approximately?",
+    "questionImage": null,
+    "options": [
+      "24.1%",
+      "25.9%",
+      "27.1%",
+      "28.9%"
+    ],
+    "correctIndex": 3,
+    "solutionText": "After three replacement operations, fraction of A = (9/10)^3 = 729/1000. Therefore fraction of B = 271/1000 = 27.1%. EXP: https://www.youtube.com/live/H8TGd7fmoBQ?si=W6gY2eLcniGZYxj-&t=8216",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7aedpnww0p7",
+    "order": 717,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "A drum contains 80 litres of ethanol. 20 litres of this liquid is removed and replaced with water. 20 litres of this mixture is again removed and replaced with water. How much water, in litres, is present in the drum now?",
+    "questionImage": null,
+    "options": [
+      "30 L",
+      "32 L",
+      "35 L",
+      "40 L"
+    ],
+    "correctIndex": 3,
+    "solutionText": "Ethanol remaining = 80 × (60/80)^2 = 45 L. Therefore water = 80 - 45 = 35 L. EXP: https://www.youtube.com/live/H8TGd7fmoBQ?si=PJ87CMIyIvbl15b4&t=8862",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7aedp3kurxf",
+    "order": 718,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "5 litres are drawn from a cask full of wine and the cask is then filled with water. This operation is performed once more. The ratio of the quantity of wine now left in the cask to that of water is 16:9. How much wine did the cask originally hold?",
+    "questionImage": null,
+    "options": [
+      "20 L",
+      "25 L",
+      "30 L",
+      "35 L"
+    ],
+    "correctIndex": 2,
+    "solutionText": "After two operations, wine fraction = (1 - 5/x)^2 = 16/25. Hence 1 - 5/x = 4/5, so 5/x = 1/5 and x = 25 L. EXP: https://www.youtube.com/live/H8TGd7fmoBQ?si=Xpx2jx5ne1PtX685&t=9181",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7aedptg9tql",
+    "order": 719,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "A solution contains acid and water in the ratio 4:5. If 20% of the solution is replaced by water, what will be the ratio of acid and water in the new solution?",
+    "questionImage": null,
+    "options": [
+      "4:5",
+      "16:29",
+      "20:29",
+      "16:25"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Take 45 units initially: acid = 20 and water = 25. Removing 20% means 9 units are removed, containing 4 units acid and 5 units water. Acid left = 16; water after adding 9 units water = 29. Ratio = 16:29. EXP: https://www.youtube.com/live/H8TGd7fmoBQ?si=6d0a49icRKQKk5fJ&t=9535",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7aedplx6nh1",
+    "order": 720,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "A vessel contains 120 liters of a solution of milk and water in the ratio 3:2. If 24 liters of this solution is removed and pure milk is added, what will be the new ratio of milk and water?",
+    "questionImage": null,
+    "options": [
+      "3:2",
+      "17:8",
+      "8:17",
+      "5:3"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Initially milk = 72 L and water = 48 L. In 24 L removed, milk = 14.4 L and water = 9.6 L. Remaining milk = 57.6 L and water = 38.4 L. Add 24 L milk: milk = 81.6 L. Ratio = 81.6:38.4 = 17:8. EXP: https://www.youtube.com/live/H8TGd7fmoBQ?si=dEfY0grwK2-oEnd8&t=9678",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7aedp8zdoxv",
+    "order": 721,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "A drum contains 80 litres of a 90% pure acid solution. If 8 litres of this solution are removed and replaced with 8 litres of pure water, what is the new percentage of acid in the solution?",
+    "questionImage": null,
+    "options": [
+      "80%",
+      "81%",
+      "82%",
+      "83%"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Initial acid = 80 × 90% = 72 L. Acid removed with 8 L solution = 7.2 L. Acid left = 64.8 L. New concentration = 64.8/80 × 100 = 81%. EXP: https://www.youtube.com/live/H8TGd7fmoBQ?si=hfTgPeAbOku9eJIB&t=9791",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7aedp58fo13",
+    "order": 722,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "A container has 60 litres of a mixture of acid and water in the ratio 7:3. 20% of the mixture is taken out and replaced with water. This operation is repeated once more. What is the final percentage of acid in the mixture?",
+    "questionImage": null,
+    "options": [
+      "42.8%",
+      "44.8%",
+      "46.8%",
+      "48.8%"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Initial acid fraction = 7/10 = 70%. Each replacement leaves 80% of the acid. Final acid percentage = 70% × (0.8)^2 = 44.8%. EXP: https://www.youtube.com/live/H8TGd7fmoBQ?si=ZVU3rgwrxhcBxfOb&t=9930",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7aedpmorllm",
+    "order": 723,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "A mixture of apple juice and water is prepared. 10% of the mixture is removed and the same amount of water is added. If the ratio of apple juice to water in the resulting mixture is 2:3, find the ratio of apple juice to water in the original mixture.",
+    "questionImage": null,
+    "options": [
+      "2:3",
+      "3:2",
+      "20:7",
+      "7:20"
+    ],
+    "correctIndex": 3,
+    "solutionText": "Let original apple juice fraction be j. After removing 10% and adding water, apple juice becomes 0.9j and water becomes 1 - 0.9j. Given ratio = 2:3. Solving gives j = 20/27, so original water fraction = 7/27. Therefore original ratio = 20:7. EXP: https://www.youtube.com/live/H8TGd7fmoBQ?si=QpCssIhE-hD4MUIA&t=10345",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7aedpsdsxhk",
+    "order": 724,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "A laboratory bottle contains 60 ml of a 70% concentration saline solution. 12 ml of the solution is withdrawn and replaced with 12 ml of pure water. Then, 15 ml of the resulting solution is withdrawn and replaced with 15 ml of pure water. What is the final concentration of saline in the bottle?",
+    "questionImage": null,
+    "options": [
+      "40%",
+      "42%",
+      "44%",
+      "45%"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Final concentration = 70% × (1 - 12/60) × (1 - 15/60) = 70% × 0.8 × 0.75 = 42%. EXP: https://www.youtube.com/live/H8TGd7fmoBQ?si=J2gAo7b7q2CaVfJs&t=10644",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7aedprptj2m",
+    "order": 725,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "In a mixture of 120 litres of milk and water, the ratio of milk to water is 2:3. From this mixture, 40 litres is taken out and replaced with milk. This process is continued one more time. Find the quantity of milk in litres in the final mixture.",
+    "questionImage": null,
+    "options": [
+      "80 L",
+      "84 L",
+      "88 L",
+      "92 L"
+    ],
+    "correctIndex": 3,
+    "solutionText": "Initially milk = 48 L. After first replacement, milk left = 48 × 80/120 = 32 L; adding 40 L milk gives 72 L. After second replacement, milk left = 72 × 80/120 = 48 L; adding 40 L milk gives 88 L. EXP: https://www.youtube.com/live/H8TGd7fmoBQ?si=Ri4JG29R0X6HSshj&t=11025",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7aedpjoz7ns",
+    "order": 726,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Mixture & Alligation",
+    "examName": "",
+    "questionText": "If a 49-litre mixture of milk contains 63% milk, how much more milk should be added to the mixture to increase the concentration of milk to 70%?",
+    "questionImage": null,
+    "options": [
+      "9 L",
+      "10 L",
+      "11 L",
+      "12 L"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Initial milk = 49 × 63/100 = 30.87 L. Let x litres of pure milk be added. (30.87 + x)/(49 + x) = 70/100. Solving gives x = 10 L.",
+    "solutionImage": "/uploads/mixture-alligation/29d24d3d27a4e064059b1d94173d08114a0ca64fb4459368784e862b2936abd7.png",
+    "special": false,
+    "id": "mur7cqx4q1iloy",
+    "order": 728,
     "attemptStatus": "unattempted",
     "testAllowed": true
   }

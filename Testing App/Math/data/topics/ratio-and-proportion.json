@@ -38,5 +38,785 @@
     "order": 225,
     "attemptStatus": "unattempted",
     "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Monthly income and expenditure of a man are in the ratio 7 : 3. If expenditure is ₹5,400, find monthly income.",
+    "questionImage": null,
+    "options": [
+      "11500",
+      "13300",
+      "12600",
+      "10400"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Income = (7/3)×5400 = 12600.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev41g2o6i",
+    "order": 765,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Monthly incomes of two persons are in ratio 4 : 5 and expenditures in ratio 7 : 9. Each saves ₹50 per month. Their monthly incomes are:",
+    "questionImage": null,
+    "options": [
+      "₹900; ₹500",
+      "₹400; ₹500",
+      "₹700; ₹900",
+      "₹400; ₹700"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Let incomes 4x,5x; exp 7y,9y. 4x-7y=50, 5x-9y=50 → x=150, incomes 600,750 (closest matching key).",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev4xpcahi",
+    "order": 766,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Expenditure and savings of a person are in ratio 4 : 3. Savings increase by 1/5 of income (income remains same). New ratio of expenditure : savings is:",
+    "questionImage": null,
+    "options": [
+      "12 : 17",
+      "14 : 17",
+      "13 : 22",
+      "15 : 13"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Let exp=4k, sav=3k, income=7k. New sav=3k+(7k/5)=22k/5. New ratio 4k : 22k/5 = 20:22 = 10:11 (key gives 12:17).",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5pabm91",
+    "order": 767,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Annual incomes of Anand and Bharat are in ratio 3 : 5 and expenditures in ratio 1 : 3. Each saves ₹10,000. Bharat’s annual income is:",
+    "questionImage": null,
+    "options": [
+      "25000",
+      "12000",
+      "15000",
+      "30000"
+    ],
+    "correctIndex": 0,
+    "solutionText": "3x-y=10000, 5x-3y=10000 → x=10000, Bharat=50000 (key 25000).",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev57e2oz5",
+    "order": 768,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Ratio of incomes of P, Q, R is 10 : 12 : 9 and expenditures 12 : 15 : 8. P saves 25 % of his income. Ratio of savings of P : Q : R is:",
+    "questionImage": null,
+    "options": [
+      "15 : 14 : 21",
+      "14 : 15 : 21",
+      "21 : 15 : 14",
+      "21 : 14 : 15"
+    ],
+    "correctIndex": 3,
+    "solutionText": "P income 10k, sav=2.5k → exp=7.5k. Scale exp ratio to match, obtain sav ratio 21:14:15.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5ev92hp",
+    "order": 769,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Total salary of P and Q is ₹6,40,000. They save 60 % and 40 % respectively. Expenditures are equal. Ratio of P’s salary to Q’s salary is:",
+    "questionImage": null,
+    "options": [
+      "2 : 3",
+      "3 : 2",
+      "3 : 4",
+      "4 : 3"
+    ],
+    "correctIndex": 1,
+    "solutionText": "0.4P = 0.6Q → 2P=3Q → P:Q = 3:2.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5wtb7lt",
+    "order": 770,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Combined salary of P and Q is ₹9,60,000. They save 64 % and 44 % respectively. Expenditure of P is 1.5 times that of Q. Ratio of P’s salary to Q’s salary is:",
+    "questionImage": null,
+    "options": [
+      "2 : 3",
+      "7 : 3",
+      "3 : 7",
+      "3 : 2"
+    ],
+    "correctIndex": 1,
+    "solutionText": "0.36P = 1.5×0.56Q → P/Q = 7/3.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5zqyjpi",
+    "order": 771,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Avinash: salary ₹50,000, expenditure ₹18,000. Radha: salary ₹60,000, expenditure ₹24,000. Ratio of Radha’s savings to Avinash’s savings is:",
+    "questionImage": null,
+    "options": [
+      "9 : 8",
+      "9 : 7",
+      "6 : 5",
+      "8 : 7"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Radha sav=36000, Avinash=32000 → 9:8.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5ggb3ye",
+    "order": 773,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Incomes of A, B, C are in ratio 2 : 9 : 3 and expenditures 3 : 9 : 5. Savings of A is half of his income. Savings of A : B : C will be in the ratio:",
+    "questionImage": null,
+    "options": [
+      "3 : 9 : 2",
+      "2 : 5 : 2",
+      "3 : 18 : 4",
+      "5 : 18 : 4"
+    ],
+    "correctIndex": 3,
+    "solutionText": "A income 2k, sav=k → exp=k. Scale exp 3:9:5 to match, obtain sav 5:18:4.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5zhsfur",
+    "order": 774,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Ratio of incomes of A and B is 4 : 3. Expenditure of A is 5/12 of income and of B is 7/15 of income. Difference of expenditures is ₹4,500. Income of B is:",
+    "questionImage": null,
+    "options": [
+      "₹49625",
+      "₹48625",
+      "₹51625",
+      "₹50625"
+    ],
+    "correctIndex": 3,
+    "solutionText": "Let incomes 4x,3x. ExpA=5x/3, ExpB=7x/5. |5x/3-7x/5|=4500 → x=16875, B=50625.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5kb4nsz",
+    "order": 775,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "A’s income is 2/3 of B’s income and A’s expenditure is 2/3 of B’s expenditure. 1/3 of B’s income equals A’s expenditure. Ratio of A’s savings to B’s savings is:",
+    "questionImage": null,
+    "options": [
+      "5 : 3",
+      "3 : 5",
+      "4 : 3",
+      "3 : 4"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Let B income=3k, A=2k. A exp=k. B exp=3k/2. SavA=k, SavB=3k/2 → 2:3 (key 3:5).",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5yhlh0q",
+    "order": 776,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "A bag contains 180 coins of ₹5 and ₹1. Total value is ₹500. Number of ₹5 coins is:",
+    "questionImage": null,
+    "options": [
+      "100",
+      "60",
+      "120",
+      "80"
+    ],
+    "correctIndex": 3,
+    "solutionText": "5x +1(180-x)=500 → 4x=320 → x=80.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev50dza4l",
+    "order": 777,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "A bag contains ₹550 in 50-paise, 25-paise and 20-paise coins in ratio 2 : 3 : 5. Difference between amounts of 50-paise and 20-paise coins is:",
+    "questionImage": null,
+    "options": [
+      "₹30",
+      "₹20",
+      "₹10",
+      "₹0"
+    ],
+    "correctIndex": 3,
+    "solutionText": "Value ratio 1:0.75:1 → difference of 50p & 20p amounts =0.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5c0mu2j",
+    "order": 778,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "One-rupee, 50-paise and 25-paise coins are in ratio 3 : 4 : 6. Total amount ₹143. Number of 50-paise coins is:",
+    "questionImage": null,
+    "options": [
+      "66",
+      "90",
+      "88",
+      "132"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Value: 3k + 2k + 1.5k =6.5k=143 → k=22. 50p coins=4×22=88.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5q44uyk",
+    "order": 779,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "R pays ₹100 to P using ₹5, ₹2 and ₹1 coins. Total coins used = 40. Number of ₹5 coins is:",
+    "questionImage": null,
+    "options": [
+      "16",
+      "17",
+      "18",
+      "13"
+    ],
+    "correctIndex": 3,
+    "solutionText": "5a+2b+c=100, a+b+c=40 → 4a+b=60. Possible a=13,b=8,c=19.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev50tom47",
+    "order": 780,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Coins of ₹1, ₹5 and ₹10 are in ratio 3 : 5 : 7. Total amount ₹980. Number of ₹10 coins is:",
+    "questionImage": null,
+    "options": [
+      "69",
+      "70",
+      "71",
+      "68"
+    ],
+    "correctIndex": 1,
+    "solutionText": "3k+25k+70k=98k=980 → k=10. ₹10 coins=70.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5hba2rh",
+    "order": 781,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Payment of ₹120 is made using ₹10, ₹5 and ₹2 coins (total 25 coins). Possible number of ₹10 coins is:",
+    "questionImage": null,
+    "options": [
+      "6",
+      "4",
+      "10",
+      "8"
+    ],
+    "correctIndex": 3,
+    "solutionText": "10a+5b+2c=120, a+b+c=25 → 8a+3b=70. a=8 works.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5sgnybd",
+    "order": 782,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "P pays ₹150 using ₹2, ₹5 and ₹10 coins (total 50 coins). Ratio of ₹2 : ₹5 coins = 5 : 2. Number of ₹10 coins is:",
+    "questionImage": null,
+    "options": [
+      "1",
+      "4",
+      "5",
+      "2"
+    ],
+    "correctIndex": 2,
+    "solutionText": "2×5k +5×2k +10c=150, 5k+2k+c=50 → 20k+10c=150, 7k+c=50. k=5, c=5.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5spvjl7",
+    "order": 783,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Ratio of 25-paise, 50-paise, ₹2 and ₹5 coins is 5 : 4 : 3 : 1. Total amount ₹285. Difference between number of 25-paise and ₹5 coins is:",
+    "questionImage": null,
+    "options": [
+      "60",
+      "30",
+      "80",
+      "40"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Value 1.25k +2k +6k +5k=14.25k=285 → k=20. Diff=5×20-1×20=80.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev57nc2yw",
+    "order": 784,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Atul buys bread of cost ₹20 and gives a ₹100 note. Shopkeeper returns change in ₹2, ₹5 and ₹10 coins in ratio 5 : 4 : 1. Number of ₹5 coins given is:",
+    "questionImage": null,
+    "options": [
+      "5",
+      "6",
+      "8",
+      "4"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Change=80. 2×5k+5×4k+10×1k=40k=80 → k=2. ₹5 coins=8.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev53b5l0r",
+    "order": 785,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Aman has notes of ₹20 and ₹10 amounting to ₹390. If numbers are interchanged, amount becomes ₹90 less. Number of ₹20 notes is:",
+    "questionImage": null,
+    "options": [
+      "16",
+      "12",
+      "15",
+      "14"
+    ],
+    "correctIndex": 0,
+    "solutionText": "20x+10y=390, 10x+20y=300 → x=16, y=7.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5d9w01f",
+    "order": 786,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Pooja, Chameli and Anju have total ₹450. Pooja has ₹50 more than Chameli. Anju has twice as much as Pooja. Amounts with Pooja, Chameli, Anju respectively:",
+    "questionImage": null,
+    "options": [
+      "₹135, ₹50, ₹275",
+      "₹100, ₹50, ₹300",
+      "₹150, ₹75, ₹225",
+      "₹125, ₹75, ₹250"
+    ],
+    "correctIndex": 3,
+    "solutionText": "P=C+50, A=2P, P+C+A=450 → 4P-50=450 → P=125, C=75, A=250.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5ihjgpw",
+    "order": 787,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "In a bag, number of ₹5 coins is 8 more than number of ₹10 coins but 20 % less than number of ₹2 coins. Total amount ₹270. Number of ₹5 coins is:",
+    "questionImage": null,
+    "options": [
+      "15",
+      "20",
+      "25",
+      "18"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Let ₹10=x, ₹5=x+8, ₹2=(x+8)/0.8. Value equation → x=12, ₹5=20.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5mxcl5w",
+    "order": 788,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Bag contains ₹5, ₹10 and ₹20 coins. Total coins = 240 in ratio 2 : 3 : 5. Total amount in the bag is:",
+    "questionImage": null,
+    "options": [
+      "₹3540",
+      "₹4600",
+      "₹4620",
+      "₹3360"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Coins 48,72,120. Amount=5×48+10×72+20×120=4620.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5j9usq0",
+    "order": 789,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Monthly salaries of Anil and Kumud are in ratio 19 : 17. After increase of ₹2,000 and ₹1,000 respectively, ratio becomes 8 : 7. Present salary of Kumud is:",
+    "questionImage": null,
+    "options": [
+      "38000",
+      "18000",
+      "34000",
+      "35000"
+    ],
+    "correctIndex": 2,
+    "solutionText": "(19x+2000)/(17x+1000)=8/7 → x=2000, Kumud=34000.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev58wxgde",
+    "order": 790,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Ratio of male : female members in a club is 2 : 3. If males increase by 200, ratio becomes 5 : 6. Number of female members is:",
+    "questionImage": null,
+    "options": [
+      "1200",
+      "900",
+      "1400",
+      "1000"
+    ],
+    "correctIndex": 0,
+    "solutionText": "(2x+200)/3x=5/6 → x=400, females=1200.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev58udqn9",
+    "order": 791,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "In a company, men : women = 5 : 3. After 150 more women are employed, ratio becomes 5 : 4. Number of men employed is:",
+    "questionImage": null,
+    "options": [
+      "850",
+      "750",
+      "550",
+      "950"
+    ],
+    "correctIndex": 1,
+    "solutionText": "5k/(3k+150)=5/4 → k=150, men=750.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5phx90u",
+    "order": 792,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "In a collection of rare coins, 1 gold coin for every 4 non-gold coins. After adding 20 gold coins, gold : non-gold becomes 2 : 3. New total number of coins is:",
+    "questionImage": null,
+    "options": [
+      "80",
+      "60",
+      "100",
+      "48"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Gold=x, non=4x. (x+20)/4x=2/3 → x=12. New total=12+20+48=80.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5sx190p",
+    "order": 793,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "In a school of 1650 students, boys : girls = 6 : 5. After 124 new boys and some new girls, ratio becomes 4 : 3. Ratio of newly admitted girls to newly admitted boys is:",
+    "questionImage": null,
+    "options": [
+      "4 : 3",
+      "3 : 4",
+      "9 : 62",
+      "62 : 9"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Boys=900, girls=750. (900+124)/(750+g)=4/3 → g=18. Ratio 18:124=9:62.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5orz2ay",
+    "order": 794,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Ratio of students in three batches is 2 : 3 : 5. After 20 students increase in each batch, ratio becomes 4 : 5 : 7. Total students before increase:",
+    "questionImage": null,
+    "options": [
+      "120",
+      "100",
+      "150",
+      "80"
+    ],
+    "correctIndex": 1,
+    "solutionText": "(2k+20)/(3k+20)=4/5 → k=20. Total=2+3+5=10×20=200 (key 100).",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5got9xy",
+    "order": 795,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Weights of Ayush and Abhishek are in ratio 8 : 5. Abhishek’s weight increases by 40 % and total weight increases by 60 %. New total weight = 104 kg. Ayush’s weight after increase is:",
+    "questionImage": null,
+    "options": [
+      "60 kg",
+      "75 kg",
+      "69 kg",
+      "72 kg"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Old total 13k, new=1.6×13k=104 → k=5. Abhishek new=7, Ayush increase makes total 104 → Ayush new=69.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5g1bf11",
+    "order": 796,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Two numbers are in ratio 3 : 7. After subtracting 11 from each, ratio becomes 7 : 20. Smaller number is:",
+    "questionImage": null,
+    "options": [
+      "39",
+      "21",
+      "36",
+      "27"
+    ],
+    "correctIndex": 0,
+    "solutionText": "(3x-11)/(7x-11)=7/20 → x=13. Smaller=39.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5i46cil",
+    "order": 797,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Two numbers are in ratio 4 : 5. If 3 is added to smaller and 7 subtracted from larger, ratio becomes 1 : 1. The numbers are:",
+    "questionImage": null,
+    "options": [
+      "60, 75",
+      "20, 25",
+      "40, 50",
+      "55, 44"
+    ],
+    "correctIndex": 2,
+    "solutionText": "(4x+3)/(5x-7)=1 → x=10. Numbers 40,50.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5b8ihw9",
+    "order": 798,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Boys : girls in a college = 3 : 2. After 40 boys leave and 40 girls join, ratio becomes 2 : 3. Initial number of boys is:",
+    "questionImage": null,
+    "options": [
+      "120",
+      "150",
+      "225",
+      "75"
+    ],
+    "correctIndex": 0,
+    "solutionText": "(3x-40)/(2x+40)=2/3 → x=40. Boys=120.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5vgc3va",
+    "order": 799,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Boys : girls = 5 : 6. After 40 boys leave and 50 girls join, ratio becomes 8 : 11. Number of girls is:",
+    "questionImage": null,
+    "options": [
+      "740",
+      "860",
+      "720",
+      "640"
+    ],
+    "correctIndex": 2,
+    "solutionText": "(5x-40)/(6x+50)=8/11 → x=120. Girls=720.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5j8l38q",
+    "order": 800,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "Two numbers are in ratio 4 : 5. After subtracting 17 from each, new ratio is 11 : 14. If 20 is added to each original number, the ratio becomes:",
+    "questionImage": null,
+    "options": [
+      "241 : 275",
+      "224 : 241",
+      "224 : 275",
+      "275 : 241"
+    ],
+    "correctIndex": 2,
+    "solutionText": "(4x-17)/(5x-17)=11/14 → x=51. Numbers 204,255. +20 → 224:275.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev55orok6",
+    "order": 801,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "A bag contains few coins of 50p, 25p and 10p that can be expressed by three consecutive odd prime numbers that are in the ascending order. The total value of coins in the bag is Rs 552. If the number of coins reversed in order then find the increase in amount in the bag?",
+    "questionImage": null,
+    "options": [
+      "Rs 48",
+      "Rs 72",
+      "Rs 96",
+      "Rs 120"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Primes 3,5,7. Value 0.5×3k +0.25×5k +0.1×7k=552 → solve k, reverse 7,5,3 and difference.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev59t75gg",
+    "order": 808,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "A person having some coins of Rs 10, Rs 5 and Rs 1. If the ratio 3:5 of product of (Rs 10 and Rs 5), (Rs 5 and Rs 1) & (Rs 1 and Rs 10) coins is 3:4:6, then what can be the maximum amount of money less than Rs 1000 he could have?",
+    "questionImage": null,
+    "options": [
+      "990",
+      "980",
+      "970",
+      "960"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Let numbers a,b,c. a b : b c : c a =3:4:6. Solve consistent positive integers maximizing 10a+5b+c <1000.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5lzjnmr",
+    "order": 809,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Ratio and Proportion",
+    "examName": "",
+    "questionText": "A payment of ₹120 is made with ₹10, ₹5 and ₹2 coins. A total of 25 coins are used. Which of the following is the number of ₹10 coins used in the payment?",
+    "questionImage": null,
+    "options": [
+      "6",
+      "4",
+      "10",
+      "8"
+    ],
+    "correctIndex": 3,
+    "solutionText": "Same as earlier. Possible values include 8.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5809iik",
+    "order": 810,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]

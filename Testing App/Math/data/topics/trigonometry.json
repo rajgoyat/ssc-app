@@ -238,5 +238,745 @@
     "order": 424,
     "attemptStatus": "unattempted",
     "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/trigonometry/ab61506ed8e0d957bf430d2c89ab62158700383e4a2952c3d2b60342ca66c95f.png",
+    "options": [
+      "0",
+      "1",
+      "4",
+      "-1"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=178   book page = 133",
+    "solutionImage": null,
+    "special": false,
+    "id": "muskqb9v8vaxdf",
+    "order": 733,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/trigonometry/955fe46374d3c7ef864d14a16715840deaaffac6683015bfdd5befa489af0a2e.png",
+    "options": [
+      "tan",
+      "sec",
+      "cot",
+      "cosec"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=941",
+    "solutionImage": null,
+    "special": false,
+    "id": "musln0z73cal11",
+    "order": 734,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/trigonometry/85e81754da08bb9bd8500b6493e114368ea5cf3ce1cdffd8486e8dff62780dc2.png",
+    "options": [
+      "sec^2",
+      "cosec^3",
+      "18",
+      "10"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=1251",
+    "solutionImage": null,
+    "special": false,
+    "id": "muslxj50133lv5",
+    "order": 735,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/trigonometry/bca1417be25878aac99cbb7ccc612f6bd6c267803306b5fbf03248600925aee0.png",
+    "options": [
+      "sin cos",
+      "17",
+      "13",
+      "19"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=1448",
+    "solutionImage": null,
+    "special": false,
+    "id": "musmaqsnoo2bmz",
+    "order": 736,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/trigonometry/235c74462f09e5d2931faec6a3fdf75fe45bba4275c752f5930f8c5056adcc7d.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=1595",
+    "solutionImage": null,
+    "special": false,
+    "id": "musmj415g3wacq",
+    "order": 737,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/trigonometry/dae8b65f3a773e4d953d37a87ad0ef42f37aa71e940800e0eb729a92d38569f1.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=1673",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutllqjluoqidl",
+    "order": 738,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/trigonometry/9215982b30856a2828e52e0eb996682ffa3d10e86c9c09155a2ba85a22df37f7.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=1742",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutlri45flvdod",
+    "order": 739,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/trigonometry/4a498054ecedd041c49c5b88daaf85b6e89991797f4408d8b557edd6b2edb4b5.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=1928",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutlt75f5v20hy",
+    "order": 740,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/trigonometry/71d87f71af5b0e04c518363ec41be9eb3233454e30d53af310ec95b387322eeb.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutlukcqasfjjn",
+    "order": 741,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/trigonometry/655d32337d96f6d17f069c5a697c4bcb669a2fcef9c0772ac10304bca628e607.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=2202",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutlvkhweztrm1",
+    "order": 742,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "32456yt",
+    "questionImage": "/uploads/trigonometry/39bdef1dde8edcc00fbeb6a70316ae498fe6208cc8a0f29d6601751d09bfc53b.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=2300",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutlx277nvjnl7",
+    "order": 743,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "45tyh",
+    "questionImage": "/uploads/trigonometry/e61a2508da6063d042e6b279c98c534eb30412da425560c3715696a106a26ad3.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=2544",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutlyrbpzg5f40",
+    "order": 744,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "345tyh",
+    "questionImage": "/uploads/trigonometry/fcf205aa955f808c0267b07f37cb485546327f66c65ab5f3a442ba9d6cd6f783.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=2635",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutlzy8b4jmz6i",
+    "order": 745,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "456yhj",
+    "questionImage": "/uploads/trigonometry/f1bb21c29113a1e25faa84f7e9da1af3014f3c0ba8f6190798904803532bf521.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=2738",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutm1fzv7a3bzh",
+    "order": 746,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "45tgdfg",
+    "questionImage": "/uploads/trigonometry/7eda07f8286e0ca988ccf264cfc9dcddcf78035bf2d07667c80f7a3e70f9eb6b.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=2793",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutm2lxqnag010",
+    "order": 747,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "34tgfff",
+    "questionImage": "/uploads/trigonometry/c7ad00b27babafbf27383138924210195f271d572141da447213e6d23f587e5d.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=2906",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutm3u86qxeua5",
+    "order": 748,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "3456y5tg",
+    "questionImage": "/uploads/trigonometry/92c3ad8ab8aea46357ad5d74181b889ab00ec90ecdc49a8b75390657237c4093.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=3005",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutm57wz78scox",
+    "order": 749,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "3456yu",
+    "questionImage": "/uploads/trigonometry/396d4e695084cbcf612e3ff0df9de8c1f7c59b933fcc250189c6f0f43d986c17.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=3071",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutm6pvl02v4xo",
+    "order": 750,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "34567uhgfd",
+    "questionImage": "/uploads/trigonometry/8d5fd4c9033391dec82900725b04dc4656d87e7ca7818ef49885d77ead013157.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=3316",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutm91uxyihfrb",
+    "order": 751,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "34567yhtgf",
+    "questionImage": "/uploads/trigonometry/32196ff36b903dc274bf3069e223eb352e9d674489c52dac270ee1793079f9cf.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=3421",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutmajhgc2rrun",
+    "order": 752,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "e456yhgfd",
+    "questionImage": "/uploads/trigonometry/baf3f9629f9e585173ea2e8ea88a23217d06b06db6e41848bc0b5ac3974318dd.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=3488",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutmewpx8fum2d",
+    "order": 753,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "456yfv",
+    "questionImage": "/uploads/trigonometry/fcbca5bde9792d747274ea238a0fbe8c8d11bc85937be73a15bcf9d08898c454.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=3633",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutmh0549lxpb4",
+    "order": 754,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "5trgfnbf",
+    "questionImage": "/uploads/trigonometry/60e579ad1af1562a4d386e7bd4416266b8a36e4ea357dc8388ffb232d03e8eda.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=3843",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutmimudwn4e9l",
+    "order": 755,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "3456yujhgf",
+    "questionImage": "/uploads/trigonometry/91e4eb78a9f0af774606e53b618e2d6db9b32d355f54b62f80b0ae18df05369e.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=3900",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutml6wk87wnyt",
+    "order": 756,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "9876uuioio",
+    "questionImage": "/uploads/trigonometry/a51c39abea15b2f4099c2f634e7888817c74eed192d3c3876c3cedc456d42820.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 2,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=4021",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutmnavv5br0x5",
+    "order": 757,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "456uthg",
+    "questionImage": "/uploads/trigonometry/060983d083dc06cf0c20dcf0f851c21fdee440b4cef22167ed32be4f714766b2.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 3,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=4100",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutmoyr7v47dww",
+    "order": 758,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "456yjth",
+    "questionImage": "/uploads/trigonometry/8ff8e476cf52fcad2f6b56e90298b5942e7a170ba9ebb6d300dd40a8e809c8ee.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=4269",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutmt2g91kq36g",
+    "order": 759,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "",
+    "questionImage": "/uploads/trigonometry/055c21e5f0e2fecdd8d9534aaa4acfab6ceed7dc0690a41eda8371fc63fe7159.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 1,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=4330",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutmua5jppw2i3",
+    "order": 760,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "5y4htd",
+    "questionImage": "/uploads/trigonometry/ee3ec10febf98a0dec10ffe058e97dd6913e997d88b3fff0425543145f93c285.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=4430",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutmx6xfn8ob1p",
+    "order": 761,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "34yhtrhd",
+    "questionImage": "/uploads/trigonometry/4104e464b5fde06d83c69b33f2070e5428cb55b9bf68b4264ab9d532c2cf78ce.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=4550",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutmyp2i2cnpi3",
+    "order": 762,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "45u5rthtye",
+    "questionImage": "/uploads/trigonometry/7b69b833a16eb724bbe315e9799548c760fb8e2d61d65e8046239ca8b2691873.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "https://youtu.be/Ta6V-vt2ziw?t=4700",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutn0kz0zg47bb",
+    "order": 763,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "435yhtd",
+    "questionImage": "/uploads/trigonometry/a1f1d63b485993866760b7a6789164df3cb71b8ae9c08109f34358a28aa8f488.png",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "h w",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutn1p89latvle",
+    "order": 764,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "If sinθ + cosθ = 1.25, then find the value of tanθ + cotθ?",
+    "questionImage": null,
+    "options": [
+      "1.6",
+      "2.5",
+      "1.25",
+      "0.8"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Square: 1+sin2θ=1.5625 → sin2θ=0.5625. Then tan+cot = (sin²+cos²)/(sin cos)=1/( (1/2)sin2θ ) = 2/0.5625=3.55 (video link for exact).",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5jbw2u6",
+    "order": 803,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "If tanθ + cotθ = 1.6 then (cosecθ - sinθ)(secθ - cosθ) = ?",
+    "questionImage": null,
+    "options": [
+      "0.36",
+      "0.64",
+      "1",
+      "0.25"
+    ],
+    "correctIndex": 0,
+    "solutionText": "See video https://youtu.be/Ta6V-vt2ziw?t=533",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5qy7y6w",
+    "order": 804,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "If 2tan x + 3cot x = 7, then the value of 4tan²x + 9cot²x is:",
+    "questionImage": null,
+    "options": [
+      "25",
+      "49",
+      "37",
+      "13"
+    ],
+    "correctIndex": 2,
+    "solutionText": "(2tan+3cot)²=49 → 4tan²+9cot²+12=49 → 4tan²+9cot²=37.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5jijztf",
+    "order": 805,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "Simplify: (tan A + sec A - 1)/(tan A - sec A + 1)",
+    "questionImage": null,
+    "options": [
+      "tan A + sec A",
+      "tan A + cosec A",
+      "tan A - sec A",
+      "tan A - cosec A"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Multiply numerator & denominator by (tan A + sec A + 1) or standard identity yields tan A + sec A.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev5p5ucc3",
+    "order": 806,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Trigonometry",
+    "examName": "",
+    "questionText": "(cosec 23° - sin 23°)(tan 23° + cot 23°)(sec 23° - cos 23°)",
+    "questionImage": null,
+    "options": [
+      "1",
+      "2",
+      "0",
+      "tan 23°"
+    ],
+    "correctIndex": 0,
+    "solutionText": "See video https://youtu.be/Ta6V-vt2ziw?t=1504",
+    "solutionImage": null,
+    "special": false,
+    "id": "mutnfev59qzfv6",
+    "order": 807,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]

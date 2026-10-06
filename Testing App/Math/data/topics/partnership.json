@@ -18,5 +18,25 @@
     "testAllowed": true,
     "special": false,
     "examName": ""
+  },
+  {
+    "category": "Partnership",
+    "examName": "",
+    "questionText": "Three partners divide the profit earned in a business in the ratio 8:7:5. They invested their capitals for 7 months, 8 months, and 14 months respectively. Find the ratio of their capitals.",
+    "questionImage": null,
+    "options": [
+      "32:49:35",
+      "64:49:20",
+      "32:49:10",
+      "16:49:35"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Profit ∝ Capital × Time. Therefore capital ratio = 8/7 : 7/8 : 5/14. Multiplying by 56 gives 64:49:20. EXP: Profit ratio = Capital × Time.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7cqx45lsu2l",
+    "order": 727,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]

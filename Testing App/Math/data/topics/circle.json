@@ -38,5 +38,65 @@
     "order": 217,
     "attemptStatus": "unattempted",
     "testAllowed": true
+  },
+  {
+    "category": "Circle",
+    "examName": "",
+    "questionText": "If arcs of equal length in two circles subtend angles of 40° and 50° at their centers, then the ratio of their radii is:",
+    "questionImage": null,
+    "options": [
+      "4:5",
+      "5:4",
+      "8:5",
+      "5:8"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Arc length l = rθ. Since the arcs are equal, r₁θ₁ = r₂θ₂. Therefore r₁/r₂ = θ₂/θ₁ = 50/40 = 5/4. Hence the ratio of radii is 5:4. Link: https://youtu.be/UNklq50VFbY?t=528",
+    "solutionImage": null,
+    "special": false,
+    "id": "mumb3o216gdl7w",
+    "order": 676,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Circle",
+    "examName": "",
+    "questionText": "From a point P outside a circle, a tangent PA and a secant PBC are drawn. If PA = 12 cm and BC = 10 cm, what is the length of the segment PB?",
+    "questionImage": null,
+    "options": [
+      "6 cm",
+      "8 cm",
+      "10 cm",
+      "12 cm"
+    ],
+    "correctIndex": 2,
+    "solutionText": "By the tangent-secant theorem, PA² = PB × PC. Since PC = PB + BC, 144 = PB(PB + 10). Therefore PB² + 10PB - 144 = 0, giving PB = 8 cm. EXP: https://youtu.be/9TozM1cVe0M?t=2650",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7cqx4v9rpzw",
+    "order": 730,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Circle",
+    "examName": "",
+    "questionText": "Two parallel chords on the same side of the centre of a circle are 16 cm and 30 cm long. If the distance between the two chords is 7 cm, find the radius of the circle.",
+    "questionImage": null,
+    "options": [
+      "15 cm",
+      "17 cm",
+      "19 cm",
+      "21 cm"
+    ],
+    "correctIndex": 2,
+    "solutionText": "For a chord of length 30 cm, half-chord = 15 cm. For the chord of length 16 cm, half-chord = 8 cm. Let distances from centre be x and y. Since the chords are on the same side, y - x = 7. Also r² = 15² + x² = 8² + y². Thus 225 + x² = 64 + (x+7)², giving x = 7. Hence r² = 225 + 49 = 274, so r = √274 ≈ 16.55 cm. Therefore none of the listed integer options is exact.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7cqx4bvma4t",
+    "order": 731,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]

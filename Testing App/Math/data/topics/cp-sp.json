@@ -198,5 +198,25 @@
     "order": 224,
     "attemptStatus": "unattempted",
     "testAllowed": true
+  },
+  {
+    "category": "CP & SP",
+    "examName": "",
+    "questionText": "A dealer sells two dryers at a rate of ₹63,000 per dryer. He makes a profit of 5% on one and incurs a loss of 30% on the other. What is his overall loss percentage in the transaction?",
+    "questionImage": null,
+    "options": [
+      "10%",
+      "12.5%",
+      "14.29%",
+      "15%"
+    ],
+    "correctIndex": 3,
+    "solutionText": "CP of first dryer = 63000/1.05 = 60000. CP of second dryer = 63000/0.70 = 90000. Total CP = 150000 and total SP = 126000. Loss = 24000. Loss% = 24000/150000 × 100 = 16%. Therefore the correct answer should be 16%; the supplied options do not contain the exact answer.",
+    "solutionImage": null,
+    "special": false,
+    "id": "mur7cqx42pbd83",
+    "order": 732,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]

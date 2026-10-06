@@ -38,5 +38,25 @@
     "testAllowed": false,
     "special": false,
     "examName": ""
+  },
+  {
+    "category": "Profit & Loss",
+    "examName": "",
+    "questionText": "Asif, a retailer sold two mobile phones at the rate of ₹6000 each, one at a profit of 20% and the other at a loss. He incurred a loss of 4% in the whole transaction. What is the loss percentage on the mobile which was sold at a loss?",
+    "questionImage": null,
+    "options": [
+      "16%",
+      "18%",
+      "20%",
+      "22%"
+    ],
+    "correctIndex": 2,
+    "solutionText": "CP of first phone = 6000/1.20 = ₹5000. Total SP = ₹12000. Since overall loss is 4%, total CP = 12000/0.96 = ₹12500. CP of second phone = 12500 − 5000 = ₹7500. Loss = 7500 − 6000 = ₹1500. Loss% = 1500/7500 × 100 = 20%.",
+    "solutionImage": null,
+    "special": false,
+    "id": "munppaop647sav",
+    "order": 708,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
   }
 ]
