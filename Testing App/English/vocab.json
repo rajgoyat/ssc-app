@@ -1,6 +1,22 @@
 {
   "words": [
     {
+      "en": "abandon",
+      "hi": "छोड़ देना",
+      "meaning": "To leave somebody, especially somebody you are responsible for.",
+      "sentence": "The driver had to abandon the car during the heavy storm.",
+      "syn": "relinquish",
+      "ant": "retain"
+    },
+    {
+      "en": "abandonment",
+      "hi": "परित्याग",
+      "meaning": "The act of leaving a person, thing or place with no intention of returning.",
+      "sentence": "The abandonment of the old building left it in ruins.",
+      "syn": "dereliction",
+      "ant": "reclamation"
+    },
+    {
       "en": "Abase",
       "hi": "अपमानित करना",
       "meaning": "To humiliate or degrade someone",
@@ -49,6 +65,14 @@
       "ant": "Disobey"
     },
     {
+      "en": "ability",
+      "hi": "क्षमता",
+      "meaning": "The quality or state of being able.",
+      "sentence": "She has a natural ability to solve complex mathematical problems.",
+      "syn": "skill",
+      "ant": "inability"
+    },
+    {
       "en": "Abject",
       "hi": "दयनीय / अत्यंत बुरा",
       "meaning": "Extremely bad, hopeless, or humiliating",
@@ -65,6 +89,22 @@
       "ant": "accept, embrace, adopt"
     },
     {
+      "en": "abnegation",
+      "hi": "त्याग / अस्वीकृति",
+      "meaning": "The action of renouncing or rejecting something.",
+      "sentence": "Monks practice total self-abnegation to achieve spiritual clarity.",
+      "syn": "renunciation",
+      "ant": "acceptance"
+    },
+    {
+      "en": "abode",
+      "hi": "निवास-स्थान",
+      "meaning": "The place where somebody lives.",
+      "sentence": "They welcomed us warmly into their humble abode.",
+      "syn": "residence",
+      "ant": "annex"
+    },
+    {
       "en": "Abolish",
       "hi": "समाप्त करना",
       "meaning": "To formally put an end to a law, system, or practice",
@@ -79,6 +119,14 @@
       "sentence": "The abominable treatment of the workers shocked everyone.",
       "syn": "Detestable",
       "ant": "Admirable"
+    },
+    {
+      "en": "abort",
+      "hi": "रद्द करना",
+      "meaning": "To put an end to something planned or previously agreed to.",
+      "sentence": "The mission was aborted due to bad weather conditions.",
+      "syn": "cancel",
+      "ant": "continue"
     },
     {
       "en": "Abound",
@@ -121,12 +169,28 @@
       "ant": "Remain"
     },
     {
+      "en": "absolute",
+      "hi": "पूर्णतः",
+      "meaning": "Total and complete.",
+      "sentence": "The king ruled with absolute power over his kingdom.",
+      "syn": "complete",
+      "ant": "partial"
+    },
+    {
       "en": "Absolve",
       "hi": "दोषमुक्त करना",
       "meaning": "To declare someone free from blame or guilt",
       "sentence": "The inquiry absolved him of all charges.",
       "syn": "Acquit",
       "ant": "Blame"
+    },
+    {
+      "en": "absorbed",
+      "hi": "लीन / मग्न",
+      "meaning": "Deeply interested or involved.",
+      "sentence": "She was completely absorbed in reading her favorite book.",
+      "syn": "engrossed",
+      "ant": "distracted"
     },
     {
       "en": "Abstain",
@@ -201,6 +265,14 @@
       "ant": "Refuse"
     },
     {
+      "en": "access",
+      "hi": "पहुँच",
+      "meaning": "A way of entering a place.",
+      "sentence": "Students have free access to the online library.",
+      "syn": "approach",
+      "ant": "restriction"
+    },
+    {
       "en": "Acclaim",
       "hi": "सराहना / प्रशंसा",
       "meaning": "Enthusiastic public praise or approval",
@@ -241,6 +313,22 @@
       "ant": "Avoid"
     },
     {
+      "en": "accountable",
+      "hi": "उत्तरदायी / जिम्मेदार",
+      "meaning": "Responsible for your decisions or actions and expected to explain them.",
+      "sentence": "Managers are accountable for the performance of their team.",
+      "syn": "responsible",
+      "ant": "irresponsible"
+    },
+    {
+      "en": "accredit",
+      "hi": "श्रेय देना",
+      "meaning": "To believe that somebody is responsible for doing or saying something.",
+      "sentence": "The institution was fully accredited by the education board.",
+      "syn": "certify",
+      "ant": "discredit"
+    },
+    {
       "en": "Accrue",
       "hi": "जमा होना / बढ़ते जाना",
       "meaning": "To accumulate or increase gradually over a period of time.\nSamay ke saath dheere-dheere kisi cheez ka jama ya badhte jaana.",
@@ -249,12 +337,44 @@
       "ant": "Diminish"
     },
     {
+      "en": "accurate",
+      "hi": "सही / अचूक",
+      "meaning": "Correct and true in every detail.",
+      "sentence": "Her prediction turned out to be completely accurate.",
+      "syn": "precise",
+      "ant": "inaccurate"
+    },
+    {
+      "en": "accurately",
+      "hi": "सही ढंग से",
+      "meaning": "In a way that is correct and true in every detail.",
+      "sentence": "The survey results were accurately recorded in the report.",
+      "syn": "correctly",
+      "ant": "incorrectly"
+    },
+    {
       "en": "Acerbic",
       "hi": "कड़वा / तीखा",
       "meaning": "Sharp and forthright in tone or manner",
       "sentence": "The critic's acerbic review upset the young director.",
       "syn": "Sarcastic",
       "ant": "Mild"
+    },
+    {
+      "en": "achieve",
+      "hi": "प्राप्त करना",
+      "meaning": "To succeed in reaching a particular goal, status or standard.",
+      "sentence": "Hard work helped her achieve her dream of becoming a doctor.",
+      "syn": "attain",
+      "ant": "fail"
+    },
+    {
+      "en": "acknowledgement",
+      "hi": "स्वीकृति",
+      "meaning": "An act of accepting that something exists or is true.",
+      "sentence": "He received a letter of acknowledgement from the university.",
+      "syn": "acceptance",
+      "ant": "denial"
     },
     {
       "en": "Acquaintance",
@@ -271,6 +391,22 @@
       "sentence": "She reluctantly acquiesced to her boss's demands rather than argue.",
       "syn": "Comply",
       "ant": "Object"
+    },
+    {
+      "en": "acquiescent",
+      "hi": "आज्ञाकारी / आसानी से बात मानने वाला",
+      "meaning": "Willing to do what somebody wants and accept their opinions.",
+      "sentence": "She was too acquiescent to dispute her boss's decision.",
+      "syn": "subservient",
+      "ant": "rebellious"
+    },
+    {
+      "en": "acquisitive",
+      "hi": "प्राप्त करने की लालसा",
+      "meaning": "Interested in collecting and owning things.",
+      "sentence": "An acquisitive firm is always seeking new corporate targets.",
+      "syn": "greedy",
+      "ant": "generous"
     },
     {
       "en": "Acquit",
@@ -313,6 +449,14 @@
       "ant": "Ignorance"
     },
     {
+      "en": "acute",
+      "hi": "तीव्र / गंभीर",
+      "meaning": "Very serious or severe.",
+      "sentence": "The patient was admitted with acute abdominal pain.",
+      "syn": "severe",
+      "ant": "mild"
+    },
+    {
       "en": "Adage",
       "hi": "कहावत / लोकोक्ति",
       "meaning": "A short traditional saying expressing a general truth",
@@ -337,12 +481,28 @@
       "ant": "Resist"
     },
     {
+      "en": "addicted",
+      "hi": "वशीभूत / आदी",
+      "meaning": "Unable to stop using or doing something as a habit.",
+      "sentence": "He became addicted to video games during the holidays.",
+      "syn": "dependent",
+      "ant": "unaccustomed"
+    },
+    {
       "en": "Adept",
       "hi": "निपुण / दक्ष",
       "meaning": "Very skilled or proficient at something",
       "sentence": "He is adept at solving complex puzzles.",
       "syn": "Skilled",
       "ant": "Inept"
+    },
+    {
+      "en": "adequate",
+      "hi": "पर्याप्त / उचित",
+      "meaning": "Enough in quantity, or good enough in quality, for a particular purpose.",
+      "sentence": "Ensure you get adequate rest before taking the exam.",
+      "syn": "sufficient",
+      "ant": "inadequate"
     },
     {
       "en": "Adhere",
@@ -369,6 +529,30 @@
       "ant": "Ignore"
     },
     {
+      "en": "adjust",
+      "hi": "अनुकूल बनाना",
+      "meaning": "To change something so as to make it suitable for a new situation.",
+      "sentence": "It took him some time to adjust to living in a new city.",
+      "syn": "adapt",
+      "ant": "disarrange"
+    },
+    {
+      "en": "adjustment",
+      "hi": "सुधार / अनुकूलन",
+      "meaning": "A small change made to something in order to correct or improve it.",
+      "sentence": "A minor adjustment to the machinery made it run smoothly.",
+      "syn": "adaptation",
+      "ant": "disarrangement"
+    },
+    {
+      "en": "admire",
+      "hi": "प्रशंसा करना",
+      "meaning": "To regard with respect.",
+      "sentence": "I admire her dedication to community service.",
+      "syn": "appreciate",
+      "ant": "detest"
+    },
+    {
       "en": "Admonish",
       "hi": "डाँटना / चेतावनी देना",
       "meaning": "To warn or reprimand someone firmly",
@@ -391,6 +575,14 @@
       "sentence": "They adopted a modern method of farming.",
       "syn": "Embrace",
       "ant": "Discard"
+    },
+    {
+      "en": "adore",
+      "hi": "प्रशंसा करना / अत्यधिक प्रेम करना",
+      "meaning": "To love somebody very much.",
+      "sentence": "Parents adore their children unconditionally.",
+      "syn": "revere",
+      "ant": "hate"
     },
     {
       "en": "Adorn",
@@ -431,6 +623,38 @@
       "sentence": "Traders were caught adulterating milk with water.",
       "syn": "Contaminate",
       "ant": "Purify"
+    },
+    {
+      "en": "adulterated",
+      "hi": "मिलावटी",
+      "meaning": "Made less pure by adding another substance to it.",
+      "sentence": "Selling adulterated milk is punishable under the law.",
+      "syn": "contaminated",
+      "ant": "pure"
+    },
+    {
+      "en": "advanced",
+      "hi": "उन्नत / प्रगतिशील",
+      "meaning": "Far ahead in development or progress.",
+      "sentence": "The country has an advanced technology sector.",
+      "syn": "progressive",
+      "ant": "primitive"
+    },
+    {
+      "en": "advantage",
+      "hi": "फ़ायदा",
+      "meaning": "A condition giving a greater chance of success.",
+      "sentence": "Fluency in multiple languages is a huge career advantage.",
+      "syn": "benefit",
+      "ant": "disadvantage"
+    },
+    {
+      "en": "advantageous",
+      "hi": "उपयोगी / लाभदायक",
+      "meaning": "Good or useful in a particular situation.",
+      "sentence": "Early preparation proved advantageous during the competition.",
+      "syn": "beneficial",
+      "ant": "detrimental"
     },
     {
       "en": "Advent",
@@ -481,12 +705,28 @@
       "ant": "Discourage"
     },
     {
+      "en": "advised",
+      "hi": "सुझाया हुआ",
+      "meaning": "Widely regarded and suggested.",
+      "sentence": "It is advised to wear a helmet while riding a motorcycle.",
+      "syn": "considered",
+      "ant": "ill-advised"
+    },
+    {
       "en": "Advocate",
       "hi": "समर्थन करना / वकील",
       "meaning": "To publicly support a cause; also a person who pleads for another",
       "sentence": "She advocates equal pay for equal work.",
       "syn": "Support",
       "ant": "Oppose"
+    },
+    {
+      "en": "aegis",
+      "hi": "सुरक्षा में",
+      "meaning": "With the protection or support.",
+      "sentence": "The project was carried out under the aegis of the United Nations.",
+      "syn": "protection",
+      "ant": "attack"
     },
     {
       "en": "Aesthetic",
@@ -537,12 +777,36 @@
       "ant": "Comfort"
     },
     {
+      "en": "affluence",
+      "hi": "अमीरी / समृद्धि",
+      "meaning": "The state of having a lot of money and a good standard of living.",
+      "sentence": "The neighborhood is known for its extreme affluence.",
+      "syn": "wealth",
+      "ant": "poverty"
+    },
+    {
       "en": "Affluent",
       "hi": "संपन्न / धनी",
       "meaning": "Having a great deal of money; wealthy",
       "sentence": "They live in an affluent neighbourhood.",
       "syn": "Prosperous",
       "ant": "Impoverished"
+    },
+    {
+      "en": "affront",
+      "hi": "अपमान",
+      "meaning": "A remark that offends somebody or something.",
+      "sentence": "His rude comment was seen as an affront to her dignity.",
+      "syn": "insult",
+      "ant": "compliment"
+    },
+    {
+      "en": "afraid",
+      "hi": "डरा हुआ",
+      "meaning": "Feeling fear; frightened because you think you might be hurt.",
+      "sentence": "There is no need to be afraid of the dark.",
+      "syn": "scared",
+      "ant": "brave"
     },
     {
       "en": "Aftermath",
@@ -575,6 +839,14 @@
       "sentence": "He used the merger to aggrandize his own position in the firm.",
       "syn": "Enhance",
       "ant": "Belittle"
+    },
+    {
+      "en": "aggravate",
+      "hi": "बिगाड़ना / भड़काना",
+      "meaning": "To make somebody angry or make a situation worse.",
+      "sentence": "Scratching the rash will only aggravate the skin condition.",
+      "syn": "intensify",
+      "ant": "soothe"
     },
     {
       "en": "Aggregate",
@@ -631,6 +903,14 @@
       "sentence": "India still has a largely agrarian economy.",
       "syn": "Agricultural",
       "ant": "Industrial"
+    },
+    {
+      "en": "agreeable",
+      "hi": "स्वीकार्य / सहमत",
+      "meaning": "Willing to do something or allow something.",
+      "sentence": "They spent an agreeable afternoon walking through the park.",
+      "syn": "acceptable",
+      "ant": "disagreeable"
     },
     {
       "en": "Ailment",
@@ -721,6 +1001,14 @@
       "ant": "Specify"
     },
     {
+      "en": "alluring",
+      "hi": "आकर्षक",
+      "meaning": "Attractive and exciting in a mysterious way.",
+      "sentence": "The island has an alluring tropical charm.",
+      "syn": "charming",
+      "ant": "repulsive"
+    },
+    {
       "en": "Allusion",
       "hi": "संकेत",
       "meaning": "An indirect reference to something",
@@ -753,6 +1041,14 @@
       "ant": "Selfishness"
     },
     {
+      "en": "altruist",
+      "hi": "परोपकारी / परहितवादी",
+      "meaning": "Showing a wish to help or bring advantages to others.",
+      "sentence": "As a true altruist, she donated most of her fortune to charity.",
+      "syn": "philanthropist",
+      "ant": "egoist"
+    },
+    {
       "en": "Amalgamate",
       "hi": "मिलाना / विलय करना",
       "meaning": "To combine or unite to form one organisation or structure",
@@ -777,6 +1073,14 @@
       "ant": "Professional"
     },
     {
+      "en": "amaze",
+      "hi": "चौंका देना",
+      "meaning": "To surprise somebody very much.",
+      "sentence": "Her incredible singing talent never fails to amaze the audience.",
+      "syn": "astonish",
+      "ant": "bore"
+    },
+    {
       "en": "Ambiguous",
       "hi": "अस्पष्ट / द्वि-अर्थी",
       "meaning": "Open to more than one interpretation; unclear",
@@ -785,12 +1089,28 @@
       "ant": "Definite"
     },
     {
+      "en": "ambitious",
+      "hi": "अभिलाषी",
+      "meaning": "Determined to be successful, rich, powerful, etc.",
+      "sentence": "The ambitious young engineer dreamed of founding his own company.",
+      "syn": "aspiring",
+      "ant": "unambitious"
+    },
+    {
       "en": "Ambivalent",
       "hi": "दुविधाग्रस्त",
       "meaning": "Having mixed feelings about something",
       "sentence": "He felt ambivalent about the job offer, torn between excitement and doubt.",
       "syn": "Uncertain",
       "ant": "Decisive"
+    },
+    {
+      "en": "amble",
+      "hi": "टहलना",
+      "meaning": "To walk slowly at a relaxed pace.",
+      "sentence": "They would amble along the beach every evening at sunset.",
+      "syn": "stroll",
+      "ant": "sprint"
     },
     {
       "en": "Ambush",
@@ -817,6 +1137,14 @@
       "ant": "Stubborn"
     },
     {
+      "en": "amend",
+      "hi": "संशोधन करना",
+      "meaning": "To change a law, document, statement, etc.",
+      "sentence": "Parliament voted to amend the constitution.",
+      "syn": "modify",
+      "ant": "impair"
+    },
+    {
       "en": "Amiable",
       "hi": "मिलनसार / सौम्य",
       "meaning": "Having a friendly and pleasant manner",
@@ -841,11 +1169,19 @@
       "ant": "Correct"
     },
     {
+      "en": "amity",
+      "hi": "मेल-जोल / भाईचारा",
+      "meaning": "A good relationship between people that is pleasant and friendly.",
+      "sentence": "The two nations signed a pact to promote peace and amity.",
+      "syn": "friendliness",
+      "ant": "enmity"
+    },
+    {
       "en": "Amnesty",
       "hi": "क्षमादान",
       "meaning": "An official pardon for people convicted of political offences",
       "sentence": "The government granted amnesty to the rebels.",
-      "syn": "Pardon",
+      "syn": "Pardon\n\nRebel = बागी, Rebellion = विद्रोह, Rebellious = विद्रोही स्वभाव वाला / बगावती",
       "ant": "Punishment"
     },
     {
@@ -863,6 +1199,14 @@
       "sentence": "Social media amplified the protest overnight.",
       "syn": "Magnify",
       "ant": "Reduce"
+    },
+    {
+      "en": "amusement",
+      "hi": "मनोरंजन / आनंद",
+      "meaning": "The feeling caused by something that makes you laugh or entertains you.",
+      "sentence": "The kids played in the backyard for their own amusement.",
+      "syn": "pleasure",
+      "ant": "boredom"
     },
     {
       "en": "Anachronism",
@@ -895,6 +1239,14 @@
       "sentence": "He told an amusing anecdote about his school days.",
       "syn": "Tale",
       "ant": "Fact"
+    },
+    {
+      "en": "anger",
+      "hi": "गुस्सा",
+      "meaning": "The strong feeling that makes you want to hurt someone.",
+      "sentence": "He struggled to control his anger during the debate.",
+      "syn": "fury",
+      "ant": "calmness"
     },
     {
       "en": "Anguish",
@@ -937,6 +1289,22 @@
       "ant": "Create"
     },
     {
+      "en": "announce",
+      "hi": "घोषणा करना",
+      "meaning": "To tell people something officially.",
+      "sentence": "The company will announce its annual results tomorrow.",
+      "syn": "declare",
+      "ant": "conceal"
+    },
+    {
+      "en": "annoying",
+      "hi": "परेशान करने वाला",
+      "meaning": "Making somebody feel slightly angry.",
+      "sentence": "The loud construction noise outside was extremely annoying.",
+      "syn": "irritating",
+      "ant": "soothing"
+    },
+    {
       "en": "Annul",
       "hi": "रद्द करना",
       "meaning": "To declare a law, marriage, or agreement invalid",
@@ -945,12 +1313,44 @@
       "ant": "Validate"
     },
     {
+      "en": "anodyne",
+      "hi": "किसी को परेशान न करने वाला",
+      "meaning": "Unlikely to offend anyone or cause them to disagree.",
+      "sentence": "He gave an anodyne speech that avoided any controversial topics.",
+      "syn": "innocuous",
+      "ant": "offensive"
+    },
+    {
+      "en": "anomalous",
+      "hi": "असंगत / विलक्षण",
+      "meaning": "Different from what is normal or expected.",
+      "sentence": "Researchers observed an anomalous pattern in the temperature data.",
+      "syn": "peculiar",
+      "ant": "normal"
+    },
+    {
       "en": "Anonymous",
       "hi": "गुमनाम",
       "meaning": "Not identified by name; of unknown origin",
       "sentence": "The police received an anonymous tip-off.",
       "syn": "Unnamed",
       "ant": "Identified"
+    },
+    {
+      "en": "anorexia",
+      "hi": "भूखा रहकर वजन घटाने की सनक",
+      "meaning": "Obsessive desire to lose weight by refusing to eat.",
+      "sentence": "Anorexia is a serious eating disorder that requires medical attention.",
+      "syn": "eating disorder",
+      "ant": "hyperphagia"
+    },
+    {
+      "en": "answer",
+      "hi": "उत्तर",
+      "meaning": "Something that you say, write or do to react to a question or situation.",
+      "sentence": "She raised her hand to give the correct answer.",
+      "syn": "reply",
+      "ant": "question"
     },
     {
       "en": "Antagonist",
@@ -985,12 +1385,36 @@
       "ant": "Single work"
     },
     {
+      "en": "anthropologist",
+      "hi": "मानव जाति का अध्ययन करने वाला",
+      "meaning": "One who studies human societies and their culture/evolution of mankind.",
+      "sentence": "The anthropologist spent years living with indigenous tribes.",
+      "syn": "ethnologist",
+      "ant": "misanthrope"
+    },
+    {
+      "en": "anthropology",
+      "hi": "मानव विज्ञान",
+      "meaning": "The study of Man.",
+      "sentence": "Anthropology helps us understand human evolution and cultural diversity.",
+      "syn": "human science",
+      "ant": "non-human science"
+    },
+    {
       "en": "Anticipate",
       "hi": "पूर्वानुमान करना",
       "meaning": "To expect or predict something before it happens",
       "sentence": "We anticipate heavy rainfall this week.",
       "syn": "Expect",
       "ant": "Doubt"
+    },
+    {
+      "en": "anticipated",
+      "hi": "प्रत्याशित",
+      "meaning": "Expected or regarded as probable.",
+      "sentence": "The product launch was highly anticipated by tech enthusiasts.",
+      "syn": "predicted",
+      "ant": "unexpected"
     },
     {
       "en": "Antidote",
@@ -1009,12 +1433,60 @@
       "ant": "Affinity"
     },
     {
+      "en": "antiquarian",
+      "hi": "प्राचीन वस्तुओं का अध्ययन करने वाला",
+      "meaning": "A person dealing with antiques.",
+      "sentence": "The antiquarian appraised the rare medieval manuscript.",
+      "syn": "antique dealer",
+      "ant": "modernist"
+    },
+    {
       "en": "Antiquated",
       "hi": "पुराना / अप्रचलित",
       "meaning": "Old-fashioned and no longer useful",
       "sentence": "The office still uses antiquated machines.",
       "syn": "Obsolete",
       "ant": "Modern"
+    },
+    {
+      "en": "antique",
+      "hi": "पुराना",
+      "meaning": "Existing since or belonging to earlier times.",
+      "sentence": "They bought a beautiful antique table at the auction.",
+      "syn": "ancient",
+      "ant": "recent"
+    },
+    {
+      "en": "antithesis",
+      "hi": "विपरीत / विलोम",
+      "meaning": "The exact opposite.",
+      "sentence": "Slavery is the exact antithesis of freedom.",
+      "syn": "opposite",
+      "ant": "similarity"
+    },
+    {
+      "en": "anxious",
+      "hi": "चिंतित",
+      "meaning": "Feeling worried or nervous.",
+      "sentence": "She felt anxious while waiting for her examination results.",
+      "syn": "nervous",
+      "ant": "calm"
+    },
+    {
+      "en": "apartheid",
+      "hi": "रंगभेद",
+      "meaning": "Policy of racial discrimination.",
+      "sentence": "South Africa officially abolished apartheid in the 1990s.",
+      "syn": "racial segregation",
+      "ant": "integration"
+    },
+    {
+      "en": "apartment",
+      "hi": "मकान",
+      "meaning": "A set of rooms forming one residence in a building.",
+      "sentence": "She rented a spacious apartment in the city center.",
+      "syn": "flat",
+      "ant": "bungalow"
     },
     {
       "en": "Apathetic",
@@ -1073,6 +1545,14 @@
       "ant": "Authentic"
     },
     {
+      "en": "apologetic",
+      "hi": "खेदपूर्ण",
+      "meaning": "Expressing regret about something.",
+      "sentence": "He was deeply apologetic for stepping on her foot.",
+      "syn": "repentant",
+      "ant": "unrepentant"
+    },
+    {
       "en": "Apostate",
       "hi": "धर्मत्यागी",
       "meaning": "A person who abandons a religious or political belief",
@@ -1087,6 +1567,30 @@
       "sentence": "The cruelty of the act appalled the nation.",
       "syn": "Horrify",
       "ant": "Delight"
+    },
+    {
+      "en": "appalling",
+      "hi": "भयावह",
+      "meaning": "Something causing fear or dismay.",
+      "sentence": "The living conditions in the slum were appalling.",
+      "syn": "shocking",
+      "ant": "delightful"
+    },
+    {
+      "en": "apparent",
+      "hi": "साफ़ / स्पष्ट",
+      "meaning": "Easy to see or understand.",
+      "sentence": "It became apparent that the project would require more time.",
+      "syn": "evident",
+      "ant": "hidden"
+    },
+    {
+      "en": "apparently",
+      "hi": "स्पष्ट रूप से",
+      "meaning": "According to what you have heard or read; according to appearances.",
+      "sentence": "Apparently, the train was delayed due to technical issues.",
+      "syn": "seemingly",
+      "ant": "unquestionably"
     },
     {
       "en": "Apparition",
@@ -1113,6 +1617,30 @@
       "ant": "Original"
     },
     {
+      "en": "applause",
+      "hi": "प्रशंसा करना",
+      "meaning": "Praise expressed by clapping.",
+      "sentence": "The performer bowed to the audience amidst loud applause.",
+      "syn": "approval",
+      "ant": "disapproval"
+    },
+    {
+      "en": "applicant",
+      "hi": "आवेदक",
+      "meaning": "One who formally requests sth, especially for a job.",
+      "sentence": "Each applicant submitted a detailed resume and cover letter.",
+      "syn": "candidate",
+      "ant": "employer"
+    },
+    {
+      "en": "application",
+      "hi": "कार्य / योजना की शुरुआत",
+      "meaning": "Act of starting to use a plan or system.",
+      "sentence": "The practical application of this theory requires advanced tools.",
+      "syn": "implementation",
+      "ant": "inactivity"
+    },
+    {
       "en": "Apposite",
       "hi": "उपयुक्त / प्रासंगिक/ सटीक",
       "meaning": "Highly appropriate or relevant to a situation",
@@ -1129,12 +1657,28 @@
       "ant": "Ignore"
     },
     {
+      "en": "appreciate",
+      "hi": "सराहना करना / मूल्यवृद्धि",
+      "meaning": "To rise in value.",
+      "sentence": "Real estate in this location will continue to appreciate over time.",
+      "syn": "value",
+      "ant": "depreciate"
+    },
+    {
       "en": "Apprehend",
       "hi": "गिरफ्तार करना / समझना",
       "meaning": "To arrest someone; also to understand or perceive",
       "sentence": "The police apprehended the suspect near the border.",
       "syn": "Arrest",
       "ant": "Release"
+    },
+    {
+      "en": "apprehension",
+      "hi": "भय",
+      "meaning": "A fear that something unpleasant is going to happen.",
+      "sentence": "She entered the examination hall with a feeling of apprehension.",
+      "syn": "dread",
+      "ant": "confidence"
     },
     {
       "en": "Apprehensive",
@@ -1161,12 +1705,28 @@
       "ant": "Disapproval"
     },
     {
+      "en": "appropriate",
+      "hi": "उपयुक्त",
+      "meaning": "Suitable or fitting for a particular purpose.",
+      "sentence": "Please dress in appropriate attire for the formal ceremony.",
+      "syn": "pertinent",
+      "ant": "inappropriate"
+    },
+    {
       "en": "Aptitude",
       "hi": "योग्यता / रुझान",
       "meaning": "A natural ability or talent for something",
       "sentence": "He has a great aptitude for mathematics.",
       "syn": "Talent",
       "ant": "Inability"
+    },
+    {
+      "en": "aquarium",
+      "hi": "मछलीघर / जलजीवशाला",
+      "meaning": "A glass container to keep fish.",
+      "sentence": "The children enjoyed watching colorful fish in the aquarium.",
+      "syn": "fish tank",
+      "ant": "terrarium"
     },
     {
       "en": "Arbiter",
@@ -1193,12 +1753,28 @@
       "ant": "Contest"
     },
     {
+      "en": "arbitrator",
+      "hi": "मध्यस्थता करने वाला",
+      "meaning": "A person appointed by two parties to solve a dispute.",
+      "sentence": "An independent arbitrator was brought in to settle the labor conflict.",
+      "syn": "mediator",
+      "ant": "disputant"
+    },
+    {
       "en": "Arcane",
       "hi": "गूढ़ / रहस्यमय",
       "meaning": "Understood by few; mysterious and secret",
       "sentence": "The manuscript contained arcane symbols.",
       "syn": "Mysterious",
       "ant": "Familiar"
+    },
+    {
+      "en": "archaeology",
+      "hi": "पुरातत्व शास्त्र",
+      "meaning": "The study of human history and prehistory through the excavation of sites.",
+      "sentence": "Discoveries in archaeology shed light on ancient civilizations.",
+      "syn": "paleontology",
+      "ant": "futurism"
     },
     {
       "en": "Archaic",
@@ -1209,6 +1785,22 @@
       "ant": "Contemporary"
     },
     {
+      "en": "archipelago",
+      "hi": "द्वीपसमूह",
+      "meaning": "A sea or stretch of water having many islands.",
+      "sentence": "Indonesia is the largest archipelago nation in the world.",
+      "syn": "island chain",
+      "ant": "mainland"
+    },
+    {
+      "en": "archives",
+      "hi": "संग्रहालय",
+      "meaning": "A place where government records are kept.",
+      "sentence": "Historians examined original documents stored in the national archives.",
+      "syn": "repository",
+      "ant": "newsstand"
+    },
+    {
       "en": "Ardent",
       "hi": "उत्साही / प्रबल",
       "meaning": "Very enthusiastic or passionate",
@@ -1217,12 +1809,36 @@
       "ant": "Indifferent"
     },
     {
+      "en": "ardour",
+      "hi": "प्रबल प्रेम भावना / उत्सुकता",
+      "meaning": "Zeal; burning enthusiasm; passion.",
+      "sentence": "She pursued her artistic career with great ardour.",
+      "syn": "passion",
+      "ant": "apathy"
+    },
+    {
       "en": "Arduous",
       "hi": "कठिन / श्रमसाध्य",
       "meaning": "Involving or requiring strenuous effort; difficult and tiring",
       "sentence": "Climbing the mountain in winter was an arduous task.",
       "syn": "Onerous",
       "ant": "Effortless"
+    },
+    {
+      "en": "arena",
+      "hi": "अखाड़ा",
+      "meaning": "A place or scene of activity, debate, or conflict.",
+      "sentence": "Gladiators once fought bravely in the Roman arena.",
+      "syn": "stadium",
+      "ant": "boundary"
+    },
+    {
+      "en": "argument",
+      "hi": "विवाद / झगड़ा",
+      "meaning": "An angry discussion between two or more people.",
+      "sentence": "They had a heated argument over the budget allocation.",
+      "syn": "quarrel",
+      "ant": "agreement"
     },
     {
       "en": "Arid",
@@ -1249,12 +1865,36 @@
       "ant": "Warfare"
     },
     {
+      "en": "aroma",
+      "hi": "सुगंध",
+      "meaning": "A pleasant smell that is easy to notice.",
+      "sentence": "The fresh aroma of morning coffee filled the kitchen.",
+      "syn": "fragrance",
+      "ant": "stench"
+    },
+    {
+      "en": "arraign",
+      "hi": "आरोप लगाना / दोष लगाना",
+      "meaning": "To call or bring someone before a court to answer a criminal charge.",
+      "sentence": "The suspect will be arraigned in court tomorrow morning.",
+      "syn": "indict",
+      "ant": "exonerate"
+    },
+    {
       "en": "Arrears",
       "hi": "बकाया",
       "meaning": "Money that is owed and should have been paid earlier",
       "sentence": "He cleared his rent arrears.",
       "syn": "Dues",
       "ant": "Advance"
+    },
+    {
+      "en": "arrogance",
+      "hi": "प्रभाव / घमंड",
+      "meaning": "Showing scorn for inferiors; haughtiness.",
+      "sentence": "His arrogance alienated many of his former colleagues.",
+      "syn": "haughtiness",
+      "ant": "humility"
     },
     {
       "en": "Arrogant",
@@ -1265,12 +1905,52 @@
       "ant": "Modest"
     },
     {
+      "en": "arsenal",
+      "hi": "शस्त्रागार",
+      "meaning": "A place for ammunition and weapons.",
+      "sentence": "The army stockpiled weapons inside the underground arsenal.",
+      "syn": "armory",
+      "ant": "disarmament"
+    },
+    {
+      "en": "arson",
+      "hi": "आगजनी / आग लगाना",
+      "meaning": "The crime of deliberately and maliciously setting something (buildings usually) on fire.",
+      "sentence": "Police suspected arson after investigating the burnt building.",
+      "syn": "incendiarism",
+      "ant": "firefighting"
+    },
+    {
+      "en": "arsonist",
+      "hi": "आगजनी करने वाला",
+      "meaning": "A person who deliberately sets fire to a building.",
+      "sentence": "The arsonist was caught on CCTV fleeing the burning shop.",
+      "syn": "incendiary",
+      "ant": "firefighter"
+    },
+    {
+      "en": "artful",
+      "hi": "चालाक / धूर्त / कपटी",
+      "meaning": "Clever at getting what you want, sometimes by not telling the truth.",
+      "sentence": "The artful negotiator managed to secure favorable terms.",
+      "syn": "cunning",
+      "ant": "guileless"
+    },
+    {
       "en": "Articulate",
       "hi": "स्पष्ट बोलने वाला",
       "meaning": "Able to express thoughts clearly and fluently",
       "sentence": "She is an articulate speaker who holds the audience.",
       "syn": "Eloquent",
       "ant": "Inarticulate"
+    },
+    {
+      "en": "articulation",
+      "hi": "स्पष्ट बोलने की क्षमता",
+      "meaning": "Ability to communicate effectively and express clearly.",
+      "sentence": "Clear articulation is vital for effective public speaking.",
+      "syn": "expression",
+      "ant": "mispronunciation"
     },
     {
       "en": "Artifice",
@@ -1345,6 +2025,14 @@
       "ant": "Compliment"
     },
     {
+      "en": "asphyxiate",
+      "hi": "गला घोंटना",
+      "meaning": "To cause someone to be unable to breathe, usually resulting in death.",
+      "sentence": "Smoke inhalation can quickly asphyxiate victims of a house fire.",
+      "syn": "smother",
+      "ant": "breathe"
+    },
+    {
       "en": "Aspire",
       "hi": "आकांक्षा करना",
       "meaning": "To have a strong desire to achieve something",
@@ -1361,12 +2049,44 @@
       "ant": "Defend"
     },
     {
+      "en": "assassin",
+      "hi": "हत्यारा",
+      "meaning": "One who kills sb, especially for political reasons.",
+      "sentence": "The assassin was captured shortly after the politician was shot.",
+      "syn": "murderer",
+      "ant": "savior"
+    },
+    {
+      "en": "assassinate",
+      "hi": "राजनीतिक हत्या",
+      "meaning": "To murder by sudden or secret attack often for political reason.",
+      "sentence": "The political leader was targeted in an attempt to assassinate him.",
+      "syn": "murder",
+      "ant": "protect"
+    },
+    {
+      "en": "assault",
+      "hi": "मारपीट",
+      "meaning": "The crime of attacking somebody physically.",
+      "sentence": "He was arrested and charged with physical assault.",
+      "syn": "onslaught",
+      "ant": "defense"
+    },
+    {
       "en": "Assent",
       "hi": "सहमति देना",
       "meaning": "Official agreement or approval",
       "sentence": "The bill received the President's assent.",
       "syn": "Approval",
       "ant": "Dissent"
+    },
+    {
+      "en": "assertion",
+      "hi": "दृढ़-वचन",
+      "meaning": "A statement saying that you strongly believe something to be true.",
+      "sentence": "She made a strong assertion that the data was accurate.",
+      "syn": "declaration",
+      "ant": "denial"
     },
     {
       "en": "Assiduous",
@@ -1385,6 +2105,14 @@
       "ant": "Reject"
     },
     {
+      "en": "assist",
+      "hi": "सहायता देना",
+      "meaning": "To help somebody to do something.",
+      "sentence": "The volunteer stayed back to assist the elderly patients.",
+      "syn": "help",
+      "ant": "hinder"
+    },
+    {
       "en": "Associate",
       "hi": "संबंधित करना / सहयोगी / साथी",
       "meaning": "To connect someone or something with another person or thing; as a noun, a colleague or companion.\nKisi person ya cheez ko doosre se connect karna; noun ke roop mein colleague ya saathi.",
@@ -1401,12 +2129,60 @@
       "ant": "Intensify"
     },
     {
+      "en": "assuagement",
+      "hi": "शांति / आराम",
+      "meaning": "The feeling that comes when something burdensome is removed or reduced.",
+      "sentence": "Medication provided quick assuagement of his severe pain.",
+      "syn": "relief",
+      "ant": "aggravation"
+    },
+    {
+      "en": "assume",
+      "hi": "मान लेना",
+      "meaning": "To accept something as true without proof.",
+      "sentence": "It is unwise to assume facts without proper verification.",
+      "syn": "presume",
+      "ant": "prove"
+    },
+    {
+      "en": "astonishment",
+      "hi": "आश्चर्य / अचंभा",
+      "meaning": "A feeling of very great surprise.",
+      "sentence": "To everyone's astonishment, the underdog won the tournament.",
+      "syn": "amazement",
+      "ant": "expectation"
+    },
+    {
       "en": "Astound",
       "hi": "चकित करना",
       "meaning": "To shock or greatly surprise someone",
       "sentence": "The result astounded even the experts.",
       "syn": "Amaze",
       "ant": "Bore"
+    },
+    {
+      "en": "astrology",
+      "hi": "ज्योतिष विज्ञान",
+      "meaning": "The science of foretelling events by mapping stars.",
+      "sentence": "Astrology attempts to predict future events based on planetary movements.",
+      "syn": "horoscopy",
+      "ant": "astronomy"
+    },
+    {
+      "en": "astronaut",
+      "hi": "अंतरिक्ष यात्री",
+      "meaning": "A person who is trained for travelling into space.",
+      "sentence": "The astronaut conducted research on board the International Space Station.",
+      "syn": "cosmonaut",
+      "ant": "terrestrial"
+    },
+    {
+      "en": "astronomy",
+      "hi": "खगोल विज्ञान",
+      "meaning": "Study of heavenly bodies.",
+      "sentence": "Astronomy uses telescopes to study stars, planets, and galaxies.",
+      "syn": "stargazing",
+      "ant": "astrology"
     },
     {
       "en": "Astute",
@@ -1417,12 +2193,36 @@
       "ant": "Naive"
     },
     {
+      "en": "asylum",
+      "hi": "पागलखाना / आश्रय स्थल",
+      "meaning": "An institution for the care of people who are mentally ill/ A place of refuge.",
+      "sentence": "Refugees sought political asylum in neighboring countries.",
+      "syn": "sanctuary",
+      "ant": "eviction"
+    },
+    {
+      "en": "atheist",
+      "hi": "नास्तिक",
+      "meaning": "A person who does not believe in God.",
+      "sentence": "As an atheist, he does not follow any formal religion.",
+      "syn": "nonbeliever",
+      "ant": "theist"
+    },
+    {
       "en": "Atone",
       "hi": "प्रायश्चित करना",
       "meaning": "To make amends for a wrong or mistake",
       "sentence": "He worked hard to atone for his past errors.",
       "syn": "Compensate",
       "ant": "Offend"
+    },
+    {
+      "en": "atonement",
+      "hi": "प्रायश्चित्त",
+      "meaning": "An action of making amends for a wrong or injury.",
+      "sentence": "He made a generous donation as an act of atonement for his mistake.",
+      "syn": "reparation",
+      "ant": "transgression"
     },
     {
       "en": "Atrocious",
@@ -1441,6 +2241,14 @@
       "ant": "Grow"
     },
     {
+      "en": "attack",
+      "hi": "हमला",
+      "meaning": "To try to hurt using violence.",
+      "sentence": "The enemy launched an unexpected attack at dawn.",
+      "syn": "assault",
+      "ant": "defense"
+    },
+    {
       "en": "Attenuate",
       "hi": "कम करना / पतला करना",
       "meaning": "To reduce the force or value of something",
@@ -1455,6 +2263,30 @@
       "sentence": "The documents attest to his ownership of the land.",
       "syn": "Certify",
       "ant": "Disprove"
+    },
+    {
+      "en": "attract",
+      "hi": "आकर्षित करना",
+      "meaning": "To pull or draw someone or something towards them by their qualities.",
+      "sentence": "Bright flowers attract bees and butterflies in spring.",
+      "syn": "fascinate",
+      "ant": "repel"
+    },
+    {
+      "en": "attribute",
+      "hi": "गुण",
+      "meaning": "A quality or feature regarded as a characteristic or inherent part of someone or something.",
+      "sentence": "Patience is an essential attribute of a successful teacher.",
+      "syn": "trait",
+      "ant": "imperfection"
+    },
+    {
+      "en": "attuned",
+      "hi": "लयबद्ध / आत्मसात",
+      "meaning": "Able to understand or recognize something.",
+      "sentence": "A good manager is finely attuned to the needs of her staff.",
+      "syn": "adapted",
+      "ant": "unaccustomed"
     },
     {
       "en": "Audacious",
@@ -1481,12 +2313,52 @@
       "ant": "Inaudible"
     },
     {
+      "en": "audit",
+      "hi": "लेखा परीक्षा",
+      "meaning": "Official inspection of a firm's accounts.",
+      "sentence": "The firm passed its annual financial audit with no discrepancies.",
+      "syn": "inspection",
+      "ant": "neglect"
+    },
+    {
+      "en": "auditor",
+      "hi": "लेखा परीक्षक",
+      "meaning": "A person authorised to examine and verify accounts.",
+      "sentence": "The independent auditor carefully reviewed all ledger entries.",
+      "syn": "inspector",
+      "ant": "accountant"
+    },
+    {
+      "en": "auditorium",
+      "hi": "सभागार",
+      "meaning": "A building where an audience sits.",
+      "sentence": "The concert was held in a state-of-the-art auditorium.",
+      "syn": "hall",
+      "ant": "stage"
+    },
+    {
       "en": "Augment",
       "hi": "बढ़ाना",
       "meaning": "To make something greater by adding to it",
       "sentence": "He took a second job to augment his income.",
       "syn": "Increase",
       "ant": "Diminish"
+    },
+    {
+      "en": "august",
+      "hi": "गरिमापूर्ण",
+      "meaning": "Impressive, making you feel respect.",
+      "sentence": "The scholar addressed the august assembly of Nobel laureates.",
+      "syn": "noble",
+      "ant": "ignoble"
+    },
+    {
+      "en": "aura",
+      "hi": "दिव्यज्योति / प्रभावमंडल",
+      "meaning": "A feeling or particular quality that surrounds a person or place.",
+      "sentence": "The ancient cathedral had a serene aura of peace.",
+      "syn": "atmosphere",
+      "ant": "plainness"
     },
     {
       "en": "Auspicious",
@@ -1521,12 +2393,36 @@
       "ant": "Fake"
     },
     {
+      "en": "autobiography",
+      "hi": "आत्मकथा",
+      "meaning": "The life history of a person written by himself.",
+      "sentence": "He shared details of his childhood struggles in his autobiography.",
+      "syn": "memoir",
+      "ant": "biography"
+    },
+    {
+      "en": "autocracy",
+      "hi": "तानाशाही / राजतंत्र",
+      "meaning": "One man with absolute power.",
+      "sentence": "The country transitioned from an autocracy to a democracy.",
+      "syn": "despotism",
+      "ant": "democracy"
+    },
+    {
       "en": "Autocrat",
       "hi": "निरंकुश शासक",
       "meaning": "A ruler who holds absolute power",
       "sentence": "The autocrat allowed no opposition in the country.",
       "syn": "Despot",
       "ant": "Democrat"
+    },
+    {
+      "en": "autonomous",
+      "hi": "स्वतंत्र",
+      "meaning": "Implies standing alone or self-governing.",
+      "sentence": "The university operates as an autonomous educational body.",
+      "syn": "independent",
+      "ant": "dependent"
     },
     {
       "en": "Autonomy",
@@ -1593,12 +2489,28 @@
       "ant": "None"
     },
     {
+      "en": "aviation",
+      "hi": "विमानन",
+      "meaning": "Study of flying airplanes.",
+      "sentence": "He pursued a degree in aviation to become a professional pilot.",
+      "syn": "aeronautics",
+      "ant": "ground transportation"
+    },
+    {
       "en": "Avid",
       "hi": "उत्सुक / शौकीन",
       "meaning": "Having a keen interest in or enthusiasm for something",
       "sentence": "He is an avid reader of history books.",
       "syn": "Keen",
       "ant": "Indifferent"
+    },
+    {
+      "en": "avoid",
+      "hi": "टालना / किसी चीज से बचना",
+      "meaning": "To prevent something bad from happening.",
+      "sentence": "You should drink plenty of water to avoid dehydration.",
+      "syn": "evade",
+      "ant": "confront"
     },
     {
       "en": "Avow",
@@ -1609,12 +2521,44 @@
       "ant": "Deny"
     },
     {
+      "en": "awful",
+      "hi": "भयानक",
+      "meaning": "Extremely bad or unpleasant.",
+      "sentence": "We had an awful experience with the delayed flight.",
+      "syn": "terrible",
+      "ant": "wonderful"
+    },
+    {
+      "en": "awkward",
+      "hi": "भद्दा",
+      "meaning": "Making you feel embarrassed.",
+      "sentence": "There was an awkward silence after his unexpected remark.",
+      "syn": "clumsy",
+      "ant": "graceful"
+    },
+    {
       "en": "Awry",
       "hi": "टेढ़ा / गलत दिशा में",
       "meaning": "Away from the expected course; wrong",
       "sentence": "All their plans went awry at the last moment.",
       "syn": "Amiss",
       "ant": "Right"
+    },
+    {
+      "en": "backfire",
+      "hi": "अप्रिय एवं विपरीत परिणाम आना",
+      "meaning": "To have an unpleasant result often the opposite one.",
+      "sentence": "His scheme to trick the opponent backfired completely.",
+      "syn": "rebound",
+      "ant": "succeed"
+    },
+    {
+      "en": "backstab",
+      "hi": "धोखा देना",
+      "meaning": "To attack in a deceitful manner.",
+      "sentence": "It is hurtful when someone you trust tries to backstab you.",
+      "syn": "betray",
+      "ant": "support"
     },
     {
       "en": "Baffle",
@@ -1633,12 +2577,36 @@
       "ant": "Deterred"
     },
     {
+      "en": "bakery",
+      "hi": "बेकरी",
+      "meaning": "A place where bread and cakes are made.",
+      "sentence": "The delicious smell of fresh bread floated out of the bakery.",
+      "syn": "bakehouse",
+      "ant": "butchery"
+    },
+    {
+      "en": "bale",
+      "hi": "गठरी / पोटली",
+      "meaning": "A large bundle bound for storage or transport.",
+      "sentence": "Farmers stacked bales of hay in the barn before winter.",
+      "syn": "bundle",
+      "ant": "individual item"
+    },
+    {
       "en": "Balk",
       "hi": "हिचकिचाना / रुक जाना",
       "meaning": "To hesitate or refuse to accept something",
       "sentence": "He balked at the idea of moving abroad.",
       "syn": "Hesitate",
       "ant": "Accept"
+    },
+    {
+      "en": "ballad",
+      "hi": "कथागीत",
+      "meaning": "A poem that tells a story and has a regular rhythm and rhyme scheme.",
+      "sentence": "The musician sang a moving ballad about a legendary hero.",
+      "syn": "folk song",
+      "ant": "prose"
     },
     {
       "en": "Banal",
@@ -6605,7 +7573,7 @@
       "hi": "स्वदेशी / मूल निवासी",
       "meaning": "Originating naturally in a particular place",
       "sentence": "This plant is indigenous to the Himalayas.",
-      "syn": "Native",
+      "syn": "Native, local, aboriginal",
       "ant": "Foreign"
     },
     {

@@ -1245,7 +1245,7 @@
       "19"
     ],
     "correctIndex": 3,
-    "solutionText": "https://youtu.be/MqxEmF8sR9Y?si=_troLapVGZq8WQJJ&t=685  b - c = a*3",
+    "solutionText": "https://youtu.be/MqxEmF8sR9Y?si=_troLapVGZq8WQJJ&t=685  b - c /3= a",
     "solutionImage": null,
     "special": false,
     "id": "mu12k9329y1o3x",
@@ -1383,6 +1383,2020 @@
     "special": false,
     "id": "mu6q994auoshql",
     "order": 72,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "11, 21, 47, 97, 179, ?",
+    "questionImage": null,
+    "options": [
+      "295",
+      "281",
+      "301",
+      "231"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Differences are 10, 26, 50, 82, 122, i.e. 3²+1, 5²+1, 7²+1, 9²+1, 11²+1. So 179 + 122 = 301.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatyoamcfw",
+    "order": 73,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "8, 9, 20, 63, 256, ?",
+    "questionImage": null,
+    "options": [
+      "1286",
+      "1284",
+      "1280",
+      "1285"
+    ],
+    "correctIndex": 3,
+    "solutionText": "Pattern: ×1+1, ×2+2, ×3+3, ×4+4, ×5+5. So 256 × 5 + 5 = 1285.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatyp4x7jq",
+    "order": 74,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "8, 17, 33, 63, 114, 193, ?",
+    "questionImage": null,
+    "options": [
+      "370",
+      "347",
+      "377",
+      "307"
+    ],
+    "correctIndex": 3,
+    "solutionText": "Differences are 9, 16, 30, 51, 79, 114 (their differences go +7, +14, +21, +28, +35). So 193 + 114 = 307.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviaty7yyqr5",
+    "order": 75,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "40, 20, 20, 30, 60, ?, 450, 1575, 6300",
+    "questionImage": null,
+    "options": [
+      "40",
+      "180",
+      "150",
+      "120"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Multipliers are ×0.5, ×1, ×1.5, ×2, ×2.5, ×3, ×3.5, ×4. So 60 × 2.5 = 150.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatyjc8kw2",
+    "order": 76,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "1, 1, 2, 2, 5, 4, 26, 8, 677, ?",
+    "questionImage": null,
+    "options": [
+      "342",
+      "475",
+      "64",
+      "16"
+    ],
+    "correctIndex": 3,
+    "solutionText": "Two alternating series. Odd positions: 1, 2, 5, 26, 677 (each is previous² + 1). Even positions: 1, 2, 4, 8, 16 (doubling). So the next term is 16.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatyrfcgrz",
+    "order": 77,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "31, 68, 41, 84, 47, 100, ?",
+    "questionImage": null,
+    "options": [
+      "61",
+      "79",
+      "67",
+      "59"
+    ],
+    "correctIndex": 3,
+    "solutionText": "Two alternating series. Even positions: 68, 84, 100 (+16 each). Odd positions: 31, 41, 47 are primes, with one prime skipped each time (31, [37], 41, [43], 47, [53], 59). So the next term is 59.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatyd9le6l",
+    "order": 78,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "48, 24, 72, 36, 108, ?",
+    "questionImage": null,
+    "options": [
+      "52",
+      "67",
+      "54",
+      "73"
+    ],
+    "correctIndex": 2,
+    "solutionText": "The operations alternate: ×1/2, ×3, ×1/2, ×3, ×1/2. So 108 × 1/2 = 54.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatyc0fmk2",
+    "order": 79,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "13, 14, 32, 123, ?",
+    "questionImage": null,
+    "options": [
+      "748",
+      "682",
+      "635",
+      "712"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Pattern: ×1+1¹, ×2+2², ×3+3³, ×4+4⁴. So 123 × 4 + 256 = 748.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatye792lg",
+    "order": 80,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "43, 44, 48, 57, 73, ?",
+    "questionImage": null,
+    "options": [
+      "97",
+      "100",
+      "98",
+      "99"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Differences are the squares 1, 4, 9, 16, and the next is 25. So 73 + 25 = 98.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatya1x4p7",
+    "order": 81,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "3, 12, ?, 21612",
+    "questionImage": null,
+    "options": [
+      "149",
+      "150",
+      "147",
+      "200"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Pattern: square the previous term and add 3. 3² + 3 = 12, 12² + 3 = 147, 147² + 3 = 21612.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatygqd74f",
+    "order": 82,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "9, 10, 18, 45, 109, ?",
+    "questionImage": null,
+    "options": [
+      "327",
+      "234",
+      "198",
+      "218"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Differences are the cubes 1, 8, 27, 64, 125. So 109 + 125 = 234.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatyu4f1zy",
+    "order": 83,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "14, 14, 17, 85, 92, ?",
+    "questionImage": null,
+    "options": [
+      "924",
+      "828",
+      "418",
+      "628"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Operations: ×1, +3, ×5, +7, ×9. So 92 × 9 = 828.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatyk9kk4r",
+    "order": 84,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "9, 10, 22, 69, 280, ?",
+    "questionImage": null,
+    "options": [
+      "1405",
+      "145",
+      "576",
+      "560"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Pattern: ×1+1, ×2+2, ×3+3, ×4+4, ×5+5. So 280 × 5 + 5 = 1405.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatylq9qsr",
+    "order": 85,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "2, 4, 10, 28, ?, 244",
+    "questionImage": null,
+    "options": [
+      "94",
+      "90",
+      "88",
+      "82"
+    ],
+    "correctIndex": 3,
+    "solutionText": "Pattern: ×3 − 2 each time. 28 × 3 − 2 = 82, and 82 × 3 − 2 = 244.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatyumc521",
+    "order": 86,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "137, 114, ?, 91, 183",
+    "questionImage": null,
+    "options": [
+      "145",
+      "160",
+      "125",
+      "112"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Two alternating series. 137, ?, 183 increases by a constant amount, so ? is the average: (137 + 183) / 2 = 160. The other series 114, 91 decreases by 23.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatyw1vdj0",
+    "order": 87,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "111, 149, 212, 250, ?, 351, 414",
+    "questionImage": null,
+    "options": [
+      "320",
+      "282",
+      "313",
+      "288"
+    ],
+    "correctIndex": 2,
+    "solutionText": "The differences alternate +38, +63, +38, +63, +38, +63. So 250 + 63 = 313.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatyuhdx4k",
+    "order": 88,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "0, 2, 10, 30, 68, ?",
+    "questionImage": null,
+    "options": [
+      "132",
+      "124",
+      "130",
+      "121"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Pattern: n³ + n for n = 0, 1, 2, 3, 4, 5. So 5³ + 5 = 130.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatyd3gs2i",
+    "order": 89,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "7, 10, 22, 49, 97, ?",
+    "questionImage": null,
+    "options": [
+      "172",
+      "175",
+      "162",
+      "184"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Differences are 3, 12, 27, 48, 75, which are 3×(1², 2², 3², 4², 5²). So 97 + 75 = 172.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatya0fuwo",
+    "order": 90,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "1, 5, 10, 14, ?, 32, 64",
+    "questionImage": null,
+    "options": [
+      "22",
+      "20",
+      "24",
+      "28"
+    ],
+    "correctIndex": 3,
+    "solutionText": "Operations alternate +4 and ×2: 1+4=5, 5×2=10, 10+4=14, 14×2=28, 28+4=32, 32×2=64.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatyipdzxe",
+    "order": 91,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "11, 21, 47, 97, 179, ?",
+    "questionImage": null,
+    "options": [
+      "231",
+      "295",
+      "301",
+      "281"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Differences are 10, 26, 50, 82, 122, i.e. 3²+1, 5²+1, 7²+1, 9²+1, 11²+1. So 179 + 122 = 301.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviaty0cbuky",
+    "order": 92,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "16, 18, 27, 55, 120, ?",
+    "questionImage": null,
+    "options": [
+      "246",
+      "510",
+      "230",
+      "240"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Differences are 2, 9, 28, 65, 126, i.e. n³ + 1 for n = 1 to 5. So 120 + 126 = 246.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatyg015te",
+    "order": 93,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "12, 14, 31, 97, 393, ?",
+    "questionImage": null,
+    "options": [
+      "1965",
+      "1970",
+      "1972",
+      "1971"
+    ],
+    "correctIndex": 3,
+    "solutionText": "Pattern: ×1+2, ×2+3, ×3+4, ×4+5, ×5+6. So 393 × 5 + 6 = 1971.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatysd7d7q",
+    "order": 94,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "12, 20, 32, 56, 80, ?",
+    "questionImage": null,
+    "options": [
+      "126",
+      "116",
+      "120",
+      "140"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Differences are 8, 12, 24, 24, 40, which are 7×1+1, 7×2−2, 7×3+3, 7×4−4, 7×5+5. So 80 + 40 = 120.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviaty9wxku4",
+    "order": 95,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "0, 8, 36, ?, 200, 360, 588",
+    "questionImage": null,
+    "options": [
+      "81",
+      "100",
+      "96",
+      "90"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Each term is a square times an even number: 1²×0, 2²×2, 3²×4, 4²×6, 5²×8, 6²×10, 7²×12. The missing term is 16 × 6 = 96.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviaty3fyldb",
+    "order": 96,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "297, 249, 214, ?, 175, 167, 164, 164",
+    "questionImage": null,
+    "options": [
+      "179",
+      "190",
+      "200",
+      "170"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Differences are 48, 35, 24, 15, 8, 3, 0, i.e. 7²−1, 6²−1, 5²−1, 4²−1, 3²−1, 2²−1, 1²−1. So 214 − 24 = 190.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatyb73gh9",
+    "order": 97,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "1713, 1311, 117, 75, ?",
+    "questionImage": null,
+    "options": [
+      "43",
+      "35",
+      "48",
+      "53"
+    ],
+    "correctIndex": 3,
+    "solutionText": "Each term is two prime numbers written together, going down the primes: 17|13, 13|11, 11|7, 7|5, then 5|3. So the answer is 53.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviaty3jxxdh",
+    "order": 98,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "13, 13, 15, 27, 47, 67, 97, 153, ?",
+    "questionImage": null,
+    "options": [
+      "214",
+      "225",
+      "352",
+      "325"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Differences are 0, 2, 12, 20, 20, 30, 56, 72, i.e. 1²−1, 2²−2, 3²+3, 4²+4, 5²−5, 6²−6, 7²+7, 8²+8. So 153 + 72 = 225.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatyh2w74c",
+    "order": 99,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "7, 16, 28, 40, ?, 72, 88, 106, 126",
+    "questionImage": null,
+    "options": [
+      "56",
+      "54",
+      "60",
+      "55"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Each term is the sum of two primes that are two places apart in the prime list (2,3,5,7,11,13,17,19,23,29,31,...): 2+5=7, 5+11=16, 11+17=28, 17+23=40, 23+31=54, 31+41=72.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatyixcqto",
+    "order": 100,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "3, 15, 30, 46, 75, 115, 186, 286, ?",
+    "questionImage": null,
+    "options": [
+      "432",
+      "423",
+      "447",
+      "443"
+    ],
+    "correctIndex": 3,
+    "solutionText": "Differences are 12, 15, 16, 29, 40, 71, 100, and the next is 157. The gaps between these differences follow 1²+2, 2²−3, 3²+4, 4²−5, 5²+6, 6²−7, 7²+8 = 57, so the next difference is 100 + 57 = 157. So 286 + 157 = 443.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatym3vetv",
+    "order": 101,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "721, 505, 337, 211, ?",
+    "questionImage": null,
+    "options": [
+      "121",
+      "172",
+      "188",
+      "145"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Pattern: 9³−8, 8³−7, 7³−6, 6³−5, so the next is 5³−4 = 121.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviaty80e6ln",
+    "order": 102,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "13, 16, 23, 40, 92, 251, ?",
+    "questionImage": null,
+    "options": [
+      "888",
+      "777",
+      "666",
+      "555"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Differences are 3, 7, 17, 52, 159, then the next. These follow ×2+1, ×2+3, ×3+1, ×3+3, ×4+1, so the next difference is 159 × 4 + 1 = 637. So 251 + 637 = 888.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatyp5iafn",
+    "order": 103,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "7, 9, 15, 45, 105, 235, ?",
+    "questionImage": null,
+    "options": [
+      "445",
+      "545",
+      "554",
+      "454"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Differences are 2, 6, 30, 60, 130, 210, i.e. 1³+1, 2³−2, 3³+3, 4³−4, 5³+5, 6³−6. So 235 + 210 = 445.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatyp68bos",
+    "order": 104,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "80, 40, 40, 60, 120, ?",
+    "questionImage": null,
+    "options": [
+      "240",
+      "300",
+      "360",
+      "180"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Multipliers are ×0.5, ×1, ×1.5, ×2, ×2.5. So 120 × 2.5 = 300.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviaty9nyddf",
+    "order": 105,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "15, 7.5, 7.5, 11.25, 22.5, ?",
+    "questionImage": null,
+    "options": [
+      "45",
+      "50.625",
+      "56.25",
+      "67.5"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Multipliers are ×0.5, ×1, ×1.5, ×2, ×2.5. So 22.5 × 2.5 = 56.25.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatyozw49e",
+    "order": 106,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "14, 21, 29, 38, 48, 59, ?",
+    "questionImage": null,
+    "options": [
+      "69",
+      "71",
+      "72",
+      "70"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Differences are +7, +8, +9, +10, +11, +12. So 59 + 12 = 71.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviaty4v191k",
+    "order": 107,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "34, 18, 10, 6, 4, ?",
+    "questionImage": null,
+    "options": [
+      "2",
+      "3",
+      "5",
+      "1"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Differences are 16, 8, 4, 2, 1 (halving each time). So 4 − 1 = 3.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatyn3336z",
+    "order": 108,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "8, 28, 116, 584, ?",
+    "questionImage": null,
+    "options": [
+      "3504",
+      "3508",
+      "3512",
+      "3500"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Pattern: ×3+4, ×4+4, ×5+4, ×6+4. So 584 × 6 + 4 = 3508.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatyc3oujn",
+    "order": 109,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "1, 2, 6, 24, 120, ?",
+    "questionImage": null,
+    "options": [
+      "600",
+      "720",
+      "840",
+      "360"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Multipliers are ×2, ×3, ×4, ×5, ×6. So 120 × 6 = 720.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatyzjto39",
+    "order": 110,
+    "attemptStatus": "unattempted",
+    "testAllowed": false
+  },
+  {
+    "category": "Series",
+    "questionText": "3, 5, 6, 11, 9, 17, 12, ?",
+    "questionImage": null,
+    "options": [
+      "21",
+      "23",
+      "25",
+      "15"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Two alternating series. Odd positions: 3, 6, 9, 12 (+3 each). Even positions: 5, 11, 17, 23 (+6 each). The next term is 23.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatyblrd6u",
+    "order": 111,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "3, 2, 6, 8, 18, 40, 72, 240, ?",
+    "questionImage": null,
+    "options": [
+      "360",
+      "300",
+      "480",
+      "720"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Two alternating series. Odd positions: 3, 6, 18, 72 (×2, ×3, ×4), so the next is 72 × 5 = 360. Even positions: 2, 8, 40, 240 (×4, ×5, ×6).",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatyp0e1o9",
+    "order": 112,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "0, 6, 24, 60, 120, ?",
+    "questionImage": null,
+    "options": [
+      "210",
+      "180",
+      "200",
+      "240"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Pattern: n³ − n for n = 1 to 6. So 6³ − 6 = 210.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviaty2307ef",
+    "order": 113,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "512, 343, 216, 125, ?",
+    "questionImage": null,
+    "options": [
+      "64",
+      "81",
+      "100",
+      "27"
+    ],
+    "correctIndex": 0,
+    "solutionText": "These are cubes in descending order: 8³, 7³, 6³, 5³, so the next is 4³ = 64.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatyll1e0d",
+    "order": 114,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "1, 4, 9, 16, 25, 36, ?",
+    "questionImage": null,
+    "options": [
+      "42",
+      "49",
+      "56",
+      "64"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Perfect squares (n²). The next is 7² = 49.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatyhavo0i",
+    "order": 115,
+    "attemptStatus": "unattempted",
+    "testAllowed": false
+  },
+  {
+    "category": "Series",
+    "questionText": "0, 3, 8, 15, 24, 35, ?",
+    "questionImage": null,
+    "options": [
+      "42",
+      "46",
+      "48",
+      "49"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Pattern: n² − 1. The next is 7² − 1 = 48.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatyw8trtt",
+    "order": 116,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "2, 5, 10, 17, 26, ?",
+    "questionImage": null,
+    "options": [
+      "35",
+      "37",
+      "36",
+      "38"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Pattern: n² + 1. The next is 6² + 1 = 37.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatyyac8v0",
+    "order": 117,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "1, 8, 27, 64, 125, 216, ?",
+    "questionImage": null,
+    "options": [
+      "343",
+      "333",
+      "512",
+      "256"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Perfect cubes (n³). The next is 7³ = 343.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviaty56oshv",
+    "order": 118,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "0, 7, 26, 63, 124, 215, ?",
+    "questionImage": null,
+    "options": [
+      "336",
+      "341",
+      "342",
+      "343"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Pattern: n³ − 1. The next is 7³ − 1 = 342.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviaty1foke5",
+    "order": 119,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "0, 2, 6, 12, 20, 30, ?",
+    "questionImage": null,
+    "options": [
+      "40",
+      "42",
+      "44",
+      "36"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Pattern: n² − n. The next is 7² − 7 = 42.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatywyq0kp",
+    "order": 120,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "2, 6, 12, 20, 30, 42, ?",
+    "questionImage": null,
+    "options": [
+      "54",
+      "56",
+      "58",
+      "64"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Pattern: n² + n. The next is 7² + 7 = 56.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatyppya29",
+    "order": 121,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "0, 6, 24, 60, 120, 210, ?",
+    "questionImage": null,
+    "options": [
+      "336",
+      "343",
+      "330",
+      "350"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Pattern: n³ − n. The next is 7³ − 7 = 336.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzcbl0y3",
+    "order": 122,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "2, 10, 30, 68, 130, 222, ?",
+    "questionImage": null,
+    "options": [
+      "340",
+      "350",
+      "360",
+      "342"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Pattern: n³ + n. The next is 7³ + 7 = 350.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzghhhkk",
+    "order": 123,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "1/2, 4, 13.5, 32, ?",
+    "questionImage": null,
+    "options": [
+      "50",
+      "62.5",
+      "64",
+      "75"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Pattern: n³ / 2 (1/2, 8/2, 27/2, 64/2, 125/2). The next is 125 / 2 = 62.5.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatztjcig7",
+    "order": 124,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "4, 6, 8, 9, 10, 12, 14, 15, 16, ?, ?",
+    "questionImage": null,
+    "options": [
+      "18, 20",
+      "17, 18",
+      "18, 21",
+      "20, 22"
+    ],
+    "correctIndex": 0,
+    "solutionText": "These are the composite numbers in order: 4, 6, 8, 9, 10, 12, 14, 15, 16, 18, 20.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzn4y5hp",
+    "order": 125,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "2, 12, 36, 80, 150, ?",
+    "questionImage": null,
+    "options": [
+      "252",
+      "258",
+      "240",
+      "216"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Pattern: n³ + n² (1+1, 8+4, 27+9, 64+16, 125+25). The next is 216 + 36 = 252.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzg4pwmq",
+    "order": 126,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "18, 20, 25, 35, 52, ?",
+    "questionImage": null,
+    "options": [
+      "68",
+      "78",
+      "72",
+      "82"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Differences are 2, 5, 10, 17, 26, i.e. n² + 1 for n = 1 to 5. So 52 + 26 = 78.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatz2ktzh0",
+    "order": 127,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "98, 72, ?, 32, 18, 8",
+    "questionImage": null,
+    "options": [
+      "48",
+      "50",
+      "52",
+      "56"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Each term is 2 × a square in descending order: 2×49, 2×36, 2×25, 2×16, 2×9, 2×4. So the missing term is 2 × 25 = 50.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzhjs5k1",
+    "order": 128,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "21, 25, 33, 49, 81, ?",
+    "questionImage": null,
+    "options": [
+      "129",
+      "145",
+      "161",
+      "113"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Differences are 4, 8, 16, 32, 64 (doubling). So 81 + 64 = 145.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzkad0wo",
+    "order": 129,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "18, 9, 9, 13.5, 27, ?",
+    "questionImage": null,
+    "options": [
+      "54",
+      "60",
+      "67.5",
+      "81"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Multipliers are ×0.5, ×1, ×1.5, ×2, ×2.5. So 27 × 2.5 = 67.5.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzmxwzhy",
+    "order": 130,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "4, 12, 36, 108, ?, 972",
+    "questionImage": null,
+    "options": [
+      "216",
+      "324",
+      "432",
+      "288"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Each term is ×3 the previous. So 108 × 3 = 324, and 324 × 3 = 972.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatz7mznsq",
+    "order": 131,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "1, 6, 13, 22, 33, ?",
+    "questionImage": null,
+    "options": [
+      "44",
+      "46",
+      "48",
+      "45"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Differences are consecutive odd numbers 5, 7, 9, 11, 13. So 33 + 13 = 46.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzzhvcti",
+    "order": 132,
+    "attemptStatus": "unattempted",
+    "testAllowed": false
+  },
+  {
+    "category": "Series",
+    "questionText": "3, 7, 15, 31, 63, ?",
+    "questionImage": null,
+    "options": [
+      "95",
+      "125",
+      "127",
+      "131"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Pattern: ×2 + 1 each time (differences 4, 8, 16, 32, 64). So 63 × 2 + 1 = 127.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzmgcudi",
+    "order": 133,
+    "attemptStatus": "unattempted",
+    "testAllowed": false
+  },
+  {
+    "category": "Series",
+    "questionText": "M, T, W, T, F, ?, S",
+    "questionImage": null,
+    "options": [
+      "S",
+      "M",
+      "T",
+      "W"
+    ],
+    "correctIndex": 0,
+    "solutionText": "These are the first letters of the days of the week: Monday to Sunday. The missing letter is S (Saturday).",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzsp8hff",
+    "order": 134,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "J, F, M, A, M, ?",
+    "questionImage": null,
+    "options": [
+      "J",
+      "A",
+      "S",
+      "D"
+    ],
+    "correctIndex": 0,
+    "solutionText": "These are the first letters of the months: January, February, March, April, May, June. The next letter is J.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzbh20v0",
+    "order": 135,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "5, 9, 17, 29, 45, ?",
+    "questionImage": null,
+    "options": [
+      "64",
+      "75",
+      "65",
+      "80"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Differences are +4, +8, +12, +16, +20. So 45 + 20 = 65.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatz1ydm0y",
+    "order": 136,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "3, 28, 4, 65, 5, 126, 6, ?",
+    "questionImage": null,
+    "options": [
+      "264",
+      "317",
+      "217",
+      "246"
+    ],
+    "correctIndex": 2,
+    "solutionText": "The terms next to the small numbers follow n³ + 1: 3³+1 = 28, 4³+1 = 65, 5³+1 = 126, so 6³+1 = 217.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzcpuap7",
+    "order": 137,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "87, 90, 84, 88, 81, ?, ?",
+    "questionImage": null,
+    "options": [
+      "85, 96",
+      "96, 98",
+      "86, 78",
+      "86, 68"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Two alternating series. Odd positions: 87, 84, 81, 78 (−3 each). Even positions: 90, 88, 86 (−2 each). So the missing terms are 86 and 78.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzj8fisy",
+    "order": 138,
+    "attemptStatus": "unattempted",
+    "testAllowed": false
+  },
+  {
+    "category": "Series",
+    "questionText": "15, 15, 21, 45, 105, ?",
+    "questionImage": null,
+    "options": [
+      "215",
+      "225",
+      "125",
+      "255"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Differences are 0, 6, 24, 60, 120 (n³ − n for n = 1 to 5). So 105 + 120 = 225.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzi5jnnp",
+    "order": 139,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "1, 16, 44, 98, 204, ?",
+    "questionImage": null,
+    "options": [
+      "414",
+      "419",
+      "314",
+      "298"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Differences are 15, 28, 54, 106, 210, each ×2 − 2 of the previous. So 204 + 210 = 414.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzo7c5hl",
+    "order": 140,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "18, 46, 94, 63, 52, ?",
+    "questionImage": null,
+    "options": [
+      "61",
+      "71",
+      "16",
+      "57"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Each term is a descending square written backwards: 81, 64, 49, 36, 25, 16 reversed gives 18, 46, 94, 63, 52, 61.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzbbsyhl",
+    "order": 141,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "2, 3, 10, 29, 66, ?",
+    "questionImage": null,
+    "options": [
+      "125",
+      "126",
+      "127",
+      "136"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Pattern: n³ + 2 for n = 0 to 5. So 5³ + 2 = 127.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzv0zqyj",
+    "order": 142,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "3, 20, 63, 144, 275, ?",
+    "questionImage": null,
+    "options": [
+      "554",
+      "548",
+      "468",
+      "354"
+    ],
+    "correctIndex": 2,
+    "solutionText": "First differences: 17, 43, 81, 131, 193. Second differences: 26, 38, 50, 62 (increase by 12). So the next first difference is 193, and 275 + 193 = 468.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzdhfja1",
+    "order": 143,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "23, 28, 38, 49, 62, ?",
+    "questionImage": null,
+    "options": [
+      "80",
+      "82",
+      "76",
+      "70"
+    ],
+    "correctIndex": 3,
+    "solutionText": "Each step adds the digit sum of the current number: 23+(2+3)=28, 28+(2+8)=38, 38+(3+8)=49, 49+(4+9)=62, 62+(6+2)=70.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzf1jxvj",
+    "order": 144,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "2, 3, 4, 9, 16, 29, ?",
+    "questionImage": null,
+    "options": [
+      "109",
+      "99",
+      "54",
+      "117"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Each term is the sum of the previous three: 2+3+4=9, 3+4+9=16, 4+9+16=29, 9+16+29=54.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzld7w17",
+    "order": 145,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "135, 226, 353, 522, ?",
+    "questionImage": null,
+    "options": [
+      "729",
+      "719",
+      "739",
+      "639"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Each term is a cube plus 10: 5³+10, 6³+10, 7³+10, 8³+10, so the next is 9³ + 10 = 739.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzkf2q11",
+    "order": 146,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "4, 4, 6, 12, 30, ?",
+    "questionImage": null,
+    "options": [
+      "85",
+      "89",
+      "90",
+      "100"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Multipliers are ×1, ×1.5, ×2, ×2.5, ×3. So 30 × 3 = 90.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzm7rvbb",
+    "order": 147,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "4, 13, 49, 193, ?",
+    "questionImage": null,
+    "options": [
+      "772",
+      "769",
+      "759",
+      "762"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Pattern: ×4 − 3 each time. So 193 × 4 − 3 = 769.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzbpp8vl",
+    "order": 148,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "3, 8, 11, 19, 30, 49, ?",
+    "questionImage": null,
+    "options": [
+      "89",
+      "79",
+      "98",
+      "67"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Each term is the sum of the previous two: 30 + 49 = 79.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatz01j0kc",
+    "order": 149,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "1, 2, 4, 7, 13, 24, 44, ?",
+    "questionImage": null,
+    "options": [
+      "81",
+      "63",
+      "112",
+      "73"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Each term is the sum of the previous three: 13 + 24 + 44 = 81.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzcon0dq",
+    "order": 150,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "600, 180, 54, ?",
+    "questionImage": null,
+    "options": [
+      "27",
+      "0.18",
+      "18",
+      "16.2"
+    ],
+    "correctIndex": 3,
+    "solutionText": "Each term is multiplied by 3/10: 600 → 180 → 54 → 16.2.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatz0adf18",
+    "order": 151,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "1, 8, 27, 46, ?",
+    "questionImage": null,
+    "options": [
+      "85",
+      "81",
+      "68",
+      "90"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Pattern: 1²+0, 3²−1, 5²+2, 7²−3, 9²+4. So the next is 81 + 4 = 85.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatz5td3gw",
+    "order": 152,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "5824, 5242, 4718, 4247, ?",
+    "questionImage": null,
+    "options": [
+      "4467",
+      "3823",
+      "4856",
+      "5167"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Each term subtracts its first three digits: 5824−582=5242, 5242−524=4718, 4718−471=4247, 4247−424=3823. (On the slide the teacher replaced the option 4718 with 3823.)",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzj6dhkr",
+    "order": 153,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "6, 9, 18, 45, 126, ?",
+    "questionImage": null,
+    "options": [
+      "369",
+      "359",
+      "329",
+      "317"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Pattern: ×3 − 9 each time. So 126 × 3 − 9 = 369.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzb98pij",
+    "order": 154,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "4, 6, 9, 13.5, 20.25, ?",
+    "questionImage": null,
+    "options": [
+      "32.75",
+      "30.375",
+      "40.5",
+      "27.225"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Each term is ×1.5 the previous. So 20.25 × 1.5 = 30.375.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatz7yzeun",
+    "order": 155,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "69, 55, 26, 13, ?",
+    "questionImage": null,
+    "options": [
+      "4",
+      "7",
+      "6",
+      "5"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Multiply the digits and add 1: 6×9+1=55, 5×5+1=26, 2×6+1=13, 1×3+1=4.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatz86qiqj",
+    "order": 156,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "8, 4, 6, 15, ?",
+    "questionImage": null,
+    "options": [
+      "47",
+      "52.5",
+      "53.5",
+      "55"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Multipliers are ×0.5, ×1.5, ×2.5, ×3.5. So 15 × 3.5 = 52.5.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzaxq271",
+    "order": 157,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "15, 21, 39, 77, 143, ?",
+    "questionImage": null,
+    "options": [
+      "243",
+      "240",
+      "253",
+      "245"
+    ],
+    "correctIndex": 3,
+    "solutionText": "Differences are 6, 18, 38, 66, 102, i.e. n² + 2 for n = 2, 4, 6, 8, 10. So 143 + 102 = 245.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzn0zy5n",
+    "order": 158,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "15, 19, 83, 119, 631, ?",
+    "questionImage": null,
+    "options": [
+      "733",
+      "731",
+      "729",
+      "770"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Differences are 4, 64, 36, 512, 100, i.e. 2², 4³, 6², 8³, 10². So 631 + 100 = 731.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzq24694",
+    "order": 159,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "12, 35, 81, 173, 357, ?",
+    "questionImage": null,
+    "options": [
+      "725",
+      "715",
+      "726",
+      "736"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Pattern: ×2 + 11 each time. So 357 × 2 + 11 = 725.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatz4v9815",
+    "order": 160,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "210, 209, 213, 186, 202, ?",
+    "questionImage": null,
+    "options": [
+      "77",
+      "177",
+      "138",
+      "200"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Alternating cube and square: −1³, +2², −3³, +4², −5³. So 202 − 125 = 77.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzgr4f3c",
+    "order": 161,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "8, 15, 26, ?, 56, 75",
+    "questionImage": null,
+    "options": [
+      "35",
+      "43",
+      "41",
+      "39"
+    ],
+    "correctIndex": 3,
+    "solutionText": "Differences are consecutive primes 7, 11, 13, 17, 19. So 26 + 13 = 39.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzm6oooi",
+    "order": 162,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "39, 42, 48, 57, 69, ?, 102",
+    "questionImage": null,
+    "options": [
+      "84",
+      "81",
+      "87",
+      "79"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Differences are 3, 6, 9, 12, 15, 18. So 69 + 15 = 84.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzq5yvvr",
+    "order": 163,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "33, 80, 108, ?, 183, 230, 258",
+    "questionImage": null,
+    "options": [
+      "155",
+      "143",
+      "138",
+      "160"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Differences alternate +47, +28: 33+47=80, 80+28=108, 108+47=155, 155+28=183.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzkwq9pc",
+    "order": 164,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "15, ?, 27, 39, 55, 75",
+    "questionImage": null,
+    "options": [
+      "21",
+      "18",
+      "20",
+      "19"
+    ],
+    "correctIndex": 3,
+    "solutionText": "Differences are +4, +8, +12, +16, +20. So the missing term is 15 + 4 = 19.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzycwk7x",
+    "order": 165,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "19, 26, ?, 46, 59, 74",
+    "questionImage": null,
+    "options": [
+      "30",
+      "35",
+      "32",
+      "33"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Differences are +7, +9, +11, +13, +15. So 26 + 9 = 35.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzep0cn4",
+    "order": 166,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "512, 508, 500, 496, ?, 484",
+    "questionImage": null,
+    "options": [
+      "488",
+      "490",
+      "480",
+      "484"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Differences alternate −4, −8: 512−4=508, 508−8=500, 500−4=496, 496−8=488, 488−4=484.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzg1yiyz",
+    "order": 167,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "43, 52, 47, ?, 51, 60, 55",
+    "questionImage": null,
+    "options": [
+      "57",
+      "49",
+      "56",
+      "53"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Differences alternate +9, −5: 43+9=52, 52−5=47, 47+9=56, 56−5=51, 51+9=60, 60−5=55.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatz5izy07",
+    "order": 168,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "2, 4, 12, 48, 240, ?",
+    "questionImage": null,
+    "options": [
+      "720",
+      "1440",
+      "480",
+      "360"
+    ],
+    "correctIndex": 1,
+    "solutionText": "Multipliers are ×2, ×3, ×4, ×5, ×6. So 240 × 6 = 1440.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzfzjqwo",
+    "order": 169,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "5475, 1100, 225, 50, ?, 8, 6.6",
+    "questionImage": null,
+    "options": [
+      "15",
+      "20",
+      "25",
+      "30"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Each term is the previous ÷ 5, then + 5: 5475/5+5=1100, 1100/5+5=225, 225/5+5=50, 50/5+5=15, 15/5+5=8, 8/5+5=6.6.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatznuy9cw",
+    "order": 170,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "2, 6, ?, 54, 162, 486",
+    "questionImage": null,
+    "options": [
+      "16",
+      "20",
+      "24",
+      "18"
+    ],
+    "correctIndex": 3,
+    "solutionText": "Each term is ×3 the previous. So 6 × 3 = 18.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatz5lxefl",
+    "order": 171,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "32, 54, 98, 186, ?, 714",
+    "questionImage": null,
+    "options": [
+      "362",
+      "450",
+      "452",
+      "354"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Pattern: ×2 − 10 each time. So 186 × 2 − 10 = 362, and 362 × 2 − 10 = 714.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzj3fand",
+    "order": 172,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "1, 4, 27, 16, 125, ?",
+    "questionImage": null,
+    "options": [
+      "49",
+      "343",
+      "36",
+      "216"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Alternating cubes and squares: 1³, 2², 3³, 4², 5³, 6². So the next is 6² = 36.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatz0p6yeb",
+    "order": 173,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "2, 10, 40, 120, 240, ?",
+    "questionImage": null,
+    "options": [
+      "480",
+      "300",
+      "240",
+      "360"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Multipliers are ×5, ×4, ×3, ×2, ×1. So 240 × 1 = 240.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzcf37r2",
+    "order": 174,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "1/176, 1/88, ?, 1/22, 1/11",
+    "questionImage": null,
+    "options": [
+      "1/48",
+      "1/32",
+      "1/42",
+      "1/44"
+    ],
+    "correctIndex": 3,
+    "solutionText": "The denominators halve each time: 176, 88, 44, 22, 11. So the missing term is 1/44.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzpszxg0",
+    "order": 175,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "1, 3, 10, 41, ?, 1237",
+    "questionImage": null,
+    "options": [
+      "200",
+      "210",
+      "206",
+      "202"
+    ],
+    "correctIndex": 2,
+    "solutionText": "Pattern: ×2+1, ×3+1, ×4+1, ×5+1, ×6+1. So 41 × 5 + 1 = 206, and 206 × 6 + 1 = 1237.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatz5wctrn",
+    "order": 176,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "3, 20, 121, 604, 2417, ?",
+    "questionImage": null,
+    "options": [
+      "7275",
+      "7200",
+      "7300",
+      "7250"
+    ],
+    "correctIndex": 3,
+    "solutionText": "Pattern: ×7−1, ×6+1, ×5−1, ×4+1, ×3−1. So 2417 × 3 − 1 = 7250.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatzy9cef9",
+    "order": 177,
+    "attemptStatus": "unattempted",
+    "testAllowed": true
+  },
+  {
+    "category": "Series",
+    "questionText": "88, 78, 70, 64, 60, ?, ?",
+    "questionImage": null,
+    "options": [
+      "58, 58",
+      "56, 54",
+      "56, 56",
+      "58, 56"
+    ],
+    "correctIndex": 0,
+    "solutionText": "Differences are −10, −8, −6, −4, −2, 0. So the missing terms are 58 and 58.",
+    "solutionImage": null,
+    "special": false,
+    "id": "muyviatz0fn7d7",
+    "order": 178,
     "attemptStatus": "unattempted",
     "testAllowed": true
   }

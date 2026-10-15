@@ -9145,5 +9145,215 @@
     "questionImageName": "",
     "source": "user-upload",
     "createdAt": "2026-09-30T07:12:40"
+  },
+  {
+    "id": "ca-2026-10-014-001",
+    "date": "2026-10-14",
+    "category": "Defense & Security",
+    "question": "Naval Exercise 'INDRA 2026' is being conducted between India and which country?",
+    "options": [
+      "France",
+      "Japan",
+      "Russia",
+      "Australia"
+    ],
+    "answer": 2,
+    "explanation": "Naval Exercise INDRA 2026 is conducted between India and Russia from 13-18 October 2026 at Vladivostok, featuring both Harbour and Sea phases[cite: 3, 4, 5].",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-10-15T00:17:37"
+  },
+  {
+    "id": "ca-2026-10-014-002",
+    "date": "2026-10-14",
+    "category": "Environment",
+    "question": "In which state is the Nanda Devi Biosphere Reserve located, which recently came into news due to a decadal monitoring study?",
+    "options": [
+      "Himachal Pradesh",
+      "Sikkim",
+      "Uttarakhand",
+      "Arunachal Pradesh"
+    ],
+    "answer": 2,
+    "explanation": "Nanda Devi Biosphere Reserve is located in Uttarakhand[cite: 7, 8]. A recent study by the Uttarakhand Forest Department and Wildlife Institute of India (WII) highlighted increased landslide-prone zones and a new glacial lake[cite: 10, 11].",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-10-15T00:17:37"
+  },
+  {
+    "id": "ca-2026-10-014-003",
+    "date": "2026-10-14",
+    "category": "International Days",
+    "question": "On which date is the International Day for Disaster Reduction observed every year?",
+    "options": [
+      "5 October",
+      "13 October",
+      "10 October",
+      "15 October"
+    ],
+    "answer": 1,
+    "explanation": "The International Day for Disaster Reduction is observed every year on 13 October with the 2026 theme 'Resilience Starts at Home'[cite: 15, 16].",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-10-15T00:17:37"
+  },
+  {
+    "id": "ca-2026-10-014-004",
+    "date": "2026-10-14",
+    "category": "National",
+    "question": "Pong Dam, recently in the news over security and fisheries restrictions, is built across which river?",
+    "options": [
+      "Ravi River",
+      "Chenab River",
+      "Sutlej River",
+      "Beas River"
+    ],
+    "answer": 3,
+    "explanation": "Pong Dam (also known as Beas Dam) is built across the Beas River in the Kangra district of Himachal Pradesh and creates the Maharana प्रताप Sagar reservoir[cite: 19, 20, 22].",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-10-15T00:17:37"
+  },
+  {
+    "id": "ca-2026-10-014-005",
+    "date": "2026-10-14",
+    "category": "Science & Technology",
+    "question": "Which organisation launched the 'Cyclone Warning and Marine Weather Services Decision Support System' in October 2026?",
+    "options": [
+      "Indian Space Research Organisation (ISRO)",
+      "India Meteorological Department (IMD)",
+      "National Disaster Management Authority (NDMA)",
+      "Indian Coast Guard"
+    ],
+    "answer": 1,
+    "explanation": "The India Meteorological Department (IMD) launched the Cyclone Warning and Marine Weather Services Decision Support System on 12 October 2026 to provide integrated tracking and warnings[cite: 25, 26].",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-10-15T00:17:37"
+  },
+  {
+    "id": "ca-2026-10-014-006",
+    "date": "2026-10-14",
+    "category": "Economy & Ports",
+    "question": "Which port's Mechanised Coal Handling Plant loaded a record 140,022 metric tonnes of coal in a single day in October 2026?",
+    "options": [
+      "Chennai Port",
+      "Deendayal Port",
+      "Paradip Port",
+      "Cochin Port"
+    ],
+    "answer": 2,
+    "explanation": "Paradip Port's Mechanised Coal Handling Plant (MCHP) in Odisha loaded a record 140,022 metric tonnes of coal on 10 October 2026[cite: 28, 30].",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-10-15T00:17:37"
+  },
+  {
+    "id": "ca-2026-10-014-007",
+    "date": "2026-10-14",
+    "category": "Awards & Honors",
+    "question": "Which Indian industrialist was selected for France's 'Chevalier de l'Ordre national de la Légion d'honneur' in October 2026?",
+    "options": [
+      "Mukesh Ambani",
+      "Sunil Bharti Mittal",
+      "Gautam Adani",
+      "Kumar Mangalam Birla"
+    ],
+    "answer": 1,
+    "explanation": "Sunil Bharti Mittal, Founder and Chairman of Bharti Enterprises, was named for France's prestigious Chevalier de l'Ordre national de la Légion d'honneur for strengthening India-France economic and telecom ties[cite: 37, 38].",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-10-15T00:17:37"
+  },
+  {
+    "id": "ca-2026-10-014-008",
+    "date": "2026-10-14",
+    "category": "Sports",
+    "question": "Which Indian cricketer won the ICC Men's Player of the Month Award for September 2026?",
+    "options": [
+      "Abhishek Sharma",
+      "Shubman Gill",
+      "Sanju Samson",
+      "Rohit Sharma"
+    ],
+    "answer": 1,
+    "explanation": "Shubman Gill won the ICC Men's Player of the Month for September 2026, marking his fifth time winning the award, becoming the first male player to do so[cite: 41].",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-10-15T00:17:37"
+  },
+  {
+    "id": "ca-2026-10-014-009",
+    "date": "2026-10-14",
+    "category": "Defense & Welfare",
+    "question": "Which organization launched the 'Bharat Rice' initiative for soldiers in October 2026?",
+    "options": [
+      "Indian Army",
+      "Indian Navy",
+      "Indian Coast Guard",
+      "Central Reserve Police Force"
+    ],
+    "answer": 0,
+    "explanation": "The Indian Army launched the 'Bharat Rice' initiative in New Delhi, partnering with NAFED to supply standard quality rice directly to army supply depots, particularly in remote areas[cite: 45, 46, 47].",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-10-15T00:17:37"
+  },
+  {
+    "id": "ca-2026-10-014-010",
+    "date": "2026-10-14",
+    "category": "National Education",
+    "question": "Which Union Territory was declared fully literate under the ULLAS programme in October 2026?",
+    "options": [
+      "Lakshadweep",
+      "Puducherry",
+      "Chandigarh",
+      "Andaman and Nicobar Islands"
+    ],
+    "answer": 0,
+    "explanation": "Lakshadweep was declared fully literate under the ULLAS (Understanding of Lifelong Learning for All in Society) programme following evaluation campaigns led by Administrator Praful Patel[cite: 50, 51, 53].",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-10-15T00:17:37"
   }
 ]
