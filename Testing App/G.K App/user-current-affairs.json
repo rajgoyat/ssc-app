@@ -9355,5 +9355,1965 @@
     "questionImageName": "",
     "source": "user-upload",
     "createdAt": "2026-10-15T00:17:37"
+  },
+  {
+    "id": "ca-2026-11-001-001",
+    "date": "2026-11-01",
+    "category": "National",
+    "question": "“Nature’s Comeback – Scaling Ecosystem Restoration for People and Planet” रिपोर्ट में भारत की किस प्रजाति के संरक्षण और संख्या में सुधार को सफल Ecosystem Restoration का उदाहरण बताया गया है? | Which Indian species’ conservation and population recovery is highlighted as a successful example of Ecosystem Restoration in the report?",
+    "options": [
+      "Dugong",
+      "Ganges River Dolphin",
+      "Whale Shark",
+      "Olive Ridley Turtle"
+    ],
+    "answer": 1,
+    "explanation": "रिपोर्ट में Ganges River Dolphin के संरक्षण और उसकी संख्या में सुधार को सफल Ecosystem Restoration का उदाहरण बताया गया है। रिपोर्ट FAO, UNEP और Convention on Biological Diversity Secretariat ने संयुक्त रूप से प्रकाशित की। इसे UN Biodiversity Conference (COP17) के दौरान जारी किया गया। यह Ecosystem Restoration की प्रगति का पहला व्यापक Global Assessment है।",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "Ganges River Dolphin का वैज्ञानिक नाम क्या है?",
+        "options": [
+          "Platanista gangetica",
+          "Platanista minor",
+          "Delphinus gangeticus",
+          "Orcaella brevirostris"
+        ],
+        "answer": 0,
+        "explanation": "इसका वैज्ञानिक नाम Platanista gangetica है।"
+      },
+      {
+        "question": "भारत ने Ganges River Dolphin को National Aquatic Animal कब घोषित किया?",
+        "options": [
+          "2006",
+          "2008",
+          "2009",
+          "2011"
+        ],
+        "answer": 2,
+        "explanation": "भारत ने इसे वर्ष 2009 में National Aquatic Animal घोषित किया था।"
+      },
+      {
+        "question": "Ganges River Dolphin की IUCN स्थिति क्या है?",
+        "options": [
+          "Vulnerable",
+          "Endangered",
+          "Critically Endangered",
+          "Near Threatened"
+        ],
+        "answer": 1,
+        "explanation": "PDF के अनुसार इसकी IUCN स्थिति Endangered है।"
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-02T13:31:26"
+  },
+  {
+    "id": "ca-2026-11-001-002",
+    "date": "2026-11-01",
+    "category": "International",
+    "question": "प्रथम BIMSTEC Maritime Security Exercise का आयोजन कहाँ किया जा रहा है? | Where is the first BIMSTEC Maritime Security Exercise being held?",
+    "options": [
+      "Visakhapatnam",
+      "Sri Vijaya Puram",
+      "Kochi",
+      "Chennai"
+    ],
+    "answer": 1,
+    "explanation": "पहला BIMSTEC Maritime Security Exercise 30 October से 3 November 2026 तक अंडमान एवं निकोबार द्वीपसमूह के Sri Vijaya Puram (पूर्व नाम Port Blair) में आयोजित किया जा रहा है। इसकी मेजबानी Indian Navy और Andaman and Nicobar Command कर रहे हैं।\n\nvijaypuram in capital of andman",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "प्रथम BIMSTEC Maritime Security Exercise की तारीखें क्या हैं?",
+        "options": [
+          "25–29 October 2026",
+          "30 October–3 November 2026",
+          "1–5 November 2026",
+          "3–7 November 2026"
+        ],
+        "answer": 1,
+        "explanation": "अभ्यास 30 अक्टूबर से 3 नवंबर 2026 तक आयोजित है।"
+      },
+      {
+        "question": "इस अभ्यास की मेजबानी कौन कर रहा है?",
+        "options": [
+          "Indian Army और ANC",
+          "Indian Navy और Andaman and Nicobar Command",
+          "Indian Coast Guard और BSF",
+          "Ministry of Home Affairs और NIA"
+        ],
+        "answer": 1,
+        "explanation": "इसकी मेजबानी Indian Navy और Andaman and Nicobar Command कर रहे हैं।"
+      },
+      {
+        "question": "BIMSTEC का पूरा नाम क्या है?",
+        "options": [
+          "Bay of Bengal International Security and Trade Council",
+          "Bay International Maritime Security and Trade Economic Council",
+          "Bay of Bengal Initiative for Multi-Sectoral Technical and Economic Cooperation",
+          "Bengal Initiative for Maritime, Science and Technology Cooperation"
+        ],
+        "answer": 2,
+        "explanation": "BIMSTEC का पूरा नाम Bay of Bengal Initiative for Multi-Sectoral Technical and Economic Cooperation है।"
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-02T13:31:26"
+  },
+  {
+    "id": "ca-2026-11-001-003",
+    "date": "2026-11-01",
+    "category": "National",
+    "question": "Every year on November 1, how many Indian states celebrate their formation day?",
+    "options": [
+      "Two",
+      "Three",
+      "Eight",
+      "Seven"
+    ],
+    "answer": 2,
+    "explanation": "1 November को आठ राज्यों—Andhra Pradesh, Chhattisgarh, Haryana, Karnataka, Kerala, Madhya Pradesh, Punjab और Tamil Nadu—के स्थापना दिवस मनाए जाते हैं। अधिकांश का संबंध States Reorganisation Act, 1956 से है; Haryana और Punjab का 1966 के पुनर्गठन से तथा Chhattisgarh का 2000 के पुनर्गठन से है।",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "इनमें से कौन-से राज्य 1 November 1966 को बने?",
+        "options": [
+          "Haryana और Punjab",
+          "Karnataka और Kerala",
+          "Andhra Pradesh और Madhya Pradesh",
+          "Punjab और Chhattisgarh"
+        ],
+        "answer": 0,
+        "explanation": "Haryana और Punjab का गठन Punjab Reorganisation Act, 1966 के तहत 1 नवंबर 1966 को हुआ।"
+      },
+      {
+        "question": "Chhattisgarh किस अधिनियम के तहत बना?",
+        "options": [
+          "States Reorganisation Act, 1956",
+          "Punjab Reorganisation Act, 1966",
+          "Madhya Pradesh Reorganisation Act, 2000",
+          "Andhra State Act, 1953"
+        ],
+        "answer": 2,
+        "explanation": "Chhattisgarh का गठन Madhya Pradesh Reorganisation Act, 2000 के तहत हुआ।"
+      },
+      {
+        "question": "Chhattisgarh भारत का कौन-सा राज्य बना?",
+        "options": [
+          "24th",
+          "25th",
+          "26th",
+          "27th"
+        ],
+        "answer": 2,
+        "explanation": "Chhattisgarh भारत का 26वाँ राज्य बना।"
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-02T13:31:26"
+  },
+  {
+    "id": "ca-2026-11-001-004",
+    "date": "2026-11-01",
+    "category": "Culture",
+    "question": "Which historical astronomical observatory was added as a venue for India Biennale 2026?",
+    "options": [
+      "Jantar Mantar, Delhi",
+      "Vedh Shala, Ujjain",
+      "Jantar Mantar, Jaipur",
+      "Aryabhatta Observatory, Nainital"
+    ],
+    "answer": 0,
+    "explanation": "संस्कृति मंत्रालय ने Delhi के Jantar Mantar को India Biennale 2026 के प्रमुख आयोजन स्थलों में शामिल किया। यहाँ Art, Architecture और Design से जुड़ी प्रदर्शनियाँ, installations और सांस्कृतिक कार्यक्रम होंगे।",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "India Biennale सामान्यतः कितने वर्षों में एक बार आयोजित होता है?",
+        "options": [
+          "हर वर्ष",
+          "हर दो वर्ष",
+          "हर तीन वर्ष",
+          "हर पाँच वर्ष"
+        ],
+        "answer": 1,
+        "explanation": "Biennale का अर्थ ऐसा आयोजन है जो सामान्यतः हर दो साल में एक बार होता है।"
+      },
+      {
+        "question": "India Biennale का आयोजन भारत में किस मंत्रालय द्वारा किया जाता है?",
+        "options": [
+          "Ministry of Tourism",
+          "Ministry of Culture",
+          "Ministry of Education",
+          "Ministry of Housing and Urban Affairs"
+        ],
+        "answer": 1,
+        "explanation": "इसका आयोजन केंद्रीय संस्कृति मंत्रालय द्वारा किया जाता है।"
+      },
+      {
+        "question": "India Biennale 2026 की अवधि क्या है?",
+        "options": [
+          "4 December 2026–21 March 2027",
+          "1 January–30 April 2027",
+          "4 November 2026–21 February 2027",
+          "15 December 2026–31 March 2027"
+        ],
+        "answer": 0,
+        "explanation": "PDF के अनुसार आयोजन 4 दिसंबर 2026 से 21 मार्च 2027 तक, कुल 108 दिनों का है।"
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-02T13:31:26"
+  },
+  {
+    "id": "ca-2026-11-001-005",
+    "date": "2026-11-01",
+    "category": "Government Scheme",
+    "question": "Which new scheme has been approved to strengthen the governance capabilities of Panchayats?",
+    "options": [
+      "PM Viksit Gram Swaraj Yojana",
+      "PM Adarsh Nagar Yojana",
+      "National Village Industries Scheme",
+      "PM Rural Skills Scheme"
+    ],
+    "answer": 0,
+    "explanation": "Union Cabinet ने 28 October 2026 को Pradhan Mantri Viksit Gram Swaraj Yojana (PM VGSY) को मंजूरी दी। यह Centrally Sponsored Scheme है, जिसका उद्देश्य पंचायतों को सशक्त, जवाबदेह, डिजिटल रूप से सक्षम और बेहतर प्रदर्शन करने वाली Local Government Institutions बनाना है।",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "PM Viksit Gram Swaraj Yojana को Union Cabinet ने कब मंजूरी दी?",
+        "options": [
+          "24 April 2026",
+          "28 October 2026",
+          "1 November 2026",
+          "15 August 2026"
+        ],
+        "answer": 1,
+        "explanation": "योजना को 28 अक्टूबर 2026 को मंजूरी दी गई।"
+      },
+      {
+        "question": "PM Viksit Gram Swaraj Yojana की अवधि क्या है?",
+        "options": [
+          "2025–26 से 2029–30",
+          "2026–27 से 2030–31",
+          "2027–28 से 2031–32",
+          "2026–27 से 2028–29"
+        ],
+        "answer": 1,
+        "explanation": "योजना की अवधि 2026–27 से 2030–31 तक है।"
+      },
+      {
+        "question": "PM Viksit Gram Swaraj Yojana का कुल परिव्यय कितना है?",
+        "options": [
+          "₹5,395.55 करोड़",
+          "₹6,869.48 करोड़",
+          "₹7,395.55 करोड़",
+          "₹9,525.07 करोड़"
+        ],
+        "answer": 2,
+        "explanation": "इसका कुल परिव्यय ₹7,395.55 करोड़ है।"
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-02T13:31:26"
+  },
+  {
+    "id": "ca-2026-11-001-006",
+    "date": "2026-11-01",
+    "category": "Defence",
+    "question": "Who has been appointed the next Vice Chief of the Air Staff on 1 Nov 2026?",
+    "options": [
+      "Air Marshal Inderpal Singh Walia",
+      "Air Marshal Vikram Gaur",
+      "Air Marshal Hardeep Bains",
+      "Air Marshal S. Sivakumar"
+    ],
+    "answer": 0,
+    "explanation": "केंद्र सरकार ने Air Marshal Inderpal Singh Walia को भारतीय वायुसेना का अगला Vice Chief of the Air Staff (VCAS) नियुक्त किया। उनकी नियुक्ति 1 November 2026 से प्रभावी होगी। वे Air Marshal Ashutosh Dixit का स्थान लेंगे।",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "Air Marshal Inderpal Singh Walia की नियुक्ति कब से प्रभावी होगी?",
+        "options": [
+          "30 October 2026",
+          "1 November 2026",
+          "15 November 2026",
+          "1 December 2026"
+        ],
+        "answer": 1,
+        "explanation": "नियुक्ति 1 नवंबर 2026 से प्रभावी होगी।"
+      },
+      {
+        "question": "Air Marshal Inderpal Singh Walia किसका स्थान लेंगे?",
+        "options": [
+          "Air Marshal Ashutosh Dixit",
+          "Air Chief Marshal A. P. Singh",
+          "Air Marshal Vikram Gaur",
+          "Air Marshal Hardeep Bains"
+        ],
+        "answer": 0,
+        "explanation": "वे Air Marshal Ashutosh Dixit का स्थान लेंगे।"
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-02T13:31:26"
+  },
+  {
+    "id": "ca-2026-11-001-007",
+    "date": "2026-11-01",
+    "category": "Geography",
+    "question": "Mayon Volcano, which came into the limelight due to the eruption, is located in which country?",
+    "options": [
+      "Indonesia",
+      "Philippines",
+      "Japan",
+      "Ecuador"
+    ],
+    "answer": 1,
+    "explanation": "Mayon Volcano, Philippines के Luzon Island के Albay Province में स्थित एक सक्रिय ज्वालामुखी है। विस्फोट के बाद PHIVOLCS ने इसका Alert Level 2 से बढ़ाकर 3 कर दिया।",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "Mayon Volcano Philippines के किस द्वीप पर स्थित है?",
+        "options": [
+          "Mindanao",
+          "Palawan",
+          "Luzon",
+          "Cebu"
+        ],
+        "answer": 2,
+        "explanation": "यह Luzon Island पर स्थित है।"
+      },
+      {
+        "question": "Mayon Volcano किस Province में स्थित है?",
+        "options": [
+          "Albay",
+          "Cavite",
+          "Benguet",
+          "Cebu"
+        ],
+        "answer": 0,
+        "explanation": "यह Albay Province में स्थित है।"
+      },
+      {
+        "question": "Philippines में ज्वालामुखी और भूकंप गतिविधियों की निगरानी करने वाली संस्था कौन-सी है?",
+        "options": [
+          "PHIVOLCS",
+          "PAGASA",
+          "NAMRIA",
+          "DENR"
+        ],
+        "answer": 0,
+        "explanation": "Philippine Institute of Volcanology and Seismology (PHIVOLCS) ने Alert Level बढ़ाया।"
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-02T13:31:26"
+  },
+  {
+    "id": "ca-2026-11-001-008",
+    "date": "2026-11-01",
+    "category": "Important Days",
+    "question": "What is the theme of World Savings Day 2026?\n31 October ( National Unity Day also)",
+    "options": [
+      "Savings for a Sustainable Future",
+      "AI Advises, Human Decides",
+      "Digital Money for Everyone",
+      "Save Today, Invest Tomorrow"
+    ],
+    "answer": 1,
+    "explanation": "World Savings Day, जिसे World Thrift Day भी कहा जाता है, हर वर्ष 31 October को मनाया जाता है। 2026 का आधिकारिक अभियान “AI Advises, Human Decides” है।",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "World Savings Day हर वर्ष कब मनाया जाता है?",
+        "options": [
+          "24 October",
+          "30 October",
+          "31 October",
+          "1 November"
+        ],
+        "answer": 2,
+        "explanation": "यह हर वर्ष 31 अक्टूबर को मनाया जाता है।"
+      },
+      {
+        "question": "World Savings Day को दूसरे किस नाम से जाना जाता है?",
+        "options": [
+          "World Thrift Day",
+          "World Finance Day",
+          "International Banking Day",
+          "World Investment Day"
+        ],
+        "answer": 0,
+        "explanation": "इसे World Thrift Day भी कहा जाता है।"
+      },
+      {
+        "question": "पहला International Thrift Congress अक्टूबर 1924 में कहाँ आयोजित हुआ था?",
+        "options": [
+          "Rome",
+          "Milan",
+          "Paris",
+          "Geneva"
+        ],
+        "answer": 1,
+        "explanation": "पहला International Thrift Congress अक्टूबर 1924 में Milan, Italy में हुआ था।"
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-02T13:31:26"
+  },
+  {
+    "id": "ca-2026-11-001-009",
+    "date": "2026-11-01",
+    "category": "Government Scheme",
+    "question": "Ayushman Vay Vandana covers all senior citizens of which age group?",
+    "options": [
+      "60 years and above",
+      "65 years and above",
+      "70 years and above",
+      "75 years and above"
+    ],
+    "answer": 2,
+    "explanation": "Ayushman Vay Vandana Yojana 29 October 2024 को AB PM-JAY के विस्तार के रूप में शुरू हुई। इसके अंतर्गत 70 वर्ष और उससे अधिक आयु के सभी वरिष्ठ नागरिकों को आर्थिक या सामाजिक स्थिति की परवाह किए बिना स्वास्थ्य बीमा कवरेज दिया जाता है। पात्र वरिष्ठ नागरिकों को प्रति परिवार प्रति वर्ष ₹5 लाख तक का Health Cover मिलता है।",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "Ayushman Vay Vandana Yojana कब शुरू की गई थी?",
+        "options": [
+          "23 September 2018",
+          "29 October 2024",
+          "15 August 2024",
+          "29 October 2026"
+        ],
+        "answer": 1,
+        "explanation": "इसे 29 अक्टूबर 2024 को शुरू किया गया था।"
+      },
+      {
+        "question": "Ayushman Vay Vandana के पात्र वरिष्ठ नागरिकों को कितना Health Cover मिलता है?",
+        "options": [
+          "₹2 lakh",
+          "₹3 lakh",
+          "₹5 lakh",
+          "₹10 lakh"
+        ],
+        "answer": 2,
+        "explanation": "प्रति परिवार प्रति वर्ष ₹5 लाख तक का Health Cover मिलता है।"
+      },
+      {
+        "question": "Ayushman Vay Vandana Yojana किस योजना के विस्तार के रूप में शुरू हुई?",
+        "options": [
+          "PM-KISAN",
+          "AB PM-JAY",
+          "PM Awas Yojana",
+          "National Health Mission"
+        ],
+        "answer": 1,
+        "explanation": "यह Ayushman Bharat–Pradhan Mantri Jan Arogya Yojana (AB PM-JAY) का विस्तार है।"
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-02T13:31:26"
+  },
+  {
+    "id": "ca-2026-11-001-010",
+    "date": "2026-11-01",
+    "category": "Sports",
+    "question": "T20 International Cricket में 150 विकेट लेने वाले पहले भारतीय गेंदबाज कौन बने हैं? | Who became the first Indian bowler to take 150 wickets in T20 Internationals?",
+    "options": [
+      "Jasprit Bumrah",
+      "Arshdeep Singh",
+      "Kuldeep Yadav",
+      "Hardik Pandya"
+    ],
+    "answer": 1,
+    "explanation": "Arshdeep Singh T20 International में 150 विकेट लेने वाले पहले भारतीय गेंदबाज बने। उन्होंने 30 October 2026 को Auckland के Eden Park में New Zealand के विरुद्ध चौथे T20I में Mitchell Santner को आउट करके यह उपलब्धि हासिल की।",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "Arshdeep Singh ने अपना 150वाँ T20I विकेट किस खिलाड़ी को आउट करके पूरा किया?",
+        "options": [
+          "Kane Williamson",
+          "Mitchell Santner",
+          "Glenn Phillips",
+          "Devon Conway"
+        ],
+        "answer": 1,
+        "explanation": "उन्होंने New Zealand के कप्तान Mitchell Santner को आउट करके 150वाँ विकेट पूरा किया।"
+      },
+      {
+        "question": "Arshdeep Singh ने T20I debut कब किया था?",
+        "options": [
+          "7 July 2022",
+          "10 June 2021",
+          "15 August 2022",
+          "1 January 2023"
+        ],
+        "answer": 0,
+        "explanation": "उनका T20I debut 7 जुलाई 2022 को England के खिलाफ हुआ था।"
+      },
+      {
+        "question": "Arshdeep Singh 150 T20I wickets लेने वाले विश्व के कौन-से गेंदबाज बने?",
+        "options": [
+          "सातवें",
+          "आठवें",
+          "नौवें",
+          "दसवें"
+        ],
+        "answer": 2,
+        "explanation": "वे विश्व के नौवें गेंदबाज बने।"
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-02T13:31:26"
+  },
+  {
+    "id": "ca-2026-11-001-011",
+    "date": "2026-11-01",
+    "category": "Last Day Revision",
+    "question": "Gnathang Valley, which has been in the news due to the Himalayan Yak Festival, is located in which state?",
+    "options": [
+      "Sikkim",
+      "Arunachal Pradesh",
+      "Himachal Pradesh",
+      "Uttarakhand"
+    ],
+    "answer": 0,
+    "explanation": "इस Revision section में PDF ने answer/explanation नहीं दिया है; इसलिए answer जानबूझकर null रखा गया है।",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-02T13:31:26"
+  },
+  {
+    "id": "ca-2026-11-001-012",
+    "date": "2026-11-01",
+    "category": "Last Day Revision",
+    "question": "IN-RoKN Bilateral Maritime Exercise is conducted between the navies of which two countries?",
+    "options": [
+      "India and Japan",
+      "India and South Korea",
+      "India and Australia",
+      "India and Indonesia"
+    ],
+    "answer": 0,
+    "explanation": "इस Revision section में PDF ने answer/explanation नहीं दिया है; इसलिए answer जानबूझकर null रखा गया है।",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-02T13:31:26"
+  },
+  {
+    "id": "ca-2026-11-001-013",
+    "date": "2026-11-01",
+    "category": "Last Day Revision",
+    "question": "National Unity Day is celebrated every year on the birth anniversary of whom?",
+    "options": [
+      "Mahatma Gandhi",
+      "Jawaharlal Nehru",
+      "Sardar Vallabhbhai Patel",
+      "Dr. B. R. Ambedkar"
+    ],
+    "answer": 0,
+    "explanation": "इस Revision section में PDF ने answer/explanation नहीं दिया है; इसलिए answer जानबूझकर null रखा गया है।",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-02T13:31:26"
+  },
+  {
+    "id": "ca-2026-11-001-014",
+    "date": "2026-11-01",
+    "category": "Last Day Revision",
+    "question": "Which four states signed an agreement to resolve the financial disputes related to the construction cost of the Sardar Sarovar Project?",
+    "options": [
+      "Gujarat, Maharashtra, Madhya Pradesh and Rajasthan",
+      "Gujarat, Madhya Pradesh, Uttar Pradesh and Bihar",
+      "Maharashtra, Karnataka, Telangana and Andhra Pradesh",
+      "Rajasthan, Punjab, Haryana and Himachal Pradesh"
+    ],
+    "answer": 0,
+    "explanation": "इस Revision section में PDF ने answer/explanation नहीं दिया है; इसलिए answer जानबूझकर null रखा गया है।",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-02T13:31:26"
+  },
+  {
+    "id": "ca-2026-11-001-015",
+    "date": "2026-11-01",
+    "category": "Last Day Revision",
+    "question": "Who has been named FICCI President-Elect for 2026–27?",
+    "options": [
+      "Vijay Sankar",
+      "Puneet Dalmia",
+      "Sanjiv Puri",
+      "Uday Kotak"
+    ],
+    "answer": 0,
+    "explanation": "इस Revision section में PDF ने answer/explanation नहीं दिया है; इसलिए answer जानबूझकर null रखा गया है।",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-02T13:31:26"
+  },
+  {
+    "id": "ca-2026-11-001-016",
+    "date": "2026-11-01",
+    "category": "Last Day Revision",
+    "question": "Who secured the WTA Year-End No. 1 women’s singles ranking for 2026?",
+    "options": [
+      "Aryna Sabalenka",
+      "Iga Świątek",
+      "Coco Gauff",
+      "Elena Rybakina"
+    ],
+    "answer": 0,
+    "explanation": "इस Revision section में PDF ने answer/explanation नहीं दिया है; इसलिए answer जानबूझकर null रखा गया है।",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-02T13:31:26"
+  },
+  {
+    "id": "ca-2026-11-001-017",
+    "date": "2026-11-01",
+    "category": "Last Day Revision",
+    "question": "Which Indian Coast Guard ship conducted joint maritime training with the Kenya Coast Guard Service at Mombasa in October 2026?",
+    "options": [
+      "ICGS Samudra Paheredar",
+      "ICGS Varaha",
+      "ICGS Vikram",
+      "ICGS Sachet"
+    ],
+    "answer": 3,
+    "explanation": "इस Revision section में PDF ने answer/explanation नहीं दिया है; इसलिए answer जानबूझकर null रखा गया है।",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-02T13:31:26"
+  },
+  {
+    "id": "ca-2026-11-001-018",
+    "date": "2026-11-01",
+    "category": "Last Day Revision",
+    "question": "Which state approved Project K-Monitor to evaluate the implementation and impact of welfare schemes?",
+    "options": [
+      "Keralam",
+      "Karnataka",
+      "Telangana",
+      "Tamil Nadu"
+    ],
+    "answer": 0,
+    "explanation": "इस Revision section में PDF ने answer/explanation नहीं दिया है; इसलिए answer जानबूझकर null रखा गया है।",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-02T13:31:26"
+  },
+  {
+    "id": "ca-2026-11-001-019",
+    "date": "2026-11-01",
+    "category": "Last Day Revision",
+    "question": "What was announced as the official slogan of the Los Angeles Olympic and Paralympic Games 2028?",
+    "options": [
+      "Games Wide Open",
+      "Stars Align",
+      "United by Emotion",
+      "Play a Part in History"
+    ],
+    "answer": 0,
+    "explanation": "इस Revision section में PDF ने answer/explanation नहीं दिया है; इसलिए answer जानबूझकर null रखा गया है।",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-02T13:31:26"
+  },
+  {
+    "id": "ca-2026-11-001-020",
+    "date": "2026-11-01",
+    "category": "Last Day Revision",
+    "question": "What is the theme of World Cities Day 2026?",
+    "options": [
+      "Financing Sustainable Urban Future for All",
+      "Regenerating the City – Adequate Housing for All",
+      "Youth Leading Climate Action",
+      "Better Cities through Digital Innovation"
+    ],
+    "answer": 0,
+    "explanation": "इस Revision section में PDF ने answer/explanation नहीं दिया है; इसलिए answer जानबूझकर null रखा गया है।",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-02T13:31:26"
+  },
+  {
+    "id": "ca-2026-11-003-001",
+    "date": "2026-11-03",
+    "category": "National",
+    "question": "What was India's rank in the World Justice Project (WJP) Rule of Law Index 2026?",
+    "options": [
+      "78th",
+      "86th",
+      "88th",
+      "92nd"
+    ],
+    "answer": 2,
+    "explanation": "India ranked 88th among 143 countries and jurisdictions in 2026, compared with 86th in 2025. Its rank declined by two places. India was third among six South Asian countries and sixth among 33 lower-middle-income countries. The index measures rule of law across 8 dimensions and 44 indicators.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "Which organisation publishes the Rule of Law Index?",
+        "options": [
+          "World Economic Forum",
+          "World Justice Project",
+          "United Nations Development Programme",
+          "World Bank"
+        ],
+        "answer": 1,
+        "explanation": "The index is published by the World Justice Project (WJP), an independent, non-partisan, non-profit international organisation founded in 2006 and located in Washington, D.C."
+      },
+      {
+        "question": "Which country ranked first in the 2026 Rule of Law Index, according to the PDF?",
+        "options": [
+          "Norway",
+          "Finland",
+          "Denmark",
+          "Sweden"
+        ],
+        "answer": 2,
+        "explanation": "The top three were Denmark, Norway and Finland, in that order."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-03T13:33:05"
+  },
+  {
+    "id": "ca-2026-11-003-002",
+    "date": "2026-11-03",
+    "category": "Awards",
+    "question": "Which film won the Best Picture award at the IIFA Awards 2026?",
+    "options": [
+      "Chhaava",
+      "Saiyaara",
+      "Dhurandhar",
+      "Homebound"
+    ],
+    "answer": 2,
+    "explanation": "Aditya Dhar's film Dhurandhar won Best Picture and a total of 12 awards. The winners were announced on 30 October 2026 through IIFA's social media handles and official website; the PDF says no physical or live ceremony was held.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "Who won Best Director at IIFA Awards 2026 for Dhurandhar?",
+        "options": [
+          "Ranveer Singh",
+          "Sanjay Dutt",
+          "Aditya Dhar",
+          "Shashwat Sachdev"
+        ],
+        "answer": 2,
+        "explanation": "Aditya Dhar won Best Direction. He also received awards for Original Story, Screenplay and Dialogue."
+      },
+      {
+        "question": "Who won Best Actress at IIFA Awards 2026, according to the PDF?",
+        "options": [
+          "Huma Qureshi",
+          "Aneet Padda",
+          "Rasha Thadani",
+          "Sai Pallavi"
+        ],
+        "answer": 1,
+        "explanation": "Aneet Padda won Best Actress for Saiyaara."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-03T13:33:05"
+  },
+  {
+    "id": "ca-2026-11-003-003",
+    "date": "2026-11-03",
+    "category": "Sports",
+    "question": "Who were nominated as sporting representatives to the Organising Company Board of the 2030 Commonwealth Games?",
+    "options": [
+      "Sachin Tendulkar and P. V. Sindhu",
+      "Abhinav Bindra and Mary Kom",
+      "Sourav Ganguly and Saina Nehwal",
+      "Rahul Dravid and Saina Nehwal"
+    ],
+    "answer": 3,
+    "explanation": "Former Indian cricket captain Rahul Dravid and Olympic medallist badminton player Saina Nehwal were nominated as directors and sporting representatives on the Ahmedabad 2030 Commonwealth Games Organising Company Board. Their role is to bring athletes' perspectives into planning and operations.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "Who was appointed CEO of the 2030 Commonwealth Games Organising Company, according to the PDF?",
+        "options": [
+          "M. Thennarasan",
+          "Harsh Sanghavi",
+          "Hari Ranjan Rao",
+          "P. T. Usha"
+        ],
+        "answer": 0,
+        "explanation": "Senior Gujarat IAS officer M. Thennarasan was appointed CEO."
+      },
+      {
+        "question": "At which Olympics did Saina Nehwal win a bronze medal in women's singles badminton?",
+        "options": [
+          "Beijing 2008",
+          "London 2012",
+          "Rio 2016",
+          "Tokyo 2020"
+        ],
+        "answer": 1,
+        "explanation": "Saina Nehwal won bronze in women's singles badminton at the 2012 London Olympics."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-03T13:33:05"
+  },
+  {
+    "id": "ca-2026-11-003-004",
+    "date": "2026-11-03",
+    "category": "Appointments",
+    "question": "Who took charge as the new Chairman and Managing Director of IREDA?",
+    "options": [
+      "Jatin Kumar Nayak",
+      "Pradip Kumar Das",
+      "Bijay Kumar Mohanty",
+      "Sandeep Kumar Gupta"
+    ],
+    "answer": 0,
+    "explanation": "Jatin Kumar Nayak became IREDA's Chairman and Managing Director on 30 October 2026. Before this appointment, he was Executive Director (Finance) at REC Limited. His tenure is stated as up to 30 September 2029 or until further government orders.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "IREDA functions under the administrative ministry of which ministry?",
+        "options": [
+          "Ministry of Power",
+          "Ministry of Finance",
+          "Ministry of New and Renewable Energy",
+          "Ministry of Heavy Industries"
+        ],
+        "answer": 2,
+        "explanation": "IREDA is a government financial institution under the Ministry of New and Renewable Energy (MNRE)."
+      },
+      {
+        "question": "In which year was IREDA established?",
+        "options": [
+          "1972",
+          "1987",
+          "1991",
+          "2005"
+        ],
+        "answer": 1,
+        "explanation": "IREDA was established on 11 March 1987 and is headquartered in New Delhi."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-03T13:33:05"
+  },
+  {
+    "id": "ca-2026-11-003-005",
+    "date": "2026-11-03",
+    "category": "Science and Technology",
+    "question": "Which launch vehicle did ISRO use to launch the NVS-03 Navigation Satellite?",
+    "options": [
+      "PSLV-C62",
+      "GSLV-F18",
+      "LVM3-M6",
+      "SSLV-D4"
+    ],
+    "answer": 1,
+    "explanation": "ISRO launched NVS-03 using the GSLV-F18 rocket from the Second Launch Pad at Satish Dhawan Space Centre, Sriharikota, on 30 October 2026 at 11:51 p.m., according to the PDF. The satellite weighed approximately 2,250 kg and was placed in Geosynchronous Transfer Orbit (GTO).",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "Which navigation system is indigenous to India?",
+        "options": [
+          "GPS",
+          "GLONASS",
+          "Galileo",
+          "NavIC"
+        ],
+        "answer": 3,
+        "explanation": "NavIC (Navigation with Indian Constellation) is India's own navigation system. The PDF states that it provides positioning, navigation and timing services over India and about 1,500 km beyond its boundaries."
+      },
+      {
+        "question": "Which country's navigation system is BeiDou?",
+        "options": [
+          "Russia",
+          "China",
+          "United States",
+          "European Union"
+        ],
+        "answer": 1,
+        "explanation": "The PDF lists GPS—United States, GLONASS—Russia, Galileo—European Union, BeiDou—China and NavIC—India."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-03T13:33:05"
+  },
+  {
+    "id": "ca-2026-11-003-006",
+    "date": "2026-11-03",
+    "category": "Environment",
+    "question": "Which organisation released the first Global Red List of Coral Reef Ecosystems Assessment?",
+    "options": [
+      "UNEP",
+      "WWF",
+      "IUCN",
+      "UNESCO"
+    ],
+    "answer": 2,
+    "explanation": "The assessment was prepared by the International Union for Conservation of Nature (IUCN). According to the PDF, 127 coral reef ecosystems were assessed and 122 (about 96%) were classified as Critically Endangered. These ecosystems cover about 99.8% of the assessed reef area.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "Where is the headquarters of IUCN?",
+        "options": [
+          "Geneva, Switzerland",
+          "Gland, Switzerland",
+          "Paris, France",
+          "Nairobi, Kenya"
+        ],
+        "answer": 1,
+        "explanation": "IUCN was established in 1948 and is headquartered in Gland, Switzerland."
+      },
+      {
+        "question": "According to the PDF, approximately what proportion of marine fish species receive habitat from coral reefs?",
+        "options": [
+          "One-tenth",
+          "One-fifth",
+          "One-fourth",
+          "One-half"
+        ],
+        "answer": 2,
+        "explanation": "Although coral reefs occupy less than 1% of the seabed, they provide habitat for about one-fourth of marine fish species."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-03T13:33:05"
+  },
+  {
+    "id": "ca-2026-11-003-007",
+    "date": "2026-11-03",
+    "category": "Polity and Governance",
+    "question": "The National Social Security Boards notified for unorganised, gig and platform workers have been formally constituted under which code?",
+    "options": [
+      "Code on Wages, 2019",
+      "Industrial Relations Code, 2020",
+      "Code on Social Security, 2020",
+      "Occupational Safety, Health and Working Conditions Code, 2020"
+    ],
+    "answer": 2,
+    "explanation": "The Ministry of Labour and Employment announced the formal constitution of the National Social Security Boards on 30 October 2026 under the Code on Social Security, 2020. The boards include representatives of the Central and State Governments, employers, aggregators, civil society organisations, workers' unions and gig/platform workers' associations.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "How many central labour laws were brought together in the Code on Social Security, 2020, according to the PDF?",
+        "options": [
+          "4",
+          "6",
+          "9",
+          "12"
+        ],
+        "answer": 2,
+        "explanation": "The Code consolidated nine central labour laws relating to social security into one framework."
+      },
+      {
+        "question": "How many times a year must these boards meet at minimum?",
+        "options": [
+          "Once",
+          "Twice",
+          "Three times",
+          "Six times"
+        ],
+        "answer": 2,
+        "explanation": "The PDF states that the boards must meet at least three times a year."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-03T13:33:05"
+  },
+  {
+    "id": "ca-2026-11-003-008",
+    "date": "2026-11-03",
+    "category": "History and Culture",
+    "question": "The bronze idols of Nataraja and Goddess Sivakami discovered during excavation in Nagapattinam, Tamil Nadu, belong to which period?",
+    "options": [
+      "Early Chola Period",
+      "Later Chola Period",
+      "Pallava Period",
+      "Vijayanagara Period"
+    ],
+    "answer": 1,
+    "explanation": "The initial assessment by experts places the bronze idols in the 12th century, belonging to the Later Chola Period. They were found during an excavation by the Tamil Nadu State Archaeology Department in Nagapattinam.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "Which technique was used to make Chola bronze images?",
+        "options": [
+          "Fresco technique",
+          "Lost-wax technique",
+          "石 carving technique",
+          "Mosaic technique"
+        ],
+        "answer": 1,
+        "explanation": "Chola bronze images were made using the lost-wax technique: a wax model was prepared, moulded in clay, the wax was removed, and molten metal was poured into the mould."
+      },
+      {
+        "question": "Who founded the Chola dynasty, according to the PDF?",
+        "options": [
+          "Rajaraja Chola I",
+          "Rajendra Chola I",
+          "Vijayalaya Chola",
+          "Kulottunga Chola"
+        ],
+        "answer": 2,
+        "explanation": "The PDF identifies Vijayalaya Chola as the founder of the Chola dynasty."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-03T13:33:05"
+  },
+  {
+    "id": "ca-2026-11-003-009",
+    "date": "2026-11-03",
+    "category": "Important Days",
+    "question": "When is the International Day to End Impunity for Crimes against Journalists observed?",
+    "options": [
+      "2 November",
+      "3 May",
+      "16 November",
+      "10 December"
+    ],
+    "answer": 0,
+    "explanation": "The day is observed every year on 2 November to raise awareness about crimes against journalists, accountability for perpetrators, journalist safety and press freedom. The UN General Assembly proclaimed it in 2013.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "What is the 2026 theme of the International Day to End Impunity for Crimes against Journalists, as given in the PDF?",
+        "options": [
+          "Journalism Without Fear",
+          "Threats Evolve. Impunity Endures",
+          "Protecting the Truth",
+          "Safety for Every Journalist"
+        ],
+        "answer": 1,
+        "explanation": "The theme listed in the PDF is “Threats Evolve. Impunity Endures”."
+      },
+      {
+        "question": "The date was chosen in memory of the killing of which two journalists in Mali?",
+        "options": [
+          "James Foley and Steven Sotloff",
+          "Ghislaine Dupont and Claude Verlon",
+          "Marie Colvin and Rémi Ochlik",
+          "Anna Politkovskaya and Paul Klebnikov"
+        ],
+        "answer": 1,
+        "explanation": "The date commemorates French journalists Ghislaine Dupont and Claude Verlon, who were killed in Mali on 2 November 2013."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-03T13:33:05"
+  },
+  {
+    "id": "ca-2026-11-003-010",
+    "date": "2026-11-03",
+    "category": "Books and Authors",
+    "question": "Litterateur Ved Rahi, who recently passed away, was mainly associated with the literature of which language?",
+    "options": [
+      "Maithili",
+      "Konkani",
+      "Santali",
+      "Dogri"
+    ],
+    "answer": 3,
+    "explanation": "Ved Rahi was primarily a Dogri-language writer. The PDF states that he also wrote in Hindi and Urdu. His Dogri story collection Aale received the Sahitya Akademi Award in 1983, and he received the Sahitya Akademi Fellowship in 2024.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "In which year was Dogri included in the Eighth Schedule of the Indian Constitution?",
+        "options": [
+          "1992",
+          "2003",
+          "2005",
+          "2008"
+        ],
+        "answer": 1,
+        "explanation": "Dogri was included in the Eighth Schedule through the 92nd Constitutional Amendment Act, 2003."
+      },
+      {
+        "question": "The Dogri story collection Aale received which award in 1983?",
+        "options": [
+          "Jnanpith Award",
+          "Sahitya Akademi Award",
+          "Saraswati Samman",
+          "Vyas Samman"
+        ],
+        "answer": 1,
+        "explanation": "The PDF states that Ved Rahi's Dogri story collection Aale received the Sahitya Akademi Award in 1983."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-03T13:33:05"
+  },
+  {
+    "id": "ca-2026-11-004-001",
+    "date": "2026-11-04",
+    "category": "Current Affairs",
+    "question": "Who has taken charge as the 55th Director General of the Geological Survey of India?",
+    "options": [
+      "Dinesh Vitthalrao Ganvir",
+      "Jatin Kumar Nayak",
+      "M. L. Jat",
+      "Himanshu Pathak"
+    ],
+    "answer": 0,
+    "explanation": "The PDF states that Dinesh Vitthalrao Ganvir took charge as GSI's 55th Director General, succeeding Varsha Ahir Aglawe. It notes his previous role as Additional Director General and Head of Department in GSI's Central Region, Nagpur, and more than 32 years of experience.",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-04T13:35:20"
+  },
+  {
+    "id": "ca-2026-11-004-002",
+    "date": "2026-11-04",
+    "category": "Current Affairs",
+    "question": "Which country named cyclone Murasu, which made landfall on Andhra Pradesh's southern coast on 3 November 2026?",
+    "options": [
+      "Bangladesh",
+      "India",
+      "Sri Lanka",
+      "Thailand"
+    ],
+    "answer": 1,
+    "explanation": "The PDF says India named Murasu. It identifies Murasu as a Tamil word meaning “drum” and reports landfall near Ongole in Prakasam district, Andhra Pradesh.",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-04T13:35:20"
+  },
+  {
+    "id": "ca-2026-11-004-003",
+    "date": "2026-11-04",
+    "category": "Current Affairs",
+    "question": "What was India's rank in the final medal table at the Senior World Wrestling Championships 2026?",
+    "options": [
+      "5th",
+      "7th",
+      "8th",
+      "10th"
+    ],
+    "answer": 1,
+    "explanation": "The PDF states that India finished 7th with four medals: one gold, two silver, and one bronze. All four Indian medals came in women's freestyle wrestling.",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-04T13:35:20"
+  },
+  {
+    "id": "ca-2026-11-004-004",
+    "date": "2026-11-04",
+    "category": "Current Affairs",
+    "question": "When is the International Day for Biosphere Reserves observed every year?",
+    "options": [
+      "3 November",
+      "5 June",
+      "22 April",
+      "16 September"
+    ],
+    "answer": 0,
+    "explanation": "The PDF states that the day is observed every year on 3 November. It was proclaimed by UNESCO in 2021 and first observed in 2022.",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-04T13:35:20"
+  },
+  {
+    "id": "ca-2026-11-004-005",
+    "date": "2026-11-04",
+    "category": "Current Affairs",
+    "question": "Who received the fifth Rohini Nayyar Prize in 2026?",
+    "options": [
+      "Prashant Chaudhary",
+      "Sonam Wangchuk",
+      "Anand Kumar",
+      "Anshu Gupta"
+    ],
+    "answer": 0,
+    "explanation": "The PDF names Prashant Chaudhary, a technology teacher and founder of CodeYogi Foundation, as the 2026 recipient. It says the award recognized his work providing practical coding, technology, and AI education to rural youth.",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-04T13:35:20"
+  },
+  {
+    "id": "ca-2026-11-004-006",
+    "date": "2026-11-04",
+    "category": "Current Affairs",
+    "question": "Which country won both the men's and women's titles at the inaugural Commonwealth Kabaddi Championship 2026?",
+    "options": [
+      "Sri Lanka",
+      "India",
+      "Bangladesh",
+      "Uganda"
+    ],
+    "answer": 1,
+    "explanation": "The PDF states that India won both titles, defeating Sri Lanka in the men's final and Uganda in the women's final.",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-04T13:35:20"
+  },
+  {
+    "id": "ca-2026-11-004-007",
+    "date": "2026-11-04",
+    "category": "Current Affairs",
+    "question": "GI-tagged Tandur Redgram, exported to Australia for the first time in October 2026, belongs to which state?",
+    "options": [
+      "Karnataka",
+      "Maharashtra",
+      "Andhra Pradesh",
+      "Telangana"
+    ],
+    "answer": 3,
+    "explanation": "The PDF identifies Tandur Redgram as a pulse grown in the Tandur area of Telangana. It reports that a first 2.5 metric tonne shipment was sent from Hyderabad to Australia in October 2026 with APEDA's assistance.",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-04T13:35:20"
+  },
+  {
+    "id": "ca-2026-11-004-008",
+    "date": "2026-11-04",
+    "category": "Current Affairs",
+    "question": "Which institution released the October 2026 Poverty and Equity Brief reporting a decline in India's extreme poverty?",
+    "options": [
+      "International Monetary Fund (IMF)",
+      "World Bank",
+      "United Nations Development Programme (UNDP)",
+      "Asian Development Bank (ADB)"
+    ],
+    "answer": 1,
+    "explanation": "The PDF attributes the October 2026 India Poverty and Equity Brief to the World Bank. It reports that India's extreme-poverty rate fell from 27.1% in 2011 to 2.6% in 2023.",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-04T13:35:20"
+  },
+  {
+    "id": "ca-2026-11-004-009",
+    "date": "2026-11-04",
+    "category": "Current Affairs",
+    "question": "Which South American country declared a national emergency over El Niño-related drought and flood risks in October 2026?",
+    "options": [
+      "Bolivia",
+      "Chile",
+      "Uruguay",
+      "Argentina"
+    ],
+    "answer": 0,
+    "explanation": "The PDF says Bolivia's President Rodrigo Paz declared a national emergency to address El Niño impacts, including drought-related water and livestock-feed shortages in some areas and flood risk in others.",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-04T13:35:20"
+  },
+  {
+    "id": "ca-2026-11-004-010",
+    "date": "2026-11-04",
+    "category": "Current Affairs",
+    "question": "Which state signed an agreement to establish India's first public-sector proton beam therapy centre?",
+    "options": [
+      "Gujarat",
+      "Tamil Nadu",
+      "Assam",
+      "Maharashtra"
+    ],
+    "answer": 2,
+    "explanation": "The PDF states that the Assam Government signed an agreement with Belgium's Ion Beam Applications (IBA). The centre is planned for the Gauhati Medical College and Hospital campus in Guwahati.",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-04T13:35:20"
+  },
+  {
+    "id": "ca-2026-11-004-014",
+    "date": "2026-11-04",
+    "category": "Last Day Revision",
+    "question": "Who has taken charge as the new Chairman and Managing Director of IREDA?",
+    "options": [
+      "Jatin Kumar Nayak",
+      "Pradip Kumar Das",
+      "Bijay Kumar Mohanty",
+      "Sandeep Kumar Gupta"
+    ],
+    "answer": 0,
+    "explanation": "The PDF lists the question and options but does not provide the answer.",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-04T13:35:20"
+  },
+  {
+    "id": "ca-2026-11-004-018",
+    "date": "2026-11-04",
+    "category": "Last Day Revision",
+    "question": "The bronze idols of Nataraja and Goddess Sivakami discovered during excavations in Nagapattinam, Tamil Nadu, are considered to belong to which period?",
+    "options": [
+      "Early Chola Period",
+      "Later Chola Period",
+      "Pallava Period",
+      "Vijayanagara Period"
+    ],
+    "answer": 0,
+    "explanation": "The PDF lists the question and options but does not provide the answer.",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-04T13:35:20"
+  },
+  {
+    "id": "ca-2026-11-004-019",
+    "date": "2026-11-04",
+    "category": "Last Day Revision",
+    "question": "When is the International Day to End Impunity for Crimes against Journalists observed?",
+    "options": [
+      "2 November",
+      "3 May",
+      "16 November",
+      "10 December"
+    ],
+    "answer": 0,
+    "explanation": "The PDF lists the question and options but does not provide the answer.",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-04T13:35:20"
+  },
+  {
+    "id": "ca-2026-11-004-020",
+    "date": "2026-11-04",
+    "category": "Last Day Revision",
+    "question": "Ved Rahi, who recently passed away, was mainly associated with the literature of which language?",
+    "options": [
+      "Maithili",
+      "Konkani",
+      "Santali",
+      "Dogri"
+    ],
+    "answer": 0,
+    "explanation": "The PDF lists the question and options but does not provide the answer.",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-04T13:35:20"
+  },
+  {
+    "id": "ca-2026-11-004-021",
+    "date": "2026-11-04",
+    "category": "Questions of the Day",
+    "question": "Which gas is known as laughing gas?",
+    "options": [
+      "Nitrous oxide",
+      "Not specified in PDF"
+    ],
+    "answer": 0,
+    "explanation": "The PDF gives “Nitrous Oxide” as the answer.",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-04T13:35:20"
+  },
+  {
+    "id": "ca-2026-11-004-022",
+    "date": "2026-11-04",
+    "category": "Questions of the Day",
+    "question": "Kutiyattam is a traditional Sanskrit theatre form of which state?",
+    "options": [
+      "Kerala",
+      "Not specified in PDF"
+    ],
+    "answer": 0,
+    "explanation": "The PDF gives Kerala as the answer.",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-04T13:35:20"
+  },
+  {
+    "id": "ca-2026-11-004-023",
+    "date": "2026-11-04",
+    "category": "Questions of the Day",
+    "question": "What are the floating islands found in Loktak Lake called?",
+    "options": [
+      "Phumdis",
+      "Not specified in PDF"
+    ],
+    "answer": 0,
+    "explanation": "The PDF gives “Phumdis” as the answer.",
+    "questionImageSize": "large",
+    "subQuestions": [],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-04T13:35:20"
+  },
+  {
+    "id": "ca-2026-11-005-001",
+    "date": "2026-11-05",
+    "category": "International",
+    "question": "Where will the Biodiversity Conference CBD COP18 be held in 2028?",
+    "options": [
+      "Quito, Ecuador",
+      "Yerevan, Armenia",
+      "Panama City, Panama",
+      "Cali, Colombia"
+    ],
+    "answer": 0,
+    "explanation": "Ecuador received the hosting opportunity through voting during CBD COP17. CBD COP18 is scheduled for the last quarter of 2028 in Quito, Ecuador.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "Where was CBD COP17 held from 19 to 30 October 2026?",
+        "options": [
+          "Yerevan, Armenia",
+          "Quito, Ecuador",
+          "Montreal, Canada"
+        ],
+        "answer": 0,
+        "explanation": "CBD COP17 was held in Yerevan, the capital of Armenia."
+      },
+      {
+        "question": "In which year did the Convention on Biological Diversity come into force?",
+        "options": [
+          "1992",
+          "1993",
+          "1995"
+        ],
+        "answer": 1,
+        "explanation": "The CBD was adopted at the 1992 Rio Earth Summit and came into force on 29 December 1993."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-05T15:17:31"
+  },
+  {
+    "id": "ca-2026-11-005-002",
+    "date": "2026-11-05",
+    "category": "Defence",
+    "question": "Where did the fifth edition of the India–USA tri-service military exercise Tiger Triumph begin on 2 November 2026?",
+    "options": [
+      "INS Dronacharya, Kochi",
+      "Maritime Warfare Centre, Visakhapatnam",
+      "National Defence Academy, Pune",
+      "Eastern Naval Command, Chennai"
+    ],
+    "answer": 1,
+    "explanation": "The fifth edition began at the Maritime Warfare Centre (MWC), Visakhapatnam. The exercise aims to improve cooperation and coordination in disaster management and relief operations.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "In which year was the first edition of Exercise Tiger Triumph conducted?",
+        "options": [
+          "2018",
+          "2019",
+          "2021"
+        ],
+        "answer": 1,
+        "explanation": "The first edition was conducted in November 2019 at Visakhapatnam and Kakinada."
+      },
+      {
+        "question": "Which two countries participate in Exercise Tiger Triumph?",
+        "options": [
+          "India and France",
+          "India and Japan",
+          "India and the United States"
+        ],
+        "answer": 2,
+        "explanation": "Tiger Triumph is a bilateral tri-service military exercise between India and the United States."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-05T15:17:31"
+  },
+  {
+    "id": "ca-2026-11-005-003",
+    "date": "2026-11-05",
+    "category": "Important Days",
+    "question": "On which date is World Tsunami Awareness Day observed every year?",
+    "options": [
+      "4 November",
+      "5 November",
+      "6 November",
+      "7 November"
+    ],
+    "answer": 1,
+    "explanation": "World Tsunami Awareness Day is observed on 5 November to increase awareness about tsunamis. The United Nations General Assembly established the day in 2015.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "In which year was World Tsunami Awareness Day established by the United Nations General Assembly?",
+        "options": [
+          "2013",
+          "2015",
+          "2017"
+        ],
+        "answer": 1,
+        "explanation": "The United Nations General Assembly established World Tsunami Awareness Day in 2015."
+      },
+      {
+        "question": "What is the 2026 theme of World Tsunami Awareness Day given in the PDF?",
+        "options": [
+          "Be Tsunami Ready - Resilience Starts With You",
+          "Early Warning for All",
+          "Building a Safer Ocean"
+        ],
+        "answer": 0,
+        "explanation": "The 2026 theme is “Be Tsunami Ready - Resilience Starts With You”."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-05T15:17:31"
+  },
+  {
+    "id": "ca-2026-11-005-004",
+    "date": "2026-11-05",
+    "category": "Space",
+    "question": "In which state is India's upcoming second spaceport, Kulasekarapattinam, located?",
+    "options": [
+      "Andhra Pradesh",
+      "Tamil Nadu",
+      "Odisha",
+      "Kerala"
+    ],
+    "answer": 1,
+    "explanation": "The Kulasekarapattinam SSLV Launch Complex is being developed in Thoothukudi district of Tamil Nadu for launching small satellites.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "Which launch vehicle will primarily use the Kulasekarapattinam launch complex?",
+        "options": [
+          "PSLV",
+          "GSLV",
+          "SSLV"
+        ],
+        "answer": 2,
+        "explanation": "The new launch complex will primarily be used for Small Satellite Launch Vehicle (SSLV) missions."
+      },
+      {
+        "question": "Where is India's main operational space launch centre, Satish Dhawan Space Centre, located?",
+        "options": [
+          "Sriharikota, Andhra Pradesh",
+          "Thoothukudi, Tamil Nadu",
+          "Thiruvananthapuram, Kerala"
+        ],
+        "answer": 0,
+        "explanation": "Satish Dhawan Space Centre (SDSC) is located at Sriharikota in Andhra Pradesh."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-05T15:17:31"
+  },
+  {
+    "id": "ca-2026-11-005-005",
+    "date": "2026-11-05",
+    "category": "Books and Authors",
+    "question": "Who authored the book Arunachal - East-West Centre?",
+    "options": [
+      "Ramachandra Guha",
+      "Sanjeev Sanyal",
+      "Shiv Kunal Verma",
+      "Vikram Sampath"
+    ],
+    "answer": 2,
+    "explanation": "The book was written by military historian and author Shiv Kunal Verma. Its three volumes were released on 2 November 2026 in New Delhi.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "Shiv Kunal Verma is primarily known as which of the following?",
+        "options": [
+          "Military historian and writer",
+          "Economist and diplomat",
+          "Classical dancer"
+        ],
+        "answer": 0,
+        "explanation": "Shiv Kunal Verma is an Indian military historian, writer and documentary filmmaker."
+      },
+      {
+        "question": "Which organisation was founded by Shiv Kunal Verma?",
+        "options": [
+          "Bhanja Kala Kendra",
+          "Fortress India",
+          "Geological Survey of India"
+        ],
+        "answer": 1,
+        "explanation": "Shiv Kunal Verma is the founder and president of Fortress India."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-05T15:17:31"
+  },
+  {
+    "id": "ca-2026-11-005-006",
+    "date": "2026-11-05",
+    "category": "Science and Personalities",
+    "question": "Padma Shri Dr Ashok Kumar Mahapatra, who passed away recently, was an expert in which field?",
+    "options": [
+      "Cardiac surgery",
+      "Neurosurgery",
+      "Agricultural science",
+      "Space science"
+    ],
+    "answer": 1,
+    "explanation": "Dr Ashok Kumar Mahapatra was a renowned neurosurgeon, particularly known for his contribution to neurosurgery and paediatric neurosurgery.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "Dr Ashok Kumar Mahapatra served as the founding director of which institution?",
+        "options": [
+          "AIIMS Bhubaneswar",
+          "AIIMS Jodhpur",
+          "AIIMS Rishikesh"
+        ],
+        "answer": 0,
+        "explanation": "He was the founding director of AIIMS Bhubaneswar."
+      },
+      {
+        "question": "In which year was Dr Ashok Kumar Mahapatra awarded the Padma Shri?",
+        "options": [
+          "2023",
+          "2024",
+          "2025"
+        ],
+        "answer": 2,
+        "explanation": "He received the Padma Shri in 2025."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-05T15:17:31"
+  },
+  {
+    "id": "ca-2026-11-005-007",
+    "date": "2026-11-05",
+    "category": "National and Aviation",
+    "question": "The Bharatiya Vayuyan Niyam, 2026 will replace which previous rules?",
+    "options": [
+      "Aircraft Act, 1934",
+      "Aircraft Rules, 1937",
+      "Bharatiya Vayuyan Adhiniyam, 2024",
+      "Civil Aviation Rules, 1945"
+    ],
+    "answer": 1,
+    "explanation": "The Bharatiya Vayuyan Niyam, 2026 will replace the Aircraft Rules, 1937 and are scheduled to come into force on 1 January 2027.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "Which law replaced the Aircraft Act, 1934?",
+        "options": [
+          "Bharatiya Vayuyan Adhiniyam, 2024",
+          "Bharatiya Vayuyan Niyam, 2026",
+          "Aircraft Rules, 1937"
+        ],
+        "answer": 0,
+        "explanation": "The Bharatiya Vayuyan Adhiniyam, 2024 replaced the Aircraft Act, 1934."
+      },
+      {
+        "question": "From which date are the Bharatiya Vayuyan Niyam, 2026 scheduled to come into force?",
+        "options": [
+          "1 January 2026",
+          "1 January 2027",
+          "1 April 2027"
+        ],
+        "answer": 1,
+        "explanation": "The PDF states that the new rules will come into force on 1 January 2027."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-05T15:17:31"
+  },
+  {
+    "id": "ca-2026-11-005-008",
+    "date": "2026-11-05",
+    "category": "Culture and Festivals",
+    "question": "Where was the 29th Vedvyas Sangeet Nrutyotsav 2026 held?",
+    "options": [
+      "Mysuru, Karnataka",
+      "Rourkela, Odisha",
+      "Thanjavur, Tamil Nadu",
+      "Guwahati, Assam"
+    ],
+    "answer": 1,
+    "explanation": "The five-day festival was held from 1 to 5 November 2026 at the open stage of Bhanja Bhawan in Rourkela, Odisha.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "The 2026 edition of Vedvyas Sangeet Nrutyotsav was dedicated to whose birth centenary?",
+        "options": [
+          "Kelucharan Mohapatra",
+          "Birju Maharaj",
+          "Rukmini Devi Arundale"
+        ],
+        "answer": 0,
+        "explanation": "The 2026 edition was dedicated to the birth centenary of Odissi guru Padma Vibhushan Kelucharan Mohapatra."
+      },
+      {
+        "question": "Which organisation organises the Vedvyas Sangeet Nrutyotsav?",
+        "options": [
+          "Bhanja Kala Kendra",
+          "Sangeet Natak Akademi",
+          "Lalit Kala Akademi"
+        ],
+        "answer": 0,
+        "explanation": "The festival is organised by Bhanja Kala Kendra, the cultural wing of Bhanja Cultural Trust."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-05T15:17:31"
+  },
+  {
+    "id": "ca-2026-11-005-009",
+    "date": "2026-11-05",
+    "category": "National and Infrastructure",
+    "question": "The Nadi Sanjivani initiative, which aims to use suitable silt from rivers and water bodies in National Highway construction, is associated with which state?",
+    "options": [
+      "Uttar Pradesh",
+      "Bihar",
+      "West Bengal",
+      "Odisha"
+    ],
+    "answer": 1,
+    "explanation": "The Union Ministry of Road Transport and Highways and the Bihar government signed an agreement for the Nadi Sanjivani initiative on 3 November 2026.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "On which date was the agreement for the Nadi Sanjivani initiative signed?",
+        "options": [
+          "1 November 2026",
+          "2 November 2026",
+          "3 November 2026"
+        ],
+        "answer": 2,
+        "explanation": "The agreement was signed on 3 November 2026 in New Delhi."
+      },
+      {
+        "question": "What is the planned use of suitable silt excavated under the Nadi Sanjivani initiative?",
+        "options": [
+          "Filling material in National Highway construction",
+          "Manufacturing aircraft fuel",
+          "Producing solar panels"
+        ],
+        "answer": 0,
+        "explanation": "Silt found suitable after technical testing will be used as filling material in National Highway construction."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-05T15:17:31"
+  },
+  {
+    "id": "ca-2026-11-005-010",
+    "date": "2026-11-05",
+    "category": "Agriculture and Animal Husbandry",
+    "question": "In which state has a Centre of Excellence been announced for the conservation and development of the indigenous Siri cattle breed?",
+    "options": [
+      "Assam",
+      "Sikkim",
+      "Himachal Pradesh",
+      "Uttarakhand"
+    ],
+    "answer": 1,
+    "explanation": "A Centre of Excellence for the conservation and development of the indigenous Siri cattle breed was announced during the Union Minister's visit to Sikkim.",
+    "questionImageSize": "large",
+    "subQuestions": [
+      {
+        "question": "Siri cattle are mainly found in which regions according to the PDF?",
+        "options": [
+          "Sikkim and the Darjeeling region of West Bengal",
+          "Punjab and Haryana",
+          "Kerala and Tamil Nadu"
+        ],
+        "answer": 0,
+        "explanation": "The Siri cattle breed is mainly found in Sikkim and the Darjeeling region of West Bengal."
+      },
+      {
+        "question": "Which of the following best describes the Siri cattle breed?",
+        "options": [
+          "Indigenous dual-purpose breed",
+          "Exotic dairy-only breed",
+          "Imported draught-only breed"
+        ],
+        "answer": 0,
+        "explanation": "The PDF describes Siri as an indigenous dual-purpose breed used for milk production and agricultural work."
+      }
+    ],
+    "questionImage": "",
+    "questionImageId": "",
+    "questionImageName": "",
+    "source": "user-upload",
+    "createdAt": "2026-11-05T15:17:31"
   }
 ]

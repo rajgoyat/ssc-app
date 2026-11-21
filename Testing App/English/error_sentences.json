@@ -1,5 +1,291 @@
 {
-  "errorQuestions": [],
+  "errorQuestions": [
+    {
+      "id": "err-mvyw1b7j-gzvtf",
+      "category": "Error Sentences",
+      "question": "Researchers working across several interdisciplinary departments frequently question whether the evidence collected from communities adequately reflect the social and cultural complexities.",
+      "options": [
+        "Researchers working across several interdisciplinary departments",
+        "frequently question whether",
+        "the evidence collected from communities",
+        "adequately reflect the social and cultural complexities"
+      ],
+      "answer": 3,
+      "explanation": "The noun 'evidence' is uncountable and takes a singular verb. Correct: 'adequately reflects the social and cultural complexities.'",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "err-mvyw1b7j-39uw8",
+      "category": "Error Sentences",
+      "question": "The committee is opposed to (1) / approve the proposal (2) / without conducting a detailed investigation (3) / into the matter (4).",
+      "options": [
+        "The committee is opposed to",
+        "approve the proposal",
+        "without conducting a detailed investigation",
+        "into the matter"
+      ],
+      "answer": 1,
+      "explanation": "The preposition 'to' must be followed by a gerund when it functions as a preposition. Correct: 'opposed to approving the proposal.'",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "err-mvyw1b7k-pb3wf",
+      "category": "Error Sentences",
+      "question": "The findings of the recent research indicate that the new evidence collected from rural areas strongly supports the hypothesis proposed by the researchers.",
+      "options": [
+        "The findings of the recent research",
+        "indicate that",
+        "the new evidence collected from rural areas",
+        "strongly supports the hypothesis proposed by the researchers"
+      ],
+      "answer": 3,
+      "explanation": "No error. 'Findings' is plural and takes 'indicate', while 'evidence' is singular and correctly takes 'supports'.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "err-mvyw1b7k-dta5k",
+      "category": "Error Sentences",
+      "question": "It was in the central library of the university where the researchers rare historical documents related to ancient Indian history.",
+      "options": [
+        "It was in the central library",
+        "of the university",
+        "where the researchers rare historical documents",
+        "related to ancient Indian history"
+      ],
+      "answer": 2,
+      "explanation": "The sentence is incomplete because the verb after 'the researchers' is missing. A possible correction is 'where the researchers discovered rare historical documents.' The cleft construction also requires 'that' rather than 'where' in standard formal usage: 'It was in the central library that the researchers discovered...'.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "err-mvyw1b7k-pzank",
+      "category": "Error Sentences",
+      "question": "Whether the proposed reforms will improve administrative efficiency or remain uncertain despite the optimistic projections presented by the policy committee.",
+      "options": [
+        "Whether the proposed reforms",
+        "will improve administrative efficiency",
+        "or remain uncertain",
+        "despite the optimistic projections presented by the policy committee"
+      ],
+      "answer": 2,
+      "explanation": "The sentence lacks a proper main predicate. Correct: 'Whether the proposed reforms will improve administrative efficiency remains uncertain despite the optimistic projections presented by the policy committee.'",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "err-mvyw1b7k-zaxhz",
+      "category": "Error Sentences",
+      "question": "That the Delhi High Court came down heavily on the authorities has raised serious concerns about the violation of legal procedures in recent hearings.",
+      "options": [
+        "That the Delhi High Court",
+        "came down heavily on the authorities",
+        "has raised serious concerns",
+        "about the violation of legal procedures in recent hearings"
+      ],
+      "answer": 3,
+      "explanation": "No error. The entire 'That...' clause acts as a singular subject, so 'has raised' is correct. 'Come down heavily on' is an idiomatic expression.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "err-mvyw1b7k-7yh5r",
+      "category": "Error Sentences",
+      "question": "All that is needed for the bill to pass is a simple majority and a signature from the presiding officer following the vote.",
+      "options": [
+        "All that is needed",
+        "for the bill to pass",
+        "is a simple majority",
+        "and a signature from the presiding officer following the vote"
+      ],
+      "answer": 3,
+      "explanation": "No error. 'All that is needed' functions as a singular subject. The verb 'is' is correct.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "err-mvyw1b7k-yagme",
+      "category": "Error Sentences",
+      "question": "It was at the summit in Vienna where the treaty was officially ratified, thereby bringing to an end years of political uncertainty in the region.",
+      "options": [
+        "It was at the summit in Vienna",
+        "where the treaty was officially ratified",
+        "thereby bringing to an end",
+        "years of political uncertainty in the region"
+      ],
+      "answer": 1,
+      "explanation": "In this cleft construction, 'that' is preferred instead of 'where'. Correct: 'It was at the summit in Vienna that the treaty was officially ratified.'",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "err-mvyw1b7k-tmlne",
+      "category": "Error Sentences",
+      "question": "Being a UNESCO World Heritage Site (A) / thousands of visitors explore Hampi (B) / during the winter months (C) / No error (D).",
+      "options": [
+        "Being a UNESCO World Heritage Site",
+        "thousands of visitors explore Hampi",
+        "during the winter months",
+        "No error"
+      ],
+      "answer": 0,
+      "explanation": "Dangling modifier error. The introductory phrase 'Being a UNESCO World Heritage Site' must describe Hampi, not thousands of visitors. Correct: 'Being a UNESCO World Heritage Site, Hampi attracts thousands of visitors during the winter months.'",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "err-mvyw1b7l-pydox",
+      "category": "Error Sentences",
+      "question": "Being an honest teacher (A) / Mr Verma is admired (B) / for his fair and impartial decisions (C) / No error (D).",
+      "options": [
+        "Being an honest teacher",
+        "Mr Verma is admired",
+        "for his fair and impartial decisions",
+        "No error"
+      ],
+      "answer": 3,
+      "explanation": "No error. The introductory phrase correctly describes Mr Verma. The passive construction 'is admired' is also correct.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "err-mvyw1b7l-hgnvc",
+      "category": "Error Sentences",
+      "question": "Many researchers admire the birds (A) / for their ability to travel thousands of miles during migration (B) / but very few people understand why birds do so (C) / No error (D).",
+      "options": [
+        "Many researchers admire the birds",
+        "for their ability to travel thousands of miles during migration",
+        "but very few people understand why birds do so",
+        "No error"
+      ],
+      "answer": 3,
+      "explanation": "No error. The sentence is grammatically correct. 'Their' refers to birds, and 'do so' correctly replaces the action of travelling thousands of miles.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "err-mvyw1b7l-7lgql",
+      "category": "Error Sentences",
+      "question": "Each of the participants (A) / who were invited to the international conference (B) / have been instructed to submit their research papers (C) / before the prescribed deadline (D).",
+      "options": [
+        "Each of the participants",
+        "who were invited to the international conference",
+        "have been instructed to submit their research papers",
+        "before the prescribed deadline"
+      ],
+      "answer": 2,
+      "explanation": "The main subject is 'Each', which takes a singular verb. 'Who' refers to the plural noun 'participants', so 'were' is correct. Correct: 'Each of the participants who were invited ... has been instructed.'",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "err-mvyw1b7l-oj2wn",
+      "category": "Error Sentences",
+      "question": "Each of the employees who (A) / has completed the mandatory training sessions (B) / are eligible to apply for the senior positions (C) / announced by the management (D).",
+      "options": [
+        "A only",
+        "B only",
+        "C only",
+        "B and C"
+      ],
+      "answer": 3,
+      "explanation": "'Who' refers to 'employees', a plural noun, so 'has' must be corrected to 'have'. The main subject 'Each' is singular, so 'are' must be corrected to 'is'. Correct: 'Each of the employees who have completed the mandatory training sessions is eligible...'.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "err-mvyw1b7l-p100k",
+      "category": "Error Sentences",
+      "question": "Each boy and each girl (A) / were asked (B) / to submit (C) / the form online (D).",
+      "options": [
+        "Each boy and each girl",
+        "were asked",
+        "to submit",
+        "the form online"
+      ],
+      "answer": 1,
+      "explanation": "When 'each' is used before both nouns joined by 'and', the subject is treated as singular. Correct: 'Each boy and each girl was asked to submit the form online.'",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "err-mvyw1b7l-4km89",
+      "category": "Error Sentences",
+      "question": "Many a student (A) / were (B) / confused (C) / by the new rule (D).",
+      "options": [
+        "Many a student",
+        "were",
+        "confused",
+        "by the new rule"
+      ],
+      "answer": 1,
+      "explanation": "'Many a' is followed by a singular noun and a singular verb. Correct: 'Many a student was confused by the new rule.'",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "err-mvyw1b7l-7sxmg",
+      "category": "Error Sentences",
+      "question": "The principal (A) / as well as the teachers (B) / have agreed (C) / to the proposal (D).",
+      "options": [
+        "The principal",
+        "as well as the teachers",
+        "have agreed",
+        "to the proposal"
+      ],
+      "answer": 2,
+      "explanation": "The phrase 'as well as the teachers' does not change the number of the main subject 'principal'. Therefore, 'have' must be replaced with 'has'.",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "err-mvyw1b7m-ebqvq",
+      "category": "Error Sentences",
+      "question": "The proposal which the board (A) / approved after several revisions (B) / are likely to improve (C) / the admission process significantly (D).",
+      "options": [
+        "The proposal which the board",
+        "approved after several revisions",
+        "are likely to improve",
+        "the admission process significantly"
+      ],
+      "answer": 2,
+      "explanation": "The main subject 'proposal' is singular. Therefore, 'are' must be replaced with 'is'. Correct: 'The proposal ... is likely to improve the admission process significantly.'",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "err-mvyw1b7n-3hfr9",
+      "category": "Error Sentences",
+      "question": "Neither of the two proposals (A) / were (B) / acceptable (C) / to the committee (D).",
+      "options": [
+        "Neither of the two proposals",
+        "were",
+        "acceptable",
+        "to the committee"
+      ],
+      "answer": 1,
+      "explanation": "'Neither of' traditionally takes a singular verb in formal examination grammar. Correct: 'Neither of the two proposals was acceptable to the committee.'",
+      "pool": "new",
+      "subQuestions": []
+    },
+    {
+      "id": "err-mvyw1b7n-e95oo",
+      "category": "Error Sentences",
+      "question": "Q10. Which of the two sentences contains an error? (P) The macroeconomist argued that the sovereign wealth fund performed significantly better during the market crash than anyone had dare predicted. (Q) The clinical trials indicated that the newly formulated neuroprotective drug suppressed cellular apoptosis far more effectively than any existing therapeutic alternative ever could.",
+      "options": [
+        "Only P",
+        "Only Q",
+        "Both P and Q",
+        "Neither P nor Q"
+      ],
+      "answer": 0,
+      "explanation": "Sentence P contains an error. 'Had' requires the past participle 'dared', but the complete correct construction is 'than anyone had dared to predict'. Sentence Q is grammatically correct. 'Could' appropriately expresses the ability or possibility of achieving the same result.",
+      "pool": "new",
+      "subQuestions": []
+    }
+  ],
   "moreQuestions": [
     {
       "id": "more-mtwxsu4s-h2mhb",

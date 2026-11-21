@@ -1213,7 +1213,7 @@
     "id": "muyviatyll1e0d",
     "order": 114,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": false
   },
   {
     "category": "Series",
@@ -2182,7 +2182,7 @@
     "id": "muyviatzycwk7x",
     "order": 165,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": false
   },
   {
     "category": "Series",
@@ -2429,6 +2429,6 @@
     "id": "muyviatz0fn7d7",
     "order": 178,
     "attemptStatus": "unattempted",
-    "testAllowed": true
+    "testAllowed": false
   }
 ]

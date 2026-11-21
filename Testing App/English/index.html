@@ -3656,6 +3656,68 @@ body.mcq-focus-mode .result-more-menu .action-menu-item{
   }
 }
 </style>
+<style>
+/* ===== CATEGORY MULTI-SELECT ===== */
+.cat-multi{position:relative;display:inline-block}
+.cat-multi summary{list-style:none;cursor:pointer;min-height:36px;padding:0 12px;display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:12px;background:#0a111b;color:#cbd5e3;font:700 10px "Segoe UI",sans-serif;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cat-multi summary::-webkit-details-marker{display:none}
+.cat-multi[open] summary{border-color:rgba(106,214,200,.45);color:#8ee7dc}
+.cat-pop{position:absolute;left:0;bottom:calc(100% + 6px);z-index:200;min-width:220px;max-height:270px;overflow:auto;padding:8px;border:1px solid var(--line2);border-radius:12px;background:#0c1420;box-shadow:0 18px 48px rgba(0,0,0,.5)}
+.cat-opt{display:flex;align-items:center;gap:8px;padding:7px 8px;border-radius:8px;cursor:pointer;color:#dce5f2;font:600 11px "Segoe UI",sans-serif}
+.cat-opt:hover{background:rgba(106,214,200,.10)}
+.cat-opt input{accent-color:#6ad6c8;width:15px;height:15px}
+.cat-opt small{margin-left:auto;color:#738198;font:700 9px "Courier New",monospace}
+.cat-hint{padding:4px 8px 6px;color:#738198;font:600 9px "Segoe UI",sans-serif}
+@media(max-width:640px){.cat-multi{width:100%}.cat-multi summary{max-width:none;width:100%}.cat-pop{width:100%}}
+</style>
+<style>
+/* ===== PREV BUTTON ===== */
+.main-card-prev-btn{position:absolute;right:134px;bottom:22px;z-index:4;width:90px;min-width:60px;height:45px;padding:0;border-radius:22px;font-family:"Courier New",monospace;font-size:14px;letter-spacing:.5px;background:#111b29;color:#cbd5e3;border:1px solid var(--line2);box-shadow:none}
+.main-card-prev-btn:hover{background:#17243a;filter:none}
+.main-card-prev-btn:disabled{opacity:.35;cursor:not-allowed}
+.alertbox.section-collapsed .main-card-prev-btn{display:none}
+@media(max-width:640px){.main-card-prev-btn{right:84px;bottom:15px;width:70px;min-width:60px;height:35px;font-size:11px}}
+</style>
+<style>
+/* ===== FIXED NEXT BUTTON POSITION ===== */
+/* 1) Pop animation sirf fade karta hai, card/button hilta nahi */
+@keyframes pop{0%{opacity:.35}100%{opacity:1}}
+/* 2) Card ki height fixed, isliye button hamesha same jagah rahega */
+.alertbox{display:flex;flex-direction:column;height:clamp(520px,74vh,700px);min-height:0}
+.alertbox.section-collapsed{height:auto}
+.alerttop{flex:0 0 auto}
+.alertbody{flex:1 1 auto;min-height:0;overflow-y:auto;justify-content:flex-start}
+/* text chhota ho to beech me, lamba ho to scroll */
+.alertbody>:first-child{margin-top:auto}
+.alertbody>:last-child{margin-bottom:auto}
+@media(max-width:980px){.alertbox{height:clamp(480px,72vh,640px)}}
+@media(max-width:640px){.alertbox{height:clamp(460px,74vh,620px)}}
+</style>
+<style>
+/* ===== DELETE WORD ===== */
+.editcur-btn.del{color:#ff9b8d;border-color:rgba(255,118,106,.30);padding:0 10px}
+.editcur-btn.del:hover{background:rgba(255,118,106,.14)}
+.deletebtn{flex:0 0 auto;min-height:38px;border-radius:10px;padding:0 14px;background:rgba(255,118,106,.08);color:#ff9b8d;border:1px solid rgba(255,118,106,.30);font:800 9px "Segoe UI",sans-serif;letter-spacing:.7px;text-transform:uppercase;cursor:pointer}
+.deletebtn:hover{background:rgba(255,118,106,.16)}
+</style>
+<style>
+/* ===== MOVE BACK CHOICE DIALOG ===== */
+.move-choice-overlay{position:fixed;inset:0;z-index:2147483200;display:flex;align-items:center;justify-content:center;padding:18px;background:rgba(2,6,11,.72);backdrop-filter:blur(6px)}
+.move-choice-card{width:min(420px,100%);padding:18px;border:1px solid var(--line2);border-radius:16px;background:linear-gradient(165deg,#111a27,#090f18);box-shadow:0 30px 90px rgba(0,0,0,.55)}
+.move-choice-title{font:800 15px "Segoe UI",sans-serif;color:#f2f5fa;margin-bottom:6px}
+.move-choice-text{font:500 12px/1.55 "Segoe UI",sans-serif;color:#9aa8bb;margin-bottom:14px}
+.move-choice-actions{display:grid;gap:8px}
+.move-choice-actions .small-tool-btn{min-height:42px;width:100%}
+</style>
+<style>
+/* ===== HINDI DELAY ===== */
+.word-hi{transition:opacity .35s ease}
+.hindi-delay-box{position:absolute;left:24px;bottom:28px;z-index:4;display:inline-flex;align-items:center;gap:6px;padding:4px 8px;border:1px solid var(--line);border-radius:10px;background:rgba(10,17,27,.85);color:#8f9bad;font:700 9px "Courier New",monospace}
+.hindi-delay-box input{width:40px;height:24px;padding:0 3px;border-radius:7px;border:1px solid var(--line2);background:#0a111b;color:var(--ink);text-align:center;font:700 10px "Courier New",monospace;outline:none}
+.hindi-delay-box input:focus{border-color:rgba(106,214,200,.6)}
+.alertbox.section-collapsed .hindi-delay-box{display:none}
+@media(max-width:640px){.hindi-delay-box{left:12px;bottom:18px}}
+</style>
 </head>
 
 <body>
@@ -3702,6 +3764,7 @@ body.mcq-focus-mode .result-more-menu .action-menu-item{
         </span>
         <button class="learned-btn" id="learnedBtn" title="Move word between New and Old" aria-label="Move word between new and old">✓</button>
         <button class="editcur-btn" id="editCurrentBtn" title="Edit this word">✎ Edit</button>
+        <button class="editcur-btn del" id="deleteCurrentBtn" type="button" title="Delete this word" aria-label="Delete this word">🗑</button>
         <span id="wnum">#1</span>
         <button class="section-toggle-btn" type="button" data-collapse-section="box">− Hide</button>
       </span>
@@ -3740,6 +3803,12 @@ body.mcq-focus-mode .result-more-menu .action-menu-item{
 
     </div>
 
+    <button class="btn main-card-prev-btn" id="prevBtn" type="button" title="Previous word" aria-label="Previous word">← Prev</button>
+    <label class="hindi-delay-box" title="Revision me Next dabane ke kitne second baad Hindi meaning dikhe (0 = turant). Test me turant dikhti hai">
+      <span>Hindi</span>
+      <input type="number" id="hindiDelayInput" min="0" max="60" step="0.5" value="2" inputmode="decimal" aria-label="Hindi meaning delay in seconds">
+      <span>sec</span>
+    </label>
     <button
       class="btn main-card-next-btn"
       id="nextBtn"
@@ -3764,7 +3833,7 @@ body.mcq-focus-mode .result-more-menu .action-menu-item{
       <span id="wordsPerRoundLabel">words</span>
     </label>
     <label class="round-setting" title="How many times each word-set will be tested">
-      <input type="number" id="testRoundsInput" min="1" max="20" value="1" aria-label="Test rounds">
+      <input type="number" id="testRoundsInput" min="1" max="40" value="1" aria-label="Test rounds">
       <span id="roundLabel">round</span>
     </label>
     <span class="auto-play-control" id="autoPlayControl" title="Show the selected Vocab / Idioms / Mix automatically without entering test mode">
@@ -3774,6 +3843,10 @@ body.mcq-focus-mode .result-more-menu .action-menu-item{
       <button class="auto-play-btn" id="autoPlayToggleBtn" type="button">▶ Start</button>
       <span class="auto-play-countdown" id="autoPlayCountdown">Off</span>
     </span>
+    <details class="cat-multi" id="catMulti" title="Study / test one or more categories">
+      <summary id="catSummary">Cat: All</summary>
+      <div class="cat-pop" id="catPop"></div>
+    </details>
     <span class="pool-switch" title="Choose which array to revise/test">
       <button class="pool-btn active" id="newPoolBtn" type="button">New</button>
       <button class="pool-btn" id="oldPoolBtn" type="button">Old</button>
@@ -3900,6 +3973,11 @@ body.mcq-focus-mode .result-more-menu .action-menu-item{
         </div>
 
 
+        <div class="field">
+          <label>Categories (comma separated, empty = Normal)</label>
+          <input type="text" id="editCats" list="categoryList">
+        </div>
+
         <div class="editbtns">
 
           <button
@@ -3915,6 +3993,7 @@ body.mcq-focus-mode .result-more-menu .action-menu-item{
           >
             Cancel
           </button>
+          <button class="deletebtn" id="deleteEditBtn" type="button">🗑 Delete</button>
 
         </div>
 
@@ -3947,6 +4026,11 @@ body.mcq-focus-mode .result-more-menu .action-menu-item{
       </div>
 
       <div class="new-array-wrap" id="newArrayWrap">
+        <div class="field" id="bulkCatField" style="display:none">
+          <label>Category (optional) - multiple: C1, C2 &nbsp;|&nbsp; empty = Normal</label>
+          <input type="text" id="bulkCategoryInput" list="categoryList" placeholder="e.g. C1 or C1, C2">
+          <datalist id="categoryList"></datalist>
+        </div>
         <div class="array-help" id="arrayHelp">
           Choose Word or Idiom. The correct array format will appear here.
         </div>
@@ -4181,6 +4265,119 @@ let OLD_IDIOM_WORDS = [];
 let quizPoolMode = "new";
 let contentMode = "vocab";
 
+// ===== CATEGORIES =====
+// A word keeps its categories inside ONE object: { en:"..", cats:["C1","C2"] }.
+// No cats field = "Normal" (all old words are automatically Normal).
+const NORMAL_CAT = "Normal";
+let activeCats = new Set();   // lowercase keys; empty set = ALL categories
+let __catSig = "";
+let __catKeys = [];
+
+function parseCats(v){
+  const arr = Array.isArray(v) ? v : String(v || "").split(",");
+  const seen = new Set(), out = [];
+  arr.forEach(x => {
+    const t = String(x).trim();
+    const k = t.toLowerCase();
+    if(!t || k === NORMAL_CAT.toLowerCase() || seen.has(k)) return;
+    seen.add(k); out.push(t);
+  });
+  return out;
+}
+function wordCats(w){
+  const c = parseCats(w && w.cats);
+  return c.length ? c : [NORMAL_CAT];
+}
+function matchesCategory(w){
+  if(!activeCats.size) return true;
+  return wordCats(w).some(c => activeCats.has(c.toLowerCase()));
+}
+function activeCatKey(){
+  return activeCats.size ? [...activeCats].sort().join("|") : "__all__";
+}
+function __rawCountPool(){
+  const v = quizPoolMode === "old" ? OLD_WORDS : WORDS;
+  const i = quizPoolMode === "old" ? OLD_IDIOM_WORDS : IDIOM_WORDS;
+  if(contentMode === "idioms") return i;
+  if(contentMode === "mix") return [...v, ...i];
+  return v;
+}
+function getAllCategories(){
+  const map = new Map();
+  [...WORDS, ...OLD_WORDS, ...IDIOM_WORDS, ...OLD_IDIOM_WORDS].forEach(w =>
+    wordCats(w).forEach(c => { if(!map.has(c.toLowerCase())) map.set(c.toLowerCase(), c); })
+  );
+  return [...map.values()].sort((a,b) => {
+    if(a === NORMAL_CAT) return -1;
+    if(b === NORMAL_CAT) return 1;
+    return a.localeCompare(b, "en", {numeric:true, sensitivity:"base"});
+  });
+}
+function refreshCategoryUI(){
+  const pop = document.getElementById("catPop");
+  const summary = document.getElementById("catSummary");
+  const dl = document.getElementById("categoryList");
+  if(!pop || !summary) return;
+
+  const cats = getAllCategories();
+  const valid = new Set(cats.map(c => c.toLowerCase()));
+  [...activeCats].forEach(k => { if(!valid.has(k)) activeCats.delete(k); });
+
+  const counts = new Map();
+  __rawCountPool().forEach(w => wordCats(w).forEach(c => {
+    const k = c.toLowerCase();
+    counts.set(k, (counts.get(k) || 0) + 1);
+  }));
+
+  const sig = JSON.stringify([cats, [...counts], [...activeCats].sort(), quizPoolMode, contentMode]);
+
+  // Summary text
+  if(!activeCats.size) summary.textContent = "Cat: All";
+  else{
+    const names = cats.filter(c => activeCats.has(c.toLowerCase()));
+    summary.textContent = names.length <= 2 ? "Cat: " + names.join(", ") : "Cat: " + names.length + " selected";
+  }
+
+  if(dl) dl.innerHTML = cats.filter(c => c !== NORMAL_CAT).map(c => '<option value="' + escapeHtml(c) + '">').join("");
+
+  if(sig === __catSig) return;
+  __catSig = sig;
+
+  __catKeys = cats.map(c => c.toLowerCase());
+  let html = '<label class="cat-opt"><input type="checkbox" data-cat-i="all"' + (!activeCats.size ? " checked" : "") + '><span>All categories</span></label>' +
+             '<div class="cat-hint">Tick one or more categories</div>';
+  cats.forEach((c, i) => {
+    const k = c.toLowerCase();
+    html += '<label class="cat-opt"><input type="checkbox" data-cat-i="' + i + '"' + (activeCats.has(k) ? " checked" : "") + '><span>' +
+            escapeHtml(c) + '</span><small>' + (counts.get(k) || 0) + '</small></label>';
+  });
+  pop.innerHTML = html;
+}
+function applyCategoryChange(){
+  seriesCursor = 0;
+  roundNumber = 1;
+  resetRandomCycle();
+  if(!restartAutoPlayForCurrentSelection()) startRound(browseMode);
+}
+document.getElementById("catPop")?.addEventListener("change", e => {
+  const t = e.target;
+  if(!t || !t.matches || !t.matches("input[data-cat-i]")) return;
+  const i = t.getAttribute("data-cat-i");
+  if(i === "all") activeCats.clear();
+  else{
+    const key = __catKeys[Number(i)];
+    if(!key) return;
+    if(t.checked) activeCats.add(key); else activeCats.delete(key);
+  }
+  __catSig = "";
+  refreshCategoryUI();
+  applyCategoryChange();
+});
+document.addEventListener("click", e => {
+  const box = document.getElementById("catMulti");
+  if(box && box.open && !box.contains(e.target)) box.open = false;
+});
+
 let browseMode = "random";
 let browseIndex = 0;
 let seriesCursor = 0;
@@ -4379,12 +4576,26 @@ function sortWordArray(items){
   );
 }
 
+function cleanCitationMarkers(text){
+  return String(text ?? "").replace(/\s*\[span_\d+\]\((?:start_span|end_span)\)/g, "");
+}
+
+function cleanIdiomEntries(items){
+  return (Array.isArray(items) ? items : []).map(item => {
+    if(!item || typeof item !== "object" || Array.isArray(item)) return item;
+    const cleaned = {...item};
+    Object.keys(cleaned).forEach(key => {
+      if(typeof cleaned[key] === "string") cleaned[key] = cleanCitationMarkers(cleaned[key]);
+    });
+    return cleaned;
+  });
+}
 function buildServerPayload(){
   return {
-    words: WORDS,
-    idioms: IDIOM_WORDS,
-    oldWords: OLD_WORDS,
-    oldIdioms: OLD_IDIOM_WORDS,
+    words: sortWordArray(WORDS),
+    idioms: sortWordArray(cleanIdiomEntries(IDIOM_WORDS)),
+    oldWords: sortWordArray(OLD_WORDS),
+    oldIdioms: sortWordArray(cleanIdiomEntries(OLD_IDIOM_WORDS)),
     missingWords: missingWords
   };
 }
@@ -4397,7 +4608,7 @@ function applyLoadedData(obj){
   }
 
   if(Array.isArray(obj.idioms)){
-    const sortedIdioms = sortWordArray(obj.idioms);
+    const sortedIdioms = sortWordArray(cleanIdiomEntries(obj.idioms));
     IDIOM_WORDS.splice(0, IDIOM_WORDS.length, ...sortedIdioms);
   }
 
@@ -4406,7 +4617,7 @@ function applyLoadedData(obj){
     : [];
 
   OLD_IDIOM_WORDS = Array.isArray(obj.oldIdioms)
-    ? sortWordArray(obj.oldIdioms)
+    ? sortWordArray(cleanIdiomEntries(obj.oldIdioms))
     : [];
 
   missingWords = Array.isArray(obj.missingWords)
@@ -4705,7 +4916,7 @@ function randomWordKey(word){
 }
 
 function currentRandomCycleKey(){
-  return quizPoolMode + "::" + contentMode;
+  return quizPoolMode + "::" + contentMode + "::" + activeCatKey();
 }
 
 function resetRandomCycle(){
@@ -4759,12 +4970,16 @@ function nextRandomRound(pool){
 }
 
 
+function formatMainWord(value){
+  const text = String(value ?? "");
+  return text ? text.charAt(0).toLocaleUpperCase("en-US") + text.slice(1) : "";
+}
+
 function showAnswerCard(word){
 
   currentWord = word;
 
-  wordEnEl.textContent =
-    word.en;
+  wordEnEl.textContent = formatMainWord(word.en);
 
   wordHiEl.textContent =
     word.hi || "";
@@ -4793,8 +5008,7 @@ function showQuestionCard(word){
 
   currentWord = word;
 
-  wordEnEl.textContent =
-    word.en;
+  wordEnEl.textContent = formatMainWord(word.en);
 
   wordHiEl.textContent =
     "???";
@@ -4815,11 +5029,32 @@ function showQuestionCard(word){
 }
 
 
+function sortIdiomsByLeadingNumber(items){
+  return [...items].sort((a,b) => {
+    const aText = String((a && a.en) || "");
+    const bText = String((b && b.en) || "");
+    const aMatch = aText.match(/^\s*(\d+)/);
+    const bMatch = bText.match(/^\s*(\d+)/);
+
+    if(aMatch && bMatch){
+      const difference = Number(aMatch[1]) - Number(bMatch[1]);
+      if(difference) return difference;
+    }else if(aMatch){
+      return -1;
+    }else if(bMatch){
+      return 1;
+    }
+
+    return aText.localeCompare(bText, "en", {sensitivity:"base", numeric:true});
+  });
+}
+
 function getQuizPool(){
-  const vocabPool = quizPoolMode === "old" ? OLD_WORDS : WORDS;
-  const idiomPool = quizPoolMode === "old" ? OLD_IDIOM_WORDS : IDIOM_WORDS;
-  if(contentMode === "idioms") return idiomPool;
-  if(contentMode === "mix") return [...vocabPool, ...idiomPool];
+  const vocabPool = (quizPoolMode === "old" ? OLD_WORDS : WORDS).filter(matchesCategory);
+  const idiomPool = (quizPoolMode === "old" ? OLD_IDIOM_WORDS : IDIOM_WORDS).filter(matchesCategory);
+  const seriesIdiomPool = browseMode === "series" ? sortIdiomsByLeadingNumber(idiomPool) : idiomPool;
+  if(contentMode === "idioms") return seriesIdiomPool;
+  if(contentMode === "mix") return [...vocabPool, ...seriesIdiomPool];
   return vocabPool;
 }
 
@@ -4846,6 +5081,7 @@ function updatePoolUI(){
   const newBtn = document.getElementById("newPoolBtn");
   const oldBtn = document.getElementById("oldPoolBtn");
   const poolCount = document.getElementById("poolCount");
+  refreshCategoryUI();
   newBtn?.classList.toggle("active", quizPoolMode === "new");
   oldBtn?.classList.toggle("active", quizPoolMode === "old");
   if(poolCount){
@@ -4884,7 +5120,7 @@ function updateLearnedButton(){
   );
 }
 
-async function toggleCurrentWordPool(){
+async function __legacyToggleCurrentWordPool(){
   if(!currentWord) return;
 
   const wasOld = OLD_WORDS.includes(currentWord);
@@ -5007,6 +5243,7 @@ function startRound(mode = browseMode){
     currentRoundWords = nextRandomRound(pool);
   }
 
+  if(!__keepHist){ histStack.length = 0; }
   currentPhase = PHASE.READ;
   readIndex = 0;
   testIndex = 0;
@@ -5047,8 +5284,88 @@ function testStatusText(doneCount = 0){
     " • " + doneCount + "/" + currentRoundWords.length;
 }
 
-function nextWord(resetTimer = true){
+// ===== PREVIOUS WORD (history) =====
+let histStack = [];
+let __keepHist = false;
 
+function pushHistory(){
+  histStack.push({
+    words: currentRoundWords,
+    phase: currentPhase,
+    readIndex: readIndex,
+    testIndex: testIndex,
+    testPass: testPass,
+    answerVisible: answerVisible,
+    roundNumber: roundNumber,
+    seriesCursor: seriesCursor
+  });
+  if(histStack.length > 300) histStack.shift();
+  updatePrevBtn();
+}
+
+function updatePrevBtn(){
+  const b = document.getElementById("prevBtn");
+  if(!b) return;
+  b.disabled = autoPlayActive ? autoPlayQueueIndex < 2 : histStack.length === 0;
+}
+
+function restoreSnapshot(s){
+  currentRoundWords = s.words;
+  currentPhase = s.phase;
+  readIndex = s.readIndex;
+  testIndex = s.testIndex;
+  testPass = s.testPass;
+  answerVisible = s.answerVisible;
+  roundNumber = s.roundNumber;
+  seriesCursor = s.seriesCursor;
+
+  const isRead = currentPhase === PHASE.READ;
+  const pos = isRead ? readIndex : testIndex;
+  const word = currentRoundWords[pos];
+  if(!word) return;
+
+  if(isRead || answerVisible) showAnswerCard(word); else showQuestionCard(word);
+
+  const idx = getQuizPool().indexOf(word);
+  wnumEl.textContent = idx >= 0 ? "#" + (idx + 1) : "#" + (pos + 1);
+
+  if(isRead){
+    countEl.textContent =
+      (quizPoolMode === "old" ? "Old" : "New") + " \u2022 " +
+      (browseMode === "series" ? "Series" : "Random") +
+      " \u2022 Round " + roundNumber +
+      " \u2022 Read " + (readIndex + 1) + "/" + currentRoundWords.length;
+    nextBtn.textContent = "Next \u2192";
+  }else{
+    countEl.textContent = testStatusText(testIndex);
+    nextBtn.textContent = answerVisible ? "Next \u2192" : "Show answer \u2192";
+  }
+  animateCard();
+  resetNormalTimer();
+}
+
+function prevWord(){
+  if(autoPlayActive){
+    if(autoPlayQueueIndex >= 2){
+      autoPlayQueueIndex -= 2;
+      showNextAutoPlayWord();
+      autoPlayRemainingSeconds = autoPlayIntervalSeconds;
+      updateAutoPlayCountdown();
+    }
+    updatePrevBtn();
+    return;
+  }
+  const s = histStack.pop();
+  if(!s){ updatePrevBtn(); return; }
+  restoreSnapshot(s);
+  updatePrevBtn();
+}
+
+document.getElementById("prevBtn")?.addEventListener("click", prevWord);
+setInterval(updatePrevBtn, 400);
+
+function nextWord(resetTimer = true){
+  pushHistory();
   animateCard();
 
   // ---------------- READ PHASE ----------------
@@ -5139,7 +5456,9 @@ function nextWord(resetTimer = true){
       seriesCursor = (seriesCursor + currentRoundWords.length) % getQuizPool().length;
     }
     roundNumber += 1;
+    __keepHist = true;
     startRound(browseMode);
+    __keepHist = false;
     return;
   }
 
@@ -5412,8 +5731,7 @@ function renderSearchResults(query){
       boxEl.style.animation =
         "pop .4s ease";
 
-      wordEnEl.textContent =
-        word.en;
+      wordEnEl.textContent = formatMainWord(word.en);
 
       showAnswerCard(word);
 
@@ -5727,6 +6045,8 @@ function selectBulkType(type){
   newErrorTypeBtn?.classList.toggle("active", bulkAddType === "error");
   newMoreTypeBtn?.classList.toggle("active", bulkAddType === "more");
   newArrayWrap?.classList.add("active");
+  const __catField = document.getElementById("bulkCatField");
+  if(__catField) __catField.style.display = (bulkAddType === "vocab" || bulkAddType === "idiom") ? "block" : "none";
 
   if(questionFormatChoice){
     questionFormatChoice.hidden = !isQuestionBulkType();
@@ -5748,6 +6068,8 @@ function normalizeBulkEntry(item){
   };
 
   if(!entry.en || !entry.meaning) return null;
+  const __c = parseCats(item.cats);
+  if(__c.length) entry.cats = __c;
   return entry;
 }
 
@@ -6703,7 +7025,7 @@ window.onEnglishQuestionEdited = function(context){
   }
 };
 
-async function uploadBulkArray(){
+async function uploadBulkArray(dupMode){
   if(!bulkAddType){
     bulkUploadMsg.style.color = "var(--red)";
     bulkUploadMsg.textContent = "First choose Word or Idiom.";
@@ -6745,9 +7067,45 @@ async function uploadBulkArray(){
     return;
   }
 
+  // ---- Duplicate words: ask Replace / Skip ----
+  if(dupMode !== "replace" && dupMode !== "skip"){
+    const __dups = validEntries.filter(e => findExistingWord(e.en, bulkAddType));
+    if(__dups.length){
+      const __names = [...new Set(__dups.map(e => e.en))];
+      bulkUploadMsg.style.color = "var(--gold)";
+      bulkUploadMsg.innerHTML =
+        '<div style="margin-bottom:8px;line-height:1.6">' +
+          validEntries.length + ' items: <b>' + (validEntries.length - __dups.length) + ' new</b> · <b>' + __dups.length + ' already in app</b><br>' +
+          escapeHtml(__names.slice(0, 12).join(", ")) + (__names.length > 12 ? " …" : "") +
+        '</div>' +
+        '<div class="array-actions">' +
+          '<button class="small-tool-btn accent" id="dupReplaceBtn" type="button">Replace old with new</button>' +
+          '<button class="small-tool-btn" id="dupSkipBtn" type="button">Skip duplicates</button>' +
+          '<button class="small-tool-btn danger" id="dupCancelBtn" type="button">Cancel</button>' +
+        '</div>';
+      document.getElementById("dupReplaceBtn").onclick = () => uploadBulkArray("replace");
+      document.getElementById("dupSkipBtn").onclick = () => uploadBulkArray("skip");
+      document.getElementById("dupCancelBtn").onclick = () => {
+        bulkUploadMsg.style.color = "var(--muted)";
+        bulkUploadMsg.textContent = "Upload cancelled.";
+      };
+      return;
+    }
+  }
+
   const target = bulkAddType === "idiom" ? IDIOM_WORDS : WORDS;
   const originalTarget = [...target];
   const originalMissing = [...missingWords];
+  const uploadCats = parseCats(document.getElementById("bulkCategoryInput")?.value);
+  const catBackups = [];
+  let catUpdated = 0;
+  let replacedCount = 0;
+  const replaceBackups = [];
+  function findExistingWord(en, type){
+    const key = String(en || "").trim().toLocaleLowerCase("en-US");
+    const pools = type === "idiom" ? [...IDIOM_WORDS, ...OLD_IDIOM_WORDS] : [...WORDS, ...OLD_WORDS];
+    return pools.find(i => String((i && i.en) || "").trim().toLocaleLowerCase("en-US") === key);
+  }
 
   let addedCount = 0;
   let skippedCount = 0;
@@ -6756,12 +7114,35 @@ async function uploadBulkArray(){
   validEntries.forEach(entry => {
     // Duplicate checking is based ONLY on the main English word (en).
     // Meaning, Hindi, sentence, synonyms, etc. are intentionally ignored.
-    if(wordExistsInType(entry.en, bulkAddType)){
+    const __cats = parseCats([...(entry.cats || []), ...uploadCats]);
+    const __ex = findExistingWord(entry.en, bulkAddType);
+    if(__ex && dupMode === "replace"){
+      // Overwrite the old word in place (it stays in its New / Old pool).
+      replaceBackups.push([__ex, {...__ex}]);
+      ["hi","meaning","sentence","syn","ant"].forEach(k => { if(entry[k]) __ex[k] = entry[k]; });
+      const __rc = parseCats([...parseCats(__ex.cats), ...__cats]);
+      if(__rc.length) __ex.cats = __rc;
+      replacedCount += 1;
+      return;
+    }
+    if(__ex){
+      // Word already in file: do NOT duplicate, just add the new category to it.
+      const __old = parseCats(__ex.cats);
+      const __merged = parseCats([...__old, ...__cats]);
+      if(__cats.length && __merged.length !== __old.length){
+        catBackups.push([__ex, __ex.cats]);
+        __ex.cats = __merged;
+        catUpdated += 1;
+        return;
+      }
+    }
+    if(__ex){
       skippedCount += 1;
       duplicateWords.push(entry.en);
       return;
     }
 
+    if(__cats.length) entry.cats = __cats; else delete entry.cats;
     target.push(entry);
     removeMissingItemLocal(entry.en, bulkAddType);
     addedCount += 1;
@@ -6775,7 +7156,7 @@ async function uploadBulkArray(){
     )
   );
 
-  if(!addedCount){
+  if(!addedCount && !catUpdated && !replacedCount){
     bulkUploadMsg.style.color = "var(--gold)";
     bulkUploadMsg.textContent =
       "Nothing new to add." +
@@ -6793,6 +7174,8 @@ async function uploadBulkArray(){
 
   if(!saved){
     target.splice(0, target.length, ...originalTarget);
+    replaceBackups.forEach(([obj, snap]) => { Object.keys(obj).forEach(k => delete obj[k]); Object.assign(obj, snap); });
+    catBackups.forEach(([obj, oldCats]) => { if(oldCats === undefined) delete obj.cats; else obj.cats = oldCats; });
     missingWords = originalMissing;
 
     bulkUploadMsg.style.color = "var(--red)";
@@ -6811,7 +7194,7 @@ async function uploadBulkArray(){
 
   bulkUploadMsg.style.color = "var(--teal)";
   bulkUploadMsg.textContent =
-    "Added " + addedCount +
+    "Added " + addedCount + (replacedCount ? " · Replaced " + replacedCount + " old" : "") + (catUpdated ? " · Category added to " + catUpdated + " existing" : "") +
     " · Skipped " + skippedCount +
     (duplicateWords.length
       ? " · Already present: " + duplicateWords.join(", ")
@@ -6979,7 +7362,7 @@ copyArrayFormatBtn?.addEventListener("click", async () => {
   bulkUploadMsg.textContent = ok ? "Format copied ✓" : "Copy failed.";
 });
 
-uploadArrayBtn?.addEventListener("click", uploadBulkArray);
+uploadArrayBtn?.addEventListener("click", () => uploadBulkArray());
 
 clearArrayBtn?.addEventListener("click", () => {
   bulkArrayInput.value = "";
@@ -7068,8 +7451,9 @@ function openEditForm(word){
   editSyn.value =
     word.syn || "";
 
-  editAnt.value =
-    word.ant || "";
+  editAnt.value = word.ant || "";
+  const __ec = document.getElementById("editCats");
+  if(__ec) __ec.value = parseCats(word.cats).join(", ");
 
   editMsg.textContent =
     "";
@@ -7126,8 +7510,11 @@ saveEditBtn.onclick = async () => {
   editingWord.syn =
     editSyn.value;
 
-  editingWord.ant =
-    editAnt.value;
+  editingWord.ant = editAnt.value;
+
+  const __newCats = parseCats(document.getElementById("editCats")?.value);
+  if(__newCats.length) editingWord.cats = __newCats; else delete editingWord.cats;
+  refreshCategoryUI();
 
 
   if(
@@ -7632,6 +8019,414 @@ async function initializeEnglishApp(){
     renderSearchResults(searchInput.value);
   }
 }
+
+// ---------- Delete word ----------
+async function deleteWordEntry(word){
+  if(!word) return false;
+
+  const pool = [WORDS, OLD_WORDS, IDIOM_WORDS, OLD_IDIOM_WORDS].find(p => p.includes(word));
+  if(!pool){
+    alert("Ye word delete nahi ho sakta (list me nahi mila).");
+    return false;
+  }
+
+  const ok = window.confirm('Delete "' + (word.en || "") + '"?\n\nYe word file se hamesha ke liye hat jayega.');
+  if(!ok) return false;
+
+  const index = pool.indexOf(word);
+  pool.splice(index, 1);
+
+  const saved = await saveServerData();
+  if(!saved){
+    pool.splice(index, 0, word);   // rollback
+    alert("Delete fail hua: " + (lastServerError || "Server error"));
+    return false;
+  }
+
+  if(typeof editingWord !== "undefined" && editingWord === word) closeEditForm();
+  currentRoundWords = currentRoundWords.filter(w => w !== word);
+  currentWord = null;
+
+  updatePoolUI();
+  fillTopWordSuggestions();
+  renderSearchResults(searchInput?.value || "");
+
+  // Fresh round start, taaki deleted word kahin na aaye.
+  roundNumber = 1;
+  resetRandomCycle();
+  if(!restartAutoPlayForCurrentSelection()) startRound(browseMode);
+
+  // Agar pool bilkul khali ho gaya to card saaf kar do.
+  if(!getQuizPool().length){
+    wordEnEl.textContent = "";
+    wordHiEl.textContent = "";
+    meaningEl.textContent = "";
+    sentenceEl.textContent = "";
+    synEl.textContent = "";
+    antEl.textContent = "";
+    updateLearnedButton();
+  }
+  return true;
+}
+
+document.getElementById("deleteCurrentBtn")?.addEventListener("click", () => deleteWordEntry(currentWord));
+document.getElementById("deleteEditBtn")?.addEventListener("click", () => deleteWordEntry(editingWord));
+
+// ---------- Learned / Move-back: round se turant remove ----------
+let __poolMoveBusy = false;
+
+function __sortByEn(arr){
+  arr.sort((a,b) => String((a && a.en) || "").localeCompare(String((b && b.en) || ""), "en", {sensitivity:"base"}));
+}
+
+function __movePoolArrays(word){
+  let from, to;
+  if(WORDS.includes(word)){ from = WORDS; to = OLD_WORDS; }
+  else if(OLD_WORDS.includes(word)){ from = OLD_WORDS; to = WORDS; }
+  else if(IDIOM_WORDS.includes(word)){ from = IDIOM_WORDS; to = OLD_IDIOM_WORDS; }
+  else if(OLD_IDIOM_WORDS.includes(word)){ from = OLD_IDIOM_WORDS; to = IDIOM_WORDS; }
+  else return null;
+  const index = from.indexOf(word);
+  from.splice(index, 1);
+  if(!to.includes(word)) to.push(word);
+  __sortByEn(to);
+  return {from, to, index};
+}
+
+function __undoMove(word, rec){
+  const i = rec.to.indexOf(word);
+  if(i >= 0) rec.to.splice(i, 1);
+  rec.from.splice(Math.min(rec.index, rec.from.length), 0, word);
+}
+
+function oldWordsInScope(){
+  const v = OLD_WORDS.filter(matchesCategory);
+  const i = OLD_IDIOM_WORDS.filter(matchesCategory);
+  if(contentMode === "idioms") return i;
+  if(contentMode === "mix") return [...v, ...i];
+  return v;
+}
+
+function clearCardIfPoolEmpty(){
+  if(getQuizPool().length) return;
+  currentWord = null;
+  wordEnEl.textContent = "";
+  wordHiEl.textContent = "";
+  meaningEl.textContent = "";
+  sentenceEl.textContent = "";
+  synEl.textContent = "";
+  antEl.textContent = "";
+  updateLearnedButton();
+}
+
+function removeWordFromCurrentRound(word){
+  const idx = currentRoundWords.indexOf(word);
+  if(idx < 0) return false;
+
+  const pos = currentPhase === PHASE.TEST ? testIndex : readIndex;
+  const isCurrent = (idx === pos && currentWord === word);
+
+  currentRoundWords.splice(idx, 1);
+  __bumpRoundSizeInput(-1);
+
+  // Round khatam: naya round shuru.
+  if(!currentRoundWords.length){
+    roundNumber += 1;
+    startRound(browseMode);
+    return true;
+  }
+
+  // User kisi aur word par hai (search se khola tha): bas indexes theek karo.
+  if(!isCurrent){
+    if(idx < pos){
+      if(currentPhase === PHASE.TEST) testIndex -= 1; else readIndex -= 1;
+    }
+    return true;
+  }
+
+  // Normal case: agla word turant dikhao (nextWord wahi transitions sambhalta hai).
+  if(currentPhase === PHASE.TEST){
+    testIndex -= 1;
+    answerVisible = true;
+  }else{
+    readIndex -= 1;
+  }
+  nextWord(true);
+  return true;
+}
+
+function __removeFromAutoPlay(word){
+  const qi = autoPlayQueue.indexOf(word);
+  if(qi >= 0){
+    autoPlayQueue.splice(qi, 1);
+    if(qi < autoPlayQueueIndex) autoPlayQueueIndex -= 1;
+  }
+  if(currentWord !== word) return false;
+  autoPlayRemainingSeconds = autoPlayIntervalSeconds;
+  showNextAutoPlayWord();
+  updateAutoPlayCountdown();
+  return true;
+}
+
+function askMoveBackChoice(total){
+  return new Promise(resolve => {
+    const overlay = document.createElement("div");
+    overlay.className = "move-choice-overlay";
+    overlay.innerHTML =
+      '<div class="move-choice-card" role="dialog" aria-modal="true">' +
+        '<div class="move-choice-title">Move back to New</div>' +
+        '<div class="move-choice-text">Sirf ye ek word New me bhejna hai, ya Old ke saare words?</div>' +
+        '<div class="move-choice-actions">' +
+          '<button type="button" class="small-tool-btn accent" data-choice="one">Only this word</button>' +
+          '<button type="button" class="small-tool-btn" data-choice="all">All words (' + total + ')</button>' +
+          '<button type="button" class="small-tool-btn danger" data-choice="cancel">Cancel</button>' +
+        '</div>' +
+      '</div>';
+
+    function done(choice){
+      document.removeEventListener("keydown", onKey, true);
+      overlay.remove();
+      resolve(choice);
+    }
+    function onKey(e){
+      if(e.key === "Escape"){ e.preventDefault(); done("cancel"); }
+    }
+    overlay.addEventListener("click", e => {
+      if(e.target === overlay){ done("cancel"); return; }
+      const btn = e.target.closest ? e.target.closest("[data-choice]") : null;
+      if(btn) done(btn.getAttribute("data-choice"));
+    });
+    document.addEventListener("keydown", onKey, true);
+    document.body.appendChild(overlay);
+  });
+}
+
+function __refreshPoolViews(){
+  updatePoolUI();
+  fillTopWordSuggestions();
+  renderSearchResults(searchInput?.value || "");
+}
+
+async function __moveOne(word){
+  const rec = __movePoolArrays(word);
+  if(!rec) return;
+  __refreshPoolViews();
+
+  const saved = await saveServerData();
+  if(!saved){
+    __undoMove(word, rec);
+    __refreshPoolViews();
+    updateLearnedButton();
+    alert("Save fail hua: " + (lastServerError || "Server error"));
+    return;
+  }
+
+  const advanced = autoPlayActive ? __removeFromAutoPlay(word) : removeWordFromCurrentRound(word);
+  if(advanced) clearCardIfPoolEmpty();
+  updateLearnedButton();
+}
+
+async function __moveManyBack(list){
+  const moved = [];
+  list.forEach(w => {
+    const rec = __movePoolArrays(w);
+    if(rec) moved.push({word:w, rec});
+  });
+  if(!moved.length) return;
+  __refreshPoolViews();
+
+  const saved = await saveServerData();
+  if(!saved){
+    for(let i = moved.length - 1; i >= 0; i--) __undoMove(moved[i].word, moved[i].rec);
+    __refreshPoolViews();
+    updateLearnedButton();
+    alert("Save fail hua: " + (lastServerError || "Server error"));
+    return;
+  }
+
+  const movedSet = new Set(moved.map(m => m.word));
+  currentRoundWords = currentRoundWords.filter(w => !movedSet.has(w));
+
+  if(quizPoolMode === "old"){
+    seriesCursor = 0;
+    roundNumber = 1;
+    resetRandomCycle();
+    if(!restartAutoPlayForCurrentSelection()) startRound(browseMode);
+    clearCardIfPoolEmpty();
+  }
+  updateLearnedButton();
+}
+
+async function toggleCurrentWordPool(){
+  if(!currentWord || __poolMoveBusy) return;
+  const word = currentWord;
+  const wasOld = OLD_WORDS.includes(word) || OLD_IDIOM_WORDS.includes(word);
+  const managed = wasOld || WORDS.includes(word) || IDIOM_WORDS.includes(word);
+  if(!managed) return;
+
+  __poolMoveBusy = true;
+  try{
+    if(wasOld){
+      const scope = oldWordsInScope();
+      const list = scope.includes(word) ? scope : [word, ...scope];
+      const choice = await askMoveBackChoice(list.length);
+      if(choice === "all") await __moveManyBack(list);
+      else if(choice === "one") await __moveOne(word);
+    }else{
+      await __moveOne(word);
+    }
+  }finally{
+    __poolMoveBusy = false;
+  }
+}
+
+// ---------- Words-per-round box: live decrease / manual increase ----------
+function __bumpRoundSizeInput(delta){
+  const el = document.getElementById("wordsPerRoundInput");
+  if(!el) return;
+  el.value = Math.max(1, Math.min(100, getRoundSize() + delta));
+  syncWordsPerRoundLabel();
+}
+
+function __refreshRoundStatus(){
+  if(autoPlayActive) return;
+  if(currentPhase === PHASE.TEST){
+    countEl.textContent = testStatusText(
+      answerVisible ? Math.min(testIndex + 1, currentRoundWords.length) : testIndex
+    );
+  }else{
+    countEl.textContent =
+      (quizPoolMode === "old" ? "Old" : "New") + " • " +
+      (browseMode === "series" ? "Series" : "Random") +
+      " • Round " + roundNumber +
+      " • Read " + Math.min(readIndex + 1, currentRoundWords.length) +
+      "/" + currentRoundWords.length;
+  }
+}
+
+function topUpCurrentRound(){
+  if(autoPlayActive) return;
+  if(!currentRoundWords.length) return;
+
+  const need = getRoundSize() - currentRoundWords.length;
+  if(need <= 0) return;   // kam karne par naya size agle round se lagta hai
+
+  const pool = getQuizPool();
+  if(!pool.length) return;
+  const inRound = new Set(currentRoundWords);
+  let picks = [];
+
+  if(browseMode === "series"){
+    // Series: round ke baad wale agle words.
+    const start = (seriesCursor + currentRoundWords.length) % pool.length;
+    for(let k = 0; k < pool.length && picks.length < need; k++){
+      const w = pool[(start + k) % pool.length];
+      if(!inRound.has(w) && !picks.includes(w)) picks.push(w);
+    }
+  }else{
+    // Random: pehle wo words jo is cycle me abhi nahi aaye.
+    const roundKeys = new Set(currentRoundWords.map(randomWordKey));
+    const seen = new Set();
+    const candidates = [];
+    pool.forEach(w => {
+      const k = randomWordKey(w);
+      if(roundKeys.has(k) || seen.has(k)) return;
+      seen.add(k);
+      candidates.push(w);
+    });
+    const fresh = candidates.filter(w => !randomSeenKeys.has(randomWordKey(w)));
+    picks = shuffleWords(fresh).slice(0, need);
+    if(picks.length < need){
+      const pickedKeys = new Set(picks.map(randomWordKey));
+      const rest = candidates.filter(w => !pickedKeys.has(randomWordKey(w)));
+      picks = picks.concat(shuffleWords(rest).slice(0, need - picks.length));
+    }
+    picks.forEach(w => randomSeenKeys.add(randomWordKey(w)));
+  }
+
+  if(!picks.length) return;
+  currentRoundWords.push(...picks);
+  __refreshRoundStatus();
+}
+
+document.getElementById("wordsPerRoundInput")?.addEventListener("change", () => {
+  syncWordsPerRoundLabel();
+  topUpCurrentRound();
+});
+
+// ---------- Hindi meaning delay (Next / Show answer ke baad) ----------
+const HINDI_DELAY_KEY = "vocabAlertHindiDelaySeconds";
+const hindiDelayInput = document.getElementById("hindiDelayInput");
+let __hiTimer = null;
+let __delayHindiNow = false;
+
+(function loadHindiDelay(){
+  try{
+    const saved = localStorage.getItem(HINDI_DELAY_KEY);
+    if(saved !== null && hindiDelayInput) hindiDelayInput.value = saved;
+  }catch(_e){}
+})();
+
+function getHindiDelaySeconds(){
+  const n = parseFloat(hindiDelayInput && hindiDelayInput.value);
+  return Number.isFinite(n) ? Math.max(0, Math.min(60, n)) : 2;
+}
+
+hindiDelayInput?.addEventListener("change", () => {
+  const n = getHindiDelaySeconds();
+  hindiDelayInput.value = String(n);
+  try{ localStorage.setItem(HINDI_DELAY_KEY, String(n)); }catch(_e){}
+});
+
+function __setHiOpacity(value, animate){
+  if(!animate){
+    wordHiEl.style.transition = "none";
+    wordHiEl.style.opacity = value;
+    void wordHiEl.offsetWidth;
+    wordHiEl.style.transition = "";
+  }else{
+    wordHiEl.style.opacity = value;
+  }
+}
+function __clearHiTimer(){
+  if(__hiTimer){ clearTimeout(__hiTimer); __hiTimer = null; }
+}
+
+const __showAnswerCardOrig = showAnswerCard;
+showAnswerCard = function(word){
+  __showAnswerCardOrig.apply(this, arguments);
+  __clearHiTimer();
+  const sec = getHindiDelaySeconds();
+  if(__delayHindiNow && currentPhase === PHASE.READ && sec > 0 && word && word.hi){
+    __setHiOpacity("0", false);   // Hindi chhupao, baaki sab turant dikhta hai
+    __hiTimer = setTimeout(() => {
+      __hiTimer = null;
+      if(currentWord === word) __setHiOpacity("1", true);
+    }, sec * 1000);
+  }else{
+    __setHiOpacity("1", false);
+  }
+};
+
+const __showQuestionCardOrig = showQuestionCard;
+showQuestionCard = function(){
+  __showQuestionCardOrig.apply(this, arguments);
+  __clearHiTimer();
+  __setHiOpacity("1", false);
+};
+
+// Sirf Next / Show answer (aur timer se auto-next) par delay lagta hai.
+// Search, edit, Auto Play me Hindi turant dikhti hai.
+const __nextWordOrig = nextWord;
+nextWord = function(){
+  const prev = __delayHindiNow;
+  __delayHindiNow = true;
+  try{ return __nextWordOrig.apply(this, arguments); }
+  finally{ __delayHindiNow = prev; }
+};
+
+// Intezar nahi karna ho to Hindi wali line par click karo.
+wordHiEl.addEventListener("click", () => { __clearHiTimer(); __setHiOpacity("1", true); });
 
 initializeEnglishApp();
 

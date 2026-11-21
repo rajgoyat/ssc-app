@@ -3192,7 +3192,7 @@ const august2026CurrentAffairs = {
   {
     id: 'ca-2026-08-031-003',
     category: 'Important Days',
-    question: 'Consider the following statements regarding National Nutrition Week in India:\n1. It is observed from 1 to 7 September to spread awareness about nutrition and healthy diets.\n2. Activities involve the Ministry of Health & Family Welfare and the Ministry of Women & Child Development.\n3. The week was started in 1982 according to the supplied data.\n4. Its focus includes encouraging better food and nutrition practices.\nWhich of the statements given above are correct?',
+    question: "Learn statements regarding National Nutrition Week in India:\n1. It is observed from 1 to 7 September to spread awareness about nutrition and healthy diets.\n2. Activities involve the Ministry of Health & Family Welfare and the Ministry of Women & Child Development.\n3. The week was started in 1982 according to the supplied data.\n4. Its focus includes encouraging better food and nutrition practices.\nWhich of the statements given above are correct?",
     options: ['1 and 2 only', '1, 2 and 3 only', '2, 3 and 4 only', '1, 2, 3 and 4'],
     answer: 3,
     explanation: 'All four statements are consistent with the supplied current-affairs material. National Nutrition Week is observed during 1–7 September and is intended to improve public awareness of balanced nutrition, healthy dietary choices and better nutrition practices.'

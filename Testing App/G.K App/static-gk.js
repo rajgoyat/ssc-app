@@ -39,3 +39,23 @@ if (typeof staticStaticCompleteQuestions !== "undefined") {
 }
 /* AUTO STATIC SOURCE END: staticComplete.js */
 
+/* AUTO STATIC SOURCE START: miliatry-exercises.js */
+if (typeof staticMiliatryExercisesQuestions !== "undefined") {
+  if (typeof staticGKQuestions !== "undefined" && Array.isArray(staticGKQuestions)) {
+    staticMiliatryExercisesQuestions.forEach((item) => {
+      if (!staticGKQuestions.some((question) => question && question.id === item.id)) {
+        staticGKQuestions.push(item);
+      }
+    });
+  }
+
+  if (
+    typeof staticGKCategories !== "undefined" &&
+    staticGKCategories &&
+    typeof staticGKCategories === "object"
+  ) {
+    staticGKCategories["Miliatry Exercises"] = staticMiliatryExercisesQuestions;
+  }
+}
+/* AUTO STATIC SOURCE END: miliatry-exercises.js */
+
