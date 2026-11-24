@@ -1,0 +1,33 @@
+{
+  "deletedItems": [
+    {
+      "kind": "vocab",
+      "deletedAt": "2026-11-24T04:16:08.494Z",
+      "item": {
+        "en": "diminish",
+        "hi": "घटाना",
+        "meaning": "Make or become less.",
+        "sentence": "The noise from the street began to diminish around midnight.",
+        "syn": "reduce",
+        "ant": "increase",
+        "cats": [
+          "C1"
+        ],
+        "status": "new"
+      }
+    },
+    {
+      "kind": "vocab",
+      "deletedAt": "2026-11-24T04:22:00.375Z",
+      "item": {
+        "en": "Astrologer",
+        "hi": "ज्योतिषी",
+        "meaning": "One who tells future from the stars",
+        "sentence": "She consulted an astrologer to read her birth chart.",
+        "syn": "horoscoper, diviner, fortune-teller, seer",
+        "ant": "astronomer, scientist",
+        "status": "new"
+      }
+    }
+  ]
+}

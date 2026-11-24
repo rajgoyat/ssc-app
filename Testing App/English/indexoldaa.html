@@ -3709,6 +3709,15 @@ body.mcq-focus-mode .result-more-menu .action-menu-item{
 .move-choice-actions{display:grid;gap:8px}
 .move-choice-actions .small-tool-btn{min-height:42px;width:100%}
 </style>
+<style>
+/* ===== HINDI DELAY ===== */
+.word-hi{transition:opacity .35s ease}
+.hindi-delay-box{position:absolute;left:24px;bottom:28px;z-index:4;display:inline-flex;align-items:center;gap:6px;padding:4px 8px;border:1px solid var(--line);border-radius:10px;background:rgba(10,17,27,.85);color:#8f9bad;font:700 9px "Courier New",monospace}
+.hindi-delay-box input{width:40px;height:24px;padding:0 3px;border-radius:7px;border:1px solid var(--line2);background:#0a111b;color:var(--ink);text-align:center;font:700 10px "Courier New",monospace;outline:none}
+.hindi-delay-box input:focus{border-color:rgba(106,214,200,.6)}
+.alertbox.section-collapsed .hindi-delay-box{display:none}
+@media(max-width:640px){.hindi-delay-box{left:12px;bottom:18px}}
+</style>
 </head>
 
 <body>
@@ -3795,6 +3804,11 @@ body.mcq-focus-mode .result-more-menu .action-menu-item{
     </div>
 
     <button class="btn main-card-prev-btn" id="prevBtn" type="button" title="Previous word" aria-label="Previous word">← Prev</button>
+    <label class="hindi-delay-box" title="Revision me Next dabane ke kitne second baad Hindi meaning dikhe (0 = turant). Test me turant dikhti hai">
+      <span>Hindi</span>
+      <input type="number" id="hindiDelayInput" min="0" max="60" step="0.5" value="2" inputmode="decimal" aria-label="Hindi meaning delay in seconds">
+      <span>sec</span>
+    </label>
     <button
       class="btn main-card-next-btn"
       id="nextBtn"
@@ -8339,6 +8353,80 @@ document.getElementById("wordsPerRoundInput")?.addEventListener("change", () => 
   syncWordsPerRoundLabel();
   topUpCurrentRound();
 });
+
+// ---------- Hindi meaning delay (Next / Show answer ke baad) ----------
+const HINDI_DELAY_KEY = "vocabAlertHindiDelaySeconds";
+const hindiDelayInput = document.getElementById("hindiDelayInput");
+let __hiTimer = null;
+let __delayHindiNow = false;
+
+(function loadHindiDelay(){
+  try{
+    const saved = localStorage.getItem(HINDI_DELAY_KEY);
+    if(saved !== null && hindiDelayInput) hindiDelayInput.value = saved;
+  }catch(_e){}
+})();
+
+function getHindiDelaySeconds(){
+  const n = parseFloat(hindiDelayInput && hindiDelayInput.value);
+  return Number.isFinite(n) ? Math.max(0, Math.min(60, n)) : 2;
+}
+
+hindiDelayInput?.addEventListener("change", () => {
+  const n = getHindiDelaySeconds();
+  hindiDelayInput.value = String(n);
+  try{ localStorage.setItem(HINDI_DELAY_KEY, String(n)); }catch(_e){}
+});
+
+function __setHiOpacity(value, animate){
+  if(!animate){
+    wordHiEl.style.transition = "none";
+    wordHiEl.style.opacity = value;
+    void wordHiEl.offsetWidth;
+    wordHiEl.style.transition = "";
+  }else{
+    wordHiEl.style.opacity = value;
+  }
+}
+function __clearHiTimer(){
+  if(__hiTimer){ clearTimeout(__hiTimer); __hiTimer = null; }
+}
+
+const __showAnswerCardOrig = showAnswerCard;
+showAnswerCard = function(word){
+  __showAnswerCardOrig.apply(this, arguments);
+  __clearHiTimer();
+  const sec = getHindiDelaySeconds();
+  if(__delayHindiNow && currentPhase === PHASE.READ && sec > 0 && word && word.hi){
+    __setHiOpacity("0", false);   // Hindi chhupao, baaki sab turant dikhta hai
+    __hiTimer = setTimeout(() => {
+      __hiTimer = null;
+      if(currentWord === word) __setHiOpacity("1", true);
+    }, sec * 1000);
+  }else{
+    __setHiOpacity("1", false);
+  }
+};
+
+const __showQuestionCardOrig = showQuestionCard;
+showQuestionCard = function(){
+  __showQuestionCardOrig.apply(this, arguments);
+  __clearHiTimer();
+  __setHiOpacity("1", false);
+};
+
+// Sirf Next / Show answer (aur timer se auto-next) par delay lagta hai.
+// Search, edit, Auto Play me Hindi turant dikhti hai.
+const __nextWordOrig = nextWord;
+nextWord = function(){
+  const prev = __delayHindiNow;
+  __delayHindiNow = true;
+  try{ return __nextWordOrig.apply(this, arguments); }
+  finally{ __delayHindiNow = prev; }
+};
+
+// Intezar nahi karna ho to Hindi wali line par click karo.
+wordHiEl.addEventListener("click", () => { __clearHiTimer(); __setHiOpacity("1", true); });
 
 initializeEnglishApp();
 

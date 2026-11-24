@@ -156,17 +156,6 @@
       "ant": "partial"
     },
     {
-      "en": "Absolve",
-      "hi": "दोषमुक्त करना",
-      "meaning": "To set or declare someone free from blame, guilt, or responsibility.",
-      "sentence": "The court decided to absolve him of all the criminal charges.",
-      "syn": "Acquit, Pardon",
-      "ant": "Blame, Condemn, Accused",
-      "cats": [
-        "C1"
-      ]
-    },
-    {
       "en": "absorbed",
       "hi": "लीन / मग्न",
       "meaning": "Deeply interested or involved.",
@@ -266,34 +255,12 @@
       "ant": "Reject"
     },
     {
-      "en": "Accolade",
-      "hi": "सम्मान",
-      "meaning": "An award or privilege granted as a special honour or as an acknowledgment of merit.",
-      "sentence": "She received the highest accolade for her contribution to science.",
-      "syn": "Praise, Award, Laurels",
-      "ant": "Blame",
-      "cats": [
-        "C1"
-      ]
-    },
-    {
       "en": "Accomplice",
       "hi": "सहअपराधी",
       "meaning": "A person who helps another commit a crime",
       "sentence": "The police arrested the thief along with his accomplice.",
       "syn": "Partner in crime",
       "ant": "Opponent"
-    },
-    {
-      "en": "Accord",
-      "hi": "समझौता",
-      "meaning": "Agreement or harmony; grant someone power or status.",
-      "sentence": "The two countries signed a peace accord to end the conflict.",
-      "syn": "Confer",
-      "ant": "Disagreement",
-      "cats": [
-        "C1"
-      ]
     },
     {
       "en": "Accost",
@@ -535,17 +502,6 @@
       "ant": "detest"
     },
     {
-      "en": "Admonish",
-      "hi": "डाँटना",
-      "meaning": "Warn or reprimand someone firmly.",
-      "sentence": "The teacher had to admonish the students for talking during the exam.",
-      "syn": "Chide, Reprimand, Warning, Counsel, Censure",
-      "ant": "Praise, Applaud, Compliment",
-      "cats": [
-        "C1"
-      ]
-    },
-    {
       "en": "Admonition",
       "hi": "चेतावनी / फटकार",
       "meaning": "A firm warning or reprimand",
@@ -576,17 +532,6 @@
       "sentence": "Flowers adorned the entrance of the hall.",
       "syn": "Decorate",
       "ant": "Disfigure"
-    },
-    {
-      "en": "Adroit",
-      "hi": "कुशल",
-      "meaning": "Clever or skilful in using the hands or mind.",
-      "sentence": "She is an adroit negotiator who always gets the best deal.",
-      "syn": "Skilful, Capable",
-      "ant": "Incompetent, Clumsy",
-      "cats": [
-        "C1"
-      ]
     },
     {
       "en": "Adroitness",
@@ -1756,17 +1701,6 @@
       "ant": "Disputant"
     },
     {
-      "en": "Arbitrary",
-      "hi": "मनमाना",
-      "meaning": "Based on random choice or personal whim, rather than any reason or system.",
-      "sentence": "The manager's decision to cancel the holiday seemed completely arbitrary.",
-      "syn": "Random",
-      "ant": "Lawful",
-      "cats": [
-        "C1"
-      ]
-    },
-    {
       "en": "Arbitrate",
       "hi": "मध्यस्थता करना",
       "meaning": "To settle a dispute between two parties as a neutral judge",
@@ -2252,14 +2186,6 @@
       ]
     },
     {
-      "en": "Astrologer",
-      "hi": "ज्योतिषी",
-      "meaning": "One who tells future from the stars",
-      "sentence": "She consulted an astrologer to read her birth chart.",
-      "syn": "horoscoper, diviner, fortune-teller, seer",
-      "ant": "astronomer, scientist"
-    },
-    {
       "en": "astrology",
       "hi": "ज्योतिष विज्ञान",
       "meaning": "The science of foretelling events by mapping stars.",
@@ -2408,17 +2334,6 @@
       "sentence": "The explorer embarked on an audacious journey across the uncharted desert.",
       "syn": "Bold, Daring, Brave, Courage, Cheeky",
       "ant": "Cowardly, Timid",
-      "cats": [
-        "C1"
-      ]
-    },
-    {
-      "en": "Audacity",
-      "hi": "धृष्टता",
-      "meaning": "The willingness to take bold risks; rude or disrespectful behaviour.",
-      "sentence": "He had the audacity to blame me for his own mistake.",
-      "syn": "Boldness, Unexpectedly, Nerve",
-      "ant": "Cowardice, Timidity, Politeness, Gentility",
       "cats": [
         "C1"
       ]
@@ -2707,17 +2622,6 @@
       "sentence": "It is hurtful when someone you trust tries to backstab you.",
       "syn": "betray",
       "ant": "support"
-    },
-    {
-      "en": "Baffle",
-      "hi": "चकित करना",
-      "meaning": "To bewilder or perplex someone.",
-      "sentence": "The sudden disappearance of the ship continues to baffle experts.",
-      "syn": "Puzzle, Perplex, Amaze, Confusion",
-      "ant": "Composed, Comprehensible, Enlighten, Facilitate",
-      "cats": [
-        "C1"
-      ]
     },
     {
       "en": "Baited",
@@ -3118,17 +3022,6 @@
       "ant": "Endowed"
     },
     {
-      "en": "Beseech",
-      "hi": "विनती करना",
-      "meaning": "Ask someone urgently and fervently to do something; implore; entreat.",
-      "sentence": "I beseech you to reconsider your decision before it is too late.",
-      "syn": "Beg, Ask, Request",
-      "ant": "Command",
-      "cats": [
-        "C1"
-      ]
-    },
-    {
       "en": "Beside",
       "hi": "के बगल में",
       "meaning": "Next to or at the side of someone or something",
@@ -3151,17 +3044,6 @@
       "sentence": "Reporters besieged the actor outside the court.",
       "syn": "Surround",
       "ant": "Release"
-    },
-    {
-      "en": "Betrayal",
-      "hi": "धोखा",
-      "meaning": "The action of being disloyal to someone who trusts you.",
-      "sentence": "He felt a deep sense of betrayal when his best friend lied to him.",
-      "syn": "Treachery",
-      "ant": "Protect, Loyalty, Stand By",
-      "cats": [
-        "C1"
-      ]
     },
     {
       "en": "Betrothed",
@@ -3391,34 +3273,12 @@
       "ant": "Accuracy"
     },
     {
-      "en": "Blunt",
-      "hi": "कम धार वाला, मंदबुद्धि",
-      "meaning": "(Of a cutting instrument) not having a sharp edge or point; as a verb, to make or become less sharp",
-      "sentence": "It is difficult to chop vegetables with a blunt knife.",
-      "syn": "Dull, Snippy",
-      "ant": "Sharp",
-      "cats": [
-        "C1"
-      ]
-    },
-    {
       "en": "Boast",
       "hi": "डींग हाँकना",
       "meaning": "Speak with excessive pride; possess (something impressive)",
       "sentence": "He likes to boast about his high scores in mock tests.",
       "syn": "Pride, Brag",
       "ant": "Deprecate",
-      "cats": [
-        "C1"
-      ]
-    },
-    {
-      "en": "Bogus",
-      "hi": "जाली",
-      "meaning": "Not genuine or true",
-      "sentence": "The police arrested him for selling bogus tickets.",
-      "syn": "Fake, False",
-      "ant": "Authentic",
       "cats": [
         "C1"
       ]
@@ -3812,17 +3672,6 @@
       "ant": "N/A"
     },
     {
-      "en": "Bustle",
-      "hi": "हड़बड़ी",
-      "meaning": "Move in an energetic or noisy manner; as a noun, excited activity and movement",
-      "sentence": "The market was full of hustle and bustle before the festival.",
-      "syn": "Haste, Rush",
-      "ant": "Motionless",
-      "cats": [
-        "C1"
-      ]
-    },
-    {
       "en": "Buttress",
       "hi": "सहारा देना",
       "meaning": "To support or strengthen an argument or structure",
@@ -4197,17 +4046,6 @@
       "ant": "Commendation"
     },
     {
-      "en": "Casual",
-      "hi": "अनौपचारिक, आकस्मिक",
-      "meaning": "Relaxed and unconcerned",
-      "sentence": "Employees are allowed to wear casual clothes on Fridays.",
-      "syn": "Occasional",
-      "ant": "Formal, Planned",
-      "cats": [
-        "C1"
-      ]
-    },
-    {
       "en": "Cataclysm",
       "hi": "प्रलय / भारी उथल-पुथल",
       "meaning": "A large-scale and violent event causing great change",
@@ -4319,17 +4157,6 @@
       ]
     },
     {
-      "en": "Celebrate",
-      "hi": "उत्सव मनाना, गुणगान करना",
-      "meaning": "To acknowledge (a significant or happy day or event) with a social gathering or enjoyable activity; honour or praise publicly",
-      "sentence": "We gathered to celebrate her graduation with dinner.",
-      "syn": "Honour",
-      "ant": "Disgrace",
-      "cats": [
-        "C1"
-      ]
-    },
-    {
       "en": "Celestial",
       "hi": "स्वर्गीय, आकाशीय",
       "meaning": "Positioned in or relating to the sky or outer space",
@@ -4425,17 +4252,6 @@
       "sentence": "Farmers winnowed the harvested grain to separate wheat from chaff.",
       "syn": "husks, straw, dross, waste",
       "ant": "grain, core, seed"
-    },
-    {
-      "en": "Chagrin",
-      "hi": "शर्मिंदगी",
-      "meaning": "Distress or embarrassment at having failed or been humiliated",
-      "sentence": "Much to his chagrin, he forgot his lines during the speech.",
-      "syn": "Embarrassment",
-      "ant": "Pleasure",
-      "cats": [
-        "C1"
-      ]
     },
     {
       "en": "Change",
@@ -4633,17 +4449,6 @@
       "ant": "N/A"
     },
     {
-      "en": "Chronic",
-      "hi": "दीर्घकालिक",
-      "meaning": "(Of an illness) persisting for a long time or constantly recurring",
-      "sentence": "He has been suffering from chronic back pain for years.",
-      "syn": "Persistent",
-      "ant": "Infrequent, Temporary",
-      "cats": [
-        "C1"
-      ]
-    },
-    {
       "en": "Chronicle",
       "hi": "इतिवृत्त",
       "meaning": "A written record of events in order of time",
@@ -4746,17 +4551,6 @@
       "ant": "slide down, descend"
     },
     {
-      "en": "Clamorous",
-      "hi": "कोलाहलपूर्ण",
-      "meaning": "Making a loud and confused noise",
-      "sentence": "A clamorous crowd gathered outside the stadium gates.",
-      "syn": "Boisterous",
-      "ant": "Suppression",
-      "cats": [
-        "C1"
-      ]
-    },
-    {
       "en": "Clamour",
       "hi": "कोलाहल",
       "meaning": "A loud appeal or demand",
@@ -4844,17 +4638,6 @@
       "sentence": "He was so clumsy that he knocked over the glass of water.",
       "syn": "Unskilful",
       "ant": "Graceful",
-      "cats": [
-        "C1"
-      ]
-    },
-    {
-      "en": "Cluster",
-      "hi": "समूह",
-      "meaning": "Group of similar things or people positioned close together; gather into clusters",
-      "sentence": "A small cluster of houses stood at the foot of the hill.",
-      "syn": "Assemblage",
-      "ant": "Individual",
       "cats": [
         "C1"
       ]
@@ -5052,17 +4835,6 @@
       "ant": "Forget"
     },
     {
-      "en": "Commence",
-      "hi": "शुरू करना",
-      "meaning": "Begin; start",
-      "sentence": "The examination will commence sharply at 9:00 AM.",
-      "syn": "Start, Launch, Initiate",
-      "ant": "Conclude, Close, Terminate",
-      "cats": [
-        "C1"
-      ]
-    },
-    {
       "en": "Commend",
       "hi": "प्रशंसा करना",
       "meaning": "To praise formally or officially",
@@ -5158,17 +4930,6 @@
       ]
     },
     {
-      "en": "Compassion",
-      "hi": "दया",
-      "meaning": "Sympathetic pity and concern for the sufferings or misfortunes of others",
-      "sentence": "She treated the injured stray animals with great compassion.",
-      "syn": "Pity, Kindness",
-      "ant": "Meanness, Indifference, Animosity",
-      "cats": [
-        "C1"
-      ]
-    },
-    {
       "en": "Compassionate",
       "hi": "सहानुभूति",
       "meaning": "Feeling or showing sympathy and concern for others",
@@ -5229,17 +4990,6 @@
       "sentence": "The interview tests both technical knowledge and communication competence.",
       "syn": "Ability, Capability",
       "ant": "Incompetence",
-      "cats": [
-        "C1"
-      ]
-    },
-    {
-      "en": "Competent",
-      "hi": "सक्षम",
-      "meaning": "Having the necessary ability, knowledge, or skill to do something successfully",
-      "sentence": "We need a competent engineer to fix the electrical fault.",
-      "syn": "Capable, Qualified",
-      "ant": "Ignorant",
       "cats": [
         "C1"
       ]
@@ -5343,17 +5093,6 @@
       "ant": "Agitation"
     },
     {
-      "en": "Comprehensive",
-      "hi": "विस्तृत",
-      "meaning": "Including all or nearly all elements or aspects of something",
-      "sentence": "This book offers a comprehensive guide to English grammar.",
-      "syn": "Complete",
-      "ant": "Restricted, Superficial, Incomplete, Shallow",
-      "cats": [
-        "C1"
-      ]
-    },
-    {
       "en": "Compunction",
       "hi": "पछतावा",
       "meaning": "A feeling of guilt or moral scruple that prevents or follows the doing of something bad",
@@ -5381,17 +5120,6 @@
       "ant": "Deny"
     },
     {
-      "en": "Conceit",
-      "hi": "अहंकार",
-      "meaning": "Excessive pride in oneself",
-      "sentence": "His arrogance and conceit made him unpopular among colleagues.",
-      "syn": "Vanity, Egotism, Proud, Smug, Arrogant, Pomposity",
-      "ant": "Modesty, Humility",
-      "cats": [
-        "C1"
-      ]
-    },
-    {
       "en": "Conceited",
       "hi": "घमंडी",
       "meaning": "Excessively proud of oneself",
@@ -5414,17 +5142,6 @@
       "sentence": "After the fight, he offered a conciliatory apology to his friend.",
       "syn": "Pacifying",
       "ant": "Antagonistic"
-    },
-    {
-      "en": "Concise",
-      "hi": "संक्षिप्त",
-      "meaning": "Giving a lot of information clearly and in a few words; brief but comprehensive",
-      "sentence": "Keep your resume clear, accurate, and concise.",
-      "syn": "Brief, Capsule",
-      "ant": "Lengthy, Unabridged",
-      "cats": [
-        "C1"
-      ]
     },
     {
       "en": "Concoct",
@@ -5663,17 +5380,6 @@
       ]
     },
     {
-      "en": "Congenial",
-      "hi": "अनुकूल",
-      "meaning": "(Of a person) pleasant because of a personality, qualities, or interests that are similar to one's own",
-      "sentence": "He is a congenial host who makes every guest feel welcome.",
-      "syn": "Favourable, Cordial, Compatible",
-      "ant": "Unpleasant, Unsympathetic",
-      "cats": [
-        "C1"
-      ]
-    },
-    {
       "en": "Congenital",
       "hi": "जन्मजात",
       "meaning": "Present from birth",
@@ -5766,28 +5472,6 @@
       "sentence": "The committee finally reached a consensus on the budget.",
       "syn": "Unanimity, Agreement",
       "ant": "Disagreement, Discord",
-      "cats": [
-        "C1"
-      ]
-    },
-    {
-      "en": "Consent",
-      "hi": "सहमति",
-      "meaning": "Permission for something to happen or agreement to do something; comply or agree",
-      "sentence": "You cannot publish someone's photo without their consent.",
-      "syn": "Assent, Permission, Agree",
-      "ant": "Dissent, Interdiction, Conflict",
-      "cats": [
-        "C1"
-      ]
-    },
-    {
-      "en": "Conserve",
-      "hi": "संरक्षित करना",
-      "meaning": "Protect from harm or destruction; preserve; protect from loss or waste",
-      "sentence": "Turn off the tap while brushing to conserve water.",
-      "syn": "Preserve",
-      "ant": "Destroy",
       "cats": [
         "C1"
       ]
@@ -5926,17 +5610,6 @@
       "ant": "pure, clean, purified, pristine"
     },
     {
-      "en": "Contemplate",
-      "hi": "विचार करना",
-      "meaning": "Look thoughtfully for a long time at",
-      "sentence": "She sat by the window to contemplate her future plans.",
-      "syn": "Envisage",
-      "ant": "Ignore, Disregard",
-      "cats": [
-        "C1"
-      ]
-    },
-    {
       "en": "Contemporary",
       "hi": "समकालीन",
       "meaning": "Belonging to the same period; modern",
@@ -6073,17 +5746,6 @@
       "sentence": "He contrived a way to escape the meeting.",
       "syn": "Devise",
       "ant": "Ruin"
-    },
-    {
-      "en": "Control",
-      "hi": "नियंत्रण करना",
-      "meaning": "Determine the behaviour or supervise the running of",
-      "sentence": "It takes practice to control your nerves before a big exam.",
-      "syn": "Regulate",
-      "ant": "Excited, Agitated",
-      "cats": [
-        "C1"
-      ]
     },
     {
       "en": "Conundrum",
@@ -6586,17 +6248,6 @@
       ]
     },
     {
-      "en": "Cruel",
-      "hi": "क्रूर",
-      "meaning": "Wilfully causing pain or suffering to others, or feeling no concern about it",
-      "sentence": "Being cruel to helpless animals is inexcusable.",
-      "syn": "Brutal",
-      "ant": "Kind, Sympathetic",
-      "cats": [
-        "C1"
-      ]
-    },
-    {
       "en": "Crumble",
       "hi": "चूर-चूर करना/होना",
       "meaning": "Break or fall apart into small fragments in the process of deterioration",
@@ -6673,17 +6324,6 @@
       "sentence": "Winning the championship was the culmination of years of hard work.",
       "syn": "Climax",
       "ant": "Beginning, Commencement",
-      "cats": [
-        "C1"
-      ]
-    },
-    {
-      "en": "Culpable",
-      "hi": "दोषी",
-      "meaning": "Deserving blame",
-      "sentence": "The company was held culpable for violating safety standards.",
-      "syn": "Guilty, Accountable",
-      "ant": "Innocent, Blameless",
       "cats": [
         "C1"
       ]
@@ -6852,17 +6492,6 @@
       "ant": "N/A"
     },
     {
-      "en": "Dainty",
-      "hi": "नाजुक, मनोहर",
-      "meaning": "Delicately small and pretty",
-      "sentence": "She wore a dainty silver bracelet on her wrist.",
-      "syn": "Small and Graceful",
-      "ant": "Clumsy, Vigorous",
-      "cats": [
-        "C1"
-      ]
-    },
-    {
       "en": "Damp",
       "hi": "नम",
       "meaning": "Slightly wet; humid; moisture diffused through the air",
@@ -6876,7 +6505,7 @@
     {
       "en": "Dank",
       "hi": "नम",
-      "meaning": "Disagreeably damp, musty, and typically cold",
+      "meaning": "1. Damp and unpleasant – सीलन भरा और बदबूदार/अप्रिय (कमरे या जगह के लिए)।\n- The room was dark and dank.\n- कमरा अंधेरा और सीलन भरा था।\n2. Slang: Excellent / Cool – बहुत शानदार या मजेदार (खासकर internet slang में)।\n- That's a dank meme.\n- यह बहुत मजेदार/शानदार meme है।",
       "sentence": "The old basement smelled dark and dank.",
       "syn": "Damp",
       "ant": "Dry",
@@ -7201,17 +6830,6 @@
       ]
     },
     {
-      "en": "Deficiency / Deficient",
-      "hi": "कमी, अपूर्ण",
-      "meaning": "Not having enough of a specified quality or ingredient",
-      "sentence": "A deficiency of Vitamin D can lead to weak bones.",
-      "syn": "Inadequacy, Shortage, Lacking, Incomplete, Insufficient",
-      "ant": "Excess",
-      "cats": [
-        "C1"
-      ]
-    },
-    {
       "en": "Deficient",
       "hi": "अपर्याप्त",
       "meaning": "Not having enough of a specified quality",
@@ -7333,11 +6951,58 @@
     },
     {
       "en": "Deliberate",
-      "hi": "जानबूझकर / विचार करना",
-      "meaning": "Done consciously and intentionally; to think carefully",
-      "sentence": "It was a deliberate attempt to mislead.",
-      "syn": "Intentional",
-      "ant": "Accidental"
+      "hi": "जानबूझकर",
+      "meaning": "Done consciously and intentionally; as a verb, to engage in long and careful consideration.",
+      "sentence": "The delay was a deliberate attempt to stall the negotiations.",
+      "syn": "intentional",
+      "ant": "spontaneous",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "deliberately",
+      "hi": "जानबूझकर",
+      "meaning": "Consciously and intentionally; on purpose.",
+      "sentence": "He deliberately ignored her messages all afternoon.",
+      "syn": "intentionally",
+      "ant": "unintentionally",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "delicate",
+      "hi": "नाजुक",
+      "meaning": "Very fine in texture or structure; of intricate workmanship or quality.",
+      "sentence": "She handled the delicate porcelain teacup with great care.",
+      "syn": "fragile",
+      "ant": "firm",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "delicious",
+      "hi": "स्वादिष्ट",
+      "meaning": "Highly pleasant to the taste.",
+      "sentence": "We had a delicious homemade biryani for dinner.",
+      "syn": "tasty",
+      "ant": "insipid",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "delight",
+      "hi": "आनंद",
+      "meaning": "Great pleasure.",
+      "sentence": "The children watched the magician with delight.",
+      "syn": "joy",
+      "ant": "sorrow",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Delineate",
@@ -7348,20 +7013,15 @@
       "ant": "Confuse"
     },
     {
-      "en": "Deluge",
-      "hi": "बाढ़ / भरमार",
-      "meaning": "A severe flood or an overwhelming quantity",
-      "sentence": "The office received a deluge of complaints.",
-      "syn": "Flood",
-      "ant": "Trickle"
-    },
-    {
       "en": "Delusion",
       "hi": "भ्रम",
-      "meaning": "A false belief held despite strong contrary evidence",
-      "sentence": "He lives under the delusion that he is invincible.",
-      "syn": "Illusion",
-      "ant": "Reality"
+      "meaning": "False belief or impression maintained despite being contradicted by reality.",
+      "sentence": "He lived under the delusion that he could never fail.",
+      "syn": "illusion",
+      "ant": "reality",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Delve",
@@ -7388,6 +7048,17 @@
       "ant": "Misconduct"
     },
     {
+      "en": "demented",
+      "hi": "पागल",
+      "meaning": "Suffering from dementia.",
+      "sentence": "The old man seemed demented and could not recall his address.",
+      "syn": "idiotic",
+      "ant": "sensible",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
       "en": "Demise",
       "hi": "निधन / अंत",
       "meaning": "The end or death of a person or thing",
@@ -7398,18 +7069,35 @@
     {
       "en": "Demolish",
       "hi": "ध्वस्त करना",
-      "meaning": "To pull down or destroy a building or argument",
-      "sentence": "The old bridge was demolished last month.",
-      "syn": "Destroy",
-      "ant": "Construct"
+      "meaning": "Pull or knock down a building.",
+      "sentence": "Workers plan to demolish the unsafe warehouse next month.",
+      "syn": "dismantle",
+      "ant": "build",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "demonstrate",
+      "hi": "प्रदर्शित करना",
+      "meaning": "Clearly show the existence or truth of something by giving proof or evidence.",
+      "sentence": "The experiment will demonstrate how heat affects expansion.",
+      "syn": "show",
+      "ant": "hiding",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Demure",
-      "hi": "शालीन / संकोची",
-      "meaning": "Reserved, modest, and shy in manner",
-      "sentence": "She gave a demure smile and looked away.",
-      "syn": "Modest",
-      "ant": "Brazen"
+      "hi": "शर्मीला, संकोची और शालीन स्वभाव वाला; जो व्यक्ति शांत और विनम्र तरीके से व्यवहार करे।",
+      "meaning": "Reserved, modest, and shy.",
+      "sentence": "She gave a demure smile when introduced to the guests.",
+      "syn": "Modest, Shy, Reserved, Bashful",
+      "ant": "Bold, Confident, Forward, Immodest",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Denature",
@@ -7436,20 +7124,48 @@
       "ant": "Endorse"
     },
     {
+      "en": "dense",
+      "hi": "घना",
+      "meaning": "Closely compacted in substance.",
+      "sentence": "Fog became so dense that visibility dropped to a few meters.",
+      "syn": "thick",
+      "ant": "sparse",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "deny",
+      "hi": "इंकार करना",
+      "meaning": "State that one refuses to admit the truth or existence of.",
+      "sentence": "The official chose to deny all allegations of misconduct.",
+      "syn": "refuse",
+      "ant": "agree",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
       "en": "Depict",
       "hi": "वर्णन करना",
-      "meaning": "To portray in words; describe",
-      "sentence": "The novel depicts life during the Victorian era.",
-      "syn": "describe, portray, represent",
-      "ant": "distort, misrepresent, hide"
+      "meaning": "Show or represent by a drawing, painting, or other art form.",
+      "sentence": "The mural aims to depict rural life in traditional colors.",
+      "syn": "characterize",
+      "ant": "hide",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Deplete",
-      "hi": "समाप्त कर देना / घटाना",
-      "meaning": "To use up the supply or resources of something",
-      "sentence": "Overuse has depleted the groundwater.",
-      "syn": "Exhaust",
-      "ant": "Replenish"
+      "hi": "कम करना",
+      "meaning": "Use up the supply or resources of.",
+      "sentence": "Overfishing can quickly deplete local fish populations.",
+      "syn": "reduce",
+      "ant": "restore",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Deplorable",
@@ -7461,11 +7177,14 @@
     },
     {
       "en": "Deplore",
-      "hi": "खेद प्रकट करना / निंदा करना",
-      "meaning": "To feel or express strong disapproval of something",
-      "sentence": "We deplore the use of violence.  Hum hinsa ki kadi ninda karte hain.",
-      "syn": "Denounce = publicly condemn.",
-      "ant": "Applaud"
+      "hi": "निंदा करना",
+      "meaning": "Feel or express strong disapproval of something.",
+      "sentence": "Leaders across the region deplore acts of senseless violence.",
+      "syn": "regret",
+      "ant": "praise",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Depose",
@@ -7500,6 +7219,17 @@
       "ant": "Approve"
     },
     {
+      "en": "depressed",
+      "hi": "उदास",
+      "meaning": "In a state of general unhappiness or despondency.",
+      "sentence": "He felt depressed after hearing the exam results.",
+      "syn": "doleful",
+      "ant": "elated",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
       "en": "Deprive",
       "hi": "वंचित करना",
       "meaning": "To prevent someone from having something",
@@ -7524,12 +7254,37 @@
       "ant": "Praise"
     },
     {
+      "en": "derision",
+      "hi": "उपहास",
+      "meaning": "Contemptuous ridicule or mockery.",
+      "sentence": "His unrealistic proposal was met with derision.",
+      "syn": "ridicule",
+      "ant": "admiration",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
       "en": "Derogatory",
       "hi": "अपमानजनक",
-      "meaning": "Showing a critical or disrespectful attitude",
-      "sentence": "He was punished for making derogatory remarks about his colleagues",
-      "syn": "Insulting",
-      "ant": "Complimentary"
+      "meaning": "Showing a critical or disrespectful attitude.",
+      "sentence": "Making derogatory remarks in the workplace is unacceptable.",
+      "syn": "disparaging",
+      "ant": "complimentary",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "desecrate",
+      "hi": "अपवित्र करना",
+      "meaning": "Treat a sacred place or thing with violent disrespect.",
+      "sentence": "Laws protect monuments so nobody can desecrate them.",
+      "syn": "violate",
+      "ant": "sanctify",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Desiccate",
@@ -7540,6 +7295,17 @@
       "ant": "Moisten"
     },
     {
+      "en": "desiccated",
+      "hi": "निर्जलित",
+      "meaning": "Lacking interest, passion, or energy.",
+      "sentence": "The desiccated leaves crunched underfoot on the trail.",
+      "syn": "dry",
+      "ant": "moistened",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
       "en": "Desist",
       "hi": "रोक लगाना",
       "meaning": "To stop doing something; cease or abstain",
@@ -7548,36 +7314,48 @@
       "ant": "continue, persist, resume"
     },
     {
-      "en": "Desolate",
-      "hi": "उजाड़ / एकाकी",
-      "meaning": "Deserted and bleak; feeling very lonely",
-      "sentence": "The village looked desolate after the flood.",
-      "syn": "Barren",
-      "ant": "Populous"
-    },
-    {
       "en": "Despair",
       "hi": "निराशा",
-      "meaning": "The complete loss of hope",
-      "sentence": "He sank into despair after the result.",
-      "syn": "Hopelessness",
-      "ant": "Hope"
+      "meaning": "The complete loss or absence of hope; as a verb, to lose or be without hope.",
+      "sentence": "Do not sink into despair when a single plan fails.",
+      "syn": "misery",
+      "ant": "hope",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "despicable",
+      "hi": "घिनौना",
+      "meaning": "Deserving hatred and contempt.",
+      "sentence": "Cheating vulnerable people is a despicable act.",
+      "syn": "hateful",
+      "ant": "admirable",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Despise",
-      "hi": "घृणा करना / तिरस्कार करना",
-      "meaning": "To strongly dislike and have no respect for someone or something.\nKisi vyakti ya cheez se bahut zyada nafrat ya tiraskar karna.",
-      "sentence": "I despise people who deliberately hurt others.",
-      "syn": "Detest",
-      "ant": "Admire"
+      "hi": "घृणा",
+      "meaning": "Feel contempt or a deep repugnance for.",
+      "sentence": "Honest people despise hypocrisy and deceit.",
+      "syn": "abhor",
+      "ant": "admire",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Despondent",
-      "hi": "हताश / निराश",
-      "meaning": "In low spirits from loss of hope",
-      "sentence": "He grew despondent after the third rejection.",
-      "syn": "Dejected",
-      "ant": "Hopeful"
+      "hi": "हताश",
+      "meaning": "In low spirits from loss of hope or courage.",
+      "sentence": "She grew despondent after weeks of unsuccessful job interviews.",
+      "syn": "dejected",
+      "ant": "hopeful",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Despot",
@@ -7589,11 +7367,14 @@
     },
     {
       "en": "Destitute",
-      "hi": "निराश्रित / अत्यंत गरीब",
-      "meaning": "Extremely poor and lacking basic necessities",
-      "sentence": "The flood left thousands destitute.",
-      "syn": "Penniless",
-      "ant": "Affluent"
+      "hi": "बदहाली",
+      "meaning": "Without the basic necessities of life.",
+      "sentence": "Charities provide food and shelter to destitute families.",
+      "syn": "indigent",
+      "ant": "wealthy",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Desultory",
@@ -7613,11 +7394,14 @@
     },
     {
       "en": "Deter",
-      "hi": "रोकना / हतोत्साहित करना",
-      "meaning": "To discourage someone from doing something",
-      "sentence": "Heavy fines deter people from breaking rules.",
-      "syn": "Discourage",
-      "ant": "Encourage"
+      "hi": "रोकना",
+      "meaning": "Discourage someone from doing something by instilling doubt or fear of the consequences.",
+      "sentence": "Strict fines help deter speeding on highways.",
+      "syn": "hinder",
+      "ant": "encourage",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Deteriorate",
@@ -7628,22 +7412,6 @@
       "ant": "Improve"
     },
     {
-      "en": "Detest",
-      "hi": "घृणा करना",
-      "meaning": "To dislike intensely",
-      "sentence": "I detest dishonesty.\n→ मुझे बेईमानी से बहुत नफरत है।",
-      "syn": "Abhor",
-      "ant": "Love"
-    },
-    {
-      "en": "Detrimental",
-      "hi": "हानिकारक",
-      "meaning": "Tending to cause damage",
-      "sentence": "Late nights are detrimental to health.",
-      "syn": "Harmful",
-      "ant": "Advantageous"
-    },
-    {
       "en": "Devastate",
       "hi": "तबाह करना",
       "meaning": "To destroy or ruin completely",
@@ -7652,28 +7420,26 @@
       "ant": "Rebuild"
     },
     {
-      "en": "Deviate",
-      "hi": "भटकना",
-      "meaning": "To depart from an established course or standard",
-      "sentence": "Do not deviate from the syllabus.",
-      "syn": "Diverge",
-      "ant": "Conform"
-    },
-    {
       "en": "Devious",
-      "hi": "कुटिल / घुमावदार",
-      "meaning": "Showing a skilful use of underhand tactics",
-      "sentence": "He used devious means to win the contract.",
-      "syn": "Cunning",
-      "ant": "Straightforward"
+      "hi": "चालाक",
+      "meaning": "Showing a skilful use of underhanded tactics to achieve goals.",
+      "sentence": "The character used devious tricks to outsmart his rivals.",
+      "syn": "dishonest",
+      "ant": "sincere",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Devoid",
-      "hi": "रहित / खाली",
-      "meaning": "Entirely lacking something",
-      "sentence": "His speech was devoid of substance.",
-      "syn": "Empty",
-      "ant": "Full"
+      "hi": "खाली",
+      "meaning": "Entirely lacking or free from.",
+      "sentence": "His excuse was completely devoid of common sense.",
+      "syn": "empty",
+      "ant": "full",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Devour",
@@ -7684,20 +7450,26 @@
       "ant": "Nibble"
     },
     {
-      "en": "Devout",
-      "hi": "धर्मनिष्ठ",
-      "meaning": "Deeply religious or sincerely committed",
-      "sentence": "She is a devout follower of the tradition.",
-      "syn": "Pious",
-      "ant": "Irreligious"
+      "en": "Dexterity",
+      "hi": "कुशलता",
+      "meaning": "Skill in performing tasks, especially with the hands.",
+      "sentence": "Playing the violin requires manual dexterity and practice.",
+      "syn": "adroitness",
+      "ant": "ignorance",
+      "cats": [
+        "C1"
+      ]
     },
     {
-      "en": "Dexterity",
-      "hi": "निपुणता",
-      "meaning": "Skill in performing tasks, especially with the hands",
-      "sentence": "The surgeon worked with remarkable dexterity.",
-      "syn": "Skill",
-      "ant": "Clumsiness"
+      "en": "diabolical",
+      "hi": "शैतानी",
+      "meaning": "Belonging to or so evil as to recall the Devil.",
+      "sentence": "The villain hatched a diabolical plan in the story.",
+      "syn": "malicious",
+      "ant": "moral",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Diatribe",
@@ -7724,6 +7496,17 @@
       "ant": "Uninformative"
     },
     {
+      "en": "diffidence",
+      "hi": "संकोच",
+      "meaning": "Modesty or shyness resulting from a lack of self-confidence.",
+      "sentence": "With encouragement, his initial diffidence faded away.",
+      "syn": "meekness",
+      "ant": "aggressive",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
       "en": "Diffident",
       "hi": "संकोची / आत्म-संशयी",
       "meaning": "Modest or shy because of a lack of self-confidence",
@@ -7733,11 +7516,14 @@
     },
     {
       "en": "Digress",
-      "hi": "विषय से भटकना",
-      "meaning": "To depart from the main subject in speech or writing",
-      "sentence": "The speaker digressed from the topic repeatedly.",
-      "syn": "Deviate",
-      "ant": "Focus"
+      "hi": "विषय से भटक जाना",
+      "meaning": "Leave the main subject temporarily in speech or writing.",
+      "sentence": "The speaker began to digress into unrelated personal stories.",
+      "syn": "deviate",
+      "ant": "stay",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Dilapidated",
@@ -7748,12 +7534,26 @@
       "ant": "Renovated"
     },
     {
+      "en": "dilate",
+      "hi": "फैलाना",
+      "meaning": "Make or become wider, larger, or more open.",
+      "sentence": "Your pupils dilate in dim light to let more light in.",
+      "syn": "widen",
+      "ant": "contract",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
       "en": "Dilemma",
       "hi": "दुविधा",
-      "meaning": "A situation requiring a choice between difficult alternatives",
-      "sentence": "He faced a dilemma between duty and family.",
-      "syn": "Predicament",
-      "ant": "Solution"
+      "meaning": "Situation requiring a choice between equally undesirable alternatives; difficult situation.",
+      "sentence": "She faced a dilemma over accepting a job far from home.",
+      "syn": "predicament",
+      "ant": "solution",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Diligence",
@@ -7766,10 +7566,13 @@
     {
       "en": "Diligent",
       "hi": "परिश्रमी",
-      "meaning": "Having or showing care and effort in one's work",
-      "sentence": "Her diligent preparation paid off on exam day.",
-      "syn": "Industrious",
-      "ant": "Lazy"
+      "meaning": "Having or showing care and conscientiousness in one's work or duties.",
+      "sentence": "Diligent preparation paid off on the final exam.",
+      "syn": "industrious",
+      "ant": "lazy",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Diminutive",
@@ -7782,10 +7585,13 @@
     {
       "en": "Disaster",
       "hi": "आपदा",
-      "meaning": "An act that has disastrous consequences",
-      "sentence": "The earthquake was a major natural disaster.",
-      "syn": "catastrophe, calamity, tragedy",
-      "ant": "blessing, success, boon"
+      "meaning": "A sudden event, such as an accident or a natural catastrophe, that causes great damage or loss of life.",
+      "sentence": "Early warnings helped reduce casualties during the disaster.",
+      "syn": "misfortune",
+      "ant": "success",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Disband",
@@ -7805,19 +7611,47 @@
     },
     {
       "en": "Disclose",
-      "hi": "प्रकट करना",
-      "meaning": "To make secret information known",
-      "sentence": "He refused to disclose the names.",
-      "syn": "Reveal",
-      "ant": "Conceal"
+      "hi": "जाहिर करना",
+      "meaning": "Make secret or new information known.",
+      "sentence": "The company refused to disclose the financial details.",
+      "syn": "reveal",
+      "ant": "conceal",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "discontent",
+      "hi": "असंतोष",
+      "meaning": "A lack of satisfaction with one's possessions, status, or situation.",
+      "sentence": "Rising prices sparked public discontent across the town.",
+      "syn": "dissatisfaction",
+      "ant": "satisfaction",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Discord",
-      "hi": "कलह / मतभेद",
-      "meaning": "Disagreement between people; lack of harmony",
-      "sentence": "Property disputes caused discord in the family.",
-      "syn": "Conflict",
-      "ant": "Harmony"
+      "hi": "मनमुटाव",
+      "meaning": "Disagreement between people.",
+      "sentence": "Unresolved misunderstandings caused discord within the team.",
+      "syn": "tumult",
+      "ant": "harmony",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "discourage",
+      "hi": "हतोत्साहित करना",
+      "meaning": "Cause someone to lose confidence or enthusiasm.",
+      "sentence": "Do not let one setback discourage you from trying again.",
+      "syn": "prevent",
+      "ant": "persuade",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Discourse",
@@ -7829,11 +7663,14 @@
     },
     {
       "en": "Discreet",
-      "hi": "विवेकशील / संयमी",
-      "meaning": "Careful not to attract attention or reveal private information",
-      "sentence": "Please be discreet about this matter.",
-      "syn": "Prudent",
-      "ant": "Indiscreet"
+      "hi": "सावधान",
+      "meaning": "Careful and prudent in one's speech or actions; unobtrusive; modest.",
+      "sentence": "He was discreet when discussing sensitive team matters.",
+      "syn": "careful",
+      "ant": "careless",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Discrepancy",
@@ -7842,6 +7679,17 @@
       "sentence": "There is a discrepancy in the accounts.",
       "syn": "Inconsistency",
       "ant": "Agreement"
+    },
+    {
+      "en": "discriminate",
+      "hi": "भेदभाव",
+      "meaning": "Recognize a distinction; differentiate.",
+      "sentence": "The law prohibits organizations from discriminating unfairly.",
+      "syn": "distinguish",
+      "ant": "equality",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Discus",
@@ -7854,10 +7702,13 @@
     {
       "en": "Disdain",
       "hi": "तिरस्कार",
-      "meaning": "The feeling that someone is unworthy of respect",
-      "sentence": "He looked at the offer with disdain.",
-      "syn": "Contempt",
-      "ant": "Admiration"
+      "meaning": "Contempt; lack of respect accompanied by a feeling of intense dislike.",
+      "sentence": "He looked at the shoddy work with evident disdain.",
+      "syn": "contempt",
+      "ant": "admiration",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Disdainful",
@@ -7876,6 +7727,17 @@
       "ant": "empowerment, enfranchisement"
     },
     {
+      "en": "disgrace",
+      "hi": "कलंक",
+      "meaning": "Loss of reputation or respect as the result of a dishonourable action; bring shame or discredit on.",
+      "sentence": "The match-fixing scandal brought disgrace to the club.",
+      "syn": "dishonour",
+      "ant": "honour",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
       "en": "Disgraceful",
       "hi": "शर्मनाक",
       "meaning": "An act that makes feel morally bad or ashamed",
@@ -7885,11 +7747,14 @@
     },
     {
       "en": "Disgruntled",
-      "hi": "असंतुष्ट / नाराज",
-      "meaning": "Angry or dissatisfied",
-      "sentence": "Disgruntled employees staged a protest.",
-      "syn": "Discontented",
-      "ant": "Satisfied"
+      "hi": "असंतुष्ट",
+      "meaning": "Angry or dissatisfied.",
+      "sentence": "Disgruntled commuters complained about the delayed trains.",
+      "syn": "annoyed",
+      "ant": "pleased",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Disguise",
@@ -7900,12 +7765,34 @@
       "ant": "reveal, expose, uncover"
     },
     {
+      "en": "dishearten",
+      "hi": "हतोत्साह करना",
+      "meaning": "Cause someone to lose determination or confidence.",
+      "sentence": "Bad weather did not dishearten the marathon runners.",
+      "syn": "depressed",
+      "ant": "encourage",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
       "en": "Disillusion",
       "hi": "भ्रम-भंग करना",
       "meaning": "To make someone realise a belief is false",
       "sentence": "The experience disillusioned him about politics.",
       "syn": "Disenchant",
       "ant": "Delude"
+    },
+    {
+      "en": "disillusioned",
+      "hi": "भ्रम दूर होना",
+      "meaning": "Disappointed in someone or something that one discovers to be less good than one had believed.",
+      "sentence": "Many voters felt disillusioned after unkept promises.",
+      "syn": "disenchanted",
+      "ant": "enthusiastic",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Disingenuous",
@@ -7925,11 +7812,14 @@
     },
     {
       "en": "Dismal",
-      "hi": "उदास / निराशाजनक",
-      "meaning": "Causing or showing gloom; very poor in quality",
-      "sentence": "The team's performance was dismal.",
-      "syn": "Gloomy",
-      "ant": "Cheerful"
+      "hi": "निराशाजनक",
+      "meaning": "Depressing; dreary.",
+      "sentence": "The team had a dismal start to the tournament.",
+      "syn": "gloomy",
+      "ant": "cheerful",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Dismantle",
@@ -7957,11 +7847,14 @@
     },
     {
       "en": "Disparate",
-      "hi": "असमान / भिन्न",
-      "meaning": "Essentially different in kind; not allowing comparison",
-      "sentence": "The team brought together disparate skills from many fields.",
-      "syn": "Diverse",
-      "ant": "Similar"
+      "hi": "भिन्न",
+      "meaning": "Essentially different in kind; not allowing comparison.",
+      "sentence": "The report brings together data from disparate sources.",
+      "syn": "different",
+      "ant": "similar",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Disparity",
@@ -7982,18 +7875,35 @@
     {
       "en": "Dispel",
       "hi": "दूर करना",
-      "meaning": "To make a doubt, feeling, or belief disappear",
-      "sentence": "His explanation dispelled all doubts.",
-      "syn": "Banish",
-      "ant": "Create"
+      "meaning": "Make a doubt, feeling, or belief disappear.",
+      "sentence": "Clear facts helped dispel rumors about the closure.",
+      "syn": "disperse",
+      "ant": "integrate",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Disperse",
       "hi": "तितर-बितर करना",
-      "meaning": "To scatter or spread over a wide area",
-      "sentence": "The police dispersed the crowd peacefully.",
-      "syn": "Scatter",
-      "ant": "Gather"
+      "meaning": "Distribute or spread over a wide area.",
+      "sentence": "The crowd began to disperse after the concert ended.",
+      "syn": "eject",
+      "ant": "gather",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "dispute",
+      "hi": "विवाद",
+      "meaning": "A disagreement, argument, or debate; as a verb, argue about something; discuss heatedly.",
+      "sentence": "The two neighbors settled their boundary dispute peacefully.",
+      "syn": "quarrel",
+      "ant": "agreement",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Dissemble",
@@ -8006,10 +7916,13 @@
     {
       "en": "Disseminate",
       "hi": "प्रसारित करना",
-      "meaning": "To spread information widely",
-      "sentence": "The department disseminated the new guidelines.",
-      "syn": "Circulate",
-      "ant": "Withhold"
+      "meaning": "Spread something, especially information, widely.",
+      "sentence": "Health workers disseminate accurate information during outbreaks.",
+      "syn": "circulate",
+      "ant": "conceal",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Dissent",
@@ -8018,6 +7931,17 @@
       "sentence": "One judge recorded his dissent.",
       "syn": "Disagreement",
       "ant": "Consent"
+    },
+    {
+      "en": "dissident",
+      "hi": "असंतुष्ट",
+      "meaning": "Person who opposes official policy; disagreeing or dissenting.",
+      "sentence": "Dissident writers faced censorship under the strict regime.",
+      "syn": "rebellious",
+      "ant": "orthodox",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Dissipate",
@@ -8045,11 +7969,36 @@
     },
     {
       "en": "Dissuade",
-      "hi": "मना करना / रोकना",
-      "meaning": "To persuade someone not to do something",
-      "sentence": "I tried to dissuade him from resigning.",
-      "syn": "Discourage",
-      "ant": "Persuade"
+      "hi": "रोकना",
+      "meaning": "Persuade someone not to take a particular course of action.",
+      "sentence": "Friends tried to dissuade him from investing everything.",
+      "syn": "discourage",
+      "ant": "persuade",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "distant",
+      "hi": "दूर",
+      "meaning": "Far away in space or time.",
+      "sentence": "We could hear the distant rumble of thunder.",
+      "syn": "faraway",
+      "ant": "near",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "distasteful",
+      "hi": "अरुचिकर",
+      "meaning": "Causing dislike or disgust; offensive; unpleasant.",
+      "sentence": "He found the harsh tone of the argument distasteful.",
+      "syn": "unpleasant",
+      "ant": "delicious",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Distinct",
@@ -8092,6 +8041,17 @@
       "ant": "Converge"
     },
     {
+      "en": "diverse",
+      "hi": "भिन्न",
+      "meaning": "Showing a great deal of variety; very different.",
+      "sentence": "The city is home to a culturally diverse population.",
+      "syn": "varied",
+      "ant": "similar",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
       "en": "Divert",
       "hi": "मोड़ना / ध्यान हटाना",
       "meaning": "To change the direction or use of something",
@@ -8109,19 +8069,25 @@
     },
     {
       "en": "Divulge",
-      "hi": "रहस्य खोलना",
-      "meaning": "To make private information known",
-      "sentence": "He refused to divulge the source of the news.",
-      "syn": "Reveal",
-      "ant": "Conceal"
+      "hi": "भेद खोलना",
+      "meaning": "Make known private or sensitive information.",
+      "sentence": "Staff members are bound not to divulge client records.",
+      "syn": "reveal",
+      "ant": "conceal",
+      "cats": [
+        "C1"
+      ]
     },
     {
-      "en": "Docile",
-      "hi": "आज्ञाकारी / विनम्र",
-      "meaning": "Quiet, obedient, and easy to control or teach.\nJo shaant, obedient aur aasani se instruction follow kare.",
-      "sentence": "The horse was gentle and docile.",
-      "syn": "Obedient",
-      "ant": "Stubborn"
+      "en": "divulgence",
+      "hi": "पर्दाफाश",
+      "meaning": "The act of divulging; disclosure.",
+      "sentence": "The divulggence of the secret caused an immediate stir.",
+      "syn": "revelation",
+      "ant": "repudiation",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Docility",
@@ -8133,11 +8099,25 @@
     },
     {
       "en": "Dogmatic",
-      "hi": "कट्टरपंथी / सिद्धांतवादी",
-      "meaning": "Inclined to lay down principles as incontrovertibly true",
-      "sentence": "The professor's dogmatic views left no room for debate.",
-      "syn": "Opinionated",
-      "ant": "Open-minded"
+      "hi": "कट्टर",
+      "meaning": "Inclined to lay down principles as incontrovertibly true.",
+      "sentence": "A dogmatic approach leaves little room for new evidence.",
+      "syn": "rigid",
+      "ant": "flexible",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "doleful",
+      "hi": "दुख भरा",
+      "meaning": "Expressing sorrow.",
+      "sentence": "A doleful melody played softly in the background.",
+      "syn": "mournful",
+      "ant": "cheerful",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Domicile",
@@ -8157,11 +8137,14 @@
     },
     {
       "en": "Dormant",
-      "hi": "निष्क्रिय / सुप्त",
-      "meaning": "Temporarily inactive but capable of becoming active",
-      "sentence": "The volcano has been dormant for centuries.",
-      "syn": "Inactive",
-      "ant": "Active"
+      "hi": "निष्क्रिय",
+      "meaning": "Temporarily inactive or inoperative.",
+      "sentence": "Many plants remain dormant during the coldest winter months.",
+      "syn": "inactive",
+      "ant": "active",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Dorsal",
@@ -8180,12 +8163,45 @@
       "ant": "back down, retreat, withdraw"
     },
     {
+      "en": "doubtful",
+      "hi": "अनिश्चित / संदिग्ध",
+      "meaning": "Feeling uncertain about something.",
+      "sentence": "It seems doubtful that the outdoor event will proceed in rain.",
+      "syn": "sceptical",
+      "ant": "confident",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
       "en": "Dour",
       "hi": "कठोर / उदास",
       "meaning": "Severe, stern, or gloomy in manner",
       "sentence": "The dour officer never smiled at anyone.",
       "syn": "Grim",
       "ant": "Cheerful"
+    },
+    {
+      "en": "dreadful",
+      "hi": "भयानक",
+      "meaning": "Causing or involving great suffering, fear, or unhappiness; extremely bad or serious.",
+      "sentence": "Traffic on the highway was dreadful during the storm.",
+      "syn": "terrible",
+      "ant": "pleasant",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "dreary",
+      "hi": "नीरस",
+      "meaning": "Dull, bleak, and lifeless; depressing.",
+      "sentence": "Reading indoors helped brighten a dreary November afternoon.",
+      "syn": "dull",
+      "ant": "bright",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Drizzle",
@@ -8221,11 +8237,25 @@
     },
     {
       "en": "Dubious",
-      "hi": "संदिग्ध / अनिश्चित",
-      "meaning": "Doubtful, uncertain, or not completely trustworthy",
-      "sentence": "The police were dubious about his explanation.",
-      "syn": "Doubtful",
-      "ant": "Certain"
+      "hi": "संदिग्ध",
+      "meaning": "Hesitating or doubting.",
+      "sentence": "I am dubious about claims that sound too good to be true.",
+      "syn": "doubtful",
+      "ant": "certain",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "dulcet",
+      "hi": "मीठा",
+      "meaning": "Especially of sound, sweet and soothing, often used ironically.",
+      "sentence": "The dulcet tones of the flute calmed the room.",
+      "syn": "sweet",
+      "ant": "harsh",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Duplicity",
@@ -8237,11 +8267,14 @@
     },
     {
       "en": "Dwindle",
-      "hi": "घटते जाना",
-      "meaning": "To become gradually smaller in size or amount",
-      "sentence": "Their savings dwindled month by month.",
-      "syn": "Decrease",
-      "ant": "Increase"
+      "hi": "घटना",
+      "meaning": "Diminish gradually in size, amount, or strength.",
+      "sentence": "Water levels in the reservoir began to dwindle in summer.",
+      "syn": "decrease",
+      "ant": "increase",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Dyke",
@@ -8260,20 +8293,48 @@
       "ant": "N/A"
     },
     {
+      "en": "eager",
+      "hi": "उत्सुक",
+      "meaning": "Wanting to do or have something very much.",
+      "sentence": "The students were eager to start the science workshop.",
+      "syn": "keen",
+      "ant": "indifferent",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "ebb",
+      "hi": "कम होना / ज्वार उतरना",
+      "meaning": "Of tidewater, move away from the land; recede; as a noun, the movement of the tide out to sea.",
+      "sentence": "We walked along the wet sand as the tide began to ebb.",
+      "syn": "sink",
+      "ant": "flow",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
       "en": "Ebullient",
-      "hi": "उत्साही / प्रसन्नचित्त",
-      "meaning": "Cheerful and full of energy",
-      "sentence": "The fans were ebullient after their team's last-minute win.",
-      "syn": "Exuberant",
-      "ant": "Apathetic"
+      "hi": "जोशीला",
+      "meaning": "Cheerful and full of energy.",
+      "sentence": "Her ebullient personality lifted everyone's spirits.",
+      "syn": "enthusiastic",
+      "ant": "dejected",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Eccentric",
-      "hi": "सनकी / विचित्र",
-      "meaning": "Unconventional and slightly strange in behaviour",
-      "sentence": "The eccentric professor wore mismatched shoes.",
-      "syn": "Peculiar",
-      "ant": "Conventional"
+      "hi": "विलक्षण / विचित्र / सनकी",
+      "meaning": "Unconventional and slightly strange; not placed centrally.",
+      "sentence": "The eccentric inventor built a clock that ran backward.",
+      "syn": "peculiar",
+      "ant": "normal",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Eclectic",
@@ -8286,10 +8347,13 @@
     {
       "en": "Ecstasy",
       "hi": "परमानंद",
-      "meaning": "An overwhelming feeling of great happiness",
-      "sentence": "She was in ecstasy after the win.",
-      "syn": "Rapture",
-      "ant": "Agony"
+      "meaning": "An overwhelming feeling of great happiness or joyful excitement.",
+      "sentence": "Fans jumped up in ecstasy when the winning goal was scored.",
+      "syn": "joy",
+      "ant": "agony",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Edifice",
@@ -8301,11 +8365,14 @@
     },
     {
       "en": "Efface",
-      "hi": "मिटा देना",
-      "meaning": "To erase or remove something completely",
-      "sentence": "Time could not efface the memory of that day.",
-      "syn": "Erase",
-      "ant": "Retain"
+      "hi": "मिटाना",
+      "meaning": "Erase a mark from a surface.",
+      "sentence": "Time cannot easily efface lessons learned from experience.",
+      "syn": "abolish",
+      "ant": "preserve",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Effect",
@@ -8332,12 +8399,37 @@
       "ant": "Dull"
     },
     {
+      "en": "efficacious",
+      "hi": "कारगर",
+      "meaning": "Successful in producing a desired or intended result; effective.",
+      "sentence": "Early intervention has proven efficacious in language recovery.",
+      "syn": "effective",
+      "ant": "ineffective",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
       "en": "Efficacy",
-      "hi": "प्रभावकारिता",
-      "meaning": "The ability to produce a desired or intended result.\nKisi cheez ki effectiveness.",
-      "sentence": "The efficacy of this medicine is high.",
-      "syn": "Effectiveness",
-      "ant": "Inefficacy"
+      "hi": "क्षमता",
+      "meaning": "The ability to produce a desired or intended result.",
+      "sentence": "Researchers tested the efficacy of the new irrigation method.",
+      "syn": "efficiency",
+      "ant": "inadequacy",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "efficient",
+      "hi": "कुशल",
+      "meaning": "Especially of a system or machine, achieving maximum productivity with minimum wasted effort or expense.",
+      "sentence": "An efficient schedule saves hours of commuting each week.",
+      "syn": "capable",
+      "ant": "idle",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Effrontery",
@@ -8365,19 +8457,47 @@
     },
     {
       "en": "Egregious",
-      "hi": "घोर / बेहद बुरा",
-      "meaning": "Outstandingly bad; shocking",
-      "sentence": "The company made an egregious error in its financial statements.",
-      "syn": "Flagrant",
-      "ant": "Minor"
+      "hi": "बेहद खराब",
+      "meaning": "Outstandingly bad; shocking.",
+      "sentence": "Ignoring basic safety rules was an egregious mistake.",
+      "syn": "atrocious",
+      "ant": "mild",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "elaborate",
+      "hi": "विस्तृत",
+      "meaning": "Intricate and rich in detail; add details to; explain in more detail.",
+      "sentence": "Could you elaborate on how you reached that conclusion?",
+      "syn": "detailed",
+      "ant": "minimal",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Elated",
-      "hi": "अत्यंत प्रसन्न",
-      "meaning": "Extremely happy and excited",
-      "sentence": "She was elated at her selection.",
-      "syn": "Overjoyed",
-      "ant": "Depressed"
+      "hi": "प्रफुल्लित",
+      "meaning": "In high spirits; exultant or proud.",
+      "sentence": "The team felt elated after winning the championship.",
+      "syn": "exalted",
+      "ant": "depressed",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "elegant",
+      "hi": "सुंदर, आकर्षक और सलीकेदार; जिसमें खूबसूरती के साथ शालीनता भी हो।",
+      "meaning": "Pleasingly graceful and stylish in appearance or manner.",
+      "sentence": "She wore an elegant silk sari to the wedding.",
+      "syn": "graceful",
+      "ant": "crude",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Elegy",
@@ -8404,6 +8524,17 @@
       "ant": "Ineligible"
     },
     {
+      "en": "eliminate",
+      "hi": "हटाना",
+      "meaning": "Completely remove or get rid of something.",
+      "sentence": "Checking work carefully helps eliminate silly errors.",
+      "syn": "remove",
+      "ant": "add",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
       "en": "Eloquence",
       "hi": "वाक्पटुता",
       "meaning": "Fluent and persuasive speaking or writing",
@@ -8413,27 +8544,36 @@
     },
     {
       "en": "Eloquent",
-      "hi": "वाक्पटु",
-      "meaning": "Fluent and persuasive in speaking or writing",
-      "sentence": "The speaker's eloquent speech moved the entire audience.",
-      "syn": "Articulate",
-      "ant": "Inarticulate"
+      "hi": "सुवक्ता",
+      "meaning": "Fluent or persuasive in speaking or writing.",
+      "sentence": "She delivered an eloquent speech on equal education.",
+      "syn": "fluent",
+      "ant": "inarticulate",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Elucidate",
       "hi": "स्पष्ट करना",
-      "meaning": "Make something clear; explain",
-      "sentence": "The teacher used a diagram to elucidate the complex process.",
-      "syn": "Clarify",
-      "ant": "Obscure"
+      "meaning": "Make something clear; explain.",
+      "sentence": "The teacher used diagrams to elucidate the concept.",
+      "syn": "explain",
+      "ant": "confuse",
+      "cats": [
+        "C1"
+      ]
     },
     {
-      "en": "Elusive",
-      "hi": "पकड़ में न आने वाला",
-      "meaning": "Difficult to find, catch, or achieve",
-      "sentence": "Success proved elusive despite his efforts.",
-      "syn": "Evasive",
-      "ant": "Accessible"
+      "en": "elude",
+      "hi": "बचना",
+      "meaning": "Evade or escape from a danger, enemy, or pursuer, typically in a skilful or cunning way.",
+      "sentence": "A clear answer continued to elude the committee.",
+      "syn": "escape",
+      "ant": "encounter",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Elysium",
@@ -8450,6 +8590,17 @@
       "sentence": "The rescued animals were emaciated.",
       "syn": "Gaunt",
       "ant": "Plump"
+    },
+    {
+      "en": "emancipation",
+      "hi": "मुक्ति",
+      "meaning": "The fact or process of being set free from legal, social, or political restrictions; liberation.",
+      "sentence": "The movement fought for the emancipation of bonded laborers.",
+      "syn": "liberation",
+      "ant": "bondage",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Embargo",
@@ -8492,6 +8643,28 @@
       "ant": "reimbursement, honesty, return"
     },
     {
+      "en": "embrace",
+      "hi": "स्वीकार करना",
+      "meaning": "Hold closely in one's arms; adopt; accept enthusiastically.",
+      "sentence": "Many schools embrace digital tools to support learning.",
+      "syn": "accept",
+      "ant": "exclude",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "emerge",
+      "hi": "प्रकट होना",
+      "meaning": "Move out of or away from something and come into view.",
+      "sentence": "The sun began to emerge from behind thick clouds.",
+      "syn": "appear",
+      "ant": "vanish",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
       "en": "Emetic",
       "hi": "उल्टी/उबकाई लाने की दवा",
       "meaning": "Medicine that causes vomiting",
@@ -8509,11 +8682,14 @@
     },
     {
       "en": "Eminent",
-      "hi": "प्रतिष्ठित",
-      "meaning": "Famous and respected within a profession",
-      "sentence": "An eminent scientist inaugurated the seminar.",
-      "syn": "Distinguished",
-      "ant": "Unknown"
+      "hi": "प्रसिद्ध",
+      "meaning": "Of a person, famous and respected within a particular sphere or profession.",
+      "sentence": "An eminent scientist addressed the annual conference.",
+      "syn": "famous",
+      "ant": "unknown",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Emissary",
@@ -8525,19 +8701,25 @@
     },
     {
       "en": "Empathy",
-      "hi": "समानुभूति",
-      "meaning": "The ability to understand another's feelings",
-      "sentence": "Good teachers show empathy towards students.",
-      "syn": "Understanding",
-      "ant": "Indifference"
+      "hi": "सहानुभूति",
+      "meaning": "The ability to understand and share the feelings of another.",
+      "sentence": "Good counselors listen with patience and empathy.",
+      "syn": "affinity",
+      "ant": "apathy",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Emulate",
-      "hi": "अनुकरण करना_________Kisi ke acche gunn ko follow karna / Unke jaisa banne ki koshish karna",
-      "meaning": "To match or imitate someone, usually out of admiration",
-      "sentence": "Young players try to emulate their idols.",
-      "syn": "Imitate (verb) → किसी व्यक्ति के बोलने, चलने, काम करने या व्यवहार की copy करना।\n\n",
-      "ant": "Ignore"
+      "hi": "अनुकरण करना",
+      "meaning": "Match or surpass a person or achievement, typically by imitation.",
+      "sentence": "Young athletes often emulate champions they admire.",
+      "syn": "imitate",
+      "ant": "neglect",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Enact",
@@ -8556,12 +8738,37 @@
       "ant": "Criticism"
     },
     {
+      "en": "encountered",
+      "hi": "सामना किया",
+      "meaning": "Unexpectedly experience or be faced with something difficult or hostile.",
+      "sentence": "They encountered heavy traffic on the mountain road.",
+      "syn": "faced",
+      "ant": "avoided",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "encourage",
+      "hi": "प्रोत्साहित करना",
+      "meaning": "Give support, confidence, or hope to someone.",
+      "sentence": "Teachers encourage curiosity by asking open questions.",
+      "syn": "stimulate",
+      "ant": "dishearten",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
       "en": "Encroach",
       "hi": "अतिक्रमण करना",
-      "meaning": "To intrude gradually on someone's territory or rights",
-      "sentence": "Shops have encroached on the footpath.",
-      "syn": "Intrude",
-      "ant": "Withdraw"
+      "meaning": "Intrude on a person's territory or a thing considered to be a right.",
+      "sentence": "Urban sprawl should not encroach on protected wetlands.",
+      "syn": "intrude",
+      "ant": "keep away",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Encumber",
@@ -8570,6 +8777,28 @@
       "sentence": "He was encumbered with heavy debts.",
       "syn": "Burden",
       "ant": "Relieve"
+    },
+    {
+      "en": "encumbrance",
+      "hi": "बाधा",
+      "meaning": "Something that makes it difficult for you to do something.",
+      "sentence": "Traveling light avoids any unnecessary encumbrance.",
+      "syn": "obstacle",
+      "ant": "asset",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "endeavour",
+      "hi": "प्रयास",
+      "meaning": "Try hard to do or achieve something; as a verb, attempt to achieve a goal.",
+      "sentence": "We endeavour to reply to every inquiry within a day.",
+      "syn": "attempt",
+      "ant": "laziness",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Endemic",
@@ -8581,19 +8810,36 @@
     },
     {
       "en": "Endorse",
-      "hi": "समर्थन करना / अनुमोदन करना",
-      "meaning": "To publicly approve, support, or recommend someone or something.\nKisi person, idea ya decision ko openly support ya approve karna.",
-      "sentence": "Several experts endorsed the new proposal.",
-      "syn": "Approve",
-      "ant": "Oppose"
+      "hi": "समर्थन करना",
+      "meaning": "Declare one's public approval or support of.",
+      "sentence": "The medical board chose to endorse the new guidelines.",
+      "syn": "approve",
+      "ant": "disapprove",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "endurance",
+      "hi": "धैर्य",
+      "meaning": "The fact or power of enduring an unpleasant or difficult process or situation without giving way.",
+      "sentence": "Long-distance cycling tests physical and mental endurance.",
+      "syn": "patience",
+      "ant": "indolence",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Enervate",
-      "hi": "कमज़ोर बनाना",
-      "meaning": "Cause someone to feel drained of energy or vitality; weaken",
-      "sentence": "The humid heat can enervate even the fittest athletes.",
-      "syn": "Exhaust",
-      "ant": "Energize"
+      "hi": "निर्बल करना",
+      "meaning": "Cause someone to feel drained of energy or vitality; weaken.",
+      "sentence": "Extreme summer heat can enervate outdoor workers.",
+      "syn": "weaken",
+      "ant": "strengthen",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Engaging",
@@ -8621,27 +8867,47 @@
     },
     {
       "en": "Enigma",
-      "hi": "पहेली / रहस्य",
-      "meaning": "A person or thing that is mysterious, puzzling, or difficult to understand",
-      "sentence": "The disappearance of the ship remains an enigma to this day.",
-      "syn": "Mystery",
-      "ant": "Clarity"
+      "hi": "पहेली / रहस्यमय",
+      "meaning": "A person or thing that is mysterious, puzzling, or difficult to understand.",
+      "sentence": "The ancient inscription remained an enigma for decades.",
+      "syn": "puzzle",
+      "ant": "clarity",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "enliven",
+      "hi": "जीवंत करना",
+      "meaning": "Make something more entertaining, interesting, or appealing.",
+      "sentence": "A few vivid examples can enliven a long lecture.",
+      "syn": "cheer",
+      "ant": "dishearten",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Enmity",
       "hi": "शत्रुता",
-      "meaning": "A state of active opposition or hostility",
-      "sentence": "Old enmity between the families still continues.",
-      "syn": "Hostility",
-      "ant": "Friendship"
+      "meaning": "The state or feeling of being actively opposed or hostile to someone or something.",
+      "sentence": "Years of enmity were replaced by cooperative trade.",
+      "syn": "hostility",
+      "ant": "friendship",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Ennui",
-      "hi": "ऊब / मानसिक थकान",
-      "meaning": "A feeling of listlessness and dissatisfaction arising from a lack of occupation or excitement",
-      "sentence": "A deep ennui settled over him during the long, uneventful summer.",
-      "syn": "Boredom",
-      "ant": "Excitement"
+      "hi": "ऊब",
+      "meaning": "A feeling of listlessness and dissatisfaction arising from a lack of occupation or excitement.",
+      "sentence": "Picking up a new hobby helped cure his afternoon ennui.",
+      "syn": "boredom",
+      "ant": "excitement",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Enormity",
@@ -8652,12 +8918,48 @@
       "ant": "Triviality"
     },
     {
+      "en": "enormous",
+      "hi": "विशाल",
+      "meaning": "Very large in size, quantity, or extent.",
+      "sentence": "Building the bridge required an enormous amount of steel.",
+      "syn": "huge",
+      "ant": "tiny",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
       "en": "Enrage",
       "hi": "क्रोधित करना",
-      "meaning": "To make someone very angry",
-      "sentence": "The insult enraged him.",
-      "syn": "Infuriate",
-      "ant": "Pacify"
+      "meaning": "Make someone very angry.",
+      "sentence": "Unfair treatment can enrage even patient people.",
+      "syn": "infuriate",
+      "ant": "pleased",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "enrich",
+      "hi": "समृद्ध करना",
+      "meaning": "Improve or enhance the quality or value of.",
+      "sentence": "Reading diverse books can enrich your vocabulary.",
+      "syn": "enhance",
+      "ant": "reduce",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "ensconce",
+      "hi": "छिपाना",
+      "meaning": "Establish or settle someone in a comfortable, safe, or secret place.",
+      "sentence": "She liked to ensconce herself by the window with tea.",
+      "syn": "conceal",
+      "ant": "unveil",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Enshrine",
@@ -8684,20 +8986,81 @@
       "ant": "Exclude"
     },
     {
+      "en": "entangle",
+      "hi": "उलझाना",
+      "meaning": "Cause to become twisted together with or caught in.",
+      "sentence": "Fishing line can easily entangle if left loose.",
+      "syn": "implicate",
+      "ant": "untwist",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "enthusiasm",
+      "hi": "उत्साह",
+      "meaning": "Intense and eager enjoyment, interest, or approval.",
+      "sentence": "The volunteers showed great enthusiasm for the cleanup drive.",
+      "syn": "zeal",
+      "ant": "apathy",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
       "en": "Entice",
       "hi": "लुभाना",
-      "meaning": "To attract by offering pleasure or advantage",
-      "sentence": "Discounts were offered to entice customers.",
-      "syn": "Lure",
-      "ant": "Repel"
+      "meaning": "Attract or tempt by offering pleasure or advantage.",
+      "sentence": "Freshly baked bread can entice anyone into the kitchen.",
+      "syn": "lure",
+      "ant": "repulse",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "entire",
+      "hi": "पूरा",
+      "meaning": "With no part left out; whole.",
+      "sentence": "We spent the entire weekend preparing for the exhibition.",
+      "syn": "whole",
+      "ant": "partial",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "enumerate",
+      "hi": "गिनती करना",
+      "meaning": "Mention a number of things one by one.",
+      "sentence": "The report will enumerate the key benefits of solar power.",
+      "syn": "list",
+      "ant": "guess",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "enunciate",
+      "hi": "स्पष्ट उच्चारण करना",
+      "meaning": "Say or pronounce clearly.",
+      "sentence": "Please enunciate each word slowly on the voice recording.",
+      "syn": "articulate",
+      "ant": "mispronounce",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Ephemeral",
       "hi": "क्षणभंगुर",
-      "meaning": "Lasting for a very short time",
-      "sentence": "Fame in social media can be ephemeral, fading within days.",
-      "syn": "Transient",
-      "ant": "Permanent"
+      "meaning": "Lasting for a very short time.",
+      "sentence": "Morning dew is ephemeral once the sun rises high.",
+      "syn": "transitory",
+      "ant": "permanent",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Ephemerality",
@@ -8732,6 +9095,17 @@
       "ant": "ascetic, puritan"
     },
     {
+      "en": "epidemic",
+      "hi": "महामारी",
+      "meaning": "A widespread occurrence of an infectious disease in a community at a particular time.",
+      "sentence": "Vaccination campaigns help prevent a seasonal epidemic.",
+      "syn": "widespread",
+      "ant": "limited",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
       "en": "Epilepsy",
       "hi": "मिर्गी",
       "meaning": "A disease causing a person to fall unconscious involuntarily",
@@ -8749,19 +9123,25 @@
     },
     {
       "en": "Epitome",
-      "hi": "प्रतिमूर्ति / सार",
-      "meaning": "A perfect example of a quality or type",
-      "sentence": "She is the epitome of patience.",
-      "syn": "Embodiment",
-      "ant": "Opposite"
+      "hi": "प्रतिरूप",
+      "meaning": "A person or thing that is a perfect example of a particular quality or type.",
+      "sentence": "Her calm leadership made her the epitome of poise.",
+      "syn": "type",
+      "ant": "enlargement",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Equanimity",
-      "hi": "धैर्य / समभाव",
-      "meaning": "Mental calmness, composure, and evenness of temper, especially in a difficult situation",
-      "sentence": "She faced the crisis with remarkable equanimity.",
-      "syn": "Composure",
-      "ant": "Agitation"
+      "hi": "समभाव",
+      "meaning": "Mental calmness, composure, and evenness of temper, especially in a difficult situation.",
+      "sentence": "He faced the sudden crisis with remarkable equanimity.",
+      "syn": "calm",
+      "ant": "agitation",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Equator",
@@ -8789,11 +9169,14 @@
     },
     {
       "en": "Equivocal",
-      "hi": "गोलमोल / अस्पष्ट",
-      "meaning": "Open to more than one interpretation; ambiguous",
-      "sentence": "His equivocal answer left us unsure whether he agreed or not.",
-      "syn": "Ambiguous",
-      "ant": "Clear"
+      "hi": "अनेकार्थी / अनिश्चित",
+      "meaning": "Open to more than one interpretation; ambiguous.",
+      "sentence": "The statement was too equivocal to count as a promise.",
+      "syn": "ambiguous",
+      "ant": "obvious",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Equivocate",
@@ -8813,11 +9196,14 @@
     },
     {
       "en": "Eradicate",
-      "hi": "जड़ से मिटाना",
-      "meaning": "To destroy something completely",
-      "sentence": "India worked hard to eradicate polio.",
-      "syn": "Eliminate",
-      "ant": "Establish"
+      "hi": "उन्मूलन करना",
+      "meaning": "Destroy completely; put an end to.",
+      "sentence": "Global health efforts aim to eradicate preventable diseases.",
+      "syn": "abolish",
+      "ant": "preserve",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Erase",
@@ -8834,6 +9220,17 @@
       "sentence": "As an ergophile, he finds genuine joy in spending long hours working.",
       "syn": "workaholic, hard worker",
       "ant": "sluggard, idler"
+    },
+    {
+      "en": "erode",
+      "hi": "भूमि कटाव / अपरदन",
+      "meaning": "Gradually wear away soil, rock, or land.",
+      "sentence": "Planting trees along riverbanks helps stop soil from eroding.",
+      "syn": "disintegrate",
+      "ant": "fix",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Erratic",
@@ -8861,11 +9258,14 @@
     },
     {
       "en": "Erudite",
-      "hi": "विद्वान / ज्ञानी",
-      "meaning": "Having or showing great knowledge or learning",
-      "sentence": "The erudite historian could discuss any era with ease.",
-      "syn": "Scholarly",
-      "ant": "Ignorant"
+      "hi": "विद्वान",
+      "meaning": "Having or showing great knowledge or learning.",
+      "sentence": "The erudite professor wrote several acclaimed history books.",
+      "syn": "scholarly",
+      "ant": "ignorant",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Erudition",
@@ -8893,11 +9293,14 @@
     },
     {
       "en": "Esoteric",
-      "hi": "गुप्त / कठिन",
-      "meaning": "Intended for or likely to be understood by only a small number of people with specialized knowledge",
-      "sentence": "The seminar covered esoteric topics known only to specialists.",
-      "syn": "Obscure",
-      "ant": "Common"
+      "hi": "गुप्त",
+      "meaning": "Intended for or understood by only a small, specific group; mysterious; obscure.",
+      "sentence": "Advanced quantum math can seem esoteric to beginners.",
+      "syn": "abstruse",
+      "ant": "familiar",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Espouse",
@@ -8908,12 +9311,48 @@
       "ant": "Reject"
     },
     {
+      "en": "essential",
+      "hi": "अत्यावश्यक",
+      "meaning": "Absolutely necessary; extremely important.",
+      "sentence": "Clean drinking water is essential for every community.",
+      "syn": "vital",
+      "ant": "unimportant",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "establish",
+      "hi": "स्थापित करना",
+      "meaning": "Set up an organization, system, or set of rules on a firm or permanent basis.",
+      "sentence": "They plan to establish a community library in the village.",
+      "syn": "create",
+      "ant": "destroy",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
       "en": "Esteem",
-      "hi": "आदर",
-      "meaning": "The condition of being honoured",
-      "sentence": "He is held in high esteem by all his colleagues.",
-      "syn": "respect, honor, regard",
-      "ant": "disrespect, contempt, scorn"
+      "hi": "सम्मान",
+      "meaning": "Respect and admiration, typically for a person.",
+      "sentence": "Colleagues hold her in high esteem for her integrity.",
+      "syn": "respect",
+      "ant": "disregard",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "estimate",
+      "hi": "अनुमान लगाना",
+      "meaning": "Rough calculation; approximate price; judge tentatively.",
+      "sentence": "Can you give me a rough estimate of the repair cost?",
+      "syn": "assess",
+      "ant": "actual",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Estrange",
@@ -8924,12 +9363,34 @@
       "ant": "Reconcile"
     },
     {
+      "en": "eternal",
+      "hi": "निरन्तर",
+      "meaning": "Lasting or existing forever; without end or beginning.",
+      "sentence": "The monument was built as a tribute to eternal peace.",
+      "syn": "perpetual",
+      "ant": "temporary",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
       "en": "Ethereal",
       "hi": "अलौकिक / सूक्ष्म",
       "meaning": "Extremely delicate and light, seeming not of this world",
       "sentence": "The music had an ethereal quality.",
       "syn": "Heavenly",
       "ant": "Earthly"
+    },
+    {
+      "en": "ethical",
+      "hi": "नैतिक",
+      "meaning": "Relating to moral principles or the branch of knowledge dealing with these.",
+      "sentence": "Fairness and honesty are key pillars of ethical conduct.",
+      "syn": "equitable",
+      "ant": "immoral",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Ethnology",
@@ -8997,19 +9458,25 @@
     },
     {
       "en": "Euphoria",
-      "hi": "अत्यधिक हर्ष",
-      "meaning": "A feeling of intense excitement and happiness",
-      "sentence": "There was euphoria after the historic victory.",
-      "syn": "Elation",
-      "ant": "Despair"
+      "hi": "उत्साह",
+      "meaning": "A feeling or state of intense excitement and happiness.",
+      "sentence": "A wave of euphoria swept through the stadium at full time.",
+      "syn": "rapture",
+      "ant": "lethargy",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Evade",
-      "hi": "बचना / टालना",
-      "meaning": "To escape or avoid something, often by cleverness",
-      "sentence": "He tried to evade the question.",
-      "syn": "Dodge",
-      "ant": "Confront"
+      "hi": "टालना / चकमा देने वाला / चालाक",
+      "meaning": "Escape or avoid, especially by cleverness or trickery; equivocal.",
+      "sentence": "Try not to evade direct questions during the interview.",
+      "syn": "avoid",
+      "ant": "confront",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Evanescent",
@@ -9028,6 +9495,17 @@
       "ant": "Direct"
     },
     {
+      "en": "eventual",
+      "hi": "अंतिम",
+      "meaning": "Occurring at the end of a period or process; ultimate.",
+      "sentence": "The eventual outcome of the project exceeded expectations.",
+      "syn": "ultimate",
+      "ant": "initial",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
       "en": "Evict",
       "hi": "बेदखल करना",
       "meaning": "To expel someone from a property, especially with the support of the law",
@@ -9036,12 +9514,48 @@
       "ant": "admit, harbor, shelter"
     },
     {
+      "en": "evidence",
+      "hi": "प्रमाण",
+      "meaning": "The available body of facts or information indicating whether a belief or proposition is true or valid.",
+      "sentence": "Archaeological evidence points to an ancient trade route.",
+      "syn": "indication",
+      "ant": "concealment",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "evident",
+      "hi": "स्पष्ट",
+      "meaning": "Plain or obvious; clearly seen or understood.",
+      "sentence": "Her enthusiasm for teaching was evident from day one.",
+      "syn": "clear",
+      "ant": "hidden",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "evince",
+      "hi": "प्रकट करना",
+      "meaning": "Reveal the presence of a quality or feeling; indicate.",
+      "sentence": "His calm voice evinced confidence under pressure.",
+      "syn": "show",
+      "ant": "conceal",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
       "en": "Evoke",
-      "hi": "जगाना / याद दिलाना",
-      "meaning": "To bring a feeling or memory to mind",
-      "sentence": "The song evokes memories of childhood.",
-      "syn": "Elicit",
-      "ant": "Suppress"
+      "hi": "आह्वान करना",
+      "meaning": "Bring or recall to the conscious mind.",
+      "sentence": "Old photographs often evoke fond childhood memories.",
+      "syn": "call",
+      "ant": "appeal",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Evolve",
@@ -9069,11 +9583,14 @@
     },
     {
       "en": "Exaggerate",
-      "hi": "बढ़ा-चढ़ा कर कहना",
-      "meaning": "To represent something as larger, better or worse than it really is",
-      "sentence": "Don't exaggerate the story just to make it dramatic.",
-      "syn": "overstate, magnify, amplify",
-      "ant": "understate, minimize, play down"
+      "hi": "अतिशयोक्ति करना",
+      "meaning": "Represent something as being larger, greater, better, or worse than it really is.",
+      "sentence": "Try not to exaggerate minor problems in your report.",
+      "syn": "magnify",
+      "ant": "understate",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Exalt",
@@ -9101,11 +9618,25 @@
     },
     {
       "en": "Exasperate",
-      "hi": "चिढ़ाना / परेशान करना",
-      "meaning": "To irritate someone intensely",
-      "sentence": "His constant delays exasperated the manager.",
-      "syn": "Annoy",
-      "ant": "Soothe"
+      "hi": "क्रोधित करना",
+      "meaning": "Irritate intensely; infuriate.",
+      "sentence": "Repeated delays began to exasperate the passengers.",
+      "syn": "infuriate",
+      "ant": "soothing",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "exasperation",
+      "hi": "झुंझलाहट",
+      "meaning": "A feeling of intense irritation or annoyance.",
+      "sentence": "He sighed in exasperation when the printer jammed again.",
+      "syn": "irritation",
+      "ant": "enjoyment",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "excavation",
@@ -9124,12 +9655,45 @@
       "ant": "Including"
     },
     {
+      "en": "exceptional",
+      "hi": "असाधारण",
+      "meaning": "Unusually good; outstanding.",
+      "sentence": "She received a scholarship for her exceptional performance.",
+      "syn": "extraordinary",
+      "ant": "ordinary",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
       "en": "Excerpt",
       "hi": "भाग/अंश",
       "meaning": "A short piece of writing, music, film, etc. taken from a longer whole",
       "sentence": "The teacher read an excerpt from the novel during class.",
       "syn": "extract, selection, passage",
       "ant": "whole, complete text"
+    },
+    {
+      "en": "excited",
+      "hi": "उत्तेजित",
+      "meaning": "Very enthusiastic and eager.",
+      "sentence": "The kids were excited about the upcoming school trip.",
+      "syn": "eager",
+      "ant": "bored",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "exclusive",
+      "hi": "विशेष",
+      "meaning": "Excluding or not admitting other things.",
+      "sentence": "The magazine published an exclusive interview with the author.",
+      "syn": "specific",
+      "ant": "inclusive",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "excoriate",
@@ -9141,11 +9705,14 @@
     },
     {
       "en": "excruciating",
-      "hi": "अत्यंत पीड़ादायक",
-      "meaning": "Extremely painful or unbearable.",
-      "sentence": "He experienced excruciating pain after the injury.",
-      "syn": "agonizing, unbearable, torturous, intense",
-      "ant": "painless, comfortable, soothing"
+      "hi": "असहनीय / कष्टदायी",
+      "meaning": "Intensely painful.",
+      "sentence": "The sprained ankle caused excruciating pain at first.",
+      "syn": "piercing",
+      "ant": "mild",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Exculpate",
@@ -9173,11 +9740,14 @@
     },
     {
       "en": "Exemplary",
-      "hi": "अनुकरणीय",
-      "meaning": "Serving as a desirable model; very good",
-      "sentence": "His conduct in office was exemplary.",
-      "syn": "Model",
-      "ant": "Deplorable"
+      "hi": "आदर्श",
+      "meaning": "Serving as a desirable model; representing the best of its kind.",
+      "sentence": "His exemplary punctuality set a standard for the office.",
+      "syn": "commendable",
+      "ant": "unsatisfactory",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Exempt",
@@ -9188,12 +9758,26 @@
       "ant": "Liable"
     },
     {
+      "en": "exhale",
+      "hi": "सांस छोड़ना",
+      "meaning": "Breathe out in a deliberate manner.",
+      "sentence": "Inhale deeply through your nose and exhale slowly.",
+      "syn": "emitting",
+      "ant": "inhale",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
       "en": "Exhaustive",
-      "hi": "संपूर्ण / विस्तृत",
-      "meaning": "Including all possibilities; very thorough",
-      "sentence": "They conducted an exhaustive inquiry.",
-      "syn": "Comprehensive",
-      "ant": "Superficial"
+      "hi": "व्यापक",
+      "meaning": "Examining, including, or considering all elements or aspects; fully comprehensive.",
+      "sentence": "The committee conducted an exhaustive review of the budget.",
+      "syn": "thorough",
+      "ant": "incomplete",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Exhilarate",
@@ -9213,11 +9797,25 @@
     },
     {
       "en": "Exigent",
-      "hi": "अति आवश्यक / तात्कालिक",
-      "meaning": "Pressing; demanding attention",
-      "sentence": "The nurses responded quickly to the exigent situation in the ward.",
-      "syn": "Urgent",
-      "ant": "Unimportant"
+      "hi": "अत्यावश्यक",
+      "meaning": "Pressing; demanding.",
+      "sentence": "Emergency repairs were required due to exigent needs.",
+      "syn": "imperative",
+      "ant": "usual",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "exodus",
+      "hi": "पलायन",
+      "meaning": "A mass departure of people, especially emigrants.",
+      "sentence": "Many city residents left during the holiday exodus.",
+      "syn": "evacuation",
+      "ant": "arrival",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Exonerate",
@@ -9236,12 +9834,15 @@
       "ant": "Convicted"
     },
     {
-      "en": "Exorbitant",
-      "hi": "अत्यधिक / बेहद महँगा",
-      "meaning": "Unreasonably high, said of a price or amount charged",
-      "sentence": "The hotel charged an exorbitant fee for a simple bottle of water.",
-      "syn": "Excessive",
-      "ant": "Reasonable"
+      "en": "exotic",
+      "hi": "असाधारण",
+      "meaning": "Originating in or characteristic of a distant foreign country.",
+      "sentence": "The market sells exotic fruits brought from coastal farms.",
+      "syn": "strange",
+      "ant": "ordinary",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Expatriate",
@@ -9261,11 +9862,14 @@
     },
     {
       "en": "Expedite",
-      "hi": "शीघ्र निपटाना",
-      "meaning": "To make a process happen more quickly",
-      "sentence": "The office expedited the pending files.",
-      "syn": "Hasten",
-      "ant": "Delay"
+      "hi": "शीघ्रता से पूरा करना",
+      "meaning": "Make an action or process happen sooner or be accomplished more quickly.",
+      "sentence": "Digital forms help expedite passport renewals.",
+      "syn": "accelerate",
+      "ant": "hinder",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Expel",
@@ -9286,10 +9890,24 @@
     {
       "en": "Explicit",
       "hi": "स्पष्ट",
-      "meaning": "Stated clearly and in detail, leaving no confusion",
-      "sentence": "He gave explicit instructions before leaving.",
-      "syn": "Clear",
-      "ant": "Implicit"
+      "meaning": "Stated clearly and in detail, leaving no room for confusion or doubt.",
+      "sentence": "The instructions gave explicit steps for setting up the device.",
+      "syn": "clear",
+      "ant": "ambiguous",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "exquisite",
+      "hi": "उत्कृष्ट / अति सुंदर",
+      "meaning": "Extremely beautiful and, typically, delicate.",
+      "sentence": "The artisan crafted an exquisite silver necklace.",
+      "syn": "refined",
+      "ant": "rough",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Extant",
@@ -9308,12 +9926,26 @@
       "ant": "Rehearsed"
     },
     {
+      "en": "extinct",
+      "hi": "विलुप्त",
+      "meaning": "No longer in existence.",
+      "sentence": "Conservation programs work to keep endangered species from becoming extinct.",
+      "syn": "non-existent",
+      "ant": "alive",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
       "en": "Extol",
-      "hi": "बहुत प्रशंसा करना",
-      "meaning": "To praise enthusiastically",
-      "sentence": "The article extols the virtues of yoga.",
-      "syn": "Praise",
-      "ant": "Criticise"
+      "hi": "प्रशंसा करना",
+      "meaning": "Praise enthusiastically.",
+      "sentence": "Critics extol the novel for its vivid storytelling.",
+      "syn": "praise",
+      "ant": "censure",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Extort",
@@ -9324,6 +9956,17 @@
       "ant": "Donate"
     },
     {
+      "en": "extract",
+      "hi": "निकालना",
+      "meaning": "Remove or take out; obtain from a substance by chemical or mechanical action.",
+      "sentence": "Essential oil is extracted from crushed lavender flowers.",
+      "syn": "withdraw",
+      "ant": "insert",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
       "en": "Extraneous",
       "hi": "असंबद्ध / बाहरी",
       "meaning": "Irrelevant or unrelated to the subject",
@@ -9332,28 +9975,48 @@
       "ant": "Relevant"
     },
     {
+      "en": "extravagance",
+      "hi": "फिजूलखर्ची",
+      "meaning": "Lack of restraint in spending money or use of resources.",
+      "sentence": "Simple celebrations avoid unnecessary extravagance.",
+      "syn": "self-indulgence",
+      "ant": "parsimony",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
       "en": "Extravagant",
-      "hi": "फिजूलखर्च",
-      "meaning": "Spending much more than is necessary",
-      "sentence": "His extravagant lifestyle drained his savings.",
-      "syn": "Lavish",
-      "ant": "Frugal"
+      "hi": "फिजूलखर्ची",
+      "meaning": "Lacking restraint in spending money or using resources.",
+      "sentence": "Buying an extravagant gadget wasn't in our budget.",
+      "syn": "expensively",
+      "ant": "economical",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Extricate",
-      "hi": "छुड़ाना / निकालना",
-      "meaning": "To free someone from a difficulty or entanglement",
-      "sentence": "He could not extricate himself from the debt trap.",
-      "syn": "Release",
-      "ant": "Entangle"
+      "hi": "मुक्त करना",
+      "meaning": "Free someone or something from a constraint or difficulty.",
+      "sentence": "It took hours to extricate the truck from deep mud.",
+      "syn": "free",
+      "ant": "entangle",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Exuberant",
-      "hi": "उत्साह से भरा",
-      "meaning": "Full of energy, excitement, and cheerfulness",
-      "sentence": "The children were exuberant on the last day of school.",
-      "syn": "Lively",
-      "ant": "Subdued"
+      "hi": "उत्साही",
+      "meaning": "Filled with or characterized by a lively energy and excitement.",
+      "sentence": "Exuberant cheers greeted the winners on stage.",
+      "syn": "eager",
+      "ant": "lethargic",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Exult",
@@ -9364,12 +10027,37 @@
       "ant": "Grieve"
     },
     {
-      "en": "Fabricate",
-      "hi": "गढ़ना / बनावटी बनाना",
-      "meaning": "To invent something false; to manufacture",
-      "sentence": "He fabricated an excuse for his absence.",
-      "syn": "Invent",
-      "ant": "Verify"
+      "en": "exultation",
+      "hi": "उल्लास",
+      "meaning": "A feeling of triumphant elation or jubilation; rejoicing.",
+      "sentence": "There was pure exultation when the rocket launched cleanly.",
+      "syn": "jubilation",
+      "ant": "agony",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "fabulous",
+      "hi": "शानदार",
+      "meaning": "Extraordinary, especially extraordinarily large.",
+      "sentence": "We had a fabulous time exploring the botanical garden.",
+      "syn": "marvellous",
+      "ant": "ordinary",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "facade",
+      "hi": "मुखौटा",
+      "meaning": "The face of a building, especially the principal front that looks onto a street or open space.",
+      "sentence": "The historic building features a carved stone facade.",
+      "syn": "frontage",
+      "ant": "truth",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Facetious",
@@ -9380,12 +10068,45 @@
       "ant": "Serious"
     },
     {
+      "en": "fair",
+      "hi": "निष्पक्ष",
+      "meaning": "In accordance with the rules or standards; legitimate.",
+      "sentence": "Everyone deserves a fair chance to present their ideas.",
+      "syn": "reasonable",
+      "ant": "unjust",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "fake",
+      "hi": "नकली",
+      "meaning": "Forgery or counterfeit; trick or deceive; pretend to have, be, or feel something.",
+      "sentence": "Experts spotted the fake signature under ultraviolet light.",
+      "syn": "false",
+      "ant": "real",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
       "en": "Fallacious",
       "hi": "भ्रामक / गलत",
       "meaning": "Based on a mistaken belief or faulty reasoning",
       "sentence": "His argument was entirely fallacious.",
       "syn": "Misleading",
       "ant": "Valid"
+    },
+    {
+      "en": "fallacy",
+      "hi": "भ्रांति",
+      "meaning": "A mistaken belief, especially one based on unsound arguments.",
+      "sentence": "Assuming correlation proves causation is a common fallacy.",
+      "syn": "delusion",
+      "ant": "truth",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Fallible",
@@ -9412,20 +10133,70 @@
       "ant": "Satiated"
     },
     {
+      "en": "famous",
+      "hi": "प्रसिद्ध",
+      "meaning": "Known about by many people.",
+      "sentence": "The city is famous for its street food and textiles.",
+      "syn": "renowned",
+      "ant": "unknown",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
       "en": "Fanatic",
-      "hi": "कट्टर",
-      "meaning": "A person filled with excessive and single-minded zeal",
-      "sentence": "He is a fanatic about cleanliness.",
-      "syn": "Zealot",
-      "ant": "Moderate"
+      "hi": "कट्टरपंथी",
+      "meaning": "Person filled with excessive and single-minded zeal, especially for an extreme religious or political cause.",
+      "sentence": "A fitness fanatic rarely misses a morning workout.",
+      "syn": "enthusiast",
+      "ant": "tolerant",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "fascinating",
+      "hi": "मनमोहक",
+      "meaning": "Extremely interesting.",
+      "sentence": "Astronomy offers a fascinating look at distant galaxies.",
+      "syn": "appealing",
+      "ant": "repulsive",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "fascination",
+      "hi": "आकर्षण",
+      "meaning": "The power to fascinate someone; the quality of being fascinating.",
+      "sentence": "His fascination with maps began when he was a child.",
+      "syn": "appeal",
+      "ant": "repulsion",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "fasten",
+      "hi": "बांधना",
+      "meaning": "Close or join securely.",
+      "sentence": "Please fasten your seatbelt before takeoff.",
+      "syn": "affix",
+      "ant": "release",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Fastidious",
-      "hi": "नखरेबाज़ / अति-सतर्क",
-      "meaning": "Very attentive to and concerned about accuracy and detail",
-      "sentence": "The fastidious chef rejected any ingredient that wasn't perfectly fresh.",
-      "syn": "Meticulous",
-      "ant": "Careless"
+      "hi": "तुनक मिजाज",
+      "meaning": "Very attentive to and concerned about accuracy and detail.",
+      "sentence": "She is fastidious about keeping her notes neat and indexed.",
+      "syn": "accurate",
+      "ant": "careless",
+      "cats": [
+        "C1"
+      ]
     },
     {
       "en": "Fathom",
@@ -15384,6 +16155,17 @@
       ]
     },
     {
+      "en": "Absolve",
+      "hi": "दोषमुक्त करना",
+      "meaning": "To set or declare someone free from blame, guilt, or responsibility.",
+      "sentence": "The court decided to absolve him of all the criminal charges.",
+      "syn": "Acquit, Pardon",
+      "ant": "Blame, Condemn, Accused",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
       "en": "Absurd",
       "hi": "बेतुका",
       "meaning": "Wildly unreasonable, illogical, or inappropriate.",
@@ -15401,6 +16183,28 @@
       "sentence": "A good watch is an essential fashion accessory.",
       "syn": "Attachments",
       "ant": "Essential",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Accolade",
+      "hi": "सम्मान",
+      "meaning": "An award or privilege granted as a special honour or as an acknowledgment of merit.",
+      "sentence": "She received the highest accolade for her contribution to science.",
+      "syn": "Praise, Award, Laurels",
+      "ant": "Blame",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Accord",
+      "hi": "समझौता",
+      "meaning": "Agreement or harmony; grant someone power or status.",
+      "sentence": "The two countries signed a peace accord to end the conflict.",
+      "syn": "Confer",
+      "ant": "Disagreement",
       "cats": [
         "C1"
       ]
@@ -15456,6 +16260,28 @@
       "sentence": "All students must adhere to the school's code of conduct.",
       "syn": "Comply, Give Allegiance",
       "ant": "Condemn, Flout, Disobey",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Admonish",
+      "hi": "डाँटना",
+      "meaning": "Warn or reprimand someone firmly.",
+      "sentence": "The teacher had to admonish the students for talking during the exam.",
+      "syn": "Chide, Reprimand, Warning, Counsel, Censure",
+      "ant": "Praise, Applaud, Compliment",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Adroit",
+      "hi": "कुशल",
+      "meaning": "Clever or skilful in using the hands or mind.",
+      "sentence": "She is an adroit negotiator who always gets the best deal.",
+      "syn": "Skilful, Capable",
+      "ant": "Incompetent, Clumsy",
       "cats": [
         "C1"
       ]
@@ -15621,6 +16447,534 @@
       "sentence": "He was very apologetic for arriving late to the meeting.",
       "syn": "Contrite",
       "ant": "Impenitent",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Arbitrary",
+      "hi": "मनमाना",
+      "meaning": "Based on random choice or personal whim, rather than any reason or system.",
+      "sentence": "The manager's decision to cancel the holiday seemed completely arbitrary.",
+      "syn": "Random",
+      "ant": "Lawful",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Audacity",
+      "hi": "धृष्टता",
+      "meaning": "The willingness to take bold risks; rude or disrespectful behaviour.",
+      "sentence": "He had the audacity to blame me for his own mistake.",
+      "syn": "Boldness, Unexpectedly, Nerve",
+      "ant": "Cowardice, Timidity, Politeness, Gentility",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Baffle",
+      "hi": "चकित करना",
+      "meaning": "To bewilder or perplex someone.",
+      "sentence": "The sudden disappearance of the ship continues to baffle experts.",
+      "syn": "Puzzle, Perplex, Amaze, Confusion",
+      "ant": "Composed, Comprehensible, Enlighten, Facilitate",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Beseech",
+      "hi": "विनती करना",
+      "meaning": "Ask someone urgently and fervently to do something; implore; entreat.",
+      "sentence": "I beseech you to reconsider your decision before it is too late.",
+      "syn": "Beg, Ask, Request",
+      "ant": "Command",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Betrayal",
+      "hi": "धोखा",
+      "meaning": "The action of being disloyal to someone who trusts you.",
+      "sentence": "He felt a deep sense of betrayal when his best friend lied to him.",
+      "syn": "Treachery",
+      "ant": "Protect, Loyalty, Stand By",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Blunt",
+      "hi": "कम धार वाला, मंदबुद्धि",
+      "meaning": "(Of a cutting instrument) not having a sharp edge or point; as a verb, to make or become less sharp",
+      "sentence": "It is difficult to chop vegetables with a blunt knife.",
+      "syn": "Dull, Snippy",
+      "ant": "Sharp",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Bogus",
+      "hi": "जाली",
+      "meaning": "Not genuine or true",
+      "sentence": "The police arrested him for selling bogus tickets.",
+      "syn": "Fake, False",
+      "ant": "Authentic",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Bustle",
+      "hi": "हड़बड़ी",
+      "meaning": "Move in an energetic or noisy manner; as a noun, excited activity and movement",
+      "sentence": "The market was full of hustle and bustle before the festival.",
+      "syn": "Haste, Rush",
+      "ant": "Motionless",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Casual",
+      "hi": "अनौपचारिक, आकस्मिक",
+      "meaning": "Relaxed and unconcerned",
+      "sentence": "Employees are allowed to wear casual clothes on Fridays.",
+      "syn": "Occasional",
+      "ant": "Formal, Planned",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Celebrate",
+      "hi": "उत्सव मनाना, गुणगान करना",
+      "meaning": "To acknowledge (a significant or happy day or event) with a social gathering or enjoyable activity; honour or praise publicly",
+      "sentence": "We gathered to celebrate her graduation with dinner.",
+      "syn": "Honour",
+      "ant": "Disgrace",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Chagrin",
+      "hi": "शर्मिंदगी",
+      "meaning": "Distress or embarrassment at having failed or been humiliated",
+      "sentence": "Much to his chagrin, he forgot his lines during the speech.",
+      "syn": "Embarrassment",
+      "ant": "Pleasure",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Chronic",
+      "hi": "दीर्घकालिक",
+      "meaning": "(Of an illness) persisting for a long time or constantly recurring",
+      "sentence": "He has been suffering from chronic back pain for years.",
+      "syn": "Persistent",
+      "ant": "Infrequent, Temporary",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Clamorous",
+      "hi": "कोलाहलपूर्ण",
+      "meaning": "Making a loud and confused noise",
+      "sentence": "A clamorous crowd gathered outside the stadium gates.",
+      "syn": "Boisterous",
+      "ant": "Suppression",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Cluster",
+      "hi": "समूह",
+      "meaning": "Group of similar things or people positioned close together; gather into clusters",
+      "sentence": "A small cluster of houses stood at the foot of the hill.",
+      "syn": "Assemblage",
+      "ant": "Individual",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Commence",
+      "hi": "शुरू करना",
+      "meaning": "Begin; start",
+      "sentence": "The examination will commence sharply at 9:00 AM.",
+      "syn": "Start, Launch, Initiate",
+      "ant": "Conclude, Close, Terminate",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Compassion",
+      "hi": "दया",
+      "meaning": "Sympathetic pity and concern for the sufferings or misfortunes of others",
+      "sentence": "She treated the injured stray animals with great compassion.",
+      "syn": "Pity, Kindness",
+      "ant": "Meanness, Indifference, Animosity",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Competent",
+      "hi": "सक्षम",
+      "meaning": "Having the necessary ability, knowledge, or skill to do something successfully",
+      "sentence": "We need a competent engineer to fix the electrical fault.",
+      "syn": "Capable, Qualified",
+      "ant": "Ignorant",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Comprehensive",
+      "hi": "विस्तृत",
+      "meaning": "Including all or nearly all elements or aspects of something",
+      "sentence": "This book offers a comprehensive guide to English grammar.",
+      "syn": "Complete",
+      "ant": "Restricted, Superficial, Incomplete, Shallow",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Conceit",
+      "hi": "अहंकार",
+      "meaning": "Excessive pride in oneself",
+      "sentence": "His arrogance and conceit made him unpopular among colleagues.",
+      "syn": "Vanity, Egotism, Proud, Smug, Arrogant, Pomposity",
+      "ant": "Modesty, Humility",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Concise",
+      "hi": "संक्षिप्त",
+      "meaning": "Giving a lot of information clearly and in a few words; brief but comprehensive",
+      "sentence": "Keep your resume clear, accurate, and concise.",
+      "syn": "Brief, Capsule",
+      "ant": "Lengthy, Unabridged",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Congenial",
+      "hi": "अनुकूल",
+      "meaning": "(Of a person) pleasant because of a personality, qualities, or interests that are similar to one's own",
+      "sentence": "He is a congenial host who makes every guest feel welcome.",
+      "syn": "Favourable, Cordial, Compatible",
+      "ant": "Unpleasant, Unsympathetic",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Consent",
+      "hi": "सहमति",
+      "meaning": "Permission for something to happen or agreement to do something; comply or agree",
+      "sentence": "You cannot publish someone's photo without their consent.",
+      "syn": "Assent, Permission, Agree",
+      "ant": "Dissent, Interdiction, Conflict",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Conserve",
+      "hi": "संरक्षित करना",
+      "meaning": "Protect from harm or destruction; preserve; protect from loss or waste",
+      "sentence": "Turn off the tap while brushing to conserve water.",
+      "syn": "Preserve",
+      "ant": "Destroy",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Contemplate",
+      "hi": "विचार करना",
+      "meaning": "Look thoughtfully for a long time at",
+      "sentence": "She sat by the window to contemplate her future plans.",
+      "syn": "Envisage",
+      "ant": "Ignore, Disregard",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Cruel",
+      "hi": "क्रूर",
+      "meaning": "Wilfully causing pain or suffering to others, or feeling no concern about it",
+      "sentence": "Being cruel to helpless animals is inexcusable.",
+      "syn": "Brutal",
+      "ant": "Kind, Sympathetic",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Culpable",
+      "hi": "दोषी",
+      "meaning": "Deserving blame",
+      "sentence": "The company was held culpable for violating safety standards.",
+      "syn": "Guilty, Accountable",
+      "ant": "Innocent, Blameless",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Dainty",
+      "hi": "नाजुक, मनोहर",
+      "meaning": "Delicately small and pretty",
+      "sentence": "She wore a dainty silver bracelet on her wrist.",
+      "syn": "Small and Graceful",
+      "ant": "Clumsy, Vigorous",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Deficiency / Deficient",
+      "hi": "कमी, अपूर्ण",
+      "meaning": "Not having enough of a specified quality or ingredient",
+      "sentence": "A deficiency of Vitamin D can lead to weak bones.",
+      "syn": "Inadequacy, Shortage, Lacking, Incomplete, Insufficient",
+      "ant": "Excess",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Deluge",
+      "hi": "बाढ़",
+      "meaning": "A severe flood.",
+      "sentence": "Heavy monsoon rains caused a sudden deluge in the valley.",
+      "syn": "flood",
+      "ant": "drought",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "desert",
+      "hi": "परित्याग करना",
+      "meaning": "Arid land; leave someone who needs or counts on you; abandon.",
+      "sentence": "They had to cross a scorching desert before reaching the town.",
+      "syn": "abandon",
+      "ant": "populate",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Desolate",
+      "hi": "उजड़ा हुआ / सुनसान",
+      "meaning": "Deserted of people and in a state of bleak and dismal emptiness.",
+      "sentence": "The abandoned factory looked desolate in the winter rain.",
+      "syn": "bleak",
+      "ant": "improve",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "destroy",
+      "hi": "नष्ट करना",
+      "meaning": "Put an end to the existence of something by damaging or attacking it.",
+      "sentence": "Wildfires can destroy thousands of acres of forest.",
+      "syn": "ruin",
+      "ant": "preserve",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Detest",
+      "hi": "घृणा करना",
+      "meaning": "Dislike intensely.",
+      "sentence": "I detest waking up to a loud alarm on cold mornings.",
+      "syn": "loathe",
+      "ant": "like",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Detrimental",
+      "hi": "हानिकारक",
+      "meaning": "Tending to cause harm.",
+      "sentence": "Lack of sleep is detrimental to concentration and health.",
+      "syn": "harmful",
+      "ant": "harmless",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Deviate",
+      "hi": "मार्ग से अलग होना",
+      "meaning": "Depart from an established course.",
+      "sentence": "Please do not deviate from the agreed safety protocol.",
+      "syn": "veer",
+      "ant": "concentrate",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Devout",
+      "hi": "धार्मिक",
+      "meaning": "Having or showing deep religious feeling or commitment.",
+      "sentence": "Her devout prayers brought her peace during tough times.",
+      "syn": "pious",
+      "ant": "treacherous",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "discard",
+      "hi": "त्यागना",
+      "meaning": "Get rid of someone or something as no longer useful or desirable.",
+      "sentence": "Please discard empty plastic bottles in the recycling bin.",
+      "syn": "abandon",
+      "ant": "adopt",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "dishevel",
+      "hi": "बिखेरना",
+      "meaning": "Make someone's hair or clothes untidy.",
+      "sentence": "A strong gust of wind will dishevel your hair.",
+      "syn": "clutter",
+      "ant": "tidy",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Docile",
+      "hi": "विनम्र",
+      "meaning": "Ready to accept control or instruction; submissive.",
+      "sentence": "The docile puppy quickly learned basic commands.",
+      "syn": "submissive",
+      "ant": "obstinate",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "dynamic",
+      "hi": "गतिशील",
+      "meaning": "Characterized by constant change, activity, or progress.",
+      "sentence": "She brings a dynamic energy to every project she leads.",
+      "syn": "energetic",
+      "ant": "static",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Elusive",
+      "hi": "पकड़ में न आने वाला",
+      "meaning": "Difficult to find, catch, or achieve.",
+      "sentence": "The snow leopard remains an elusive mountain cat.",
+      "syn": "intangible",
+      "ant": "definite",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "emancipate",
+      "hi": "आज़ाद करना, बंधनों से मुक्त करना।",
+      "meaning": "Set free, especially from legal, social, or political restrictions.",
+      "sentence": ". The government decided to emancipate the slaves.\n2. Education can emancipate people from ignorance.",
+      "syn": "Liberate, Free, Release",
+      "ant": "enslave",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "energetic",
+      "hi": "ऊर्जावान",
+      "meaning": "Showing or involving great activity or vitality.",
+      "sentence": "A brisk morning walk helps keep you energetic all day.",
+      "syn": "vibrant",
+      "ant": "lethargic",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Exorbitant",
+      "hi": "अत्यधिक",
+      "meaning": "Of a price or amount charged, unreasonably high.",
+      "sentence": "They refused to pay exorbitant fees for simple repairs.",
+      "syn": "excessive",
+      "ant": "modest",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "expensive",
+      "hi": "मूल्यवान",
+      "meaning": "Costing a lot of money.",
+      "sentence": "Fresh saffron is one of the most expensive spices.",
+      "syn": "dear",
+      "ant": "cheap",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "extenuate",
+      "hi": "कम करना",
+      "meaning": "Make guilt or an offense seem less serious or more forgivable.",
+      "sentence": "Severe illness can sometimes extenuate a missed deadline.",
+      "syn": "mitigate",
+      "ant": "strengthen",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "Fabricate",
+      "hi": "बनाना",
+      "meaning": "Invent or concoct something, typically with deceitful intent.",
+      "sentence": "Never fabricate data or sources in a research report.",
+      "syn": "concoct",
+      "ant": "destroy",
+      "cats": [
+        "C1"
+      ]
+    },
+    {
+      "en": "facilitate",
+      "hi": "सुगम बनाना",
+      "meaning": "Make an action or process easy or easier.",
+      "sentence": "Clear signposts facilitate movement inside the station.",
+      "syn": "enable",
+      "ant": "hinder",
       "cats": [
         "C1"
       ]

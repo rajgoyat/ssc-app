@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -3804,7 +3803,7 @@ body.mcq-focus-mode .result-more-menu .action-menu-item{
     </div>
 
     <button class="btn main-card-prev-btn" id="prevBtn" type="button" title="Previous word" aria-label="Previous word">← Prev</button>
-    <label class="hindi-delay-box" title="Revision me Next dabane ke kitne second baad Hindi meaning dikhe (0 = turant). Test me turant dikhti hai">
+    <label class="hindi-delay-box" title="Revision me Next dabane ke kitne second baad Hindi meaning dikhe (0 = turant). Test me Show answer dabane ke baad bhi isi delay se dikhti hai">
       <span>Hindi</span>
       <input type="number" id="hindiDelayInput" min="0" max="60" step="0.5" value="2" inputmode="decimal" aria-label="Hindi meaning delay in seconds">
       <span>sec</span>
@@ -4590,6 +4589,45 @@ function cleanIdiomEntries(items){
     return cleaned;
   });
 }
+// ---------- Deleted items log (all deleted words/idioms/etc go to ONE file via server) ----------
+const DELETED_LOG_API = "/api/english/deleted";
+const DELETED_QUEUE_KEY = "englishDeletedQueue";
+let deletedFlushing = false;
+function readDeletedQueue(){
+  try{ return JSON.parse(localStorage.getItem(DELETED_QUEUE_KEY) || "[]"); }catch(e){ return []; }
+}
+function writeDeletedQueue(q){
+  try{ localStorage.setItem(DELETED_QUEUE_KEY, JSON.stringify(q)); }catch(e){}
+}
+async function flushDeletedQueue(){
+  if(deletedFlushing) return;
+  const q = readDeletedQueue();
+  if(!q.length) return;
+  deletedFlushing = true;
+  try{
+    const response = await fetch(DELETED_LOG_API, {
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({items:q})
+    });
+    const result = await response.json().catch(() => ({}));
+    if(response.ok && result.ok !== false){
+      writeDeletedQueue(readDeletedQueue().slice(q.length));
+    }
+  }catch(e){
+    console.error("Deleted log save failed (will retry):", e);
+  }finally{
+    deletedFlushing = false;
+  }
+}
+function logDeletedItems(kind, items){
+  const at = new Date().toISOString();
+  const q = readDeletedQueue();
+  (items || []).forEach(item => q.push({kind, deletedAt:at, item}));
+  writeDeletedQueue(q);
+  flushDeletedQueue();
+}
+
 function buildServerPayload(){
   return {
     words: sortWordArray(WORDS),
@@ -4660,6 +4698,7 @@ async function loadServerData(){
     }
 
     setServerStatus("English data is connected to the Python server.", "connected");
+    flushDeletedQueue();
     return true;
 
   }catch(e){
@@ -7280,6 +7319,7 @@ async function deleteMissingEntry(type, textValue){
     return;
   }
 
+  logDeletedItems("missing_" + normalizeMissingType(type), [textValue]);
   renderMissingManager();
   renderSearchResults(searchInput?.value || "");
   missingManagerMsg.style.color = "var(--teal)";
@@ -7313,6 +7353,7 @@ async function deleteAllMissingOfType(type){
 
   renderMissingManager();
   renderSearchResults(searchInput?.value || "");
+  logDeletedItems("missing_" + wantedType, items);
   missingManagerMsg.style.color = "var(--teal)";
   missingManagerMsg.textContent =
     "Deleted all missing " + (wantedType === "idiom" ? "idioms." : "vocab words.");
@@ -8034,6 +8075,8 @@ async function deleteWordEntry(word){
   if(!ok) return false;
 
   const index = pool.indexOf(word);
+  const delKind = (pool === WORDS || pool === OLD_WORDS) ? "vocab" : "idiom";
+  const delStatus = (pool === OLD_WORDS || pool === OLD_IDIOM_WORDS) ? "old" : "new";
   pool.splice(index, 1);
 
   const saved = await saveServerData();
@@ -8043,6 +8086,7 @@ async function deleteWordEntry(word){
     return false;
   }
 
+  logDeletedItems(delKind, [{...word, status:delStatus}]);
   if(typeof editingWord !== "undefined" && editingWord === word) closeEditForm();
   currentRoundWords = currentRoundWords.filter(w => w !== word);
   currentWord = null;
@@ -8397,7 +8441,7 @@ showAnswerCard = function(word){
   __showAnswerCardOrig.apply(this, arguments);
   __clearHiTimer();
   const sec = getHindiDelaySeconds();
-  if(__delayHindiNow && currentPhase === PHASE.READ && sec > 0 && word && word.hi){
+  if(__delayHindiNow && (currentPhase === PHASE.READ || currentPhase === PHASE.TEST) && sec > 0 && word && word.hi){
     __setHiOpacity("0", false);   // Hindi chhupao, baaki sab turant dikhta hai
     __hiTimer = setTimeout(() => {
       __hiTimer = null;
@@ -9004,6 +9048,7 @@ initializeEnglishApp();
       return;
     }
 
+    logDeletedItems("question", [{source:row.source, data:JSON.parse(JSON.stringify(target))}]);
     updateMcqCounts();
     renderAnswerBank();
     if(mcqTestPanel?.classList.contains('active')) renderMcqHome();
