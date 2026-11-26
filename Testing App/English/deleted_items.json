@@ -28,6 +28,291 @@
         "ant": "astronomer, scientist",
         "status": "new"
       }
+    },
+    {
+      "kind": "vocab",
+      "deletedAt": "2026-11-25T01:58:50.893Z",
+      "item": {
+        "en": "Consent",
+        "hi": "सहमति",
+        "meaning": "Permission for something to happen or agreement to do something; comply or agree",
+        "sentence": "You cannot publish someone's photo without their consent.",
+        "syn": "Assent, Permission, Agree",
+        "ant": "Dissent, Interdiction, Conflict",
+        "cats": [
+          "C1"
+        ],
+        "status": "old"
+      }
+    },
+    {
+      "kind": "vocab",
+      "deletedAt": "2026-11-25T02:35:27.453Z",
+      "item": {
+        "en": "entire",
+        "hi": "पूरा",
+        "meaning": "With no part left out; whole.",
+        "sentence": "We spent the entire weekend preparing for the exhibition.",
+        "syn": "whole",
+        "ant": "partial",
+        "cats": [
+          "C1"
+        ],
+        "status": "new"
+      }
+    },
+    {
+      "kind": "vocab",
+      "deletedAt": "2026-11-25T02:35:41.274Z",
+      "item": {
+        "en": "Brief",
+        "hi": "संक्षिप्त",
+        "meaning": "Short in time, duration, length, or extent; concise",
+        "sentence": "We had a brief meeting before the conference started.",
+        "syn": "Concise, Short",
+        "ant": "Elaborate, Lengthy",
+        "cats": [
+          "C1"
+        ],
+        "status": "new"
+      }
+    },
+    {
+      "kind": "vocab",
+      "deletedAt": "2026-11-25T02:50:46.486Z",
+      "item": {
+        "en": "amend",
+        "hi": "संशोधित करना",
+        "meaning": "Make minor changes in a text in order to make it fairer, more accurate, or more up-to-date.",
+        "sentence": "The parliament voted to amend the outdated law.",
+        "syn": "Modify, Revise",
+        "ant": "Worsen, Deteriorate",
+        "cats": [
+          "C1"
+        ],
+        "status": "old"
+      }
+    },
+    {
+      "kind": "vocab",
+      "deletedAt": "2026-11-25T03:27:59.437Z",
+      "item": {
+        "en": "dynamic",
+        "hi": "गतिशील",
+        "meaning": "Characterized by constant change, activity, or progress.",
+        "sentence": "She brings a dynamic energy to every project she leads.",
+        "syn": "energetic",
+        "ant": "static",
+        "cats": [
+          "C1"
+        ],
+        "status": "old"
+      }
+    },
+    {
+      "kind": "vocab",
+      "deletedAt": "2026-11-25T03:52:47.899Z",
+      "item": {
+        "en": "Deficiency / Deficient",
+        "hi": "कमी, अपूर्ण",
+        "meaning": "Not having enough of a specified quality or ingredient",
+        "sentence": "A deficiency of Vitamin D can lead to weak bones.",
+        "syn": "Inadequacy, Shortage, Lacking, Incomplete, Insufficient",
+        "ant": "Excess",
+        "cats": [
+          "C1"
+        ],
+        "status": "old"
+      }
+    },
+    {
+      "kind": "vocab",
+      "deletedAt": "2026-11-26T02:15:07.735Z",
+      "item": {
+        "en": "delicious",
+        "hi": "स्वादिष्ट",
+        "meaning": "Highly pleasant to the taste.",
+        "sentence": "We had a delicious homemade biryani for dinner.",
+        "syn": "tasty",
+        "ant": "insipid",
+        "cats": [
+          "C1"
+        ],
+        "status": "new"
+      }
+    },
+    {
+      "kind": "vocab",
+      "deletedAt": "2026-11-26T02:16:38.164Z",
+      "item": {
+        "en": "energetic",
+        "hi": "ऊर्जावान",
+        "meaning": "Showing or involving great activity or vitality.",
+        "sentence": "A brisk morning walk helps keep you energetic all day.",
+        "syn": "vibrant",
+        "ant": "lethargic",
+        "cats": [
+          "C1"
+        ],
+        "status": "old"
+      }
+    },
+    {
+      "kind": "vocab",
+      "deletedAt": "2026-11-26T02:17:28.275Z",
+      "item": {
+        "en": "Ancestor",
+        "hi": "पूर्वज",
+        "meaning": "A person, typically one more remote than a grandparent, from whom one is descended.",
+        "sentence": "My ancestors migrated to this city over two hundred years ago.",
+        "syn": "Forefather",
+        "ant": "Descendant",
+        "cats": [
+          "C1"
+        ],
+        "status": "old"
+      }
+    },
+    {
+      "kind": "vocab",
+      "deletedAt": "2026-11-26T02:24:08.513Z",
+      "item": {
+        "en": "Calf",
+        "hi": "बछड़ा",
+        "meaning": "The young one of a cow",
+        "sentence": "The newborn calf stood up on its wobbly legs beside its mother.",
+        "syn": "young cow, yearling",
+        "ant": "adult cow, bull",
+        "status": "old"
+      }
+    },
+    {
+      "kind": "vocab",
+      "deletedAt": "2026-11-26T02:27:58.334Z",
+      "item": {
+        "en": "destroy",
+        "hi": "नष्ट करना",
+        "meaning": "Put an end to the existence of something by damaging or attacking it.",
+        "sentence": "Wildfires can destroy thousands of acres of forest.",
+        "syn": "ruin",
+        "ant": "preserve",
+        "cats": [
+          "C1"
+        ],
+        "status": "old"
+      }
+    },
+    {
+      "kind": "vocab",
+      "deletedAt": "2026-11-26T02:28:04.037Z",
+      "item": {
+        "en": "Amiable",
+        "hi": "मिलनसार",
+        "meaning": "Friendly and pleasant; characterized by friendship and good will.",
+        "sentence": "She has an amiable personality that makes everyone feel welcome.",
+        "syn": "Friendly",
+        "ant": "Hostile, Unfriendly",
+        "cats": [
+          "C1"
+        ],
+        "status": "old"
+      }
+    },
+    {
+      "kind": "vocab",
+      "deletedAt": "2026-11-26T02:28:06.661Z",
+      "item": {
+        "en": "apologetic",
+        "hi": "क्षमाप्रार्थी",
+        "meaning": "Regretfully acknowledging or excusing an offense or failure.",
+        "sentence": "He was very apologetic for arriving late to the meeting.",
+        "syn": "Contrite",
+        "ant": "Impenitent",
+        "cats": [
+          "C1"
+        ],
+        "status": "old"
+      }
+    },
+    {
+      "kind": "vocab",
+      "deletedAt": "2026-11-26T02:28:11.079Z",
+      "item": {
+        "en": "Concise",
+        "hi": "संक्षिप्त",
+        "meaning": "Giving a lot of information clearly and in a few words; brief but comprehensive",
+        "sentence": "Keep your resume clear, accurate, and concise.",
+        "syn": "Brief, Capsule",
+        "ant": "Lengthy, Unabridged",
+        "cats": [
+          "C1"
+        ],
+        "status": "old"
+      }
+    },
+    {
+      "kind": "vocab",
+      "deletedAt": "2026-11-26T02:28:13.999Z",
+      "item": {
+        "en": "Bogus",
+        "hi": "जाली",
+        "meaning": "Not genuine or true",
+        "sentence": "The police arrested him for selling bogus tickets.",
+        "syn": "Fake, False",
+        "ant": "Authentic",
+        "cats": [
+          "C1"
+        ],
+        "status": "old"
+      }
+    },
+    {
+      "kind": "vocab",
+      "deletedAt": "2026-11-26T02:28:18.774Z",
+      "item": {
+        "en": "Aberration",
+        "hi": "असामान्यता / विचलन",
+        "meaning": "A departure from what is normal, usual, or expected, typically an unwelcome one.",
+        "sentence": "His sudden outburst of anger was a complete aberration from his usual calm behavior.",
+        "syn": "Deviation",
+        "ant": "Normality",
+        "cats": [
+          "C1"
+        ],
+        "status": "old"
+      }
+    },
+    {
+      "kind": "vocab",
+      "deletedAt": "2026-11-26T02:28:23.646Z",
+      "item": {
+        "en": "Advent",
+        "hi": "आगमन",
+        "meaning": "The arrival of a notable person, thing, or event.",
+        "sentence": "The advent of the internet has completely transformed communication.",
+        "syn": "Arrival",
+        "ant": "Departure",
+        "cats": [
+          "C1"
+        ],
+        "status": "old"
+      }
+    },
+    {
+      "kind": "vocab",
+      "deletedAt": "2026-11-26T02:57:03.376Z",
+      "item": {
+        "en": "Conserve",
+        "hi": "संरक्षित करना",
+        "meaning": "Protect from harm or destruction; preserve; protect from loss or waste",
+        "sentence": "Turn off the tap while brushing to conserve water.",
+        "syn": "Preserve",
+        "ant": "Destroy",
+        "cats": [
+          "C1"
+        ],
+        "status": "old"
+      }
     }
   ]
 }
