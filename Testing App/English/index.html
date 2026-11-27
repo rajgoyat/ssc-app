@@ -4354,8 +4354,10 @@ function refreshCategoryUI(){
              '<div class="cat-hint">Tick one or more categories</div>';
   cats.forEach((c, i) => {
     const k = c.toLowerCase();
-    html += '<label class="cat-opt"><input type="checkbox" data-cat-i="' + i + '"' + (activeCats.has(k) ? " checked" : "") + '><span>' +
-            escapeHtml(c) + '</span><small>' + (counts.get(k) || 0) + '</small></label>';
+    const __delBtn = (c === NORMAL_CAT) ? "" :
+      '<button type="button" class="cat-del" data-cat-del="' + escapeHtml(c) + '" title="Ye category delete karo (words delete nahi honge)">\u2715</button>';
+    html += '<div class="cat-row"><label class="cat-opt"><input type="checkbox" data-cat-i="' + i + '"' + (activeCats.has(k) ? " checked" : "") + '><span>' +
+            escapeHtml(c) + '</span><small>' + (counts.get(k) || 0) + '</small></label>' + __delBtn + '</div>';
   });
   pop.innerHTML = html;
 }
@@ -9370,6 +9372,90 @@ initializeEnglishApp();
     updateHardButton();
   };
   updateHardButton();
+})();
+</script>
+<style>
+/* ===== DELETE CATEGORY ===== */
+.cat-row{display:flex;align-items:center;gap:4px}
+.cat-row .cat-opt{flex:1;min-width:0}
+.cat-del{flex:none;width:22px;height:22px;padding:0;border:1px solid transparent;border-radius:6px;background:transparent;color:#738198;font:700 11px "Segoe UI",sans-serif;cursor:pointer}
+.cat-del:hover{border-color:rgba(255,118,106,.55);background:rgba(255,118,106,.12);color:#ff9d94}
+</style>
+<script>
+/* ===== DELETE CATEGORY ===== */
+(function(){
+  const pop = document.getElementById("catPop");
+  if(!pop) return;
+  let busy = false;
+
+  function toast(msg, bad){
+    document.querySelectorAll(".cat-del-toast").forEach(n => n.remove());
+    const t = document.createElement("div");
+    t.className = "cat-del-toast";
+    t.textContent = msg;
+    t.style.cssText = "position:fixed;left:50%;bottom:26px;transform:translateX(-50%);z-index:2147483200;" +
+      "padding:8px 14px;border-radius:10px;background:#0c1420;font:700 11px 'Segoe UI',sans-serif;" +
+      "box-shadow:0 12px 36px rgba(0,0,0,.5);max-width:90vw;" +
+      "border:1px solid " + (bad ? "rgba(255,118,106,.6)" : "rgba(106,214,200,.55)") + ";" +
+      "color:" + (bad ? "#ff9d94" : "#8ee7dc");
+    document.body.appendChild(t);
+    setTimeout(() => t.remove(), 3200);
+  }
+
+  async function deleteCategory(name){
+    const key = String(name).trim().toLowerCase();
+    if(!key || key === NORMAL_CAT.toLowerCase() || busy) return;
+
+    const pools = [WORDS, OLD_WORDS, IDIOM_WORDS, OLD_IDIOM_WORDS];
+    const items = [];
+    pools.forEach(p => p.forEach(w => {
+      if(parseCats(w && w.cats).some(c => c.toLowerCase() === key)) items.push(w);
+    }));
+    const remainingOf = w => parseCats(parseCats(w.cats).filter(c => c.toLowerCase() !== key));
+    const toNormal = items.filter(w => remainingOf(w).length === 0).length;
+
+    const ok = window.confirm(
+      'Category "' + name + '" delete karni hai?\n\n' +
+      "\u2022 " + items.length + " word(s) se ye category hat jayegi\n" +
+      "\u2022 " + toNormal + " word(s) sirf isi category me the - wo Normal me chale jayenge\n" +
+      "\u2022 Koi word DELETE nahi hoga"
+    );
+    if(!ok) return;
+
+    busy = true;
+    const wasActive = activeCats.has(key);
+    const backups = items.map(w => [w, w.cats]);
+    items.forEach(w => {
+      const rest = remainingOf(w);
+      if(rest.length) w.cats = rest; else delete w.cats;
+    });
+
+    let saved = false;
+    try{ saved = await saveServerData(); }catch(e){ saved = false; }
+
+    if(!saved){
+      backups.forEach(([w, old]) => { if(old === undefined) delete w.cats; else w.cats = old; });
+      busy = false;
+      toast("Server save failed - category delete nahi hui: " + (lastServerError || "unknown error"), true);
+      return;
+    }
+
+    activeCats.delete(key);
+    __catSig = "";
+    refreshCategoryUI();
+    try{ updatePoolUI(); }catch(e){}
+    if(wasActive) applyCategoryChange();
+    busy = false;
+    toast('Category "' + name + '" delete ho gayi \u2713 (' + toNormal + ' word Normal me gaye, koi word delete nahi hua)');
+  }
+
+  pop.addEventListener("click", e => {
+    const btn = e.target.closest && e.target.closest("button[data-cat-del]");
+    if(!btn) return;
+    e.preventDefault();
+    e.stopPropagation();
+    deleteCategory(btn.getAttribute("data-cat-del"));
+  });
 })();
 </script>
 </body>
