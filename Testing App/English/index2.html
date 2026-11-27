@@ -3762,6 +3762,7 @@ body.mcq-focus-mode .result-more-menu .action-menu-item{
           <input type="number" id="qnoInput" class="qno-input" min="1" placeholder="Q#" title="Open question number" aria-label="Question number">
         </span>
         <button class="learned-btn" id="learnedBtn" title="Move word between New and Old" aria-label="Move word between new and old">✓</button>
+        <button class="learned-btn hard-btn" id="hardBtn" type="button" title="Hard word: category me add / move" aria-label="Hard word category">★</button>
         <button class="editcur-btn" id="editCurrentBtn" title="Edit this word">✎ Edit</button>
         <button class="editcur-btn del" id="deleteCurrentBtn" type="button" title="Delete this word" aria-label="Delete this word">🗑</button>
         <span id="wnum">#1</span>
@@ -4275,12 +4276,18 @@ let __catKeys = [];
 function parseCats(v){
   const arr = Array.isArray(v) ? v : String(v || "").split(",");
   const seen = new Set(), out = [];
+  let hasNormal = false;
   arr.forEach(x => {
     const t = String(x).trim();
     const k = t.toLowerCase();
-    if(!t || k === NORMAL_CAT.toLowerCase() || seen.has(k)) return;
-    seen.add(k); out.push(t);
+    if(!t || seen.has(k)) return;
+    seen.add(k);
+    if(k === NORMAL_CAT.toLowerCase()){ hasNormal = true; return; }
+    out.push(t);
   });
+  // "Normal" tabhi store hota hai jab word ki koi aur category (jaise Hard) bhi ho.
+  // Sirf Normal = koi cats field nahi (purane words jaise hi).
+  if(out.length && hasNormal) out.unshift(NORMAL_CAT);
   return out;
 }
 function wordCats(w){
@@ -9153,6 +9160,200 @@ initializeEnglishApp();
   document.addEventListener('keydown', event => {
     if(event.key === 'Escape') closeMenus();
   });
+})();
+</script>
+<style>
+/* ===== HARD CATEGORY BUTTON ===== */
+.hard-btn{color:#ffd88c !important;}
+.hard-btn.on{background:rgba(240,184,75,.22) !important;border-color:rgba(240,184,75,.65) !important;color:#ffcf6b !important;}
+.hard-btn:disabled{opacity:.35;cursor:not-allowed;}
+.hard-pop{position:fixed;z-index:2147483100;width:230px;max-width:calc(100vw - 16px);padding:10px;border:1px solid var(--line2);border-radius:12px;background:#0c1420;box-shadow:0 18px 48px rgba(0,0,0,.55);font:600 11px "Segoe UI",sans-serif;color:#dce5f2}
+.hard-pop-title{font:800 11px "Segoe UI",sans-serif;color:#ffd88c;margin-bottom:2px;word-break:break-word}
+.hard-pop-sub{font:600 9px "Segoe UI",sans-serif;color:#738198;margin-bottom:8px;word-break:break-word}
+.hard-pop-act{display:block;width:100%;min-height:30px;margin-bottom:6px;padding:0 8px;border:1px solid rgba(240,184,75,.45);border-radius:8px;background:rgba(240,184,75,.10);color:#ffd88c;font:700 11px "Segoe UI",sans-serif;cursor:pointer;text-align:left}
+.hard-pop-act:hover{background:rgba(240,184,75,.20)}
+.hard-pop-act.rm{border-color:rgba(255,118,106,.45);background:rgba(255,118,106,.08);color:#ff9d94}
+.hard-pop-label{margin:8px 0 5px;color:#8f9bad;font:700 9px "Courier New",monospace}
+.hard-pop-chips{display:flex;flex-wrap:wrap;gap:5px;max-height:110px;overflow:auto}
+.hard-chip{padding:4px 9px;border:1px solid var(--line2);border-radius:999px;background:#101a28;color:#cbd5e3;font:700 10px "Segoe UI",sans-serif;cursor:pointer}
+.hard-chip:hover{border-color:rgba(106,214,200,.55);color:#8ee7dc}
+.hard-pop-new{display:flex;gap:5px;margin-top:8px}
+.hard-pop-new input{flex:1;min-width:0;height:28px;padding:0 8px;border:1px solid var(--line2);border-radius:8px;background:#0a111b;color:var(--ink);font:600 11px "Segoe UI",sans-serif;outline:none}
+.hard-pop-new input:focus{border-color:rgba(106,214,200,.55)}
+.hard-pop-new button{height:28px;padding:0 10px;border:1px solid rgba(106,214,200,.45);border-radius:8px;background:rgba(106,214,200,.10);color:#8ee7dc;font:700 10px "Segoe UI",sans-serif;cursor:pointer}
+.hard-toast{position:fixed;left:50%;bottom:26px;transform:translateX(-50%);z-index:2147483200;padding:8px 14px;border-radius:10px;background:#0c1420;border:1px solid rgba(240,184,75,.5);color:#ffd88c;font:700 11px "Segoe UI",sans-serif;box-shadow:0 12px 36px rgba(0,0,0,.5)}
+</style>
+<script>
+/* ===== HARD CATEGORY ===== */
+(function(){
+  const btn = document.getElementById("hardBtn");
+  if(!btn) return;
+  let pop = null;
+  let toastTimer = null;
+
+  function isHardName(c){ return String(c).trim().toLowerCase() === "hard"; }
+  function hasHard(w){ return !!w && parseCats(w.cats).some(isHardName); }
+  function isManaged(w){
+    return !!w && (WORDS.includes(w) || OLD_WORDS.includes(w) || IDIOM_WORDS.includes(w) || OLD_IDIOM_WORDS.includes(w));
+  }
+  function setCats(w, arr){
+    const c = parseCats(arr);
+    if(c.length) w.cats = c; else delete w.cats;
+  }
+
+  function toast(msg){
+    document.querySelectorAll(".hard-toast").forEach(n => n.remove());
+    const t = document.createElement("div");
+    t.className = "hard-toast";
+    t.textContent = msg;
+    document.body.appendChild(t);
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => t.remove(), 2200);
+  }
+
+  function updateHardButton(){
+    const w = currentWord;
+    const managed = isManaged(w);
+    const on = managed && hasHard(w);
+    btn.disabled = !managed;
+    btn.classList.toggle("on", on);
+    btn.title = on ? "Ye word Hard me hai - remove / move karne ke liye click karo"
+                   : "Hard word: category me add / move";
+  }
+
+  function closePop(){
+    if(pop){ pop.remove(); pop = null; }
+  }
+
+  async function commit(word, newCats, message){
+    setCats(word, newCats);
+    __catSig = "";
+    refreshCategoryUI();
+    updateHardButton();
+    closePop();
+    const ok = await saveServerData();
+    toast(ok ? message : "Server save failed: " + (lastServerError || "unknown error"));
+  }
+
+  function addToHard(word){
+    const base = wordCats(word).filter(c => !isHardName(c));   // purani category(s) as-is rahengi
+    commit(word, [...base, "Hard"], '"' + word.en + '" Hard me add ho gaya (purani category me bhi hai) \u2713');
+  }
+  function removeFromHard(word){
+    const base = wordCats(word).filter(c => !isHardName(c));
+    commit(word, base, '"' + word.en + '" Hard se hata diya \u2713');
+  }
+  function moveFromHard(word, target){
+    target = String(target || "").trim();
+    if(!target) return;
+    if(isHardName(target)){ toast("Hard se Hard me move nahi ho sakta"); return; }
+    const base = wordCats(word).filter(c => !isHardName(c));
+    commit(word, [...base, target], '"' + word.en + '" Hard se \u2192 ' + target + ' me move ho gaya \u2713');
+  }
+
+  function openPop(){
+    closePop();
+    const word = currentWord;
+    if(!isManaged(word)) return;
+    const inHard = hasHard(word);
+    const others = wordCats(word).filter(c => !isHardName(c));
+
+    pop = document.createElement("div");
+    pop.className = "hard-pop";
+    pop.addEventListener("keydown", e => e.stopPropagation());
+    pop.addEventListener("click", e => e.stopPropagation());
+
+    const title = document.createElement("div");
+    title.className = "hard-pop-title";
+    title.textContent = "\u2605 " + (word.en || "");
+    pop.appendChild(title);
+
+    const sub = document.createElement("div");
+    sub.className = "hard-pop-sub";
+    sub.textContent = "Abhi: " + wordCats(word).join(", ");
+    pop.appendChild(sub);
+
+    if(!inHard){
+      const add = document.createElement("button");
+      add.type = "button";
+      add.className = "hard-pop-act";
+      add.textContent = "\uFF0B Add to Hard (" + (others.join(", ") || "Normal") + " me bhi rahega)";
+      add.onclick = () => addToHard(word);
+      pop.appendChild(add);
+    }else{
+      const rm = document.createElement("button");
+      rm.type = "button";
+      rm.className = "hard-pop-act rm";
+      rm.textContent = "\u2715 Remove from Hard";
+      rm.onclick = () => removeFromHard(word);
+      pop.appendChild(rm);
+
+      const lbl = document.createElement("div");
+      lbl.className = "hard-pop-label";
+      lbl.textContent = "MOVE FROM HARD TO:";
+      pop.appendChild(lbl);
+
+      const chips = document.createElement("div");
+      chips.className = "hard-pop-chips";
+      const cats = getAllCategories().filter(c => !isHardName(c));
+      if(!cats.includes("Normal")) cats.unshift("Normal");
+      cats.forEach(c => {
+        const chip = document.createElement("button");
+        chip.type = "button";
+        chip.className = "hard-chip";
+        chip.textContent = c;
+        chip.onclick = () => moveFromHard(word, c);
+        chips.appendChild(chip);
+      });
+      pop.appendChild(chips);
+
+      const row = document.createElement("div");
+      row.className = "hard-pop-new";
+      const inp = document.createElement("input");
+      inp.type = "text";
+      inp.placeholder = "New category...";
+      inp.setAttribute("list", "categoryList");
+      const go = document.createElement("button");
+      go.type = "button";
+      go.textContent = "Move";
+      go.onclick = () => moveFromHard(word, inp.value);
+      inp.addEventListener("keydown", e => { if(e.key === "Enter"){ e.preventDefault(); moveFromHard(word, inp.value); } });
+      row.appendChild(inp);
+      row.appendChild(go);
+      pop.appendChild(row);
+    }
+
+    document.body.appendChild(pop);
+
+    // button ke paas position, screen ke andar clamp
+    const r = btn.getBoundingClientRect();
+    const pw = pop.offsetWidth, ph = pop.offsetHeight;
+    let left = Math.min(Math.max(8, r.right - pw), window.innerWidth - pw - 8);
+    let top = r.bottom + 6;
+    if(top + ph > window.innerHeight - 8) top = Math.max(8, r.top - ph - 6);
+    pop.style.left = left + "px";
+    pop.style.top = top + "px";
+  }
+
+  btn.addEventListener("click", e => {
+    e.stopPropagation();
+    if(btn.disabled) return;
+    if(pop) closePop(); else openPop();
+  });
+  document.addEventListener("click", e => {
+    if(pop && !pop.contains(e.target) && e.target !== btn) closePop();
+  });
+  document.addEventListener("keydown", e => { if(e.key === "Escape") closePop(); });
+  window.addEventListener("resize", closePop);
+
+  // Jab bhi card/learned button refresh ho, Hard button bhi refresh ho.
+  const __origULB = updateLearnedButton;
+  updateLearnedButton = function(){
+    __origULB.apply(this, arguments);
+    closePop();
+    updateHardButton();
+  };
+  updateHardButton();
 })();
 </script>
 </body>

@@ -7118,15 +7118,25 @@ async function uploadBulkArray(dupMode){
     const __dups = validEntries.filter(e => findExistingWord(e.en, bulkAddType));
     if(__dups.length){
       const __names = [...new Set(__dups.map(e => e.en))];
+      const __newCats = parseCats([
+        ...parseCats(document.getElementById("bulkCategoryInput")?.value),
+        ...validEntries.flatMap(e => e.cats || [])
+      ]);
       bulkUploadMsg.style.color = "var(--gold)";
       bulkUploadMsg.innerHTML =
         '<div style="margin-bottom:8px;line-height:1.6">' +
           validEntries.length + ' items: <b>' + (validEntries.length - __dups.length) + ' new</b> · <b>' + __dups.length + ' already in app</b><br>' +
           escapeHtml(__names.slice(0, 12).join(", ")) + (__names.length > 12 ? " …" : "") +
+          (__newCats.length
+            ? '<br><span style="color:var(--teal)">Existing words ko "' + escapeHtml(__newCats.join(", ")) + '" category me bhi add kiya jayega - wo apni purani category me bhi rahenge.</span>'
+            : '') +
+          '<br><span style="color:var(--muted)">' + (__newCats.length
+            ? 'Add to category = word waisa hi rahega, bas category judegi. Update word too = meaning / sentence bhi naye se badal jayega.'
+            : 'Update old word = purane word ko naye se badlo. Skip = kuch mat karo.') + '</span>' +
         '</div>' +
         '<div class="array-actions">' +
-          '<button class="small-tool-btn accent" id="dupReplaceBtn" type="button">Replace old with new</button>' +
-          '<button class="small-tool-btn" id="dupSkipBtn" type="button">Skip duplicates</button>' +
+          '<button class="small-tool-btn accent" id="dupReplaceBtn" type="button">' + (__newCats.length ? 'Update word too' : 'Update old word') + '</button>' +
+          '<button class="small-tool-btn" id="dupSkipBtn" type="button">' + (__newCats.length ? 'Add to category' : 'Skip') + '</button>' +
           '<button class="small-tool-btn danger" id="dupCancelBtn" type="button">Cancel</button>' +
         '</div>';
       document.getElementById("dupReplaceBtn").onclick = () => uploadBulkArray("replace");
@@ -7166,7 +7176,10 @@ async function uploadBulkArray(dupMode){
       // Overwrite the old word in place (it stays in its New / Old pool).
       replaceBackups.push([__ex, {...__ex}]);
       ["hi","meaning","sentence","syn","ant"].forEach(k => { if(entry[k]) __ex[k] = entry[k]; });
-      const __rc = parseCats([...parseCats(__ex.cats), ...__cats]);
+      const __rold = parseCats(__ex.cats);
+      const __rc = __cats.length
+        ? parseCats([...(__rold.length ? __rold : [NORMAL_CAT]), ...__cats])
+        : __rold;
       if(__rc.length) __ex.cats = __rc;
       replacedCount += 1;
       return;
@@ -7174,7 +7187,10 @@ async function uploadBulkArray(dupMode){
     if(__ex){
       // Word already in file: do NOT duplicate, just add the new category to it.
       const __old = parseCats(__ex.cats);
-      const __merged = parseCats([...__old, ...__cats]);
+      // Purani category "Normal" thi (cats field khali) to Normal ko explicitly rakho,
+      // taaki word purani category me bhi rahe aur nayi category me bhi aaye.
+      const __base = __old.length ? __old : [NORMAL_CAT];
+      const __merged = parseCats([...__base, ...__cats]);
       if(__cats.length && __merged.length !== __old.length){
         catBackups.push([__ex, __ex.cats]);
         __ex.cats = __merged;
