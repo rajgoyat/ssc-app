@@ -313,6 +313,38 @@
         ],
         "status": "old"
       }
+    },
+    {
+      "kind": "vocab",
+      "deletedAt": "2026-11-28T04:54:53.235Z",
+      "item": {
+        "en": "destroy",
+        "hi": "नष्ट करना",
+        "meaning": "Put an end to the existence of something by damaging or attacking it.",
+        "sentence": "Wildfires can destroy thousands of acres of forest.",
+        "syn": "ruin",
+        "ant": "preserve",
+        "cats": [
+          "C1"
+        ],
+        "status": "old"
+      }
+    },
+    {
+      "kind": "vocab",
+      "deletedAt": "2026-11-28T05:58:55.834Z",
+      "item": {
+        "en": "Complicate",
+        "hi": "जटिल",
+        "meaning": "Make (something) more difficult or confusing by causing it to be more complex",
+        "sentence": "Adding too many rules will only complicate the process.",
+        "syn": "Complex",
+        "ant": "Enlighten",
+        "cats": [
+          "C1"
+        ],
+        "status": "new"
+      }
     }
   ]
 }
